@@ -58,6 +58,11 @@ PyMuPDF and pypdf for offline PDF inspection.
    GEMINI_API_KEY=replace-with-your-api-key
    ```
 
+The default profile uses `gemini-3.6-flash` and this primary key for both
+Japanese analysis and English translation. When the key is eligible for
+Gemini's free tier, the default report workflow should not incur an API charge,
+although quota and rate limits still apply.
+
 To use a second Gemini project or quota pool for translation, also configure:
 
 ```text
@@ -66,7 +71,7 @@ GEMINI_API_KEY2=replace-with-your-second-api-key
 
 The secondary key is used only by explicitly selected stages:
 
-- `--flash-translation` keeps primary-key Flash analysis and uses
+- `--key2-translation` keeps primary-key Flash analysis and uses
   `gemini-3.6-flash` with `GEMINI_API_KEY2` for translation;
 - `--pro-translation` keeps primary-key Flash analysis and uses
   `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` for translation;
@@ -211,13 +216,13 @@ For one company:
 Use Gemini Flash for both stages while moving translation to the secondary key:
 
 ```powershell
-.\scripts\run_reports.ps1 1878 --flash-translation
+.\scripts\run_reports.ps1 1878 --key2-translation
 ```
 
 PowerShell's conventional spelling is also supported:
 
 ```powershell
-.\scripts\run_reports.ps1 1878 -FlashTranslation
+.\scripts\run_reports.ps1 1878 -Key2Translation
 ```
 
 Run both stages with the secondary Gemini 3.1 Pro Preview profile:
@@ -264,13 +269,13 @@ translation:
 ```
 
 PowerShell-style `-Sol` and the offline `--sol -PreviewOnly` form are also
-supported. `--flash-translation`, `--pro-translation`, `--pro`, and `--sol`
+supported. `--key2-translation`, `--pro-translation`, `--pro`, and `--sol`
 are mutually exclusive.
 
 | Profile | Japanese analysis | English translation |
 | --- | --- | --- |
-| default | `gemini-3.6-flash` | `gemini-3.5-flash-lite` |
-| `--flash-translation` | `gemini-3.6-flash` | `gemini-3.6-flash` with `GEMINI_API_KEY2` |
+| default | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY` |
+| `--key2-translation` | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY2` |
 | `--pro-translation` | `gemini-3.6-flash` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 | `--pro` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 | `--sol` | `gpt-5.6-sol` with `OPENAI_API_KEY` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
@@ -284,16 +289,20 @@ The runner:
 4. asks whether English reports should also be generated;
 5. archives existing outputs;
 6. runs the first company's Japanese analysis with one API attempt;
-7. immediately prepares and runs that company's optional English translation;
-8. enforces a 75-second cooldown between analysis requests, counting any time
-   spent translating toward that interval;
-9. moves to the next company and repeats the same sequence;
-10. prints the API provider and local pipeline status for every stage.
+7. prepares that company's optional English translation;
+8. when both stages share a Gemini credential, waits 75 seconds before
+   translation if their combined estimated input and maximum-output allowance
+   is at least 225,000 tokens, leaving 10% headroom below the 250,000-token
+   planning limit;
+9. enforces a 75-second cooldown between company analysis requests, counting
+   any time spent translating toward that interval;
+10. moves to the next company and repeats the same sequence;
+11. prints the API provider and local pipeline status for every stage.
 
-Without a model option, the existing behavior is unchanged:
-`gemini-3.6-flash` performs analysis and `gemini-3.5-flash-lite` performs
-translation. With `--flash-translation`, analysis remains on primary-key Flash
-and translation uses the same Flash model with `GEMINI_API_KEY2`. With
+Without a model option, `gemini-3.6-flash` and `GEMINI_API_KEY` perform both
+analysis and translation. With `--key2-translation`, analysis remains on
+primary-key Flash and translation uses the same Flash model with
+`GEMINI_API_KEY2`. With
 `--pro-translation`, Flash analysis continues to use `GEMINI_API_KEY`, while
 English translation uses the fixed `gemini-3.1-pro-preview` model and
 `GEMINI_API_KEY2`. With the Pro option, that secondary Pro setup performs both
@@ -353,7 +362,7 @@ and selection reasons.
 Under the default profile, the analysis stage uses `gemini-3.6-flash`. Under
 the Pro profile, it uses the source-configured `gemini-3.1-pro-preview`. The
 Pro-translation profile keeps the default Flash analysis model, as does the
-Flash-translation profile. Under the Sol profile, it uses `gpt-5.6-sol`.
+key2-translation profile. Under the Sol profile, it uses `gpt-5.6-sol`.
 Selected PDFs are sent inline as PDF parts; neither the Gemini Files API nor the
 OpenAI Files API is used. Sol preflight rejects a selected file set if any PDF
 or the combined inline file payload reaches 50 MB. Sol uses OpenAI's low PDF
@@ -417,9 +426,9 @@ assessed, the overall fallback is `0.50`. The full calculation is stored in
 
 ### English translation
 
-Under the default profile, the translation stage uses
-`gemini-3.5-flash-lite`. The Flash-translation profile uses
-`gemini-3.6-flash` with the secondary Gemini key. The Pro-translation, Pro, and
+Under the default profile, the translation stage uses `gemini-3.6-flash` with
+the primary Gemini key. The key2-translation profile uses the same model with
+the secondary Gemini key. The Pro-translation, Pro, and
 Sol profiles use the source-configured `gemini-3.1-pro-preview` with the
 secondary Gemini key. The stage receives a compact projection of the validated
 Japanese analysis, not the PDFs. That projection contains only issuer context,
@@ -451,10 +460,12 @@ semantic pass-through copy, and `normalization_en.json` records
 ### Cost estimates
 
 Model prices are maintained internally in USD, but every user-facing
-preview and confirmation screen displays the predicted maximum cost in yen.
-The offline estimator uses a transparent planning rate of `¥150 per USD`, which
-is also written to `cost.json`. This is a budgeting estimate rather than a
-promise of the final card or account conversion rate.
+preview and confirmation screen displays any predicted paid-tier maximum cost
+in yen without printing a JPY/USD conversion assumption. A default run uses
+only `GEMINI_API_KEY` and should be free when that key is eligible for Gemini's
+free tier; its displayed yen figures are conservative paid-tier upper-bound
+estimates, not an expected charge. Quota limits and the account's actual tier
+still apply.
 
 For `gemini-3.1-pro-preview`, the estimator applies the current standard paid
 tier based on estimated prompt size: USD 2 per million input tokens and USD 12
@@ -653,7 +664,7 @@ sufficient TPM or reduce the selected source volume before manually rerunning.
 Confirm that `.env` exists and contains the key required by the selected
 profile. Never print the key itself.
 
-For a Flash-translation run, confirm that `.env` contains
+For a key2-translation run, confirm that `.env` contains
 `GEMINI_API_KEY2`.
 
 For a Pro run, confirm that `.env` contains `GEMINI_API_KEY2`. The model name is

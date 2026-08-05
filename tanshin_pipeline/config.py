@@ -8,12 +8,12 @@ from pathlib import Path
 
 SCHEMA_VERSION = "1.6"
 DEFAULT_MODEL_PROFILE = "default"
-FLASH_TRANSLATION_MODEL_PROFILE = "flash-translation"
+KEY2_TRANSLATION_MODEL_PROFILE = "key2-translation"
 PRO_TRANSLATION_MODEL_PROFILE = "pro-translation"
 PRO_MODEL_PROFILE = "pro"
 SOL_MODEL_PROFILE = "sol"
 DEFAULT_ANALYSIS_MODEL = "gemini-3.6-flash"
-DEFAULT_TRANSLATION_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_TRANSLATION_MODEL = DEFAULT_ANALYSIS_MODEL
 PRO_GEMINI_MODEL = "gemini-3.1-pro-preview"
 OPENAI_SOL_MODEL = "gpt-5.6-sol"
 OPENAI_PDF_DETAIL = "low"
@@ -46,10 +46,6 @@ class Price:
 
 MODEL_PRICES_USD = {
     DEFAULT_ANALYSIS_MODEL: Price(input_per_million=1.50, output_per_million=7.50),
-    DEFAULT_TRANSLATION_MODEL: Price(
-        input_per_million=0.30,
-        output_per_million=2.50,
-    ),
     PRO_GEMINI_MODEL: Price(
         input_per_million=2.00,
         output_per_million=12.00,

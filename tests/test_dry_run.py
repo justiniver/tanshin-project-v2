@@ -70,7 +70,11 @@ class DryRunTests(unittest.TestCase):
             self.assertEqual(cost["usd_to_jpy_rate"], 150.0)
             self.assertGreater(cost["maximum_one_pass_cost_jpy"], 0)
             self.assertIn("JPY", stdout.getvalue())
-            self.assertIn("Yen conversion assumption", stdout.getvalue())
+            self.assertNotIn("Yen conversion assumption", stdout.getvalue())
+            self.assertIn(
+                "eligible for the Gemini free tier",
+                stdout.getvalue(),
+            )
             prompt = (artifacts / "prompt_analysis.txt").read_text(
                 encoding="utf-8"
             )

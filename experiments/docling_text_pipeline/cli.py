@@ -28,7 +28,7 @@ from .pipeline import (
 
 MODEL_PROFILES = (
     "default",
-    "flash-translation",
+    "key2-translation",
     "pro-translation",
     "pro",
     "sol",
@@ -193,10 +193,12 @@ def _print_prepared(prepared: PreparedRun, *, extract_only: bool) -> None:
         "Estimated maximum optional translation cost: "
         f"JPY {prepared.cost.translation.maximum_stage_cost_jpy:,.0f}"
     )
-    print(
-        "Yen conversion assumption: "
-        f"JPY {prepared.cost.usd_to_jpy_rate:g} per USD"
-    )
+    if prepared.plan.model_profile == "default":
+        print(
+            "Billing note: This profile uses only GEMINI_API_KEY and should be "
+            "free when that key's project is eligible for the Gemini free tier; "
+            "the JPY estimate is a paid-tier upper bound."
+        )
     print(f"Text corpus: {experimental.text_corpus}")
     print(f"Extraction manifest: {experimental.extraction_manifest}")
     print(f"Extraction audit: {experimental.extraction_audit}")
@@ -227,6 +229,12 @@ def _print_translation_prepared(prepared: PreparedRun) -> None:
         "Estimated maximum translation cost: "
         f"JPY {prepared.cost.translation.maximum_stage_cost_jpy:,.0f}"
     )
+    if prepared.plan.model_profile == "default":
+        print(
+            "Billing note: This profile uses only GEMINI_API_KEY and should be "
+            "free when that key's project is eligible for the Gemini free tier; "
+            "the JPY estimate is a paid-tier upper bound."
+        )
     print(f"Expected English report: {prepared.paths.report_en}")
 
 

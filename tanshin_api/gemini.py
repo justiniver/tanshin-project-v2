@@ -17,14 +17,14 @@ from tanshin_pipeline.config import (
     DEFAULT_ANALYSIS_MODEL,
     DEFAULT_MODEL_PROFILE,
     DEFAULT_TRANSLATION_MODEL,
-    FLASH_TRANSLATION_MODEL_PROFILE,
+    KEY2_TRANSLATION_MODEL_PROFILE,
     PRO_GEMINI_MODEL,
     PRO_MODEL_PROFILE,
 )
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
-GeminiProfile = Literal["default", "flash-translation", "pro"]
+GeminiProfile = Literal["default", "key2-translation", "pro"]
 GeminiStage = Literal["analysis", "translation"]
 
 
@@ -39,7 +39,7 @@ def load_repository_environment() -> None:
 def _validate_profile(profile: str) -> GeminiProfile:
     if profile not in {
         DEFAULT_MODEL_PROFILE,
-        FLASH_TRANSLATION_MODEL_PROFILE,
+        KEY2_TRANSLATION_MODEL_PROFILE,
         PRO_MODEL_PROFILE,
     }:
         raise ValueError(f"Unknown Gemini model profile: {profile!r}.")
@@ -55,7 +55,7 @@ def get_gemini_model(
     selected_profile = _validate_profile(profile)
     if selected_profile == PRO_MODEL_PROFILE:
         return PRO_GEMINI_MODEL
-    if selected_profile == FLASH_TRANSLATION_MODEL_PROFILE:
+    if selected_profile == KEY2_TRANSLATION_MODEL_PROFILE:
         return DEFAULT_ANALYSIS_MODEL
     if stage == "translation":
         return DEFAULT_TRANSLATION_MODEL
@@ -72,7 +72,7 @@ def get_gemini_client(
     key_name = (
         "GEMINI_API_KEY2"
         if selected_profile
-        in {FLASH_TRANSLATION_MODEL_PROFILE, PRO_MODEL_PROFILE}
+        in {KEY2_TRANSLATION_MODEL_PROFILE, PRO_MODEL_PROFILE}
         else "GEMINI_API_KEY"
     )
     api_key = os.getenv(key_name, "").strip()

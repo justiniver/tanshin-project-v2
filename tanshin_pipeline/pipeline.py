@@ -13,7 +13,7 @@ from .config import (
     DEFAULT_MAX_API_ATTEMPTS,
     DEFAULT_MODEL_PROFILE,
     DEFAULT_TRANSLATION_MODEL,
-    FLASH_TRANSLATION_MODEL_PROFILE,
+    KEY2_TRANSLATION_MODEL_PROFILE,
     OPENAI_MAX_INLINE_PDF_BYTES,
     OPENAI_PDF_TOKENS_PER_PAGE,
     OPENAI_SOL_MODEL,
@@ -153,7 +153,7 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
                 "rounded above observed production usage."
             ),
         )
-    if model_profile == FLASH_TRANSLATION_MODEL_PROFILE:
+    if model_profile == KEY2_TRANSLATION_MODEL_PROFILE:
         return ProfileConfiguration(
             analysis=StageRoute(
                 provider="gemini",
@@ -163,7 +163,7 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             translation=StageRoute(
                 provider="gemini",
                 model=DEFAULT_ANALYSIS_MODEL,
-                provider_profile=FLASH_TRANSLATION_MODEL_PROFILE,
+                provider_profile=KEY2_TRANSLATION_MODEL_PROFILE,
             ),
             pdf_tokens_per_page=PDF_TOKENS_PER_PAGE,
             pdf_token_assumption=(

@@ -18,9 +18,18 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("-PreviewOnly", readme)
         self.assertIn("there is no later per-company", readme)
         self.assertIn("selection prompt.", readme)
-        self.assertIn("75-second cooldown between analysis requests", readme)
-        self.assertIn("counting any time", readme)
+        self.assertIn(
+            "75-second cooldown between company analysis requests",
+            readme,
+        )
+        self.assertIn("counting", readme)
         self.assertIn("spent translating toward that interval", readme)
+        self.assertIn(
+            "combined estimated input and maximum-output allowance",
+            readme,
+        )
+        self.assertIn("at least 225,000 tokens", readme)
+        self.assertIn("10% headroom below the 250,000-token", readme)
         self.assertIn("Companies are processed in the order supplied", readme)
         self.assertIn("1808` analysis, `1808` translation", readme)
         self.assertIn("A stage failure stops the workflow", readme)
@@ -33,7 +42,9 @@ class DocumentationTests(unittest.TestCase):
         )
         self.assertIn("financial presentation are English", readme)
         self.assertIn("¥293.2 billion", readme)
-        self.assertIn("¥150 per USD", readme)
+        self.assertIn("should be free when that key is eligible", readme)
+        self.assertIn("paid-tier upper-bound", readme)
+        self.assertNotIn("150 per USD", readme)
         self.assertIn("original Japanese", readme)
         self.assertIn("quotations. Gemini is not asked", readme)
         self.assertIn("otherwise the Japanese name is", readme)
@@ -44,7 +55,7 @@ class DocumentationTests(unittest.TestCase):
             readme,
         )
         self.assertIn(
-            r".\scripts\run_reports.ps1 1878 --flash-translation",
+            r".\scripts\run_reports.ps1 1878 --key2-translation",
             readme,
         )
         self.assertIn(
@@ -66,6 +77,13 @@ class DocumentationTests(unittest.TestCase):
             "`--pro-translation` keeps primary-key Flash analysis",
             readme,
         )
+        self.assertIn(
+            "`gemini-3.6-flash` and `GEMINI_API_KEY` perform both",
+            readme,
+        )
+        self.assertNotIn("--flash-translation", readme)
+        self.assertNotIn("-FlashTranslation", readme)
+        self.assertNotIn("gemini-3.5-flash-lite", readme)
         self.assertNotIn("GEMINI_MODEL", readme)
         self.assertIn("[COMMANDS.md](COMMANDS.md)", readme)
         self.assertIn("company overview", readme)
@@ -128,7 +146,7 @@ class DocumentationTests(unittest.TestCase):
             "TANSHIN_OFFLINE_ONLY",
             "TANSHIN_TESTING",
             "run_reports.ps1 1808 6361 -PreviewOnly",
-            "run_reports.ps1 1878 --flash-translation -PreviewOnly",
+            "run_reports.ps1 1878 --key2-translation -PreviewOnly",
             "run_reports.ps1 1878 --pro-translation -PreviewOnly",
             "run_reports.ps1 1878 --pro -PreviewOnly",
             "run_reports.ps1 1878 --sol -PreviewOnly",
@@ -138,6 +156,13 @@ class DocumentationTests(unittest.TestCase):
             "Model names are fixed in `tanshin_pipeline/config.py`",
             guide,
         )
+        self.assertIn(
+            "combined estimated input plus maximum-output allowance",
+            guide,
+        )
+        self.assertIn("225,000", guide)
+        self.assertNotIn("--flash-translation", guide)
+        self.assertNotIn("-FlashTranslation", guide)
         self.assertNotIn("GEMINI_MODEL", guide)
 
     def test_concise_command_reference_lists_every_model_profile(self) -> None:
@@ -146,20 +171,24 @@ class DocumentationTests(unittest.TestCase):
         )
         for required in (
             r".\scripts\run_reports.ps1 1808",
-            "--flash-translation",
+            "--key2-translation",
             "--pro-translation",
             "--pro",
             "--sol",
             "`gemini-3.6-flash`, primary key",
-            "`gemini-3.5-flash-lite`, primary key",
             "`gemini-3.6-flash`, secondary key",
             "`gemini-3.1-pro-preview`, secondary key",
             "`gpt-5.6-sol`, OpenAI key",
             "`GEMINI_API_KEY`, `GEMINI_API_KEY2`, and `OPENAI_API_KEY`",
             "-PreviewOnly",
             "multiple tickers",
+            "225,000 tokens",
+            "Gemini's free tier",
         ):
             self.assertIn(required, commands)
+        self.assertNotIn("--flash-translation", commands)
+        self.assertNotIn("-FlashTranslation", commands)
+        self.assertNotIn("gemini-3.5-flash-lite", commands)
 
     def test_documented_local_files_exist(self) -> None:
         for relative_path in (

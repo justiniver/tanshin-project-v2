@@ -83,9 +83,17 @@ Multiple companies and the existing model profiles are supported:
 .\scripts\run_docling_reports.ps1 1808 6361
 .\scripts\run_docling_reports.ps1 1878 -Pro
 .\scripts\run_docling_reports.ps1 1878 -Sol
-.\scripts\run_docling_reports.ps1 1878 -FlashTranslation
+.\scripts\run_docling_reports.ps1 1878 -Key2Translation
 .\scripts\run_docling_reports.ps1 1878 -ProTranslation
 ```
+
+The default profile uses `gemini-3.6-flash` and `GEMINI_API_KEY` for both
+stages. `-Key2Translation` keeps Flash for both stages but moves translation to
+`GEMINI_API_KEY2`. The experimental runner follows the production runner's
+token-aware 75-second same-credential cooldown and its separate inter-company
+analysis cooldown. A default run should be free when the primary key is
+eligible for Gemini's free tier; displayed yen estimates remain conservative
+paid-tier upper bounds.
 
 ## Outputs
 

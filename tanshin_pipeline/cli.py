@@ -52,14 +52,14 @@ def build_parser() -> argparse.ArgumentParser:
         dest="model_profile",
         choices=(
             "default",
-            "flash-translation",
+            "key2-translation",
             "pro-translation",
             "pro",
             "sol",
         ),
         default="default",
         help=(
-            "Select default Flash/Flash Lite, Flash analysis with secondary-key "
+            "Select default Flash/Flash, Flash analysis with secondary-key "
             "Flash or Pro translation, Pro/Pro, or hybrid Sol/Pro."
         ),
     )
@@ -141,10 +141,12 @@ def _print_prepared(prepared: PreparedRun) -> None:
         "Estimated maximum configured cost: "
         f"JPY {prepared.cost.maximum_configured_cost_jpy:,.0f}"
     )
-    print(
-        "Yen conversion assumption: "
-        f"JPY {prepared.cost.usd_to_jpy_rate:g} per USD"
-    )
+    if prepared.plan.model_profile == "default":
+        print(
+            "Billing note: This profile uses only GEMINI_API_KEY and should be "
+            "free when that key's project is eligible for the Gemini free tier; "
+            "the JPY estimate is a paid-tier upper bound."
+        )
     print("Intended report paths:")
     print(f"  - {prepared.paths.report_ja}")
     print(f"  - {prepared.paths.report_en}")

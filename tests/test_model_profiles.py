@@ -79,9 +79,82 @@ class ModelProfileTests(unittest.TestCase):
                 PRO_GEMINI_MODEL,
             )
             self.assertEqual(
-                get_gemini_model("flash-translation", "translation"),
+                get_gemini_model("key2-translation", "translation"),
                 DEFAULT_ANALYSIS_MODEL,
             )
+
+    def test_default_dry_run_uses_primary_flash_for_both_stages(self) -> None:
+        with workspace_temp_directory(REPOSITORY_ROOT) as temp:
+            output_root = temp / "output"
+            stdout = io.StringIO()
+            with (
+                patch.object(
+                    socket,
+                    "socket",
+                    side_effect=AssertionError(
+                        "Network access attempted in default dry-run."
+                    ),
+                ),
+                redirect_stdout(stdout),
+            ):
+                exit_code = main(
+                    [
+                        "1808",
+                        "--repository-root",
+                        str(REPOSITORY_ROOT),
+                        "--output-root",
+                        str(output_root),
+                    ]
+                )
+            self.assertEqual(exit_code, 0)
+            artifacts = output_root / "1808" / "artifacts"
+            analysis_plan = read_json(
+                artifacts / "request_plan_analysis.json"
+            )
+            translation_plan = read_json(
+                artifacts / "request_plan_translation.json"
+            )
+            metadata = read_json(artifacts / "run_metadata.json")
+            self.assertEqual(analysis_plan["model_profile"], "default")
+            self.assertEqual(analysis_plan["provider_profile"], "default")
+            self.assertEqual(analysis_plan["model"], DEFAULT_ANALYSIS_MODEL)
+            self.assertEqual(translation_plan["model_profile"], "default")
+            self.assertEqual(translation_plan["provider_profile"], "default")
+            self.assertEqual(
+                translation_plan["model"],
+                DEFAULT_ANALYSIS_MODEL,
+            )
+            self.assertEqual(
+                metadata["translation_model"],
+                DEFAULT_ANALYSIS_MODEL,
+            )
+            self.assertIn(
+                "eligible for the Gemini free tier",
+                stdout.getvalue(),
+            )
+
+    def test_default_client_uses_primary_key_for_both_stages(self) -> None:
+        fake_client = object()
+        with (
+            patch("tanshin_api.gemini.load_repository_environment"),
+            patch.dict(
+                os.environ,
+                {
+                    "GEMINI_API_KEY": "offline-test-primary-key",
+                    "GEMINI_API_KEY2": "must-not-be-selected",
+                },
+                clear=False,
+            ),
+            patch(
+                "tanshin_api.gemini.genai.Client",
+                return_value=fake_client,
+            ) as client_constructor,
+        ):
+            client = get_gemini_client("default")
+        self.assertIs(client, fake_client)
+        client_constructor.assert_called_once_with(
+            api_key="offline-test-primary-key"
+        )
 
     def test_pro_client_uses_secondary_key_without_logging_it(self) -> None:
         fake_client = object()
@@ -103,7 +176,7 @@ class ModelProfileTests(unittest.TestCase):
             api_key="offline-test-secondary-key"
         )
 
-    def test_flash_translation_client_uses_secondary_key(self) -> None:
+    def test_key2_translation_client_uses_secondary_key(self) -> None:
         fake_client = object()
         with (
             patch("tanshin_api.gemini.load_repository_environment"),
@@ -117,7 +190,7 @@ class ModelProfileTests(unittest.TestCase):
                 return_value=fake_client,
             ) as client_constructor,
         ):
-            client = get_gemini_client("flash-translation")
+            client = get_gemini_client("key2-translation")
         self.assertIs(client, fake_client)
         client_constructor.assert_called_once_with(
             api_key="offline-test-secondary-flash-key"
@@ -264,7 +337,7 @@ class ModelProfileTests(unittest.TestCase):
             )
             self.assertIn("no API request was sent", stdout.getvalue())
 
-    def test_flash_translation_uses_primary_flash_then_secondary_flash_offline(
+    def test_key2_translation_uses_primary_flash_then_secondary_flash_offline(
         self,
     ) -> None:
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
@@ -275,7 +348,7 @@ class ModelProfileTests(unittest.TestCase):
                     socket,
                     "socket",
                     side_effect=AssertionError(
-                        "Network access attempted in Flash-translation dry-run."
+                        "Network access attempted in key2-translation dry-run."
                     ),
                 ),
                 redirect_stdout(stdout),
@@ -288,7 +361,7 @@ class ModelProfileTests(unittest.TestCase):
                         "--output-root",
                         str(output_root),
                         "--model-profile",
-                        "flash-translation",
+                        "key2-translation",
                     ]
                 )
             self.assertEqual(exit_code, 0)
@@ -303,7 +376,7 @@ class ModelProfileTests(unittest.TestCase):
             metadata = read_json(artifacts / "run_metadata.json")
             self.assertEqual(
                 analysis_plan["model_profile"],
-                "flash-translation",
+                "key2-translation",
             )
             self.assertEqual(analysis_plan["provider_profile"], "default")
             self.assertEqual(
@@ -312,11 +385,11 @@ class ModelProfileTests(unittest.TestCase):
             )
             self.assertEqual(
                 translation_plan["model_profile"],
-                "flash-translation",
+                "key2-translation",
             )
             self.assertEqual(
                 translation_plan["provider_profile"],
-                "flash-translation",
+                "key2-translation",
             )
             self.assertEqual(
                 translation_plan["model"],
@@ -332,7 +405,7 @@ class ModelProfileTests(unittest.TestCase):
             )
             self.assertEqual(
                 metadata["model_profile"],
-                "flash-translation",
+                "key2-translation",
             )
             self.assertEqual(
                 metadata["analysis_model"],
@@ -343,7 +416,7 @@ class ModelProfileTests(unittest.TestCase):
                 DEFAULT_ANALYSIS_MODEL,
             )
             self.assertIn(
-                "Model profile: flash-translation",
+                "Model profile: key2-translation",
                 stdout.getvalue(),
             )
             self.assertIn("no API request was sent", stdout.getvalue())

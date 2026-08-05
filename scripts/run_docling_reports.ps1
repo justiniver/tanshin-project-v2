@@ -11,7 +11,7 @@ param(
 
     [switch]$ForceReparse,
 
-    [switch]$FlashTranslation,
+    [switch]$Key2Translation,
 
     [switch]$ProTranslation,
 
@@ -37,6 +37,7 @@ $outputRoot = Join-Path (
     $repositoryRoot
 ) 'output\experiments\docling_text'
 $analysisCooldownSeconds = 75
+$translationCooldownTokenThreshold = 225000
 
 if (-not (Test-Path -LiteralPath $python -PathType Leaf)) {
     throw "Primary project Python was not found at: $python"
@@ -56,9 +57,9 @@ if (-not (Test-Path -LiteralPath $modelsDir -PathType Container)) {
 
 $literalFlags = @{
     Pro = @($SecurityCode | Where-Object { $_ -ieq '--pro' })
-    FlashTranslation = @(
+    Key2Translation = @(
         $SecurityCode |
-            Where-Object { $_ -ieq '--flash-translation' }
+            Where-Object { $_ -ieq '--key2-translation' }
     )
     ProTranslation = @(
         $SecurityCode |
@@ -72,8 +73,8 @@ foreach ($name in $literalFlags.Keys) {
     }
 }
 $usePro = $Pro -or $literalFlags.Pro.Count -eq 1
-$useFlashTranslation = (
-    $FlashTranslation -or $literalFlags.FlashTranslation.Count -eq 1
+$useKey2Translation = (
+    $Key2Translation -or $literalFlags.Key2Translation.Count -eq 1
 )
 $useProTranslation = (
     $ProTranslation -or $literalFlags.ProTranslation.Count -eq 1
@@ -81,13 +82,13 @@ $useProTranslation = (
 $useSol = $Sol -or $literalFlags.Sol.Count -eq 1
 $selectedProfileCount = @(
     $usePro,
-    $useFlashTranslation,
+    $useKey2Translation,
     $useProTranslation,
     $useSol
 ).Where({ $_ }).Count
 if ($selectedProfileCount -gt 1) {
     throw (
-        'Choose only one of --flash-translation, --pro-translation, ' +
+        'Choose only one of --key2-translation, --pro-translation, ' +
         '--pro, or --sol.'
     )
 }
@@ -97,8 +98,8 @@ $modelProfile = if ($useSol) {
     'pro'
 } elseif ($useProTranslation) {
     'pro-translation'
-} elseif ($useFlashTranslation) {
-    'flash-translation'
+} elseif ($useKey2Translation) {
+    'key2-translation'
 } else {
     'default'
 }
@@ -106,7 +107,7 @@ $securityCodeArguments = @(
     $SecurityCode |
         Where-Object {
             $_ -ine '--pro' -and
-            $_ -ine '--flash-translation' -and
+            $_ -ine '--key2-translation' -and
             $_ -ine '--pro-translation' -and
             $_ -ine '--sol'
         }
@@ -190,6 +191,91 @@ function Wait-ForAnalysisCooldown {
         )
         Start-Sleep -Seconds $remaining
     }
+}
+
+function Wait-ForTranslationCooldown {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        [datetime]$AnalysisCompletedAt,
+
+        [Parameter(Mandatory)]
+        [long]$EstimatedTokenLoad
+    )
+
+    $elapsed = ((Get-Date) - $AnalysisCompletedAt).TotalSeconds
+    $remaining = [Math]::Ceiling(
+        [Math]::Max(0, $analysisCooldownSeconds - $elapsed)
+    )
+    if ($remaining -le 0) {
+        Write-Host (
+            "SAME-CREDENTIAL COOLDOWN: already satisfied " +
+            "($analysisCooldownSeconds seconds elapsed)."
+        )
+        return
+    }
+    Write-Host ''
+    Write-Host (
+        "SAME-CREDENTIAL COOLDOWN: estimated two-stage load " +
+        "$EstimatedTokenLoad tokens meets the conservative " +
+        "$translationCooldownTokenThreshold-token threshold; waiting " +
+        "$remaining seconds before translation."
+    )
+    Start-Sleep -Seconds $remaining
+}
+
+function Get-SameCredentialTokenLoad {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        [object]$AnalysisPreparation,
+
+        [object]$TranslationPreparation
+    )
+
+    $translationCost = if ($null -eq $TranslationPreparation) {
+        $AnalysisPreparation.Cost.translation
+    } else {
+        $TranslationPreparation.Cost.translation
+    }
+    return (
+        [long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +
+        [long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +
+        [long]$translationCost.estimated_input_tokens +
+        [long]$translationCost.maximum_output_tokens
+    )
+}
+
+function Test-TranslationCooldownRequired {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        [object]$AnalysisPreparation,
+
+        [Parameter(Mandatory)]
+        [object]$TranslationPreparation
+    )
+
+    if (
+        $AnalysisPreparation.Plan.provider -ne 'gemini' -or
+        $TranslationPreparation.Plan.provider -ne 'gemini'
+    ) {
+        return $false
+    }
+    if (
+        $AnalysisPreparation.Plan.provider_profile -ne
+        $TranslationPreparation.Plan.provider_profile
+    ) {
+        return $false
+    }
+    return (
+        (
+            Get-SameCredentialTokenLoad `
+                -AnalysisPreparation $AnalysisPreparation `
+                -TranslationPreparation $TranslationPreparation
+        ) -ge
+        $translationCooldownTokenThreshold
+    )
 }
 
 function Invoke-OfflinePreparation {
@@ -482,7 +568,27 @@ try {
         'Maximum analysis-plus-English cost: JPY {0:N0}' -f
         ($analysisCost + $translationCost)
     )
+    if ($modelProfile -eq 'default') {
+        Write-Host (
+            'Billing note: This profile uses only GEMINI_API_KEY and should ' +
+            "be free when that key's project is eligible for the Gemini free " +
+            'tier; the JPY estimate is a paid-tier upper bound.'
+        )
+    }
     Write-Host 'Each model stage uses one API attempt; no automatic retries.'
+    if ($modelProfile -in @('default', 'pro')) {
+        Write-Host (
+            'A same-credential analysis-to-translation cooldown applies when ' +
+            'the estimated combined two-stage token load reaches ' +
+            "$translationCooldownTokenThreshold tokens (10% headroom below " +
+            '250,000).'
+        )
+    } else {
+        Write-Host (
+            'No analysis-to-translation cooldown is needed because the ' +
+            'stages use different providers or credentials.'
+        )
+    }
 
     if ($PreviewOnly) {
         Write-Host ''
@@ -531,6 +637,19 @@ try {
                 'Maximum translation cost: JPY {0:N0}' -f
                 $translation.Cost.translation.maximum_stage_cost_jpy
             )
+            if (
+                Test-TranslationCooldownRequired `
+                    -AnalysisPreparation $preparation `
+                    -TranslationPreparation $translation
+            ) {
+                Wait-ForTranslationCooldown `
+                    -AnalysisCompletedAt $previousAnalysisCompletedAt `
+                    -EstimatedTokenLoad (
+                        Get-SameCredentialTokenLoad `
+                            -AnalysisPreparation $preparation `
+                            -TranslationPreparation $translation
+                    )
+            }
             $translationSucceeded = Invoke-LiveStage `
                 -Code $translation.Code `
                 -Stage translation `

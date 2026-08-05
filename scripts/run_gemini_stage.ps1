@@ -12,7 +12,7 @@ param(
 
     [switch]$Pro,
 
-    [switch]$FlashTranslation,
+    [switch]$Key2Translation,
 
     [switch]$ProTranslation
 )
@@ -32,18 +32,18 @@ $oldOffline = $env:TANSHIN_OFFLINE_ONLY
 $oldLive = $env:TANSHIN_LIVE_API
 $selectedProfileCount = @(
     $Pro,
-    $FlashTranslation,
+    $Key2Translation,
     $ProTranslation
 ).Where({ $_ }).Count
 if ($selectedProfileCount -gt 1) {
-    throw "Choose only one of -FlashTranslation, -ProTranslation, or -Pro."
+    throw "Choose only one of -Key2Translation, -ProTranslation, or -Pro."
 }
 $modelProfile = if ($Pro) {
     'pro'
 } elseif ($ProTranslation) {
     'pro-translation'
-} elseif ($FlashTranslation) {
-    'flash-translation'
+} elseif ($Key2Translation) {
+    'key2-translation'
 } else {
     'default'
 }
@@ -104,10 +104,13 @@ try {
         Write-Host "Blueprint SHA-256: $($plan.style_blueprint_sha256)"
     }
     Write-Host ('Estimated maximum stage cost: JPY {0:N0}' -f $stageCost)
-    Write-Host (
-        'Yen conversion assumption: JPY {0:N0} per USD' -f
-        $cost.usd_to_jpy_rate
-    )
+    if ($modelProfile -eq 'default') {
+        Write-Host (
+            'Billing note: This profile uses only GEMINI_API_KEY and should ' +
+            "be free when that key's project is eligible for the Gemini free " +
+            'tier; the JPY estimate is a paid-tier upper bound.'
+        )
+    }
     if ($Stage -eq 'analysis') {
         Write-Host "PDFs submitted: $($plan.files.Count)"
         foreach ($file in $plan.files) {
@@ -140,8 +143,8 @@ try {
             ' -Pro'
         } elseif ($ProTranslation) {
             ' -ProTranslation'
-        } elseif ($FlashTranslation) {
-            ' -FlashTranslation'
+        } elseif ($Key2Translation) {
+            ' -Key2Translation'
         } else {
             ''
         }

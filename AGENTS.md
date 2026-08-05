@@ -33,7 +33,7 @@ The batch preview is also offline and exits before any live branch:
 
 ```powershell
 .\scripts\run_reports.ps1 1808 6361 -PreviewOnly
-.\scripts\run_reports.ps1 1878 --flash-translation -PreviewOnly
+.\scripts\run_reports.ps1 1878 --key2-translation -PreviewOnly
 .\scripts\run_reports.ps1 1878 --pro-translation -PreviewOnly
 ```
 
@@ -79,6 +79,17 @@ normalization, validation, rendering, retry, and failure tests.
   stages. The `sol` profile uses OpenAI for analysis and the secondary Gemini
   profile for translation. Model names are constants in
   `tanshin_pipeline/config.py`; `.env` contains credentials only.
+- The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for both
+  analysis and translation. `--key2-translation` changes only translation to
+  `GEMINI_API_KEY2`. When both stages share a Gemini credential and their
+  combined estimated input plus maximum-output allowance reaches 225,000
+  tokens, the interactive runner waits 75 seconds between them, preserving
+  10% headroom below the 250,000-token planning limit. The separate
+  inter-company analysis cooldown remains in effect.
+- User-facing preflight must not print a JPY/USD conversion assumption. A
+  default, primary-key-only run should be described as free when
+  `GEMINI_API_KEY` is eligible for Gemini's free tier; displayed yen estimates
+  are conservative paid-tier upper bounds.
 - Render yen-denominated financial amounts in English narrative prose using
   one-decimal billion notation at or above ¥1 billion, million notation below
   that threshold, and forms such as `¥95 per share` for per-share amounts.

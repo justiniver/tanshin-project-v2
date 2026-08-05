@@ -11,13 +11,13 @@ from pydantic import BaseModel, ConfigDict, Field
 NonEmpty = Annotated[str, Field(min_length=1)]
 ModelProfile = Literal[
     "default",
-    "flash-translation",
+    "key2-translation",
     "pro-translation",
     "pro",
     "sol",
 ]
 ApiProvider = Literal["gemini", "openai"]
-ProviderProfile = Literal["default", "flash-translation", "pro"]
+ProviderProfile = Literal["default", "key2-translation", "pro"]
 
 
 class StrictModel(BaseModel):

@@ -14,9 +14,9 @@ class ManualWrapperTests(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertIn("[switch]$Execute", script)
         self.assertIn("[switch]$Pro", script)
-        self.assertIn("[switch]$FlashTranslation", script)
+        self.assertIn("[switch]$Key2Translation", script)
         self.assertIn("[switch]$ProTranslation", script)
-        self.assertIn("'flash-translation'", script)
+        self.assertIn("'key2-translation'", script)
         self.assertIn("'pro-translation'", script)
         self.assertIn("--model-profile $modelProfile", script)
         self.assertIn("Read-Host", script)
@@ -25,7 +25,13 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("Archived existing output to:", script)
         self.assertIn("Fact-free style blueprint:", script)
         self.assertIn("Estimated maximum stage cost: JPY {0:N0}", script)
-        self.assertIn("Yen conversion assumption:", script)
+        self.assertIn(
+            "Billing note: This profile uses only GEMINI_API_KEY",
+            script,
+        )
+        self.assertNotIn("Yen conversion assumption:", script)
+        self.assertNotIn("FlashTranslation", script)
+        self.assertNotIn("flash-translation", script)
         self.assertIn("Write-ApiStatusSummary", script)
         helper = (
             REPOSITORY_ROOT / "scripts" / "api_status_helpers.ps1"
@@ -36,7 +42,7 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("REPORT PIPELINE STATE: NOT_COMPLETED", helper)
         self.assertNotIn("$ApiStatus.response_id", helper)
         self.assertNotIn("check_gemini.py", script)
-        self.assertNotIn("GEMINI_API_KEY", script)
+        self.assertNotIn("$env:GEMINI_API_KEY", script)
 
     def test_batch_wrapper_is_sequential_and_keeps_live_guards(self) -> None:
         script = (
@@ -45,20 +51,20 @@ class ManualWrapperTests(unittest.TestCase):
 
         self.assertIn("ValueFromRemainingArguments = $true", script)
         self.assertIn("[switch]$PreviewOnly", script)
-        self.assertIn("[switch]$FlashTranslation", script)
+        self.assertIn("[switch]$Key2Translation", script)
         self.assertIn("[switch]$ProTranslation", script)
         self.assertIn("[switch]$Pro", script)
         self.assertIn("[switch]$Sol", script)
-        self.assertIn("$_ -ieq '--flash-translation'", script)
+        self.assertIn("$_ -ieq '--key2-translation'", script)
         self.assertIn("$_ -ieq '--pro-translation'", script)
         self.assertIn("$_ -ieq '--pro'", script)
         self.assertIn("$_ -ieq '--sol'", script)
         self.assertIn(
-            "Choose only one of --flash-translation, --pro-translation, ",
+            "Choose only one of --key2-translation, --pro-translation, ",
             script,
         )
         self.assertIn("--pro, or --sol.", script)
-        self.assertIn("'flash-translation'", script)
+        self.assertIn("'key2-translation'", script)
         self.assertIn("'pro-translation'", script)
         self.assertIn("'sol'", script)
         self.assertIn("--model-profile $ModelProfile", script)
@@ -81,6 +87,28 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("Wait-ForAnalysisCooldown", script)
         self.assertIn("Start-Sleep -Seconds $remainingSeconds", script)
         self.assertIn("time spent translating counts toward it.", script)
+        self.assertIn("$translationCooldownTokenThreshold = 225000", script)
+        self.assertIn("Wait-ForTranslationCooldown", script)
+        self.assertIn("Get-SameCredentialTokenLoad", script)
+        self.assertIn(
+            "[long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +",
+            script,
+        )
+        self.assertIn(
+            "[long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +",
+            script,
+        )
+        self.assertIn("[long]$translationCost.estimated_input_tokens +", script)
+        self.assertIn("[long]$translationCost.maximum_output_tokens", script)
+        self.assertIn(
+            "$AnalysisPreparation.Plan.provider_profile -ne",
+            script,
+        )
+        self.assertIn(
+            "$TranslationPreparation.Plan.provider_profile",
+            script,
+        )
+        self.assertIn("10% headroom", script)
         self.assertIn(
             "Japanese analysis succeeded for $($preparation.Code). ",
             script,
@@ -97,6 +125,13 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("PREVIEW ONLY: no API request was sent.", script)
         self.assertIn("Estimated maximum analysis cost: JPY {0:N0}", script)
         self.assertIn("Maximum analysis-plus-English cost: JPY {0:N0}", script)
+        self.assertIn(
+            "Billing note: This profile uses only GEMINI_API_KEY",
+            script,
+        )
+        self.assertNotIn("Yen conversion assumption:", script)
+        self.assertNotIn("FlashTranslation", script)
+        self.assertNotIn("flash-translation", script)
         live_stage = script[
             script.index("function Invoke-LiveStage") :
             script.index("function Get-TranslationPreparation")
@@ -110,9 +145,46 @@ class ManualWrapperTests(unittest.TestCase):
             "only if every Japanese analysis succeeds.",
             script,
         )
-        self.assertNotIn("GEMINI_API_KEY", script)
+        self.assertNotIn("$env:GEMINI_API_KEY", script)
         self.assertNotIn("OPENAI_API_KEY", script)
         self.assertNotIn("check_gemini.py", script)
+
+    def test_docling_wrapper_matches_batch_profile_and_cooldown_rules(self) -> None:
+        script = (
+            REPOSITORY_ROOT / "scripts" / "run_docling_reports.ps1"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("[switch]$Key2Translation", script)
+        self.assertIn("$_ -ieq '--key2-translation'", script)
+        self.assertIn("'key2-translation'", script)
+        self.assertNotIn("FlashTranslation", script)
+        self.assertNotIn("flash-translation", script)
+        self.assertIn("$translationCooldownTokenThreshold = 225000", script)
+        self.assertIn("Wait-ForTranslationCooldown", script)
+        self.assertIn("Get-SameCredentialTokenLoad", script)
+        self.assertIn(
+            "[long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +",
+            script,
+        )
+        self.assertIn(
+            "[long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +",
+            script,
+        )
+        self.assertIn("[long]$translationCost.estimated_input_tokens +", script)
+        self.assertIn("[long]$translationCost.maximum_output_tokens", script)
+        self.assertIn(
+            "$AnalysisPreparation.Plan.provider_profile -ne",
+            script,
+        )
+        self.assertIn(
+            "$TranslationPreparation.Plan.provider_profile",
+            script,
+        )
+        self.assertIn(
+            "Billing note: This profile uses only GEMINI_API_KEY",
+            script,
+        )
+        self.assertNotIn("Yen conversion assumption:", script)
 
 
 if __name__ == "__main__":
