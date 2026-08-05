@@ -1,0 +1,36 @@
+TANSHIN PIPELINE WORKING RULES
+
+1. Never manually edit a generated or exemplar Markdown report.
+   Report changes must be made in the generic pipeline, prompts, schemas,
+   normalization, validation, or rendering code and then produced by a normal
+   pipeline run or offline reprocessing.
+   This restriction does not apply to source documentation such as README.md
+   or AGENTS.md when documentation itself is being maintained.
+
+2. Preserve historical runs. Do not improve a report by patching its rendered
+   output or by overwriting historical artifacts outside the pipeline's normal
+   archival process.
+
+3. Judge report quality primarily through direct qualitative review against the
+   exemplars and prior runs. Deterministic comparison scores are diagnostic
+   metadata only and must not be treated as the authoritative quality judgment.
+
+4. Keep all changes company-agnostic. Do not add company-specific report fixes.
+
+5. Never initiate a Gemini or OpenAI API request from automated development
+   work. Every API-backed run must be started manually by the user.
+
+6. Never read, display, log, or modify .env or any API key. Never run a command
+   containing --execute-api, -Execute, or scripts/check_gemini.py --live during
+   automated development.
+
+7. English narrative prose renders yen-denominated statement amounts at or above
+   ¥1 billion in one-decimal billion notation, smaller amounts in million
+   notation, and per-share amounts as forms such as ¥95 per share. Preserve
+   economic value within display precision, scale, sign, percentages, margins,
+   payout ratios, and statement type; never perform foreign-exchange conversion.
+   English evidence ledgers render the original Japanese quotations.
+
+8. Use a Latin-script proper name only when that form is supplied by the source
+   analysis. Otherwise keep the Japanese proper name; never translate a company,
+   product, plan, or counterparty name by meaning.

@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "1808",
+    "company_name_ja": "架空株式会社",
+    "company_name_en": "Example Corporation",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "latest_period_ja": "2026年3月期 通期",
+    "latest_period_en": "FY2026/3 Full year"
+  },
+  "claims": [
+    {
+      "claim_id": "c001",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "主要業績",
+      "body_ja": "最新資料では主要な業績動向が説明されています。",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c002",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "事業動向",
+      "body_ja": "主要事業の動向が説明されています。",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c003",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "見通し",
+      "body_ja": "今後の見通しが示されています。",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c004",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "不確実性",
+      "body_ja": "事業上の不確実性が示されています。",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c005",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "現在地",
+      "body_ja": "最新資料は足元の経営状況を示しています。",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c006",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "長期推移",
+      "body_ja": "長期的な事業の推移を確認できます。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c007",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "継続する基盤",
+      "body_ja": "事業基盤の重視は継続しています。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c008",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "重点の変化",
+      "body_ja": "経営課題の重点は変化しています。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c009",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "資本配分",
+      "body_ja": "資本配分方針は発展しています。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c010",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "確認点",
+      "body_ja": "今後は複数の指標を確認する必要があります。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当期の業績、事業動向、今後の見通し及び不確実性について説明しています。",
+      "period_label_ja": "2026/3期",
+      "period_label_en": "FY2026",
+      "statement_type": "mixed",
+      "source_section": "経営成績等の概況",
+      "tags": ["業績", "見通し", "リスク"]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0001",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "事業基盤、経営課題及び資本配分方針について説明しています。",
+      "period_label_ja": "2025/3期",
+      "period_label_en": "FY2025",
+      "statement_type": "mixed",
+      "source_section": "経営方針",
+      "tags": ["戦略", "資本配分"]
+    }
+  ],
+  "model_notes": ["Stored offline fixture."]
+}

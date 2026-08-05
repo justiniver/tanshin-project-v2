@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-04T04:59:08.745319+00:00",
+  "failure_count": 32,
+  "companies": [
+    {
+      "input_index": 50,
+      "security_code": "9336",
+      "company_name": "大栄環境",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T07:50:03.943525+00:00",
+      "completed_at": "2026-08-03T07:50:04.249731+00:00",
+      "discovery": {
+        "primary_count": 14,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 56,
+      "security_code": "9147",
+      "company_name": "ＮＩＰＰＯＮ ＥＸＰＲＥＳＳホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T07:50:33.410145+00:00",
+      "completed_at": "2026-08-03T07:50:33.653229+00:00",
+      "discovery": {
+        "primary_count": 18,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 75,
+      "security_code": "9023",
+      "company_name": "東京地下鉄",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 2 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T07:52:07.858543+00:00",
+      "completed_at": "2026-08-03T07:52:08.101258+00:00",
+      "discovery": {
+        "primary_count": 8,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2025,
+          2026
+        ],
+        "available_year_end_count": 2,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 97,
+      "security_code": "8729",
+      "company_name": "ソニーフィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 1 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T07:53:54.449482+00:00",
+      "completed_at": "2026-08-03T07:53:54.704154+00:00",
+      "discovery": {
+        "primary_count": 3,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2026
+        ],
+        "available_year_end_count": 1,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 147,
+      "security_code": "8303",
+      "company_name": "ＳＢＩ新生銀行",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 1 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T07:58:33.001187+00:00",
+      "completed_at": "2026-08-03T07:58:33.226061+00:00",
+      "discovery": {
+        "primary_count": 3,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2026
+        ],
+        "available_year_end_count": 1,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 215,
+      "security_code": "7685",
+      "company_name": "ＢｕｙＳｅｌｌ Ｔｅｃｈｎｏｌｏｇｉｅｓ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 7 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:04:14.986023+00:00",
+      "completed_at": "2026-08-03T08:04:15.215927+00:00",
+      "discovery": {
+        "primary_count": 26,
+        "excluded_non_primary_count": 3
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "available_year_end_count": 7,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 224,
+      "security_code": "7389",
+      "company_name": "あいちフィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:04:53.411206+00:00",
+      "completed_at": "2026-08-03T08:04:53.626205+00:00",
+      "discovery": {
+        "primary_count": 16,
+        "excluded_non_primary_count": 4
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 225,
+      "security_code": "7381",
+      "company_name": "ＣＣＩグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:04:54.140337+00:00",
+      "completed_at": "2026-08-03T08:04:54.410390+00:00",
+      "discovery": {
+        "primary_count": 20,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 226,
+      "security_code": "7380",
+      "company_name": "十六フィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:04:54.918441+00:00",
+      "completed_at": "2026-08-03T08:04:55.173089+00:00",
+      "discovery": {
+        "primary_count": 19,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 227,
+      "security_code": "7337",
+      "company_name": "ひろぎんホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 6 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:04:55.689775+00:00",
+      "completed_at": "2026-08-03T08:04:55.895643+00:00",
+      "discovery": {
+        "primary_count": 23,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 6,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 318,
+      "security_code": "6526",
+      "company_name": "ソシオネクスト",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:12:40.752573+00:00",
+      "completed_at": "2026-08-03T08:12:40.967709+00:00",
+      "discovery": {
+        "primary_count": 16,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 319,
+      "security_code": "6525",
+      "company_name": "ＫＯＫＵＳＡＩ ＥＬＥＣＴＲＩＣ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 3 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:12:41.478377+00:00",
+      "completed_at": "2026-08-03T08:12:41.712943+00:00",
+      "discovery": {
+        "primary_count": 11,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 3,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 381,
+      "security_code": "5844",
+      "company_name": "京都フィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 3 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:17:38.433009+00:00",
+      "completed_at": "2026-08-03T08:17:38.702089+00:00",
+      "discovery": {
+        "primary_count": 13,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 3,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 382,
+      "security_code": "5838",
+      "company_name": "楽天銀行",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:17:39.226267+00:00",
+      "completed_at": "2026-08-03T08:17:39.466781+00:00",
+      "discovery": {
+        "primary_count": 13,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 383,
+      "security_code": "5832",
+      "company_name": "ちゅうぎんフィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:17:39.990581+00:00",
+      "completed_at": "2026-08-03T08:17:40.210686+00:00",
+      "discovery": {
+        "primary_count": 15,
+        "excluded_non_primary_count": 2
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 384,
+      "security_code": "5831",
+      "company_name": "しずおかフィナンシャルグループ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:17:40.733964+00:00",
+      "completed_at": "2026-08-03T08:17:40.946713+00:00",
+      "discovery": {
+        "primary_count": 15,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 385,
+      "security_code": "5830",
+      "company_name": "いよぎんホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 4 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:17:41.469389+00:00",
+      "completed_at": "2026-08-03T08:17:41.782284+00:00",
+      "discovery": {
+        "primary_count": 15,
+        "excluded_non_primary_count": 3
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 4,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 397,
+      "security_code": "547A",
+      "company_name": "ムニノバホールディングス",
+      "manager_code": "547A0",
+      "status": "incomplete_history",
+      "reason_code": "no_primary_tanshin_found",
+      "reason": "JPX returned no primary Tanshin PDFs for 547A.",
+      "started_at": "2026-08-03T08:51:57.077934+00:00",
+      "completed_at": "2026-08-03T08:51:57.377574+00:00",
+      "discovery": {
+        "primary_count": 0,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [],
+        "available_year_end_count": 0
+      }
+    },
+    {
+      "input_index": 402,
+      "security_code": "543A",
+      "company_name": "ＡＲＣＨＩＯＮ",
+      "manager_code": "543A0",
+      "status": "incomplete_history",
+      "reason_code": "no_primary_tanshin_found",
+      "reason": "JPX returned no primary Tanshin PDFs for 543A.",
+      "started_at": "2026-08-03T08:51:57.893702+00:00",
+      "completed_at": "2026-08-03T08:51:58.105834+00:00",
+      "discovery": {
+        "primary_count": 0,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [],
+        "available_year_end_count": 0
+      }
+    },
+    {
+      "input_index": 423,
+      "security_code": "5076",
+      "company_name": "インフロニア・ホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:20:50.794204+00:00",
+      "completed_at": "2026-08-03T08:20:51.098986+00:00",
+      "discovery": {
+        "primary_count": 21,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 427,
+      "security_code": "5016",
+      "company_name": "ＪＸ金属",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 2 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:21:07.509250+00:00",
+      "completed_at": "2026-08-03T08:21:07.733441+00:00",
+      "discovery": {
+        "primary_count": 5,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2025,
+          2026
+        ],
+        "available_year_end_count": 2,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 439,
+      "security_code": "4887",
+      "company_name": "サワイグループホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:21:58.208606+00:00",
+      "completed_at": "2026-08-03T08:21:58.457953+00:00",
+      "discovery": {
+        "primary_count": 20,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 440,
+      "security_code": "485A",
+      "company_name": "パワーエックス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 1 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:21:58.971911+00:00",
+      "completed_at": "2026-08-03T08:21:59.234538+00:00",
+      "discovery": {
+        "primary_count": 2,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2025
+        ],
+        "available_year_end_count": 1,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 483,
+      "security_code": "4483",
+      "company_name": "ＪＭＤＣ",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 7 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:25:33.006830+00:00",
+      "completed_at": "2026-08-03T08:25:33.273865+00:00",
+      "discovery": {
+        "primary_count": 26,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 7,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 489,
+      "security_code": "4373",
+      "company_name": "シンプレクス・ホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:25:51.712946+00:00",
+      "completed_at": "2026-08-03T08:25:51.955662+00:00",
+      "discovery": {
+        "primary_count": 20,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 493,
+      "security_code": "429A",
+      "company_name": "テクセンドフォトマスク",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 1 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:26:09.209854+00:00",
+      "completed_at": "2026-08-03T08:26:09.425697+00:00",
+      "discovery": {
+        "primary_count": 3,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2026
+        ],
+        "available_year_end_count": 1,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 501,
+      "security_code": "4194",
+      "company_name": "ビジョナル",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 5 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:26:47.023435+00:00",
+      "completed_at": "2026-08-03T08:26:47.255554+00:00",
+      "discovery": {
+        "primary_count": 21,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "available_year_end_count": 5,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 506,
+      "security_code": "417A",
+      "company_name": "ブルーゾーンホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 1 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:26:59.049940+00:00",
+      "completed_at": "2026-08-03T08:26:59.333661+00:00",
+      "discovery": {
+        "primary_count": 2,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2026
+        ],
+        "available_year_end_count": 1,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 541,
+      "security_code": "3449",
+      "company_name": "テクノフレックス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 7 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:29:34.361707+00:00",
+      "completed_at": "2026-08-03T08:29:34.627499+00:00",
+      "discovery": {
+        "primary_count": 26,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "available_year_end_count": 7,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 581,
+      "security_code": "285A",
+      "company_name": "キオクシアホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 2 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:32:54.678709+00:00",
+      "completed_at": "2026-08-03T08:32:54.917691+00:00",
+      "discovery": {
+        "primary_count": 7,
+        "excluded_non_primary_count": 1
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2025,
+          2026
+        ],
+        "available_year_end_count": 2,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 593,
+      "security_code": "268A",
+      "company_name": "リガク・ホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 2 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:33:56.597672+00:00",
+      "completed_at": "2026-08-03T08:33:56.780761+00:00",
+      "discovery": {
+        "primary_count": 8,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2024,
+          2025
+        ],
+        "available_year_end_count": 2,
+        "required_years": 10
+      }
+    },
+    {
+      "input_index": 659,
+      "security_code": "141A",
+      "company_name": "トライアルホールディングス",
+      "status": "incomplete_history",
+      "reason_code": "insufficient_year_end_history",
+      "reason": "Only 2 distinct year-end fiscal years were available; 10 are required.",
+      "started_at": "2026-08-03T08:39:17.981342+00:00",
+      "completed_at": "2026-08-03T08:39:18.149363+00:00",
+      "discovery": {
+        "primary_count": 9,
+        "excluded_non_primary_count": 0
+      },
+      "coverage": {
+        "available_fiscal_years": [
+          2024,
+          2025
+        ],
+        "available_year_end_count": 2,
+        "required_years": 10
+      }
+    }
+  ]
+}

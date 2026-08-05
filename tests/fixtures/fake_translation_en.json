@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "1808",
+    "company_name_ja": "架空株式会社",
+    "company_name_en": "Example Corporation",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "latest_period_ja": "2026年3月期 通期",
+    "latest_period_en": "FY2026/3 Full year"
+  },
+  "claims": [
+    {
+      "claim_id": "c001",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_en": "Main performance",
+      "body_en": "The latest filing describes the main performance trends.",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c002",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_en": "Business trends",
+      "body_en": "The filing describes developments in the main businesses.",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c003",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_en": "Outlook",
+      "body_en": "The filing presents the forward outlook.",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c004",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_en": "Uncertainty",
+      "body_en": "The filing identifies business uncertainty.",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c005",
+      "section": "latest.context",
+      "order": 1,
+      "headline_en": "Current position",
+      "body_en": "The latest filing shows the current management position.",
+      "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c006",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_en": "Long-term development",
+      "body_en": "The evidence permits a view of longer-term business development.",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c007",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_en": "Persistent foundation",
+      "body_en": "Management continued to emphasize the business foundation.",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c008",
+      "section": "trend.change",
+      "order": 1,
+      "headline_en": "Changing priorities",
+      "body_en": "The emphasis of management issues changed over the period.",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c009",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_en": "Capital allocation",
+      "body_en": "The capital-allocation policy developed over the period.",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "c010",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_en": "Monitoring point",
+      "body_en": "Future analysis should monitor several indicators together.",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    }
+  ],
+  "evidence_translations": [
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+      "quote_en": "The filing explains performance, business trends, the outlook, and uncertainty for the period."
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0001",
+      "quote_en": "The filing explains the business foundation, management issues, and capital-allocation policy."
+    }
+  ],
+  "model_notes": ["Stored offline fixture."]
+}
