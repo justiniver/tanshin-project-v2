@@ -57,12 +57,16 @@ class DocumentationTests(unittest.TestCase):
         )
         self.assertIn("GPT-5.6 Sol", readme)
         self.assertIn("Gemini Pro for optional English", readme)
-        self.assertIn("GEMINI_MODEL2=gemini-3.1-pro-preview", readme)
+        self.assertIn(
+            "Model names are fixed in `tanshin_pipeline/config.py`",
+            readme,
+        )
+        self.assertIn("`.env` stores credentials only", readme)
         self.assertIn(
             "`--pro-translation` keeps primary-key Flash analysis",
             readme,
         )
-        self.assertIn("`GEMINI_MODEL2` is not used by this profile", readme)
+        self.assertNotIn("GEMINI_MODEL", readme)
         self.assertIn("[COMMANDS.md](COMMANDS.md)", readme)
         self.assertIn("company overview", readme)
         self.assertIn("through 200,000 prompt tokens", readme)
@@ -94,13 +98,23 @@ class DocumentationTests(unittest.TestCase):
             env_example,
         )
         self.assertIn(
-            "GEMINI_MODEL2=gemini-3.1-pro-preview",
-            env_example,
-        )
-        self.assertIn(
             "OPENAI_API_KEY=replace-with-your-api-key",
             env_example,
         )
+        assignments = [
+            line.split("=", 1)[0]
+            for line in env_example.splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        ]
+        self.assertEqual(
+            assignments,
+            [
+                "GEMINI_API_KEY",
+                "GEMINI_API_KEY2",
+                "OPENAI_API_KEY",
+            ],
+        )
+        self.assertNotIn("GEMINI_MODEL", env_example)
         self.assertNotIn("AIza", env_example)
 
     def test_ai_contributor_guide_repeats_the_hard_safety_rules(self) -> None:
@@ -120,6 +134,11 @@ class DocumentationTests(unittest.TestCase):
             "run_reports.ps1 1878 --sol -PreviewOnly",
         ):
             self.assertIn(required, guide)
+        self.assertIn(
+            "Model names are fixed in `tanshin_pipeline/config.py`",
+            guide,
+        )
+        self.assertNotIn("GEMINI_MODEL", guide)
 
     def test_concise_command_reference_lists_every_model_profile(self) -> None:
         commands = (REPOSITORY_ROOT / "COMMANDS.md").read_text(
@@ -131,11 +150,12 @@ class DocumentationTests(unittest.TestCase):
             "--pro-translation",
             "--pro",
             "--sol",
-            "Gemini Flash, primary key",
-            "Gemini Flash Lite, primary key",
-            "Gemini Flash, secondary key",
-            "Gemini Pro, secondary key",
-            "GPT-5.6 Sol, OpenAI key",
+            "`gemini-3.6-flash`, primary key",
+            "`gemini-3.5-flash-lite`, primary key",
+            "`gemini-3.6-flash`, secondary key",
+            "`gemini-3.1-pro-preview`, secondary key",
+            "`gpt-5.6-sol`, OpenAI key",
+            "`GEMINI_API_KEY`, `GEMINI_API_KEY2`, and `OPENAI_API_KEY`",
             "-PreviewOnly",
             "multiple tickers",
         ):

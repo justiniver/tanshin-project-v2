@@ -64,20 +64,15 @@ To use a second Gemini project or quota pool for translation, also configure:
 GEMINI_API_KEY2=replace-with-your-second-api-key
 ```
 
-For profiles that use Gemini 3.1 Pro Preview, additionally configure:
-
-```text
-GEMINI_MODEL2=gemini-3.1-pro-preview
-```
-
 The secondary key is used only by explicitly selected stages:
 
 - `--flash-translation` keeps primary-key Flash analysis and uses
   `gemini-3.6-flash` with `GEMINI_API_KEY2` for translation;
 - `--pro-translation` keeps primary-key Flash analysis and uses
-  `GEMINI_MODEL2` with `GEMINI_API_KEY2` for translation;
-- `--pro` uses the secondary Pro setup for both stages;
-- `--sol` uses OpenAI for analysis and the secondary Pro setup for translation.
+  `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` for translation;
+- `--pro` uses `gemini-3.1-pro-preview` and the secondary key for both stages;
+- `--sol` uses OpenAI for analysis and `gemini-3.1-pro-preview` with the
+  secondary key for translation.
 
 To enable the hybrid Sol profile, create an
 [OpenAI API key](https://platform.openai.com/api-keys) and also configure:
@@ -88,9 +83,12 @@ OPENAI_API_KEY=replace-with-your-api-key
 
 The `--sol` profile uses `gpt-5.6-sol` and `OPENAI_API_KEY` only for Japanese
 analysis. If English is requested, translation still uses
-`GEMINI_MODEL2=gemini-3.1-pro-preview` and `GEMINI_API_KEY2`. Model names and
-provider names are safe to display in request plans; no key is written to
-prompts, logs, reports, or artifacts.
+`gemini-3.1-pro-preview` and `GEMINI_API_KEY2`.
+
+Model names are fixed in `tanshin_pipeline/config.py` and selected through the
+CLI profile. `.env` stores credentials only. Model and provider names are safe
+to display in request plans; no key is written to prompts, logs, reports, or
+artifacts.
 
 Do not commit `.env`, paste the key into terminal history, or include it in
 console output. The repository ignores `.env`, and artifact writers never
@@ -273,9 +271,9 @@ are mutually exclusive.
 | --- | --- | --- |
 | default | `gemini-3.6-flash` | `gemini-3.5-flash-lite` |
 | `--flash-translation` | `gemini-3.6-flash` | `gemini-3.6-flash` with `GEMINI_API_KEY2` |
-| `--pro-translation` | `gemini-3.6-flash` | `GEMINI_MODEL2` |
-| `--pro` | `GEMINI_MODEL2` | `GEMINI_MODEL2` |
-| `--sol` | `gpt-5.6-sol` | `GEMINI_MODEL2` |
+| `--pro-translation` | `gemini-3.6-flash` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
+| `--pro` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
+| `--sol` | `gpt-5.6-sol` with `OPENAI_API_KEY` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 
 The runner:
 
@@ -295,12 +293,13 @@ The runner:
 Without a model option, the existing behavior is unchanged:
 `gemini-3.6-flash` performs analysis and `gemini-3.5-flash-lite` performs
 translation. With `--flash-translation`, analysis remains on primary-key Flash
-and translation uses the same Flash model with `GEMINI_API_KEY2`, independently
-of `GEMINI_MODEL2`. With `--pro-translation`, Flash analysis continues to use
-`GEMINI_API_KEY`, while English translation uses `GEMINI_MODEL2` and
-`GEMINI_API_KEY2`. With the Pro option, the secondary Pro setup performs both
+and translation uses the same Flash model with `GEMINI_API_KEY2`. With
+`--pro-translation`, Flash analysis continues to use `GEMINI_API_KEY`, while
+English translation uses the fixed `gemini-3.1-pro-preview` model and
+`GEMINI_API_KEY2`. With the Pro option, that secondary Pro setup performs both
 stages. With the Sol option, OpenAI performs analysis and the secondary Gemini
-Pro setup performs translation.
+Pro setup performs translation. Model names come from
+`tanshin_pipeline/config.py`, not `.env`.
 
 The selected company list is batch-wide: there is no later per-company
 selection prompt. Companies are processed in the order supplied—for example,
@@ -352,15 +351,16 @@ and selection reasons.
 ### Japanese analysis
 
 Under the default profile, the analysis stage uses `gemini-3.6-flash`. Under
-the Pro profile, it uses `GEMINI_MODEL2`. The Pro-translation profile keeps the
-default Flash analysis model, as does the Flash-translation profile. Under the
-Sol profile, it uses `gpt-5.6-sol`. Selected PDFs are sent inline as PDF parts;
-neither the Gemini Files API nor the OpenAI Files API is used. Sol preflight
-rejects a selected file set if any PDF or the combined inline file payload
-reaches 50 MB. Sol uses OpenAI's low PDF detail level by default: every PDF and
-its extracted text remain in the request, while page images use fewer input
-tokens than high detail. The selected detail level is displayed during
-preflight and recorded in `request_plan_analysis.json`.
+the Pro profile, it uses the source-configured `gemini-3.1-pro-preview`. The
+Pro-translation profile keeps the default Flash analysis model, as does the
+Flash-translation profile. Under the Sol profile, it uses `gpt-5.6-sol`.
+Selected PDFs are sent inline as PDF parts; neither the Gemini Files API nor the
+OpenAI Files API is used. Sol preflight rejects a selected file set if any PDF
+or the combined inline file payload reaches 50 MB. Sol uses OpenAI's low PDF
+detail level by default: every PDF and its extracted text remain in the request,
+while page images use fewer input tokens than high detail. The selected detail
+level is displayed during preflight and recorded in
+`request_plan_analysis.json`.
 
 The prompt asks for:
 
@@ -420,10 +420,11 @@ assessed, the overall fallback is `0.50`. The full calculation is stored in
 Under the default profile, the translation stage uses
 `gemini-3.5-flash-lite`. The Flash-translation profile uses
 `gemini-3.6-flash` with the secondary Gemini key. The Pro-translation, Pro, and
-Sol profiles use `GEMINI_MODEL2`. The stage receives a compact projection of the
-validated Japanese analysis, not the PDFs. That projection contains only issuer
-context, claim IDs, Japanese claim prose, and figure/date/qualifier surfaces that
-require English rendering. The model returns a translation patch; Python restores
+Sol profiles use the source-configured `gemini-3.1-pro-preview` with the
+secondary Gemini key. The stage receives a compact projection of the validated
+Japanese analysis, not the PDFs. That projection contains only issuer context,
+claim IDs, Japanese claim prose, and figure/date/qualifier surfaces that require
+English rendering. The model returns a translation patch; Python restores
 schema version, identity, section, ordering, evidence links, statement types,
 flags, and source Japanese surfaces from the same validated analysis snapshot.
 
@@ -653,21 +654,21 @@ Confirm that `.env` exists and contains the key required by the selected
 profile. Never print the key itself.
 
 For a Flash-translation run, confirm that `.env` contains
-`GEMINI_API_KEY2`. `GEMINI_MODEL2` is not used by this profile.
+`GEMINI_API_KEY2`.
 
-For a Pro run, confirm that `.env` contains both `GEMINI_API_KEY2` and
-`GEMINI_MODEL2=gemini-3.1-pro-preview`. Offline preflight loads the local
-configuration only to verify that the secondary model matches the inspected
-request; it constructs no client, displays no key value, and cannot send a
-request. The secondary credential is selected only inside the human-authorized
-live boundary.
+For a Pro run, confirm that `.env` contains `GEMINI_API_KEY2`. The model name is
+fixed in `tanshin_pipeline/config.py`; it is not configured through `.env`.
+Offline preflight constructs no client, displays no key value, and cannot send
+a request. The secondary credential is selected only inside the
+human-authorized live boundary.
 
-The same secondary settings are required for `--pro-translation`, but only its
-translation stage uses them.
+The same secondary key is required for `--pro-translation`, but only its
+translation stage uses it.
 
 For a Sol run, also confirm that `.env` contains `OPENAI_API_KEY`. The Sol
 preflight does not construct an OpenAI client or inspect the key. If English is
-requested, the same secondary Gemini Pro settings described above are required.
+requested, `GEMINI_API_KEY2` is also required for the fixed secondary Gemini Pro
+translation profile.
 
 ### Request ID mismatch
 

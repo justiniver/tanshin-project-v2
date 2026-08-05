@@ -37,27 +37,13 @@ The batch preview is also offline and exits before any live branch:
 .\scripts\run_reports.ps1 1878 --pro-translation -PreviewOnly
 ```
 
-The hybrid OpenAI-analysis preview is also offline. In automated tests, supply
-the non-secret secondary model name in the process rather than reading `.env`:
+The hybrid OpenAI-analysis and secondary Pro-profile previews are also offline.
+Model names are fixed in `tanshin_pipeline/config.py`, so no model environment
+override is needed:
 
 ```powershell
-$env:GEMINI_MODEL2 = "gemini-3.1-pro-preview"
 .\scripts\run_reports.ps1 1878 --sol -PreviewOnly
-```
-
-The secondary Pro-profile preview is offline as well, but its normal human
-preflight reads the configured model name from `.env`. AI contributors must
-not inspect `.env`; inject only the non-secret model name under the testing
-guard instead:
-
-```powershell
-$env:TANSHIN_OFFLINE_ONLY = "1"
-$env:TANSHIN_TESTING = "1"
-$env:GEMINI_MODEL2 = "gemini-3.1-pro-preview"
 .\scripts\run_reports.ps1 1878 --pro -PreviewOnly
-Remove-Item Env:GEMINI_MODEL2
-Remove-Item Env:TANSHIN_TESTING
-Remove-Item Env:TANSHIN_OFFLINE_ONLY
 ```
 
 Use mocks or stored fixtures for request construction, response parsing,
@@ -89,9 +75,10 @@ normalization, validation, rendering, retry, and failure tests.
   report quality.
 - Keep model-profile labels and model names inspectable, but never log
   `GEMINI_API_KEY`, `GEMINI_API_KEY2`, or `OPENAI_API_KEY`. The `pro` profile
-  uses the secondary Gemini model and credential for both stages. The `sol`
-  profile uses OpenAI for analysis and the secondary Gemini profile for
-  translation.
+  uses the source-configured secondary Gemini model and credential for both
+  stages. The `sol` profile uses OpenAI for analysis and the secondary Gemini
+  profile for translation. Model names are constants in
+  `tanshin_pipeline/config.py`; `.env` contains credentials only.
 - Render yen-denominated financial amounts in English narrative prose using
   one-decimal billion notation at or above ¥1 billion, million notation below
   that threshold, and forms such as `¥95 per share` for per-share amounts.

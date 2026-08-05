@@ -34,3 +34,7 @@ TANSHIN PIPELINE WORKING RULES
 8. Use a Latin-script proper name only when that form is supplied by the source
    analysis. Otherwise keep the Japanese proper name; never translate a company,
    product, plan, or counterparty name by meaning.
+
+9. Keep model names as source constants in tanshin_pipeline/config.py. The .env
+   file is credentials-only and may contain GEMINI_API_KEY, GEMINI_API_KEY2,
+   and OPENAI_API_KEY; do not add model-name environment variables.

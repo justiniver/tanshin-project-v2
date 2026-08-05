@@ -18,6 +18,7 @@ from tanshin_pipeline.config import (
     DEFAULT_MODEL_PROFILE,
     DEFAULT_TRANSLATION_MODEL,
     FLASH_TRANSLATION_MODEL_PROFILE,
+    PRO_GEMINI_MODEL,
     PRO_MODEL_PROFILE,
 )
 
@@ -49,25 +50,16 @@ def get_gemini_model(
     profile: GeminiProfile = DEFAULT_MODEL_PROFILE,
     stage: GeminiStage = "analysis",
 ) -> str:
-    """Return the configured model for one profile and pipeline stage."""
+    """Return the fixed repository model for one profile and pipeline stage."""
 
-    load_repository_environment()
     selected_profile = _validate_profile(profile)
     if selected_profile == PRO_MODEL_PROFILE:
-        model = os.getenv("GEMINI_MODEL2", "").strip()
-        if not model:
-            raise RuntimeError(
-                "GEMINI_MODEL2 is not configured for the Pro profile."
-            )
-        return model
+        return PRO_GEMINI_MODEL
     if selected_profile == FLASH_TRANSLATION_MODEL_PROFILE:
         return DEFAULT_ANALYSIS_MODEL
     if stage == "translation":
         return DEFAULT_TRANSLATION_MODEL
-    return (
-        os.getenv("GEMINI_MODEL", DEFAULT_ANALYSIS_MODEL).strip()
-        or DEFAULT_ANALYSIS_MODEL
-    )
+    return DEFAULT_ANALYSIS_MODEL
 
 
 def get_gemini_client(

@@ -4,7 +4,7 @@ import io
 import os
 import socket
 import unittest
-from contextlib import redirect_stderr, redirect_stdout
+from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -43,10 +43,24 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 
 
 class ModelProfileTests(unittest.TestCase):
-    def test_default_models_remain_unchanged(self) -> None:
+    def test_model_names_are_fixed_and_ignore_legacy_environment_values(
+        self,
+    ) -> None:
         with (
-            patch("tanshin_api.gemini.load_repository_environment"),
-            patch.dict(os.environ, {"GEMINI_MODEL": ""}, clear=False),
+            patch(
+                "tanshin_api.gemini.load_repository_environment",
+                side_effect=AssertionError(
+                    "Model selection must not read .env."
+                ),
+            ),
+            patch.dict(
+                os.environ,
+                {
+                    "GEMINI_MODEL": "legacy-analysis-override",
+                    "GEMINI_MODEL2": "legacy-pro-override",
+                },
+                clear=False,
+            ),
         ):
             self.assertEqual(
                 get_gemini_model("default", "analysis"),
@@ -56,24 +70,6 @@ class ModelProfileTests(unittest.TestCase):
                 get_gemini_model("default", "translation"),
                 DEFAULT_TRANSLATION_MODEL,
             )
-
-    def test_pro_model_requires_secondary_model_setting(self) -> None:
-        with (
-            patch("tanshin_api.gemini.load_repository_environment"),
-            patch.dict(os.environ, {"GEMINI_MODEL2": ""}, clear=False),
-        ):
-            with self.assertRaisesRegex(RuntimeError, "GEMINI_MODEL2"):
-                get_gemini_model("pro", "analysis")
-
-    def test_pro_model_uses_secondary_model_setting_for_both_stages(self) -> None:
-        with (
-            patch("tanshin_api.gemini.load_repository_environment"),
-            patch.dict(
-                os.environ,
-                {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
-                clear=False,
-            ),
-        ):
             self.assertEqual(
                 get_gemini_model("pro", "analysis"),
                 PRO_GEMINI_MODEL,
@@ -82,18 +78,6 @@ class ModelProfileTests(unittest.TestCase):
                 get_gemini_model("pro", "translation"),
                 PRO_GEMINI_MODEL,
             )
-
-    def test_flash_translation_uses_fixed_flash_model_without_model2(
-        self,
-    ) -> None:
-        with (
-            patch("tanshin_api.gemini.load_repository_environment"),
-            patch.dict(
-                os.environ,
-                {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
-                clear=False,
-            ),
-        ):
             self.assertEqual(
                 get_gemini_model("flash-translation", "translation"),
                 DEFAULT_ANALYSIS_MODEL,
@@ -146,7 +130,10 @@ class ModelProfileTests(unittest.TestCase):
             with (
                 patch.dict(
                     os.environ,
-                    {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
+                    {
+                        "GEMINI_MODEL": "legacy-analysis-override",
+                        "GEMINI_MODEL2": "legacy-pro-override",
+                    },
                     clear=False,
                 ),
                 patch.object(
@@ -201,11 +188,6 @@ class ModelProfileTests(unittest.TestCase):
             output_root = temp / "output"
             stdout = io.StringIO()
             with (
-                patch.dict(
-                    os.environ,
-                    {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
-                    clear=False,
-                ),
                 patch.object(
                     socket,
                     "socket",
@@ -289,11 +271,6 @@ class ModelProfileTests(unittest.TestCase):
             output_root = temp / "output"
             stdout = io.StringIO()
             with (
-                patch.dict(
-                    os.environ,
-                    {"GEMINI_MODEL2": ""},
-                    clear=False,
-                ),
                 patch.object(
                     socket,
                     "socket",
@@ -376,11 +353,6 @@ class ModelProfileTests(unittest.TestCase):
             output_root = temp / "output"
             stdout = io.StringIO()
             with (
-                patch.dict(
-                    os.environ,
-                    {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
-                    clear=False,
-                ),
                 patch.object(
                     socket,
                     "socket",
@@ -434,29 +406,6 @@ class ModelProfileTests(unittest.TestCase):
             self.assertNotIn("OPENAI_API_KEY", stdout.getvalue())
             self.assertIn("API provider: openai", stdout.getvalue())
             self.assertIn("PDF detail: low", stdout.getvalue())
-
-    def test_unknown_pro_model_fails_preflight_concisely(self) -> None:
-        stderr = io.StringIO()
-        with (
-            patch(
-                "tanshin_api.gemini.get_gemini_model",
-                return_value="unsupported-pro-model",
-            ),
-            redirect_stderr(stderr),
-        ):
-            exit_code = main(
-                [
-                    "1808",
-                    "--repository-root",
-                    str(REPOSITORY_ROOT),
-                    "--gemini-profile",
-                    "pro",
-                ]
-            )
-        self.assertEqual(exit_code, 2)
-        self.assertIn("CONFIGURATION ERROR:", stderr.getvalue())
-        self.assertIn("GEMINI_MODEL2", stderr.getvalue())
-        self.assertNotIn("Traceback", stderr.getvalue())
 
     def test_pro_pricing_switches_above_200k_prompt_tokens(self) -> None:
         standard = model_price_for_input_tokens(PRO_GEMINI_MODEL, 200_000)
@@ -536,27 +485,22 @@ class ModelProfileTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
-            with patch.dict(
-                os.environ,
-                {"GEMINI_MODEL2": PRO_GEMINI_MODEL},
-                clear=False,
-            ):
-                analysis_run = prepare_analysis(
-                    REPOSITORY_ROOT,
-                    "1808",
-                    output_root=output_root,
-                    model_profile="sol",
-                )
-                analysis = materialize_japanese_analysis(
-                    parse_japanese_analysis_payload(read_json(fixture))
-                )
-                write_json(analysis_run.paths.analysis_normalized, analysis)
-                translation_run = prepare_translation(
-                    REPOSITORY_ROOT,
-                    "1808",
-                    output_root=output_root,
-                    model_profile="sol",
-                )
+            analysis_run = prepare_analysis(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+                model_profile="sol",
+            )
+            analysis = materialize_japanese_analysis(
+                parse_japanese_analysis_payload(read_json(fixture))
+            )
+            write_json(analysis_run.paths.analysis_normalized, analysis)
+            translation_run = prepare_translation(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+                model_profile="sol",
+            )
         self.assertEqual(translation_run.plan.model_profile, "sol")
         self.assertEqual(translation_run.plan.provider, "gemini")
         self.assertEqual(translation_run.plan.provider_profile, "pro")

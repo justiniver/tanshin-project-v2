@@ -30,7 +30,7 @@ from experiments.docling_text_pipeline.pipeline import (
     build_text_analysis_spec,
     prepare_text_analysis,
 )
-from tanshin_pipeline.config import OPENAI_SOL_MODEL, PRO_GEMINI_MODEL
+from tanshin_pipeline.config import OPENAI_SOL_MODEL
 from tanshin_pipeline.gemini_runtime import execute_request
 from tanshin_pipeline.openai_runtime import (
     execute_request as execute_openai_request,
@@ -350,20 +350,16 @@ class DoclingTextExperimentTests(unittest.TestCase):
         self.assertTrue(fake.closed)
 
     def test_openai_runtime_sends_only_text_and_no_input_file(self) -> None:
-        with patch(
-            "tanshin_pipeline.pipeline._configured_pro_gemini_model",
-            return_value=PRO_GEMINI_MODEL,
-        ):
-            spec = build_text_analysis_spec(
-                REPOSITORY_ROOT,
-                self.manifest,
-                '<PHYSICAL_PAGE number="1">テスト</PHYSICAL_PAGE>',
-                {
-                    "corpus_sha256": sha256_text("test"),
-                    "config_sha256": "fake",
-                },
-                model_profile="sol",
-            )
+        spec = build_text_analysis_spec(
+            REPOSITORY_ROOT,
+            self.manifest,
+            '<PHYSICAL_PAGE number="1">テスト</PHYSICAL_PAGE>',
+            {
+                "corpus_sha256": sha256_text("test"),
+                "config_sha256": "fake",
+            },
+            model_profile="sol",
+        )
         payload = read_json(FIXTURES / "fake_analysis_ja.json")
         parsed = JapaneseAnalysis.model_validate(payload)
         fake = _FakeOpenAIClient(_FakeOpenAIResponse(parsed))

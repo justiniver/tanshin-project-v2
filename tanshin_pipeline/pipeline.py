@@ -14,7 +14,6 @@ from .config import (
     DEFAULT_MODEL_PROFILE,
     DEFAULT_TRANSLATION_MODEL,
     FLASH_TRANSLATION_MODEL_PROFILE,
-    MODEL_PRICES_USD,
     OPENAI_MAX_INLINE_PDF_BYTES,
     OPENAI_PDF_TOKENS_PER_PAGE,
     OPENAI_SOL_MODEL,
@@ -99,26 +98,6 @@ class ProfileConfiguration:
     pdf_token_assumption: str
 
 
-def _configured_pro_gemini_model() -> str:
-    from tanshin_api.gemini import get_gemini_model
-
-    try:
-        configured_model = get_gemini_model(PRO_MODEL_PROFILE, "analysis")
-    except (RuntimeError, ValueError) as exc:
-        raise PipelineConfigurationError(str(exc)) from exc
-    if configured_model != PRO_GEMINI_MODEL:
-        raise PipelineConfigurationError(
-            "The Pro profile currently supports "
-            f"{PRO_GEMINI_MODEL!r}, but GEMINI_MODEL2 is configured as "
-            f"{configured_model!r}."
-        )
-    if configured_model not in MODEL_PRICES_USD:
-        raise PipelineConfigurationError(
-            f"No offline price is configured for {configured_model!r}."
-        )
-    return configured_model
-
-
 def _profile_configuration(model_profile: str) -> ProfileConfiguration:
     if model_profile == DEFAULT_MODEL_PROFILE:
         return ProfileConfiguration(
@@ -139,16 +118,15 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             ),
         )
     if model_profile == PRO_MODEL_PROFILE:
-        configured_model = _configured_pro_gemini_model()
         return ProfileConfiguration(
             analysis=StageRoute(
                 provider="gemini",
-                model=configured_model,
+                model=PRO_GEMINI_MODEL,
                 provider_profile=PRO_MODEL_PROFILE,
             ),
             translation=StageRoute(
                 provider="gemini",
-                model=configured_model,
+                model=PRO_GEMINI_MODEL,
                 provider_profile=PRO_MODEL_PROFILE,
             ),
             pdf_tokens_per_page=PDF_TOKENS_PER_PAGE,
@@ -158,7 +136,6 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             ),
         )
     if model_profile == PRO_TRANSLATION_MODEL_PROFILE:
-        configured_model = _configured_pro_gemini_model()
         return ProfileConfiguration(
             analysis=StageRoute(
                 provider="gemini",
@@ -167,7 +144,7 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             ),
             translation=StageRoute(
                 provider="gemini",
-                model=configured_model,
+                model=PRO_GEMINI_MODEL,
                 provider_profile=PRO_MODEL_PROFILE,
             ),
             pdf_tokens_per_page=PDF_TOKENS_PER_PAGE,
@@ -195,7 +172,6 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             ),
         )
     if model_profile == SOL_MODEL_PROFILE:
-        configured_model = _configured_pro_gemini_model()
         return ProfileConfiguration(
             analysis=StageRoute(
                 provider="openai",
@@ -204,7 +180,7 @@ def _profile_configuration(model_profile: str) -> ProfileConfiguration:
             ),
             translation=StageRoute(
                 provider="gemini",
-                model=configured_model,
+                model=PRO_GEMINI_MODEL,
                 provider_profile=PRO_MODEL_PROFILE,
             ),
             pdf_tokens_per_page=OPENAI_PDF_TOKENS_PER_PAGE,
