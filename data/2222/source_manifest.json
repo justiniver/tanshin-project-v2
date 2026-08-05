@@ -1,0 +1,967 @@
+{
+  "schema_version": "1.1",
+  "source": "JPX Listed Company Search",
+  "retrieved_at": "2026-08-03T08:36:07.579765+00:00",
+  "security_code": "2222",
+  "manager_code": "22220",
+  "company_name": "寿スピリッツ",
+  "filing_count": 10,
+  "first_disclosure_date": "2017-05-15",
+  "latest_disclosure_date": "2026-05-14",
+  "excluded_non_primary_disclosures": [
+    {
+      "disclosure_date": "2026-05-14",
+      "title": "2026年３月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120260511522498.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2026-02-02",
+      "title": "2026年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120260128540642.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2025-11-04",
+      "title": "2026年3月期 第2四半期（中間期）決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120251031584413.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2025-08-01",
+      "title": "2026年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250730524101.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2025-05-13",
+      "title": "2025年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250512540272.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2025-02-03",
+      "title": "2025年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250129557526.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2025-01-17",
+      "title": "（訂正・数値データ訂正）「2025年3月期第2四半期（中間期）決算短信[日本基準]（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250117552198.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2024-11-05",
+      "title": "2025年3月期 第2四半期（中間期）決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120241023501218.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2024-08-01",
+      "title": "2025年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240730557213.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2024-05-14",
+      "title": "2024年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240512590936.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2024-02-01",
+      "title": "2024年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240129520448.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2023-11-01",
+      "title": "2024年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120231020569567.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2023-08-01",
+      "title": "2024年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230725526731.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2023-05-18",
+      "title": "（訂正・数値データ訂正）「2023年３月期決算短信〔日本基準〕（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230518575910.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2023-05-15",
+      "title": "2023年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230511566204.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2023-02-02",
+      "title": "2023年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230201598153.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2022-11-04",
+      "title": "（訂正）「2023年３月期第２四半期決算短信補足説明資料」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120221104556587.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2022-11-01",
+      "title": "2023年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120221031553590.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2022-08-03",
+      "title": "2023年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220801509625.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2022-05-13",
+      "title": "（訂正・数値データ訂正）「2022年３月期決算短信〔日本基準〕（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220513548121.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2022-05-13",
+      "title": "2022年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220510538332.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2022-02-03",
+      "title": "2022年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220128574340.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2021-11-04",
+      "title": "2022年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120211102422781.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2021-08-04",
+      "title": "2022年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210802475840.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2021-05-14",
+      "title": "（訂正・数値データ訂正）「2021年３月期決算短信〔日本基準〕（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210514418808.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2021-05-13",
+      "title": "2021年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210512414101.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2021-02-01",
+      "title": "2021年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210129452273.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2020-11-04",
+      "title": "2021年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120201104414695.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2020-07-30",
+      "title": "2021年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200728468365.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2020-06-02",
+      "title": "（訂正）「2020年３月期決算短信〔日本基準〕（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200602433821.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2020-05-19",
+      "title": "2020年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200518417396.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2020-02-04",
+      "title": "（訂正・数値データ訂正）「2020年３月期第3四半期決算短信〔日本基準〕（連結）」の一部訂正について",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200204456750.pdf",
+      "reason": "correction_notice"
+    },
+    {
+      "disclosure_date": "2020-02-03",
+      "title": "2020年3月期第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200128451704.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2019-11-05",
+      "title": "2020年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120191102418613.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2019-07-29",
+      "title": "2020年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190726476689.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2019-05-13",
+      "title": "2019年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190511422339.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2019-02-04",
+      "title": "平成31年3月期第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190201468267.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2018-11-01",
+      "title": "平成31年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120181030426362.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2018-08-01",
+      "title": "平成31年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180801489386.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2018-05-14",
+      "title": "平成30年3月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180512436470.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2018-02-01",
+      "title": "平成30年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180129458287.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2017-11-01",
+      "title": "平成30年3月期 第2四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120171031404395.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2017-08-01",
+      "title": "平成30年3月期 第1四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170731444213.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2017-05-15",
+      "title": "平成29年３月期 決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170515472522.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2017-02-02",
+      "title": "平成29年3月期 第3四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170202488181.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2016-11-01",
+      "title": "平成29年３月期 第２四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120161101427973.pdf",
+      "reason": "supplemental_material"
+    },
+    {
+      "disclosure_date": "2016-08-01",
+      "title": "平成29年３月期 第１四半期決算短信補足説明資料",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120160730463323.pdf",
+      "reason": "supplemental_material"
+    }
+  ],
+  "available_primary_disclosures": [
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2026-05-14",
+      "title": "2026年３月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120260511522488.pdf",
+      "disclosure_id": "140120260511522488",
+      "fiscal_year": 2026,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2026-02-02",
+      "title": "2026年3月期第3四半期決算短信［日本基準］（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120260128540617.pdf",
+      "disclosure_id": "140120260128540617",
+      "fiscal_year": 2026,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2025-11-04",
+      "title": "2026年3月期第2四半期（中間期）決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120251031584348.pdf",
+      "disclosure_id": "140120251031584348",
+      "fiscal_year": 2026,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2025-08-01",
+      "title": "2026年3月期第1四半期決算短信［日本基準］（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250730524093.pdf",
+      "disclosure_id": "140120250730524093",
+      "fiscal_year": 2026,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2025-05-13",
+      "title": "2025年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250512540261.pdf",
+      "disclosure_id": "140120250512540261",
+      "fiscal_year": 2025,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2025-02-03",
+      "title": "2025年3月期第3四半期決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250129557525.pdf",
+      "disclosure_id": "140120250129557525",
+      "fiscal_year": 2025,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2024-11-05",
+      "title": "2025年3月期第2四半期（中間期）決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120241023501216.pdf",
+      "disclosure_id": "140120241023501216",
+      "fiscal_year": 2025,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2024-08-01",
+      "title": "2025年3月期第1四半期決算短信［日本基準］（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240730557211.pdf",
+      "disclosure_id": "140120240730557211",
+      "fiscal_year": 2025,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2024-05-14",
+      "title": "2024年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240430580071.pdf",
+      "disclosure_id": "140120240430580071",
+      "fiscal_year": 2024,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2024-02-01",
+      "title": "2024年3月期第3四半期決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240118516353.pdf",
+      "disclosure_id": "140120240118516353",
+      "fiscal_year": 2024,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2023-11-01",
+      "title": "2024年3月期第2四半期決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120231016567616.pdf",
+      "disclosure_id": "140120231016567616",
+      "fiscal_year": 2024,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2023-08-01",
+      "title": "2024年3月期第1四半期決算短信［日本基準］（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230720524900.pdf",
+      "disclosure_id": "140120230720524900",
+      "fiscal_year": 2024,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2023-05-15",
+      "title": "2023年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230429556974.pdf",
+      "disclosure_id": "140120230429556974",
+      "fiscal_year": 2023,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2023-02-02",
+      "title": "2023年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230117590117.pdf",
+      "disclosure_id": "140120230117590117",
+      "fiscal_year": 2023,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2022-11-01",
+      "title": "2023年３月期第2四半期決算短信[日本基準]（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120221018546000.pdf",
+      "disclosure_id": "140120221018546000",
+      "fiscal_year": 2023,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2022-08-03",
+      "title": "2023年3月期第1四半期決算短信［日本基準］（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220720501894.pdf",
+      "disclosure_id": "140120220720501894",
+      "fiscal_year": 2023,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2022-05-13",
+      "title": "2022年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220504533321.pdf",
+      "disclosure_id": "140120220504533321",
+      "fiscal_year": 2022,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2022-02-03",
+      "title": "2022年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220115568423.pdf",
+      "disclosure_id": "140120220115568423",
+      "fiscal_year": 2022,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2021-11-04",
+      "title": "2022年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120211025416154.pdf",
+      "disclosure_id": "140120211025416154",
+      "fiscal_year": 2022,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2021-08-04",
+      "title": "2022年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210720469678.pdf",
+      "disclosure_id": "140120210720469678",
+      "fiscal_year": 2022,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2021-05-13",
+      "title": "2021年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210506406435.pdf",
+      "disclosure_id": "140120210506406435",
+      "fiscal_year": 2021,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2021-02-01",
+      "title": "2021年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210118445872.pdf",
+      "disclosure_id": "140120210118445872",
+      "fiscal_year": 2021,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2020-11-04",
+      "title": "2021年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120201102414017.pdf",
+      "disclosure_id": "140120201102414017",
+      "fiscal_year": 2021,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2020-07-30",
+      "title": "2021年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200728468135.pdf",
+      "disclosure_id": "140120200728468135",
+      "fiscal_year": 2021,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2020-05-19",
+      "title": "2020年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200504404535.pdf",
+      "disclosure_id": "140120200504404535",
+      "fiscal_year": 2020,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2020-02-03",
+      "title": "2020年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200121448553.pdf",
+      "disclosure_id": "140120200121448553",
+      "fiscal_year": 2020,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2019-11-05",
+      "title": "2020年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120191025412143.pdf",
+      "disclosure_id": "140120191025412143",
+      "fiscal_year": 2020,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2019-07-29",
+      "title": "2020年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190722473930.pdf",
+      "disclosure_id": "140120190722473930",
+      "fiscal_year": 2020,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2019-05-13",
+      "title": "2019年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190328496662.pdf",
+      "disclosure_id": "140120190328496662",
+      "fiscal_year": 2019,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2019-02-04",
+      "title": "平成31年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190122461904.pdf",
+      "disclosure_id": "140120190122461904",
+      "fiscal_year": 2019,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2018-11-01",
+      "title": "平成31年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120181023421315.pdf",
+      "disclosure_id": "140120181023421315",
+      "fiscal_year": 2019,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2018-08-01",
+      "title": "平成31年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180724484472.pdf",
+      "disclosure_id": "140120180724484472",
+      "fiscal_year": 2019,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2018-05-14",
+      "title": "平成30年3月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180503427390.pdf",
+      "disclosure_id": "140120180503427390",
+      "fiscal_year": 2018,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2018-02-01",
+      "title": "平成30年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180131460058.pdf",
+      "disclosure_id": "140120180131460058",
+      "fiscal_year": 2018,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2017-11-01",
+      "title": "平成30年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120171017492395.pdf",
+      "disclosure_id": "140120171017492395",
+      "fiscal_year": 2018,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2017-08-01",
+      "title": "平成30年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170724437575.pdf",
+      "disclosure_id": "140120170724437575",
+      "fiscal_year": 2018,
+      "fiscal_month": 3,
+      "period": "Q1"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2017-05-15",
+      "title": "平成29年３月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170503458588.pdf",
+      "disclosure_id": "140120170503458588",
+      "fiscal_year": 2017,
+      "fiscal_month": 3,
+      "period": "FY"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2017-02-02",
+      "title": "平成29年3月期 第3四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170120477485.pdf",
+      "disclosure_id": "140120170120477485",
+      "fiscal_year": 2017,
+      "fiscal_month": 3,
+      "period": "Q3"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2016-11-01",
+      "title": "平成29年3月期 第2四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120161020417072.pdf",
+      "disclosure_id": "140120161020417072",
+      "fiscal_year": 2017,
+      "fiscal_month": 3,
+      "period": "Q2"
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2016-08-01",
+      "title": "平成29年３月期 第１四半期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120160725457259.pdf",
+      "disclosure_id": "140120160725457259",
+      "fiscal_year": 2017,
+      "fiscal_month": 3,
+      "period": "Q1"
+    }
+  ],
+  "selection": {
+    "mode": "latest_plus_ten_year_ends",
+    "latest_disclosure_id": "140120260511522488",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "trend_fiscal_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "superseded_primary_disclosures": []
+  },
+  "files": [
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2026-05-14",
+      "title": "2026年３月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120260511522488.pdf",
+      "disclosure_id": "140120260511522488",
+      "fiscal_year": 2026,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "01_2026_FY_tanshin.pdf",
+      "byte_size": 428503,
+      "sha256": "1931b885d779c0a07a667e02bfc5b1e7bce3aa8be3e8861929e7a682a9253231",
+      "page_count": 22,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2025-05-13",
+      "title": "2025年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120250512540261.pdf",
+      "disclosure_id": "140120250512540261",
+      "fiscal_year": 2025,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "02_2025_FY_tanshin.pdf",
+      "byte_size": 433865,
+      "sha256": "6ae27b679c128b6e1c24fe6236b2db5d84088bf3f2c4f78bf301a81e3dde575d",
+      "page_count": 23,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2024-05-14",
+      "title": "2024年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120240430580071.pdf",
+      "disclosure_id": "140120240430580071",
+      "fiscal_year": 2024,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "03_2024_FY_tanshin.pdf",
+      "byte_size": 369656,
+      "sha256": "51824208551a0fda326ffdcabaac0c4878c97c1e9fe3498011150984a039d5f1",
+      "page_count": 24,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2023-05-15",
+      "title": "2023年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120230429556974.pdf",
+      "disclosure_id": "140120230429556974",
+      "fiscal_year": 2023,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "04_2023_FY_tanshin.pdf",
+      "byte_size": 371346,
+      "sha256": "6f12b962992e1f1dafba77de1a0538bebdd492509ab7e4a39cc76fd5adc6e19f",
+      "page_count": 25,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2022-05-13",
+      "title": "2022年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120220504533321.pdf",
+      "disclosure_id": "140120220504533321",
+      "fiscal_year": 2022,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "05_2022_FY_tanshin.pdf",
+      "byte_size": 359041,
+      "sha256": "cdd9e23cf1260f0cd6137e02b2dee8eb77c9d6f1cb10e32d21b88bb3adbc4f81",
+      "page_count": 25,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2021-05-13",
+      "title": "2021年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120210506406435.pdf",
+      "disclosure_id": "140120210506406435",
+      "fiscal_year": 2021,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "06_2021_FY_tanshin.pdf",
+      "byte_size": 353545,
+      "sha256": "9dfdfd4b8c6c673958b44d40db4dfb075ab6a65ebe0a59ed578f666a561aab07",
+      "page_count": 22,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2020-05-19",
+      "title": "2020年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120200504404535.pdf",
+      "disclosure_id": "140120200504404535",
+      "fiscal_year": 2020,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "07_2020_FY_tanshin.pdf",
+      "byte_size": 368670,
+      "sha256": "2a9ef51ae8b1cad17cdf2dcf00f9210fa3e68a057e2fa2847907ce9f10bce591",
+      "page_count": 24,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2019-05-13",
+      "title": "2019年3月期決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120190328496662.pdf",
+      "disclosure_id": "140120190328496662",
+      "fiscal_year": 2019,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "08_2019_FY_tanshin.pdf",
+      "byte_size": 407898,
+      "sha256": "a30a32950908180c55f88b6cc3d93a8b64e5229dc84c5779ff710c1bf19ef19d",
+      "page_count": 23,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2018-05-14",
+      "title": "平成30年3月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120180503427390.pdf",
+      "disclosure_id": "140120180503427390",
+      "fiscal_year": 2018,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "09_2018_FY_tanshin.pdf",
+      "byte_size": 415425,
+      "sha256": "c656869c115bfcec6aa636a51fed59d82bc078d8934a0270ef7b9d2a0c515f54",
+      "page_count": 23,
+      "security_code_found_in_first_two_pages": true
+    },
+    {
+      "security_code": "2222",
+      "manager_code": "22220",
+      "company_name": "寿スピリッツ",
+      "disclosure_date": "2017-05-15",
+      "title": "平成29年３月期 決算短信〔日本基準〕（連結）",
+      "url": "https://www2.jpx.co.jp/disc/22220/140120170503458588.pdf",
+      "disclosure_id": "140120170503458588",
+      "fiscal_year": 2017,
+      "fiscal_month": 3,
+      "period": "FY",
+      "filename": "10_2017_FY_tanshin.pdf",
+      "byte_size": 372957,
+      "sha256": "8c1acf1f1424955b09ff86a03a47eb44cef408678015ac68bd99085be9d02f28",
+      "page_count": 23,
+      "security_code_found_in_first_two_pages": true
+    }
+  ]
+}
