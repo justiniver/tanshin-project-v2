@@ -73,6 +73,12 @@ normalization, validation, rendering, retry, and failure tests.
 - Do not improve a report by patching its rendered output.
 - Treat deterministic evaluation scores as diagnostics, not as the authority on
   report quality.
+- Deterministic validation is intentionally non-gating. It must still run and
+  persist its findings, but `valid`, `publishable`, errors, warnings, and
+  quality scores must not prevent a parseable, normalizable, renderable response
+  from being written to the canonical Markdown path. Do not reintroduce
+  draft-only or validation-blocked publication behavior unless the user
+  explicitly changes this policy.
 - Keep model-profile labels and model names inspectable, but never log
   `GEMINI_API_KEY`, `GEMINI_API_KEY2`, or `OPENAI_API_KEY`. The `pro` profile
   uses the source-configured secondary Gemini model and credential for both

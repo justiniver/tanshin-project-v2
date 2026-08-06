@@ -50,3 +50,10 @@ TANSHIN PIPELINE WORKING RULES
     For a default, primary-key-only run, explain that generation should be free
     when GEMINI_API_KEY is eligible for Gemini's free tier. Any displayed yen
     amount is a conservative paid-tier upper-bound estimate.
+
+12. Deterministic validation is intentionally non-gating. Run it and preserve
+    all diagnostic artifacts, but do not let valid, publishable, error, warning,
+    or quality-score results suppress canonical Markdown for a response that
+    can be parsed, normalized, and rendered. Manual review is the publication
+    authority. API, structured-output parsing, missing-artifact, processing, and
+    rendering failures may still stop the pipeline.

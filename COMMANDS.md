@@ -40,6 +40,11 @@ The default profile uses only `GEMINI_API_KEY` and should be free when that key
 is eligible for Gemini's free tier. Displayed yen figures are conservative
 paid-tier upper-bound estimates rather than an expected charge.
 
+Deterministic validation is intentionally non-gating. It still runs and writes
+diagnostic artifacts, but its `publishable`, error, and warning results do not
+prevent a parseable and renderable response from being written to the canonical
+Markdown report. Final quality review is manual.
+
 ## Docling text-input experiment
 
 The disposable Docling sidecar uses the same model profiles but supplies

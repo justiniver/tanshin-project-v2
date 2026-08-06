@@ -88,6 +88,19 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("[COMMANDS.md](COMMANDS.md)", readme)
         self.assertIn("company overview", readme)
         self.assertIn("through 200,000 prompt tokens", readme)
+        self.assertIn(
+            "deterministic validation layer is intentionally bypassed",
+            readme,
+        )
+        self.assertIn("publication\ngate", readme)
+        self.assertIn(
+            "does not mean that validation is disabled",
+            readme,
+        )
+        self.assertIn(
+            "Even `publishable: false` does not prevent",
+            readme,
+        )
 
         self.assertNotIn("Review drafts are always written", readme)
         self.assertNotIn("financial notation remains exactly in", readme)
@@ -161,6 +174,14 @@ class DocumentationTests(unittest.TestCase):
             guide,
         )
         self.assertIn("225,000", guide)
+        self.assertIn(
+            "Deterministic validation is intentionally non-gating",
+            guide,
+        )
+        self.assertIn(
+            "must not prevent a parseable, normalizable, renderable response",
+            guide,
+        )
         self.assertNotIn("--flash-translation", guide)
         self.assertNotIn("-FlashTranslation", guide)
         self.assertNotIn("GEMINI_MODEL", guide)
@@ -184,11 +205,34 @@ class DocumentationTests(unittest.TestCase):
             "multiple tickers",
             "225,000 tokens",
             "Gemini's free tier",
+            "Deterministic validation is intentionally non-gating",
+            "Final quality review is manual",
         ):
             self.assertIn(required, commands)
         self.assertNotIn("--flash-translation", commands)
         self.assertNotIn("-FlashTranslation", commands)
         self.assertNotIn("gemini-3.5-flash-lite", commands)
+
+    def test_experimental_docs_share_the_non_gating_validation_policy(
+        self,
+    ) -> None:
+        experiment = (
+            REPOSITORY_ROOT / "DOCLING_TEXT_EXPERIMENT.md"
+        ).read_text(encoding="utf-8")
+        rules = (REPOSITORY_ROOT / "PROJECT_RULES.txt").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn(
+            "intentional non-gating",
+            experiment,
+        )
+        self.assertIn("validation policy", experiment)
+        self.assertIn(
+            "Deterministic validation is intentionally non-gating",
+            rules,
+        )
+        self.assertIn("Manual review is the publication", rules)
 
     def test_documented_local_files_exist(self) -> None:
         for relative_path in (

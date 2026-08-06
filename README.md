@@ -326,17 +326,18 @@ output/{security_code}/analysis_ja_{security_code}.md
 output/{security_code}/analysis_en_{security_code}.md
 ```
 
-The current pipeline does not maintain a separate draft report. A schema-valid
-response is rendered to the canonical Markdown path, and its review state is
-recorded separately in:
+The current pipeline does not maintain a separate draft report. Once a response
+passes structured-output parsing and can be normalized and rendered, the
+canonical Markdown is written even when deterministic validation reports errors
+or warnings. Its review state is recorded separately in:
 
 ```text
 output/{security_code}/artifacts/report_status_ja.json
 output/{security_code}/artifacts/report_status_en.json
 ```
 
-Validation findings do not add banners to the report. They remain in JSON
-artifacts for human or AI review.
+Validation findings do not add banners to the report and do not veto the
+canonical Markdown. They remain in JSON artifacts for human or AI review.
 
 Before a live batch, existing company output is copied to:
 
@@ -520,8 +521,26 @@ Report quality is judged primarily by qualitative review against the source
 filings, exemplars, and historical runs. Deterministic metrics are diagnostics,
 not the authority on whether a report is useful.
 
-Default validation is deliberately permissive. It focuses on reliable
-structural failures such as:
+The deterministic validation layer is intentionally bypassed as a publication
+gate. It is still executed, and its complete results are retained, but
+`valid`, `publishable`, error counts, warning counts, and quality scores do not
+decide whether the canonical Markdown file is generated. Here, “bypassed” means
+non-gating; it does not mean that validation is disabled.
+
+This is deliberate because the reports are evaluated manually for analytical
+quality, readability, and fidelity to the filings. A response that can be
+parsed, normalized, and rendered is therefore written to the canonical `.md`
+path. A negative validator result changes `report_status_*.json` to
+`generated_with_diagnostics` and recommends review, but it does not create a
+draft-only result or suppress the report.
+
+API failures, malformed structured output that cannot be parsed, missing
+required source artifacts, and processing or rendering failures can still stop
+the pipeline. Those are execution failures rather than deterministic editorial
+judgments.
+
+Default validation is deliberately permissive and still flags high-signal
+conditions such as:
 
 - wrong security code, company identity, or latest filing;
 - duplicate or unresolved claim/evidence identities;
@@ -538,10 +557,10 @@ Equivalent forms such as `252億円`, `25,200百万円`, and `¥25.2 billion` ar
 accepted, while a scale change such as `252億円` becoming `¥2.52 billion`
 remains a factual-integrity error.
 
-`report_status_*.json` records whether the validator considers the report
-publishable, whether review is recommended, and which run generated the current
-Markdown. A schema-valid report may still be marked
-`generated_with_diagnostics`; that is expected in this manual-review-first
+`report_status_*.json` records the validator's advisory `publishable` result,
+whether review is recommended, and which run generated the current Markdown.
+Even `publishable: false` does not prevent that Markdown from being generated.
+This intentional non-gating behavior is expected in the manual-review-first
 workflow.
 
 ## Artifacts

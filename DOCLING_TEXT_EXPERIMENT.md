@@ -118,6 +118,11 @@ artifacts/parsed_sources/*.docling.json
 
 The normal reports under `output/6777/` are not touched.
 
+The experiment inherits the production pipeline's intentional non-gating
+validation policy. Deterministic checks still run and are retained as
+diagnostics, but they do not suppress a parseable and renderable experimental
+Markdown report.
+
 ## Safety
 
 - Local extraction never imports or invokes an AI client.
