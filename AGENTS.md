@@ -4,8 +4,7 @@ Read `PROJECT_RULES.txt` and `README.md` before changing this repository.
 
 ## Hard safety boundaries
 
-- Never initiate a Gemini or OpenAI request. Do not run commands containing
-  `--execute-api`, `-Execute`, or `scripts/check_gemini.py --live`.
+- Never initiate a Gemini or OpenAI request.
 - Keep every implementation company-agnostic. Company-specific fixtures are
   acceptable for regression tests, but production logic must not special-case
   a security code or company name.
