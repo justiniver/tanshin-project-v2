@@ -6,13 +6,6 @@ Read `PROJECT_RULES.txt` and `README.md` before changing this repository.
 
 - Never initiate a Gemini or OpenAI request. Do not run commands containing
   `--execute-api`, `-Execute`, or `scripts/check_gemini.py --live`.
-- Never read, display, log, copy, or modify `.env` or any API key.
-- Never upload PDFs through a provider Files API. The authorized runtimes send
-  selected PDFs inline only when a human explicitly runs the live workflow.
-- Never manually edit Markdown under `output/` or `exemplar_output/`.
-  Fix prompts, schemas, normalization, validation, or rendering instead.
-- Source documentation such as `README.md` and `AGENTS.md` may be edited when
-  documentation is the task.
 - Keep every implementation company-agnostic. Company-specific fixtures are
   acceptable for regression tests, but production logic must not special-case
   a security code or company name.
