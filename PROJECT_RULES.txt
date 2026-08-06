@@ -20,38 +20,29 @@ TANSHIN PIPELINE WORKING RULES
 5. Never initiate a Gemini or OpenAI API request from automated development
    work. Every API-backed run must be started manually by the user.
 
-6. Never read, display, log, or modify .env or any API key. Never run a command
-   containing --execute-api, -Execute, or scripts/check_gemini.py --live during
-   automated development.
-
-7. English narrative prose renders yen-denominated statement amounts at or above
+6. English narrative prose renders yen-denominated statement amounts at or above
    ¥1 billion in one-decimal billion notation, smaller amounts in million
    notation, and per-share amounts as forms such as ¥95 per share. Preserve
    economic value within display precision, scale, sign, percentages, margins,
    payout ratios, and statement type; never perform foreign-exchange conversion.
    English evidence ledgers render the original Japanese quotations.
 
-8. Use a Latin-script proper name only when that form is supplied by the source
-   analysis. Otherwise keep the Japanese proper name; never translate a company,
-   product, plan, or counterparty name by meaning.
-
-9. Keep model names as source constants in tanshin_pipeline/config.py. The .env
+7. Keep model names as source constants in tanshin_pipeline/config.py. The .env
    file is credentials-only and may contain GEMINI_API_KEY, GEMINI_API_KEY2,
-   and OPENAI_API_KEY; do not add model-name environment variables.
+   and OPENAI_API_KEY.
 
-10. The default profile uses gemini-3.6-flash with GEMINI_API_KEY for both
+8. The default profile uses gemini-3.6-flash with GEMINI_API_KEY for both
     analysis and translation. The key2-translation profile changes only the
     translation credential to GEMINI_API_KEY2. When both stages share a Gemini
     credential, preserve a 75-second inter-stage cooldown whenever their
     combined estimated input and maximum-output allowance reaches 225,000
     tokens, leaving 10% headroom below the 250,000-token planning limit.
 
-11. Do not print the JPY/USD conversion assumption in user-facing preflight.
-    For a default, primary-key-only run, explain that generation should be free
+9. For a default, primary-key-only run, explain that generation should be free
     when GEMINI_API_KEY is eligible for Gemini's free tier. Any displayed yen
     amount is a conservative paid-tier upper-bound estimate.
 
-12. Deterministic validation is intentionally non-gating. Run it and preserve
+10. Deterministic validation is intentionally non-gating. Run it and preserve
     all diagnostic artifacts, but do not let valid, publishable, error, warning,
     or quality-score results suppress canonical Markdown for a response that
     can be parsed, normalized, and rendered. Manual review is the publication

@@ -722,9 +722,6 @@ AI agents must read [AGENTS.md](AGENTS.md) and `PROJECT_RULES.txt` before
 working in this repository. In particular, agents must never:
 
 - initiate a Gemini or OpenAI request;
-- run a command containing `--execute-api`, `-Execute`, or
-  `scripts/check_gemini.py --live`;
-- read, display, or modify `.env`;
 - manually edit reports under `output/` or `exemplar_output/`;
 - add company-specific production logic.
 
