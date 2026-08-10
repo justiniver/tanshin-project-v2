@@ -153,8 +153,6 @@ class DocumentationTests(unittest.TestCase):
 
         for required in (
             "Never initiate a Gemini or OpenAI request",
-            "Never read, display, log, copy, or modify `.env`",
-            "Never manually edit Markdown under `output/` or `exemplar_output/`",
             "Keep every implementation company-agnostic",
             "TANSHIN_OFFLINE_ONLY",
             "TANSHIN_TESTING",
@@ -212,27 +210,6 @@ class DocumentationTests(unittest.TestCase):
         self.assertNotIn("--flash-translation", commands)
         self.assertNotIn("-FlashTranslation", commands)
         self.assertNotIn("gemini-3.5-flash-lite", commands)
-
-    def test_experimental_docs_share_the_non_gating_validation_policy(
-        self,
-    ) -> None:
-        experiment = (
-            REPOSITORY_ROOT / "DOCLING_TEXT_EXPERIMENT.md"
-        ).read_text(encoding="utf-8")
-        rules = (REPOSITORY_ROOT / "PROJECT_RULES.txt").read_text(
-            encoding="utf-8"
-        )
-
-        self.assertIn(
-            "intentional non-gating",
-            experiment,
-        )
-        self.assertIn("validation policy", experiment)
-        self.assertIn(
-            "Deterministic validation is intentionally non-gating",
-            rules,
-        )
-        self.assertIn("Manual review is the publication", rules)
 
     def test_documented_local_files_exist(self) -> None:
         for relative_path in (

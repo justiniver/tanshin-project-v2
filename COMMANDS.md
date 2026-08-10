@@ -44,16 +44,3 @@ Deterministic validation is intentionally non-gating. It still runs and writes
 diagnostic artifacts, but its `publishable`, error, and warning results do not
 prevent a parseable and renderable response from being written to the canonical
 Markdown report. Final quality review is manual.
-
-## Docling text-input experiment
-
-The disposable Docling sidecar uses the same model profiles but supplies
-page-marked Markdown instead of PDF attachments:
-
-```powershell
-.\scripts\run_docling_reports.ps1 6777 -PreviewOnly
-.\scripts\run_docling_reports.ps1 6777
-```
-
-See [DOCLING_TEXT_EXPERIMENT.md](DOCLING_TEXT_EXPERIMENT.md) for setup,
-artifacts, safety boundaries, and removal instructions.

@@ -149,43 +149,5 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertNotIn("OPENAI_API_KEY", script)
         self.assertNotIn("check_gemini.py", script)
 
-    def test_docling_wrapper_matches_batch_profile_and_cooldown_rules(self) -> None:
-        script = (
-            REPOSITORY_ROOT / "scripts" / "run_docling_reports.ps1"
-        ).read_text(encoding="utf-8")
-
-        self.assertIn("[switch]$Key2Translation", script)
-        self.assertIn("$_ -ieq '--key2-translation'", script)
-        self.assertIn("'key2-translation'", script)
-        self.assertNotIn("FlashTranslation", script)
-        self.assertNotIn("flash-translation", script)
-        self.assertIn("$translationCooldownTokenThreshold = 225000", script)
-        self.assertIn("Wait-ForTranslationCooldown", script)
-        self.assertIn("Get-SameCredentialTokenLoad", script)
-        self.assertIn(
-            "[long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +",
-            script,
-        )
-        self.assertIn(
-            "[long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +",
-            script,
-        )
-        self.assertIn("[long]$translationCost.estimated_input_tokens +", script)
-        self.assertIn("[long]$translationCost.maximum_output_tokens", script)
-        self.assertIn(
-            "$AnalysisPreparation.Plan.provider_profile -ne",
-            script,
-        )
-        self.assertIn(
-            "$TranslationPreparation.Plan.provider_profile",
-            script,
-        )
-        self.assertIn(
-            "Billing note: This profile uses only GEMINI_API_KEY",
-            script,
-        )
-        self.assertNotIn("Yen conversion assumption:", script)
-
-
 if __name__ == "__main__":
     unittest.main()
