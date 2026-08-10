@@ -287,7 +287,8 @@ The runner:
    costs in yen, intended outputs, and diagnostic files;
 3. asks whether to proceed for the entire company list;
 4. asks whether English reports should also be generated;
-5. archives existing outputs;
+5. archives existing company outputs in a timestamped history directory while
+   preserving their filenames;
 6. runs the first company's Japanese analysis with one API attempt;
 7. prepares that company's optional English translation;
 8. when both stages share a Gemini credential, waits 75 seconds before
@@ -322,9 +323,13 @@ company remains successful if a later stage encounters a service error.
 Canonical reports:
 
 ```text
-output/{security_code}/analysis_ja_{security_code}.md
-output/{security_code}/analysis_en_{security_code}.md
+final_output/{security_code}/analysis_ja_{security_code}_{YYYYMMDD}.md
+final_output/{security_code}/analysis_en_{security_code}_{YYYYMMDD}.md
 ```
+
+`YYYYMMDD` is the local report-generation date. For example, a Japanese report
+for security code `1808` generated on August 10, 2026 is named
+`analysis_ja_1808_20260810.md`.
 
 The current pipeline does not maintain a separate draft report. Once a response
 passes structured-output parsing and can be normalized and rendered, the
@@ -332,8 +337,8 @@ canonical Markdown is written even when deterministic validation reports errors
 or warnings. Its review state is recorded separately in:
 
 ```text
-output/{security_code}/artifacts/report_status_ja.json
-output/{security_code}/artifacts/report_status_en.json
+final_output/{security_code}/artifacts/report_status_ja.json
+final_output/{security_code}/artifacts/report_status_en.json
 ```
 
 Validation findings do not add banners to the report and do not veto the
@@ -342,8 +347,11 @@ canonical Markdown. They remain in JSON artifacts for human or AI review.
 Before a live batch, existing company output is copied to:
 
 ```text
-output/{security_code}/history/{timestamp}/
+final_output/{security_code}/history/{timestamp}/
 ```
+
+The timestamped directory prevents archive collisions, so dated Markdown
+filenames are preserved unchanged when they move into history.
 
 The pipeline also retires stale current reports when a new analysis invalidates
 them or when an API request fails before producing a schema-valid response.
@@ -565,7 +573,7 @@ workflow.
 
 ## Artifacts
 
-Important files under `output/{security_code}/artifacts/` include:
+Important files under `final_output/{security_code}/artifacts/` include:
 
 | Artifact | Purpose |
 | --- | --- |
@@ -722,7 +730,8 @@ AI agents must read [AGENTS.md](AGENTS.md) and `PROJECT_RULES.txt` before
 working in this repository. In particular, agents must never:
 
 - initiate a Gemini or OpenAI request;
-- manually edit reports under `output/` or `exemplar_output/`;
+- manually edit reports under `final_output/`, the legacy `output/` directory,
+  or `exemplar_output/`;
 - add company-specific production logic.
 
 AI agents may inspect and improve API integration code, run offline previews,

@@ -26,6 +26,12 @@ Preview any command without sending an API request:
 .\scripts\run_reports.ps1 1808 --pro-translation -PreviewOnly
 ```
 
+Reports are written under `final_output/{security_code}/`. Canonical Markdown
+filenames include the local report-generation date:
+`analysis_ja_{security_code}_{YYYYMMDD}.md` and
+`analysis_en_{security_code}_{YYYYMMDD}.md`. Timestamped history directories
+preserve these filenames unchanged.
+
 PowerShell spellings `-Key2Translation`, `-ProTranslation`, `-Pro`, and `-Sol`
 are equivalent to their double-hyphen forms. Only one model option may be used
 at a time.

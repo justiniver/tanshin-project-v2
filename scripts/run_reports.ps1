@@ -25,6 +25,7 @@ $repositoryRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $statusHelpers = Join-Path $PSScriptRoot 'api_status_helpers.ps1'
 . $statusHelpers
 $python = Join-Path $repositoryRoot '.venv\Scripts\python.exe'
+$reportDate = Get-Date -Format 'yyyyMMdd'
 if (-not (Test-Path -LiteralPath $python -PathType Leaf)) {
     throw "Python virtual environment was not found at: $python"
 }
@@ -304,6 +305,7 @@ function Invoke-OfflinePreparation {
     $output = & $python -m tanshin_pipeline $Code `
         --repository-root $repositoryRoot `
         --output-root $OutputRoot `
+        --report-date $reportDate `
         --stage $Stage `
         --model-profile $ModelProfile `
         --max-api-attempts 1 2>&1
@@ -404,9 +406,18 @@ function Write-AnalysisPreparation {
     foreach ($file in $plan.files) {
         Write-Host "  - $($file.filename) ($($file.page_count) pages)"
     }
-    Write-Host "Expected Japanese report: output\$code\analysis_ja_$code.md"
-    Write-Host "Optional English report: output\$code\analysis_en_$code.md"
-    Write-Host "Selection manifest: output\$code\artifacts\selection_manifest.json"
+    Write-Host (
+        "Expected Japanese report: " +
+        "final_output\$code\analysis_ja_${code}_$reportDate.md"
+    )
+    Write-Host (
+        "Optional English report: " +
+        "final_output\$code\analysis_en_${code}_$reportDate.md"
+    )
+    Write-Host (
+        "Selection manifest: " +
+        "final_output\$code\artifacts\selection_manifest.json"
+    )
     Write-Host (
         'Analysis diagnostics: model_response_ja.raw.json, ' +
         'analysis_ja.structured.json, analysis_ja.normalized.json, ' +
@@ -427,17 +438,32 @@ function Backup-CurrentOutput {
         [string]$BatchStamp
     )
 
-    $currentOutput = Join-Path $repositoryRoot "output\$Code"
+    $currentOutput = Join-Path $repositoryRoot "final_output\$Code"
     if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
+        return
+    }
+    $currentItems = @(
+        Get-ChildItem -LiteralPath $currentOutput -Force |
+            Where-Object { $_.Name -ne 'history' }
+    )
+    if ($currentItems.Count -eq 0) {
         return
     }
     $historyRoot = Join-Path $currentOutput 'history'
     $archive = Join-Path $historyRoot $BatchStamp
     New-Item -ItemType Directory -Path $archive -Force | Out-Null
-    Get-ChildItem -LiteralPath $currentOutput -Force |
-        Where-Object { $_.Name -ne 'history' } |
+    $currentItems | ForEach-Object {
+        Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse
+    }
+    $reportPattern = (
+        '^analysis_(ja|en)_' +
+        [regex]::Escape($Code) +
+        '_\d{8}\.md$'
+    )
+    Get-ChildItem -LiteralPath $currentOutput -File |
+        Where-Object { $_.Name -match $reportPattern } |
         ForEach-Object {
-            Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse
+            Remove-Item -LiteralPath $_.FullName
         }
     Write-Host "Archived existing $Code output to: $archive"
 }
@@ -475,6 +501,7 @@ function Invoke-LiveStage {
     Write-Host 'MODEL RUN STATE: RUNNING'
     & $python -m tanshin_pipeline $Code `
         --repository-root $repositoryRoot `
+        --report-date $reportDate `
         --stage $Stage `
         --model-profile $ModelProfile `
         --execute-api `
@@ -488,7 +515,7 @@ function Invoke-LiveStage {
         'api_status_translation.json'
     }
     $statusPath = Join-Path (
-        Join-Path $repositoryRoot "output\$Code\artifacts"
+        Join-Path $repositoryRoot "final_output\$Code\artifacts"
     ) $statusName
     if (-not (Test-Path -LiteralPath $statusPath -PathType Leaf)) {
         Write-Host 'MODEL RUN STATE: UNKNOWN (no status artifact)'
@@ -522,7 +549,7 @@ function Get-TranslationPreparation {
         [string]$ModelProfile
     )
 
-    $canonicalOutput = Join-Path $repositoryRoot 'output'
+    $canonicalOutput = Join-Path $repositoryRoot 'final_output'
     Invoke-OfflinePreparation `
         -Code $Code `
         -Stage translation `
@@ -567,7 +594,10 @@ function Write-TranslationPreparation {
         $cost.translation.maximum_stage_cost_jpy
     )
     Write-Host 'PDFs submitted: none (validated Japanese structured JSON only)'
-    Write-Host "Expected English report: output\$code\analysis_en_$code.md"
+    Write-Host (
+        "Expected English report: " +
+        "final_output\$code\analysis_en_${code}_$reportDate.md"
+    )
     Write-Host (
         'Translation diagnostics: model_response_en.raw.json, ' +
         'analysis_en.structured.json, analysis_en.normalized.json, ' +
@@ -703,10 +733,6 @@ function Invoke-ReportBatch {
         }
 
         $batchStamp = Get-Date -Format 'yyyyMMdd_HHmmssfff'
-        foreach ($code in $codes) {
-            Backup-CurrentOutput -Code $code -BatchStamp $batchStamp
-        }
-
         $previousAnalysisCompletedAt = $null
         foreach ($preparation in $analysisPreparations) {
             if ($null -ne $previousAnalysisCompletedAt) {
@@ -715,6 +741,9 @@ function Invoke-ReportBatch {
                     -CooldownSeconds $analysisCooldownSeconds
             }
 
+            Backup-CurrentOutput `
+                -Code $preparation.Code `
+                -BatchStamp $batchStamp
             $analysisSucceeded = Invoke-LiveStage `
                 -Code $preparation.Code `
                 -Stage analysis `

@@ -33,8 +33,18 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("Companies are processed in the order supplied", readme)
         self.assertIn("1808` analysis, `1808` translation", readme)
         self.assertIn("A stage failure stops the workflow", readme)
-        self.assertIn("analysis_ja_{security_code}.md", readme)
-        self.assertIn("analysis_en_{security_code}.md", readme)
+        self.assertIn(
+            "final_output/{security_code}/"
+            "analysis_ja_{security_code}_{YYYYMMDD}.md",
+            readme,
+        )
+        self.assertIn(
+            "final_output/{security_code}/"
+            "analysis_en_{security_code}_{YYYYMMDD}.md",
+            readme,
+        )
+        self.assertIn("local report-generation date", readme)
+        self.assertIn("filenames are preserved unchanged", readme)
         self.assertIn("does not maintain a separate draft report", readme)
         self.assertIn(
             "mode: model_rendered_english_financial_notation",
@@ -176,6 +186,15 @@ class DocumentationTests(unittest.TestCase):
             "Deterministic validation is intentionally non-gating",
             guide,
         )
+        self.assertIn("The default report root is `final_output/`", guide)
+        self.assertIn(
+            "`analysis_ja_{security_code}_{YYYYMMDD}.md`",
+            guide,
+        )
+        self.assertIn(
+            "Timestamped history directories preserve those filenames unchanged",
+            guide,
+        )
         self.assertIn(
             "must not prevent a parseable, normalizable, renderable response",
             guide,
@@ -205,11 +224,32 @@ class DocumentationTests(unittest.TestCase):
             "Gemini's free tier",
             "Deterministic validation is intentionally non-gating",
             "Final quality review is manual",
+            "`final_output/{security_code}/`",
+            "`analysis_ja_{security_code}_{YYYYMMDD}.md`",
+            "`analysis_en_{security_code}_{YYYYMMDD}.md`",
+            "preserve these filenames unchanged",
         ):
             self.assertIn(required, commands)
         self.assertNotIn("--flash-translation", commands)
         self.assertNotIn("-FlashTranslation", commands)
         self.assertNotIn("gemini-3.5-flash-lite", commands)
+
+    def test_output_contract_is_documented_and_ignored(self) -> None:
+        project_rules = (REPOSITORY_ROOT / "PROJECT_RULES.txt").read_text(
+            encoding="utf-8"
+        )
+        gitignore = (REPOSITORY_ROOT / ".gitignore").read_text(encoding="utf-8")
+
+        self.assertIn("default report root is final_output/", project_rules)
+        self.assertIn("local run date as YYYYMMDD", project_rules)
+        self.assertIn("preserve those dated filenames unchanged", project_rules)
+        ignored_paths = {
+            line.strip()
+            for line in gitignore.splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
+        self.assertIn("final_output/", ignored_paths)
+        self.assertIn("output/", ignored_paths)
 
     def test_documented_local_files_exist(self) -> None:
         for relative_path in (

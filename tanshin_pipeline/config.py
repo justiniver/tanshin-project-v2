@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date, datetime
 from pathlib import Path
 
 
 SCHEMA_VERSION = "1.6"
+DEFAULT_OUTPUT_DIRECTORY = "final_output"
 DEFAULT_MODEL_PROFILE = "default"
 KEY2_TRANSLATION_MODEL_PROFILE = "key2-translation"
 PRO_TRANSLATION_MODEL_PROFILE = "pro-translation"
@@ -85,6 +87,8 @@ def model_price_for_input_tokens(model: str, input_tokens: int) -> Price:
 
 @dataclass(frozen=True)
 class OutputPaths:
+    security_code: str
+    report_date: str
     output_dir: Path
     artifacts_dir: Path
     report_ja: Path
@@ -123,16 +127,50 @@ class OutputPaths:
     evaluation_en: Path
 
 
-def output_paths(output_root: Path, security_code: str) -> OutputPaths:
+def normalize_report_date(value: date | datetime | str | None = None) -> str:
+    """Return the local report date in the filename-safe YYYYMMDD form."""
+
+    if value is None:
+        value = date.today()
+    if isinstance(value, str):
+        try:
+            parsed = datetime.strptime(value, "%Y%m%d").date()
+        except ValueError as exc:
+            raise ValueError(
+                f"Report date must use YYYYMMDD format, received {value!r}."
+            ) from exc
+        return parsed.strftime("%Y%m%d")
+    if isinstance(value, datetime):
+        value = value.date()
+    if not isinstance(value, date):
+        raise TypeError(
+            "Report date must be a date, datetime, YYYYMMDD string, or None."
+        )
+    return value.strftime("%Y%m%d")
+
+
+def output_paths(
+    output_root: Path,
+    security_code: str,
+    *,
+    report_date: date | datetime | str | None = None,
+) -> OutputPaths:
+    date_stamp = normalize_report_date(report_date)
     output_dir = output_root / security_code
     artifacts = output_dir / "artifacts"
     return OutputPaths(
+        security_code=security_code,
+        report_date=date_stamp,
         output_dir=output_dir,
         artifacts_dir=artifacts,
-        report_ja=output_dir / f"analysis_ja_{security_code}.md",
-        report_en=output_dir / f"analysis_en_{security_code}.md",
-        report_ja_draft=output_dir / f"analysis_ja_{security_code}.draft.md",
-        report_en_draft=output_dir / f"analysis_en_{security_code}.draft.md",
+        report_ja=output_dir / f"analysis_ja_{security_code}_{date_stamp}.md",
+        report_en=output_dir / f"analysis_en_{security_code}_{date_stamp}.md",
+        report_ja_draft=(
+            output_dir / f"analysis_ja_{security_code}_draft_{date_stamp}.md"
+        ),
+        report_en_draft=(
+            output_dir / f"analysis_en_{security_code}_draft_{date_stamp}.md"
+        ),
         report_status_ja=artifacts / "report_status_ja.json",
         report_status_en=artifacts / "report_status_en.json",
         selection_manifest=artifacts / "selection_manifest.json",

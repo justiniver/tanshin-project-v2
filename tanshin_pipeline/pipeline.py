@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +12,7 @@ from .config import (
     DEFAULT_ANALYSIS_MODEL,
     DEFAULT_MAX_API_ATTEMPTS,
     DEFAULT_MODEL_PROFILE,
+    DEFAULT_OUTPUT_DIRECTORY,
     DEFAULT_TRANSLATION_MODEL,
     KEY2_TRANSLATION_MODEL_PROFILE,
     OPENAI_MAX_INLINE_PDF_BYTES,
@@ -327,11 +328,14 @@ def prepare_analysis(
     security_code: str,
     *,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> PreparedRun:
     repository_root = repository_root.resolve()
-    output_root = (output_root or repository_root / "output").resolve()
+    output_root = (
+        output_root or repository_root / DEFAULT_OUTPUT_DIRECTORY
+    ).resolve()
     configuration = _profile_configuration(model_profile)
     manifest = select_filings(repository_root, security_code)
     _validate_inline_pdf_limits(manifest, configuration.analysis)
@@ -363,7 +367,7 @@ def prepare_analysis(
         spec=spec,
         plan=plan,
         cost=cost,
-        paths=output_paths(output_root, security_code),
+        paths=output_paths(output_root, security_code, report_date=report_date),
     )
     _persist_analysis_preflight(prepared, repository_root)
     return prepared
@@ -383,20 +387,58 @@ def _load_analysis(paths: OutputPaths) -> JapaneseAnalysis:
     return materialize_japanese_analysis(parse_japanese_analysis_payload(payload))
 
 
-def _retire_report_path(paths: OutputPaths, current: Path) -> str | None:
-    if not current.is_file():
-        return None
-    retired_dir = paths.artifacts_dir / "retired_reports"
-    ensure_directory(retired_dir)
+def _retire_report_paths(
+    paths: OutputPaths,
+    current_paths: list[Path],
+) -> list[str]:
+    existing = [path for path in current_paths if path.is_file()]
+    if not existing:
+        return []
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
-    destination = retired_dir / f"{stamp}_{current.name}"
-    current.replace(destination)
-    return str(destination)
+    retired_dir = paths.output_dir / "history" / stamp
+    ensure_directory(retired_dir)
+    destinations: list[str] = []
+    for current in existing:
+        destination = retired_dir / current.name
+        current.replace(destination)
+        destinations.append(str(destination))
+    return destinations
+
+
+def _dated_report_paths(
+    paths: OutputPaths,
+    language: str,
+    *,
+    draft: bool,
+) -> list[Path]:
+    marker = "_draft_" if draft else "_"
+    pattern = re.compile(
+        rf"analysis_{re.escape(language)}_{re.escape(paths.security_code)}"
+        rf"{marker}\d{{8}}\.md"
+    )
+    return sorted(
+        path
+        for path in paths.output_dir.glob(
+            f"analysis_{language}_{paths.security_code}_*.md"
+        )
+        if path.is_file() and pattern.fullmatch(path.name)
+    )
 
 
 def _retire_current_report(paths: OutputPaths, language: str) -> str | None:
-    current = paths.report_ja if language == "ja" else paths.report_en
-    return _retire_report_path(paths, current)
+    retired = _retire_report_paths(
+        paths,
+        _dated_report_paths(paths, language, draft=False),
+    )
+    return retired[-1] if retired else None
+
+
+def _retire_current_draft(paths: OutputPaths, language: str) -> str | None:
+    retired = _retire_report_paths(
+        paths,
+        _dated_report_paths(paths, language, draft=True),
+    )
+    return retired[-1] if retired else None
 
 
 def _discard_report_path(path: Path) -> None:
@@ -410,8 +452,8 @@ def _invalidate_dependent_english_report(
     mode: str,
 ) -> None:
     paths = prepared.paths
-    retired_final = _retire_report_path(paths, paths.report_en)
-    retired_draft = _retire_report_path(paths, paths.report_en_draft)
+    retired_final = _retire_current_report(paths, "en")
+    retired_draft = _retire_current_draft(paths, "en")
     if (
         retired_final is None
         and retired_draft is None
@@ -506,13 +548,11 @@ def _write_api_failure_report_status(
     api_state: str,
 ) -> None:
     paths = prepared.paths
-    report = paths.report_ja if language == "ja" else paths.report_en
-    draft = paths.report_ja_draft if language == "ja" else paths.report_en_draft
     status_path = (
         paths.report_status_ja if language == "ja" else paths.report_status_en
     )
-    retired_final = _retire_report_path(paths, report)
-    retired_draft = _retire_report_path(paths, draft)
+    retired_final = _retire_current_report(paths, language)
+    retired_draft = _retire_current_draft(paths, language)
     write_json(
         status_path,
         {
@@ -626,13 +666,16 @@ def prepare_translation(
     security_code: str,
     *,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> PreparedRun:
     repository_root = repository_root.resolve()
-    output_root = (output_root or repository_root / "output").resolve()
+    output_root = (
+        output_root or repository_root / DEFAULT_OUTPUT_DIRECTORY
+    ).resolve()
     configuration = _profile_configuration(model_profile)
-    paths = output_paths(output_root, security_code)
+    paths = output_paths(output_root, security_code, report_date=report_date)
     manifest = select_filings(repository_root, security_code)
     analysis = _load_analysis(paths)
     clean_report = render_japanese(analysis)
@@ -926,6 +969,7 @@ def execute_analysis(
     *,
     confirmed_request_id: str,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> PreparedRun:
@@ -935,6 +979,7 @@ def execute_analysis(
         repository_root,
         security_code,
         output_root=output_root,
+        report_date=report_date,
         max_api_attempts=max_api_attempts,
         model_profile=model_profile,
     )
@@ -1013,6 +1058,7 @@ def execute_translation(
     *,
     confirmed_request_id: str,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> PreparedRun:
@@ -1022,6 +1068,7 @@ def execute_translation(
         repository_root,
         security_code,
         output_root=output_root,
+        report_date=report_date,
         max_api_attempts=max_api_attempts,
         model_profile=model_profile,
     )
@@ -1189,6 +1236,7 @@ def reprocess_stored_analysis(
     security_code: str,
     *,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> dict[str, Any]:
     """Normalize, validate, and render an existing response without networking."""
@@ -1197,6 +1245,7 @@ def reprocess_stored_analysis(
         repository_root,
         security_code,
         output_root=output_root,
+        report_date=report_date,
         model_profile=model_profile,
     )
     if not prepared.paths.analysis_structured.is_file():
@@ -1239,6 +1288,7 @@ def reprocess_stored_translation(
     security_code: str,
     *,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
     model_profile: str = DEFAULT_MODEL_PROFILE,
 ) -> dict[str, Any]:
     """Normalize, validate, and render a stored translation without networking."""
@@ -1247,6 +1297,7 @@ def reprocess_stored_translation(
         repository_root,
         security_code,
         output_root=output_root,
+        report_date=report_date,
         model_profile=model_profile,
     )
     if not prepared.paths.translation_structured.is_file():
@@ -1294,16 +1345,37 @@ def compare_existing_reports(
     security_code: str,
     *,
     output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
 ) -> dict[str, Any]:
-    output_root = (output_root or repository_root / "output").resolve()
-    paths = output_paths(output_root, security_code)
+    output_root = (
+        output_root or repository_root / DEFAULT_OUTPUT_DIRECTORY
+    ).resolve()
+    paths = output_paths(output_root, security_code, report_date=report_date)
     result: dict[str, Any] = {}
     for language, generated, evaluation in (
         ("ja", paths.report_ja, paths.evaluation_ja),
         ("en", paths.report_en, paths.evaluation_en),
     ):
-        draft = paths.report_ja_draft if language == "ja" else paths.report_en_draft
-        selected_report = generated if generated.is_file() else draft
+        available_reports = _dated_report_paths(
+            paths,
+            language,
+            draft=False,
+        )
+        current_report = (
+            generated
+            if generated.is_file()
+            else (available_reports[-1] if available_reports else generated)
+        )
+        configured_draft = (
+            paths.report_ja_draft if language == "ja" else paths.report_en_draft
+        )
+        available_drafts = _dated_report_paths(paths, language, draft=True)
+        draft = (
+            configured_draft
+            if configured_draft.is_file()
+            else (available_drafts[-1] if available_drafts else configured_draft)
+        )
+        selected_report = current_report if current_report.is_file() else draft
         if not selected_report.is_file():
             result[language] = {"status": "missing", "path": str(generated)}
             continue
@@ -1319,7 +1391,9 @@ def compare_existing_reports(
             exemplar if exemplar.is_file() else None,
             anchor_fiscal_year=manifest.window.anchor_fiscal_year,
         )
-        comparison["report_kind"] = "final" if generated.is_file() else "draft"
+        comparison["report_kind"] = (
+            "final" if current_report.is_file() else "draft"
+        )
         write_json(evaluation, comparison)
         result[language] = comparison
     return result

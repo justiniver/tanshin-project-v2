@@ -24,6 +24,7 @@ $repositoryRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $statusHelpers = Join-Path $PSScriptRoot 'api_status_helpers.ps1'
 . $statusHelpers
 $python = Join-Path $repositoryRoot '.venv\Scripts\python.exe'
+$reportDate = Get-Date -Format 'yyyyMMdd'
 if (-not (Test-Path -LiteralPath $python -PathType Leaf)) {
     throw "Python virtual environment was not found at: $python"
 }
@@ -48,26 +49,78 @@ $modelProfile = if ($Pro) {
     'default'
 }
 
-try {
-    if ($Execute) {
-        $currentOutput = Join-Path $repositoryRoot "output\$SecurityCode"
-        if (Test-Path -LiteralPath $currentOutput -PathType Container) {
-            $historyRoot = Join-Path $currentOutput 'history'
-            $archive = Join-Path $historyRoot (Get-Date -Format 'yyyyMMdd_HHmmss')
-            New-Item -ItemType Directory -Path $archive -Force | Out-Null
-            Get-ChildItem -LiteralPath $currentOutput -Force |
-                Where-Object { $_.Name -ne 'history' } |
-                ForEach-Object {
-                    Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse
-                }
-            Write-Host "Archived existing output to: $archive"
+function Backup-CurrentOutput {
+    [CmdletBinding()]
+    param()
+
+    $currentOutput = Join-Path $repositoryRoot "final_output\$SecurityCode"
+    if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
+        return $false
+    }
+    $currentItems = @(
+        Get-ChildItem -LiteralPath $currentOutput -Force |
+            Where-Object { $_.Name -ne 'history' }
+    )
+    if ($currentItems.Count -eq 0) {
+        return $false
+    }
+    $historyRoot = Join-Path $currentOutput 'history'
+    $archive = Join-Path (
+        $historyRoot
+    ) (Get-Date -Format 'yyyyMMdd_HHmmssfff')
+    New-Item -ItemType Directory -Path $archive -Force | Out-Null
+    $currentItems | ForEach-Object {
+        Copy-Item `
+            -LiteralPath $_.FullName `
+            -Destination $archive `
+            -Recurse
+    }
+    Write-Host "Archived existing output to: $archive"
+    return $true
+}
+
+function Remove-CurrentReports {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        [ValidateSet('analysis', 'translation')]
+        [string]$RequestedStage
+    )
+
+    $currentOutput = Join-Path $repositoryRoot "final_output\$SecurityCode"
+    if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
+        return
+    }
+    $languagesToRemove = if ($RequestedStage -eq 'analysis') {
+        'ja|en'
+    } else {
+        'en'
+    }
+    $reportPattern = (
+        '^analysis_(' +
+        $languagesToRemove +
+        ')_' +
+        [regex]::Escape($SecurityCode) +
+        '_\d{8}\.md$'
+    )
+    Get-ChildItem -LiteralPath $currentOutput -File |
+        Where-Object { $_.Name -match $reportPattern } |
+        ForEach-Object {
+            Remove-Item -LiteralPath $_.FullName
         }
+}
+
+try {
+    $outputWasArchived = $false
+    if ($Execute) {
+        $outputWasArchived = Backup-CurrentOutput
     }
 
     # Always regenerate and display the inspected request plan offline first.
     $env:TANSHIN_OFFLINE_ONLY = '1'
     & $python -m tanshin_pipeline $SecurityCode `
         --repository-root $repositoryRoot `
+        --report-date $reportDate `
         --stage $Stage `
         --model-profile $modelProfile `
         --max-api-attempts 1
@@ -75,7 +128,9 @@ try {
         throw "Offline preparation failed with exit code $LASTEXITCODE."
     }
 
-    $artifacts = Join-Path $repositoryRoot "output\$SecurityCode\artifacts"
+    $artifacts = Join-Path (
+        $repositoryRoot
+    ) "final_output\$SecurityCode\artifacts"
     $planName = if ($Stage -eq 'analysis') {
         'request_plan_analysis.json'
     } else {
@@ -116,9 +171,13 @@ try {
         foreach ($file in $plan.files) {
             Write-Host "  - $($file.filename) ($($file.page_count) pages)"
         }
-        Write-Host "Expected final on success: output\$SecurityCode\analysis_ja_$SecurityCode.md"
+        Write-Host (
+            "Expected final on success: " +
+            "final_output\$SecurityCode\" +
+            "analysis_ja_${SecurityCode}_$reportDate.md"
+        )
         Write-Host 'Validation findings are retained in JSON diagnostics and do not change the Markdown filename.'
-        Write-Host "Diagnostics: output\$SecurityCode\artifacts\model_response_ja.raw.json,"
+        Write-Host "Diagnostics: final_output\$SecurityCode\artifacts\model_response_ja.raw.json,"
         Write-Host '  analysis_ja.structured.json, analysis_ja.normalized.json,'
         Write-Host '  normalization_ja.json, management_consistency.json,'
         Write-Host '  validation_ja.json, report_status_ja.json,'
@@ -126,9 +185,13 @@ try {
         Write-Host '  and exemplar_comparison_ja.json'
     } else {
         Write-Host 'PDFs submitted: none (validated Japanese structured JSON only)'
-        Write-Host "Expected final on success: output\$SecurityCode\analysis_en_$SecurityCode.md"
+        Write-Host (
+            "Expected final on success: " +
+            "final_output\$SecurityCode\" +
+            "analysis_en_${SecurityCode}_$reportDate.md"
+        )
         Write-Host 'Validation findings are retained in JSON diagnostics and do not change the Markdown filename.'
-        Write-Host "Diagnostics: output\$SecurityCode\artifacts\model_response_en.raw.json,"
+        Write-Host "Diagnostics: final_output\$SecurityCode\artifacts\model_response_en.raw.json,"
         Write-Host '  analysis_en.structured.json, analysis_en.normalized.json,'
         Write-Host '  normalization_en.json, validation_en.json, report_status_en.json,'
         Write-Host '  api_status_translation.json, token_usage.json, cost.json,'
@@ -167,6 +230,10 @@ try {
         exit 2
     }
 
+    if ($outputWasArchived) {
+        Remove-CurrentReports -RequestedStage $Stage
+    }
+
     # The user has manually initiated and confirmed this one inspected request.
     Remove-Item Env:TANSHIN_OFFLINE_ONLY -ErrorAction SilentlyContinue
     $env:TANSHIN_LIVE_API = 'MANUAL_USER_RUN'
@@ -174,6 +241,7 @@ try {
     Write-Host 'MODEL RUN STATE: RUNNING'
     & $python -m tanshin_pipeline $SecurityCode `
         --repository-root $repositoryRoot `
+        --report-date $reportDate `
         --stage $Stage `
         --model-profile $modelProfile `
         --execute-api `

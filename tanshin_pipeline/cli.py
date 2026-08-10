@@ -7,6 +7,7 @@ import json
 import sys
 from pathlib import Path
 
+from .config import DEFAULT_OUTPUT_DIRECTORY, normalize_report_date
 from .pipeline import (
     PipelineConfigurationError,
     PipelineValidationError,
@@ -19,6 +20,13 @@ from .pipeline import (
     reprocess_stored_analysis,
     reprocess_stored_translation,
 )
+
+
+def _parse_report_date(value: str) -> str:
+    try:
+        return normalize_report_date(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(str(exc)) from exc
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -38,7 +46,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output-root",
         type=Path,
-        help="Output root. Defaults to <repository-root>/output.",
+        help="Output root. Defaults to <repository-root>/final_output.",
+    )
+    parser.add_argument(
+        "--report-date",
+        type=_parse_report_date,
+        help=(
+            "Local report date in YYYYMMDD form. Defaults to today's local "
+            "date; runners pin this value for a complete invocation."
+        ),
     )
     parser.add_argument(
         "--stage",
@@ -243,7 +259,7 @@ def main(argv: list[str] | None = None) -> int:
     output_root = (
         args.output_root.resolve()
         if args.output_root is not None
-        else repository_root / "output"
+        else repository_root / DEFAULT_OUTPUT_DIRECTORY
     )
     if args.max_api_attempts < 1:
         raise SystemExit("--max-api-attempts must be at least 1.")
@@ -254,6 +270,7 @@ def main(argv: list[str] | None = None) -> int:
             repository_root,
             args.security_code,
             output_root=output_root,
+            report_date=args.report_date,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
@@ -266,6 +283,7 @@ def main(argv: list[str] | None = None) -> int:
                     repository_root,
                     args.security_code,
                     output_root=output_root,
+                    report_date=args.report_date,
                     model_profile=args.model_profile,
                 )
                 if args.stage == "analysis"
@@ -273,6 +291,7 @@ def main(argv: list[str] | None = None) -> int:
                     repository_root,
                     args.security_code,
                     output_root=output_root,
+                    report_date=args.report_date,
                     model_profile=args.model_profile,
                 )
             )
@@ -293,6 +312,7 @@ def main(argv: list[str] | None = None) -> int:
                     repository_root,
                     args.security_code,
                     output_root=output_root,
+                    report_date=args.report_date,
                     max_api_attempts=args.max_api_attempts,
                     model_profile=args.model_profile,
                 )
@@ -301,6 +321,7 @@ def main(argv: list[str] | None = None) -> int:
                     repository_root,
                     args.security_code,
                     output_root=output_root,
+                    report_date=args.report_date,
                     max_api_attempts=args.max_api_attempts,
                     model_profile=args.model_profile,
                 )
@@ -326,6 +347,7 @@ def main(argv: list[str] | None = None) -> int:
                 args.security_code,
                 confirmed_request_id=args.confirm_request,
                 output_root=output_root,
+                report_date=args.report_date,
                 max_api_attempts=args.max_api_attempts,
                 model_profile=args.model_profile,
             )
@@ -335,6 +357,7 @@ def main(argv: list[str] | None = None) -> int:
                 args.security_code,
                 confirmed_request_id=args.confirm_request,
                 output_root=output_root,
+                report_date=args.report_date,
                 max_api_attempts=args.max_api_attempts,
                 model_profile=args.model_profile,
             )

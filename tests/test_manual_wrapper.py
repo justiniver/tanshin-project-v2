@@ -23,6 +23,25 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("--confirm-request $plan.request_id", script)
         self.assertIn("--max-api-attempts 1", script)
         self.assertIn("Archived existing output to:", script)
+        self.assertIn("$reportDate = Get-Date -Format 'yyyyMMdd'", script)
+        self.assertEqual(script.count("--report-date $reportDate"), 2)
+        self.assertIn(
+            '"final_output\\$SecurityCode\\artifacts"',
+            script,
+        )
+        self.assertIn("'ja|en'", script)
+        self.assertIn("'en'", script)
+        self.assertIn("Copy-Item `", script)
+        self.assertIn("Remove-Item -LiteralPath $_.FullName", script)
+        self.assertIn(
+            "analysis_ja_${SecurityCode}_$reportDate.md",
+            script,
+        )
+        self.assertIn(
+            "analysis_en_${SecurityCode}_$reportDate.md",
+            script,
+        )
+        self.assertNotIn('"output\\$SecurityCode', script)
         self.assertIn("Fact-free style blueprint:", script)
         self.assertIn("Estimated maximum stage cost: JPY {0:N0}", script)
         self.assertIn(
@@ -123,6 +142,32 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("PDF detail:", script)
         self.assertIn("Translation provider:", script)
         self.assertIn("PREVIEW ONLY: no API request was sent.", script)
+        self.assertIn("$reportDate = Get-Date -Format 'yyyyMMdd'", script)
+        self.assertEqual(script.count("--report-date $reportDate"), 2)
+        self.assertIn(
+            '$currentOutput = Join-Path $repositoryRoot "final_output\\$Code"',
+            script,
+        )
+        self.assertIn(
+            "$canonicalOutput = Join-Path $repositoryRoot 'final_output'",
+            script,
+        )
+        self.assertIn(
+            "final_output\\$code\\analysis_ja_${code}_$reportDate.md",
+            script,
+        )
+        self.assertIn(
+            "final_output\\$code\\analysis_en_${code}_$reportDate.md",
+            script,
+        )
+        self.assertIn("'^analysis_(ja|en)_' +", script)
+        self.assertIn(
+            "Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse",
+            script,
+        )
+        self.assertIn("Remove-Item -LiteralPath $_.FullName", script)
+        self.assertNotIn('"output\\$Code', script)
+        self.assertNotIn("'output'", script)
         self.assertIn("Estimated maximum analysis cost: JPY {0:N0}", script)
         self.assertIn("Maximum analysis-plus-English cost: JPY {0:N0}", script)
         self.assertIn(

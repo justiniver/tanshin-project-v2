@@ -63,6 +63,10 @@ normalization, validation, rendering, retry, and failure tests.
 - Preserve historical runs and unrelated user changes.
 - Use `apply_patch` for source edits.
 - Do not improve a report by patching its rendered output.
+- The default report root is `final_output/`. Canonical report names are
+  `analysis_ja_{security_code}_{YYYYMMDD}.md` and
+  `analysis_en_{security_code}_{YYYYMMDD}.md`, using the local run date.
+  Timestamped history directories preserve those filenames unchanged.
 - Treat deterministic evaluation scores as diagnostics, not as the authority on
   report quality.
 - Deterministic validation is intentionally non-gating. It must still run and

@@ -11,6 +11,10 @@ TANSHIN PIPELINE WORKING RULES
    output or by overwriting historical artifacts outside the pipeline's normal
    archival process.
 
+   The default report root is final_output/. Canonical Markdown filenames end
+   in the local run date as YYYYMMDD. When reports are archived under a
+   timestamped history directory, preserve those dated filenames unchanged.
+
 3. Judge report quality primarily through direct qualitative review against the
    exemplars and prior runs. Deterministic comparison scores are diagnostic
    metadata only and must not be treated as the authoritative quality judgment.
