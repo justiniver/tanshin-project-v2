@@ -1,6 +1,6 @@
 # Tanshin management-commentary report pipeline
 
-This repository converts Japanese 決算短信 (Tanshin) PDFs into structured,
+This repository converts Japanese 決算短信 (Kessan Tanshin) PDFs into structured,
 investor-oriented Markdown reports:
 
 - a Japanese report focused on the latest filing and roughly ten years of
