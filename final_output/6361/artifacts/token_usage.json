@@ -1,0 +1,35 @@
+{
+  "stage": "analysis",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "model_version": "gemini-3.6-flash",
+  "response_id": "wMZ7au6DBqGj2roPipmYgQE",
+  "attempts": 1,
+  "usage_metadata": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6554
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 220472
+      }
+    ],
+    "cached_content_token_count": 227026,
+    "candidates_token_count": 14016,
+    "prompt_token_count": 228987,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6611
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 222376
+      }
+    ],
+    "thoughts_token_count": 4459,
+    "total_token_count": 247462
+  }
+}

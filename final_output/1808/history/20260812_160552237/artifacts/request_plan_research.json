@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0",
+  "stage": "research",
+  "security_code": "1808",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "request_options": {},
+  "request_id": "692dc080e9d68c73",
+  "manifest_id": "82ec9bc80448dba2",
+  "system_prompt_sha256": "904a9bdffcf58546890426499b7a1f40ea2d52b4b71a0cbc9b280a002e5534e4",
+  "prompt_sha256": "2833caedf4d939694f4206e6b140eff1569eb7efde36c56ab86a2111a4a04a01",
+  "response_schema_sha256": "76ac9569a669163149b904abc5eed7d124f31bf9bcd93b99b3aa1d7250f96955",
+  "files": [
+    {
+      "filename": "01_2026_FY_tanshin.pdf",
+      "relative_path": "data/1808/01_2026_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 53,
+      "byte_size": 1301675,
+      "sha256": "2e1161d5add55d0240eaad11581d91a67daebac4f54487ce62924f985cc200f9"
+    },
+    {
+      "filename": "05_2025_FY_tanshin.pdf",
+      "relative_path": "data/1808/05_2025_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 54,
+      "byte_size": 1286602,
+      "sha256": "227533bd7a8afc607202c13551f2d35e66c398bf4535359d91f9a2f310b83399"
+    },
+    {
+      "filename": "09_2024-05-10_tanshin.pdf",
+      "relative_path": "data/1808/09_2024-05-10_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 50,
+      "byte_size": 1165646,
+      "sha256": "c91a5205fd152dbe720e20e46a962c9be1a6f9d468c226c0654d1a33c6f9c49c"
+    },
+    {
+      "filename": "13_2023-05-11_tanshin.pdf",
+      "relative_path": "data/1808/13_2023-05-11_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 50,
+      "byte_size": 858409,
+      "sha256": "8b7c57b812b754a9270d361beba8d67656ce404ee2e4b1b81cc1cc87aa954717"
+    },
+    {
+      "filename": "17_2022-05-12_tanshin.pdf",
+      "relative_path": "data/1808/17_2022-05-12_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 52,
+      "byte_size": 968868,
+      "sha256": "f9e0a475b8f9f6dd9130d0672d207ccd565be8dd0f5ed5e38d74238c098ec553"
+    },
+    {
+      "filename": "21_2021-05-13_tanshin.pdf",
+      "relative_path": "data/1808/21_2021-05-13_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 50,
+      "byte_size": 849340,
+      "sha256": "055c84ab36981a89c38762b819390c08d42f7d743ced883622a760d8205e9d8a"
+    },
+    {
+      "filename": "25_2020-05-14_tanshin.pdf",
+      "relative_path": "data/1808/25_2020-05-14_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 51,
+      "byte_size": 986748,
+      "sha256": "99f74ffa3c174437240cd4eb346d5509b2b51e82c95525c99c133cd048cd1792"
+    },
+    {
+      "filename": "29_2019-05-10_tanshin.pdf",
+      "relative_path": "data/1808/29_2019-05-10_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 49,
+      "byte_size": 1028451,
+      "sha256": "bf8aed18bdb4df4ab3f9934b3aa6f87104273651ffc988947fba61b8693ec3cc"
+    },
+    {
+      "filename": "33_2018-05-11_tanshin.pdf",
+      "relative_path": "data/1808/33_2018-05-11_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 51,
+      "byte_size": 1124406,
+      "sha256": "d5e9b9abbdc073464f907b2c5b6e86fb5f99520713ae8a5fac2584416e18ade3"
+    },
+    {
+      "filename": "37_2017-05-12_tanshin.pdf",
+      "relative_path": "data/1808/37_2017-05-12_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 49,
+      "byte_size": 1183474,
+      "sha256": "da027d93f769c043a6de51bcde39092cdf40e133f87fdc9f8f89e02bc00550d3"
+    }
+  ],
+  "style_blueprint_path": null,
+  "style_blueprint_sha256": null,
+  "exemplar_path": null,
+  "exemplar_sha256": null,
+  "max_output_tokens": 32768,
+  "makes_network_request": true,
+  "request_count_if_executed": 1
+}

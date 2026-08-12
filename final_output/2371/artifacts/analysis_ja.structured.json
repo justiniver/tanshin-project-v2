@@ -1,0 +1,571 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "2371",
+    "company_name_ja": "株式会社カカクコム",
+    "company_name_en": "Kakaku.com, Inc.",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "latest_period_ja": "2026年3月期",
+    "latest_period_en": "FY2026"
+  },
+  "claims": [
+    {
+      "claim_id": "overview-01",
+      "section": "company.overview",
+      "order": 1,
+      "headline_ja": "購買支援サイト「価格.com」および飲食店検索・予約サイト「食べログ」を中心とするインターネットメディア事業を展開",
+      "body_ja": "株式会社カカクコムは、購買支援サイト『価格.com』やレストラン検索・予約サイト『食べログ』、求人情報の一括検索サイト『求人ボックス』などを運営するIT企業である。ユーザーに対して購買や飲食、求人、生活関連の選択・比較情報を提供し、加盟店舗や広告主、事業者からの手数料収入や広告料等を得る仕組みで収益化を図っている。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0008"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "takeaway-01",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "2026年3月期は増収減益となり売上収益94,127百万円・営業利益27,243百万円を記録",
+      "body_ja": "2026年3月期の連結業績は、売上収益が前年同期比20.0%増の94,127百万円となった一方、営業利益は同7.0%減の27,243百万円、親会社の所有者に帰属する当期利益は同6.1%減の18,803百万円となった。食べログ事業やインキュベーション事業の成長および求人ボックス事業の営業体制強化に伴う増収があったものの、求人ボックス事業を中心とした成長投資に伴う費用拡大がこれを上回った。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "takeaway-02",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "営業キャッシュ・フローは25,354百万円を創出し一定の現金創出力を持続",
+      "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは25,354百万円の収入（前期は27,404百万円の収入）となり、税引前当期利益27,347百万円を主因として安定した営業キャッシュ創出力を維持した。現金及び現金同等物の期末残高は前期末の50,859百万円から46,468百万円へと減少した。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "takeaway-03",
+      "section": "latest.key_takeaway",
+      "order": 3,
+      "headline_ja": "2027年3月期は売上収益114,500百万円・営業利益30,800百万円への増収増益を見込む",
+      "body_ja": "2027年3月期の連結業績予想として、売上収益114,500百万円（前期比21.6%増）、営業利益30,800百万円（前期比13.1%増）、親会社の所有者に帰属する当期利益20,700百万円（前期比10.1%増）を見込む。また、マネジメント業績指標として調整後EBITDA 36,000百万円を新たに導入する方針を示している。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0003"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "driver-01",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "食べログ事業の飲食店予約売上が29.9%増と大幅伸長しセグメント増収を牽引",
+      "body_ja": "食べログ事業の売上収益は前年同期比20.2%増の40,239百万円、セグメント利益は同22.8%増の22,196百万円となった。有料サービスの契約店舗数およびオンライン予約人数の継続的な増加を背景に、飲食店予約売上が前年同期比29.9%増の20,063百万円へと拡大したことが全体を押し上げた。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0004"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "driver-02",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "求人ボックス事業は売上収益が51.2%増と急速成長もセグメント損失1,486百万円へ転落",
+      "body_ja": "求人ボックス事業の売上収益は前年同期比51.2%増の20,205百万円へと拡大した一方、セグメント損益は前期の4,263百万円の利益から1,486百万円の損失となった。月間利用者数・訪問数の増加や営業代理店連携強化による稼働アカウント増加で大幅増収となったが、ブランド投資や営業体制強化等の先行投資費用が拡大した。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0005"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "outlook-01",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "HR事業への名称変更とエンゲージ子会社化により求人領域の成長加速を目指す",
+      "body_ja": "求人ボックス事業は、2026年4月1日付で「HR事業」へ名称変更し、「求人ボックス」と吸収分割により子会社化した「エンゲージ」の2ブランド体制を確立した。両サービスの強みを活かした情報充実や機能改善、営業体制強化への積極投資を進め、中長期的なシナジー創出と収益基盤強化を図る。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0006",
+        "01_2026_FY_tanshin.pdf:s0007"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "risk-01",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "成長領域への先行投資拡大に伴う短期的な利益率の圧迫リスク",
+      "body_ja": "求人ボックス事業を中心とするブランド認知向上や営業体制強化、M&Aに伴う費用の拡大により、2026年3月期は各事業の増収効果を費用増加が上回り営業減益となった。投資が期待通りの増収や将来利益につながらない場合、さらなる利益率低下を招くリスクが存在する。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0005"
+      ],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "risk-02",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "子会社買収および無形資産の計上に伴う減損損失発生リスク",
+      "body_ja": "株式会社LiPLUSホールディングスの株式取得により3,696百万円ののれんおよび588百万円の顧客関連資産等を計上し、さらに2026年4月には株式会社エンゲージを取得した。過去に連結子会社Patheeにおいて事業計画見直しによる588百万円の減損損失を計上した経緯があり、買収先の業績推移によっては将来的な減損リスクが懸念される。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0007",
+        "02_2025_FY_tanshin.pdf:s0019"
+      ],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "context-01",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "主力事業の好調と成長投資拡大による減益が交錯する事業転換期の現在地",
+      "body_ja": "カカクコムは2026年3月期において、食べログ事業のネット予約拡大等を背景に売上収益を20.0%増加させたものの、求人ボックス事業への集中的なブランド投資および営業体制強化費用が膨らみ営業減益を余儀なくされた。主力プラットフォームにおける収益化能力は維持されている。2026年4月にはエンゲージ事業を子会社化し、「HR事業」として求人領域の規模拡大とシナジー創出を加速させている。投資家にとっては、成長領域への投資費用が収益に結実し、中期経営計画（FY26/3〜FY30/3）で掲げる二桁成長と利益率回復の両立が達成されるかどうかが今後の検証点となる。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0004",
+        "01_2026_FY_tanshin.pdf:s0005",
+        "01_2026_FY_tanshin.pdf:s0006",
+        "01_2026_FY_tanshin.pdf:s0018"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-perspective-01",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "基幹メディアの成熟化に対し、飲食ネット予約と求人領域への事業シフトで成長を繋ぐ10年",
+      "body_ja": "過去10年間のカカクコムは、創業事業である「価格.com」がPCトラフィック減少や需要変動の影響を受けて横ばいから成熟傾向をたどる一方、「食べログ」のネット予約収益化や「求人ボックス」の急成長を新たな牽引役に据えることで全体の増収基調を維持してきた。一方で、感染症拡大期における外食需要急減などの外部ショックを経験したほか、直近では求人ボックスへの先行投資拡大によって一時的な営業減益が生じるなど、新領域の立ち上げと全社利益率維持との間でトレードオフに直面してきた。自己株式取得や配当による株主還元を継続しつつ、M&Aやブランド投資を組み合わせた事業ポートフォリオの再構築が進められている。",
+      "evidence_ids": [
+        "10_2017_FY_tanshin.pdf:s0009",
+        "08_2019_FY_tanshin.pdf:s0013",
+        "06_2021_FY_tanshin.pdf:s0011",
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0018"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-consistent-01",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "価格.comにおける耐久財・通信等比較サービスの持続的基盤と外部環境による変動",
+      "body_ja": "「価格.com」事業は、10年を通じて購買支援プラットフォームとしての集客力を維持し、比較・送客手数料や広告料を通じて安定した収益基盤を提供してきた。初期（2018年3月期等）には消費財・サービス比較の伸長により収益を伸ばし、中期（2021年3月期等）には巣ごもり需要によるショッピング急増と海外Wi-Fi消失という明暗を経験した。直近（2025年3月期・2026年3月期）でも新製品動向やWindows買い替え需要など環境変化の影響を受けつつも、全社を支える基幹事業としての役割を継続している。",
+      "evidence_ids": [
+        "09_2018_FY_tanshin.pdf:s0010",
+        "06_2021_FY_tanshin.pdf:s0011",
+        "02_2025_FY_tanshin.pdf:s0012"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-consistent-02",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "自己株式取得と安定配当を軸とした手元資金の積極的な株主還元方針",
+      "body_ja": "同社は一貫して強力な営業キャッシュ・フローを原資とした株主還元を実施してきた。初期（2020年3月期等）には自己株式取得8,014百万円および配当7,928百万円を実施し、中期（2022年3月期等）にも配当8,217百万円・自己株式取得5,016百万円を実施、直近（2026年3月期等）の中期経営計画においても株主還元と成長投資のバランスを維持する方針を明記している。",
+      "evidence_ids": [
+        "07_2020_FY_tanshin.pdf:s0016",
+        "05_2022_FY_tanshin.pdf:s0017",
+        "01_2026_FY_tanshin.pdf:s0018"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "trend-change-01",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "「求人ボックス」の立ち上げから主力事業化および積極的先行投資への転換",
+      "body_ja": "変化前（初期・2019年3月期等）において「求人ボックス」は新興メディア・ソリューション事業内の一育成サービスとして位置づけられていた。遷移期（中期・2023年3月期・2024年3月期）において月間利用者数の拡大に伴い金額的重要性が増し、独立した報告セグメントへと昇格した。現在（直近・2026年3月期）では年間売上高20,205百万円規模に達し、さらにエンゲージ子会社化やブランド投資の集中を通じてグループの成長軸へと位置づけが変化した。",
+      "evidence_ids": [
+        "08_2019_FY_tanshin.pdf:s0013",
+        "04_2023_FY_tanshin.pdf:s0014",
+        "03_2024_FY_tanshin.pdf:s0015",
+        "01_2026_FY_tanshin.pdf:s0005"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-change-02",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "食べログにおける店舗月額課金中心からネット予約従量収益への収益構造転換",
+      "body_ja": "変化前（初期・2018年3月期等）の食べログ事業は、飲食店向け有料プラン（月額固定料金）の獲得が中心であった。遷移期（中期・2021年3月期〜2023年3月期）において新型コロナウイルス感染症の影響でネット予約数が一時急激に減少したものの、行動制限解除とともにネット予約利用が浸透した。現在（直近・2026年3月期）では飲食店予約売上が20,063百万円と飲食店広告売上（16,623百万円）を上回る規模となり、ネット予約従量料金が主要な収益ドライバーへと定着した。",
+      "evidence_ids": [
+        "09_2018_FY_tanshin.pdf:s0010",
+        "06_2021_FY_tanshin.pdf:s0011",
+        "01_2026_FY_tanshin.pdf:s0004"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-capital-allocation-01",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "自元資金による機動的株主還元から成長領域M&Aおよびブランド先行投資への配分シフト",
+      "body_ja": "過去のカカクコムは創出した営業キャッシュ・フローを主に自己株式取得や配当などの株主還元に充当してきた。しかし直近では、LiPLUSホールディングス（3,943百万円）やエンゲージ（4,454百万円）の株式取得、ならびに求人ボックスへの集中的な広告宣伝・営業体制投資を開始し、資本配分の優先順位を成長投資およびM&Aへ広げている。",
+      "evidence_ids": [
+        "07_2020_FY_tanshin.pdf:s0016",
+        "02_2025_FY_tanshin.pdf:s0020",
+        "01_2026_FY_tanshin.pdf:s0005",
+        "01_2026_FY_tanshin.pdf:s0007"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend-implication-01",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "先行投資の費用増をHR・食べログの収益拡大で吸収できるかが中長期的な投資判断の軸",
+      "body_ja": "カカクコムは「価格.com」の成熟化に対し、「食べログ」の予約収益化と「求人ボックス（HR事業）」の拡大で持続成長を図る戦略を明確にしている。足元ではHR事業への先行投資やM&Aに伴う費用の発生で営業利益率が低下しているため、今後は投資効果によるHR事業の黒字化達成および食べログ予約売上の継続拡大によって、全社的な二桁成長および高利益率水準が再構築できるかが投資家の主要な確認点となる。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0005",
+        "01_2026_FY_tanshin.pdf:s0006",
+        "01_2026_FY_tanshin.pdf:s0018"
+      ],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "売上収益は94,127百万円（前年同期比20.0％増）となりました。これは主として、食べログ事業およびインキュベーション事業が堅調に推移したことに加え、求人ボックス事業における営業体制強化の効果が表れ、売上成長が継続的に進んだことによるものであります。営業利益は27,243百万円（前年同期比7.0％減）となりました。これは、求人ボックス事業を中心とした成長投資がさらに増加したことにより費用が拡大し、各事業の増収による利益の押し上げを上回ったことによるものであります。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "業績"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "営業活動によるキャッシュ・フロー 2026年３月期 25,354百万円 2025年３月期 27,404百万円",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "連結経営成績（３）連結キャッシュ・フローの状況",
+      "tags": [
+        "キャッシュ・フロー"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "上記取り組みにより、2027年3月期の連結売上収益は114,500百万円、連結営業利益は30,800百万円を見込んでおります。また、税引前利益は30,700百万円、親会社の所有者に帰属する当期利益については20,700百万円を見込んでおります。",
+      "period_label_ja": "2027年3月期予想",
+      "period_label_en": "FY2027 Forecast",
+      "statement_type": "forecast",
+      "source_section": "今後の見通し",
+      "tags": [
+        "業績予想"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "食べログ事業は、有料サービスの契約店舗数及びオンライン予約人数が継続的に増加したことにより、当連結会計年度の売上収益は40,239百万円（前年同期比20.2％増）、セグメント利益は22,196百万円（前年同期比22.8％増）となりました。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "セグメントの業績 食べログ事業",
+      "tags": [
+        "食べログ"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "求人ボックス事業は、前期から継続しているブランド投資の効果もあり、月間の利用者数および訪問数が増加しました。また、営業代理店との連携強化により、稼働アカウント数が増加したことに伴い、当連結会計年度の売上収益は20,205百万円（前年同期比51.2％増）、セグメント損失は1,486百万円（前年同期は4,263百万円のセグメント利益）となりました。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "セグメントの業績 求人ボックス事業",
+      "tags": [
+        "求人ボックス"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "求人ボックス事業は、エンゲージ事業の連結化に伴い、2026年4月1日付で事業名称を「HR事業」へ変更いたしました。HR事業としては、「求人ボックス」と「エンゲージ」の2ブランド体制を確立し、両サービスの強みを活かした情報充実と機能改善を進めることで、中長期的なシナジー創出に向けた基盤構築に注力してまいります。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "forecast",
+      "source_section": "今後の見通し",
+      "tags": [
+        "HR事業"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 22,
+      "exact_quote_ja": "当社は、2026年１月23日開催の取締役会において、エン株式会社の吸収分割によるengage事業承継会社を株式取得により子会社化することについて決議し、2026年４月１日に株式を取得いたしました。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "重要な後発事象（取得による企業結合）",
+      "tags": [
+        "M&A"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 17,
+      "exact_quote_ja": "当社グループは、事業本部及び子会社を基礎としたサービス別のセグメントから構成されており、「価格.com事業」、「食べログ事業」、「求人ボックス事業」、「インキュベーション事業」の４つを報告セグメントとしております。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "セグメント情報 報告セグメントの概要",
+      "tags": [
+        "セグメント"
+      ]
+    },
+    {
+      "evidence_id": "10_2017_FY_tanshin.pdf:s0009",
+      "source_filename": "10_2017_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当社は「ユーザー本位の価値あるサービスを創出しつづける」をミッションとして、幅広いジャンルで事業展開を行っております。創業当時よりサービスを提供している購買支援サイト『価格.com』をはじめ、ランキングとクチコミのグルメサイト『食ベログ』など、現在提供しているサービスは20以上あり、各事業それぞれがグループ全体の業績を牽引することで、継続的な成長の実現に取り組んでまいりました。",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "経営方針"
+      ]
+    },
+    {
+      "evidence_id": "09_2018_FY_tanshin.pdf:s0010",
+      "source_filename": "09_2018_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "『価格.com』におけるショッピング事業は、消費財カテゴリのユーザビリティ改善が影響し消費財流通総額が増加した結果、手数料収入が増加し、売上収益は9,248百万円（前年同期比1.2％増）となりました。",
+      "period_label_ja": "2018年3月期",
+      "period_label_en": "FY2018",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "価格.com"
+      ]
+    },
+    {
+      "evidence_id": "06_2021_FY_tanshin.pdf:s0011",
+      "source_filename": "06_2021_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "ショッピング事業は、在宅勤務や巣ごもりによる需要の高まりに加えてECの利用が拡大したことにより、売上が増加しました。サービス事業は、主に通信領域における海外Wi-Fiレンタルの需要消失を受け売上が減少しました。",
+      "period_label_ja": "2021年3月期",
+      "period_label_en": "FY2021",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "価格.com"
+      ]
+    },
+    {
+      "evidence_id": "02_2025_FY_tanshin.pdf:s0012",
+      "source_filename": "02_2025_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "ショッピング事業の売上収益は7,653百万円（前年同期比2.8%増）という結果になりました。新製品の減少、為替の変動による製品の値上がり、コロナ初期に生じた需要前倒しなどの影響は収束しました。",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "価格.com"
+      ]
+    },
+    {
+      "evidence_id": "08_2019_FY_tanshin.pdf:s0013",
+      "source_filename": "08_2019_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "『求人ボックス』は月間利用者数の増加に伴い手数料収入が増加しました。",
+      "period_label_ja": "2019年3月期",
+      "period_label_en": "FY2019",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況 新興メディア・ソリューション",
+      "tags": [
+        "求人ボックス"
+      ]
+    },
+    {
+      "evidence_id": "04_2023_FY_tanshin.pdf:s0014",
+      "source_filename": "04_2023_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "新興メディア・ソリューション事業は、求人、不動産及び旅行・移動の各領域において売上収益が増加しました。",
+      "period_label_ja": "2023年3月期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況",
+      "tags": [
+        "新興メディア"
+      ]
+    },
+    {
+      "evidence_id": "03_2024_FY_tanshin.pdf:s0015",
+      "source_filename": "03_2024_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "従前［新興メディア・ソリューション］に含めて記載しておりました求人ボックス事業については、金額的重要性が増したため、当連結会計年度より区分を追加して記載しております。",
+      "period_label_ja": "2024年3月期",
+      "period_label_en": "FY2024",
+      "statement_type": "actual",
+      "source_section": "当期の経営成績の概況 注記",
+      "tags": [
+        "セグメント変更"
+      ]
+    },
+    {
+      "evidence_id": "07_2020_FY_tanshin.pdf:s0016",
+      "source_filename": "07_2020_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "財務活動に使用した資金は16,946百万円（前年同期は9,734百万円の支出）となりました。これは、主として自己株式の取得による支出が8,014百万円、配当金の支払による支出が7,928百万円あったことによるものであります。",
+      "period_label_ja": "2020年3月期",
+      "period_label_en": "FY2020",
+      "statement_type": "actual",
+      "source_section": "当期のキャッシュ・フローの概況",
+      "tags": [
+        "株主還元"
+      ]
+    },
+    {
+      "evidence_id": "05_2022_FY_tanshin.pdf:s0017",
+      "source_filename": "05_2022_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "財務活動に使用した資金は15,310百万円（前年同期は9,722百万円の支出）となりました。これは主に、配当金の支払による支出が8,217百万円、自己株式の取得による支出が5,016百万円、リース負債の返済による支出が1,411百万円あったことによるものであります。",
+      "period_label_ja": "2022年3月期",
+      "period_label_en": "FY2022",
+      "statement_type": "actual",
+      "source_section": "当期のキャッシュ・フローの概況",
+      "tags": [
+        "株主還元"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0018",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "2025年３月19日に発表した「中期経営計画（FY26/3～FY30/3）」において公表しましたとおり、当社グループは、売上収益および営業利益の年平均成長率（CAGR）で二桁成長を目指すとともに、株主還元と成長投資のバランスを図りながら、持続的な企業価値の向上に努めてまいります。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "target",
+      "source_section": "今後の見通し",
+      "tags": [
+        "中期経営計画"
+      ]
+    },
+    {
+      "evidence_id": "02_2025_FY_tanshin.pdf:s0019",
+      "source_filename": "02_2025_FY_tanshin.pdf",
+      "pdf_page": 21,
+      "exact_quote_ja": "当連結会計年度において、買収時に想定をしていた連結子会社㈱Patheeの早期黒字化という当初の目的を達成することが困難であることが判明し、見直し後の事業計画に基づいて回収可能価額まで減損損失を認識した結果、価格.com事業セグメントにて、同社の事業に関連する主に無形資産及びのれんについて、減損損失588百万円（内、技術関連資産140百万円、のれん446百万円、その他２百万円）を計上いたしました。",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "減損損失",
+      "tags": [
+        "減損"
+      ]
+    },
+    {
+      "evidence_id": "02_2025_FY_tanshin.pdf:s0020",
+      "source_filename": "02_2025_FY_tanshin.pdf",
+      "pdf_page": 21,
+      "exact_quote_ja": "当社は、2025年３月19日開催の取締役会において、以下の通り、株式会社LiPLUSホールディングスの株式取得により子会社化することについて決議し、2025年４月１日に株式を取得いたしました。…株式取得の対価 現金 3,943百万円",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "重要な後発事象（取得による企業結合）",
+      "tags": [
+        "M&A"
+      ]
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "経営陣は基幹メディア（価格.com、食べログ）の強化と新規領域（求人ボックス等）の育成・拡大を一貫して掲げ、時代の変化に合わせて報告セグメントを再編しつつ整合性のある戦略を推進している。",
+        "evidence_ids": [
+          "10_2017_FY_tanshin.pdf:s0009",
+          "03_2024_FY_tanshin.pdf:s0015",
+          "01_2026_FY_tanshin.pdf:s0018"
+        ]
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "食べログにおけるネット予約の拡大や、求人ボックスの独立セグメント化および大規模投資・M&Aを通じたHR領域の拡大など、公表した成長施策を着実に実行している。一方、Patheeなどの買収子会社で計画未達による減損が発生した事例も存在する。",
+        "evidence_ids": [
+          "08_2019_FY_tanshin.pdf:s0013",
+          "02_2025_FY_tanshin.pdf:s0019",
+          "01_2026_FY_tanshin.pdf:s0005"
+        ]
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 2,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "コロナ禍など外部環境の変化が著しい局面では業績予想を未定とするなど慎重な開示姿勢をとる一方、2026年3月期においては求人ボックスへの投資拡大により増収幅が大きくなったものの減益となり、投資フェーズにおける短期業績の振れが見られる。",
+        "evidence_ids": [
+          "07_2020_FY_tanshin.pdf:s0016",
+          "01_2026_FY_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "求人ボックスの先行投資に伴うセグメント赤字化やPatheeの減損損失など、業績下振れや特別損失の要因について決算短信内で具体的かつ定量的に理由を開示しており、説明責任を果たしている。",
+        "evidence_ids": [
+          "02_2025_FY_tanshin.pdf:s0019",
+          "01_2026_FY_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0005"
+        ]
+      }
+    ],
+    "overall_rationale_ja": "カカクコムの経営陣は、10年を通じてユーザーファーストの理念のもと「価格.com」「食べログ」の基盤強化と「求人ボックス」等の新規育成を一貫して推進してきた。買収子会社の減損や先行投資拡大による短期的な減益などは発生しているものの、施策の実行力と開示の透明性は高く維持されている。"
+  },
+  "model_notes": []
+}

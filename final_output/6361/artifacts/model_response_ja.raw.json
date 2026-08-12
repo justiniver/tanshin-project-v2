@@ -1,0 +1,766 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 12 Aug 2026 01:08:56 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=233066",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"6361\",\n    \"company_name_ja\": \"株式会社荏原製作所\",\n    \"company_name_en\": \"EBARA CORPORATION\",\n    \"latest_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n    \"latest_period_ja\": \"2026年12月期 第1四半期\",\n    \"latest_period_en\": \"FY2026 Q1\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_co_01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"ポンプ等の風水力機械から半導体製造装置までを展開する産業機械メーカー\",\n      \"body_ja\": \"株式会社荏原製作所は、各種ポンプ、コンプレッサ・タービン、冷熱機械などの風水力事業（建築・産業、エネルギー、インフラセグメント）、ごみ焼却プラントや水処理施設を手掛ける環境事業、およびCMP装置や真空ポンプなどの半導体製造装置を提供する精密・電子事業を展開しています。官公庁や産業界、半導体メーカー等を顧客とし、製品の製造・納入にとどまらず、運転管理・メンテナンスなどのサービス＆サポート（O&M/S&S）を通じて継続的な収益を得るビジネスモデルを構築しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0001\",\n        \"10_2023_FY_ebara_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_lkt_01\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年12月期第1四半期の連結業績は各主要損益指標で第1四半期として過去最高額を更新\",\n      \"body_ja\": \"2026年12月期第1四半期連結累計期間の業績は、売上収益2,463億11百万円（前年同期比15.8%増）、営業利益267億49百万円（前年同期比18.4%増）、親会社の所有者に帰属する四半期利益183億22百万円（前年同期比16.0%増）となり、第1四半期連結累計期間として過去最高額を更新しました。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_lkt_02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フローは前年同期の赤字から257億13百万円の黒字へ大幅改善\",\n      \"body_ja\": \"当第1四半期連結累計期間の営業活動によるキャッシュ・フローは257億13百万円の収入超過となり、前年同期の15億35百万円の支出超過から大幅に改善しました。税引前四半期利益269億40百万円の計上や営業債権・棚卸資産の回収進捗などが寄与しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lkt_03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"通期の税引前利益及び親会社所有者帰属当期利益の業績予想を上方修正\",\n      \"body_ja\": \"2026年12月期の通期連結業績予想において、受注高1兆700億円、売上収益1兆200億円、営業利益1,250億円を据え置く一方、税引前利益を1,420億円（前回発表比201億円増）、親会社の所有者に帰属する当期利益を995億円（前回発表比129億円増）へ上方修正しました。主として環境・エネルギー・精密電子での受注増加動向や持分法適用共同支配企業（水ing株式会社）の株式譲渡に伴う利益計上見込みを反映したものです。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0005\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lbd_01\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"「精密・電子」と「環境」セグメントの好調が全社の受注高・利益拡大を牽引\",\n      \"body_ja\": \"当第1四半期の全社受注高は3,249億51百万円（前年同期比62.6%増）へ急増しました。「精密・電子」ではAI向け需要の牽引により顧客の工場稼働率上昇や増産投資拡大を受けて受注高が前年同期比104.4%増の1,512億25百万円、セグメント利益が63.9%増の135億31百万円に大幅伸長し、「環境」でも大型案件（公共向け廃棄物処理施設の新設及び長期包括運営契約1件）の受注により受注高が860.7%増の324億94百万円となりました。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lbd_02\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"「エネルギー」セグメントは中東情勢の影響による一部案件遅れ等で減収減益\",\n      \"body_ja\": \"「エネルギー」セグメントの売上収益は465億75百万円（前年同期比4.2%減）、セグメント損益は16億66百万円の損失（前年同期は19億79百万円の利益）となりました。オイル＆ガス市場の需要自体は増加傾向にあるものの、中東情勢の影響により同地域での一部案件の遅れや部品出荷・指導員派遣への影響が生じたことが収益の押し下げ要因となりました。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0009\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lo_01\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"AI関連需要に支えられる精密・電子と社会インフラ需要により通期業績は堅調推移を見込む\",\n      \"body_ja\": \"2026年12月期の通期見通しとして、米国関税政策や地政学リスク等の不透明要因があるものの、半導体市場におけるAI向けを中心としたWFE（半導体前工程製造装置）の10%以上成長予測や、社会インフラの安定需要に支えられ、全社事業は堅調に推移する見通しです。通期売上収益1兆200億円（前期比6.4%増）、営業利益1,250億円（前期比9.8%増）を計画しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0004\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0005\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_lr_01\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"地政学リスクおよび米中対立・規制強化に伴うサプライチェーン混乱リスク\",\n      \"body_ja\": \"中東やウクライナ情勢の長期化に伴う資源価格や輸送費・材料費の上昇、さらには米中対立による半導体輸出管理規制の強化など、外部環境の地政学リスクが継続しており、特に中東地域における現地工事の遅延や部品出荷滞留がエネルギーやインフラ事業の業績に下振れリスクを与える懸念が示されています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0004\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0009\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lr_02\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"海外の建築・産業市場における建設コスト高騰と労働力不足による需要低迷リスク\",\n      \"body_ja\": \"「建築・産業」セグメントにおいて、北米での建設コスト高騰と労働力不足、欧州での地政学リスク・エネルギー供給不安定化、中国での不動産市場調整継続などにより、海外の建築設備市場の低迷が続いており、民間設備投資の先送りや需要抑制が業績の足かせとなるリスクが存在します。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0009\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_lc_01\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"中期経営計画「E-Plan2028」初年度として過去最高業績の好スタートと事業ポートフォリオ再編の推進\",\n      \"body_ja\": \"荏原製作所は2026年12月期を初年度とする3か年の中期経営計画「E-Plan2028」を開始し、グループ全体最適によるグローバル競争力と収益性の強化を進めています。当第1四半期は「精密・電子」のAI需要捉えや「環境」の大型案件獲得により、第1四半期として過去最高の売上・利益を達成しました。\\nあわせて、共同支配企業であった水ing株式会社の株式譲渡（譲渡価額250億円、特別配当含む）を決定し、通期純利益予想を995億円へ上方修正しました。非コア資産の整理と成長領域への経営資源集中を進めており、投資家はエネルギーセグメントの一時的遅延からの回復と半導体製造装置市場の需要持続性を注視する必要があります。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_ebara_tanshin.pdf:s0001\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0005\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0006\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_tp_01\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"伝統的風水力事業の収益基盤強化と半導体製造装置（精密・電子）の高度成長による業績水準の大幅切り上がり\",\n      \"body_ja\": \"過去10年間の荏原製作所の軌跡は、従来の風水力（ポンプ・コンプレッサ）および環境プラント事業における価格改善・O&M（保守運用）比率向上による高収益化と、5G・AI需要等に支えられた精密・電子事業の飛躍的拡大が統合された成長の歴史です。初期（2016-2019年）の売上高5,000億円・営業利益300億円規模から、中期（2020-2022年）のIFRS適用やグローバル需要回復を経て、直近（2023-2025年）には売上収益9,000億円超・営業利益1,000億円超へと拡大しました。シリコンサイクルや資源投資サイクルの変動を受けつつも、サービス＆サポート事業の拡大が下支えとなり、収益基盤の非連続な切り上がりを実現しています。\",\n      \"evidence_ids\": [\n        \"41_2016-03_FY_ebara_tanshin.pdf:s0001\",\n        \"26_2019_FY_ebara_tanshin.pdf:s0001\",\n        \"22_2020_FY_ebara_tanshin.pdf:s0001\",\n        \"18_2021_FY_ebara_tanshin.pdf:s0001\",\n        \"14_2022_FY_ebara_tanshin.pdf:s0001\",\n        \"10_2023_FY_ebara_tanshin.pdf:s0001\",\n        \"06_2024_FY_ebara_tanshin.pdf:s0001\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_tc_01\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"ライフサイクル全体を支えるサービス＆サポート（S&S/O&M）事業による継続的なストック型収益の創出\",\n      \"body_ja\": \"初期（FY2016-2019）、中期（FY2020-2022）、直近（FY2023-2025）を通じて一貫して、製品単体の納入だけでなく納入後のメンテナンス、修理、運転管理（O&M/S&S）を強化する戦略を推進してきました。新設案件が石油・ガス市況や半導体投資サイクルにより変動・一時遅延する局面であっても、高稼働な既入設備の保守管理需要が各セグメントの安定的な利益下支えとして機能しています。\",\n      \"evidence_ids\": [\n        \"41_2016-03_FY_ebara_tanshin.pdf:s0002\",\n        \"26_2019_FY_ebara_tanshin.pdf:s0003\",\n        \"18_2021_FY_ebara_tanshin.pdf:s0002\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_tc_02\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"強固な自己資本比率の維持と連結配当性向35%以上を軸とした成長と還元の両立方針\",\n      \"body_ja\": \"10年間にわたり自己資本比率は40%台半ば以上（日本基準40%台後半、IFRS下で43%～47%）の健全な財政状態を維持しています。同時に株主還元方針について、連結配当性向35%以上を目標とし、業績成長に連動した増配と機動的な自己株式取得を継続的に実施する規律ある資本配分を貫いています。\",\n      \"evidence_ids\": [\n        \"30_2018_FY_ebara_tanshin.pdf:s0002\",\n        \"18_2021_FY_ebara_tanshin.pdf:s0003\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_tch_01\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"「精密・電子」セグメントの飛躍的拡大によるグループ主益構造の構造的転換\",\n      \"body_ja\": \"変化前（FY2016-2018）において精密・電子事業の売上高は900億～1,300億円規模、セグメント利益は100億～180億円程度で全社利益の約3割～半数弱でした。移行期（FY2019-2021）を経て、5GやAI、データセンター普及に伴う半導体需要の拡大とCMP装置等の競争力強化により、現在（FY2023-2025）は売上収益3,400億円超、セグメント利益500億～570億円を超える最大の稼ぎ頭へ構造転換を果たしました。\",\n      \"evidence_ids\": [\n        \"41_2016-03_FY_ebara_tanshin.pdf:s0001\",\n        \"18_2021_FY_ebara_tanshin.pdf:s0001\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_tch_02\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"製品軸カンパニー制から対面市場別（カンパニー/セグメント）組織への移行と会計基準（IFRS）導入\",\n      \"body_ja\": \"変化前は製品軸の3カンパニー制（風水力、環境プラント、精密・電子）で運営され、日本基準により決算開示を行っていました。2021年12月期より国際財務報告基準（IFRS）を任意適用し、さらに2023年12月期よりマーケットインの発想に基づく対面市場別5セグメント構造（建築・産業、エネルギー、インフラ、環境、精密・電子）へ再編し、対面市場ごとの成長捉えと収益管理の最適化を図る体制へ変化しました。\",\n      \"evidence_ids\": [\n        \"18_2021_FY_ebara_tanshin.pdf:s0004\",\n        \"10_2023_FY_ebara_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_tca_01\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"精密・電子等の生産能力増強投資と総還元性向・FCF還元を意識した株主還元の強化\",\n      \"body_ja\": \"過去10年間において、精密・電子事業を中心とする国内工場増設や設備投資（年間300億～1,000億円規模の資本的支出）への成長投資を優先しつつ、フリー・キャッシュ・フローの蓄積に応じて自己株式取得（2021年に200億円、2025年に200億円など）や増配を実施しました。「E-Plan2028」では3年間累計フリー・キャッシュ・フローの100%以上を株主還元に充てる方針を掲げ、資産売却（水ing株式譲渡など）を通じた資本効率の最適化も平行して進めています。\",\n      \"evidence_ids\": [\n        \"18_2021_FY_ebara_tanshin.pdf:s0005\",\n        \"02_2025_FY_ebara_tanshin.pdf:s0003\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_ti_01\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"半導体サイクルの波をS&S事業の安定収益で吸収できる収益構造の持続性が投資判断の鍵\",\n      \"body_ja\": \"荏原製作所の10年間の変遷は、精密・電子事業の成長によって高収益化した反面、半導体メーカーの設備投資調整や市況変動（シリコンサイクル）の影響を受けやすくなったことを示しています。投資家にとっては、AI・先端半導体向けの需要拡大を捕捉しつつ、エネルギーやインフラ、建築・産業分野におけるストック型S&S/O&M事業が市況下落局面でどれだけ安定したキャッシュ・フローを維持できるかが今後の持続的企業価値評価の検証点となります。\",\n      \"evidence_ids\": [\n        \"02_2025_FY_ebara_tanshin.pdf:s0002\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n        \"01_2026_Q1_ebara_tanshin.pdf:s0004\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当第１四半期連結累計期間における受注高は3,249億51百万円（前年同期比62.6％増）、売上収益は2,463億11百万円（前年同期比15.8％増）、営業利益は267億49百万円（前年同期比18.4％増）、親会社の所有者に帰属する四半期利益は183億22百万円（前年同期比16.0％増）となり、いずれの項目においても第１四半期連結累計期間として過去最高額を更新しました。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\"決算概要\", \"過去最高\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当第１四半期連結累計期間の受注高は、「精密・電子」においては、AI向け需要の牽引により、顧客の工場稼働率の上昇や増産投資の拡大を受けて前年同期を上回りました。「環境」においては、大型案件の受注があり前年同期を上回りました。この結果、全社の受注高は前年同期比で増加となりました。売上収益及び営業利益は、「エネルギー」の減収減益を他のセグメントがカバーして、全社としては増収増益となりました。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\"セグメント動向\", \"事業ドライバー\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 18,\n      \"exact_quote_ja\": \"営業活動によるキャッシュ・フロー 25,713\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"要約四半期連結キャッシュ・フロー計算書\",\n      \"tags\": [\"キャッシュフロー\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 9,\n      \"exact_quote_ja\": \"当社を取り巻く事業環境については、米国の関税等の政策動向、米中の対立による半導体輸出管理規制強化、中東やウクライナ情勢の長期化に伴う資源価格への影響、為替変動などといった懸念材料があり、不透明な状況が続くと見込まれます。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"risk\",\n      \"source_section\": \"連結業績予想などの将来予測情報に関する説明\",\n      \"tags\": [\"リスク\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 9,\n      \"exact_quote_ja\": \"2026年12月期第２四半期（累計)及び通期の業績予想については、前回決算発表時（2026年２月13日）以降の業績の動向を踏まえ、主として「環境」「エネルギー」及び「精密・電子」における受注高の増加、持分法適用共同支配企業の株式譲渡等により、予想を以下のとおり修正いたします。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"連結業績予想などの将来予測情報に関する説明\",\n      \"tags\": [\"業績予想修正\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 22,\n      \"exact_quote_ja\": \"当社は、2026年４月14日の取締役会において、当社の共同支配企業である水ing株式会社の株式をインフロニア・ホールディングス株式会社に譲渡することを決議し、同日付で株式譲渡契約を締結しました。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\",\n      \"tags\": [\"株式譲渡\", \"資本配分\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 22,\n      \"exact_quote_ja\": \"本株式譲渡に伴い、2026年12月期の連結損益計算書において、金融収益34億円並びに持分法で会計処理されている投資の売却益172億円を計上する見込みです。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"重要な後発事象\",\n      \"tags\": [\"株式譲渡\", \"利益計上\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"精密・電子 73,980 151,225 104.4 62,406 82,949 32.9 8,257 13,531 63.9\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業セグメント別の概況表\",\n      \"tags\": [\"セグメント実績\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0009\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"製品分野は、オイル＆ガス市場の需要が増加傾向にある一方、中東情勢の影響により当該地域の一部案件に遅れがみられる。\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業セグメント別の事業環境と事業概況\",\n      \"tags\": [\"エネルギー\", \"リスク\"]\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_ebara_tanshin.pdf:s0010\",\n      \"source_filename\": \"01_2026_Q1_ebara_tanshin.pdf\",\n      \"pdf_page\": 11,\n      \"exact_quote_ja\": \"WFE:10％以上成長見込み\",\n      \"period_label_ja\": \"2026年12月期 第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"事業セグメント別の事業環境の見通し\",\n      \"tags\": [\"精密・電子\", \"見通し\"]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"02_2025_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における受注高は9,496億83百万円（前期比10.4％増）、売上収益は9,582億85百万円（前期比10.6％増）、営業利益は1,138億２百万円（前期比16.2％増）、親会社の所有者に帰属する当期利益は766億33百万円（前期比7.3％増）となり、いずれの項目においても過去最高額を更新しました。\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"02_2025_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"精密・電子 260,059 303,447 16.7 278,378 342,267 23.0 50,133 57,773 15.2\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業セグメント別の概況表\",\n      \"tags\": [\"精密・電子\"]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_ebara_tanshin.pdf:s0003\",\n      \"source_filename\": \"02_2025_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 13,\n      \"exact_quote_ja\": \"当社グループは、E-Plan2028において中長期的な企業価値最大化に資する成長投資を優先的に実施し、残余キャッシュは原則として株主還元に振り向け最適な資本構成を保つことを株主還元の基本方針とします。配当については、連結配当性向35％以上を目標に当該期の業績に連動して実施します。また、必要な投資を行い且つ財務規律の範囲内であることを前提に、ROE目標に沿った適正な自己資本水準への調整として自己株式の取得を継続的に実施していきます。これらをふまえ、３年間累計のフリーキャッシュフロー（資産売却・圧縮によるキャッシュインフローを除く）の100％以上となるよう株主還元（配当・自己株式取得）を実施します。\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"株主還元に関する基本方針と当期及び次期の見通し\",\n      \"tags\": [\"資本配分\", \"株主還元方針\"]\n    },\n    {\n      \"evidence_id\": \"06_2024_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"06_2024_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における受注高は8,605億79百万円（前期比4.9％増）、売上収益は8,666億68百万円（前期比14.1％増）、営業利益は979億53百万円（前期比13.9％増）、親会社の所有者に帰属する当期利益は714億１百万円（前期比18.4％増）となり、いずれの項目においても過去最高額を更新しました。\",\n      \"period_label_ja\": \"2024年12月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"10_2023_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"10_2023_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における受注高は8,205億98百万円（前期比0.7％増）、売上収益は7,593億28百万円（前期比11.5％増）、営業利益は860億25百万円（前期比21.9％増）、親会社の所有者に帰属する当期利益は602億83百万円（前期比19.4％増）となり、いずれの項目においても過去最高額を更新しました。\",\n      \"period_label_ja\": \"2023年12月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"10_2023_FY_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"10_2023_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 20,\n      \"exact_quote_ja\": \"2023年12月期よりスタートした３年間の中期経営計画「E-Plan2025」において、対面市場別５カンパニー制へと組織改変を行うにあたり、従来の製品軸のセグメントから対面市場軸のセグメントへと事業セグメントを変更することとしました。\",\n      \"period_label_ja\": \"2023年12月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業セグメント\",\n      \"tags\": [\"組織改変\", \"セグメント変更\"]\n    },\n    {\n      \"evidence_id\": \"14_2022_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"14_2022_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における受注高は8,152億18百万円（前期比5.7％増）、売上収益は6,808億70百万円（前期比12.9％増）、営業利益は705億72百万円（前期比15.0％増）、親会社の所有者に帰属する当期利益は504億88百万円（前期比15.8％増）となり、いずれの項目においても過去最高額を更新しました。\",\n      \"period_label_ja\": \"2022年12月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"18_2021_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"18_2021_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"これらの結果、当連結会計年度における受注高は7,714億83百万円（前期比50.9％増）、売上収益は6,032億13百万円（前期比15.5％増）、営業利益は613億72百万円（前期比63.4％増）、親会社の所有者に帰属する当期利益は436億16百万円（前期比80.0％増）となり、いずれの項目においても過去最高額を更新しました。\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"18_2021_FY_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"18_2021_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"利益面では、営業利益は風水力事業の継続的な収益性改善や精密・電子事業の増収、円安の影響等により大幅な改善となりました。\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"利益ドライバー\"]\n    },\n    {\n      \"evidence_id\": \"18_2021_FY_ebara_tanshin.pdf:s0003\",\n      \"source_filename\": \"18_2021_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 12,\n      \"exact_quote_ja\": \"株主還元につきましては、連結配当性向35％以上を目標に当該期の業績に連動させ、かつ親会社所有者帰属持分配当率（連結）2.0％以上を確保する方針としています。\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"株主還元に関する基本方針と当期及び次期の見通し\",\n      \"tags\": [\"株主還元\"]\n    },\n    {\n      \"evidence_id\": \"18_2021_FY_ebara_tanshin.pdf:s0004\",\n      \"source_filename\": \"18_2021_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 12,\n      \"exact_quote_ja\": \"当社グループは、資本市場における財務情報の国際的な比較可能性の向上を目的として、連結財務諸表について、2021年12月期第１四半期連結会計期間より国際財務報告基準（IFRS会計基準）を任意適用しています。\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"会計基準の選択に関する基本的な考え方\",\n      \"tags\": [\"IFRS任意適用\"]\n    },\n    {\n      \"evidence_id\": \"18_2021_FY_ebara_tanshin.pdf:s0005\",\n      \"source_filename\": \"18_2021_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 19,\n      \"exact_quote_ja\": \"自己株式の取得による支出 △20,099\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結キャッシュ・フロー計算書\",\n      \"tags\": [\"自己株式取得\"]\n    },\n    {\n      \"evidence_id\": \"22_2020_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"22_2020_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における受注高は5,119億21百万円（前期比7.3％減）、売上高は5,237億27百万円（前期比0.2％増）、営業利益は378億79百万円（前期比7.3％増）、経常利益は368億59百万円（前期比3.6％増）、親会社株主に帰属する当期純利益は244億73百万円（前期比4.8％増）となりました。\",\n      \"period_label_ja\": \"2020年12月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"26_2019_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"26_2019_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における売上高は5,224億24百万円（前期比2.6％増）、営業利益は352億98百万円（前期比8.7％増）、経常利益は355億71百万円（前期比13.7％増）、親会社株主に帰属する当期純利益は233億49百万円（前期比27.9％増）となりました。\",\n      \"period_label_ja\": \"2019年12月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"26_2019_FY_ebara_tanshin.pdf:s0003\",\n      \"source_filename\": \"26_2019_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 11,\n      \"exact_quote_ja\": \"当社は、株主の皆様に対する利益還元を最も重要な経営方針の一つと位置付けています。株主還元については、連結総還元性向30％以上を目標に当該期の業績に連動して実施する方針としていましたが、次期（2020年12月期）より連結配当性向35％以上を目標としつつ、連結自己資本配当率（DOE）2.0％以上を確保できるよう配当を実施していく方針に変更しました。\",\n      \"period_label_ja\": \"2019年12月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"株主還元に関する基本方針と当期及び次期の見通し\",\n      \"tags\": [\"株主還元方針\"]\n    },\n    {\n      \"evidence_id\": \"30_2018_FY_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"30_2018_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"当社は、株主の皆様に対する利益還元を最も重要な経営方針の一つと位置付けております。株主還元については、連結総還元性向30％以上を目標に当該期の業績に連動して実施する方針としています。\",\n      \"period_label_ja\": \"2018年12月期\",\n      \"period_label_en\": \"FY2018\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"株主還元に関する基本方針と当期及び次期の見通し\",\n      \"tags\": [\"株主還元方針\"]\n    },\n    {\n      \"evidence_id\": \"34_2017-12_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"34_2017-12_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"当連結会計年度における売上高は3,819億93百万円（前年度同一期間比9.1％増）、営業利益は181億15百万円（前年度同一期間比58.0％増）、経常利益は165億29百万円（前年度同一期間比73.8％増）、親会社株主に帰属する当期純利益は95億31百万円（前年度同一期間比29.9％増）となりました。\",\n      \"period_label_ja\": \"2017年12月期\",\n      \"period_label_en\": \"FY2017(12M)\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"41_2016-03_FY_ebara_tanshin.pdf:s0001\",\n      \"source_filename\": \"41_2016-03_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における売上高は4,862億35百万円（前年度比0.7％増）、営業利益は380億11百万円（前年度比10.0％増）、経常利益は364億71百万円（前年度比0.6％増）、親会社株主に帰属する当期純利益は、特別損失として訴訟損失引当金繰入額64億57百万円を計上したことなどにより172億54百万円（前年度比26.8％減）となりました。\",\n      \"period_label_ja\": \"2016年3月期\",\n      \"period_label_en\": \"FY2016\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する分析\",\n      \"tags\": [\"業績推移\"]\n    },\n    {\n      \"evidence_id\": \"41_2016-03_FY_ebara_tanshin.pdf:s0002\",\n      \"source_filename\": \"41_2016-03_FY_ebara_tanshin.pdf\",\n      \"pdf_page\": 9,\n      \"exact_quote_ja\": \"中期経営計画「E-Plan2016」を策定し、①市場の成長を確実に当社ビジネスに取り込むこと、②製品・プラントのライフサイクル全体を対象とするサービス業たること、③産業機械メーカとしてのCore Competence（技術力）を継続的に強化していくこと、④グローバル事業展開を支える経営インフラの拡充を図ること、という４つの基本方針のもと\",\n      \"period_label_ja\": \"2016年3月期\",\n      \"period_label_en\": \"FY2016\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"中長期的な会社の経営戦略\",\n      \"tags\": [\"経営戦略\"]\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"「E-Plan2016」から「E-Plan2025」「E-Plan2028」に至るまで、製品ライフサイクル全体のS&S/O&M強化とグローバル成長という軸を一貫して維持しています。さらに、製品軸からマーケットインの対面市場別5セグメント構造（建築・産業、エネルギー、インフラ、環境、精密・電子）への移行やIFRS適用、共同支配企業（水ing）の売却など、市場変化に整合した構造改革を進めています。\",\n        \"evidence_ids\": [\n          \"41_2016-03_FY_ebara_tanshin.pdf:s0002\",\n          \"10_2023_FY_ebara_tanshin.pdf:s0002\",\n          \"01_2026_Q1_ebara_tanshin.pdf:s0006\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"精密・電子事業の能力増強投資や風水力事業の収益性改善、S&S事業の拡大施策を計画通り推進し、売上・利益ともに過去最高水準へ切り上げました。また非コア事業である水ingの株式譲渡など、発表した戦略施策を実行へ移しています。\",\n        \"evidence_ids\": [\n          \"18_2021_FY_ebara_tanshin.pdf:s0002\",\n          \"02_2025_FY_ebara_tanshin.pdf:s0001\",\n          \"01_2026_Q1_ebara_tanshin.pdf:s0006\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"半導体製造装置の需要サイクルや石油・ガス市場の波に伴い、単年度の業績修正や市場回復想定の遅れ（例：2025年12月期における顧客の増産投資再開遅れ等）が発生するケースが見られます。一方で、中長期的な収益成長目標自体は着実に達成・更新されています。\",\n        \"evidence_ids\": [\n          \"22_2020_FY_ebara_tanshin.pdf:s0001\",\n          \"02_2025_FY_ebara_tanshin.pdf:s0001\",\n          \"01_2026_Q1_ebara_tanshin.pdf:s0005\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"訴訟損失引当金の計上やトルコ子会社のれん減損 losses、半導体市場の調整局面や中東情勢による影響など、負の事象や計画からの乖離要因についても短短信の事業環境説明等で詳細かつ明確に不確実性を開示しています。\",\n        \"evidence_ids\": [\n          \"41_2016-03_FY_ebara_tanshin.pdf:s0001\",\n          \"06_2024_FY_ebara_tanshin.pdf:s0001\",\n          \"01_2026_Q1_ebara_tanshin.pdf:s0004\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"荏原製作所の経営一貫性は高い水準にあります。過去10年を通じ、製品ライフサイクルを支えるサービス＆サポートの強化、グローバル展開、および精密・電子事業の拡大という中核戦略を一貫して実行し、売上高・利益水準を大幅に切り上げました。市場サイクルの影響による期中予想の修正や顧客投資遅れが生じる場面もありますが、セグメント再編や非コア資産売却を含め戦略の実行力と開示の透明性が確保されています。\"\n  }\n}",
+            "thought_signature": "EpxoCploARFNMg_jaixOyn4KV6FG_oeZ2rLXaDX0IloFvQvuaskPS-57Ju3W2DyLGXpZyXAJSm_IqYY_g-bQrHSGSoP-KK2D9GyEkQVBdR7a42_zBVV0ezFB3Bo-vOcERDcReTOV3wzCyKFmCkTab2iajZChGJEjQ9L2_cRa7rQsz6Hba8BqAp_CPexfko-6F4BqMSZkAndC_R-JjbbgmQGIMhNn-26Tav7jktnM6Ft6g-SepQ6RjKQoTLQL6Spn5_Oa6WKG633VFOxWgOXjYOKCOfZEcvL5KhFH_6JRbBC2z_cX5CMdxvZnSoa6aNaQoKIWu0Gg7Fl2UP4DihOEoeXBMcFJDRkt7gL9KRdZOXkAg_2OsdUv9f56plrJnCMZiNk596EC0i-twsocn6OxuyblSsGmOPptO1URPKes19c6i_kkC69aynhYpe-u8q50cRFVkFih_zLXQony-U_yJ_j90KWhdrcjFO2G7UWwky22ASCg_dZVn_yVd1GwaA-EVm9PBuF5hjatMeI_8O70Ww-m9ga0FrLH-Mx5RVHDwB13UwihRnfUgvGegcrwlEmf5iEiGHWwsLA84qUsqYvbFTZkVeed11FHEXgdO1QiKQQZ00Hy1l027WBBv84HWBFnSJUp0T87TL_ILMGMq8BU5xhf-KBYUicwXwaKVZR0W5OSzsgbUEwZxpznja3BscS73lznjXZD37Kpg5eOU4K-sCaSmQpxl2abU4bZD2v8Vzn4qXc-m8aCIk3-VEZRgikdTxXpsyrWflSFGAqv2xpsQNMmTynL3iP7dJvykSTba8QG14F0TWnUUVfmvkv6aafnWzKv8eMSxIC3v866I3V8kOxg1_rOBXx8UtPAojfbXAkOLIehiAmZqbxoVSRtx0_YT0TswXVK64aOUNHwwJbHIeefxXkgiSl29nYdlfWocbC8sjR4mM1GrtSczJi4PelmNNUsWaieTq3YT1_pBHpGVHptVekVN8t-_H0VVxEo6o1IaMd2qKib5_dUJC7h19KViq7RGrqzFxy8_6VNw0x5VBEijSNG7kX0sO3cw5vxWAELd9JeV98uusjCvycWDAe_1UtKfXTtww-hfqw-V-w-y-qC4ow-IHt4WWNUEdxPwmalI1HSDjKfjNoOCKHkmHY1Hwss6M_B6L4r2-rqJdC54Pa5vNljWInkI-M2crQzNBdKYhZmc86B9E11fiAPyfl0i_5PoEa3YO837Zt0HWH3gzcnVmuJncAoijIB-n6NDsOSXN5MgPUt7i0YV_wNaLskRy2sp2lRFMnC8pZ7NkD6Vf4vvwWN0ZoM08C0x0WHkyiRfYk003y63LcrvPrIUUx8ij4tHEUjxMOGrikwMUQMQ53B7qsfm1jeq0LIAym1wisihyEy_SoX7ap7qbGNgeTCxqSl2I9-PVoCFNlse-fG4tjXzAvNcn22yk9ddloDINUeq_HU0ieBMH6OsZibeSKAloZkVOjYn8PUFjCfl0nSlm_EWbgZM3wgRjeTto5HBlJ6NX-oGAG1Xv0LKPGXkyz2IwY3bba-nbWNx2Zl8UXJVCkXExTYuxWsgGSPnEPuMzWW_PzzNkY9_VaAL8EUntEzftk96TnxOEp9jOeA3gsnXR-fSWK_RX_q6BC0P05jWf2smIgXRzv-skrI5yu3f9ZIgAxZnhoEEztfJeFYnZVrOg4Pme5DyMXXw7N4RmnnHDlC6FMciATpOWSoxiO7ZkGLSzwKRfDzcXIlTfILDjMBaO9A6T4wMi-pncf_JSZBrZf5Hot8DuwbNVxn0UpPmNuZOEoW9Je3ZP_gIR_aUqx_1TiaKXybjUqsvbhBMQ4MAfr5wxqxmidDi65O6Ony56LmgBa7KR_kZONKa1ntoa7dLJ2cTBq9qz2WldvYYr-3si5Xec3IyHr_R1nI5tMSSVfC51tHXet_lgWBY9B8jR5XTxwSq8GZNGGahuPI_xWwwitt9JxOsxwM15daOd3bhZUT49Qy8aXv4M3TTpslihqA_dXDaV0J7BtulhIUH2XebXDoIH8FQg8TPuYwHLGvlq9Kx63eP2YeufKVXun-8u7q74sKsGfGlOh4HrM8lj19JSoIcP79SorcH3vmUFA-b4SPUR1MtRKnzsSrAe922it4fGcn7jkgdsw3rP4fFyIquii7urPwOA5VCPy5KyPLMyY1NIBskIeXHKoeGBiOlB6eHVBisMhbdfOUPa_uAThKVzZWvT83m3J3pRZtc6buQnYJEwhQUHZrAT8gUXrK1OUmXucV4xh3kiWvRGNY6dP-0FYwUtr5TdaM5jrBXkkRb_VHGYZ_aI19ihIh1OATbSBXh7-VFWHfExfhpf0QPQyx3qTMBiMYkLyE5kgddd_tZsOpmNE5kajCtEpMXKwXd_FnX0YcfHbPd0RH_oeYje8i1D69rGX9RMG4hybozJ259mA3CqmnJOEiQ1imItqjiuFqFF9Zs-RdHvAyG1zdBWlfQ0wxKQiUTMKxqJ-AKjPzATvZV3vLbCUW7b5nj0TUt72a-S6GNaBp9a-5iw8h0RLrWOszB-Vn2icPcUlqG0h_72GAMxKSyecsko598v0aiii-Q64sn-zAdWGMpaLJCgbVurHcfUwSms0x2nQ2AaFOPQlVmzrr1o-RbC4idNbI382sNF6R0Z31C-IdRhTACpH1YLo9KeFP4BDJRLtVVjOrdFWDond8OlzYzDBV8a95EvFDcD0_se2qifLM6hCwTyOVyHO3Sgq1HjdAd51hiXQfRwoFs0KIniKGeIv80lr52BIrOwD3F3qlGErkn3Jb-yjwB-SomIjXPf9RvBGcYxRGnchJAJgkNcC8Tg8gNBmlIumGdS_qzUID0uWfGYtlJ2Uai9sICscIWe_28ZBMNVDGuxVTYAg0nLBMyGAgdaeWkphsNQQfpTVljXkl3wk-mpWUfxXHxBC6LqqBMZ4xEZNWEPoOVUyiHzrquRIy9tHajbmLavidzgmm2nkGuQFzXCIxaurffgtIkcPWZtCdqDApnjG2FImVFSAh8s2iKN9FTCgDhXR1iXYKFo0xYfi9ZlUvaXQAf5w7qStVA6fIJDXmKFcqsbafDfB9ys7_U5hOfcuboTWzDxSshSjf9lI9tYYn_U5AD10fwevYD-xBef9SmLPQoINreUtmxfVcC0GQXMivp8XJGoirqqK1cgqarL57eK7d3rB_k1zXC1fDaqo8Vqkj141U0dM8tvJG6vYBCPCjBXEfj_ZpwRLmyFCgzgF-NSy3kbAdITjN8UJ0IZIUg78rRbHnnMP3ON0R3OFZ1IkR9pijceH7l9cHw9Gm6GOL2ACnTozL0zxEHbfh4Gr0NqI5l_gq9D10e3ISX_rtqQL5QPrKDaeXldadOd_jWMwEerBRSy126h5_1hY_aRlt_Ejlmcvxs3aW44Bcz-WAsxjP6ODfbmKtDoj8yh_rX9WZ8HKWZprDFw0rDxPx0YGoUqQYDCR_xkUkrLLHfhwue4YuVQDCrKvfdElINPd8kmgAS1roLwP4xmrPYI5HUpUXDlDq1HCPqed4763lbx0Io-BdWRc5-YwwJPvzJ_HQavhq-1ylVbVBQOR4uLY-VVp4sxGDWxo8eSDHBa8bdfcasak8uVtQiSgaVkmzndt2dDP10lJMFncC6xjnFYwRVdnnuBJOSCYzUat19lWOFMdjKgQc3sdnRy4MYHiELB_pU8lEaxS-MkuBv5Aqvz5NzAXoC5812MK_rQ8qHgpnZaq144T8r6QZ0bD7Nu0urizYTogzh53lbuKCQNhqIDhDLjz5Nr8tIPHqpw_pk3QBB4CKTRC_gMe69T5QhG990K9GbSILnmfq4IpwTBzXZJ9tifYiYV2Gj3jQCAwIPX7zT7uKlduuCX93ZgiLfIZKADxWy0IfhM3L5QFMldYfOGImJIomsWKrrBBQQ7Gp6uTZURY5H04_CYlPwATrYtxJI-yUtg3LbUhG1anmegQVSJzfUJdIbrGBs446ZPrCCSh6SQ19yaFe3MiNQRIe9Zcf0ENP85TFkW6u2eMnhikJM1xG_iqr-sW5-q3P-03t5ODlxUla8t2pwvOFpCnFWSsyYOXl-hLUHqiOGEy8n7hQIT7k3rdWQ-3YUc48Rq4RJjwFltKNEnNSmu_-zmsh6G6rVrObFjx8npgi1A3DpMpCNULZ_EJ694cHpClZwEA4IOuhfVzTOfTGYwj3m6weaFxadv4YxzkegYN0e10reBN_3SZZgp3mvJRS-s4SEzJPmOdzT-TWsc02nOOSz7ig8vsmZ8xrRgzeNqoi4pFPIPBsBGjiE6C_9OU4zyqCClfH-vuBboJIPQ9-RmqFuLxTnWLjLsjJ1sFyfUJffh6SQQ4XVFedHXuZf_B4dBYBJrS6zii5T45uzyMaZnF1leUiOu5Nwvlccu0Qu-oXMMTXRoK4iPdQSzPUTaBExP3_91e9bWFHFIZXeQnn6FndhSe1HJEuF8qQsffOYe1ohEYdE8uR-Kd-b4hwENGtvp6lAJOV-WseT9SzoVF0XxJojlOCxj6TFKsGL4Y_Q8JXQ5Mjl4Nbwj2dT_h5DeKf7EsEC5iQ24ZVo3XeS7QKyX3i8sNh2N4ydYg_6H7_lhLyzgod3Eqkdy9vUzDok2Kgv3rJYEon7T2VYWkzqKeGs99nELQMQ1Kn7g_VaNCbJb-xZAEiiIn14AJhOZHMwePHZWIySwEvCXt8CMITejROVyVDzlbNb5K8TiE4umZw8eKnKqDpxAXcuOEBOYXaTcZiLordZmBIrUi5ErZT-75Ekd6wTAfwTVHOkspYrf6ddQpaO3C3DZoqPqg8IiVtmcME_ewieefnBbYbFmMpYzaP2Fz8NJJg0SQqfkVn69hEk_YpwvihpAj6ZpUzpkxbzK_vuXnGIPETyd5b18AD9YV0r0HUD7Bhok1jOSoFky4fIotLz_g-AmhAgvMJJd7tNBlprVUfgi5z9-5rHNiy12ia8v4xmfcaeZPY5nuOrFa9dgZq-A1Bw8IVS6pXGpIqFjsNXJo7df9b6K1E4gRWFOqJVI0xHPc3htp64Z37Pj2R4fFeGRTJOaK_ISldzOB03hwa7GrNVQspy4B2qE8pf_gSSz3ENA9pd5UTuEBE7EC-g84hRqWmMzwjVCOH2XTlkFrr0z1q7XSSnt0GHQLh34JEWpcw7x39yvsn6nfWc-XJ6p-quULe8zSZIsTTJoqEWCn_jd8y7V6NDizKz-4dZbM9vlmubqM1F1DoIioTQ56zCtdIk4j4VS3I4pTlC3HPm8RjnbiOO_1ewlbcrAafNJHsCgGZDmgO-73ArWygsUFmQEDX29SkZP6a4dMZXjEoBYAUrAWx9n9L2QFy3-ADPSDemDHsYqmEFLIXEgqD6fCqKKNZuEMkKhEpnzjipdjUzR8c7AhPVyhN7npdL4Xk6w3JpVLLF3cZM9pt59XZCpOGrfp-ir_kR8-NlPO8JyXpAcpZ4QCCDAKhQSHPh3NZ7n8JJOTXzHTJ31Gs62FvR0aA7BbppTzrbvf7X_caz-D5MjxmtXJWO-y0I9g1a4Zfz7VOiBXjFS045-DhdWSAhXif1jwkbQhKzSGxBsfhuYwp3UZZgI5a6w3o2unewCg8Z89a9otb5trKga3O3KeCKXwGjaPzLTCfG5z2nlEXq5gnuEe3vbV6aXvxweaeJaUhC-y6RhWfzd2LYs_SibjFkxIMKMjGB6pgoz_pGVWCazwXTWvgXrxWxGBZumTKucwc1HBz1lHKeGhPxJZ4xRS9a3Qk635IMLUL0-gsXH8QMxCQOnM6Qi0s-IZBkpvAHO-2eGw95SycLZ3cwTlOEYYW2z06YjoO2BojQzZzrWq_KkGo0DOirYWq1zuHsuwsphE0s-Vwvow-Y8QSmbC7jqItoeI2r1EBjFNHKJJF9Fp0G4AfVli30MQ0MuyJJaPziHv-xy46lFxT6eN0VxaAMSfPZPmpDY6fRCev_vcTzk1OReu0MEQUQEkZyG5a6VJNx1ebKWI8VwHOtT-kFEOMZdqe9DM5K7R20TxhDkRqtfSK5sNB-HV73TeYQSuTpazbw4tFSm87nD8BRX5h82ee39-kBg0DgKi0e7Ghq3PyX_upybljZt_E_l7u6U0MUfFvALIniE3lj3ExEMqZLqdDcqthhHy_kmMBmEGMBUn4XzlU6evAqAbZAhqocFxfCjAWSu6Ky75xAFYQPFajRPmgdo7GclJcbTkQc1T0nh0xnnaRVOl1sSf8GTNt1gA1wzWeNKAInW4UwQC3JvYJJgwmPsV7bLhjzYU-ZDkfmSUkv0hagSH_XQrzQOe98vP6_XoTQBjehRSgYLI4PCFgCkbTAJnK5fuDyzEOKLvoNqu57SRZPMeyqFNaxtuL2wxze_xNXjX-3xas9UfLzMKQXQoZnlEqzYUIYqimgSTEmeypIcVFxS5GgNfiQniEXWzifGNqU2amQ4r_uffZI5Wyxc97kvWGIcY8hZ19UBUH9Y89OnFKf8gOVWtfi8YwNFpeo9myzPtpDAOOGeCF_NoltrcM2oCw_-y3N16gtWt4YNAp4gHWlHP4f_RL649A0LFz2UpcxQqgZIk5a91wB4QzYdgPK6XJawesfpo_d2wUXmhQ8hO6llBfhqwmhXYVhkR8t_A0swqhihdpJgtKwSIbEtPRCzOjs1P07YF7SxTLytbpztuOl-2_PnNIHtvNgASLri0ShR5o0KcytVN_o35aSAgQCngLV5N264R1iD-ul-GwrWnOCQs9dk5pKCJLhse8uS5cJsxGCB4zCb3uY5tu2UZBrq0gfouJc5oAuPBxug_N80ujvnw8K80PAeXIpKTU43CmzCwoxWhReVEIRn3BZBgIxmeT-Rh_enMB1Lwk6ODa7tQpQp3bJiLoYvunOjCdFVXTBoawjwNRUubIFMua77rmmSBLLaOXPITpbB6lxiJ60rug_Fw5bydbjVzK9Ai67R3qebjGNJBywx-idh1Qg7-7VDRcvsbLyw3sdqyIY0hL0BJwY8Gml_OCmqISrBMDFL90WW4v50WzUL6vTrteaQm9WyX88tXQo6_si0YS72ubRE5jYPkGp2Af0gATnXlQ8zhP0w9yxccNGSP8R_qEQNrTX-QsML3IAM4U_PbtGZykJlbCMnkkEzQFQoQhMyRBj-XvJXp2UICR9wAB7E07EsvBMOSJ7XV6Sk5M1dMs1BkaRiK9X-cR62dDx-_Cnr5FaAUJJHktHT3FIeXluHR99Ju9YbXJ8FmPmT8PJIqkLOSci00MgSTW7DgA5E6xvAnevoUIHpByxIVeB-P2R2qkY8WyPjAIZuOxe-FSV5um3mGJlRbXmAJLLsgad9DC85L0b0DgV7O7nmiBxDTuREhIuW8qudMj-mjxoMLbbCciIrRKnK9CBUmGY9S4N3cBDpeIed_0XTDwwL3CKGrl99Q_XEnNaF77TGQKgZubdDZ6WeOVjAlMH1cm8Z20B1R9nHwYmn3okBtv9D3Nmwd6li0B5kuVEA8wpDkv62N_pq3bOPVJDL1CtLvlXXEnkVmG-62YZPqo6KLSuqD70Fk36MewW8IUtFV7V8UmrrQUbEb2QuCT-J3Bnr1Kw6H-Y9td1EZJgH6XQo4disq_JzG6kafXt4I4GUU04X4JOxw_e7KzsdlW0v-hjSNhC9wWU1EwOqIfmUDbQJDKtfqA3PGn70HifeZ6xR_WCK6ez7WObsQQsYVMWhtVHDsIxeGtdZL4mz8-dY2DIwdt95QpSMOck0W1xyl65dghx644hoYtCpFSCujkZj8qvWyv09PrLoUQlsXhVXytUwYCQLhhV8UnSS3m9CgOQDpa53rys2cGb99q-jAx80Sm2S4FxBO1DT_8QBsc_HmRXmweSu9fgdL3MbqM2EAYlE3KWSXf6Usts9k2RhQED24xHQMorbpkrLDtloVWaEAefkQbjAeGtueb1uimtz4AgUZh6HhMdoDhFLoCPa3ptg0MXxUrAo0ymqws8XiEjqxoequ8NULLyKlkTC4z5EG4Lg2ERl82JGz8igBZPDdKvtY4RHmiWyhyJJyh_7u-hvbK4CTZegNdcWe65CO47XDcomJV0sYUiLoLBEZB2b-pLklm69vAixN1_mFxrPi_6X4zaesyI4j-vvD3hGpEvoWypeYMk5-jJUKjh1euU5htz0xgc4lCNVCOf7ifM3mZlLHf19ox3tJPEXoA0NrUbqEIKSTwevYQgp8WIZgvRLoP7OKTvJ8epp209KmfCEFa9PYfq26odsR8lT9rQgZAGUzY8YnPmc5vHvEoRZhytTlvYLUOGr7k3oKdJ0Y6rTivExF8KDt3rkoLJycXo8sVwvA2_x4OKA2ZOt0IXD7KX9vh-IVwsWXll7RbiEwYIFzvOj1c1FJ3XAVkR9KluQshqW__UToLwcr1nvPzdOLEtQl3czOCZj3-rAR4f9HoxVJSj9SmakfOUTah6pV5YI5SOrwPW4-GiWovdjtTszQFcls3vWBhFIxhbPOrPG9lvmJ6ETvqGeOOfSNZWlZVEbcNIKdBAAF7L_U5x7P6qJ29KoEqxH_Z0CRM2IDgqwDncs9EINtV43aMXFyxSlqx4TwdMZxmGEghqB1e1QNcGTwrEo1LAOuG8bLN_vW5QVLAgp-3tFP2VR8ofpLnrRacDkGtivYYH8SFBFnZr-vdpJGMQdkzB2w1n7rCnARNgm85CvnQUhYBCTAlO07y7JPYcYJQ5h21wb5EEm2B95MjrxopJVc-IgfJvOs9WNaSrb_l0-i_QzGeEzyD21ffiYIrK_Xz0UVZZSXvl0xY4YdM5Okw6E_7nBHMCO0mCSfd3QFGNfCTPIDWioc9IdrGu0M7JoAle7VfY8i1HJ_O5IWOcpRyPlcibPxwKQntLkfLrGh5r1Dpbd3-WCNgcAf1UzEImeme5NpiksmcvPppgVCUWh85PSAebg9VcRqtRB56vj1AUKEz4ZhFsZ8SNqd__J9IsN1nS9wYECJDcyzDV25ev_8aGEdBlzs3e_M9-4QUvxIytr4Bo_o3hCTVvT3YWtnwmEs0IVAOpdtOT64hqpDPGCt6jgzfxoMZ8XbH-PucJH75Kwg-YRbdhjjV27yVyNnoL4CysSuSLXrMJmPjVJLvgqKvdCDR3VfuedrztVWH1cVuwGdNhhQdQ5Qi_YloKegOyl3KSItTUYTIJMxLCibPhDextBqunzKCUzdSoJ_COyhWmWOeN32ici_ImORKI3hjoH3nE49DAyEE2BBjwAQ6_b3OOvCe13lw2m2Hfys4Ya081rVmEBaZXe4vaqFefxCO3JDe5QG2UVE4GuYjZU8pdKwymlEihtf7SF7askGapd0ir-JuOJOImDTqD6MnXuTxY_n9cGpoNsX9KWJG3xdbU7tlsC9GSEmArK2fDcogd7ypItFyVchXat5qo81gqX02m9zsmp019qWEcBniKREp1_pswqWxbZV-k3TZhydn7Tf8IIJZ0KncXlvRZ91WwIqjryQL4K-pTPAKILxSt0-H9LhawajZuIqE0IlGNkh9K_WfD8TYsX9UUbhzb1v_zpAkPcvVr4DsrViUmi1lWR_ANp5N4aygaHXCWLT4Ye9SYfmteeoG1WmMrJPN-Bm8uYz-1BH5JyrnSd_Vtc32tUW-N1Ahxbi5Nd6vOy8jOmPTBRiKwl2gRjpg1gDBKvAD0u_pxU-4nbmcQsSgwr8yKNqTz_AFElw9IHvrDmdIQ56CT8a3pEtukNl8xtUoZ4-QsYRWpvKZ6iwX6zcRjX0gFKBXPWhFp0WbclEJRAhGMaT8tNfplv8Zly_xSZwO8ciCbGdtj3iKWMKhfsfUtdHzDsaHUXJHKjX-evkxesxrXtRMWqPt9xXFmsZss3bPiDXt3pRs1cR-d7HYCqiJSQVHZ9O5b34e3lPRqVjy3cgFwnxcdIGUSp4lITUuRg2AomdJuu1DimjM7lwtfZb1ivHeUvCgkZYXBaz2jVfGN8ocqafRplKkm4LMTXmNU9OZ6QBAP97nZRBLo_iDtW2avjeqTgY-3DyF3YbZs2ERW3_XTDNH2VAbd6lGUrnxiL0hy1-fPEOXZhhLugaIgCiaOFSJ21-pYIpRhqAG6UhGHCMxi_lximypHP6O6UH9tKA15C-gfgkOrG8rnSNEy51CMgfwqr-e7m3zxRr-FVOoGuKEc5bsXfajFf6bsTl5IszYnGvgNxFzdJf7fXEuA6cfOzq1C7w9RYyVAOh8-yL3Qm3qgCQWVf2JCcnRnMNeLvol715CnGA9VJGno4Rpq4tU7iTrMtczyXAEIusUTOCeKdAO56tZZkcnsbRQ74pwpuoVkMbEI-0pK0Knzf7b9Qrn6BxBSYoOUvMCFeyR-3LwXRM2kTVVqMtxZu2aMaER22f8RoJj_bPZ1J2YstyRK1YjgO7yu17t9KCay_vfSKQR_h5xBo6s0fhwbv6SehtsqVUzHdy7tWUrxYPwASI2wOjHoWXfkUNlV5Ns5znAVq9QGUKsrCEOT3bty9rYfMuyeK78zB8hudqLTiLGVRJL-WafJENe_Li4X_417vI14feJLwk7pj7G-APc_rlMHXXxMq7cLmITgNyd1TbzPO9DjnUPuffZVEghKewwlVMH-0EWrByhbrRXa2BIlEckfotwF5nLsCCjWqNfIi7_BS-esgyd2BG8NHMmEnU3qkDeoXjH7BuqPoPtJx4GHE2VdHCeH_R6nJZ1op8loHnOuQOtOxtEOF76mpKx7QPApj0yBWE3XudZZW0e8iNruTbI3GGSPBcrONl_53efJZZmbfGK9YkssbWWW2jQ7NI8N_EtaqZYUWyRgjGms8EohUfa62p7Mr7aikOLWA3ms5L_5lqKozCneEInCHlTW5u0IIi_ZWF6CgTsPgn4htzr2_iWeuQBfymBWGGrkkDAemc11u0gaOqdRIJ0YbY_C4xPBwu6bTveF6Num5ZYzbqhH6ET2YUwfRceuaXSz7ZgDQ7UsTgV65zBSjfI-Wnriw-mKWxQlrAxbNqI7gv0D_TcxjhDdWn8JYSExErOnR0w_hBSrbj_kS-sMqOeaiZMFM956tMCtxhQZeE6iu00sP-4NUuvJSTS-y2y4zoR1A0WViyVIsMxeFbA5AJIud2NmZwzeKkOa8MVoleCPMBU1n54xC9Xi3SbhSpKBiD7sfJCsFEWtDHgV-4moapp-rZp7EIxKEMVX_lGOHMv5V4yhq9-9Cmhqvo8_79gr1g-mAlCdtLhaf90N1-tIDpir4N08WWG_m7Xht1Zx_IFJyj1DQAQE3w3SjQSWTw2uCFQzuWHcNTVEJeGFJaeMilQrUdfkZe14NXHMLosyG39H6RC7R5ZEi_Q1LdPTEhQGAduczIRIqN-05f-3tv0uqn3Q6pEl_iviojM8N2MCHErqgtgnghnqlYIIiy7mtAyha-8sVIcJr1XRffxy6kr3-tQNVh_SAyWOyE8N-2kEZLRlPwu_XA8YRoSLsgQfAoATG56Xtdk1E3R0UIJu_wjCV8jertj3rKKj8XVLVGcVFup_exZmVexyA9uiBN0tr3vdG91nCX1ILMyLzwCIPX6CDcAIeTvMBsdcvE_nrPtYMctvUOvYbAS4IWQIynz5FKTPawLrL3WzWgXJuGVlG0J_oolWl_eeNzVYaSC567Ps9-MO2u0gwDFQvNmdDrRs2ZKQAODT9XIWLAgiKigxieb96SfOe41VFEnNvgM9DEtWHlUBrFacES1281f4bZl-X7YxiJPavtrzr3dj7pUZMKHSq1VRcCFgNeCKZI7pquxLKJXXssonhj_XRyLjEo2W-_CMeEgv6vTqakD4hwQ0t_15BlqAbqrIIsaAEEoENQke4MMQnD3Wc4X3uAgFEf7HReK_lfTrsGzMBbZfW-1fWdzKSNTH2t_yYN8H-dxrhwS6KqTpbSu7nCuntk5nuX8z6MLOFtWcWmO2yJdrsyfqUl0RWP9Z5Sz0SpS1Lym7rFNcAtFrNcTmuRprrMPkCaWut4Oev3XXq9UYS_Tm8gbPkRF8uYqDYvh4tfyxhnCMJOC46M3Gy_TS6zx0LZ9wkkdL1eaB5jJDOaS8V0u1lPLlbM0aD7QlPh8ABTMUdJQWdwS0yh-BW74SJE12tvIWwcBSCvrlnGemZhm8m68CnU6Ch3C_6l7KawFv-Gatg8IAwk6GvwSbJWbLz_HAlMDwDLv2q0zCRLV64xAuWISBrLhZbo1UUpIQw-g1gTnnxnjYHIkJJGzZGOQP8E3oL63SqoqEoNtaxv5kDJpFPHThPGYgcHh1GpHlStuO0ul43E5h_lA82WNrOPez4MVuPc0Ow2li3o7JGgAbPYYIIlZdu1Z3twPOwNZ138o0V6r5tezuKVfF6MxnbmqjeEyqEu9coVYwaWx5J0VH9oWvjqQk4u5Hj_A83UlwqXYNl03x4BwgIgVvG9lSws49I3tCOmYZ4AkkRaL7reifBC2dX8Whrb9mgspu6JBFYwirrzTX7GQGf70gJh9CYCkct_3vB0is8gEXSNvLdp4iU2agCGmCQVhUma-d7nPAnaHGIiqTwEH7sRduhsUHQxFu0mAvRgcDqjm5eaVAYYMPqaBc3uoPkjDmG7W7wfbUxpfofcnwRVZZUDGK7DGoo-oTFt3Y6uZFbuVezR2cJ4DbNfE-rwci_UelmzgQEIeVPgG8c9cWYl_Q8J-qvnXN56WG_We0iUrcWXFYEYZHTOhFOWLdqxfmSpl_6jJaHEdWkWOE456LikwvkEuReCjGTfk9UGNFmd3B0rTHiKXsze6a5XbaTuRmurnjwZxrg3rqkd-X3G4JTcKEnBgwEr2NrHaRh7GnZSJxQoDjGW1XpeZkSNMKZcuP6eBgOhoMXtJUw4tACGc-Yq8Mzl-SwGts0dO_ILwzQIKVhVEWaEluqe_7eHrlCorXfHV0P7qm1FF5UjvQQqkLJBGBX491bmF6n5CwyvJvL4AkBwDsUrLUrwlWbxu03Qm04oKgTsedp8ETnfmKyAbg2iNy5-DmyXdhYjwfvm6z_194hf08VTo2y5qOFf22c1ZU-NmXexJapNaN-OlN3oJSBUGbgqqUxI-yifpWf6XtB_uowK3zrh-B-PVpXtfp4n8HXxycNwihC_lHeVU9c_lqNO1xnde7UlpxPuSmFGmah8VD5rB_g66Ze5qKnHHoFFxlxSz6SPNBLhCYkQGFA4zcrTJSY_f0CUdyTVf8DP9SuinODDYWcduXuY7ECWwzp0G3k9gAWz8PWFebqJVI7WD6fRwfSnk8Rx6tfTqCPbeKolVp5vIe680oTtQTOmsMNohwWXn9PIn7LadnOUPsZ4_-WCDYSwyeQXwHb6hIkCOhp8aStP8DTgmf0os6emMNVKsjDihlffgRAO92WXFQL9wKm3Q9oV3flUQHRrhpWGDxQKWYY9suUuoYEK7SJCOufhI1U7R5DUd8iRrnZ_2JL7xm3S3g1M0p8jl6adDsFe9wpyv0CYZ5HdEpfSvTv58t7Vcn9W7XXDD-SJhcqXxK_pnds58DpQ-7v8zCxBtS9iLWCAa7cI_GXCiBChMXlvPX3Pat5NuXsj9fdAzG8JQrOMRmHEx7oz9636YW3OrZnFWjDtaU1hglr8Wc-L8ZP37vbLhcOL2Qu5q3j-QaxQpjPsQvMc-Xz_TSNHKkrPqrCMXMoD7Ju4ro4dNSUW2EO9WIPXJcneYdg9zcWOkXrqATQbFRohIqBfI2CoLOtlNjjt7EjXDnd1i36DVYAGMGdb_FFI5xWxKX84BkKyGpdmhA-iZ25hg96CzRz9Hji6SPgmqxKCu5VYfE5aF2eAOPL5RnXRPB94vbVSYNY8Lel4-K2wQS-8iLIjeZ_wM28Uj5KfxkNxat3as6DbqZ9OseEaTgbysgxOy20BCULXY3iem79BAipvIxEg-RIgulOCw4NBQ7hzpIMWsnaJRD4pyWK4w5rxfZJRix4LEhf661bi7vXyUrLSlOnoBjjynqsqzqUjoLctguS5_b0OrcrnCKiyeaW80g5gYlgzHFNhN-ewF0qif5Y1-lNtI0UWYJ3k6Hm2yiQGYevOr4-jCZo7LhOtayryUt091EEsIgsHmIQIFHlsp3os00amT-xbMQed5JU1W3Zsd6vD3DqnqR8JNzMgQ-865nt7jQxoQd6CwHHZ1ofqYu3Z-fDVYZnH_k2lFq4Tf8ZnfD3l9GuaGWWcUyBThOaO1pSzR5jpw9J7E8uQ17X1a7Fkts5FCU3qDV6A11lQYQ7qJ0N3w_5f_AyBPoqy19IJ8WEJMklzVJBucgDtHq_tXoxhCtDTxcCsmWE8v8ti9_MIeBNBvdCogW2i9uPLcH2bfgmqSv-HZyvxI7yLapm0_HXWDt1pz5NWS9pAK2R5yuLntsfChVkqEtiJa_TqGgGtHtNxo8z5vliNozwlTo1P8ezOBFU7OZKUIzSuCGOd8kLszeHNBq476UDnxJsXudCSGpd3wtFEZh3TvsMFrlb0pEirLFLVJiVNShn3Tv3dEc9tR2h4i514teFulK58BawvtUzy1z5qYE0x5fgsQpXYVSGlK_tfIeNBexZ4XY64X93GhIjGzLKPK8G4U2Kd8y3XMH6KWL4A7yk5vREZmgKNeBf3iQMic7bXg7lBJCCLDTl_w3FvTxZ5iF5BVBwn6vo2nqFEBO4gfaj9TNbHCG7OXmIL4NT6Fba8LpvMabuf7Bk1L-StdY5isFUw6gzTgI9a0cWF_lfjBWgf9GTRd8CgwbBDMkNf8JgBTrfKEaXMguAUt4UuqwFPXH9KjjkWXJWsrqXOMzKcpY0m8zQzCy-nz6reu3t-7JEaQ5iILNog4JkqI1yPhtdeBOmdj4glZCVTH6nwVZKKBQiuKBZb5xGBwmreQB5YLNNeL-bFxW0HyJIfR9VP8FbauA2SzaGE5634NqzC-TdSh1Ai1JDGH07h6HW0CiuJTUzX7VH508L9UbIQI3S2XWtWGoBPD3s3vYgi_U4sUJ05d72XOnvB8Q_yxKzL-B_vy-QL5XwDRRErSk7878WRXwPLMqQ1WWP_gKCVPATmwsdW8dOcxjruLCXhWOe3cPGMHpIHpSzZXNkk9vHSZukHyk9SELv-vvTisd3uX3G31AKjG23qqLQlC39wgfJNStEEZQoDGZQrBlEdr0TChf82PwVl7MzdMKjNrk5cvPt29OckI0U158_xIf0xOxwTKXP9xkNClIkc-IU7NL5MbWY0DMkYin8m5NPrDA-tTVheG9MdlIf1MBsauQGhVa4V5Gp7-N8fQXSRr8a74NuLHWNpJmrDcjgecMRNvfrCUZvKxbFQ1ZaE2elflcj1h3Rw1JmBH7hIVawtHPoMnmknEcg8i7h5zsX0nvLDOxrJMQcxsrJEdF53CFqDhDdyJ0N7sNdTsjNPHLlLa9fL5ne2ZIjS47GvfELGGCaQYDA5eaM2ngnCNZh3jOMmiDBaBWPGjt8sSEa7MJ2NN8ASq-2rJTU4zOkFSoPwe3-tximNdxnFsy9TcDMlXSlAu51wfaPAVSkA51iGKb2atXy6Xc_x7n8BuAXL_xMnaHT9twvzl_vJomd6m8J10QHD7gG1p8HkjPnRUK3SM9ZtXsUqc7oLtrPOGQD_EGfUeZ9ezWYhZDQw3J3vpj1nxtP0yoeIpyG5WLjTrlihl6qD01oUIUFW3BEMu4m8XdrZ9ky9A6HxoVf8HWAwfuMTKOaftIN1J5FfueBuIYXCz8zmAYkgoznwHVCGzf2IWyEM_-UD1Uv9xyVOuQY2lzpRyOYGwWAotOYuSBnKcBqnD4anIQzqb_-Z1rDHRNTBT790kPmR5-7T9hMCLTIqfP8PZMsjC0dWskXL-beMolW9swBfKUvSohnvZimVX0eQoiWahjZ2RKvjK8-_zBNUwamRNOjfIw4lth0N_oCLMjInvboFxGdUXY5iyTxz8znqY6JiitJp1m5nEAZoOENL4VV5lYp9UzollA8fcpJszIld8HKf_Eccgo5bNmvuHzLLk4bH-NaRVWrenspXouNNidBbVSzJOtUZPmpBRNZzaAI6SqMAOIqFMANDPrc3qjBjvbm6PN5GyhDeIe0rUuxFS79RBpIOxG7gZgCSLedrY3BqBxDwHqLd3p-UJT0gEZn3vNdIlcDzYE5d8-FGcTrN8j_QjdPMxAwRJc_2o8_ej6Aa5I40VS80D_ORTVv0G4zCGkVsveW3UyX5dY6umJqf8ur4UGYhVmtyUAEh5VUE7P8-2cxL9GcDf8D_oknG-GNIOL-41CzbeFCePMn-r_JyFslq8qeVnSlwKp5O2Qt8TUiq7yO5Zx3-7y0sWs2bhFXti7qdVE-DM0803cjx0p_AgeQm1_fIlqcxuAdZUJ-N9RXonbpHpvnz3oQ58pQajq7mN8lhZq1jOVrIuN8xQXkavkSfxP-6T8_bUrwTBj0Xx5N8qbKw4LBJpBe3etclHRpzuthKVkFNoaP4RGAmmelL8SlhhjMMegMMjn_xZswdbDOSN1efrvSZ7ZZZ-X_dh6cNVwjTBZa9q8RJHqVNbW8njoQYLJJKJ9F526A3JBtZWhcyCGFF-XAcl_C20LoshqF_WDQTt-p2kI-X6sSBbg5uktkHWoaNsM_GnscrQS4jg74rEQpPj34WZSPEUCmBY7ySzcMhhWsQyvBF4eqWFYY4Pm-tDjhmwgeZ1Hul5rfErg7W3FZSsGctE9elmT_hSRndj9lly19MWju3X_PnyFdItEMxDN1mcIdfePh1vUvJx9eWWHMMXQAiDECnIqm52Cq_2dEG-xRjEtxBm40hoShcH2rEZoQLFPnsiiqtuR-Jn281g4fc7GHC3rfzCdfBNn7RjdeFrxt7Hmnj-sFbMICCr8yfrB-bbu7CZHQWtMspnX-9Et_-EMo3PI084YGI0Up7EhwdqKgUP61YpntQRslFZ0ioPUGKtJsav4pCfQN2k6y3OQGDXmZ_tEsGutn-f0kCPGwj9y4jaOiRBjnA-Oy_2wMPhZiQXbCcn5ZB-Uw4BPrIEsrU4BsdxgmW1hebxmtSWRyaeQRA77m5Ald-B9zWvE9DSyrfr1zdNtD3obSdPkyTXdZPEPqLpS1LWgQFsZWJRpQ8Z4ps-m8zNhwziQJZfIDNCn0kMbbChQe926FxEgSll94zyoJlK-jAxdPxz0hMOQtn_zRd1PNmRlmIA9dzGecRAirh0dNKex8k67Yw7M1-hqGf8ll3vKmHtKIoxpRqwPU2USPPJFbbzwIWOoTbKZ8B67sDkkjt9kfPjV26oVw-xCEhxuuHaa_CjCNemRc6zwPoHwnYE-rLbC0N2qN3rmirJFHme-dg4CMS_raPginTaMzoJBnc3nPRo6cyG1ocOJH5Hwjhcucmd6GU9_Ajum-Sw6DUkHBvdqdyUmAuT-TWUJZcM-ZqQazL6pSj7rA9wgGBm_dtrLsbRFYbwKHJIhF6OsXdc4JHoKDH9V0wkyLwmXbpsBQtejCl-3MWQFTJPNfGY5p752VKqKc3qmIGC6fP0HjM1nER0tEuBp8V4YXqrA28zXrCgthq01R4B70mpXjnK_8F9EusBErCCcJlu0aEZKRUB6NoD4cnCxKA8VawAindwnfI6-12MhJGaLJy6HWGg-uk7iMc64llHBGrgRndtIMbEV4Et-4vrDFw0ozwY-heuByobaFcgywR0kf2biV0y568duSpFFz_Uuh8vF-VqhRuSKx-hyLzP6rTYpChvX39d---5Qjdpx4qr89t3BpdMMGfxuTPB2TztnDVj3gs5bogG1FkDeJyl_q30T_mSRVn9dtE0WezC86LKeNw_-uYOT134tBBqfP987JM-mjNVC2JiNUkfx6YKByJLqvKNjKymQgnVPpRbbuPtK8E_VW5DX3Me-vyUn1F24Ilwx2nzL7X_wUJdzU-kGFTEjTnfAYc="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "wMZ7au6DBqGj2roPipmYgQE",
+  "usage_metadata": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6554
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 220472
+      }
+    ],
+    "cached_content_token_count": 227026,
+    "candidates_token_count": 14016,
+    "prompt_token_count": 228987,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6611
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 222376
+      }
+    ],
+    "thoughts_token_count": 4459,
+    "total_token_count": 247462
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "1.0",
+    "identity": {
+      "security_code": "6361",
+      "company_name_ja": "株式会社荏原製作所",
+      "company_name_en": "EBARA CORPORATION",
+      "latest_filename": "01_2026_Q1_ebara_tanshin.pdf",
+      "latest_period_ja": "2026年12月期 第1四半期",
+      "latest_period_en": "FY2026 Q1"
+    },
+    "claims": [
+      {
+        "claim_id": "claim_co_01",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "ポンプ等の風水力機械から半導体製造装置までを展開する産業機械メーカー",
+        "body_ja": "株式会社荏原製作所は、各種ポンプ、コンプレッサ・タービン、冷熱機械などの風水力事業（建築・産業、エネルギー、インフラセグメント）、ごみ焼却プラントや水処理施設を手掛ける環境事業、およびCMP装置や真空ポンプなどの半導体製造装置を提供する精密・電子事業を展開しています。官公庁や産業界、半導体メーカー等を顧客とし、製品の製造・納入にとどまらず、運転管理・メンテナンスなどのサービス＆サポート（O&M/S&S）を通じて継続的な収益を得るビジネスモデルを構築しています。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0002",
+          "02_2025_FY_ebara_tanshin.pdf:s0001",
+          "10_2023_FY_ebara_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_lkt_01",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2026年12月期第1四半期の連結業績は各主要損益指標で第1四半期として過去最高額を更新",
+        "body_ja": "2026年12月期第1四半期連結累計期間の業績は、売上収益2,463億11百万円（前年同期比15.8%増）、営業利益267億49百万円（前年同期比18.4%増）、親会社の所有者に帰属する四半期利益183億22百万円（前年同期比16.0%増）となり、第1四半期連結累計期間として過去最高額を更新しました。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_lkt_02",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "営業キャッシュ・フローは前年同期の赤字から257億13百万円の黒字へ大幅改善",
+        "body_ja": "当第1四半期連結累計期間の営業活動によるキャッシュ・フローは257億13百万円の収入超過となり、前年同期の15億35百万円の支出超過から大幅に改善しました。税引前四半期利益269億40百万円の計上や営業債権・棚卸資産の回収進捗などが寄与しています。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0003"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lkt_03",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "通期の税引前利益及び親会社所有者帰属当期利益の業績予想を上方修正",
+        "body_ja": "2026年12月期の通期連結業績予想において、受注高1兆700億円、売上収益1兆200億円、営業利益1,250億円を据え置く一方、税引前利益を1,420億円（前回発表比201億円増）、親会社の所有者に帰属する当期利益を995億円（前回発表比129億円増）へ上方修正しました。主として環境・エネルギー・精密電子での受注増加動向や持分法適用共同支配企業（水ing株式会社）の株式譲渡に伴う利益計上見込みを反映したものです。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0005",
+          "01_2026_Q1_ebara_tanshin.pdf:s0007"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lbd_01",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "「精密・電子」と「環境」セグメントの好調が全社の受注高・利益拡大を牽引",
+        "body_ja": "当第1四半期の全社受注高は3,249億51百万円（前年同期比62.6%増）へ急増しました。「精密・電子」ではAI向け需要の牽引により顧客の工場稼働率上昇や増産投資拡大を受けて受注高が前年同期比104.4%増の1,512億25百万円、セグメント利益が63.9%増の135億31百万円に大幅伸長し、「環境」でも大型案件（公共向け廃棄物処理施設の新設及び長期包括運営契約1件）の受注により受注高が860.7%増の324億94百万円となりました。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0002",
+          "01_2026_Q1_ebara_tanshin.pdf:s0008"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lbd_02",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "「エネルギー」セグメントは中東情勢の影響による一部案件遅れ等で減収減益",
+        "body_ja": "「エネルギー」セグメントの売上収益は465億75百万円（前年同期比4.2%減）、セグメント損益は16億66百万円の損失（前年同期は19億79百万円の利益）となりました。オイル＆ガス市場の需要自体は増加傾向にあるものの、中東情勢の影響により同地域での一部案件の遅れや部品出荷・指導員派遣への影響が生じたことが収益の押し下げ要因となりました。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0002",
+          "01_2026_Q1_ebara_tanshin.pdf:s0009"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lo_01",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "AI関連需要に支えられる精密・電子と社会インフラ需要により通期業績は堅調推移を見込む",
+        "body_ja": "2026年12月期の通期見通しとして、米国関税政策や地政学リスク等の不透明要因があるものの、半導体市場におけるAI向けを中心としたWFE（半導体前工程製造装置）の10%以上成長予測や、社会インフラの安定需要に支えられ、全社事業は堅調に推移する見通しです。通期売上収益1兆200億円（前期比6.4%増）、営業利益1,250億円（前期比9.8%増）を計画しています。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0004",
+          "01_2026_Q1_ebara_tanshin.pdf:s0005",
+          "01_2026_Q1_ebara_tanshin.pdf:s0010"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_lr_01",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "地政学リスクおよび米中対立・規制強化に伴うサプライチェーン混乱リスク",
+        "body_ja": "中東やウクライナ情勢の長期化に伴う資源価格や輸送費・材料費の上昇、さらには米中対立による半導体輸出管理規制の強化など、外部環境の地政学リスクが継続しており、特に中東地域における現地工事の遅延や部品出荷滞留がエネルギーやインフラ事業の業績に下振れリスクを与える懸念が示されています。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0004",
+          "01_2026_Q1_ebara_tanshin.pdf:s0009",
+          "01_2026_Q1_ebara_tanshin.pdf:s0010"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lr_02",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "海外の建築・産業市場における建設コスト高騰と労働力不足による需要低迷リスク",
+        "body_ja": "「建築・産業」セグメントにおいて、北米での建設コスト高騰と労働力不足、欧州での地政学リスク・エネルギー供給不安定化、中国での不動産市場調整継続などにより、海外の建築設備市場の低迷が続いており、民間設備投資の先送りや需要抑制が業績の足かせとなるリスクが存在します。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0009",
+          "01_2026_Q1_ebara_tanshin.pdf:s0010"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_lc_01",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "中期経営計画「E-Plan2028」初年度として過去最高業績の好スタートと事業ポートフォリオ再編の推進",
+        "body_ja": "荏原製作所は2026年12月期を初年度とする3か年の中期経営計画「E-Plan2028」を開始し、グループ全体最適によるグローバル競争力と収益性の強化を進めています。当第1四半期は「精密・電子」のAI需要捉えや「環境」の大型案件獲得により、第1四半期として過去最高の売上・利益を達成しました。\nあわせて、共同支配企業であった水ing株式会社の株式譲渡（譲渡価額250億円、特別配当含む）を決定し、通期純利益予想を995億円へ上方修正しました。非コア資産の整理と成長領域への経営資源集中を進めており、投資家はエネルギーセグメントの一時的遅延からの回復と半導体製造装置市場の需要持続性を注視する必要があります。",
+        "evidence_ids": [
+          "01_2026_Q1_ebara_tanshin.pdf:s0001",
+          "01_2026_Q1_ebara_tanshin.pdf:s0002",
+          "01_2026_Q1_ebara_tanshin.pdf:s0005",
+          "01_2026_Q1_ebara_tanshin.pdf:s0006",
+          "01_2026_Q1_ebara_tanshin.pdf:s0007"
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_tp_01",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "伝統的風水力事業の収益基盤強化と半導体製造装置（精密・電子）の高度成長による業績水準の大幅切り上がり",
+        "body_ja": "過去10年間の荏原製作所の軌跡は、従来の風水力（ポンプ・コンプレッサ）および環境プラント事業における価格改善・O&M（保守運用）比率向上による高収益化と、5G・AI需要等に支えられた精密・電子事業の飛躍的拡大が統合された成長の歴史です。初期（2016-2019年）の売上高5,000億円・営業利益300億円規模から、中期（2020-2022年）のIFRS適用やグローバル需要回復を経て、直近（2023-2025年）には売上収益9,000億円超・営業利益1,000億円超へと拡大しました。シリコンサイクルや資源投資サイクルの変動を受けつつも、サービス＆サポート事業の拡大が下支えとなり、収益基盤の非連続な切り上がりを実現しています。",
+        "evidence_ids": [
+          "41_2016-03_FY_ebara_tanshin.pdf:s0001",
+          "26_2019_FY_ebara_tanshin.pdf:s0001",
+          "22_2020_FY_ebara_tanshin.pdf:s0001",
+          "18_2021_FY_ebara_tanshin.pdf:s0001",
+          "14_2022_FY_ebara_tanshin.pdf:s0001",
+          "10_2023_FY_ebara_tanshin.pdf:s0001",
+          "06_2024_FY_ebara_tanshin.pdf:s0001",
+          "02_2025_FY_ebara_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_tc_01",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "ライフサイクル全体を支えるサービス＆サポート（S&S/O&M）事業による継続的なストック型収益の創出",
+        "body_ja": "初期（FY2016-2019）、中期（FY2020-2022）、直近（FY2023-2025）を通じて一貫して、製品単体の納入だけでなく納入後のメンテナンス、修理、運転管理（O&M/S&S）を強化する戦略を推進してきました。新設案件が石油・ガス市況や半導体投資サイクルにより変動・一時遅延する局面であっても、高稼働な既入設備の保守管理需要が各セグメントの安定的な利益下支えとして機能しています。",
+        "evidence_ids": [
+          "41_2016-03_FY_ebara_tanshin.pdf:s0002",
+          "26_2019_FY_ebara_tanshin.pdf:s0003",
+          "18_2021_FY_ebara_tanshin.pdf:s0002",
+          "02_2025_FY_ebara_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_tc_02",
+        "section": "trend.consistent",
+        "order": 2,
+        "headline_ja": "強固な自己資本比率の維持と連結配当性向35%以上を軸とした成長と還元の両立方針",
+        "body_ja": "10年間にわたり自己資本比率は40%台半ば以上（日本基準40%台後半、IFRS下で43%～47%）の健全な財政状態を維持しています。同時に株主還元方針について、連結配当性向35%以上を目標とし、業績成長に連動した増配と機動的な自己株式取得を継続的に実施する規律ある資本配分を貫いています。",
+        "evidence_ids": [
+          "30_2018_FY_ebara_tanshin.pdf:s0002",
+          "18_2021_FY_ebara_tanshin.pdf:s0003",
+          "02_2025_FY_ebara_tanshin.pdf:s0003"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_tch_01",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "「精密・電子」セグメントの飛躍的拡大によるグループ主益構造の構造的転換",
+        "body_ja": "変化前（FY2016-2018）において精密・電子事業の売上高は900億～1,300億円規模、セグメント利益は100億～180億円程度で全社利益の約3割～半数弱でした。移行期（FY2019-2021）を経て、5GやAI、データセンター普及に伴う半導体需要の拡大とCMP装置等の競争力強化により、現在（FY2023-2025）は売上収益3,400億円超、セグメント利益500億～570億円を超える最大の稼ぎ頭へ構造転換を果たしました。",
+        "evidence_ids": [
+          "41_2016-03_FY_ebara_tanshin.pdf:s0001",
+          "18_2021_FY_ebara_tanshin.pdf:s0001",
+          "02_2025_FY_ebara_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_tch_02",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "製品軸カンパニー制から対面市場別（カンパニー/セグメント）組織への移行と会計基準（IFRS）導入",
+        "body_ja": "変化前は製品軸の3カンパニー制（風水力、環境プラント、精密・電子）で運営され、日本基準により決算開示を行っていました。2021年12月期より国際財務報告基準（IFRS）を任意適用し、さらに2023年12月期よりマーケットインの発想に基づく対面市場別5セグメント構造（建築・産業、エネルギー、インフラ、環境、精密・電子）へ再編し、対面市場ごとの成長捉えと収益管理の最適化を図る体制へ変化しました。",
+        "evidence_ids": [
+          "18_2021_FY_ebara_tanshin.pdf:s0004",
+          "10_2023_FY_ebara_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_tca_01",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "精密・電子等の生産能力増強投資と総還元性向・FCF還元を意識した株主還元の強化",
+        "body_ja": "過去10年間において、精密・電子事業を中心とする国内工場増設や設備投資（年間300億～1,000億円規模の資本的支出）への成長投資を優先しつつ、フリー・キャッシュ・フローの蓄積に応じて自己株式取得（2021年に200億円、2025年に200億円など）や増配を実施しました。「E-Plan2028」では3年間累計フリー・キャッシュ・フローの100%以上を株主還元に充てる方針を掲げ、資産売却（水ing株式譲渡など）を通じた資本効率の最適化も平行して進めています。",
+        "evidence_ids": [
+          "18_2021_FY_ebara_tanshin.pdf:s0005",
+          "02_2025_FY_ebara_tanshin.pdf:s0003",
+          "01_2026_Q1_ebara_tanshin.pdf:s0006"
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_ti_01",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "半導体サイクルの波をS&S事業の安定収益で吸収できる収益構造の持続性が投資判断の鍵",
+        "body_ja": "荏原製作所の10年間の変遷は、精密・電子事業の成長によって高収益化した反面、半導体メーカーの設備投資調整や市況変動（シリコンサイクル）の影響を受けやすくなったことを示しています。投資家にとっては、AI・先端半導体向けの需要拡大を捕捉しつつ、エネルギーやインフラ、建築・産業分野におけるストック型S&S/O&M事業が市況下落局面でどれだけ安定したキャッシュ・フローを維持できるかが今後の持続的企業価値評価の検証点となります。",
+        "evidence_ids": [
+          "02_2025_FY_ebara_tanshin.pdf:s0002",
+          "01_2026_Q1_ebara_tanshin.pdf:s0002",
+          "01_2026_Q1_ebara_tanshin.pdf:s0004"
+        ],
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0001",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当第１四半期連結累計期間における受注高は3,249億51百万円（前年同期比62.6％増）、売上収益は2,463億11百万円（前年同期比15.8％増）、営業利益は267億49百万円（前年同期比18.4％増）、親会社の所有者に帰属する四半期利益は183億22百万円（前年同期比16.0％増）となり、いずれの項目においても第１四半期連結累計期間として過去最高額を更新しました。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する説明",
+        "tags": [
+          "決算概要",
+          "過去最高"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0002",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当第１四半期連結累計期間の受注高は、「精密・電子」においては、AI向け需要の牽引により、顧客の工場稼働率の上昇や増産投資の拡大を受けて前年同期を上回りました。「環境」においては、大型案件の受注があり前年同期を上回りました。この結果、全社の受注高は前年同期比で増加となりました。売上収益及び営業利益は、「エネルギー」の減収減益を他のセグメントがカバーして、全社としては増収増益となりました。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する説明",
+        "tags": [
+          "セグメント動向",
+          "事業ドライバー"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0003",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 18,
+        "exact_quote_ja": "営業活動によるキャッシュ・フロー 25,713",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "要約四半期連結キャッシュ・フロー計算書",
+        "tags": [
+          "キャッシュフロー"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0004",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 9,
+        "exact_quote_ja": "当社を取り巻く事業環境については、米国の関税等の政策動向、米中の対立による半導体輸出管理規制強化、中東やウクライナ情勢の長期化に伴う資源価格への影響、為替変動などといった懸念材料があり、不透明な状況が続くと見込まれます。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "risk",
+        "source_section": "連結業績予想などの将来予測情報に関する説明",
+        "tags": [
+          "リスク"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0005",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 9,
+        "exact_quote_ja": "2026年12月期第２四半期（累計)及び通期の業績予想については、前回決算発表時（2026年２月13日）以降の業績の動向を踏まえ、主として「環境」「エネルギー」及び「精密・電子」における受注高の増加、持分法適用共同支配企業の株式譲渡等により、予想を以下のとおり修正いたします。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "forecast",
+        "source_section": "連結業績予想などの将来予測情報に関する説明",
+        "tags": [
+          "業績予想修正"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0006",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 22,
+        "exact_quote_ja": "当社は、2026年４月14日の取締役会において、当社の共同支配企業である水ing株式会社の株式をインフロニア・ホールディングス株式会社に譲渡することを決議し、同日付で株式譲渡契約を締結しました。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象",
+        "tags": [
+          "株式譲渡",
+          "資本配分"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0007",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 22,
+        "exact_quote_ja": "本株式譲渡に伴い、2026年12月期の連結損益計算書において、金融収益34億円並びに持分法で会計処理されている投資の売却益172億円を計上する見込みです。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "forecast",
+        "source_section": "重要な後発事象",
+        "tags": [
+          "株式譲渡",
+          "利益計上"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0008",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "精密・電子 73,980 151,225 104.4 62,406 82,949 32.9 8,257 13,531 63.9",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "事業セグメント別の概況表",
+        "tags": [
+          "セグメント実績"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0009",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 6,
+        "exact_quote_ja": "製品分野は、オイル＆ガス市場の需要が増加傾向にある一方、中東情勢の影響により当該地域の一部案件に遅れがみられる。",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "事業セグメント別の事業環境と事業概況",
+        "tags": [
+          "エネルギー",
+          "リスク"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_Q1_ebara_tanshin.pdf:s0010",
+        "source_filename": "01_2026_Q1_ebara_tanshin.pdf",
+        "pdf_page": 11,
+        "exact_quote_ja": "WFE:10％以上成長見込み",
+        "period_label_ja": "2026年12月期 第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "forecast",
+        "source_section": "事業セグメント別の事業環境の見通し",
+        "tags": [
+          "精密・電子",
+          "見通し"
+        ]
+      },
+      {
+        "evidence_id": "02_2025_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "02_2025_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における受注高は9,496億83百万円（前期比10.4％増）、売上収益は9,582億85百万円（前期比10.6％増）、営業利益は1,138億２百万円（前期比16.2％増）、親会社の所有者に帰属する当期利益は766億33百万円（前期比7.3％増）となり、いずれの項目においても過去最高額を更新しました。",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "02_2025_FY_ebara_tanshin.pdf:s0002",
+        "source_filename": "02_2025_FY_ebara_tanshin.pdf",
+        "pdf_page": 6,
+        "exact_quote_ja": "精密・電子 260,059 303,447 16.7 278,378 342,267 23.0 50,133 57,773 15.2",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "事業セグメント別の概況表",
+        "tags": [
+          "精密・電子"
+        ]
+      },
+      {
+        "evidence_id": "02_2025_FY_ebara_tanshin.pdf:s0003",
+        "source_filename": "02_2025_FY_ebara_tanshin.pdf",
+        "pdf_page": 13,
+        "exact_quote_ja": "当社グループは、E-Plan2028において中長期的な企業価値最大化に資する成長投資を優先的に実施し、残余キャッシュは原則として株主還元に振り向け最適な資本構成を保つことを株主還元の基本方針とします。配当については、連結配当性向35％以上を目標に当該期の業績に連動して実施します。また、必要な投資を行い且つ財務規律の範囲内であることを前提に、ROE目標に沿った適正な自己資本水準への調整として自己株式の取得を継続的に実施していきます。これらをふまえ、３年間累計のフリーキャッシュフロー（資産売却・圧縮によるキャッシュインフローを除く）の100％以上となるよう株主還元（配当・自己株式取得）を実施します。",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "target",
+        "source_section": "株主還元に関する基本方針と当期及び次期の見通し",
+        "tags": [
+          "資本配分",
+          "株主還元方針"
+        ]
+      },
+      {
+        "evidence_id": "06_2024_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "06_2024_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における受注高は8,605億79百万円（前期比4.9％増）、売上収益は8,666億68百万円（前期比14.1％増）、営業利益は979億53百万円（前期比13.9％増）、親会社の所有者に帰属する当期利益は714億１百万円（前期比18.4％増）となり、いずれの項目においても過去最高額を更新しました。",
+        "period_label_ja": "2024年12月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "10_2023_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "10_2023_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における受注高は8,205億98百万円（前期比0.7％増）、売上収益は7,593億28百万円（前期比11.5％増）、営業利益は860億25百万円（前期比21.9％増）、親会社の所有者に帰属する当期利益は602億83百万円（前期比19.4％増）となり、いずれの項目においても過去最高額を更新しました。",
+        "period_label_ja": "2023年12月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "10_2023_FY_ebara_tanshin.pdf:s0002",
+        "source_filename": "10_2023_FY_ebara_tanshin.pdf",
+        "pdf_page": 20,
+        "exact_quote_ja": "2023年12月期よりスタートした３年間の中期経営計画「E-Plan2025」において、対面市場別５カンパニー制へと組織改変を行うにあたり、従来の製品軸のセグメントから対面市場軸のセグメントへと事業セグメントを変更することとしました。",
+        "period_label_ja": "2023年12月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "事業セグメント",
+        "tags": [
+          "組織改変",
+          "セグメント変更"
+        ]
+      },
+      {
+        "evidence_id": "14_2022_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "14_2022_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における受注高は8,152億18百万円（前期比5.7％増）、売上収益は6,808億70百万円（前期比12.9％増）、営業利益は705億72百万円（前期比15.0％増）、親会社の所有者に帰属する当期利益は504億88百万円（前期比15.8％増）となり、いずれの項目においても過去最高額を更新しました。",
+        "period_label_ja": "2022年12月期",
+        "period_label_en": "FY2022",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "18_2021_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "18_2021_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "これらの結果、当連結会計年度における受注高は7,714億83百万円（前期比50.9％増）、売上収益は6,032億13百万円（前期比15.5％増）、営業利益は613億72百万円（前期比63.4％増）、親会社の所有者に帰属する当期利益は436億16百万円（前期比80.0％増）となり、いずれの項目においても過去最高額を更新しました。",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "18_2021_FY_ebara_tanshin.pdf:s0002",
+        "source_filename": "18_2021_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "利益面では、営業利益は風水力事業の継続的な収益性改善や精密・電子事業の増収、円安の影響等により大幅な改善となりました。",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "利益ドライバー"
+        ]
+      },
+      {
+        "evidence_id": "18_2021_FY_ebara_tanshin.pdf:s0003",
+        "source_filename": "18_2021_FY_ebara_tanshin.pdf",
+        "pdf_page": 12,
+        "exact_quote_ja": "株主還元につきましては、連結配当性向35％以上を目標に当該期の業績に連動させ、かつ親会社所有者帰属持分配当率（連結）2.0％以上を確保する方針としています。",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "target",
+        "source_section": "株主還元に関する基本方針と当期及び次期の見通し",
+        "tags": [
+          "株主還元"
+        ]
+      },
+      {
+        "evidence_id": "18_2021_FY_ebara_tanshin.pdf:s0004",
+        "source_filename": "18_2021_FY_ebara_tanshin.pdf",
+        "pdf_page": 12,
+        "exact_quote_ja": "当社グループは、資本市場における財務情報の国際的な比較可能性の向上を目的として、連結財務諸表について、2021年12月期第１四半期連結会計期間より国際財務報告基準（IFRS会計基準）を任意適用しています。",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "会計基準の選択に関する基本的な考え方",
+        "tags": [
+          "IFRS任意適用"
+        ]
+      },
+      {
+        "evidence_id": "18_2021_FY_ebara_tanshin.pdf:s0005",
+        "source_filename": "18_2021_FY_ebara_tanshin.pdf",
+        "pdf_page": 19,
+        "exact_quote_ja": "自己株式の取得による支出 △20,099",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "連結キャッシュ・フロー計算書",
+        "tags": [
+          "自己株式取得"
+        ]
+      },
+      {
+        "evidence_id": "22_2020_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "22_2020_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における受注高は5,119億21百万円（前期比7.3％減）、売上高は5,237億27百万円（前期比0.2％増）、営業利益は378億79百万円（前期比7.3％増）、経常利益は368億59百万円（前期比3.6％増）、親会社株主に帰属する当期純利益は244億73百万円（前期比4.8％増）となりました。",
+        "period_label_ja": "2020年12月期",
+        "period_label_en": "FY2020",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "26_2019_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "26_2019_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における売上高は5,224億24百万円（前期比2.6％増）、営業利益は352億98百万円（前期比8.7％増）、経常利益は355億71百万円（前期比13.7％増）、親会社株主に帰属する当期純利益は233億49百万円（前期比27.9％増）となりました。",
+        "period_label_ja": "2019年12月期",
+        "period_label_en": "FY2019",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "26_2019_FY_ebara_tanshin.pdf:s0003",
+        "source_filename": "26_2019_FY_ebara_tanshin.pdf",
+        "pdf_page": 11,
+        "exact_quote_ja": "当社は、株主の皆様に対する利益還元を最も重要な経営方針の一つと位置付けています。株主還元については、連結総還元性向30％以上を目標に当該期の業績に連動して実施する方針としていましたが、次期（2020年12月期）より連結配当性向35％以上を目標としつつ、連結自己資本配当率（DOE）2.0％以上を確保できるよう配当を実施していく方針に変更しました。",
+        "period_label_ja": "2019年12月期",
+        "period_label_en": "FY2019",
+        "statement_type": "target",
+        "source_section": "株主還元に関する基本方針と当期及び次期の見通し",
+        "tags": [
+          "株主還元方針"
+        ]
+      },
+      {
+        "evidence_id": "30_2018_FY_ebara_tanshin.pdf:s0002",
+        "source_filename": "30_2018_FY_ebara_tanshin.pdf",
+        "pdf_page": 10,
+        "exact_quote_ja": "当社は、株主の皆様に対する利益還元を最も重要な経営方針の一つと位置付けております。株主還元については、連結総還元性向30％以上を目標に当該期の業績に連動して実施する方針としています。",
+        "period_label_ja": "2018年12月期",
+        "period_label_en": "FY2018",
+        "statement_type": "target",
+        "source_section": "株主還元に関する基本方針と当期及び次期の見通し",
+        "tags": [
+          "株主還元方針"
+        ]
+      },
+      {
+        "evidence_id": "34_2017-12_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "34_2017-12_FY_ebara_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "当連結会計年度における売上高は3,819億93百万円（前年度同一期間比9.1％増）、営業利益は181億15百万円（前年度同一期間比58.0％増）、経常利益は165億29百万円（前年度同一期間比73.8％増）、親会社株主に帰属する当期純利益は95億31百万円（前年度同一期間比29.9％増）となりました。",
+        "period_label_ja": "2017年12月期",
+        "period_label_en": "FY2017(12M)",
+        "statement_type": "actual",
+        "source_section": "当期の経営成績の概況",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "41_2016-03_FY_ebara_tanshin.pdf:s0001",
+        "source_filename": "41_2016-03_FY_ebara_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における売上高は4,862億35百万円（前年度比0.7％増）、営業利益は380億11百万円（前年度比10.0％増）、経常利益は364億71百万円（前年度比0.6％増）、親会社株主に帰属する当期純利益は、特別損失として訴訟損失引当金繰入額64億57百万円を計上したことなどにより172億54百万円（前年度比26.8％減）となりました。",
+        "period_label_ja": "2016年3月期",
+        "period_label_en": "FY2016",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する分析",
+        "tags": [
+          "業績推移"
+        ]
+      },
+      {
+        "evidence_id": "41_2016-03_FY_ebara_tanshin.pdf:s0002",
+        "source_filename": "41_2016-03_FY_ebara_tanshin.pdf",
+        "pdf_page": 9,
+        "exact_quote_ja": "中期経営計画「E-Plan2016」を策定し、①市場の成長を確実に当社ビジネスに取り込むこと、②製品・プラントのライフサイクル全体を対象とするサービス業たること、③産業機械メーカとしてのCore Competence（技術力）を継続的に強化していくこと、④グローバル事業展開を支える経営インフラの拡充を図ること、という４つの基本方針のもと",
+        "period_label_ja": "2016年3月期",
+        "period_label_en": "FY2016",
+        "statement_type": "target",
+        "source_section": "中長期的な会社の経営戦略",
+        "tags": [
+          "経営戦略"
+        ]
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "「E-Plan2016」から「E-Plan2025」「E-Plan2028」に至るまで、製品ライフサイクル全体のS&S/O&M強化とグローバル成長という軸を一貫して維持しています。さらに、製品軸からマーケットインの対面市場別5セグメント構造（建築・産業、エネルギー、インフラ、環境、精密・電子）への移行やIFRS適用、共同支配企業（水ing）の売却など、市場変化に整合した構造改革を進めています。",
+          "evidence_ids": [
+            "41_2016-03_FY_ebara_tanshin.pdf:s0002",
+            "10_2023_FY_ebara_tanshin.pdf:s0002",
+            "01_2026_Q1_ebara_tanshin.pdf:s0006"
+          ]
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "精密・電子事業の能力増強投資や風水力事業の収益性改善、S&S事業の拡大施策を計画通り推進し、売上・利益ともに過去最高水準へ切り上げました。また非コア事業である水ingの株式譲渡など、発表した戦略施策を実行へ移しています。",
+          "evidence_ids": [
+            "18_2021_FY_ebara_tanshin.pdf:s0002",
+            "02_2025_FY_ebara_tanshin.pdf:s0001",
+            "01_2026_Q1_ebara_tanshin.pdf:s0006"
+          ]
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "半導体製造装置の需要サイクルや石油・ガス市場の波に伴い、単年度の業績修正や市場回復想定の遅れ（例：2025年12月期における顧客の増産投資再開遅れ等）が発生するケースが見られます。一方で、中長期的な収益成長目標自体は着実に達成・更新されています。",
+          "evidence_ids": [
+            "22_2020_FY_ebara_tanshin.pdf:s0001",
+            "02_2025_FY_ebara_tanshin.pdf:s0001",
+            "01_2026_Q1_ebara_tanshin.pdf:s0005"
+          ]
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "訴訟損失引当金の計上やトルコ子会社のれん減損 losses、半導体市場の調整局面や中東情勢による影響など、負の事象や計画からの乖離要因についても短短信の事業環境説明等で詳細かつ明確に不確実性を開示しています。",
+          "evidence_ids": [
+            "41_2016-03_FY_ebara_tanshin.pdf:s0001",
+            "06_2024_FY_ebara_tanshin.pdf:s0001",
+            "01_2026_Q1_ebara_tanshin.pdf:s0004"
+          ]
+        }
+      ],
+      "overall_rationale_ja": "荏原製作所の経営一貫性は高い水準にあります。過去10年を通じ、製品ライフサイクルを支えるサービス＆サポートの強化、グローバル展開、および精密・電子事業の拡大という中核戦略を一貫して実行し、売上高・利益水準を大幅に切り上げました。市場サイクルの影響による期中予想の修正や顧客投資遅れが生じる場面もありますが、セグメント再編や非コア資産売却を含め戦略の実行力と開示の透明性が確保されています。"
+    }
+  }
+}

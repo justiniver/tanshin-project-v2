@@ -1,0 +1,449 @@
+{
+  "filing_coverage": {
+    "selected_filings": 10,
+    "status_counts": {
+      "complete": 10
+    },
+    "filings_with_explicit_gaps": 0,
+    "coverage_gaps": [],
+    "latest_filing": {
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "financial_observations": 5,
+      "management_discussion_evidence": 2,
+      "outlook_evidence": 2,
+      "segment_evidence": 0,
+      "cash_flow_evidence": 0,
+      "capital_allocation_evidence": 2,
+      "footnote_evidence": 1
+    }
+  },
+  "financial_observations": {
+    "total": 15,
+    "by_metric": {
+      "net_income": 1,
+      "operating_profit": 1,
+      "ordinary_profit": 12,
+      "revenue": 1
+    },
+    "by_statement_type": {
+      "actual": 13,
+      "forecast": 2
+    },
+    "forecast_version_counts": {
+      "original": 2
+    },
+    "evidence_support_modes": {
+      "exact_surface": 10,
+      "table_header_unit": 5
+    },
+    "annual_anchor_series": {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "actual_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "comparable_forecast_pairs": 0,
+      "series": [
+        {
+          "target_fiscal_year": 2017,
+          "value_surface_ja": "888億円",
+          "evidence_id": "37_2017-05-12_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2018,
+          "value_surface_ja": "1,005億円",
+          "evidence_id": "33_2018-05-11_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2019,
+          "value_surface_ja": "1,004億円",
+          "evidence_id": "29_2019-05-10_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2020,
+          "value_surface_ja": "853億円",
+          "evidence_id": "25_2020-05-14_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2021,
+          "value_surface_ja": "718億円",
+          "evidence_id": "21_2021-05-13_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2022,
+          "value_surface_ja": "819億円",
+          "evidence_id": "17_2022-05-12_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2023,
+          "value_surface_ja": "883億円",
+          "evidence_id": "13_2023-05-11_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2024,
+          "value_surface_ja": "833億円",
+          "evidence_id": "09_2024-05-10_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2025,
+          "value_surface_ja": "834億円",
+          "evidence_id": "05_2025_FY_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2026,
+          "value_surface_ja": "94,051百万円",
+          "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+        }
+      ]
+    },
+    "forecast_accuracy": {
+      "observable_comparisons": 0,
+      "result_counts": {},
+      "mean_absolute_percentage_error": null,
+      "mean_signed_percentage_error": null,
+      "original_forecasts_observed": 1,
+      "original_forecasts_matched_to_actuals": 0,
+      "original_forecasts_unmatched": 1,
+      "original_result_counts": {},
+      "posture_signal": "insufficient_evidence",
+      "posture_minimum_sample": 3,
+      "by_metric": {},
+      "comparisons": []
+    },
+    "forecast_revisions": {
+      "explicit_revised_forecast_observations": 0,
+      "comparable_revisions": 0,
+      "direction_counts": {},
+      "revisions": []
+    }
+  },
+  "commentary": {
+    "observations": 10,
+    "distinct_tags": 4,
+    "comparable_tags": 2,
+    "multi_period_tags": 2,
+    "observations_by_tag": {
+      "labor_costs": 1,
+      "material_costs": 3,
+      "pricing": 5,
+      "volume": 1
+    },
+    "change_counts": {
+      "intensified": 3,
+      "softened": 1,
+      "tone_changed": 2
+    },
+    "tracks": [
+      {
+        "canonical_tag": "labor_costs",
+        "label_ja": "人件費・販管費増加と特別損失の計上",
+        "observation_count": 1,
+        "fiscal_years": [
+          2025
+        ],
+        "tone_counts": {
+          "negative": 1
+        },
+        "intensity_counts": {
+          "high": 1
+        },
+        "change_counts": {}
+      },
+      {
+        "canonical_tag": "material_costs",
+        "label_ja": "完成工事総利益率低下による営業減益",
+        "observation_count": 3,
+        "fiscal_years": [
+          2020,
+          2023,
+          2024
+        ],
+        "tone_counts": {
+          "mixed": 1,
+          "negative": 2
+        },
+        "intensity_counts": {
+          "moderate": 3
+        },
+        "change_counts": {
+          "tone_changed": 2
+        }
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "受注時採算の改善による完成工事総利益率の反転上昇",
+        "observation_count": 5,
+        "fiscal_years": [
+          2017,
+          2018,
+          2019,
+          2022,
+          2026
+        ],
+        "tone_counts": {
+          "negative": 1,
+          "positive": 4
+        },
+        "intensity_counts": {
+          "high": 2,
+          "low": 1,
+          "moderate": 2
+        },
+        "change_counts": {
+          "intensified": 3,
+          "softened": 1
+        }
+      },
+      {
+        "canonical_tag": "volume",
+        "label_ja": "コロナ禍での施工量減少と利益率低下",
+        "observation_count": 1,
+        "fiscal_years": [
+          2021
+        ],
+        "tone_counts": {
+          "negative": 1
+        },
+        "intensity_counts": {
+          "moderate": 1
+        },
+        "change_counts": {}
+      }
+    ],
+    "changes": [
+      {
+        "canonical_tag": "material_costs",
+        "label_ja": "資材・労務費高騰による工事利益率圧迫",
+        "from_observation_id": "comm_2020_profitability",
+        "to_observation_id": "comm_2023_material_cost",
+        "from_period_ja": "2020年3月期 通期",
+        "to_period_ja": "2023年3月期 通期",
+        "from_tone": "negative",
+        "to_tone": "mixed",
+        "from_intensity": "moderate",
+        "to_intensity": "moderate",
+        "lexical_similarity": 0.2065,
+        "change_type": "tone_changed",
+        "evidence_ids": [
+          "25_2020-05-14_tanshin.pdf:s0001",
+          "13_2023-05-11_tanshin.pdf:s0002"
+        ]
+      },
+      {
+        "canonical_tag": "material_costs",
+        "label_ja": "完成工事総利益率低下による営業減益",
+        "from_observation_id": "comm_2023_material_cost",
+        "to_observation_id": "comm_2024_profitability",
+        "from_period_ja": "2023年3月期 通期",
+        "to_period_ja": "2024年3月期 通期",
+        "from_tone": "mixed",
+        "to_tone": "negative",
+        "from_intensity": "moderate",
+        "to_intensity": "moderate",
+        "lexical_similarity": 0.2273,
+        "change_type": "tone_changed",
+        "evidence_ids": [
+          "13_2023-05-11_tanshin.pdf:s0002",
+          "09_2024-05-10_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "施工量増大と採算性の高水準維持",
+        "from_observation_id": "comm_2017_profitability",
+        "to_observation_id": "comm_2018_profitability",
+        "from_period_ja": "2017年3月期 通期",
+        "to_period_ja": "2018年3月期 通期",
+        "from_tone": "positive",
+        "to_tone": "positive",
+        "from_intensity": "moderate",
+        "to_intensity": "high",
+        "lexical_similarity": 0.7319,
+        "change_type": "intensified",
+        "evidence_ids": [
+          "37_2017-05-12_tanshin.pdf:s0001",
+          "33_2018-05-11_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "完成工事総利益率の低下開始",
+        "from_observation_id": "comm_2018_profitability",
+        "to_observation_id": "comm_2019_margin",
+        "from_period_ja": "2018年3月期 通期",
+        "to_period_ja": "2019年3月期 通期",
+        "from_tone": "positive",
+        "to_tone": "negative",
+        "from_intensity": "high",
+        "to_intensity": "low",
+        "lexical_similarity": 0.7324,
+        "change_type": "softened",
+        "evidence_ids": [
+          "33_2018-05-11_tanshin.pdf:s0001",
+          "29_2019-05-10_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "不動産取扱量増加による利益回復",
+        "from_observation_id": "comm_2019_margin",
+        "to_observation_id": "comm_2022_profitability",
+        "from_period_ja": "2019年3月期 通期",
+        "to_period_ja": "2022年3月期 通期",
+        "from_tone": "negative",
+        "to_tone": "positive",
+        "from_intensity": "low",
+        "to_intensity": "moderate",
+        "lexical_similarity": 0.5307,
+        "change_type": "intensified",
+        "evidence_ids": [
+          "29_2019-05-10_tanshin.pdf:s0001",
+          "17_2022-05-12_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "受注時採算の改善による完成工事総利益率の反転上昇",
+        "from_observation_id": "comm_2022_profitability",
+        "to_observation_id": "comm_2026_margin_recovery",
+        "from_period_ja": "2022年3月期 通期",
+        "to_period_ja": "2026年3月期 通期",
+        "from_tone": "positive",
+        "to_tone": "positive",
+        "from_intensity": "moderate",
+        "to_intensity": "high",
+        "lexical_similarity": 0.4423,
+        "change_type": "intensified",
+        "evidence_ids": [
+          "17_2022-05-12_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0004"
+        ]
+      }
+    ],
+    "interpretation_guardrail": "Lexical and tone changes compare only extracted observations in selected filings. They identify review signals, not proof that an omitted topic disappeared from management discussion."
+  },
+  "disclosures": {
+    "total": 5,
+    "by_category": {
+      "capital_allocation": 1,
+      "impairment": 1,
+      "other": 3
+    },
+    "primary_ids": [
+      "disc_2019_smart_housing_divestment",
+      "disc_2025_overseas_impairment",
+      "disc_2025_wood_friends_acquisition",
+      "disc_2026_wood_friends_consolidation"
+    ]
+  },
+  "business_drivers": {
+    "total": 3,
+    "by_direction": {
+      "mixed": 1,
+      "negative": 1,
+      "positive": 1
+    },
+    "by_nature": {
+      "company_specific": 1,
+      "cyclical": 2
+    },
+    "primary_driver_ids": [
+      "driver_material_labor_costs",
+      "driver_order_pricing_discipline",
+      "driver_real_estate_trading"
+    ]
+  },
+  "commitments": {
+    "total": 4,
+    "by_type": {
+      "capital_allocation": 1,
+      "medium_term_target": 3
+    },
+    "by_outcome": {
+      "achieved": 3,
+      "pending": 1
+    },
+    "observable_outcomes": 3,
+    "observable_outcome_share": 0.75,
+    "target_follow_through": {
+      "assessed": 3,
+      "achieved_or_exceeded": 3,
+      "partly_achieved_or_revised": 0,
+      "missed_delayed_or_withdrawn": 0,
+      "achievement_rate": 1.0
+    },
+    "annual_forecasts_with_observable_outcomes": 0,
+    "medium_term_targets_with_observable_outcomes": 2,
+    "observed_revision_count": 1,
+    "revision_direction_counts": {
+      "up": 1
+    },
+    "forecast_posture_counts": {},
+    "missed_or_delayed_ids": []
+  },
+  "management_themes": {
+    "total": 3,
+    "by_development": {
+      "introduced": 1,
+      "persistent": 1,
+      "strengthened": 1
+    },
+    "changed_or_abandoned_ids": []
+  },
+  "management_consistency": {
+    "score": 0.75,
+    "evidence_confidence": 0.7292,
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "subscore": 0.75,
+        "evidence_sufficiency": "sufficient",
+        "evidence_confidence": 0.95
+      },
+      {
+        "dimension": "execution_follow_through",
+        "subscore": 0.75,
+        "evidence_sufficiency": "sufficient",
+        "evidence_confidence": 0.75
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "subscore": 1.0,
+        "evidence_sufficiency": "sufficient",
+        "evidence_confidence": 0.8167
+      },
+      {
+        "dimension": "accountability_transparency",
+        "subscore": 0.5,
+        "evidence_sufficiency": "sufficient",
+        "evidence_confidence": 0.4
+      }
+    ]
+  },
+  "coverage": {
+    "evidence_records": 28,
+    "management_consistency_components": 4,
+    "research_notes": [
+      "各期の決算短信における連結経常利益の実績値および通期予想値を時系列でアンカー指標として抽出し、比較を行った。",
+      "2025年3月期に発生した海外事業等での減損損失（168.6億円）について、2026年3月期でのウッドフレンズ子会社化等の事業ポートフォリオ再編との関連性を踏まえて分析した。"
+    ]
+  },
+  "interpretation_guardrail": "Counts and comparisons describe only observations present in the selected filings in the year-end/latest corpus. They are not a complete revision history and do not include peer or quarterly analysis.",
+  "diagnostics": {
+    "validation_passed": true,
+    "validation_warning": null,
+    "metrics_complete": true,
+    "metrics_warning": null,
+    "non_gating": true
+  }
+}

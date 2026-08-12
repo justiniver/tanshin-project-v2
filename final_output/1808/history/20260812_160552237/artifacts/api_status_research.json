@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.0",
+  "run_id": "692dc080e9d68c73",
+  "stage": "research",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "state": "FAILED",
+  "api_request_completed": false,
+  "started_at_utc": "2026-08-12T06:57:28.885212+00:00",
+  "updated_at_utc": "2026-08-12T06:57:45.992331+00:00",
+  "error_type": "ClientError",
+  "status_code": 400,
+  "error_summary": "400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Request contains an invalid argument.', 'status': 'INVALID_ARGUMENT'}}",
+  "retryable": false
+}

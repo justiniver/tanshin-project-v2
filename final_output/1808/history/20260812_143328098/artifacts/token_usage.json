@@ -1,0 +1,24 @@
+{
+  "stage": "analysis",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "model_version": "gemini-3.6-flash",
+  "response_id": "pn95aurQC-_C0-kP5b7vqQM",
+  "attempts": 1,
+  "usage_metadata": {
+    "candidates_token_count": 12841,
+    "prompt_token_count": 277114,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 270788
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 6326
+      }
+    ],
+    "thoughts_token_count": 16159,
+    "total_token_count": 306114
+  }
+}

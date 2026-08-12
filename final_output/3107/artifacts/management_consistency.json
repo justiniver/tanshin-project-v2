@@ -1,0 +1,116 @@
+{
+  "methodology_version": "management-consistency-v5",
+  "score": 0.67,
+  "raw_score": 0.6667,
+  "evidence_confidence": 0.7,
+  "confidence_label": "moderate",
+  "evidence_coverage": 0.7,
+  "distinct_fiscal_years": [
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "evidence_count": 11,
+  "management_discussion_evidence_share": 0.4545,
+  "components": [
+    {
+      "dimension": "strategic_coherence",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "繊維事業の事業分離やITインフラ流通への経営資源集中など、中期経営計画に沿った事業ポートフォリオ変革の基本方針を一貫して推進した。低成長・不採算事業の整理と成長分野への集中に関して戦略的一貫性が観察される。",
+      "evidence_ids": [
+        "07_2020_FY_tanshin.pdf:s0018",
+        "03_2024_FY_tanshin.pdf:s0019",
+        "01_2026_FY_tanshin.pdf:s0027"
+      ],
+      "distinct_fiscal_years": [
+        2020,
+        2024,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "execution_follow_through",
+      "rating": null,
+      "evidence_sufficiency": "insufficient",
+      "normalized_score": null,
+      "weight": 0.25,
+      "rationale_ja": "サブスクリプションポータル「iKAZUCHI（雷）」の拡大、大和紡績の株式譲渡による繊維事業の切り離し、および連続した大規模な自己株式取得・消却など、公表した施策の実行と完了が確認できる。",
+      "evidence_ids": [
+        "03_2024_FY_tanshin.pdf:s0019",
+        "02_2025_FY_tanshin.pdf:s0024",
+        "01_2026_FY_tanshin.pdf:s0025",
+        "01_2026_FY_tanshin.pdf:s0026"
+      ],
+      "distinct_fiscal_years": [
+        2024,
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 2,
+      "covered_period_buckets": [
+        "recent"
+      ],
+      "evidence_confidence": 0.5833
+    },
+    {
+      "dimension": "forecast_target_discipline",
+      "rating": 2,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.5,
+      "weight": 0.25,
+      "rationale_ja": "ITインフラ流通事業ではWindows10 EOSやGIGAスクール特需を捉えて概ね好業績を達成した一方で、過去の繊維事業においては原燃料高や需要低迷により2023年3月期等で期初予想からの大きな下振れ乖離が発生した。",
+      "evidence_ids": [
+        "04_2023_FY_tanshin.pdf:s0028",
+        "01_2026_FY_tanshin.pdf:s0001"
+      ],
+      "distinct_fiscal_years": [
+        2023,
+        2026
+      ],
+      "management_discussion_evidence_count": 2,
+      "covered_period_buckets": [
+        "middle",
+        "recent"
+      ],
+      "evidence_confidence": 0.7
+    },
+    {
+      "dimension": "accountability_transparency",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "繊維事業の譲渡理由や固定資産減損損失の計上、新会計基準（収益認識基準）適用に伴う売上高減少影響、特需一巡後の減益前提などについて、決算短信等で具体的かつ透明性の高い説明を行っている。",
+      "evidence_ids": [
+        "05_2022_FY_tanshin.pdf:s0022",
+        "03_2024_FY_tanshin.pdf:s0019",
+        "03_2024_FY_tanshin.pdf:s0020",
+        "01_2026_FY_tanshin.pdf:s0003"
+      ],
+      "distinct_fiscal_years": [
+        2022,
+        2024,
+        2026
+      ],
+      "management_discussion_evidence_count": 2,
+      "covered_period_buckets": [
+        "middle",
+        "recent"
+      ],
+      "evidence_confidence": 0.7667
+    }
+  ],
+  "overall_rationale_ja": "ダイワボウホールディングスは、ITインフラ流通事業を中心とする成長戦略の実行において高い戦略的一貫性と実行力を示した。特に資本効率に課題のあった繊維事業（大和紡績）の株式譲渡による事業分離をやり遂げ、自己株式取得・消却を含む株主還元を大幅に強化した。過去の繊維事業における業績下振れや、IT分野での特需・反動減による業績の波動性は存在するものの、経営陣の説明責任と構造改革へのコミットメントは高く評価できる。"
+}

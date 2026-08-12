@@ -1,0 +1,110 @@
+<document_manifest>
+security_code: 1808
+latest_filename: 01_2026_FY_tanshin.pdf
+selected_sources:
+- 01_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 53, roles latest, trend_year_end
+- 05_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 54, roles trend_year_end
+- 09_2024-05-10_tanshin.pdf: FY label 2024, period FY, pages 50, roles trend_year_end
+- 13_2023-05-11_tanshin.pdf: FY label 2023, period FY, pages 50, roles trend_year_end
+- 17_2022-05-12_tanshin.pdf: FY label 2022, period FY, pages 52, roles trend_year_end
+- 21_2021-05-13_tanshin.pdf: FY label 2021, period FY, pages 50, roles trend_year_end
+- 25_2020-05-14_tanshin.pdf: FY label 2020, period FY, pages 51, roles trend_year_end
+- 29_2019-05-10_tanshin.pdf: FY label 2019, period FY, pages 49, roles trend_year_end
+- 33_2018-05-11_tanshin.pdf: FY label 2018, period FY, pages 51, roles trend_year_end
+- 37_2017-05-12_tanshin.pdf: FY label 2017, period FY, pages 49, roles trend_year_end
+trend_period_buckets:
+- early: 37_2017-05-12_tanshin.pdf (FY2017), 33_2018-05-11_tanshin.pdf (FY2018), 29_2019-05-10_tanshin.pdf (FY2019), 25_2020-05-14_tanshin.pdf (FY2020)
+- middle: 21_2021-05-13_tanshin.pdf (FY2021), 17_2022-05-12_tanshin.pdf (FY2022), 13_2023-05-11_tanshin.pdf (FY2023)
+- recent: 09_2024-05-10_tanshin.pdf (FY2024), 05_2025_FY_tanshin.pdf (FY2025), 01_2026_FY_tanshin.pdf (FY2026)
+</document_manifest>
+
+<research_task>
+Build a reusable longitudinal research dossier for security code
+1808. The latest filing is 01_2026_FY_tanshin.pdf.
+
+Research priorities:
+1. Work coverage-first, not conclusion-first. Return exactly one filing_coverage
+   record for every selected source, even when a filing contains no material
+   change. Do not decide which findings belong in the final report. Record an
+   explicit coverage_gaps entry instead of silently omitting an unavailable
+   category.
+2. For each filing, inspect management discussion, outlook, segment discussion,
+   cash-flow discussion, capital allocation and dividends, and material footnotes
+   or mandatory disclosures. Populate the corresponding evidence and observation
+   IDs in its filing_coverage record. The latest filing should normally cover
+   consolidated results, guidance or targets, principal segment drivers,
+   cash-flow or financial-position developments, shareholder returns, and
+   material risk disclosures when they are present.
+3. Create financial_observations for exact decision-useful values needed to
+   compare forecasts with later actuals or explain the latest filing. Preserve
+   the exact value_surface_ja substring, metric, scope, target fiscal year,
+   target period, statement type, and forecast version. Do not perform arithmetic
+   or decide whether a forecast was conservative or aggressive.
+4. Create filing-specific commentary_observations under stable reusable tags.
+   Preserve comparable management wording through evidence IDs and classify only
+   its tone and intensity. Include repeated boilerplate when comparison across
+   filings may reveal that it stayed unchanged, intensified, softened, or was
+   reframed. Do not force a change where none exists.
+5. Record material footnotes and mandatory disclosures separately, including
+   impairments, unusual gains or losses, litigation or regulatory matters,
+   accounting changes, capital-allocation disclosures, and other decision-useful
+   risks. Do not pad the list with routine immaterial notes.
+6. After filing-level coverage is complete, extract 4-8 distinct business
+   drivers when supported. Use a short reusable
+   canonical_tag such as customer_demand, volume, utilization, pricing,
+   product_mix, material_costs, labor_costs, energy_costs, interest_rates,
+   foreign_exchange, property_prices, rent, regulation, capacity,
+   technology_investment, competition, acquisitions, or other. State direction,
+   importance, structural/cyclical nature, affected area, mechanism, periods,
+   and evidence.
+7. Connect explicit forecasts, medium-term targets, strategic commitments, and
+   capital-allocation commitments with later outcomes whenever the selected
+   filings permit. Keep original statements and later outcomes in the same
+   organizational scope and time horizon. Distinguish achieved, exceeded,
+   partly achieved, missed, delayed, revised, withdrawn, pending, and not
+   observable.
+8. Local code compares financial_observations and calculates forecast accuracy.
+   For annual-forecast commitment records, use forecast_posture only when the
+   relationship is explicit and unambiguous in the selected filings; otherwise
+   use not_assessable. Do not perform unsupported arithmetic or create a
+   multi-year forecast-bias conclusion.
+9. Record revision_direction only for revisions visible in the selected
+   filings. Never infer that none occurred outside the selected corpus.
+10. Extract up to 4-8 decision-useful management themes spanning early, middle,
+   and
+   recent periods where possible. Distinguish persistent, introduced,
+   strengthened, changed, deprioritized, and abandoned themes. Explain actions,
+   later outcomes, and unresolved tensions rather than merely counting repeated
+   slogans. Return fewer themes when the filings show little material change.
+11. Return one management-consistency component for each required dimension.
+   The rationale must identify concrete commitments, later actions or results,
+   important misses or revisions, and contrary evidence. Rate 0 materially
+   inconsistent, 1 weak, 2 mixed, 3 generally consistent, and 4 highly
+   consistent. The selected corpus normally provides enough management discussion
+   for all four ratings, so make the best evidence-based assessment even when
+   coverage is uneven and explain the limitation in the rationale. Use null only
+   in the exceptional case where, after reviewing every selected filing, no
+   defensible assessment can be made for that dimension; do not use null merely
+   because the strongest examples come from one part of the trend period.
+12. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
+   targets, missing outcomes, or other material research limitations.
+
+Evidence requirements:
+- Use exact authoritative filenames from the metadata.
+- Use physical 1-indexed PDF pages.
+- Evidence quotes must be sufficiently complete verbatim Japanese sentences or
+  short contiguous passages.
+- As a coverage target, retain roughly 8-15 decision-useful evidence records
+  from the latest filing and 3-8 from each year-end trend filing when available.
+  Use fewer rather than weak evidence, but identify the shortfall in that
+  filing's coverage_gaps.
+- Use unique IDs in the form <source_filename>:sNNNN.
+- Include support for both the original commitment and later result when an
+  outcome is classified.
+- Tag management-commentary evidence with management_discussion.
+- Use unique stable IDs for every filing-level financial observation, commentary
+  observation, and disclosure, and list each ID in exactly one filing_coverage
+  record for its source filing.
+
+Return only the schema-conforming JapaneseResearchDossier.
+</research_task>

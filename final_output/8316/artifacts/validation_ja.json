@@ -1,0 +1,38 @@
+{
+  "valid": true,
+  "publishable": true,
+  "factual_integrity_passed": true,
+  "quality_gate_passed": true,
+  "blocking_error_count": 0,
+  "warning_count": 2,
+  "language": "ja",
+  "issues": [
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "management_consistency_discussion_coverage_low",
+      "message": "Less than half of the score evidence comes from management discussion.",
+      "claim_id": null,
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "trend_management_discussion_coverage_low",
+      "message": "Less than half of trend evidence references come from management discussion.",
+      "claim_id": null,
+      "evidence_id": null
+    }
+  ],
+  "statistics": {
+    "claims": 17,
+    "evidence_records": 20,
+    "citation_references": 43,
+    "trend_management_discussion_share": 0.0,
+    "management_consistency_score": 0.5,
+    "management_consistency_evidence_confidence": 0.7167,
+    "errors": 0,
+    "warnings": 2,
+    "blocking_errors": 0
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "valid": false,
+  "publishable": false,
+  "factual_integrity_passed": false,
+  "quality_gate_passed": true,
+  "blocking_error_count": 2,
+  "warning_count": 2,
+  "language": "ja",
+  "issues": [
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "claim_latest_risk_1",
+      "evidence_id": null
+    },
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_latest_risk_1",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "claim_latest_risk_2",
+      "evidence_id": null
+    },
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_latest_risk_2",
+      "evidence_id": null
+    }
+  ],
+  "statistics": {
+    "claims": 20,
+    "evidence_records": 35,
+    "citation_references": 62,
+    "trend_management_discussion_share": 0.75,
+    "management_consistency_score": 0.75,
+    "management_consistency_evidence_confidence": 0.6125,
+    "errors": 2,
+    "warnings": 2,
+    "blocking_errors": 2
+  }
+}

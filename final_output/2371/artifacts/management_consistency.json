@@ -1,0 +1,113 @@
+{
+  "methodology_version": "management-consistency-v5",
+  "score": 0.67,
+  "raw_score": 0.6667,
+  "evidence_confidence": 0.6625,
+  "confidence_label": "moderate",
+  "evidence_coverage": 0.6625,
+  "distinct_fiscal_years": [
+    2017,
+    2019,
+    2020,
+    2024,
+    2025,
+    2026
+  ],
+  "evidence_count": 8,
+  "management_discussion_evidence_share": 0.375,
+  "components": [
+    {
+      "dimension": "strategic_coherence",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "経営陣は基幹メディア（価格.com、食べログ）の強化と新規領域（求人ボックス等）の育成・拡大を一貫して掲げ、時代の変化に合わせて報告セグメントを再編しつつ整合性のある戦略を推進している。",
+      "evidence_ids": [
+        "10_2017_FY_tanshin.pdf:s0009",
+        "03_2024_FY_tanshin.pdf:s0015",
+        "01_2026_FY_tanshin.pdf:s0018"
+      ],
+      "distinct_fiscal_years": [
+        2017,
+        2024,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "execution_follow_through",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "食べログにおけるネット予約の拡大や、求人ボックスの独立セグメント化および大規模投資・M&Aを通じたHR領域の拡大など、公表した成長施策を着実に実行している。一方、Patheeなどの買収子会社で計画未達による減損が発生した事例も存在する。",
+      "evidence_ids": [
+        "08_2019_FY_tanshin.pdf:s0013",
+        "02_2025_FY_tanshin.pdf:s0019",
+        "01_2026_FY_tanshin.pdf:s0005"
+      ],
+      "distinct_fiscal_years": [
+        2019,
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "forecast_target_discipline",
+      "rating": 2,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.5,
+      "weight": 0.25,
+      "rationale_ja": "コロナ禍など外部環境の変化が著しい局面では業績予想を未定とするなど慎重な開示姿勢をとる一方、2026年3月期においては求人ボックスへの投資拡大により増収幅が大きくなったものの減益となり、投資フェーズにおける短期業績の振れが見られる。",
+      "evidence_ids": [
+        "07_2020_FY_tanshin.pdf:s0016",
+        "01_2026_FY_tanshin.pdf:s0001"
+      ],
+      "distinct_fiscal_years": [
+        2020,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.65
+    },
+    {
+      "dimension": "accountability_transparency",
+      "rating": null,
+      "evidence_sufficiency": "insufficient",
+      "normalized_score": null,
+      "weight": 0.25,
+      "rationale_ja": "求人ボックスの先行投資に伴うセグメント赤字化やPatheeの減損損失など、業績下振れや特別損失の要因について決算短信内で具体的かつ定量的に理由を開示しており、説明責任を果たしている。",
+      "evidence_ids": [
+        "02_2025_FY_tanshin.pdf:s0019",
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0005"
+      ],
+      "distinct_fiscal_years": [
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "recent"
+      ],
+      "evidence_confidence": 0.5
+    }
+  ],
+  "overall_rationale_ja": "カカクコムの経営陣は、10年を通じてユーザーファーストの理念のもと「価格.com」「食べログ」の基盤強化と「求人ボックス」等の新規育成を一貫して推進してきた。買収子会社の減損や先行投資拡大による短期的な減益などは発生しているものの、施策の実行力と開示の透明性は高く維持されている。"
+}

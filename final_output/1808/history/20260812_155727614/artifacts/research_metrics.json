@@ -1,0 +1,52 @@
+{
+  "business_drivers": {
+    "total": 4,
+    "by_direction": {
+      "mixed": 1,
+      "positive": 3
+    },
+    "by_nature": {
+      "cyclical": 2,
+      "structural": 2
+    },
+    "primary_driver_ids": [
+      "driver_1",
+      "driver_2",
+      "driver_3"
+    ]
+  },
+  "commitments": {
+    "total": 3,
+    "by_type": {
+      "medium_term_target": 3
+    },
+    "by_outcome": {
+      "achieved": 1,
+      "partly_achieved": 1,
+      "pending": 1
+    },
+    "annual_forecasts_with_observable_outcomes": 0,
+    "medium_term_targets_with_observable_outcomes": 2,
+    "observed_revision_count": 0,
+    "revision_direction_counts": {},
+    "forecast_posture_counts": {},
+    "missed_or_delayed_ids": []
+  },
+  "management_themes": {
+    "total": 3,
+    "by_development": {
+      "persistent": 1,
+      "strengthened": 2
+    },
+    "changed_or_abandoned_ids": []
+  },
+  "coverage": {
+    "evidence_records": 15,
+    "management_consistency_components": 4,
+    "research_notes": [
+      "本ドシエは提示された10期分の決算短信（2017年3月期〜2026年3月期）に基づき作成されている。",
+      "2026年3月期より新中期経営計画「HASEKO Evolution Plan」が開始されており、初年度の連結経常利益は941億円（予想900億円を超過）となった。"
+    ]
+  },
+  "interpretation_guardrail": "Counts describe only observations present in the selected filings. They are not a complete revision history unless the selected corpus contains every relevant revision disclosure."
+}

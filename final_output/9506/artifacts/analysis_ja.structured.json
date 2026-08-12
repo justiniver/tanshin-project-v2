@@ -1,0 +1,590 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "9506",
+    "company_name_ja": "東北電力株式会社",
+    "company_name_en": "Tohoku Electric Power Company, Incorporated",
+    "latest_filename": "01_2027_Q1_tanshin.pdf",
+    "latest_period_ja": "2027年3月期 第1四半期",
+    "latest_period_en": "FY2027 Q1"
+  },
+  "claims": [
+    {
+      "claim_id": "overview_01",
+      "section": "company.overview",
+      "order": 1,
+      "headline_ja": "東北・新潟地域を基盤に発電・販売と送配電を展開する総合エネルギー企業",
+      "body_ja": "東北電力株式会社は、東北6県および新潟県を中心とする営業地域において、発電・販売事業および送配電事業を主軸として展開する電力事業者である。発電・販売事業では火力、水力、原子力、再生可能エネルギー等の多角的な電源群を保有し、電力小売および卸売取引を行っている。送配電事業は子会社の東北電力ネットワーク株式会社が担い、中立・公平な送配電ネットワークサービスを提供して託送収益等を得る収益構造となっている。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0008",
+        "02_2026_FY_tanshin.pdf:s0020"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "latest_key_01",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "2027年3月期第1四半期は域外取引増加で増収も女川2号機稼働減とタイムラグで減益",
+      "body_ja": "2027年3月期第1四半期の連結売上高は前年同期比46.7%増の7,853億4百万円となった一方、経常利益は5.4%減の544億83百万円、親会社株主に帰属する四半期純利益は4.2%減の361億27百万円となった。市場や販売環境の変化に伴う収支改善や送配電事業での需給調整費用減少があったものの、女川原子力発電所第2号機の稼働減に伴う収支悪化や燃料費調整制度のタイムラグ影響が利益を押し下げた。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0001",
+        "01_2027_Q1_tanshin.pdf:s0003"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_key_02",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "間接オークション自己約定の増加が売上高を1,551億円押し上げるも損益は中立",
+      "body_ja": "当第1四半期の売上高には間接オークションに伴う自己約定分が1,551億円（前年同期比1,473億円増）含まれており、これが主たる増収要因となった。ただし、同額の費用が同時に計上される取引構造であるため、連結経常損益への直接的な影響はない。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0002",
+        "01_2027_Q1_tanshin.pdf:s0004"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_key_03",
+      "section": "latest.key_takeaway",
+      "order": 3,
+      "headline_ja": "純資産の積増しにより自己資本比率は20.0%へ上昇し財務健全性が改善",
+      "body_ja": "2027年3月期第1四半期末の総資産は前連結会計年度末比501億円減の5兆6,817億円となった一方、四半期純利益の計上等により純資産は257億円増の1兆1,615億円となった。この結果、自己資本比率は前連結会計年度末の19.4%から0.6ポイント上昇して20.0%に達した。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0005",
+        "01_2027_Q1_tanshin.pdf:s0006"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_key_04",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "地政学リスクや託送料金改定申請などの不確定要素により通期業績予想は未定を継続",
+      "body_ja": "中東地域での戦闘再開による地政学的リスクの高まりや燃料価格の不透明感に加え、東北電力ネットワークによる託送供給等収入の見通し期中調整申請に伴う託送料金改定など複数の不確定要素が存在するため、2027年3月期の通期業績予想は未定とされている。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_driver_01",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "新規顧客獲得により小売販売電力量は8.7%増加",
+      "body_ja": "発電・販売事業において、春季の気温上昇に伴う暖房需要減少があったものの、新規顧客獲得による需要増等が寄与し、小売販売電力量は前年同期比8.7%増の144億kWhとなった。内訳としては電灯需要が4.2%減少した一方で、電力需要が14.6%増加した。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0008"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_driver_02",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "送配電事業は需給調整費用の減少により損失幅が27億円縮小",
+      "body_ja": "送配電事業では、春季の気温高推移による家庭・業務用の暖房需要減少等からエリア電力需要が1.1%減の167億kWhとなった。売上高は再生可能エネルギー電気卸供給の増加等で15.7%増の2,271億円となり、経常損益は需給調整費用の減少により前年同期の112億円の損失から27億円改善し85億円の損失となった。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0009",
+        "01_2027_Q1_tanshin.pdf:s0010"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_outlook_01",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "燃料価格動向と託送料金改定の見極め完了まで業績算定を見送り",
+      "body_ja": "会社側は、地政学的リスクに伴う燃料価格・電力市場価格の変動や、送配電子会社における託送料金改定および需給調整関連収支の動向が合理的に算定可能となった時点において速やかに業績予想を開示する姿勢を示している。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "latest_risk_01",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "中東情勢再悪化に伴う燃料価格および市場価格急騰リスク",
+      "body_ja": "中東地域での戦闘再開等による地政学的リスクの高まりは、LNGや石炭などの燃料調達価格および卸電力市場価格の不透明感を増幅させており、発電コストや電力先渡取引等の時価評価損益を通じて業績を変動させる直接的なリスク要因となっている。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_risk_02",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "原子力発電所の定期検査・稼働変動に伴う火力代替コストリスク",
+      "body_ja": "当第1四半期において女川原子力発電所第2号機の定期事業者検査等に伴う稼働減が収支悪化の主要因となったように、原子力発電所の稼働率低下や火力発電所の計画外停止は他社受電や火力焚き増しによる調達コスト増を引き起こすリスクがある。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0003"
+      ],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_context_01",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "制度的増収要素と稼働制約による実質減益が混在する中での自己資本回復局面",
+      "body_ja": "2027年3月期第1四半期は、間接オークション自己約定という会計上の売上増額要素（1,551億円）により表面上大幅な増収となったが、実質的な業績は女川2号機の稼働減や燃料費調整タイムラグにより減益となった。一方で送配電事業の調整費用減少や利益積増しにより、自己資本比率は20.0%まで回復した。通期予想が地政学リスクや託送料金改定申請を理由に未定とされる中、エネルギー市場変動に対する収支耐性と原子力再稼働の安定性が今後の検証軸となる。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0001",
+        "01_2027_Q1_tanshin.pdf:s0003",
+        "01_2027_Q1_tanshin.pdf:s0004",
+        "01_2027_Q1_tanshin.pdf:s0006",
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_perspective_01",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "外部ショックによる業績乱高下と自己資本毀損からの構造的再構築の軌跡",
+      "body_ja": "過去10年間の東北電力は、電力自由化や法的分離という制度改革に対応しつつ、燃料価格騰貴や自然災害（地震等）という外部ショックによって大幅な赤字と自己資本毀損を経験した。初期（2017〜2020年度）は比較的安定した経常利益を維持していたが、中期（2021〜2023年度）に燃料高騰や燃料費調整制度のタイムラグ差損、地震被害が重なり赤字へ転落、自己資本比率は10.5%まで悪化した。直近（2024〜2026年度）は料金改定やタイムラグ差益、女川2号機再稼働等により利益と自己資本の急速な回復（自己資本比率19.4%）を果たした。持続的な安定成長の証明には外部市況に依存しない電源構成とコスト構造の維持が不可欠である。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0022",
+        "07_2021_FY_tanshin.pdf:s0011",
+        "05_2023_FY_tanshin.pdf:s0014",
+        "05_2023_FY_tanshin.pdf:s0015",
+        "04_2024_FY_tanshin.pdf:s0016",
+        "02_2026_FY_tanshin.pdf:s0020"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_consistent_01",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "燃料価格動向と燃料費調整制度のタイムラグが連結損益を大きく左右する不変の構造",
+      "body_ja": "初期（2018年度）、中期（2022年度）、直近（2024年度）を通じて、燃料価格の変動と燃料費調整制度の適用時期のズレ（タイムラグ影響）が同社の経常損益を急変させる最大のメカニズムであり続けた。2018年度はタイムラグ益が利益を押し上げ、2022年度は燃料高騰に伴う大幅なタイムラグ差損が1,992億円の経常損失の一因となり、2024年度は一転してタイムラグ差益が2,919億円への劇的なV字回復をもたらした。この影響メカニズム自体は一貫しているが、損益のボラティリティを極めて高くする要素となっている。",
+      "evidence_ids": [
+        "10_2018_FY_tanshin.pdf:s0023",
+        "06_2022_FY_tanshin.pdf:s0012",
+        "04_2024_FY_tanshin.pdf:s0016"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_consistent_02",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "全社的な経営効率化と徹底したコスト削減努力の継続",
+      "body_ja": "同社は初期（2020年度）、中期（2021年度）、直近（2024年度）のいずれの時期においても、グループ一体となった生産性・効率性向上や経費削減の取り組みを継続的に実施してきた。2020年度はLNGスポット調達拡大や能代3号機運転による燃料費改善、2021年度も効率化努力を明記し、2024年度は高効率の上越火力通年運転による燃料費抑制を結実させた。事業環境の良悪にかかわらずコスト構造の改善が経営課題として掲げられ続けている。",
+      "evidence_ids": [
+        "08_2020_FY_tanshin.pdf:s0026",
+        "07_2021_FY_tanshin.pdf:s0011",
+        "04_2024_FY_tanshin.pdf:s0016"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_change_01",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "電力自由化・法的分離に対応した事業持株会社体制への移行と事業再編",
+      "body_ja": "変化前（2019年3月期以前）は一体的な電気事業体制であったが、移行期（2019〜2020年）に送配電部門の法的分離を決定し、2020年4月に東北電力ネットワーク株式会社を分社化した。さらに現在（2025年3月期）では、設備工事を担うユアテックの株式一部譲渡により連結子会社から持分法適用会社へ変更するなど、持株会社のもとでのグループ事業ポートフォリオの見直しと自律経営の推進へと変化した。",
+      "evidence_ids": [
+        "09_2019_FY_tanshin.pdf:s0025",
+        "03_2025_FY_tanshin.pdf:s0019"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_change_02",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "エネルギー危機による財務基盤の激変と自己資本比率20%水準への回復目標設定",
+      "body_ja": "変化前（2017〜2020年度）は自己資本比率17〜18%台を保っていたが、移行期（2021〜2022年度）に燃料高騰・地震等で2期連続の大幅赤字を計上し、2022年度末には自己資本比率10.5%（東日本大震災直後を下回る水準）まで低下した。現在（2024〜2026年度）は料金改定や業績回復に伴い、中長期ビジョン「よりそうnext+PLUS」において2026年度に自己資本比率20%程度を目指す目標を設定し、2026年3月期末には19.4%まで急速に財務基盤を復元させた。",
+      "evidence_ids": [
+        "05_2023_FY_tanshin.pdf:s0014",
+        "05_2023_FY_tanshin.pdf:s0015",
+        "04_2024_FY_tanshin.pdf:s0017",
+        "02_2026_FY_tanshin.pdf:s0021"
+      ],
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_capital_01",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "赤字転落時の無配からDOE2%を目安とする財務基盤バランス型還元方針への転換",
+      "body_ja": "2022年度に大幅な純損失を計上した際、財務基盤回復を最優先として無配への転換を余儀なくされた。しかし、その後業績が急速に回復したことを受け、2025年3月期以降の配当方針として「財務基盤の回復とバランスを図る観点から、当面はDOE（株主資本配当率）2%を目安としながら総合的に判断する」基準を新設した。業績連動の変動を抑えつつ自己資本の積み増しと安定配当を両立させる資本配当マネジメントへ移行している。",
+      "evidence_ids": [
+        "05_2023_FY_tanshin.pdf:s0015",
+        "04_2024_FY_tanshin.pdf:s0016",
+        "02_2026_FY_tanshin.pdf:s0021"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "trend_implication_01",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "女川2号機再稼働の安定化と市況変動・託送料金改定下でのDOE2%維持能力の検証",
+      "body_ja": "投資家が今後確認すべき判断軸は、再稼働を果たした女川原子力発電所第2号機の安定運用による燃料費削減効果と、燃料市況や地政学リスク・託送料金改定による収支下振れ圧力との相殺関係である。過去のタイムラグ差損益による劇的な損益変動を教訓として、同社が掲げる2026年度自己資本比率20%程度の維持達成と、新設されたDOE2%目安に基づく株主還元の持続性を両立できるかが焦点となる。",
+      "evidence_ids": [
+        "03_2025_FY_tanshin.pdf:s0018",
+        "02_2026_FY_tanshin.pdf:s0020",
+        "02_2026_FY_tanshin.pdf:s0021",
+        "01_2027_Q1_tanshin.pdf:s0003"
+      ],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2027年３月期第１四半期の連結業績（2026年４月１日～2026年６月30日） 売上高 785,304百万円 (46.7％) 営業利益 60,093百万円 (△6.6％) 経常利益 54,483百万円 (△5.4％) 親会社株主に帰属する四半期純利益 36,127百万円 (△4.2％)",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "連結経営成績(累計)",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "売上高は、間接オークションに伴う自己約定を含む域外取引の増加などから、7,853億円となり、前年同四半期に比べ、2,499億円（46.7％）の増収となりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "経常利益は、市場や販売環境の変化に伴う収支改善や、送配電事業における需給調整費用の減少に加え、電力先渡取引等の時価評価影響があったものの、女川原子力発電所第２号機の稼働減に伴う収支悪化及び燃料費調整制度のタイムラグ影響などにより、544億円となり、前年同四半期に比べ、31億円（5.4％）の減益となりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "売上高には、この間接オークションに伴う自己約定分が合計1,551億円（前年同四半期比1,473億円増）含まれておりますが、費用も計上されることから、収支への影響はありません。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "資産は、現金及び預金が減少したことなどから、総資産は501億円（0.9％）減少し、５兆6,817億円となりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "資産、負債及び純資産の状況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "純資産は、親会社株主に帰属する四半期純利益の計上などから、257億円（2.3％）増加し、１兆1,615億円となりました。この結果、自己資本比率は、前連結会計年度末から0.6ポイント上昇し、20.0％となりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "資産、負債及び純資産の状況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "中東地域で戦闘が再開されるなど、地政学的リスクが再び高まっており、燃料価格等の動向が依然として不透明な状況にあるほか、東北電力ネットワーク㈱における「託送供給等に係る収入の見通し」の期中調整申請に伴う託送料金の改定や需給調整関連収支の動向など、業績に影響を及ぼす複数の不確定要素が存在していることから、未定としております。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "forecast",
+      "source_section": "連結業績予想",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当社の販売電力量（小売）は、春季の気温が前年を上回ったことによる暖房需要の減少などがあったものの、新規顧客獲得による需要増などから、前年同四半期に比べ、8.7％増の144億kWhとなりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0009",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "［送配電事業］ エリア電力需要は、産業用の生産動向などによる増加があった一方、春季の気温が高く推移したことによる家庭・業務用における暖房需要の減少などから、前年同四半期に比べ、1.1％減の167億kWhとなりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0010",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "経常損益は、需給調整費用の減少などにより、前年同四半期に比べ、27億円損失幅が縮小し、85億円の損失となりました。",
+      "period_label_ja": "2027年3月期 第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0020",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、市場や販売環境の変化に伴う収支悪化や、送配電事業における需給調整費用の増加および中東情勢悪化に伴う燃料価格・電力市場価格の急騰による電力先渡取引等の時価評価影響などから、前連結会計年度に比べ、1,303億円減（50.8％）の1,264億円となりました。",
+      "period_label_ja": "2026年3月期 通期",
+      "period_label_en": "FY2026 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0021",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "また、2025年３月期以降の配当については、これまでの基本的な方針に加え、財務基盤の回復とバランスを図る観点から、当面はＤＯＥ（株主資本配当率）２％を目安としながら、総合的に判断していくこととしております。",
+      "period_label_ja": "2026年3月期 通期",
+      "period_label_en": "FY2026 FY",
+      "statement_type": "target",
+      "source_section": "今後の見通し",
+      "tags": []
+    },
+    {
+      "evidence_id": "03_2025_FY_tanshin.pdf:s0018",
+      "source_filename": "03_2025_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、燃料費調整制度のタイムラグ影響による差益の減少があったことなどから、前連結会計年度に比べ、352億円減（12.1％）の2,567億円となりました。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "03_2025_FY_tanshin.pdf:s0019",
+      "source_filename": "03_2025_FY_tanshin.pdf",
+      "pdf_page": 14,
+      "exact_quote_ja": "当連結会計年度において、当社が保有する株式会社ユアテック（以下、「ユアテック」といいます。）の株式の一部譲渡に伴い、ユアテックを連結子会社から持分法適用会社へ変更し、ユアテックの子会社16社を連結の範囲から除外しております。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025 FY",
+      "statement_type": "actual",
+      "source_section": "連結範囲の重要な変更",
+      "tags": []
+    },
+    {
+      "evidence_id": "04_2024_FY_tanshin.pdf:s0016",
+      "source_filename": "04_2024_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常利益は、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことや、電気料金見直しに加え、高効率の上越火力発電所通年運転による燃料費抑制など効率化の取り組みにより、前年度に比べ、4,912 億円増の 2,919 億円となりました。",
+      "period_label_ja": "2024年3月期 通期",
+      "period_label_en": "FY2024 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "04_2024_FY_tanshin.pdf:s0017",
+      "source_filename": "04_2024_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "なお、東北電力グループ中長期ビジョンにおける今後の経営展開「よりそう next+PLUS」において、財務基盤の早期回復及び「利益・投資・成長の好循環」の形成を目指すための定量的な目標として、以下のとおり財務目標を新たに設定しております。 2026年度 利益指標〔連結経常利益〕 1,900 億円 財務健全性指標〔連結自己資本比率〕 20％程度",
+      "period_label_ja": "2024年3月期 通期",
+      "period_label_en": "FY2024 FY",
+      "statement_type": "target",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "05_2023_FY_tanshin.pdf:s0014",
+      "source_filename": "05_2023_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常損益は、燃料価格の高騰や円安の影響に加え、卸電力取引市場の価格の上昇により、電力調達コストが大幅に増加したことなどから、前年度に比べ 1,500 億円減少し、1,992 億円の損失となりました。",
+      "period_label_ja": "2023年3月期 通期",
+      "period_label_en": "FY2023 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "05_2023_FY_tanshin.pdf:s0015",
+      "source_filename": "05_2023_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "自己資本比率については、東日本大震災直後を下回る水準まで悪化いたしました。このような状況の中、財務基盤の回復を最優先に取り組み必要性などを総合的に勘案し、2022年度の期末配当については、見送る予定としております。",
+      "period_label_ja": "2023年3月期 通期",
+      "period_label_en": "FY2023 FY",
+      "statement_type": "actual",
+      "source_section": "今後の見通し",
+      "tags": []
+    },
+    {
+      "evidence_id": "06_2022_FY_tanshin.pdf:s0012",
+      "source_filename": "06_2022_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常損益については、減価償却方法の変更により減価償却費が減少したものの、燃料価格の高騰による燃料費調整制度のタイムラグ影響に加え、卸電力取引市場の価格上昇や、昨年２月及び本年３月に発生した福島県沖を震源とする地震に伴う火力発電所の停止により、電力調達コストが増加したことなどから、前年度に比べ 1,167 億円減少し、 492 億円の損失となりました。",
+      "period_label_ja": "2022年3月期 通期",
+      "period_label_en": "FY2022 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "07_2021_FY_tanshin.pdf:s0011",
+      "source_filename": "07_2021_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常利益については、燃料市況を踏まえたＬＮＧのスポット調達拡大による燃料費低減などの効率化に努めたものの、小売や卸売の販売に伴う収入が減少したことや、令和３年２月福島県沖を震源とする地震（以下、「福島県沖地震」といいます。）による発電所の停止に伴い、燃料費や他社購入電力料が増加したことなどから、675 億円となり、前年度に比べ、 324 億円（32.5％）の減益となりました。",
+      "period_label_ja": "2021年3月期 通期",
+      "period_label_en": "FY2021 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "08_2020_FY_tanshin.pdf:s0026",
+      "source_filename": "08_2020_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "経常利益については、販売電力量（小売）の減少影響などがあったものの、能代火力発電所３号機の運転開始による燃料費改善効果や、企業グループ一体となって生産性・効率性のさらなる向上に努めたことなどに加えて、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことから、999 億円となり、前年度に比べ、342 億円（52.1％）の増益となりました。",
+      "period_label_ja": "2020年3月期 通期",
+      "period_label_en": "FY2020 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "09_2019_FY_tanshin.pdf:s0025",
+      "source_filename": "09_2019_FY_tanshin.pdf",
+      "pdf_page": 21,
+      "exact_quote_ja": "2020 年４月に予定されている送配電部門の法的分離に対応し、東北電力グループのさらなる企業価値向上に向けた組織体制を構築するため、当社は、2020 年４月を目途に、一般送配電事業等を分社化し、発電事業及び小売電気事業等を運営する「事業持株会社（東北電力株式会社）」のもとに、100％子会社である「送配電会社（東北電力ネットワーク株式会社）」を配置する体制へ移行することといたします。",
+      "period_label_ja": "2019年3月期 通期",
+      "period_label_en": "FY2019 FY",
+      "statement_type": "actual",
+      "source_section": "重要な後発事象",
+      "tags": []
+    },
+    {
+      "evidence_id": "10_2018_FY_tanshin.pdf:s0023",
+      "source_filename": "10_2018_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "一方、費用面では、減価償却費や修繕費などは減少したものの、太陽光の受電量の増加に伴い購入電力料が増加したことや、燃料価格の上昇により燃料費が増加したことなどから、経常費用は前年度に比べ 1,381 億円（7.5％）増の 1 兆 9,893 億円となりました。この結果、経常利益は前年度に比べ 162 億円（15.5％）減の 884 億円となりました。",
+      "period_label_ja": "2018年3月期 通期",
+      "period_label_en": "FY2018 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    },
+    {
+      "evidence_id": "11_2017_FY_tanshin.pdf:s0022",
+      "source_filename": "11_2017_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "この結果、経常利益は前年度に比べ 479 億円（ 31.4％）減の 1,047 億円となりました。また、親会社株主に帰属する当期純利益は前年度に比べ 273 億円（28.1％）減の 699 億円となりました。",
+      "period_label_ja": "2017年3月期 通期",
+      "period_label_en": "FY2017 FY",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況",
+      "tags": []
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "東北電力グループは中期方針において、送配電部門の法的分離、構造改革による競争力強化、およびエネルギー危機後の財務基盤回復（自己資本比率20%目標）を掲げ、一貫したロジックで戦略を推進している。燃料価格ショックや自然災害等による一時的な戦略的修正を余儀なくされたものの、長期ビジョンの根幹は維持されている。",
+        "evidence_ids": [
+          "09_2019_FY_tanshin.pdf:s0025",
+          "04_2024_FY_tanshin.pdf:s0017",
+          "02_2026_FY_tanshin.pdf:s0021"
+        ]
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "2020年4月の東北電力ネットワーク分社化の完遂、能代3号機や上越火力の運転開始、ユアテックの持分法適用会社化、女川原子力発電所2号機の再稼働など、公表した重要施策の実行フォローが行われている。女川2号機の再稼働時期遅延等は生じたものの、最終的に再稼働を果たすなど成果に結びついている。",
+        "evidence_ids": [
+          "09_2019_FY_tanshin.pdf:s0025",
+          "08_2020_FY_tanshin.pdf:s0026",
+          "03_2025_FY_tanshin.pdf:s0018",
+          "03_2025_FY_tanshin.pdf:s0019"
+        ]
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 2,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "ウクライナ危機や地震被害、燃料価格急騰等の外部ショックが相次いだ局面において、通期業績予想を「未定」とする期が多く見られた（2022・2023・2024・2027年3月期等）。タイムラグ影響のボラティリティの大きさから業績予想の精度や公表の迅速性には課題が認められる。",
+        "evidence_ids": [
+          "05_2023_FY_tanshin.pdf:s0014",
+          "01_2027_Q1_tanshin.pdf:s0007"
+        ]
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "燃料費調整制度のタイムラグ差損益の金額やメカニズム、地震被災による復旧費用、自己資本比率悪化に伴う配当見送り理由などについて決算短信内で詳細かつ透明性の高い説明を行っている。また配当方針としてDOE 2%の目安を明確に開示するなど説明責任を果たしている。",
+        "evidence_ids": [
+          "06_2022_FY_tanshin.pdf:s0012",
+          "05_2023_FY_tanshin.pdf:s0015",
+          "02_2026_FY_tanshin.pdf:s0021"
+        ]
+      }
+    ],
+    "overall_rationale_ja": "送配電分社化や構造改革、女川2号機再稼働や財務基盤回復目標の設定など、経営陣の戦略的整合性と実行フォローの姿勢は評価できる。国際燃料市況の激変や大規模地震等により通期業績予想を未定とする期間が多く目標管理の面で課題を残したものの、タイムラグ影響や無配判断の理由説明は誠実になされており、全体として概ね一貫した経営が行われている。"
+  },
+  "model_notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.6",
+  "run_id": "936e4ec9600b0662",
+  "stage": "analysis",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "state": "SUCCESS",
+  "api_request_completed": true,
+  "started_at_utc": "2026-08-12T01:55:28.025180+00:00",
+  "updated_at_utc": "2026-08-12T01:58:05.059159+00:00",
+  "response_id": "kdJ7ap7XO-Ozvr0PivbGmA8",
+  "model_version": "gemini-3.6-flash",
+  "finish_reason": "STOP",
+  "attempts": 1,
+  "usage_metadata": {
+    "candidates_token_count": 11879,
+    "prompt_token_count": 120188,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 113848
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 6340
+      }
+    ],
+    "thoughts_token_count": 7888,
+    "total_token_count": 139955
+  }
+}

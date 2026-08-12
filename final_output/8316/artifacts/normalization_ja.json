@@ -1,0 +1,288 @@
+{
+  "change_count": 33,
+  "changes": [
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_kt_03",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "1,700,000百万円",
+      "to": "1兆7,000億円"
+    },
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_bd_01",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "428,800百万円",
+      "to": "4,288億円"
+    },
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_bd_01",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "386,700百万円",
+      "to": "3,867億円"
+    },
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_bd_01",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "372,100百万円",
+      "to": "3,721億円"
+    },
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_bd_01",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "233,500百万円",
+      "to": "2,335億円"
+    },
+    {
+      "type": "japanese_financial_surface_normalized",
+      "claim_id": "claim_latest_ol_01",
+      "field": "body_ja",
+      "reason": "exact_million_to_oku_conversion",
+      "from": "1,700,000百万円",
+      "to": "1兆7,000億円"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_01",
+      "kind": "date",
+      "surface": "2027年3月期",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_01",
+      "kind": "figure",
+      "surface": "1",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "figure",
+      "surface": "1",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "date",
+      "surface": "2027年3月期",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "date",
+      "surface": "2026年",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "figure",
+      "surface": "9月",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "figure",
+      "surface": "30日",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "kind": "figure",
+      "surface": "2",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_latest_kt_03",
+      "claim_surface": "予定",
+      "source_surface": "予想",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_ol_01",
+      "kind": "date",
+      "surface": "2027年3月期",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_ol_01",
+      "kind": "figure",
+      "surface": "1",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_latest_ol_01",
+      "claim_surface": "予想",
+      "source_surface": "予想",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_latest_ol_01",
+      "from": "forecast",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "forecast"
+      ]
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_ctx_01",
+      "kind": "figure",
+      "surface": "1",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cons_02",
+      "kind": "figure",
+      "surface": "3,605億円",
+      "evidence_id": "07_2021_FY_tanshin.pdf:s0014"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_cons_02",
+      "evidence_id": "03_2025_FY_tanshin.pdf:r0004-a0d28510",
+      "source_filename": "03_2025_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "与信関係費用は、米国の関税政策を端緒とする景気後退リスクに備えてフォワードルッキング引当を計上したこと等から、前連結会計年度比705億円増加し、3,445億円となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cons_02",
+      "kind": "figure",
+      "surface": "3,445億円",
+      "evidence_id": "03_2025_FY_tanshin.pdf:r0004-a0d28510"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_cons_02",
+      "evidence_id": "02_2026_FY_tanshin.pdf:r0004-b8d4b54b",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "与信関係費用は、中東情勢悪化等に対するフォワードルッキング引当を計上したこと等から、前連結会計年度比439億円増加し、3,884億円となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cons_02",
+      "kind": "figure",
+      "surface": "3,884億円",
+      "evidence_id": "02_2026_FY_tanshin.pdf:r0004-b8d4b54b"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_trend_cons_02",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "risk"
+      ]
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_chg_01",
+      "kind": "figure",
+      "surface": "2兆3,309億円",
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0008"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_cap_01",
+      "evidence_id": "02_2026_FY_tanshin.pdf:r0018-3a33717e",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 18,
+      "quote": "(2) 取得に係る事項の内容1取得対象株式の種類 当社普通株式2取得し得る株式の総数 40,000,000株(上限)(発行済株式総数(自己株式を除く)に対する割合1.0%)3株式の取得価額の総額 1,800億円(上限)4取得期間 2026年5月14日から2026年7月31日まで5取得の方法 自己株式取得に係る取引一任契約に基づく市場買付け(3) 消却に係る事項の内容1対象株式の種類 当社普通株式2消却する株式の数 上記(2)により取得した自己株式の全株式数3消却予定日 2026年8月20日3. 従業員向け株式報酬制度における株式取得当社は、当社の連結子会社である株式会社三井住友銀行、SMBC日興証券株式会社、三井住友カード株式会社及び株式会社日本総合研究所の従業員を対象とする株式報酬制度(以下、「本制度」という)について、本制度の対象となる子会社にSMBCコンシューマーファイナンス株式会社を追加いたしました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cap_01",
+      "kind": "figure",
+      "surface": "1,800億円",
+      "evidence_id": "02_2026_FY_tanshin.pdf:r0018-3a33717e"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cap_01",
+      "kind": "date",
+      "surface": "2026年",
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0009"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_cap_01",
+      "kind": "figure",
+      "surface": "5月",
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_trend_cap_01",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "forecast"
+      ]
+    },
+    {
+      "type": "management_consistency_calculated",
+      "methodology_version": "management-consistency-v5",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "evidence_confidence": 0.7167,
+      "confidence_label": "moderate",
+      "evidence_coverage": 0.7167,
+      "distinct_fiscal_years": [
+        2017,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027
+      ],
+      "evidence_count": 8,
+      "management_discussion_evidence_share": 0.0,
+      "insufficient_dimensions": [
+        "strategic_coherence",
+        "execution_follow_through",
+        "forecast_target_discipline",
+        "accountability_transparency"
+      ],
+      "excluded_dimensions": [
+        "strategic_coherence",
+        "execution_follow_through",
+        "forecast_target_discipline",
+        "accountability_transparency"
+      ],
+      "score_calculation_method": "neutral_0.50_fallback_no_scorable_components",
+      "available_component_count": 0,
+      "weights": {
+        "strategic_coherence": 0.25,
+        "execution_follow_through": 0.25,
+        "forecast_target_discipline": 0.25,
+        "accountability_transparency": 0.25
+      }
+    }
+  ]
+}

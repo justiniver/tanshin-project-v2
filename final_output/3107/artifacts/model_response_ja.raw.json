@@ -1,0 +1,750 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 12 Aug 2026 01:18:29 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=185403",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"2026-05-13\",\n  \"identity\": {\n    \"security_code\": \"3107\",\n    \"company_name_ja\": \"ダイワボウホールディングス株式会社\",\n    \"company_name_en\": \"Daiwabo Holdings Co., Ltd.\",\n    \"latest_filename\": \"01_2026_FY_tanshin.pdf\",\n    \"latest_period_ja\": \"2026年3月期\",\n    \"latest_period_en\": \"FY2026\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"overview-01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"ITインフラ流通事業を中核とし、産業機械事業を展開する純粋持株会社構造\",\n      \"body_ja\": \"ダイワボウホールディングスは、ITインフラ流通事業および産業機械事業を展開する持株会社である。主力のITインフラ流通事業では、コンピュータ機器・周辺機器の販売に加え、サブスクリプション管理ポータル「iKAZUCHI（雷）」を通じたクラウド製品等の販売・サービスを提供している。産業機械事業では、生産設備用の工作機械製品（立旋盤等）および自動機械製品の製造販売を行っている。なお、かつて中核事業の一角であった繊維事業については、2024年3月に大和紡績の株式85.0％を譲渡して連結範囲から除外しており、現在はITインフラ流通事業を中心とする事業構成へ集約されている。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0027\",\n        \"03_2024_FY_tanshin.pdf:s0019\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest-takeaway-01\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年3月期連結業績は、ITインフラ流通の牽引により売上高・各段階利益とも大幅な増収増益を達成\",\n      \"body_ja\": \"当連結会計年度の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益44,169百万円（同26.6％増）、経常利益44,943百万円（同26.8％増）、親会社株主に帰属する当期純利益32,030百万円（同29.4％増）となった。Windows10 EOSに伴うPC更新需要やGIGAスクール第2期案件の獲得などITインフラ流通事業が大きく業績を牽引した。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-takeaway-02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フローは14,569百万円の収入、期末現金残高は43,852百万円を確保\",\n      \"body_ja\": \"2026年3月期の営業活動によるキャッシュ・フローは14,569百万円の収入（前期比8,659百万円の増収）となった。売上債権や棚卸資産の増加があったものの、仕入債務の増加や税金等調整前当期純利益44,674百万円の計上等が貢献した。期末の現金及び現金同等物残高は43,852百万円となっている。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-takeaway-03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"2027年3月期は特需反動で減収減益予想、年間110円配当と6,000百万円上限の自己株式取得を決議\",\n      \"body_ja\": \"2027年3月期の通期連結業績予想は、売上高1,189,000百万円（前期比12.0％減）、営業利益36,500百万円（同17.4％減）と、特需一巡に伴う減収減益を見込む。一方で、年間配当は前期比5円増の110円を予定するほか、2026年5月13日の取締役会にて上限6,000百万円（2,400,000株）の自己株式取得および消却を決議し、株主還元の拡充を図っている。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0011\",\n        \"01_2026_FY_tanshin.pdf:s0012\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-driver-01\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"Windows10 EOS需要獲得とGIGAスクール第2期案件によりITインフラ流通事業が増収増益\",\n      \"body_ja\": \"ITインフラ流通事業は、売上高1,336,479百万円（前年同期比18.9％増）、営業利益43,030百万円（同26.4％増）を記録した。2025年10月のWindows10サポート終了を見据えたPC更新需要の獲得や、GIGAスクール第2期共同調達案件での全国営業活動および販売パートナー・ベンダーとの協業深耕が奏功した。さらに「iKAZUCHI（雷）」を通じたクラウド等のリカーリングビジネスも順調に拡大した。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0005\",\n        \"01_2026_FY_tanshin.pdf:s0006\",\n        \"01_2026_FY_tanshin.pdf:s0026\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-driver-02\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"造船・エネルギー向け受注継続や大型機販売により産業機械事業が増益\",\n      \"body_ja\": \"産業機械事業は、売上高14,400百万円（前年同期比11.7％増）、営業利益1,127百万円（同32.3％増）となった。工作機械部門において国内の造船やエネルギー業界からの好調な受注が継続したことに加え、主力である航空機業界の需要回復や金型業界向け大型機の販売が寄与した。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0007\",\n        \"01_2026_FY_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-outlook-01\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期通期は特需一巡により売上高1,189,000百万円、営業利益36,500百万円の減収減益を予想\",\n      \"body_ja\": \"会社側は2027年3月期の連結業績予想として、売上高1,189,000百万円（対前期12.0％減）、営業利益36,500百万円（対前期17.4％減）、親会社株主に帰属する当期純利益25,300百万円（対前期21.0％減）を見込んでいる。Windows10 EOS需要やGIGAスクール案件の集中が一段落することに伴う反動減を織り込んでいる。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-risk-01\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"AI向け半導体需要高まりに伴うPC・サーバーの価格上昇および納期調整リスク\",\n      \"body_ja\": \"第4四半期以降、AI関連データセンター向けを中心とする世界的な半導体需要の高まりを受け、PCやサーバーの価格上昇や一部案件での納期調整が発生している。今後の部品確保や価格転嫁の進捗によっては販売動向や利益率に影響を及ぼす可能性がある。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0009\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-risk-02\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"為替変動や資源価格高止まり、米国通商政策に伴う不透明感\",\n      \"body_ja\": \"円安の進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国通商政策の影響、およびAI需要急増による半導体メモリ価格の高騰などにより、マクロ経済および顧客企業のIT投資・設備投資の動向に不透明感が続くことが懸念されている。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest-context-01\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"更新特需の最大化による過去最高業績の達成と特需一巡後の減益局面への移行\",\n      \"body_ja\": \"2026年3月期は、Windows10 EOSおよびGIGAスクール第2期という二大大型特活が重なり、ITインフラ流通事業の推進によって過去最高の業績を記録した。一方で、2027年3月期は特活の一巡により減収減益予想となっており、会社側は総額6,000百万円を上限とする自己株式取得や配当増額など株主還元を強化しながら、リカーリングビジネスの拡充による特需依存からの脱却を進める足を示している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0011\",\n        \"01_2026_FY_tanshin.pdf:s0012\",\n        \"01_2026_FY_tanshin.pdf:s0026\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-perspective-01\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"繊維事業の事業分離とITインフラ流通への経営資源集中による高収益・高成長構造への転換\",\n      \"body_ja\": \"過去10年間の軌跡において、同社は従来の「ITインフラ流通」「繊維」「産業機械」の3本柱体制から、資本効率と収益性に課題のあった繊維事業（大和紡績）を2024年3月に事業譲渡・連結除外することで、主力のITインフラ流通事業へ経営資源を集中させる構造改革を断行した。ITインフラ流通事業では、地域密着の拠点網とマルチベンダー提案力を活かし、Windows7/10 EOSやGIGAスクール構想（第1期・第2期）などの市場特需を確実に捉えて業績規模を拡大させた。一方で、これら大規模特需の周期的反動や半導体供給制約といった外部環境変動に左右される業績の波動性を克服するため、「iKAZUCHI（雷）」を中心としたクラウド・サブスクリプション等のリカーリング収益基盤の拡充を推進している。\",\n      \"evidence_ids\": [\n        \"10_2017_FY_tanshin.pdf:s0013\",\n        \"07_2020_FY_tanshin.pdf:s0018\",\n        \"06_2021_FY_tanshin.pdf:s0014\",\n        \"03_2024_FY_tanshin.pdf:s0019\",\n        \"01_2026_FY_tanshin.pdf:s0026\",\n        \"01_2026_FY_tanshin.pdf:s0027\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-consistent-01\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"全国拠点による地域密着営業とマルチベンダー提案を通じたIT需要獲得能力の維持\",\n      \"body_ja\": \"初期（FY2017）、中期（FY2021）、直近（FY2026）を通じて、ITインフラ流通事業における全国の営業拠点網を活用した地域密着営業と、PC・周辺機器・クラウド・各種サービスを組み合わせたマルチベンダー提案が継続的な強みとなっている。FY2017における首都圏中心のIT投資回復、FY2021におけるニューノーマル対応やGIGAスクール第1期、FY2026におけるWindows10 EOSおよびGIGAスクール第2期など、時代の需要変化を捉えて受注を獲得する営業メカニズムが維持されている。\",\n      \"evidence_ids\": [\n        \"10_2017_FY_tanshin.pdf:s0013\",\n        \"06_2021_FY_tanshin.pdf:s0014\",\n        \"01_2026_FY_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-consistent-02\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"業績成長に応じた配当の継続的引き上げと株主還元の積極化\",\n      \"body_ja\": \"初期（FY2017の1株10円）、中期（FY2021の1株300円/株式分割前）、直近（FY2026の1株105円/株式分割後）に至るまで、連結業績の成長や株主還元方針に基づき、配当水準を段階的に引き上げる姿勢を貫いている。2021年4月の1:5株式分割や自己株式取得の実施を交えつつ、株主還元機会の拡充と安定的な利益配分を継続している。\",\n      \"evidence_ids\": [\n        \"10_2017_FY_tanshin.pdf:s0015\",\n        \"06_2021_FY_tanshin.pdf:s0016\",\n        \"01_2026_FY_tanshin.pdf:s0017\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-change-01\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"繊維事業の事業分離による事業ポートフォリオの抜本的見直しとIT主導体制への移行\",\n      \"body_ja\": \"【変化前】FY2020以前は「ITインフラ流通」「繊維」「産業機械」を3本柱として展開していたが、繊維事業は原燃料高や販売不振により利益率の低下や期初予想からの乖離が多発していた。【移行期】FY2024において、ベストオーナーの観点から大和紡績の株式85.0％を譲渡することを決定し、固定資産減損損失16,695百万円および事業譲渡損1,039百万円を計上して連結除外とした。【現在】FY2026においては「ITインフラ流通事業」と「産業機械事業」の2セグメント体制へ再編され、資本・経営資源をIT分野へ集中させる体制が完了している。\",\n      \"evidence_ids\": [\n        \"07_2020_FY_tanshin.pdf:s0018\",\n        \"04_2023_FY_tanshin.pdf:s0028\",\n        \"03_2024_FY_tanshin.pdf:s0019\",\n        \"03_2024_FY_tanshin.pdf:s0020\",\n        \"01_2026_FY_tanshin.pdf:s0027\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-change-02\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"収益認識会計基準の適用に伴う売上高表示の変更と実質成長による売上高1.3兆円超への到達\",\n      \"body_ja\": \"【変化前】FY2021以前は従来の会計基準に基づき総額で売上高を計上し、初めて1兆円（1,043,534百万円）に到達した。【移行期】FY2022の期首より「収益認識に関する会計基準」等を適用し、代理人取引の純額表示等への変更により売上高が64,867百万円減少（同期の売上高763,838百万円）した。【現在】新基準適用下においても、ITインフラ流通事業の需要拡大によりFY2026には売上高1,350,879百万円へ達し、収益基準変更の減収要因を乗り越えて実質的な成長を達成した。\",\n      \"evidence_ids\": [\n        \"06_2021_FY_tanshin.pdf:s0021\",\n        \"05_2022_FY_tanshin.pdf:s0022\",\n        \"01_2026_FY_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-capital-allocation-01\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"不採算・低成長事業の流動化と、株主還元（配当増額・大型自己株式取得）およびIT・成長投資への再配分\",\n      \"body_ja\": \"同社はFY2024に繊維事業の株式85.0%を譲渡し、資本効率の改善を図った。同譲渡以降、FY2024の10,000百万円上限、FY2025の9,955百万円（3,669,700株取得）、FY2026の8,453百万円（2,906,700株取得）および19,253百万円（7,877,432株）の消却、さらにFY2027予想における6,000百万円上限の自己株式取得など、自社株買いを連続して実施している。また配当も増額傾向を維持し、成長事業（クラウドポータル「iKAZUCHI」等）への投資と株主還元の拡充を両立させている。\",\n      \"evidence_ids\": [\n        \"03_2024_FY_tanshin.pdf:s0019\",\n        \"03_2024_FY_tanshin.pdf:s0023\",\n        \"02_2025_FY_tanshin.pdf:s0024\",\n        \"01_2026_FY_tanshin.pdf:s0025\",\n        \"01_2026_FY_tanshin.pdf:s0011\",\n        \"01_2026_FY_tanshin.pdf:s0012\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend-implication-01\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"OS更新・教育政策等の特需一巡に伴う業績波動を吸収するリカーリング基盤の蓄積度の検証\",\n      \"body_ja\": \"Windows7/10 EOSやGIGAスクール構想に代表されるITインフラ流通事業の業績は、数年周期で発生する大型特需とその後の反動減という波動を伴う。投資家にとっては、特需期に創出したキャッシュが適切に自己株式取得や増配などの資本効率向上へ回されているかとともに、サブスクリプション管理ポータル「iKAZUCHI（雷）」をはじめとするリカーリングビジネスのストック収益がどの程度底上げされ、反動減の局面で営業利益水準を下支えできるかが今後の重要検証点となる。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0026\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当期の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益は44,169百万円（前年同期比26.6％増）、経常利益は44,943百万円（前年同期比26.8％増）、親会社株主に帰属する当期純利益は32,030百万円（前年同期比29.4％増）となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"連結業績\",\n        \"損益\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"営業活動によるキャッシュ・フローは、税金等調整前当期純利益44,674百万円に対し、売上債権の増加や棚卸資産の増加などの減少要因がありましたが、仕入債務の増加などの増加要因により14,569百万円の収入（前期比8,659百万円の収入増加）となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期のキャッシュ・フローの概況\",\n      \"tags\": [\n        \"キャッシュ・フロー\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"2027年３月期の業績につきましては、売上高1,189,000百万円、営業利益36,500百万円、経常利益36,700百万円、親会社株主に帰属する当期純利益25,300百万円を予想しております。\",\n      \"period_label_ja\": \"2027年3月期予想\",\n      \"period_label_en\": \"FY2027 Forecast\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"業績予想\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"クライアントＰＣについては、2025年10月のWindows10サポート終了（ＥＯＳ）を見据えた更新需要を多く獲得し、業績を大きく牽引しました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"ITインフラ流通事業\",\n        \"PC需要\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"文教向けでは、ＧＩＧＡスクール第２期の共同調達案件において、従来から全国で展開してきたきめ細やかな営業活動が奏功し、販売パートナーおよびベンダーとの協業を深化させた結果、多くの案件を獲得し、大幅な増収につなげました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"GIGAスクール\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"以上の結果、当事業の売上高は1,336,479百万円（前年同期比18.9％増）、営業利益は43,030百万円（前年同期比26.4％増）となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"セグメント業績\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"工作機械部門では、国内において好調な造船、エネルギー業界からの堅調な受注が継続したほか、主力である航空機業界も需要回復が見られ、前年同期比で受注が増加しました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"産業機械事業\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"以上の結果、当事業の売上高は14,400百万円（前年同期比11.7％増）、営業利益は1,127百万円(前年同期比32.3％増)となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"セグメント業績\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0009\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"なお、第４四半期以降は、主にＡＩ関連のデータセンター向けに世界的な半導体需要が高まり、ＰＣやサーバーの価格上昇や一部案件で納期調整が発生しました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"risk\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"半導体\",\n        \"リスク\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0010\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"今後の経済見通しについては、引き続き雇用情勢や所得環境の改善を背景に緩やかな景気回復が続くことが期待されますが、円安進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国の通商政策による影響、ＡＩ需要急増による半導体メモリ価格の高騰など、先行きについては不透明な状況が当面続くことが見込まれます。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"risk\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"マクロリスク\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0011\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 18,\n      \"exact_quote_ja\": \"当社は、2026年５月13日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式取得に係る事項について決議いたしました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\",\n      \"tags\": [\n        \"自己株式取得\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0012\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 18,\n      \"exact_quote_ja\": \"（２）取得し得る株式の総数　2,400,000株（上限）\\n（発行済株式総数（自己株式を除く）に対する割合2.76％）\\n（３）株式の取得価額の総額　6,000百万円（上限）\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"重要な後発事象\",\n      \"tags\": [\n        \"自己株式取得\"\n      ]\n    },\n    {\n      \"evidence_id\": \"10_2017_FY_tanshin.pdf:s0013\",\n      \"source_filename\": \"10_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"法人向け市場では、国内企業のＩＴ投資が緩やかな回復基調で推移するなか、地域密着営業を推し進めた結果、首都圏をはじめ全ての地域で前年を上回る実績となりました。\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"地域密着営業\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0014\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"全国拠点による対面とオンラインを組み合わせた地域密着営業を推し進めた結果、ニューノーマルな働き方に対応するためのＩＴニーズを捉え、サブスクリプション（継続課金）型サービス、ノートＰＣや液晶モニタ、ヘッドセットといった商品の受注が増加しました。\",\n      \"period_label_ja\": \"2021年3月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"地域密着営業\"\n      ]\n    },\n    {\n      \"evidence_id\": \"10_2017_FY_tanshin.pdf:s0015\",\n      \"source_filename\": \"10_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"29年３月期期末配当金の内訳　　普通配当　９円00銭　　　　記念配当　１円00銭（創立75周年記念配当）\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"配当の状況\",\n      \"tags\": [\n        \"配当\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0016\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"上記方針により、当期の期末配当金は、１株当たり300円とすることを予定しております。\",\n      \"period_label_ja\": \"2021年3月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"利益配分に関する基本方針および当期・次期の配当\",\n      \"tags\": [\n        \"配当\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0017\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"これにより中間配当金１株当たり50円と合わせて、年間配当金は１株当たり105円を予定しております。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"利益配分に関する基本方針および当期・次期の配当\",\n      \"tags\": [\n        \"配当\"\n      ]\n    },\n    {\n      \"evidence_id\": \"07_2020_FY_tanshin.pdf:s0018\",\n      \"source_filename\": \"07_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 15,\n      \"exact_quote_ja\": \"したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「繊維事業」及び「産業機械事業」の３つを報告セグメントとしております。\",\n      \"period_label_ja\": \"2020年3月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"セグメント情報等\",\n      \"tags\": [\n        \"3事業体制\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0019\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"2024年３月には、当社及び大和紡績株式会社の企業価値最大化の観点から、繊維事業の独立化を実現するために、大和紡績株式会社の発行済株式の85.0％を株式会社アスパラントグループSPC11号に譲渡いたしました。これに伴い、繊維事業は当連結会計年度末をもって連結の範囲から除外されることになりました。\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"繊維事業譲渡\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0020\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 19,\n      \"exact_quote_ja\": \"（注）上記の事業譲渡損とは別に、本件譲渡を決定したことに伴い、繊維事業の固定資産の帳簿価額を回収可能額まで減額し、当該減少額を減損損失16,695百万円として特別損失に計上しております。\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業分離\",\n      \"tags\": [\n        \"減損損失\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0021\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"これらの結果、当期の連結業績は、売上高1,043,534百万円（前年同期比10.5％増）、営業利益は35,028百万円（前年同期比6.7％増）\",\n      \"period_label_ja\": \"2021年3月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"売上高1兆円\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0022\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 15,\n      \"exact_quote_ja\": \"この結果、当連結会計年度の売上高は64,867百万円減少、売上原価は61,835百万円減少しております。\",\n      \"period_label_ja\": \"2022年3月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"会計方針の変更\",\n      \"tags\": [\n        \"収益認識基準\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0023\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 21,\n      \"exact_quote_ja\": \"（２）取得し得る株式の総数　5,000,000株（上限）\\n（発行済株式総数（自己株式を除く）に対する割合5.34％）\\n（３）株式の取得価額の総額　10,000百万円（上限）\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"重要な後発事象\",\n      \"tags\": [\n        \"自己株式取得\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0024\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 14,\n      \"exact_quote_ja\": \"当社は、2024年５月９日開催の取締役会決議に基づき、自己株式3,669,700株の取得を行いました。この取得等により、当連結会計年度において自己株式が9,955百万円増加し、当連結会計年度末において自己株式が15,088百万円となっております。\",\n      \"period_label_ja\": \"2025年3月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"株主資本の金額に著しい変動があった場合の注記\",\n      \"tags\": [\n        \"自己株式取得\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0025\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 14,\n      \"exact_quote_ja\": \"当社は、2025年５月14日開催の取締役会決議及び2025年６月19日開催の取締役会決議に基づき、自己株式2,906,700株を8,453百万円で取得しました。また、2025年11月６日開催の取締役会決議に基づき、2025年11月28日付で、自己株式7,877,432株、19,253百万円の消却を実施\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"株主資本の金額に著しい変動があった場合の注記\",\n      \"tags\": [\n        \"自己株式消却\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0026\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"また、サブスクリプション管理ポータル「ｉＫＡＺＵＣＨＩ（雷）」で提供するクラウド製品を中心に、リカーリングビジネスの強化に加え、新規テックベンダーおよびオリジナルサービスの市場深耕にも注力し、業績拡大につなげました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"iKAZUCHI\",\n        \"クラウド\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0027\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 15,\n      \"exact_quote_ja\": \"したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「産業機械事業」の２つを報告セグメントとしております。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"セグメント情報等の注記\",\n      \"tags\": [\n        \"報告セグメント\"\n      ]\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0028\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"繊維事業全体としては、原燃料価格の高止まりや主力製品の販売不振が響き、特に利益面において期初の業績予想から大きく乖離する実績となりました。\",\n      \"period_label_ja\": \"2023年3月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\",\n      \"tags\": [\n        \"繊維事業\",\n        \"業績乖離\"\n      ]\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"繊維事業の事業分離やITインフラ流通への経営資源集中など、中期経営計画に沿った事業ポートフォリオ変革の基本方針を一貫して推進した。低成長・不採算事業の整理と成長分野への集中に関して戦略的一貫性が観察される。\",\n        \"evidence_ids\": [\n          \"07_2020_FY_tanshin.pdf:s0018\",\n          \"03_2024_FY_tanshin.pdf:s0019\",\n          \"01_2026_FY_tanshin.pdf:s0027\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"サブスクリプションポータル「iKAZUCHI（雷）」の拡大、大和紡績の株式譲渡による繊維事業の切り離し、および連続した大規模な自己株式取得・消却など、公表した施策の実行と完了が確認できる。\",\n        \"evidence_ids\": [\n          \"03_2024_FY_tanshin.pdf:s0019\",\n          \"02_2025_FY_tanshin.pdf:s0024\",\n          \"01_2026_FY_tanshin.pdf:s0025\",\n          \"01_2026_FY_tanshin.pdf:s0026\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"ITインフラ流通事業ではWindows10 EOSやGIGAスクール特需を捉えて概ね好業績を達成した一方で、過去の繊維事業においては原燃料高や需要低迷により2023年3月期等で期初予想からの大きな下振れ乖離が発生した。\",\n        \"evidence_ids\": [\n          \"04_2023_FY_tanshin.pdf:s0028\",\n          \"01_2026_FY_tanshin.pdf:s0001\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"繊維事業の譲渡理由や固定資産減損損失の計上、新会計基準（収益認識基準）適用に伴う売上高減少影響、特需一巡後の減益前提などについて、決算短信等で具体的かつ透明性の高い説明を行っている。\",\n        \"evidence_ids\": [\n          \"05_2022_FY_tanshin.pdf:s0022\",\n          \"03_2024_FY_tanshin.pdf:s0019\",\n          \"03_2024_FY_tanshin.pdf:s0020\",\n          \"01_2026_FY_tanshin.pdf:s0003\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"ダイワボウホールディングスは、ITインフラ流通事業を中心とする成長戦略の実行において高い戦略的一貫性と実行力を示した。特に資本効率に課題のあった繊維事業（大和紡績）の株式譲渡による事業分離をやり遂げ、自己株式取得・消却を含む株主還元を大幅に強化した。過去の繊維事業における業績下振れや、IT分野での特需・反動減による業績の波動性は存在するものの、経営陣の説明責任と構造改革へのコミットメントは高く評価できる。\"\n  }\n}",
+            "thought_signature": "Er2tAwq5rQMBEU0yD3P0qGZ9Ql7_LIl08KDdWB7KCoR7GY7qBdzmRrtuaaJlTtCaE-PBliEHxSL76VPNzKuPhFRI01_PP2t0R3hv1Bjw87vdqAuLa3JuPGerSuECZirSJt8Ygqkz_tp3EMNo-wAlXby_GuIGdbVGOc0bznvnvWpRW2khMaCdhjN_36JWAw63uo4tzbhh62L4xlEy7fvRf9rudi2mkBcqDP0nqZgL3dMCDPVm6I9X9ZdaCp1EiT3E1lQF1X7ObkyUoZ5CyYkj20HVFJzCea2Y5Xbu51gmAuTotSngvXdR7NC5tmBvV3z-Fjy_4eotZjthCw7y_SB4ruFtXcF5QkQFtktAusclRUaKz12eFIlVYInM5vRsGXMUJyRIob-v7TRkgJ4UDRJYuH9kR_ZPI5XX15T2e5teZAsWhXJSUqnv-L7B5yaB7ZCqQqT4RW-T5DVWm1KVZ-3mXU0K8-9Ovkm-gV9o0TcUAOT3BBhXRqaeMimgAvtxGEPgrHYf9lREs6VRlpRGVXS7XwVSll2fxi5cFIUgSigRjT18tNzKqXc6izKp6Qyp8ySknr0o_7p9QAJa96LOJtsiSSf1alHwn6r4mlSDwrsbhQtf-nBgLLcoQ4zkBdQwR0ZUTtbq2rZXvPwTGbZUKbcx-yR-aA7A-pT-ytR3GICt8ZUaYvVD_7kPX6-GFuk7zn4Oh2TsbHNjxa88w9KaryWGWycdrdjwOzxB--9TlysRGZn8gXm-13a0lOgPSGlltbqM0mOPGn1jXU6wAPrMennIG6OhqwKOeXf0lOBoyPMUl6vzYNhXTCezwG8fqgcE7869RKVNOAf_If51OWMUAutlJzTT1yXPEwoMG4ayMQNO_XsETICss12IQFPIQVQOBHW0EzkvWB8K2OCaiaYyP8v8-dPTr-GeHKB1fwNh6B_uR7Q-sed6BnFs9_Q6JKD-_p-ydg8RhnJMu0SXjT-H5ttqOJw3M9Aobj1KGJQwKfQUZOKyWg6uz25mr1ZZXHw7Efi8KRw3TZ7gk1YwKSlCqOJodTtECj5Fa5INbDcypN8q773-HhZv0wNt7mmVcKOv5ab7T755lyH7yF5xLSedpKgyid2EQ6TYy4B5qylMKEAi5wAs218IMRUWS8D-GGSalxHK0BC9WrI2ktB9d6eLbeV_b0tmIGm9sj_EzpxP9Tm7Y6ITv5wvqwp84s6Pq35q9RUYaE3_dw-cWYVBSCzMfDEJ4OTDZj4E6l3I2XBTOqVz5-FAauajerGmDcEKWfnPDyDoAovZNExqt-utBGqjjtmelk93Kh0JA3nDNpNBTohXOz6JmKwMBegCF8Dgsn3_YqAnfKWlwfNVFPm8t3yASEYBsrEOUuw-kl9K--9Qgn8QUNTJGvY-XNNJhIQxHkxtlaCl1NHzH2RWpeCu0EULkagJGgOdE1T3oKJZiSc5elioCOujKLGzO7dkCYT8hIYrStRKgeugjwrnbq3EX1doYFhPu5pxGwp_Ai_hCLU9VJQqyFRRwGAy_xEM6dWlRG_KUaJg7SloysIRi56xSgRM6RVATVpqkN5s7F6aW0t9bw95egT2SaqW9E2TIJ-SAKYX-3uvwjCUZAm7mxVct5SUP05x81-y8z_qCWRH1NY3a5Ow5507bM-0nDRZ__2Y3P_t6u-VbowvyTQGiPyrO3HBcSOq9ght4ykWH1fE4HE_dCVJRJ8DkghtZLqrtHJvx2_UGyUBkZnaKiBYZJceN3IA_3Cq539ZIAEg8Qp0BIbVTQDBolSBhfSvwXDEiTLFHQtKavDITMvAeqXT-4_VcT_PL49EF1GSe9aG9mlArkyU43hou8gakO9KwBpqbZE3trB5dLYlcSGzDjcnqkcA1H8aUECUibMbKDY4YTps3Bo1sWB-GSCb0y-ERhcUw9OFmtxueNkOacfypyCr4DemzZSR3TdCZG_B-UM87QImYCRulSWERAt2LGNZrbkJx97DNUvIhcBHYnqKMduYj1SItt5pOnEnKgHkw9y0tTllJ2bEJ3FtNeMo8NOrlE3sQ4V0m1MuSM-fV7a8Y3qyCTvrFsGlGzGj0FQhacBYuxm0bnSf7oXCu5cGImnLb5IobTj2cDLlbvytcD8XaP88bduHGCOFDWivn0iPKMKwKsGctsLkTWjkNK7tlSwyp1ceWKboL_u-ZG36myklgpcHedpYA2LLxLzKImZOpW6lm5iaKKy5HsGXqsF_9SbTQknRlT5CC_HptwSE-TrVz-P8h5pLhlt6Yeh4BSzDl29Vb46sGP_EYFLmk4DLlxZPeYvcGC3q2ewtdSBSxh5wDTRhfIB-dxHF3-R01qrcuXPMv8QDPsz7Pqy8HBjloPOWpO3fAxE1XiUVtDrKEKwfgHpk-SHsTe-gAMiKWx88ytMmpNEV9KY8un-DvSqByA54F3xsgwEJNrupuRzlsXZsjD9VQXCe2MyrOpNhXvZKsotDHgf5V30x8WJTgROVsKiUYDpumo91tyx6xSneoOBOm6UTPO3GKOLL_RRuWmArZ_Amyg4gTRVPvvMxql6oPPXOqW0XmEiWt7r5K61auFkQ7DwkEUkkLlSRKi-pDZaVPacjsxD1QefKf1jKMTWYtJAlHJ7Uos46RIaG2VVLSIpw4y_qgl3p_opAPgrJbyG-lIIjD20D8w-je6mtOY8CGiexsl00yD3-q__Svsmh8ZmYFr4frxaWn0OYkl4Qv_2JVc0RvoijCpw31UV8NDohavW0pLZtp0pnFTdVG29o3p32_IKi4hhq7rn0XI7d7fJC6H8mhHRZzYyDhtTib-uFriVopp0YEQMxAWkdNdrTgJbFxJDfZcpyrc9EWqAl7g7O8Bkp4yNF3FCguoL_VVRZKNDHPw6F-yxKmOjR0DV5-41ggEy5J_boxZxPOMXl4WIIICvyPJUOAtZ1Ryfx_3PF0OLcnZRogfN_ION0RzA8Co6jA8BLLVQyx4BEntiqWOx0JfDGBp8tnhqiCyzgc-e2cWoD-9HQ9tBYihKbtoLS914Ry8yBQCpbQuZruIzALybaIk5EBq-vgQGpFUmsudpJSWKUCJMzLV37FxRSnjwdtzJv7IzdTXsacu_kHdfbNuNIZPS9UA8yKK6Ico-Ye73mdZAGQXrgmbnsdntDt6ybQoDzpCnTJXNM5VNrO8fx2_NpRb7Wme1cAml_41wMeymRR7LGNe7eonKRkoe8tk4aEBDJJ3q1vCJRnZCL6Vvc_C-gm1KgtVomrwfQby0hzQSj7ixbsyVMXATTWNbuj0xzEHlQsmFx4u8h-LyOOdCrXHQZJcvcT1sihV5_ZH2D0nONiPtQ1vLmv2NDprIe8JWJo9TIk7v-BMcVZ-qeIKJ9k1lBGR5v3RiunYuFe8SxDrbSXw8xLdq1s-xZ2U8zS5g3rcyn-0BHa-oGjyVqhU-BQ3UuSlFaOSRDEjdNMe9amG1u4mjkXIDDwuxhCHgBvdxqcowtnUh2oZ261AjMP6rWXyK1q1N8-5Srn2wHUvgeJvSPIN_OsB4Hv3QX7t6LGaY6MDmB4RJRH0lqDqFtaw89jM_OrJWB1kLnFj_TiQ_GiMwm3UcsMdorxBq_73upN8NlKyv3V1s7NQaCncs2OrkfLDWOp6djMoH5xQkGFjPZ2_lsX6RLE_SD_O9MToc5wtlclbzFB8NbhJEDI2KV_VajmHcx1puOHOis4RJRaiHGuZPyd1HHw4Du6N_BTmhQi7tV3yRIXPyHxi-nkkcgpLSY9KQSmw4vZNPhD2eR1qI5P5ePYdXPIyH6xlZo42O0TfOuR-frQE1Fl8N42FpD76RUXKoYQk8LdemMYmpYnhilpDnRs_rMQsTzi7-LL5VtEQ0v3xb3QtkFj-ktmMpzSS4bE3AEEM6THSoE8svRkDE12j9zcsJdBsZGFVJ0n_SRay0xiKsoy14UZ6PSXBmVXlUuC88IpHLBZpmYz8eB7UCvq12Z4UbpCPNBhd4DTh2ePDINHfM8VJdLFkFgPq597iUSN9NFi2r0OPLyuAHJp81syiEfrwCJeMzjULwTf4IDPjngaRYOAGS-TDqV17tOGppKChucB_vsnXqRT2XjI1usqVkYSFtFv1EO9hMGNx1DDXRCr23eW6gCKt9WmIGRGydOOXm_To40l0YQ-rii-d3yOu4mmr0_bKTNGVJ8LZk5o-tqnqNBiKOe-O2NliYlnqfBUik8Lp8kIY0dumf2-rpVDwbwvYx99Hu8tRCgzSz2Oye0RR_iMpYtFEKR6s2jlpSxSno6wFBbfJlLdFTpAagXOji2BXhRIYF3WJVfAPT9miOMTo8wHT2ZI481ipAq_MHahYiKD_07D0UVzJpwbT_Q-6T7sPKKBrAU0gzmOxVHk4Y2ZsNRNs1VNFFk2GVBkeL3QDN5vPUcSU1HTTAk9X1tmLrdlnD_0z9tHA8vcDaIQnnGlQUMf-fEvHGmfXaMFyYG8CNh7SQ5uWbfaybPkq18kQLlINPIWix3mri1dufcoyELWilZpmpBtaoZ3fRIiGZ9cSIycq-gtDEoUQ3G09XLVzadocdlar8F-cBeX7xpwMMJnnCeF3eF85Bl_cdNEc6uzMbkyU2Gqwqew86qf4nJ5vjx8Szy4qmevc3QPUKk_Y002o0gnJpi04CpUJyeU6MtE3jt7Dr-7gq3LRk-FEmkQvv3xNfMUPA0BHG0OzYe23oZKD9JrfnSfvhoPCYec_MhUVzq66-FeAUtE8-h-3ub-rOGDTEogp_fg0K3Z4egAVBxRJ3aiYrfM0UDPqTdtqMiKOz8KPNgzG6_SMMWjhwhVTwUTIt3SmwjDitPJD4P4hZlYNQamwAfvQxfAtk69zZiUiqbqQEA8-kra8IKqklhAMcuLaXyAfK8tx_Au1TLm_jZtsr7Ytb2U-K-_7vQnrjqm-tHPCVwbQE5_7KuzB2SwsrDtiafixqxyfzbmkRDO6AHH92McYuDA2SzCtujO-1UYr02okXagI9G_jXMrdFmRTFFYuP-H8norZZ4nS97hRaHFmPF94sd5qWn9hAg3xlto1uSpT56MVv-7E6H4NuXy2B_0VcmqsVo2vaeWH0_DP092qcx46e8_aoVEenRYRroT6yhllJwWV64qbDJYqoWdvfK9N31ArahQcykt4ac40NFAVRj6n-IYhHH3H8ca2SmOoPAUrncZCyjDmEITeqV2tgA1370EFMgg8-hwwIvHAC6n0P88WAQ5_JrD7K1blhzl5SD46xO9uiPS8QgnF7tB5kSVFnXmhEGlliRYFERyQGG-PLWqLtXZL9caz5JAj1-D_xUCqv71HzSmrdK394cw8qUvIzyNp48_BxSfWxGNpbRogoJAAp1leXXJbOj3Nw8e1588B4kZ-7vpOgTUduMO-yNdz2SuSjLYCX5NntQynNeWP6xR6iGHFCkrnUExXbex2fEAzn1pI-6cqWRJ0L7EKYLlDLeFVm-jJmlwzwuVvWjpOdMrSkO2GaELUfOSHvLu3EJumTMQsFt3MFy1psT3elYqHxrTgHr60M-ybEpKdSmm3tmnuitsA_3RsPPGUbhWuL7pQaIUxY0jWXpPModPP4Hd3lszpVhnZQQloZW-EW7h40wm4FCD6hlH3CUWVAj79XF-qWimZsj3_YGHNyqORQk4Qr7CejJT1id0tRHSZUlrE3hoIlw6FIMvw_hB12sxYfQXN-ADivXxNu_6a3QZQCwpERYrK0aVmToWpipFKUc7kswmeCHvKkNcPNalZ3K-7Y7QjEjGGQWuN0Pcj5WjF6B1GV08V_alml_yZP0tLNiC9AIl-chv4Ss7VKqOQGGdFuFmBltL0XviccnmPGIy1Vsxh6hskO562bCM0-_x6XIepAQIv0KcpBlckwHa75N8NFxkHCyyGkkkcakuXET7DrSprJsYHv4ML3ll8d_Wvi4nMR_6PhNd7Gsd3yQwz9IxVl2ntv6rgeEczFwUwtdv3A9eCDSZ0MoaYWeyvDoQk9iLw0qXR6yFwAB4W9chUGbI6wPW6vySIBldQ7ruslgZRCjNeKiW8qz4IiYHQZ8ocCt4PkiKRkOJbduO3z8IB-Cj3lkgs0p3kbhG9Q_PGVo7sII2XT6ZrfYf7-ZIZFk31K7dzHlG8wBZjp01TittRD6OWdObpf3L6FvqGwBa3J_rzdw8K0oDU2YHsYmZ-aXGRBRJPREdxRupP6IyefoCG9LMR2Mbdo_YA25qMix8IQotOt0MQV9pXi0YnPUfMPlGyXXFbsQSKx9OZATGTWRWhyAHAXcMSSpCiYVRQ4pNDEfkYwP1YRfCSZ7BMVmrNbqi-zXhj_TDfDlU24-T3LLq_pDWE0jk8iiko3E99UkC6xlta0N5GZ6r42A8v7xI3aumz2jMxsibDQ4tq2PyI8bF0dgTyelOPd93Q1xvjhUULVlXRrm4tffm2hJtYgpu6XawL66kU_CvmvuNgBPh3CwC9Wfoj6IEFc_gJUSqFQZ7ivFMs0Skqhe4sjrxyRlgT4ScR763wnjG3TLtiPco3Z21Mi2VZoMYtCsVx1X6AXcmg_OaKEpTABC_A7tW_xOZCXN7k1NQIqPlTTENG11BGlmDITtbaBI9qVbTXIuj0g40Htr93Ao8E1T0pHwIMEiqEIrRTwVJh19pvPLIF8vfJ4x-UJ1Hy79PuWO76BEECQGOaJRdNOgr-f6gWA5TQQOC8Wei-11efX5-oiWMcMwr9TXJvpjNh8IU0IdbnX0ZU1NtVUQSyTdoTe_eywDQ7cr6gdeQsfxtJDBlQmO8MJHQUdCOIhHc3VzXMslV8nicpsHI9jQB7MzVCU3wky7BnZg9gfQXOrz33T2FuwxHHLMZVwTAXpgWY7UphhR3HU-NKIpvGcbolVKa6iX_GG3BH1UpsOrRatlgmuIuqiv1EyEoihTc3wXpHAXFrJAIfRPG-BmzbxfeFobJA_4tF7cpQYx386A-Yn4qhaqGG98Bwc-L2Wl9hRzdn-QWdVV7vHlh30-RfaXDQIZr_7BdzvzRl10uPNWsWgJcepUJ01kjLCyn_qiRukc-XwdoVfMPSUU-lpO7-TdtCEa2hkaGHlQHlJWC97Z3jNEvGIBgC3EWw26lJnuyRkgu1v-58gTnia1tHmDoOR6l2fMhnX3v1d-heGWe_aopTn8XCpitM40lsiJznfMAqJ50bR8A_wi6iX9fXXd1T106rm1RgLQfP4SCwjfmt5ByXCFhmcstoLtehJL8gL2BhLCUFPjp5cl1qbjUukOYOJa5UOjoDL21CWvJEAhtuQ8FghdQMODdXMQq-T9ptGiaa4VvgrqP3bvP_1VxM_CsvBRb1uRKqW0GDtyE9T17ZimlRziInbEnnCVla3J5VXWlfIOJZVTeE85fVVWM9tEnd3Pyr7G06U_xc6k3GqHM3uj7HD_m4losqlWnBF7GY_LFOj9NCpmJHE_PqCK4nZHGhznC3xMKOqCfoU7lNurpXojs5ovRfBFr2pB6jnmX-LYW7Z3p3ecocR3FVgWTxyqMFaWXrmpmIr8nOBgQiqAdBF8Uo4LaoLcc4dy-J2ldOwrar8maoBxro6_T8T-Ldh4AnlUN0I90uklKzb3-FMb9lzKmnMIb5Fm3fScnnmBMTnys2eM2Iknn7YV5ED5-IAXpOyi-INUQ5XMm4-fCzcTOldfWoTVu9-OuwyMs5oTJBrMl1UaNjx7f5vtw3HWVBXaQRb7WRWImOI9t9nPuC94ZhJKM2o0PMDnAb-fNYGEN1mqd6NBvOkP4xBCNfxDlj81SATPVyCeJqOuQ8Sp4lepCbvLXTC115JXKrQdtKILOvEexLlX1RHdJ6j5T26bPCwbeGTmurCw1QBA78EyXjPOrakupBtzlwlJ-pGj6Dla5sL6cQvaJX2d9jPSvcY0oGX9oKetN6HU1wRpJg2DZu8wHRylqnU-McjXjZH0EWrxoKaZ1ehgb1nogNQ3_nXR37DB-5stlOtOl0OjuyKrUnRs4RsWHDEX1cB6dhOXjWMHiuEnZ83Wvm53MBLXbyVAlUU70FDlJn_GotMR4U8gW_4qrr8Az3fh2u-eQDcoEErah95pgOZjDIqgcwes--JvF6xR1ksAKrGoIsp5vM3NDDPaN8feh-IvuDO9yTvrZP_uN9snWTEq_qUG3R31Lilfeaa1UGSMha12WeyNB7bj4LbjWGKJXtzfWEhbC7YFnGjiIA3t4BXArGvj3K50dupO2mLE-OBlTNrRVhsH5BwSFl7uzajjqJiSog48sORqE1aA0s1foOeFhIKUXHiFZJAfa6EYFDYvojYTS_EUHGIvLB9OkPwIBEsO_s0WQupVcugd7UeOzGQCclhqEr0yma0lS-AIpLr94zh-6Ea0Sini48GyDeAshxm6dJl-zIKWmgMpydPoO_Si-pXX5NUjvb73mch1596vyAuxWrq-GrCkn9qFD41K5hNK_Geaw5Pm3FyRqsJ4KClpCD5ZLwS7UydAipGLx0mJmdUiYX_rSsqXB_uivJjvaXDrExbvawYZg90WFLCIteVjeuWjmZVnVHTyph_3PIiAD-CzZKkmLpCoWFQ7Kdxn_5dgMGkxiBF5bNjwgsiGZJyzd7E3R0C6cExSMtDOytW5yeJp3qzmhP_7A_OBa2SScxDNn3XJUv-_gUg7H0Z44Jy5feg56wh4XPyIVK95LCZ33KA1u2uWHopftzsOT7WFAcyhmybMgURVPrejaaWzWVIjW6IPVHiVzui8itCF4dnp82WysZM8EFC18lh2V0Pbn38qTj5324iHrGav73xkOsebzdV2hb7lgcx0tkILFvpVYHoNB1PXdsfgDXbWKEqeS1WNRLA56OX29cH0rHM0x3WmDutzfLVacDGsO0thbQusncSqrZA90T3bmaTkP8U0lV0Tv4bfVecVkJPT04WhsrygLS8s_KYjN5MmGwg49IWmJ_QY-dxTauX-ttdRk6H9PKHGupNsb_IroPr-FTeybgEdaQlzoLxgx601Dv2GXdjPyxGuJ_-Wit-cpTOlKoYBbP2D_uDutp41z2xgN0T9mHv1qherWjKtcriy_ENePuCr789RPOQ9oZMOMq4dYWDcGizYIWoPF0DmyUglg-sGWrI9fbWk2P0yOv4-6s88t-08X0RhupEv75DWlo0do674GH4CW5aoSz2PynFIlDO-JavumYVyeUHoRmvzSDc1lL7rk1WA7V89EGdX8-ZD5lMoviw42lJtu_5Soyvv3YPcU4pMZIF-gMWCr4msj94gVRIQWfr8GKgFeEsFtCIhey3md1Gnec9Htgogk1dB5q5s5Isk6dBLH3NWiRyMb0dTefyy24ATt6kH9FEdf9-xOfmbPlf0nnZJQTvm3EgvlpPmtHPvfNFYIUedsz8WAmzRjub3bxhybd1zJPMdVinhD8mexeFgRQTSvkNFq6w_jdNeGtdtSjXFC9ANLTspUeix5I_BUWPn5zXmcMBn9kkRTJIi7doW70vxwgMsMNKYd6YK0fkoMziEOCWGUJqzUV9RPJ80fLShSBs8k4igwsRVXBHm4tE9Pk3POCIibwhicQ64w2XUYmZ0FWKU7arI2BY-LpETBOKEElpLJ3jisTatbwKQmhEY6ZRu8iRjT_vNmtymfsbRt-loLdDCduP_b3ZKUUQCgwizBkxHRPLe7wvMJFleSuhMlA6u4M0ZqbpVn9z-fCa7Q-EuMgQEBCh0zqZc0NpcoHt37wF29oMoDjI2AwqCVc8vkAhEUS7vLuh2NR0k4kKeHagk6YE5RjzedlH4XIUxHIMhFjsPAVNZPVID3UHFL0pTpxjpDt9I3xTnsbryN6opn8WriUgWNHsTByTpE5mgl5onejea1ur1UqShU7aHcD7KpwI2LuCLHlVgZlQeaRyhOsNGo9BmwMg0BuWvJp-wEFkQhhhe2lcPv3cfIKSZnJkPYrfUld4g0x1bKmGjj-bx7Q53287vi3FjJHXZsdC2TLY62jAWLIhK5YJMbkPD7p3u7Z3zbB-5dWf9oZb44MBFaFHy3TtQWMvikMQxqjp7DQdTYGsUTqCKFZC7nA6lMLq77rNygUd7W6eWwaeRVPdA4Y3U_TFkYOqikCGtY8fFwgixsed1Js29ey__CTJuhrEeodj4LiVbv9dXDv8YQPpCwqBJ1UebAms1Mj3KzpBfDDLXZFL8MmohI3Qckvr77PYNH_kWaAOtdWpnuIvespU7PF8bzaek9O7OH7x6DTOjKjxf-E7nVOZ2tLRAEySL84cVxI7sUcy_vtC67IYLupw7JJcDOXdgft2nYMS9KFNg7gGFV5ZJaZhG9YFx22H6lv--PJ9OlLUnRJUVe6SEea6sK3a3TCVzpGnnsQp9bEImF9p1rZtpu3bQPD4q_wDhsaRlp1sSWoXn7MLfvLdEEnohuEe0X3y3m7HTxdCJ_rpN0IZ7q__Abwiw_0Csqd1RUFBTI_emgkWfq-X5yaBI-1EKwsZFh1QfVBgwR_fKZh84iSh0wAJ61EYvvPN3m_2gcqMU7dGw0gXUl2IdzhFbCsX6VSREMiTLTsa-ow3jQvhiSoyc3LpW2wZVI1_W11I6LwoZTrg6K5q3HOpIw5bld3MOZNNgYx6wSsLfXRo-MqgSNfsa57H2PhUF8Y6n6RJvFQgQzYswh0EYNnqD1SmRoxE57eoNVYl5lPl5QNCt6eVeWYP4FPLosqve7Utc2loyyT21L9OMy14aUIf4ISSJcGbzaQsbNgDAxnSp7h-jXGKgF2CNPIDBhSPExp4shN6O6SJyAo8-R0ns9aDvCng5SMCtGExVEmw7YrNoNTUJE9zqkTIcNV4M1loTohk7xSS1fDrvxyT--z6e9X6Vk45gRc95Er0ICFcQE3wdE2-JB-OodZ-v9eKsTuUnELFvk7SVCU8C583gozumYTAsTjk4HspdX4210yAeemYHD6zGT68tk9r3hI_UUS7TVOe8q2DkbvBTO79N6ez_HszKf49SPUd2ykoy4eBRAGvo4fDJslhXnjCKYwf738R90oa-BYgQY4q4WSFnM4ElJLkXnr6GR_e5yavJcGhFoXJiJwuy_yOA28esb3oACaLdX853mESOXt1_LD4E0ZDqkiKEGV6Qu61tb7nL43ZLAfpyRlJQLnqT2-i2pqYlwHTbLwdx8WXdgJtVPrX7nNtHCi1zYdssc6Lv37Mn4jP9_J3wxkvaZnlZCWDnlRinZhECGoOTDXK1Sn1CBl5KlNU5cFdYnu84JFX64TFIEN2pkqkBmREV_oCh1qa2TZy3tRqkQj0XKBoCkfmjne4rxLb3w1W_1u4QKObfvhNiPv3Y52PexbLcCsuPhuN5jt6tatQ4LhkULMGiQ15trc7KUFEL0gpEJ7RKBIlx-6_atpu-ug0BWxqmGiBtDRbWydwISn83zi8bZoDjKqV01HBYksrjzio8riRKdskYx1y-qo2OnTT25WfkiBCfRPO8ZlXNXmqOOsxMbnmaHiNDZ5swvylgRvEdEWKcMDskzbhdkLxIJIfBfuVsDZW5QyDAGvGmVWVkugCCFz9-hSb3Bi-jNaqPIyijuWxjYlsZ9PUd0YKv44W7aYkajl1Op6PRMkBfl5uNy5M6kUdPEQDKSSGCjIlczCnVuC4ikoOzlsegabHYAGahbsIwnd6er3O2v6GS67r7_0ESSCmb3d-eEv5uEy2b3PWaiSdAy1ORzOwYRrmENIuPAffuzQBoBfV_IYf27wNN3W_xsutdyfM0ptj-0-wXqxgrNbeb07Tpwrt9RtaVs7fyDqu-U8mFSPCl9e0Y44jj7IiErsUpMDWsWxQr4Q6MBaqNDpsuZD6CBIL-EbMb738WxTIn7ARm_Dctbcm22S8J1wRrdL3hnhc8dJl8VroVcIrkcAq98Iqrf2s9S072Jx8TvmSfGZ28BKepJiZRTfsl8VzC1mwQpyF7530RAblGI-f9nfAkT8mmB5jD3PDyHBkZ6QolvgMAACf7QYRbqAUkaz0tfZizJrcyBwGDm_N-O1Rl7RrImBfyBb1tZbMeapAfdKVn5MAxFLQVkQVFYWbTf0j6-L06-DFSXY-FkbsmYhFjpZmYWaC119I0eNNr3lpTlLEKKSdFw2yLD9-WDereab44vXhWd460EY4nrR_0zU51D7YP1XvXbSqHMfEke3-JBeWNMh6CjCjRJX6TPxJqT6gvMac6_zutyh0qm0XhpgHQBjyhXXKe2Ltex5XmZr-TiTejheORtRT0CNBfU0o8gZWPndEuhob_lkH2iaEDxn4-PD3TTE4eCzKX5-hl2SFJTulTrcQMH-wo5XByn86_xcKqGoPGQCs6cYqDbAwHwb5N4Lhr3Ev5cJNp3i1_LIsM9H5r4w_fAabXAglHp2Tgazu41Wwf_aKzrSNsZtLfSrCwt1XjgIokF4wpzX-zKvDW0XAtPzPcoA0OKx6CWoAyge3X0bHmxF4e5LJqHvSnHaUD2KOk3fAtLOC6mjU0gxCmxn9WTYUfYmbLMeBCSU-iz4oaJoUOxerF0z3H5SWYaoZ3oV6GJkoCT-e-CD8WVJaZ4IxV1GkZBvFPDbUv0lNSc5cHPnOk_seq1W4OlfIWEk3jIudCqIO8fEfdm6MjFqo-UP1axw8LZ93OVjY5Vfw2HvIvSdrHU_R8pIyltZiIUSNV1t-kGYzrsy6heF9V8SC5rd0r9AX8tDJUH7lGMhbL9sUg6yPXMBb3T5zXIXMrzunqGABQi4XnvchstfYZEm6wXNJ_YsPB5pkjqQhPT0kljR9JI6B7xIL157Zpc9nQQuJxb7-TLNXKInY1GFKcg5rmGTffV3LBYn80fZaKPJP7I4aBGUkZzclt5_Ec1q-95V996dqy_k3XKF8TOq_xn5CRtJKy8DacnUUoqjul4Gk0S7HuvQ8uaYkWnYDrcyVGdhGXkOfy6opCo81SEiT9zDUL6klUIfQw1cl8Dblpl9rJhn-4DAMH5-vT1CAjNn-D6nGxPQztajI5PuQAObQhx0bIFXteTYX9n3BR8HoeX3-iRK4hUqkFTLTzWukbcXazhOPtFjZB9cotdUpOHoDcYu4gEx-jnP0w7qtYZuSLBqO6fbwEuCMupdgXmjK4-gQF4ebZRF_fjCDY_bcyDr9bm7ct9wcLRwZ5mjZH_M3tunWlzK1STpd22-orlIMSjfbeBpfb2JrGFiwOzWaUHDrQEDMpxO5IJstI4G4zgcbaae67meTk7-aaWYnE9DNaKEieqQubLgYBMfW78on1pkBHZ2kVD2PUKbMdjYSEpeAAVqgYuQ_HSFidDZXH2Y1wM2r5G53-RASA_ckmYpjRJFWFjVf7H8z-BjYInOi6msxW9spN7fi-bi716MG5iJ92HttEOuCOTuHoIVu8FUV_Iw6j0Mc8fEqb08tWTwcu3fQvLrEE-NBNdlnc-HkPu45WQwUnod9wqHkeBR9G2hCvtwar1HODtHS6Fgm39FqorYlj1Xw7-dhLFYY7yd-TYLOWnS9gWGpMIumT_yISXth2kklmWsdes6vS3PcBGtVQjPswTZ0sOjjkfdnb3-9siQB2CPZWAl1GfZjMB7vMlw0RfkpHi2CpE7rfnnK0OxobkJEFFWXJ3NHFcOZPNlX2wiBYnAx85S-6KRyTUgsWYAq1AM-wUCrfipQCGnwMR_NJQX7I6Tn6mHtZvruu7rUf-F70Ar2kT_fU9TkxO9T-TMPBFrYnfhgHxodcxYg0sfTKi9XUMY1KsoDSiPv0NkJiEPM34ycJTNWO644hGgGlF08uGAN21Q99CkUfRgUM2epk6bXU-aLKMXb3FnRSra5V3IGqVh2pHPTuFiARmw4ZMh3JwU_nosbRsIdHMLJhrcLunnBg58sDCOD6DGAxJGBl6DEcKt35qwTqNu-W6DpmnT2WCWo3mkATtuWhdL9IORtYhShMIKKndKL6Za4qB6mZ5e2b7W7Ta7HqfquHrLIDAC7DYhwg7GPrX33LkpEjmy5Pf1o5wfOume7ZDtIgMy25HXVe2t1_IIH68lf-wvOI48HQ1CbTs6PR7KucdVypuvtjQ6JmoVNpf3Ia3GsDbbK2N3tLWz9dgPgyP4c51-m0IqAFhNdQpbCshC2-NrciIpqE7gr4nnRwZOjXDCZh0CqUD2izPTjUxTONl414xwgnba__ht949NDsStGaoxskQLnUI-4KJG-d_4zROP5E5nSFEXXhlWzjI4mmjwHH1t5zWkb_YQjQJ_-dUvBVXELRDm_Tcpub8BTmgXvytgFtO5w0Ufy0wVtqlMJmaCMSnlrgQwty9KCtA5OfZasR6FPG_h6NN-w5IWwztPSsNk71spbvEPKyb_hlu5YnGrr-CnbtYCvQnEG9o78jQQYC6vhaeDxjhN7hOu2hmaFNhkhfDIzSh2gnDRDCh4lNZ6XuxMPZRbUk7KR18pBXiyEn0xgQWQ96uFrpmlXVwnX0-XT4OsyKUfmFoROi_WHhoq5Pf3kcuYHy167IEcSe8iYNb9tpX_xGnFG_lfKmeoBea_4L4dx7LVdCDr1OBsHG4gJxmYpKlupTxBggb1PS45zADGRBWiOazPZzqamR1GnjsBQ9GHS_Y1CerHxiP6EWIMHqy3sPyuZjXgcQbAy7yZjvITqAQQKgYj4vHSDqD7erUhS3kaQGHs6wcq5RX7f8LuxYC8sDVPjvwF2xemTlE3dqCmkYxdYp0ClarsMbZ44WPgrT_bNTa34V6uZXKWJeGzwykaZpf3_uG6q_Iqo_w_9jA1uxZ_iIGXbT0jDrM2O43neHGXURwRKdhYOkFp4Q71YT0nW55P0J1qMhz6f2YW7ddT6DVfkllrpm8IVZgZ7sWU_kNQIEWvWzbmb3looalUXO7mlhcmFW3RK_A2OyHMlUVskawPh6qFb8qC67-m-c38OuM8vbkm10OmlTOfrhzZ4QSr6wxBBwCjEpQsddtODD6OUFIOPxjtgDpsbXU8KVpqjmqS4BH0AcWFtEMVVrRUs_1F1JNfx72-Mtc-IXrkP3O6RAaKfNCJOYBPEiWqxJ8syDVdVZ8xE3e1OGxQWOPI8Ykss0qJQ-h2shWjlonTJzPPzZsQZr_ZYkR8k0uo3gMm80cKFYx1Nk2RP1X4nWx5TTKzi804vWTPg2A12U1jlpP5Afpn11Ot-UcN41YNeMlESnE1Bu_jJTUtAEoooB4TX7FIqkeiFVpPGbTU09ssBJYfPHQvJbzAk4AB53j_vxoCD9pVuLvPllBy6D0nWCfyZTsOW2QE-2VrFlNWhvZgWpr7xC-L5iByUWHKKYKMUPvkg8VijYg6CDQDNmND03BG2T8u_VNyd8G0Q7UUsHz_ll6DogaZUZymiDgm7-7MGCpugStlPpx2QAOLLj5FpYyHOCz70hvOLaQGGLARmYrJakrkss1Smxy-6XWyFp5Hs5s0fvYidnNI2scgm80mqHsbLsIINKB-h9_GtrtaKT-5oGQVw_eI0ZAalVAGS2DRUPzq_1VYwuadHGNKuj6ZRb42-8sSdj9jSdKyJrmaP2wq1NAFvXaLTjwPowVmMEPZrB0-rq_brk0jlQtizajtRpUjYpDVkz_l_QRt53hrCqjyaRP7LTrgXVZa4EpZ4Fi8vOD0DyE52Xzp9xjgFMjLS5OUHYnWCPW5rR1Qkxds6KNSkwTS9iYtTJ1ns_xFtwzVC9IRdJl_AR5ZBcndniBBhkdjhE8rh34Gk-7Zbi34t0jy1SAz2fzg2GD9feNu-utEv_BwwugXZ3CJ7XXZ_NE2nWT4upp6AiD3tY41RrQ5FayF8K8MM4s9NJG9FoMKNKb0PNHhD5Zg4TUuVuaA1KTgYGBlw7NYp76Cr_W8Jha9YlbHyKgJAFMlF-ZC-85GLm0iOqI-mDtVgK0Qd-px50cmfx3hJwkJuakfcbGlZd75lVGQG3jgyQ8FSdj_LE3UTge1Qj0o8XpY7M6thDOLJeZv8bxT3xX2-mCWxGZ_Rspm5POrg2new_zMlCQMD2fWTswgSmOkcUZA9O-3633ggkjaJTf8Ivu2Tx_k_ytMOQG6NqzdbvLzMPT_1oFJzukOaoZZ6oJFVv5HX3deMH4eF42TWJMa86oYWe14uLgYXrf-mrNJ8GQH4ndv3-lDr2GAD1lNDzA6D53BUnamkhMXuujQbw1An9_BWHuJqiySUEsVAyycdmpUYe_1vlH2JSF4Jt_Eaapl16XhsyZr08eZM4nO_IfZKGvQK0eGlh9hAX5zQ6u_L9GmReBE63U3B8Au6zRI39Npn8rU5Z3jVQ_lEqn-YDSg8IfEKBa44xgxGBgYUVwNsrc8SSlSKQUgIG2KxC8-jV8w2lmCSwMWnYFuXQYtrWqBJwwD5ghHA-NmRzo0BogbIjJi8bPNUd2C4xKQKXKnnXfjAztKvlzTeoYMY1gL7svRvdlDXmnA_1jhW-lC_R8h3MU0_E0RqCqJIKpIo1zalu63Vv45m2UH5PX_Xkh35C8qAzdbu8FWwZbeYeYBqsEViHCckBbECGwpAJ9lYCxA-qkXJ8d8lnazf4a3z0G1UoaPb3kRbqyzuyzaLVz_Qz3ftEbeEcJQ0cTc_ct0gdRhinnFw1LNwt44i621-cJ_uuVttwum0A6azUbFdZEN5qEhivWN92LtszKJYQmEQxDJqDssZ5mzAFvINzZecMFTDxFa6-kvAwgtmr7spZ0bMd_Dhm1j4U8J8MMmB_czUl_TwW8CVdYfqpsI741JCn7okK-1UwEsV1adrufBGDfBiH7PazvrN9-K98jjMalkmAse9eUXBA9vHwtf8w8_FtVQOigXjplqzxCfjSnwpev7nZfBQ4KtQzEaDkQUoMKd0yhqe5ppG0Z2by0G4mawjp5FYXIBDl5UDlIdRf_XcVpUEO6GcAPs0-lN054RVIA7eJoDwAsqcv7KYmpK9WpnDx5La7JKD8obzruq1Zym0dJ-ddvM6jgFRP98mSPE_4ug9tVYPQFmoTRcubgl7iTywNxTbwqEa3GWTNnG3Fs_ngolK8uGReS7SpML1oplcd4dkJTCqPfnJPrJm_SGhq7yMJ1STz-G9fS57x2ZobaCHtHxJWtY4FJke4bOWWgLXOvm90-ThQtnUJpHy7IMkfaXI3lOvH2aGiIGR66N1U5kv43A5wCj9SaKAkct-_c94bDl48aufDylptfRCvPEg8d6w8pBQ6msqamiOTMGufVqdbqT8AAQS8E5mJwUulTD5XmBKtQV9iiIAgYeKs1S7bu3CDo5cOgitN11U3E8J5UVy7uwk24pUht0Fjovqthu43quaEo3nyWkKpiwBF5dOE-AomW8CmFBWZV9XvgRaRq4hdXBqUJ2gS5mTD4fSwUOxRzbA3ccaXHCfa8Z6lnbLRzNehG7VBeIjqgvhVXQij1U8wp1tDzTCODoN1wKGKLMnL9t7fi7JlFTUYXoqn_u5QZxxjEE90pfg3vcazm4wcH0bcVAet1TeEGjNneigqhPzSrGCCITvSzPCv-rnNx5z0nc1pt0wezSpeFoX9Ao-hsEbckcLxveU2nJYvqYADkJrQP1pWw49RUMKX7b5_lRfGOe6BN8aQDv4mYn8XacbzVdcRkrai-ByZVjPoHiPf8bnKIGG3EdA9NnhDMakLkwoOA6mPF3p6e1ng1rH609himSNg5p--pUumbbb4quoKgdnG0syx0NNOCzAySh9HOOho_wVf93aM_g3shfraIyXQ04iKkTO-_IZOZkq54WMXQDlCKwdyFUEHypiGAcUitiO7ii5kkTXbH-ef2du5AQGXk25t-cSGWFFxwfDrjmvn5w8pTBu0OfPpnxkk3LpUNZGpTcC0L7S8dU2gu1cFgypYgK1UKA2z_ygOiheKUEZZdBUOzR4_YBBsT8gUiydKqwHEZVXVasDzLKsWNZ2nD3tIEcHXy_ZGstlnEnRCzmOBXeVZhL6Q9Pyj54uHCvu_6RP-SqKIEF1JKMnyILd_QUB6Qcayfzx64ZApUI9N_9FjOEooIcbQNwl5JMIfo9kToOKe3Ouw7ppo_yUtAmb_CdfzEjqGyQLvwEClAwKMv8w9dMCeQZPOlVdrokDBFCqYmOeKz-zNNfCqDR9JW9wdiObB5i58VhQ1-DP2gyvlgML4bqGRLVn01c9CbX5Rn8NLDHCupiix57GGfQEAQAI1PltgAw1-Z1vANh9vZ5_Pxt8FGBqRbOfLD2UbX2W0xNSdORhkvXL8G-YtlFbPLH9ZaGEkivUTCqznueG9iZT2-EPBcckajwBWPM2gniKe4-UYnWWT-m3J5jlYOr1bGcobG9wL4gCSXQ1Db2kwRkjEt7RSJhktQdJbtmkYm0jaQNC9htKlfESR8CE-rpIGFvwv3SeSGEmHb6HrQUFEyF9y4AM3TCwshOrTRHRejxmsU6KTfGlqMjDicgA4vuDcf_he-N10MliEEZr9yI5fPaCRq5floHEyfFUAtoWXuoD9WBpGF22Yx2zNgfngIxVKUavxXggYqpJs46xecNZ_MSR9xPQ-9WjBNwS2y8Id4_n94RtMrVSB2KKeeAJYovwfcHq0yECzBa9F3QPguEoYSCtOpZf_7y0GmGP6jQ6ra4nRX5sGdTdrQDeZGlmDBEqm4DbcHLQH-o02yYRv1Gxxiw8B-XLkLaNZLmfAYNrxRtc3jK_xpj3_jluEnlOMQ3QKmxDhHc-9arJ2_BBU6P-mfW6LlC2e8AzugvcyO8I6W8tM8n8Ua7mLwQ7g28wlv9tpgPiKWbNpB98Kn1Ep7dTcSxXRscp4iD1pYJ7bEgdiz7LOTwK51t2z9bGe_hyI8lUbvl3yT4oLokPcMgiPqpFOZiOtrwHHLr8mz9_2A6WrnXTkMgVMX-uWtMw2XZcSgsRCsrO0x5kCaeyu66uxnPcpz_9AjhahW43jyQLsPYkrEpYU-AVcW69iN6yDn8mOxAcBxJL7-4LeHqWoISpK83GFhmqR4Stp9FaSpK_o0SjrxJWasCFm2sFSuVs0-1m7JSTv93nEL6meysVFc72mz1dpHmfyTRYYSM_Lk2tOl7HgVwIaZQEyTtE2u-GiM1ZPIic-P5efAtn80m3o1LNi8E1_yCRiwADyGwpws_eCdVT8ddmQD330Z6-jywfnsdY1WvoqanujwypqyvmJOZBjGdW3DeBgXZA7tg8-sZfnAYrMA0PppaAqOzW4kAfwpxG-MTKxfqRzO2E1_uVvrvKNsfa4fVtw91Hs6CHNR773Pvn-lguMQGF7I9ea_1K0H-RHZqtSRZdVPBcnS-l3p3M7dA_6Q3SV-eOeDfMCdV4CisI0c1PNsGRLGqAImjVsGVaGy8uSNFPrqMWDCgsTuMXxPAaEb-MZG2fxGA6evuSbTDI_yyufYhBB2yYQFhrFheQsKUsCIvDjmmH8GJmMWR2iwX2Oa-yinMZYi4A5_futygKWZcaoqYJZbTwDSxaK1iCd2aRrs410o2UKy0tv57oQZWgPLiVFucTYP5FA-pX2H0Q4y_tN8GGeoMsiC3SX_V-BPzCwqYyJ4Yuj1oBz74zNr2YsRan5e6RxvWh3hJ-OqfgnAR_aJJ_jEuRCW5z1SFepINoyC0-5rhsDjlFxwrJar5XOjJZGzvStaLnzO7gDW5mgP3DHJfytPa0q7cmn2RejovXXz9alMKlDNzjI0G5rJuPjPqBgKjw9s6j0_pZsf56kpvsb5_YEA0bS7XlAkJNkNvKWXch6YcyjhD2cXCP6E1ZJDt8SNMS9kn0vC9_MJkAvXrda3AN6av1o618olbZP8LQE-iU99Z6TwhNIdmUOispiSlcLxvO98hKV7Fu8i8CyjFPJR-uU8G_h3kpJaYzJ88FcvlSF84e2yRhX277IuiXydOwVLOWzSJG5xFeqjZyp0fLJnR6p5HY-H5rNtKqGxRCi8NK_b0J8RuhRdqX-peS9OJUz4PsSggTxbrqRS1n7MksIzja90nxRIp5GXYqOu-4xJx6RTtIJhY9jhhAcNbpVOp0DnuM13JaQi87CKbjfVBu53HO4yC2LQkPlkkYNHaS3S68skNDvxzuvtyGP39m-G22h-pPQbJytE-bYxsbLY74dkcuNZV3ol0gmLoWvJD4_o-WuODTjMTc3gm0cmhngm4oxVofnk3e3EzdEns1mOXNb_jxevxueuZp2gGkGsT5DY359vKAy4_gtmteHOspHGLMEVqOdeyBbamzPQZil5c6U7i3vWD6PAECkY3-5sSc8IX1bvCTX1cBO-ejghtb7-Hi3XXyov3GixQaQmJnKfAHHJiTkwj9iVpyQDrS-CVTx_htUXG23lJNL73SO1X4DCBugR9g99NtwLt75nkA94KJwckQGwWRkSlTB4f8icEJvdAIq2WC-E3SyKYqnpgMbEuw3DFztiynyEN-CftFrk_n4ADeQu986F4XBAbiW07N3fifgHrYb-evXScK3Z3PYC-qHuFo6M5qBeovu1rwRoA51kcCXoB79kX-6C_5yyNiVEJjME71b2v5xUfceeg6AJqPba4B6lDhYIKjXofTTAd1oqo45vEWfNi2ATesDObpRCoQk-wVKh2u9WECNgMwhrg-d9VVXQSelFF6FuDPzROwyWBEo4xegjHIRU_7ggd9EF7KS1hPNAcvkqJRGP9mbmlaJ5-DMxyrSJ2OaeKy3wTsOaQEk9tKa_qEGmHFMMCJA2dxOyxrpVxnc-ph4jzEI3A24gxB1UV4G-qGSpze8fSSrYHgSQf4jEjS52fvQZFGwQ5NXuqciOv6w0pK9fY0TiSMAC_PvJKR4oVCn6NSqS3M3kj6EOKAA4tnTbex42rV49vRvHaQSaYG_mQbcTiG4w-bZSpavYn90D5iwOBpv9TlASwBZoPj9mm9X5F_UNBY0PBX5WyKIzKCTEKnC-fv6FR437zCXc5GQyxHL8AvOApac67TRoWdZet6VbMe-Qw6h6pjFiWw8ReoUMKeGA8f7GGOhcwVLcpn0Qor3htH3daC6HB5D8brMk16QxnngofgVknv322HHjl2-kSrYqd5FuM-GphnLZ3oRVvdMl6FFXaylKNziZX7YsVS6RFam2T97APR2vLbITonivYdY01xeZ-P6IC6vk4xtNF641Dq7QXmkhE2DgRq6rERrrLCJmzFOdECalmrJYk9aqzB8aEEochnrCV_2TC-gUa2tkVmRfV4a5vA-NKGJJJ0LYg9-E1PSVhsPEputrrsjNRioAA4exQjgGokCd67wZDlny4L6HqXSHjQ1b21lHoQ2fjY7BvudsBUJwQY0hYVAaadu69RW5vEmYrP7-PzjEA2yhRqJ2i6q-W_gPpVSEe44HO42IJ4DAmWsE_m5QMdkZsfvJiVhepnyEKqZmIZiXpcEtXVCwvI7YoWaQo0V2lHzXMryBDAO2_c85RFeX3AeB3wneLA1uWYwxS-6EG38EeG0b3jXGzDNdq-ig6ZmdG6OTPC8W4rMV5-6IgLIk8Kk3CI11BdJ5PxpwuKfi1NXrexS4jQapmWXia10s_f8Bq2LnqyZvGvpUTT-LaOphkjgiqcEJmpT1h7hdGEKo14G5wuzlHCVY500uJcCduuSTOgfvhMelreF4YN5O2R2HKEQfobeArvRWcFChcLAgx8l-74ZPJth3YIG_mJSgOTDq1B0UxEktic-yHYS5-_TPi3vOtHnQDsVe9NAJyHAKqrwqx9I5o87obsSKuNNBa4bXJ4oFNMa0LimXK-k88ahZp9-tc-xTl1RXB_CpD2q4D-F5vsZ1sn3QkynfpeVZOfZuYMgdqsaAyo1mptAlD2V6_fa78eKl_IMwGKSMtJRT-4t_Kb_oVSdqxFB3wsfoZGIhUAgFXxxeuThG9Q_CcSTeWadzeoSWw3kaM-HgswIQtpV6wzU-LnGMXqmAXdbSqaFIlpfhPmJ7czkDSRevhM8_wJsk-swYRZCbwcOPzMiT5Fk6dyVpuM4z4CoyVXjhx0OVuTd23VsLtXzL9kkyFY52SkABRWp3UvxLqcwmLomZKZoHqSfY0aCtR_g5F6xtbiCzR8Ptaf3qHSI4jTdyH4wXe6v4fqyAgulywSl7xGkee6nE51P7BsSfSwv8un2cSVSsKRkyDB-7CzQMifJ_JV5UkpoNFuudL5ljCYRNLS7a1zgXzn6yRO-8hWyiUJ0VcgFjK5HTm5EdtxrYgxp5OSpiaQRYp4YZDoxyv6vlL7O-LwN4iWBo48hvuJfmUf4W6Bq4ZFAr7hndEEMdiJrPTwg2dLy8TO_QVZTtQscOLLYgpeRrckc0YTa71ssmk50CAFVTRYFUsO052bkCqrfIeU2B485Eb0Z5mkC-kNJ0bkzR5wvk3XQEWv3Fn4nDTOAOJleEYqGarKTqt9n6NYPBzWXIy2MqPR_VWwa17SscDUSDH1CZjje096waveSJm7Yf3Fa-hW1k-m0G7GiKEGI5wYXlEJpoOmlBOKutB_RJ10euhGqt_9XVSaEp184nLLWS5u8_uFw0QLfNzS8Yhi19fN1g1xyhW0IjxPNeQ3N2LQBHhHRqfP80zI8GQ1QknKjWmjmDOSWqCu1SsZLqjC7tuATaqC06zKN0oFKaXlPH311kmlWKTKjVHIHB1n5RM5OUGX7CvS_NXZORZNz9_5KBGeKRBKsHmTu_fMGrRsU9OvMv4vUBpZdr3ZW6GBZ1vdTOcQm864bxS--IzahODvvn-hLNREXSPuYKc3RvITXlqJUMO8kUGnYkYs-N9HHBTDNiLB_bp6FymvFHjLH3lUD-djIy-jN4GzNR03kDPJmhbBbIEdoppPnSAEkW5tAWelt954TBxjLTWW_4rVoPd2AmsAOC1ePnArXa_xotMhVRWSrd79ovsyRQ4PRlfh-MubwUHQzX4py8H1IblpKSJg6745lh3qxOlcJsbocqGUMSLpAYzrIkA32bguRew2bfDYvhtmIe_0eXezvp9bYqRSOxxKnKSgO_ZB21aSK4pFcYOpizeLTweuWgIZTYC5pwHy9MvsbU7piJNm4rLFNXvUrmo9taTKfob4P3nwIkkSqYhL1Ew4IVB-1hQx7CtA3JhrLJuG0jmTsp4PSySDQ2_Uf8GU9qh03upG_gmYfoXdPSgsVRLdeXwkwXbpHGAuXdLkiQ3oYKPONO9kP56noLGenSRmtvxtZmS1PlYLf63Qzho1VzDXEJNqy7GNSzFJLgeiEUyzbI12F3XVgZY5KIKN_WIw5WrxzbEOkmuLt16x_w2x1AVhNb2OJ4rpQX2rJVQ3PDSbMGV1dioXfbDSDi35ZeN5Cb75AOrPVwxz2bLisGExeRYW_5F-fx05upulZ-AVoZAGXya17Za2xUydon9O6nElg-vQPe5_chE2hYgY4YX5aFdQ48IP8cXht3O0A1pab3vdCcV_h0nrIEcase0_eFVHCF9h1VGWRU4T6L1Ee1jgkgBHdO4AX94KRBiZNHIXIkfOrgQNrYLwXawUC3tMh9prhpEob1KHFnan5Ih3lWzEv6yGvnnNRLHKOD7XAQW3vklPjw-ZT8N1SR-gbVESyBICztUtiYIvQUSU79CFubzfKrHUpnvVG-3MyY9TMLQGMwSl5ctQVTEO7As-VWrRYVQ1X537PteaXmIvbeQlndBLnJKUlI1VN9xX0Gm_6ecsGOAs5HYSaCQmdD7706YibSf__t5xa_DaEvbVsV4C-oNkaXUxec8B_t9C_vFljSyIC7tC0KB6K_OYWNt9eoEjBWdWPKXIe0tcxqdC3b0mG23uFME4-NEV8bI22thdgvOiFinvEsf76kBhw9w94w-LnK80U3Xy-Qz3gGLDrr3Hl6qG2R6MXKQkLxwNXKHUoIbGcLo6fbsO9YccioY-Rkv0_A4W85ZU_UOA-kb98oXbACJd_Uo2J2SPZBqyjJwa0mY-QV9gjSuIc8reQROtSGGCzTavEALfpw9eAasddb7E29C8dKjvAB0VUuBrB_xvbcwdY8MD9OiZ059dKZOmfSdQwRBedpTuWqnMDJ9bTxk4J10CJ_ywB7J-SssKO27JDbxtoXO14OqqGLWrh7KoEROa0gSBJ-bB7ZwPEJKKJjWvVe7bHUfEXUSe8xTO1rKdr9S_ThhfOfoTTf4kC4u_JnLiiybBr_MMuGvnVOBwgcUJ3JmGmYJWTY6GzSETiAC03ajWent2rgJkuI4ol8_FBA3fZXMzxR1KxpFBu_VfQviwnVrXo-HHG71m56wWNwJKP5GkRhXFU1jCPLuPOfPDQnHB6eEnO4Ev4et-i1WcQPItbvbzySJ6berjvcg6Q4AKFi0mnzDsIwGCsosQnMKp35a3m4QHb1keZDVzlMqOQcPy4Nzq1Yki78WMtnXIttj1_J4Zv3liYZI_EPnf65uIsVIZzfAXw2xjOgX3o5vj_w5Wt0eWDBrzplqvxDqBDYH7YLlN0LpiQNOfaHTuMjHphHXNoS3L0pPSalRAlfrrp3vashbzY3KlKOX1oSKcUgdSROgT_83rDk4N52Uci6mcrliyJAMA3C3d4yxTxoLOpE9hat3_apJZFLmNYzTlZHnIV09piW-DvU9QS87YhnoZnSIyeuIDY__lOoT_9UaIjX3GDvCz_yMjpiRjuahmOOYYRekhjtqf5ML3_Snv3qRxRgslbVGLGUVQHdpssEEV2T5mVTkgDZfgAiWzjXG-GJz_w2yJjOdzvInX9t22lU8fGxvM8hzwApSLiWl0xB47IvDhNjFjNEImG0ECq9Sf34ag6hwXPQIK_lQsKanGkM9qjjFThe9BWt8_V2w-g4NAVsKSZOH0Voguq3_o-gLuxuhNC7Sre6ZZNJctXThPk7kue7HLD2--UHYaWqa-uDjR_u76-Bd8UYxLc7o2zVzQH2GGiBT8weOO2A833jbCEGa7NhtLGoxbHdqU90mduDv6zh3mkSYhwy1tGMJ4urZ88f903FffMMZshEKN0FpENdydWxj9TWdmmlQxT5Ulm90urfsbYSLF64u8nCimjD9zBYhq5XSRwcpGxTCZq_PYx079O544mf5ztMxtBqvJeTbeA6PHg7MWJZZP4SqjqJ0Me-uC3-HMq9PVYnGLZrn-TwXwzL9Yk31o-6BmwARsGFw61Kq_JQcf_TEZ64WcsvyvbZE3ImqW3uQTObAJnae-oemV_1GH5pi-7zJjtFaP2MPCQspF80SrIaC1o9vNdFaMJVLToXM8rjWVljDvx8f7CPAjI0DvK9clm7smQhgr6F42hzMn6oIlhZ5E4p-NNUlkrgn2gPWY3yQQVT5zCgcQV68l7xbcwaFprzM8wkEBkg6ctp5iNJ2dFQgKJaWSFm_J4vr4s-bAvmXLas1sNvqEjGNb5f9KWxhruEYDUZCtvrNrP2OeWCLGuMA1b2DqsiBacA48wsvVzDcr-RrxSnPVZseATKJC5vjlRaGQDTWM2WQ8_oH4PmaM7nFmaKivxBSw60Mz1j_lrWk2ZSDZXtMJbnx1HFRXqghZ3WNPmoUwNAX-fsy2muDm9tBTnvdGHg9kknzkm-tI575WJCIUWL_AiomGEbCtlwg4j8of-KoE6V7UXP86hNd0--nlUEpDsxac1y_JKM8V23qAcvoZScSAnKg-U4rHqq6MDBaX8yo8xxiiVKulVvXVsUXYkvZ6O4rWW5x7JEunUGj9hYIVcy8eO1ipvGZ6MeZSKOpyQUKv8kwBMmnUsA2pobVoB7RzSXlWs7E06-ciiap_C0GEQ0xeh-Y1zAf8Z3YsWXU2sLtYzmFCDxUNQ-mEFl-tvk_jMgxkPQb4BQJnaLgq8sZcwmQ2uYkaFX81NkuVt3TsQCNY8aXUm1HaX3hNZ4-gXCJpFCfw2SsWaMuPzojKGHxPPz0WpjVje06Aca5NnJe53TZzgi3njjU-5S07SeR7Z4Ps3QF8VlDB7BxwZux97vPP0OdxAzMvaOb4RrK07XYHEykekJUUiVOEN4wlWqV0rMK0sWYMsyBcomKli6zdX7lQNpwZzPvuMQ4_gCuALJKNtMFa2W_iB3ozieGpdN9q_YlI_eJGlp2j4Mvz9f0UrCmqKkt8NSZYLjm6L2Ru-egmRVYl0tp8IakjKvX_2jDmSsQ8lFADzrB847jftFGr7WKcsPqp80zgYEy8GOGDv-KSlstEVhj0ljlWXK2EOxZbLNw71ybCJZx6mN-5K7iwTFJqGwcMKpK1Y-uzB5Y8tlPaAeGYswmzKHwB6oUQfRiQ9g67YQniKejO1xT7gf6CWw26g2k1pRIWXpHlfFctsMlsNHoHQ2NHZ-WLzcj13sShbm8rNygkN-NIRhxSTITvIgfNlzdVcUIpwL62bZHZtHDWV4-Zsm8yKIonCcGWpwTo_Q7_0D_cZ-oqa3r64BCRQ3nGCNDK74VbwYZnII6GZaqczVGHd1RcBgL66Tay1KZqKjf6j0CHEq5crx768QzZQAGv2TuWefBx202izW3t-m_r_NskAv7pnpKdiuFfEZkEE1ATdZeiTTay6ypzro-PpI9IvPsojmrsiSaJmkzhxyIM8w93L4Pnu6Q4vEj8H2ZWsXZcgWIHSmw8calahR-yc6xuYYmfOMCySRhO-LfpogU2lq4djHBR1h6bWbIrI4icroBAvqKg3Og0y_osx_zMDZsRsmF83AelImXP6Wg9gGi8AVki564k80PGyoVWWh2TQPJJzMhdMKAmMwLmJF-lDjHwK264uVQ0nwUOLhA1l3gSgjAk0gvaJ8BUOr5Gr1ZrQrMUWMtNLkZIZOvrMfrQ8Wu9CzbmOc7kzTS-ezxI979phOwEHWsTMq-uonuCubcQEbpMKnu6Y7CIhzNvtgrOvhOy8RWZwEkDvdNH8vok8Fiub0vjDVQ6WpkYmTOwSXiegMjxLLUuNa9cuw1xyTX_ngq7UopMuAjrZd7E4DaZtTKdSoDIYUGjJvysl3hDuPMgrP0C27Vb-AunC_Px9MVaHy7diGvMXn12REbZdH9PBB3Jo2GX084Seb7fiMI76Sd50ELY_MBsYt7KMe_lV6QUl6CxSicA62RDGSM41l-pm0CRo9Pnhi74tJIro9q8WpfmnpFQvioD56FFeWnFG9QNgCp24yNiRytTGTJkRUul3pQC79IxeBj2HxtgZk9bfCp1kUQWr-ROLyqnZJi9K_jVK_8WCQnn2aXJdMETcFisgZl6EFesuOSuFTV71ccIFNs6E57lIbQvO8msT5yackj4rNgikfmnHljTVvsb21_AUl5m8coYG66je_fBQoowFZhi1bZU_IE-PPq9leMKbF19sepvvCEDnP4xeU4DTrbakr9D1jp02VJuxA02KNWMso_jfVXv4qXYXdirVbN7sDXO-jHGtxZi_6FZTZcNsJqrsqfYdNAIKdysDIJsoe-YJNZYUESROzMduTpWHW3i1xPV544R-yE-q9SJ7dcV6LsffprLDd8fLjrk5SFFxv9d3dTTxQdoh7ypVHumaicppb-TchplOAgD9qmTVmIDRg6VqMbzro6Suz_VMdFEbfY9AaFfa_FyeUvWkpoJEV9UGB_5PKU0zuya39CYTKKTNIIb1wmsmQV9BuMeYNCFcVSez4qLCkWExnqImcENWZ4I1aKfVn263hqtUBUjEQfbRG9d9o0Ui8s-ieoYb4wbz7tMHzuuv_dKYPmA2DxN995FOLrUGag1zpareNtJwXulyXpNbXJZJBsPVfWLBGkvBwD6AZQWmjsr3i8e7MfOD321TJJDMWgUvsUBMWHyEOr5gfnMBpLA3lnnKHovi2VTABaWI1WmSUZgP2J8Ea4Ak2Uv4QfnolIKSJ0dsS5f5cFwAqexQEHLkeUnHAyUx67vmb2GXprbdy1-YHTe0gAzPQ5AtPJ6JlqXesrft7wNBSCU5Tpgqle042V9Zk6-psjjJnAUtvs4WKjd8-HMeCuxhqLvfVwODO7Y85udyc6agsV1gr4lKBAZ-wKr0l0cvK3Cag0SsgRVykDEhOp3pztqAyHsHYQAQZ8YBb8XZeBLoJB9Xoeq93O4lwYFHUkVJfIMmjjhZi7FruyMr6AmadSsuuGslLFQfRQjaKgupRfFV04afHl7UnsXLKLlvxKdsTyg8kf1LIgXtDKHD1f2IG-AmsZxrBCPtqRPqdzRLB3xlyUaWJZbO__E6q0l5KEXV_oyYsiqPiXw191EDrP8TPw61ImDrnF3If0kJcB88a850GRDyiEQRIzOKpgzMu9FqUuP8kE8MwjYh3GDuKTHAfQlELdICFDkXQIJ1Z3VWHT5p0sh6lUOdbdA4IceioFlMdzFySodM8uljSwc-IhmSrUSfmMoI06zk7_rXCdFtv7sS7z85v0T6WRDXqLGfik8TX633khzfxax1xojSDAG46yiCecXgpPIKLoUOn1f8HPxgyHb3-K9e1ahbNe9C1SHNu3AIpwF--FvU2FuBcroL8mblaRXryYIcMGCwFkp0lspU7VmoXADm3izDD-mtdT_LMciosFWZVizi0KbkT8k5boBut3zz40JD0igqwyWpGEuwY--Tlh5IZGySdTm7LYRZpFaYvRHfItR1ndZUrpPUls64Ay8WRD9WxhZx16K7gxTst0JvGpoWFfK2R732h5Qv8VIy_HP7Kj8d3iSAvgtu_u03ff5rJ5eDhpNW3hn6KiKGYyYxMc9k78oVMNjszi_aKJjg2MX-3ZxJ3NzWHNyeRXwRrBqQRXwc-h3zjSgj8EiqWpnpQUPryVoCEfAq19m2L1j83zjFHAG3Vf4uS6h9UXKWimroRV_411VY7MJqtkuXVNBgoQBIdqgb9VwEndrTFV34pNxka51XOAVbrqM23VkJxBRpAreSc-R3wrmOvZKm9AIMUgwyezYTi6Yq-e9oBuhXPv4LYc-noXrQ-C7hgm5XLkKXK6_1RCKzSG2tYOFv_lA7d9zZ7K-NYVzFWANC86yAbPLpw55ulNk63oGj6iy0XsgR7QtybEDDF-6cvBbAHhBEUfwSvUGoFP4h4sONpaarSyed48gEYkLNSyywhksFPnKnFi8HcW-ScaA76rMTaFJLo_hEcJ0ZRt_3ELwIQCdsjQNliTLZBi515qtMAZiPAaVoUscYkXX8PYRa4jbie-W_MnivZC2JpXuRhcoSV72-ED7Kvqhv0LQYTfVLPZSbd8IkSEuzarHr2o5oNQUM6_URB7TDJu2o4tgGt-wfGRMLvtVEsp9sF-5rclduSb18w66_R20oBOKUpgI1NwITonKOKaMB3_a_fP2Nv2tNlCuKPiHT9DhcXTIeWQnAfy8VyR3L-H0izwhbtQy92dkpbcRuLgyp4jIPpRDdhMfJmUGVpVjYPKrNlLGk1SU5kD8SURymU7iy95cFkuuyWLeZSy2dfg_4GzZdFJ67FflzDgobDvRcCfO0QG6pkTOb-BcXOMgCXUPO5DEldXuC8AwXHUxRVOFayHVMuauoQBhzFm4HZQXKW9jIP9MiF1XTrtiSxp_uhZbiqQbDxeJcE0Ot4Y7CqFcOXuv_WhKJRmwHw6_yUhELEfE6KG7LG2S7Zu0jPMG948nnkQ7lq-Od0XZ75c8vhNwttZrGdJhxkGMKv3u7KKu7V5kqSSO_mPpRpinFpJy3Kr9dSjK1xrwnMWmkVRrMrGQcFsJMRKLUmmURue-9aGYCmoB1DqXZTdQ6KCiNmPl4s5jti-oo9Uuab_bnXKu1BD8BgGLmWrAyhvIyFEE9z-KjvSaUb0zchmGgncO6w_MSqfbXT9UCv-yFMj-h0ISX7MVBiRCRpPvqFDFqrF6qr2VKfi4GTeiq6GRt1epgD3o0ex52wNriLml-YPIHWdDvUjnzfbEibyWFOA_YzRYAR0dK39V3l7qYmyRGGFIHz56BnG8bxvWZMxWkJSGh_dPIhJryYiG4JYgJnu93oGtnaRr_5BXO6iQndOEQZpEP0JzZGMl0uP33_HGujpfmF-yI84jiYu1UQFF3jgUbN16a8nEaCnCa-gFz1k05llb5KkiGSGgNe-6ahjeTGK0fXHokGbJC4prDAcMqPYDN6wG9UutCs-kMlG3HfL5qEnPlw-3PWZ2lc95OohLbDojbkFdHhAdJLLzwwBvbCLDhscIOGhuXddcHjAL9JaAwR_6as53SrsXjeRZH_XeOwFzfiGDMJF2u37hGCo-exYQ2gaDsHOL4-Aa1wkJWSQe0Sj54f-x6dia8vXiuy3B-k0TON5iV9CrJfoGroUl7E_eKm69ZrD-oi08rcrHFhzAIQ9ajoonjr8uKQJUuNF4SJHMRUhePNmEqUlk4n_Et5pn2xJrHdHRWMEIXvHn_Ue50SmuSxhmUuK3TWw2QMT8CcOt1rYGjHNpP1g-hE3ZEDMrrGOEV9XdKPe-vujgHZBi_G7NRrRT52RsnPt1_aOeFAMOmU-b34irKLJ-l6K4F-Fpq3jDioxiLnLXY227krrwFFxtqurHAu3CkwpzcpNBBlSMrvWpm_c6BgeoP9V_XVo47DuSbW2A1__6kd7zuL1IfKXVOlhFTeyCZAWUJzF_f_RwaARpzf-MZIBfDVc4QJQG_qxEVfXemEqPTDO4-1gSWPxl7lwGRfYWw-LbE-SWovU8l3Fr1Cddo-mcMp7S4syyykgjrHvHlaJLxLR4dJKVErxVMnBdg6owyv24kuIM-VdSH2p62xlog0qp4WPX730VDPgJc_dZUjr5-jq5Z71NoFVCPrPLX43wgW3ElsBjGc9fmWeVnO2zxdxu1zAeSxkXE4WnTEVq89lmmUF2GdEzWR2OtaX6tDuZryfWMJJr4AELepof4bJxrmZbeq1iyLxmvmHMAGu4HwLeXCMRZ5_yPndkhzy8O9XTFt8_7jk3TdHeCj3Ey2ZWsc2gPTICMtDqvIMiZfTd4ygXhbJiPT373-ROm4njXJlpQAdkTZwOKg3iDgMMlAyr6RIgADga5Nzo5yzeGAgKdhloz3qXMD01NufngSgYoCY-zDDxp2cIgZeZIuvScOcDNJwfc50H4fGjJf91f9Z9Ro5QioA-hRtucEtDdA4nFdo1qyh0jk5cBdOY9_xv_L4aG4MU9_6Us9bdfooNauouvf-xbta5Ic6cqQCeL04_lFcTE_xi1VWzhZiTPbalIN5x2A__GEI5oSReDot6gE00Myx--k6SsTco3bHaMummxkaCpGBAiWSjunmTZL1Fm37l7zBoGghfCiqgKslL4JwEYOAzdl15RNiQZDQu1M3-dC0hZBqUwqipJjzaGN2jyvg2Qf1V-SetqKB4QabQ-ZaSm8v9-XwYMfcYg-Itnkjiyytj7n_o2-ZMYveoid2aeqQYCTnq8_wEzAXemzm3RccfMfwyC_mNVe1YU2QHeC2a7oUFW0PQ0sNv0wrTGrVf-HBObbntBBFW233cuWYBE1AwOEmYEOM7ZWDVSIQB6e_TnoPOCoS3yHLHBsFxOjW25YHwazxRvDdLc6oY_grBmEoTCRz567wXhVHkvvAIzOkwv7iFVql7pqXUHYmGjXPTBlI0AThZlW3DSux_lXLbd7nBjU9SMOvUAQY22HA0SkvLY4b1MPiWiWQpEc17nkNLQQEzGJKA2wP2dayTFF2QfCuJwZ9O3A6wMDOjlL-1TGd81ADHra7KWUMR1ksgTTG65AFAP-XgQ7RB9M6cnvcPBEybvv1ZgTt6SBw-uFK0Vv-1ugr8w3p-GKtl_bFjmHQ9rYnD1i2krsEjUsTR-l9ExqFWqIsSD95fU4We9hetMo47WbzUxwNdS6iuQgM5HhAX8gjMjH8WclRtEPsRQ49V8dntNHncGmDznUMX1NWW5pQ8hxq6sxDQxzzMjKL-D9_4SRz-Ugj-kvqR-QM4HayrJjkKZeFK_o1IlEesTg5H6_zZ65vPxzSmnKi8NTlBBeTHmHZtzYSQtB0p_CF4pweWARbYNnrIguYXCBqH_1sQvJTyZMTLJLIkN63uJwbJ2aqTPdqoTYz3outHIAOFytAEDVDKw0RXbF9PPx7B51EhgukN_9G3T2dhi7-r4VL-Glwy_k0P0MeCb2sDHXlcU33dTk06rws1_x8MTjJGSHp18d4mtXvvdYA7HnfIgRcNIN0Y3QR6CtynAu7vGlj6ELmNLY3jFSclWS7UcSitU2eijkDTmEtGrX3A2C95aOIEEaCqf16COgxDVj4fHA-brZZz1oKaEpTQ0zQxFvTrC39UcBB_GilB1vwsPNr4nj5yJxFeVZFudaNiNpX39J7rVSiZHbpCZ6OH9SCb7CjoBMu7241QYD9IdXY9Mk_KsluDGtNeI4YG0YCgYiz1h5DvBDR3lpPlZQrRnbY8e6sP68cMByEZEglY-pI7V_sgcT0sRDOMXnFM2eYTuyseyldAwEc5QMoEcm_QwHxY3fP3J1iOgGKoGDj9c9ldCHY745BEEpHRnT9k6wWOEYrN2F8ArbtC-5BK-zvwIpdmOdW0I6S7kNj0KQCTYo3FUdvvr7GsZ6Xz72ZoN-mv-JMmSm0b8RwBnzOYH-LpIjISVI-xabkHpu7TGzYGaH6oBfH1FIq8W6THtcjk_jg-R7CGaqqPRq3n58DV0it4COHrlVkeAFNOyk8tsdf0W7ED30UmgstKwB42m7ttiFEenWsUHwrn3yrqFrSuuhWxfUnLrSKL2lHcWh_9tJrCcbUXAolFNAbXQMhhQTLUvOOdTtT7JNXKSZwhCZv6d3OVAHoNy0_4qba7uMbYNifUuoGy_dIuyuqgd07vnZ0pv0_sd4KH_bdR33E3-gKPNFcISoexE8Puj-TUPN1Y-tfVoydF52W-vK6vg7iuTGAmhFZeuF4M0uT5XxiwFoZHiCSqyASMBcMXDOW5bIF9EgJt7ZPd8FiRd1H4OTV0TDR1AyTrL-gpJN191EEiqOk5lW6IDELo2mgyFcYeuwAq3nPC2P9bch5LpeVeOR3IUEndxRnatJGfq2wwbHiQjBKal5LJgWtHC6o5l2y5Ae6pq3_yd-H4894vNRb1wbCdcWRhPQpJTaP_nE0Ezva0ORibUNJ31slwr0Vy8Ax3ZrqEM2Wk_rRtztRsRB-Vj-qQI-44SrI5LraShSSaAWd9v8QRQn6xbiib7UgOygen3HtcfdJyVgL984UqlbG7Xovklm8OdB5FjDs3xUvrlroF7fxGnoOMwlD6dhJZT-sJB6dvJ8v5OrQnSxjZOQQMpFk41o9FtCvHoHruWHyzTDlyIBrGhF-Jc6YyqrAf5ru9vHxjuFq6CrWcrJWSnBEknKIrww9EY-s8J1mrQjxA1rjo9faEGRa1i81mFaceyYDOR1AXA6zgBSKGz_JpCnttfv_2nD0kw-FvZLP0AKRO1mQcgtXDUFvXSIXirEDMWK-ZjAbjY56DP9jzoIy0CKkXCF7ap7Ob9MaS5kTRBjqz8e8rKqTMOKqB-c57h_FEkpI0vMRdDEegmgh5GXcfT_O-_xOC8Ssc232qWiGz9-R-2t9DM4k87RSABRjms16QD1zkEhRySwZLbt5ROLzPInw0QFkWanM4I92EwxIaqHpNxvFz3WutyGZ4mva9ANwFtawPsN7JVy1jF6FRClPQUbf_2E4BO29iPK6-B_Cws5r-8rkBgmOWWOwOFGtRqxf4rToIhe1gcek8I1rxuId7HSCwOqa1XUGlYGgskrc9wJnIc21_KKYIfJ_QA2ilVRWYftqe7Snsm1OZ_Gws2XkB1DEgT7CaUPuVhMDw2XMYxDL8xd7Rv6NB4ARNvFam1ZKT3Ls_am7q3ZVaSsQ9CNA6H_LYBERwiFGYjBBIMdP0xSop9Dq_JEJ6ehJbFli8uKzo3qz7Ru-_VejogqVsuB4nzb-WL8tq8xP9F38t-qH2g6lraAtje_SCTitFYdnWB_MHVM-jFovhjT5ZHXvfI8ziVgMd34xMejVw6qMEmBHBs1tdEExkPq_Y3LDeDmUwGSjkcyvraMQF4DWuVAOF1M3Jl-V8OicsJ2d5Auog358ZWt4ntN7iTt44Z0GBLIUrlAOANntDvjDk8wHHjoRHITwRSKAJS2KXdd7f6i8SK9vee0UI3KJM6QxuOqsEUhxKgStOawrAPV6A3E40HFxQAEgTaMzen2sbb31GFm6TeYNEGUDsrB1IvPnpLdXjxcG37LSonS66Hp9wEnWx56BQ7nVC7-8yglofhqjIfciH4psfIKSR43CIMzYa2rujzagPv6XeO9ni1T4LrYNxrd-cR-S1ebbkz6HnZ0tAkk_2MlTeejduxpmeyfQqTSFlhDMXx-YYf659qPXZ2T_HabAqwciVgi4pBOCr5W2FPcZHqzF589hpzfYkxtgSF14ToZW30VUlaU6rn4RLwt7ICAKgtxU26EU85SAWDgfsaEURg83fEI4-V1IF3GBqpyhws7JVMqo4BuSeGInX5qfkoMUEhUoT_1rYlf4895OS3ZuV_RT8eNKNatu3qRG9eZbID7CayIuwv1RamWbnb-t-27qU1HX3zipAbcgvpnXHhzSQ2EsrAxq9Jqo1HQBQzPf-IpB44FVwHyf3sVbkRpycpJcEb_rjaa5dRXXN2AWhPRLAvq9G3xc0f3ALmONivNMGwWtk3wl5ijqzxyrKR0SGCHmzEB5YJr_7oI5uN-ktZMVkv5Dwyh2J1Gib2TsSyF7ZeUD0bs4CPe0G_KrN9B6Noch4ngnO5KV7XVDqxcY6LgEVglN1OJxufvqjSXt7M6TXMEkMLoO3HsEutQAh7lkE9fbZ8uKyUzGugEvIK8QxlhFzFttvkDrMUB8egf5V30_-TPftXnMxp_P0JTxbmcP4beyyA-gpYFYJS253A0eE3rnQyqwlv1MNNisKUO46ftqmMO3rBA8jXhp-amqv93VgGAUP7IiLQFdyDvAp8_N4lNcAruh91pYOAByMgeeSXPFVlwHJJDMF2bmU6_xBL3iIxkHhzlzEjJVmIU-5MI_jX8Usbx7YvTjMnEBWsJm8XlN3S1fh0tKvEeuA2lSr_gIIfuEQMKmpKHrf5T6nquJORtYw02egwOiBq-WnmVtGAQceHCe15kIHmRWGHdA7ksI9ry_yVgEUB8ppWUn8XMX8GcBUJbbSGloN98L8_UR5WyfcjmbJAQ21BElkdcG_2PQW03HYirgIUShZCTcE8AWwE-m1EPRSSjmbrIT70HELOflrCckiG5bNH544Yj3MxOqXdLzoWMcN2mPZL840np_dnl8PrkNq0tFhAFU6j68O7eePZYyLBrTAqITh_QMBhHy9oOwAwlzNE4OMNPoPQldpDwKBLhLwDDaZ4z-unpHU2IQEmpghN6EvuyK5k8KXAXobgZCdQ3AWosTsKRKnIRO7MKQQJHtqA4mUoatsK6KApGna-IXXh6MuOy-3_jzAvIisZh8csE7LXOZOJVDGMFPGzt8oVCXBI84lbP00fMnHEoFBD5TD8CnOg3dXjydgYN-LGh-BZURuzdaFqBCXSm_Jr7tcvIeHlK-5ZHLndA_JuQFc6_uXtDs6XfoLWT_hyFXm2a7N2VYBSUrP6ArzoBZvkTDOFMWLMSnl5hOVCApm7MHrmC7OGOW65Un-3LUHA3hjBekOfyHDUbpwedFzY3wOUhUxMFpbeSWi-L7pKSJRbYiXgoc9yFcO3Hh1PdweT4ivTFZEZVuKq6LdU7SCG0xlKsKqnfPnsONsZANqYO7DQschfSghNWbiURtxrlTiWZ9PSS4pNdnBHlSwtc7idw2E744QBV2pX3CdUGe6AHkFwwun_ipYZGcCdJ_8EC2jHdBOnhmYe5R6VdDC-zcNHmPJE--s0B_Dbhc4tsZXVX1Gsg-xaI7rNUmIXmVwI_023nax2xpLGbLWK2f-AOCkmjSfaDD07K2Ei5anbGtqdggn5cw4LC0Oo5Yk4XowMgxIFUDjL05Sdxp4MfU-Jx4k44SkZoDLixiY4D26LBclcGG6hXhPgawqoTm-YXrH525ZjKzjQOn5sCKCAHdxWei2dPtobvjBvQnxh5SQvbSqZ_G9eYXQBV7MH9z19ZtcJwH8UjrKaG49q7_ryGvmN_l2hGXGdMXHXrXQS7v9eNlL00NDUN-j2wsTtzw4Z1h-NbpfOR3eMlbxRTawnoOaI6sTEE6ePsbEZaop-QB-ICqVunVxGE0YOKs-N0im4lGW9m_wPdJr-EPWS11OGMCSZoevK3IBOGviAPc9zh_lrRv8FT7q6HoJHNWKxQMbFkJNFPmvZKuj9ZS3pcvDzSB8awHWTkxtR8XI1J20n4DCjG48JUrUj2ank3zYmscI8s5s60jBG0x0RCFPMR-fl4upKO7_-2THkiURPZAbs_PO39Hw2m9TYvMVIneqUTX2CIzACrCw3hJrfAC9Kpjck5JeG2fpjKtAF5538xrREwAc6i5mEju-DtB-njJX2I-6ogJfNqRZWFVkuDlEIVhLsbz2uST9wU1y6mV24BXJtCei7dsAxmwWYAJJ-jltsqeAn8FSJmy1w4UsESKvubDk3MzeC7G-hOvDfqgc_v8QNCIb0g5BBix_ogogiwX9NXHxgZAULQC1fT3_xl9KhZhfiAa1lb9CCjjrNhGA9_qc-FQLFMQs77rXbQ2gBMYYirx7lGMmmIGUloSGeTbDtY3QPnXniVX9PwNcH2jQzJuW156tjrNHeK_9KCeUYV4x4yB1cGSJMHG3IHHvcAJpATKB_VUUo74wQZi8IwRE_vNcmNQZcTRzlw0k4eVshhixVMLetR8mn15FBohJX4_I87WZbxcXgCrzlvXNhKXrEHBBVhN6aNNgSxv0wzLZzG84-tBThrui5Al4rD8GWcgIFIDo-PQDdwY5C1M9Sqox8mYBzf4Zid6ht1V0Zlr7Mv7zfKYuxcSDvo05XG15UIe_egEu9xVvwwtjsAEgb4nZWqQHX4dWHcR6Wb6agYkXxxNVjfJWrtod1b27EXD8AG_00GEIaWlNq9VHlI_3Db3fHRKdJb2u-SlK3zzNBLDUl4XODZ2Jnndv792JrGwaDhUvSO72_dOTTlsbKFUNKea2MYYUwdnz8R6506I5-aYQXRbX4L2VRble_HYZPhYTK83VaImAUTNRFG2oiuZH4dylFgxkS8-6xDSKEUqdXG-AMbZfjwzhQm22mup9m1ruufWWdwJ13DKJqWQS19Z-Bi0Gp85AEVgy0T-eRJkZf-jr58mFEnBJs8zesXMWb7jKr9IjS9aG6DUFiR4srpavGyRaon4E4gPdtFY_ugxT25c2OUZDPdsPJvxVEKGagKov_Hay2gHz-W384-g0JJuFRT_d1CAwnpp9BAXSXNYWrzD2Tt9d8_BZL7qwWIrgEeePdduKQU2EmdM6f0YFr6gQqcBgyGLRvK49Ji1AL3VPmbfqs5TmWbwXZwfQxLLnbJFQc2vytABwvylHdvF2kB_qBqNyM5UGAJP9ahDV5PkYOPte7vXC6jA2DiZz42tkHyaiXQ-SvP_Nn8Qzp2zi178Ht6-FgQrnTCTKNVlQnyWGxHpV2iH9iV5BxPVszk5R_mKllqeFnTFI2REBAvVVNfDm7vjZGYYfpEdGl9GLEcb4s_EfnlAjd4ebRHfsVaeYaAH2C2yCYOcpWreUk8K9kYlBjYaJOy8SoxVRpbY2U7Lz_xE7a4YkQN1EgXgX5rg5wPSsWFigBhSpvlQtUV5bq0IMimRpnntvKwG27bE1Q3mvkoKOktFaz9lFGSE6LdxU3gxNTEX12_0gOCCa6RYkjRsbpiE5K82Io-c17yXnZRICjC-nxuDAyg7nNN64qWIZuWqjmowpFMAkTWc7xLYffwEacoi9MSkRnl2fTRqFXlUjng_9167KeBCBUVNXnZEqiUSouzvFxZhY3N2Ct_PebCAqH-5gcuEuHatjjPR3zkY8P3MZmhNXxVkBuQIjwe6JVfuDG5NZKTGcsahJwgc36dwaemtvNHTlVFu_RL7SlbMYLe2lwzSX7H__tL5tw5suL-8tmOdznOKqZ7m-WpoDVydqdDjXVIyUAn6aT8fjbQK5As06SnN8G38xRVW8fmADvSnHSFRH6z9GNOO-GMK1Y07UXw0SS3u5Wz015sA9c8LF5qCHkYAuomPHjhnEfzDLIscDVRLxB7efJINb1hi89-SWMoysXzFRSzGNZd8AAh1Y4t-bVILccFqftAYRs6thoTcMLn29jA7Y62VPccU3tvZ-a2HOmDj5si4df54XOBZNSKfUmaPfFQRGDtkZLU_Mlw-WWKuX4MJ5kuaC5o25k_lqqcoH0hgti_FRLpwcq4DZGNyJh7v_By4oEJpBqeYS-bZYvNl-bFncRRqXC6jgSC9_Y_E6P3PXz_ok_zZW445rs757BAlLMW623ryb24tdw9GlxZ6Se16jn12rttiIPDVOGjJFBM2iBsuGDvyxEeoT3NLcT291lwhPcYg2Q1fiZ5gdR559qoLD5kXWDsoEPKOhKA3CICjGHZ9M8fvnhUiWPJrL3XFZNkT2wm7JJ8dal5SVBJ9fGyecz1HOJQApPQ5UHp2YrIkBa611ahIHClVLE_ARjwHiiSkeV6LYuzUBxG5Hooy_ulM1v1RQGvH9iIrXDv1kINI7ZIB5nQyZhNsVVX5XYiHIQZ7GmcATrUAVWTa3NhH7HA5SRi3KJ_4eEBq7aux3eQnrjxXoXRtK6s8Eg53OC6hfNmiGnEJVGETggc8j4InCtEmbgcs48BVn29oKMWe-AqBEjSyyM9u840-YMwktiZm9RYDMyDTyDqFs_ZswI0KLhq76UAhxSC0-0MpXLO2o5Bmx8KkYTDQGVieRmPuz4FDSR8TQRpDDoMg6mltNhyrbqAtPVMC_H958sgymROYbTLGbIbfpbye-eSqB3B4Y6rY4o6O0nK3qxCEKqSDsb8ew_zydMsswwNDpYWpUE-tIKHNQRCpqH5yF6Y1iiV-nfYvSfCNW-anRSaw9EIvACziIFy8iJyDXFNVH4CvFMGleMvXCM3RkFtgs3JpYgg_Hsa1SFb0h7EowBK4Lg2YxNQ3xOoN3MdHwT6EphtQI3I1qtUC8K-Pg26tJm7r3CYjAIYItydDvH-aAazjYBKBpPOuiNi8dQp0iTro21STpRhRegaDdHGgNIuPhvUTJTyU-sgK7nuegjWaW6XwbxH_P1deOOJPWlWiQWvWjphjNqRrYu5IzFx1ifS8Ls11yejWFhgKHQObYKde746Cgax178I1Ou1pk9kAnDsJODCoNKTZeMhvProPL3eBVfz0UICTIIbvXGaasgCWeBAyQBCN6g2MIQK8ejLOe4_QTPXVqca3qEpZFmYtUMlOk1SGNnZarGMswPHfXJEcEH6LnCYVGcS_qzu9dLkRkZW-hTw_JFNq1now7eV_T6AbpymkAsOo03vVnl7Ii4Yb_m5NBwcaZL2l3Yw_JNQViZnKkhq86tzda34Ch3MRBmthUO6lixXjbyK73-lO6AekyV7Ia3Stcu0XWlwXMOSyWLdpcFTr2dlzbROf4TGb49-1dlL79MXNjKGQjsncTAleZir7F2jGdy9Ji51-VGUAlG3hPNXIC2vBSUNq1O5Qr-zHbsQriDbzvcQCnwRVuOqWod_XxFyfkxN-tuMF2kXimC3Cy3_RIPCLwE5xM4GlqLviBrjaviCI51eGM9zkvGlYWu7X1cWOFDiYoyBKTPfJNnEfnhCiVpq_vz02vWZJ5TPLD1CYOS9ENwqf7if1DPFh_7Q93UbJ5IjnXkF_OXE7KuE3wp_udK5_IUI-P-D8SuxyNw6QWV32WUBMTpH6IlHZw678I0YLIdCsBuXVrpwcqfOU3xPjAl8dmG_XqLS_MARyVmY5KZd-SWZI4flJlSh2AzsWm7PJOdGSxy1YBci41uNnY9sNC80L5VlzXwRUw3t_31RaU-tYiLON_vZVjqL2RdGsQF8tnBFxZo8BA0FtUUQIEpmSQ1Wci5yLIuSa14lggGmlvk8EzSeUDAgDlK3mxe-FvRhvJLLX9FUhSvSaNYOxm88HzjaCTMkNrVvr3G-WpZpOYxwp61erkG-fWRkaUdOh__SAwM3aWvjCg-8KXeoLrn6j_LRfEzDlO30a5RBlo5L_dlpLLy0cja6qCktBWkVqsBpL57lzZ9mxaAr9MuGsIW7llM05_1Iw6gn9MKLo-fvfF83y6fdMhfg3SZE2AtE_BaTdkIZ01J0G-L58wheC8-UJdVzXZqa_BLVF_rTVq0SEhKWW_hERHB7t2Ey7cfqudOtoWUmq3OOYgUqhfAchHgQrJiER2wTKyVY3D5oaACEcZCpee-gzMdQYXf8sVjy8KB7fKZ0UTIAiPph04TfgN967X9E2qAmdDx-HGeS8KkO7Zyd-Pk0AATBUzVInxMwV8pgygrUOPjvaLD3QVjtS0K2Gj3ST7jCLhlTjn5fOUBcv7d8wLPUr0ugsV7BXZi-E-QV5AQPLwq4teDDPxnb3fZzcSpdpT6ySvZDh09ae-JWH7pap8kVimzrAU6e_g7ykGzHiQ8xPRM6yjL-NCsGPrb9y0v2F4wPUSb9r3XJgKIHOBgsVp4hSefhYiiKtvtJH6XeE7_VpiHKakosa1tWNahAGfbQ-ZbXzJdwPHSTX5I0K1TuMEnBjKh5CmG8Hqoy0mDlahucP6_mi3XNGmNUpp9G0sS4el2J1Ra9mLnK0VlnQ17qriQI4OWKxOjifogntANaYXyFVxU8B7RKXOr_QTcBKHs_MVqUqfdhy9JwERZ-sOcfL_5xQnMhgoo_QlxoAnGp5U-A98MEfdLorzMFX9VdRRzY_-6atkuYFjFVo86_NYCDi9UglwvdLUXRMH0EKDhyuTbhwqnSnyykfiwJ3w00mEXJXFs7JmCwZqw9524cBJuvbi_5C7Tzbi3v_75gSVRCSeXRnea81FdFypxSxVAK0AyBkhVGnEXoLHJIhs-ImQi-rRb-WYTVHkx_sKjeKFIVx-Mu8xWFvAZB2H6rAyu6kyMYnptLhMF6mz5o-sXDQv8yOve94d4JmWAGJhI0O9EiyaXskrKqhqAfgU27CzWgpD4ZDRxt9XI3TvjFtFzHtBjqiJ4VtGcjswE6JwmxIDp2u6-a04R8qvrUplZUSseHD0r9hhPTQ06kLPmmApBwq0UWMI0-6ZEWwdB4iUlJMTW3LccgH1IwRWsm0KcNkVUpxbNidUWWC5GSR08TaHn_WTjXj2H3DOjMeSoRsTQ0WZANZoLwyHLJL7lA-pHDUvAH0MWhIE5TzDfP-GzYx5BS-GCaE4C7NpiyZt2av7kmQU21Ecvrmo_Z3qewhFBSRPtDVDL10bSQzHWhcvhIplCKprSeY9Xa0lnCStf_lgOTi8urlnHbeMHbC1MmtQGSlnxC2g2zaaD_XEXmLpNPghi9DhbWwoYLf2U07agu2wPGfgkOkQE5na4sF6jQSNo9xb2husaLtvrOWU592_h5V05Kgro0C5iRr7dRq14JFPJaMbWkdEEoO44MrfiSAToekJPw2MDePLbdk-Rg_V-yKqMogJzMrsIcMIzgKxam0ZSWa-e1iFK8aM5woGoP61JNWlYnl6NtGJ9APbEZ531KgLGwiOOOZ3q8WrHYrYrSltMHQ7d7SDIQtiWR7wFHKyjQlvJNM6Nshehg-HoAvb6PK7Nmud1ayZ-9Smfp5e352nAwfalqMxsrg3P0SJY5HcGvG7s0X0vkHMEWOIAXawltIb_OSo9AMCUCzZ_P2Lxlt4Or_I0Vb7Zvw3uHhTTnPRpoilI3hGlc_w-q98bNJ1gACuPjG5eBBQue_eqqECDA4uLCQs_y3oAuhO92IRJ5_ioBoLgBZrVheh2kCyzEKdkmb6kQghT1vUvMcp8MuE0ToxQRIKD6gafFluDiBbLXz6LoEV4Woz0byDut0dyQRmoxiFMNn3OdBrxbWucSrloGvX7IJcB3qGDyfZhkCnSjR1RiK5CTNdpuy2x_RM7TSqVNE0mNUbxjEXYuyJ-rGCn35GT2gtvEAJSWtPVP9QK6GGBbIV53yW1aO5Y_hi3r69gYKWMIdJ8GGlsic7HPgvYtTNK4frYLru7f8ciErvanqNt0pCNBNnVlcFMVjLfFr-pqJvZB18gRNWppIlfgvkwQPhe2xaA7dwDY4FzvDijZe7pOz-7yTGXyVWGtyLxBKmMC9v2o8lqPeM8OtTloobJrlspgKfO2D9SRA9Be54d0Gv2UhThqYCvzmq5R652xejAA2EaXqcszVZjQPscZLKqLZtO85KOpDs7HLayNfK4GFKbSjRYoZLfwP8tiyTCxrGF_azRUEmb478-7IIPiA4exChrKL1xFeZqN5nt_OwSDCTpHjkMhHXLsPMho_TetI3CnynV0QmTFGExnGAcZWkfmk7an-hnqJx3JAgLTt0U52UewYoAGJA2stSwBFHhlG9IhcvFfpszVDcboQ6NINL5vRCFiIfrH2Er7oq_gkYWABySiDUebSbH14UR3ChNq1AKvmUMXUR4NAJdqAZcX2OpuaWgMaf3HL_NmHmxlUMq0Wn5C7laK-sGEFvtSFsKemBbySK4uSPcUo-hcht8lzghReQ_ZL25UkAtgDt2h8K_sXWovp-laCtpGSgYusD4VMn1A3QwjAbxGMNF8y-ZD67a07vhXqZ3Q3AYdzbFvO_uKpyiAKPu7gXBa_tqDWW8BKJ3wBmO4lYqEp4qZEWPRqEQXSOaRLML469X3hrfBe2iPa4N8FGyb9XA6x0EfrlzfeWbTm0cpEGvOGa8HnbiluZ6QHoeTqVNtvo3dRoPLYsMpcsiufFzVsG9K4rz1sDtKfBTAZKC89f07hmUixxrAthyRCp6aXWxvEj3z_Ygylhy8WbSi1Oic5KD3JifbANKP0eTo4XlytBr-TjWg-alG-LS3MYUpZ5uFtAb2nDkVxNcuvV8KpW7i__oMuOWjiIGkYwqq9YTz1-Zkbsuf9nOiUNyToBxpRTF5cJmXjymt6C6qoQgduG_MbAcJmNxwB0Bsas57WXGn_wVzh7Mqc6kN_sl40SvnOxN1RbkZTAECG4swc0yjSVh5Ip5qwpl--v0pzC05saZfooynHEyThjui-N6JGSil1w2wd64su4gj5ZqRIZaY5TahdTRWHnOYCW3zU8Gf3NDhnI_dhyx8pGGWGuCodHECHmHTal74jg5P08f-VcFeUmvcAT-yRHUgXgTxqQapkCy8PHGfur0p9Lpih2h2K2zE21BWDV6DicnnvbHcRWIB5q5ABKX0AcQibgsp0dCiWV6NLNoE1SeyobDOgoboydIhJSdQse38mVTDi-kR4vzCNFk-OyLiA-TBqCb6sunXk2NzWh37Y93lAyFkQ2CtP2xO74haM0jK_-e-mtU1AvxXmUWpf3j0aLdnIl9CvXWTVvTomUdGopeADxJ1uGGsZ60WZnXxC-iLV2L8VXsVRJ-ei_OMm5vqUD0xQsz7DNzph_TtqU3xw9pxwGbjF8UDep2oHtX6FAhgqTaAbRp4lws6Q8JB0Sp-asoyohP_t8Vc301Z-89UMJy7MLPOciWitbeU_6WvZZGMxhE564sdKvzmOiF2GoTwwyuJw3MwnJKnrItLH7r_H-Pgu9plAcaTxmL8pU3tXpUGm-y-uVDLKg538_iXArDuyN0qmti31tQFje53MSK1YA7YWgxwOr_X8yOQH7SPQ-j1s--rubo8zM84Ld2y4zIFSCkSCeBwu7H9TJrDeUnUD0_PEXZFD9hexFWPlZqMhO2z-zT6jfPGpJHzyodus4dNlZ7CfFj2naWEd9LjYDzd2dQXS_WLj_hv_HU2rDBznkB_8MgJvDcEPflaxKtPUd569aO8bW3Xt03NC_yJreWuoGuyJpY9gx8rn0UzFh0URi8Pe0TNQyE-KjJb2y0_1SQRUY55qtIudU3WozqlGFUAlJqEZTtLT4TpG95AZu91mhWkcQQmhypadTReadNUBy6ztYEvppAqYPL6ml8FhWqFpDbxGSp9QX5ym8uWzrK_mg9h98ffqY_smoCnJY-PyJK4tdqaSAnVdse0UbopjLxoDjMOL1Ju2NWE-aH7ixPs6X_SO3X04ISPwilxLBhFXBbuc0rdA007gH-M2-zMQXSx5XtMk-Bv8sYbcIoAzZXpOKhAGl0lBYmv7kSzKQxY49gHUygCwO25I3uCIv8a--jJmfMXvMteyULfhFVggakPtb_ReKmcvqjNpYww7PHhFE6IPrbAle9Y0L9el4GW5ctiJ9XMUe6hNu9zhUaVgJOz3KyQ7SWW_DOPDxNNVNUWeznMbs8FjSB3xrvEXhN0Cbp8XlcbKQteU4-0fzh4pwMxNYY81rIiQ5VNXLEdCzsnTFkKF-L5nY5zEekqyejtGKJfYyfzCwrVABsnQbYN3TGfdE-280AdIHxcmX-0JmqGML78LuMytjYRWIdy9LkYUbW57rz9FEk20PRev6U6q1oP52aMEftiuZb1KiYEnhMQR42gEm68UmYFfB2yJUjz1q2UtDokbGZwQUlAhIqadJbd3Qh6rfI77kOQsQ7dxpCO5fddaLSrLjCzrPv9nUzSZrCjY1JGhrr-ApruKAWWR79EgMmw1tWzWTI_NDiUFHYYZZZ6PpQAyJkODTz72Xmo1SXzDs_rJdpmOiVRjunsQTnFPmGRMWkZjZX3-CGSMPpm2pHeRcOn3v24we9lY8lR05EmFxZnjboG8B4r9uRHWqqQbvN8YeDdi7LYL5znM7uv1mTahO-SxLj7O6YDlnGVLYn_pxc9feLx_XT_AYR4N-ihauIdLlz7I4rBy9nrTk5-q0TuNpFlgIHUOmHaoyjqJt0Sx7hXEAnkOr-bhO2g0sUTHPD5Mjg3ITP0KOJy_2w4LVKjJj4BueUvkfZiGH00kZuLQj5mliYnYQWFEOoJ4iDKOBuiBA5zKXJDGrqKKIo7m_bWSRRXjlJioLVmDXkvUNZ2Q1ztFMrLDrz_ByMQRhxOb808q4RopYbrLFqjrpLJZimkOTpegsmjBWOWLiaVZim7ghqocOCwzJHrov5d0jLGmbdtG24BURn8gNUaoh6HO4f1bR9suf-lCgC12J0NEazB8guinHGd5n8MQpYvjjQZauPij56YOQofuF4KeBXWVOHQ0scqJ2UsxabKo53mwC49zZNDUbMaQ0pCcpsplz_ZnKjlhh6vGEEP5Rb4Q89GcbIV_1vpjoe0r4TFqZIgRL2csmjfObSFSsaceRhilWs5NW67Rw0qV3UNZXD-yRObqbLsOgRQYORARigkwtNWWWfJeyXBdup4G_8o6yOQqo4l20lUZXDTphKZ-EUyA2xNtp44aiQD1dGglxo4Uvtvho5yP8ba4tgsaxJeBpS9oxGVp-f4ftGmBiMJ2k7qJTwFx1CX4p29NVkKLb1hWCaom0amEq5jUexjpYrjRmeao-6TW_xvARbhJWfWfN9I7SMB2ln0P6BldiWLRRgIo8pRB5V2RT-TJDjO2ts0X1ofLle2MmDq5LoXAW9o6iBSVIWUP52cvywt8Sa2wQAcInbo64olyzzZbX60-zojshl6LrR9yxaWN4ETwzcRWoOKIRexuHXNdBVcNgcjISkvb2KMSxAEtuhHOF1SSBLMSMYx5XiXB2kDW0i9-II5N572HrgYVMRodHN7oSuzQedjZfQGjzSmn5uiZ9ca0D83WYcgI8VIvmLyPRAW9UQkWGLFpJlOteOVFvqqrw0zBwENEfP77Do94K3Ck5pbenaMVTCeo6L8XQ01-rypv5539JTOlhiT2G0yRwh7aoQvMRC77DUbCW7BzDdgaF2kwspCVVaFEqTVbLOfDyZz_mKrTeJyoMtIR9RpWZfbRmonteeAsR0uUivEt0220cmrhBEaoEolBrCWydiY_d8sRWhHlvkuq-dXUnFaKKZi-h6nXVRuc1kkm1m8Wnp_CRxpr3OxnA4jR7BPzu5HcsjttJZd6IPFwH9BsZK8n70nrsCKdfs3RklsZ2hg5Br7Bu6WLyyU8QBCTSSxAiwF17OmR5CZXrzdbkqIQJoxa-W4c7DxGhMbRESNHDcrDjEf60pwpv4Mbm0WAuomYEUYY6p9X4V6iqTacp_OtQmHktkaTzNIP0DOHMYw2i62ALv_6QPruw1d7goNhLNPFWqR4M7BbsXzx9xiFl5h1n0jnOAJ44sYfw23rZqgm4y8uC0BXp5d01DZuAjumAEi-92VFKwNPZFGveioIJytUcMK8xVc8gZUo-HwaOXviPcmc5gPoqNqzuHNKXJatkKAmVhd9vAWcvPoTgwkHoOZ0oTAIES07lHmvWkXC4dgfV1sUXLYI0qmX9nxs94z0GnVUulYVyKvmN09yy9NBVEjQfF95NXKaZ9v8oSLEqaHAkbYQ2AESHH7BcpeRgnseAhGoULY0f0RTS46LAl8Had7KuSzSOb8Ultk0r2Pk7hZNSUBuBl10G_lW0-y8wev811Bfv-oHlZLyrR-8QRw0iIwz4C9kxTPs01G2pOgIFdceBkZqqo61WcAukWvJhhu4fhor7k1Jnqp7bJf79Db-ul0JX4vYo1_5_gZPlhh_FWV0DlkGyEHK3Uw-9BqG-G_tGMSeMpy_ntw37jsbbefC6xuPA6pSGQX4TDr1QFi9J8E9JFIHl4M1H1CVPng2xWukvIydBVbZWmX7P50ZPo4ZWY2UP1DgmXFrcYXZ564aU7abYmbU36FNCDrBlx6xZcsnmv0cT4tt6On2KFptd7awF6-Xty20G5_hMgl-OalY1xlUG60edx4LOlBnSXvWzyh2buGTE06W4QR7xR1DDkK3NSsMWWXYSKSjCVdWWVqVcUQHIquz2OQ9penV49Ozy-EsjuEaVOoaMrNQOq2wN3UMhNCj6Wc1LPZQw64BsEhiNFwuTdMXS_qsM0d6goMEgY_LES0Pgc4reMBLT4cIsw1s0q3Tc3zflCCm-tsuNETnCKyqMUdvSwf8OHT4WA_yFrCrZnU6ctzNay8Is55XOYLAvwi25arBh7HdWlY9aE8ETvteqaweGIPpxk0klvSsk-ZX5OHVUFM39Xb82W3SF8WRM0T9C1bIoK5fpzz-i3XXlbOcAK3_KlVJk4m4ozm4NRHeg-ny-SVPq9GAzu6O2AxXys4R70D3lkxsGotaTMJV0xK3P0bG0HlAAduj-4Je-cJGtCmUuHdpB4kX-0zgQ6I_eIik3oHW7EWPLS9Bpg_FlYpeo0ntD3ypsaOrzqjjzJynE9Moix8b3QIG6YzqaBSO5RZKRDgheFDONNvFh_1agGy4SSRrgTs8ndblkszIGXbOlCV4A-QmJ-yiqMuvZmYosoNnYby2NqUBmtxB3K06zVrbzBMyhrU3pf4pIi8nf3veRHCWTXpoDVo57tXLrD-njcjgH9H2L8oNXiB03qR2gbVpNmrBvjvxwm8JVb-dDTyvJCIoUFByyy-IzFVm4uRmzOlm-nRiFzja4ICMm1cpR8n9hePScnQAxFdsOarETPgK1GpyV1YlQ0DCJ-aiiuHg35wI6vc10x5it7Hp47hSUu3elqEoBA2fI7Fl01GBamtnV5LLc6Sw6BtDtMrClOM-6itTt0dk51pA1gfjCOpCFerfh4bl82BsCnzpmQuhODEdIy9BdM_zDomSVf35d5IKHvpnA6nNHlWcKKmEBf4_zE1LcdQXUzVMHS-P0VsMsdyEN_rU0IxOrt83ABB1hhQff1TmHFXbRjbq83JO-9cLj5m69uJIY3npxTPZCMbhK5QntOa6eGx1lumDzXdgy46XJC9gsuhLU7UUIaDO7OXkfY3GLe4kvO1mYsr9-zNnikYh8gDoCKLvdhelDkv_B62cKfbeloH0QB8UvVpW0E5gBiN2Max9yCAAO7oszNPLtjw2AfREzoJ46AiHC8gw1--ysmOrljDaRYylnvAT79ZUw93j_lLoFfkyetbJQ4HipPQf2ak9-d2ZNwrZl-myFSJzj3tKbSgZ5-9EiL2qh3JuM_CCQJjHYIPLXQrhezp_7-I12ign0TczklWC963why5bO5ltdLEjAuBsMB3w8bkzRFBaC4W0AYe70Mo2VkORqYcGu8EqqLAFg4p0DUKudDPXqoLCsGCBpfGBDvALvJYxR85KeJYpe2OO1otkS6nc7bQYwc4cOS4l-2eaBc9EfYgW0befzBU-GNnO2sCY3GZY2VcHo5yFkqwtORNy9eFemlIC7R-I0hZDYKYF--PdaXSKvvZcUAMHSFUnCVSDqp2_9yz-zj03E_gHQpbUWsDhnZCJ_u0k-cZNHT21sNDpHXIo4Uo7PLwDUn9kjvsXxYH6mh3zn6pC0UJeKz9aqu7y-JQl7OWeAkv8rReUfOrkCOx3Uqw0ZLW9kIwnVXsbs197WVMEj8nyRnZOEsHlRaPc0-f8DwAS1YgUZDMk3Quhoe2lhc2Bd9eQQaJBk0WAGuNSfTnpWQ1DiZT8lERNcP71a64zewf7UeJdaFvHOqvP0DFv0BWPrOIfnC5Q6vSMrnb9Gb10lNNgoq816MxCRD0r8aKcU12N0VXTQh_0VGLzQ-v1IAjxndy5ttMV-WAzqnYjT4DjNX2au1QP5LhyZQpbYtKXvwAaSbU276ev4QAhSPwKhSf5b8RZ38NGyjXpLao7n9eoFc-4DdN7V9TuDrNylBm8izGnd5gSWpjAyp8x7gLwd0-4K6S5hLskUT8kvf5LcwI4NmaQvBi9e3Xcx-1B7xy3MnwynL__iwTwQvv7w5UFvHxOFsMYgxb9ZYuCab1ba12Md7-dlJznww2HZGyKGFm8_zm8dltYyfb48dsW9ulboW-A2fQ8G4i2nmKlfFcfcju5Plj4lNdyEm7ShhAHMvaxlhScfOLa8KpGM2NzX_qdVkjKEzkINxDM7mZGWok0MQ29c6GHm3RVz7ESP9sL3yNiOWi_xLgVj2HNd__Db9oO4EUhEAGtVHcyNm-xMuw7mIyKbnER4Jpn5O-7f9Jo7SPrZInn9s5hEaJoR7SMve09m8jR4uWFR5REQC9i9cB6geXYx2uXtBiQGM_pbnBiaAmZ2YNZ-0mbvr8OQfFFrQXpleUeHv_BC9eLUlA88GR1x2PiYlFj_yWWLG78L9gjlgiRJv9hBLdjaSD1a9k4M2KRBDsW8KHYeWOc2VsJNqHnrJbFS5mv3DxX1jXcHNS3wYZx1m1yTkaFhb7xukZ8DaxWwjeSujzsKe-VUIcW0kYYNjghuogFvkMi6U6zpkeEbesbdOzCBhhv12ExDLpefYme-33xEAg7F3qUqKAo8Lw20szarDSVa5hGIUeiQHc3Ma08Il8YtQeBHHrOFevWYQ4OVlM3WPqKuP-mVT7X_gxpLG7MpgMPj2u-dchVBgrNwZnG73vtFUe_KwTxS6gdusRS38qzZpFKRlDeDEeYpP8AjL9ehnpJn0joVowKtUiMj1JnfAn5-0H7ws7tYCdT0RarZcTwlieokV_GVai4Gxaf3LKrM_z1MHK9nsNtDUmusx9PSobuccRp6cFqd9bufyHqLfu1Uy12yjg84f2DUixlQtdxzzbw82yDqKfn07OoxlgOYSpQAG03Ef0xa5N2Z5dNdJ1QAakHP63DDs1krQiZezXAjnUcJ6sHghNd3WRgN8jNRWEnS1Jh0m5OK_TdRknABW-BrjRCfWyVyDKJmtL1GI8w-BMKPbc8tYqE7Q0QKM-cIhDjV8g5aDxGvVC4QVZ6AVDlMRzYVjcBYjeKd3dvwq3riDmlE7LNsKyXEBg2fS118CH13QQ1BCTbvv0RqvjPZDZk9X9Ed_NyAeoSaQstaJrbxrgdu4l6kauL6zC-KZfcLHdZ4zHCvx1dWDkyjfCKfuPXFaguXTcFFzhHq4LZ0gzqNIhT7twfwwYF9OYMHGY__0QAMdcjrpzgy-ob5hH8wEzWsXIPEbwDEEdeqgMpkQeRflzAbjM_-dzEEv9BHS1lBLmitx4JvJvJgGznAH0hzpI0v8gfvjdwhTYAnBE0hToTx6DK3vGZRk8gi7F6ckfjZXl3-DT-zJ7iypDg9wGHiwmjsZSmy_aO-OVTyg2i4Tf6EkHU9YmK7wklh0zRUtFBSMxfpKw03gBp8Ug8t9B75wCeG2nH4egpR4fHVGQYyj5u3WerT665ND2OcioUGCOXGk_pJZKMTvw-JZ393aB2a4K4e_rLAwN_vzFAiQwXsx4H_nIJEQo6Lm_5Bxxg2jXrkECLLHHJZKnIZTh75HejCPIhDKrvAOAh2TcTqiXsc_IsaghUl78mx12Fy3UgX5U9OEkH2DkCz-cPkW0AfuB8SrB4b07Bc8s1Gcf_-FcjdlhaajTsjtOc8cjtGo2Vwz9lbSZMYYZbwB_UKEpTg7Ga9DE7qKP7K0ypIJiRHdCZN0aaLF-Cbd6gIMZWEklPbx72zDZTTIOr3q5edByUfwt5vml2ydsf6w9zyR-Ryf2ivAYmnNHna4iC84eoBYn1qocJwpi6GiJXHMoHfiJgnZxIE3q4y3rD5SNM9d7b0OsWEu9mDyZB--UaKPC5mGRK59QDO2Rj6nTXNbsd3ErMZQhguwK1sQo_VS9-pWy6WWdjZjbCDJLdOTKyanl_s0c36K6C0gKssr3a6mU2_564hlH-SC8c9efc9V-euIUwipe355h5BudM46LOmSB95XgMDKEVpmMn9G_hEMrXdImDvvccOrzblVhhEzlgEZe7JmO-ogxEm6P6As40Lag5YQgkB2PMfH0zHSRUf2W3VyGr8rNx8R8Rt0ox3EasXliI0DGb16l6eKCZuiDrfrLEqruQU88Cd68CdOk0s6FIfZikfMe2-1omWlz-Y8FMYdwPZpjGMB_AXhD9ej-86Z4w04Abe_DtfCf2UIpLCAVyyFVtdWThXsasBLYwziE2oKvRrvC_cpYyuuULdT8Ina97u6c6oYsQFr9ZRqEDcGfq_51xkBssbhdKPGjC87R7XHHzRKYNZsHWqEYr7oihLf_ccAPJYebw9dwhrJKfd74lEAe2YsJx1CWi3u5AQQvLYlEu-_l8n8eWybb_f1-k98kEjDPGqbaX-DTeOlt_OBQJ7SMfC6NdHwDi8OXEfPPQpOLoDtcOk_fOySiMWBfczZ4XWCIymLOy7HKVQRwa7DyAwYQg5bJp2niCobsVggLYPKctckQD_743yinWMV_j1AU9L0IhrL3uVt2Hn83HworrNM9qmZQsAFqUpwymo1wsczW9EXp_kbLLXa_6ftPb1yIIGZK6C9Ws92T95M5lwjP18AGnGFAV4O4caLf_XpQEumcHQrpN3E0xhOCV04-sauvFhR_sWPUcIZEXyk25xTILebFyY-FdeZhSfkEk6EyVgdr3_GvLZhuszAlQXrFIKJWs8V9n7n5a-e3zf6fuyheQET5go3kmZZ34xXxa9dZOB7Zo0DEi4GQQC6Lg8f9ZS5shtrojHY1_YzsKpaVMm8Yrs7TVuES3a3pvJw3AKAUjjs7otbZsLX3JoIbbfBJHb-juEUBO2uNGVWyxikWSj0HMqb1xq_f4bsN3W8Bq7lZycasRiyZPoC90mFS6rC16TrO2E5CBpymVtZoRyB3yJyYxE2N9kMLO_8vPxw-kUmaFKT4J9ys2i6Ba8HG7LnEDh7wYOqVOxx4dVDWHGu7iLWG0FTNWxAp8zSaqJyHv7t0fXDrtxx-51CnJ2dQezsinLhlOWhSTAhKFb8prvV-MWdCGwSB_oIjHkRkWgPK_NYi1tvWtFvo1grUU1cBbZ-_jjHjPNR9h7jN7r1gxFvGDu92yrLIy18UQTS0n8jA9E_EUKukshYJGxj3XRjP13ms7NXzyhi4NoM3gcRxoFg11ZHARMA9PqLifdJdlk5xgkGNoNTvp_Z7ma2sqQWoPVqk2cQhUGcYcvOkz0iSiPlojtX-dNIvnbJJTI_mG1rE4Gs5rYb3PAlQ3CPv_o6mm7cm-izaV_HlPa14hd42qlCk0lRBK0jqPtrYcONKX_IiSOuXE4ow66TLeL6K_9SvODFrUre6H7Ibc4zeedSCPEyfr9aktHo6ZHhw56cUirrc7sn-SXgJ6GmMCzy2u8bddMLDrv5Rs4-F59lhLK5j9YPPZ-DMeUUBfonl0CTcHFqhZPM-ZAD-17YyvIY-KLtO2IXrGXs_sH-_ExKG4WGrfv1l-UPG61qJ1GCuk_10ye0EKqiCradIWwVox6k422vJFo40s6OgBN22-Ph_KR7K1M97C7v-2QdWCzrxlW-bS1plkvH2Lz1bX5YGNXWyMsW9-bPrCDNhVWYhrLqXSsA4QLF55-lEebn3W9oJYYevtBUUIOW-uoIaaD49iA7mspbyAlCubQsIWV2JOvbra2nZKsLFjz1yMqNkfg_2hu_gBfRfW1yIuuhAeEdfL81RqUOQpk4qFBeRAjK_gw94odJVFyD72ntbEekUiLlMjcUqfCU3dQHE_mAihBPzqMK5tA2YHNnzl3qoIiU_7rOIHY7siCuPh8eHY7W3YJofV_jpTjRrN0i5f7vD2sNatvFY0WGb9eCpEIC-xPLuWpxCboFny0gp6IZkTZXjBmH7YBSuuUUgAxh8nWEofuTcnmbS1uYCqhaJg0HO8cJ8ISt7CozfHlmKbr3rnCZ-SRmQBAQ9TCvMnMochXwxBeG4bXVuJ6ivhynfXCBM8b45xSP2aQFsbE6L_HpK0QXKCEBYhWcf0I46uOJGUQqKz0LyJEqsV0lCIJejEPuvRebK6TaL0RBgNU5kdgaXIJaa2K8Kr2M9KWKf8ihJf1spVvAx0izn_rWhNF-RiLzKOlATFm5nswfqX0M9Yob8GrhaqMbtPY-QffnjIGinUU0Ws9kt1eqpUv36Riwbdk8zOaLJB1MxULZhbl-3XTcNUKGvttssRbsx42leKuQuHyie1L_8MrT4bRiYyMxJlZK1h4FB9TArPBfAznbx7W0rwmGyPDpUW8ozugoOmUij9jL-d2TGssh_4U8XNQ3941Cyr7LzdrniPXEdTf3I6zg_bVmSJTiBd2S2rc-U6HWWP5Pj2J0OPxEYT27R5iOG_9njcZwBx3MtPXfbL1NslGS09OK4HBGQXuF7sw6QTWBvhy1_K1IO6sk-oNiUi_9paq6pbIU0ShsImVBksufi93jmFzPd0MlJlmZ0tZj47GqeA0cLfqWa0G4ipce4W5AHezHdFNpKvts0xkBHnTyQ0ZOQwh-W24m5pQKKkAT-eQHFhHMkCrPtyi8NE8fizHj5WoT3iTkwejLn1nxakiBIq48I2vjWa3rZ66xrluk0mCsh0IRvVe0NlAeY8vionFi0cNeL1NAd2RUlkghoUhECmnZsI0d-H0cPAi1w5fPnBiFR8SMi-FuIGoh3FM245oWQMHeEZLhMyS-hY-zdVHwCUB6fIieE706ZeTu_kjvILF_cg-_nOMqezEgOXrB0xm7qUwYEL-jYuUZOghg11iIUC2qAI1FbuGSF_Xb6RLnSssoSDGYuDb8xNbWoxFxvbQFT9rOwTRy3L72TzJUF3scOL-0_qqKKFLlKWoce4-rwxLigtwl89IUFFXRAk_eIA4QiKjcS3LSZlhPA88H_m8k6uwEFmNfLyJlHzdZdWz0ghX3_ahcWWyhRRalccJG-GHd10Ciarg6m3HJIQIQH0mIXH9skRKGNww7gNSSOLd3HRU_5XoDm_dw5PXo3dxvk7xt0xYUKS__9m-jujMenEaFg1ZJKaYRxkKtQHhe_3lefrrqQmRneZx4dl9uZQetxNy1eBJVRoddrAb7qBNHNUbYEkmlCQQMbqPnLpkYrQJKG-VnIz5g5dnbG39BLqae03EjQhSX_NKgDi1SEWJNaCSY8WHTavIQnZenqgwsM7d35DWNEKJP_PTqC21IUSZLWUSAIKQ_VIlaMwAOK3WHQ9wUszu4ENTiMR5_tEtV0AkQzkaUQTMoYp4SXmntp1e1gxAbPmowXPerhLFq3qO_vCIoHrgk59c9gnuQ2jQdAkfRpWzkKjnkmvzY3nzYP-6L_5CLm1IEXS7INViD0CD7wCyKfNuY0ovD69lKKQuky8nM6E82O2eQCPXrInnpOHcaa0yOSmEIktlExzEUJOzSF_8M38IbL4ioTCenfSW00JzeGP8xXZla4f3LtvjCxvClfxQJf_y1Y6316FcSiiFFplCWXKPGo7vYoYG-5LrlLIOeNiWmepmcJx6bReR7pSyY7eXx7OXIzihTD_lNzohUk8s3_OZ5AAyRGYKbDqYYSxICk2cxY22JClOjEC_Gdl3f_RUNsOJlm3OBh1Yi61GKPAFb9pXyxmYZPGkmnvcMYUpeCTmykfOJzU4ZUF2K_V01DXkwI3_MSwJ9a-NztpdEeFJSTKNjth7kNbgN79x2oSBTrHEBTpY6I4f-iFrevsTiNmjrfBdwlhXHrR12KuvwX9589VSQLMSfAIbbwTbqkGf4kDXmEdTHmXj2sVcMbhkODTZjnF43BsJqucE5O0OqgTfvOPHB8hTCCd2XvfJltFl-PNFHCEhXUaexbk8DHdl8Vt_h87ZdldzSu2mXfq6kQExGVxd9vkUW831RklcpQA5VsVxkFN-gDREHBc84I6WssbAMLLy4vCLyLf28gniSvBM7GK_BDsKst6EiXuROBYLM7pYxxjBuW6swulFKXgBdVvPwwsqCYSgGxYP-XdJMH0fqcbxQOm-NFZR9yF6VCJcDgreiH9NJ4GGEdtIUhvxqR8Vt5MdguPu8DfMIt7ySedoWgst-wMqaBvrNxLFlF7NauoTt9NrjD7gYGnO6dbUDbrHwLzJ_SwHGNJDAGjdGM56ab1BoOQNV48Eb5tL7UErjjh9USIOIx3W_0DZaX8gh8J38vSC0YvBnZqsp-NvHuFv0PEcFkqhSmICDNYR7LHP45mLV8GpFuuLHR6_lpYjwf4JGF6dn-xpw36SzPxdZL8x0_L--jCTyv2gL4bLjr6YXVKIuj_JyIJ7QcLJyEHj8W0MjceZGqc-jsw0byIMHbPLmEE5kk1PgzwgOxigJqRVbDE_x2ULuX_23mmoAkiT857G54VQEsR8_nKDd4G0UPfbpe1xSY2bGSMGhs-_tU2sxb-MFCEjxKDZQ7xSizHFj-YXr53fvXl0hxja7dWdoEltYN50RdowvPfmx6L5JrtGRLc6E59Q7KTZVCIZWpbCIg_R-L12NlOSMAZ6wGq55aMnFUn75hFivy7zwS2mmTKlLMeXjPWLsXTdDjyQ5V0gXI3TU9KBuRYl6WucwzDGDPgbl2bqiuCWIf7T-25RHb05GdzsLXxTtLruOmrG_V_N6bXjPSizFRhtTBd88w3MreVPTS9oHQ_Fp5mj63XZJc_cKq-qhTU2C4OkQm_B_rUgUHkLOEaRIPrjlor92bjf3pjJqTLZz47k2fNM9RTlKAsHNvHqsP0D4OleXmInCdF1ue5GP5NxBO61wk2MwUav_7VPSqDe_mU5c3vkq9YHyoPMPykU0RnO6e73hH1LBG3pGLm_apkFn1BLjbihdE1JFBEpjLH6f8lNd2kKi4eI87ADLLwekdIFGnzLXwXUZCFxvUI4fVKqX_uQ6_dJlFHn8s6ZdYuzIp3F4nsLY5uzPQ29otWb_0ZgT5vGiTOviwL2q9R-0S08H4EmdQJqk8L7TGA-EJzzCx-A-SctvYB-dOLLcyEQs4SQBdGeLhDloNnvGH59W1IsYBW702p7e7zHRgfDs5jHqjpjq5US7GY8WE4awZnuuIQWZgRsSd9qv235Lvyy7c5V8chesgMTZudemUHCqT9kX-PrL-S7BouUzk-s2Vf6-3UmFV52_bT0LdgfIGpMcB7a4SkqBlUHSHrUHtwycb3tijnEdj2t0ykTA6PNS0dUeFF0wtLGONx2Q3X8rkSodK8h2eUjE0UqNoJhEi8B0PiP5i6dOy6U9fmHaFwetlfxcgbePvBmVmV5mMWJ_mZxNYpFCQHr7LCnh8QaZ1zvravMDkxs2D6Dl7F-HaaPzFAlDlBzQXH-U1g0wj_7HRh3p0V464OHIeZeTGhzDhZbNe0lVTh_7oXt4q1lchDp59NabCc8XJaR6PRSx38hyQ2pdQDlVqtiTY8-9G02uO_qn_DlfBO6bOkCqwevOa2-Xk1HC6OyAwONJByndtUWvwuo2uAXm8gNQQRhpJ81F6xwsjFmiCQRBERcmEh4PtDF-qpEyuVULYqMADiCX0TXISPOyflJXRNOGJsSDGiHLQvvFmAOFczNohg1XHbgQSTHpLIiOlpUJtQhFq56oSkfFMmaqI65YpX83m4kvJs0qRUZdvQV803rfz-3xWKh3B8rvv-sm_b9HOj0FcsxVywyGP2h9PIixWLDrV4-qtCFo_XanePS1ucyXpsYe5dGyF7jHGAj_MVtDw34jHIsxrLy8eLKVk8mvxnXyX9If2WLqPdJAxe8LZ8KWWoa-kgyisVOzKn3PBUfTAMEIJv7vhoEHrMwGM1ilYUrWOW5MpZou5_87n5bs0CaXM_ZYv4aqB6I--_qtK-CqDFSr-wiz1Nu9ij3OBRmq3nbS2pUdYtTSC3QBNtM1oZDksISSH7kK3phgo4QIwO7xyVmpT8gxzIiCrcPWem10nFBrJL1lvEykEvialSgqMjYSEq50XPbkRszAftho6rM661FU2LlFP2_NKDW4c8fK3897qI-i4HmhfWUsUlzShxQZ51XV6Wd0cv5VplTXTjfIAMBQn4ue4Cj8gT3V-BU4UqMosjfkXWwDcrn4G2suunJMzsqnd3jQnurskfxCkLw3TzgEdRtho2AT3Emz_vOpgnnN_D9UpUZLldPVM0eomieBR58SAlkGu19S2cJmOpLvS_ax4P4OeEABur5GIZ_Da6nEh58k1GH1bmEmjM9D8FBz_vyo1FuEDRj9Ykl5_JgQ0jfa93J688USC4AN-k0o4x-H8zH0XS-wCfdm6gnhw7jHkvLfUsfQvESWyso53LjaWGF85EJRZapAolXTSMlxX2VWyY1SbIYd-SO3v25y8OX2ItnENG6Gxiyt-GmDdaGuylJ23snaohgYCKhYil1tAL0rUcNWB_FTnnCm461qRfeaVn96Dz9bYBTsrYPb2lBfsER6X_GGAG87jCJyjm2D_rrnyv6Nt-OfcpIrZJRo9i22oh_I1xnO_enu5dqeBqte-OJnCmfpyXU2RWDRegWgMG146Tm1-blqvrkhK7d-Ug3I_-wmoxhbnVjSqszjrHEu7WB0-HwIyeDRAEhrTR8G5dI44P5irqn_aCBlWz2fc9TFbN0jOZIWEZmJKkHDkxg6ClKX429OPZ7FGbPH6xR9JwztagM5XpvXvQAwhTv7SPIRcZq1hLCFpJYdwdjKVeQs_lIfkMrLwbeD9ly9R1JzM6l1MmwltBZpDdB01tKQi4EJYuqjeHgdXdhXo07bFASVaOAi5xWduyTybVqWTDvn1uUfv-Nx33YK7JBuGxRNtvWQDT-_MZLFhcPo6JWst7mrr9WyLfW9JCMhXUxGcjb_FOmoljHKn3H81wY960qU9ai2ZR8I6Crz8ctoiLxv-xhW3WEaUHL3AM4Zqvp0juWu893AQhXAsyFRjp3yB7zBMWT7fx4FMUEo7Aol5xMJ95_P62BI9D4ql_bN4aUthF6HWSvFxhjKWnZUD9CnpHQMg8UM8gE014usct6GncT8cCPoBNiY5NOE8Cr4iwflvdI2iEHL60H7ypgH0OZKwy1CXKYeGsaq-uzCOWBXUjPFgW2sBlPUYrqAlFCmbfDpAzt4OvCYQ4ISkYcHuWAeBsVIku6ePXcNfWSJ7cUaRjDIU6z2RqNJRKHq7rWziHlhZTIa7d8_ExJOKT64NVBVLpS6j5S-87KBjqRNLG9doUeAfyOJw1FBWvx5DSFlRiNIjeVh6WaAGcxRF6J7Wk__NfWwrQFPIgMY7uo_BgEM3CfTCmT9AaGu4nTSY2b0Bc8SW2Ng-oFoF6e_jMQbNeDItV6bJTWjCrir8oHlHda03ZWY9aP5f1PvGYMkZetNE2JC7tCWZ7wZ39IblIT_80CnmZtFpivxnOA02WtuZ3-8i1mk05NRNvqVhnN0TSJ_IGEmkxB6ozj8DR6Ja3htL-9rv0cjCbeqNYyDFwx_Fah0njU2Ty5sDLT9rD35qxc4WmPDaFPrCBiELFL8k75A6J-2Kc4yMoOMXjoaQe2BF2RrE0019_c0xBjkvzGvJqCiV7MDF_Gvp7ZZXyAaRYOT-FGMwTqNsS_Vti2tPQLcGK6F88m1xpBkVB1VNl3tMOeukFbJMGztzCDWmxqN6HU5DJTq6ZBkYT6amB8e61TwHeF9Al1ID3deZYl3CyIWWNEEkKgIhGe6RDYKCjuhjewa2stUtGS5kpQxLg0T5jDb0hnoho6R9y4HunhhUSVQ8Dtj91FfLeGNScCOtvjEtuw3SKw7jWsma2ys3-IbBQJfdQTF_ec0Pekw4UXKO9QZGstCxwt4tCRcTc4O5njjE4QnkObH4AhBhYbuXB76cOxLhkRYZIbHnY14_yoM-17ZGyxIlAA_OaaZ4kbAEjpVCAS3oYxWP1mlh7tC8p6w97QGGb1sc6Fn4vA3GquRpwHIQFZ6P6TXU5GUxZ-5TiQlaa1TfzeNhDadnaOAzZd5fFnGOsGBnFmRHLj4KHqUfsga984C4ZybxJROKfOQu_EQANkzPodBzTKT5gMncmsgxXxCAq2VsXH4rt1m63TStixsme4S0bzDFwyRIpSBBuhG9GvxcZ0qbJ72tDfQLP0w-O9hp-gPZg3VDvP5ZaEo4peilzMc6Ca4FvS9BWek7xaMZSPo48Xw1iGcRISdkNtdnULSy6D4tx8r-8K7aEmrmw-W-SzbJjPEwgtA3s_PD640QYc5299KuJdRpQ3zTmF3MnoRInR8mkoJ2BZlBMXZL8z0sQSkLD0qOZF04En2rRZEbRJ1lU4_ULMj8v8v3DXvctK5ncRo71RURXPt_cy7-CJKXg0XhzfRRdd7lAnYTwERKmCKCZApS-KXeV5QxpKsX9vzpzx5LctlDa9JmsKVt-spMtzyKDepWwo5--gDwn1OZCqW6gKYCDZ3OCNHY9LXcGmtEep94CPg9gl9taG6GbsfSGF9W2RCtKXYyjj_CINxfGP3X_hhzBhF1HB53NAZWhgK7uepmEmorFMIJPW-Aps92qcjYfbJkjyCWnPBAv2xEkTyGNj0PhlqqHvXAK-D5FenLwzUDvQChi53adUn95k99bc6GZHDcA9DveyQHZh0efJSS2dBHBeCS9_8EJZXKNg93Eudbe7hrso2i8VBayeiSUHfLwUPIRCk-pGY_T7p7YIqNniYsBcvRg-kJAmdk_NrvUAyCK3n3ZFPzh50U-AhVBCqHjIeTNm6JZBioJnv5m5c9Wy1ronPVGClfLiIV_mOBPZxfBFz0exrL40Zpzu6qw_hvrloPTHcJrxbj_QF7zS01SMTVOgp7j7-LZXI0CQaawlnb37bdMllzwIDIaiXBvLqkKnn1Wldq6W2iTl2NqkF-qlaHYGxob481SBk1JlebT7T1hxV17p3gZpCrNhWWZ4nouzxK4uLJOROEUil9cMA639-CoQErp7ZNXWBRxd71fW8-kBwch4XSrEBJaYgZ4ng9DTrYbLHFgL4NfIqKZ36Urae3-SyWh8WMe2TqomHf2c6_EY-EARmCjRF7vwx9kaFddqqb10zUwmunT9AhjS8fVbhX9q6RnOWJR9w4vlqF1izuel9d-6qF0oVK0iBRu-O79wX9k3rB9_Fz8QEp5w1SaVrcqwvyVmyCyLaYwMNj3UVQkW1GxaR1kgs9A-xbZKuUVJZhc9bZYtL1T1wg91dQllOO_9zCj1mNatu6B2M-8yaXVYN-_t2ZnNCiz5iWYllKHvlSDj3h69acOn1xjkTpWDcdIhLRzcPWxtRrKuEsYdCeGPC4uOcxu47YoRLxygnlkwcOFUqAqqkAH4Re7ecLACp6K-0_eQCeOQiU9WUfCGUYEWkkXZNrigYAi-zZdSkPzgOwowjA2ozKJ8UJr_K6-nJkdlpMwB1pcwA3UpVfzzgzZ2gWWeY4h5OwvSaCV0tRn_t769nkKT846WKxHKh09cm4lIpFfUm7Pjb109abCb7DoWvsPGarMCsu89BCqKzCz12G0D3Vcu4wXugJOgyHXn_baJ5K54LOKXiEK_dwzdavZwYXYtLBly3PhyRFnbUzaABsS3E5T5nzQbneMqqNQPUXr3QQFk43YiijMEa36WAcxxYQ3XaPsesAuO6GQeIQ8NEygtZHxhohfwLXloB5Qo7R11xHWwZmfrbW3FtvqAjFQj1SISpLpNz-8DH1gooTsKQODQJ8UxpW4JQ4qaPaUu20o3sBOpH8IaK7Wl2IM-GGetDT8rEChl04NOtOoezA0I1BIqvJ4qPRlklBFsO9MPiRHnOEaGiYtpzmOHss5o28V89ysviRl_96d7PFWl6X8RuOp_5Ro31XwmNoWXHjelY337MGz42XZVBsUzSQMe-is4KC2Cpip4EKKPJd47MNrAJYIioevzM_8iJJB-sQzZC-HXRLyel-CxN_Bx6njqSbVlDZUSMmC3rt9CVdYVWyV6QPgtWVm1m3rZrhkWVTklTIZZUlJ-AVU3-ssjmdev-BB3LoFlWZLQUuxaCG2Lx8b7G8JqCf-BgChvfFJsBfbI_d9iQYTtqtDLpyaHcfiT13WOn-hlJ1CEUeVMdGBjf1zD-KOP6zyLIcKy_yvnbjS110wtNLhG7CfK6o8Hg9Tc8AXhWvK86YTI6OHi9vdzjwZ4ikIg839ALq0NRwrScd418rP3LBavXxxGrnrQwqlPCfDa3biTkph_LalE_S4WQ8NlMF7gJtJ-3Eklwv0mzK8TGgld8kvV_oQDQ6XFM8A6D615MTmxoyDcsd9_LR5bN1tlzKNAvN_xHJiwZsESvRi5FDiHVXWj-YtZrv8pIfbRCTUG0dnoQ2yY-IBCc_In1XnpQnw5_jwAQfq4q3sahFJcugwow6-BAb8qfNpRHRZGFbQ5TQ0t8R9Vvit9DfHh5hoxjJ8IPi0EKyIPEBGGf1WUyOsaheHquM188DkgTmiAFe0VLOyc_RlwW_YqGMVR_16EpHRz7l4eyDB4O9meusgMpwAfsMhEwAWXLS1_o6Bn-DQxkgQ0Y4eFRtFi5sd5mdicZbGZ7TXjb2LW2cfEMdPgw3uPzJtyVV1kFJEyjgqN1l1nJe1lXHKlrFwHT5E8uof2cgxMtM3RTqOJQS5xjFcUpLx9fXBga6CZwKcEYnPpn_Hc-7ftMJl__-5_yrB1BBNWY5hQXrlUZNtagEHuE03mSqkeQtxbccJRYaUvJQpoSRKc64_PPE1MoF1_uMYFqzD-uee76-1z-pc6oowomgxhQPZkNCVw5KZPgjPwFTpDFDPeIijJ5KruxMlboyMWyuZ4OS-bBPcV0tccymq-14OOUxuAr8OpPBVBelz2SIPXSW2-nHhCm3AR_aFPutJBH5Be-768lv4Tch_-p_hM9qZ5Cv0IFcdT8Zb8fTxo6zTiyAPH5jgNC2ZUrHrlygbcMMivEQPIi9YM1zDQ3CGWPmXZXyucAa3sx05jvKER-NxoUpp8PzmRCkvbYrD7MZZZkVV_9EO0xtzfcC2uCTmqhEQqEbxswr3MeLL7XVDCjd9gfwl43Z7O68OzfAkNmAxGz4v9J1260DOr1E3mIXQD94vS0iRWfFXkCmn4xmimFosIC6VDxnqDRn2gb2-iUeOp-Sp7sFpR1ZOjOWYWc4imDtJBqXqMaoO8bnl2p4lBYfRbe-dra61HlyIobveEwZRxwW7jlKDi-NRl-AQjNJGN9Ip7tSulp3pXQwZ2OFy-bLN1NJ0GkRtrA7kfrkXgCpqwmI9D5TSJxvPj4tYbp7hmJY82wpGxVksPnuDgF21RH2X5Ftb06y6K4MUq6tfAQ_AMNWwwwJI45FZtFGpThbwZTS_83L76lUSifFd5LyRJC9dZGrFBrF-EAzXrbce1IVT-EzltXA-nB_yunAw_f5wEcyhxGx2QJ6XycJFE9aDAEdIIlfUw8yjyixcGe1SSB_ZX2Uem4GxDU3lfiZ01QVvyCwYorbTU8YdT80Ff5SxCq19oYEK9jfoYdtyaQhsdYnsEgIqf8lIlzW1nnbUXvATpDyUwE5E54_r_WJYGho2JkCsYuwJ7yowqGUrgf4llTYN2uNlmkQewJ0VGDsJ3E9DI9a_YhOrYLM3uARSFP3iRvEmnqh1mqEHfGaVHgv4sjFL9e6jJ0Z2_rMScEuqaGYk9ARQotGdnR6ysxVg3GskHNDa3cOTUDVUYdaN0tNGQwfa2fyukqhfhI3OPm9kwm48GlzOaQjbVI8b5MIZeBZ_FuTd0cckDcEDMq-_zA4PAAfFG3fqg8iegfM-57fp3CtAHgFuf3GR8UHLJgtv75gyaokA3VYLkKO0Q-ZhGdkljuuYWRXY1TwLIZwFELggVr2qSjHYdQwEaA0_NAlVVkH5fMInxwToxQFlDOTjdDwW9RTGXW_mxSsO8eEkNEsUE6qfV7GvGcxePlZ7IjKCy07TmvEgbmwkQgjAyq8cV_5x4lmQtRxRT0B6yynJIS4e3OB9mlmBfSImMcHbapa02uK8WH3tWYeyTxofGbHw0YBpntl95Ma4fq5kCj8uYp9nKwqrsmc2FpZiTNEvUfo6t3JC2BFOQYdWnSYWmCEicgfzhPzOi4dxfY767BLAnptlScQu5FSQALi4SSgFsRgAJg_ZD6HrEUtEoDfE3c9eSLhYhwMG0yiZR14mlKob5B1hiWF-IglRYRJYWJegBev7QrS-eatoeY6YkHm_8fm_wxgjI-YGNp5DQRVgD9lg3Eqb5UNiCHIJ7KXT60cmiOwcIXDS1uSBqR7WBjzq-xVZnMJyOtx02El9jnc0EFQgo0lCI8fAJmbPXqhgMXsVexF4yWFsDhPpCIfmtG8yKl53yaVSN8C1AgfLQCvkk1a1jIUUbzpFhispZZ00_3aoJrULvbeGNgk-1SoTxaN3tZk5f-pPkYBa624Y9c9ikxUUrlBOYNTQNGhuvTLH8aZHbr6Qvxzms_e2HVxrMdBLu_8R9YbjIDvBM0OLHQn7g26s3EdENrJ6Gw4tOdVDf5EmqmPdLCyqxxmVvd3IldRnY_a45KOMkhN7G1rBJiWctqbAxadXIp6Hekml1wwcw2ttmStaMj7Hlr7jMR3PgWWtwEptINqHbA73CMjPz_fMqqHUEjVEv6t4gk1EzxvaYCsvnOutOGZalvdePHe4GGPTHUnSDtxjM0dFL_6fvOfNQlIY6R6d5UrrKDAafu_ONtWqmLuf-D8oMHeFc4aVlUmuPszS3oQVjxx6PZJDKQJ8jd-6vDbLCcrF6TgRrzR8T62AG7UqFWhCdb0x17j1JITENSx8biF6DxAlj98mIErVD6VXgiW1QOSn1c2fRgVoGlNOS_ZLi38UTMK4MTkg5vnCNBIVibrJBQi55lsptOtkdy33x3g566NvrLQLSyr4wrIbdPuevGD2FgDPNnVEwucMDJhNDRfgukLoQ_KV14qaQvWP1SoIJDpEH9jrAQzlAcP2rFQgPX447TzeFKFu-DwRm9MIlpnPh-YHWIwxJ8GtsRC8mEU_nSn0MBcmpF3pgh5Bvow6_6oNgUvVbuY6tVmJb7SwGA0Y69j97pbNDBIrnxf_DfJzxmEO3BHZXMZEYB_eTfkfTel1BHVYM3xwjhThDYMWDMCC7B0zPeluSM7PAAukR7ypKuqfWYrY1hKVX1nyALIQziIB0Kn1hm6WHrzic6naKEBhpC0pl8pcgUxtQeEqrgeeVQCl3JoV5KKUsSkWJ4OOyjktMce-eyxEk7fzsQLQ3Olk7HjlYOSJdq3GLWt4pXn09g5dfDXYAP4TREtxbUMilMwRpfxqeqx8NR37cXx8765Jgou3Stb2JSPHSzHmRzDG5kk4rOC91msnY7Fxs0a9zM16bh_tbYvcw_7jm0OX9DyQMRn7AZtTSPRajpQPaf-Lta25H3JYiWk5ib2EPsOMnSJMhWASP-uxJ2EVZiJX6mQlurAUBIfIUmcZNEYI9RSn5Wt88jvQyiYQbcxeSpRy7l1z2hrBBCdNHaCT7m2cQ2jzra7dgMo5YruDPpSlGh9TGgzW37Dpny9QmfkzDhHhjlWws4onzn2keXxpYIi2A0CpImudQtCL3i_9llo4f8EoUatOtHZs8b5YMJ1hUDESOiIqgCxa_ENZ1fPOceHt19VuaJSrc8GqCvw6i7-PvI8TBJfeXhI8QJszzC7rU9IXpXPcDet9vi6SVdieTiI-TdKHF0UA0ZvWQQZFhOcSjl3v_8Y3k1I1coErWvDL3bePt00A7WlLdW5uJ8kamvts4KGUyTWA0kjZd8Syqkx8Zf8GxolGPI7B9QXokVWejQ5mJY-5YH90Cv9tT_jyNuJE_oIcFCt0ESZYUW3FnPNrE8tlvDxXDyIeLl2KyxMojj3hKFJOtBh0qCWKUCE_zym62jJPCteGdYbGNNvMjCmJ_qJDoYDHEYhfHExxgNPlOT-uL-9MDenNxXPINw_8hZN6-fze5SdRH_QHPVZaQh8JgOL6Ggys9gzFfUhY3831a71PKnHAImxdFRanbPc9YEsRPQikMVxBzNRt0_nZLH-SR9315Ausn7wXvEciYuH1F-s7XVtcF6ziDkqi-6ToJLSJtRO5QFsWhQDs5H0-jX-uTb5uZQ28R23PlLXoRh_WpUWt7f1u7yRzbU1msk-i0TqcZbnRlHfjHbBC2i6BTuJil-FvoujtWA9I_BNd0hP1Q_CrhV8AuNXo3oZTWT1bSOAm4d0tCI9i6BiON0e2kuUUiBi1aFybKMaOkPOlxL6JO_bJUzqojiXI__m6SJkLws5c_qxI6sdh6nKBqmfhE6Zn7BOm_CCg56ntKc3hYSKCfBwdgemEqfGIakgqY7nJjhu2_jsKMbhanjpJ6T_1JsGcegQaDVketnk9tq4vMIEO_bXDyOxJ0my9BTPuYUDSkyyZGADRm96uFgglU6Sb-W7G9XPUVl8Dbxpu7HLlwIYoro-hBaCoReGJCzTJQgSvhNTsZWvrDFgXQY4AZIUI5v9uSJPyB9NRtcaEAD0WAsrVlCbatjGz491gRlsJ2mqjmKwffeycZir8RaVyowzIX44zczRpR3vfLP3M0ts2jhc9rmPC1Hn_eROPYUfEMdZ1lyzF2YNpnOP8kmLNFZs5VhDFLBDkWSB5cc_RJ6zsMF0I845Mx8H8ELZ2ldQv8zeJZ-rbR8Nrr0lSqTk_aHglmKoSOO3zs8w3pN_Q-d65gExsTN0iUng4-fhMUSUg7nZukA0DBJGyYyqpooNiteFpLJPKskmUEfasKd-7gCrDN_9HjQrym_Ws689MQ1LQHUan-vnC-KNiYNFbi1seSgw03bP3fja2RFyz2nVbgjVDCcEZIOFyH7cQvs5-jju6Pxhtzwz_pLXYrTF93AslagrHeZd5buPNy2SI68X4cOXAumVnXPK_vXg2uz-DA6iQIt5RhIDEno_0jjg_IxiWVAsJ8cv6oT5DH6czgfBNiUHC8ueX5Kn8g55ipHQBaf0mi6un51MMetjPkiLbMy_57wjWG7FjpJ98S-TTKsD62LtP5eXx-YiBNkc3te2aG5f75AifyB7nIwbTlcBrsC_FMBywZe2Y7ZQ6WNEVzKSG67tpKCtR-twqiE17HIvc3v8cyn0XmzQkevIZZGef1HKGlI6E_cXnko-6lilBlHqBS1xXo2VW5h_EPbD0Tbhm1JHFCoDITg8zGhvi1fBcTuppq7wvANFSbyqbyYcLeh5qsV5oAecKe43p2doppCn6QI79d2x3GAZikvYVrl7X6xZxkMH69Bx4K-9hUtcOwN7UJPYemKRxBav5cO3NYG4Y24kSKlhHAO9lvK0RJTj9_hq_a7nO-jGaNSWWqUnntMlH_Rq6kd6tM8WtE1xLUTl5gfkjoRroWbOO1WYpAwcBBfscmVXfKvX_A6Bk9SR60g6FX7Pl9ZybIY2SckKkU0cF3ObNF3mN7BVRGJ2XEC1Ag2cPNWx__DTPmQPMaXB0QdviP_Vl3_QF307yXAvWSYOJs82vU33lCRjnsvxxtxansVOiNCowtBYOZOQ3gkdQysTVRzmjvc4iIHYcrnWts8LobsKzVkkIJQThPaKL3kjJ_xtp3umAx2QCwN3WgeZdOesdxqo8y233Rz6qnPGkqkkMeOqLTS0xtuP0HQ-YZ1PUsjN0Z5w3FHcgWw4YplYIKnViD5bzQQ-e1kMLK3L9kOL5U57FRj2sp4T2j7zS2qIohGM4TZphGZ_JbyVq3wHenGcFVASkGKXsTauTqzMPk5PuRQNeRbjA7FujhZo051Mdyl4Vzbxq1nYamgnluXksRN-4tusOPihJmkaBMR9AxLHrRNAAutaShSw1sYUQfhWKLS_LqmaGmJco351kNKHvbrh9JyA8qUFIJr_0MGSiKqHLACQQKP5ihZS1coHww1H-j3MUUY6UCm-EP9GRjDspF3FxiGJQ-86vxAxp-2aP6j3B6KY4tNSnYUZxFHytgPX2Ce0-HAxsbexPezYLJz6nFbXEMNbJOUU6GfSEBTSHrl5P0ru_RQkdHvup0L8g4RdqRRqFv4YGvZr5b8KnrUWYdw_NoKL-CB0XmdFxT6g0PeckOdAeFKTKN3GyZSqvPwnrTCJY_usehDkaYPdm66Bpg1GRtWYcW_CE-IKdtPpd1VdGVh4BPXtESjwYyBTnxDkuxkX1DSu0Rq4h9XZfM2BGdimF2SDLESrYMuseukSH5DWtEdvH3ZMhfBL5VnBz84ke25l5ID0XuKOe_t0Zr0V4Pa80xyJqDFWZK5nIH0ZxfuN9ZLIN5ZQ15_uAoSUuvHdszv0z-At4UA5RgDzCPxKod-Jl1Gir6XOwiErS5FjZecbOrODaVYnPgzmSotwaDACwbhmG-m33Ji-FO0-AV2Kc4tBpUdeQzBWOYl_EeOhYGWeBT6Wn0huSVWJQ0-VOJzAgn1efsKcIiIi5wecfWpCGvF7OhiY6wM8dUlynaD5Np02bUAOzZbIv3BfAbhoJUZymV3Vzey8Q4GB5EWb8QhmX17jgX0LXDL94hQDPoC_4ZvSAj9I9gaqNj75yT17y-vzgZ7rS3L4NguwfvEJyada6xK3_sd1mYL6bWoSPg_UQHOmt2BGNPLOZAhrS2iN0e3PKtGIRkm2kkeS7use9x7CPCBND93PK-LAWLO8VOPT8OJZVfkZnwUq2qED4Ts_Vu78EZM2EEn1YmyFje6T3-Tc4ly9GfympsbkKY6VUwNkzbngU8tW9iKMH51uQGd0HPUbNIL_ppNF_erESCYV5_1sKe4OzTNyfus0623YJ0wrWPvj25kAH9HlMltSWNf7Rsj6gErKKUDXQ21SC-zgdeS_XZgyhCSU0NoA5SbyYKXDUybxGXDFyKVm2INvM3yAhKAqnvQ0_EORCrXG7RHBXMNdQqkGiw184D2Dmo3UNrY8aDWh4OhB2CCAuADgIw3YG9gaDKfWpfWmNv97yDes23iPYQnoCsoUpt0FXQ3S-zzHO8FJZ5zPsZaev-XaZJn2o2UcWOyuVnjGxebe4LXWthq00ClksAGAxtCR384GKcKOO83ckoEcTjVDcnA3GDKly3JohfIYX78P3N3V0jtCGkRBAnH4l60h8fcyvNqfIC5wuXsDEccwdCb8YbafSIq-2klKNvPspRezAl68BmGdQWu--MQ5l2-OkncbUj5_Ujg20ZRSW61TBjOHVEnExIMsuwirn600Eiq49oc2MsxE7P8awVVwKgES-w9fYzXoTo5Jpd8V2jvP8keiyPqhg2fUaz6G5JoW_W_OS0ey5aTa3VCE8q3bkm1p9vfpK6P_IKwBJd1ECtO9fKG_-VznwkWVen_FdwF1q8T7Y3ElDCDoKLGqa0HLpJL4zGNfpsC4o8StsiIlwudlMeBxEiOVTcGTeo6JoV_RZ3WlEI8E2LooonUN9aJRAq-GFhoYlINWRYhYl9Gnj7hDr8pV3jQr1jh3Ah0jZyPxEGkgWAb6UXIj2dGDc80nzUwHCGzmWSaxYaPHpUJSXq4cx0t5gchBDChNzJPgJJkb6cj-oXYgqWXZhvytIxjAa9Y_3KJPvKbNszcE3Gk_ohTVFhXn8sFoCvCuZKj29OhFG2spmBQ5C1xuQos7ScLJyssS6lIm-IQUyF0vh48R26Ya8Q1uFwoKV1iFiPiMNyz07AvPnW1WzaZ3PHIebbSov7FN-JN8m0sjs-Dt55Y70hOg6VPQZ8etDMzRfeX5kKag-dc7nt29npqt57trE7NqpdgiNS4m-CyBxABXxJnaO3oqwg5cxDiZ_iD3SAzSMWLXz_LxW5wuRVTUqtrqoXopjGzZPiL-VATDXhta2S5yaiDIzYFDMZTeJuKdowdN4Isg7COZajzvk-zJrcQKuHi8GrCVrWy0LLd4fQuvvl67hwjLG2AQiccXrBx6inUUerjLT3FWU7inx5n-4ahv8jvtHoPQXPAIz5SbiXZZh0EbYkQtnii9GKH90ltde6k1qcAe4FX0cfX2jWa4A23Lr8GRWHG_J87xRsxikR6z_DhxVbV1goKuQFUNlRGvrc7nS6DRzLBLaDCm54qWt_D1E09slNbb-sY4fVmBjCwOcsfXLOrIvgqjbnOcHRlgGbuRMWdUIrov7xKxPMLOctXHZAJPHAMJjOk9QGU6Mie__XDg67_UsVDXUGa59cArbQpIjPTwGTQ70uIiYmHD54eOh7dwvlKbBGvDTPGUs2BzLIwYFMuBrLvnrXEk6_9-Lrt6UD0k_pyuJVUN94e6hkxtZMvAXWd53N21orvuU3eJb7Jhs4ZfrZK9hLXOw9oyaCPTgMQ7AnGAKiyOAgDCp4PoSzzZl_kjXLvG8Lw47i0J5Hr1IHUbmZJ9Iq5oQy3lZuQoNAhFNTBEF9Q1Vb8OqYyovezauq0S9ATLznhB-RLtvDMcOij83sDRC-_yu5_RWS9CV9w25TvfAi4d_UYbY2m64SF2ihqXXtrzHSHWLM5CE_R9hSlnRMaSwDhjFvAKuM0a7IVSkkVsglec9jO_irqwcbveXT9-pOWWv0h_hHCJJKDlgp7nxezOSISmJ_GK2Q1LdMg_GTV77VxIIu_hU-MqyaQnp_nEz-UHb2EeH2TonsJDBQUlmSBQPchvdB88X_WWmh8Pf4pw8EItjHhQYSu8qz5sAkT3s6PrCZ8vOEbSrfBAeMfnWFNtQXPE1ZS8ffUBluJmnzdH21EqboTR_hlY-9CiI6YylYSJ39E7mDFxu7mjYfNXd0TLqDoHkIn-2PQo3lIlgrLBFUufEtLKElbjiRjxVisFo6QIPi19KOHN1AKUymIhGD7WsfIB3ZScYWgPlPoy3_zzfOOJK18Vb9uiOEwwKAskJ2WEwJ9YH5YqmhmFKmAd-VFEz9cSLUyzI2BABIZ-7pivmyCr3mnTcG3EPxmHf5ngTx9k5l4Rrelk-79iBEyTNZywyTGREfxdtvMF4oAG3x6G_j4KmKEEFTqpuigWU4Dsn5E24zJDuZ4G8kgXdhgxlMJFQ1Kre94N-tsBTBo1x5d8jNNq3DeTUvsFrJx6znEu_F8PxAyScZElpL9bTAyWZwg3eU34a8dn00fCgjMfjVren_R811niDBpbKKL72TjXAPgg-jcHaefIk97GINO55Vyol6xXF3QClBSZAfHW5EHllxkG7zDGqE8fgQCf3CXbYnO3UL5Qn0Rekeddu7g4Wm9YT9qd97FfH_JN5l5m1a0EXbwf7jBX-0zNCk57mipOg_qYhAL2pMF9gvDB8_Wz1IDsdpyOiMkmDx3IEaaHuPSgIkMdS_Ps89JS_O8711Wzk8vCz60dDs0SwYOlKC1YNWgYIijxWHfHHrWp92918sWo73XJVYcz8esrP89ZqTNowufUab9XVHUOmAfQzHB3eAF7r4dA3og4RY3zL8owJZVA0SQxtMm6em8oeqSC3SfZPwnyiYjrzLRWStLHB5-0blFNgBhaZpDFnRjGYQDPpn7swcir1MsTUL2N55rB5paJTUOZjY4-n7CXzmPjBKwEya8CxZOO3j4qXpOplE6Yu8hzIalcSM23b-hGlbWLT4kPU1GYkI6gKCBw42K9GXqM40n87aY_RlGycNRACJ-i-oyFEeovVge-_6jFg5xPO5UfP9w3UVbHqC7gmRyYMQatwTT2HJacXteK8fWGLfkOtFL5Szs6AIyPf-2tmf6VvAbRt63a4eE1EbEZPmUZylANKes3HZYTXbi2xBzrOrd4Ygx7cibbpvfbBya3PTLTY7_JPN_uQIyr3VMSnaejanhe3pDzJrjtlmClVvQaBuUo4C0QE-_tVgXaJmWfOGQweMopp9Sp52gLOqv6dT4VYE1TzliYb1BiEuf1qFz6WAYobD9a0JLx_umWu_Oc98-pZnGwddWA32c9xl_oS6mAN14Q6blqPuKWlQC1OSOmkOu6xEPeiyasdtR7AGvzu66on0vQiJRQTYxg-rszAA4jFJJDWdRC3gicEcEil5Pq6fQZx9Ap5-Cd3skqP2M665X7n8ZHXvJQ7AsPBqwjL_lFoocjzh3Axkf4-tLrFmd2OHRiFgMBtJLD1eAioUGE6GVAC3sDCTcgw1uSlxLBZgWQy_sBpsvy2MtAxu3i-u2JlOsui79H-I1qI5SM1ilNZ2XajpyBdwTxwN-k9wNn4DOAOMKpkzqk2neP7fximjLHDrL-h0quFVXRXkpCR8SVQ-O_7u8KYrEboPRzyb6cP7kAPEMrm8AyiZyB8emf6FePJm7mSHKCzCm92JgsNLxMQ3AjgyaDJY5rpqNHkSndbPiOceaF-_VBc1skuMM9tYWHeSdvHhMgs1U5PPjhorDnmrnbcDr6xy7sbc9tVochf4qCfSmsFdCiERh2b-7QSa3lZeiqa05M_-Ep2-JHbJhN9Z9Bpn0LahrIF9XU1-ZqiyEQtLB5q3ofGJttc3o3QNszFVw4nPAFx7aUgUAZH0nS7ygjPSo9F2GucEZHXze3yrTjR0p87JAaJmcaoTXKf0KZ4twKqnJ5p9PY07JKUukikN1tFazcx1GToSbGrb02mgaMPFO5jILdomt2d6Jc5Gxgs4v1q6kZ5s10MZ5h5TjOFsvrxke0mSmxlYZAxZ8yzSSxCjQO-O_E2VX-9E_xT_NM1eFWL1u-Lw0LwkWh46XzwhyAqiPERxnvEatcznnhDhGIz9MVuVU-UwsX_r0KBzMlcEfUqyZfOAHNonC-RlsxAXSDmHaQA5GUtkUEkUKevEDMGrgAIynjDTGC_33w6AjBWRVqGhx9kXX1rlVPAFwVhvnhoewEdsdIc0-8t8s-yNovuIyU3l_HVVqEN2IiMNzBmvpN5VT7knYc9dSFHtqQ5bsXCCnZvkvyzKnmIJgcicdqXACbwyAqn5JF0xkz1d6TDUP0-HGhXpw2NtyrhFYDLw7gEhgAXIFJDbneYWUENImCJKaP0z_JQhFpDUV7sCvy8K02O4vE0UkE4NcuoYBkdHwDmZ0bmH5VCc8fYwuahfK0bJHuzV7EXPCIzhlaub5puqzh2idIm5YShyCVn6W3MTjDa2tWGFSkjwlCRiAUbf1oT3_-ZXnRFUiT_V3WZYeQXPmK8Z8aI4FgwpNYWmp92-mCdCxDnBeMD58-LcwekrdpJx84ceLM19DyaQWaVdD2c4Ne7uwdrF64ZLoD6WBfmnd3pz6HUJnx4r3XOxzC5jzNqfbXPi3iw011MXbGIRd-vae0BLZBE9LZW9duimXqd1-P3oR-CXH3s0MTzPdOZfjThBTTkwEXrmmIvW1Yp9loISNAWfhf30n8lOL4JhmEEvK484x3DxWtqF1PA2z4UNQdzdfFbO6HfeeHaIrvwaZVqPu04tIhhZrfir0IYs_-ND6Mss5v6qfTHzG397b_ZuPxetGNXiZqHia9B1FrdxLIlyQBs5l3EVazzTpMPivcbNG5W78_-k-9j5a0-61nOMXoRd7qOURnOkZtzjli0eMsS13yZQRDtR6KdNhegwXe8iyniicqYOLEkeWkjGPoDZ1IJnsnDUqwH6TcxPgj-Idu12mFt924dFkIp9liDs_zL9OBvcQOz3CbWF9_gWpwc6yYJFvRm1pmd_IzYlhAP21gCoSkvK9p9tvJsJi-H1C8wzJVj60tHtRyz-ehEhmuLDGa6On16Dd3FBUcNm45MIN6yVP1ezztQ3W7WvDIlXjzfW0dNfx3i-PgpQ0dzOChAZZ6Co_xwFF14FTBGRBE5CCtQAwiqilAw0kNAwn4BBFMgMQyioH2MeSdWcTcmVLSbMQK6766IyrFK62Zj4YdrQVEPqd2UKH_NGBxRGo4MrTELirobgUAtJJPLA8uvn7p6sQD_sSTrBEKDs2LJKMBLzV-rhqNdB6cNGQm-sf6-QdQrrejefh12blYsTdaU1eicRiRKzpmt6JCWYYPkJstZn56Nge3iE4h-kWCC0bJP4Rl3nWyIw2g61qC50zPkSl2BVXRL8c9P8aUf8p2x2nCsZoQ71BBRizdgoLuh59geha9A-EiwuW7mqczyYnlgBLt8F9Ac9QbLR9d0BWBGkUiUAzGrHBLoxpiGiG6gFyDq9_NOQiy9cqE0Q-pVXnpd3gI6i9qrikQAtgpLY21ub6mZ9yfZ8ZRd_fXQKRDGRd6HUxCIuB_eiNBYmcGQ5NxQIl0YXIvLK6n3H-oQ2yfJSGTLKuRilCPQcRDocGez_5d3ePvoq9iOVnHzIE6BgnB6wl8QcnMd4XASswx4XWzRQRdlcB5QXWjRK0cyw7HwOBhf7okg3_oSlR0uohxZZ-EjfDbGHqHx141OI3q47suyiqjAllMZIUL4HJMYtfdX4E3k_DmHp50b5L-jQEt17_0eIqb18qi64k9X5fZszHq7m-_BkcY4XppyzMqJQOHH6iJNlrq43S8oOQzy8bRcYA9NWMHC3kvjk7DSRKwlyBnM_5Np_hCRGZBn6JR8FChX0_anaVqLiWrhNMclbAq8O_rcxlQnFVzDgo0yn5qGNMS6wexqYYtfaEdCsY-VmL48TzJye0ryAJqvw5VQLsYq_4e8mjm5lUEemtmp9LMpdHpa5GEbB-UFd5Dg-rESyrnRDwM9Y25x4lmsiQtmAl4BY-2b2YaYseFf5U7rPzHsSL9YNnTuDzmPYpllrcQKwotvoOwuKXqOl_kJNe4VrMImipsYhKe-beVe9FsZXBb1xN93g2r77ivZdxYFitK3lTK1OamZ91EnQSBZPLbJAa350Z8wdSVIYpnEMPqPG0NvuXp0aN7ppoJvf1FgIpHi0zP74z0p5_jHkYYa1dhZPUVwP8vmMUgSQkgW4J1xgPoLKOldvsrTMD5IddJGZ5xNWP-_ed-oDM769Hps-bdOJPHeAyatPL5uIUElR4r63yC5XNTBY-ubqoKgMvLzL4HZ8rO8uZqaz6kyTW6Sw5BiT1wYXcX8C7Tn-UYjaIkXdPZ6Yu6bClFU6dx2qxsuYrNLfzr2_L34D31k8RHhNmaj-VpqqCdEfZMntNGcLe09C7s7Us9YScFNjeAvMyN_536UmA2hyDXUo-WS9h6EYTcmKOAWGto0R-_g9dWqdddQrBdDyX0U1oLS-2pbBvQ4sgj5mqqIJydmiSWOU-h4HeB71U_WOBIytXanaUQEdpDpeWUAInAVulmCeolYFmBfhHBdohmNkgjAUHcifjGGBwLE2messM8Quxf1B4YycjjOMTzFEQkhbV2WVNn7ZzAOex5QWKvPxnkqVGlxUzM4w9E0wccpFn_UpWCVDfNgIvHSqWcr2Bh_l9nCJnbTXzqCI90dfU9JUpt1pQbL8UFQSq6x795GnY_BOHxmxR1A1PlUM5J6UZ0ngiuAXMMqHjtY_RmkVuZ8yNFXkHEQN4Jtvk9XrWD9l8uYCOAyTHBISu2AHkMm6u32jL-5S0ZJ6-6DcKkneKeAI7KdZDVvvSqt7hpqlyL5y-X12soyjoh7I="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "Lcl7arjuC8G0vr0Ppdjs8Q4",
+  "usage_metadata": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6030
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109688
+      }
+    ],
+    "cached_content_token_count": 115718,
+    "candidates_token_count": 12747,
+    "prompt_token_count": 119546,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6230
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 113316
+      }
+    ],
+    "thoughts_token_count": 18200,
+    "total_token_count": 150493
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "2026-05-13",
+    "identity": {
+      "security_code": "3107",
+      "company_name_ja": "ダイワボウホールディングス株式会社",
+      "company_name_en": "Daiwabo Holdings Co., Ltd.",
+      "latest_filename": "01_2026_FY_tanshin.pdf",
+      "latest_period_ja": "2026年3月期",
+      "latest_period_en": "FY2026"
+    },
+    "claims": [
+      {
+        "claim_id": "overview-01",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "ITインフラ流通事業を中核とし、産業機械事業を展開する純粋持株会社構造",
+        "body_ja": "ダイワボウホールディングスは、ITインフラ流通事業および産業機械事業を展開する持株会社である。主力のITインフラ流通事業では、コンピュータ機器・周辺機器の販売に加え、サブスクリプション管理ポータル「iKAZUCHI（雷）」を通じたクラウド製品等の販売・サービスを提供している。産業機械事業では、生産設備用の工作機械製品（立旋盤等）および自動機械製品の製造販売を行っている。なお、かつて中核事業の一角であった繊維事業については、2024年3月に大和紡績の株式85.0％を譲渡して連結範囲から除外しており、現在はITインフラ流通事業を中心とする事業構成へ集約されている。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0027",
+          "03_2024_FY_tanshin.pdf:s0019"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "latest-takeaway-01",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2026年3月期連結業績は、ITインフラ流通の牽引により売上高・各段階利益とも大幅な増収増益を達成",
+        "body_ja": "当連結会計年度の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益44,169百万円（同26.6％増）、経常利益44,943百万円（同26.8％増）、親会社株主に帰属する当期純利益32,030百万円（同29.4％増）となった。Windows10 EOSに伴うPC更新需要やGIGAスクール第2期案件の獲得などITインフラ流通事業が大きく業績を牽引した。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-takeaway-02",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "営業キャッシュ・フローは14,569百万円の収入、期末現金残高は43,852百万円を確保",
+        "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは14,569百万円の収入（前期比8,659百万円の増収）となった。売上債権や棚卸資産の増加があったものの、仕入債務の増加や税金等調整前当期純利益44,674百万円の計上等が貢献した。期末の現金及び現金同等物残高は43,852百万円となっている。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-takeaway-03",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "2027年3月期は特需反動で減収減益予想、年間110円配当と6,000百万円上限の自己株式取得を決議",
+        "body_ja": "2027年3月期の通期連結業績予想は、売上高1,189,000百万円（前期比12.0％減）、営業利益36,500百万円（同17.4％減）と、特需一巡に伴う減収減益を見込む。一方で、年間配当は前期比5円増の110円を予定するほか、2026年5月13日の取締役会にて上限6,000百万円（2,400,000株）の自己株式取得および消却を決議し、株主還元の拡充を図っている。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0011",
+          "01_2026_FY_tanshin.pdf:s0012"
+        ],
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-driver-01",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "Windows10 EOS需要獲得とGIGAスクール第2期案件によりITインフラ流通事業が増収増益",
+        "body_ja": "ITインフラ流通事業は、売上高1,336,479百万円（前年同期比18.9％増）、営業利益43,030百万円（同26.4％増）を記録した。2025年10月のWindows10サポート終了を見据えたPC更新需要の獲得や、GIGAスクール第2期共同調達案件での全国営業活動および販売パートナー・ベンダーとの協業深耕が奏功した。さらに「iKAZUCHI（雷）」を通じたクラウド等のリカーリングビジネスも順調に拡大した。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0004",
+          "01_2026_FY_tanshin.pdf:s0005",
+          "01_2026_FY_tanshin.pdf:s0006",
+          "01_2026_FY_tanshin.pdf:s0026"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-driver-02",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "造船・エネルギー向け受注継続や大型機販売により産業機械事業が増益",
+        "body_ja": "産業機械事業は、売上高14,400百万円（前年同期比11.7％増）、営業利益1,127百万円（同32.3％増）となった。工作機械部門において国内の造船やエネルギー業界からの好調な受注が継続したことに加え、主力である航空機業界の需要回復や金型業界向け大型機の販売が寄与した。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0007",
+          "01_2026_FY_tanshin.pdf:s0008"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-outlook-01",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "2027年3月期通期は特需一巡により売上高1,189,000百万円、営業利益36,500百万円の減収減益を予想",
+        "body_ja": "会社側は2027年3月期の連結業績予想として、売上高1,189,000百万円（対前期12.0％減）、営業利益36,500百万円（対前期17.4％減）、親会社株主に帰属する当期純利益25,300百万円（対前期21.0％減）を見込んでいる。Windows10 EOS需要やGIGAスクール案件の集中が一段落することに伴う反動減を織り込んでいる。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0003"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-risk-01",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "AI向け半導体需要高まりに伴うPC・サーバーの価格上昇および納期調整リスク",
+        "body_ja": "第4四半期以降、AI関連データセンター向けを中心とする世界的な半導体需要の高まりを受け、PCやサーバーの価格上昇や一部案件での納期調整が発生している。今後の部品確保や価格転嫁の進捗によっては販売動向や利益率に影響を及ぼす可能性がある。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0009"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-risk-02",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "為替変動や資源価格高止まり、米国通商政策に伴う不透明感",
+        "body_ja": "円安の進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国通商政策の影響、およびAI需要急増による半導体メモリ価格の高騰などにより、マクロ経済および顧客企業のIT投資・設備投資の動向に不透明感が続くことが懸念されている。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0010"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest-context-01",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "更新特需の最大化による過去最高業績の達成と特需一巡後の減益局面への移行",
+        "body_ja": "2026年3月期は、Windows10 EOSおよびGIGAスクール第2期という二大大型特活が重なり、ITインフラ流通事業の推進によって過去最高の業績を記録した。一方で、2027年3月期は特活の一巡により減収減益予想となっており、会社側は総額6,000百万円を上限とする自己株式取得や配当増額など株主還元を強化しながら、リカーリングビジネスの拡充による特需依存からの脱却を進める足を示している。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0011",
+          "01_2026_FY_tanshin.pdf:s0012",
+          "01_2026_FY_tanshin.pdf:s0026"
+        ],
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-perspective-01",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "繊維事業の事業分離とITインフラ流通への経営資源集中による高収益・高成長構造への転換",
+        "body_ja": "過去10年間の軌跡において、同社は従来の「ITインフラ流通」「繊維」「産業機械」の3本柱体制から、資本効率と収益性に課題のあった繊維事業（大和紡績）を2024年3月に事業譲渡・連結除外することで、主力のITインフラ流通事業へ経営資源を集中させる構造改革を断行した。ITインフラ流通事業では、地域密着の拠点網とマルチベンダー提案力を活かし、Windows7/10 EOSやGIGAスクール構想（第1期・第2期）などの市場特需を確実に捉えて業績規模を拡大させた。一方で、これら大規模特需の周期的反動や半導体供給制約といった外部環境変動に左右される業績の波動性を克服するため、「iKAZUCHI（雷）」を中心としたクラウド・サブスクリプション等のリカーリング収益基盤の拡充を推進している。",
+        "evidence_ids": [
+          "10_2017_FY_tanshin.pdf:s0013",
+          "07_2020_FY_tanshin.pdf:s0018",
+          "06_2021_FY_tanshin.pdf:s0014",
+          "03_2024_FY_tanshin.pdf:s0019",
+          "01_2026_FY_tanshin.pdf:s0026",
+          "01_2026_FY_tanshin.pdf:s0027"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-consistent-01",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "全国拠点による地域密着営業とマルチベンダー提案を通じたIT需要獲得能力の維持",
+        "body_ja": "初期（FY2017）、中期（FY2021）、直近（FY2026）を通じて、ITインフラ流通事業における全国の営業拠点網を活用した地域密着営業と、PC・周辺機器・クラウド・各種サービスを組み合わせたマルチベンダー提案が継続的な強みとなっている。FY2017における首都圏中心のIT投資回復、FY2021におけるニューノーマル対応やGIGAスクール第1期、FY2026におけるWindows10 EOSおよびGIGAスクール第2期など、時代の需要変化を捉えて受注を獲得する営業メカニズムが維持されている。",
+        "evidence_ids": [
+          "10_2017_FY_tanshin.pdf:s0013",
+          "06_2021_FY_tanshin.pdf:s0014",
+          "01_2026_FY_tanshin.pdf:s0005"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-consistent-02",
+        "section": "trend.consistent",
+        "order": 2,
+        "headline_ja": "業績成長に応じた配当の継続的引き上げと株主還元の積極化",
+        "body_ja": "初期（FY2017の1株10円）、中期（FY2021の1株300円/株式分割前）、直近（FY2026の1株105円/株式分割後）に至るまで、連結業績の成長や株主還元方針に基づき、配当水準を段階的に引き上げる姿勢を貫いている。2021年4月の1:5株式分割や自己株式取得の実施を交えつつ、株主還元機会の拡充と安定的な利益配分を継続している。",
+        "evidence_ids": [
+          "10_2017_FY_tanshin.pdf:s0015",
+          "06_2021_FY_tanshin.pdf:s0016",
+          "01_2026_FY_tanshin.pdf:s0017"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-change-01",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "繊維事業の事業分離による事業ポートフォリオの抜本的見直しとIT主導体制への移行",
+        "body_ja": "【変化前】FY2020以前は「ITインフラ流通」「繊維」「産業機械」を3本柱として展開していたが、繊維事業は原燃料高や販売不振により利益率の低下や期初予想からの乖離が多発していた。【移行期】FY2024において、ベストオーナーの観点から大和紡績の株式85.0％を譲渡することを決定し、固定資産減損損失16,695百万円および事業譲渡損1,039百万円を計上して連結除外とした。【現在】FY2026においては「ITインフラ流通事業」と「産業機械事業」の2セグメント体制へ再編され、資本・経営資源をIT分野へ集中させる体制が完了している。",
+        "evidence_ids": [
+          "07_2020_FY_tanshin.pdf:s0018",
+          "04_2023_FY_tanshin.pdf:s0028",
+          "03_2024_FY_tanshin.pdf:s0019",
+          "03_2024_FY_tanshin.pdf:s0020",
+          "01_2026_FY_tanshin.pdf:s0027"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-change-02",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "収益認識会計基準の適用に伴う売上高表示の変更と実質成長による売上高1.3兆円超への到達",
+        "body_ja": "【変化前】FY2021以前は従来の会計基準に基づき総額で売上高を計上し、初めて1兆円（1,043,534百万円）に到達した。【移行期】FY2022の期首より「収益認識に関する会計基準」等を適用し、代理人取引の純額表示等への変更により売上高が64,867百万円減少（同期の売上高763,838百万円）した。【現在】新基準適用下においても、ITインフラ流通事業の需要拡大によりFY2026には売上高1,350,879百万円へ達し、収益基準変更の減収要因を乗り越えて実質的な成長を達成した。",
+        "evidence_ids": [
+          "06_2021_FY_tanshin.pdf:s0021",
+          "05_2022_FY_tanshin.pdf:s0022",
+          "01_2026_FY_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-capital-allocation-01",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "不採算・低成長事業の流動化と、株主還元（配当増額・大型自己株式取得）およびIT・成長投資への再配分",
+        "body_ja": "同社はFY2024に繊維事業の株式85.0%を譲渡し、資本効率の改善を図った。同譲渡以降、FY2024の10,000百万円上限、FY2025の9,955百万円（3,669,700株取得）、FY2026の8,453百万円（2,906,700株取得）および19,253百万円（7,877,432株）の消却、さらにFY2027予想における6,000百万円上限の自己株式取得など、自社株買いを連続して実施している。また配当も増額傾向を維持し、成長事業（クラウドポータル「iKAZUCHI」等）への投資と株主還元の拡充を両立させている。",
+        "evidence_ids": [
+          "03_2024_FY_tanshin.pdf:s0019",
+          "03_2024_FY_tanshin.pdf:s0023",
+          "02_2025_FY_tanshin.pdf:s0024",
+          "01_2026_FY_tanshin.pdf:s0025",
+          "01_2026_FY_tanshin.pdf:s0011",
+          "01_2026_FY_tanshin.pdf:s0012"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend-implication-01",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "OS更新・教育政策等の特需一巡に伴う業績波動を吸収するリカーリング基盤の蓄積度の検証",
+        "body_ja": "Windows7/10 EOSやGIGAスクール構想に代表されるITインフラ流通事業の業績は、数年周期で発生する大型特需とその後の反動減という波動を伴う。投資家にとっては、特需期に創出したキャッシュが適切に自己株式取得や増配などの資本効率向上へ回されているかとともに、サブスクリプション管理ポータル「iKAZUCHI（雷）」をはじめとするリカーリングビジネスのストック収益がどの程度底上げされ、反動減の局面で営業利益水準を下支えできるかが今後の重要検証点となる。",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0026"
+        ],
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当期の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益は44,169百万円（前年同期比26.6％増）、経常利益は44,943百万円（前年同期比26.8％増）、親会社株主に帰属する当期純利益は32,030百万円（前年同期比29.4％増）となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "連結業績",
+          "損益"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "営業活動によるキャッシュ・フローは、税金等調整前当期純利益44,674百万円に対し、売上債権の増加や棚卸資産の増加などの減少要因がありましたが、仕入債務の増加などの増加要因により14,569百万円の収入（前期比8,659百万円の収入増加）となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "当期のキャッシュ・フローの概況",
+        "tags": [
+          "キャッシュ・フロー"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "2027年３月期の業績につきましては、売上高1,189,000百万円、営業利益36,500百万円、経常利益36,700百万円、親会社株主に帰属する当期純利益25,300百万円を予想しております。",
+        "period_label_ja": "2027年3月期予想",
+        "period_label_en": "FY2027 Forecast",
+        "statement_type": "forecast",
+        "source_section": "今後の見通し",
+        "tags": [
+          "業績予想"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "クライアントＰＣについては、2025年10月のWindows10サポート終了（ＥＯＳ）を見据えた更新需要を多く獲得し、業績を大きく牽引しました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "ITインフラ流通事業",
+          "PC需要"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "文教向けでは、ＧＩＧＡスクール第２期の共同調達案件において、従来から全国で展開してきたきめ細やかな営業活動が奏功し、販売パートナーおよびベンダーとの協業を深化させた結果、多くの案件を獲得し、大幅な増収につなげました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "GIGAスクール"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "以上の結果、当事業の売上高は1,336,479百万円（前年同期比18.9％増）、営業利益は43,030百万円（前年同期比26.4％増）となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "セグメント業績"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "工作機械部門では、国内において好調な造船、エネルギー業界からの堅調な受注が継続したほか、主力である航空機業界も需要回復が見られ、前年同期比で受注が増加しました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "産業機械事業"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "以上の結果、当事業の売上高は14,400百万円（前年同期比11.7％増）、営業利益は1,127百万円(前年同期比32.3％増)となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "セグメント業績"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0009",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "なお、第４四半期以降は、主にＡＩ関連のデータセンター向けに世界的な半導体需要が高まり、ＰＣやサーバーの価格上昇や一部案件で納期調整が発生しました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "risk",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "半導体",
+          "リスク"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0010",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "今後の経済見通しについては、引き続き雇用情勢や所得環境の改善を背景に緩やかな景気回復が続くことが期待されますが、円安進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国の通商政策による影響、ＡＩ需要急増による半導体メモリ価格の高騰など、先行きについては不透明な状況が当面続くことが見込まれます。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "risk",
+        "source_section": "今後の見通し",
+        "tags": [
+          "マクロリスク"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0011",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 18,
+        "exact_quote_ja": "当社は、2026年５月13日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式取得に係る事項について決議いたしました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象",
+        "tags": [
+          "自己株式取得"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0012",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 18,
+        "exact_quote_ja": "（２）取得し得る株式の総数　2,400,000株（上限）\n（発行済株式総数（自己株式を除く）に対する割合2.76％）\n（３）株式の取得価額の総額　6,000百万円（上限）",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "target",
+        "source_section": "重要な後発事象",
+        "tags": [
+          "自己株式取得"
+        ]
+      },
+      {
+        "evidence_id": "10_2017_FY_tanshin.pdf:s0013",
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "法人向け市場では、国内企業のＩＴ投資が緩やかな回復基調で推移するなか、地域密着営業を推し進めた結果、首都圏をはじめ全ての地域で前年を上回る実績となりました。",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "地域密着営業"
+        ]
+      },
+      {
+        "evidence_id": "06_2021_FY_tanshin.pdf:s0014",
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "全国拠点による対面とオンラインを組み合わせた地域密着営業を推し進めた結果、ニューノーマルな働き方に対応するためのＩＴニーズを捉え、サブスクリプション（継続課金）型サービス、ノートＰＣや液晶モニタ、ヘッドセットといった商品の受注が増加しました。",
+        "period_label_ja": "2021年3月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "地域密着営業"
+        ]
+      },
+      {
+        "evidence_id": "10_2017_FY_tanshin.pdf:s0015",
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "29年３月期期末配当金の内訳　　普通配当　９円00銭　　　　記念配当　１円00銭（創立75周年記念配当）",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "配当の状況",
+        "tags": [
+          "配当"
+        ]
+      },
+      {
+        "evidence_id": "06_2021_FY_tanshin.pdf:s0016",
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "pdf_page": 6,
+        "exact_quote_ja": "上記方針により、当期の期末配当金は、１株当たり300円とすることを予定しております。",
+        "period_label_ja": "2021年3月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "利益配分に関する基本方針および当期・次期の配当",
+        "tags": [
+          "配当"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0017",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "これにより中間配当金１株当たり50円と合わせて、年間配当金は１株当たり105円を予定しております。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "利益配分に関する基本方針および当期・次期の配当",
+        "tags": [
+          "配当"
+        ]
+      },
+      {
+        "evidence_id": "07_2020_FY_tanshin.pdf:s0018",
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "pdf_page": 15,
+        "exact_quote_ja": "したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「繊維事業」及び「産業機械事業」の３つを報告セグメントとしております。",
+        "period_label_ja": "2020年3月期",
+        "period_label_en": "FY2020",
+        "statement_type": "actual",
+        "source_section": "セグメント情報等",
+        "tags": [
+          "3事業体制"
+        ]
+      },
+      {
+        "evidence_id": "03_2024_FY_tanshin.pdf:s0019",
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "2024年３月には、当社及び大和紡績株式会社の企業価値最大化の観点から、繊維事業の独立化を実現するために、大和紡績株式会社の発行済株式の85.0％を株式会社アスパラントグループSPC11号に譲渡いたしました。これに伴い、繊維事業は当連結会計年度末をもって連結の範囲から除外されることになりました。",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "繊維事業譲渡"
+        ]
+      },
+      {
+        "evidence_id": "03_2024_FY_tanshin.pdf:s0020",
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "pdf_page": 19,
+        "exact_quote_ja": "（注）上記の事業譲渡損とは別に、本件譲渡を決定したことに伴い、繊維事業の固定資産の帳簿価額を回収可能額まで減額し、当該減少額を減損損失16,695百万円として特別損失に計上しております。",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "事業分離",
+        "tags": [
+          "減損損失"
+        ]
+      },
+      {
+        "evidence_id": "06_2021_FY_tanshin.pdf:s0021",
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "これらの結果、当期の連結業績は、売上高1,043,534百万円（前年同期比10.5％増）、営業利益は35,028百万円（前年同期比6.7％増）",
+        "period_label_ja": "2021年3月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "売上高1兆円"
+        ]
+      },
+      {
+        "evidence_id": "05_2022_FY_tanshin.pdf:s0022",
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "pdf_page": 15,
+        "exact_quote_ja": "この結果、当連結会計年度の売上高は64,867百万円減少、売上原価は61,835百万円減少しております。",
+        "period_label_ja": "2022年3月期",
+        "period_label_en": "FY2022",
+        "statement_type": "actual",
+        "source_section": "会計方針の変更",
+        "tags": [
+          "収益認識基準"
+        ]
+      },
+      {
+        "evidence_id": "03_2024_FY_tanshin.pdf:s0023",
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "pdf_page": 21,
+        "exact_quote_ja": "（２）取得し得る株式の総数　5,000,000株（上限）\n（発行済株式総数（自己株式を除く）に対する割合5.34％）\n（３）株式の取得価額の総額　10,000百万円（上限）",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "target",
+        "source_section": "重要な後発事象",
+        "tags": [
+          "自己株式取得"
+        ]
+      },
+      {
+        "evidence_id": "02_2025_FY_tanshin.pdf:s0024",
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "pdf_page": 14,
+        "exact_quote_ja": "当社は、2024年５月９日開催の取締役会決議に基づき、自己株式3,669,700株の取得を行いました。この取得等により、当連結会計年度において自己株式が9,955百万円増加し、当連結会計年度末において自己株式が15,088百万円となっております。",
+        "period_label_ja": "2025年3月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "株主資本の金額に著しい変動があった場合の注記",
+        "tags": [
+          "自己株式取得"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0025",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 14,
+        "exact_quote_ja": "当社は、2025年５月14日開催の取締役会決議及び2025年６月19日開催の取締役会決議に基づき、自己株式2,906,700株を8,453百万円で取得しました。また、2025年11月６日開催の取締役会決議に基づき、2025年11月28日付で、自己株式7,877,432株、19,253百万円の消却を実施",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "株主資本の金額に著しい変動があった場合の注記",
+        "tags": [
+          "自己株式消却"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0026",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "また、サブスクリプション管理ポータル「ｉＫＡＺＵＣＨＩ（雷）」で提供するクラウド製品を中心に、リカーリングビジネスの強化に加え、新規テックベンダーおよびオリジナルサービスの市場深耕にも注力し、業績拡大につなげました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "iKAZUCHI",
+          "クラウド"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0027",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 15,
+        "exact_quote_ja": "したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「産業機械事業」の２つを報告セグメントとしております。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "セグメント情報等の注記",
+        "tags": [
+          "報告セグメント"
+        ]
+      },
+      {
+        "evidence_id": "04_2023_FY_tanshin.pdf:s0028",
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "繊維事業全体としては、原燃料価格の高止まりや主力製品の販売不振が響き、特に利益面において期初の業績予想から大きく乖離する実績となりました。",
+        "period_label_ja": "2023年3月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況",
+        "tags": [
+          "繊維事業",
+          "業績乖離"
+        ]
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "繊維事業の事業分離やITインフラ流通への経営資源集中など、中期経営計画に沿った事業ポートフォリオ変革の基本方針を一貫して推進した。低成長・不採算事業の整理と成長分野への集中に関して戦略的一貫性が観察される。",
+          "evidence_ids": [
+            "07_2020_FY_tanshin.pdf:s0018",
+            "03_2024_FY_tanshin.pdf:s0019",
+            "01_2026_FY_tanshin.pdf:s0027"
+          ]
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "サブスクリプションポータル「iKAZUCHI（雷）」の拡大、大和紡績の株式譲渡による繊維事業の切り離し、および連続した大規模な自己株式取得・消却など、公表した施策の実行と完了が確認できる。",
+          "evidence_ids": [
+            "03_2024_FY_tanshin.pdf:s0019",
+            "02_2025_FY_tanshin.pdf:s0024",
+            "01_2026_FY_tanshin.pdf:s0025",
+            "01_2026_FY_tanshin.pdf:s0026"
+          ]
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "ITインフラ流通事業ではWindows10 EOSやGIGAスクール特需を捉えて概ね好業績を達成した一方で、過去の繊維事業においては原燃料高や需要低迷により2023年3月期等で期初予想からの大きな下振れ乖離が発生した。",
+          "evidence_ids": [
+            "04_2023_FY_tanshin.pdf:s0028",
+            "01_2026_FY_tanshin.pdf:s0001"
+          ]
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "繊維事業の譲渡理由や固定資産減損損失の計上、新会計基準（収益認識基準）適用に伴う売上高減少影響、特需一巡後の減益前提などについて、決算短信等で具体的かつ透明性の高い説明を行っている。",
+          "evidence_ids": [
+            "05_2022_FY_tanshin.pdf:s0022",
+            "03_2024_FY_tanshin.pdf:s0019",
+            "03_2024_FY_tanshin.pdf:s0020",
+            "01_2026_FY_tanshin.pdf:s0003"
+          ]
+        }
+      ],
+      "overall_rationale_ja": "ダイワボウホールディングスは、ITインフラ流通事業を中心とする成長戦略の実行において高い戦略的一貫性と実行力を示した。特に資本効率に課題のあった繊維事業（大和紡績）の株式譲渡による事業分離をやり遂げ、自己株式取得・消却を含む株主還元を大幅に強化した。過去の繊維事業における業績下振れや、IT分野での特需・反動減による業績の波動性は存在するものの、経営陣の説明責任と構造改革へのコミットメントは高く評価できる。"
+    }
+  }
+}
