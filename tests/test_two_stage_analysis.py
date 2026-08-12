@@ -1,11 +1,15 @@
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
-from pydantic import ValidationError
-
-from tanshin_pipeline.config import RESEARCH_MAX_EVIDENCE_RECORDS
+from tanshin_pipeline.config import (
+    RESEARCH_MAX_EVIDENCE_RECORDS,
+    output_paths,
+)
+from tanshin_pipeline.persistence import read_json, write_json
+from tanshin_pipeline.pipeline import reprocess_stored_research
 from tanshin_pipeline.render import render_japanese
 from tanshin_pipeline.request_builder import (
     build_analysis_spec,
@@ -22,7 +26,7 @@ from tanshin_pipeline.schemas import (
     materialize_japanese_synthesis,
 )
 from tanshin_pipeline.selection import select_filings
-from tests.helpers import fake_research_dossier
+from tests.helpers import fake_research_dossier, workspace_temp_directory
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -301,7 +305,77 @@ class TwoStageAnalysisTests(unittest.TestCase):
         ):
             validate_research_dossier(broken, self.manifest)
 
-    def test_research_dossier_rejects_evidence_above_the_output_ceiling(
+    def test_table_header_unit_can_be_omitted_from_the_row_quote(self) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        evidence = payload["evidence"][0]
+        evidence["exact_quote_ja"] = (
+            "2026年3月期 1,273,136 8.1 98,743 16.6 94,051 12.8"
+        )
+        payload["financial_observations"] = [
+            {
+                "observation_id": "financial-table-unit",
+                "source_filename": evidence["source_filename"],
+                "metric": "revenue",
+                "metric_label_ja": "売上高",
+                "scope": "consolidated",
+                "scope_label_ja": "連結",
+                "value_kind": "monetary",
+                "statement_type": "actual",
+                "forecast_version": "not_applicable",
+                "target_fiscal_year": 2026,
+                "target_period": "FY",
+                "value_surface_ja": "1,273,136百万円",
+                "evidence_id": evidence["evidence_id"],
+            }
+        ]
+        coverage = next(
+            item
+            for item in payload["filing_coverage"]
+            if item["source_filename"] == evidence["source_filename"]
+        )
+        coverage["financial_observation_ids"] = ["financial-table-unit"]
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        validate_research_dossier(dossier, self.manifest)
+        metrics = build_research_metrics(dossier, self.manifest)
+        self.assertEqual(
+            metrics["financial_observations"]["evidence_support_modes"],
+            {"table_header_unit": 1},
+        )
+
+    def test_repeated_bare_table_value_is_too_ambiguous(self) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        evidence = payload["evidence"][0]
+        evidence["exact_quote_ja"] = "売上高 100,000 前期 100,000"
+        payload["financial_observations"] = [
+            {
+                "observation_id": "financial-ambiguous-table-unit",
+                "source_filename": evidence["source_filename"],
+                "metric": "revenue",
+                "metric_label_ja": "売上高",
+                "scope": "consolidated",
+                "scope_label_ja": "連結",
+                "value_kind": "monetary",
+                "statement_type": "actual",
+                "forecast_version": "not_applicable",
+                "target_fiscal_year": 2026,
+                "target_period": "FY",
+                "value_surface_ja": "100,000百万円",
+                "evidence_id": evidence["evidence_id"],
+            }
+        ]
+        coverage = next(
+            item
+            for item in payload["filing_coverage"]
+            if item["source_filename"] == evidence["source_filename"]
+        )
+        coverage["financial_observation_ids"] = [
+            "financial-ambiguous-table-unit"
+        ]
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        with self.assertRaisesRegex(ValueError, "value surfaces absent"):
+            validate_research_dossier(dossier, self.manifest)
+
+    def test_output_ceiling_is_prompt_guidance_not_a_local_failure(
         self,
     ) -> None:
         payload = self.dossier.model_dump(mode="json")
@@ -315,14 +389,60 @@ class TwoStageAnalysisTests(unittest.TestCase):
             }
             for index in range(1, RESEARCH_MAX_EVIDENCE_RECORDS + 2)
         ]
-        with self.assertRaises(ValidationError):
-            JapaneseResearchDossier.model_validate(payload)
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        self.assertEqual(
+            len(dossier.evidence),
+            RESEARCH_MAX_EVIDENCE_RECORDS + 1,
+        )
 
     def test_grounding_can_return_no_business_driver(self) -> None:
         payload = self.dossier.model_dump(mode="json")
         payload["business_drivers"] = []
         dossier = JapaneseResearchDossier.model_validate(payload)
         self.assertEqual(dossier.business_drivers, [])
+
+    def test_stored_raw_research_can_be_reprocessed_without_an_api_call(
+        self,
+    ) -> None:
+        with workspace_temp_directory(REPOSITORY_ROOT) as temporary:
+            output_root = temporary / "final_output"
+            paths = output_paths(
+                output_root,
+                "1808",
+                report_date="20260812",
+            )
+            paths.artifacts_dir.mkdir(parents=True)
+            response_text = json.dumps(
+                self.dossier.model_dump(mode="json"),
+                ensure_ascii=False,
+            )
+            write_json(
+                paths.research_raw_response,
+                {
+                    "candidates": [
+                        {
+                            "content": {
+                                "parts": [{"text": response_text}],
+                            },
+                            "finish_reason": "STOP",
+                        }
+                    ]
+                },
+            )
+            result = reprocess_stored_research(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+                report_date="20260812",
+            )
+            self.assertTrue(result["research_recovered"])
+            self.assertEqual(result["api_requests"], 0)
+            self.assertTrue(paths.research_structured.is_file())
+            self.assertTrue(paths.research_metrics.is_file())
+            self.assertEqual(
+                read_json(paths.run_metadata)["mode"],
+                "reprocess",
+            )
 
     def test_synthesis_uses_dossier_evidence_and_renders_score_details(self) -> None:
         evidence_ids = [item.evidence_id for item in self.dossier.evidence]

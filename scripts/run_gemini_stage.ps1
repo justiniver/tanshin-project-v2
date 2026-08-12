@@ -166,7 +166,8 @@ try {
         Write-Host 'Expected result: a stored PDF-grounded research dossier.'
         Write-Host "Diagnostics: final_output\$SecurityCode\artifacts\model_response_research.raw.json,"
         Write-Host '  research.structured.json, research_metrics.json,'
-        Write-Host '  api_status_research.json, token_usage.json, and cost.json'
+        Write-Host '  validation_research.json, api_status_research.json,'
+        Write-Host '  token_usage.json, and cost.json'
     } elseif ($Stage -eq 'analysis') {
         Write-Host 'PDFs submitted: none (stored research dossier only)'
         Write-Host (

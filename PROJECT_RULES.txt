@@ -59,3 +59,5 @@ TANSHIN PIPELINE WORKING RULES
     can be parsed, normalized, and rendered. Manual review is the publication
     authority. API, structured-output parsing, missing-artifact, processing, and
     rendering failures may still stop the pipeline.
+    Research-dossier cross-checks follow the same policy: a Pydantic-parseable
+    dossier proceeds to synthesis while findings remain diagnostic artifacts.

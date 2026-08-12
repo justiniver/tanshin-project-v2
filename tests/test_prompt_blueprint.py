@@ -276,46 +276,31 @@ class PromptBlueprintTests(unittest.TestCase):
     def test_research_request_has_compact_native_output_limits(self) -> None:
         manifest = select_filings(REPOSITORY_ROOT, "1808")
         spec = build_research_spec(REPOSITORY_ROOT, manifest)
-        properties = spec.response_schema["properties"]
-        self.assertEqual(
-            properties["evidence"]["maxItems"],
-            RESEARCH_MAX_EVIDENCE_RECORDS,
+        provider_properties = spec.response_schema["properties"]
+        self.assertNotIn("maxItems", provider_properties["evidence"])
+        self.assertNotIn(
+            "maxItems",
+            provider_properties["financial_observations"],
         )
         self.assertEqual(
-            properties["financial_observations"]["maxItems"],
-            RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-        )
-        self.assertEqual(
-            properties["commentary_observations"]["maxItems"],
-            RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-        )
-        self.assertEqual(
-            properties["disclosures"]["maxItems"],
-            RESEARCH_MAX_DISCLOSURES,
-        )
-        self.assertEqual(
-            properties["business_drivers"]["maxItems"],
-            RESEARCH_MAX_BUSINESS_DRIVERS,
-        )
-        self.assertEqual(
-            properties["commitments"]["maxItems"],
-            RESEARCH_MAX_COMMITMENTS,
-        )
-        self.assertEqual(
-            properties["management_themes"]["maxItems"],
-            RESEARCH_MAX_MANAGEMENT_THEMES,
-        )
-        coverage_properties = spec.response_schema["$defs"][
-            "ResearchFilingCoverage"
-        ]["properties"]
-        self.assertEqual(
-            coverage_properties["commentary_observation_ids"]["maxItems"],
-            2,
+            spec.response_schema["$defs"]["ModelManagementConsistency"][
+                "properties"
+            ]["components"]["maxItems"],
+            4,
         )
         self.assertIn(
             f"hard dossier maximum of\n  {RESEARCH_MAX_EVIDENCE_RECORDS}",
             spec.prompt,
         )
+        for ceiling in (
+            RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+            RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+            RESEARCH_MAX_DISCLOSURES,
+            RESEARCH_MAX_BUSINESS_DRIVERS,
+            RESEARCH_MAX_COMMITMENTS,
+            RESEARCH_MAX_MANAGEMENT_THEMES,
+        ):
+            self.assertIn(str(ceiling), spec.prompt)
         self.assertIn("All requested counts are upper bounds", spec.prompt)
         self.assertNotIn("8-15 decision-useful evidence", spec.prompt)
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import hashlib
 import json
 from dataclasses import dataclass, field
@@ -70,7 +71,27 @@ def response_schema_for(
         from openai.lib._pydantic import to_strict_json_schema
 
         return to_strict_json_schema(model)
-    return model.model_json_schema()
+    schema = copy.deepcopy(model.model_json_schema())
+
+    def simplify_gemini_schema(value: Any) -> None:
+        if isinstance(value, dict):
+            # Gemini can reject a large schema when many optional array-size
+            # constraints are combined. Keep exact-cardinality arrays, such as
+            # the four management-consistency components, but enforce all other
+            # research ceilings in the prompt and local Pydantic validation.
+            if (
+                "maxItems" in value
+                and value.get("minItems") != value["maxItems"]
+            ):
+                value.pop("maxItems")
+            for child in value.values():
+                simplify_gemini_schema(child)
+        elif isinstance(value, list):
+            for child in value:
+                simplify_gemini_schema(child)
+
+    simplify_gemini_schema(schema)
+    return schema
 
 
 @dataclass(frozen=True)

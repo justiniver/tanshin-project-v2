@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
@@ -424,14 +425,43 @@ def _load_research(
         raise PipelineValidationError(
             f"Stored research dossier is missing: {paths.research_structured}"
         )
-    dossier = JapaneseResearchDossier.model_validate(
-        read_json(paths.research_structured)
-    )
+    try:
+        return JapaneseResearchDossier.model_validate(
+            read_json(paths.research_structured)
+        )
+    except ValueError as exc:
+        raise PipelineValidationError(
+            f"Stored research dossier cannot be parsed: {exc}"
+        ) from exc
+
+
+def _write_research_diagnostics(
+    paths: OutputPaths,
+    dossier: JapaneseResearchDossier,
+    manifest: SelectionManifest,
+) -> dict[str, Any]:
+    """Persist non-gating research validation and deterministic metrics."""
+
+    warning: str | None = None
     try:
         validate_research_dossier(dossier, manifest)
     except ValueError as exc:
-        raise PipelineValidationError(str(exc)) from exc
-    return dossier
+        warning = str(exc)
+    validation_payload = {
+        "schema_version": SCHEMA_VERSION,
+        "valid": warning is None,
+        "non_gating": True,
+        "warning_count": 0 if warning is None else 1,
+        "warnings": [] if warning is None else [warning],
+        "policy": (
+            "A parseable research dossier proceeds to synthesis. Deterministic "
+            "research findings are diagnostics and do not stop report generation."
+        ),
+    }
+    metrics = build_research_metrics(dossier, manifest)
+    write_json(paths.research_validation, validation_payload)
+    write_json(paths.research_metrics, metrics)
+    return metrics
 
 
 def prepare_analysis(
@@ -510,10 +540,7 @@ def prepare_analysis(
     write_text(paths.analysis_system_prompt, spec.system_prompt)
     write_text(paths.analysis_prompt, spec.prompt)
     write_json(paths.analysis_schema, spec.response_schema)
-    write_json(
-        paths.research_metrics,
-        build_research_metrics(dossier, manifest),
-    )
+    _write_research_diagnostics(paths, dossier, manifest)
     write_json(
         paths.translation_request_plan,
         _pending_stage_plan(
@@ -1264,24 +1291,11 @@ def execute_research(
         started_at_utc=started_at_utc,
         result=result,
     )
-    try:
-        validate_research_dossier(result.structured, prepared.manifest)
-    except ValueError as exc:
-        wrapped = PipelineValidationError(str(exc))
-        _write_processing_failure_report_status(
-            prepared,
-            language="ja",
-            mode="research",
-            reason=(
-                "The provider completed the research request, but the returned "
-                f"dossier could not be used for synthesis: {wrapped}"
-            ),
-        )
-        raise wrapped from exc
     write_json(paths.research_structured, result.structured)
-    write_json(
-        paths.research_metrics,
-        build_research_metrics(result.structured, prepared.manifest),
+    _write_research_diagnostics(
+        paths,
+        result.structured,
+        prepared.manifest,
     )
     _record_stage_usage(
         paths,
@@ -1635,6 +1649,106 @@ def reprocess_stored_analysis(
         "final_report": str(prepared.paths.report_ja),
         "validation": str(prepared.paths.analysis_validation),
         "normalization": str(prepared.paths.analysis_normalization),
+    }
+
+
+def _structured_payload_from_stored_raw(
+    raw_response: dict[str, Any],
+) -> dict[str, Any]:
+    """Recover a structured JSON object from a persisted provider response."""
+
+    candidates = raw_response.get("candidates")
+    if isinstance(candidates, list) and candidates:
+        content = candidates[0].get("content")
+        parts = content.get("parts") if isinstance(content, dict) else None
+        if isinstance(parts, list):
+            text = "".join(
+                part.get("text", "")
+                for part in parts
+                if isinstance(part, dict)
+            )
+            if text:
+                payload = json.loads(text)
+                if isinstance(payload, dict):
+                    return payload
+
+    parsed = raw_response.get("output_parsed")
+    if isinstance(parsed, dict):
+        return parsed
+    output = raw_response.get("output")
+    if isinstance(output, list):
+        text_parts: list[str] = []
+        for item in output:
+            if not isinstance(item, dict):
+                continue
+            content = item.get("content")
+            if not isinstance(content, list):
+                continue
+            text_parts.extend(
+                part.get("text", "")
+                for part in content
+                if isinstance(part, dict)
+                and isinstance(part.get("text"), str)
+            )
+        if text_parts:
+            payload = json.loads("".join(text_parts))
+            if isinstance(payload, dict):
+                return payload
+    raise ValueError(
+        "The stored raw provider response contains no recoverable JSON object."
+    )
+
+
+def reprocess_stored_research(
+    repository_root: Path,
+    security_code: str,
+    *,
+    output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
+    model_profile: str = DEFAULT_MODEL_PROFILE,
+) -> dict[str, Any]:
+    """Validate and persist a completed research response without networking."""
+
+    prepared = prepare_research(
+        repository_root,
+        security_code,
+        output_root=output_root,
+        report_date=report_date,
+        model_profile=model_profile,
+    )
+    raw_path = prepared.paths.research_raw_response
+    if not raw_path.is_file():
+        raise PipelineValidationError(
+            f"Stored raw research response is missing: {raw_path}"
+        )
+    try:
+        payload = _structured_payload_from_stored_raw(read_json(raw_path))
+        dossier = JapaneseResearchDossier.model_validate(payload)
+    except (ValueError, json.JSONDecodeError) as exc:
+        raise PipelineValidationError(
+            f"Stored research response is invalid: {exc}"
+        ) from exc
+    write_json(prepared.paths.research_structured, dossier)
+    _write_research_diagnostics(
+        prepared.paths,
+        dossier,
+        prepared.manifest,
+    )
+    write_json(
+        prepared.paths.run_metadata,
+        _metadata(
+            repository_root.resolve(),
+            prepared,
+            mode="reprocess",
+            api_requests=0,
+        ),
+    )
+    return {
+        "research_recovered": True,
+        "api_requests": 0,
+        "structured_research": str(prepared.paths.research_structured),
+        "research_metrics": str(prepared.paths.research_metrics),
+        "next_stage": "analysis",
     }
 
 

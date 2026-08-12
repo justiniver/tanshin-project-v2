@@ -31,6 +31,17 @@ _INTENSITY_ORDER = {
     CommentaryIntensity.HIGH: 3,
     CommentaryIntensity.NOT_ASSESSABLE: 0,
 }
+_SIGNED_NUMBER_TOKEN_RE = re.compile(
+    r"(?<![\d,.])(?P<number>[+\-\u25b3\u25b2]?\s*"
+    r"\d[\d,]*(?:\.\d+)?)(?![\d,.])"
+)
+_TABLE_UNIT_SUFFIXES = {
+    "monetary": ("兆円", "億円", "百万円", "千円", "円"),
+    "per_share": ("円/株", "円/1株", "円", "銭"),
+    "percentage": ("%", "％"),
+    "count": ("件", "人", "戸", "台", "社", "店", "店舗", "棟"),
+    "ratio": ("倍", "回"),
+}
 
 
 def _counts(values: Iterable[str]) -> dict[str, int]:
@@ -48,6 +59,50 @@ def _normalized_label(value: str) -> str:
 def _canonical_quote(value: str) -> str:
     normalized = unicodedata.normalize("NFKC", value)
     return re.sub(r"[\s、。・,.;:：；（）()「」『』【】\[\]]+", "", normalized)
+
+
+def _canonical_number_token(value: str) -> str:
+    normalized = unicodedata.normalize("NFKC", value)
+    normalized = re.sub(r"\s+", "", normalized).replace(",", "")
+    if normalized.startswith(("\u25b3", "\u25b2")):
+        normalized = "-" + normalized[1:]
+    return normalized.lstrip("+")
+
+
+def _financial_value_support_mode(
+    observation: ResearchFinancialObservation,
+    evidence_text: str,
+) -> str | None:
+    """Classify exact or table-header-unit support for a financial surface."""
+
+    source_text = _normalized_label(evidence_text)
+    value_surface = _normalized_label(observation.value_surface_ja)
+    if value_surface in source_text:
+        return "exact_surface"
+
+    suffixes = _TABLE_UNIT_SUFFIXES.get(observation.value_kind.value, ())
+    normalized_suffix = next(
+        (
+            _normalized_label(candidate)
+            for candidate in sorted(suffixes, key=len, reverse=True)
+            if value_surface.endswith(_normalized_label(candidate))
+        ),
+        None,
+    )
+    if normalized_suffix is None:
+        return None
+    numeric_surface = value_surface[: -len(normalized_suffix)]
+    if not numeric_surface:
+        return None
+    expected = _canonical_number_token(numeric_surface)
+    matches = [
+        match.group("number")
+        for match in _SIGNED_NUMBER_TOKEN_RE.finditer(
+            unicodedata.normalize("NFKC", evidence_text)
+        )
+        if _canonical_number_token(match.group("number")) == expected
+    ]
+    return "table_header_unit" if len(matches) == 1 else None
 
 
 def _evidence_references(dossier: JapaneseResearchDossier) -> set[str]:
@@ -317,9 +372,13 @@ def validate_research_dossier(
         evidence = evidence_by_id[observation.evidence_id]
         if evidence.source_filename != observation.source_filename:
             source_mismatches.append(observation.observation_id)
-        source_text = _normalized_label(evidence.exact_quote_ja)
-        value_surface = _normalized_label(observation.value_surface_ja)
-        if value_surface not in source_text:
+        if (
+            _financial_value_support_mode(
+                observation,
+                evidence.exact_quote_ja,
+            )
+            is None
+        ):
             value_surface_mismatches.append(observation.observation_id)
     for observation in dossier.commentary_observations:
         if any(
@@ -660,13 +719,12 @@ def _management_consistency_metrics(
     }
 
 
-def build_research_metrics(
+def _build_research_metrics_unchecked(
     dossier: JapaneseResearchDossier,
     manifest: SelectionManifest | None = None,
 ) -> dict[str, Any]:
-    """Produce auditable comparisons and coverage summaries for synthesis."""
+    """Produce metrics after the caller has recorded research diagnostics."""
 
-    validate_research_dossier(dossier, manifest)
     commitments = dossier.commitments
     completed_forecasts = [
         item
@@ -720,6 +778,15 @@ def build_research_metrics(
         for item in dossier.filing_coverage
         if item.coverage_gaps
     ]
+    evidence_by_id = {item.evidence_id: item for item in dossier.evidence}
+    financial_support_modes = _counts(
+        _financial_value_support_mode(
+            observation,
+            evidence_by_id[observation.evidence_id].exact_quote_ja,
+        )
+        or "unsupported"
+        for observation in dossier.financial_observations
+    )
     return {
         "filing_coverage": {
             "selected_filings": len(dossier.filing_coverage),
@@ -767,6 +834,7 @@ def build_research_metrics(
                     and item.forecast_version.value == "revised"
                 ]
             ),
+            "evidence_support_modes": financial_support_modes,
             "forecast_accuracy": _forecast_metrics(
                 dossier.financial_observations
             ),
@@ -873,3 +941,60 @@ def build_research_metrics(
             "revision history and do not include peer or quarterly analysis."
         ),
     }
+
+
+def build_research_metrics(
+    dossier: JapaneseResearchDossier,
+    manifest: SelectionManifest | None = None,
+    *,
+    strict_validation: bool = False,
+) -> dict[str, Any]:
+    """Produce synthesis metrics without making diagnostics a publication gate."""
+
+    validation_warning: str | None = None
+    try:
+        validate_research_dossier(dossier, manifest)
+    except ValueError as exc:
+        if strict_validation:
+            raise
+        validation_warning = str(exc)
+    try:
+        metrics = _build_research_metrics_unchecked(dossier, manifest)
+        metrics_complete = True
+        metrics_warning = None
+    except Exception as exc:
+        metrics_complete = False
+        metrics_warning = f"{type(exc).__name__}: {exc}"
+        metrics = {
+            "filing_coverage": {
+                "selected_filings": len(dossier.filing_coverage),
+            },
+            "financial_observations": {
+                "total": len(dossier.financial_observations),
+            },
+            "commentary": {
+                "observations": len(dossier.commentary_observations),
+            },
+            "disclosures": {"total": len(dossier.disclosures)},
+            "business_drivers": {"total": len(dossier.business_drivers)},
+            "commitments": {"total": len(dossier.commitments)},
+            "management_themes": {
+                "total": len(dossier.management_themes),
+            },
+            "coverage": {
+                "evidence_records": len(dossier.evidence),
+                "research_notes": list(dossier.research_notes),
+            },
+            "interpretation_guardrail": (
+                "Local comparison metrics were incomplete. The synthesis pass "
+                "must rely only on the persisted dossier and its evidence."
+            ),
+        }
+    metrics["diagnostics"] = {
+        "validation_passed": validation_warning is None,
+        "validation_warning": validation_warning,
+        "metrics_complete": metrics_complete,
+        "metrics_warning": metrics_warning,
+        "non_gating": True,
+    }
+    return metrics

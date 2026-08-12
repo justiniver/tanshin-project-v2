@@ -114,11 +114,13 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("TANSHIN_TESTING=1 blocks live execution", script)
         self.assertIn("Write-ApiStatusSummary", script)
         self.assertIn("MODEL RUN STATE: RUNNING", script)
+        self.assertIn("RESEARCH RECOVERY STATE: SUCCESS", script)
+        self.assertIn("--reprocess-stored", script)
         self.assertIn("Research provider/model:", script)
         self.assertIn("PDFs submitted in research request:", script)
         self.assertIn("PREVIEW ONLY: no API request was sent.", script)
         self.assertIn("$reportDate = Get-Date -Format 'yyyyMMdd'", script)
-        self.assertEqual(script.count("--report-date $reportDate"), 2)
+        self.assertEqual(script.count("--report-date $reportDate"), 3)
         self.assertIn(
             '$currentOutput = Join-Path $repositoryRoot "final_output\\$Code"',
             script,

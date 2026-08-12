@@ -7,18 +7,6 @@ from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from .config import (
-    RESEARCH_MAX_BUSINESS_DRIVERS,
-    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-    RESEARCH_MAX_COMMITMENTS,
-    RESEARCH_MAX_DISCLOSURES,
-    RESEARCH_MAX_EVIDENCE_RECORDS,
-    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    RESEARCH_MAX_MANAGEMENT_THEMES,
-    RESEARCH_MAX_NOTES,
-)
-
-
 NonEmpty = Annotated[str, Field(min_length=1)]
 ModelProfile = Literal[
     "default",
@@ -269,7 +257,6 @@ class ModelManagementConsistencyComponent(BaseModel):
         )
     )
     evidence_ids: list[NonEmpty] = Field(
-        max_length=4,
         description=(
             "Evidence IDs from management-discussion passages that support the "
             "rating or explain why the evidence is insufficient."
@@ -443,7 +430,6 @@ class EvidenceRecord(StrictModel):
     )
     tags: list[str] = Field(
         default_factory=list,
-        max_length=4,
         description="Optional short topical labels; use an empty list when unnecessary.",
     )
 
@@ -461,17 +447,16 @@ class ResearchFilingCoverage(BaseModel):
     period_label_ja: NonEmpty
     is_latest: bool
     coverage_status: FilingCoverageStatus
-    management_discussion_evidence_ids: list[NonEmpty] = Field(max_length=3)
-    outlook_evidence_ids: list[NonEmpty] = Field(max_length=2)
-    segment_evidence_ids: list[NonEmpty] = Field(max_length=2)
-    cash_flow_evidence_ids: list[NonEmpty] = Field(max_length=1)
-    capital_allocation_evidence_ids: list[NonEmpty] = Field(max_length=1)
-    footnote_evidence_ids: list[NonEmpty] = Field(max_length=1)
-    financial_observation_ids: list[NonEmpty] = Field(max_length=8)
-    commentary_observation_ids: list[NonEmpty] = Field(max_length=2)
-    disclosure_ids: list[NonEmpty] = Field(max_length=2)
+    management_discussion_evidence_ids: list[NonEmpty]
+    outlook_evidence_ids: list[NonEmpty]
+    segment_evidence_ids: list[NonEmpty]
+    cash_flow_evidence_ids: list[NonEmpty]
+    capital_allocation_evidence_ids: list[NonEmpty]
+    footnote_evidence_ids: list[NonEmpty]
+    financial_observation_ids: list[NonEmpty]
+    commentary_observation_ids: list[NonEmpty]
+    disclosure_ids: list[NonEmpty]
     coverage_gaps: list[str] = Field(
-        max_length=6,
         description=(
             "Concise missing or unavailable categories. Use an empty list when "
             "coverage is complete; never silently omit an unavailable category."
@@ -524,7 +509,7 @@ class ResearchCommentaryObservation(BaseModel):
     tone: CommentaryTone
     intensity: CommentaryIntensity
     summary_ja: NonEmpty
-    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=2)
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class ResearchDisclosureRecord(BaseModel):
@@ -539,7 +524,7 @@ class ResearchDisclosureRecord(BaseModel):
     label_ja: NonEmpty
     summary_ja: NonEmpty
     importance: Literal["primary", "secondary"]
-    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=2)
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class ResearchBusinessDriver(BaseModel):
@@ -570,8 +555,8 @@ class ResearchBusinessDriver(BaseModel):
             "mechanism, including material qualifications."
         )
     )
-    observed_periods_ja: list[NonEmpty] = Field(min_length=1, max_length=5)
-    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=4)
+    observed_periods_ja: list[NonEmpty] = Field(min_length=1)
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class ResearchCommitmentRecord(BaseModel):
@@ -595,7 +580,6 @@ class ResearchCommitmentRecord(BaseModel):
     forecast_posture: ForecastPosture
     evidence_ids: list[NonEmpty] = Field(
         min_length=1,
-        max_length=4,
         description=(
             "Evidence for the original statement and, when observable, its "
             "revision or later outcome."
@@ -620,7 +604,7 @@ class ResearchThemeRecord(BaseModel):
             "did, and what outcome or unresolved tension is visible."
         )
     )
-    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=4)
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class JapaneseResearchDossier(BaseModel):
@@ -630,36 +614,16 @@ class JapaneseResearchDossier(BaseModel):
 
     schema_version: NonEmpty
     identity: CompanyIdentity
-    evidence: list[EvidenceRecord] = Field(
-        min_length=1,
-        max_length=RESEARCH_MAX_EVIDENCE_RECORDS,
-    )
+    evidence: list[EvidenceRecord] = Field(min_length=1)
     filing_coverage: list[ResearchFilingCoverage] = Field(min_length=1)
-    financial_observations: list[ResearchFinancialObservation] = Field(
-        max_length=RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    )
-    commentary_observations: list[ResearchCommentaryObservation] = Field(
-        max_length=RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-    )
-    disclosures: list[ResearchDisclosureRecord] = Field(
-        max_length=RESEARCH_MAX_DISCLOSURES,
-    )
-    business_drivers: list[ResearchBusinessDriver] = Field(
-        max_length=RESEARCH_MAX_BUSINESS_DRIVERS,
-    )
-    commitments: list[ResearchCommitmentRecord] = Field(
-        default_factory=list,
-        max_length=RESEARCH_MAX_COMMITMENTS,
-    )
-    management_themes: list[ResearchThemeRecord] = Field(
-        default_factory=list,
-        max_length=RESEARCH_MAX_MANAGEMENT_THEMES,
-    )
+    financial_observations: list[ResearchFinancialObservation]
+    commentary_observations: list[ResearchCommentaryObservation]
+    disclosures: list[ResearchDisclosureRecord]
+    business_drivers: list[ResearchBusinessDriver]
+    commitments: list[ResearchCommitmentRecord] = Field(default_factory=list)
+    management_themes: list[ResearchThemeRecord] = Field(default_factory=list)
     management_consistency: ModelManagementConsistency
-    research_notes: list[str] = Field(
-        default_factory=list,
-        max_length=RESEARCH_MAX_NOTES,
-    )
+    research_notes: list[str] = Field(default_factory=list)
 
 
 class AnalysisClaim(StrictModel):

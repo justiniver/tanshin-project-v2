@@ -645,6 +645,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `model_response_research.raw.json` | Raw research-provider response |
 | `research.structured.json` | Parsed PDF-grounded research dossier |
 | `research_metrics.json` | Filing coverage, forecast/actual comparisons, target follow-through, commentary changes, disclosures, drivers, themes, and consistency subscores |
+| `validation_research.json` | Non-gating research-dossier diagnostics; warnings never stop synthesis |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |
 | `analysis_ja.normalized.json` | Locally normalized Japanese analysis |
@@ -701,9 +702,14 @@ through the pipeline and should be used only when intentionally testing new
 normalization, validation, or rendering behavior:
 
 ```powershell
+.\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage research --reprocess-stored
 .\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage analysis --reprocess-stored
 .\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage translation --reprocess-stored
 ```
+
+Research reprocessing recovers a complete, schema-valid provider response that
+was saved before a local dossier-validation failure. It sends no request and
+prepares the stored dossier for the separate synthesis stage.
 
 ### Compare an existing report with an available exemplar
 

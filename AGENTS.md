@@ -76,6 +76,10 @@ normalization, validation, rendering, retry, and failure tests.
   from being written to the canonical Markdown path. Do not reintroduce
   draft-only or validation-blocked publication behavior unless the user
   explicitly changes this policy.
+- The same non-gating policy applies between research and synthesis. Once the
+  provider returns a Pydantic-parseable research dossier, persist it, record
+  deterministic findings in `validation_research.json`, and continue. Only a
+  provider failure or an unparseable response may stop before synthesis.
 - Keep model-profile labels and model names inspectable, but never log
   `GEMINI_API_KEY`, `GEMINI_API_KEY2`, or `OPENAI_API_KEY`. The `pro` profile
   uses the source-configured secondary Gemini model and credential for both

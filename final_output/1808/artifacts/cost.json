@@ -5,14 +5,14 @@
   "pdf_tokens_per_page": 540,
   "research": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 282686,
+    "estimated_input_tokens": 282588,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.424029,
+    "input_cost_usd": 0.423882,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.669789,
-    "input_cost_jpy": 63.6,
+    "maximum_stage_cost_usd": 0.669642,
+    "input_cost_jpy": 63.58,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 100.47
+    "maximum_stage_cost_jpy": 100.45
   },
   "analysis": {
     "model": "gemini-3.6-flash",
@@ -36,10 +36,10 @@
     "maximum_output_cost_jpy": 27.65,
     "maximum_stage_cost_jpy": 35.3
   },
-  "maximum_one_pass_cost_usd": 1.202286,
-  "maximum_configured_cost_usd": 1.202286,
-  "maximum_one_pass_cost_jpy": 180.34,
-  "maximum_configured_cost_jpy": 180.34,
+  "maximum_one_pass_cost_usd": 1.202139,
+  "maximum_configured_cost_usd": 1.202139,
+  "maximum_one_pass_cost_jpy": 180.32,
+  "maximum_configured_cost_jpy": 180.32,
   "maximum_api_attempts_per_stage": 1,
   "assumptions": [
     "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",

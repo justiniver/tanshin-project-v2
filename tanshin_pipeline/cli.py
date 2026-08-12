@@ -19,6 +19,7 @@ from .pipeline import (
     prepare_analysis,
     prepare_research,
     prepare_translation,
+    reprocess_stored_research,
     reprocess_stored_analysis,
     reprocess_stored_translation,
 )
@@ -279,28 +280,31 @@ def main(argv: list[str] | None = None) -> int:
     if args.reprocess_stored:
         if args.execute_api:
             raise SystemExit("--reprocess-stored cannot be combined with --execute-api.")
-        if args.stage == "research":
-            raise SystemExit(
-                "--reprocess-stored supports analysis or translation, not research."
-            )
         try:
-            result = (
-                reprocess_stored_analysis(
+            if args.stage == "research":
+                result = reprocess_stored_research(
                     repository_root,
                     args.security_code,
                     output_root=output_root,
                     report_date=args.report_date,
                     model_profile=args.model_profile,
                 )
-                if args.stage == "analysis"
-                else reprocess_stored_translation(
+            elif args.stage == "analysis":
+                result = reprocess_stored_analysis(
                     repository_root,
                     args.security_code,
                     output_root=output_root,
                     report_date=args.report_date,
                     model_profile=args.model_profile,
                 )
-            )
+            else:
+                result = reprocess_stored_translation(
+                    repository_root,
+                    args.security_code,
+                    output_root=output_root,
+                    report_date=args.report_date,
+                    model_profile=args.model_profile,
+                )
         except PipelineValidationError as exc:
             return _print_validation_failure(
                 exc, output_root, args.security_code, args.stage

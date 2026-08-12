@@ -118,6 +118,7 @@ class OutputPaths:
     research_api_status: Path
     research_structured: Path
     research_metrics: Path
+    research_validation: Path
     analysis_request_plan: Path
     analysis_system_prompt: Path
     analysis_prompt: Path
@@ -202,6 +203,7 @@ def output_paths(
         research_api_status=artifacts / "api_status_research.json",
         research_structured=artifacts / "research.structured.json",
         research_metrics=artifacts / "research_metrics.json",
+        research_validation=artifacts / "validation_research.json",
         analysis_request_plan=artifacts / "request_plan_analysis.json",
         analysis_system_prompt=artifacts / "system_prompt_analysis.txt",
         analysis_prompt=artifacts / "prompt_analysis.txt",

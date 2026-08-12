@@ -316,10 +316,31 @@ function Invoke-LiveStage {
         -ApiStatus $status `
         -ExpectedRunId $requestId `
         -ExecutionExitCode $exitCode
-    return (
-        (Get-OptionalJsonProperty -InputObject $status -Name 'state') -eq
-        'SUCCESS' -and $exitCode -eq 0
-    )
+    $state = Get-OptionalJsonProperty -InputObject $status -Name 'state'
+    if ($state -eq 'SUCCESS' -and $exitCode -eq 0) {
+        return $true
+    }
+    if ($stage -eq 'research' -and $state -eq 'SUCCESS') {
+        Write-Host (
+            'RESEARCH RECOVERY: the provider response succeeded but local ' +
+            'processing did not finish. Reprocessing the saved response ' +
+            'offline and continuing to synthesis.'
+        )
+        $env:TANSHIN_OFFLINE_ONLY = '1'
+        Remove-Item Env:TANSHIN_LIVE_API -ErrorAction SilentlyContinue
+        & $python -m tanshin_pipeline $code `
+            --repository-root $repositoryRoot `
+            --report-date $reportDate `
+            --stage research `
+            --model-profile $ModelProfile `
+            --reprocess-stored
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host 'RESEARCH RECOVERY STATE: SUCCESS'
+            return $true
+        }
+        Write-Host 'RESEARCH RECOVERY STATE: FAILED'
+    }
+    return $false
 }
 
 function Write-ResearchPreparation {
@@ -365,7 +386,8 @@ function Write-ResearchPreparation {
     Write-Host (
         'Research diagnostics: model_response_research.raw.json, ' +
         'research.structured.json, research_metrics.json, ' +
-        'api_status_research.json, token_usage.json, and cost.json'
+        'validation_research.json, api_status_research.json, token_usage.json, ' +
+        'and cost.json'
     )
 }
 
