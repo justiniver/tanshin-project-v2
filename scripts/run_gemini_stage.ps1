@@ -5,8 +5,8 @@ param(
     [string]$SecurityCode = '1808',
 
     [Parameter(Position = 1)]
-    [ValidateSet('analysis', 'translation')]
-    [string]$Stage = 'analysis',
+    [ValidateSet('research', 'analysis', 'translation')]
+    [string]$Stage = 'research',
 
     [switch]$Execute,
 
@@ -83,7 +83,7 @@ function Remove-CurrentReports {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]
-        [ValidateSet('analysis', 'translation')]
+        [ValidateSet('research', 'analysis', 'translation')]
         [string]$RequestedStage
     )
 
@@ -91,7 +91,7 @@ function Remove-CurrentReports {
     if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
         return
     }
-    $languagesToRemove = if ($RequestedStage -eq 'analysis') {
+    $languagesToRemove = if ($RequestedStage -in @('research', 'analysis')) {
         'ja|en'
     } else {
         'en'
@@ -131,20 +131,12 @@ try {
     $artifacts = Join-Path (
         $repositoryRoot
     ) "final_output\$SecurityCode\artifacts"
-    $planName = if ($Stage -eq 'analysis') {
-        'request_plan_analysis.json'
-    } else {
-        'request_plan_translation.json'
-    }
+    $planName = "request_plan_$Stage.json"
     $planPath = Join-Path $artifacts $planName
     $costPath = Join-Path $artifacts 'cost.json'
     $plan = Get-Content -LiteralPath $planPath -Raw -Encoding UTF8 | ConvertFrom-Json
     $cost = Get-Content -LiteralPath $costPath -Raw -Encoding UTF8 | ConvertFrom-Json
-    $stageCost = if ($Stage -eq 'analysis') {
-        $cost.analysis.maximum_stage_cost_jpy
-    } else {
-        $cost.translation.maximum_stage_cost_jpy
-    }
+    $stageCost = $cost.($Stage).maximum_stage_cost_jpy
 
     Write-Host ''
     Write-Host 'MANUAL API REQUEST SUMMARY'
@@ -166,11 +158,17 @@ try {
             'tier; the JPY estimate is a paid-tier upper bound.'
         )
     }
-    if ($Stage -eq 'analysis') {
+    if ($Stage -eq 'research') {
         Write-Host "PDFs submitted: $($plan.files.Count)"
         foreach ($file in $plan.files) {
             Write-Host "  - $($file.filename) ($($file.page_count) pages)"
         }
+        Write-Host 'Expected result: a stored PDF-grounded research dossier.'
+        Write-Host "Diagnostics: final_output\$SecurityCode\artifacts\model_response_research.raw.json,"
+        Write-Host '  research.structured.json, research_metrics.json,'
+        Write-Host '  api_status_research.json, token_usage.json, and cost.json'
+    } elseif ($Stage -eq 'analysis') {
+        Write-Host 'PDFs submitted: none (stored research dossier only)'
         Write-Host (
             "Expected final on success: " +
             "final_output\$SecurityCode\" +
@@ -249,11 +247,7 @@ try {
         --max-api-attempts 1
     $executionExitCode = $LASTEXITCODE
 
-    $statusName = if ($Stage -eq 'analysis') {
-        'api_status_analysis.json'
-    } else {
-        'api_status_translation.json'
-    }
+    $statusName = "api_status_$Stage.json"
     $statusPath = Join-Path $artifacts $statusName
     Write-Host ''
     if (Test-Path -LiteralPath $statusPath -PathType Leaf) {

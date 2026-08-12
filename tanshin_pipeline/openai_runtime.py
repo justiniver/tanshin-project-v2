@@ -24,7 +24,7 @@ from .gemini_runtime import (
     call_with_retries,
 )
 from .request_builder import RequestSpec
-from .schemas import JapaneseAnalysis, JapaneseModelResponse, parse_japanese_analysis_payload
+from .schemas import JapaneseResearchDossier, JapaneseSynthesisResponse
 
 
 class OpenAIResponseError(RuntimeError):
@@ -93,9 +93,9 @@ def execute_request(
 ) -> ExecutionResult:
     """Execute one GPT-5.6 Sol analysis after all safety checks."""
 
-    if spec.provider != "openai" or spec.stage != "analysis":
+    if spec.provider != "openai" or spec.stage not in {"research", "analysis"}:
         raise LiveApiSafetyError(
-            "The OpenAI runtime accepts only OpenAI analysis request plans."
+            "The OpenAI runtime accepts only OpenAI research or analysis request plans."
         )
     plan = spec.plan()
     assert_live_execution_authorized(
@@ -155,7 +155,11 @@ def execute_request(
                 model=spec.model,
                 instructions=spec.system_prompt,
                 input=[{"role": "user", "content": content}],
-                text_format=JapaneseModelResponse,
+                text_format=(
+                    JapaneseResearchDossier
+                    if spec.stage == "research"
+                    else JapaneseSynthesisResponse
+                ),
                 reasoning={
                     "effort": str(
                         spec.request_options.get(
@@ -181,8 +185,10 @@ def execute_request(
         client.close()
 
     structured_payload = _structured_payload(response)
-    structured: JapaneseModelResponse | JapaneseAnalysis = (
-        parse_japanese_analysis_payload(structured_payload)
+    structured = (
+        JapaneseResearchDossier.model_validate(structured_payload)
+        if spec.stage == "research"
+        else JapaneseSynthesisResponse.model_validate(structured_payload)
     )
     return ExecutionResult(
         structured=structured,

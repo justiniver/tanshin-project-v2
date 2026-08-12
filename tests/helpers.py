@@ -6,6 +6,12 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterator
 
+from tanshin_pipeline.persistence import read_json, write_json
+from tanshin_pipeline.schemas import (
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
+)
+
 
 @contextmanager
 def workspace_temp_directory(repository_root: Path) -> Iterator[Path]:
@@ -20,3 +26,168 @@ def workspace_temp_directory(repository_root: Path) -> Iterator[Path]:
     finally:
         if path.parent == base and path.exists():
             shutil.rmtree(path)
+
+
+def fake_research_dossier(repository_root: Path) -> JapaneseResearchDossier:
+    """Build a small, internally consistent dossier from the legacy fixture."""
+
+    payload = read_json(
+        repository_root / "tests" / "fixtures" / "fake_analysis_ja.json"
+    )
+    evidence = payload["evidence"]
+    first_id = evidence[0]["evidence_id"]
+    second_id = evidence[-1]["evidence_id"]
+    dimensions = (
+        "strategic_coherence",
+        "execution_follow_through",
+        "forecast_target_discipline",
+        "accountability_transparency",
+    )
+    return JapaneseResearchDossier.model_validate(
+        {
+            "schema_version": "2.0-test",
+            "identity": payload["identity"],
+            "evidence": evidence,
+            "business_drivers": [
+                {
+                    "driver_id": "driver-001",
+                    "canonical_tag": "customer_demand",
+                    "label_ja": "顧客需要",
+                    "direction": "mixed",
+                    "importance": "primary",
+                    "nature": "cyclical",
+                    "affected_area_ja": "主要事業",
+                    "summary_ja": "需要動向が主要事業の業績に影響します。",
+                    "observed_periods_ja": ["2025/3期", "2026/3期"],
+                    "evidence_ids": [first_id, second_id],
+                }
+            ],
+            "commitments": [],
+            "management_themes": [
+                {
+                    "theme_id": "theme-001",
+                    "label_ja": "事業基盤",
+                    "development": "persistent",
+                    "early_period_ja": "選定期間前半",
+                    "middle_period_ja": "選定期間中盤",
+                    "recent_period_ja": "選定期間後半",
+                    "interpretation_ja": "事業基盤の重視が継続しています。",
+                    "evidence_ids": [first_id, second_id],
+                }
+            ],
+            "management_consistency": {
+                "components": [
+                    {
+                        "dimension": dimension,
+                        "rating": 2,
+                        "evidence_sufficiency": "sufficient",
+                        "rationale_ja": "選定資料では方針と結果の両方を確認できます。",
+                        "evidence_ids": [first_id, second_id],
+                    }
+                    for dimension in dimensions
+                ],
+                "overall_rationale_ja": "選定資料の範囲では一貫性は混在しています。",
+            },
+            "research_notes": ["Stored offline test dossier."],
+        }
+    )
+
+
+def dossier_from_analysis_payload(
+    payload: dict,
+) -> JapaneseResearchDossier:
+    """Adapt a stored full-analysis fixture to the research-side test contract."""
+
+    evidence = payload["evidence"]
+    first_id = evidence[0]["evidence_id"]
+    last_id = evidence[-1]["evidence_id"]
+    management = payload.get("management_consistency") or {}
+    components = management.get("components") or []
+    if len(components) != 4:
+        dimensions = (
+            "strategic_coherence",
+            "execution_follow_through",
+            "forecast_target_discipline",
+            "accountability_transparency",
+        )
+        components = [
+            {
+                "dimension": dimension,
+                "rating": 2,
+                "evidence_sufficiency": "sufficient",
+                "rationale_ja": "選定資料の範囲で方針と結果を比較しました。",
+                "evidence_ids": [first_id, last_id],
+            }
+            for dimension in dimensions
+        ]
+    return JapaneseResearchDossier.model_validate(
+        {
+            "schema_version": payload.get("schema_version", "2.0-test"),
+            "identity": payload["identity"],
+            "evidence": evidence,
+            "business_drivers": [
+                {
+                    "driver_id": "driver-fixture-001",
+                    "canonical_tag": "customer_demand",
+                    "label_ja": "顧客需要",
+                    "direction": "mixed",
+                    "importance": "primary",
+                    "nature": "mixed",
+                    "affected_area_ja": "主要事業",
+                    "summary_ja": "選定資料で説明された主要な需要要因です。",
+                    "observed_periods_ja": ["選定期間"],
+                    "evidence_ids": [first_id],
+                }
+            ],
+            "commitments": [],
+            "management_themes": [
+                {
+                    "theme_id": "theme-fixture-001",
+                    "label_ja": "長期テーマ",
+                    "development": "persistent",
+                    "early_period_ja": "選定期間前半",
+                    "middle_period_ja": "選定期間中盤",
+                    "recent_period_ja": "選定期間後半",
+                    "interpretation_ja": "選定資料にまたがるテーマです。",
+                    "evidence_ids": list(dict.fromkeys([first_id, last_id])),
+                }
+            ],
+            "management_consistency": {
+                "components": components,
+                "overall_rationale_ja": management.get(
+                    "overall_rationale_ja",
+                    "選定資料の範囲で経営説明と後続結果を比較しました。",
+                ),
+            },
+            "research_notes": ["Adapted offline regression fixture."],
+        }
+    )
+
+
+def synthesis_from_analysis_payload(
+    payload: dict,
+) -> JapaneseSynthesisResponse:
+    return JapaneseSynthesisResponse.model_validate(
+        {
+            "schema_version": payload.get("schema_version", "2.0-test"),
+            "identity": payload["identity"],
+            "claims": payload["claims"],
+            "model_notes": payload.get("model_notes", []),
+        }
+    )
+
+
+def fake_synthesis_response(repository_root: Path) -> JapaneseSynthesisResponse:
+    payload = read_json(
+        repository_root / "tests" / "fixtures" / "fake_analysis_ja.json"
+    )
+    return JapaneseSynthesisResponse.model_validate(payload)
+
+
+def persist_fake_research(repository_root: Path, paths: object) -> None:
+    dossier = fake_research_dossier(repository_root)
+    write_json(paths.research_structured, dossier)
+
+
+def persist_research_for_payload(paths: object, payload: dict) -> None:
+    write_json(paths.research_structured, dossier_from_analysis_payload(payload))

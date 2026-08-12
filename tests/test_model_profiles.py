@@ -17,18 +17,18 @@ from tanshin_pipeline.config import (
     OPENAI_SOL_MODEL,
     PRO_GEMINI_MODEL,
     model_price_for_input_tokens,
+    output_paths,
 )
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.persistence import write_json
 from tanshin_pipeline.pipeline import (
     PipelineConfigurationError,
     StageRoute,
-    prepare_analysis,
     prepare_translation,
     _validate_inline_pdf_limits,
-    _write_translation_cost,
+    _write_cost_preserving_actuals,
 )
-from tanshin_pipeline.request_builder import build_analysis_spec
+from tanshin_pipeline.request_builder import build_research_spec
 from tanshin_pipeline.schemas import (
     CostEstimate,
     CostStage,
@@ -36,7 +36,7 @@ from tanshin_pipeline.schemas import (
     parse_japanese_analysis_payload,
 )
 from tanshin_pipeline.selection import select_filings
-from tests.helpers import workspace_temp_directory
+from tests.helpers import persist_fake_research, workspace_temp_directory
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -108,16 +108,18 @@ class ModelProfileTests(unittest.TestCase):
                 )
             self.assertEqual(exit_code, 0)
             artifacts = output_root / "1808" / "artifacts"
-            analysis_plan = read_json(
-                artifacts / "request_plan_analysis.json"
+            research_plan = read_json(
+                artifacts / "request_plan_research.json"
             )
+            analysis_plan = read_json(artifacts / "request_plan_analysis.json")
             translation_plan = read_json(
                 artifacts / "request_plan_translation.json"
             )
             metadata = read_json(artifacts / "run_metadata.json")
-            self.assertEqual(analysis_plan["model_profile"], "default")
-            self.assertEqual(analysis_plan["provider_profile"], "default")
-            self.assertEqual(analysis_plan["model"], DEFAULT_ANALYSIS_MODEL)
+            self.assertEqual(research_plan["model_profile"], "default")
+            self.assertEqual(research_plan["provider_profile"], "default")
+            self.assertEqual(research_plan["model"], DEFAULT_ANALYSIS_MODEL)
+            self.assertEqual(analysis_plan["status"], "pending_research_dossier")
             self.assertEqual(translation_plan["model_profile"], "default")
             self.assertEqual(translation_plan["provider_profile"], "default")
             self.assertEqual(
@@ -231,18 +233,20 @@ class ModelProfileTests(unittest.TestCase):
                 )
             self.assertEqual(exit_code, 0)
             artifacts = output_root / "1808" / "artifacts"
-            analysis_plan = read_json(
-                artifacts / "request_plan_analysis.json"
+            research_plan = read_json(
+                artifacts / "request_plan_research.json"
             )
+            analysis_plan = read_json(artifacts / "request_plan_analysis.json")
             translation_plan = read_json(
                 artifacts / "request_plan_translation.json"
             )
             cost = read_json(artifacts / "cost.json")
             metadata = read_json(artifacts / "run_metadata.json")
-            self.assertEqual(analysis_plan["model_profile"], "pro")
-            self.assertEqual(analysis_plan["provider"], "gemini")
-            self.assertEqual(analysis_plan["provider_profile"], "pro")
-            self.assertEqual(analysis_plan["model"], PRO_GEMINI_MODEL)
+            self.assertEqual(research_plan["model_profile"], "pro")
+            self.assertEqual(research_plan["provider"], "gemini")
+            self.assertEqual(research_plan["provider_profile"], "pro")
+            self.assertEqual(research_plan["model"], PRO_GEMINI_MODEL)
+            self.assertEqual(analysis_plan["status"], "pending_research_dossier")
             self.assertEqual(translation_plan["model_profile"], "pro")
             self.assertEqual(translation_plan["model"], PRO_GEMINI_MODEL)
             self.assertEqual(cost["analysis"]["model"], PRO_GEMINI_MODEL)
@@ -283,22 +287,23 @@ class ModelProfileTests(unittest.TestCase):
                 )
             self.assertEqual(exit_code, 0)
             artifacts = output_root / "1808" / "artifacts"
-            analysis_plan = read_json(
-                artifacts / "request_plan_analysis.json"
+            research_plan = read_json(
+                artifacts / "request_plan_research.json"
             )
+            analysis_plan = read_json(artifacts / "request_plan_analysis.json")
             translation_plan = read_json(
                 artifacts / "request_plan_translation.json"
             )
             cost = read_json(artifacts / "cost.json")
             metadata = read_json(artifacts / "run_metadata.json")
             self.assertEqual(
-                analysis_plan["model_profile"],
+                research_plan["model_profile"],
                 "pro-translation",
             )
-            self.assertEqual(analysis_plan["provider"], "gemini")
-            self.assertEqual(analysis_plan["provider_profile"], "default")
+            self.assertEqual(research_plan["provider"], "gemini")
+            self.assertEqual(research_plan["provider_profile"], "default")
             self.assertEqual(
-                analysis_plan["model"],
+                research_plan["model"],
                 DEFAULT_ANALYSIS_MODEL,
             )
             self.assertEqual(
@@ -366,21 +371,22 @@ class ModelProfileTests(unittest.TestCase):
                 )
             self.assertEqual(exit_code, 0)
             artifacts = output_root / "1808" / "artifacts"
-            analysis_plan = read_json(
-                artifacts / "request_plan_analysis.json"
+            research_plan = read_json(
+                artifacts / "request_plan_research.json"
             )
+            analysis_plan = read_json(artifacts / "request_plan_analysis.json")
             translation_plan = read_json(
                 artifacts / "request_plan_translation.json"
             )
             cost = read_json(artifacts / "cost.json")
             metadata = read_json(artifacts / "run_metadata.json")
             self.assertEqual(
-                analysis_plan["model_profile"],
+                research_plan["model_profile"],
                 "key2-translation",
             )
-            self.assertEqual(analysis_plan["provider_profile"], "default")
+            self.assertEqual(research_plan["provider_profile"], "default")
             self.assertEqual(
-                analysis_plan["model"],
+                research_plan["model"],
                 DEFAULT_ANALYSIS_MODEL,
             )
             self.assertEqual(
@@ -448,20 +454,21 @@ class ModelProfileTests(unittest.TestCase):
                 )
             self.assertEqual(exit_code, 0)
             artifacts = output_root / "1878" / "artifacts"
-            analysis_plan = read_json(
-                artifacts / "request_plan_analysis.json"
+            research_plan = read_json(
+                artifacts / "request_plan_research.json"
             )
+            analysis_plan = read_json(artifacts / "request_plan_analysis.json")
             translation_plan = read_json(
                 artifacts / "request_plan_translation.json"
             )
             cost = read_json(artifacts / "cost.json")
             metadata = read_json(artifacts / "run_metadata.json")
-            self.assertEqual(analysis_plan["model_profile"], "sol")
-            self.assertEqual(analysis_plan["provider"], "openai")
-            self.assertIsNone(analysis_plan["provider_profile"])
-            self.assertEqual(analysis_plan["model"], OPENAI_SOL_MODEL)
+            self.assertEqual(research_plan["model_profile"], "sol")
+            self.assertEqual(research_plan["provider"], "openai")
+            self.assertIsNone(research_plan["provider_profile"])
+            self.assertEqual(research_plan["model"], OPENAI_SOL_MODEL)
             self.assertEqual(
-                analysis_plan["request_options"]["pdf_detail"],
+                research_plan["request_options"]["pdf_detail"],
                 "low",
             )
             self.assertEqual(translation_plan["provider"], "gemini")
@@ -504,8 +511,8 @@ class ModelProfileTests(unittest.TestCase):
 
     def test_pro_profile_has_a_distinct_inspected_request_id(self) -> None:
         manifest = select_filings(REPOSITORY_ROOT, "1808")
-        default_spec = build_analysis_spec(REPOSITORY_ROOT, manifest)
-        pro_spec = build_analysis_spec(
+        default_spec = build_research_spec(REPOSITORY_ROOT, manifest)
+        pro_spec = build_research_spec(
             REPOSITORY_ROOT,
             manifest,
             model=PRO_GEMINI_MODEL,
@@ -519,8 +526,8 @@ class ModelProfileTests(unittest.TestCase):
 
     def test_sol_provider_has_a_distinct_inspected_request_id(self) -> None:
         manifest = select_filings(REPOSITORY_ROOT, "1808")
-        default_spec = build_analysis_spec(REPOSITORY_ROOT, manifest)
-        sol_spec = build_analysis_spec(
+        default_spec = build_research_spec(REPOSITORY_ROOT, manifest)
+        sol_spec = build_research_spec(
             REPOSITORY_ROOT,
             manifest,
             model=OPENAI_SOL_MODEL,
@@ -558,16 +565,15 @@ class ModelProfileTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
-            analysis_run = prepare_analysis(
+            paths = output_paths(output_root, "1808")
+            persist_fake_research(
                 REPOSITORY_ROOT,
-                "1808",
-                output_root=output_root,
-                model_profile="sol",
+                paths,
             )
             analysis = materialize_japanese_analysis(
                 parse_japanese_analysis_payload(read_json(fixture))
             )
-            write_json(analysis_run.paths.analysis_normalized, analysis)
+            write_json(paths.analysis_normalized, analysis)
             translation_run = prepare_translation(
                 REPOSITORY_ROOT,
                 "1808",
@@ -596,6 +602,7 @@ class ModelProfileTests(unittest.TestCase):
             display_currency="JPY",
             usd_to_jpy_rate=150,
             pdf_tokens_per_page=540,
+            research=stage,
             analysis=stage,
             translation=stage,
             maximum_one_pass_cost_usd=0.06,
@@ -617,7 +624,7 @@ class ModelProfileTests(unittest.TestCase):
                     "actual_cost_total_jpy": 18.45,
                 },
             )
-            _write_translation_cost(path, estimate)
+            _write_cost_preserving_actuals(path, estimate)
             payload = read_json(path)
         self.assertIn("analysis", payload["actual_cost_by_stage_usd"])
         self.assertEqual(payload["actual_cost_total_usd"], 0.123)

@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from tanshin_pipeline.config import ANALYSIS_MAX_OUTPUT_TOKENS
+from tanshin_pipeline.config import ANALYSIS_MAX_OUTPUT_TOKENS, output_paths
 from tanshin_pipeline.costing import estimate_text_tokens
 from tanshin_pipeline.gemini_runtime import ExecutionResult
 from tanshin_pipeline.persistence import read_json, write_json
@@ -29,7 +29,10 @@ from tanshin_pipeline.translation_contract import (
     TranslationContractError,
     materialize_english_translation,
 )
-from tests.helpers import workspace_temp_directory
+from tests.helpers import (
+    persist_fake_research,
+    workspace_temp_directory,
+)
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -178,6 +181,8 @@ class TranslationContractTests(unittest.TestCase):
         analysis = _stored_analysis()
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            paths = output_paths(output_root, "1808")
+            persist_fake_research(REPOSITORY_ROOT, paths)
             analysis_run = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",
@@ -235,6 +240,8 @@ class TranslationContractTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            paths = output_paths(output_root, "1808")
+            persist_fake_research(REPOSITORY_ROOT, paths)
             analysis_run = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",

@@ -8,13 +8,9 @@ param(
     [string[]]$SecurityCode,
 
     [switch]$PreviewOnly,
-
     [switch]$Key2Translation,
-
     [switch]$ProTranslation,
-
     [switch]$Pro,
-
     [switch]$Sol
 )
 
@@ -22,93 +18,72 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $repositoryRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+$python = Join-Path $repositoryRoot '.venv\Scripts\python.exe'
 $statusHelpers = Join-Path $PSScriptRoot 'api_status_helpers.ps1'
 . $statusHelpers
-$python = Join-Path $repositoryRoot '.venv\Scripts\python.exe'
 $reportDate = Get-Date -Format 'yyyyMMdd'
+$cooldownSeconds = 75
+$cooldownTokenThreshold = 225000
+
 if (-not (Test-Path -LiteralPath $python -PathType Leaf)) {
     throw "Python virtual environment was not found at: $python"
 }
 
-$literalProFlags = @(
-    $SecurityCode | Where-Object { $_ -ieq '--pro' }
-)
-$literalKey2TranslationFlags = @(
-    $SecurityCode | Where-Object { $_ -ieq '--key2-translation' }
-)
-$literalProTranslationFlags = @(
-    $SecurityCode | Where-Object { $_ -ieq '--pro-translation' }
-)
-$literalSolFlags = @(
-    $SecurityCode | Where-Object { $_ -ieq '--sol' }
-)
-if ($literalProFlags.Count -gt 1) {
-    throw "The --pro option may be supplied only once."
-}
-if ($literalSolFlags.Count -gt 1) {
-    throw "The --sol option may be supplied only once."
-}
-if ($literalProTranslationFlags.Count -gt 1) {
-    throw "The --pro-translation option may be supplied only once."
-}
-if ($literalKey2TranslationFlags.Count -gt 1) {
-    throw "The --key2-translation option may be supplied only once."
-}
-$usePro = $Pro -or $literalProFlags.Count -eq 1
-$useKey2Translation = (
-    $Key2Translation -or $literalKey2TranslationFlags.Count -eq 1
-)
-$useProTranslation = (
-    $ProTranslation -or $literalProTranslationFlags.Count -eq 1
-)
-$useSol = $Sol -or $literalSolFlags.Count -eq 1
-$selectedProfileCount = @(
-    $usePro,
-    $useKey2Translation,
-    $useProTranslation,
-    $useSol
-).Where({ $_ }).Count
-if ($selectedProfileCount -gt 1) {
-    throw (
-        "Choose only one of --key2-translation, --pro-translation, " +
-        "--pro, or --sol."
-    )
-}
-$securityCodeArguments = @(
-    $SecurityCode |
-        Where-Object {
-            $_ -ine '--pro' -and
-            $_ -ine '--key2-translation' -and
-            $_ -ine '--pro-translation' -and
-            $_ -ine '--sol'
+function Resolve-Profile {
+    $tokens = @($SecurityCode)
+    $literalFlags = @{
+        key2 = @($tokens | Where-Object { $_ -ieq '--key2-translation' }).Count
+        proTranslation = @(
+            $tokens | Where-Object { $_ -ieq '--pro-translation' }
+        ).Count
+        pro = @($tokens | Where-Object { $_ -ieq '--pro' }).Count
+        sol = @($tokens | Where-Object { $_ -ieq '--sol' }).Count
+    }
+    foreach ($entry in $literalFlags.GetEnumerator()) {
+        if ($entry.Value -gt 1) {
+            throw "A model-profile option may be supplied only once."
         }
-)
-$modelProfile = if ($useSol) {
-    'sol'
-} elseif ($usePro) {
-    'pro'
-} elseif ($useProTranslation) {
-    'pro-translation'
-} elseif ($useKey2Translation) {
-    'key2-translation'
-} else {
-    'default'
+    }
+    $selected = @(
+        ($Key2Translation -or $literalFlags.key2 -eq 1),
+        ($ProTranslation -or $literalFlags.proTranslation -eq 1),
+        ($Pro -or $literalFlags.pro -eq 1),
+        ($Sol -or $literalFlags.sol -eq 1)
+    ).Where({ $_ }).Count
+    if ($selected -gt 1) {
+        throw (
+            'Choose only one of --key2-translation, --pro-translation, ' +
+            '--pro, or --sol.'
+        )
+    }
+    if ($Sol -or $literalFlags.sol -eq 1) { return 'sol' }
+    if ($Pro -or $literalFlags.pro -eq 1) { return 'pro' }
+    if ($ProTranslation -or $literalFlags.proTranslation -eq 1) {
+        return 'pro-translation'
+    }
+    if ($Key2Translation -or $literalFlags.key2 -eq 1) {
+        return 'key2-translation'
+    }
+    return 'default'
 }
 
-function Get-NormalizedSecurityCodes {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [string[]]$Values
+function Resolve-SecurityCodes {
+    $values = @(
+        $SecurityCode |
+            Where-Object {
+                $_ -notin @(
+                    '--key2-translation',
+                    '--pro-translation',
+                    '--pro',
+                    '--sol'
+                )
+            }
     )
-
     $codes = @(
-        foreach ($value in $Values) {
+        foreach ($value in $values) {
             foreach ($part in ($value -split ',')) {
                 $trimmed = $part.Trim()
-                if (-not [string]::IsNullOrWhiteSpace($trimmed)) {
-                    $trimmed
-                }
+                if ($trimmed) { $trimmed }
             }
         }
     )
@@ -121,186 +96,36 @@ function Get-NormalizedSecurityCodes {
         }
     }
     $duplicates = @(
-        $codes |
-            Group-Object |
-            Where-Object { $_.Count -gt 1 } |
-            ForEach-Object { $_.Name }
+        $codes | Group-Object | Where-Object Count -gt 1
     )
     if ($duplicates.Count -gt 0) {
         throw (
             'Duplicate security codes are not allowed: ' +
-            ($duplicates -join ', ')
+            (($duplicates | ForEach-Object Name) -join ', ')
         )
     }
     return $codes
 }
 
 function Read-YesNo {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [string]$Prompt
-    )
-
+    param([Parameter(Mandatory)][string]$Prompt)
     while ($true) {
         $answer = (Read-Host "$Prompt (y/n)").Trim().ToLowerInvariant()
-        if ($answer -eq 'y') {
-            return $true
-        }
-        if ($answer -eq 'n') {
-            return $false
-        }
+        if ($answer -eq 'y') { return $true }
+        if ($answer -eq 'n') { return $false }
         Write-Host "Please enter 'y' or 'n'."
     }
 }
 
-function Wait-ForAnalysisCooldown {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [datetime]$PreviousAnalysisCompletedAt,
-
-        [Parameter(Mandatory)]
-        [ValidateRange(1, 3600)]
-        [int]$CooldownSeconds
-    )
-
-    $elapsedSeconds = (
-        (Get-Date) - $PreviousAnalysisCompletedAt
-    ).TotalSeconds
-    $remainingSeconds = [Math]::Ceiling(
-        [Math]::Max(0, $CooldownSeconds - $elapsedSeconds)
-    )
-    if ($remainingSeconds -le 0) {
-        Write-Host (
-            "ANALYSIS COOLDOWN: already satisfied " +
-            "($CooldownSeconds seconds elapsed)."
-        )
-        return
-    }
-    Write-Host ''
-    Write-Host (
-        "ANALYSIS COOLDOWN: waiting $remainingSeconds seconds before the " +
-        "next company analysis."
-    )
-    Start-Sleep -Seconds $remainingSeconds
-}
-
-function Wait-ForTranslationCooldown {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [datetime]$AnalysisCompletedAt,
-
-        [Parameter(Mandatory)]
-        [ValidateRange(1, 3600)]
-        [int]$CooldownSeconds,
-
-        [Parameter(Mandatory)]
-        [long]$EstimatedTokenLoad,
-
-        [Parameter(Mandatory)]
-        [long]$TokenThreshold
-    )
-
-    $elapsedSeconds = ((Get-Date) - $AnalysisCompletedAt).TotalSeconds
-    $remainingSeconds = [Math]::Ceiling(
-        [Math]::Max(0, $CooldownSeconds - $elapsedSeconds)
-    )
-    if ($remainingSeconds -le 0) {
-        Write-Host (
-            "SAME-CREDENTIAL COOLDOWN: already satisfied " +
-            "($CooldownSeconds seconds elapsed)."
-        )
-        return
-    }
-    Write-Host ''
-    Write-Host (
-        "SAME-CREDENTIAL COOLDOWN: estimated two-stage load " +
-        "$EstimatedTokenLoad tokens meets the conservative " +
-        "$TokenThreshold-token threshold; waiting $remainingSeconds seconds " +
-        "before translation."
-    )
-    Start-Sleep -Seconds $remainingSeconds
-}
-
-function Test-TranslationCooldownRequired {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [object]$AnalysisPreparation,
-
-        [Parameter(Mandatory)]
-        [object]$TranslationPreparation,
-
-        [Parameter(Mandatory)]
-        [long]$TokenThreshold
-    )
-
-    if (
-        $AnalysisPreparation.Plan.provider -ne 'gemini' -or
-        $TranslationPreparation.Plan.provider -ne 'gemini'
-    ) {
-        return $false
-    }
-    if (
-        $AnalysisPreparation.Plan.provider_profile -ne
-        $TranslationPreparation.Plan.provider_profile
-    ) {
-        return $false
-    }
-    $estimatedTokenLoad = Get-SameCredentialTokenLoad `
-        -AnalysisPreparation $AnalysisPreparation `
-        -TranslationPreparation $TranslationPreparation
-    return ($estimatedTokenLoad -ge $TokenThreshold)
-}
-
-function Get-SameCredentialTokenLoad {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [object]$AnalysisPreparation,
-
-        [object]$TranslationPreparation
-    )
-
-    $translationCost = if ($null -eq $TranslationPreparation) {
-        $AnalysisPreparation.Cost.translation
-    } else {
-        $TranslationPreparation.Cost.translation
-    }
-    return (
-        [long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +
-        [long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +
-        [long]$translationCost.estimated_input_tokens +
-        [long]$translationCost.maximum_output_tokens
-    )
-}
-
 function Invoke-OfflinePreparation {
-    [CmdletBinding()]
     param(
+        [Parameter(Mandatory)][string]$Code,
         [Parameter(Mandatory)]
-        [string]$Code,
-
-        [Parameter(Mandatory)]
-        [ValidateSet('analysis', 'translation')]
+        [ValidateSet('research', 'analysis', 'translation')]
         [string]$Stage,
-
-        [Parameter(Mandatory)]
-        [string]$OutputRoot,
-
-        [Parameter(Mandatory)]
-        [ValidateSet(
-            'default',
-            'key2-translation',
-            'pro-translation',
-            'pro',
-            'sol'
-        )]
-        [string]$ModelProfile
+        [Parameter(Mandatory)][string]$OutputRoot,
+        [Parameter(Mandatory)][string]$ModelProfile
     )
-
     $env:TANSHIN_OFFLINE_ONLY = '1'
     $output = & $python -m tanshin_pipeline $Code `
         --repository-root $repositoryRoot `
@@ -309,72 +134,196 @@ function Invoke-OfflinePreparation {
         --stage $Stage `
         --model-profile $ModelProfile `
         --max-api-attempts 1 2>&1
-    $preparationExitCode = $LASTEXITCODE
-    if ($preparationExitCode -ne 0) {
+    if ($LASTEXITCODE -ne 0) {
         $output | ForEach-Object { Write-Host $_ }
         throw (
-            "Offline $Stage preparation failed for $Code with exit code " +
-            "$preparationExitCode. No API request was sent."
+            "Offline $Stage preparation failed for $Code. " +
+            'No API request was sent.'
         )
     }
 }
 
-function Get-AnalysisPreparation {
-    [CmdletBinding()]
+function Get-Preparation {
     param(
+        [Parameter(Mandatory)][string]$Code,
         [Parameter(Mandatory)]
-        [string]$Code,
-
-        [Parameter(Mandatory)]
-        [string]$OutputRoot,
-
-        [Parameter(Mandatory)]
-        [ValidateSet(
-            'default',
-            'key2-translation',
-            'pro-translation',
-            'pro',
-            'sol'
-        )]
-        [string]$ModelProfile
+        [ValidateSet('research', 'analysis', 'translation')]
+        [string]$Stage,
+        [Parameter(Mandatory)][string]$OutputRoot,
+        [Parameter(Mandatory)][string]$ModelProfile
     )
-
     Invoke-OfflinePreparation `
         -Code $Code `
-        -Stage analysis `
+        -Stage $Stage `
         -OutputRoot $OutputRoot `
         -ModelProfile $ModelProfile
     $artifacts = Join-Path $OutputRoot "$Code\artifacts"
     return [pscustomobject]@{
         Code = $Code
+        Stage = $Stage
         Plan = (
             Get-Content -LiteralPath (
-                Join-Path $artifacts 'request_plan_analysis.json'
-            ) -Raw -Encoding UTF8 |
-                ConvertFrom-Json
+                Join-Path $artifacts "request_plan_$Stage.json"
+            ) -Raw -Encoding UTF8 | ConvertFrom-Json
         )
         Cost = (
             Get-Content -LiteralPath (
                 Join-Path $artifacts 'cost.json'
-            ) -Raw -Encoding UTF8 |
-                ConvertFrom-Json
+            ) -Raw -Encoding UTF8 | ConvertFrom-Json
         )
         Manifest = (
             Get-Content -LiteralPath (
                 Join-Path $artifacts 'selection_manifest.json'
-            ) -Raw -Encoding UTF8 |
-                ConvertFrom-Json
+            ) -Raw -Encoding UTF8 | ConvertFrom-Json
         )
     }
 }
 
-function Write-AnalysisPreparation {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [object]$Preparation
+function Get-StageBudget {
+    param([Parameter(Mandatory)][object]$Preparation)
+    $stageCost = $Preparation.Cost.($Preparation.Stage)
+    return (
+        [long]$stageCost.estimated_input_tokens +
+        [long]$stageCost.maximum_output_tokens
     )
+}
 
+function Wait-BetweenStagesIfNeeded {
+    param(
+        [Parameter(Mandatory)][object]$Previous,
+        [Parameter(Mandatory)][object]$Next,
+        [Parameter(Mandatory)][datetime]$PreviousCompletedAt
+    )
+    if (
+        $Previous.Plan.provider -ne 'gemini' -or
+        $Next.Plan.provider -ne 'gemini' -or
+        $Previous.Plan.provider_profile -ne $Next.Plan.provider_profile
+    ) {
+        Write-Host (
+            'SAME-CREDENTIAL COOLDOWN: not needed; the consecutive stages ' +
+            'use different providers or credentials.'
+        )
+        return
+    }
+    $combinedBudget = (
+        (Get-StageBudget -Preparation $Previous) +
+        (Get-StageBudget -Preparation $Next)
+    )
+    if ($combinedBudget -lt $cooldownTokenThreshold) {
+        Write-Host (
+            "SAME-CREDENTIAL COOLDOWN: not needed; estimated combined load " +
+            "$combinedBudget tokens is below $cooldownTokenThreshold."
+        )
+        return
+    }
+    $elapsed = ((Get-Date) - $PreviousCompletedAt).TotalSeconds
+    $remaining = [Math]::Ceiling(
+        [Math]::Max(0, $cooldownSeconds - $elapsed)
+    )
+    if ($remaining -le 0) {
+        Write-Host (
+            "SAME-CREDENTIAL COOLDOWN: already satisfied " +
+            "($cooldownSeconds seconds elapsed)."
+        )
+        return
+    }
+    Write-Host (
+        "SAME-CREDENTIAL COOLDOWN: estimated combined load $combinedBudget " +
+        "tokens meets the $cooldownTokenThreshold-token threshold; waiting " +
+        "$remaining seconds."
+    )
+    Start-Sleep -Seconds $remaining
+}
+
+function Wait-BeforeNextCompany {
+    param([Parameter(Mandatory)][datetime]$PreviousResearchCompletedAt)
+    $elapsed = ((Get-Date) - $PreviousResearchCompletedAt).TotalSeconds
+    $remaining = [Math]::Ceiling(
+        [Math]::Max(0, $cooldownSeconds - $elapsed)
+    )
+    if ($remaining -gt 0) {
+        Write-Host (
+            "INTER-COMPANY COOLDOWN: waiting $remaining seconds before the " +
+            'next PDF-backed research request.'
+        )
+        Start-Sleep -Seconds $remaining
+    }
+}
+
+function Backup-CurrentOutput {
+    param(
+        [Parameter(Mandatory)][string]$Code,
+        [Parameter(Mandatory)][string]$BatchStamp
+    )
+    $currentOutput = Join-Path $repositoryRoot "final_output\$Code"
+    if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
+        return
+    }
+    $items = @(
+        Get-ChildItem -LiteralPath $currentOutput -Force |
+            Where-Object Name -ne 'history'
+    )
+    if ($items.Count -eq 0) { return }
+    $archive = Join-Path $currentOutput "history\$BatchStamp"
+    New-Item -ItemType Directory -Path $archive -Force | Out-Null
+    $items | ForEach-Object {
+        Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse
+    }
+    $pattern = (
+        '^analysis_(ja|en)_' + [regex]::Escape($Code) + '_\d{8}\.md$'
+    )
+    Get-ChildItem -LiteralPath $currentOutput -File |
+        Where-Object Name -match $pattern |
+        ForEach-Object { Remove-Item -LiteralPath $_.FullName }
+    Write-Host "Archived existing $Code output to: $archive"
+}
+
+function Invoke-LiveStage {
+    param(
+        [Parameter(Mandatory)][object]$Preparation,
+        [Parameter(Mandatory)][string]$ModelProfile
+    )
+    $code = $Preparation.Code
+    $stage = $Preparation.Stage
+    $requestId = $Preparation.Plan.request_id
+    Remove-Item Env:TANSHIN_OFFLINE_ONLY -ErrorAction SilentlyContinue
+    $env:TANSHIN_LIVE_API = 'MANUAL_USER_RUN'
+    Write-Host ''
+    Write-Host ('=' * 72)
+    Write-Host "COMPANY: $code"
+    Write-Host "STAGE: $($stage.ToUpperInvariant())"
+    Write-Host 'MODEL RUN STATE: RUNNING'
+    & $python -m tanshin_pipeline $code `
+        --repository-root $repositoryRoot `
+        --report-date $reportDate `
+        --stage $stage `
+        --model-profile $ModelProfile `
+        --execute-api `
+        --confirm-request $requestId `
+        --max-api-attempts 1
+    $exitCode = $LASTEXITCODE
+    $statusPath = Join-Path (
+        $repositoryRoot
+    ) "final_output\$code\artifacts\api_status_$stage.json"
+    if (-not (Test-Path -LiteralPath $statusPath -PathType Leaf)) {
+        Write-Host 'MODEL RUN STATE: UNKNOWN (no status artifact)'
+        Write-Host 'REPORT PIPELINE STATE: NOT_COMPLETED'
+        return $false
+    }
+    $status = Get-Content -LiteralPath $statusPath -Raw -Encoding UTF8 |
+        ConvertFrom-Json
+    Write-ApiStatusSummary `
+        -ApiStatus $status `
+        -ExpectedRunId $requestId `
+        -ExecutionExitCode $exitCode
+    return (
+        (Get-OptionalJsonProperty -InputObject $status -Name 'state') -eq
+        'SUCCESS' -and $exitCode -eq 0
+    )
+}
+
+function Write-ResearchPreparation {
+    param([Parameter(Mandatory)][object]$Preparation)
     $code = $Preparation.Code
     $plan = $Preparation.Plan
     $cost = $Preparation.Cost
@@ -384,454 +333,256 @@ function Write-AnalysisPreparation {
     Write-Host "COMPANY: $code"
     Write-Host "Latest filing: $($manifest.latest_filename)"
     Write-Host "Model profile: $($plan.model_profile)"
-    Write-Host "Analysis provider: $($plan.provider)"
-    Write-Host "Analysis model: $($plan.model)"
-    if ($plan.provider -eq 'openai') {
-        Write-Host "PDF detail: $($plan.request_options.pdf_detail)"
-    }
-    Write-Host "Analysis request ID: $($plan.request_id)"
-    if ($null -ne $plan.style_blueprint_path) {
-        Write-Host "Fact-free style blueprint: $($plan.style_blueprint_path)"
-        Write-Host "Blueprint SHA-256: $($plan.style_blueprint_sha256)"
-    }
+    Write-Host "Research provider/model: $($plan.provider) / $($plan.model)"
+    Write-Host "Research request ID: $($plan.request_id)"
     Write-Host (
-        'Estimated maximum analysis cost: JPY {0:N0}' -f
+        'Estimated maximum research cost: JPY {0:N0}' -f
+        $cost.research.maximum_stage_cost_jpy
+    )
+    Write-Host (
+        'Estimated maximum synthesis cost: JPY {0:N0}' -f
         $cost.analysis.maximum_stage_cost_jpy
     )
     Write-Host (
         'Estimated maximum optional translation cost: JPY {0:N0}' -f
         $cost.translation.maximum_stage_cost_jpy
     )
-    Write-Host "PDFs submitted: $($plan.files.Count)"
+    Write-Host "PDFs submitted in research request: $($plan.files.Count)"
     foreach ($file in $plan.files) {
         Write-Host "  - $($file.filename) ($($file.page_count) pages)"
     }
     Write-Host (
-        "Expected Japanese report: " +
-        "final_output\$code\analysis_ja_${code}_$reportDate.md"
+        "Expected Japanese report: final_output\$code\" +
+        "analysis_ja_${code}_$reportDate.md"
     )
     Write-Host (
-        "Optional English report: " +
-        "final_output\$code\analysis_en_${code}_$reportDate.md"
+        "Optional English report: final_output\$code\" +
+        "analysis_en_${code}_$reportDate.md"
     )
     Write-Host (
-        "Selection manifest: " +
-        "final_output\$code\artifacts\selection_manifest.json"
+        'Japanese workflow: PDF research dossier, then dossier-based synthesis. '
     )
     Write-Host (
-        'Analysis diagnostics: model_response_ja.raw.json, ' +
-        'analysis_ja.structured.json, analysis_ja.normalized.json, ' +
-        'normalization_ja.json, management_consistency.json, ' +
-        'validation_ja.json, report_status_ja.json, ' +
-        'api_status_analysis.json, token_usage.json, cost.json, and ' +
-        'exemplar_comparison_ja.json'
+        'Research diagnostics: model_response_research.raw.json, ' +
+        'research.structured.json, research_metrics.json, ' +
+        'api_status_research.json, token_usage.json, and cost.json'
     )
 }
 
-function Backup-CurrentOutput {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [string]$Code,
-
-        [Parameter(Mandatory)]
-        [string]$BatchStamp
-    )
-
-    $currentOutput = Join-Path $repositoryRoot "final_output\$Code"
-    if (-not (Test-Path -LiteralPath $currentOutput -PathType Container)) {
-        return
-    }
-    $currentItems = @(
-        Get-ChildItem -LiteralPath $currentOutput -Force |
-            Where-Object { $_.Name -ne 'history' }
-    )
-    if ($currentItems.Count -eq 0) {
-        return
-    }
-    $historyRoot = Join-Path $currentOutput 'history'
-    $archive = Join-Path $historyRoot $BatchStamp
-    New-Item -ItemType Directory -Path $archive -Force | Out-Null
-    $currentItems | ForEach-Object {
-        Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse
-    }
-    $reportPattern = (
-        '^analysis_(ja|en)_' +
-        [regex]::Escape($Code) +
-        '_\d{8}\.md$'
-    )
-    Get-ChildItem -LiteralPath $currentOutput -File |
-        Where-Object { $_.Name -match $reportPattern } |
-        ForEach-Object {
-            Remove-Item -LiteralPath $_.FullName
-        }
-    Write-Host "Archived existing $Code output to: $archive"
-}
-
-function Invoke-LiveStage {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [string]$Code,
-
-        [Parameter(Mandatory)]
-        [ValidateSet('analysis', 'translation')]
-        [string]$Stage,
-
-        [Parameter(Mandatory)]
-        [string]$RequestId,
-
-        [Parameter(Mandatory)]
-        [ValidateSet(
-            'default',
-            'key2-translation',
-            'pro-translation',
-            'pro',
-            'sol'
-        )]
-        [string]$ModelProfile
-    )
-
-    Remove-Item Env:TANSHIN_OFFLINE_ONLY -ErrorAction SilentlyContinue
-    $env:TANSHIN_LIVE_API = 'MANUAL_USER_RUN'
-    Write-Host ''
-    Write-Host ('=' * 72)
-    Write-Host "COMPANY: $Code"
-    Write-Host "STAGE: $($Stage.ToUpperInvariant())"
-    Write-Host 'MODEL RUN STATE: RUNNING'
-    & $python -m tanshin_pipeline $Code `
-        --repository-root $repositoryRoot `
-        --report-date $reportDate `
-        --stage $Stage `
-        --model-profile $ModelProfile `
-        --execute-api `
-        --confirm-request $RequestId `
-        --max-api-attempts 1
-    $executionExitCode = $LASTEXITCODE
-
-    $statusName = if ($Stage -eq 'analysis') {
-        'api_status_analysis.json'
-    } else {
-        'api_status_translation.json'
-    }
-    $statusPath = Join-Path (
-        Join-Path $repositoryRoot "final_output\$Code\artifacts"
-    ) $statusName
-    if (-not (Test-Path -LiteralPath $statusPath -PathType Leaf)) {
-        Write-Host 'MODEL RUN STATE: UNKNOWN (no status artifact)'
-        Write-Host 'REPORT PIPELINE STATE: NOT_COMPLETED'
-        return $false
-    }
-    $apiStatus = Get-Content -LiteralPath $statusPath -Raw -Encoding UTF8 |
-        ConvertFrom-Json
-    Write-ApiStatusSummary `
-        -ApiStatus $apiStatus `
-        -ExpectedRunId $RequestId `
-        -ExecutionExitCode $executionExitCode
-    $state = Get-OptionalJsonProperty -InputObject $apiStatus -Name 'state'
-    return ($state -eq 'SUCCESS' -and $executionExitCode -eq 0)
-}
-
-function Get-TranslationPreparation {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [string]$Code,
-
-        [Parameter(Mandatory)]
-        [ValidateSet(
-            'default',
-            'key2-translation',
-            'pro-translation',
-            'pro',
-            'sol'
-        )]
-        [string]$ModelProfile
-    )
-
-    $canonicalOutput = Join-Path $repositoryRoot 'final_output'
-    Invoke-OfflinePreparation `
-        -Code $Code `
-        -Stage translation `
-        -OutputRoot $canonicalOutput `
-        -ModelProfile $ModelProfile
-    $artifacts = Join-Path $canonicalOutput "$Code\artifacts"
-    return [pscustomobject]@{
-        Code = $Code
-        Plan = (
-            Get-Content -LiteralPath (
-                Join-Path $artifacts 'request_plan_translation.json'
-            ) -Raw -Encoding UTF8 |
-                ConvertFrom-Json
-        )
-        Cost = (
-            Get-Content -LiteralPath (
-                Join-Path $artifacts 'cost.json'
-            ) -Raw -Encoding UTF8 |
-                ConvertFrom-Json
-        )
-    }
-}
-
-function Write-TranslationPreparation {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory)]
-        [object]$Preparation
-    )
-
-    $code = $Preparation.Code
-    $plan = $Preparation.Plan
-    $cost = $Preparation.Cost
-    Write-Host ''
-    Write-Host "ENGLISH REQUEST READY: $code"
-    Write-Host "Model profile: $($plan.model_profile)"
-    Write-Host "Translation provider: $($plan.provider)"
-    Write-Host "Translation model: $($plan.model)"
-    Write-Host "Translation request ID: $($plan.request_id)"
-    Write-Host (
-        'Estimated maximum translation cost: JPY {0:N0}' -f
-        $cost.translation.maximum_stage_cost_jpy
-    )
-    Write-Host 'PDFs submitted: none (validated Japanese structured JSON only)'
-    Write-Host (
-        "Expected English report: " +
-        "final_output\$code\analysis_en_${code}_$reportDate.md"
-    )
-    Write-Host (
-        'Translation diagnostics: model_response_en.raw.json, ' +
-        'analysis_en.structured.json, analysis_en.normalized.json, ' +
-        'normalization_en.json, validation_en.json, report_status_en.json, ' +
-        'api_status_translation.json, token_usage.json, cost.json, and ' +
-        'exemplar_comparison_en.json'
-    )
-}
-
-$codes = @(Get-NormalizedSecurityCodes -Values $securityCodeArguments)
+$codes = @(Resolve-SecurityCodes)
+$modelProfile = Resolve-Profile
 $oldOffline = $env:TANSHIN_OFFLINE_ONLY
 $oldLive = $env:TANSHIN_LIVE_API
 $preflightParent = Join-Path $repositoryRoot 'tmp'
 $preflightRoot = Join-Path (
     $preflightParent
 ) ("batch_preflight_" + [guid]::NewGuid().ToString('N'))
-$analysisCooldownSeconds = 75
-$translationCooldownTokenThreshold = 225000
 
-function Invoke-ReportBatch {
-    try {
-        New-Item -ItemType Directory -Path $preflightRoot -Force | Out-Null
-        Write-Host 'BATCH PREFLIGHT'
-        Write-Host 'No API request is sent during this preparation.'
-        Write-Host "Companies: $($codes -join ', ')"
-        Write-Host "Model profile: $modelProfile"
-        Write-Host (
-            'The selection is all-or-nothing: there is no later per-company ' +
-            'selection prompt.'
-        )
+try {
+    New-Item -ItemType Directory -Path $preflightRoot -Force | Out-Null
+    Write-Host 'BATCH PREFLIGHT'
+    Write-Host 'No API request is sent during this preparation.'
+    Write-Host "Companies: $($codes -join ', ')"
+    Write-Host "Model profile: $modelProfile"
+    Write-Host (
+        'The selection is all-or-nothing: there is no later per-company ' +
+        'selection prompt.'
+    )
 
-        $analysisPreparations = @(
-            foreach ($code in $codes) {
-                Get-AnalysisPreparation -Code $code `
-                    -OutputRoot $preflightRoot `
-                    -ModelProfile $modelProfile
-            }
-        )
-        foreach ($preparation in $analysisPreparations) {
-            Write-AnalysisPreparation -Preparation $preparation
-        }
-
-        $maximumAnalysisCost = (
-            $analysisPreparations |
-                ForEach-Object { $_.Cost.analysis.maximum_stage_cost_jpy } |
-                Measure-Object -Sum
-        ).Sum
-        $maximumTranslationCost = (
-            $analysisPreparations |
-                ForEach-Object { $_.Cost.translation.maximum_stage_cost_jpy } |
-                Measure-Object -Sum
-        ).Sum
-        $maximumPages = (
-            $analysisPreparations |
-                ForEach-Object { $_.Manifest.total_selected_pages } |
-                Measure-Object -Sum
-        ).Sum
-        Write-Host ''
-        Write-Host ('=' * 72)
-        Write-Host 'BATCH TOTALS'
-        Write-Host "Companies: $($codes.Count)"
-        Write-Host "Selected PDF pages: $maximumPages"
-        Write-Host (
-            'Maximum analysis-only cost: JPY {0:N0}' -f
-            $maximumAnalysisCost
-        )
-        Write-Host (
-            'Maximum analysis-plus-English cost: JPY {0:N0}' -f
-            ($maximumAnalysisCost + $maximumTranslationCost)
-        )
-        if ($modelProfile -eq 'default') {
-            Write-Host (
-                'Billing note: This profile uses only GEMINI_API_KEY and ' +
-                "should be free when that key's project is eligible for the " +
-                'Gemini free tier; the JPY estimate is a paid-tier upper bound.'
-            )
-        }
-        Write-Host 'Each stage uses one API attempt; there are no automatic retries.'
-        Write-Host (
-            "Analysis requests use a $analysisCooldownSeconds-second cooldown; " +
-            "time spent translating counts toward it."
-        )
-        if ($modelProfile -in @('default', 'pro')) {
-            Write-Host (
-                'A same-credential analysis-to-translation cooldown applies ' +
-                'when the estimated combined two-stage token load reaches ' +
-                "$translationCooldownTokenThreshold tokens (10% headroom " +
-                'below 250,000).'
-            )
-        } else {
-            Write-Host (
-                'No analysis-to-translation cooldown is needed because the ' +
-                'stages use different providers or credentials.'
-            )
-        }
-
-        if ($PreviewOnly) {
-            Write-Host ''
-            Write-Host 'PREVIEW ONLY: no API request was sent.'
-            return 0
-        }
-
-        $proceed = Read-YesNo -Prompt (
-            "Proceed with analysis for all $($codes.Count) companies"
-        )
-        if (-not $proceed) {
-            Write-Host 'Cancelled. No API request was sent.'
-            return 0
-        }
-        $includeEnglish = Read-YesNo -Prompt (
-            "Generate an English report immediately after each company's analysis"
-        )
-
-        $requestCount = $codes.Count
-        if ($includeEnglish) {
-            $requestCount += $codes.Count
-        }
-        Write-Host ''
-        Write-Host (
-            "Authorized batch: $requestCount manually initiated API requests " +
-            "across $($codes.Count) companies."
-        )
-        Write-Host (
-            'Companies run sequentially: Japanese analysis, optional English ' +
-            'translation, then the next company.'
-        )
-
-        if ($env:TANSHIN_TESTING -eq '1') {
-            throw (
-                'TANSHIN_TESTING=1 blocks live execution. Open a normal ' +
-                'PowerShell session.'
-            )
-        }
-
-        $batchStamp = Get-Date -Format 'yyyyMMdd_HHmmssfff'
-        $previousAnalysisCompletedAt = $null
-        foreach ($preparation in $analysisPreparations) {
-            if ($null -ne $previousAnalysisCompletedAt) {
-                Wait-ForAnalysisCooldown `
-                    -PreviousAnalysisCompletedAt $previousAnalysisCompletedAt `
-                    -CooldownSeconds $analysisCooldownSeconds
-            }
-
-            Backup-CurrentOutput `
-                -Code $preparation.Code `
-                -BatchStamp $batchStamp
-            $analysisSucceeded = Invoke-LiveStage `
-                -Code $preparation.Code `
-                -Stage analysis `
-                -RequestId $preparation.Plan.request_id `
+    $researchPreparations = @(
+        foreach ($code in $codes) {
+            Get-Preparation `
+                -Code $code `
+                -Stage research `
+                -OutputRoot $preflightRoot `
                 -ModelProfile $modelProfile
-            $previousAnalysisCompletedAt = Get-Date
-            if (-not $analysisSucceeded) {
-                Write-Host ''
-                Write-Host (
-                    "BATCH STATE: ANALYSIS FAILED for $($preparation.Code)"
-                )
-                return 3
-            }
-
-            if ($includeEnglish) {
-                Write-Host ''
-                Write-Host (
-                    "Japanese analysis succeeded for $($preparation.Code). " +
-                    'Preparing its English request offline.'
-                )
-                $translationPreparation = Get-TranslationPreparation `
-                    -Code $preparation.Code `
-                    -ModelProfile $modelProfile
-                Write-TranslationPreparation `
-                    -Preparation $translationPreparation
-                if (
-                    Test-TranslationCooldownRequired `
-                        -AnalysisPreparation $preparation `
-                        -TranslationPreparation $translationPreparation `
-                        -TokenThreshold $translationCooldownTokenThreshold
-                ) {
-                    $estimatedSameKeyTokenLoad = Get-SameCredentialTokenLoad `
-                        -AnalysisPreparation $preparation `
-                        -TranslationPreparation $translationPreparation
-                    Wait-ForTranslationCooldown `
-                        -AnalysisCompletedAt $previousAnalysisCompletedAt `
-                        -CooldownSeconds $analysisCooldownSeconds `
-                        -EstimatedTokenLoad $estimatedSameKeyTokenLoad `
-                        -TokenThreshold $translationCooldownTokenThreshold
-                }
-                $translationSucceeded = Invoke-LiveStage `
-                    -Code $translationPreparation.Code `
-                    -Stage translation `
-                    -RequestId $translationPreparation.Plan.request_id `
-                    -ModelProfile $modelProfile
-                if (-not $translationSucceeded) {
-                    Write-Host ''
-                    Write-Host (
-                        "BATCH STATE: TRANSLATION FAILED for " +
-                        $translationPreparation.Code
-                    )
-                    return 4
-                }
-            }
         }
-
-        if (-not $includeEnglish) {
-            Write-Host ''
-            Write-Host 'BATCH STATE: SUCCESS (Japanese reports only)'
-            return 0
-        }
-
-        Write-Host ''
-        Write-Host 'BATCH STATE: SUCCESS'
-        Write-Host "Japanese and English reports completed for: $($codes -join ', ')"
-        return 0
+    )
+    $researchPreparations | ForEach-Object {
+        Write-ResearchPreparation -Preparation $_
     }
-    finally {
-        if ($null -eq $oldOffline) {
-            Remove-Item Env:TANSHIN_OFFLINE_ONLY -ErrorAction SilentlyContinue
-        } else {
-            $env:TANSHIN_OFFLINE_ONLY = $oldOffline
-        }
-        if ($null -eq $oldLive) {
-            Remove-Item Env:TANSHIN_LIVE_API -ErrorAction SilentlyContinue
-        } else {
-            $env:TANSHIN_LIVE_API = $oldLive
-        }
 
-        $resolvedParent = [IO.Path]::GetFullPath($preflightParent)
-        $resolvedPreflight = [IO.Path]::GetFullPath($preflightRoot)
-        if (
-            (Test-Path -LiteralPath $resolvedPreflight -PathType Container) -and
-            ([IO.Path]::GetDirectoryName($resolvedPreflight) -eq $resolvedParent)
-        ) {
-            Remove-Item -LiteralPath $resolvedPreflight -Recurse -Force
+    $researchCost = (
+        $researchPreparations |
+            ForEach-Object Cost |
+            ForEach-Object { $_.research.maximum_stage_cost_jpy } |
+            Measure-Object -Sum
+    ).Sum
+    $analysisCost = (
+        $researchPreparations |
+            ForEach-Object Cost |
+            ForEach-Object { $_.analysis.maximum_stage_cost_jpy } |
+            Measure-Object -Sum
+    ).Sum
+    $translationCost = (
+        $researchPreparations |
+            ForEach-Object Cost |
+            ForEach-Object { $_.translation.maximum_stage_cost_jpy } |
+            Measure-Object -Sum
+    ).Sum
+    $pages = (
+        $researchPreparations |
+            ForEach-Object Manifest |
+            ForEach-Object total_selected_pages |
+            Measure-Object -Sum
+    ).Sum
+
+    Write-Host ''
+    Write-Host ('=' * 72)
+    Write-Host 'BATCH TOTALS'
+    Write-Host "Companies: $($codes.Count)"
+    Write-Host "Selected PDF pages: $pages"
+    Write-Host (
+        'Maximum Japanese report cost (research + synthesis): JPY {0:N0}' -f
+        ($researchCost + $analysisCost)
+    )
+    Write-Host (
+        'Maximum Japanese + English cost: JPY {0:N0}' -f
+        ($researchCost + $analysisCost + $translationCost)
+    )
+    if ($modelProfile -eq 'default') {
+        Write-Host (
+            'Billing note: This profile uses only GEMINI_API_KEY and should ' +
+            "be free when that key's project is eligible for the Gemini free " +
+            'tier; the JPY estimate is a paid-tier upper bound.'
+        )
+    }
+    Write-Host 'Each stage uses one API attempt; there are no automatic retries.'
+    Write-Host (
+        "Consecutive same-credential Gemini stages wait up to " +
+        "$cooldownSeconds seconds when their combined estimated token budget " +
+        "reaches $cooldownTokenThreshold."
+    )
+
+    if ($PreviewOnly) {
+        Write-Host ''
+        Write-Host 'PREVIEW ONLY: no API request was sent.'
+        exit 0
+    }
+
+    if (-not (Read-YesNo -Prompt (
+        "Proceed with two-stage Japanese analysis for all $($codes.Count) companies"
+    ))) {
+        Write-Host 'Cancelled. No API request was sent.'
+        exit 0
+    }
+    $includeEnglish = Read-YesNo -Prompt (
+        "Generate an English report immediately after each Japanese report"
+    )
+    $requestsPerCompany = if ($includeEnglish) { 3 } else { 2 }
+    Write-Host (
+        "Authorized batch: $($requestsPerCompany * $codes.Count) manually " +
+        "initiated API requests across $($codes.Count) companies."
+    )
+    Write-Host (
+        'Companies run sequentially: PDF research, Japanese synthesis, ' +
+        'optional English translation, then the next company.'
+    )
+    if ($env:TANSHIN_TESTING -eq '1') {
+        throw (
+            'TANSHIN_TESTING=1 blocks live execution. Open a normal ' +
+            'PowerShell session.'
+        )
+    }
+
+    $batchStamp = Get-Date -Format 'yyyyMMdd_HHmmssfff'
+    $previousResearchCompletedAt = $null
+    foreach ($preflight in $researchPreparations) {
+        if ($null -ne $previousResearchCompletedAt) {
+            Wait-BeforeNextCompany `
+                -PreviousResearchCompletedAt $previousResearchCompletedAt
         }
+        Backup-CurrentOutput `
+            -Code $preflight.Code `
+            -BatchStamp $batchStamp
+
+        $canonicalRoot = Join-Path $repositoryRoot 'final_output'
+        $research = Get-Preparation `
+            -Code $preflight.Code `
+            -Stage research `
+            -OutputRoot $canonicalRoot `
+            -ModelProfile $modelProfile
+        if (-not (Invoke-LiveStage -Preparation $research -ModelProfile $modelProfile)) {
+            Write-Host "BATCH STATE: RESEARCH FAILED for $($research.Code)"
+            exit 3
+        }
+        $researchCompletedAt = Get-Date
+        $previousResearchCompletedAt = $researchCompletedAt
+
+        Write-Host (
+            "Research succeeded for $($research.Code). Preparing Japanese " +
+            'synthesis offline from the stored dossier.'
+        )
+        $analysis = Get-Preparation `
+            -Code $research.Code `
+            -Stage analysis `
+            -OutputRoot $canonicalRoot `
+            -ModelProfile $modelProfile
+        Wait-BetweenStagesIfNeeded `
+            -Previous $research `
+            -Next $analysis `
+            -PreviousCompletedAt $researchCompletedAt
+        if (-not (Invoke-LiveStage -Preparation $analysis -ModelProfile $modelProfile)) {
+            Write-Host "BATCH STATE: ANALYSIS FAILED for $($analysis.Code)"
+            exit 4
+        }
+        $analysisCompletedAt = Get-Date
+
+        if ($includeEnglish) {
+            Write-Host (
+                "Japanese synthesis succeeded for $($analysis.Code). " +
+                'Preparing translation offline.'
+            )
+            $translation = Get-Preparation `
+                -Code $analysis.Code `
+                -Stage translation `
+                -OutputRoot $canonicalRoot `
+                -ModelProfile $modelProfile
+            Wait-BetweenStagesIfNeeded `
+                -Previous $analysis `
+                -Next $translation `
+                -PreviousCompletedAt $analysisCompletedAt
+            if (-not (
+                Invoke-LiveStage `
+                    -Preparation $translation `
+                    -ModelProfile $modelProfile
+            )) {
+                Write-Host (
+                    "BATCH STATE: TRANSLATION FAILED for $($translation.Code)"
+                )
+                exit 5
+            }
+        }
+    }
+
+    Write-Host ''
+    if ($includeEnglish) {
+        Write-Host 'BATCH STATE: SUCCESS'
+        Write-Host (
+            "Japanese and English reports completed for: $($codes -join ', ')"
+        )
+    } else {
+        Write-Host 'BATCH STATE: SUCCESS (Japanese reports only)'
+    }
+    exit 0
+}
+finally {
+    if ($null -eq $oldOffline) {
+        Remove-Item Env:TANSHIN_OFFLINE_ONLY -ErrorAction SilentlyContinue
+    } else {
+        $env:TANSHIN_OFFLINE_ONLY = $oldOffline
+    }
+    if ($null -eq $oldLive) {
+        Remove-Item Env:TANSHIN_LIVE_API -ErrorAction SilentlyContinue
+    } else {
+        $env:TANSHIN_LIVE_API = $oldLive
+    }
+    $resolvedParent = [IO.Path]::GetFullPath($preflightParent)
+    $resolvedPreflight = [IO.Path]::GetFullPath($preflightRoot)
+    if (
+        (Test-Path -LiteralPath $resolvedPreflight -PathType Container) -and
+        ([IO.Path]::GetDirectoryName($resolvedPreflight) -eq $resolvedParent)
+    ) {
+        Remove-Item -LiteralPath $resolvedPreflight -Recurse -Force
     }
 }
-
-exit (Invoke-ReportBatch)

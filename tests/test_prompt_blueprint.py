@@ -7,17 +7,22 @@ from pathlib import Path
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.prompts import (
     ANALYSIS_SYSTEM_PROMPT,
+    RESEARCH_SYSTEM_PROMPT,
     TRANSLATION_SYSTEM_PROMPT,
     build_translation_prompt,
     load_generic_blueprint,
 )
-from tanshin_pipeline.request_builder import build_analysis_spec
+from tanshin_pipeline.request_builder import (
+    build_analysis_spec,
+    build_research_spec,
+)
 from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
     JapaneseModelResponse,
 )
 from tanshin_pipeline.selection import select_filings
+from tests.helpers import fake_research_dossier
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -48,9 +53,23 @@ class PromptBlueprintTests(unittest.TestCase):
         blueprint_hashes: set[str | None] = set()
         for security_code in ("1808", "3923", "6361"):
             manifest = select_filings(REPOSITORY_ROOT, security_code)
-            spec = build_analysis_spec(REPOSITORY_ROOT, manifest)
+            base = fake_research_dossier(REPOSITORY_ROOT)
+            dossier = base.model_copy(
+                update={
+                    "identity": base.identity.model_copy(
+                        update={
+                            "security_code": security_code,
+                            "latest_filename": manifest.latest_filename,
+                        }
+                    )
+                }
+            )
+            research_spec = build_research_spec(REPOSITORY_ROOT, manifest)
+            spec = build_analysis_spec(REPOSITORY_ROOT, manifest, dossier)
             plan = spec.plan()
             blueprint_hashes.add(plan.style_blueprint_sha256)
+            self.assertGreater(len(research_spec.files), 0)
+            self.assertEqual(spec.files, ())
             self.assertEqual(
                 plan.style_blueprint_path,
                 "prompt_assets/generic_report_blueprint_ja.md",
@@ -80,92 +99,29 @@ class PromptBlueprintTests(unittest.TestCase):
                 spec.prompt,
             )
             self.assertIn("company.overview: exactly 1 claim", spec.prompt)
-            self.assertIn("write 1-2 plain-language paragraphs", spec.prompt)
-            self.assertIn("its operating or revenue model works", spec.prompt)
             self.assertIn("trend_period_buckets:", spec.prompt)
             self.assertIn("- early:", spec.prompt)
             self.assertIn("- middle:", spec.prompt)
             self.assertIn("- recent:", spec.prompt)
             self.assertIn("coverage_shortfall:<section>", spec.prompt)
-            self.assertIn("evidence_sufficiency", spec.prompt)
-            self.assertIn('"insufficient"', spec.prompt)
-            self.assertIn("set rating to null", spec.prompt)
-            self.assertNotIn(
-                "use 2 unless the available evidence",
-                spec.prompt,
-            )
-            self.assertNotIn("165-215", spec.prompt)
-            self.assertIn("Give more space to material themes", spec.prompt)
-            self.assertIn("use at most one claim", spec.prompt)
-            self.assertIn("evidence from all three periods", spec.prompt)
-            self.assertIn(
-                "one from each period bucket",
-                spec.prompt,
-            )
+            self.assertIn("<research_dossier>", spec.prompt)
+            self.assertIn("<research_metrics>", spec.prompt)
             self.assertIn(
                 "before -> transition -> current state",
                 spec.prompt,
             )
-            self.assertIn(
-                "actively look for a contraction, miss, reversal",
-                spec.prompt,
-            )
             self.assertIn("positive for investors", spec.prompt)
-            self.assertIn("Do not split one financial", spec.prompt)
-            self.assertIn("A single impairment", spec.prompt)
-            self.assertIn("cash generation or balance-sheet", spec.prompt)
-            self.assertIn("qualitative management discussion", spec.prompt)
-            self.assertIn("material evidence limits or contradicts", spec.prompt)
-            self.assertIn(
-                "using the same organizational scope and time horizon",
-                spec.prompt,
-            )
-            self.assertIn("annual, interim, endpoint, and cumulative", spec.prompt)
-            self.assertIn("high-margin, stabilizing, or a cyclical buffer", spec.prompt)
-            self.assertIn("A larger cash balance alone", spec.prompt)
-            self.assertIn("repeated operating losses", spec.prompt)
             self.assertIn("commitment-versus-outcome", spec.prompt)
             self.assertIn(
                 "earlier commitment -> later action -> later result",
                 spec.prompt,
             )
-            self.assertIn(
-                "Preserve whether a target applies to the group",
-                spec.prompt,
-            )
-            self.assertIn("product. Keep annual, interim", spec.prompt)
-            self.assertIn(
-                "Do not project a product's or",
-                spec.prompt,
-            )
-            self.assertIn(
-                "organic investment in people, marketing",
-                spec.prompt,
-            )
-            self.assertIn(
-                "A completed reorganization, acquisition",
-                spec.prompt,
-            )
-            self.assertIn(
-                "preserve the source metric, organizational scope",
-                spec.system_prompt,
-            )
-            self.assertIn(
-                "cited evidence and chronology establish it",
-                spec.system_prompt,
-            )
-            self.assertIn("Do not invent a management response", spec.system_prompt)
-            self.assertIn("revised controls", spec.system_prompt)
-            self.assertIn("execution_follow_through", spec.prompt)
-            self.assertIn("forecast_target_discipline", spec.prompt)
-            self.assertIn("management_discussion", spec.system_prompt)
-            self.assertIn(
-                "management_consistency",
-                spec.response_schema["required"],
-            )
+            self.assertIn("management.strategy: exactly 1", spec.prompt)
+            self.assertIn("management.forecast_discipline: exactly 1", spec.prompt)
+            self.assertNotIn("evidence", spec.response_schema["required"])
             self.assertLess(
                 spec.prompt.index("<document_manifest>"),
-                spec.prompt.index("<report_blueprint>"),
+                spec.prompt.index("<research_dossier>"),
             )
             self.assertLess(
                 spec.prompt.index("</report_blueprint>"),
@@ -194,7 +150,10 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("経済的成果が証明されたことを区別", blueprint.text)
 
     def test_critical_rules_are_in_system_prompts(self) -> None:
-        self.assertIn("# Non-negotiable grounding rules", ANALYSIS_SYSTEM_PROMPT)
+        self.assertIn("# Non-negotiable grounding rules", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("outside knowledge", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("Return only one JSON object", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("# Source boundary", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("outside knowledge", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("Return only one JSON object", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("# Non-negotiable invariants", TRANSLATION_SYSTEM_PROMPT)

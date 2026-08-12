@@ -6,7 +6,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from .schemas import JapaneseAnalysis, SelectionManifest
+from .schemas import JapaneseAnalysis, JapaneseResearchDossier, SelectionManifest
 from .translation_contract import build_translation_input
 
 
@@ -34,10 +34,11 @@ Quality profile:
 """
 
 
-ANALYSIS_SYSTEM_PROMPT = """\
+RESEARCH_SYSTEM_PROMPT = """\
 # Role
-You are a Japanese public-company financial analyst specializing in 決算短信.
-Produce decision-useful investor research from the supplied source PDFs.
+You are a forensic Japanese public-company researcher specializing in 決算短信.
+Build a longitudinal evidence dossier from the supplied source PDFs. Do not
+write the final report.
 
 # Non-negotiable grounding rules
 - Use only the PDFs and document metadata supplied in this request. Do not use
@@ -62,7 +63,7 @@ Produce decision-useful investor research from the supplied source PDFs.
   be stated only when the supplied filings explicitly describe it.
 
 # Evidence contract
-- Every factual claim must cite one or more evidence records.
+- Every research record must cite one or more evidence records.
 - Each evidence record must contain a sufficiently complete verbatim Japanese
   sentence or short contiguous passage, the authoritative source_filename, and
   the physical 1-indexed PDF page. Do not use a printed footer or contents-page label.
@@ -74,6 +75,30 @@ Produce decision-useful investor research from the supplied source PDFs.
 # Output contract
 Return only one JSON object conforming to the supplied JSON Schema. Do not return
 Markdown, commentary, or visible reasoning.
+"""
+
+
+ANALYSIS_SYSTEM_PROMPT = """\
+# Role
+You are a Japanese public-company financial analyst and report editor.
+Write decision-useful investor analysis from the supplied, PDF-grounded research
+dossier.
+
+# Source boundary
+- Use only the supplied research dossier, its deterministic summary, and the
+  fact-free report blueprint.
+- Do not use outside knowledge and do not invent missing facts.
+- Treat the dossier evidence ledger as the complete source record for this pass.
+- Every factual claim must cite dossier evidence IDs exactly as supplied.
+- Preserve company identity, source scope, periods, figures, and
+  actual/forecast/target distinctions.
+- Counts describe only observations in the selected filings. Do not present them
+  as a complete revision history unless the dossier explicitly establishes that.
+- Prefer restrained, specific analysis. State uncertainty and contrary evidence.
+
+# Output contract
+Return only one JSON object conforming to the supplied JSON Schema. Do not return
+Markdown, evidence records, commentary, or visible reasoning.
 """
 
 
@@ -173,9 +198,8 @@ def _trend_period_summary(manifest: SelectionManifest) -> str:
     )
 
 
-def build_analysis_prompt(
+def build_research_prompt(
     manifest: SelectionManifest,
-    blueprint: BlueprintReference,
 ) -> str:
     return f"""\
 <document_manifest>
@@ -187,6 +211,90 @@ trend_period_buckets:
 {_trend_period_summary(manifest)}
 </document_manifest>
 
+<research_task>
+Build a reusable longitudinal research dossier for security code
+{manifest.security_code}. The latest filing is {manifest.latest_filename}.
+
+Research priorities:
+1. Collect a deduplicated evidence ledger sufficient to support a company
+   overview, latest-period summary, business drivers, outlook, risks, decade
+   perspective, recurring themes, material changes, capital allocation, current
+   implications, and management-consistency assessment.
+2. Prioritize qualitative management discussion: 経営成績, 財政状態,
+   cash-flow discussion, 将来予測情報, plan progress, capital allocation,
+   risks, misses, impairments, and changes in assumptions. Use summary tables
+   mainly to corroborate exact figures.
+3. Extract 4-8 distinct business drivers when supported. Use a short reusable
+   canonical_tag such as customer_demand, volume, utilization, pricing,
+   product_mix, material_costs, labor_costs, energy_costs, interest_rates,
+   foreign_exchange, property_prices, rent, regulation, capacity,
+   technology_investment, competition, acquisitions, or other. State direction,
+   importance, structural/cyclical nature, affected area, mechanism, periods,
+   and evidence.
+4. Connect explicit forecasts, medium-term targets, strategic commitments, and
+   capital-allocation commitments with later outcomes whenever the selected
+   filings permit. Keep original statements and later outcomes in the same
+   organizational scope and time horizon. Distinguish achieved, exceeded,
+   partly achieved, missed, delayed, revised, withdrawn, pending, and not
+   observable.
+5. For annual forecasts, classify forecast_posture only when an issued forecast
+   can be compared with a later actual result. Conservative means the later
+   comparable actual materially exceeded guidance; aggressive means it
+   materially missed; balanced means broadly aligned. Use mixed when the
+   comparable metrics differ. Otherwise use not_assessable.
+6. Record revision_direction only for revisions visible in the selected
+   filings. Never infer that none occurred outside the selected corpus.
+7. Extract 4-8 decision-useful management themes spanning early, middle, and
+   recent periods where possible. Distinguish persistent, introduced,
+   strengthened, changed, deprioritized, and abandoned themes. Explain actions,
+   later outcomes, and unresolved tensions rather than merely counting repeated
+   slogans.
+8. Return one management-consistency component for each required dimension.
+   The rationale must identify concrete commitments, later actions or results,
+   important misses or revisions, and contrary evidence. Rate 0 materially
+   inconsistent, 1 weak, 2 mixed, 3 generally consistent, and 4 highly
+   consistent. Use null with insufficient evidence rather than a neutral rating.
+9. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
+   targets, missing outcomes, or other material research limitations.
+
+Evidence requirements:
+- Use exact authoritative filenames from the metadata.
+- Use physical 1-indexed PDF pages.
+- Evidence quotes must be sufficiently complete verbatim Japanese sentences or
+  short contiguous passages.
+- Use unique IDs in the form <source_filename>:sNNNN.
+- Include support for both the original commitment and later result when an
+  outcome is classified.
+- Tag management-commentary evidence with management_discussion.
+
+Return only the schema-conforming JapaneseResearchDossier.
+</research_task>
+"""
+
+
+def build_analysis_prompt(
+    manifest: SelectionManifest,
+    blueprint: BlueprintReference,
+    dossier: JapaneseResearchDossier,
+    research_metrics: dict[str, object],
+) -> str:
+    dossier_payload = dossier.model_dump(mode="json")
+    return f"""\
+<document_manifest>
+security_code: {manifest.security_code}
+latest_filename: {manifest.latest_filename}
+trend_period_buckets:
+{_trend_period_summary(manifest)}
+</document_manifest>
+
+<research_metrics>
+{json.dumps(research_metrics, ensure_ascii=False, indent=2)}
+</research_metrics>
+
+<research_dossier>
+{json.dumps(dossier_payload, ensure_ascii=False, indent=2)}
+</research_dossier>
+
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
 and analytical relationships only. Do not copy its bracketed instructions,
@@ -196,9 +304,9 @@ placeholder relationships, or wording. Do not return Markdown.
 </report_blueprint>
 
 <analysis_task>
-Create a Japanese investor report for security code {manifest.security_code}.
-The latest filing is {manifest.latest_filename}. The trend period consists only
-of the selected year-end sources identified in the manifest.
+Create the final Japanese investor analysis for security code
+{manifest.security_code} from the supplied research dossier. The latest filing
+is {manifest.latest_filename}.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -210,7 +318,10 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: at least 2 claims using the latest filing
+- latest.business_driver: 4-6 distinct driver claims when supported. Begin each
+  headline with a concise reader-facing driver tag and direction, such as
+  「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
+  transmission mechanism and affected segment or metric
 - latest.outlook: at least 1 claim using the latest filing
 - latest.risk: at least 2 claims using the latest filing
 - latest.context: target 1 integrated claim using the latest filing, written as
@@ -220,6 +331,10 @@ Coverage targets (grounding overrides counts):
 - trend.change: 2-3 genuinely different material changes
 - trend.capital_allocation: at least 1 distinct capital-allocation development
 - trend.implication: target 1 current investor implication
+- management.strategy: exactly 1 detailed explanation
+- management.execution: exactly 1 detailed explanation
+- management.forecast_discipline: exactly 1 detailed explanation
+- management.accountability: exactly 1 detailed explanation
 
 These are coverage targets, not permission to create weak, repetitive, or
 unsupported claims. Return fewer claims when necessary. For each underfilled
@@ -227,31 +342,20 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. First identify relevant evidence across the supplied PDFs internally. Rank it
-   by investor materiality before selecting claims. Do not split one financial
-   result into several key takeaways merely to satisfy the claim count.
-   For the trend analysis, begin with the qualitative management discussion:
-   経営成績に関する説明 or 経営成績等の概況, 財政状態に関する説明,
-   cash-flow discussion, 業績予想などの将来予測情報に関する説明,
-   management-plan progress, capital allocation, and management's discussion
-   of risks. Use financial-summary tables and notes as corroboration rather than
-   allowing a sequence of headline figures to become the trend thesis.
-2. Before choosing the trend themes, internally test each candidate using four
-   questions: what management said or prioritized; what subsequently happened;
-   what material evidence limits or contradicts the interpretation; and why that
-   record matters now. Reject themes that cannot answer the first three questions
-   with management-discussion evidence from the required period buckets.
-3. Ensure the key takeaways are diversified. Do not use separate sales, operating
+1. Rank the dossier findings by investor materiality before selecting claims.
+   Do not split one financial result into several takeaways merely to satisfy a
+   claim count. Treat the dossier as the full evidence boundary.
+2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
-4. Determine one unifying decade thesis and a small set of non-overlapping
+3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
    cyclical financial outcomes, and connect strategy, profitability, capital
    allocation, risk, and the latest position.
-5. Apply the following source tests wherever the relevant disclosures exist:
+4. Apply the following tests wherever the dossier supports them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -276,7 +380,7 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-6. Apply these admission rules to the trend sections:
+5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
      the decade's central continuity, principal change, and material tension.
@@ -291,62 +395,47 @@ Analysis requirements:
    - The latest filing may update the current state but does not replace a recent
      year-end source. Evidence from one year or adjacent years belongs in latest
      context or risk, not in a decade theme.
-7. For every major growth theme, actively look for a contraction, miss, reversal,
-   or cyclical downturn in the supplied period. If one exists, explain what it
-   shows about durability rather than presenting only favorable years. Explain
-   what would confirm or disconfirm the latest interpretation. Do not convert an
-   ambition into implementation, implementation into an outcome, or one favorable
-   result into proof of durable change. A completed reorganization, acquisition,
-   divestiture, or investment establishes that the action occurred, not that its
-   intended economic outcome has been achieved.
-8. Treat capital allocation broadly: organic investment in people, marketing,
+6. For every major growth theme, use the dossier's contrary evidence, miss,
+   reversal, or cyclical downturn when one is present. Explain what it shows
+   about durability. Do not convert ambition into implementation or
+   implementation into an achieved economic outcome.
+7. Treat capital allocation broadly: organic investment in people, marketing,
    development and capacity; acquisitions and divestitures; securities, debt and
    balance-sheet deployment; and dividends or buybacks. Discuss material shifts
    and trade-offs rather than listing every cash-flow item. Keep this analysis in
    its own section and do not repeat the same facts as separate strategic changes.
-9. Use restrained language when evidence is mixed. Avoid promotional expressions
+8. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
    evidence establishes that conclusion.
-10. Give more space to material themes and less to secondary ones. As advisory
+9. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
    Never add repetition, generic background, or weak themes merely to reach a length.
 
-Management-consistency assessment:
-- Return one component for each required dimension.
-- Use 0 for materially inconsistent, 1 for weak, 2 for mixed, 3 for generally
-  consistent, and 4 for highly consistent. Compare early, middle, and recent
-  management commentary and cite evidence from all three periods for each rating
-  when available. A rating of 4 requires convincing early-, middle-, and
-  recent-period follow-through and no omitted material counterexample.
-- If longitudinal evidence is insufficient, set evidence_sufficiency to
-  "insufficient", set rating to null, cite whatever relevant evidence exists,
-  and explain the limitation. Use rating 2 only when the evidence itself is mixed.
-- Otherwise set evidence_sufficiency to "sufficient" and provide a 0-4 rating.
-- strategic_coherence: whether stated priorities and the logic of successive
-  plans remain coherent; explained adaptation is not automatically inconsistency
-- execution_follow_through: whether announced initiatives are later implemented
-  and associated operational or financial outcomes are discussed
-- forecast_target_discipline: whether forecasts and targets are subsequently met,
-  credibly revised, or transparently reconciled with outcomes; evaluate annual,
-  endpoint, and cumulative commitments separately
-- accountability_transparency: whether misses, trade-offs, changed assumptions,
-  and abandoned priorities are explained rather than silently replaced
-- Base these ratings primarily on management-discussion passages, not on raw
-  financial-table sequences or the mere repetition of plan slogans.
-- Each rationale must state the strongest supporting evidence and any material
-  contrary evidence. Repetition of a strategic priority without a later outcome
-  is not execution follow-through.
+Management-consistency explanations:
+- The dossier already contains the four ratings used by local scoring. Do not
+  recalculate or change them.
+- Produce one claim for each management.* section. Explain the corresponding
+  rating through concrete examples: targets achieved or missed, observed
+  revisions, forecast posture, implementation outcomes, commentary changes,
+  and management's treatment of setbacks.
+- Use the deterministic research counts when useful, but state that revision
+  counts cover only the selected filings. Never create a complete-history claim
+  from incomplete coverage.
+- Mention the strongest supporting observation and material contrary evidence.
+- A repeated priority without a later action or outcome is not execution.
 
 {STYLE_PROFILE}
 
 Response details:
 - period_label_ja and period_label_en must be concise citation labels, not prose.
-- Do not return figure, date, or qualifier mapping arrays; local code derives them.
+- Cite only evidence IDs present in the dossier.
+- Do not return evidence records, management ratings, or figure/date/qualifier
+  mapping arrays; local code supplies or derives them.
 
-Based only on the supplied PDFs, return the schema-conforming JSON. Omit any
-assertion that cannot be grounded; grounding takes priority over coverage and length.
+Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
+that cannot be grounded; grounding takes priority over coverage and length.
 </analysis_task>
 """
 
@@ -382,6 +471,15 @@ Translate every claim in the supplied translation input into English.
 
 Return only the schema-conforming JSON object.
 </translation_task>
+"""
+
+
+def analysis_prompt_template() -> str:
+    return """\
+The prompt contains the selection manifest, deterministic research metrics, the
+complete JapaneseResearchDossier, and the fact-free report blueprint. Produce
+only JapaneseSynthesisResponse claims that cite dossier evidence IDs. The
+research dossier may be as large as the configured research maximum output.
 """
 
 

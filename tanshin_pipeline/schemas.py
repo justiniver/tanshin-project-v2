@@ -85,6 +85,64 @@ class StatementType(str, Enum):
     MIXED = "mixed"
 
 
+class DriverDirection(str, Enum):
+    POSITIVE = "positive"
+    NEGATIVE = "negative"
+    MIXED = "mixed"
+    UNCERTAIN = "uncertain"
+
+
+class DriverNature(str, Enum):
+    STRUCTURAL = "structural"
+    CYCLICAL = "cyclical"
+    COMPANY_SPECIFIC = "company_specific"
+    MIXED = "mixed"
+
+
+class CommitmentType(str, Enum):
+    ANNUAL_FORECAST = "annual_forecast"
+    MEDIUM_TERM_TARGET = "medium_term_target"
+    STRATEGIC_COMMITMENT = "strategic_commitment"
+    CAPITAL_ALLOCATION = "capital_allocation"
+
+
+class CommitmentOutcome(str, Enum):
+    ACHIEVED = "achieved"
+    EXCEEDED = "exceeded"
+    PARTLY_ACHIEVED = "partly_achieved"
+    MISSED = "missed"
+    DELAYED = "delayed"
+    REVISED = "revised"
+    WITHDRAWN = "withdrawn"
+    PENDING = "pending"
+    NOT_OBSERVABLE = "not_observable"
+
+
+class RevisionDirection(str, Enum):
+    UP = "up"
+    DOWN = "down"
+    MIXED = "mixed"
+    NONE_OBSERVED = "none_observed"
+    NOT_ASSESSABLE = "not_assessable"
+
+
+class ForecastPosture(str, Enum):
+    CONSERVATIVE = "conservative"
+    BALANCED = "balanced"
+    AGGRESSIVE = "aggressive"
+    MIXED = "mixed"
+    NOT_ASSESSABLE = "not_assessable"
+
+
+class ThemeDevelopment(str, Enum):
+    PERSISTENT = "persistent"
+    INTRODUCED = "introduced"
+    STRENGTHENED = "strengthened"
+    CHANGED = "changed"
+    DEPRIORITIZED = "deprioritized"
+    ABANDONED = "abandoned"
+
+
 class ManagementConsistencyDimension(str, Enum):
     STRATEGIC_COHERENCE = "strategic_coherence"
     EXECUTION_FOLLOW_THROUGH = "execution_follow_through"
@@ -222,6 +280,10 @@ class SectionKey(str, Enum):
     TREND_CAPITAL_ALLOCATION = "trend.capital_allocation"
     TREND_IMPLICATION = "trend.implication"
     COMPANY_OVERVIEW = "company.overview"
+    MANAGEMENT_STRATEGY = "management.strategy"
+    MANAGEMENT_EXECUTION = "management.execution"
+    MANAGEMENT_FORECAST_DISCIPLINE = "management.forecast_discipline"
+    MANAGEMENT_ACCOUNTABILITY = "management.accountability"
 
 
 class CompanyIdentity(StrictModel):
@@ -294,6 +356,101 @@ class EvidenceRecord(StrictModel):
         default_factory=list,
         description="Optional short topical labels; use an empty list when unnecessary.",
     )
+
+
+class ResearchBusinessDriver(BaseModel):
+    """One comparable business driver extracted from the selected filings."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    driver_id: NonEmpty
+    canonical_tag: NonEmpty = Field(
+        description=(
+            "Short reusable driver category such as customer_demand, pricing, "
+            "material_costs, labor_costs, interest_rates, foreign_exchange, "
+            "utilization, regulation, technology_investment, or other."
+        )
+    )
+    label_ja: NonEmpty = Field(
+        description="Concise Japanese reader-facing driver label."
+    )
+    direction: DriverDirection
+    importance: Literal["primary", "secondary"]
+    nature: DriverNature
+    affected_area_ja: NonEmpty = Field(
+        description="Business, segment, margin, cash-flow, or balance-sheet area affected."
+    )
+    summary_ja: NonEmpty = Field(
+        description=(
+            "Concise explanation of the operating or financial transmission "
+            "mechanism, including material qualifications."
+        )
+    )
+    observed_periods_ja: list[NonEmpty] = Field(min_length=1)
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
+
+
+class ResearchCommitmentRecord(BaseModel):
+    """A forecast, target, or commitment connected to a later observable outcome."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    commitment_id: NonEmpty
+    commitment_type: CommitmentType
+    statement_period_ja: NonEmpty
+    commitment_ja: NonEmpty
+    due_period_ja: NonEmpty
+    outcome_status: CommitmentOutcome
+    outcome_ja: NonEmpty = Field(
+        description=(
+            "Later result or a concise statement that the outcome is not yet "
+            "observable in the selected filings."
+        )
+    )
+    revision_direction: RevisionDirection
+    forecast_posture: ForecastPosture
+    evidence_ids: list[NonEmpty] = Field(
+        min_length=1,
+        description=(
+            "Evidence for the original statement and, when observable, its "
+            "revision or later outcome."
+        ),
+    )
+
+
+class ResearchThemeRecord(BaseModel):
+    """A recurring or changing management-commentary theme."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    theme_id: NonEmpty
+    label_ja: NonEmpty
+    development: ThemeDevelopment
+    early_period_ja: NonEmpty
+    middle_period_ja: NonEmpty
+    recent_period_ja: NonEmpty
+    interpretation_ja: NonEmpty = Field(
+        description=(
+            "What remained consistent or changed, what management subsequently "
+            "did, and what outcome or unresolved tension is visible."
+        )
+    )
+    evidence_ids: list[NonEmpty] = Field(min_length=1)
+
+
+class JapaneseResearchDossier(BaseModel):
+    """PDF-backed research output consumed by the separate synthesis request."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    schema_version: NonEmpty
+    identity: CompanyIdentity
+    evidence: list[EvidenceRecord] = Field(min_length=1)
+    business_drivers: list[ResearchBusinessDriver] = Field(min_length=1)
+    commitments: list[ResearchCommitmentRecord] = Field(default_factory=list)
+    management_themes: list[ResearchThemeRecord] = Field(default_factory=list)
+    management_consistency: ModelManagementConsistency
+    research_notes: list[str] = Field(default_factory=list)
 
 
 class AnalysisClaim(StrictModel):
@@ -405,6 +562,17 @@ class JapaneseModelResponse(BaseModel):
             "field for report prose."
         ),
     )
+
+
+class JapaneseSynthesisResponse(BaseModel):
+    """Dossier-backed analytical prose returned by the second Japanese request."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    schema_version: NonEmpty
+    identity: CompanyIdentity
+    claims: list[ModelAnalysisClaim] = Field(min_length=1)
+    model_notes: list[str] = Field(default_factory=list)
 
 
 class JapaneseAnalysis(StrictModel):
@@ -691,7 +859,7 @@ class RequestFileDescriptor(StrictModel):
 
 class RequestPlan(StrictModel):
     schema_version: NonEmpty
-    stage: Literal["analysis", "translation"]
+    stage: Literal["research", "analysis", "translation"]
     security_code: NonEmpty
     model_profile: ModelProfile = "default"
     provider: ApiProvider
@@ -732,6 +900,7 @@ class CostEstimate(StrictModel):
     display_currency: Literal["JPY"]
     usd_to_jpy_rate: float = Field(gt=0)
     pdf_tokens_per_page: int
+    research: CostStage
     analysis: CostStage
     translation: CostStage
     maximum_one_pass_cost_usd: float
@@ -745,7 +914,7 @@ class CostEstimate(StrictModel):
 class RunMetadata(StrictModel):
     schema_version: NonEmpty
     security_code: NonEmpty
-    mode: Literal["dry-run", "analysis", "translation", "reprocess"]
+    mode: Literal["dry-run", "research", "analysis", "translation", "reprocess"]
     model_profile: ModelProfile = "default"
     prepared_at_utc: NonEmpty
     repository_root: NonEmpty
@@ -804,6 +973,73 @@ def materialize_japanese_analysis(
         evidence=[item.model_copy(deep=True) for item in response.evidence],
         management_consistency=assessment,
         model_notes=list(response.model_notes),
+    )
+
+
+def materialize_japanese_synthesis(
+    dossier: JapaneseResearchDossier,
+    response: JapaneseSynthesisResponse,
+) -> JapaneseAnalysis:
+    """Combine dossier evidence with synthesis prose into the internal schema."""
+
+    if response.identity.model_dump(mode="json") != dossier.identity.model_dump(
+        mode="json"
+    ):
+        raise ValueError(
+            "The synthesis response changed the issuer or latest-filing identity."
+        )
+    evidence_ids = {item.evidence_id for item in dossier.evidence}
+    unresolved = sorted(
+        {
+            evidence_id
+            for claim in response.claims
+            for evidence_id in claim.evidence_ids
+            if evidence_id not in evidence_ids
+        }
+    )
+    if unresolved:
+        raise ValueError(
+            "The synthesis response cited evidence IDs absent from the research "
+            f"dossier: {', '.join(unresolved)}."
+        )
+    assessment = ManagementConsistencyAssessment(
+        methodology_version="management-consistency-v1-pending",
+        components=[
+            ManagementConsistencyComponent(
+                dimension=component.dimension,
+                rating=component.rating,
+                evidence_sufficiency=component.evidence_sufficiency,
+                normalized_score=(
+                    component.rating / 4
+                    if component.rating is not None
+                    else None
+                ),
+                weight=0,
+                rationale_ja=component.rationale_ja,
+                evidence_ids=list(component.evidence_ids),
+            )
+            for component in dossier.management_consistency.components
+        ],
+        overall_rationale_ja=dossier.management_consistency.overall_rationale_ja,
+    )
+    return JapaneseAnalysis(
+        schema_version=response.schema_version,
+        identity=response.identity.model_copy(deep=True),
+        claims=[
+            AnalysisClaim(
+                **claim.model_dump(mode="python"),
+                figures=[],
+                dates=[],
+                qualifiers=[],
+            )
+            for claim in response.claims
+        ],
+        evidence=[item.model_copy(deep=True) for item in dossier.evidence],
+        management_consistency=assessment,
+        model_notes=[
+            *dossier.research_notes,
+            *response.model_notes,
+        ],
     )
 
 

@@ -23,9 +23,8 @@ from .config import LIVE_CONFIRMATION_VALUE, PRO_GEMINI_MODEL
 from .request_builder import RequestSpec
 from .schemas import (
     EnglishTranslationPatch,
-    JapaneseAnalysis,
-    JapaneseModelResponse,
-    parse_japanese_analysis_payload,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
 )
 
 
@@ -51,7 +50,11 @@ T = TypeVar("T")
 
 @dataclass(frozen=True)
 class ExecutionResult:
-    structured: JapaneseModelResponse | JapaneseAnalysis | EnglishTranslationPatch
+    structured: (
+        JapaneseResearchDossier
+        | JapaneseSynthesisResponse
+        | EnglishTranslationPatch
+    )
     raw_response: dict[str, Any]
     usage: dict[str, Any]
     model_version: str | None
@@ -207,7 +210,7 @@ def execute_request(
         types.Part.from_text(text=spec.task_prompt or spec.prompt)
     )
     contents = [types.Content(role="user", parts=parts)]
-    if spec.stage == "analysis":
+    if spec.stage in {"research", "analysis"}:
         thinking_level = types.ThinkingLevel.MEDIUM
     elif spec.model == PRO_GEMINI_MODEL:
         thinking_level = types.ThinkingLevel.LOW
@@ -242,10 +245,10 @@ def execute_request(
         client.close()
 
     payload = _structured_payload(response)
-    if spec.stage == "analysis":
-        structured: JapaneseModelResponse | JapaneseAnalysis | EnglishTranslationPatch = (
-            parse_japanese_analysis_payload(payload)
-        )
+    if spec.stage == "research":
+        structured = JapaneseResearchDossier.model_validate(payload)
+    elif spec.stage == "analysis":
+        structured = JapaneseSynthesisResponse.model_validate(payload)
     else:
         structured = EnglishTranslationPatch.model_validate(payload)
     usage_obj = getattr(response, "usage_metadata", None)

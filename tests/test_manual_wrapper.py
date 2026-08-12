@@ -87,60 +87,35 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("'pro-translation'", script)
         self.assertIn("'sol'", script)
         self.assertIn("--model-profile $ModelProfile", script)
-        self.assertIn("Get-NormalizedSecurityCodes", script)
+        self.assertIn("Resolve-SecurityCodes", script)
         self.assertIn("Duplicate security codes are not allowed", script)
-        self.assertIn("Proceed with analysis for all", script)
+        self.assertIn("Proceed with two-stage Japanese analysis for all", script)
         self.assertIn(
-            "Generate an English report immediately after each company's analysis",
+            "Generate an English report immediately after each Japanese report",
             script,
         )
         self.assertIn(
-            "Companies run sequentially: Japanese analysis, optional English ",
+            "Companies run sequentially: PDF research, Japanese synthesis, ",
             script,
         )
-        self.assertIn(
-            "translation, then the next company.",
-            script,
-        )
-        self.assertIn("$analysisCooldownSeconds = 75", script)
-        self.assertIn("Wait-ForAnalysisCooldown", script)
-        self.assertIn("Start-Sleep -Seconds $remainingSeconds", script)
-        self.assertIn("time spent translating counts toward it.", script)
-        self.assertIn("$translationCooldownTokenThreshold = 225000", script)
-        self.assertIn("Wait-ForTranslationCooldown", script)
-        self.assertIn("Get-SameCredentialTokenLoad", script)
-        self.assertIn(
-            "[long]$AnalysisPreparation.Cost.analysis.estimated_input_tokens +",
-            script,
-        )
-        self.assertIn(
-            "[long]$AnalysisPreparation.Cost.analysis.maximum_output_tokens +",
-            script,
-        )
-        self.assertIn("[long]$translationCost.estimated_input_tokens +", script)
-        self.assertIn("[long]$translationCost.maximum_output_tokens", script)
-        self.assertIn(
-            "$AnalysisPreparation.Plan.provider_profile -ne",
-            script,
-        )
-        self.assertIn(
-            "$TranslationPreparation.Plan.provider_profile",
-            script,
-        )
-        self.assertIn("10% headroom", script)
-        self.assertIn(
-            "Japanese analysis succeeded for $($preparation.Code). ",
-            script,
-        )
+        self.assertIn("optional English translation, then the next company.", script)
+        self.assertIn("$cooldownSeconds = 75", script)
+        self.assertIn("Wait-BetweenStagesIfNeeded", script)
+        self.assertIn("Wait-BeforeNextCompany", script)
+        self.assertIn("Start-Sleep -Seconds $remaining", script)
+        self.assertIn("$cooldownTokenThreshold = 225000", script)
+        self.assertIn("Get-StageBudget", script)
+        self.assertIn("$Previous.Plan.provider_profile -ne", script)
+        self.assertIn("$Next.Plan.provider_profile", script)
+        self.assertIn("Research succeeded for $($research.Code)", script)
         self.assertIn("--execute-api", script)
-        self.assertIn("--confirm-request $RequestId", script)
+        self.assertIn("--confirm-request $requestId", script)
         self.assertIn("--max-api-attempts 1", script)
         self.assertIn("TANSHIN_TESTING=1 blocks live execution", script)
         self.assertIn("Write-ApiStatusSummary", script)
         self.assertIn("MODEL RUN STATE: RUNNING", script)
-        self.assertIn("Analysis provider:", script)
-        self.assertIn("PDF detail:", script)
-        self.assertIn("Translation provider:", script)
+        self.assertIn("Research provider/model:", script)
+        self.assertIn("PDFs submitted in research request:", script)
         self.assertIn("PREVIEW ONLY: no API request was sent.", script)
         self.assertIn("$reportDate = Get-Date -Format 'yyyyMMdd'", script)
         self.assertEqual(script.count("--report-date $reportDate"), 2)
@@ -149,17 +124,11 @@ class ManualWrapperTests(unittest.TestCase):
             script,
         )
         self.assertIn(
-            "$canonicalOutput = Join-Path $repositoryRoot 'final_output'",
+            "$canonicalRoot = Join-Path $repositoryRoot 'final_output'",
             script,
         )
-        self.assertIn(
-            "final_output\\$code\\analysis_ja_${code}_$reportDate.md",
-            script,
-        )
-        self.assertIn(
-            "final_output\\$code\\analysis_en_${code}_$reportDate.md",
-            script,
-        )
+        self.assertIn("analysis_ja_${code}_$reportDate.md", script)
+        self.assertIn("analysis_en_${code}_$reportDate.md", script)
         self.assertIn("'^analysis_(ja|en)_' +", script)
         self.assertIn(
             "Copy-Item -LiteralPath $_.FullName -Destination $archive -Recurse",
@@ -168,8 +137,11 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("Remove-Item -LiteralPath $_.FullName", script)
         self.assertNotIn('"output\\$Code', script)
         self.assertNotIn("'output'", script)
-        self.assertIn("Estimated maximum analysis cost: JPY {0:N0}", script)
-        self.assertIn("Maximum analysis-plus-English cost: JPY {0:N0}", script)
+        self.assertIn("Estimated maximum research cost: JPY {0:N0}", script)
+        self.assertIn(
+            "Maximum Japanese report cost (research + synthesis): JPY {0:N0}",
+            script,
+        )
         self.assertIn(
             "Billing note: This profile uses only GEMINI_API_KEY",
             script,
@@ -179,12 +151,12 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertNotIn("flash-translation", script)
         live_stage = script[
             script.index("function Invoke-LiveStage") :
-            script.index("function Get-TranslationPreparation")
+            script.index("function Write-ResearchPreparation")
         ]
         self.assertNotIn("2>&1", live_stage)
         self.assertLess(
-            script.index("Get-AnalysisPreparation -Code $code"),
-            script.index("Proceed with analysis for all"),
+            script.index("-Stage research"),
+            script.index("Proceed with two-stage Japanese analysis for all"),
         )
         self.assertNotIn(
             "only if every Japanese analysis succeeds.",

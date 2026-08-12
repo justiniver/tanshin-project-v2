@@ -14,8 +14,10 @@ from .pipeline import (
     PreparedRun,
     compare_existing_reports,
     execute_analysis,
+    execute_research,
     execute_translation,
     prepare_analysis,
+    prepare_research,
     prepare_translation,
     reprocess_stored_analysis,
     reprocess_stored_translation,
@@ -58,8 +60,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--stage",
-        choices=("analysis", "translation"),
-        default="analysis",
+        choices=("research", "analysis", "translation"),
+        default="research",
         help="Prepare or execute exactly one stage.",
     )
     parser.add_argument(
@@ -150,7 +152,7 @@ def _print_prepared(prepared: PreparedRun) -> None:
             f"(sha256 {prepared.plan.style_blueprint_sha256})"
         )
     print(
-        "Estimated maximum one-pass cost for analysis + translation: "
+        "Estimated maximum one-pass cost for research + analysis + translation: "
         f"JPY {prepared.cost.maximum_one_pass_cost_jpy:,.0f}"
     )
     print(
@@ -171,7 +173,12 @@ def _print_prepared(prepared: PreparedRun) -> None:
         "validation findings remain in JSON diagnostics."
     )
     print(f"Selection manifest: {prepared.paths.selection_manifest}")
-    print(f"Inspectable request plan: {prepared.paths.analysis_request_plan if prepared.plan.stage == 'analysis' else prepared.paths.translation_request_plan}")
+    request_plan = {
+        "research": prepared.paths.research_request_plan,
+        "analysis": prepared.paths.analysis_request_plan,
+        "translation": prepared.paths.translation_request_plan,
+    }[prepared.plan.stage]
+    print(f"Inspectable request plan: {request_plan}")
     print("Live execution remains blocked unless --execute-api, the matching")
     print("--confirm-request value, and TANSHIN_LIVE_API=MANUAL_USER_RUN are all set.")
 
@@ -183,11 +190,10 @@ def _print_validation_failure(
     stage: str,
 ) -> int:
     print(f"PIPELINE BLOCKED: {error}", file=sys.stderr)
-    artifact = (
-        output_root
-        / security_code
-        / "artifacts"
-        / ("validation_ja.json" if stage == "analysis" else "validation_en.json")
+    if stage == "research":
+        return 2
+    artifact = output_root / security_code / "artifacts" / (
+        "validation_ja.json" if stage == "analysis" else "validation_en.json"
     )
     if artifact.is_file():
         payload = json.loads(artifact.read_text(encoding="utf-8"))
@@ -217,16 +223,12 @@ def _print_api_status(
     *,
     file: object = sys.stderr,
 ) -> bool:
-    artifact = (
-        output_root
-        / security_code
-        / "artifacts"
-        / (
-            "api_status_analysis.json"
-            if stage == "analysis"
-            else "api_status_translation.json"
-        )
-    )
+    status_name = {
+        "research": "api_status_research.json",
+        "analysis": "api_status_analysis.json",
+        "translation": "api_status_translation.json",
+    }[stage]
+    artifact = output_root / security_code / "artifacts" / status_name
     if not artifact.is_file():
         print("API STATE: UNKNOWN (no status artifact)", file=file)
         return False
@@ -277,6 +279,10 @@ def main(argv: list[str] | None = None) -> int:
     if args.reprocess_stored:
         if args.execute_api:
             raise SystemExit("--reprocess-stored cannot be combined with --execute-api.")
+        if args.stage == "research":
+            raise SystemExit(
+                "--reprocess-stored supports analysis or translation, not research."
+            )
         try:
             result = (
                 reprocess_stored_analysis(
@@ -307,8 +313,12 @@ def main(argv: list[str] | None = None) -> int:
 
     if not args.execute_api:
         try:
-            prepared = (
-                prepare_analysis(
+            prepare_by_stage = {
+                "research": prepare_research,
+                "analysis": prepare_analysis,
+                "translation": prepare_translation,
+            }
+            prepared = prepare_by_stage[args.stage](
                     repository_root,
                     args.security_code,
                     output_root=output_root,
@@ -316,16 +326,6 @@ def main(argv: list[str] | None = None) -> int:
                     max_api_attempts=args.max_api_attempts,
                     model_profile=args.model_profile,
                 )
-                if args.stage == "analysis"
-                else prepare_translation(
-                    repository_root,
-                    args.security_code,
-                    output_root=output_root,
-                    report_date=args.report_date,
-                    max_api_attempts=args.max_api_attempts,
-                    model_profile=args.model_profile,
-                )
-            )
         except PipelineValidationError as exc:
             return _print_validation_failure(
                 exc, output_root, args.security_code, args.stage
@@ -341,18 +341,12 @@ def main(argv: list[str] | None = None) -> int:
             "--execute-api requires --confirm-request from a prior dry-run."
         )
     try:
-        if args.stage == "analysis":
-            execute_analysis(
-                repository_root,
-                args.security_code,
-                confirmed_request_id=args.confirm_request,
-                output_root=output_root,
-                report_date=args.report_date,
-                max_api_attempts=args.max_api_attempts,
-                model_profile=args.model_profile,
-            )
-        else:
-            execute_translation(
+        execute_by_stage = {
+            "research": execute_research,
+            "analysis": execute_analysis,
+            "translation": execute_translation,
+        }
+        execute_by_stage[args.stage](
                 repository_root,
                 args.security_code,
                 confirmed_request_id=args.confirm_request,

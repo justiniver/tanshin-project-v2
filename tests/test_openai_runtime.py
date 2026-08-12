@@ -16,9 +16,10 @@ from tanshin_pipeline.config import OPENAI_SOL_MODEL
 from tanshin_pipeline.gemini_runtime import LiveApiSafetyError
 from tanshin_pipeline.openai_runtime import OpenAIResponseError, execute_request
 from tanshin_pipeline.persistence import read_json
-from tanshin_pipeline.request_builder import build_analysis_spec, sha256_json
-from tanshin_pipeline.schemas import JapaneseAnalysis, JapaneseModelResponse
+from tanshin_pipeline.request_builder import build_research_spec, sha256_json
+from tanshin_pipeline.schemas import JapaneseResearchDossier
 from tanshin_pipeline.selection import select_filings
+from tests.helpers import fake_research_dossier
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -83,7 +84,7 @@ class _FakeClient:
 class OpenAIRuntimeTests(unittest.TestCase):
     def setUp(self) -> None:
         manifest = select_filings(REPOSITORY_ROOT, "1808")
-        self.spec = build_analysis_spec(
+        self.spec = build_research_spec(
             REPOSITORY_ROOT,
             manifest,
             model=OPENAI_SOL_MODEL,
@@ -91,11 +92,7 @@ class OpenAIRuntimeTests(unittest.TestCase):
             provider="openai",
             provider_profile=None,
         )
-        payload = read_json(FIXTURE)
-        try:
-            self.parsed = JapaneseModelResponse.model_validate(payload)
-        except Exception:
-            self.parsed = JapaneseAnalysis.model_validate(payload)
+        self.parsed = fake_research_dossier(REPOSITORY_ROOT)
 
     def test_request_uses_inline_pdfs_and_native_pydantic_parsing(self) -> None:
         fake = _FakeClient(_FakeResponse(self.parsed))
@@ -121,7 +118,7 @@ class OpenAIRuntimeTests(unittest.TestCase):
         call = fake.responses.calls[0]
         self.assertEqual(call["model"], OPENAI_SOL_MODEL)
         self.assertEqual(call["instructions"], self.spec.system_prompt)
-        self.assertIs(call["text_format"], JapaneseModelResponse)
+        self.assertIs(call["text_format"], JapaneseResearchDossier)
         self.assertEqual(call["reasoning"], {"effort": "medium"})
         self.assertEqual(call["text"], {"verbosity": "high"})
         self.assertNotIn("verbosity", call)
@@ -205,7 +202,7 @@ class OpenAIRuntimeTests(unittest.TestCase):
     def test_strict_schema_is_the_inspected_schema(self) -> None:
         schema = self.spec.response_schema
         self.assertFalse(schema["additionalProperties"])
-        self.assertIn("model_notes", schema["required"])
+        self.assertIn("research_notes", schema["required"])
         self.assertEqual(
             self.spec.plan().request_options,
             {

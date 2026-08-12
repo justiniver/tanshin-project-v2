@@ -44,11 +44,12 @@ normalization, validation, rendering, retry, and failure tests.
 ## Repository map
 
 - `tanshin_pipeline/selection.py`: filing discovery and manifest construction.
-- `tanshin_pipeline/prompts.py`: analysis and translation prompts.
+- `tanshin_pipeline/prompts.py`: research, synthesis, and translation prompts.
+- `tanshin_pipeline/research.py`: deterministic summaries of the research dossier.
 - `tanshin_pipeline/schemas.py`: model-facing and normalized data contracts.
 - `tanshin_pipeline/request_builder.py`: inspectable request specifications.
 - `tanshin_pipeline/gemini_runtime.py`: gated Gemini request boundary.
-- `tanshin_pipeline/openai_runtime.py`: gated OpenAI analysis request boundary.
+- `tanshin_pipeline/openai_runtime.py`: gated OpenAI research/synthesis boundary.
 - `tanshin_pipeline/normalization.py`: Japanese response normalization.
 - `tanshin_pipeline/management_consistency.py`: consistency scoring.
 - `tanshin_pipeline/validation.py`: diagnostic and structural validation.
@@ -81,13 +82,16 @@ normalization, validation, rendering, retry, and failure tests.
   stages. The `sol` profile uses OpenAI for analysis and the secondary Gemini
   profile for translation. Model names are constants in
   `tanshin_pipeline/config.py`; `.env` contains credentials only.
-- The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for both
-  analysis and translation. `--key2-translation` changes only translation to
-  `GEMINI_API_KEY2`. When both stages share a Gemini credential and their
+- A Japanese report uses two model calls: PDF-backed research followed by
+  dossier-backed synthesis. Optional English translation is a third call.
+  The second call receives no PDFs, and no report is rendered until it succeeds.
+- The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for research,
+  synthesis, and translation. `--key2-translation` changes only translation to
+  `GEMINI_API_KEY2`. When consecutive stages share a Gemini credential and their
   combined estimated input plus maximum-output allowance reaches 225,000
   tokens, the interactive runner waits 75 seconds between them, preserving
   10% headroom below the 250,000-token planning limit. The separate
-  inter-company analysis cooldown remains in effect.
+  inter-company research cooldown remains in effect.
 - User-facing preflight must not print a JPY/USD conversion assumption. A
   default, primary-key-only run should be described as free when
   `GEMINI_API_KEY` is eligible for Gemini's free tier; displayed yen estimates

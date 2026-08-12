@@ -55,6 +55,24 @@ TREND_SECTION_ORDER = (
     SectionKey.TREND_CAPITAL_ALLOCATION,
     SectionKey.TREND_IMPLICATION,
 )
+MANAGEMENT_SECTION_ORDER = (
+    (
+        SectionKey.MANAGEMENT_STRATEGY,
+        ManagementConsistencyDimension.STRATEGIC_COHERENCE,
+    ),
+    (
+        SectionKey.MANAGEMENT_EXECUTION,
+        ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH,
+    ),
+    (
+        SectionKey.MANAGEMENT_FORECAST_DISCIPLINE,
+        ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE,
+    ),
+    (
+        SectionKey.MANAGEMENT_ACCOUNTABILITY,
+        ManagementConsistencyDimension.ACCOUNTABILITY_TRANSPARENCY,
+    ),
+)
 
 _JA_CONSISTENCY_NOTE = (
     "<small>&#42; 経営一貫性スコアは、過去の経営説明で示された方針・約束と、その後の"
@@ -199,7 +217,11 @@ def _render_section_ja(
     }
     for claim in claims:
         citation = _citation(claim.evidence_ids, evidence_by_id, language="ja")
-        if is_bullet:
+        if section == SectionKey.LATEST_BUSINESS_DRIVER:
+            lines.append(
+                f"- **{claim.headline_ja}：** {claim.body_ja} {citation}"
+            )
+        elif is_bullet:
             lines.append(f"- {claim.body_ja} {citation}")
         elif is_theme:
             lines.append(f"**{claim.headline_ja}**<br>")
@@ -223,6 +245,44 @@ def _render_overview_ja(
     for claim in claims:
         citation = _citation(claim.evidence_ids, evidence_by_id, language="ja")
         lines.extend([f"{claim.body_ja} {citation}", ""])
+    return lines
+
+
+def _render_management_details_ja(
+    assessment: ManagementConsistencyAssessment,
+    grouped: dict[SectionKey, list[object]],
+    evidence_by_id: dict[str, EvidenceRecord],
+) -> list[str]:
+    components = {item.dimension: item for item in assessment.components}
+    lines: list[str] = []
+    for section, dimension in MANAGEMENT_SECTION_ORDER:
+        component = components.get(dimension)
+        score = (
+            f"{component.normalized_score:.2f}"
+            if component is not None and component.normalized_score is not None
+            else "—"
+        )
+        label = _JA_CONSISTENCY_LABELS[dimension]
+        claims = grouped.get(section, [])
+        if claims:
+            claim = claims[0]
+            citation = _citation(
+                claim.evidence_ids,
+                evidence_by_id,
+                language="ja",
+            )
+            lines.append(f"- **{label} {score}：** {claim.body_ja} {citation}")
+        elif component is not None:
+            citation = _citation(
+                component.evidence_ids,
+                evidence_by_id,
+                language="ja",
+            )
+            lines.append(
+                f"- **{label} {score}：** {component.rationale_ja} {citation}"
+            )
+    if lines:
+        lines.append("")
     return lines
 
 
@@ -262,6 +322,13 @@ def render_japanese(analysis: JapaneseAnalysis) -> str:
                 ),
                 "",
             ]
+        )
+        lines.extend(
+            _render_management_details_ja(
+                analysis.management_consistency,
+                grouped,
+                evidence_by_id,
+            )
         )
     lines.extend(["## 根拠一覧", "", "<details>", "<summary>根拠一覧</summary>", ""])
     for evidence in sorted(analysis.evidence, key=_source_sort_key):
@@ -303,7 +370,11 @@ def _render_section_en(
     }
     for claim in claims:
         citation = _citation(claim.evidence_ids, evidence_by_id, language="en")
-        if is_bullet:
+        if section == SectionKey.LATEST_BUSINESS_DRIVER:
+            lines.append(
+                f"- **{claim.headline_en}:** {claim.body_en} {citation}"
+            )
+        elif is_bullet:
             lines.append(f"- {claim.body_en} {citation}")
         elif is_theme:
             lines.append(f"**{claim.headline_en}**<br>")
@@ -327,6 +398,36 @@ def _render_overview_en(
     for claim in claims:
         citation = _citation(claim.evidence_ids, evidence_by_id, language="en")
         lines.extend([f"{claim.body_en} {citation}", ""])
+    return lines
+
+
+def _render_management_details_en(
+    assessment: ManagementConsistencyAssessment,
+    grouped: dict[SectionKey, list[object]],
+    evidence_by_id: dict[str, EvidenceRecord],
+) -> list[str]:
+    components = {item.dimension: item for item in assessment.components}
+    lines: list[str] = []
+    for section, dimension in MANAGEMENT_SECTION_ORDER:
+        component = components.get(dimension)
+        score = (
+            f"{component.normalized_score:.2f}"
+            if component is not None and component.normalized_score is not None
+            else "—"
+        )
+        label = _EN_CONSISTENCY_LABELS[dimension].capitalize()
+        claims = grouped.get(section, [])
+        if not claims:
+            continue
+        claim = claims[0]
+        citation = _citation(
+            claim.evidence_ids,
+            evidence_by_id,
+            language="en",
+        )
+        lines.append(f"- **{label} {score}:** {claim.body_en} {citation}")
+    if lines:
+        lines.append("")
     return lines
 
 
@@ -370,6 +471,13 @@ def render_english(
                 ),
                 "",
             ]
+        )
+        lines.extend(
+            _render_management_details_en(
+                analysis.management_consistency,
+                grouped,
+                evidence_by_id,
+            )
         )
     lines.extend(
         ["## Evidence ledger", "", "<details>", "<summary>Evidence ledger</summary>", ""]

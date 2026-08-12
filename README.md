@@ -10,8 +10,10 @@ investor-oriented Markdown reports:
   diagnostics, token usage, cost, and run status.
 
 The pipeline is company-agnostic. PDFs are selected deterministically, then the
-selected analysis provider receives them directly and performs the qualitative
-analysis. The default CLI and ordinary test suite are offline.
+selected analysis provider receives them directly in a research pass. A second
+request turns that grounded dossier into the Japanese analysis without
+resubmitting the PDFs. Optional English translation is a third request. The
+default CLI and ordinary test suite are offline.
 
 For a compact list of model combinations and commands, see
 [COMMANDS.md](COMMANDS.md).
@@ -58,8 +60,8 @@ PyMuPDF and pypdf for offline PDF inspection.
    GEMINI_API_KEY=replace-with-your-api-key
    ```
 
-The default profile uses `gemini-3.6-flash` and this primary key for both
-Japanese analysis and English translation. When the key is eligible for
+The default profile uses `gemini-3.6-flash` and this primary key for Japanese
+research, Japanese synthesis, and English translation. When the key is eligible for
 Gemini's free tier, the default report workflow should not incur an API charge,
 although quota and rate limits still apply.
 
@@ -71,12 +73,13 @@ GEMINI_API_KEY2=replace-with-your-second-api-key
 
 The secondary key is used only by explicitly selected stages:
 
-- `--key2-translation` keeps primary-key Flash analysis and uses
+- `--key2-translation` keeps primary-key Flash research and synthesis and uses
   `gemini-3.6-flash` with `GEMINI_API_KEY2` for translation;
-- `--pro-translation` keeps primary-key Flash analysis and uses
+- `--pro-translation` keeps primary-key Flash research and synthesis and uses
   `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` for translation;
-- `--pro` uses `gemini-3.1-pro-preview` and the secondary key for both stages;
-- `--sol` uses OpenAI for analysis and `gemini-3.1-pro-preview` with the
+- `--pro` uses `gemini-3.1-pro-preview` and the secondary key for all stages;
+- `--sol` uses OpenAI for Japanese research and synthesis and
+  `gemini-3.1-pro-preview` with the
   secondary key for translation.
 
 To enable the hybrid Sol profile, create an
@@ -87,7 +90,7 @@ OPENAI_API_KEY=replace-with-your-api-key
 ```
 
 The `--sol` profile uses `gpt-5.6-sol` and `OPENAI_API_KEY` only for Japanese
-analysis. If English is requested, translation still uses
+research and synthesis. If English is requested, translation still uses
 `gemini-3.1-pro-preview` and `GEMINI_API_KEY2`.
 
 Model names are fixed in `tanshin_pipeline/config.py` and selected through the
@@ -213,7 +216,7 @@ For one company:
 .\scripts\run_reports.ps1 1808
 ```
 
-Use Gemini Flash for both stages while moving translation to the secondary key:
+Use Gemini Flash for all stages while moving only translation to the secondary key:
 
 ```powershell
 .\scripts\run_reports.ps1 1878 --key2-translation
@@ -225,7 +228,7 @@ PowerShell's conventional spelling is also supported:
 .\scripts\run_reports.ps1 1878 -Key2Translation
 ```
 
-Run both stages with the secondary Gemini 3.1 Pro Preview profile:
+Run all stages with the secondary Gemini 3.1 Pro Preview profile:
 
 ```powershell
 .\scripts\run_reports.ps1 1878 --pro
@@ -237,8 +240,8 @@ PowerShell's conventional spelling is also supported:
 .\scripts\run_reports.ps1 1878 -Pro
 ```
 
-Use primary-key Gemini Flash for Japanese analysis and secondary-key Gemini Pro
-for English translation:
+Use primary-key Gemini Flash for Japanese research and synthesis and
+secondary-key Gemini Pro for English translation:
 
 ```powershell
 .\scripts\run_reports.ps1 1878 --pro-translation
@@ -261,8 +264,8 @@ estimate uses Gemini 3.1 Pro Preview's standard paid pricing tier for the
 estimated prompt size. The model is currently a preview release and may have
 more restrictive rate limits than stable models.
 
-Use GPT-5.6 Sol for Japanese analysis and Gemini Pro for optional English
-translation:
+Use GPT-5.6 Sol for Japanese research and synthesis and Gemini Pro for optional
+English translation:
 
 ```powershell
 .\scripts\run_reports.ps1 1878 --sol
@@ -272,7 +275,7 @@ PowerShell-style `-Sol` and the offline `--sol -PreviewOnly` form are also
 supported. `--key2-translation`, `--pro-translation`, `--pro`, and `--sol`
 are mutually exclusive.
 
-| Profile | Japanese analysis | English translation |
+| Profile | Japanese research + synthesis | English translation |
 | --- | --- | --- |
 | default | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY` |
 | `--key2-translation` | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY2` |
@@ -289,32 +292,35 @@ The runner:
 4. asks whether English reports should also be generated;
 5. archives existing company outputs in a timestamped history directory while
    preserving their filenames;
-6. runs the first company's Japanese analysis with one API attempt;
-7. prepares that company's optional English translation;
-8. when both stages share a Gemini credential, waits 75 seconds before
-   translation if their combined estimated input and maximum-output allowance
+6. runs the first company's PDF-backed research request with one API attempt;
+7. stores the evidence dossier and prepares the Japanese synthesis offline;
+8. runs the synthesis request without resubmitting the PDFs;
+9. prepares that company's optional English translation;
+10. between consecutive Gemini stages using the same credential, waits
+   75 seconds when their combined estimated input and maximum-output allowance
    is at least 225,000 tokens, leaving 10% headroom below the 250,000-token
    planning limit;
-9. enforces a 75-second cooldown between company analysis requests, counting
-   any time spent translating toward that interval;
-10. moves to the next company and repeats the same sequence;
-11. prints the API provider and local pipeline status for every stage.
+11. enforces a 75-second interval between companies' PDF-backed research
+   requests, counting synthesis and translation time toward that interval;
+12. moves to the next company and repeats the same sequence;
+13. prints the API provider and local pipeline status for every stage.
 
-Without a model option, `gemini-3.6-flash` and `GEMINI_API_KEY` perform both
-analysis and translation. With `--key2-translation`, analysis remains on
+Without a model option, `gemini-3.6-flash` and `GEMINI_API_KEY` perform
+research, synthesis, and translation. With `--key2-translation`, Japanese work remains on
 primary-key Flash and translation uses the same Flash model with
 `GEMINI_API_KEY2`. With
-`--pro-translation`, Flash analysis continues to use `GEMINI_API_KEY`, while
+`--pro-translation`, Flash research and synthesis continue to use
+`GEMINI_API_KEY`, while
 English translation uses the fixed `gemini-3.1-pro-preview` model and
-`GEMINI_API_KEY2`. With the Pro option, that secondary Pro setup performs both
-stages. With the Sol option, OpenAI performs analysis and the secondary Gemini
+`GEMINI_API_KEY2`. With the Pro option, that secondary Pro setup performs all
+stages. With the Sol option, OpenAI performs research and synthesis and the secondary Gemini
 Pro setup performs translation. Model names come from
 `tanshin_pipeline/config.py`, not `.env`.
 
 The selected company list is batch-wide: there is no later per-company
 selection prompt. Companies are processed in the order supplied—for example,
-`1808` analysis, `1808` translation, cooldown if still required, `6361`
-analysis, then `6361` translation. A stage failure stops the workflow before
+`1808` research, `1808` synthesis, `1808` translation, then `6361` research,
+synthesis, and translation. A stage failure stops the workflow before
 later companies. API calls cannot be transactional, so any earlier successful
 company remains successful if a later stage encounters a service error.
 
@@ -366,37 +372,56 @@ filing, and rejects questionable coverage. The resulting
 `selection_manifest.json` records filenames, roles, pages, hashes, fiscal years,
 and selection reasons.
 
-### Japanese analysis
+### Japanese research and synthesis
 
-Under the default profile, the analysis stage uses `gemini-3.6-flash`. Under
-the Pro profile, it uses the source-configured `gemini-3.1-pro-preview`. The
-Pro-translation profile keeps the default Flash analysis model, as does the
-key2-translation profile. Under the Sol profile, it uses `gpt-5.6-sol`.
-Selected PDFs are sent inline as PDF parts; neither the Gemini Files API nor the
-OpenAI Files API is used. Sol preflight rejects a selected file set if any PDF
-or the combined inline file payload reaches 50 MB. Sol uses OpenAI's low PDF
-detail level by default: every PDF and its extracted text remain in the request,
-while page images use fewer input tokens than high detail. The selected detail
-level is displayed during preflight and recorded in
-`request_plan_analysis.json`.
+Japanese generation is deliberately split into two requests. Under the default
+profile both use `gemini-3.6-flash`. Under the Pro profile both use the
+source-configured `gemini-3.1-pro-preview`; Pro-translation and key2-translation
+retain default Flash for both Japanese stages. Under Sol, both Japanese stages
+use `gpt-5.6-sol`.
 
-The prompt asks for:
+The first request is the only one that receives PDFs. Selected files are sent
+inline; neither the Gemini Files API nor the OpenAI Files API is used. Sol
+preflight rejects a selection if any PDF or the combined inline payload reaches
+50 MB. Sol uses low PDF image detail while retaining each PDF's extracted text.
+The research request is recorded in `request_plan_research.json`.
 
-- a concise, plain-language company overview explaining what the company does,
-  who it serves, its principal businesses, and how its business model works;
+The research pass builds a reusable, source-grounded dossier containing:
+
 - company and reporting-period identity;
+- a deduplicated evidence ledger with source filenames and physical PDF pages;
+- short business-driver tags, direction, importance, affected area, and
+  operating or financial mechanism;
+- forecasts, medium-term targets, strategic commitments, later outcomes, and
+  revisions observable in the selected filings;
+- forecast posture only where comparable guidance and later actual results are
+  available;
+- management themes across early, middle, and recent periods;
+- evidence-based inputs for the four management-consistency dimensions.
+
+The second request receives the dossier, deterministic summary counts, and the
+fact-free report blueprint. It receives no PDFs and cannot add evidence. Its job
+is to rank material findings and write the final analytical claims, including:
+
+- a concise, plain-language company overview;
 - latest-filing management takeaways;
-- business and financial drivers;
+- key business and financial drivers;
 - outlook, targets, risks, and uncertainty;
 - a multi-period strategic perspective;
 - consistent themes, material changes, and capital allocation;
-- evidence records tied to source filenames and physical PDF pages;
-- management-consistency component assessments.
+- detailed explanations beneath each management-consistency subscore.
 
 The trend section prioritizes qualitative management discussion, including
 経営成績, 財政状態, cash-flow discussion, future outlook, management-plan
 progress, capital allocation, and management explanations of risks or misses.
 Summary tables mainly corroborate figures rather than becoming the trend thesis.
+
+The selected company corpus does not contain peer-company filings, so the
+pipeline does not claim that management is a peer leader, laggard, or forward
+indicator. Reliable peer comparison requires a separately defined peer set and
+comparable peer evidence. Likewise, the dossier captures decision-useful
+longitudinal financial evidence, but it is not intended to replace a standardized
+XBRL-based long-term financial statement table.
 
 Every company receives the same fact-free structure from
 `prompt_assets/generic_report_blueprint_ja.md`. Company exemplars under
@@ -426,11 +451,14 @@ The four components are:
 - forecast and target discipline;
 - accountability and transparency.
 
-The analysis model supplies evidence-based component ratings. Python verifies whether each
+The research pass supplies evidence-based component ratings and concrete
+commitment, outcome, revision, and commentary records. Python verifies whether each
 component has enough longitudinal and management-discussion evidence, converts
 supported ratings to 0–1 subscores, leaves unsupported subscores blank, and
 uses the arithmetic mean of the available subscores. If no component can be
-assessed, the overall fallback is `0.50`. The full calculation is stored in
+assessed, the overall fallback is `0.50`. The synthesis pass writes a concise
+natural-language explanation beneath every subscore, including supporting and
+contrary evidence. The full calculation is stored in
 `management_consistency.json`.
 
 ### English translation
@@ -508,6 +536,7 @@ attempt.
 During execution, status is written to:
 
 ```text
+api_status_research.json
 api_status_analysis.json
 api_status_translation.json
 ```
@@ -578,12 +607,16 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | Artifact | Purpose |
 | --- | --- |
 | `selection_manifest.json` | Selected latest and trend filings with reasons |
-| `request_plan_analysis.json` | Analysis model, request ID, files, hashes, and limits |
+| `request_plan_research.json` | PDF-backed research model, request ID, files, hashes, and limits |
+| `request_plan_analysis.json` | Dossier-backed synthesis model, request ID, hashes, and limits |
 | `request_plan_translation.json` | Translation request plan |
-| `prompt_analysis.txt` / `prompt_translation.txt` | Complete model prompts |
-| `schema_analysis.json` / `schema_translation.json` | Native analysis schema and compact translation-patch schema |
-| `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw SDK responses |
-| `analysis_ja.structured.json` | Parsed model-facing Japanese response |
+| `prompt_research.txt` / `prompt_analysis.txt` / `prompt_translation.txt` | Complete stage prompts |
+| `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
+| `model_response_research.raw.json` | Raw research-provider response |
+| `research.structured.json` | Parsed PDF-grounded research dossier |
+| `research_metrics.json` | Deterministic driver, commitment, outcome, revision, and theme counts |
+| `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
+| `analysis_ja.structured.json` | Parsed model-facing synthesis response |
 | `analysis_ja.normalized.json` | Locally normalized Japanese analysis |
 | `analysis_en.structured.json` | Full English translation materialized locally from the model patch |
 | `analysis_en.normalized.json` | English compatibility copy with model-rendered yen notation |
@@ -592,7 +625,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `validation_ja.json` / `validation_en.json` | Diagnostics and structural checks |
 | `report_status_ja.json` / `report_status_en.json` | Current report/run state |
 | `evidence_ledger.json` | Original Japanese evidence used by both reports |
-| `token_usage.json` | Model-reported usage |
+| `token_usage.json` | Model-reported usage for research, synthesis, and translation |
 | `cost.json` | Estimated and available actual cost information |
 | `run_metadata.json` | Models, manifest, mode, output path, and request count |
 | `exemplar_comparison_ja.json` / `exemplar_comparison_en.json` | Advisory offline comparison |
@@ -607,24 +640,26 @@ Use this when diagnosing or rerunning one specific stage:
 
 ```powershell
 # Offline inspection
-.\scripts\run_gemini_stage.ps1 1808 analysis
+.\scripts\run_gemini_stage.ps1 1808 research
 
 # Human-authorized live stage
-.\scripts\run_gemini_stage.ps1 1808 analysis -Execute
+.\scripts\run_gemini_stage.ps1 1808 research -Execute
 
 # Inspect or run the same stage with the secondary Pro profile
-.\scripts\run_gemini_stage.ps1 1808 analysis -Pro
-.\scripts\run_gemini_stage.ps1 1808 analysis -Pro -Execute
+.\scripts\run_gemini_stage.ps1 1808 research -Pro
+.\scripts\run_gemini_stage.ps1 1808 research -Pro -Execute
 ```
 
-Translation is the same command with `translation` as the stage. The live form
+After research succeeds, use `analysis` for the dossier-backed synthesis;
+translation uses `translation`. The live form
 requires exact interactive confirmation of the request ID. This legacy
 single-stage wrapper remains Gemini-specific; use `run_reports.ps1 --sol` for
-the hybrid OpenAI-analysis workflow.
+the hybrid OpenAI research-and-synthesis workflow.
 
 ### Direct offline CLI
 
 ```powershell
+.\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage research
 .\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage analysis
 .\.venv\Scripts\python.exe -m tanshin_pipeline 1808 --stage translation
 ```
@@ -742,11 +777,12 @@ use fake responses, and run the offline test suite.
 | Path | Responsibility |
 | --- | --- |
 | `tanshin_pipeline/selection.py` | Filing discovery and manifest construction |
-| `tanshin_pipeline/prompts.py` | Analysis and translation prompts |
+| `tanshin_pipeline/prompts.py` | Research, synthesis, and translation prompts |
+| `tanshin_pipeline/research.py` | Deterministic dossier summaries and guardrails |
 | `tanshin_pipeline/schemas.py` | Structured model and normalized schemas |
 | `tanshin_pipeline/request_builder.py` | Request specifications and IDs |
 | `tanshin_pipeline/gemini_runtime.py` | Gated Gemini request boundary |
-| `tanshin_pipeline/openai_runtime.py` | Gated OpenAI analysis request boundary |
+| `tanshin_pipeline/openai_runtime.py` | Gated OpenAI research/synthesis request boundary |
 | `tanshin_pipeline/normalization.py` | Japanese normalization |
 | `tanshin_pipeline/management_consistency.py` | Consistency calculation |
 | `tanshin_pipeline/validation.py` | Diagnostics and structural validation |

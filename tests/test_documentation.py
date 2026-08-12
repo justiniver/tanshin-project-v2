@@ -19,11 +19,11 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("there is no later per-company", readme)
         self.assertIn("selection prompt.", readme)
         self.assertIn(
-            "75-second cooldown between company analysis requests",
+            "75-second interval between companies' PDF-backed research",
             readme,
         )
         self.assertIn("counting", readme)
-        self.assertIn("spent translating toward that interval", readme)
+        self.assertIn("synthesis and translation time toward that interval", readme)
         self.assertIn(
             "combined estimated input and maximum-output allowance",
             readme,
@@ -31,7 +31,7 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("at least 225,000 tokens", readme)
         self.assertIn("10% headroom below the 250,000-token", readme)
         self.assertIn("Companies are processed in the order supplied", readme)
-        self.assertIn("1808` analysis, `1808` translation", readme)
+        self.assertIn("1808` research, `1808` synthesis", readme)
         self.assertIn("A stage failure stops the workflow", readme)
         self.assertIn(
             "final_output/{security_code}/"
@@ -77,20 +77,28 @@ class DocumentationTests(unittest.TestCase):
             readme,
         )
         self.assertIn("GPT-5.6 Sol", readme)
-        self.assertIn("Gemini Pro for optional English", readme)
+        self.assertIn(
+            "Gemini Pro for optional\nEnglish translation",
+            readme,
+        )
         self.assertIn(
             "Model names are fixed in `tanshin_pipeline/config.py`",
             readme,
         )
         self.assertIn("`.env` stores credentials only", readme)
         self.assertIn(
-            "`--pro-translation` keeps primary-key Flash analysis",
+            "`--pro-translation` keeps primary-key Flash research and synthesis",
             readme,
         )
         self.assertIn(
-            "`gemini-3.6-flash` and `GEMINI_API_KEY` perform both",
+            "`gemini-3.6-flash` and `GEMINI_API_KEY` perform",
             readme,
         )
+        self.assertIn("request turns that grounded dossier", readme)
+        self.assertIn("Optional English translation is a third request", readme)
+        self.assertIn("request_plan_research.json", readme)
+        self.assertIn("research.structured.json", readme)
+        self.assertIn("detailed explanations beneath each", readme)
         self.assertNotIn("--flash-translation", readme)
         self.assertNotIn("-FlashTranslation", readme)
         self.assertNotIn("gemini-3.5-flash-lite", readme)
@@ -181,6 +189,7 @@ class DocumentationTests(unittest.TestCase):
             "combined estimated input plus maximum-output allowance",
             guide,
         )
+        self.assertIn("PDF-backed research followed by", guide)
         self.assertIn("225,000", guide)
         self.assertIn(
             "Deterministic validation is intentionally non-gating",
@@ -224,6 +233,8 @@ class DocumentationTests(unittest.TestCase):
             "Gemini's free tier",
             "Deterministic validation is intentionally non-gating",
             "Final quality review is manual",
+            "A Japanese report",
+            "PDF-backed research dossier",
             "`final_output/{security_code}/`",
             "`analysis_ja_{security_code}_{YYYYMMDD}.md`",
             "`analysis_en_{security_code}_{YYYYMMDD}.md`",

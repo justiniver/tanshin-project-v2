@@ -53,6 +53,10 @@ MINIMUM_SECTION_COUNTS = {
     SectionKey.TREND_CHANGE: 2,
     SectionKey.TREND_CAPITAL_ALLOCATION: 1,
     SectionKey.TREND_IMPLICATION: 1,
+    SectionKey.MANAGEMENT_STRATEGY: 1,
+    SectionKey.MANAGEMENT_EXECUTION: 1,
+    SectionKey.MANAGEMENT_FORECAST_DISCIPLINE: 1,
+    SectionKey.MANAGEMENT_ACCOUNTABILITY: 1,
 }
 _YEAR_RE = re.compile(r"(?<!\d)(20\d{2})(?!\d)")
 _CAUSAL_JA = ("ため", "により", "によって", "受けて", "寄与", "背景に", "結果")
