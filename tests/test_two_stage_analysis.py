@@ -228,6 +228,15 @@ class TwoStageAnalysisTests(unittest.TestCase):
         forecast = metrics["financial_observations"]["forecast_accuracy"]
         self.assertEqual(forecast["observable_comparisons"], 1)
         self.assertEqual(
+            forecast["posture_signal"],
+            "insufficient_evidence",
+        )
+        self.assertEqual(forecast["original_forecasts_observed"], 1)
+        self.assertEqual(
+            forecast["original_forecasts_matched_to_actuals"],
+            1,
+        )
+        self.assertEqual(
             forecast["comparisons"][0]["result"],
             "actual_above_forecast",
         )
@@ -242,6 +251,166 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertEqual(metrics["disclosures"]["primary_ids"], [
             "disclosure-impairment"
         ])
+        self.assertEqual(
+            metrics["commentary"]["comparable_tags"],
+            1,
+        )
+        self.assertEqual(
+            metrics["commentary"]["tracks"][0]["fiscal_years"],
+            [2025, 2026],
+        )
+
+    def test_metrics_surface_forecast_posture_revisions_and_anchor_series(
+        self,
+    ) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        rows = [
+            (
+                "13_2023-05-11_tanshin.pdf",
+                "forecast-2024",
+                "2024年3月期の連結経常利益は800億円を予想しております。",
+                "forecast",
+                "original",
+                2024,
+                "800億円",
+            ),
+            (
+                "09_2024-05-10_tanshin.pdf",
+                "actual-2024",
+                "2024年3月期の連結経常利益は833億円となりました。",
+                "actual",
+                "not_applicable",
+                2024,
+                "833億円",
+            ),
+            (
+                "09_2024-05-10_tanshin.pdf",
+                "forecast-2025",
+                "2025年3月期の連結経常利益は800億円を予想しております。",
+                "forecast",
+                "original",
+                2025,
+                "800億円",
+            ),
+            (
+                "05_2025_FY_tanshin.pdf",
+                "actual-2025",
+                "2025年3月期の連結経常利益は834億円となりました。",
+                "actual",
+                "not_applicable",
+                2025,
+                "834億円",
+            ),
+            (
+                "05_2025_FY_tanshin.pdf",
+                "forecast-2026-original",
+                "2026年3月期の連結経常利益は900億円を予想しております。",
+                "forecast",
+                "original",
+                2026,
+                "900億円",
+            ),
+            (
+                "05_2025_FY_tanshin.pdf",
+                "forecast-2026-revised",
+                "2026年3月期の連結経常利益予想を920億円へ修正しました。",
+                "forecast",
+                "revised",
+                2026,
+                "920億円",
+            ),
+            (
+                "01_2026_FY_tanshin.pdf",
+                "actual-2026",
+                "2026年3月期の連結経常利益は941億円となりました。",
+                "actual",
+                "not_applicable",
+                2026,
+                "941億円",
+            ),
+        ]
+        coverage_by_name = {
+            item["source_filename"]: item
+            for item in payload["filing_coverage"]
+        }
+        payload["financial_observations"] = []
+        for sequence, (
+            filename,
+            observation_id,
+            quote,
+            statement_type,
+            forecast_version,
+            fiscal_year,
+            value_surface,
+        ) in enumerate(rows, start=1):
+            evidence_id = f"{filename}:s{9100 + sequence}"
+            payload["evidence"].append(
+                {
+                    "evidence_id": evidence_id,
+                    "source_filename": filename,
+                    "pdf_page": 1,
+                    "exact_quote_ja": quote,
+                    "period_label_ja": f"{fiscal_year}年3月期",
+                    "period_label_en": f"FY{fiscal_year}",
+                    "statement_type": statement_type,
+                    "source_section": (
+                        "業績予想"
+                        if statement_type == "forecast"
+                        else "経営成績"
+                    ),
+                    "tags": ["management_discussion"],
+                }
+            )
+            payload["financial_observations"].append(
+                {
+                    "observation_id": observation_id,
+                    "source_filename": filename,
+                    "metric": "ordinary_profit",
+                    "metric_label_ja": "連結経常利益",
+                    "scope": "consolidated",
+                    "scope_label_ja": "連結",
+                    "value_kind": "monetary",
+                    "statement_type": statement_type,
+                    "forecast_version": forecast_version,
+                    "target_fiscal_year": fiscal_year,
+                    "target_period": "FY",
+                    "value_surface_ja": value_surface,
+                    "evidence_id": evidence_id,
+                }
+            )
+            coverage = coverage_by_name[filename]
+            coverage["financial_observation_ids"].append(observation_id)
+            if statement_type == "forecast":
+                coverage["outlook_evidence_ids"].append(evidence_id)
+            else:
+                coverage["management_discussion_evidence_ids"].append(
+                    evidence_id
+                )
+
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        metrics = build_research_metrics(dossier, self.manifest)
+        financial = metrics["financial_observations"]
+        forecast = financial["forecast_accuracy"]
+        self.assertEqual(forecast["original_forecasts_observed"], 3)
+        self.assertEqual(
+            forecast["original_forecasts_matched_to_actuals"],
+            3,
+        )
+        self.assertEqual(
+            forecast["posture_signal"],
+            "conservative_tendency",
+        )
+        self.assertEqual(
+            forecast["original_result_counts"],
+            {"actual_above_forecast": 3},
+        )
+        revisions = financial["forecast_revisions"]
+        self.assertEqual(revisions["comparable_revisions"], 1)
+        self.assertEqual(revisions["direction_counts"], {"up": 1})
+        anchor = financial["annual_anchor_series"]
+        self.assertEqual(anchor["metric"], "ordinary_profit")
+        self.assertEqual(anchor["actual_years"], [2024, 2025, 2026])
+        self.assertEqual(anchor["comparable_forecast_pairs"], 3)
 
     def test_unresolved_dossier_evidence_is_rejected_before_synthesis(self) -> None:
         broken = self.dossier.model_copy(deep=True)

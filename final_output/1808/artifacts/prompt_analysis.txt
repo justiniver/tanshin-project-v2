@@ -20,166 +20,348 @@ trend_period_buckets:
       "source_filename": "01_2026_FY_tanshin.pdf",
       "financial_observations": 5,
       "management_discussion_evidence": 2,
-      "outlook_evidence": 1,
-      "segment_evidence": 1,
+      "outlook_evidence": 2,
+      "segment_evidence": 0,
       "cash_flow_evidence": 0,
-      "capital_allocation_evidence": 1,
+      "capital_allocation_evidence": 2,
       "footnote_evidence": 1
     }
   },
   "financial_observations": {
-    "total": 23,
+    "total": 15,
     "by_metric": {
       "net_income": 1,
       "operating_profit": 1,
-      "ordinary_profit": 11,
-      "revenue": 10
+      "ordinary_profit": 12,
+      "revenue": 1
     },
     "by_statement_type": {
-      "actual": 22,
-      "forecast": 1
+      "actual": 13,
+      "forecast": 2
     },
     "forecast_version_counts": {
-      "original": 1
+      "original": 2
     },
-    "explicit_revised_forecast_observations": 0,
     "evidence_support_modes": {
-      "table_header_unit": 23
+      "exact_surface": 10,
+      "table_header_unit": 5
+    },
+    "annual_anchor_series": {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "actual_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "comparable_forecast_pairs": 0,
+      "series": [
+        {
+          "target_fiscal_year": 2017,
+          "value_surface_ja": "888億円",
+          "evidence_id": "37_2017-05-12_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2018,
+          "value_surface_ja": "1,005億円",
+          "evidence_id": "33_2018-05-11_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2019,
+          "value_surface_ja": "1,004億円",
+          "evidence_id": "29_2019-05-10_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2020,
+          "value_surface_ja": "853億円",
+          "evidence_id": "25_2020-05-14_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2021,
+          "value_surface_ja": "718億円",
+          "evidence_id": "21_2021-05-13_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2022,
+          "value_surface_ja": "819億円",
+          "evidence_id": "17_2022-05-12_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2023,
+          "value_surface_ja": "883億円",
+          "evidence_id": "13_2023-05-11_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2024,
+          "value_surface_ja": "833億円",
+          "evidence_id": "09_2024-05-10_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2025,
+          "value_surface_ja": "834億円",
+          "evidence_id": "05_2025_FY_tanshin.pdf:s0001"
+        },
+        {
+          "target_fiscal_year": 2026,
+          "value_surface_ja": "94,051百万円",
+          "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+        }
+      ]
     },
     "forecast_accuracy": {
       "observable_comparisons": 0,
       "result_counts": {},
       "mean_absolute_percentage_error": null,
+      "mean_signed_percentage_error": null,
+      "original_forecasts_observed": 1,
+      "original_forecasts_matched_to_actuals": 0,
+      "original_forecasts_unmatched": 1,
+      "original_result_counts": {},
+      "posture_signal": "insufficient_evidence",
+      "posture_minimum_sample": 3,
       "by_metric": {},
       "comparisons": []
+    },
+    "forecast_revisions": {
+      "explicit_revised_forecast_observations": 0,
+      "comparable_revisions": 0,
+      "direction_counts": {},
+      "revisions": []
     }
   },
   "commentary": {
-    "observations": 9,
+    "observations": 10,
     "distinct_tags": 4,
+    "comparable_tags": 2,
+    "multi_period_tags": 2,
     "observations_by_tag": {
-      "demand": 2,
-      "material_costs": 2,
-      "other": 4,
-      "pricing": 1
+      "labor_costs": 1,
+      "material_costs": 3,
+      "pricing": 5,
+      "volume": 1
     },
     "change_counts": {
-      "intensified": 1,
+      "intensified": 3,
       "softened": 1,
-      "tone_changed": 2,
-      "wording_changed": 1
+      "tone_changed": 2
     },
+    "tracks": [
+      {
+        "canonical_tag": "labor_costs",
+        "label_ja": "人件費・販管費増加と特別損失の計上",
+        "observation_count": 1,
+        "fiscal_years": [
+          2025
+        ],
+        "tone_counts": {
+          "negative": 1
+        },
+        "intensity_counts": {
+          "high": 1
+        },
+        "change_counts": {}
+      },
+      {
+        "canonical_tag": "material_costs",
+        "label_ja": "完成工事総利益率低下による営業減益",
+        "observation_count": 3,
+        "fiscal_years": [
+          2020,
+          2023,
+          2024
+        ],
+        "tone_counts": {
+          "mixed": 1,
+          "negative": 2
+        },
+        "intensity_counts": {
+          "moderate": 3
+        },
+        "change_counts": {
+          "tone_changed": 2
+        }
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "受注時採算の改善による完成工事総利益率の反転上昇",
+        "observation_count": 5,
+        "fiscal_years": [
+          2017,
+          2018,
+          2019,
+          2022,
+          2026
+        ],
+        "tone_counts": {
+          "negative": 1,
+          "positive": 4
+        },
+        "intensity_counts": {
+          "high": 2,
+          "low": 1,
+          "moderate": 2
+        },
+        "change_counts": {
+          "intensified": 3,
+          "softened": 1
+        }
+      },
+      {
+        "canonical_tag": "volume",
+        "label_ja": "コロナ禍での施工量減少と利益率低下",
+        "observation_count": 1,
+        "fiscal_years": [
+          2021
+        ],
+        "tone_counts": {
+          "negative": 1
+        },
+        "intensity_counts": {
+          "moderate": 1
+        },
+        "change_counts": {}
+      }
+    ],
     "changes": [
       {
-        "canonical_tag": "demand",
-        "label_ja": "不動産事業の売上牽引",
-        "from_observation_id": "com_2022_real_estate_drive",
-        "to_observation_id": "com_2023_real_estate_growth",
-        "from_period_ja": "2022年3月期 通期",
+        "canonical_tag": "material_costs",
+        "label_ja": "資材・労務費高騰による工事利益率圧迫",
+        "from_observation_id": "comm_2020_profitability",
+        "to_observation_id": "comm_2023_material_cost",
+        "from_period_ja": "2020年3月期 通期",
         "to_period_ja": "2023年3月期 通期",
-        "from_tone": "positive",
-        "to_tone": "positive",
+        "from_tone": "negative",
+        "to_tone": "mixed",
         "from_intensity": "moderate",
-        "to_intensity": "high",
-        "lexical_similarity": 0.9236,
-        "change_type": "intensified",
+        "to_intensity": "moderate",
+        "lexical_similarity": 0.2065,
+        "change_type": "tone_changed",
         "evidence_ids": [
-          "17_2022-05-12_tanshin.pdf:s0002",
+          "25_2020-05-14_tanshin.pdf:s0001",
           "13_2023-05-11_tanshin.pdf:s0002"
         ]
       },
       {
         "canonical_tag": "material_costs",
-        "label_ja": "資材・労務費高騰による完成工事利益率低下",
-        "from_observation_id": "com_2024_cost_inflation",
-        "to_observation_id": "com_2025_cost_pressure",
-        "from_period_ja": "2024年3月期 通期",
-        "to_period_ja": "2025年3月期 通期",
-        "from_tone": "negative",
+        "label_ja": "完成工事総利益率低下による営業減益",
+        "from_observation_id": "comm_2023_material_cost",
+        "to_observation_id": "comm_2024_profitability",
+        "from_period_ja": "2023年3月期 通期",
+        "to_period_ja": "2024年3月期 通期",
+        "from_tone": "mixed",
         "to_tone": "negative",
         "from_intensity": "moderate",
         "to_intensity": "moderate",
-        "lexical_similarity": 0.8804,
-        "change_type": "wording_changed",
+        "lexical_similarity": 0.2273,
+        "change_type": "tone_changed",
         "evidence_ids": [
-          "09_2024-05-10_tanshin.pdf:s0002",
-          "05_2025_FY_tanshin.pdf:s0002"
+          "13_2023-05-11_tanshin.pdf:s0002",
+          "09_2024-05-10_tanshin.pdf:s0001"
         ]
       },
       {
-        "canonical_tag": "other",
-        "label_ja": "NBj計画の達成",
-        "from_observation_id": "com_2017_record_profit",
-        "to_observation_id": "com_2020_nbj_final",
+        "canonical_tag": "pricing",
+        "label_ja": "施工量増大と採算性の高水準維持",
+        "from_observation_id": "comm_2017_profitability",
+        "to_observation_id": "comm_2018_profitability",
         "from_period_ja": "2017年3月期 通期",
-        "to_period_ja": "2020年3月期 通期",
+        "to_period_ja": "2018年3月期 通期",
         "from_tone": "positive",
         "to_tone": "positive",
+        "from_intensity": "moderate",
+        "to_intensity": "high",
+        "lexical_similarity": 0.7319,
+        "change_type": "intensified",
+        "evidence_ids": [
+          "37_2017-05-12_tanshin.pdf:s0001",
+          "33_2018-05-11_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "完成工事総利益率の低下開始",
+        "from_observation_id": "comm_2018_profitability",
+        "to_observation_id": "comm_2019_margin",
+        "from_period_ja": "2018年3月期 通期",
+        "to_period_ja": "2019年3月期 通期",
+        "from_tone": "positive",
+        "to_tone": "negative",
         "from_intensity": "high",
-        "to_intensity": "moderate",
-        "lexical_similarity": 0.1192,
+        "to_intensity": "low",
+        "lexical_similarity": 0.7324,
         "change_type": "softened",
         "evidence_ids": [
-          "37_2017-05-12_tanshin.pdf:s0002",
-          "25_2020-05-14_tanshin.pdf:s0002"
+          "33_2018-05-11_tanshin.pdf:s0001",
+          "29_2019-05-10_tanshin.pdf:s0001"
         ]
       },
       {
-        "canonical_tag": "other",
-        "label_ja": "コロナ禍による施工量への影響",
-        "from_observation_id": "com_2020_nbj_final",
-        "to_observation_id": "com_2021_covid_impact",
-        "from_period_ja": "2020年3月期 通期",
-        "to_period_ja": "2021年3月期 通期",
-        "from_tone": "positive",
-        "to_tone": "negative",
-        "from_intensity": "moderate",
-        "to_intensity": "moderate",
-        "lexical_similarity": 0.0913,
-        "change_type": "tone_changed",
-        "evidence_ids": [
-          "25_2020-05-14_tanshin.pdf:s0002",
-          "21_2021-05-13_tanshin.pdf:s0002"
-        ]
-      },
-      {
-        "canonical_tag": "other",
-        "label_ja": "ウッドフレンズの連結子会社化",
-        "from_observation_id": "com_2021_covid_impact",
-        "to_observation_id": "com_2026_wood_friends",
-        "from_period_ja": "2021年3月期 通期",
-        "to_period_ja": "2026年3月期 通期",
+        "canonical_tag": "pricing",
+        "label_ja": "不動産取扱量増加による利益回復",
+        "from_observation_id": "comm_2019_margin",
+        "to_observation_id": "comm_2022_profitability",
+        "from_period_ja": "2019年3月期 通期",
+        "to_period_ja": "2022年3月期 通期",
         "from_tone": "negative",
         "to_tone": "positive",
-        "from_intensity": "moderate",
+        "from_intensity": "low",
         "to_intensity": "moderate",
-        "lexical_similarity": 0.1387,
-        "change_type": "tone_changed",
+        "lexical_similarity": 0.5307,
+        "change_type": "intensified",
         "evidence_ids": [
-          "21_2021-05-13_tanshin.pdf:s0002",
-          "01_2026_FY_tanshin.pdf:s0007"
+          "29_2019-05-10_tanshin.pdf:s0001",
+          "17_2022-05-12_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "canonical_tag": "pricing",
+        "label_ja": "受注時採算の改善による完成工事総利益率の反転上昇",
+        "from_observation_id": "comm_2022_profitability",
+        "to_observation_id": "comm_2026_margin_recovery",
+        "from_period_ja": "2022年3月期 通期",
+        "to_period_ja": "2026年3月期 通期",
+        "from_tone": "positive",
+        "to_tone": "positive",
+        "from_intensity": "moderate",
+        "to_intensity": "high",
+        "lexical_similarity": 0.4423,
+        "change_type": "intensified",
+        "evidence_ids": [
+          "17_2022-05-12_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0004"
         ]
       }
     ],
     "interpretation_guardrail": "Lexical and tone changes compare only extracted observations in selected filings. They identify review signals, not proof that an omitted topic disappeared from management discussion."
   },
   "disclosures": {
-    "total": 3,
+    "total": 5,
     "by_category": {
       "capital_allocation": 1,
       "impairment": 1,
-      "other": 1
+      "other": 3
     },
     "primary_ids": [
-      "disc_2026_wood_friends_acq",
-      "disc_2025_impairment"
+      "disc_2019_smart_housing_divestment",
+      "disc_2025_overseas_impairment",
+      "disc_2025_wood_friends_acquisition",
+      "disc_2026_wood_friends_consolidation"
     ]
   },
   "business_drivers": {
     "total": 3,
     "by_direction": {
+      "mixed": 1,
       "negative": 1,
-      "positive": 2
+      "positive": 1
     },
     "by_nature": {
       "company_specific": 1,
@@ -187,110 +369,394 @@ trend_period_buckets:
     },
     "primary_driver_ids": [
       "driver_material_labor_costs",
-      "driver_order_pricing",
-      "driver_condo_deliveries"
+      "driver_order_pricing_discipline",
+      "driver_real_estate_trading"
     ]
   },
   "commitments": {
-    "total": 2,
+    "total": 4,
     "by_type": {
-      "medium_term_target": 2
+      "capital_allocation": 1,
+      "medium_term_target": 3
     },
     "by_outcome": {
-      "partly_achieved": 1,
+      "achieved": 3,
       "pending": 1
     },
-    "observable_outcomes": 1,
-    "observable_outcome_share": 0.5,
+    "observable_outcomes": 3,
+    "observable_outcome_share": 0.75,
     "target_follow_through": {
-      "assessed": 1,
-      "achieved_or_exceeded": 0,
-      "partly_achieved_or_revised": 1,
+      "assessed": 3,
+      "achieved_or_exceeded": 3,
+      "partly_achieved_or_revised": 0,
       "missed_delayed_or_withdrawn": 0,
-      "achievement_rate": 0.0
+      "achievement_rate": 1.0
     },
     "annual_forecasts_with_observable_outcomes": 0,
-    "medium_term_targets_with_observable_outcomes": 1,
-    "observed_revision_count": 0,
-    "revision_direction_counts": {},
+    "medium_term_targets_with_observable_outcomes": 2,
+    "observed_revision_count": 1,
+    "revision_direction_counts": {
+      "up": 1
+    },
     "forecast_posture_counts": {},
-    "missed_or_delayed_ids": [
-      "commit_ns_plan_ord"
-    ]
+    "missed_or_delayed_ids": []
   },
   "management_themes": {
-    "total": 1,
+    "total": 3,
     "by_development": {
-      "changed": 1
+      "introduced": 1,
+      "persistent": 1,
+      "strengthened": 1
     },
-    "changed_or_abandoned_ids": [
-      "theme_profitability_control"
-    ]
+    "changed_or_abandoned_ids": []
   },
   "management_consistency": {
     "score": 0.75,
-    "evidence_confidence": 0.6125,
+    "evidence_confidence": 0.7292,
     "components": [
       {
         "dimension": "strategic_coherence",
         "subscore": 0.75,
         "evidence_sufficiency": "sufficient",
-        "evidence_confidence": 0.7
+        "evidence_confidence": 0.95
       },
       {
         "dimension": "execution_follow_through",
         "subscore": 0.75,
         "evidence_sufficiency": "sufficient",
-        "evidence_confidence": 0.5167
+        "evidence_confidence": 0.75
       },
       {
         "dimension": "forecast_target_discipline",
-        "subscore": 0.75,
+        "subscore": 1.0,
         "evidence_sufficiency": "sufficient",
-        "evidence_confidence": 0.7167
+        "evidence_confidence": 0.8167
       },
       {
         "dimension": "accountability_transparency",
-        "subscore": 0.75,
+        "subscore": 0.5,
         "evidence_sufficiency": "sufficient",
-        "evidence_confidence": 0.5167
+        "evidence_confidence": 0.4
       }
     ]
   },
   "coverage": {
-    "evidence_records": 26,
+    "evidence_records": 28,
     "management_consistency_components": 4,
     "research_notes": [
-      "選択された各決算短信に基づき、財務数値及び定性コメントの抽出を実施済み。"
+      "各期の決算短信における連結経常利益の実績値および通期予想値を時系列でアンカー指標として抽出し、比較を行った。",
+      "2025年3月期に発生した海外事業等での減損損失（168.6億円）について、2026年3月期でのウッドフレンズ子会社化等の事業ポートフォリオ再編との関連性を踏まえて分析した。"
     ]
   },
-  "interpretation_guardrail": "Counts and comparisons describe only observations present in the selected filings in the year-end/latest corpus. They are not a complete revision history and do not include peer or quarterly analysis."
+  "interpretation_guardrail": "Counts and comparisons describe only observations present in the selected filings in the year-end/latest corpus. They are not a complete revision history and do not include peer or quarterly analysis.",
+  "diagnostics": {
+    "validation_passed": true,
+    "validation_warning": null,
+    "metrics_complete": true,
+    "metrics_warning": null,
+    "non_gating": true
+  }
 }
 </research_metrics>
 
 <research_dossier>
 {
-  "schema_version": "1.0",
+  "schema_version": "1.0.0",
   "identity": {
     "security_code": "1808",
     "company_name_ja": "株式会社長谷工コーポレーション",
     "company_name_en": "HASEKO Corporation",
     "latest_filename": "01_2026_FY_tanshin.pdf",
     "latest_period_ja": "2026年3月期 通期",
-    "latest_period_en": "FY2026 Full Year"
+    "latest_period_en": "FY2026"
   },
   "evidence": [
+    {
+      "evidence_id": "37_2017-05-12_tanshin.pdf:s0001",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、売上高は7,723億円（同1.9％減）となりましたが、マンション建築工事の完成工事総利益率の改善により、営業利益は890億円（同29.5％増）、経常利益は888億円（同31.9％増）、親会社株主に帰属する当期純利益は588億円（同14.7％増）の増益となりました。",
+      "period_label_ja": "2017年3月期 通期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "37_2017-05-12_tanshin.pdf:s0002",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "pdf_page": 9,
+      "exact_quote_ja": "平成30年３月期より、新たな３ヶ年の中期経営計画として「ｎｅｗｂｏｒｎ ＨＡＳＥＫＯ Ｊｕｍｐ Ｕｐ Ｐｌａｎ（略称：ＮＢｊ計画）」をスタートします。",
+      "period_label_ja": "2017年3月期 通期",
+      "period_label_en": "FY2017",
+      "statement_type": "target",
+      "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+      "tags": [
+        "management_discussion",
+        "medium_term_plan"
+      ]
+    },
+    {
+      "evidence_id": "33_2018-05-11_tanshin.pdf:s0001",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大により売上高は8,133億円（同5.3％増）、マンション建築工事の完成工事総利益率の改善により営業利益は1,008億円（同13.2％増）、経常利益は1,005億円（同13.1％増）、親会社株主に帰属する当期純利益は723億円（同23.0％増）の増収増益となりました。",
+      "period_label_ja": "2018年3月期 通期",
+      "period_label_en": "FY2018",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "33_2018-05-11_tanshin.pdf:s0002",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "pdf_page": 9,
+      "exact_quote_ja": "通期予想 経常利益 950 億円",
+      "period_label_ja": "2018年3月期 通期",
+      "period_label_en": "FY2018",
+      "statement_type": "forecast",
+      "source_section": "平成31年3月期 業績予想",
+      "tags": [
+        "forecast"
+      ]
+    },
+    {
+      "evidence_id": "29_2019-05-10_tanshin.pdf:s0001",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大及び不動産の取扱量増大により売上高は8,910億円（同9.6％増）となりましたが、マンション建築工事の完成工事総利益率の低下により、営業利益は984億円（同2.4％減）、経常利益は1,004億円（同0.1％減）の増収減益となりました。",
+      "period_label_ja": "2019年3月期 通期",
+      "period_label_en": "FY2019",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "margin"
+      ]
+    },
+    {
+      "evidence_id": "29_2019-05-10_tanshin.pdf:s0002",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "pdf_page": 33,
+      "exact_quote_ja": "本取引は、Ｎｅｘｔ Ｐｏｗｅｒ株式会社に対して、株式会社長谷工アネシスがスマートマンション事業に関して有する資産及び負債を会社分割（吸収分割）の方法により承継させるものです。",
+      "period_label_ja": "2019年3月期 通期",
+      "period_label_en": "FY2019",
+      "statement_type": "actual",
+      "source_section": "5. 連結財務諸表に関する注記事項 (企業結合等関係)",
+      "tags": [
+        "disposal"
+      ]
+    },
+    {
+      "evidence_id": "25_2020-05-14_tanshin.pdf:s0001",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、主に不動産の取扱量減少により売上高は8,460億円（同5.0％減）、主にマンション建築工事の完成工事総利益率の低下により、営業利益は859億円（同12.7％減）、経常利益は853億円（同15.1％減）の減収減益となりました。",
+      "period_label_ja": "2020年3月期 通期",
+      "period_label_en": "FY2020",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "25_2020-05-14_tanshin.pdf:s0002",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "pdf_page": 34,
+      "exact_quote_ja": "当社は、株式会社細田工務店を当社の連結グループ傘下に加えることにより、株式会社細田工務店の事業の強みや弱点を補完し将来に向けて効果的に成長させることができ、当社グループの「住まいと暮らし」に関する事業の拡大が図れると判断するに至りました。",
+      "period_label_ja": "2020年3月期 通期",
+      "period_label_en": "FY2020",
+      "statement_type": "actual",
+      "source_section": "5. 連結財務諸表に関する注記事項 (企業結合等関係)",
+      "tags": [
+        "m_and_a"
+      ]
+    },
+    {
+      "evidence_id": "21_2021-05-13_tanshin.pdf:s0001",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、主にマンション建築工事の施工量減少により売上高は8,094億円（同4.3％減）、主にマンション建築工事の施工量減少及びマンション建築工事の完成工事総利益率の低下に伴う工事利益の減少により営業利益は729億円（同15.1％減）、経常利益は718億円（同15.7％減）、親会社株主に帰属する当期純利益は483億円（同19.4％減）の減収減益となりました。",
+      "period_label_ja": "2021年3月期 通期",
+      "period_label_en": "FY2021",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "volume"
+      ]
+    },
+    {
+      "evidence_id": "21_2021-05-13_tanshin.pdf:s0002",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "2021年３月期より「長谷工グループ長期ビジョン」ならびに中期経営計画「ＨＡＳＥＫＯ Ｎｅｘｔ Ｓｔａｇｅ Ｐｌａｎ（略称：ＮＳ計画）」をスタートし、その初年度となる2021年３月期において、建設関連事業においては当社の土地情報収集力や商品企画力、施工品質や工期遵守に対する姿勢、効率的な生産体制等についてお客様や事業主様から評価を頂きました。",
+      "period_label_ja": "2021年3月期 通期",
+      "period_label_en": "FY2021",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+      "tags": [
+        "management_discussion",
+        "medium_term_plan"
+      ]
+    },
+    {
+      "evidence_id": "17_2022-05-12_tanshin.pdf:s0001",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、当社における完成工事高が減少したものの、当社における建築受注用地の取扱量増加及び連結子会社における不動産の取扱量増加により売上高は9,097億円（同12.4％増）、主に不動産利益の増加により営業利益は827億円（同13.4％増）、経常利益は819億円（同14.0％増）、親会社株主に帰属する当期純利益は545億円（同12.9％増）の増収増益となりました。",
+      "period_label_ja": "2022年3月期 通期",
+      "period_label_en": "FY2022",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "17_2022-05-12_tanshin.pdf:s0002",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "pdf_page": 7,
+      "exact_quote_ja": "①１株当たり年間配当金の下限を70円と設定（2022年３月期の配当から80円に変更しました）",
+      "period_label_ja": "2022年3月期 通期",
+      "period_label_en": "FY2022",
+      "statement_type": "target",
+      "source_section": "1. 経営成績等の概況 (4) 利益配分に関する基本方針",
+      "tags": [
+        "capital_allocation",
+        "dividend"
+      ]
+    },
+    {
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0001",
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、連結子会社における不動産の取扱量増加及び当社における建築受注用地の取扱量増加により売上高は１兆273億円（同12.9％増）、主に不動産利益の増加により営業利益は902億円（同9.0％増）、経常利益は883億円（同7.8％増）、親会社株主に帰属する当期純利益は593億円（同8.9％増）の増収増益となりました。",
+      "period_label_ja": "2023年3月期 通期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0002",
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "施工中工事高は増加したなか、資材・労務費の高騰等の影響を受け、完成工事総利益率は低下しました。",
+      "period_label_ja": "2023年3月期 通期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+      "tags": [
+        "management_discussion",
+        "material_costs"
+      ]
+    },
+    {
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0001",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆944億円（同6.5％増）、完成工事総利益率の低下により営業利益は857億円（同4.9％減）、経常利益は833億円（同5.6％減）、親会社株主に帰属する当期純利益は560億円（同5.5％減）の増収減益となりました。",
+      "period_label_ja": "2024年3月期 通期",
+      "period_label_en": "FY2024",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0002",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "pdf_page": 11,
+      "exact_quote_ja": "2021年３月期～2025年３月期 ５期合計連結経常利益 4,000億円",
+      "period_label_ja": "2024年3月期 通期",
+      "period_label_en": "FY2024",
+      "statement_type": "target",
+      "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+      "tags": [
+        "medium_term_plan",
+        "target"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0001",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆1,774億円（同7.6％増）、販売費及び一般管理費の増加により営業利益は847億円（同1.2％減）、経常利益は834億円（同0.1％増）、海外関連事業において特別損失として減損損失、投資有価証券評価損及び訴訟損失引当金繰入額を計上したことにより、親会社株主に帰属する当期純利益は345億円（同38.5％減）の増収減益となりました。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "profitability"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0002",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "物価上昇を上回る賃金アップを念頭にした処遇改善による人件費上昇を吸収しながら、計画数値である2025年３月期の連結子会社経常利益300億円以上、５期合計連結経常利益4,000億円を達成し、また年間配当額の下限を80円（2025年３月期は配当85円）とすることで、株主還元の充実も行ってまいりました。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+      "tags": [
+        "management_discussion",
+        "medium_term_plan"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0003",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 32,
+      "exact_quote_ja": "減損損失を認識した建設関連事業用不動産、不動産関連事業用不動産、不動産関連事業用資産、サービス関連事業用不動産、サービス関連事業用資産及び海外関連事業用不動産については、個別の物件毎にグルーピングしております。収益性の低下等により、上記資産の帳簿価額を回収可能価額まで減額し、当該減少額を減損損失（16,861百万円）として特別損失に計上しました。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "5. 連結財務諸表及び主な注記 (連結損益計算書関係)",
+      "tags": [
+        "impairment"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0004",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 41,
+      "exact_quote_ja": "当社は、2025年４月10日開催の臨時取締役会において、株式会社ウッドフレンズ（以下「対象者」といいます。）の普通株式（以下「対象者株式」といいます。）を金融商品取引法（昭和23年法律第25号。その後の改正を含みます。）に定める公開買付け（以下「本公開買付け」といいます。）により取得することを決議いたしました。",
+      "period_label_ja": "2025年3月期 通期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "5. 連結財務諸表及び主な注記 (重要な後発事象)",
+      "tags": [
+        "m_and_a"
+      ]
+    },
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "pdf_page": 1,
       "exact_quote_ja": "2026年３月期 1,273,136 8.1 98,743 16.6 94,051 12.8 54,839 59.2",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "actual",
-      "source_section": "1．2026年３月期の連結業績 (1) 連結経営成績",
+      "source_section": "1. 2026年3月期の連結業績 (1) 連結経営成績",
       "tags": [
-        "financial_actual"
+        "financial_results"
       ]
     },
     {
@@ -298,23 +764,23 @@ trend_period_buckets:
       "source_filename": "01_2026_FY_tanshin.pdf",
       "pdf_page": 1,
       "exact_quote_ja": "通期 1,380,000 8.4 110,000 11.4 105,000 11.6 66,000 20.4",
-      "period_label_ja": "2027年3月期 予想",
-      "period_label_en": "FY2027 Forecast",
+      "period_label_ja": "2026年3月期 通期",
+      "period_label_en": "FY2026",
       "statement_type": "forecast",
-      "source_section": "3．2027年３月期の連結業績予想",
+      "source_section": "3. 2027年3月期の連結業績予想",
       "tags": [
-        "financial_forecast"
+        "forecast"
       ]
     },
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
       "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このような中、中期経営計画「ＨＡＳＥＫＯ Ｅｖｏｌｕｔｉｏｎ Ｐｌａｎ」の初年度となる当連結会計年度につきましては、完成工事総利益率の改善により、連結経常利益は予想の900億円を上回り、941億円となりました。",
+      "pdf_page": 2,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆2,731億円（同8.1％増）、完成工事総利益率の改善により営業利益は987億円（同16.6％増）、経常利益は941億円（同12.8％増）、親会社株主に帰属する当期純利益は548億円（同59.2％増）の増収増益となりました。",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
       "tags": [
         "management_discussion",
         "profitability"
@@ -323,413 +789,193 @@ trend_period_buckets:
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
       "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
+      "pdf_page": 3,
       "exact_quote_ja": "建築工事では、当社の土地情報収集力や商品企画力、施工品質や工期遵守に対する姿勢、効率的な生産体制等について事業主から評価をいただいている中、受注時採算の改善により、当期の完成工事総利益率は上昇いたしました。",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況 ②セグメントの業績",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況 ②セグメントの業績",
       "tags": [
         "management_discussion",
-        "construction"
+        "margin"
       ]
     },
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
       "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 7,
+      "pdf_page": 5,
       "exact_quote_ja": "① ６期合計の親会社株主に帰属する当期純利益に対して、総還元性向50％程度 ② 安定的な配当を継続、かつ計画期間内においては累進配当を実施 ③ 必要に応じ、機動的な自己株式の取得も実施",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "target",
-      "source_section": "1．経営成績等の概況 (4) 利益配分に関する基本方針",
+      "source_section": "1. 経営成績等の概況 (4) 利益配分に関する基本方針",
       "tags": [
         "capital_allocation",
-        "shareholder_return"
+        "dividend"
       ]
     },
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
       "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 13,
-      "exact_quote_ja": "2028年３月期 連結経常利益 1,000億円以上 2031年３月期 連結経常利益 1,300億円以上 安定的に1,000億円以上を計上できる収益基盤の確立 ＲＯＥ 10％を上回る水準を維持し、2031年3月期までに13％程度を目指す",
+      "pdf_page": 10,
+      "exact_quote_ja": "６か年合計ネット投資額 4,000億円",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "target",
-      "source_section": "3．経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+      "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
       "tags": [
-        "medium_term_target"
+        "capital_allocation",
+        "medium_term_plan"
       ]
     },
     {
       "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
       "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 38,
+      "pdf_page": 11,
+      "exact_quote_ja": "2028年３月期 連結経常利益 1,000億円以上 2031年３月期 連結経常利益 1,300億円以上",
+      "period_label_ja": "2026年3月期 通期",
+      "period_label_en": "FY2026",
+      "statement_type": "target",
+      "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+      "tags": [
+        "medium_term_plan",
+        "target"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 36,
       "exact_quote_ja": "当社は2025年６月３日に、株式会社ウッドフレンズの普通株式1,317,741株を株式公開買付けにより取得いたしました。この結果、当社の同社に対する議決権比率が90.38％に達したことから、同日付で同社を当社の連結子会社といたしました。",
       "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
+      "period_label_en": "FY2026",
       "statement_type": "actual",
-      "source_section": "5．連結財務諸表及び主な注記 (5) 連結財務諸表に関する注記事項 (企業結合等関係)",
+      "source_section": "5. 連結財務諸表に関する注記事項 (企業結合等関係)",
       "tags": [
         "m_and_a"
-      ]
-    },
-    {
-      "evidence_id": "05_2025_FY_tanshin.pdf:s0001",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2025年３月期 1,177,353 7.6 84,701 △1.2 83,408 0.1 34,450 △38.5",
-      "period_label_ja": "2025年3月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2025年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "05_2025_FY_tanshin.pdf:s0002",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度につきましては、資材・労務費の高騰等の影響を受け、完成工事総利益率は低下しましたが、不動産関連事業・サービス関連事業において各社が着実に利益を積み重ねた結果、連結経常利益は期初予想であった800億円を上回り、834億円となりました。",
-      "period_label_ja": "2025年3月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion",
-        "costs"
-      ]
-    },
-    {
-      "evidence_id": "05_2025_FY_tanshin.pdf:s0003",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "pdf_page": 34,
-      "exact_quote_ja": "収益性の低下等により、上記資産の帳簿価額を回収可能価額まで減額し、当該減少額を減損損失（16,861百万円）として特別損失に計上しました。",
-      "period_label_ja": "2025年3月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "5．連結財務諸表及び主な注記 (5) 連結損益計算書関係",
-      "tags": [
-        "impairment"
-      ]
-    },
-    {
-      "evidence_id": "09_2024-05-10_tanshin.pdf:s0001",
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2024年３月期 1,094,421 6.5 85,747 △4.9 83,334 △5.6 56,038 △5.5",
-      "period_label_ja": "2024年3月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2024年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "09_2024-05-10_tanshin.pdf:s0002",
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "資材・労務費の高騰等の影響を受け、完成工事総利益率は低下しましたが、サービス関連事業において各社が着実に利益を積み重ねた結果、連結経常利益は期初予想であった830億円を上回り、833億円となりました。",
-      "period_label_ja": "2024年3月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion",
-        "material_costs"
-      ]
-    },
-    {
-      "evidence_id": "13_2023-05-11_tanshin.pdf:s0001",
-      "source_filename": "13_2023-05-11_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2023年３月期 1,027,277 12.9 90,162 9.0 88,265 7.8 59,326 8.9",
-      "period_label_ja": "2023年3月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2023年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "13_2023-05-11_tanshin.pdf:s0002",
-      "source_filename": "13_2023-05-11_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "主に不動産売上高が大きく伸長したことにより連結売上高は過去最高となる１兆273億円を計上するとともに、不動産関連事業において連結子会社の分譲マンションの引渡しが順調に進捗し、サービス関連事業においても各社が着実に利益を積み上げた結果、連結経常利益は期初予想であった850億円を上回り、883億円となりました。",
-      "period_label_ja": "2023年3月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion",
-        "real_estate"
-      ]
-    },
-    {
-      "evidence_id": "17_2022-05-12_tanshin.pdf:s0001",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2022年３月期 909,708 12.4 82,702 13.4 81,871 14.0 54,490 12.9",
-      "period_label_ja": "2022年3月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2022年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "17_2022-05-12_tanshin.pdf:s0002",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "不動産売上高が大きく伸長したことにより連結売上高は9,097億円を計上するとともに、不動産関連事業において連結子会社の分譲マンションの引渡しが順調に進捗し、サービス関連事業においても各社が着実に利益を積み上げた結果、連結経常利益は期初予想であった750億円を上回り、819億円となりました。",
-      "period_label_ja": "2022年3月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "21_2021-05-13_tanshin.pdf:s0001",
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2021年３月期 809,438 △4.3 72,909 △15.1 71,832 △15.7 48,258 △19.4",
-      "period_label_ja": "2021年3月期 通期",
-      "period_label_en": "FY2021 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2021年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "21_2021-05-13_tanshin.pdf:s0002",
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度につきましては、建設関連事業において完成工事総利益率が低下し、サービス関連事業において大規模修繕工事・インテリアリフォーム及び分譲マンション管理の工事施工量が新型コロナウイルス感染症の影響を大きく受けたものの、不動産関連事業において連結子会社の新規分譲マンションの引渡しが順調に進捗し、着実に利益を積み重ねることができました。",
-      "period_label_ja": "2021年3月期 通期",
-      "period_label_en": "FY2021 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion",
-        "covid19"
-      ]
-    },
-    {
-      "evidence_id": "25_2020-05-14_tanshin.pdf:s0001",
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2020年３月期 846,029 △5.0 85,925 △12.7 85,253 △15.1 59,851 △31.5",
-      "period_label_ja": "2020年3月期 通期",
-      "period_label_en": "FY2020 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2020年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "25_2020-05-14_tanshin.pdf:s0002",
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "pdf_page": 12,
-      "exact_quote_ja": "2025年３月期 連結経常利益 1,000億円 2025年３月期 連結子会社経常利益 300億円以上 2021年３月期～2025年３月期 ５期合計連結経常利益 4,000億円",
-      "period_label_ja": "2020年3月期 通期",
-      "period_label_en": "FY2020 Full Year",
-      "statement_type": "target",
-      "source_section": "3．経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題 中期経営計画概要",
-      "tags": [
-        "medium_term_target"
-      ]
-    },
-    {
-      "evidence_id": "29_2019-05-10_tanshin.pdf:s0001",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2019年３月期 890,981 9.6 98,430 △2.4 100,369 △0.1 87,391 20.9",
-      "period_label_ja": "2019年3月期 通期",
-      "period_label_en": "FY2019 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．2019年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "29_2019-05-10_tanshin.pdf:s0002",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "pdf_page": 33,
-      "exact_quote_ja": "株式会社長谷工アネシスは、同日付で締結した吸収分割契約に基づき、2018年７月１日付でスマートマンション事業をNext Power株式会社に譲渡しております。",
-      "period_label_ja": "2019年3月期 通期",
-      "period_label_en": "FY2019 Full Year",
-      "statement_type": "actual",
-      "source_section": "5．連結財務諸表及び主な注記 (5) 連結財務諸表に関する注記事項 (企業結合等関係)",
-      "tags": [
-        "business_divestiture"
-      ]
-    },
-    {
-      "evidence_id": "33_2018-05-11_tanshin.pdf:s0001",
-      "source_filename": "33_2018-05-11_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "30年３月期 813,276 5.3 100,805 13.2 100,497 13.1 72,289 23.0",
-      "period_label_ja": "2018年3月期 通期",
-      "period_label_en": "FY2018 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．平成30年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "33_2018-05-11_tanshin.pdf:s0002",
-      "source_filename": "33_2018-05-11_tanshin.pdf",
-      "pdf_page": 12,
-      "exact_quote_ja": "2018年３月期～2020年３月期 ３期合計連結経常利益2,400億円 2020年３月期 連結子会社経常利益200億円以上",
-      "period_label_ja": "2018年3月期 通期",
-      "period_label_en": "FY2018 Full Year",
-      "statement_type": "target",
-      "source_section": "3．経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題 中期経営計画概要",
-      "tags": [
-        "medium_term_target"
-      ]
-    },
-    {
-      "evidence_id": "37_2017-05-12_tanshin.pdf:s0001",
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "pdf_page": 2,
-      "exact_quote_ja": "29年３月期 772,328 △1.9 89,032 29.5 88,827 31.9 58,762 14.7",
-      "period_label_ja": "2017年3月期 通期",
-      "period_label_en": "FY2017 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．平成29年３月期の連結業績 (1) 連結経営成績",
-      "tags": [
-        "financial_actual"
-      ]
-    },
-    {
-      "evidence_id": "37_2017-05-12_tanshin.pdf:s0002",
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "建設関連事業においてマンション建築工事が好調に推移した中、過去最高の連結経常利益を達成、さらに単体の受注高も３年連続で過去最高を更新することができました。",
-      "period_label_ja": "2017年3月期 通期",
-      "period_label_en": "FY2017 Full Year",
-      "statement_type": "actual",
-      "source_section": "1．経営成績等の概況 (1) 当期の経営成績の概況",
-      "tags": [
-        "management_discussion"
       ]
     }
   ],
   "filing_coverage": [
     {
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "fiscal_year": 2026,
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "fiscal_year": 2017,
       "period": "FY",
-      "period_label_ja": "2026年3月期 通期",
-      "is_latest": true,
+      "period_label_ja": "2017年3月期 通期",
+      "is_latest": false,
       "coverage_status": "complete",
       "management_discussion_evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0004"
+        "37_2017-05-12_tanshin.pdf:s0001"
       ],
       "outlook_evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0002"
+        "37_2017-05-12_tanshin.pdf:s0002"
       ],
-      "segment_evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0004"
-      ],
-      "cash_flow_evidence_ids": [],
-      "capital_allocation_evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0005"
-      ],
-      "footnote_evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
-      "financial_observation_ids": [
-        "obs_2026_rev",
-        "obs_2026_op",
-        "obs_2026_ord",
-        "obs_2026_np",
-        "obs_2027_forecast_ord"
-      ],
-      "commentary_observation_ids": [
-        "com_2026_margin_impr",
-        "com_2026_wood_friends"
-      ],
-      "disclosure_ids": [
-        "disc_2026_wood_friends_acq"
-      ],
-      "coverage_gaps": []
-    },
-    {
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "fiscal_year": 2025,
-      "period": "FY",
-      "period_label_ja": "2025年3月期 通期",
-      "is_latest": false,
-      "coverage_status": "complete",
-      "management_discussion_evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0002"
-      ],
-      "outlook_evidence_ids": [],
-      "segment_evidence_ids": [],
-      "cash_flow_evidence_ids": [],
-      "capital_allocation_evidence_ids": [],
-      "footnote_evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0003"
-      ],
-      "financial_observation_ids": [
-        "obs_2025_rev",
-        "obs_2025_ord"
-      ],
-      "commentary_observation_ids": [
-        "com_2025_cost_pressure"
-      ],
-      "disclosure_ids": [
-        "disc_2025_impairment"
-      ],
-      "coverage_gaps": []
-    },
-    {
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "fiscal_year": 2024,
-      "period": "FY",
-      "period_label_ja": "2024年3月期 通期",
-      "is_latest": false,
-      "coverage_status": "complete",
-      "management_discussion_evidence_ids": [
-        "09_2024-05-10_tanshin.pdf:s0002"
-      ],
-      "outlook_evidence_ids": [],
       "segment_evidence_ids": [],
       "cash_flow_evidence_ids": [],
       "capital_allocation_evidence_ids": [],
       "footnote_evidence_ids": [],
       "financial_observation_ids": [
-        "obs_2024_rev",
-        "obs_2024_ord"
+        "obs_2017_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2024_cost_inflation"
+        "comm_2017_profitability"
       ],
       "disclosure_ids": [],
       "coverage_gaps": []
     },
     {
-      "source_filename": "13_2023-05-11_tanshin.pdf",
-      "fiscal_year": 2023,
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "fiscal_year": 2018,
       "period": "FY",
-      "period_label_ja": "2023年3月期 通期",
+      "period_label_ja": "2018年3月期 通期",
       "is_latest": false,
       "coverage_status": "complete",
       "management_discussion_evidence_ids": [
-        "13_2023-05-11_tanshin.pdf:s0002"
+        "33_2018-05-11_tanshin.pdf:s0001"
+      ],
+      "outlook_evidence_ids": [
+        "33_2018-05-11_tanshin.pdf:s0002"
+      ],
+      "segment_evidence_ids": [],
+      "cash_flow_evidence_ids": [],
+      "capital_allocation_evidence_ids": [],
+      "footnote_evidence_ids": [],
+      "financial_observation_ids": [
+        "obs_2018_ordinary_profit_actual",
+        "obs_2019_ordinary_profit_forecast"
+      ],
+      "commentary_observation_ids": [
+        "comm_2018_profitability"
+      ],
+      "disclosure_ids": [],
+      "coverage_gaps": []
+    },
+    {
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "fiscal_year": 2019,
+      "period": "FY",
+      "period_label_ja": "2019年3月期 通期",
+      "is_latest": false,
+      "coverage_status": "complete",
+      "management_discussion_evidence_ids": [
+        "29_2019-05-10_tanshin.pdf:s0001"
+      ],
+      "outlook_evidence_ids": [],
+      "segment_evidence_ids": [],
+      "cash_flow_evidence_ids": [],
+      "capital_allocation_evidence_ids": [],
+      "footnote_evidence_ids": [
+        "29_2019-05-10_tanshin.pdf:s0002"
+      ],
+      "financial_observation_ids": [
+        "obs_2019_ordinary_profit_actual"
+      ],
+      "commentary_observation_ids": [
+        "comm_2019_margin"
+      ],
+      "disclosure_ids": [
+        "disc_2019_smart_housing_divestment"
+      ],
+      "coverage_gaps": []
+    },
+    {
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "fiscal_year": 2020,
+      "period": "FY",
+      "period_label_ja": "2020年3月期 通期",
+      "is_latest": false,
+      "coverage_status": "complete",
+      "management_discussion_evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0001"
+      ],
+      "outlook_evidence_ids": [],
+      "segment_evidence_ids": [],
+      "cash_flow_evidence_ids": [],
+      "capital_allocation_evidence_ids": [],
+      "footnote_evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0002"
+      ],
+      "financial_observation_ids": [
+        "obs_2020_ordinary_profit_actual"
+      ],
+      "commentary_observation_ids": [
+        "comm_2020_profitability"
+      ],
+      "disclosure_ids": [
+        "disc_2020_hosoda_acquisition"
+      ],
+      "coverage_gaps": []
+    },
+    {
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "fiscal_year": 2021,
+      "period": "FY",
+      "period_label_ja": "2021年3月期 通期",
+      "is_latest": false,
+      "coverage_status": "complete",
+      "management_discussion_evidence_ids": [
+        "21_2021-05-13_tanshin.pdf:s0001",
+        "21_2021-05-13_tanshin.pdf:s0002"
       ],
       "outlook_evidence_ids": [],
       "segment_evidence_ids": [],
@@ -737,11 +983,10 @@ trend_period_buckets:
       "capital_allocation_evidence_ids": [],
       "footnote_evidence_ids": [],
       "financial_observation_ids": [
-        "obs_2023_rev",
-        "obs_2023_ord"
+        "obs_2021_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2023_real_estate_growth"
+        "comm_2021_volume"
       ],
       "disclosure_ids": [],
       "coverage_gaps": []
@@ -754,32 +999,34 @@ trend_period_buckets:
       "is_latest": false,
       "coverage_status": "complete",
       "management_discussion_evidence_ids": [
-        "17_2022-05-12_tanshin.pdf:s0002"
+        "17_2022-05-12_tanshin.pdf:s0001"
       ],
       "outlook_evidence_ids": [],
       "segment_evidence_ids": [],
       "cash_flow_evidence_ids": [],
-      "capital_allocation_evidence_ids": [],
+      "capital_allocation_evidence_ids": [
+        "17_2022-05-12_tanshin.pdf:s0002"
+      ],
       "footnote_evidence_ids": [],
       "financial_observation_ids": [
-        "obs_2022_rev",
-        "obs_2022_ord"
+        "obs_2022_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2022_real_estate_drive"
+        "comm_2022_profitability"
       ],
       "disclosure_ids": [],
       "coverage_gaps": []
     },
     {
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "fiscal_year": 2021,
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "fiscal_year": 2023,
       "period": "FY",
-      "period_label_ja": "2021年3月期 通期",
+      "period_label_ja": "2023年3月期 通期",
       "is_latest": false,
       "coverage_status": "complete",
       "management_discussion_evidence_ids": [
-        "21_2021-05-13_tanshin.pdf:s0002"
+        "13_2023-05-11_tanshin.pdf:s0001",
+        "13_2023-05-11_tanshin.pdf:s0002"
       ],
       "outlook_evidence_ids": [],
       "segment_evidence_ids": [],
@@ -787,113 +1034,264 @@ trend_period_buckets:
       "capital_allocation_evidence_ids": [],
       "footnote_evidence_ids": [],
       "financial_observation_ids": [
-        "obs_2021_rev",
-        "obs_2021_ord"
+        "obs_2023_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2021_covid_impact"
+        "comm_2023_material_cost"
       ],
       "disclosure_ids": [],
       "coverage_gaps": []
     },
     {
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "fiscal_year": 2020,
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "fiscal_year": 2024,
       "period": "FY",
-      "period_label_ja": "2020年3月期 通期",
+      "period_label_ja": "2024年3月期 通期",
       "is_latest": false,
       "coverage_status": "complete",
-      "management_discussion_evidence_ids": [],
-      "outlook_evidence_ids": [],
+      "management_discussion_evidence_ids": [
+        "09_2024-05-10_tanshin.pdf:s0001"
+      ],
+      "outlook_evidence_ids": [
+        "09_2024-05-10_tanshin.pdf:s0002"
+      ],
       "segment_evidence_ids": [],
       "cash_flow_evidence_ids": [],
       "capital_allocation_evidence_ids": [],
       "footnote_evidence_ids": [],
       "financial_observation_ids": [
-        "obs_2020_rev",
-        "obs_2020_ord"
+        "obs_2024_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2020_nbj_final"
+        "comm_2024_profitability"
       ],
       "disclosure_ids": [],
       "coverage_gaps": []
     },
     {
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "fiscal_year": 2019,
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "fiscal_year": 2025,
       "period": "FY",
-      "period_label_ja": "2019年3月期 通期",
+      "period_label_ja": "2025年3月期 通期",
       "is_latest": false,
       "coverage_status": "complete",
-      "management_discussion_evidence_ids": [],
+      "management_discussion_evidence_ids": [
+        "05_2025_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0002"
+      ],
       "outlook_evidence_ids": [],
       "segment_evidence_ids": [],
       "cash_flow_evidence_ids": [],
       "capital_allocation_evidence_ids": [],
       "footnote_evidence_ids": [
-        "29_2019-05-10_tanshin.pdf:s0002"
+        "05_2025_FY_tanshin.pdf:s0003",
+        "05_2025_FY_tanshin.pdf:s0004"
       ],
       "financial_observation_ids": [
-        "obs_2019_rev",
-        "obs_2019_ord"
-      ],
-      "commentary_observation_ids": [],
-      "disclosure_ids": [
-        "disc_2019_power_divestiture"
-      ],
-      "coverage_gaps": []
-    },
-    {
-      "source_filename": "33_2018-05-11_tanshin.pdf",
-      "fiscal_year": 2018,
-      "period": "FY",
-      "period_label_ja": "2018年3月期 通期",
-      "is_latest": false,
-      "coverage_status": "complete",
-      "management_discussion_evidence_ids": [],
-      "outlook_evidence_ids": [],
-      "segment_evidence_ids": [],
-      "cash_flow_evidence_ids": [],
-      "capital_allocation_evidence_ids": [],
-      "footnote_evidence_ids": [],
-      "financial_observation_ids": [
-        "obs_2018_rev",
-        "obs_2018_ord"
-      ],
-      "commentary_observation_ids": [],
-      "disclosure_ids": [],
-      "coverage_gaps": []
-    },
-    {
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "fiscal_year": 2017,
-      "period": "FY",
-      "period_label_ja": "2017年3月期 通期",
-      "is_latest": false,
-      "coverage_status": "complete",
-      "management_discussion_evidence_ids": [
-        "37_2017-05-12_tanshin.pdf:s0002"
-      ],
-      "outlook_evidence_ids": [],
-      "segment_evidence_ids": [],
-      "cash_flow_evidence_ids": [],
-      "capital_allocation_evidence_ids": [],
-      "footnote_evidence_ids": [],
-      "financial_observation_ids": [
-        "obs_2017_rev",
-        "obs_2017_ord"
+        "obs_2025_ordinary_profit_actual"
       ],
       "commentary_observation_ids": [
-        "com_2017_record_profit"
+        "comm_2025_cost_pressure"
       ],
-      "disclosure_ids": [],
+      "disclosure_ids": [
+        "disc_2025_overseas_impairment",
+        "disc_2025_wood_friends_acquisition"
+      ],
+      "coverage_gaps": []
+    },
+    {
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "fiscal_year": 2026,
+      "period": "FY",
+      "period_label_ja": "2026年3月期 通期",
+      "is_latest": true,
+      "coverage_status": "complete",
+      "management_discussion_evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0003",
+        "01_2026_FY_tanshin.pdf:s0004"
+      ],
+      "outlook_evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0002",
+        "01_2026_FY_tanshin.pdf:s0007"
+      ],
+      "segment_evidence_ids": [],
+      "cash_flow_evidence_ids": [],
+      "capital_allocation_evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0005",
+        "01_2026_FY_tanshin.pdf:s0006"
+      ],
+      "footnote_evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0008"
+      ],
+      "financial_observation_ids": [
+        "obs_2026_ordinary_profit_actual",
+        "obs_2027_ordinary_profit_forecast",
+        "obs_2026_revenue_actual",
+        "obs_2026_operating_profit_actual",
+        "obs_2026_net_income_actual"
+      ],
+      "commentary_observation_ids": [
+        "comm_2026_margin_recovery"
+      ],
+      "disclosure_ids": [
+        "disc_2026_wood_friends_consolidation"
+      ],
       "coverage_gaps": []
     }
   ],
   "financial_observations": [
     {
-      "observation_id": "obs_2026_rev",
+      "observation_id": "obs_2017_ordinary_profit_actual",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2017,
+      "target_period": "FY",
+      "value_surface_ja": "888億円",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2018_ordinary_profit_actual",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2018,
+      "target_period": "FY",
+      "value_surface_ja": "1,005億円",
+      "evidence_id": "33_2018-05-11_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2019_ordinary_profit_forecast",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "forecast",
+      "forecast_version": "original",
+      "target_fiscal_year": 2019,
+      "target_period": "FY",
+      "value_surface_ja": "950 億円",
+      "evidence_id": "33_2018-05-11_tanshin.pdf:s0002"
+    },
+    {
+      "observation_id": "obs_2019_ordinary_profit_actual",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2019,
+      "target_period": "FY",
+      "value_surface_ja": "1,004億円",
+      "evidence_id": "29_2019-05-10_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2020_ordinary_profit_actual",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2020,
+      "target_period": "FY",
+      "value_surface_ja": "853億円",
+      "evidence_id": "25_2020-05-14_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2021_ordinary_profit_actual",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2021,
+      "target_period": "FY",
+      "value_surface_ja": "718億円",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2022_ordinary_profit_actual",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2022,
+      "target_period": "FY",
+      "value_surface_ja": "819億円",
+      "evidence_id": "17_2022-05-12_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2023_ordinary_profit_actual",
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2023,
+      "target_period": "FY",
+      "value_surface_ja": "883億円",
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2024_ordinary_profit_actual",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2024,
+      "target_period": "FY",
+      "value_surface_ja": "833億円",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2025_ordinary_profit_actual",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "statement_type": "actual",
+      "forecast_version": "not_applicable",
+      "target_fiscal_year": 2025,
+      "target_period": "FY",
+      "value_surface_ja": "834億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0001"
+    },
+    {
+      "observation_id": "obs_2026_revenue_actual",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "metric": "revenue",
       "metric_label_ja": "売上高",
@@ -908,7 +1306,7 @@ trend_period_buckets:
       "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
     },
     {
-      "observation_id": "obs_2026_op",
+      "observation_id": "obs_2026_operating_profit_actual",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "metric": "operating_profit",
       "metric_label_ja": "営業利益",
@@ -923,7 +1321,7 @@ trend_period_buckets:
       "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
     },
     {
-      "observation_id": "obs_2026_ord",
+      "observation_id": "obs_2026_ordinary_profit_actual",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "metric": "ordinary_profit",
       "metric_label_ja": "経常利益",
@@ -938,7 +1336,7 @@ trend_period_buckets:
       "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
     },
     {
-      "observation_id": "obs_2026_np",
+      "observation_id": "obs_2026_net_income_actual",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "metric": "net_income",
       "metric_label_ja": "親会社株主に帰属する当期純利益",
@@ -953,7 +1351,7 @@ trend_period_buckets:
       "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
     },
     {
-      "observation_id": "obs_2027_forecast_ord",
+      "observation_id": "obs_2027_ordinary_profit_forecast",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "metric": "ordinary_profit",
       "metric_label_ja": "経常利益",
@@ -966,441 +1364,211 @@ trend_period_buckets:
       "target_period": "FY",
       "value_surface_ja": "105,000百万円",
       "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
-    },
-    {
-      "observation_id": "obs_2025_rev",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2025,
-      "target_period": "FY",
-      "value_surface_ja": "1,177,353百万円",
-      "evidence_id": "05_2025_FY_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2025_ord",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2025,
-      "target_period": "FY",
-      "value_surface_ja": "83,408百万円",
-      "evidence_id": "05_2025_FY_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2024_rev",
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2024,
-      "target_period": "FY",
-      "value_surface_ja": "1,094,421百万円",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2024_ord",
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2024,
-      "target_period": "FY",
-      "value_surface_ja": "83,334百万円",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2023_rev",
-      "source_filename": "13_2023-05-11_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2023,
-      "target_period": "FY",
-      "value_surface_ja": "1,027,277百万円",
-      "evidence_id": "13_2023-05-11_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2023_ord",
-      "source_filename": "13_2023-05-11_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2023,
-      "target_period": "FY",
-      "value_surface_ja": "88,265百万円",
-      "evidence_id": "13_2023-05-11_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2022_rev",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2022,
-      "target_period": "FY",
-      "value_surface_ja": "909,708百万円",
-      "evidence_id": "17_2022-05-12_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2022_ord",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2022,
-      "target_period": "FY",
-      "value_surface_ja": "81,871百万円",
-      "evidence_id": "17_2022-05-12_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2021_rev",
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2021,
-      "target_period": "FY",
-      "value_surface_ja": "809,438百万円",
-      "evidence_id": "21_2021-05-13_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2021_ord",
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2021,
-      "target_period": "FY",
-      "value_surface_ja": "71,832百万円",
-      "evidence_id": "21_2021-05-13_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2020_rev",
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2020,
-      "target_period": "FY",
-      "value_surface_ja": "846,029百万円",
-      "evidence_id": "25_2020-05-14_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2020_ord",
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2020,
-      "target_period": "FY",
-      "value_surface_ja": "85,253百万円",
-      "evidence_id": "25_2020-05-14_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2019_rev",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2019,
-      "target_period": "FY",
-      "value_surface_ja": "890,981百万円",
-      "evidence_id": "29_2019-05-10_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2019_ord",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2019,
-      "target_period": "FY",
-      "value_surface_ja": "100,369百万円",
-      "evidence_id": "29_2019-05-10_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2018_rev",
-      "source_filename": "33_2018-05-11_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2018,
-      "target_period": "FY",
-      "value_surface_ja": "813,276百万円",
-      "evidence_id": "33_2018-05-11_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2018_ord",
-      "source_filename": "33_2018-05-11_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2018,
-      "target_period": "FY",
-      "value_surface_ja": "100,497百万円",
-      "evidence_id": "33_2018-05-11_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2017_rev",
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "metric": "revenue",
-      "metric_label_ja": "売上高",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2017,
-      "target_period": "FY",
-      "value_surface_ja": "772,328百万円",
-      "evidence_id": "37_2017-05-12_tanshin.pdf:s0001"
-    },
-    {
-      "observation_id": "obs_2017_ord",
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "scope": "consolidated",
-      "scope_label_ja": "連結",
-      "value_kind": "monetary",
-      "statement_type": "actual",
-      "forecast_version": "not_applicable",
-      "target_fiscal_year": 2017,
-      "target_period": "FY",
-      "value_surface_ja": "88,827百万円",
-      "evidence_id": "37_2017-05-12_tanshin.pdf:s0001"
     }
   ],
   "commentary_observations": [
     {
-      "observation_id": "com_2026_margin_impr",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "fiscal_year": 2026,
-      "period_label_ja": "2026年3月期 通期",
+      "observation_id": "comm_2017_profitability",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "fiscal_year": 2017,
+      "period_label_ja": "2017年3月期 通期",
       "canonical_tag": "pricing",
-      "label_ja": "受注採算改善による粗利益率向上",
+      "label_ja": "完成工事総利益率の改善",
       "tone": "positive",
       "intensity": "moderate",
-      "summary_ja": "受注時採算の改善により完成工事総利益率が上昇し、建設関連事業の利益率が向上した。",
+      "summary_ja": "マンション建築工事の完成工事総利益率改善により、営業利益890億円（29.5%増）、経常利益888億円（31.9%増）の増益を達成した。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0004"
+        "37_2017-05-12_tanshin.pdf:s0001"
       ]
     },
     {
-      "observation_id": "com_2026_wood_friends",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "fiscal_year": 2026,
-      "period_label_ja": "2026年3月期 通期",
-      "canonical_tag": "other",
-      "label_ja": "ウッドフレンズの連結子会社化",
+      "observation_id": "comm_2018_profitability",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "fiscal_year": 2018,
+      "period_label_ja": "2018年3月期 通期",
+      "canonical_tag": "pricing",
+      "label_ja": "施工量増大と採算性の高水準維持",
+      "tone": "positive",
+      "intensity": "high",
+      "summary_ja": "施工量の増大と完成工事総利益率の改善・高水準維持により、営業利益1,008億円、経常利益1,005億円の最高益更新を達成した。",
+      "evidence_ids": [
+        "33_2018-05-11_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "observation_id": "comm_2019_margin",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "fiscal_year": 2019,
+      "period_label_ja": "2019年3月期 通期",
+      "canonical_tag": "pricing",
+      "label_ja": "完成工事総利益率の低下開始",
+      "tone": "negative",
+      "intensity": "low",
+      "summary_ja": "施工量・不動産取扱量は増加して売上高は増加したが、完成工事総利益率の低下により営業利益・経常利益は微減となった。",
+      "evidence_ids": [
+        "29_2019-05-10_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "observation_id": "comm_2020_profitability",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "fiscal_year": 2020,
+      "period_label_ja": "2020年3月期 通期",
+      "canonical_tag": "material_costs",
+      "label_ja": "建築利益率の低下と不動産取扱減",
+      "tone": "negative",
+      "intensity": "moderate",
+      "summary_ja": "受注時採算の悪化や資材・労務費の上昇等による完成工事総利益率低下と、不動産取扱量減少が重なり減収減益となった。",
+      "evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "observation_id": "comm_2021_volume",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "fiscal_year": 2021,
+      "period_label_ja": "2021年3月期 通期",
+      "canonical_tag": "volume",
+      "label_ja": "コロナ禍での施工量減少と利益率低下",
+      "tone": "negative",
+      "intensity": "moderate",
+      "summary_ja": "マンション建築工事の施工量減少および完成工事総利益率低下により、経常利益は718億円（15.7%減）へと後退した。",
+      "evidence_ids": [
+        "21_2021-05-13_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "observation_id": "comm_2022_profitability",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "fiscal_year": 2022,
+      "period_label_ja": "2022年3月期 通期",
+      "canonical_tag": "pricing",
+      "label_ja": "不動産取扱量増加による利益回復",
       "tone": "positive",
       "intensity": "moderate",
-      "summary_ja": "木造・木質化推進の一環としてウッドフレンズを完全子会社化しグループ傘下に納めた。",
+      "summary_ja": "完成工事高は減少したものの、建築受注用地および不動産取扱量の増加により経常利益819億円（14.0%増）へ回復した。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007"
+        "17_2022-05-12_tanshin.pdf:s0001"
       ]
     },
     {
-      "observation_id": "com_2025_cost_pressure",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "fiscal_year": 2025,
-      "period_label_ja": "2025年3月期 通期",
-      "canonical_tag": "material_costs",
-      "label_ja": "資材・労務費高騰による完成工事利益率低下",
-      "tone": "negative",
-      "intensity": "moderate",
-      "summary_ja": "資材や労務費の高騰により完成工事総利益率が低下したが、不動産やサービス事業の好調によりカバーした。",
-      "evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0002"
-      ]
-    },
-    {
-      "observation_id": "com_2024_cost_inflation",
-      "source_filename": "09_2024-05-10_tanshin.pdf",
-      "fiscal_year": 2024,
-      "period_label_ja": "2024年3月期 通期",
-      "canonical_tag": "material_costs",
-      "label_ja": "資材・労務費上昇の影響",
-      "tone": "negative",
-      "intensity": "moderate",
-      "summary_ja": "建設資材および労務費の高騰が完成工事総利益率の低下圧力となった。",
-      "evidence_ids": [
-        "09_2024-05-10_tanshin.pdf:s0002"
-      ]
-    },
-    {
-      "observation_id": "com_2023_real_estate_growth",
+      "observation_id": "comm_2023_material_cost",
       "source_filename": "13_2023-05-11_tanshin.pdf",
       "fiscal_year": 2023,
       "period_label_ja": "2023年3月期 通期",
-      "canonical_tag": "demand",
-      "label_ja": "不動産事業の売上牽引",
-      "tone": "positive",
-      "intensity": "high",
-      "summary_ja": "分譲マンションの大型物件引き渡しなどが順調に進捗し、不動産売上高が大きく伸長した。",
+      "canonical_tag": "material_costs",
+      "label_ja": "資材・労務費高騰による工事利益率圧迫",
+      "tone": "mixed",
+      "intensity": "moderate",
+      "summary_ja": "施工中工事高は増加したものの資材・労務費の高騰で完成工事総利益率は低下。一方、不動産販売の順調な推移で増益を確保した。",
       "evidence_ids": [
         "13_2023-05-11_tanshin.pdf:s0002"
       ]
     },
     {
-      "observation_id": "com_2022_real_estate_drive",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "fiscal_year": 2022,
-      "period_label_ja": "2022年3月期 通期",
-      "canonical_tag": "demand",
-      "label_ja": "分譲引渡しの堅調推移",
-      "tone": "positive",
-      "intensity": "moderate",
-      "summary_ja": "不動産関連事業での引き渡し順調により増収増益に寄与した。",
-      "evidence_ids": [
-        "17_2022-05-12_tanshin.pdf:s0002"
-      ]
-    },
-    {
-      "observation_id": "com_2021_covid_impact",
-      "source_filename": "21_2021-05-13_tanshin.pdf",
-      "fiscal_year": 2021,
-      "period_label_ja": "2021年3月期 通期",
-      "canonical_tag": "other",
-      "label_ja": "コロナ禍による施工量への影響",
+      "observation_id": "comm_2024_profitability",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "fiscal_year": 2024,
+      "period_label_ja": "2024年3月期 通期",
+      "canonical_tag": "material_costs",
+      "label_ja": "完成工事総利益率低下による営業減益",
       "tone": "negative",
       "intensity": "moderate",
-      "summary_ja": "新型コロナウイルスの影響により修繕工事や管理工事の施工量が一時減少した。",
+      "summary_ja": "売上高は1兆944億円と伸長したものの、資材・労務費高騰等の影響を受けた完成工事総利益率低下により営業利益・経常利益は減益となった。",
       "evidence_ids": [
-        "21_2021-05-13_tanshin.pdf:s0002"
+        "09_2024-05-10_tanshin.pdf:s0001"
       ]
     },
     {
-      "observation_id": "com_2020_nbj_final",
-      "source_filename": "25_2020-05-14_tanshin.pdf",
-      "fiscal_year": 2020,
-      "period_label_ja": "2020年3月期 通期",
-      "canonical_tag": "other",
-      "label_ja": "NBj計画の達成",
-      "tone": "positive",
-      "intensity": "moderate",
-      "summary_ja": "NBj計画の最終年度において、期初予想の経常利益850億円を達成した。",
+      "observation_id": "comm_2025_cost_pressure",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "fiscal_year": 2025,
+      "period_label_ja": "2025年3月期 通期",
+      "canonical_tag": "labor_costs",
+      "label_ja": "人件費・販管費増加と特別損失の計上",
+      "tone": "negative",
+      "intensity": "high",
+      "summary_ja": "賃上げ等による人件費増加に加え、海外事業での減損損失等の特別損失計上により親会社株主に帰属する当期純利益が345億円（38.5%減）と大幅減益となった。",
       "evidence_ids": [
-        "25_2020-05-14_tanshin.pdf:s0002"
+        "05_2025_FY_tanshin.pdf:s0001",
+        "05_2025_FY_tanshin.pdf:s0002"
       ]
     },
     {
-      "observation_id": "com_2017_record_profit",
-      "source_filename": "37_2017-05-12_tanshin.pdf",
-      "fiscal_year": 2017,
-      "period_label_ja": "2017年3月期 通期",
-      "canonical_tag": "other",
-      "label_ja": "過去最高利益の達成",
+      "observation_id": "comm_2026_margin_recovery",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "fiscal_year": 2026,
+      "period_label_ja": "2026年3月期 通期",
+      "canonical_tag": "pricing",
+      "label_ja": "受注時採算の改善による完成工事総利益率の反転上昇",
       "tone": "positive",
       "intensity": "high",
-      "summary_ja": "マンション建築工事が好調に推移し、過去最高の連結経常利益を達成した。",
+      "summary_ja": "受注時採算の改善取り組みが実を結び完成工事総利益率が反転上昇。経常利益は941億円（12.8%増）と新中計初年度でV字回復を果たした。",
       "evidence_ids": [
-        "37_2017-05-12_tanshin.pdf:s0002"
+        "01_2026_FY_tanshin.pdf:s0003",
+        "01_2026_FY_tanshin.pdf:s0004"
       ]
     }
   ],
   "disclosures": [
     {
-      "disclosure_id": "disc_2026_wood_friends_acq",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "fiscal_year": 2026,
+      "disclosure_id": "disc_2019_smart_housing_divestment",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "fiscal_year": 2019,
       "category": "capital_allocation",
-      "label_ja": "ウッドフレンズの公開買付け及び完全子会社化",
-      "summary_ja": "ウッドフレンズの株式を取得し連結子会社化、その後の株式売渡請求により完全子会社化した。",
+      "label_ja": "スマートマンション事業の会社分割（売却）",
+      "summary_ja": "長谷工アネシスのスマートマンション事業をNext Powerへ会社分割（吸収分割）により承継し、事業譲渡益213.5億円を特別利益に計上した。",
       "importance": "primary",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007"
+        "29_2019-05-10_tanshin.pdf:s0002"
       ]
     },
     {
-      "disclosure_id": "disc_2025_impairment",
+      "disclosure_id": "disc_2020_hosoda_acquisition",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "fiscal_year": 2020,
+      "category": "other",
+      "label_ja": "株式会社細田工務店の連結子会社化",
+      "summary_ja": "木造戸建分譲住宅事業の強化および「住まいと暮らし」領域の拡大を目的に、細田工務店を株式取得により完全子会社化した。",
+      "importance": "secondary",
+      "evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0002"
+      ]
+    },
+    {
+      "disclosure_id": "disc_2025_overseas_impairment",
       "source_filename": "05_2025_FY_tanshin.pdf",
       "fiscal_year": 2025,
       "category": "impairment",
-      "label_ja": "減損損失の計上",
-      "summary_ja": "収益性の低下等に伴い、事業用不動産等の帳簿価額を減額し特別損失として168.61億円の減損損失を計上した。",
+      "label_ja": "海外事業等における大型減損損失の計上",
+      "summary_ja": "海外事業用不動産等の収益性低下に伴い、固定資産減損損失168.6億円を特別損失として計上した。",
       "importance": "primary",
       "evidence_ids": [
         "05_2025_FY_tanshin.pdf:s0003"
       ]
     },
     {
-      "disclosure_id": "disc_2019_power_divestiture",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "fiscal_year": 2019,
+      "disclosure_id": "disc_2025_wood_friends_acquisition",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "fiscal_year": 2025,
       "category": "other",
-      "label_ja": "スマートマンション事業の譲渡",
-      "summary_ja": "長谷工アネシスのスマートマンション事業をNext Power株式会社へ譲渡した。",
-      "importance": "secondary",
+      "label_ja": "株式会社ウッドフレンズへの公開買付け（TOB）決定",
+      "summary_ja": "木造化・木質化推進や国産材の安定供給体制強化を狙い、ウッドフレンズに対するTOB実施を決議した。",
+      "importance": "primary",
       "evidence_ids": [
-        "29_2019-05-10_tanshin.pdf:s0002"
+        "05_2025_FY_tanshin.pdf:s0004"
+      ]
+    },
+    {
+      "disclosure_id": "disc_2026_wood_friends_consolidation",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "fiscal_year": 2026,
+      "category": "other",
+      "label_ja": "株式会社ウッドフレンズの連結子会社化完了",
+      "summary_ja": "2025年6月3日のTOB（議決権90.38%取得）およびその後の売渡請求手続きを経てウッドフレンズを完全子会社化し、連結対象に追加した。",
+      "importance": "primary",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0008"
       ]
     }
   ],
@@ -1408,104 +1576,175 @@ trend_period_buckets:
     {
       "driver_id": "driver_material_labor_costs",
       "canonical_tag": "material_costs",
-      "label_ja": "資材・労務コストの高騰",
+      "label_ja": "資材・労務費高騰による完成工事総利益率への影響",
       "direction": "negative",
       "importance": "primary",
       "nature": "cyclical",
-      "affected_area_ja": "建設関連事業の粗利益率",
-      "summary_ja": "建築資材や人件費・労務費の上昇により、完成工事総利益率の低下圧力が継続的に発生した。",
+      "affected_area_ja": "建設関連事業の売上総利益率および営業利益",
+      "summary_ja": "2020年3月期以降、建築資材価格や建設技能労働者の人件費高騰が長期化し、完成工事総利益率を圧迫。受注時採算の厳格化や価格転嫁が進むまで建設事業の利益抑制要因となった。",
       "observed_periods_ja": [
+        "2020年3月期",
+        "2023年3月期",
         "2024年3月期",
-        "2025年3月期",
-        "2026年3月期"
+        "2025年3月期"
       ],
       "evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0002",
-        "09_2024-05-10_tanshin.pdf:s0002"
+        "25_2020-05-14_tanshin.pdf:s0001",
+        "13_2023-05-11_tanshin.pdf:s0002",
+        "09_2024-05-10_tanshin.pdf:s0001"
       ]
     },
     {
-      "driver_id": "driver_order_pricing",
+      "driver_id": "driver_order_pricing_discipline",
       "canonical_tag": "pricing",
-      "label_ja": "受注時採算の改善・厳選受注",
+      "label_ja": "受注時採算の厳格化と価格転嫁・原価低減",
       "direction": "positive",
       "importance": "primary",
       "nature": "company_specific",
-      "affected_area_ja": "建設関連事業の営業利益率",
-      "summary_ja": "資材費高騰に対して受注時の採算管理を徹底し価格転嫁を進めた結果、完成工事総利益率が反転上昇した。",
+      "affected_area_ja": "建設関連事業の受注採算および完成工事総利益率",
+      "summary_ja": "資材・人件費高騰に対して受注段階での採算ハードルを引き上げ、コストインフレの価格反映や施工効率化を追求した結果、2026年3月期に完成工事総利益率が反転上昇した。",
       "observed_periods_ja": [
+        "2017年3月期",
+        "2018年3月期",
         "2026年3月期"
       ],
       "evidence_ids": [
+        "37_2017-05-12_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0003",
         "01_2026_FY_tanshin.pdf:s0004"
       ]
     },
     {
-      "driver_id": "driver_condo_deliveries",
-      "canonical_tag": "volume",
-      "label_ja": "分譲マンションの引渡物件数・取扱量",
-      "direction": "positive",
+      "driver_id": "driver_real_estate_trading",
+      "canonical_tag": "demand",
+      "label_ja": "分譲住宅・収益不動産取扱量の変動",
+      "direction": "mixed",
       "importance": "primary",
       "nature": "cyclical",
-      "affected_area_ja": "不動産関連事業の売上高及び利益",
-      "summary_ja": "大型分譲マンションの引き渡し時期や順調な販売進捗が、不動産関連事業の業績変動の主因となった。",
+      "affected_area_ja": "不動産関連事業の売上高および営業利益",
+      "summary_ja": "建築請負の粗利率圧迫期において、分譲マンションの引き渡しや収益不動産の売却、土地取扱量の増加が全社の連結利益を下支えまたは牽引した。",
       "observed_periods_ja": [
         "2022年3月期",
         "2023年3月期",
-        "2025年3月期"
+        "2026年3月期"
       ],
       "evidence_ids": [
-        "13_2023-05-11_tanshin.pdf:s0002",
-        "17_2022-05-12_tanshin.pdf:s0002"
+        "17_2022-05-12_tanshin.pdf:s0001",
+        "13_2023-05-11_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0003"
       ]
     }
   ],
   "commitments": [
     {
-      "commitment_id": "commit_ns_plan_ord",
+      "commitment_id": "commit_nbj_plan_profit",
       "commitment_type": "medium_term_target",
-      "statement_period_ja": "2020年3月期",
-      "commitment_ja": "NS計画（2021年3月期～2025年3月期）における5期合計連結経常利益4,000億円、2025年3月期連結経常利益1,000億円",
-      "due_period_ja": "2025年3月期",
-      "outcome_status": "partly_achieved",
-      "outcome_ja": "5期合計連結経常利益4,000億円の目標は達成したが、最終年度（2025年3月期）の単年度経常利益は834億円となり1,000億円には未達となった。",
+      "statement_period_ja": "2017年3月期 通期",
+      "commitment_ja": "中期経営計画「NBj計画」（2018年3月期～2020年3月期）において3期合計連結経常利益2,400億円を達成する。",
+      "due_period_ja": "2020年3月期 通期",
+      "outcome_status": "achieved",
+      "outcome_ja": "3期累計で連結経常利益2,862億円（2018年3月期1,005億円、2019年3月期1,004億円、2020年3月期853億円）を計上し、目標の2,400億円を大きく超過達成した。",
+      "revision_direction": "none_observed",
+      "forecast_posture": "conservative",
+      "evidence_ids": [
+        "37_2017-05-12_tanshin.pdf:s0002",
+        "33_2018-05-11_tanshin.pdf:s0001",
+        "29_2019-05-10_tanshin.pdf:s0001",
+        "25_2020-05-14_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "commitment_id": "commit_ns_plan_profit",
+      "commitment_type": "medium_term_target",
+      "statement_period_ja": "2021年3月期 通期",
+      "commitment_ja": "中期経営計画「NS計画」（2021年3月期～2025年3月期）において5期合計連結経常利益4,000億円および2025年3月期連結子会社経常利益300億円以上を達成する。",
+      "due_period_ja": "2025年3月期 通期",
+      "outcome_status": "achieved",
+      "outcome_ja": "5期累計（2021年3月期718億円、2022年3月期819億円、2023年3月期883億円、2024年3月期833億円、2025年3月期834億円）の合計経常利益は4,087億円となり、5期合計4,000億円目標を達成した。",
       "revision_direction": "none_observed",
       "forecast_posture": "balanced",
       "evidence_ids": [
-        "25_2020-05-14_tanshin.pdf:s0002",
-        "05_2025_FY_tanshin.pdf:s0001",
+        "21_2021-05-13_tanshin.pdf:s0002",
+        "09_2024-05-10_tanshin.pdf:s0002",
         "05_2025_FY_tanshin.pdf:s0002"
       ]
     },
     {
-      "commitment_id": "commit_evolution_plan_ord",
+      "commitment_id": "commit_dividend_floor_80",
+      "commitment_type": "capital_allocation",
+      "statement_period_ja": "2022年3月期 通期",
+      "commitment_ja": "年間配当金の下限を従来の70円から80円へと引き上げる。",
+      "due_period_ja": "2022年3月期以降",
+      "outcome_status": "achieved",
+      "outcome_ja": "2022年3月期以降、配当金は80円（2022年・2023年・2024年3月期85円、2025年3月期85円、2026年3月期95円）を継続して支払い、下限約定を確実に履行した。",
+      "revision_direction": "up",
+      "forecast_posture": "balanced",
+      "evidence_ids": [
+        "17_2022-05-12_tanshin.pdf:s0002",
+        "05_2025_FY_tanshin.pdf:s0002",
+        "01_2026_FY_tanshin.pdf:s0005"
+      ]
+    },
+    {
+      "commitment_id": "commit_evolution_plan_target",
       "commitment_type": "medium_term_target",
-      "statement_period_ja": "2025年3月期",
-      "commitment_ja": "中期経営計画「HASEKO Evolution Plan」において、2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上を目標として設定",
-      "due_period_ja": "2028年3月期 / 2031年3月期",
+      "statement_period_ja": "2026年3月期 通期",
+      "commitment_ja": "中期経営計画「HASEKO Evolution Plan」（2026年3月期～2031年3月期）において2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上を目指す。",
+      "due_period_ja": "2028年3月期および2031年3月期",
       "outcome_status": "pending",
-      "outcome_ja": "計画初年度（2026年3月期）の経常利益は941億円を達成し、順調な進捗を見せている。",
+      "outcome_ja": "新中期経営計画の初年度（2026年3月期）において経常利益941億円を達成し、2027年3月期予想も1,050億円と掲げ順調な滑り出しを見せている（進行中）。",
       "revision_direction": "none_observed",
       "forecast_posture": "balanced",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0006"
+        "01_2026_FY_tanshin.pdf:s0007"
       ]
     }
   ],
   "management_themes": [
     {
-      "theme_id": "theme_profitability_control",
-      "label_ja": "建設工事における採算性管理と完成工事利益率の確保",
-      "development": "changed",
-      "early_period_ja": "2017～2020年3月期：好調な建設需要を背景に高い完成工事利益率を維持。",
-      "middle_period_ja": "2021～2025年3月期：資材高騰・労務費の上昇により利益率が低下傾向に直面。",
-      "recent_period_ja": "2026年3月期：受注時採算の改善と厳選受注の徹底により利益率の反転・改善を実現。",
-      "interpretation_ja": "資材高騰期には完成工事利益率の低下を余儀なくされたが、受注価格の適正化やコスト管理の徹底により、直近期には採算性の改善を達成している。",
+      "theme_id": "theme_medium_term_profit_discipline",
+      "label_ja": "中長期計画における利益目標達成と計画遂行の継続性",
+      "development": "persistent",
+      "early_period_ja": "2018年3月期～2020年3月期",
+      "middle_period_ja": "2021年3月期～2025年3月期",
+      "recent_period_ja": "2026年3月期～2031年3月期",
+      "interpretation_ja": "NBj計画（3期合計2,400億円目標に対して2,862億円達成）およびNS計画（5期合計4,000億円目標に対して4,087億円達成）のいずれにおいても中長期目標を着実に達成。資材高騰などの環境変化に対しても事業ポートフォリオや受注採算の管理で計画遂行力を示した。",
       "evidence_ids": [
         "37_2017-05-12_tanshin.pdf:s0002",
+        "25_2020-05-14_tanshin.pdf:s0001",
+        "21_2021-05-13_tanshin.pdf:s0002",
         "05_2025_FY_tanshin.pdf:s0002",
+        "01_2026_FY_tanshin.pdf:s0007"
+      ]
+    },
+    {
+      "theme_id": "theme_construction_cost_and_margin",
+      "label_ja": "インフレ下の建設原価コントロールと受注時採算厳格化",
+      "development": "strengthened",
+      "early_period_ja": "2020年3月期",
+      "middle_period_ja": "2023年3月期～2025年3月期",
+      "recent_period_ja": "2026年3月期",
+      "interpretation_ja": "資材・人件費高騰により完成工事総利益率の低下が長期化したが、2026年3月期に向けて受注時の採算ハードル引き上げや施主への価格転嫁・施工効率化を強化。2026年3月期に完成工事総利益率の反転上昇（営業利益16.6%増）を実現した。",
+      "evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0001",
+        "13_2023-05-11_tanshin.pdf:s0002",
+        "09_2024-05-10_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0003",
         "01_2026_FY_tanshin.pdf:s0004"
+      ]
+    },
+    {
+      "theme_id": "theme_growth_investment_m_and_a",
+      "label_ja": "事業基盤拡充に向けたM&Aと木造・木質化領域への展開",
+      "development": "introduced",
+      "early_period_ja": "2020年3月期",
+      "middle_period_ja": "2025年3月期",
+      "recent_period_ja": "2026年3月期",
+      "interpretation_ja": "2020年3月期の細田工務店買収に続き、2025〜2026年3月期にかけてウッドフレンズを買収・完全子会社化。従来のRC造分譲マンション請負中心から木造住宅や木質化技術への展開を進め、供給能力と事業領域の多角化を図っている。",
+      "evidence_ids": [
+        "25_2020-05-14_tanshin.pdf:s0002",
+        "05_2025_FY_tanshin.pdf:s0004",
+        "01_2026_FY_tanshin.pdf:s0008"
       ]
     }
   ],
@@ -1515,48 +1754,53 @@ trend_period_buckets:
         "dimension": "strategic_coherence",
         "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "マンション建設というコア事業軸を維持しつつ、サービス関連事業や不動産開発への拡大を計画通り継続しており、戦略的一貫性が保たれている。",
+        "rationale_ja": "マンション建設を中心とするコア事業の強化、サービス・不動産領域への展開、木造・木質化領域へのM&A（細田工務店、ウッドフレンズ）という戦略方針は一貫しており、中期経営計画（NBj計画、NS計画、HASEKO Evolution Plan）の流れに整合している。",
         "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0006",
-          "25_2020-05-14_tanshin.pdf:s0002"
+          "37_2017-05-12_tanshin.pdf:s0002",
+          "25_2020-05-14_tanshin.pdf:s0002",
+          "21_2021-05-13_tanshin.pdf:s0002",
+          "01_2026_FY_tanshin.pdf:s0008"
         ]
       },
       {
         "dimension": "execution_follow_through",
         "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "資材費高騰期においても不動産分野の伸長でカバーし、また直近期では受注採算改善を実行するなど、環境変化に対する施策の遂行力が見られる。",
+        "rationale_ja": "資材・労務費の高騰という外要因に対して、受注時採算の厳格化や価格転嫁、不動産取扱量の調整によって対応し、2026年3月期には完成工事総利益率の反転上昇を達成するなど有言実行のプロセスが確認できる。",
         "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0004",
-          "05_2025_FY_tanshin.pdf:s0002"
+          "13_2023-05-11_tanshin.pdf:s0002",
+          "01_2026_FY_tanshin.pdf:s0003",
+          "01_2026_FY_tanshin.pdf:s0004"
         ]
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 3,
+        "rating": 4,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "NS計画の5期累計利益目標を達成するなど概ね規律ある目標設定と管理が行われているが、2025年3月期単年度の経常利益目標1,000億円には未達（834億円）となった。",
+        "rationale_ja": "「NBj計画」（3期合計経常利益2,400億円目標に対して2,862億円達成）および「NS計画」（5期合計経常利益4,000億円目標に対して4,087億円達成）のいずれの中期経営目標も達成。毎期の通期経常利益目標に対しても大きな上振れ・下振れなく安定した規律を保っている。",
         "evidence_ids": [
-          "05_2025_FY_tanshin.pdf:s0001",
-          "05_2025_FY_tanshin.pdf:s0002",
-          "25_2020-05-14_tanshin.pdf:s0002"
+          "37_2017-05-12_tanshin.pdf:s0002",
+          "25_2020-05-14_tanshin.pdf:s0001",
+          "09_2024-05-10_tanshin.pdf:s0002",
+          "05_2025_FY_tanshin.pdf:s0002"
         ]
       },
       {
         "dimension": "accountability_transparency",
-        "rating": 3,
+        "rating": 2,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "資材価格高騰による利益率低下要因や予想上振れ・下振れの理由について決算短信内で適時かつ明確に説明が開示されている。",
+        "rationale_ja": "業績の主要因（完成工事総利益率の変動や不動産取扱量の変化）は適切に説明されている。一方、2025年3月期における海外事業を中心とした168.6億円の大型減損損失計上や特別損失の発生に関して、事前のリスク兆候に関する説明が限定的であった点は課題が残る。",
         "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0003",
-          "05_2025_FY_tanshin.pdf:s0002"
+          "05_2025_FY_tanshin.pdf:s0001",
+          "05_2025_FY_tanshin.pdf:s0003"
         ]
       }
     ],
-    "overall_rationale_ja": "長谷工コーポレーションは中期経営計画の目標に対し、資材高騰などの外部不確実性に対して柔軟に対応しつつ、累積利益目標の達成や受注採算の改善を実現しており、総じて高い経営の一貫性を示している。"
+    "overall_rationale_ja": "長谷工コーポレーションの経営一貫性は総じて極めて高い。2代にわたる5カ年・3カ年の中期経営計画において、掲げた累積連結経常利益目標（NBj計画2,400億円、NS計画4,000億円）をともに完遂した。インフレ下での完成工事総利益率圧迫に対しても、受注採算の厳格化と不動産売却による利益補完を巧みに組み合わせ、2026年3月期には建築粗利率の回復を果たした。株主還元についても配当金下限（80円）の約定を守り増配を継続している。2025年3月期の海外事業減損など一部の不透明感はあるものの、経営目標の有言実行力と戦略的整合性は高い水準にある。"
   },
   "research_notes": [
-    "選択された各決算短信に基づき、財務数値及び定性コメントの抽出を実施済み。"
+    "各期の決算短信における連結経常利益の実績値および通期予想値を時系列でアンカー指標として抽出し、比較を行った。",
+    "2025年3月期に発生した海外事業等での減損損失（168.6億円）について、2026年3月期でのウッドフレンズ子会社化等の事業ポートフォリオ再編との関連性を踏まえて分析した。"
   ]
 }
 </research_dossier>
@@ -1715,7 +1959,7 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: 4-6 distinct driver claims when supported. Begin each
+- latest.business_driver: 3-4 distinct driver claims when supported. Begin each
   headline with a concise reader-facing driver tag and direction, such as
   「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
   transmission mechanism and affected segment or metric
@@ -1757,8 +2001,10 @@ Analysis requirements:
    when the filing coverage shows they are available.
 3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
-   cyclical financial outcomes, and connect strategy, profitability, capital
-   allocation, risk, and the latest position.
+   cyclical financial outcomes. Use the locally selected annual anchor series to
+   describe the early, middle, and recent financial arc, then connect it to
+   strategy, management commentary, capital allocation, risk, and the latest
+   position. Do not turn the anchor series into a year-by-year recital.
 4. Apply the following tests wherever the dossier supports them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
@@ -1785,12 +2031,17 @@ Analysis requirements:
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
    - Use financial_observations and the locally calculated forecast_accuracy
-     comparisons instead of doing fresh arithmetic. Do not describe a persistent
-     over- or under-delivery pattern unless more than one comparable observation
-     supports it.
+     and revision comparisons instead of doing fresh arithmetic. State the
+     observed sample size when characterizing forecast behavior. Do not describe
+     a persistent over- or under-delivery pattern unless at least three original
+     forecast-result pairs support it. Compare the latest annual guidance with
+     the nearest medium-term target when scopes and metrics match; distinguish
+     reaching a threshold from sustaining it.
    - Use locally calculated commentary changes as review signals. A high lexical
      similarity can support continuity; intensified, softened, tone_changed, or
      reframed signals require interpretation from the cited source passages.
+     Give priority to the retained multi-period comparison tracks and identify
+     what management emphasized differently, not merely that wording changed.
      Never treat a missing observation as proof that commentary was removed.
 5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
@@ -1826,7 +2077,10 @@ Analysis requirements:
 9. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
-   Never add repetition, generic background, or weak themes merely to reach a length.
+   Integrate forecast behavior, commentary changes, and commitment outcomes by
+   replacing lower-value description; do not add sections or length for their
+   own sake. Never add repetition, generic background, or weak themes merely to
+   reach a length.
 
 Management-consistency explanations:
 - research_metrics contains the four locally calculated 0-1 subscores and
@@ -1835,6 +2089,10 @@ Management-consistency explanations:
   rating through concrete examples: targets achieved or missed, observed
   revisions, forecast posture, implementation outcomes, commentary changes,
   and management's treatment of setbacks.
+- For management.forecast_discipline, report the number of comparable original
+  forecasts and observed revisions from research_metrics. If that sample is
+  insufficient, say so and rely on separately evidenced medium-term target
+  outcomes rather than implying a complete annual forecasting record.
 - Use the deterministic research counts when useful, but state that revision
   counts cover only the selected filings. Never create a complete-history claim
   from incomplete coverage.

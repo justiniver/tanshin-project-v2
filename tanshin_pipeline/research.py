@@ -539,14 +539,241 @@ def _forecast_metrics(
         for item in comparisons
         if item["percentage_error"] is not None
     ]
+    signed_errors = [
+        item["percentage_error"]
+        for item in comparisons
+        if item["percentage_error"] is not None
+    ]
+    original_comparisons = [
+        item
+        for item in comparisons
+        if item["forecast_version"] == "original"
+    ]
+    original_result_counts = _counts(
+        item["result"] for item in original_comparisons
+    )
+    original_count = len(original_comparisons)
+    if original_count < 3:
+        posture_signal = "insufficient_evidence"
+    else:
+        above = original_result_counts.get("actual_above_forecast", 0)
+        below = original_result_counts.get("actual_below_forecast", 0)
+        in_line = original_result_counts.get("broadly_in_line", 0)
+        threshold = (original_count * 3 + 4) // 5
+        if above >= threshold and above > below:
+            posture_signal = "conservative_tendency"
+        elif below >= threshold and below > above:
+            posture_signal = "optimistic_tendency"
+        elif in_line >= threshold:
+            posture_signal = "generally_in_line"
+        else:
+            posture_signal = "mixed"
+    observed_original_forecasts = len(
+        {
+            (
+                _financial_key(item),
+                _numeric_value(item),
+            )
+            for item in observations
+            if item.statement_type == "forecast"
+            and item.forecast_version.value == "original"
+            and _numeric_value(item) is not None
+        }
+    )
     return {
         "observable_comparisons": len(comparisons),
         "result_counts": _counts(item["result"] for item in comparisons),
         "mean_absolute_percentage_error": (
             round(sum(errors) / len(errors), 4) if errors else None
         ),
+        "mean_signed_percentage_error": (
+            round(sum(signed_errors) / len(signed_errors), 4)
+            if signed_errors
+            else None
+        ),
+        "original_forecasts_observed": observed_original_forecasts,
+        "original_forecasts_matched_to_actuals": original_count,
+        "original_forecasts_unmatched": max(
+            0,
+            observed_original_forecasts - original_count,
+        ),
+        "original_result_counts": original_result_counts,
+        "posture_signal": posture_signal,
+        "posture_minimum_sample": 3,
         "by_metric": _counts(item["metric"] for item in comparisons),
         "comparisons": comparisons,
+    }
+
+
+def _forecast_revision_metrics(
+    observations: list[ResearchFinancialObservation],
+) -> dict[str, Any]:
+    by_key: dict[
+        tuple[str, str, str, int, str, str],
+        list[ResearchFinancialObservation],
+    ] = defaultdict(list)
+    for observation in observations:
+        if observation.statement_type == "forecast":
+            by_key[_financial_key(observation)].append(observation)
+
+    revisions: list[dict[str, Any]] = []
+    for items in by_key.values():
+        originals = [
+            item
+            for item in items
+            if item.forecast_version.value == "original"
+        ]
+        revised = [
+            item
+            for item in items
+            if item.forecast_version.value == "revised"
+        ]
+        original_values = {
+            value
+            for item in originals
+            if (value := _numeric_value(item)) is not None
+        }
+        revised_values = {
+            value
+            for item in revised
+            if (value := _numeric_value(item)) is not None
+        }
+        if len(original_values) != 1 or len(revised_values) != 1:
+            continue
+        original_value = next(iter(original_values))
+        revised_value = next(iter(revised_values))
+        original = next(
+            item for item in originals if _numeric_value(item) == original_value
+        )
+        revision = next(
+            item for item in revised if _numeric_value(item) == revised_value
+        )
+        if revised_value > original_value:
+            direction = "up"
+        elif revised_value < original_value:
+            direction = "down"
+        else:
+            direction = "unchanged"
+        revisions.append(
+            {
+                "metric": original.metric.value,
+                "metric_label_ja": original.metric_label_ja,
+                "scope": original.scope.value,
+                "scope_label_ja": original.scope_label_ja,
+                "target_fiscal_year": original.target_fiscal_year,
+                "target_period": original.target_period.value,
+                "original_surface_ja": original.value_surface_ja,
+                "revised_surface_ja": revision.value_surface_ja,
+                "direction": direction,
+                "evidence_ids": [
+                    original.evidence_id,
+                    revision.evidence_id,
+                ],
+            }
+        )
+    return {
+        "explicit_revised_forecast_observations": len(
+            [
+                item
+                for item in observations
+                if item.statement_type == "forecast"
+                and item.forecast_version.value == "revised"
+            ]
+        ),
+        "comparable_revisions": len(revisions),
+        "direction_counts": _counts(item["direction"] for item in revisions),
+        "revisions": revisions,
+    }
+
+
+def _annual_anchor_series(
+    observations: list[ResearchFinancialObservation],
+    forecast_metrics: dict[str, Any],
+) -> dict[str, Any]:
+    priority = (
+        "ordinary_profit",
+        "operating_profit",
+        "net_income",
+        "revenue",
+    )
+    actuals_by_metric: dict[
+        str,
+        list[ResearchFinancialObservation],
+    ] = defaultdict(list)
+    for observation in observations:
+        if (
+            observation.statement_type == "actual"
+            and observation.scope.value == "consolidated"
+            and observation.target_period.value == "FY"
+            and observation.value_kind.value == "monetary"
+            and observation.metric.value in priority
+        ):
+            actuals_by_metric[observation.metric.value].append(observation)
+    comparison_counts = Counter(
+        item["metric"]
+        for item in forecast_metrics["comparisons"]
+        if item["forecast_version"] == "original"
+    )
+    candidates = [
+        metric for metric in priority if actuals_by_metric.get(metric)
+    ]
+    if not candidates:
+        return {
+            "metric": None,
+            "metric_label_ja": None,
+            "actual_years": [],
+            "comparable_forecast_pairs": 0,
+            "series": [],
+        }
+    selected_metric = max(
+        candidates,
+        key=lambda metric: (
+            comparison_counts.get(metric, 0),
+            len(
+                {
+                    item.target_fiscal_year
+                    for item in actuals_by_metric[metric]
+                }
+            ),
+            -priority.index(metric),
+        ),
+    )
+    by_year: dict[int, list[ResearchFinancialObservation]] = defaultdict(list)
+    for observation in actuals_by_metric[selected_metric]:
+        by_year[observation.target_fiscal_year].append(observation)
+    series: list[dict[str, Any]] = []
+    for fiscal_year, year_observations in sorted(by_year.items()):
+        values = {
+            value
+            for item in year_observations
+            if (value := _numeric_value(item)) is not None
+        }
+        if len(values) != 1:
+            continue
+        value = next(iter(values))
+        observation = next(
+            item
+            for item in year_observations
+            if _numeric_value(item) == value
+        )
+        series.append(
+            {
+                "target_fiscal_year": fiscal_year,
+                "value_surface_ja": observation.value_surface_ja,
+                "evidence_id": observation.evidence_id,
+            }
+        )
+    return {
+        "metric": selected_metric,
+        "metric_label_ja": actuals_by_metric[selected_metric][
+            0
+        ].metric_label_ja,
+        "actual_years": [item["target_fiscal_year"] for item in series],
+        "comparable_forecast_pairs": comparison_counts.get(
+            selected_metric,
+            0,
+        ),
+        "series": series,
     }
 
 
@@ -634,13 +861,48 @@ def _commentary_metrics(dossier: JapaneseResearchDossier) -> dict[str, Any]:
                     ),
                 }
             )
+    changes_by_tag: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for change in changes:
+        changes_by_tag[change["canonical_tag"]].append(change)
+    tracks = [
+        {
+            "canonical_tag": tag,
+            "label_ja": sorted(
+                observations,
+                key=lambda item: (
+                    item.fiscal_year,
+                    item.source_filename,
+                ),
+            )[-1].label_ja,
+            "observation_count": len(observations),
+            "fiscal_years": sorted(
+                {item.fiscal_year for item in observations}
+            ),
+            "tone_counts": _counts(item.tone.value for item in observations),
+            "intensity_counts": _counts(
+                item.intensity.value for item in observations
+            ),
+            "change_counts": _counts(
+                item["change_type"]
+                for item in changes_by_tag.get(tag, [])
+            ),
+        }
+        for tag, observations in sorted(by_tag.items())
+    ]
     return {
         "observations": len(dossier.commentary_observations),
         "distinct_tags": len(by_tag),
+        "comparable_tags": len(
+            [items for items in by_tag.values() if len(items) >= 2]
+        ),
+        "multi_period_tags": len(
+            [items for items in by_tag.values() if len(items) >= 3]
+        ),
         "observations_by_tag": {
             tag: len(items) for tag, items in sorted(by_tag.items())
         },
         "change_counts": _counts(item["change_type"] for item in changes),
+        "tracks": tracks,
         "changes": changes,
         "interpretation_guardrail": (
             "Lexical and tone changes compare only extracted observations in "
@@ -787,6 +1049,14 @@ def _build_research_metrics_unchecked(
         or "unsupported"
         for observation in dossier.financial_observations
     )
+    forecast_metrics = _forecast_metrics(dossier.financial_observations)
+    revision_metrics = _forecast_revision_metrics(
+        dossier.financial_observations
+    )
+    anchor_series = _annual_anchor_series(
+        dossier.financial_observations,
+        forecast_metrics,
+    )
     return {
         "filing_coverage": {
             "selected_filings": len(dossier.filing_coverage),
@@ -826,18 +1096,10 @@ def _build_research_metrics_unchecked(
                 for item in dossier.financial_observations
                 if item.statement_type == "forecast"
             ),
-            "explicit_revised_forecast_observations": len(
-                [
-                    item
-                    for item in dossier.financial_observations
-                    if item.statement_type == "forecast"
-                    and item.forecast_version.value == "revised"
-                ]
-            ),
             "evidence_support_modes": financial_support_modes,
-            "forecast_accuracy": _forecast_metrics(
-                dossier.financial_observations
-            ),
+            "annual_anchor_series": anchor_series,
+            "forecast_accuracy": forecast_metrics,
+            "forecast_revisions": revision_metrics,
         },
         "commentary": _commentary_metrics(dossier),
         "disclosures": {

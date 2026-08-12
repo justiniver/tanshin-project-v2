@@ -410,17 +410,37 @@ The research pass builds a reusable, source-grounded dossier containing:
 
 The research response is deliberately compact so exact quotations and structured
 records do not crowd out later sections. It keeps at most 36 shared evidence
-records, 28 financial observations, 22 commentary observations, 12 material
-disclosures, 5 business drivers, 8 commitments, and 4 management themes.
-These are ceilings rather than quotas. The same evidence ID is reused across
-coverage categories and analytical records whenever one source sentence supports
-several purposes.
+records, 28 financial observations, 14 commentary observations, 6 material
+disclosures, 4 business drivers, 6 commitments, and 3 management themes.
+These are ceilings rather than quotas.
+
+The information budget is intentionally comparison-first:
+
+- historical financial slots primarily capture one consistently available
+  profitability anchor, pairing each year-end actual with the next annual
+  forecast where available;
+- commentary slots form two or three recurring comparison tracks across early,
+  middle, and recent filings instead of collecting unrelated boilerplate;
+- commitment slots prioritize targets and promises with observable later
+  outcomes, misses, delays, or revisions, with at most two important pending
+  commitments;
+- disclosure slots retain only footnotes or mandatory disclosures that
+  materially change the interpretation of performance, risk, capital
+  deployment, or management follow-through.
+
+Broad historical revenue-and-profit duplication, miscellaneous commentary,
+routine footnotes, and themes that merely repeat other records are deliberately
+deprioritized. The same evidence ID is reused across coverage categories and
+analytical records whenever one source sentence supports several purposes.
 
 Before the second request, Python matches comparable forecasts with later
-actuals, summarizes target follow-through, compares extracted management wording,
-counts material disclosures, and calculates the four 0–1 management-consistency
-subscores. These calculations and their limitations are stored in
-`research_metrics.json`.
+actuals, identifies explicit forecast revisions, reports the observed sample
+size and any conservative, optimistic, in-line, or mixed forecast signal,
+constructs the selected annual financial anchor series, summarizes target
+follow-through, and compares extracted management wording by recurring track.
+It also counts material disclosures and calculates the four 0–1
+management-consistency subscores. These calculations and their limitations are
+stored in `research_metrics.json`.
 
 The second request receives the dossier, those deterministic comparisons, and
 the fact-free report blueprint. It receives no PDFs, performs no fresh

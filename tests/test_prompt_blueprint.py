@@ -276,6 +276,7 @@ class PromptBlueprintTests(unittest.TestCase):
     def test_research_request_has_compact_native_output_limits(self) -> None:
         manifest = select_filings(REPOSITORY_ROOT, "1808")
         spec = build_research_spec(REPOSITORY_ROOT, manifest)
+        normalized_prompt = " ".join(spec.prompt.split())
         provider_properties = spec.response_schema["properties"]
         self.assertNotIn("maxItems", provider_properties["evidence"])
         self.assertNotIn(
@@ -301,6 +302,19 @@ class PromptBlueprintTests(unittest.TestCase):
             RESEARCH_MAX_MANAGEMENT_THEMES,
         ):
             self.assertIn(str(ceiling), spec.prompt)
+        self.assertIn("forecast anchor", spec.prompt)
+        self.assertIn(
+            "current-year actual and next-year original forecast",
+            spec.prompt,
+        )
+        self.assertIn(
+            "2-3 longitudinal comparison tracks",
+            spec.prompt,
+        )
+        self.assertIn(
+            "do not default every component to the same rating",
+            normalized_prompt,
+        )
         self.assertIn("All requested counts are upper bounds", spec.prompt)
         self.assertNotIn("8-15 decision-useful evidence", spec.prompt)
 

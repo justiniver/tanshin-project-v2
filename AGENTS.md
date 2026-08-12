@@ -96,6 +96,10 @@ normalization, validation, rendering, retry, and failure tests.
 - Keep research extraction compact. Array ceilings are source constants, counts
   are never quotas, and one evidence record should be reused wherever a single
   source sentence supports multiple research records.
+- Allocate historical financial slots to a consistent annual forecast anchor
+  and later actuals before broad time-series duplication. Allocate commentary
+  slots to a few recurring multi-period comparison tracks, and prioritize
+  commitments with observable outcomes over pending promises.
 - The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for research,
   synthesis, and translation. `--key2-translation` changes only translation to
   `GEMINI_API_KEY2`. When consecutive stages share a Gemini credential and their

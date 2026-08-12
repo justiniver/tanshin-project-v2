@@ -465,11 +465,16 @@ class ResearchFilingCoverage(BaseModel):
 
 
 class ResearchFinancialObservation(BaseModel):
-    """One exact financial value used for local comparisons."""
+    """One exact financial value used for local time-series comparisons."""
 
     model_config = ConfigDict(extra="ignore")
 
-    observation_id: NonEmpty
+    observation_id: NonEmpty = Field(
+        description=(
+            "Stable unique observation ID. Comparable forecasts and actuals use "
+            "the same metric, scope, target fiscal year, period, and value kind."
+        )
+    )
     source_filename: NonEmpty
     metric: FinancialMetric
     metric_label_ja: NonEmpty
@@ -477,7 +482,14 @@ class ResearchFinancialObservation(BaseModel):
     scope_label_ja: NonEmpty
     value_kind: FinancialValueKind
     statement_type: Literal["actual", "forecast", "target"]
-    forecast_version: ForecastVersion
+    forecast_version: ForecastVersion = Field(
+        description=(
+            "Use original for the first disclosed annual forecast, revised only "
+            "for an explicit later revision, latest only when the source gives a "
+            "current forecast without establishing whether it is original, and "
+            "not_applicable for actuals or targets."
+        )
+    )
     target_fiscal_year: int = Field(ge=1900, le=2200)
     target_period: FilingPeriod
     value_surface_ja: NonEmpty = Field(
@@ -500,9 +512,11 @@ class ResearchCommentaryObservation(BaseModel):
     period_label_ja: NonEmpty
     canonical_tag: NonEmpty = Field(
         description=(
-            "Stable reusable category such as demand, volume, pricing, "
+            "Stable reusable comparison-track category such as demand, volume, pricing, "
             "material_costs, labor_costs, foreign_exchange, interest_rates, "
-            "capital_allocation, overseas_execution, or other."
+            "capital_allocation, or overseas_execution. Use the same tag only "
+            "for genuinely comparable wording across filings; omit isolated "
+            "boilerplate instead of assigning a miscellaneous tag."
         )
     )
     label_ja: NonEmpty
@@ -560,7 +574,7 @@ class ResearchBusinessDriver(BaseModel):
 
 
 class ResearchCommitmentRecord(BaseModel):
-    """A forecast, target, or commitment connected to a later observable outcome."""
+    """A material commitment connected to a later observable outcome."""
 
     model_config = ConfigDict(extra="ignore")
 
@@ -582,13 +596,14 @@ class ResearchCommitmentRecord(BaseModel):
         min_length=1,
         description=(
             "Evidence for the original statement and, when observable, its "
-            "revision or later outcome."
+            "revision or later outcome. Do not duplicate an ordinary annual "
+            "numeric forecast already represented by paired financial observations."
         ),
     )
 
 
 class ResearchThemeRecord(BaseModel):
-    """A recurring or changing management-commentary theme."""
+    """A compact synthesis of an already evidenced longitudinal theme."""
 
     model_config = ConfigDict(extra="ignore")
 
