@@ -36,6 +36,15 @@ class LiveApiSafetyError(RuntimeError):
 class GeminiResponseError(RuntimeError):
     """Raised when a model response cannot be parsed."""
 
+    def __init__(
+        self,
+        message: str,
+        *,
+        raw_response: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.raw_response = raw_response
+
 
 T = TypeVar("T")
 
@@ -106,13 +115,22 @@ def _structured_payload(response: Any) -> dict[str, Any]:
         return parsed
     text = getattr(response, "text", None)
     if not text:
-        raise GeminiResponseError("Gemini returned no parsed object or response text.")
+        raise GeminiResponseError(
+            "Gemini returned no parsed object or response text.",
+            raw_response=_response_payload(response),
+        )
     try:
         payload = json.loads(text)
     except json.JSONDecodeError as exc:
-        raise GeminiResponseError("Gemini response text was not valid JSON.") from exc
+        raise GeminiResponseError(
+            "Gemini response text was not valid JSON.",
+            raw_response=_response_payload(response),
+        ) from exc
     if not isinstance(payload, dict):
-        raise GeminiResponseError("Gemini JSON response must be an object.")
+        raise GeminiResponseError(
+            "Gemini JSON response must be an object.",
+            raw_response=_response_payload(response),
+        )
     return payload
 
 

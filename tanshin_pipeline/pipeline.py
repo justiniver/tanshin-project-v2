@@ -998,6 +998,9 @@ def execute_analysis(
             max_attempts=max_api_attempts,
         )
     except Exception as exc:
+        raw_response = getattr(exc, "raw_response", None)
+        if isinstance(raw_response, dict):
+            write_json(prepared.paths.analysis_raw_response, raw_response)
         failure_state = _api_failure_state(exc)
         _write_api_status(
             prepared,
@@ -1092,6 +1095,9 @@ def execute_translation(
             max_attempts=max_api_attempts,
         )
     except Exception as exc:
+        raw_response = getattr(exc, "raw_response", None)
+        if isinstance(raw_response, dict):
+            write_json(prepared.paths.translation_raw_response, raw_response)
         failure_state = _api_failure_state(exc)
         _write_api_status(
             prepared,

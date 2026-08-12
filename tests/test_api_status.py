@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from tanshin_pipeline.gemini_runtime import ExecutionResult
+from tanshin_pipeline.gemini_runtime import ExecutionResult, GeminiResponseError
 from tanshin_pipeline.persistence import read_json, write_text
 from tanshin_pipeline.pipeline import (
     execute_analysis,
@@ -180,6 +180,49 @@ class ApiStatusTests(unittest.TestCase):
                 ).read_text(encoding="utf-8"),
                 "prior draft",
             )
+
+    def test_malformed_gemini_json_preserves_raw_response(self) -> None:
+        raw_response = {
+            "response_id": "failed-response-123",
+            "candidates": [
+                {
+                    "content": {
+                        "role": "model",
+                        "parts": [{"text": '{"claims": ['}],
+                    },
+                    "finish_reason": "STOP",
+                }
+            ],
+        }
+        error = GeminiResponseError(
+            "Gemini response text was not valid JSON.",
+            raw_response=raw_response,
+        )
+        with workspace_temp_directory(REPOSITORY_ROOT) as temp:
+            output_root = temp / "output"
+            prepared = prepare_analysis(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+            )
+            with patch(
+                "tanshin_pipeline.gemini_runtime.execute_request",
+                side_effect=error,
+            ):
+                with self.assertRaises(GeminiResponseError):
+                    execute_analysis(
+                        REPOSITORY_ROOT,
+                        "1808",
+                        confirmed_request_id=prepared.plan.request_id,
+                        output_root=output_root,
+                    )
+            self.assertEqual(
+                read_json(prepared.paths.analysis_raw_response),
+                raw_response,
+            )
+            status = read_json(prepared.paths.analysis_api_status)
+            self.assertEqual(status["state"], "FAILED")
+            self.assertEqual(status["error_type"], "GeminiResponseError")
 
 
 if __name__ == "__main__":

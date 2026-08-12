@@ -269,6 +269,58 @@ class RuntimeMockTests(unittest.TestCase):
                 )
         self.assertEqual(len(fake.models.calls), 1)
 
+    def test_invalid_json_error_retains_raw_provider_response(self) -> None:
+        class InvalidJsonResponse:
+            parsed = None
+            text = '{"claims": ['
+            usage_metadata = None
+            model_version = "fake-model-version"
+            response_id = "failed-response-id"
+
+            def model_dump(self, **_kwargs):
+                return {
+                    "response_id": self.response_id,
+                    "model_version": self.model_version,
+                    "candidates": [
+                        {
+                            "content": {
+                                "role": "model",
+                                "parts": [{"text": self.text}],
+                            },
+                            "finish_reason": "STOP",
+                        }
+                    ],
+                }
+
+        fake = _FakeClient(InvalidJsonResponse())
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            with self.assertRaises(GeminiResponseError) as raised:
+                execute_request(
+                    REPOSITORY_ROOT,
+                    self.spec,
+                    confirmed_request_id=self.spec.plan().request_id,
+                    client_factory=lambda: fake,
+                    configured_model_getter=lambda: self.spec.model,
+                )
+        self.assertEqual(
+            raised.exception.raw_response["response_id"],
+            "failed-response-id",
+        )
+        self.assertEqual(
+            raised.exception.raw_response["candidates"][0]["content"]["parts"][0][
+                "text"
+            ],
+            '{"claims": [',
+        )
+
     def test_pro_translation_uses_low_thinking_and_selected_model(self) -> None:
         analysis = materialize_japanese_analysis(
             parse_japanese_analysis_payload(self.analysis_payload)
