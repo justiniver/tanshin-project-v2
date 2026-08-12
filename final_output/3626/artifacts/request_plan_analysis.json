@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.6",
+  "stage": "analysis",
+  "security_code": "3626",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "request_options": {},
+  "request_id": "95cf1fa04a5aec54",
+  "manifest_id": "aa8e739ac39b71a0",
+  "system_prompt_sha256": "b7d8266ece7353e8db488d78139849155c912671290950e64a88b79731448435",
+  "prompt_sha256": "99960ed8b9ca151b6b894a1375feb8394c1657aeb46d3073a92013c835982f3f",
+  "response_schema_sha256": "d3e5fd1802a78010dbb408bf708882a3235ca4d0473d4bcac73c64aa22f0aaae",
+  "files": [
+    {
+      "filename": "01_2027_Q1_tanshin.pdf",
+      "relative_path": "data/3626/01_2027_Q1_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 17,
+      "byte_size": 331814,
+      "sha256": "01b14627ebcb575eb2c4b8cf69294ecc90e2f3c04593d34fbfcca337db69da32"
+    },
+    {
+      "filename": "02_2026_FY_tanshin.pdf",
+      "relative_path": "data/3626/02_2026_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 36,
+      "byte_size": 618872,
+      "sha256": "955c0cfd4f9f8cc449d8835ff3d384d8d33c880bc0b41a81bfe0f8a61ead7ada"
+    },
+    {
+      "filename": "03_2025_FY_tanshin.pdf",
+      "relative_path": "data/3626/03_2025_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 34,
+      "byte_size": 615255,
+      "sha256": "039b5d7b1e7a8e821098596d9b4e8cd7d177e014cd9d5c0a02f4643c8d144a23"
+    },
+    {
+      "filename": "04_2024_FY_tanshin.pdf",
+      "relative_path": "data/3626/04_2024_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 53,
+      "byte_size": 1855830,
+      "sha256": "e7f4559b2f765431326d86c631b5707a3fa66075d2f013ee3194b9b342e46477"
+    },
+    {
+      "filename": "05_2023_FY_tanshin.pdf",
+      "relative_path": "data/3626/05_2023_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 54,
+      "byte_size": 1664075,
+      "sha256": "73d628f10d7a7b02bb82458d3bbf09e5bb836367470b61e2a0bb6b3e6626d962"
+    },
+    {
+      "filename": "06_2022_FY_tanshin.pdf",
+      "relative_path": "data/3626/06_2022_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 45,
+      "byte_size": 945043,
+      "sha256": "2e6209f2598e4c3dcd5a9cec0ff4ddaa517bd0c5e379e7395577059a699e0087"
+    },
+    {
+      "filename": "07_2021_FY_tanshin.pdf",
+      "relative_path": "data/3626/07_2021_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 40,
+      "byte_size": 951759,
+      "sha256": "7684e779efdf221cc7db936ee8a8a29b4c6cecdcab002f469b21af6dbb3ac2c2"
+    },
+    {
+      "filename": "08_2020_FY_tanshin.pdf",
+      "relative_path": "data/3626/08_2020_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 41,
+      "byte_size": 898149,
+      "sha256": "6525b1ff6400c086ec66e6ac7bc722a4f703ebfa3d2f52c2619e05aa45d85444"
+    },
+    {
+      "filename": "09_2019_FY_tanshin.pdf",
+      "relative_path": "data/3626/09_2019_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 32,
+      "byte_size": 585904,
+      "sha256": "d21e036b568cacbcd06a07da5f416ac9de7f41c1e3843c50feec480ec93fb39c"
+    },
+    {
+      "filename": "10_2018_FY_tanshin.pdf",
+      "relative_path": "data/3626/10_2018_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 28,
+      "byte_size": 570807,
+      "sha256": "4b2d2951acece64765eb4526a0fe3c183e645b1d6044e71e09ba484e42018ba0"
+    },
+    {
+      "filename": "11_2017_FY_tanshin.pdf",
+      "relative_path": "data/3626/11_2017_FY_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 26,
+      "byte_size": 520457,
+      "sha256": "404584664b1dfdce398c3ab461a56f26711f4a93bf047eee026f64dcee794696"
+    }
+  ],
+  "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
+  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
+  "exemplar_path": null,
+  "exemplar_sha256": null,
+  "max_output_tokens": 32768,
+  "makes_network_request": true,
+  "request_count_if_executed": 1
+}

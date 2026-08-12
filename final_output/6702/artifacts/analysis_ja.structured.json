@@ -1,0 +1,573 @@
+{
+  "schema_version": "2026-09-15",
+  "identity": {
+    "security_code": "6702",
+    "company_name_ja": "富士通株式会社",
+    "company_name_en": "Fujitsu Limited",
+    "latest_filename": "01_2027_Q1_tanshin.pdf",
+    "latest_period_ja": "2027年3月期 第1四半期",
+    "latest_period_en": "FY2027 Q1"
+  },
+  "claims": [
+    {
+      "claim_id": "claim_overview_01",
+      "section": "company.overview",
+      "order": 1,
+      "headline_ja": "富士通はITサービスおよびテクノロジーソリューションを提供するグローバルICT企業である",
+      "body_ja": "富士通は、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3事業セグメントを展開しています。主力のサービスソリューションでは「Uvance」を中心にグローバル共通の価値提供サービスを創出し、エンタープライズやパブリックの顧客層に対して業種・業務軸のサービスを提供しています。また、ハードウェアソリューションではサーバーや通信インフラ機器、ユビキタスソリューションではPC等のクライアントデバイスを提供し、収益基盤を形成しています。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0001"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_latest_key_01",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "2027年3月期第1四半期の売上収益は3.9%増、営業利益は56.9%増と大幅増益を達成した",
+      "body_ja": "2027年3月期第1四半期の連結業績は、売上収益が前年同期比3.9%増の779,377百万円、営業利益が同56.9%増の52,534百万円となりました。一過性損益を除いた調整後営業利益も前年同期の35,119百万円から54,911百万円へ56.4%増加し、本業の収益性が着実に向上しています。一方で、前同期に計上されていた非継続事業利益の剥落等により親会社の所有者に帰属する四半期利益は40,134百万円（76.6%減）となりました。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_key_02",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "営業キャッシュ・フローは2,266億円の創出を維持し、財務持分比率は61.5%へと向上した",
+      "body_ja": "当第1四半期累計期間における営業活動によるキャッシュ・フローは226,654百万円と、前年同期（226,821百万円）と同水準の豊富なキャッシュ創出力を維持しました。現金及び現金同等物の四半期末残高は597,934百万円を確保しており、親会社所有者帰属持分比率は前年度末の59.4%から61.5%へ上昇するなど、自己資本の拡充が進んでいます。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0003",
+        "01_2027_Q1_tanshin.pdf:s0004"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_latest_key_03",
+      "section": "latest.key_takeaway",
+      "order": 3,
+      "headline_ja": "通期連結業績予想として売上収益3.51兆円、調整後営業利益4,250億円を据え置いた",
+      "body_ja": "2027年3月期の通期連結業績予想は、売上収益3,510,000百万円（前期比0.2%増）、営業利益415,000百万円（同19.1%増）、調整後営業利益425,000百万円（同8.8%増）とする期初計画を維持しています。年間配当予想についても1株当たり55.00円（第2四半期末25.00円、期末30.00円）を変更していません。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0005"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_latest_driver_01",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "サービスソリューションの調整後営業利益が628億円へ増加し全体業績を牽引した",
+      "body_ja": "当第1四半期において、主力のサービスソリューションの外部収益は前年同期の507,605百万円から545,936百万円へ拡大しました。調整後営業利益も前年同期の47,842百万円から62,801百万円へと拡大し、グループ全体の利益成長を強く牽引しました。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0006"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_driver_02",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "ハードウェアソリューションの調整後営業利益はマイナス37億円へ落ち込んだ",
+      "body_ja": "ハードウェアソリューションの外部収益は192,354百万円（前年同期186,941百万円）と堅調に推移したものの、調整後営業利益は前年同期の1,337百万円からマイナス3,743百万円へ悪化しました。セグメント間での収益性のばらつきが鮮明となっています。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0006"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_outlook_01",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "通期で調整後営業益8.8%増を目指し、本業での増益基調継続を見込む",
+      "body_ja": "2027年3月期通期の調整後営業利益目標は425,000百万円（前期比8.8%増）、調整後当期利益目標は320,000百万円（同7.3%増）と設定されています。サービスソリューション領域における需要取り込みと高付加価値化により、通期での本業利益成長を目指す方針です。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0005"
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_latest_risk_01",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "主要市場での景気減速や為替・部品調達環境の変動が不確実性要因となる",
+      "body_ja": "会社側は業績予想の前提条件として、日本、欧州、北米、オセアニア、アジア等の主要市場における景気動向、為替動向、金利変動、部品調達環境の変化をリスク要因にあげています。特にグローバル展開に伴うマクロ環境の変化が業績に影響を与える可能性があります。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_risk_02",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "不採算プロジェクトの発生や技術開発競争による市場ポジション変化の不確実性がある",
+      "body_ja": "システム構築やサービス提供における「不採算プロジェクト発生の可能性」に加え、「技術開発競争による市場ポジションの変化」や「製品・サービスの欠陥や瑕疵に関するリスク」が注記事項として提示されています。大型案件のプロジェクト管理と技術優位性の維持が課題となります。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0007"
+      ],
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_context_01",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "サービス主導の成長と事業買収の進捗が示される一方、ハードウェアの損益改善が今後の焦点である",
+      "body_ja": "2027年3月期第1四半期において、富士通はサービスソリューションの利益拡大により大幅な営業増益を達成しました。また、全社的な成長領域である「Uvance」の強化に向け、データ＆AI領域のケイパビリティ補完を目的として株式会社ブレインパッドの株式86.30%を取得（2025年12月企業結合）し、暫定的な会計処理の確定も当四半期に完了しています。\n\n一方で、ハードウェアソリューションの調整後営業損益が赤字化しており、通期目標達成に向けて同セグメントの収益性回復が課題となります。主要市場の景気や不採算プロジェクトのリスクを管理しつつ、サービス中心の収益モデルを維持できるかが確認点となります。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0002",
+        "01_2027_Q1_tanshin.pdf:s0006",
+        "01_2027_Q1_tanshin.pdf:s0008"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_persp_01",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "10年間の軌跡：ハード・デバイス依存からの脱却とサービス中心の高収益体制への構造転換",
+      "body_ja": "過去10年間の富士通の業績軌跡は、従来のハードウェアプロダクトやデバイス中心の事業構造から、システムインテグレーションおよび「Fujitsu Uvance」に代表されるITサービス主導の高収益モデルへの明確な転換を示しています。初期（2017〜2020年度）においては、海外ビジネスのデジタル化や欧州拠点のリソースシフトを含む大規模な「ビジネスモデル変革費用」を連続して計上し、低収益事業の再編を断行しました。中期（2021〜2023年度）にかけては国内SI需要の堅調な推移を背景に本業の収益性が大幅に改善し、直近期（2024〜2026年度）には新光電気工業やFDKなどのデバイス事業の非継続事業化・売却を通じてポートフォリオの集中を完了させました。一過性の再編費用を消化しながらも、サービスソリューションを核とする調整後営業利益基盤を確立したプロセスとして評価されます。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0001",
+        "11_2017_FY_tanshin.pdf:s0002",
+        "07_2021_FY_tanshin.pdf:s0001",
+        "03_2025_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_const_01",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "国内サービスソリューション（SI・ITサービス）における高い需要捕捉力と収益創出の継続",
+      "body_ja": "富士通の国内サービスソリューションおよびシステムインテグレーション事業は、10年間を通じて一貫してグループの基幹的利益源として機能してきました。初期（2017年3月期）において金融・公共分野の大型案件や製造・サービス・通信向けの堅調な需要を背景に国内サービスが伸長（11_2017_FY_tanshin.pdf）し、中期（2021年3月期）においても営業利益2,663億円の達成に貢献（07_2021_FY_tanshin.pdf）しました。直近年（2026年3月期）でもサービスソリューションの調整後営業利益は3,614億円に達して全社利益の大部分を占めています（02_2026_FY_tanshin.pdf）。顧客のDX需要を安定して取り込む事業能力は10年間を通じて高い持持続性を示しています。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0003",
+        "07_2021_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_const_02",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "本業利益（調整後営業利益）を明確化し構造改革費用を区分整理する会計管理手法の定着",
+      "body_ja": "富士通は、事業再編やM&A等に伴う一過性損益（調整項目）を除外した「調整後営業利益」を本業の実質的な収益指標として一貫して位置付けてきました。初期の2017年3月期には「ビジネスモデル変革費用」として447億円を計上（11_2017_FY_tanshin.pdf）、中期の2024年3月期にも事業再編・事業構造改革費用1,073億円を控除して調整後営業利益2,836億円を明示（04_2024_FY_tanshin.pdf）、直近の2026年3月期にも事業再編費用369億円を調整項目として処理し調整後営業利益3,905億円を提示（02_2026_FY_tanshin.pdf）しています。一過性費用と本業収益性を区別して評価・管理する姿勢が貫かれています。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0001",
+        "04_2024_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_trend_change_01",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "ノンコア事業（デバイス等）の切り離しと「Fujitsu Uvance」への事業構造の集約",
+      "body_ja": "富士通の事業ポートフォリオは、ハードウェア・デバイスの自社保有から、サービスを中心とした事業構成へと劇的に変化しました。変化前（2017年3月期）はデバイスソリューションで売上高5,443億円を計上するなどハード関連の比重が一定程度存在していました（11_2017_FY_tanshin.pdf）。過渡期（2025年3月期）において、新光電気工業の株式公開買付け成立やFDKの株式譲渡に伴いデバイスソリューションを非継続事業へ分類変更しました（03_2025_FY_tanshin.pdf）。現在（2026年3月期）においては、「Fujitsu Uvance」を中核とするサービスソリューション事業が調整後営業利益3,614億円を創出する柱となり、サービスモデルへの転換を完了しています（02_2026_FY_tanshin.pdf）。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0004",
+        "03_2025_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_change_02",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "海外事業における構造改革の推進とグローバル体制の再構築",
+      "body_ja": "海外ビジネスの推進方法が、従来の拠点展開・人員抱え込み型から効率的なデジタルサービス主導型へと転換しました。変化前（2017年3月期）には欧州子会社のFTSおよびFS等において、デジタルトランスフォーメーション推進や人員対策として294億円の費用を計上し構造改革を進めていました（11_2017_FY_tanshin.pdf）。過渡期を経て、現在（2026年3月期）のセグメント構成では「リージョンズ(海外)」として「Uvance」のインプリメンテーションを含むサービスビジネスの提供・実装へ体質を改め、収益管理の再編を達成しています（02_2026_FY_tanshin.pdf）。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0002",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_cap_01",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "業績・キャッシュ拡大に伴う積極的な自己株式取得と株主還元の拡充へのシフト",
+      "body_ja": "資本配分の優先順位は、過去10年間で自己資本の補強から積極的な株主還元・資本効率向上へと明確に変化しました。初期（2019年3月期）の自己株式取得は223億円規模にとどまっていましたが（09_2019_FY_tanshin.pdf）、中期（2023年3月期）には利益およびキャッシュ・フローの拡大を踏まえ1,500億円を上限とする自己株式取得を決議（05_2023_FY_tanshin.pdf）、直近（2026年3月期）においても1,500億円を上限とする自己株式取得を決議しました（02_2026_FY_tanshin.pdf）。創出した営業キャッシュ・フローを事業再編やM&Aだけでなく株主還元へ還元する資本規律が定着しています。",
+      "evidence_ids": [
+        "09_2019_FY_tanshin.pdf:s0001",
+        "05_2023_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0003"
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_trend_imp_01",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "事業ポートフォリオ再編完了後におけるサービスソリューションの成長性と利益率の持続的維持が検証課題となる",
+      "body_ja": "デバイス事業等の売却・非継続事業化によりポートフォリオの整理が完了した現在の富士通にとって、今後の投資判断の軸は「サービスソリューション（特にUvance）」がグローバル市場において高い成長率と調整後営業利益率を維持できるかに移行します。一過性の再編費用が減少する一方で、ハードウェア部門の損益悪化や不採算プロジェクトのリスクをサービス事業の増益で相殺し続けられるか、そして買収したブレインパッド等のシナジーを具体的に利益へ還元できるかが市場の焦点となります。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0002",
+        "01_2027_Q1_tanshin.pdf:s0006",
+        "01_2027_Q1_tanshin.pdf:s0008",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 9,
+      "exact_quote_ja": "当社は、経営組織の形態、製品・サービスの特性に基づき、複数の事業セグメントを集約した上で、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3つを報告セグメントとしております。各報告セグメントに含まれる主な製品及びサービスの種類は以下のとおりであります。① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行っております。",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "要約四半期連結財務諸表に関する注記事項（セグメント情報）",
+      "tags": [
+        "segment",
+        "overview"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2027年3月期第1四半期 売上収益 779,377 3.9% 営業利益 52,534 56.9% 親会社の所有者に帰属する四半期利益 40,134 △76.6% ＜調整後＞ 売上収益 779,377 3.9% 営業利益 54,911 56.4%",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "連結経営成績",
+      "tags": [
+        "financials",
+        "earnings"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "営業活動によるキャッシュ・フロー 当第１四半期 226,654 前第１四半期 226,821 現金及び現金同等物の四半期末残高 当第１四半期 597,934 前第１四半期 641,442",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "要約四半期連結キャッシュ・フロー計算書",
+      "tags": [
+        "cash_flow"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2027年3月期第1四半期 資産合計 3,308,536 親会社の所有者に帰属する持分 2,035,328 親会社所有者帰属持分比率 61.5% 2026年3月期 資産合計 3,416,621 親会社の所有者に帰属する持分 2,028,787 親会社所有者帰属持分比率 59.4%",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "連結財政状態",
+      "tags": [
+        "balance_sheet"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 2,
+      "exact_quote_ja": "通期 売上収益 3,510,000 0.2% 営業利益 415,000 19.1% 親会社の所有者に帰属する当期利益 310,000 △31.0% ＜調整後＞ 通期 売上収益 3,510,000 0.2% 営業利益 425,000 8.8% 2027年3月期(予想) 年間配当金合計 55.00円",
+      "period_label_ja": "2027年3月期予想",
+      "period_label_en": "FY2027 Forecast",
+      "statement_type": "forecast",
+      "source_section": "連結業績予想・配当の状況",
+      "tags": [
+        "forecast",
+        "dividend"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 10,
+      "exact_quote_ja": "当第１四半期 外部収益 サービスソリューション 545,936 ハードウェアソリューション 192,354 ユビキタスソリューション 34,409 調整後営業利益 サービスソリューション 62,801 ハードウェアソリューション △3,743 ユビキタスソリューション 4,466",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "報告セグメントの売上収益、営業利益及びその他の項目の金額に関する情報",
+      "tags": [
+        "segment_financials"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 2,
+      "exact_quote_ja": "実際の業績等に影響を与える可能性のある重要な要因には、以下の事項があります。・主要市場における景気動向(特に日本、欧州、北米、オセアニア、中国を含むアジア)・為替動向、金利変動・価格競争の激化・技術開発競争による市場ポジションの変化・部品調達環境の変化・不採算プロジェクト発生の可能性",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "risk",
+      "source_section": "業績予想の適切な利用に関する説明、その他特記事項",
+      "tags": [
+        "risk_factors"
+      ]
+    },
+    {
+      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
+      "source_filename": "01_2027_Q1_tanshin.pdf",
+      "pdf_page": 11,
+      "exact_quote_ja": "当社は、2025年10月30日開催の取締役会で、株式会社ブレインパッド（以下、ブレインパッド）に対する金融商品取引法に定める公開買付け（以下、本公開買付け）を決議し、本決議に基づき、当社が本公開買付けを実施した結果、2025年12月22日にブレインパッドの発行済普通株式の86.30%を取得しました。",
+      "period_label_ja": "2027年3月期第1四半期",
+      "period_label_en": "FY2027 Q1",
+      "statement_type": "actual",
+      "source_section": "株式会社ブレインパッドの取得について",
+      "tags": [
+        "m_and_a"
+      ]
+    },
+    {
+      "evidence_id": "11_2017_FY_tanshin.pdf:s0001",
+      "source_filename": "11_2017_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "ビジネスモデル変革費用の当年度の計上額は447億円、前年度に比べ31億円増加しました。当年度の内訳は、海外ビジネスのデジタル化へのシフト、効率化に向けた構造改革費用が340億円(内、欧州のデジタル化へのシフトに向けた費用294億円)国内データセンター再編費用が39億円、国内外の生産拠点の再編費用66億円になります。",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "経営成績等の概況（１）経営成績の概況",
+      "tags": [
+        "restructuring"
+      ]
+    },
+    {
+      "evidence_id": "11_2017_FY_tanshin.pdf:s0002",
+      "source_filename": "11_2017_FY_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "欧州地域の子会社であるＦＴＳ及びＦＳにおいて、サービスビジネスのデジタルトランスフォーメーションを進めるための費用を、294億円計上いたしました。",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "〔欧州子会社における、デジタル化へのシフトに向けた費用について〕",
+      "tags": [
+        "europe_restructuring"
+      ]
+    },
+    {
+      "evidence_id": "11_2017_FY_tanshin.pdf:s0003",
+      "source_filename": "11_2017_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "サービスは、システムインテグレーションにおいて金融分野の大型プロジェクト商談及び公共分野のマイナンバー商談の開発がピークを越えたものの、製造業、サービス業に加え、通信キャリア向けが伸長し高水準であった前年度の売上を上回りました。",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "テクノロジーソリューション",
+      "tags": [
+        "services"
+      ]
+    },
+    {
+      "evidence_id": "11_2017_FY_tanshin.pdf:s0004",
+      "source_filename": "11_2017_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "2016年度 デバイスソリューション 売上収益 5,443億円 営業利益 42億円",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "事業別セグメントの状況",
+      "tags": [
+        "device_solutions"
+      ]
+    },
+    {
+      "evidence_id": "09_2019_FY_tanshin.pdf:s0001",
+      "source_filename": "09_2019_FY_tanshin.pdf",
+      "pdf_page": 6,
+      "exact_quote_ja": "自己株式の取得による支出 当年度 △22,327百万円 前年度 △106百万円",
+      "period_label_ja": "2019年3月期",
+      "period_label_en": "FY2019",
+      "statement_type": "actual",
+      "source_section": "連結キャッシュ・フロー計算書",
+      "tags": [
+        "share_buyback"
+      ]
+    },
+    {
+      "evidence_id": "07_2021_FY_tanshin.pdf:s0001",
+      "source_filename": "07_2021_FY_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2021年3月期 売上収益 3,589,702 △6.9% 営業利益 266,324 25.9% 親会社の所有者に帰属する当期利益 202,700 26.7%",
+      "period_label_ja": "2021年3月期",
+      "period_label_en": "FY2021",
+      "statement_type": "actual",
+      "source_section": "連結経営成績",
+      "tags": [
+        "financials"
+      ]
+    },
+    {
+      "evidence_id": "05_2023_FY_tanshin.pdf:s0001",
+      "source_filename": "05_2023_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "2022年度及び2023年度の利益並びにキャッシュ・フローの拡大など財務状況の改善を踏まえ、事業環境なども総合的に勘案し、株主還元の充実と資本効率の向上を図るため実施するものです。（取得価額の総額：1,500億円（上限））",
+      "period_label_ja": "2023年3月期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "重要な後発事象（自己株式の取得）",
+      "tags": [
+        "capital_allocation",
+        "share_buyback"
+      ]
+    },
+    {
+      "evidence_id": "04_2024_FY_tanshin.pdf:s0001",
+      "source_filename": "04_2024_FY_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2024年3月期 売上収益 3,756,059 1.1% 営業利益 160,260 △52.2% ＜調整後＞ 営業利益 283,685 △11.6%",
+      "period_label_ja": "2024年3月期",
+      "period_label_en": "FY2024",
+      "statement_type": "actual",
+      "source_section": "連結経営成績",
+      "tags": [
+        "adjusted_op"
+      ]
+    },
+    {
+      "evidence_id": "03_2025_FY_tanshin.pdf:s0001",
+      "source_filename": "03_2025_FY_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "第4四半期よりデバイスソリューションを非継続事業に分類しております。これは主に、新光電気工業(株)の株式に対する公開買付けの成立及びFDK(株)の株式譲渡に伴うものです。",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "連結経営成績（注記事項）",
+      "tags": [
+        "discontinued_operations",
+        "portfolio"
+      ]
+    },
+    {
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0001",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 1,
+      "exact_quote_ja": "2026年3月期 売上収益 3,502,971 △1.3% 営業利益 348,329 31.4% ＜調整後＞ 営業利益 390,589 27.1%",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "連結経営成績",
+      "tags": [
+        "financials"
+      ]
+    },
+    {
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0002",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 10,
+      "exact_quote_ja": "① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行う「グローバルソリューション」、日本市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(Japan)」、海外市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(海外)」により構成されています。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "セグメント情報（報告セグメントの概要）",
+      "tags": [
+        "uvance",
+        "segment"
+      ]
+    },
+    {
+      "evidence_id": "02_2026_FY_tanshin.pdf:s0003",
+      "source_filename": "02_2026_FY_tanshin.pdf",
+      "pdf_page": 13,
+      "exact_quote_ja": "当連結会計年度実績及び翌連結会計年度予想の利益とキャッシュ・フローの拡大を背景として、事業環境や財務状況、資本効率の向上などを総合的に検討した結果、実施するものです。（株式の取得価額の総額：1,500億円（上限））",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "重要な後発事象（自己株式の取得）",
+      "tags": [
+        "share_buyback"
+      ]
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "初期のビジネスモデル変革（欧州等でのリソースシフト）から、中期のFujitsu Uvance構想、直近のデバイス事業（新光電気工業・FDK）の売却・非継続事業化に至るまで、ITサービスソリューションへの集中という基本戦略が一貫しています。事業再編に伴う過渡的な損益の振れを「調整後営業利益」で明確に区分表示しながら実行しており、戦略的論理の整合性が高く保たれています。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0001",
+          "03_2025_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ]
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "発表された構造改革施策（海外子会社のリソースシフトや国内データセンター・生産拠点の再編）を計画通りに実行し、その後デバイス事業の譲渡やブレインパッド等の成長領域でのM&Aを完遂しています。サービスソリューションの調整後営業利益が着実に増加していることから、施策の実行と事業成果の創出が確認できます。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0001",
+          "03_2025_FY_tanshin.pdf:s0001",
+          "01_2027_Q1_tanshin.pdf:s0008"
+        ]
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 2,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "過渡期において業績予想の修正や事業再編費用の発生に伴う営業利益の振れ幅が存在したものの、調整後営業利益を軸とした本業での業績管理を徹底し、中期的に利益水準を底上げしてきました。年度ごとの公表予想値に対する規律は概ね維持されているものの、一過性損益の影響度合いに波があるため mixed（2）の評価としています。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0001",
+          "04_2024_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "一過性の事業再編費用やM&A関連費用、制度変更損益等を「調整項目」として開示し、営業利益と調整後営業利益の差異を各決算短信で極めて明確に説明しています。非コア事業の売却に伴う非継続事業への組み替えや、主要なリスク要因についても継続的かつ透明性の高い開示を行っています。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0002",
+          "03_2025_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0001"
+        ]
+      }
+    ],
+    "overall_rationale_ja": "富士通の経営一貫性は総じて高く保たれています（概ね高い一貫性）。10年間にわたり、自社ハードウェアやデバイス事業の比重を下げ、ITサービス・「Fujitsu Uvance」へのリソース集中を進めるという戦略の軸がブレていません。構造改革費用の計上やポートフォリオ再編のプロセスを「調整後営業利益」という指標で明確に区分・説明する開示姿勢が徹底されており、創出したキャッシュ・フローに基づく株主還元の拡充も含めて有言実行がなされています。"
+  },
+  "model_notes": []
+}

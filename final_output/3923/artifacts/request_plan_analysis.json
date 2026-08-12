@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.6",
+  "stage": "analysis",
+  "security_code": "3923",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "request_options": {},
+  "request_id": "21ae114dccfe0d05",
+  "manifest_id": "882dda5900338ead",
+  "system_prompt_sha256": "b7d8266ece7353e8db488d78139849155c912671290950e64a88b79731448435",
+  "prompt_sha256": "cbfb6b20d0ea3df881501b45866ade90e7897116904fd5a0a0995f86a1c1017f",
+  "response_schema_sha256": "d3e5fd1802a78010dbb408bf708882a3235ca4d0473d4bcac73c64aa22f0aaae",
+  "files": [
+    {
+      "filename": "01_2026_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/01_2026_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 18,
+      "byte_size": 319254,
+      "sha256": "8d349ac77f1691f77a4d28007106e8c2e74e5be2756bc50214caf23ba67bfa1f"
+    },
+    {
+      "filename": "05_2025_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/05_2025_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 18,
+      "byte_size": 307536,
+      "sha256": "df7130b0626c0f5e42edf35e121e0074adfa073986372eb3a3517009e2ec6f40"
+    },
+    {
+      "filename": "09_2024_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/09_2024_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 18,
+      "byte_size": 306995,
+      "sha256": "6d34ce6ce4fc783490904ec20cb39a7a32ed3faf712a93d79260c08330ee606a"
+    },
+    {
+      "filename": "13_2023_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/13_2023_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 16,
+      "byte_size": 285658,
+      "sha256": "6a5942649eb159d4b8fa5e324ddb40d147d762a8ff67c98efa01def8a2abd438"
+    },
+    {
+      "filename": "17_2022_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/17_2022_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 16,
+      "byte_size": 297207,
+      "sha256": "9911cdf0d17cef4d5e4f1d7511537216eca7a7450bba60d3913637dc99978655"
+    },
+    {
+      "filename": "21_2021_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/21_2021_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 16,
+      "byte_size": 300328,
+      "sha256": "1d81c860d221bf36c81b9d555108bfd92d92dbba57e2cb0b570f9150cc66e050"
+    },
+    {
+      "filename": "25_2020_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/25_2020_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 17,
+      "byte_size": 344363,
+      "sha256": "141b4f07fbb99d0c611ec5b35bf4d2d29a74e75df63e457bd4533498b53e518a"
+    },
+    {
+      "filename": "29_2019_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/29_2019_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 17,
+      "byte_size": 327077,
+      "sha256": "175fb87acb18e8c4319a7eb111946b6e17057a00853e45b861801d436c7edaa9"
+    },
+    {
+      "filename": "33_2018_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/33_2018_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 18,
+      "byte_size": 312476,
+      "sha256": "3b316d365b89af5c84036c27e248ae92d60fd04d90cfc34cf96e0236da938409"
+    },
+    {
+      "filename": "37_2017_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/37_2017_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 17,
+      "byte_size": 323857,
+      "sha256": "0ebedb531706393efb6fb640be54cbed37e092d3ea1448337358f9bf04a016ce"
+    },
+    {
+      "filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+      "relative_path": "data/3923/41_2016_Q4_FY_rakus_tanshin.pdf",
+      "mime_type": "application/pdf",
+      "page_count": 18,
+      "byte_size": 333731,
+      "sha256": "320247f2a7200bb24b17e3e5d142abc13f2cb21267bcc74824d865dcfe3ffe88"
+    }
+  ],
+  "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
+  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
+  "exemplar_path": null,
+  "exemplar_sha256": null,
+  "max_output_tokens": 32768,
+  "makes_network_request": true,
+  "request_count_if_executed": 1
+}

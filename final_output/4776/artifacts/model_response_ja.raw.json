@@ -1,0 +1,646 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Mon, 10 Aug 2026 07:18:48 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=165326",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"4776\",\n    \"company_name_ja\": \"サイボウズ株式会社\",\n    \"company_name_en\": \"Cybozu, Inc.\",\n    \"latest_filename\": \"01_2026_Q1_tanshin.pdf\",\n    \"latest_period_ja\": \"2026年12月期 第1四半期\",\n    \"latest_period_en\": \"FY2026 Q1\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"overview_business_model\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"クラウド基盤上で業務アプリ構築「kintone」やグループウェアを提供するSaaSソフトウェア事業者\",\n      \"body_ja\": \"サイボウズは、自社開発のクラウド基盤「cybozu.com」を通じて、ノーコード・ローコードで業務アプリを構築できる主力サービス「kintone」をはじめ、「サイボウズ Office」「Garoon」「メールワイズ」などのグループウェア群の開発・販売を行っています。民間企業や行政機関、自治体を顧客とし、月額・年額のサブスクリプションライセンス契約に基づくストック型の収益モデルを確立しています。\\n\\n直販チャネルに加え、Cybozu Partner Network（CnoN）を通じたパートナー企業や全国の地方銀行との協業による間接販売チャネルが強みであり、パートナー経由の売上が国内クラウド売上の約6割超を占めています。ソフトウェアの開発・販売という単一の報告セグメントで事業を推進しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0004\",\n        \"02_2025_FY_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_q1_financial_results\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年12月期第1四半期は連結売上高17.0%増、営業利益15.3%増と二桁の増収増益を達成\",\n      \"body_ja\": \"2026年12月期第1四半期の連結累計業績は、売上高が10,246百万円（前年同期比17.0%増）、営業利益が3,014百万円（同15.3%増）、経常利益が3,084百万円（同22.1%増）、親会社株主に帰属する四半期純利益が2,191百万円（同21.6%増）となりました。クラウドサービスの契約積み上がりが主導し、売上高・利益ともに拡大しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_q1_bs_change\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"債券購入や株価下落、配当支払に伴い総資産は27,023百万円に減少するも自己資本比率は64.9%へ上昇\",\n      \"body_ja\": \"2026年12月期第1四半期末の総資産は、債券購入による投資有価証券の増加があったものの、保有上場株式の株価下落や現金及び預金の減少により前連結会計年度末比3,116百万円減少の27,023百万円となりました。純資産は剰余金配当1,849百万円の実施やその他有価証券評価差額金の減少に対し四半期純利益2,191百万円の計上等により17,586百万円（同228百万円減）となり、自己資本比率は59.1%から64.9%へと上昇しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0002\",\n        \"01_2026_Q1_tanshin.pdf:s0007\",\n        \"01_2026_Q1_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_q1_forecast_and_buyback\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"通期業績予想を公表値のまま維持しつつ、上限30億円の自己株式取得を決議\",\n      \"body_ja\": \"2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）は2025年12月公表値から変更を行っていません。一方で2026年5月14日開催の取締役会において、保有資産を活用した資本構成の再構築と機動的な資本政策を目的に、取得上限300万株（自己株式を除く発行済株式総数の6.5%）・取得価額上限30億円とする自己株式の取得を決議しました。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0003\",\n        \"01_2026_Q1_tanshin.pdf:s0009\",\n        \"01_2026_Q1_tanshin.pdf:s0010\",\n        \"01_2026_Q1_tanshin.pdf:s0011\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_driver_cloud_revenue\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"クラウド関連事業売上高が9,393百万円（前年同期比17.1%増）へと順調に積み上がり全社増収を牽引\",\n      \"body_ja\": \"クラウドサービスの契約社数が70,000社、契約ユーザーライセンス数が380万人を突破して堅調に推移し、売上高の積み上がりが継続しています。当第1四半期のクラウド関連事業売上高は9,393百万円（前年同期比17.1%増）となり、連結売上高（10,246百万円）の大半を占める中核ドライバーとなっています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0004\",\n        \"01_2026_Q1_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_driver_cost_structure\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"人件費や広告宣伝費、研究開発費の増加を売上伸長で吸収し営業利益15.3%増を確保\",\n      \"body_ja\": \"プロバスケットボールチーム「愛媛オレンジバイキングス」運営費に伴う売上原価増加や、人員増加・昇給による人件費増加、積極的な広告宣伝投資の継続、新規事業創出に向けた研究開発費の増大といった費用増が発生したものの、クラウド売上高の堅調な増加が上回り、営業利益は3,014百万円（前年同期比15.3%増）を確保しました。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_outlook_full_year\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年12月通期で連結売上高42,168百万円（12.7%増）、営業利益10,514百万円（4.1%増）を見込む\",\n      \"body_ja\": \"2026年12月期の通期連結業績について、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）とする期初予想を変更していません。第1四半期累計で営業利益3,014百万円を計上し、通期目標に向け順調な進捗を示しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0003\",\n        \"01_2026_Q1_tanshin.pdf:s0009\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_risk_equity_valuation\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"保有上場株式の価格変動がその他有価証券評価差額金を通じて純資産を動揺させるリスク\",\n      \"body_ja\": \"当第1四半期において、上場株式の株価下落が投資有価証券の減少やその他有価証券評価差額金の減少をもたらし、純資産全体の押し下げ要因となりました。株式市場の市況動向による有価証券評価額の変動は、同社の純資産および包括利益を短期的に大きく動揺させるリスク要素として開示されています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0007\",\n        \"01_2026_Q1_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_risk_cost_inflation\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"人件費の上昇や広告・研究開発投資、新規連結事業費用に伴う固定費高止まりリスク\",\n      \"body_ja\": \"従業員数の増加や昇給に伴う人件費の増大に加え、広告宣伝費や研究開発費の積極投下、子会社化した愛媛オレンジバイキングスの運営費等の負担が続いています。売上高の成長ペースが鈍化した場合には、これら先行投資・固定費用負担が利益率を直接圧迫する構造的な不確実性を内包しています。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_context_positioning\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"ストック収益の蓄積で高利益水準を維持し、財務健全性を背景に株主還元と成長投資を並行実施する現在地\",\n      \"body_ja\": \"サイボウズの2026年12月期第1四半期は、契約社数70,000社を支えとするクラウド収益の順調な拡大により、前年に続き高い利益水準（営業利益率29.4%）を堅持する進捗となっています。人件費や広告・R&Dなどの先行投資を継続しながらも二桁増収増益を維持できており、ストック型の事業基盤が強固に機能しています。\\n\\n財務面では配当支払や有価証券評価減により総資産・純資産が一定程度縮小したものの、自己資本比率は64.9%と高水準を維持しています。この健全な財務状態を背景に、30億円を上限とする自己株式取得を決議するなど資本効率向上にも着手しており、成長投資と株主還元の積極的な両立を図るフェーズにあります。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0001\",\n        \"01_2026_Q1_tanshin.pdf:s0002\",\n        \"01_2026_Q1_tanshin.pdf:s0004\",\n        \"01_2026_Q1_tanshin.pdf:s0006\",\n        \"01_2026_Q1_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_perspective_decade\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"売り切り型からクラウドストック型への構造転換を遂げ、投資先行期を経てスケールメリットと価格決定力を確立\",\n      \"body_ja\": \"過去10年間のサイボウズの軌跡は、パッケージソフトウェア中心の事業構造から、自社クラウド基盤上のSaaS（特に「kintone」）を中心とするストック型プラットフォームへの完全な転換プロセスです。初期（2016-2019年）には「一時的に利益率を低下させてでもクラウド事業へ積極投資する」方針を掲げ、クラウド売上比率50%突破を達成しました。\\n\\n中期（2020-2022年）にはテレビCM等の大規模な広告宣伝投資やデータセンター増設を断行したため、営業利益が2020年の2,270百万円から2022年には611百万円まで激減する大きな業績動揺を経験しました。しかし直近（2023-2025年）では、契約密度の高まりとプロモーション見直し、さらに2024年の価格体系改定（ARPU上昇）が結実し、2025年12月期には営業利益10,101百万円（営業利益率27.0%）へと劇的な高収益化を果たしました。事業能力の継続的な蓄積がスケールメリットと価格決定力を生み出した長期軌跡が確認できます。\",\n      \"evidence_ids\": [\n        \"11_2016_FY_tanshin.pdf:s0001\",\n        \"08_2019_FY_tanshin.pdf:s0001\",\n        \"07_2020_FY_tanshin.pdf:s0001\",\n        \"05_2022_FY_tanshin.pdf:s0001\",\n        \"04_2023_FY_tanshin.pdf:s0001\",\n        \"03_2024_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_cloud_subscription\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"クラウド契約社数とライセンス数の途切れなき蓄積によるストック収益割合の継続的拡大\",\n      \"body_ja\": \"初期の2016年12月期にcybozu.com契約社数17,000社超でクラウド売上比率50%を超えて以降、2019年12月期に36,000社（売上比率71.3%）、2021年12月期に48,000社、そして2025年12月期には70,000社（360万ライセンス）へと、解約率を低位に抑えた契約の積み上がりが一貫して続いています。広告投資による利益率の短期的な低下局面においても、売上高およびストック型収益基盤自体は逆風を受けることなく一貫して成長メカニズムを維持しました。\",\n      \"evidence_ids\": [\n        \"11_2016_FY_tanshin.pdf:s0002\",\n        \"08_2019_FY_tanshin.pdf:s0001\",\n        \"06_2021_FY_tanshin.pdf:s0002\",\n        \"02_2025_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_partner_ecosystem\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"「Cybozu Partner Network」や地方銀行協業を通じたエコシステムの拡大と高い間接販売比率の維持\",\n      \"body_ja\": \"パートナー企業を通じたエコシステム形成は同社の持続的な強みとして定着しています。2016年12月期末のパートナー数276社から、2021年12月期には約350社・連携サービス300以上となりパートナー販売比率60%を達成しました。2025年12月期末にはパートナー社数約560社・連携サービス500以上に達し、国内クラウド売上の66.0%（21,956百万円）がパートナー経由となるなど、直販に頼らない強固なチャネル構造が一貫して拡大・機能しています。\",\n      \"evidence_ids\": [\n        \"11_2016_FY_tanshin.pdf:s0002\",\n        \"06_2021_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_profitability_volatility_to_scale\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"大規模プロモーション・R&Dの先行投資による利益激調フェーズから、規模の経済と価格改定による100億円台利益への変貌\",\n      \"body_ja\": \"【変化前】2016年〜2022年にかけては、認知度獲得を目指したテレビCMなどの大規模な広告宣伝費投下やクラウド基盤投資を優先したため、連結営業利益が数億円から20億円程度の低水準で激しく上下変動していました（2022年12月期は611百万円へ落ち込み）。\\n\\n【遷移】2023年12月期に広告宣伝費の投下抑制によって営業利益が3,394百万円へと急回復した後、2024年11月に主要プロダクト（kintone等）の価格体系および最小契約数の改定を断行しました。\\n\\n【現在】2025年12月期には価格改定による顧客単価（ARPU）上昇と契約数増が重なり、連結売上高37,430百万円、営業利益10,101百万円と営業利益率27.0%を達成し、先行投資期脱出と高収益体質への転換を明確に示しています。\",\n      \"evidence_ids\": [\n        \"11_2016_FY_tanshin.pdf:s0001\",\n        \"05_2022_FY_tanshin.pdf:s0001\",\n        \"04_2023_FY_tanshin.pdf:s0002\",\n        \"03_2024_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_portfolio_and_dev_structure\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"非コア・無料サービス撤退と海外開発拠点見直しを経た、エンタープライズ・セキュリティ重点体制への選択と集中\",\n      \"body_ja\": \"【変化前】初期には無料グループウェア「サイボウズLive」（200万人規模）の運用や多方面への分散投資を行っていましたが、システム老朽化やリソース散逸の制約に直面しました。\\n\\n【遷移】2017年にサイボウズLiveの終了を決断して有料SaaSへリソースを全面集中させ、自社開発新クラウド基盤「NECO」やISMAP認証取得、エンタープライズ事業本部の新設（2025年1月）を推進しました。また2024年には上海子会社の開発事業廃止に伴い事業構造改善費用150百万円を計上し開発体制を最適化しました。\\n\\n【現在】大規模利用向け「ワイドコース」やセキュリティ・信頼性強化への投資、大企業向けソリューション提案に集中する事業構造を確立しています。\",\n      \"evidence_ids\": [\n        \"10_2017_FY_tanshin.pdf:s0001\",\n        \"03_2024_FY_tanshin.pdf:s0002\",\n        \"02_2025_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_capital_allocation_evolution\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"自社インフラ投資優先の資金配分から、アライアンス出資受入と増配・自己株式取得を含む総合的な株主還元強化へ進化\",\n      \"body_ja\": \"過去10年間の資本配分は、営業キャッシュ・フローを源泉とした自社サーバー機材取得（有形固定資産投資）および人材・R&Dへの内部再投資が中核でした。その中で2023年1月に株式会社リコーに対する第三者割当での自己株式処分（約45億円）を実施し、サーバー購入や米国展開資金調達とアライアンス強化を同時に達成しました。\\n\\n株主還元面では、1株当たり年間配当金を2016年12月期の8.83円から2024年30円、2025年40円、2026年予想50円へと段階的に増額しています。さらに2026年5月には上限30億円の自己株式取得を決議するなど、創出された営業キャッシュ・フローを成長投資と積極的な株主還元へバランスよく配分する規律が強化されています。\",\n      \"evidence_ids\": [\n        \"05_2022_FY_tanshin.pdf:s0002\",\n        \"02_2025_FY_tanshin.pdf:s0001\",\n        \"01_2026_Q1_tanshin.pdf:s0010\",\n        \"01_2026_Q1_tanshin.pdf:s0011\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_implication_investor_key_checks\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"エンタープライズ拡大・価格改定効果の持続性と、人件費・データセンター運用の固定費増加に対する耐性が今後の検証点\",\n      \"body_ja\": \"投資家が今後確認すべき最大のポイントは、2024年から2025年にかけて顕現化した価格改定効果（ARPU増）および大企業向けエンタープライズ展開が、新規顧客獲得ペースの鈍化を相殺して中長期的な成長余力を担保できるか否かです。\\n\\n2028年12月期売上高509億円という目標に向け、特別賞与設定や昇給による人件費増加、データセンター運用費や愛媛オレンジバイキングス等の運営費負担が固定費化する中で、売上成長の鈍化が生じた際に高利益率（2025年27.0%）を維持できるかというコスト構造の柔軟性が継続的な検証軸となります。\",\n      \"evidence_ids\": [\n        \"01_2026_Q1_tanshin.pdf:s0006\",\n        \"02_2025_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2026年12月期第１四半期 連結経営成績(累計) 売上高 10,246百万円 (17.0％) 営業利益 3,014百万円 (15.3％) 経常利益 3,084百万円 (22.1％) 親会社株主に帰属する四半期純利益 2,191百万円 (21.6％)\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"１．連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2026年12月期第１四半期 総資産 27,023百万円 純資産 17,586百万円 自己資本比率 64.9％\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結財政状態\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"通期 売上高 42,168百万円 (12.7％) 営業利益 10,514百万円 (4.1％) 経常利益 10,732百万円 (3.9％) 親会社株主に帰属する当期純利益 7,445百万円 (5.1％)\",\n      \"period_label_ja\": \"2026年12月期通期予想\",\n      \"period_label_en\": \"FY2026 Full Year Forecast\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"３．2026年12月期の連結業績予想\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"2011年11月に提供を開始したクラウドサービスは、ご利用いただいている契約社数が70,000社、契約ユーザーライセンス数が380万人を突破し堅調に推移しております。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"このうち、クラウド関連事業の売上高は9,393百万円（前年同期比17.1％増）となっております。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"利益項目につきましては、プロバスケットボールチーム「愛媛オレンジバイキングス」の運営費等の売上原価が増加、従業員数増加や昇給等により人件費が増加、積極的な広告宣伝投資を継続していることにより広告宣伝費が増加、グローバルを見据えた新規事業の創出を目的として長期的な研究開発活動を活性化していることにより研究開発費が増加した影響等から、営業利益は3,014百万円（前年同期比15.3％増）\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"資産合計につきましては、投資有価証券が債券購入により増加した一方、上場株式の株価下落による減少、現金及び預金が減少した影響等から、前連結会計年度末に比べ3,116百万円減少し、27,023百万円となりました。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"財政状態に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"純資産合計につきましては、剰余金配当1,849百万円を実施した一方、親会社株主に帰属する四半期純利益2,191百万円の計上により利益剰余金が増加、上場株式の株価下落によりその他有価証券評価差額金が減少した影響等から、前連結会計年度末に比べ228百万円減少し、17,586百万円となり、自己資本比率は64.9％となりました。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"財政状態に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0009\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"2026年12月期の連結業績予想につきましては、2025年12月18日に公表した内容から変更はありません。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"連結業績予想などの将来予測情報に関する説明\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0010\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"当社は、2026年５月14日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式を取得することを決議いたしました。\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\"\n    },\n    {\n      \"evidence_id\": \"01_2026_Q1_tanshin.pdf:s0011\",\n      \"source_filename\": \"01_2026_Q1_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"取得し得る株式の総数 300万株（上限） （発行済株式総数(自己株式を除く)に対する割合6.5％） 取得価額の総額 30億円（上限）\",\n      \"period_label_ja\": \"2026年12月期第1四半期\",\n      \"period_label_en\": \"FY2026 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\"\n    },\n    {\n      \"evidence_id\": \"11_2016_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"11_2016_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"当社グループは、平成26年12月期より、一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う方針をとってまいりました。\",\n      \"period_label_ja\": \"2016年12月期\",\n      \"period_label_en\": \"FY2016\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"目標とする経営指標\"\n    },\n    {\n      \"evidence_id\": \"11_2016_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"11_2016_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"その結果、平成23年に提供を開始して以来、「cybozu.com」サービスは有料契約社数が17,000社を超え、パートナー数も前期から40社以上増加して276社となるなど、順調に拡大を続けております。\",\n      \"period_label_ja\": \"2016年12月期\",\n      \"period_label_en\": \"FY2016\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する分析\"\n    },\n    {\n      \"evidence_id\": \"10_2017_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"10_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"しかしながら、システムの老朽化などにより、今後も安定的にサービスを継続するには、抜本的な作り直しなど大きな投資が必要となり、限りあるリソースを有料版クラウドサービスに注力すべきと判断し、平成31年４月15日をもってサービス終了することを決断いたしました。\",\n      \"period_label_ja\": \"2017年12月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績の概況\"\n    },\n    {\n      \"evidence_id\": \"08_2019_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"08_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"2011年に提供を開始したクラウドサービス「cyobozu.com」は、ご利用いただいている契約者数が36,000社を超え、契約ユーザーライセンス数も140万人を突破し、連結売上高71.3%を占めるまでに成長しました。\",\n      \"period_label_ja\": \"2019年12月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"07_2020_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"07_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"クラウドサービス「kintone」の初となるテレビコマーシャルを放映する等、製品や企業の認知度向上のための広告宣伝に積極的に投資してきました。\",\n      \"period_label_ja\": \"2020年12月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"特にエコシステムについては、2021年12月末時点でパートナー社数は約350社、パートナー企業が提供する連携サービスは約300サービス以上とエコシステムによるビジネスが堅調に拡大しており、クラウド関連事業の売上高の60％がパートナー経由の売上となり、パートナー販売割合が年々増加しております。\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"売上高 18,489百万円 (18.0％) 営業利益 1,441百万円 (△36.5％)\",\n      \"period_label_ja\": \"2021年12月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"売上高 22,067百万円 (19.4％) 営業利益 611百万円 (△57.5％)\",\n      \"period_label_ja\": \"2022年12月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 18,\n      \"exact_quote_ja\": \"当社は、2022年12月20日開催の取締役会において、株式会社リコーとの長期的かつ深いパートナーシップを構築するために、第三者割当による自己株式の処分を行うことを決議しており、2023年１月５日に払込が完了しております。\",\n      \"period_label_ja\": \"2022年12月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\"\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"売上高 25,432百万円 (15.2％) 営業利益 3,394百万円 (454.9％)\",\n      \"period_label_ja\": \"2023年12月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"利益項目につきましては、従業員数増加等により人件費が増加した一方、前期の積極的な広告宣伝投資に対して当期は認知度維持のための投資に抑えていることにより広告宣伝費が減少した影響等から、営業利益は3,394百万円（前期比454.9％増）\",\n      \"period_label_ja\": \"2023年12月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"クラウドサービスの需要が拡大する中で、当期11月より、「kintone（キントーン）」、クラウドサービス版「サイボウズ Office」、「Garoon（ガルーン）」、「メールワイズ」の各サービスの価格体系および、「kintone」、「メールワイズ」の最小契約ユーザー数を改定しました。\",\n      \"period_label_ja\": \"2024年12月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 15,\n      \"exact_quote_ja\": \"当社グループの開発体制を最適化するため、連結子会社である才望子情報技術（上海）有限公司の開発事業を廃止したことに伴い発生した人員整理費用等を事業構造改善費用として計上しております。\",\n      \"period_label_ja\": \"2024年12月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結損益計算書関係\"\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"売上高 37,430百万円 (26.1％) 営業利益 10,101百万円 (106.4％)\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"2024年10月に実施した価格改定の影響等により、売上高の増加に加えて、顧客の平均売上単価も増加傾向にあります。\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"現在、クラウド関連事業の国内売上高の66.0％にあたる21,956百万円がパートナー経由の売上となっており、パートナー販売割合も年々増加しております。\",\n      \"period_label_ja\": \"2025年12月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 4,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"2016年12月期において『一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う』方針を表明して以来、一貫してパッケージからクラウド（cybozu.com / kintone）へのシフトを推進しました。プロモーション強化期や価格改定期を通じてもクラウド主導の基本方針はブレず、2025年12月期には売上高の9割超・営業利益100億円超を達成しており、10年間にわたり極めて高度な戦略的一貫性が保たれています。\",\n        \"evidence_ids\": [\n          \"11_2016_FY_tanshin.pdf:s0001\",\n          \"08_2019_FY_tanshin.pdf:s0001\",\n          \"02_2025_FY_tanshin.pdf:s0001\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"クラウドへのリソース集中を阻害する無料・非コアサービス（サイボウズLive等）の終了断行、Cybozu Partner Networkを通じたエコシステム拡大、自社クラウド基盤NECOへの移行、2024年の価格体系改定や最小契約数改定、上海開発事業の廃止など、掲げた施策は計画通り確実に実行されました。ただしグローバル事業（米国等）の収益化は国内に比べ時間を要しており、全体としては概ね高い実行力が証明されています。\",\n        \"evidence_ids\": [\n          \"10_2017_FY_tanshin.pdf:s0001\",\n          \"06_2021_FY_tanshin.pdf:s0001\",\n          \"03_2024_FY_tanshin.pdf:s0001\",\n          \"03_2024_FY_tanshin.pdf:s0002\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"経営陣が『クラウド事業の環境変化に対して機動的に対応し、都度最適な投資判断を実施するため予測値は常に変動する』と明記している通り、テレビCM等の広告宣伝費やR&D費用の機動的投入により、単年度の営業利益予想および実績は大幅に上下動しました（2021-2022年の減益から2023年の大幅増益など）。売上高目標は着実に達成されているものの、短期利益の規律という観点では混在した実績となっています。\",\n        \"evidence_ids\": [\n          \"06_2021_FY_tanshin.pdf:s0002\",\n          \"05_2022_FY_tanshin.pdf:s0001\",\n          \"04_2023_FY_tanshin.pdf:s0001\",\n          \"04_2023_FY_tanshin.pdf:s0002\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"業績予想の説明において、投資判断の変更に伴う利益の増減理由（広告宣伝費の増減、人件費・データセンター費用増加等）や、上海子会社開発事業の廃止に伴う事業構造改善費用の計上理由などを開示資料上で透明性高く説明しています。投資先行による利益率低下のトレードオフを事前に周知し、結果を適時に開示する姿勢が定着しています。\",\n        \"evidence_ids\": [\n          \"05_2022_FY_tanshin.pdf:s0001\",\n          \"04_2023_FY_tanshin.pdf:s0002\",\n          \"03_2024_FY_tanshin.pdf:s0002\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"サイボウズの経営一貫性は全体として高い水準にあります。クラウドストックモデルへの完全シフトとパートナーエコシステム形成という核となる長期戦略を一貫して推進し、無料サービスの撤退や価格改定、海外開発拠点見直しなどの困難な意思決定を遂行して2025年12月期に営業利益100億円超を達成しました。機動的投資方針に起因する単年度利益の振動はあるものの、戦略の明確性と透明性の高い開示姿勢は高く評価されます。\"\n  }\n}",
+            "thought_signature": "EpazAgqSswIBEU0yD46rydyOK1ygtOXcgAjyWEe_ay4Jlar3OpSmanlTV_oXgdV2-ll1dNkgO8IoGsMAaAA9st3rDaKsflmWCji6dQ3U5tihphAYbhiC9nJDGwb7bkNlFSLsVxtJpTccc1kSqxTj5Xvh7h5get7YiMA3MaofIkhpsxdEkqHeuJzZqAAtY6XehOXYMpZ1ssJ9kuhZ_Bq4tbEu-eZ37I3rt39u5dkWqhoXf_GoUb_fLNQnIUkUvbu8P2V2zwuDf7-tue5Da8loV-OIsbYTkJibIfehe4_Qhda73qKn-9e3de2XfYOK-aMK-Ao2vBKKuaXuhtcxpWLlJj48WBUL21rNlAAyhbFNK917JObVfPWW9T7Qg0qnOnOyt6jj15UUmcxnhM15NcKme24fFdV0Aq65FS2fnL0jDP4loNJRq1rX-Cz6iZWfkPbIDEHM8xaXhAXcCawRJX_8TVcUQfV-YnQxcfV3oHn3KUU4x7rJ4xQ31P154vOp51SKhqS8eDbUjJCbnYxAF89uThgPi0T5SlS1BApEWWLJtKrm6O0zz-AfwtVNH0OnMEOFCwN53lNGltgh3Sse_w7S8MCClJRPoj-4cg_qfTSEG-AjfI6BvNHX_X_GCz3YBkQYjk3xaW8b6XbjD221MmnqViDuFkSraJPXIruKjAPMUyPHYIhx8mDUfEW6fmrTH3Pjd0zW7OcP5NNPTm1yzc9aGVmyPgzql-GZAIdJB0ktxKmPWi2ZL28SLSwKvDxd0p2GYCb1ZBdkQguzPuXOVN65Jl7KpoxMvsiyiVa_6s7SlJDhdKPVNUk6wiMooLKoDMR6m4uc3bV2-_weYDoZmRiNIt_BQF5coa-jIlODRXvXiDBORwqaZruZaH5dmuHsTMWopic9tZMjIdnClrAoLtTQr9990blUA2ghEdiXlNjwLjezMJoVfBvS3UOqNaY2y909aM95RXuE9hipYIkoC31hMlT-7AJJ9XSoLwDoboiH_nMJbN7MPCoKziVVn_el7IIlzMlQ4SUYauy53Xmn4TunXv9lQHkCOgj0BO7tLQa0DbtHM89VD23bphtjorN36331vVo13gNEDQm_tvL-hrWn4PgZ0aGsUjpV7-MR9FY43pZqz5Lp5bxua8xrUB0mvgiUxUT3T0MLv17Ky9rhP987oOZVTbRiuyoOL2tEp8YzFpXcTmND_MIbiHO6QajopuyWGdnx58MwSAliwapWkDuN9dO6mE5dJcomEALmyudRWVyG7gl2Ly5Lx0VOfvdfZSSRebXbMgKIw4VCmxKVtQ1zeuXSNdWF1U1S2qYsMRTQR2m0gEYbNSva5f6fNGy32yDBlkxOpIlCIzCS4C0_KNk-emuLZnwbXNyR1lG8iVW-KfY2lD7_oFM-MetgYpOFM12iTAPc1r6ShcQRleojBjgLBhck4C1LQwFFGOsBjwUZ9Icz1dpLeB8kVuG0I6vxpLqOTJU9Tvm9jB4OeZg7YNM7RFa-FphvsYkKtAJw50FQ-ywfhmzShbrIikhgr6O3cdz6YPlLkbWcffzXChN08H3w6vyBMPDbt4WxxHMKgmcBTWpmmy3IasJK4pVgfj_zsCioH6cUm-6cj-jeRp-TcaDA1OfJpj5Ck6ZDMMy9hqdyEY95IsVFFajqrCm9144TmsB7Vb7v5mNbqCfvD3zkAv-VJqxSEyzRBCfHY7LPRWIxu3IwiC5G-Z5NgSnUzAbluW2ge_ZH3zNrKgRNsOgVJjj0dpeV1O7RrnRdu0o-O3039O5UzO1shP6fYghad04I_vaXui4bk32QaUuf6SQ1Z7bmjHWimfH655CcFdyIZzKKRoOXB16C5ExIVvned8RDVdDSbzCnRjKRZuKfM_PBQaKeRLH4MTOCaco3lgedY7gBrV-qWnvx4B9mFUV427-hILOg1phH5n6aWJlZeM--iaBbBx1y02DQhjrhHEWL64-bLxfwmOQwVJfMGB7-KJxzKeqqYbC48CkuRv9MPnk8l7COnwsh855WCpXK6R9WEubTpdQYlcB68oKd7jNzuVaGlUYyCfAoZflDqwrDmD8iQ7qlBy15qiII9i1EyIpLAVZB5hlPxDHO9pggSOFVQPUqVNMcytAbxZayIQVtugp9VtQgv1lexlDRBrVPMuIf21EeOf2c738NahQa0wMrRqP1TQCotC3NKmvD4OgdurhkTpfOC9rmQmYBiox2TFliSKUzrPWvAWHX6QP5itr5Wqqn_NgxHRg3_EUTJIlxe1VHMDJROI0lxKp6_nmuXYkuhulywRKs_YDXzGL6ctU9f_rQwtiVV4ompGuvQOgUQfzUbKVpHaKlSrnNZVBzyfbUALlLik1l6RGw9dvEIf0nJgPFZSAcsxMgDkyx_NQ9-PT7xU7MTB5EtmrahdVRViT6Rxe-dDBEEBD18OH9d_cDU7AJCO_j_OlUzLwVZzEEaJtQvNYvZLyPXJnzV4x0tngxHm9Rmvi350kZLPYrvEYKPbKkyXaJ9iqG9frU96NquINMzfvTPnQbFhlZMj9varzp4X6GlhLgk9-QJ_WvoVia651VOmkqt4vwtHvo8isp4jmxTVwggQ-0GEiG1kpIyPuxQGOmCmelVp8shC4R88ZEq3asy7r-6kXBImKi1Tl3KCpD6Xhoanp8JVG3RyZfI1hBdheDjkqmi9K5RIKsH8ehSZV4Hs80j1HaNTCm-bxdDlR3ZXQFIkT-Umf8Rd_dQ5f5aIydcv538ejHX94uN6BnfgSlOASVcV2NliRLPMlmtU1n9i0u8vdCunJgfyEblx3tnvizi0YdXiTYhOB3rXqfOQ3nvEsN3NvX3wRFWY0xLFhXl5erMPm47sueSNi8Bp_wYIEapSdAh6fMbvxFMu1LUyhYCZQuOBpdBtDkVZKq3rSerDZNPp2nRKQi8uQSlX8VsTvvxS6gniahzD9ScP8KMAzjr0azQu5M0EDKkkZrvfhPfwNyxWhUqKafPKjRKb0vNWGRopQyRgixZwbbfOAZvv6sNKa5TLJKT0o1_hTrw0rvuEySH_UHcS6h4F8i42oCY4yWKKYIzGkM-E2CSb0oBLhXfMHJzkY6u5QqjXSBmX4t44aiLD-XmZdlK4x3aakWETfrWfW1YR12TIHcPjT31lynz25mrh9JHQL9YJs922eaN3jv4toscvibBK2E4T0sv0PT27n6npDJPzR5tyWuFmqiWt7_aaWfI7yR5w8ttfrC-6_Z1SlaQF8JAaxYIykavfwLJkNtC39DNnORhKq5SyaZ-RpFH8CARMxbJAdCCBnBCnJfD7Loy6wmrGi36u1LjeFJLe5CqN7KR3WaAV_T6sdJGQc0Gl94D1j3UuUNoFitcdsyhw460FttDYCwUxoO-KijSZLk2xvQ31wScDz0AE8izj5T645hNdVpXZjoazeCCcezrjlmkVJomriqrEaFgkd6xPYSkQh7y9rWxwOnlAq8--0N7MXfJi98VGvRMptRRy_2zjWs3xWQnfBPY7uMC81XSjCG1E6YCFlDyaZKt-jblCaW7hfPT9n73SZTgTcNM9-wOQkCTpYA7ab-KPoP57j0l_pYVWvQJ5sWcyrroBU-3-KJHC5FiewjHaJ4gQOqj6Sdh1vMUjGlvEmjqJ_KOE15h6WCYvrEYVsw6VU3q67jDz8HV2diVFrRRcmG0JYgj959pz-ljPDvNIhdGxxZPjM_WX_SBr5XpdiOKRDPfHMN44VCSDyKgUTPp9s-noJ_HNiDAOoyvfT2h87vXxwHt5xXEmp9iYTZlvlNDvGQ2xh8norHJ1AMBNy91KtUW8sCVbHFm-U1JTL0CRMXTFWqy979qdyLEo5Xj-ks2MlqY-iO2fRYQBsREFy9J4p3BqNuqQU72pj-8THFMUi5ZStGyBifB0fwjmgwBqMcbIPsAze7oa1IxQmDwhdBz-FQw-JriAk5fHlhkGxA-85ThcocTGsgxiAglTs0tpAEudZ4iCy7S9uCdX3_FxC3cc3bDMea0jfmZaRVndB58O662FPnOWKME2SxppuZYhvNiNzQeDZQhDR83pGQhVNzYrzEfPKdKL6NMCRy3MOBTFkev6Ojw9VmxiUxBlRdTcQJD2Ynupv9bJHJaZun-vjrD6swzbIZ_34ih4jMLmHbz1GnB28dv8DkcNIA4e_bJdPrhmkisKXPr0F_A2yOSotZQEb9Spe7H9-FS_kpRQthpiVrTbIwyFGm9ZBleB7Sy4tuxo_ssJ_V3nIj3S95v0VQH0kf13k0CjJXGi4mi1Yn1hNoTNp6BgPus15mL8sEED4DU01BdPuXxjWYVYGUJrFbrS8qeQXmL9mX_oaOmwhfCMgkP9DVn9DGsu0wlnD7Ftje6Kiig0oZkbK8PQBcrf7bZvHC5L92Fv6ZBDpC0wzzbCGmagiyIeY6MgHo_lWiJtpzGGqWnaLei2NbkUajkHftY2IDKtaXFpkmeyKaje9ngrf8jHPky7ATZDJ8dHTO-HT-_ZxKm4-AqqLei7blRLes6iuS4qyYi0O5NSebpZifqu218Jew8mGK0BYixLpHVxuVF7OZIWpUsaLn9vwL6TlV25HSkcP_crxstZ2jNIVXelLvA3POiLBXBOGpRkyx5y5Ya8Is4UXdMmYggtRfMr6DpYJd4JHo1UmjwklA3J6ZCFGISMIRZPuVkON0fyHkzHoSS2DETj2BmDpAZHwrJhmUa6nBgcIRMKgNZ6r96WnDgAYa8ZuQ0dFzDZ4XZXRmVSOwksU-f-5rxttQBmALx25ZTrp2s47HKwx0mRckSYhefLz6jqBECkSq3Cnk6i_1Pl74Z5tCzYdjugppFilYuYzmfSNmTxx_SxTdkV07TjvCgeDrdfb3qvOamvTE7_3HG0ybgyKtM5DdX1Jxdpz2hWJX1hPg112AOFiEY37GUB2XJiKz7ifBM3kq9q0U3J5A7drGKV-Ke2isldCKtFjGWbY9T78AL1tpwC3l2i5zlP9LyEHki32RnJcfR441FTTrkpG4ocz7pe9yOF2wOz9AR0nlJ5InHu4pXEanzt2gMITn6K4weZBbCLlu09KTYyp1YbwY9rUjyRxYpPX057x7H43kSpf5BVI-CPP7pPz4LaWWKafpVNVVbFhlNpwt5PkyMaTy7ajAus8ECybco_BEsj-3wUv-UVNAjhKnnKT3quxuWEMiCgS_rY7gjxr_d8VNhAOM4yeWxVqWFj0-9fg8QsRFcyuqSgFP7fVZKSRGl7KBgVw52Hm0Fh281azVXZpbPIaUpycCCdcyVKZQqhciIyXeuQthoKcX7M7NtlWyDWvvCxeJq6SUxX0JAErfOddXIh4GjYFsKmhjT9cjdKuLVzsqAds2AWfaqSw6PzNMzjO5tYYhmrgfM1NQOSUIO8YMEvtU2L9VNuotiHCrwDXj17SRwTlB6fgDgnD976f4jcVqZLxVV4EHDOlc-h2VRZqoPvkqzolPtT1pn20jPc6bqnV32QdpPoP4NnjA8aVc1u5Z01pLJtFvIzOdkwclDDXq8QFdu0HLdIH6wmdWSs4PYSFQIhWPCJv5IfVEfmjjQW13__Al8br0BJpGGGKaelIO_d_i0lw2VzvAq9SY7onxA5VSpiuvYUYUlkzr53x-0FQCSl8OA1jNtryRbGQdvCzSCrR2Bk59y7HMNjEqQCqBCbM_msiNMpHQVx7G1VXbKTOtdav1tq-OLblZd1CZEi0N5Gsn5dtJ9gR2ZF8ZRZjQ7x_4tEdJvibNX3Vro777n_eyv1N1m7Hj-qk4fHBg0Pte9kJZikqFqVAZE32XyVwHHuByZGFCapY2hrfIeMDIothy3BHNLFBfpsPtuj0LY-J63ZSvbXhEs1d4EtVispSOfdozwjnohGmOVY1YrqiQ_YEQtVi54vvVZoyJbPQSZ4wx4qb3Hyuhh2V-kk1HXmXp7SSmbgiCUS3JfH8pjDu487AFs8qDKlImX5viCBuvEwHVAmI_lYLxoXMM2qBHgcB4PeAfUkiMXVaqZLcirRpiieeuPE4syiNvj00sKbK-M5dvb2AksLOmk_bSBlXhGJFwLU-WkJBfFFbQqs2LAlALiikDLL-_njJ28tWWzAWG4HrJQXi4ckDn9TsWMgs6Mo6lyGiKDg-mJyFoZUOE6tvoW3xmqATX-5n7AOKtUahL70t74yj9Cgq64JIK7NJj7DLuRKFE4oFxRqvYKGRtguEM3RzZGLWVc5glRTCNkOkUu8V6KXseARiprJoTxf4LY4mQnI68_9Qn8klEBMD2DIVOFfdYGIlaaWn8MwlvOUJLE7LWX3xiv0eYYVw74ypeZuwvY5LqZtt6MedRJrOK-asY89cZJ_VGC2FgIi-XBBfUkfy-Ds_SNUXm-z1xcOsjP2uGDqviCxGsxC7HAIKEdkABY4O_dkDGC4YajnSCC3Z5byy4yxh8WIdVFgmT10zaWwATU1Kbsx3c7XbxL5CceZ8hBvHZZYVLnL4fcmlGTAgP-bVSZf0WeHf2E9KscQn7UpNAE5zvZGh5cQf55WbHR5GPvjZEfNg4wDPJhDJ-T0xC4h3LQNHaJ3OqOEvhhl6dFCgkBUKY0ToPbbY3Z5VoUFLolJOrydAgO-i1OYLPZMRmcbMMXQNXKRLnsvUwovcQPJcx6H1VblodBr7OHZO1T48DrCvrnKB2vxuKOVkOSrlpuOuXnZSLLBynsP-IyM-4MiKsey2hfGmiW4Z49fpM0rBCbAkNj2CtWPdvwE0n4zDWeU2IfO1rFYoJJNzsw9IUqZ_QSSKu5jx0mLt6BH36QzGkoOyxwmXii5ZNWxsoPdkQtPHRrxypmkwQjr_fjGkoa7fczAUZM3_YjEZV9kw7nMlK2RCaV4VD3yrr-sJfyJENgIgF3OYCaP7Dv_P29VwIFkZLKVRzOxgt9Q4bIxCn9cBLcPEVVnY8zgHAH8MhDUXD9p3VVdFocs6xDcWTcotYg4lyNwSk5W1Ln7YZ3sRv1cYPDGYiQaEut5eeywnbOBBWA6DR-kPPI6c1j7gCLwR0UCzzeo1Q6HCgz8DYs_wWOKgxZ_9SrXYs-oFVs555TmrwT-lCD8EURcPgcB57DQRaGmmkRuzYfIK0TLAFE68zluitjI_CAReBdVXo2BAyjpRsktwt26vDbSGUR8VaMSIRe8OTx3C04Tr6ngVnZ8SyVb6QtTVTNtKY12RcE4ZlXNGHAJuheUNzBWzDGBbyXzeI1Hv-N9DIn6uXRam5yB-aAyRofA9prOayF99pAASS5i9ip1JtWm4wY5oPaHG5sUIyWRUpNeOAILO-FK2TMqD8f6dh3o5qcjIOGDy-4FiGU3w8aNcbo36aQhxHbyVOkwqHbBaYNzsM10LuiOkfawhuswIjlSe6xGlDkxZQ8FCk_4GzViCBQ1bKJ5dm8zF7IRVwnIrk7cGnV0586LYZlMQ6yP73u1xJfaxnotaWIVdEdH26CDlexZPqJnk7a86TCcZ84DUOCPNbSD1vEIyFRjqMkI_Xl1v3LGkthuHIbCHptp_uUz9_Cf-QudWNmHUqCDl1Z8agsu_E-zXcus4PFIarSfav40WnAadY5BUt3h_4Wv0H5DIHPuSE0mSB7euw9aHSyoMQjmsvEOn73gjgIMAPKYpP4zFZaXTJ-bZnEtIsWc1KvQ580YnoDg_6a-ahaGsa87nlzh1sOZjfzgOCWlTYHI4BAPdhpzs3FD7COVbQ9WAGIp5Jft0lMFzU1rVvXNfMg6qsaOh0ZayzlXrbC14UkTBXtmchcJf5taHCi61Xgo7GOxaLcwm16iRFU4aoM4AQOTTKhCLBsmJqCexBQlvm6zgoOhMaiJj01CN7baLRwNKKNg_gIjPK5gImeFNl8ukht72QaNObLXxb-0KQQJoVmb9dS_K-MpKeeqSaiKYGcNK7mIwqERwMV0Y_aAf9UaZxW7Yjoxp-g5IO_jKFDfD8v0neOV2_LChRcTzx-yhvdeRggG0S2KT3QjqDDRtqnudzfBn4QKg0BlVDRXwVfmHIvRU_2Y-Rbw27toZPKgLCsuU4bqQeLOnkp8qM74OWoSfDEgzYMtsJtA17WD1U2it2FOisp01sKEbcQ_mg7xdAJ4BPUfTXd6SlEIl48OJVkGA74LyqTof6GmmyZTestaXjVmi9hJsX7hUn_sw8LUmxj22z_rIhrDrpY8W67t-XinvNpk7QMN9pjRcBcAwaKuoFFXJzRoCS5_1MNiK4G_xqnaGDqpb6QMAMjid4Ow0BA1bEKSiUGMvtimx-dUQ6jsmzqbWmqafmEOC_hVULRTsQW527DOhPjRFUPnc8QyjhA0NJhRe_6T9bDI1gae__LVZBQS8Nu3r99D_BZysueIPm1APCwbual2vB82STP9N4rtCb8dX19kujfYk-h72fIG4DL3-6robuNzltFdrz6cxbUlo1yMUquVlxmrTcaQ_Fsr9VtLY_AmUzQ3BwFLGkcRBJQU0UO2FS51laANeBvvu2CoaNKWVgR3uZkkth1m9Vouzxn1ab15x5Kett7_26vk6DAvr9vsuZh8q75ON2Jj56c6VVgVtbjx7I5FXTxcoZI-XBw_vWCvI-gM81u2cDh4icgKQ2GKBw2qA8PADaKlO-4M9niEH7aEag6m4EvBgZqYoFZbKKSBHYd1pFIF4nCI_gLsllJQ3xOfKmYRW8eu8w2Ja4bfvn5krWi9wwz-O3PClM85u6eKw43VofL-9HpdC3ZM4B3_9B5vhThxhTDVg0aDi1s-1oBhhuJyM-AxNhm_J3vWYfwvzeXcfzYk2wpyZwjXKQpfpvN1lqwDgZhslOz0llRwSaupYZ_NXcVAz6TFIlsXjGy_XSxYWwdZZdKRrZt__IZzzsJCGY1n6mJTrqMMci-vGblG63mVXQ2KMprHmU3sJGlq3x8RIdPN7vM5nVWksQzenC4rrLddxYX06oCdBnqFdlnSNRAQsQTlpH3k28pVVtakGFRUQzFez9au1ANtGsvULaZ9EVXeGTJlFE-WnsoCWSu1pv-Z7paryA-QvdPMjvubPyvUkKNlp5UTbwo1w4mfvJJeRHAf_U7atH-1-_SygpwkgPds6nJy4SyXbUX5WMSth28NObnh5ddcCE8Hx_3IR5iczqiGR8ekMnGgw9c0VD_suR4vIqvWhlKK73wJ7byDPtDCxdkqF0V9RSvr_98pBHLmoTcEtmyXcJD8MFr-GJ30ZQ23FXiwGDC-DNugdx2TojJTXzOkHPWUBckj3nG4bwbV5Or0DA1ul_qZnTNGFGfx0ucHA4T6WQkgai0nn5uEC7lsl1UKm1oxj6SRWxTfTFtKcLi99SNN41WFKIrPxVyfwTlVNTrEk6ysbIIChNDbugO5CpOcVvpg3pI91rfnuDAzBvvL65HwfMPAGj6c0BT7YgJiU4w6c6vRwYdQ0dd8kLuqJXfJHdjaz1_LMLDZmCIla7XIqeR1PDzMI7jG7grPingJtxTknt-77llEq3lEh1rCtIl9bm8pxRGXtwN9GyQwHvK5k-eZMXHuNchlUbGrJHn4Frx-r1unY8wGON0YwLDG9kVH_vws6f-HeuS3ykd7cJnaWNBv4p4DhfhnGYBP_t-31IgP13p_RlyQf1mE2odTRc9Lu2nxHTMuWl-M3q9ohwcWB-PjsFZxzY8JkWLEQTYKjKzoU1dK4F0zXT21m9InTXZS7mxhjRdv8SmYE4zr3VOVQ9RlcTVFJ9Cw-ZgStK_RcnldbWAFQpgHFCxO_nVdgU8mePGin9IYgmCsetYvAph_IS33FunY3lJBjbcy5PaPCw-_f9vL3U5mQ20AcfrPSx5CnBUQM159FuGuSEvg9msDGvIbmLAZi0AxwRCleI9U_L7xREmdB0wY8apjWC2Np0xV0TX6SccLDIMClo8qqjIwZfpcr6YBvzzpy5YSghvIYmlInDviHmYzelWKzfH996Ay29GTmJlkmMcK3R7MhnaTRTaSPuRaE92KuMDLUDWDIM8PwPwYITB-__PuB-X1sbSv70O__KKfnJRYw_m23DI8pSMuQbvn4_8iRmcu34ACFybTgiHtaDDCaZMskghYcm5FUYofPZkn8fHwWMseSSomY6RmN1im-5_bvxJG5YP9eMVLV0F86iXyBhjS9LpbF3pz5g7CdloEckOz_gQkGxfwuDEdD65-zfB-hUQRgtwHEnV0C2VJDjU_3lGNMmpshCqAAae5oa7kbefgEOAQ0hgdHaKe3RVuWEIsprTIBrIAH0F_4f2tEEctHjzPZB54B3A02txEmAq4NeTB700XJLnq15EHl61d7HSpW87kh0W-nSSLmYG9bjyQXtSlu29truqB2kd6AzuPBhrekysFFi0vvJXdo0pIp-zIrbO_9qJodQlhl9cf8K8V3nD_UtSKaMxCnlORZcFIQFUeufXhK3ieU2fE9RfBkd-h6nj06wOQx9xiNdgyCshOO86_sHUVuUIhvL90d9K1BuhKrLWUHmTfjt-97qQx7ntKKd8LWLeg_j6I_wo7y8q6w0NJigiH6dLgPMZg2stXPKY2wMw6GvwqlskADTQfvuQ9kG6vmpMYpd0tNOrB4enJDxVs_A_IFBSgP_7wCX-Z_8UToH7n19xe18MWQAHP4DSeh661F6n5dS8wdSru0Z1YSYKsnA7bW5_OyQQnZJqL6TFHzBo2kyIg8HW98_NeVBF-6AyFbiWn4vRibOL3JMxW3oioTrdqh3K7i6EPqfxoO_4SU9goT3JYzzz9uj1BCdQ_gei9QAw1-yYeOLAx-nBS3vjWVlNjZVBWxV3AO5BQc2z0XrifF1bXPNiRocX8NsZBET2HWgMQF9o9oDnpnPfR2ldULMOiMTxzWX43u2fWD9Tk9DuVkV4XwgqzSk8Gc9oo58IEMEO4BMVH-y_YSbZ25ja8pO_3bp66KuqY0LBdh_qcPysy2TD8sAZitrYciv4ssbq9XoH-5--LtOUJ2kLF3TZ1q1W69x9kAd-Lh5S_NOInpFJfGPe0jEdDxtTSH4BConh7ybGUjjuGyZMa4siLwXsUbWWf4naBQtfEhJVjOsQluhtf1xHzRajAQ7jrwCaUDU3OfVc27S_YfYXzAHayGg6ywhcsxc_nqihljAqR8jlfSiGk1BXv599I99avJL-JBZEJu5vug50e5p2d3umzMChiE-qD38KexeUHKt96PlKOa7TG9DpJstRK52-q058fSspaPdDEdy2B7HxXQExOpG9SFImqusNFeLAVo5um60cs2g-rXmDYgyqE2O903arRiVs4ILQKPswWMHx0eR2sc3Z1Ltx9FoREuKnLKtScq9UEaK_F26VsM78FtndiO78_sY2WXV67-Bt0K0b5bGEA7Wvxhffvmj8VpXCc7KSohZ8n9li3UZBBm35RPJgDnHPE_kYLZcUSD2N686T25xZ4wOlD30L8rnxGLbWDt4WzMJQZKpp7bEP7p-YgKUfAjdtMjE7-PMugloDsi6pJ9e8YOtp8PuIixNYj3bBBjne6JF93a5zQOF9cYbLCXP_UB4Fubo7Y9_-63FnkG9ADPRzHXbhznnL3SjhcplVGd8V6BGlFfspnusgMiVXlgSTB-CAUtal57biqkKcJVhqC2BsYa7-rz0kxXZh4Wq94CzF64CPHXj8K7CQsYX6WJRHGULw9AGZyWzr92zQTjK_UDjAvGOn0RtzBpdGC-aEyRjnBPogl_KFYlg0XcdMlG_aK9SJtaDwTnpNFSnssxKOTLQBL0InTyP-dtZ0KOWaXViLupxvQ_yEkI8ssCPAssCgAGqku6b1iQAL247VOiSE6Rvo_WSTz4ylMcle1A46svmyoPuFq3tWW-lVcLkxmwf5Rww2rQunrANnFhIV22hWoWGq1QCR-CLnUJuMjuPqcqWO3J4fkDGHeyqzZml5syylsUE5Fe7XKo0m3hXd6CdefxBGb8ols3X4fuJaxcqN6zPPlJhqmWY8bxGawYVTWr_raZtr8DdNhVl--1Mlr6ZPOy2rHsoFIKqoLXkmBIAzSYwBr2aA4wPMdnHqwUMc9nLh3z9GZz7UYxpeo67BbIbhvxXey47DJxZUpxRXEtOaLKDejJYphR3oAcjmdVZ-nDYuwm5xfiZ--tPQKVRn-k4zGg3DvjzgQLXkKlFL6FNcNIr_Z5R_zfHiUgYvZSviuXGZVajrCKpgHNlWGx1A9mE2Wi9iVl_OjmFEDb0_A1X6PIyMmDGpOnDnmNpKYnbajonRXxVYMWbXsYC_uThNWxpaty-MPmCWO1lHDyjNG4mBL1aB9C1duzWZGTnOPmI1P6pSUbDGckktbeVqjEylGwTkoa4W-RGvJhkecJGUMAAqKvhFL3ZU5aGB0U15r7AUc6IOr6Izs03qJC42fwKoEdPc7zOPR_CHbL1aoBK7l7zJYlQzGECMmOA9VaPjWWLAaex4gJGGM7oHynw7H_EKNQTVEDKGNii-ae690cKRO2642NPdmeOMvwxd_BNJzX2iR2vso_sU2aPalbuF6XE9BMqa6xB8-tu4tUi0T7ciEIQqXU7sFFdv1u3SxP7xAs0NJmdx1x4t_2L-1GFgtu_TyEW0BijNqminxJzlFkyI3kUGMz0VpAsIqzakntEDlsSRoenxxY-LVUb-VEoqxXppgw7EhXLp_gkIBmQzfZ6M5RMMt5vBqKwATKBa87Xkj2FDlfuPWFYJkqWLlRElEIScIaubpsfzwX7VaaTpZDucepszHXMzvc7hj9cgvQaNJxcuhmPnzKG_S-UABrO5RmJjXYuy0YRGJFoqkpSNhifwINbYiyIMJXDIhhjQDugnicafJ6OEtj5fgm6rcwrF24MwbqHfpWONj44ffb3t911PiB-O_0iTdK35Awyxr3vtJCS93VsjF3GBFOEDEZKJ-GC_JHzUQC9IyIV09FugC-QWVAJSuR4-ADbBKBzDf7ypcf1EReMSeZkmseSfu_bFRl2o_6U2dg3Ax36mweYdOOPsX2TDf-BM0Dl-JUc_8VAXcG0JIxDYGukasT8p3ePvHqkvjVNiwzGWHrg8Ovv4zNyFGbe9Wy40O3mqAR0bWcUxPkQP7WzCjGV8fMz_r0m9OgUkcb-VZgXiQTAUNQCJYZNIAO283Sj--AqUd_aSWRHEc1kSw0lLIj9mjE54PyFbbAfKMIA8TqVbTPJ4oSHfzRZPTWpAzaoJE7iKR8tIBPM13-5FkykOFM21iSPdctjrbKgNRW8drMmLs2xO_3laVmndxL-sh1qGrWzs2Zpkto0JeWLQW9Jt6liIJVbmdYOdv1yq94IcpBQ3CPWTnRQiMQfj0tf13IjEJHa4KT0xis6Xr9jiQzuAP1FRP1DQGzT0yTFi0-6KDTkDMFSPkYash2Mvsug-W-eS8Gl6z2IoFZyASlhSsObZn0-ifLXpdI6YnhtbK6sTBfUiBw0CNuRbWGGsalXbMcTAyU6b7k3I0EieZ6gmp_NiO0HzHu2NoKHYibGKJDhpnMXrN7ax-zcYhHVKPOanmNMRRwXXHq35dnjivP39RbEvPfAGoD7RWkLwX18Tcn7hIatoSUCTjpt2NrslNrwx470ewPvF37Gxg7esPllVuWw8WSxzhncxWU23nU1V7pY7JRmyLASeJDhvd1kS1P8a0s7y2zlxuz5gbX6rxJNtjjLZeTPqn7CEYqCZ3op6NcMWp8ReAsPwjjME5BHcQPWncTxJfXQ7c7XWnd2AmiL1RlUV9G_UQLXNmtBnqzHVqfa0gsxbqiY8uT-egHpbj9_-9WTylSd4WO8TzzSwIRonLYLRNQUZkREJvwSD7B114QPeq89v6NBVVQVplCPe381RinQiC0P6XDMMzQVIO93MA-oZOJlKHmIWkTXKOXJ8eVRYvK8IcbrqnK3nX0anJ3YjGp6oheXBp_nC7dEENRcSZ6J_0-tu3phZiS9r26mb--3a1CRaflASaKzTprwU7ex15Ej8ttgDJkamgQVFdoZuqLuylqCZAOn2ltStU9m-W1idiZt5RltF-H3RDp8EpGKaLRGOrlDwu4YZla9v-FUg3d4d4CLfPHpkrcU5TVqfmRaYBYAokfI-mcoKe7eJSA8vMPywqvz8ljWcfu2xdWwF7vuZYV00-XsdNgOy0CFuF9dFEJ_31ge17X7ivgvw_waQWwYNByKfjB2GYvk2M1vfCJAwxyVmBRKNHPB_bgMEBStoCDC8VngckWgaL58BaK6pTN5MSiOkWsSt7hAdGpAMVqBqMIMhjirma2HBV1Kao7Ew5iOSuoveTPenNXT6b7X17iIAmLehYDd8JWhewfi2aANMOvoD8IWlGB9QgBD151KqrSMyb-TLRDHoU3WEXKjqKTTUICfn3m1Y9CCA6L-BCcFWmIHTeqDJNzBB8vETbu1ML-g-fc7ZliHTYXOMT5aSW9tzi_9NtNtQYblQHPnv3qDDBj0Qm-5Q4qVKYydlf52UtqTvOyvMaOoPv1aosF06ccSKzvXE_RnEUi0rmUm3fQ-fohjiS6vJrxwfdPrtaPyrd083mWMk7yxS35SRbeZprCrxTO_gvZhLavscyhBym2tYaCgxHTEpIJjK7e4MB8OdK6Hy-OpKGJvxzlFOXamKZHNDe2zeo85WhUsfketDhXj60h-9jrbpyd1dqJ437c2zy3B_3wnZXwFwN0lYj5ebg7L_s7Ers_o_-XXbQoCoRK-vUerzEb2apFxC4DauQ-Dfq0xOhYoHT3P1o_S9Rv3xHmru5EQxQ4nQ_4-wJpUQsQmGafaQCAQanMJpKaU85Fy-afT8Zyj7b6llGRT_I7IMdCPw_7bDCo-grIjydoOHh2a9ZQLbEG3kzvwdSYj7jkm3CtQdn5DCelp8fl7sz0CFG6WEIOdXy6LWz_WVv8k3PRZHqjd60UmB2Qzqh7hZd8AvaqDY3cg7LblHz9XI6Nar_HyvjJYxVkcLJS0qLaiW869eDDWQz-ZoZmqA6ZfiLJnHNXGvYKrmpQCrNAjmXfchqUkj3gTfV5XIQvmrfJrfOMlB_OKs4uvG39aNGHCbd_04Eu4bYiKrQ77f0yiqBLmsuf4Hzu0hslT344fN8HtVeTocTj2zoF8ZrvPqk99bVLkXLDoLw8X3hXJTEnAxqnU_x2_y3bXFsvo_iejn2vZBCg_oIvUKGE6sdnnwjPVIpYu7HWwef7vOnA0ZiDRiNe5qPau3kilqaYt6N2cPu0715HujNBBbIbLdbmb3onClWyztR2nP8rwiJ52Pw_i0ISCTQ8qr7RTeMR-XvcdvnGRpKIG_GI9jS8L7G8rlGMpVicSz4pwEkWqSm7RQkGYaA5b7M7APwZx4MBxnIu_ajiP0UCOjoFt-OYZVkxzPphPM4IelpoIxsjuyS5DReIkQh6zibnpsqeiYe1nLS0k3ETMeRtbCTiLZGYFOSq34-a86e2bmH4R8-rkO6ALnoo6oFEcQPnVxFMLIUNBcBcZVJnotEH-IsbfxnHRyTBpIHskMaO0meKQclt9ua-NM_xx1b4zShlc7oqORw1HDncoslhXn9NEHFwKR_Jcmv81c0k160W4wA0PKU0P3MrGtqAHwgW9rTxVMFlrgMrGvuE2RGqdZeq1D18IDztyE4jY7iMunix6FXoUhd2isgNJ7QgJ6uWkSpSeydHZipU74PeK1DtIRyVL4IzILP0ghQ-UnVcOR3w7cYtIRXh9XyMNI4BxNBfaYZ04FGoLJ582VHwBXMq5mGHRmcOjbuQc4s0yhtYhxxEMBVw_YdPhCSIl54s_yW_iFqY8R57tP8bgT7ixFRHZcmHK3G9QyTsCOyHLwciki5aYWU5bjXCdaq6zJ2B7JnTr9bGtaUh4gTOh2ymHJvlG834jUjpJdDyuuIbWorSQmH7Z3YzeSijh4bKGIquVjQ5Q2-zoJ2T6YLJrm6g3ReesmX-1tGw5tbY6-1t3AHXjV5hpcUViTG6v0XabS_WXdMf8tzTcXeaKzwCPPfuXvBnpQQtp4fFUkRHVUy5MmQz8SsfDyht3piBujtlTyPXT0_3sBdfNGmQflEKlN3LjTqk9hT-aPtKU8PjQWKsaJkTwsT8fobcC8DXGo5UK1OyGg930zZzJLhE4e6UOVO_vT6O8LrbFReEAnDq4FkNR_zz9g74aEMVqSx2fCqwPOKFRngBKf0c9JuuT6Lcqiw43BqlohV0e2vOeKi5JdTTWLDms3Zv7O0T_jmxQS7JtRwvFzcH-flcR_QxDjKR25FHqyefTp5pwu-uOznS5Yzl5V3YracDgvrb5sNR0LXzlqaHiHYNO14diteqeTYA42Jm3zVUJLRlzHSVJsM0Nr_jKJT1n-NkVsnG0Ef5Xbf6nvOe6SWytZjA3MApbK04Uyn0w7VfH4GakMgCz4CtKRXMtGVFtjFjXvlJTakNNeJru5zfW9wbwSM8nELUrpdzisqr4UazsoBAoW3zyjcxPDVMKX6QX4ba4vyGL_0LdPYeXYE4EOHwPBtbU6Z7TB7k6pK9K54W4jPvfrK920UC6j14mPvU4JgqxkAOlgurJWFW5G2gpo-2kqViu1o6fv6SaECIOWmaAehQhH7DsQZLHkq_FpkNg_eerIolxzH_74KCTC1WZlIJbN6O9pejjLq6MhzPzYLQkhwNey15u-qMQB7V__m2oLQw0c2bT8xxB3YgJw8tP9cgyU_NE4G_JfFpN8OUDhFXtv8dchgxLKaE2i_DCQu1SmI3B8uDXZSprVm0bIU3Y9UaMVs6CXcTVOadckmEpOh4Fg6JAYTpVBYATVWBkkTQ_Sw-jIAeXdpa2ppGoSegF70KmeNWJD4JBXiY63rGm53Z2BVacpu0qsMMrghbuqv6oujsKAUTtIZEI3p9COD2beYCodh0PiJKvzqE_ft9t5oSmjgXsGvD6EoInVzJkxFKHQhdJ3MSAb5-pItxh4ZwhB2nH7o51ZiXtB-MvT3uwynWt-dIuZkSC80myu5LAxjaGZnqWqxZk-Gc7hPwqSMKQ6bzS72sJ627PObKuB5ZiUv8HqjQCFP94psiQVmyxKmmPGo0yvOAWBO1rnW22bL_lHjI_-cuYfsxQsk4KUFg7MrlEaLt82nNK6YbXj7g2jINwRAkI6BSCvU_AvmjLULQpHT3sxzNWwkzxzFRwVp4d5qPDRoVdqh7ECn6L4bE3kiXKvbgE7VJiQmv7uQ64QtqD7SjQiLzGe3y3pY0jZB4-tWua_ntGZxFXC4SLhccvdDifY07xnR6fbIbUpRLJGgNwfEXc8p_z7MjfNPf2E0J_kcRj_fjWKZv55Wkv_J6nDCH95DI7ygLDxNID50VTig_iX5Ibrn08w1AHNZFsGO2-7kcBGHtvs-MxSBcODajdb3Cu1GWjRBGIAw5In5i8mqP2CE0rrPk1HGt6bOlVaBlVc0M_cfgw0m9CdGuyGIJtRRtx6R93dLEsdbTrk_86hfLXHw0Xn1QIJWh9BmLcTBXQ9cukEkhMVsTOlSMEYJqnKDM_L_dbUaGfjYigasSpHV-qgSPNvVzBCGqA6NsFU5_4Oenncfyyx8jgPtAsekoN1U3Bbph6p0_3iNLEEkrpFx_InKMpBWiv2CvCsHN2Yqw6T_gd18ZWxM9AXPaJwBmfKRZdWuyTEwEKmCsKFUvrtHAO1Akxi3WIxGRn0SZNZybo7I-pDWA4iqnMnfdTsjk97_hGgBGZZPpT6ldU-hBk4jcoAKEQlxsd4uMknoHU_6tr4cq9i00gFv0D4rhFTBsG9NOTLHY2_ZaNfakUkr1AeLVtJKWK5ejRPSFK6kIHrGdPwJuWxm1vJxsNN-cYIRz2t0pwWpxtxc2pMShQubVnnAJoo0ea5NWRx9qFJc4geqNqMXIWKdoULoDEmwGwuySY2DoVY-q9LWLwQhD2e4Af_jpqYCOOVshUM1KHSpOFVKVPEbOf20EAqTS1sXo4jZx_VrPv2NfCXYsYghgce9vkM3c9DzXxv93vmUmOCPRNRxDSvEuHTe8eoRnepIq2xuxkE4ngSfNhKbUAkl0xGpnJs81aga9ND_hTqznrrAmwXjOUXvdsn9BHTh11F4HCj1jg8y8gBo73zVgZM-JYmkM4FuZAujrTKNC2fp731cfHZowMOYyQxR0LeZ8GMfttUVU8HXqhX4mhfww0wFOt_DqTRiDOzm-P6h8OgRq3YX28z26wK9LqUonk7DuFvQmQKNrSLXPIj6Sfic1ttO5EJ_mC5zuMDAHDhobqJuvf5GJ0ClMTB0JFXvUnAoU4p0FDAzfLO7TMHPVHxqYEJniTlDbDiuda-0_j_YzftnQp0gzEKCNcQQkJ9abyKR4MgbgM_FYbW6NxPqlpHKo1AC6W6q4dl4qcHInj9OdELHAfOJSQ6tSxvcxdkEgxUmxO4PB-gfoV0A_CQeEB2uPpxHFiOHoUB4MFFOyuTbD3glmuQXx8U--coKVPDkcT8d5qNFDZHlk3Q4EGtuLMDt1W58yuvbTMgHZ1xELnjo72IVXG7d5HMDc2pIzCMBcY1AJR5WXsaSk0xwYzPD23ttvtCpDBTtIvMjNJbFrKomZgSswW65oY4vWF_A9jzKXz_YBIUfYkFYJCMV2V48E3jdSe8alWIAoqv_Hx7QPz0QQWKuJdn92lLHuAycjFVwZoxsF-76Cmp7dSt2G-eCF80qR8q1R6_0ionoi4rTpOGNYVjuXfqWEC4z9543qRqpZYVetblolUrlB7KRbm_rO1CE5D8pBLEv2Bs5zhmihlKMBkpZBGMveKcNBERX_XrNzhOZF5GsBa6kMLQ6k7r3jmhtqbvO0W5I5TmWXLV60zAAva0hW4D5NX8HgRaHWUUjbkpx3TRXcqai-4g-qToTlcZxGGku__CdYPk4uFfs5XPe5YSZVtQZpvMu3oIgCq1-CyjZK1NZt_MHBDNkFfl3_BU_64r-E4CSzTPZ4N1R6dy8PzmsPqxt00WhQN2b5QimGDIPnerXeQdUMJ95QHTGz5HFbM-X2ofkHbEyrmKCTiKQmobupnGACwuj_z89K3q06bcWswqalJh7e6WKL3WUcIN_DUCVx-cYHgeH-L1QpRM1QlWyIWIuBPjKrbQuqLm_fGSoOF3To99tMl_b1FTdQiMx8mV1WOKbrZyyjrSdtDA-WgKspYKq6xEesfD6zkLMchTXWm1Y7q-t3_hMF761Bcur_lqiZqxSBOuPnL4Jm-j0V9oRWyQg0GCbzMTDWpIKVwYdGJLhzsMJJiH7yKzMEeNTuPZ8OuMaaJjVuuML9ugGOrpjrqUqgNTjdVJDDaWQnCaz8RfSxim7yxhs56KiA_K2VUNHRCBy1mY76_9o08Xp8CIoMeMa2GrNc0E0EM3rVUd2dk9rpAX8niKFk27nT-mnur_Z8HSjyDTPhJnVszMrkeCRC-_t40qrzNFUJfNJGG_lmuvYuciKkwoS3floNVPTvFeo_XRC4uFZC8VZN9sLT9T2AGIH6-nKE6A16CyMOdAuqhAVF56OUZDcFIl0uBVcTOBcOfdQcXbqI1318a-fpz5YiVU2Cn13qFLYqzgRPw37XxO_Hec70_EeXdF4d_yVqVfL1VFcmToxgut9_4eVO-MZalA2DDVtk13sVHbqqWl7GkF33mT3n0sklWYRBhFlOVuNqcAq3DiVaWkif_fesBkOuvm9I6BDJyJDIEnrSedJ9HIMqB9isWzNTK5i8vXlBGAoWav_1Su8SDuZ-fPk-3_wLANexRqyVSn01T0xyNg-uaIgIq75pz0cUYF-nUk3_Xu8h6fOq5kHoOoNuHuPhYyvhXcq5rD9Br_Hco2zdcsytdkTvxG9TtzGFoOB7Q1EiXCLzEzULnc0rr7KdM6RBmNJxbR1vfFw6BLHFJdJjVnmkdmvnCLJ8RLORpmwRn4cvhwSYDPMEk_goeHysZxWruQb0FmyPlZKhemurvfCAHeVBUcrnJ5kbrJ36N1gERUXmvI7YnGpm4JMKGfMIR8TpCIs5loOdvfOIR_xY6qPCAlXnEfBNPACqt1t2r7ANCrZORaDWJeZHUfVQL3m7mI1iHXRn6i6tMoCDH2IAHGXH_inldGIkyWDv9IHYNKIPdNfg2H0WyQQ2Nwf7vXkZGDUkt9xYNh6JZAwUEJ7Szj_lIQj1txDINrMjIEwOsZxEHkFMxg6buzOquhE8jwNgGqJqKPPRoa-sinQedNyKOvnkFK9QPp62JRkd3ynuF4iWw-3TubYd7mIdGC-5QB4chA2IL1QjNYFeSVPy_yuDdskZktRtdoFHWTm5HK5Si9qGSXE_2taC-OVWKgq116sADu25BAq7ycWhtgeh4aLUW_n4mVCw_F9k58X0CyEMXA5vNhwKpCBqYm4yOO3fdHgpcWur0qoh_EpbMQcfqLbjSeGCzqF29EezbBuF_bSEVjVFUyXwd5-iE78hjDtI8LqOtorpCtO7KRxtiwMw0sXkTWbtlQUTQZk8jOQ6NuXg8bLYajPHHShUVA5loqVS3M1LSq4-3xPrG6ov_EFDT1IfA4xyAmp8Ll-_WdSG7QJK6SCys3DMn2o7v3DLxV946eEtg8FGCjZ0fKfl7FnoIAbGoB1XL1_HaslPOW9HOZpHSgrKAKS5Whfvk-D_2gctP1ZK3GIK8s5_OEnZYQG6W5dnouokjd1uds1AWR7AeEV44mpKnHnrKf211xPfpndMLZBYXYam5ZwGeywl9Xz9PrnZemUtg9NMglhz1r28EKqlSzMYPv337hr3vZ9M-bkTMKrzxNSv2Ob9UOLKbsmYDyILpt2ggtK9ByJSrJVpOwx8Ffa7QL06O8K9vivXc7b1F4ZWsXxHIb_BbGuU5X8I0rsFJQ2irkPq8qDoSlRXh4tPaBlpFm1JscbTSKyCR0jSDOvogPjT1PDTaRAVjmXBthifvctEEmhhFU34In7DKtNpkI6H5-NXONSSN9g8pUSLh8ZNg7mywCTvTLEGUFZimwi46WUbMnTBkFfj2HVH3osIDicAyvv5001yZSvdRxPTc1-E3CLoEzcT55oZVNrTnSPw_RC7IKR_wU5yH7jMdv7qgMKjuqT-NCghanQQm_Yirpa2EoRjaZgLwvrM0wlXidrrWFr3twGw57vnSbE-1ri2OqQKAs2Z5vLDEhRgUuyukac9OOlO8nAAZfR8T68RepIOSxuB8eMHDY9TpvdPg1UXWakdOSoOtHExUgyRW4-tKs0UlmXEl3S0jQ1jru7l1u2mTMjsRc4yR0wRBTYAJ0Q6JbEgiyzppO1tzSPbZhZcg3MQrY3ET4DWfEgFxdWX7xZcAWqDWb79O4E5EX_rhoYGbuBQoFpDfZjB4QaFnoDXru7or0kz_JLQIG3qEHe-lZ1BEOtTjvIFvg_x9PExA0f5yetwCjPPMbkdQ8P-WgMMQdUv6M5aXI6_U2NQ4Q6hnLyqGaoOtdsJ4qZ7tjQVJNbzSF5bslLNlW4lbb3hjviV-mtJoPM1Lr-8zqNf3tHsHqC_Cb5SbFAT2kn7QeCUdXGrZ0SmZhL1Gd-Hi7w5HNfFzd2LhNc3hITTU66jXv0tkrLqcw1mtNJ4zgroQ1f1udxETEK4TyZPFt4UM6YFvjeD_XWk8M4OIMRWmaTo7hV-Uqp-tuTw9CkQn4CSl8qVb2xicEZoDc_9hIxEzSIkdZHYHnHx4zDO6FTduvp9-L77oKHlU14xlmcpcGig-rOiK1oQBGi_bPvPGkYd7jdwkUDqIilskcsIfcJ2Hl2vL2W0BZVXf1-DYj2mZvEY784jMs_CXXWdN2DBBzKsR1G_wqE85zxZ-uV0VOoBfLFMyC8Av_AB4osuLWlJMs1hIJH-gL04GLa3sA3pFBdpkqd0qkY6g6Xz-HRkPtDjqJ3Z3UoG4FfS3pzAAFKmGb_4eHmIHEpMC9R3L7gXH1ks34LDrHvEVFOQiMNozF_JKLcrrIx0S5albRkQ3CtApBUuIzEaBa0YR9wZjcf7U3B-OCeOKRppyD4p0EP-VGNbePSkq6YzUzvo8KaZP_KwCBzNUyPJg3ygWAze-yncOAvcTqazMSEy4b7AXhx27L8OA0U03fAbu_ckxn5wc9yQnOjt6rGkaavVZ_6C0fAJb5L4muM-LQWL1uzyHTzexqjPgYF2buDJ-FQb-MzPX9dPAJn0f-7wtINYnJydjUJwHGKNPX_VvoJQBVuvblVIvq-WaEaM1mQ7JG1OOtx_eDLswU7nfEOGXAWt5RYOzPN3PDLJNE-bF53GDswqdAsaZqldnTmpNONI4776EnTPfUybc0XQhzEZS_yilJEcurMVuKM4bnMjgPL55_KbL-XVTLhjl0OWOMKzFwUG4FKQzsS2UAdCigMVlQl6xJQ49VIq9dE7frPZvzseL3oAGKWDkw0hghrs479IZIvg6jT7PLbSeIJMOecZdPAqfP2MLBQWn4EGC2khNOZlScRQhqzGDPMjIEgY_q2jPErFcuI5LDp9MlPGMDeY7JokBoteqMYbyAhsAYZ2z2I3hFZ2EDO8IF54L2O3zmsxIKd8O86DRDktA20-6AM8IQXxbH6JVP12bJIy6nME1Fxu_QRt2rp1R4EiKx82Wh8UuztVHn-TkdxpsmeTqpEPdBTC-8lJbRMAwP1nnv00e5vbh7QT8sxdPYcTUyoK1QwWGLkwNqwUz703EJlDl8qZpV0dllqGatovLti9AmT-sODy4vy4t9xaeu1rTMuyr2qCKPe9CJZ8M1EK7VXnpGugVgFjrOFlUwpMv6UUFmSaYCjIpcG8P3KNOQpUkijbTAuGujbjn7KQN7FmgomA555UqL_Z5M8RCCmXM-o2jS3cmuv5y_YfN9T-Uczjp0fM4FuKIXCSm-Fj-nGEbF46sCnfgdhxu-5EpZ-1ObGmUBAh5D0OkgvjBwcACvfpr8F7EkyZgVGJFQr83T3Grf1_BQpJo6ngvwcneno5UpjxGd5YqEPY0-15RA0znaaLz530YKgNWtKq5mX2KtSIUofMpM1IffAbsG0NB8Pz9EPhvWp_pQ3riPhvdWmPMB361IcVRClB9bsep6DhZE-CBTQoUW3xlFpcwIlApZpsJcGqlFIxCsOREHx06WYgyvZcaLlsAAf91z3lL1F_XdJomGeg__7LzSsg85cUbJQ6ALnBwm5uZT4y5xuJGbUKyGnoQsWLFrfQXFBYSrMpJRzkynai48a4T_9suBLh6rBMVmkM4RjSLBttsaKtbWhnZV8xknBNJEanNBDyrTpAJRrOi14Oby1bQpRKS6jzoHo5J8jhiyHq4udA9249GYfov4Jp0f-aUBGWn2qE_q8VXY4L97xFccchql9gjvdxB53YkSeXTith0O3evwHczmMzBk36Q6PAXFCh6Xet1ykVVCv9Jmc-J-IDk5rdPWEZ6n5RDr1LdbNgcMPXuYZ2uOD8duRlFsdpw9HcRSYBJLj-1WmBIElxF61d_UU86TdOsIClSKcjoLkKnqDq55NyKYmqFYY3peUGZB-wJCHebT4X9xzsNmLbQMcFYnxs8NrAQ0BjzGNE-3DN5LIws54x2uYbtYHS73RYurmpj-BK6-rIGG-0_MMs3snmx7wTDEzlI_XYfp00cQ4GwOlT7UC8LrE3I6g8GiIcRT_MaMKpKG7bS2pxEQBG9kLobwOLbv6YcE3-Z_NHmeCt6dY_E34VU2Kt0GOdQWCAk_Jwxz3qqZWUB6rSAlebIC1KucgraNj6k5a3h4tBaovwPB7UEMj1olLhiOdsCiFR4mDOTxUNdzSHxGngqShQ6lzQ3t728COKYgooeS3E-ZYA1h7rCsyoVBFvjWFzLGDaKzId67ZzNS89Dli2b75zxuUp8xDLMmpKSE4ImutzgRA1IGCRuOqkzfR5kFtB2E7Qk_9xifDm1Y9itswcn_Ipu4N1XWXd4IIluMs0zYwD79KfACsMBheFnEUwmMIjn5tteIkUPO9-kZ_QMVjtnEUu9njidO1HNrDC-oi-KxzLZwJSAJlMDHPOHtB2T7lUIm3wY9B8Z4HYss59z8D3zxEd62eD-j0eEfYzpUFhuDSJZKm-QOIIiyVP6O6BwPXYCSuOIh09nwMvUQ8B1sk3u-TkIkezjyXgvX4XiqaJUMtEgGs09y5MMvc17qFvqaGb-h_ufYjUwiaFBGreG3DS_O1AqUBtenqnze85ZONQ8YdGUM0PJp-_DidMTMQj6917CK8qLuVeVFJjFe5iHfjLXxcMb74Qph1_aE311w1VzT3K5hZLWeNL0w2s2BoSppyfoKUHWorbZ6MecjbLKuOUbe2Mlx2QKKzPIzPIdIB8WioIA4hoCdqs8AKIQmxZU6z2NSVUYdmjeJw8aVWNBrUj7MJc5572orf3RxPP_GuMb6ELfvg2NPFRLJTZHWDdPG85QIeYIHf2QWqNoE2dKDz4eDmVrXKrotkNzsQkqydnN3pBIxFV6uBZ_afE4U0dFVBs5TUxv3fW1T7uyqhGrqHr_WFf_4aZTc-fz_7xoTVHnY_ySLLwUxUbN7zpQX069faKDpskHibl1o122I6SJ_KTWU0k3O0N01J8mkFadSN9drWBMfSyIiNxhe7f4jbZoS7O9Q2iolomWgSxn2GSb6NI7OWBffcRzqsuc4pTwEQcM1kEqWwbOwfTRzZ9JWg49_FdBlsWni-6MaRt-w3Gf02SJHxKUTDxwPPinc0NDPCSwIQClU9t39O5PDHKjYIs6bmWKGqzyp7IJ2prrlwrL3IeBXBfAfqNohmCPRX1rwxCy47MjhJDJizbi2rulMNwOoTc-Tl4PJNjwtV-9TobhTGi4iNkTs89icWr4Zk_9dLxLM68td-GDcos2HTW06q6SeUmGDtoie8e6aXZd2591wgRlLqaQHcHSbh8yrEmK4g9FSRNLURxfaexJhpMegBIidfKj40qiTYeb7GpgsKlDOoij8F4wDSdZqZNEXxXDT9qNsHWjcAXPqlbNuVdaq_nrsCzEZef7xmzNBAEG3RPusC6wUhGF-xwNGrAFuXE14QHToNxyUCp0Q7oV6b_aoqmpuovkrjK8nR04H9-3_Pa2w0XB5a_LkKyG0GLAs2a-vZd7U3rCYl6f3c81w930GLscI9k9Bm1NK8GOGA2W3-VltG-IYQpEFwnkCRODDaYCOCzJIYu54FQkAg3165u5Xgr9-nFTNHjW7oJ4jkPF3cuS84MELNDuhDchIXqiErKSSGCxs_Ug-Lgb10bSKW6eCAIUzXwvDHHBhsSQy6K1hyFi-lQu6090-f8oE3TMxHPnZ7WQ2MF53OGhTkUef04lAHaNLKN7O7mMBDLDClRykcCQyIiAlEwZ_a7i0rRlu5O84aGUjfR41Dd_ImkTokPe9t9sg-OboKPfoTUpQ-lBVBt0d8wxDmAqILS7-_p2ICBIxeHiu9FEELmMSVdpDBgfLn8RJWq7YyJxFqAf_N7l1oP5R9QLFo-KMtuxaSHBU39bJdQ-dJtju2PkxXN9obeI6vC2HY30dojgtIPLEjU6V7G-5kPw3JqMoSnXQjcTeX1W2AV-3VjN0oqs_wjBusUnNeLMBwtr_0aa8mrRiGQzc32DwHr9gxkjMhJ-skk8UYn0UDOCGYwUoHpX_rbVMVXO8FSNAO0jckDN82GallQg15tCg761NfxfFfw2r0o1S9AjsA6n5osfXgG34wZNPnyGUnV61uy7PM33BSB7-PzpmldSgiTlMxesW0AWDzUfGc3TdQgwVvhNpLU8YmmggnvFlLIwk0zigWOd1nK03CCnyJhBXOQAW-gYQSbf2RKXjHcAhgnDgo2jPErI1UhgwDXzXQ6EV3nZZu_ee87GLun9KWoUrVwVNODBI1GNEDg6XfnhPdJ5CXOvlTLuvu1o9TYAV_sjNFaC2Kffp_dyHtzS54GmiL7afqbxCL1--K42MiImugwcHp5eHJd-PYXMQoxCcDfJ5F19-fkhXA5Ewzofvi9Jv8KTFyLTMzXVMPeXm_or7PdUfgsnfFEspx4tm7s2-_afvuiRJPRH4f5BxoUglgwEgNNBnsXKlIJb0Ar2GtIZaDlvCbfhn3k05O6yF_nNIDGx5T_FNoksrg2bYAGWPty9-w665mcwMC-tGNLpytS7XKdwM0_gGipMyyp1rBQSE-ima7xJEonj5LZ7eFRxIqs2PwIak-vL0mNU8UNePuGOP5oBGjKkOLLAVUmQMGH-8PD5lMbeuKk2C21TItOnB4ZGVteoUREQJ6KtEEB08JzmeaqZA3K6WUpXw_r2n4lw3J81Q15o7rWyJYMiC5ol54ergUT8jK80INngze0ohWRlYZ0UWdUUAF7X4xjMsFGdgW0xfBRsZ5GMaEgEnWTOEhcC0tj8o7quRZV2l4CSsvePyg1zgJIvdyq1iGrGldnWs8TL99pERQ2mmwUn48msxiBOfw0_gyTHyvNVCuorYVn3ft1mDg36VjyYavoLufcOF8BOIH-svyx_hj_OdsdGiONMbrrXQGjOEV8D_sIBa9DRydqLPsPoLTguzFEZTGjqBqNW-5-Li7gwXQdHHlk0E8QJWO1lr0g-ydbuEstVpZSa9kw-4zwh-JBgp-0OydX0QnZq9ZDuRR29TpHrFXyRagAoTFW14210N_L9NaAN4i3JWJQhKl-Bz0k0qTKjiD2Yk3ukqSJfYtSCLx_xVporW5jfwo6W4xg_CcyAIWzNyoNmNaalyazhUyFH9gHVB9p5vff09F4u1-B2x7C1M8I6etjCDQBuelGYTmfc7zlvJ8ZCJrCoGSXHZ1-TtosHV5xRjWQ-n6i8J9xqY7QCadHFTJrpXTzD6S0DeyUjKhDFumpTVOMvAZXf7CIAdzVzFU6x6T9ScGsPdjLz3FJGZNZnAMkbSO_3e6t0b-oB0jS8VRlZbHtNgmLTwl2kPDCVsiGhRF-5LXx_OZ1iucPP8ZQV5FZpDodAuFQHQv9tXKgUPY5KOoaQJWQuPiBtePYYqjVD-Q7bUbzd1AV1jYO9P4dgM9dVvoqkavV5ltAM5XLM_fu78-8BDaX3MdYRdPhbBQluWn-xinOKd5GCUBOG7gYE1apKuUr7UgdHCBBEa8LrsM_qz-3ZQ_TVFVXhDcB00T3UztF0MnrPb8Y26UL4gVPmF2ABDomdwz066mdnNrk2vO1VUmSTwGwUWCSfTktJiB4Z8n9RCJ7c8LC1blKGtoosD_5RqVwTw1PCOsIR9p1kGHihKOu9xvYXChmILNkrFSlGsIdRAt9oGdrpWRVSrLuiUOizXIssT6ASvkYC7qRY4BTxulFw4_0UkYFVI2zcrB4IuS2xJH6Xw9PDwW8pqpH30QFzYIgLdYTU376x9pXh7vTnWMXQEM2B3wMCKwpdBrpdASHXNzS0k-w_SO-B8-dNry9jCy7uyBeUUnodDUY6O-6aRPZq5ZjilJl3YUBAOKOXetYPc8iNE0bEHjerUGzk5Q2hpIIkJa697pjsNG5909Xsjndhb3J_aRnPKdQ8e863c0BZEpls5EjTQRX_-3Q7MVpaQi_NBlyHr0wr-MePieAS70cDb4DPNBTiePVUMjFOOvWzvvrwQHRiibHOVVNGt2HdCzyvKw9DHYS5D6Wv154zzP2hInbepGiIBqqtQINTr2tp05ZKcAwBtffvc9hxsWyCg4iAjXymjC45ry-hguaIrAMItWd4JE9Rd9NOuKyDtMLcfXtLsuFGLX_M1UdOiwVJZJjB2eDx3DIlq219B2L5UAC1VmVPiUV05dedoe9nUReHsfdGzYpPYovPoM-fHXsJddnbGsA2XA9I5XXdFbijEgqMA-imuKgyaeF7wbEsgF46-N1OxKwzzo1FcdlY-4dAZJoOFl4Zhlsi3FsbTW929uMtWNWo7fgirCLuKH1sx1IWzqcVe0atMBFZh_adhELVq4lwNE-7Ym6d1_BX4AfFTX5XXENIcTCNiA2MnDnJ4sCAlWBAdNKR2lfVgoNOzfPLclHKHiSW7ddwIevIzEXSC5XumOZ2TmYTWGyYBFCvqCPCaThDASjTBFWdJod2m9F4_mpHvcXXJoxJkriGLzvIJIgcdl73EJlXtW_9rLHfnzdkN6lMdzCnZmA8dfSJuA1zwb9c8D-QI4tJRcNy6ZkF_QgdeXE-vGjCZgs-xUqtRZvYSwbtkrCbEKYLWUM1GZdoeB_JBM2SiuymTxHcjJf9grY9LqCcOd4P9jbbGNJh9bka6xZlH-Kj5EAPPlOhJUGFx9QOwAhRo3I1rh2I7-Rw2LlXGh2UGXqzqonqlh6a_fc3iRP4eKYKcZCz9Sh-11udQNRSitQtCTJanvp1yMSLE_Ne_5gL288kS6WkkGVzdPaIrrqNBry-fcnaEqv_jjSBvmxQzUM3zNJaswNRj32goS57_oumQkRzsEnF4QjIruBGDjyhEOFu42U_E16EsluA8U1RSu5yFfOCya5Fc7OZ1ERqcQ5U4ogjBVE0frXzSnmIOTJXSt3EjexT8B8NVY3YZJC0Zd9F4l342vxh4aRhZxOLWbv41lP4GeiDowZwsOvYi6MhckA4VTqAGBLBW3gkPjyrLHngZXxsBbaUsO-bI7o6gQpmMikN8DV5v833w7zZywVxmrXnRjESv8jXa40o483bH8SzWOvLNUUBXyJtguzD2V_vGsX24FUox-HTEKnFDqVu7BBu30eVZNNs15EPQYyc6J7_VxvQGfzeoPEvSsen2P7YfFZbBkErl1Gv0AoxRfV0gn5pIoKDZu_Y2x7176uDVrrG6oZfmZ2fExgi2cxnXkVvMLN6fEAs58kOfH501HwDoPsYyUgAyNCyLxurPSoGdGSBUi59pJkWXq917o6BaibReNUwpUxT0Kqok-6RnHeQZT3y-124beOSVA8zBBP3y3WzxzB64REna8dhD_wSmuK_WyH4CVgpZZEX36coFncuwLuMQLh16H7giPt8WRMsRGyzobD6HGIemkJ3QN9vU3ebgRzvD6z1zAo4bDT3_nAXujh7XCwJGdzyefSKGwizgp9MLEoK8jjXUwb4m-txZL35jT1q-9zsB2S-DhIvtxFyx2kW2S2XGMO-G3Q1H5P8iQniCVPPv-HCevunD1lHnvqQ7UMq1h7RoTGHL6a5E4z5bgKXkPDrbzMOxu5ZqUtRJBoKcGeGt07WJ2I4QPz5RHhJokGDVxZ2hauR9w_7okEJ5KGIE2h513c3ZBlmVqVENe9Xnxl8yYc8veO2U0Wbo5I0Wc0LacOshEhCDiXfXbTLgCpeUTStOxMEs0YIcY1-l_7ovZnmds3alRvi-vROEWN_f3xu47l8trRkRMm5ksKzhSTVwgzjpLQKFUj6MCwS-IQwAiC0vbht7Y5e2fidqSZOsTXwWlKmKponrPlCpnQDvu8K5gzcT836OJafXZSfqh3enYModBoEVLGS6XVFHcbsNZunt53hpqKtqp9N2HYLSRgAfoH-h-5SorHI69-9iMTlCdJTAsEsbIIgmrpTEs1IdzfyNJ8tJIBmwy7TRXz8RZM8WrvftiehLa72IhMptKTdDWfBSoSqnOgzdwt4XoS8OtcCy5becYubaiGywO5l4MwBCTKswuyXPbQYJYz6Hm3brsWuyWYzZcPct5xyyK8jyLN2y05sdKk5M2nwx2SRSOV3fTihzGCZzSLbJQZGl2rl_nYbQe-ZUaCcg9wj0x2Uyuav4dO7UreIORL23608wcec-1tQ3mIvoM3WW5yXvwbp_d7UjLRPkwZQfbujtGZz2xM5LE9nxSX0l-Bk8yvfZazEt2-iUhEun503ZeKY_pYB1AosZyaZrCY5y525__vxJHhM8vP6tP5pUsJjnaAASfBdG0jBkDeujPD3ePg8yiKec8Vs0vaAflA_Pg50V0gmoSkFL5cw_Pza1JPGY70QQ_7JZvsS0HIik5vca_0i93sualzJdPdKWwirXi5JjPgCGpqU7MwfdaAbrK4OCP7L7oQoXVuO8BpVd8NPTk9l_jUQrOR7RywPSjGDNZJHSRiHuryzjR24MRm062RqZsF1570mft-QXAEUIPJ7ow9iFwkN4otw8FR3Ej0Ol0A7ORjGTp9JCuzYI-FjCZs0owcy4rqBUKgjt36cGvXFT4QqC5L2wasLcPJDWztcmjUu9dOfDS2EVrtXfleh1uQiUwB7UEMLrfpNttgkRI_2WW01hNdVRf0D8W0GcgsY4uid5misy5SRLZ4ilq12LcIAkw_hQh9eSknDAhjn4LaCt3RCdDn2yx3YBPTozI2tXty-I2WFD8ojB1M7QuwzL2ctzTdj3VE8_g1zGRAjdKcZ1Ap9wFHYtoNzfMF_oL2tBy1NSfAyG6oPjGPPWFOfiJzM2cDkAUcvWqhk2WdFNiK19Ah9lTQ9BSl294zIRuewpRL2duIS-TAnKx507tzJFvF2Goig1l2JTvrhSODF4kVWQFJcw9X66bpN9KATZKoiwCi4oipGwQyWptXnauobgZ_Noz0iV0ZfB3by21rTiv9Zhg7ILA5TzFn8g5DxfZMk5nyvFXBW3hUhCY0CQ-jgzuvgb3U1yck5CQusy9N1VAxcu5YABgi1HtEufkfdr5te7lxa9vzQ3RqxiMw04Kc8HF0s9dhBlQVt_NaDF6MvEhgxXb_UdX6jiFD0lj-TK-YdPFt-9uxb74Y1OuH-L-BrSNZ-_cHz5P3FQRcMq0aM2HSLGhU8HeFfeB80Iml40OroZ6ShkvW8nfgGU6yKcT4T66wulcuwY6CsHSV0Wpjr1f4QxgbSHnRkrRZ4gpI5plfthtY9J99V4E4r9vngGrkjCIE4r7zqDo_-eAS5tvGLHsnPo6nEXX_YyNRS11cpmK8K0md9cmZjxk86c8xV8cjyf2SJg6I8LIE8Wm-zxqUWdoNgd_Mzcz142cWIjSoQRghUUS4q1gCIEPAV2d-WrDthloKjsN1G7I0asZtJMDZFzCw9Dsxg1tmOCLduSNhJerDJetDhpaA9n23KvnIHZ3N-k_hVfTzCUTJwAcCaD0JmcSOXzpTJDIdVHejWBIegoE0U_QgS5LzwXAhKTaUXHdLo3Ptw9vIyBEhyY37LTxGk9nt0YpOR7MbXJOl2IwlbFcsAmTKkJaWitSRtacvbw3kBD7MYTccRtDGm0-SzHivvkGNENmUDc1EtBUDsTNzKcELOOQJBCN2u__DdH4xOiXRImj48U5Gchs9fIqZ8uy1ExMp7NH-kESi1N5mD4LPNDKYfA-cOto6_PfHQJXQpQfio6DnWmhjajCXYT7lmfAXL5GzThLViH_m101dstUOocb6m4_0oIxEWPH3tKKK-jlR7ulcljJX5WgfsHs3K5KTX4dGJ1XoPdDIJubLskfmdcQ7tsHXgttaw5hjyNHXd63Pm3SLzgUVm3aXIf_UFiGXHpehzDnpy9Nks6Nt2eaZKkzieMg7HIvXXqSNxb9_VC6zL5Osa-z1OjSJzPW-FKzmExNmE-AL7A2yVLQ1uj1WEVnNufmVDqMeu1JpoxdfH_Wx3dtzro3yz-d65Ek3pre23vI5Q-0Ykr35XPIeukfomPaDkBo_2LBXSSK3phhZNXl9A_5kK-sLooZELvcTeKy3lx1V0YDhFL_iUdEHFktiVJrTTuB-aLrxjQ-zGngD3yXkBXX9QQKeHuLPbhuAktpZ2sID_PpzJgrWb-PwDJU1U_eH-wkbh3iLxDz29sN9XfmuZcFHd5c7oYazf0ehwSii5-aqjt-8I3m2Nphm56hjrHulj2QgboE7ld6f79IAPU_vYpkDEZdabwW60oVEr2KOOKCWUefR98aPr1sxbsMqHPidkdXeHQmsFBQTIgZX2SM_OEmqWKQqp7Zt4t9ukZsbDRzRfDmVRrzvch9yQkvaHdANHVzIrfOvuDMrRMdg108xVLx11Mfx-HSTbRDglwJ-R0X6RCFNDXIgFgJ8zRuf_Sh0CdT_zhaptf1lWUCtvTqxPbIZy1ZSlIBFG4noofrjRq9HojbTEKRqoJ259T188xbtpFDRyfVtv9jnlvMkRj7kApDmCFwICi8hU1AqqVuFCM64lUncGrPSMDSpRrrfWRlq4b9HmjGbgeUnGylWXOzUOOlA6bhryceI3m-UH5U7RTsC2hf163Fq2r6P9hLUAKxhoVHMqy676Uck0Uc0qBNDKeFKhppZ6LdDSXdJUe_zfV5sKZzAZyYU3gtFICIjfQfx-VSrFwHBv11di9WBQ1W-Ws5WFZ6iTP55il3lYl52Eoa7C-815yPZXpa7hfHgsFhMjsC1227mPFYMfWu3D3-__7uV2MZPE9vsVs5tiLhKlETKsaJc5ytemNklRc9-_66v2wP_l9X-JMfZf8EemL8owo3HVwHgQURX_NPbJRAuXoRmkrKMcFjlRJHAg8S36PxczEty2UKv2Ytk42mE48JvxaXaIdfn0oppiBjH-mNGQvWgHYd-vzIFnkiE-42tlaB-63nnTe6eHWtohYS0E9Us-Rx3EMYRS3LcMzBBSKG93aMcxj6F_s4bPReWncrcjprXj8kRWZqgY1CivCZlNX-X-Aj0egBIzk_mppR693Dtc1rUPeyHI0WMEPf0TvWxC2jubqoY_4MrOGSuUYi1T6V6c1UQRhcavX-4ufO22xgEM1PblDW0Zg-b36qiH-m-S1H00w1E9MnV7eLZlQmgjuEx_QFkVISnMx5SM_wFs9h472WT0hch7TaofQ0grROJdW-zVmJ_QrhpM4RtJ7FRSO2Cy3_t55gPjVo0Aunm32Hx3OdQ9Zmg9z9kOr5Sx8zr4oD9gS__uW3UD2KbFS4ozMhexXA5dKWQVR-nNT4NunVSHQfWnupGokL_16CqdcW0dgTZQP5jHsNiFtSSrkbw2nKyA8x4jbB4oeo7FC4u1SjQU5fWDqj2vXTho3Q4JyFUKvzLLLTdxu7ZIOE6grgO3Iq4vmBJYU8YdJWGHRkVMgoB6lK1o_htdNcNXrXBvYSjE2dcTHr80oONdezP4KpCXluGmjBn_MqmYQUZBgjyT2Lc0P_vzz2gghbqwdFu71D1ZBqEBgmdEvAYeyA-di1TFOHbCbbJVQBGUE9h9rqPj4rPeZFP_89pn2qgw12J85nBdnWDCL2LZe8dtf1jJrPP6dEBh1M_DRJEeayS54b55jh_cCC1jewGGsCeceELqmzc6Ccg7MCJ2gAW3BfTSgT2yKRL_SlZ9fzTIW5bcOlfimSAbYl0aceOznD5YpV2cDk33olRI-FjV1C4tr8cAqdbjK-iUior0wLJ1uivgAkZblPof2qKPGGLuSPIS5AZyf2ThzZhTjBDKJQRNVxsfuBGPDT9tKQ5jHCvMx4e7_4jCv5fYMRASkFKARd6pt_QojmO3iKkxgm_j7ln99xntjsDYkiMZhEHznS4BQ7Osm6MixWpDARuPiU0XKpr139e0zk9ZT9ppwkjYksLHAHmiIsAPL8LJhXhyMsxz_uxCifDpGK9R9M-ES5HTX8TIsRmTlL_WxjWOGX2NPJndn8wmvWgLGVx6pnjc4LIGtBr1Wtl_fgxicBwGPv_PDU4zYk98zjA4-9Zokw9-DepKhyLqWfo3cp62u3c7iMohnJe9ri85ow8DLNcrkEdndWE4Uavf0YedlpP5dbb4V-g91Zn-iHbK0RwpP1ukaFw7tbgQUKqSi-JxjTSQ73VTkqrghmlDYeP_mLmsUnHCdrrd9UEewbsDqOHhvk5BT_G0fbfDl6CsCyFblvwRQ6-VUCz6_gZBP4SIGO3_Rz5sB4gd4uJ87Q1GB8be-pQtrLIA__pnAiDMMU9MxSbi_XFfzOvPKY3RjRFhdYnYB5Yih4oi6deCBy4SCQ8SVmif7V-eIS8a_OXnqlV4CCPgUMWyDcAa9v3eiF_TtKdVZ2rDPMxaWLFDHa5kQ65mCStHdEsJsqlVLAKu3_fSKbJW8uv1Yc10uFZXhAQyR28_2RkPsfPafVaUousWZUetqpGlp3LFusbrz-gL0tPDs1i2CSGMRyRt87uicYNmd83j1oQMtl1_NP6FvJZ9NxvkmMrG-DJHjnZwWE4agZJqsHzWxoQ2ygsAW4Eo1uLZwycgLc0VXqSXF4ESuxzByHFWVVB88tMfmtxjW_sCji09w9CgZ9cS-ADKijFjuWY1NvnBlD5FzRs_CIS-ByZ_yHDXC8JEy8VlSXkEK12or6tl37sa83R2plDveQXwTAaKwxFukOe_kjqG0Bw3mU45rONKA3_wzTIeRi4K_u4izZwCU7BJuo4WWmHfrl6hoJkyjT3ecYWC2hBp9q2robyhf26CT5LgcRWAxhRJxB_Ap3xHUE1_w9e8Cv6P5XKdV4M2hC3v1GC9cZhCgkRh3jb-7vN8fVpEAEc9CCkcruuSVY6p26EGl5u_5rloxW9LMQoDpU7vlcJje71e_faPSHggkDdTEbHv2HqlgUGbsWeHWtyqUqpIxbmjjLLAs9ggbmT6SahdvPlj75p_cA8VeppGDWouxRhNqDIX6eGBy0eG8p4fPvcf1BItWbcVauCJmLMmD_saoElapXnZKcZ_D5Z2mbT-INVwWnc6Jg3DROqGz_EtenHeGpavRuBlr-6goQLiyXpzXtm2dYqPNVpGQjeg7eBbz4Ya1GAK2hBfB8AU6oNbHpnJysvUqbQVYwJRJTJkiRm_yz3TKdNMCcMh61dYES8H3zHxkPrkjmYYac2MVeQtXSchTS7KoukkykmtWEaaDxVV29u9h1ekO2KdV4IksBCihkBlkRR_k8jLOLKE1Rug2NWQF6YqxqbwI3Io17va-G6zYutr_BFToYK16Ptavvk-dzpu-UIZARq5Vv-G0rcewrelmtMI6Lelthfl-SEampYn9EWqjI9G2P5iQYhNvVWzGpjemB_OXvFtnfZsGWSNpptmVN3qS0pAB83Pr3wkkzUSY0CUGFcAnLtpC0tDXGq0Oy1fQbHo7u-F1ZiOeAT-E7QSfQxx1j4C_c6WlTW2WEG_ubFJPvQumU_CwkrL7bm_5eeli9ubGPmm_vgfTdDnLpOS19U8-kovVR4svyajiHIPcl7dUW7pQOFfeX2CmE18ZwmTS-ttbWM8-NxTDhMI9e1q2LW8iWVMcQ2tZTeeBd6-bGlNxbJHomGkuCBUnm_SFZrQW37rmd_k__-K4HsVHUt5hbTg3vVnAAgW5RgXGrqKXHEzIkfe3D8qq4YVqeQYrjteS_v9LVrs46joHtqRZL-Zx_4Mut5e9QSUHt9A9cfaqRpIUTTtciYpy1HiX10pE34aKwOV7QPeYe_2bRLY3MkBpLXELEHKVwmuA9LZJ2xQNg_T0yYJo0FQIx6VG1q2A7yc9P5vVzLbk1UGYcmMthS2H1cYzSS0wle4SMq8jljfWsAeLoULu-zKlXcWk5iRy0YyYFXBQgLE6Lri3ZRxzJBGPKw8xtMA9CIWKCzjqYqZXQcFrgJ_HO6qe9yXRqylH48HbIC1MUS3i2KJbeViIzhyRtkSFPs22j28bScthEs0IMx9jFUsHKIcYNpJiq0oYJq3TQY87j4kJBWZaFh_23yS_62JCMVoUzWWhJbgX_FVHHiwMxviAidukTqRwkP_bnP3sxjshkW_fjj8wQp1sAFHGN058YLxgFwlSCV5kWkjlJ3IGtD4qnxTCqbongCe9ybG3bVGgf7aHqIhI8tgJ7S77To22orx2gK5mJLR9uz27eMo1y6h00_8ddpltZrGtMgSLGNMvg5egCpKrFCxXQ26HncVsGoSiRKQXTdEP5gNT6RbLeibxtAFW-AqLuaR6HuRxdHeKlYLhgguaZ0NzvzCzysZA-MCY3DaxKliVDdoQac3U5S3pEIWGkTiuZSKEtZH9Jk5dIMlJcVECN2yVSgGmgbCQ57bvSHkOYw5VhYAS2KSnBT8DL3jja-R5O5h7h3xKC31tWm3Xy7yQOvBYFmdUpXP3POIQc-6kev3Hi_fib7g4zvNRkPzfK1pST3dvmEdNFOpzl8pP0wfaCJLj36Ep-P2xrv8DTt9aNWHtA8iW2hNVu0CqmWQHfqJdhtCly4iBDJFvar3SAiI8CCMwPdZyi5cU5kPCH6_HsrHqaXoaoOFaWFSqnzeLGPy1QJyn3sMlixnEmHJMvRa8ZodY_RDLVBxm7VwwqwMfgJyCmFPuOeR22Dbq7wkVxmHvC46IzgGBwTa2NUFqMn3qY4ERcO2P3AFdWVJetGMSMHz2Xq59iO9Sjt_ojijY4Q2SqY8c1spW2xZepRC5XJXO3AnFq6ZsFnQR-YQIxgI3TCja6uFqAamNQEvZLYVpW66cR7laP6D75XjR_hYs9y5zllMVK_wTVSx38AZBWe-CEA6f20NIawf0SvJsFtTtKnpoD1NsG3gmuLgP8MibRu695zTH-yoH6S6jwvjS_NJJ1_UGtNmG9YUAox8jt9jeEE53eGyGR9CVRiOsE25ihW8xWk58HG-qkgGJEds9CEuGH3Hcu7ZtGxa4bwsD5d2fAWThBz3SvyB_6wTiTQEoLNo0a_1goHF3ZTWXrh0KdbVqV_SCVRFAM_0zo-aI6Y-9JtAU5FCrZ5WXhQOpXxkkkdzDG5b6a3qmaE4Cq7048GwfGHwgv3jmmEa4nHm6yKFmiXHmBeC16UzVa7HjTtqphEz7f3Uxaw292VFVnnfsVF5-yLw5OwvLZEinTDxkNkC8N2G6_lm4itadX-Iov3AQcBnhgZqomc-JA9fHPzADTP62Y13W33gfIhGmSWwZekXMWeUNuLCqhGEjhGX4pQBRP9Z9yuD2cTDjZM2fV28iO9loI5-3xN6JM-UYgTtuopB5PlRVSleuBLlDrJF481FQzWZ_gJcK7S5hBfRVMaCvAnTkHLkNbdm79tBtP-TJCDhR2IWLAr6ACfkKQdSBjhQLZnRPYeuc_ndGtpspAPBpiGtJEoEXHIClaEHn2jl1ZoDq1KrKm6-VBxAeNXkBkPu9MTWKg_CPe_vUNbU0a-UBkO383KlkBH092XKEcQdFMBqkSMEA25xo7dwovih72CX4EaEG7CeXgxo6vOjQrve9_Kvo6GIvSmS2VMfpZ6NwGOeD6KxTCckZxeqZxqr19TZIwtcscC08hlzY2XThfAc_rewy9mIG_ePev5pt9wIqtvt7WcW5eADbIA2AmB8ganMFW2lYKUjNQl5_sW4pU5xOg40JnUVAr_qKJOHyk4HNVGF3-Dj8tj9mCbZjwoJi_XTD_0IecgDUvnXj_Obc4Dsc1tw5F0eNK5GUO1KS89HuSDbJlBTHQv4tO8vDVKoOqa1ODedSnh-y5Airizs3Z98exwA6TBg_KaHsiMiCa5r9xjUHWySB9d8PyDPGM_vV1AoR3J3ZgWi-243BC2eWMWFb8d6nazYIMYdDW3FlauP9hPbGVC4aNsrB3jq7JxQU4pY1fRC00MMRUfBRGHZT-WBX8SEXoS-_grON9H6hZFF1pxx84Ii7s8YiQcX0rqqYtsyPjj85khodUOWeh4gst3O43l8u93Fge6aCPtUPQdi7QybMrzBwGFgVqQrlPiRnZ-f4CpNEUjlNWgnVzhk9XkyQ0Zawtza5VV9suvf5m6n8I07k-S2XFfJPAnx9-RH6GbGr_jAPRuTyNNWpapOoD8pVhQdbKrmrEaq0nqF_k2Hr2c_9KB7wZ84okyXsbL2nXzHjWdBr-9a5b1cslcRgeQdiZSwpSoxDESzjxGW4pm1rhlcCYyCJ0tmVAff8vkl2rSqzjR9187z0I_fikfOrzhrGVGaiXTBPCa1OWdFbcC-IVsPcEG3K0eL0ubKWnvN8K-NL1q_1omm7N7quGkANrDKxqV0sypShAhggIe3kpmaEBumr3fdcsQCRq4u2VUpgcMKkTcHDM_9kb3ByXBbNsMWZ4-zacQnTOek9bKF0hWhG7ZCs-C5SGAgcNoKh18IlleiP8adqbqsVu3Hak0Z6FwlmRWo6rDWabqd2sxc3xMJiu6EVSgcbL3rbLchmamjJ17Bqf1Ir-vqwHkFJqdRjHrgZTdIUh3H01NAAzpyoUBw26sY3XuBlZSyyb19hw9GD7oGRwJc4GQcrVs5C47WxId8JHeYs34u0Uv2FIOT4rvA8mYov58Yaeo5EbGcDraFaNTChNzbCzz7zcI8qBeu79CnGTpk24Hm8oh9LESrw12kMgjLhkA7_ILMOmqa_-4xGS_jycITs3yrpF2uXjAm8Xjs28Yv3Wda_JKZlWGiKwlRCUwoGmzw-rb78Q_FbapVcq70tw5j0EfDQpHtlQNac-UnWai9JpTJ37gbraeoD4ue3vId_4NKaCrtlN7HUgiS58aigFWOHVzx1PnYycjdMC5jccTzOFW2QF7FgKsuZURUx5PD-r7QiG7yJFKOZ8hCtOUKkYjS7u_TanHBWxkAkFRdIYhRQMGW4he3fJBKF1gB0yMzhxctzXEOWErHWrf686WcIIK5NoRQYVOolOPzADlVLtULfCqW68bwmuengLV6LZvyYaFhQ4q5rjbY4UpeIcwdsCG5lh2GJ0rlFYn7jcdbXRMo3wxH-3cX1T1ZVqkAxqVZ1iTrQckNu3FAFU0Lbmk19btTwFOFTrmW_wupXaZbCKdhMGRXjtmASRSjYk5636DrqKgljp2Se2p_c161fc7GbnyLfjZQduSPeAJTvCnjIEFtqBYDzyd1uFxnZlFADKTEKyo73OieGWC7cN4wzNdDA3miLeaDvf6a4yyyHBv5L1S-g_M2Q3qUSpydH4pxCvy8vNRyXddb-dQqLK_ly8sWNK3Lgpoiso9hP677sMYSs_UAuQkVmgWlr20zycWX2G1TtDJeJrYqUcRQvEcuS1MAXe99Krbb78UG9OZ38GOySkjRisfXGTlWMZfXDbbIRJpDXZQqW-yM_qopS_6vcglgWRS5D-8B1h9a3z_ZAG0iCUYOnx-ax0N14z_ZMySpK4NI50fz1TYJGBG0VEedWP9oodp3gCqJdQvAdLSj4u2yG-uLkub5xbqiPuKNSUh1hB6K_8hU8KZlzYuBfXa0rstFgK6AtmC-zOd7R6kxTMVB7XEwbfjmWaWkVf0BAxT0YJvFNqotEVOXfhecNTcbK3unoziaSFTxl5WrzlAbqb6c24nVd8Rjog7jcYIrkZPbyGppz10YlWK1zm_J3qnRHPVc5W2eK31oIE97qypF9shrR-BtGtrTnII-O46ATImTVrGchNC2jZ2N9h95416M_Uut-sggN-TVCngUKggYV3aHIlFiT_aPvF-USG2C7Fzt8UuVCL18wMDlRTh-wP0NGXMaKstZGLJDfomfEXN_zsWcn2XrJzVC3A3aJk8UCva3ndaCtD98MT-BIaDabBFj6OeeMjHEPQjTgnHh1B_Uu-0Rw_9uvMFl-vaPHy2hsDQZehmVbw-d_YZw9izWJZpa7wOuIlaRIRSyST_vslG84QlkCzFnxKjOpg3q-QgGAe-5eRQdnJG-8wbUiEdt9R7jW9sLi31c8TOooeVP-6OmVjoBUeZxfhFMJ98yGruVKK4eiGi-4sMEknuA9jDJRDsoIGouv0hvPyJZgAoW_258PzGHQJ3Y8__q0NcJiWTE8rV8ADttiTGqRC2R_B9zhRs5Cl5yTatMPfTXTVNLYBseFkmLNtYHjmVAVxXzoF-kNsHyoK8c8H94KB2sB2huS2pl810jSEyGSthhhBrirGVs3qtCrSRtH7a0j8upzU5hMUAvREsu8MFHcU3YjAcLEuJe7ESJguj4UWHk2L3b31aaWQ94SgdiuPe9QH46ox_aKCsuba2zCLK2rLS18qn6Nsp6RAKNcvFL44zw8AZB18UVjUySHZOsM3Grxm34ZjTizFcMeqlRik1oLSIRf1vxW6nMtTjCAnqlfRrPNC0cI7U1iQLjpyN-ui0No7YvDn3bCdkwcvUeLOmGABBpQopF50nqSWUc35Fr4KLZZipvAHzCuEw7QpzZXxDN1cRm7L8k1nUHWJHy3oDAtnE0HPI-cw5wirit7RooLJVI93E5SwdjLdNKa1dCTpVYGnDQGGFUZdyrsPG4hDlXqawnAZJbMc6C6LEhKOn2rd8geMuK_A2lHl34Pvn8mD4bnT-MuPpK2p6EDf3kFzrDdXpSwjTXj__Bmbfr8T9_l4QnM28kUyBQTDtDVGkQ1v51_sShCHeOLwtRFQSbVSWVCKG5MVRp_IaEuayT-_UpBFaYL_HO81X1IFo--czjB0Arf0JCvj5rb0qL0Mc7IZWUGJNHGE4VSMU2WRufW089Vfc6OAvWCfQH6rPjgPGCK3lCrb2Cfiom8A6Kwf95-hi_pM2ZPLjNFKV_ZKgiSnyG_SIilfdLOGd3i9bI4_qudJfKZ2f6UCZe3u4WkNYKi81RvfmxTzkcp1PDFIfQJHdHZGOEOJVMdtbGv7D1w9K6hhu8DynPH6LS271f5rHy7ccoIiOElmmlFgkw7DlGrC7TKBFINPW_VlSw7B_xW3jjtocKNBWC9YufleZ2ihnspyYYp2B4vWh9Hiz08eXYxYBwFxqEr1pBwC9HaNm9ro3i6Yqjf4srHSf4Au4V6godETFa7LcVz-ua26E8fgp3gTlYgJucfYBQGncfeDQiKxkwTT5O2vSFFbipE5uSVgCBBgzEQdlBA4HP7ny2VJJkQfh_L1d-DR6QxKt8DHPJZAutl_O6ur6bvD_fu4aV0VwxiBbHHLByKiIWrjMkYbW8RYDSIH7pdVK-MJVAUFT_eMDlOP3-tZwRbOc2F2nfmzoVwga8P1SPjOknpB9UGqMaWOyLw8m88pR8IMRjDn-n8ztN6yoiHgJAq42jI1gegah22zGIqVTzQbeAj-img853nhWbn_m6R9WXCzd4AyRzMEkuxf3gA0tdOxkJFyJ78_7NwWbw9hIxX_4HltH_-dsOp54QC5pI5-l3BLEpe9Olc1xbhN6HWoiG7BAYg-07TE04jZFAVvSiNEvpiB6cq5OBZwZ-jgfxL5ktDrLJZT1iTpcJwVsAgNVA1WnNxP6aRuNsFhIs4e8jK8ka8xOCg0TidWi4AXOakcLhFuNRdu43Xlp2WnwLlHt1epwb5Q4zNIVA-t7yecFa5Wzrdm2L4uy7jfD2om70KDA-uRuWLtnPqdgAkQOc-_6v44kA-MRAqSP7jhlJI2hdo_5mxmhc739p0o5FKvusI9GBXglHLBHlyElsHA03Q5OvHfutCfPOFX78hqwW1WaC2t3IYlzdkEfnuuBzK_LA5Mqo7x_UH_Fh0oBcaFNbpyraky0LT8MSEkjQbInyAdoFZ42meL1y_EpeDamcIRFIeyUClkG2soLab7TPZxQFgiCQ7FfupNV7GEhIBuG5hS915W0Z16-gblTBOC7hT0wUK6CKZa22Oh79MMln8UyYeEjlWKn2fejg0Oy7XWm-g8C-L-SkuJxvt5SDVOe9C3K7iaIGY7-opcvOjeSY27oLIUUMV-O0sR2YgabxzAenrNjUuaUzTubWr3tjkIKxhUIOhbUsAPAeeMgcG8qupkYfzDRfyfH89enwP0r3yyDx8v0wrs32IxQRjPe3ocaGd7gvSECsc2AAfliIzm3iLM-FsX3D7C3YSpVmlP-snIUjZ6FQz-t14SO69ydp_oGuqtMx9Z6ImFY4NYBHruH8EbNZZTIGMGjHUF3hsaMfj-Ixzt6-j77JIalPrLokHx9w4Fvk7-CL52WqpgvfTcE4UPStJqOfGUvlpi2EqEIoiToxjojvGEw1cqx6-TnVO6iXZ3vBVYOkXP52zbUNZBZJc9Jy1P8N1lAxbO51Cs90AiPI79EG7morB2AA_VCn6-ir4BSFsBjhQ1mL_f92I1Y7itVRjlHIYcm__ygAUA-FygEcmnro3UK-t0BKNL7XwSwsgVfXrmJZNN2eR6Ch2nALMqSCAdBdfMHjuNJ5rBUiQOAWZeZj2I68Je4LvE4zjuC3jzkbmJaJzx2ESYBRtgDmKV81KnYxkrynEjQFxbF8SaTFrDWyYVLXkvt9TvyGM4Ke22k6o0q_aG9osI0OmZt4y06Sc3wX5T88kc0Bn8oxEoI3DHAWsV3OsSLq5dt5sGBdxr64leAyswKWtcP5N7jYM9BZpjLoOEgNml-w3UOUfJJiH9UL4mOkzL8NkuKBU0agWf4qLmycyewxpy4uN3XO5DfQNqo_u87F89g9DgBpZE9LccYMPHa4fRmtysgaJkP6QDS0X4SO1mvpyl2I0Dji_e51IplVpmRZiobCu1-rI4iC9P8AyqwJ_K_U2V7YVC5aM4tzqJdrvWpSeU4nGI29mTJDxxKygIUfa6YctygTBLxKjdThzy6f5aOOrsCilhRoIsOy8q5zeymLtFQz5y_hlHJjVgICpYh2WWVtc-Mql6VcPlGxlJIXuhO1SskNoUu9PHZrzNmYmJQEdrdSbzFdEi8I_-ZY-OCffRD2ybErAeuHRMIEiMbdZbMVU7vjbMmHDUP0OOxO5AFwBsrKhFW2bHbsZEB2z_O0qLIGUnTsgAOXPpegs8NRD4VMlY9GOpcUECneaYbmEckOY3G4BPymlwr-XhGmzaUHuYUkGOGbN-fKoLEtZs3o33fhCz-ZYYbjJSY7yYXdRzWtNGt_sMO6AOET6txbTfuXgRGdaNCFgFJbzwgzvtJzM1zHW4MQ16BRuN8ofjz_kIxpXD-aBhUWtGip7HcmB6UE1M-kDn6UDGu_JxIHD4cUkDS4-HRyTm3XT9dNvvAgUjDVDLGS4HXr-b8nje65uxFNPBHWcub5gmyV7xcdH1pZNtkhqaqUoNUr_QfhfeyCnbI6u7yIkbDC2Fj9gAiRFAiVUkSM9cXzlg6YYKlEXeRMZzksKG7ZjfpTTqPnO4DJaf0aAWqI8w9gem4ZuKV7qMdJhwytJudPGn9coZZ7WvW3VJzHCTSQqjV96yqfiUmp5V7Rdn1KNkfbfrJI7wkqrBFCJoSp2Q4_i2VXJML-nqgzzcTAy5zAwfu-DaUz0WS5T1_xUSOVDm2hwE3bsTFHgAsGZD4i8ArFpyfNpesFm6DEFm2z73re-DeJsminfSMs2b4YwGIikTCL7-9man5EpeShfCyAu3_2euLbKnS4AXWK2xLNO5jNfTwXq-OX-_dmwGdogiyzMBo_VSwexLp3b4ty1w-hYashF9W_4njMsQRcGEp50lAIxUmtSLEZp-xEr5Exfx7FwuGl-8BJUFm5IaNw__k0wHv8ZKo9ash1bFXWTJSftoiDvsjWXxPA8bP2wLBREodudt7BaTaahCZcJ1iaiY--8NuqYd3eHWtmSsXMrCO-KAG90DlCtzO20g_hehh9iUnGY6EqF1dTBZj6xVcbAsEdiSxpcxx7KpQdFdtdvcYlTEpRbp4kKwz3IAp48uExPrPcLHofTUuBD9_RImDH-QAjJkpp5mapsvIyPIzDsX0ZQ8YjRh7PWYaXh7C5WjzMjJMZGbZb0t45H46bBaAepv8ldAgE-n_GhMCt9dnAa71C4vgvUw8JVskGLagb9BnA7K2hfBOsC5Wx6-IZ-GF7OWa9UcesuB6PioWzLCx4biIB5Btl8sgP3_R4-BIbMcl-CU_IMvzxDnLaOOqeWkwGzsWuH6Itz7GIqzY29bSkTF-DQ6TVGaSCPlYwoWBBFGBP2tGF3_KcCeYVo6x2hsMkxhbdcX7pyIHybYcHF3-7dNJLhajHXwobx0AsnItXDgQ56Cf2UF3aNavb6IYIZEMu1avYlQwm0I7PgwIcL2XP7cllaVxFIKq-K0KCTOEkVqLxSoOZDSn3SI8D7v_y9K_MzOMOF9E-2pX6CP6BSsqkVqk-SOmgPUPPCSVpy_pyI2WUB7PkXXfyqacXHj_hDC3dWnq35QJGTcQ8X4U6iG6-qPhMVtjLGNzNWc9zjUa85OnwptEjgt7ta1BvrD0Hk0N_EF5GddgTd81dkEk3Pc1UZmHMP2vSRdbDWSn3RfefOICTbajTymGYKZYZTkcZWIUk4AyeygHZMI-Yb45_JXWYMZHbuGKjdMV7lftMeQ-c5FZ5NrwL76ybpDT3CTbayo_cc5hQ3e4JhyCYu_GgBJnjw0Vy8Q93X9K9oGFx3OW1RlQ2KCzq55AyAouhSsolzme5kNxS1B3RpmhmDuuTzBAPPkM6QxsMqbMCRfx5v3HhtY0Cnc-S4SP7jvdgRRLs0y8hys5IUO7-lfNp-6jIidB6GdlDOpqPFZlKaYkf4X0jUVEMUT39Qb8sKmrRzY4W__lNJPtih9oh7a39B3nzsFgCR_0SxrjEeOU5gnasgoscK_rqj4gUIgjsfbYGY5zJ1QQsajqlqgnWM4Q7WhKNMuRxniz4Irg1V8IpGOeNUcUrJh4Atf2hhB6vQdfJJ8uYqOMsUs35UKOyz3hjDCEyirtr_oguEw3H0WYVcKmfsZtSeUP3EXADeTlKJUFQ5hsdCa4E6I294RB0z_K-oIE5r9SnX7Fq9_N-HfuY0wBcNwKRtfyn90UJWspnr7Fr0sYrCk2dV27YimWjckplB8O-h60vEOFTWAJa-mQg4MUTPs37k-hBX-mKI0fnOAo7NA15An9QYL_DNN3elogVgAHKQOdfEa_3A471IHlR-vxKrJDsK3OdgJI4R4Zu9P3mwzCTtb5S4p9ETsK5lPfWi0iovqi98TI58-LYY-tM5T0pOp4O5BSH3sdLzt19LY_MNATGLvYHClidGdk_0Zo15p6kjsl4EIzW4rmsKtqr76RjEdvGJqmHUMbxHazAbVWcige5jNxXGiGmZetzC6E7nRFc1PHfHRkLgJZ-gSYLVp3h-3oe_gpkFYXooThMYZBkqeD_V6w1D_TARU9hYe6uVu-_uB-K6foIAueKBNcC7lt7FSATcdltUsOdQGYfVuMcPwq9EuF8m-iDWEYGYWYVUAvPEgbLdKS2whBxti0x35li4xgQdbpGMhN2XF7SMjLDAKPtjnWz_DlhZH0QW8y4sAaZQ-Uc8csdEIFRPRSQ2_RBsl_RB7SBIXNOL3VaBZDk00jLbwlU352H8HajxMn3GR-MIsm5ODikUsUQX6X83e8X9PExOiS634d9PA6tZCdjLmlCbV0v14ZluOyITc_R-c_K0nU7JC5tuCUfqObCi33fcAPJ_16Nzf9S-Z61xCLj45ERRPVVqDBNAO3T4RHI6LwICUsjYtGBnoWb6ThPpF8m7ymDBLs9ux7PRhedjKne-24YhAiM19B4B8VOzjEnf9ZqyrBKZpLio-whX0HwxcU92Dyg09Ch8W05MZmR5hgQtZCFrNuke85eXjI7j3h3cTHnzLAS_RbXhhzBOb0v31zt615pfAEZmj-ee1z68E-AALzHtHv5mvLDWE6HcfwikJX_n7R6EGINaOEsK9fRiHuz0oVd-pPPmqpbwX37pXpxN1AD5hEGjERd7gOwMTSZOFhF1Z1WulKdDQUV68CUMQFJsbpq1brQFmTgRbawm2soWWY3yOzCr5nf3EUOrE6JoWS7Ykxd1177aOtKma4dbjN060SJDx1Q52ARQ2QeMW9wE6Gnzi-W-t9gocWzlsmBRb0CEdy4h8aZCBTi8JhZ4xiOXqMVRyZ0vKPrb3R5WC6hFO82N4eCj7LmxogT1kzmP6jUjf906ZLMIlWGMNgLdQMaA_dNNPyZzooS6JYntIhDmtmWwaAVnG8HLBf2B-7R5zBVKG2UHhlbcyswkBhm4BKimvKXkAG5pgHhZSFbRt5cyJgrkekVCxQ13IVCf-v0jBgON2DJ0pLkpH5hrLIkHndvkhSYqtQpuFZVnvyRBPEBjpImKZ5RB_p-CXc4xi6HmvpMwwTktP2ikBshDeERAEwLEvUZsMgG8D2qOKaJXZM_hnuM7JrgaSOq_wtNmwBerDLM7RMSsKfhMuDdfINB89pDDdmtcL9Zi8TDgCC-gNfUUfAhycszqKoa9lDmjul5vGg1aO9IzSGOGMbpM2gjx7Bds8vdwfV0lGej6XGblZ28l_7NIY5qvG5kXiQnbOa6ElFjsaIYoe83EkL2s0h63BE8euQoI7UMgq6LjMMFEBXboveRdojm9dYuJ3TA09JunAEiMXqULQZA_zpM5OtgV4S3Hsxz0RtnOL5UHbE_psipAQVhLKO8fC01dCM-LzH5GI365MRBNcQ6WrjuOLR0eI7PlnU8LYX8H40mnMf5DSl2iEB1N1XZ5W_aJSy7LqEEf5LIpxwvA9bwGLZYbB9OrkFPN46arJ15ADmNSHC0j1tc_SOSgVd06jL10EidLGvVEglt1ApcHpH_XJCIku4OPV-4WJxXuy-4IbM0HFc3AswLhYBJDWpTLAn_YLHVu6S-ffNfi76c9oF_KZrlbjCRq4ZHDc8le4vnscE1rubMBeHQMLIlowP4yHdWDCMhdjK_YGqZpvEPytk5r2TkhSfHnHskTbSlshItTe1-DpIU_d-RzP8msyrE53iq-xYDuTWsN50nnDpoK7zQVThF8ifVp84TUv5vb3wXIZ2dHvAx9CqnIf2HkogMCgs7H3aaCE7gpb9bR1bbnXDBbl2T3ia_lgYmHCh8ffRRqgl4A465irXc2A0L5KXAOizflp4yYyLvf5NveZV2sD6bMX39OGXFkVAFKfmemwsC12zXM-q_iIk8WrtTJg8p4PmEoBgoUzjQCtErh9eniRChtg14CPhUqoRzKe4wM7fVM0f8ci3jYyXvHu0eLFEzq6uhvXNBWuckXvpwSWA9mCeOQRyaKGZFzHvokV0BQtdmbfU5e7ByuAii1Jj8yADcjTREIliNQ6GBAxP-uo4RJSEQlZHV2NBE7chlpaipTgBh_nPI9Civzd844vZLpp3Kxc1EWLB8tq-BX5tbmvtgOoxVGHLKKahXNXi74dIoJo7zE6OuSAUB1m_3UykM48pe-eq6nmG7MfzuY2iiuTeCiYjrZVOCNaUpgqX1x8uzt26wwJlZFJXInpHOytmU_RLW9YzcekhuIbe0BMCetBDcCJbocO06Oo95PQ4F7IKPWyz_CcI3d9kwlUrA4GEPK-xdz9wykNlOurfZl7wF3mTyhbb40t4xP577yBQLAcSgxdxNCoNR2MDOgHfpXlqc2rJfhKSdKyH0Vmz-mhfL6ibpXkzQU2r5vQbUPMkbPa1L4moq-uYyDvTX2qDmc033bvqRXoKnB1oPuwn9GIyvPDk79SHnJH8JVCuLmB7c8G2V9iekXvwdoJccf_ILPssO821LfL9mWAYlVYK1DmV3hRk2_rW36EA2PycWpKIOMd_hNTz5ixN2czVHBnnnt7wKXqz9FZB0ByJ9lKeCXQCbS6Ygk-BkUsQgwIpFT13q9KgS-BHnXgcCtRTj2GFdCUMvsQBeztSfifYWqH4hR5PU7Bzfh99KuFmf_DOs9A0ytlVO2H37mGzjR_oOwQ-Il7Q8dAX0EY7JpZc-C5TwW_qcWjA0vjTUV-CgPOm9xYLm1bM7Kw2XH5QQMFq-GdvQdizsSIpbfKGM91Gb4UCTqdfOrXKzSfBegHXi2olWtPE3nPn9tCdKXn7lPn-rWUN4vWlSBwueLu60vAslSJphPpzAfi4jH1u4IbDOm4K_PE6AnwpAgrHYATeUuL3sGb3xeOf8Pnvv7M4p8X1W8WamaVqUsTQ78k7FAnbGG4BlFGf76zLeGSrFdj49eGRoUKoKOpDT-Rnt3_nJ7O9r0cMan5pLiloShMDaLYnHYjdKeNn59a36dFXkXyyiIVurRpKZyb-JMc8jZRLP96qz3xvfLps9eYoL4NXs5aiUj1FvugIgNmu5UUMXoMsjs699uOtIAKgF3Ox1Er9xXHYx5aI8qHeDx05gx0GYebpk1xnn4MROuaa5NkhUQH1c6t8WFgZfJjFR9QG8nYYAYghVmD5P1AWZGHD7v2lqg9Xg_cGWYO9eDv4ooGddA7baojJb8kB0D0t1rE43aJQD-kRPeeH-iLiNyYmNOsRxIn-M050xVSveoImrOjOlPuI-kUmaUSozvUrwSiXqqUytezmNhEE6XxJgfbXNVwIQXh04jk7F5YrFRQ63-KtVIQv4CuAL4cFlP-bnR3buNrvf23_GLY2cAG4RcdL2icM9-fFKUgtwaUKvqPpgRJwoG_dKpUBUPey6Op6SpW8Tr4t494xK3aT5qQGkz_vSLTfFizVbl-DTTEyXXTFkmOTsnFUxDvBpiHrpHJgeInlMpdgCheL_8AD_ZPKVoYFBLEeEdYbozZpsTYqgHWAPf0rEaM2XAtGd74ESupflQk4ZfjzeNMHtaaW5LZGYM7GMLfT4vvzvC-rJyRECIFvj_JC-esKKdAf1ij7_-YjiReN9YKS4_VrC3f_sj8wr9LFUyj6YJF3IYWU_zkPiYojr0h4SJBkdhpwbiqU1NQD_pD8cAL8THYVhPWwsDhssuDRNIWfdPzfjIp9DOTJVs_hr49fo-fHktEAjU4P4EatmFy34V5DSVsy-sNZPnqLBVMH3wSv2ykWeOwPwCHBei-fuEZdHc9vBzDmigQBd0wm_XEsPdqyXFGtk2mcs7kWgbSvjpWwnD3LRs84jRgJeYr_DQQeGOt9HmyQYzuWZppshPi3ajJpyF9f5-Gr-TslLXelUrXDazLFcmu_8QCjhEg9goIczNKEdDBt6gemCECxvSEpsIio3aVOIMFJDgAr66ncAOm08nWLg45WymTiNEXilUWyMsQctZA00azI5izeG_f5eglnRWE7euleCGemVdM2ldH9SVw-nGtHO2qb1nVDEA_a5IABAR3XgPluRRDerPbqbYqWgVysg3_s3KO840aD6AZVx49HJXRrNsF9RuDD1bALgaziRwaPARN0sVG6HCeZIASlEdBO6VwzFuP6TFoaqsvgoPFuyyaaiQiHhHDTQg3SSl0eSjWc0l1-Wcv9r5PuJ6rpShEzp9KFSsF7BlpHMmLv44_DzQ5KcQhliNfNQG9kg3pmbzdEGTx1Hq86vQectTmc5yi0T3PSVqxHHUB-aVJNh_HsL_qfRHEQ7__RmJwN-B3onNdFUrn_hpBUNCYJqt5WP4u7psKW66w9xWCU7FjcEecquPzT7OKLNoagQveiH9MiLXfYqSaBf720CNpUP_gO_BDPVybqMqjyhkW_h5BxgsOISzkbtSXtxaSyo9eh2xDPQa7KxDtLG_1lykrU9WGcM75EtuAjeFK-Jux83GWhJq0BMVBeZ9lGldsFUTTa_zx6ktVdhaFLwMmrNXEuqK6d3lYMpthubTZbf9Y18SIE-yNChA0ixOsn7eWWxR_otlXs_xCDjUBTgFFvoZOA9W7EExz8ezAh5iWvmozYJ2dphoZwHjUoe8dxnrLTVyq60w4wy5m-kJ0zmW5ZXEY6u--oSl-ZDtWjHDU7D-hdc61rSQbOJFVJM40iyMu3vjIa9enNGNzC5jzQL-QN8iv24glWDXvDTUkDYnBXhIUKm5nT9OkXR7dCGpoizBI-zHO0NEvZD1Jod5tiUqvVX5SshaMF3xQW5sVI5mvtGjvbBBhjRUSXx7e8daYXtTkYbQ7gCcDt9y8rSdMmcIureydbJjTBKoEtqKDKZm3j-wxX3fUaZpVZrCe5XVvwPqy45VooEa9QdTlIgbBil1NQqk0T15CpP3p0Q-Gk_wCI64Oxydoe4LsJUujiZlsz7T0eB9hi9nlw-SXu4NaPScz_fO7J92jBFEC6cmjV3xWbAHP8L6CBIc9IZPVm6HZCKHJhp2DWQK1hWq9f508qlxxRBwu5rfGA8Xgl4qPQTDYliUCHowIk6iAs4BQHEnRtGs7dYXKhG4AtiB8DkxIZmcAA8XomsgaD9uVddfRwLSGOTSFcom3SW9hj62LAd8VLG6YXmt2-Yni13mzgLW_6K8Ih4JcY6DWQIM90Oxw0eSoXTgRWyLCunI6dmOTzTVKbAZ-_WUJy9U2ebY6fT_iPEKRY2dCUBf9kP1McZoq33vobyt7sMo0OJu1zjEFDSbxVlaoTC8-wKw0CDNOQsPd34EuRnHJ-FzV4jB7oqDMHvEKLUksXpZvGDaQIS0C9H3AspjdaQHFq4-ie10oG01RfkJ68hixwXKq7IUPGPtJ1TbbfGGpU1K9bVkSMj8HMr7UH6mvynEnf3F4E6bErqXv4xvMc-3vbZfAIaTKKYyvBMQvLJWMwWKf-B6XLPrXKLD3Vtpi8prSHOPLKopGGFrciP3ijOrGz6rrD1Pk77idBhXhIaAU9QQku0nUWLWGPMgdPJ2zneF-rzlyh0o2b_jrClYyWfoqh9cZ4dOzj4K6uLTi9OYW7GRj9Kfj7MYwItlRAp0HytmtSfj4iiAR7q11S9Z8Al1qwUbkFOzN1pi4ruTtojtsOzwj0xFkH9pVSkyZyMoyWdWbrYkreWjdy86nQS5k8_i5Qph76nFfSE8s8EL4e81BlvJKZlFrTSCp-fZmBRTbReE7CG2wWgHu9bnRFkwpCym3_A52y02nX65xmMtoo_HKCZnGnS5PbwAgNdvJCOvPia2Bc1UumBqA1z088mepmPY6CbUa4fb707RzwmL3CC6AAkXzj3UUfbnU_cTzsN5VWpGrL379GO8P7McdafV_KcN5sj_Us-NgWypVo6sd0td2sgUa6PalhlfBeNqi6gk2K-KUpUF4cVOBSHbPkVAtNrVH3aBpFiXECGG6_CXoGGgM0GQKgIBP4zARosYW-tSrgjd7eEPX4isRYxrpkJS03skJ6M_pw6Z49xCBeLtyAG9cyiDi1WHI1EQ5dD9hdPt0ST4VcHOEW-vJ-y9bOvpk4I-KaR6vW0O66FL_NWjk9KjApMMxXFitkeEXVFeJxn1DsQQtVT7T9vqx9Tcdwk9__9EpSsIeZlHpM_jX_isP6iisdNstBGhlAs9idEbp_jQRa4wa_2oxwSuq2-cp-_mh6aCzj3afKnXz3GltEbnOaW1EybUeEJE5Sj27lAUzFI9q87wehn8SYikrL34OuNuiZL9URlxu_IRYLC6rmHJ-v-Y1CIwbISvzqVHTUTYaQcwePyW2gWp2XUB2yhNftMjF0oQTf99Ufier1Xjb3cIshGB5_YC_AMr6e4RsKsVjwU-c5tejMHjdgQC8JnO-Gnr7WR1-p6pKBYvAIICpvaWkV_PpsDzM7WslaHIWjFlclJw19lvETBzrTjyV6a8buq4MyguovQA7Ivnlcm5wU3r0i0NNKYfJn8nEkSrtb6xJT6WP2QZMSMq98SD8VQbSN5REleEfUtUFZskaOJufbHpuAJpR44l6HQbnULtVTvR3zwH54sTyXMgWZe9iMad2n-exO0e9rb26-e0z5SsQWstqaI7Q8tlvKrILSxK0hXwnTllGPgpdeC34-EEsoAYc7caOMzPcqZOpuEkTUmJyf2jyuQV24VyJPtuKStEyhaf2YSRDRNyxL6jg6VU_yu5Sdg61rgQqOYNb_D7uA9oE5VYQeU4s4l460YKEQJKUg8fsnTW-dbsE1sWcA6lPhlyduNLI1a7LQ7I4fR7Hywldkk0j0_OpIDPUSHGZTDjJJvTpsLPCP7UUviiErVyfMzzh2bmqrYzRoyciIfOaZEMOk_jeSP-tAWFF8cv3LfUHjCCk61XfvhIO-Q_3QCNDbuAvt34RZGrnvV2DUMNMBVUIKGkK7Dyh6huNpUmiZSIVqnKw13WU-XFzVRrcVXDrK82byKJZ_S8fMj_Ajw8FbcALc3jOOhHZ6Bi-q6ENfqZw2v0Kwqk4z6nA6pM9QfiQBPdWQhkZKZO_klMrT2ED5W2BbBoBCAr9wkoCgEjj6yc6RzZLqMLt3kpmF-eCDY6cDXWqw3C5CD2y5w2PH11RfY5s7uMN7dZIStBwLgN3ohmXxyo9snIq-MhXihzurV6Yemt-GUoq3vxMKLrrlRkNG4MhwnDHB49T1YTDiAruATMtyD7yt4zhM74HCinQyl36pikEP4hEUHRTl9h2KKoeUKPaVTkVH6-qiJYQ1zQECrimyUKSf9Xx7Aj9CZQVRB0FIlonVsKtm8HREiubEptMgvwh2MHwZNw7qmIv_J4FPWTwZbb1YHS1VDlK-pIvDgQxMSYHIbiwOBWiUMxB1TVAGs7-3Gvw1ktMVDXcfBdb8fwLMos_PktjmWS6a1AafzbH1LPtAqnjXl_rGon57bOQ-4i_AVlmccjYasspaSkoCmPLbrHdBCbocs-tUUvGRAlNPxtZwd2sHBBKITzGfbXZg7I8-RFt9SRA-N2PDhknzxtGSvcW_75eTFSwkmTFmQqtmZsb3yvI3hoBf67gwOX-D086W8i4zXE98uqdUZ9joBplkMAJibJBEfQgTLuJxjZ5sldItbU4kigx7FcDvU8Rvb1q3xOGFkfGwl-Z345o0RE6tCC7YMrCIWYxZLpOoK5N98-RWZzTr8JgjH-XGQh6U-SMKXsqtCZiSumFFnqbI_bTCaj_4td8jXL3retFgmTfQ2ulr1YevZ_2_YeoQsGEubkgz4M2kJH3ehFKmIAwnwX_R-hAGdt9nS4V1l1a02jooZiSLO2aq97RMB-ZDrlbCtWMnmraM09wlxrGnUg4DkgXRix0wR1tM9TSDTLo_uZ_wTq48GBCetYCskirulR5TGoER3Gq4b43uaESGStGtW9YvgwvMCveSVp6SWAwy5tQbkZZ4x5o3EHcJYWqGDRHaQzGx8O1ywrbYYFa2-fnJiheW4FZ2FIQeDuM9nToSFCNSKqG4vzeNm3p-vo7H7tZNIxPkcshFKPUcYow1DZ_Oh6rcw7ES-1nutgoipIqoKosSDm9s1JUp5D0QW5gOGs2_p1Ia5VaiUBTx1-0FvXeFSeMqN5ViF3zkNMih5BYZTULx9mK2bNMwkwleXR37pj8B-nM85bhcmMANwTCo5eoDmZkpzns-qe2_dJbrUKuMUyYeyY8sVCKdzLHgS2czUcjuyBAbg9xjS0oPw-Banwa9QcUd-7yqiibFx3bmvodRAaKIa3LPm4ouWRGwy1frSIwJspFcuIQ=="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "tHp5au6eCtLj1e8P3ZaWyAw",
+  "usage_metadata": {
+    "candidates_token_count": 12962,
+    "prompt_token_count": 102632,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6340
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 96292
+      }
+    ],
+    "thoughts_token_count": 13489,
+    "total_token_count": 129083
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "1.0",
+    "identity": {
+      "security_code": "4776",
+      "company_name_ja": "サイボウズ株式会社",
+      "company_name_en": "Cybozu, Inc.",
+      "latest_filename": "01_2026_Q1_tanshin.pdf",
+      "latest_period_ja": "2026年12月期 第1四半期",
+      "latest_period_en": "FY2026 Q1"
+    },
+    "claims": [
+      {
+        "claim_id": "overview_business_model",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "クラウド基盤上で業務アプリ構築「kintone」やグループウェアを提供するSaaSソフトウェア事業者",
+        "body_ja": "サイボウズは、自社開発のクラウド基盤「cybozu.com」を通じて、ノーコード・ローコードで業務アプリを構築できる主力サービス「kintone」をはじめ、「サイボウズ Office」「Garoon」「メールワイズ」などのグループウェア群の開発・販売を行っています。民間企業や行政機関、自治体を顧客とし、月額・年額のサブスクリプションライセンス契約に基づくストック型の収益モデルを確立しています。\n\n直販チャネルに加え、Cybozu Partner Network（CnoN）を通じたパートナー企業や全国の地方銀行との協業による間接販売チャネルが強みであり、パートナー経由の売上が国内クラウド売上の約6割超を占めています。ソフトウェアの開発・販売という単一の報告セグメントで事業を推進しています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0004",
+          "02_2025_FY_tanshin.pdf:s0003"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "latest_q1_financial_results",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2026年12月期第1四半期は連結売上高17.0%増、営業利益15.3%増と二桁の増収増益を達成",
+        "body_ja": "2026年12月期第1四半期の連結累計業績は、売上高が10,246百万円（前年同期比17.0%増）、営業利益が3,014百万円（同15.3%増）、経常利益が3,084百万円（同22.1%増）、親会社株主に帰属する四半期純利益が2,191百万円（同21.6%増）となりました。クラウドサービスの契約積み上がりが主導し、売上高・利益ともに拡大しています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "latest_q1_bs_change",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "債券購入や株価下落、配当支払に伴い総資産は27,023百万円に減少するも自己資本比率は64.9%へ上昇",
+        "body_ja": "2026年12月期第1四半期末の総資産は、債券購入による投資有価証券の増加があったものの、保有上場株式の株価下落や現金及び預金の減少により前連結会計年度末比3,116百万円減少の27,023百万円となりました。純資産は剰余金配当1,849百万円の実施やその他有価証券評価差額金の減少に対し四半期純利益2,191百万円の計上等により17,586百万円（同228百万円減）となり、自己資本比率は59.1%から64.9%へと上昇しています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0002",
+          "01_2026_Q1_tanshin.pdf:s0007",
+          "01_2026_Q1_tanshin.pdf:s0008"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_q1_forecast_and_buyback",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "通期業績予想を公表値のまま維持しつつ、上限30億円の自己株式取得を決議",
+        "body_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）は2025年12月公表値から変更を行っていません。一方で2026年5月14日開催の取締役会において、保有資産を活用した資本構成の再構築と機動的な資本政策を目的に、取得上限300万株（自己株式を除く発行済株式総数の6.5%）・取得価額上限30億円とする自己株式の取得を決議しました。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0003",
+          "01_2026_Q1_tanshin.pdf:s0009",
+          "01_2026_Q1_tanshin.pdf:s0010",
+          "01_2026_Q1_tanshin.pdf:s0011"
+        ],
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_driver_cloud_revenue",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "クラウド関連事業売上高が9,393百万円（前年同期比17.1%増）へと順調に積み上がり全社増収を牽引",
+        "body_ja": "クラウドサービスの契約社数が70,000社、契約ユーザーライセンス数が380万人を突破して堅調に推移し、売上高の積み上がりが継続しています。当第1四半期のクラウド関連事業売上高は9,393百万円（前年同期比17.1%増）となり、連結売上高（10,246百万円）の大半を占める中核ドライバーとなっています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0004",
+          "01_2026_Q1_tanshin.pdf:s0005"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_driver_cost_structure",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "人件費や広告宣伝費、研究開発費の増加を売上伸長で吸収し営業利益15.3%増を確保",
+        "body_ja": "プロバスケットボールチーム「愛媛オレンジバイキングス」運営費に伴う売上原価増加や、人員増加・昇給による人件費増加、積極的な広告宣伝投資の継続、新規事業創出に向けた研究開発費の増大といった費用増が発生したものの、クラウド売上高の堅調な増加が上回り、営業利益は3,014百万円（前年同期比15.3%増）を確保しました。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0006"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_outlook_full_year",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "2026年12月通期で連結売上高42,168百万円（12.7%増）、営業利益10,514百万円（4.1%増）を見込む",
+        "body_ja": "2026年12月期の通期連結業績について、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）とする期初予想を変更していません。第1四半期累計で営業利益3,014百万円を計上し、通期目標に向け順調な進捗を示しています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0003",
+          "01_2026_Q1_tanshin.pdf:s0009"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "latest_risk_equity_valuation",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "保有上場株式の価格変動がその他有価証券評価差額金を通じて純資産を動揺させるリスク",
+        "body_ja": "当第1四半期において、上場株式の株価下落が投資有価証券の減少やその他有価証券評価差額金の減少をもたらし、純資産全体の押し下げ要因となりました。株式市場の市況動向による有価証券評価額の変動は、同社の純資産および包括利益を短期的に大きく動揺させるリスク要素として開示されています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0007",
+          "01_2026_Q1_tanshin.pdf:s0008"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_risk_cost_inflation",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "人件費の上昇や広告・研究開発投資、新規連結事業費用に伴う固定費高止まりリスク",
+        "body_ja": "従業員数の増加や昇給に伴う人件費の増大に加え、広告宣伝費や研究開発費の積極投下、子会社化した愛媛オレンジバイキングスの運営費等の負担が続いています。売上高の成長ペースが鈍化した場合には、これら先行投資・固定費用負担が利益率を直接圧迫する構造的な不確実性を内包しています。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0006"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_context_positioning",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "ストック収益の蓄積で高利益水準を維持し、財務健全性を背景に株主還元と成長投資を並行実施する現在地",
+        "body_ja": "サイボウズの2026年12月期第1四半期は、契約社数70,000社を支えとするクラウド収益の順調な拡大により、前年に続き高い利益水準（営業利益率29.4%）を堅持する進捗となっています。人件費や広告・R&Dなどの先行投資を継続しながらも二桁増収増益を維持できており、ストック型の事業基盤が強固に機能しています。\n\n財務面では配当支払や有価証券評価減により総資産・純資産が一定程度縮小したものの、自己資本比率は64.9%と高水準を維持しています。この健全な財務状態を背景に、30億円を上限とする自己株式取得を決議するなど資本効率向上にも着手しており、成長投資と株主還元の積極的な両立を図るフェーズにあります。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0001",
+          "01_2026_Q1_tanshin.pdf:s0002",
+          "01_2026_Q1_tanshin.pdf:s0004",
+          "01_2026_Q1_tanshin.pdf:s0006",
+          "01_2026_Q1_tanshin.pdf:s0010"
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_perspective_decade",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "売り切り型からクラウドストック型への構造転換を遂げ、投資先行期を経てスケールメリットと価格決定力を確立",
+        "body_ja": "過去10年間のサイボウズの軌跡は、パッケージソフトウェア中心の事業構造から、自社クラウド基盤上のSaaS（特に「kintone」）を中心とするストック型プラットフォームへの完全な転換プロセスです。初期（2016-2019年）には「一時的に利益率を低下させてでもクラウド事業へ積極投資する」方針を掲げ、クラウド売上比率50%突破を達成しました。\n\n中期（2020-2022年）にはテレビCM等の大規模な広告宣伝投資やデータセンター増設を断行したため、営業利益が2020年の2,270百万円から2022年には611百万円まで激減する大きな業績動揺を経験しました。しかし直近（2023-2025年）では、契約密度の高まりとプロモーション見直し、さらに2024年の価格体系改定（ARPU上昇）が結実し、2025年12月期には営業利益10,101百万円（営業利益率27.0%）へと劇的な高収益化を果たしました。事業能力の継続的な蓄積がスケールメリットと価格決定力を生み出した長期軌跡が確認できます。",
+        "evidence_ids": [
+          "11_2016_FY_tanshin.pdf:s0001",
+          "08_2019_FY_tanshin.pdf:s0001",
+          "07_2020_FY_tanshin.pdf:s0001",
+          "05_2022_FY_tanshin.pdf:s0001",
+          "04_2023_FY_tanshin.pdf:s0001",
+          "03_2024_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_consistent_cloud_subscription",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "クラウド契約社数とライセンス数の途切れなき蓄積によるストック収益割合の継続的拡大",
+        "body_ja": "初期の2016年12月期にcybozu.com契約社数17,000社超でクラウド売上比率50%を超えて以降、2019年12月期に36,000社（売上比率71.3%）、2021年12月期に48,000社、そして2025年12月期には70,000社（360万ライセンス）へと、解約率を低位に抑えた契約の積み上がりが一貫して続いています。広告投資による利益率の短期的な低下局面においても、売上高およびストック型収益基盤自体は逆風を受けることなく一貫して成長メカニズムを維持しました。",
+        "evidence_ids": [
+          "11_2016_FY_tanshin.pdf:s0002",
+          "08_2019_FY_tanshin.pdf:s0001",
+          "06_2021_FY_tanshin.pdf:s0002",
+          "02_2025_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_consistent_partner_ecosystem",
+        "section": "trend.consistent",
+        "order": 2,
+        "headline_ja": "「Cybozu Partner Network」や地方銀行協業を通じたエコシステムの拡大と高い間接販売比率の維持",
+        "body_ja": "パートナー企業を通じたエコシステム形成は同社の持続的な強みとして定着しています。2016年12月期末のパートナー数276社から、2021年12月期には約350社・連携サービス300以上となりパートナー販売比率60%を達成しました。2025年12月期末にはパートナー社数約560社・連携サービス500以上に達し、国内クラウド売上の66.0%（21,956百万円）がパートナー経由となるなど、直販に頼らない強固なチャネル構造が一貫して拡大・機能しています。",
+        "evidence_ids": [
+          "11_2016_FY_tanshin.pdf:s0002",
+          "06_2021_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0003"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_change_profitability_volatility_to_scale",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "大規模プロモーション・R&Dの先行投資による利益激調フェーズから、規模の経済と価格改定による100億円台利益への変貌",
+        "body_ja": "【変化前】2016年〜2022年にかけては、認知度獲得を目指したテレビCMなどの大規模な広告宣伝費投下やクラウド基盤投資を優先したため、連結営業利益が数億円から20億円程度の低水準で激しく上下変動していました（2022年12月期は611百万円へ落ち込み）。\n\n【遷移】2023年12月期に広告宣伝費の投下抑制によって営業利益が3,394百万円へと急回復した後、2024年11月に主要プロダクト（kintone等）の価格体系および最小契約数の改定を断行しました。\n\n【現在】2025年12月期には価格改定による顧客単価（ARPU）上昇と契約数増が重なり、連結売上高37,430百万円、営業利益10,101百万円と営業利益率27.0%を達成し、先行投資期脱出と高収益体質への転換を明確に示しています。",
+        "evidence_ids": [
+          "11_2016_FY_tanshin.pdf:s0001",
+          "05_2022_FY_tanshin.pdf:s0001",
+          "04_2023_FY_tanshin.pdf:s0002",
+          "03_2024_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_change_portfolio_and_dev_structure",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "非コア・無料サービス撤退と海外開発拠点見直しを経た、エンタープライズ・セキュリティ重点体制への選択と集中",
+        "body_ja": "【変化前】初期には無料グループウェア「サイボウズLive」（200万人規模）の運用や多方面への分散投資を行っていましたが、システム老朽化やリソース散逸の制約に直面しました。\n\n【遷移】2017年にサイボウズLiveの終了を決断して有料SaaSへリソースを全面集中させ、自社開発新クラウド基盤「NECO」やISMAP認証取得、エンタープライズ事業本部の新設（2025年1月）を推進しました。また2024年には上海子会社の開発事業廃止に伴い事業構造改善費用150百万円を計上し開発体制を最適化しました。\n\n【現在】大規模利用向け「ワイドコース」やセキュリティ・信頼性強化への投資、大企業向けソリューション提案に集中する事業構造を確立しています。",
+        "evidence_ids": [
+          "10_2017_FY_tanshin.pdf:s0001",
+          "03_2024_FY_tanshin.pdf:s0002",
+          "02_2025_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_capital_allocation_evolution",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "自社インフラ投資優先の資金配分から、アライアンス出資受入と増配・自己株式取得を含む総合的な株主還元強化へ進化",
+        "body_ja": "過去10年間の資本配分は、営業キャッシュ・フローを源泉とした自社サーバー機材取得（有形固定資産投資）および人材・R&Dへの内部再投資が中核でした。その中で2023年1月に株式会社リコーに対する第三者割当での自己株式処分（約45億円）を実施し、サーバー購入や米国展開資金調達とアライアンス強化を同時に達成しました。\n\n株主還元面では、1株当たり年間配当金を2016年12月期の8.83円から2024年30円、2025年40円、2026年予想50円へと段階的に増額しています。さらに2026年5月には上限30億円の自己株式取得を決議するなど、創出された営業キャッシュ・フローを成長投資と積極的な株主還元へバランスよく配分する規律が強化されています。",
+        "evidence_ids": [
+          "05_2022_FY_tanshin.pdf:s0002",
+          "02_2025_FY_tanshin.pdf:s0001",
+          "01_2026_Q1_tanshin.pdf:s0010",
+          "01_2026_Q1_tanshin.pdf:s0011"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_implication_investor_key_checks",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "エンタープライズ拡大・価格改定効果の持続性と、人件費・データセンター運用の固定費増加に対する耐性が今後の検証点",
+        "body_ja": "投資家が今後確認すべき最大のポイントは、2024年から2025年にかけて顕現化した価格改定効果（ARPU増）および大企業向けエンタープライズ展開が、新規顧客獲得ペースの鈍化を相殺して中長期的な成長余力を担保できるか否かです。\n\n2028年12月期売上高509億円という目標に向け、特別賞与設定や昇給による人件費増加、データセンター運用費や愛媛オレンジバイキングス等の運営費負担が固定費化する中で、売上成長の鈍化が生じた際に高利益率（2025年27.0%）を維持できるかというコスト構造の柔軟性が継続的な検証軸となります。",
+        "evidence_ids": [
+          "01_2026_Q1_tanshin.pdf:s0006",
+          "02_2025_FY_tanshin.pdf:s0001",
+          "02_2025_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0001",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2026年12月期第１四半期 連結経営成績(累計) 売上高 10,246百万円 (17.0％) 営業利益 3,014百万円 (15.3％) 経常利益 3,084百万円 (22.1％) 親会社株主に帰属する四半期純利益 2,191百万円 (21.6％)",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "１．連結経営成績"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0002",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2026年12月期第１四半期 総資産 27,023百万円 純資産 17,586百万円 自己資本比率 64.9％",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "連結財政状態"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0003",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "通期 売上高 42,168百万円 (12.7％) 営業利益 10,514百万円 (4.1％) 経常利益 10,732百万円 (3.9％) 親会社株主に帰属する当期純利益 7,445百万円 (5.1％)",
+        "period_label_ja": "2026年12月期通期予想",
+        "period_label_en": "FY2026 Full Year Forecast",
+        "statement_type": "forecast",
+        "source_section": "３．2026年12月期の連結業績予想"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0004",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "2011年11月に提供を開始したクラウドサービスは、ご利用いただいている契約社数が70,000社、契約ユーザーライセンス数が380万人を突破し堅調に推移しております。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0005",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "このうち、クラウド関連事業の売上高は9,393百万円（前年同期比17.1％増）となっております。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0006",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "利益項目につきましては、プロバスケットボールチーム「愛媛オレンジバイキングス」の運営費等の売上原価が増加、従業員数増加や昇給等により人件費が増加、積極的な広告宣伝投資を継続していることにより広告宣伝費が増加、グローバルを見据えた新規事業の創出を目的として長期的な研究開発活動を活性化していることにより研究開発費が増加した影響等から、営業利益は3,014百万円（前年同期比15.3％増）",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0007",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "資産合計につきましては、投資有価証券が債券購入により増加した一方、上場株式の株価下落による減少、現金及び預金が減少した影響等から、前連結会計年度末に比べ3,116百万円減少し、27,023百万円となりました。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "財政状態に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0008",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "純資産合計につきましては、剰余金配当1,849百万円を実施した一方、親会社株主に帰属する四半期純利益2,191百万円の計上により利益剰余金が増加、上場株式の株価下落によりその他有価証券評価差額金が減少した影響等から、前連結会計年度末に比べ228百万円減少し、17,586百万円となり、自己資本比率は64.9％となりました。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "財政状態に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0009",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "2026年12月期の連結業績予想につきましては、2025年12月18日に公表した内容から変更はありません。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "forecast",
+        "source_section": "連結業績予想などの将来予測情報に関する説明"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0010",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 10,
+        "exact_quote_ja": "当社は、2026年５月14日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式を取得することを決議いたしました。",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象"
+      },
+      {
+        "evidence_id": "01_2026_Q1_tanshin.pdf:s0011",
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "pdf_page": 10,
+        "exact_quote_ja": "取得し得る株式の総数 300万株（上限） （発行済株式総数(自己株式を除く)に対する割合6.5％） 取得価額の総額 30億円（上限）",
+        "period_label_ja": "2026年12月期第1四半期",
+        "period_label_en": "FY2026 Q1",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象"
+      },
+      {
+        "evidence_id": "11_2016_FY_tanshin.pdf:s0001",
+        "source_filename": "11_2016_FY_tanshin.pdf",
+        "pdf_page": 8,
+        "exact_quote_ja": "当社グループは、平成26年12月期より、一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う方針をとってまいりました。",
+        "period_label_ja": "2016年12月期",
+        "period_label_en": "FY2016",
+        "statement_type": "actual",
+        "source_section": "目標とする経営指標"
+      },
+      {
+        "evidence_id": "11_2016_FY_tanshin.pdf:s0002",
+        "source_filename": "11_2016_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "その結果、平成23年に提供を開始して以来、「cybozu.com」サービスは有料契約社数が17,000社を超え、パートナー数も前期から40社以上増加して276社となるなど、順調に拡大を続けております。",
+        "period_label_ja": "2016年12月期",
+        "period_label_en": "FY2016",
+        "statement_type": "actual",
+        "source_section": "経営成績に関する分析"
+      },
+      {
+        "evidence_id": "10_2017_FY_tanshin.pdf:s0001",
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "しかしながら、システムの老朽化などにより、今後も安定的にサービスを継続するには、抜本的な作り直しなど大きな投資が必要となり、限りあるリソースを有料版クラウドサービスに注力すべきと判断し、平成31年４月15日をもってサービス終了することを決断いたしました。",
+        "period_label_ja": "2017年12月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "経営成績の概況"
+      },
+      {
+        "evidence_id": "08_2019_FY_tanshin.pdf:s0001",
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "2011年に提供を開始したクラウドサービス「cyobozu.com」は、ご利用いただいている契約者数が36,000社を超え、契約ユーザーライセンス数も140万人を突破し、連結売上高71.3%を占めるまでに成長しました。",
+        "period_label_ja": "2019年12月期",
+        "period_label_en": "FY2019",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "07_2020_FY_tanshin.pdf:s0001",
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "クラウドサービス「kintone」の初となるテレビコマーシャルを放映する等、製品や企業の認知度向上のための広告宣伝に積極的に投資してきました。",
+        "period_label_ja": "2020年12月期",
+        "period_label_en": "FY2020",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "06_2021_FY_tanshin.pdf:s0001",
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "特にエコシステムについては、2021年12月末時点でパートナー社数は約350社、パートナー企業が提供する連携サービスは約300サービス以上とエコシステムによるビジネスが堅調に拡大しており、クラウド関連事業の売上高の60％がパートナー経由の売上となり、パートナー販売割合が年々増加しております。",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "06_2021_FY_tanshin.pdf:s0002",
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "売上高 18,489百万円 (18.0％) 営業利益 1,441百万円 (△36.5％)",
+        "period_label_ja": "2021年12月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "連結経営成績"
+      },
+      {
+        "evidence_id": "05_2022_FY_tanshin.pdf:s0001",
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "売上高 22,067百万円 (19.4％) 営業利益 611百万円 (△57.5％)",
+        "period_label_ja": "2022年12月期",
+        "period_label_en": "FY2022",
+        "statement_type": "actual",
+        "source_section": "連結経営成績"
+      },
+      {
+        "evidence_id": "05_2022_FY_tanshin.pdf:s0002",
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "pdf_page": 18,
+        "exact_quote_ja": "当社は、2022年12月20日開催の取締役会において、株式会社リコーとの長期的かつ深いパートナーシップを構築するために、第三者割当による自己株式の処分を行うことを決議しており、2023年１月５日に払込が完了しております。",
+        "period_label_ja": "2022年12月期",
+        "period_label_en": "FY2022",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象"
+      },
+      {
+        "evidence_id": "04_2023_FY_tanshin.pdf:s0001",
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "売上高 25,432百万円 (15.2％) 営業利益 3,394百万円 (454.9％)",
+        "period_label_ja": "2023年12月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "連結経営成績"
+      },
+      {
+        "evidence_id": "04_2023_FY_tanshin.pdf:s0002",
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "利益項目につきましては、従業員数増加等により人件費が増加した一方、前期の積極的な広告宣伝投資に対して当期は認知度維持のための投資に抑えていることにより広告宣伝費が減少した影響等から、営業利益は3,394百万円（前期比454.9％増）",
+        "period_label_ja": "2023年12月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "03_2024_FY_tanshin.pdf:s0001",
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "クラウドサービスの需要が拡大する中で、当期11月より、「kintone（キントーン）」、クラウドサービス版「サイボウズ Office」、「Garoon（ガルーン）」、「メールワイズ」の各サービスの価格体系および、「kintone」、「メールワイズ」の最小契約ユーザー数を改定しました。",
+        "period_label_ja": "2024年12月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "03_2024_FY_tanshin.pdf:s0002",
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "pdf_page": 15,
+        "exact_quote_ja": "当社グループの開発体制を最適化するため、連結子会社である才望子情報技術（上海）有限公司の開発事業を廃止したことに伴い発生した人員整理費用等を事業構造改善費用として計上しております。",
+        "period_label_ja": "2024年12月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "連結損益計算書関係"
+      },
+      {
+        "evidence_id": "02_2025_FY_tanshin.pdf:s0001",
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "売上高 37,430百万円 (26.1％) 営業利益 10,101百万円 (106.4％)",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "連結経営成績"
+      },
+      {
+        "evidence_id": "02_2025_FY_tanshin.pdf:s0002",
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "2024年10月に実施した価格改定の影響等により、売上高の増加に加えて、顧客の平均売上単価も増加傾向にあります。",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      },
+      {
+        "evidence_id": "02_2025_FY_tanshin.pdf:s0003",
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "現在、クラウド関連事業の国内売上高の66.0％にあたる21,956百万円がパートナー経由の売上となっており、パートナー販売割合も年々増加しております。",
+        "period_label_ja": "2025年12月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況"
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 4,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "2016年12月期において『一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う』方針を表明して以来、一貫してパッケージからクラウド（cybozu.com / kintone）へのシフトを推進しました。プロモーション強化期や価格改定期を通じてもクラウド主導の基本方針はブレず、2025年12月期には売上高の9割超・営業利益100億円超を達成しており、10年間にわたり極めて高度な戦略的一貫性が保たれています。",
+          "evidence_ids": [
+            "11_2016_FY_tanshin.pdf:s0001",
+            "08_2019_FY_tanshin.pdf:s0001",
+            "02_2025_FY_tanshin.pdf:s0001"
+          ]
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "クラウドへのリソース集中を阻害する無料・非コアサービス（サイボウズLive等）の終了断行、Cybozu Partner Networkを通じたエコシステム拡大、自社クラウド基盤NECOへの移行、2024年の価格体系改定や最小契約数改定、上海開発事業の廃止など、掲げた施策は計画通り確実に実行されました。ただしグローバル事業（米国等）の収益化は国内に比べ時間を要しており、全体としては概ね高い実行力が証明されています。",
+          "evidence_ids": [
+            "10_2017_FY_tanshin.pdf:s0001",
+            "06_2021_FY_tanshin.pdf:s0001",
+            "03_2024_FY_tanshin.pdf:s0001",
+            "03_2024_FY_tanshin.pdf:s0002"
+          ]
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "経営陣が『クラウド事業の環境変化に対して機動的に対応し、都度最適な投資判断を実施するため予測値は常に変動する』と明記している通り、テレビCM等の広告宣伝費やR&D費用の機動的投入により、単年度の営業利益予想および実績は大幅に上下動しました（2021-2022年の減益から2023年の大幅増益など）。売上高目標は着実に達成されているものの、短期利益の規律という観点では混在した実績となっています。",
+          "evidence_ids": [
+            "06_2021_FY_tanshin.pdf:s0002",
+            "05_2022_FY_tanshin.pdf:s0001",
+            "04_2023_FY_tanshin.pdf:s0001",
+            "04_2023_FY_tanshin.pdf:s0002"
+          ]
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "業績予想の説明において、投資判断の変更に伴う利益の増減理由（広告宣伝費の増減、人件費・データセンター費用増加等）や、上海子会社開発事業の廃止に伴う事業構造改善費用の計上理由などを開示資料上で透明性高く説明しています。投資先行による利益率低下のトレードオフを事前に周知し、結果を適時に開示する姿勢が定着しています。",
+          "evidence_ids": [
+            "05_2022_FY_tanshin.pdf:s0001",
+            "04_2023_FY_tanshin.pdf:s0002",
+            "03_2024_FY_tanshin.pdf:s0002"
+          ]
+        }
+      ],
+      "overall_rationale_ja": "サイボウズの経営一貫性は全体として高い水準にあります。クラウドストックモデルへの完全シフトとパートナーエコシステム形成という核となる長期戦略を一貫して推進し、無料サービスの撤退や価格改定、海外開発拠点見直しなどの困難な意思決定を遂行して2025年12月期に営業利益100億円超を達成しました。機動的投資方針に起因する単年度利益の振動はあるものの、戦略の明確性と透明性の高い開示姿勢は高く評価されます。"
+    }
+  }
+}

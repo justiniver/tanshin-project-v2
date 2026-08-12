@@ -1,0 +1,115 @@
+{
+  "methodology_version": "management-consistency-v5",
+  "score": 0.67,
+  "raw_score": 0.6667,
+  "evidence_confidence": 0.6958,
+  "confidence_label": "moderate",
+  "evidence_coverage": 0.6958,
+  "distinct_fiscal_years": [
+    2017,
+    2024,
+    2025,
+    2026,
+    2027
+  ],
+  "evidence_count": 7,
+  "management_discussion_evidence_share": 0.1429,
+  "components": [
+    {
+      "dimension": "strategic_coherence",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "初期のビジネスモデル変革（欧州等でのリソースシフト）から、中期のFujitsu Uvance構想、直近のデバイス事業（新光電気工業・FDK）の売却・非継続事業化に至るまで、ITサービスソリューションへの集中という基本戦略が一貫しています。事業再編に伴う過渡的な損益の振れを「調整後営業利益」で明確に区分表示しながら実行しており、戦略的論理の整合性が高く保たれています。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0001",
+        "03_2025_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0002"
+      ],
+      "distinct_fiscal_years": [
+        2017,
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "execution_follow_through",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "発表された構造改革施策（海外子会社のリソースシフトや国内データセンター・生産拠点の再編）を計画通りに実行し、その後デバイス事業の譲渡やブレインパッド等の成長領域でのM&Aを完遂しています。サービスソリューションの調整後営業利益が着実に増加していることから、施策の実行と事業成果の創出が確認できます。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0001",
+        "03_2025_FY_tanshin.pdf:s0001",
+        "01_2027_Q1_tanshin.pdf:s0008"
+      ],
+      "distinct_fiscal_years": [
+        2017,
+        2025,
+        2027
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "forecast_target_discipline",
+      "rating": 2,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.5,
+      "weight": 0.25,
+      "rationale_ja": "過渡期において業績予想の修正や事業再編費用の発生に伴う営業利益の振れ幅が存在したものの、調整後営業利益を軸とした本業での業績管理を徹底し、中期的に利益水準を底上げしてきました。年度ごとの公表予想値に対する規律は概ね維持されているものの、一過性損益の影響度合いに波があるため mixed（2）の評価としています。",
+      "evidence_ids": [
+        "11_2017_FY_tanshin.pdf:s0001",
+        "04_2024_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0001"
+      ],
+      "distinct_fiscal_years": [
+        2017,
+        2024,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.75
+    },
+    {
+      "dimension": "accountability_transparency",
+      "rating": null,
+      "evidence_sufficiency": "insufficient",
+      "normalized_score": null,
+      "weight": 0.25,
+      "rationale_ja": "一過性の事業再編費用やM&A関連費用、制度変更損益等を「調整項目」として開示し、営業利益と調整後営業利益の差異を各決算短信で極めて明確に説明しています。非コア事業の売却に伴う非継続事業への組み替えや、主要なリスク要因についても継続的かつ透明性の高い開示を行っています。",
+      "evidence_ids": [
+        "01_2027_Q1_tanshin.pdf:s0002",
+        "03_2025_FY_tanshin.pdf:s0001",
+        "02_2026_FY_tanshin.pdf:s0001"
+      ],
+      "distinct_fiscal_years": [
+        2025,
+        2026,
+        2027
+      ],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [
+        "recent"
+      ],
+      "evidence_confidence": 0.5333
+    }
+  ],
+  "overall_rationale_ja": "富士通の経営一貫性は総じて高く保たれています（概ね高い一貫性）。10年間にわたり、自社ハードウェアやデバイス事業の比重を下げ、ITサービス・「Fujitsu Uvance」へのリソース集中を進めるという戦略の軸がブレていません。構造改革費用の計上やポートフォリオ再編のプロセスを「調整後営業利益」という指標で明確に区分・説明する開示姿勢が徹底されており、創出したキャッシュ・フローに基づく株主還元の拡充も含めて有言実行がなされています。"
+}

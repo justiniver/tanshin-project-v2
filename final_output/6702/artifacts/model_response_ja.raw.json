@@ -1,0 +1,625 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Mon, 10 Aug 2026 07:51:47 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=117533",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"2026-09-15\",\n  \"identity\": {\n    \"security_code\": \"6702\",\n    \"company_name_ja\": \"富士通株式会社\",\n    \"company_name_en\": \"Fujitsu Limited\",\n    \"latest_filename\": \"01_2027_Q1_tanshin.pdf\",\n    \"latest_period_ja\": \"2027年3月期 第1四半期\",\n    \"latest_period_en\": \"FY2027 Q1\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_overview_01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"富士通はITサービスおよびテクノロジーソリューションを提供するグローバルICT企業である\",\n      \"body_ja\": \"富士通は、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3事業セグメントを展開しています。主力のサービスソリューションでは「Uvance」を中心にグローバル共通の価値提供サービスを創出し、エンタープライズやパブリックの顧客層に対して業種・業務軸のサービスを提供しています。また、ハードウェアソリューションではサーバーや通信インフラ機器、ユビキタスソリューションではPC等のクライアントデバイスを提供し、収益基盤を形成しています。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0001\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_latest_key_01\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期第1四半期の売上収益は3.9%増、営業利益は56.9%増と大幅増益を達成した\",\n      \"body_ja\": \"2027年3月期第1四半期の連結業績は、売上収益が前年同期比3.9%増の779,377百万円、営業利益が同56.9%増の52,534百万円となりました。一過性損益を除いた調整後営業利益も前年同期の35,119百万円から54,911百万円へ56.4%増加し、本業の収益性が着実に向上しています。一方で、前同期に計上されていた非継続事業利益の剥落等により親会社の所有者に帰属する四半期利益は40,134百万円（76.6%減）となりました。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_latest_key_02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フローは2,266億円の創出を維持し、財務持分比率は61.5%へと向上した\",\n      \"body_ja\": \"当第1四半期累計期間における営業活動によるキャッシュ・フローは226,654百万円と、前年同期（226,821百万円）と同水準の豊富なキャッシュ創出力を維持しました。現金及び現金同等物の四半期末残高は597,934百万円を確保しており、親会社所有者帰属持分比率は前年度末の59.4%から61.5%へ上昇するなど、自己資本の拡充が進んでいます。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0003\",\n        \"01_2027_Q1_tanshin.pdf:s0004\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_latest_key_03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"通期連結業績予想として売上収益3.51兆円、調整後営業利益4,250億円を据え置いた\",\n      \"body_ja\": \"2027年3月期の通期連結業績予想は、売上収益3,510,000百万円（前期比0.2%増）、営業利益415,000百万円（同19.1%増）、調整後営業利益425,000百万円（同8.8%増）とする期初計画を維持しています。年間配当予想についても1株当たり55.00円（第2四半期末25.00円、期末30.00円）を変更していません。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_latest_driver_01\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"サービスソリューションの調整後営業利益が628億円へ増加し全体業績を牽引した\",\n      \"body_ja\": \"当第1四半期において、主力のサービスソリューションの外部収益は前年同期の507,605百万円から545,936百万円へ拡大しました。調整後営業利益も前年同期の47,842百万円から62,801百万円へと拡大し、グループ全体の利益成長を強く牽引しました。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_latest_driver_02\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"ハードウェアソリューションの調整後営業利益はマイナス37億円へ落ち込んだ\",\n      \"body_ja\": \"ハードウェアソリューションの外部収益は192,354百万円（前年同期186,941百万円）と堅調に推移したものの、調整後営業利益は前年同期の1,337百万円からマイナス3,743百万円へ悪化しました。セグメント間での収益性のばらつきが鮮明となっています。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_latest_outlook_01\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"通期で調整後営業益8.8%増を目指し、本業での増益基調継続を見込む\",\n      \"body_ja\": \"2027年3月期通期の調整後営業利益目標は425,000百万円（前期比8.8%増）、調整後当期利益目標は320,000百万円（同7.3%増）と設定されています。サービスソリューション領域における需要取り込みと高付加価値化により、通期での本業利益成長を目指す方針です。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_latest_risk_01\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"主要市場での景気減速や為替・部品調達環境の変動が不確実性要因となる\",\n      \"body_ja\": \"会社側は業績予想の前提条件として、日本、欧州、北米、オセアニア、アジア等の主要市場における景気動向、為替動向、金利変動、部品調達環境の変化をリスク要因にあげています。特にグローバル展開に伴うマクロ環境の変化が業績に影響を与える可能性があります。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_latest_risk_02\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"不採算プロジェクトの発生や技術開発競争による市場ポジション変化の不確実性がある\",\n      \"body_ja\": \"システム構築やサービス提供における「不採算プロジェクト発生の可能性」に加え、「技術開発競争による市場ポジションの変化」や「製品・サービスの欠陥や瑕疵に関するリスク」が注記事項として提示されています。大型案件のプロジェクト管理と技術優位性の維持が課題となります。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_latest_context_01\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"サービス主導の成長と事業買収の進捗が示される一方、ハードウェアの損益改善が今後の焦点である\",\n      \"body_ja\": \"2027年3月期第1四半期において、富士通はサービスソリューションの利益拡大により大幅な営業増益を達成しました。また、全社的な成長領域である「Uvance」の強化に向け、データ＆AI領域のケイパビリティ補完を目的として株式会社ブレインパッドの株式86.30%を取得（2025年12月企業結合）し、暫定的な会計処理の確定も当四半期に完了しています。\\n\\n一方で、ハードウェアソリューションの調整後営業損益が赤字化しており、通期目標達成に向けて同セグメントの収益性回復が課題となります。主要市場の景気や不採算プロジェクトのリスクを管理しつつ、サービス中心の収益モデルを維持できるかが確認点となります。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0002\",\n        \"01_2027_Q1_tanshin.pdf:s0006\",\n        \"01_2027_Q1_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_persp_01\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"10年間の軌跡：ハード・デバイス依存からの脱却とサービス中心の高収益体制への構造転換\",\n      \"body_ja\": \"過去10年間の富士通の業績軌跡は、従来のハードウェアプロダクトやデバイス中心の事業構造から、システムインテグレーションおよび「Fujitsu Uvance」に代表されるITサービス主導の高収益モデルへの明確な転換を示しています。初期（2017〜2020年度）においては、海外ビジネスのデジタル化や欧州拠点のリソースシフトを含む大規模な「ビジネスモデル変革費用」を連続して計上し、低収益事業の再編を断行しました。中期（2021〜2023年度）にかけては国内SI需要の堅調な推移を背景に本業の収益性が大幅に改善し、直近期（2024〜2026年度）には新光電気工業やFDKなどのデバイス事業の非継続事業化・売却を通じてポートフォリオの集中を完了させました。一過性の再編費用を消化しながらも、サービスソリューションを核とする調整後営業利益基盤を確立したプロセスとして評価されます。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0001\",\n        \"11_2017_FY_tanshin.pdf:s0002\",\n        \"07_2021_FY_tanshin.pdf:s0001\",\n        \"03_2025_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_const_01\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"国内サービスソリューション（SI・ITサービス）における高い需要捕捉力と収益創出の継続\",\n      \"body_ja\": \"富士通の国内サービスソリューションおよびシステムインテグレーション事業は、10年間を通じて一貫してグループの基幹的利益源として機能してきました。初期（2017年3月期）において金融・公共分野の大型案件や製造・サービス・通信向けの堅調な需要を背景に国内サービスが伸長（11_2017_FY_tanshin.pdf）し、中期（2021年3月期）においても営業利益2,663億円の達成に貢献（07_2021_FY_tanshin.pdf）しました。直近年（2026年3月期）でもサービスソリューションの調整後営業利益は3,614億円に達して全社利益の大部分を占めています（02_2026_FY_tanshin.pdf）。顧客のDX需要を安定して取り込む事業能力は10年間を通じて高い持持続性を示しています。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0003\",\n        \"07_2021_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_const_02\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"本業利益（調整後営業利益）を明確化し構造改革費用を区分整理する会計管理手法の定着\",\n      \"body_ja\": \"富士通は、事業再編やM&A等に伴う一過性損益（調整項目）を除外した「調整後営業利益」を本業の実質的な収益指標として一貫して位置付けてきました。初期の2017年3月期には「ビジネスモデル変革費用」として447億円を計上（11_2017_FY_tanshin.pdf）、中期の2024年3月期にも事業再編・事業構造改革費用1,073億円を控除して調整後営業利益2,836億円を明示（04_2024_FY_tanshin.pdf）、直近の2026年3月期にも事業再編費用369億円を調整項目として処理し調整後営業利益3,905億円を提示（02_2026_FY_tanshin.pdf）しています。一過性費用と本業収益性を区別して評価・管理する姿勢が貫かれています。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0001\",\n        \"04_2024_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_trend_change_01\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"ノンコア事業（デバイス等）の切り離しと「Fujitsu Uvance」への事業構造の集約\",\n      \"body_ja\": \"富士通の事業ポートフォリオは、ハードウェア・デバイスの自社保有から、サービスを中心とした事業構成へと劇的に変化しました。変化前（2017年3月期）はデバイスソリューションで売上高5,443億円を計上するなどハード関連の比重が一定程度存在していました（11_2017_FY_tanshin.pdf）。過渡期（2025年3月期）において、新光電気工業の株式公開買付け成立やFDKの株式譲渡に伴いデバイスソリューションを非継続事業へ分類変更しました（03_2025_FY_tanshin.pdf）。現在（2026年3月期）においては、「Fujitsu Uvance」を中核とするサービスソリューション事業が調整後営業利益3,614億円を創出する柱となり、サービスモデルへの転換を完了しています（02_2026_FY_tanshin.pdf）。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0004\",\n        \"03_2025_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_change_02\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"海外事業における構造改革の推進とグローバル体制の再構築\",\n      \"body_ja\": \"海外ビジネスの推進方法が、従来の拠点展開・人員抱え込み型から効率的なデジタルサービス主導型へと転換しました。変化前（2017年3月期）には欧州子会社のFTSおよびFS等において、デジタルトランスフォーメーション推進や人員対策として294億円の費用を計上し構造改革を進めていました（11_2017_FY_tanshin.pdf）。過渡期を経て、現在（2026年3月期）のセグメント構成では「リージョンズ(海外)」として「Uvance」のインプリメンテーションを含むサービスビジネスの提供・実装へ体質を改め、収益管理の再編を達成しています（02_2026_FY_tanshin.pdf）。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0002\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_cap_01\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"業績・キャッシュ拡大に伴う積極的な自己株式取得と株主還元の拡充へのシフト\",\n      \"body_ja\": \"資本配分の優先順位は、過去10年間で自己資本の補強から積極的な株主還元・資本効率向上へと明確に変化しました。初期（2019年3月期）の自己株式取得は223億円規模にとどまっていましたが（09_2019_FY_tanshin.pdf）、中期（2023年3月期）には利益およびキャッシュ・フローの拡大を踏まえ1,500億円を上限とする自己株式取得を決議（05_2023_FY_tanshin.pdf）、直近（2026年3月期）においても1,500億円を上限とする自己株式取得を決議しました（02_2026_FY_tanshin.pdf）。創出した営業キャッシュ・フローを事業再編やM&Aだけでなく株主還元へ還元する資本規律が定着しています。\",\n      \"evidence_ids\": [\n        \"09_2019_FY_tanshin.pdf:s0001\",\n        \"05_2023_FY_tanshin.pdf:s0001\",\n        \"02_2026_FY_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_trend_imp_01\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"事業ポートフォリオ再編完了後におけるサービスソリューションの成長性と利益率の持続的維持が検証課題となる\",\n      \"body_ja\": \"デバイス事業等の売却・非継続事業化によりポートフォリオの整理が完了した現在の富士通にとって、今後の投資判断の軸は「サービスソリューション（特にUvance）」がグローバル市場において高い成長率と調整後営業利益率を維持できるかに移行します。一過性の再編費用が減少する一方で、ハードウェア部門の損益悪化や不採算プロジェクトのリスクをサービス事業の増益で相殺し続けられるか、そして買収したブレインパッド等のシナジーを具体的に利益へ還元できるかが市場の焦点となります。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0002\",\n        \"01_2027_Q1_tanshin.pdf:s0006\",\n        \"01_2027_Q1_tanshin.pdf:s0008\",\n        \"02_2026_FY_tanshin.pdf:s0002\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 9,\n      \"exact_quote_ja\": \"当社は、経営組織の形態、製品・サービスの特性に基づき、複数の事業セグメントを集約した上で、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3つを報告セグメントとしております。各報告セグメントに含まれる主な製品及びサービスの種類は以下のとおりであります。① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行っております。\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"要約四半期連結財務諸表に関する注記事項（セグメント情報）\",\n      \"tags\": [\n        \"segment\",\n        \"overview\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2027年3月期第1四半期 売上収益 779,377 3.9% 営業利益 52,534 56.9% 親会社の所有者に帰属する四半期利益 40,134 △76.6% ＜調整後＞ 売上収益 779,377 3.9% 営業利益 54,911 56.4%\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\",\n      \"tags\": [\n        \"financials\",\n        \"earnings\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"営業活動によるキャッシュ・フロー 当第１四半期 226,654 前第１四半期 226,821 現金及び現金同等物の四半期末残高 当第１四半期 597,934 前第１四半期 641,442\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"要約四半期連結キャッシュ・フロー計算書\",\n      \"tags\": [\n        \"cash_flow\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2027年3月期第1四半期 資産合計 3,308,536 親会社の所有者に帰属する持分 2,035,328 親会社所有者帰属持分比率 61.5% 2026年3月期 資産合計 3,416,621 親会社の所有者に帰属する持分 2,028,787 親会社所有者帰属持分比率 59.4%\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結財政状態\",\n      \"tags\": [\n        \"balance_sheet\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 2,\n      \"exact_quote_ja\": \"通期 売上収益 3,510,000 0.2% 営業利益 415,000 19.1% 親会社の所有者に帰属する当期利益 310,000 △31.0% ＜調整後＞ 通期 売上収益 3,510,000 0.2% 営業利益 425,000 8.8% 2027年3月期(予想) 年間配当金合計 55.00円\",\n      \"period_label_ja\": \"2027年3月期予想\",\n      \"period_label_en\": \"FY2027 Forecast\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"連結業績予想・配当の状況\",\n      \"tags\": [\n        \"forecast\",\n        \"dividend\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"当第１四半期 外部収益 サービスソリューション 545,936 ハードウェアソリューション 192,354 ユビキタスソリューション 34,409 調整後営業利益 サービスソリューション 62,801 ハードウェアソリューション △3,743 ユビキタスソリューション 4,466\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"報告セグメントの売上収益、営業利益及びその他の項目の金額に関する情報\",\n      \"tags\": [\n        \"segment_financials\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 2,\n      \"exact_quote_ja\": \"実際の業績等に影響を与える可能性のある重要な要因には、以下の事項があります。・主要市場における景気動向(特に日本、欧州、北米、オセアニア、中国を含むアジア)・為替動向、金利変動・価格競争の激化・技術開発競争による市場ポジションの変化・部品調達環境の変化・不採算プロジェクト発生の可能性\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"risk\",\n      \"source_section\": \"業績予想の適切な利用に関する説明、その他特記事項\",\n      \"tags\": [\n        \"risk_factors\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 11,\n      \"exact_quote_ja\": \"当社は、2025年10月30日開催の取締役会で、株式会社ブレインパッド（以下、ブレインパッド）に対する金融商品取引法に定める公開買付け（以下、本公開買付け）を決議し、本決議に基づき、当社が本公開買付けを実施した結果、2025年12月22日にブレインパッドの発行済普通株式の86.30%を取得しました。\",\n      \"period_label_ja\": \"2027年3月期第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"株式会社ブレインパッドの取得について\",\n      \"tags\": [\n        \"m_and_a\"\n      ]\n    },\n    {\n      \"evidence_id\": \"11_2017_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"11_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"ビジネスモデル変革費用の当年度の計上額は447億円、前年度に比べ31億円増加しました。当年度の内訳は、海外ビジネスのデジタル化へのシフト、効率化に向けた構造改革費用が340億円(内、欧州のデジタル化へのシフトに向けた費用294億円)国内データセンター再編費用が39億円、国内外の生産拠点の再編費用66億円になります。\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況（１）経営成績の概況\",\n      \"tags\": [\n        \"restructuring\"\n      ]\n    },\n    {\n      \"evidence_id\": \"11_2017_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"11_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"欧州地域の子会社であるＦＴＳ及びＦＳにおいて、サービスビジネスのデジタルトランスフォーメーションを進めるための費用を、294億円計上いたしました。\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"〔欧州子会社における、デジタル化へのシフトに向けた費用について〕\",\n      \"tags\": [\n        \"europe_restructuring\"\n      ]\n    },\n    {\n      \"evidence_id\": \"11_2017_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"11_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"サービスは、システムインテグレーションにおいて金融分野の大型プロジェクト商談及び公共分野のマイナンバー商談の開発がピークを越えたものの、製造業、サービス業に加え、通信キャリア向けが伸長し高水準であった前年度の売上を上回りました。\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"テクノロジーソリューション\",\n      \"tags\": [\n        \"services\"\n      ]\n    },\n    {\n      \"evidence_id\": \"11_2017_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"11_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"2016年度 デバイスソリューション 売上収益 5,443億円 営業利益 42億円\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"事業別セグメントの状況\",\n      \"tags\": [\n        \"device_solutions\"\n      ]\n    },\n    {\n      \"evidence_id\": \"09_2019_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"09_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"自己株式の取得による支出 当年度 △22,327百万円 前年度 △106百万円\",\n      \"period_label_ja\": \"2019年3月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結キャッシュ・フロー計算書\",\n      \"tags\": [\n        \"share_buyback\"\n      ]\n    },\n    {\n      \"evidence_id\": \"07_2021_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"07_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2021年3月期 売上収益 3,589,702 △6.9% 営業利益 266,324 25.9% 親会社の所有者に帰属する当期利益 202,700 26.7%\",\n      \"period_label_ja\": \"2021年3月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\",\n      \"tags\": [\n        \"financials\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2023_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"05_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"2022年度及び2023年度の利益並びにキャッシュ・フローの拡大など財務状況の改善を踏まえ、事業環境なども総合的に勘案し、株主還元の充実と資本効率の向上を図るため実施するものです。（取得価額の総額：1,500億円（上限））\",\n      \"period_label_ja\": \"2023年3月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象（自己株式の取得）\",\n      \"tags\": [\n        \"capital_allocation\",\n        \"share_buyback\"\n      ]\n    },\n    {\n      \"evidence_id\": \"04_2024_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"04_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2024年3月期 売上収益 3,756,059 1.1% 営業利益 160,260 △52.2% ＜調整後＞ 営業利益 283,685 △11.6%\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\",\n      \"tags\": [\n        \"adjusted_op\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2025_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"03_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"第4四半期よりデバイスソリューションを非継続事業に分類しております。これは主に、新光電気工業(株)の株式に対する公開買付けの成立及びFDK(株)の株式譲渡に伴うものです。\",\n      \"period_label_ja\": \"2025年3月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績（注記事項）\",\n      \"tags\": [\n        \"discontinued_operations\",\n        \"portfolio\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2026_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2026年3月期 売上収益 3,502,971 △1.3% 営業利益 348,329 31.4% ＜調整後＞ 営業利益 390,589 27.1%\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\",\n      \"tags\": [\n        \"financials\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2026_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行う「グローバルソリューション」、日本市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(Japan)」、海外市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(海外)」により構成されています。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"セグメント情報（報告セグメントの概要）\",\n      \"tags\": [\n        \"uvance\",\n        \"segment\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2026_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 13,\n      \"exact_quote_ja\": \"当連結会計年度実績及び翌連結会計年度予想の利益とキャッシュ・フローの拡大を背景として、事業環境や財務状況、資本効率の向上などを総合的に検討した結果、実施するものです。（株式の取得価額の総額：1,500億円（上限））\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象（自己株式の取得）\",\n      \"tags\": [\n        \"share_buyback\"\n      ]\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"初期のビジネスモデル変革（欧州等でのリソースシフト）から、中期のFujitsu Uvance構想、直近のデバイス事業（新光電気工業・FDK）の売却・非継続事業化に至るまで、ITサービスソリューションへの集中という基本戦略が一貫しています。事業再編に伴う過渡的な損益の振れを「調整後営業利益」で明確に区分表示しながら実行しており、戦略的論理の整合性が高く保たれています。\",\n        \"evidence_ids\": [\n          \"11_2017_FY_tanshin.pdf:s0001\",\n          \"03_2025_FY_tanshin.pdf:s0001\",\n          \"02_2026_FY_tanshin.pdf:s0002\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"発表された構造改革施策（海外子会社のリソースシフトや国内データセンター・生産拠点の再編）を計画通りに実行し、その後デバイス事業の譲渡やブレインパッド等の成長領域でのM&Aを完遂しています。サービスソリューションの調整後営業利益が着実に増加していることから、施策の実行と事業成果の創出が確認できます。\",\n        \"evidence_ids\": [\n          \"11_2017_FY_tanshin.pdf:s0001\",\n          \"03_2025_FY_tanshin.pdf:s0001\",\n          \"01_2027_Q1_tanshin.pdf:s0008\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"過渡期において業績予想の修正や事業再編費用の発生に伴う営業利益の振れ幅が存在したものの、調整後営業利益を軸とした本業での業績管理を徹底し、中期的に利益水準を底上げしてきました。年度ごとの公表予想値に対する規律は概ね維持されているものの、一過性損益の影響度合いに波があるため mixed（2）の評価としています。\",\n        \"evidence_ids\": [\n          \"11_2017_FY_tanshin.pdf:s0001\",\n          \"04_2024_FY_tanshin.pdf:s0001\",\n          \"02_2026_FY_tanshin.pdf:s0001\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"一過性の事業再編費用やM&A関連費用、制度変更損益等を「調整項目」として開示し、営業利益と調整後営業利益の差異を各決算短信で極めて明確に説明しています。非コア事業の売却に伴う非継続事業への組み替えや、主要なリスク要因についても継続的かつ透明性の高い開示を行っています。\",\n        \"evidence_ids\": [\n          \"01_2027_Q1_tanshin.pdf:s0002\",\n          \"03_2025_FY_tanshin.pdf:s0001\",\n          \"02_2026_FY_tanshin.pdf:s0001\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"富士通の経営一貫性は総じて高く保たれています（概ね高い一貫性）。10年間にわたり、自社ハードウェアやデバイス事業の比重を下げ、ITサービス・「Fujitsu Uvance」へのリソース集中を進めるという戦略の軸がブレていません。構造改革費用の計上やポートフォリオ再編のプロセスを「調整後営業利益」という指標で明確に区分・説明する開示姿勢が徹底されており、創出したキャッシュ・フローに基づく株主還元の拡充も含めて有言実行がなされています。\"\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EqOoAQqfqAEBEU0yDxWa-zw4L6vOVwbefwefOwWgBz-hGeirvu05jquVIUhYluia2bJFqEzoNRhBIdmLdA4QWBxXY-kPqalViaV2hgF-MFvv3fgyaGRx24F5FiHHt0FPHvssjgrPB6qxCtV5oFLFXrX3Zw9DD_NE_bgeizUvZzqnJOO4R7PnUuVjozalSOmPDJ64N_22mtsCDeusHdC91imsTizpTcXOnGh8ARkNuTkezoxXr_nwPXTPCX3liDNVuSvCEZ8y0mfTwetMXAV-X1tJ0z8OE5bECmQcs4BVOE63oqDyC3TKWD57mW1sbUnIfdqUK3sJHUqL6m8Nayb3pux5TCJ6VsYL2otdvrNl3ggy9cOMSHCqoInwJ_c2v9kA-MW1HgGdD9iwcYWYgx-clMNCtRQZgXWSSawEVi4mJSDdKUbtPyk1_UqzFzyziPkWwuj5jCg4zhLB8cE9KI13wi90zBM63Rp5ZegJFB45kBRH-6eiByWcUF3U7zfTlqWlhS54CtOjCwRGd0GngvpBCoeEQUF8Yx0wXalxDdECwyqkgvhzrdshkJbmZbAy18WuJLY7pjJoSRp6dB6sCOo9GQudptaf_X0DCUC8QKBWSj_asSaHGetKEqIzOPMKhlCWvO3sQqsBUVeY1k-ETJZqZvp5_GmY7y9i8l1PQp4lVFdOHRlsjJJnDeML7nNKlrW9lL9KhGqxBg7-WvustCCNzWmwd1LACqWtu_7IJdOjEaaw6VxLtvkujZsZ1EhqVNhEOElVa8sWyUKOtJdLg12LW9M2JHTBFlAhNoW1BWigOjFufdSxGxmMExPRX1uL6gqxpzVWcdLRqRD60t9uZEqNfEIWCty7YnRG9IV2nTHUaEKzp6MZCJQvHlBMJrj6xw_aFhQ9DTyNV8wCEzG928fLE1TaAAOK2CsONigJUxfKNIyKc7xrlKaPld51Xlo2X_IxtEG0RNAmC776XzexdNQIYOdpiR4dx7_v_cIMMlbGRD0egR0hBP36sa3__V-DxTFNarYp3M6ng4UtuxLu88t5KHEbTEyDr52IWy5w7z_0g88BZS3WK9OGiWgbcyPO1199MtNiFZpRXrhOtj0CRj9jWNjED_EZA73XZzEWMQ-XnOz6U5-cvh1K6c9Nb1VxvmhmILY5l103CVQcXN3ShF19LcM4Dil4v8Q7aEr0suOvb7GCceQra98sDG5XTw_Qj2B9GSerHvbMNhevOTn1otaNysEljDk3HSGTGP-h5BxdpvQ_nZJ4PDglp1kJrIDR7iW5ulfC_6J620AobUHcva_CiKMSLvjUZX1ld_pe4mQMTmDk5OvWCQLi75TiEQvzFiXLuBaaJWMvtlXskrvVoP74maeNhKBz68GcjN4PvDKPlAMNREOvPXw9chfXzVFXb8xRMmpHVSFDW_TESoATcUqwmumwqaJk4jHqAevnI3JyZBiYDmMfSdw9lPiJU2V3VK6V6n6TF0XNkBHF0rURN57DeWq7Cnbnhq9nsUKi89rBe0QdgbZGkH_XJ5eAUPrr8qZ7_Onv4oQWiPSVakbGPmiRE1ogJEJxti5S2mDvYj217QxGU0oKnVoDrVDHo6V4dekU7jnHT8HdWg4OAZjMsEHY93j7MK2h_svbMo4XGuY3lyqzKOVkuZ-Kq-2OhWQC59cET4i-ZnXFOuUgbLlsL1mpr4u_D12qy3Y_L2TKoahGQsx_g9WqCv0LUwAPxiQUFXfLukyht11e0u27FbPt0TgiF2-EDpCJqUD3WueIteMe3AF52KASkJbJzWcOINlsJfULlBcnUy1-XmODKXmTyXjSUbNqoJYsCh7SiCVTFpWHsRbE074hCItH-8JhLHVkLw7Zd6L2SY_Ur5U0Of8nSX13xbGHOD_KWQkvLnz4zroKjNAaZZZL68ugYRWLQ6yxb93zEVR87h4RM0vnqCgCALMB1PfP_NpBez5MGBcCI7xUE-cDm89qcWNAovp9-GjYwPpXhZN0-uJSrEUnWELqoZjlfy_KoQUbGiAJDaHK1tArSDl3m0DcZlywh6kSiVFU6aSW-Z58veqxLd81FDXvacvv9gtU7wmeqUtqScJQMWSKwMUhAlQVXndeYg1OamZ93ZxLqbcA5DqSHYyjv9nqyHkgpDiXSSt2TbKa_jDsqLBqecvizsCya2xjyzw6P8j5ZAD3_xLkNTUdnWjAL2o-XyE9oRk-gg4ZbE2ro7OIh5nI3fxaIreZ-pcKRsK4zR1DWSqt4B-osmbxbXs3uZuujQyr7_Z9dWEhBgMTwR-6O_HMKr_MDY9kET3WJVWP7uo5iqK0HPQp96bbY4-7iX18_WgyxCQDK4lJQje6uICILflQ4B0ipsibj1NOrz-p_i3AaC1xIkAz8sCJiaWYwf-hqMbXyyMHbFDOvXIAcz6xOdHgpWFU0XSMazEpwfcNPJFU_QldCVxY8AUVOS9dzGZ9yy_JlVM7eAarSEXXX3SNpGCRmeBPH1b7TXT9c5g-r7_8cekhJs6NdEcMcXitGcRR-C59jgP-nDlMx8LikdsrAotygJY4cem4bm0_FkZrTg1vgw86S9wyK7a9s9oxoYbF7W8_JV3AD_Fz0wZ0kZQMvN8O7q7AWoYevhyK6654oIYAVWkB4z1EfrD_P0DHNHjgxK2Gi-QilQsPr55HKpcG6V-qfcQ38lKYxVP1EFALnhRD5zLLAX8LTCh6e8nqz_fsNQ5oH5tw2jNN8xmMRoMQ1SnltoMpKxQjX2EDMq2PjrT6iFP7v8GvXa2hohtTu3CpfcijGO_iRrY5bA82xb1AJyOAqHoUA9Q-oB0Kw_FEoKuuIoWwP1UitYST-jSr-TPJiTDZpKDzvuDkWQ4zH48rXzpBnBAnsIPDaFYp774Ll1cj0RR5zsrl6p1U2taYVUEmGlGYpgevhRvc_LhltnqU9EOSLFnAJj7ECYThCVAjv8M6i_hjSCh2Rc6H1-rcasRZnnTsRg2J3gooz0Vv9DB9pSze_spz36ocOqYyZu-kd2IF9CmnXLwvl_vNrvneB7m-4rrltCHunRtsV3fh62bQPK4XN14OaprhATBslcD_jsdU5dLUEXvB7UCSfK0pvliRs7oyKgeQUjPhH7oxkqxxmO0_6NBkCH1vNbD5pItZST1m10CEARv60TpKrd3IfdO7fUY4K_Qxvw2DQnevx2e50Cj9qB4G--4gPWLTURpgMisyzjj0UnezJjF7pQs2by03atZ-yTsiWNpehlanPidNvMCDe9EaqY0tnqvAcXHyXVK3MsHoQeuIlkjUaIC9kJZ1JWWDd1Cc1fGm01a8LTUPBpY2qoU9issdwECTfIUD_my7prWX8ThGe7xX0wPyBeqPyQyBWLObLNSoN83NSeJqfp2J9SNp5S0Zb4rYJ68GR1SxmB2fK00RkEJxRhlbkjr-6SbvtwB7AKmYbEXvQev8XPS2dcixtvc_u3R4DXciy-fJWoAk2HV_ahfYBaesXLbGa3b_ypTTLntw8CfQBJhFUB8eRwdgcXRFYWPomF9Bm6SGlE9Vu21YJQbRHs1nX4X-w8l9pZZfxPMZGnSyOpFcTiCxQGd5p-NMTMmYsXe10JSZWZMkeoz1zA15lYxHYZSSLWJOfpyWcRLs3Px2p765R_W2sIKK6ASAbVAi86NjDaDxybsJ9h3rDXrKPSuja-CCy4CIMInO0AEn08VZDj0Pf5u7qnKcRBdbj6CX0fjTnRIKQwlrzQbzty3FhurxioPn-EG9W0B6DXn87ZJ2I-tZQ79DYkWCmceIkELp_fiAlBIUUQ2Uyf-L8sVqWPB7zGOcJVyyIpqD-g3Tw4xoErqZ5xW3y_X1d2agd19_BRU6leHTl-QUc7AVz74L072RkvRFzxzHE8o-bRle1jWTXH-TLLDvhZyitWw6wOKLv8MEm_qtuGNyiW1v0zKmrt_Wcvo5FjDyRKmFpIbUKS3IX7fMgfJxlDJMfrv499qYmIcZROM5XvXd2DFnfW_mHoGDtxNQyg4T6SXUaqDRW8mKXm0kvXkONHp5liOXTOvbziGCUQcpK8Unr_naXR3EWEoVsV-veJbdxdPnny5tleYyGascsOTtuTDmAQOHwiuhRpPlxW5Mn4SkJDemS3NZkR-FQTTInHglCWHIwfwEMMzIx7f2Odn2gAhcqcjRIMW9dgLYM6-cl816JPMug0wBQZU-eFa07iv91jLpUiK_YJKcMSl9Yhi-xYTFI1WEeVP-y3xwSVsIsDZMHJYOfa-HCwXiRanH1HuUtTq6oyNOOISDNI_CSyFN8ZtvMGX-SiZ07xNtxsTN6zug_8VpVL_3Uv9QCiypXkws20QaBujHalmjWGAFXUj6Z8aHPW41d9sBNKUVoealsNZkTJ1L2ZSaTKZsqZzj6UkBp3J3ywj7A5tH5OJcdm1uMB7RLMJFWOWeDschOhe55LcjOYNhDN_W3RfdPlamNtvxAhA5Gl0Luyp9ctDe7asau12m8QGdnwKyCK7IeSnEg6Zw0OuWuSvMZtAHIn70IcvJQs3H6F0yMHjbcG6nDNbRU3D3WFeFI8mU8rUlw1Jgq_OFfuiOC2BjP3tqEKmLtaLw3nSHBn1YAWKs4SOCnrJwPMACQVF7gG6iXYXOg_vOhCqFEKeuFJSQDbGL1x-Ys4wKIr_LqM4R2GrJ5F8E6m9gm2zmUjoZaZqeG-cKPk1kUs3FoTaFzOo3FLXwrxwYtlp2Iq6vA--8QwK9ZP5Emv4V5elqI1iwat9xcCVm_2vfXculzOq1k7WU1EVlIxYoQTEGqtQ889ycrt4a6OHeaP_Eofd5JSd9LJaET4gdR37jUdWaQu20L8V1F3_MvmvQ0swp08BVidUzqA6Y8Dmcs947bqlC34Rn2rEWsRl-uqwtpnNPZE13fbn7_Kkbg8PsVdu9lOsdRWWTfm_aoEZUdWyYfqcLj2rPN5XdrKsY2buD7WZcLUK0xMsH4vEtHufh-9hKnYSJLTlHbBfRnfxRICe4qju8w9QOdgdZQfIZ7oiB_k0_LH5gHyHV_dFH2x8P_Fn7w_lMqr2KC9FmNFNyWblsWsT9OLTior9IkVz1kw-332izfTjckUxiwWrhoxznRr7i1tbY4imViwkGVfVibwEpTDbklkWkt5uTOXnY3zyTov3_ctrNJ9YbxJW4RBHFOWHjZq2hKYh5HdlWfASz3gwhgS88DR4aGSO6wIkHmx89xcQRHKsb7OBrJrQJ7Wu7T-1Foogm3m5fcAniu09oGBK2xxqSMcdNw8wj5CiZj3pkUhrnwJkufKS7uSSznK7v261HrN2ZiY4NL-k4k0PvtI1bh2DVl_42X21hihFnM1unYG0TmFXtWd1ljQMJvbrNkyBQniaYFiJ6UJSqSHTSOCqH7Eehnozk_u2u19fenBiBIttiKYvWtMgAdqLpzxGVjMDC9tfAc-Eb_B255qdKmCoIrnwitLhGYrnYOOaST4ujBieWqJfZf3zBMIt-pNVUJ-VwSSCJ4ivR8S42J_P1GRpNGwH7J7JvU5gjno_xIsLXMaSgsR5YJgV_TWoGTldJ_WRj1G2lOYTr_6pltRlX_38dbZnAePrtQuKMNNp3M7W0Uu1b2s-YYhbCcIqzSjqxQECeqms5bnNmbtqG4EWXOwdK1_HNvHtTk3BGd49vkxcb-WqHzwlkJNGZofs8c_j6U0Vrigzjxr19YpufLPQk-ZeEtMGUZt19tSQbGSyaBpefNXWhx1cFeC9bFnLw7hU3Mx_WJNg36EOGc20Na7DKITdxRXW0uOj2Mm1Ge4yOgReJwz4xsjv-SwzaDsrZrRnxPLBQyJfyIfzirO4vA1CuzqbQuvKqPeAzdaBypfO39bmunIKtFv3-fU5yom_JyydicXk5KigH3PMGNuRiRLC1fWjQdWG5wUaZ5hqTd8gI-kqjKkhXopLxzkgaSJCQ4AbejIYLdADoo0_RPko8O9gv59FqW0GIwCT3mzxth2RtYh8x9L4xZONo3l5t6FmUoGH7kbP28higOfzmKz8qXHIaitinLRYN5btdwi25SIAnd8a6_5iNQ-2ZdNxTiicgdOGbNw3k4jm13i0x5gNzcFnVUHcLKyTE5tMZroqJsDEOogPPHAwCXXZGCETriDkfyxotSd2k2YZzmloquDRR8kn0N54pWVSPosd5l5Bu3c7_r4nS2FKrNZQMEjWahJiRuybJgo6Kt9ywjd2KwouNRdxNL4AZPFZwryc-OPv_s9la3-5X81E2LKxh1hgY0vLKSY1Jrl15Pv6xXIAyaHXaT3fjSJeg7BKdy2KhrFt7mQFZ-W5-58Z4PI-4gIZXvYnatH26ntxfgf8mZGYIhvPmzlMj1I5o8LRrF18kZ0fYS4UkLts8GMOlgUnNV8SF7EDYGAKwazfiStAbecfh9W55APZ_uGjaH9bEaerJ9VM-dZf2S7XSwtAn1uJ4_V1LhJeV7eyKbzAEZFwniI4kUGyJKcqAzBP2RxCbKPrViOvGUcCRiE3cN0eA0bqAnNPhSAJ7p-7C99NgcnkjLktvpQBmJb8o9eitKY8_InVfbrh9m_qHCFGcXktRD7WGEojG51HomSpRu8Ypc5h3bOfniU7n629q_S5W4USBO3hGqI2XCCxDcqZCc8NWmIGa4TXGGWbltq_Xg5kbKlwtcuqXruEiH64J124Uvb39y45wT8spNyyKHxFOvQjVvtnHitY6vgbdF6i0PlyWGAMD7pMfCY24LdauR7s2rqDvZ5-4Wne2Rj6kp6SWj7NhK6qnzjfRJa_m4SxGs6Tp5j7yCnZ_AtuaTHNzpORAyWi7bwVHoEAcHpGHqnVsXKZVfl8Y4m55m_S1yHUt4KBiTQm3BW0JXcDK2B6z23HhQQVp5vM9AyXHzbdOhmmg-q-v_mOPWPScCvXRLFoVD7qf50EK8ooz674bFtuWYkJW2GlWXok8mWyD6VJ8CVmRTUuOHKEwls9TlaXSNZTcyPWuK6RzIfgZxNdBdPQ-3UiC38uwhPuCL4p45kR4fIj4dOg_9vFUPuu_X4YT0wPq8mk8q0aQUXR8TXu0mTwvifp5Re_WdGzMZwSrK2wzjrjetx5mek9DHxeVIUcUNw2rkx6aqbR6DmgQPpIup2tpVFSZNm6iwl8NfLXuP7JMo0KTsxTO_swVOHGXkG2u36JSMpJI-80PVkAgia9VQ5aJg14Xn3nVFNgII0wWkpWnPey1iBfdWyY3vRcjBl-Uyg_A75QyjLqgV0FUNa4kBm_RFTcmDiBc3wgOvrkhc3mngtBg6qnKlFPcjl1aIYZWKnbgdwSqBiq4ymyYyBdBjEw7Y8Di3VwLBH1xlguOdlEuyhsvGVCCoyU19VE7ItQmGX6m3Yw3GpEPWIXo56jKYxzXwQzMCQ6pbpGokrFt3WDmXCur-EbDF1lMItAA_EUlNPx9KDkGbdru-68YHNL04tFrahx5zxPRuPZxwaifh1R9Lf6fUclqXyxWVtbUsce1vhVhTIPpTuiEZtboeQTGmpqRTZr1aJY-VN_iGVSrS3-jjgupk8Rys3T8OIVhQqmC7QzzroOJznH_NiGGpdNOx4CVOLtPpi0BLpbdtDyeO_TU3nZvYGl9FtgsEYuQNl7khTk3RLBeAWc58gxPoshrwo5vZ6lAs1yZgTBOBrXj1vZMsQHE2YZvRixfxwoyfsHY9VTQbz0Nefj3ZCTGc-Ja7sA6LOACtkzG-yYeSPXgm6qAADEISekSZtKYWYRJHetzW6Ht_-pJPrXqZl2a8tkDCNriQZ3yjdU7YB0juc_4vBgmSnHTPfndpz750wvqjD6rojmZ4GjMxfXIbcE7HFEV9OZsYpvtuv-M_5mZHsfRja33Cdfsj3uve49VTW-LgwNneowXqCNIgB33iU9zBnDXTQQdjOEWFDgkghOyGADTdU18H-lFJgTLhdtCfpe0KlGArSaQGqSKb1iIzmPzLJFdnPfHTEkKLcW_IW0BGbK5LkFlQPObWK3mPf6wx3bvu_jeSdnM72Vn_y9-i2If4dhGObjLM4aH-_zeOxZZ89CvVjAQCAE0_5Z25_2vvIQ9ZhZLhDSY1FDeRPm1fkOLeiNjCuQFFfjGcutnQPY1XMZXgEVdTnNKW3tr3aM6qKL78cj6IMBE-9JVD0MjAO58ISaTB4oY20zARITU2EQvDt1czgsmDnQU46pwh25vJUlrsrStR57y0gjHFaaEaUpZcs9LYDTiaVPK05As8NphuRXINnK5dutaD60AbMRV2p4ZC2k4b9B6Ch4ewtQIh561OkI8LpcIH2izPKs9-g2DAnkZoU_ld56s5TS1Z4fZyV2dzUKL4kKa1CIBlpDTAFpGmXrG9abI2UnBCaF3kcrnKrl2nfeY9OTPwzn5haXWlLYqSEV0-lgEp6Vxc45BLxRW1pQYA2U-_rqbMj0QLQgUPYkf3M_fiGBQCxrCMippKuB8NDAQgvUSOPhF3SbM_QqaEjoFpoec1z_l3yqamR80YXaJM6hCNTV5ZFezoi0WC--HZLEEvw0ohdUoYWeRy8PU3nBFf_N5vu0X1MK4_C6F_cuKNvdrwwyvqEhftsLpCDo0z275V2siDt1xOM5rusi4PnM8nw_uqly-68zKn_RmfLaHum8q9xWL822nim_yS4ZER-98FxOG9hbBgH8YffItBOJn2XxpRs8tdyNdbjIQz5upvm_AJHiNHNcdwFjgt2fkgUJogmFtSfnVNFLWKWCEF70rvlAWZRFtOsIfF0hRzYJNzvNb6PSKQe7dTS5S5iDiLLQNHLaZOjd36vwHRN9ZegeTwuWCP8X3baxFbBgVTRt0dqOoWeqVA_2aQmMmPkxOV7tG1k_4IHOnw3Py4crz86z6YUnn8o7Q43EwUcoojBTZ5P96YSsp0SDCVA3ZBaQw6USbPiYA-iSN7PrbFisTXRg41Mod7nQosrnvfyO1L7ApR5Bw9D05cWnLsAu1sFd0_1eCA2MJiSN63bphg0Vy9-iM1WFNgUd---6wenH_qgUreSdJ3P90zu6quThQFF_G9ReVLGTUdGfUh3s-5VifUbv3IQQbVHN-fMZYocEASZaSvuWBUDaieuv6oeqWQG_L1GlftuGSCbgPNQ0SAVva6D1VE87-9Gsb8WBFNOfP9ap7NBhvCEA6lR4LACHLW-dL3Y6IizyS1yV0OoUMzZ_y0qlPgbt9wB6DZUtj3BgjCB47LrWRVqOWdY4gvk9BPqjbHbNGVV803shu_RDjtKgR9s5uDzCLh3llm4csilYqBJeYP7LrzNtlJtfnlU418h8Otzzfmj_LNsRNcUIyiziEuVSHI9mQPBnH3SQ4gLyPJfaR66sk7t0198ucpzq2U04qzr_HkZrwbDm4jMY8SyMO_uc0G6P0CDj-yROzSu7t7xTxXsLNXpMOuwQZgxAMkbI-QQEdjnrzJJGD8tJvJojgJOeYYtAbjZkl9SxpnSVxaqrZqvuF47M3h3bKF3g76untOBze13awMSWrrQJ3TSwKAGwqHY12eZW4DxBXVC_zkYR6Z2GUWwr-Vv_RnfmBwTNj8BDu6A3XYXL5BiOobdHDWYi0AKEWXpBuXmzHAfHAbOwMNdBb2mptzWkamXGCp_qjo_e9rRKucT1mOG0oGOiszTqNdNgSKZaLsP_A-EEQWVbfaJwHdopcVW0XaJluYWtJHQ3LzTWPrqx-09Vr4Aue_MN8s12OBvWG7NW0UgG-4-jRJb0yJUeiS0yZW-5ejaSp9ovPV91sOASGv2zePuF-HxOpRGJzfah8P9G3DicfHQ5-IycQqII-JXMfsgA7SX6PfJ3ZxjM9HETMrOB-Ie7oCY0AOoFHW5qb_oeurBJZKU9XrL-AtH-N_yNSR6nEzeMguipV8wSrZbyDJ0w2gtIBb5fuXc85yvg7rFeAtJcknxQSAEbwz7twdfmCEX0qTO5k2MPVBjwKe4dao4CJC9fpQ2wduuGcGAymSVo4fFvDCvNmBJapOnadoHAkB3XwjH2BLs4OyZeSvNjgBZoelHdgug32tA425kRdjB1LVz-9_Qo3c5tLqUxF76IwZQkFuaNftgqieRniX-zm43Fb3qYKjHVXbGHnQVVX-X6Tf-5WBkaq9Hv1ltbC908Z0JVWgDODiLi0LrS0d8OMG-L5maGZw6WxlDKQxPdm0wIi8jkUuEkgm3x_4b4CbAsQhT4SzLyXOZyFveRzJTAqTa_PTf0UNuiCPCYUmBCbflxGiUata7sl7DI6kxlFd8_0kptBSsjIeEE_QGsHeX04TqKg8cX_QY1b1mOlFMVsxRhnk1LkqxC-5eFw4pkrLRBO1AAsnynfvhhzayfXiNIQp2cJIaV8--2tDBgMdURtMunHCXKVDshHO5ntgFGDK7iuoaCXKxng9-Zz40NCnVeMRiXZ0ZThW0CIk29BH7SbXzjMM-tCllijF6v9J9mSia1SRFfhnz3qUUV3zsRdeafyAyLGsPHgojhz2rJwUprDEGlLdbn4XUn3FiVLcRog9Da9usQjDqf2m9OJ-14yZUY-DYbt6VHtmaDTEy73SUeFtcVxpEyybD96cqB5bCmK9QK2luADC7q-P6wZLx9AxhUEeNtVx0Qbp-zlRWOAUtimj91RpIXxFVvh0-e8777q9KsfRnN3WSyXMYCX4Tkih-9zit0wQnRic84ZFSTwzVm7O3lwRhwXknNzGaeiZenKg57J8_3vsD5smxYx1nBIdTFc6D-8_anKponLjdCWVdPUl6F39Qf4is9CALqm_MCUQTz2OK6Yof-iw38DeJZXeyDeXKQJhdxm88idUAri42Pfwpbhh5kmpN3IM4XnZYuVG6tbPwjbel3t9y-bYEIXCTlfxWOzafpIOJWFFlPXEn2qkkC74pTzLelujb3oQtttuqq7xNSpEQBZhNkY55UJG9zCxLuycThEx_SkFHW0Oc8OC0m-gVaMlCmAAvF36LksaFpidK9oWwaKpL_CtKaStGmzq_UTdkhZsqVMXi29xRGyiKbx9SWC1PxwqrtAgKsSnZmllMOKJYYV4JHEEO09f28KQymhY0-2C_n9q-XkQyjrib4xM7zy4Pc6F5zrChxFFBckAgtDszZud_fk20NT8P6HxLufbbjkys7lfTPJqnuimgtpyWz8pAoD0ZhvU1Efne1ICbCvr7a1AKf_w7GKZAMsE_K4x4yrIdwtitGu9YACCdEGk3le5TZryspw1kNrMlyB_C-GoeyZNbJrr2DT_nKwkXbUT5nCvgffQO2d-ewKewMKwBFBEJyFudEJN39Lj786MqukZYMz1zEsiJirW-qwJAEfIyQ2ckoFI97v8yduGEK37Mrz8GA_pjF_TH46ikMo31aJgv3n6DCFFnj51E_Er4iJkV-enn-E1qXlxeZTpczABM77YZEXtbw1tCTYwfzGnCf7eLT-iRpbRo09Y1y2hLROiXNBRX_WuaUV1ijrckvBuCs5p7L1djkAn3R0GGYcUBPv5RLPopJOaHPUDyj6GxoyeIx4nVi5Gt1c3PhcseThOUkQhR0_ke4iGfghVa7O_eiq_mIZBS_VAsC1_A_EhZAe_Cwfozy6cBZy6ABhiDB65kWtBUDUyZScCmYTkUt8eeVodxQ8K8s2Dl8dBBkW0RuyG9OmBHGCuFteZd2IPznYIjmPfsO0mEG7x9TlZmO9SAXa6v9xzMWdn7nq2o-Zbtvo1zq9fwGu-pyeiocpMBjIFwhy8blLWD1216OVXf1s_XckWt8-4QekGw86-TH4twTIeqSSIctPthDNrRvM7hTjcwft1PCW-9hhlGwUgpnfyAkn71Mm_kKXulfSkk7_3lGI6OB9NuVZLBfJIe-jb1M3mWtm5uhobjd0McHc3IXZ2delF5usX76D7jwfFlRsALiILvYuYstGjuT6WUh2JzwfGVMnupnX3rzDdGQUerO7_tZcN5udSamJWk1PiWAclW_IH9NL_F-tqXs2qAYPxD-Eg3u7zZ6iPH_LpuONOShiS3T-EA5sb_KZp8T7QXOegJcyj_b64T33-ZQ7f0TYsjyHRRA8PekFYs1Ro1uzGVYwx10SRuH4d4wdW84jGNkPJhQ6UeOWA55MI3UsQ1Vx0-VAuVUzBNB4Fe4RzQV1u6A0Sw6Xio3h3GxTUV3KdEs3zjMDh0lzGVVrmD162rsgGC0HLZa02E0MPSe0b3K5hA54nEwHmRqkyjtQN30GXPbTuIKQPTVQIq6JhpLkw5cWQeo9L-yoVbJYTfRu7-ieqfWtd6owk-7QJsErNU8g3daPQFQTZ1DXgshN-qLmO1FXKnlpSJrKV9r9GoOq7gsNCBmpj6HC0x2exZco7Dn0yDHJDXsmiD7l5I6zwl-OYzvYcdfCiVBIFmUMDZOuW93YtLecM1fk6eHQWKT8jISD_F240zOeNFa2WFNA_lgz3CRLMlV5msEUt6G_cX0Pv6BOl7cprQ-Ljvmo_DGnufnwINT2TCY6WCp0oCJLAjm0BXd2kMhUNkBH_cGTmE4P6vKPo3Vc9AVmI9wUyReILGYvU5FRKXZFV8ycVikf2rNnxqY9w_UYRfElmuf-llAgUd_mrDOOhaPjSwskTR0c45_dSxDHecUwNtp-upYdYx4ClC0zktR_OG_KXeXglCtKeGrCD55ZqwlRL00G39zZZotZSpZL83hVsvAWgR75WbYjxRBpY5ekO5QRyXg4BXTZfh2U8qJZVYkvR5wjfgOXUbkms3bdUP748m8EUUZ0DfzRojSAPzUqjks4CbMMFIkHHW3Ur2gNnaU1JMYwfudhKnciF2VUuApiRqy2lIuBa0RCWgZzhx7GnFP_X857nDALEzimZMt7b_WCmi8cEQoBCPxaE9fjTpwYYVF11CwEXy-K2pwAt8uC_4ikT63NWq8ZakF_IheuTYhurKErHTMlexqnBhb2inm7AwPWhHShTqFRD79HjtPV8WmQX38sxtnPeqclnBBjaqvgnrIsOQOX0PSufw7P9uB0SQ5MxUPcJ_IevRfZTge2FhokmDpga_c3QYZSZ2twFlCUkutDBUHD2QJVMtdkV2hgxjKUWzMNokSZSILwP0evTej2Xsqdq_wXNkbbQQ3zmRhSI4EnKfFfz3jd6KnvsoIyUZnbZV-73O-wSY6iUZQdE9-Q6pz4hDQ_o0gfo1Uvzydf8NPffRHP0oYzqQvjnVtWAxyhNz8BTpgb5Q8WuUZIYz8BUTZijc4x1GBhjt5wB5ca4DLX0x0FuwrjiUFAIS2jqpjznuZzAl-ZiRxNjk4vXy4p-Q9Cq9Qvz___dlBu35EGpl3cG92EWb8f7UF-yGqgBYtYGLjcWznFgRvo5mk44ojuGu4JShJFkAhEVMGNt31Pxh2Qt83K1tT0s5Tgt71B3gDIsUK3toE23VOb40_V2wj3zwr_yzj_ymquT90qaVs_eFEfEMP8bGDu3-b3o8JRkJt0ldrYdUy9F6whTJ5JWB62nfNyi6hNtOgkCis68arYdXTCmoeXj6_p22xDx3KGViAPFScl1rlJDzB4iUXq90X7mz2_Jtrg-z3PwiMpHXZPD_z7a6Pp_zkrnuMzmI4Xg0J8RkK02L5pS5a9yyAADAz56Ri3l8w2nLyQW92B23RzYmvIJ2wJjxGE6TVNLs1lE8qTDREgXIvxLSHeHXNHU1T88bFBYJXM4Jrhwa8HMV1SgEB5YkE9954VDP6CxH1glUhjorojz9lK1SAevdlFLTFaPgXyodEyMVEHgzvNwKqBB2I0c74lPO-y_ZLNoO51X3ndE9hHBFAmb7-VBrkgWZ4LprZV_TIQzmGY6nrzqZ0nXZZhfhjpyrUiS9kKuwy-h9ffODfaAlioXYOBcC0g5dzJBasLZlPD5s2uALaZwnqITSvTq4FYRlie4lzywR96TsvtYtmI8KFMsT0gYik5aOnAok0TYGIe673pIn9HxEDXnSc-RUijm22NSR1oV6nixdIQlrHjqgcP-2xh_AIXggN794BjGTVhorbfIC_KJ2OB0g5U2d4ScbmaNvBe2NkZoMlZ5Sfwy85cPiivH4mIVybmWoR5ZaL6gR3qlOtJ4zhFMw-x_jN6E4GYoEc7dysktd56dNlHFw568kH809xOrtQ10Kg4VzxCr1tMYMwaFnYhnchkF05lr-YoDgpvjn0jWATNHKWJBz6ToXJZp8H717ie-Op9QqpQBTPBhJTlKWphYTXiKplMAGgCyYpL3orAZzosiEH6mDZ8wFyibs0wSfglolP-i5g2KOjboGfPQ6cFWWeBHd_VQNI0Mad-srsXHp5b-bF56xwfSMIWc-TShYflIXnqibV15rAg1mJTickTl9y-qY_VpQuKy2C-UC6nrg06R4NN5Cp92yE2jA4I6wEQayN1KvXDX7X65wNzqyI75RddLL1hHQO7oq27cVnGubAdDrCYf4E0bS9AJC_CUJ8pKAWOhZ9ObCtqRc84iLn-zvkXMgt9X7peDqArB5lWIobye7qT2Czs3wPp_fLJ_XMCK4mPLsDShGdsGjYBTOH13xsbzohnsdWx7aEvqMEkg58D2nTA3nU46--l33kI3BsAIycQBOYo8tlixd03Ftop4rF8uw78dknhTkve7lROuVgAhWMhXGwyh5Af5ERlCQAB7P4qrcgjHilzIPM0Nf-xwZlocUH_Isf9ijcWTqzqDVeGeLLUSsnOYzE8umAeySnlumYjLt9KADS4cpb8FCahgV1nuVXDkAwcSkh-1RAZ4yIexWgkTlaB4kANMpqIZM8YcUjBapuciNQKM69v7FCANSDFepDipZNKrTOHW4AuyohmiFE9MMf_dNbq-dzjGUHxlSmISXNpMkeiKZpr6LsRPIsvkC0GLkhGB-wqbCiFsZv9j0awEPeJfqUrQXcijYRHWTkTiaagM6MUdjk2FWBFfiGJaLCs60Bh6-xY_f26Lc5toOrHEfgHYruAlNPPcQRf3QQzX9JRE_S_iHSU-DMaJgOedEUB2YLvodGD7QCwVRl27rDyAuwZs0W71qgMyMh2qStZDLtemfkuD_B7JgWw1-MHg0J99t6bJ3m4ATjP9dpZzxA6QyB8JvAD4Cf12fB1fMLyRxBXPHUaVVzY2lsR4GA_VaFy0iyAFjU9j8hdlJf7kHlLtoM35jtdJ6cuDVr38zWl42StITLeq87zjh0aACTATWFRD5y0Ne2fDU4-ZZXf8DYTVrcvTRcXXUSiqVZ03kpci2jJ0q7jXz6uJj8BioizPXSEVPz4p6i6pSaBGgQqD31n02PxWqDOQWR__YD-vXtjLYnBdOIEOR-0t8SPCQWBAX6PGbJwgTFKBU-8js2su00dkjconOgx4WsxkvPndDlkWNifSGlyaD9fMMvtLT5cLgHuQHEtZs5LIt7FFF_U72LeapeMYXRlLUJ7iouWjN_AmIDo6rDIMBllMeDYKE8NEtD9hksie6NTYVQ5Jf372CcBKUy7ePCX5aMRDscuAAPYO1mkScxWB0SbQZ7zm4pmf4_187fFyHP8IBWjuuUo7TGRBzq8FxWj0ipfibZVsj6Z1fDKv2vbreaj-sQuJz5YsEMG91JEnjVWscVwP1HZLEUN2IN1DJweVVltGAI9k8ktse9NBGecUynSFOn0nqGtF5rHq5P2928tXSn9sPa5KT0jTz4AwqKTSZ-d5FaYkCjMsst45_LQFPJAaNYPAiGATvQ53M4JD90n4lxZ8m-euQ2dZHSs3yfvSFnFLTrDYCQ52b0dCuRLFhLq8JIhwOiNR2BtqrWiUnsB3KK1lQVSSpqe26WRzB4tCqF38Sho4UJpT6sF97daQUP6hp7Px9qZLK-FWuOB118AfACClDNloxb5GokLYBKCZ_sol_OpShcftNSYUThPEqUt4zyPQNeT3hkXuOS4euHO-bRo9CKUohbcv7AZxLfJBPydDWE9HLUdRf9jtIq2nwXSIvxHL6FUVqqjnq7u7_TgiTScHIeysOjXnqyndxZjeEB_-3-gsAuxFRDcAgMPJiAKVTjkCCrwgd4YTgyIkSwQqFgSbBunBQFCNuQ8tdx5m_Hnu9agnMnyXUFBqy6t0g1togJNLfJQupnRw5y0JDEuPuA52xDm1waLBgMMe0v7I5xILWAyiYUTAeF-LdXjAu0g7K6BrmTHevy5wusLgg8cOvJ60am-c6_es_s-BQjKbsyOcXQYRNqNkZHz_gbbAYZm08k2KOMMrySTRxFTHzFQbGwddORWfMgj2EgTuWnS8o4LA2JZL96JGlnzltn71dQfAOC5CQLnsHiJNHBZjg8PzQrkl4TQjen0FIoXsY693c1-7I2z-IWtDTnHDarhVu8Oqb090EmAyufhlD7tx3_aKEdgFpQLrZV_NfuqH4c3O-GAX0G68C8VL_J4JHhZojgd5w4FDCX9PapTPgtJxnfE9iTMDw8FBa5i8hrG4nO6BUzHMxagFcPlTyQHCQQA2-Sh0S45OD3pMPHY_b11J9fsYuy0DwFGCtlXUbCi-Hu3ZouSF3k6fBLFdpEAgUHEaSm9zOu02SuTblvllHLxEX8Gf6wTTg9q_eVcrsaSHO_J1wxHd5Jx2NO2T8ezQ04eseGg3kgeHM_iAwRrZaiLy0CorASazg0Xk3jsrnBscbF7VNL6TgIKj5jRLEF96u8WsIok58oIHTUGPrdRa3eAXojYGNJDyzvYT6MTHz01ji6uEsNAkzPizajaWLukzWYsIQz1Je431FqvkU5KtiCPCbs0gVvwI4X0KftiGJpV08a0FMC-PrSOdvm8Z20P4D4AAbN4uswmwlFW-P-aX9YHUFH3vx30-sDIqKDI5Q_J6suyOGgdk5NHHPj-cZ-1cuwXY61VC4iqBBVz83IVHsR-IssgiEBhiEU-PsW1O4pcdjt2UzTzQUBp3mIQ3iPYUo3oQ3Eiu9o2MNx78gRNskf7FhrE7fCA5D67ZPvgvIigeFM9vuf1OB5mMZDvooetGGqcYvthj7D0Vl53j9lujxglApw1CX2Tz98uVYffniSpA9wZ-eGgvyEzmpUExISe366RNTW3fujLmjPhbQGdYnBJaCoW14otMIBdIjja9p-sZVPWvRUdNnE_khqPhq2c6q2r2u65-emsP1yJYncMfwfONJRtqpazEalWCgM0YARaHqlYZ9wcmjerlaoBjrmBU70e_mxrxX4d0F-7JVoXYR5X90HJlYAhdXTzhV5iWRiIqq4n_ZlH_v74awU3lhKHinxujTEWCHJ1kGrt7W-sxAyMw7PA_DgkoYfiGivHJ2OiCSX2u8k-j8WEHak42sroZlnEAnPKwQwAljzUwSWhBK3petEsSU4pKwDyacCxT1ojjZ0P_hA9sxtiWYzKuozcimxqmz-hJUFTCCgS1UJrJ2RrhFY5kMOLsJmFH_vcGn5i1IhNimieHaHL74U0h20gPbZ4WOGRSF1XcS8nDUmVoNIgEPyNg1lfd7Zk87nLM95Kw98jaorNr6eR7kMq0TALhBsYNou18yR1in9ddxVcESFWs5MnWsldFmJxGTqhKBTiHgwmnLmyFh4QEvXwjftdb8ffrkQABj7_Id6MeBkst7CUIj12PY5UYqLP6xjXWGHEYjCM94ausiM6G2EI7zST_OJtLsGRU7q8zhxPGGYt8xSj2_g70JH7BaFL9RrlVoPE6eNGPnDt4heWWZ9u1CSEfrim8ZW_H3wM8A0Emteh9y1OF7KZVUzeNQMVk5CQkY22j5_tdz6zoZAMxOER9roSCK19zJYh3aRen5Te72TpNvW1NhKwkUTd_xXS9f4Ivg6-NVg6DphnsABgmgvRxU64OWAWite2TZUKUaITCNQa9O_1k7S7UqceMK_PNS9xceQUAWzwEdrkDoEHTPzVWDOkEQ1tlwEINfz0I9tQiYkkUghRHpyFrMIHaVjKWCTVbQLTEKd6g-XybPT_EQzv9gztbhMCUXdOCFD1jFniqKH9dZGOEYslyHPghulRu-YhTYDrMcLtO48zK75peV93pXlXFnr_3Gn8ft4aG7WhtdODBZ04jb3SUttd6cll_nlAOG9QWcIyGyRZw0luxgLHUne7vrosgcPSr2-LZfywBDQ8Fx8TLHn2_2shPLFtsCv1cCRxl01XUOb7gPXoghSmWbpk7yvEiOWcaXBtgsPoLiiAdIqxB12EYBKqsWD_-fx4b4XOtIbCJ5ngGx101UOiiZfzxkaazOhSGRXUi6C7zNFciU46RnCwaFHq2yKqcLgxnLKNdpKXbGBh6n05H0yahY-EYsrgVNRg7ayUeTtXzVxchdwyLYdrl7jK97JwVE9Y9n6SCug4N8-Ytf897hzIH270oKaTRTgzbm7ZFco0qCzJzkDIArNf0-nrYFbZkNqL0gLdNA7FrYRT-UjNbsOGPW6AIstVT5Q_zyoZlgaMwASTDddjB8nbj8UBEgXsM71ML3YK8tF9z-_zw509sIgRomvL0-0EGC9zz_Nmk_9NqsqdmQaBLPxIcnFV4WGt5UUf6qFdIq5uCYF1sqHT8z1lCjaiqD3qnW8ojYjwY-3ras_dCO1SdThr-tVA1vXEY7iw9Sc72Om6xrOSqaVSbim0cYa-lLnx0We2Ddp-roqQdYZUIndind5BNqmT1mOo0lqntp4JcsCFG9DxqwzhQoRQMOQF1l-EIiVTCdvCygrKrTWxMt3DsF80h2_JUn3EET88_BsrojSJdw3KpFkH3Zbkc2jNaDfeXUrHNDMky6VFAiqzcshlemJHlSbEGv84ny0CCP4Jdt1ZzvaN5WkZLRoccC9cMOYG8N61NbIzSo1QmowrLtVpaRnoaR5jXA81o3uqKzXQgQzGU1PoxRXUb6jtr-yKsg9nBAHZlmy1JXc55bZQg7HBtkLizIutP45N-7yCRmMLtZvipTz8Mb_eOB9l9hu2u4CHOkuCuR8o1rfbi2bN_Jiejs6Eog-JTD2aX90UbRHuc6ECO4cPH4LGwbA__etwXphkVcSJEfh2v8Ejv84J1Czs0Y8hsGyDuCcyokuS3CaHg9SaGSLSGzXSeUkHdnaK-iiILYSrsjYDMY8n3Qwk7mkSbGGN8IO6C8CHg0ZllMDUSL3wCSDvgLg0wEbj-p1QryXNqgBVkI2xvrj-2e4J4uJd4kUozMMO1CAD0FZWEJHY_P8oIxoRRJjWQ2bLwnMPb6oOV1cJRTHsgc7aO4l6cGmPnamNVR2szV65bB9kBmQhr8Q5hXefWpv2rfBAO1WRNa7Dx9Riehkv69I8GtqZrLjomxtyvnNegp9Rcier4A-snpF5xCiGxQ5EoYKQPeKX2OIoreULWtnWhZsUuOjmhwczk8itst8hyCY9CQL_z2YUVgY2oj4Uab0hoXFFK9f0y4FsVs9p8vagjb0PUYQzg7sYSybygtzxbRMZKUZh6GDZxeOC6gWkTXzPs89LU0UCUo0gGYXJ4pcCDqWZ598bUMWBpWWx1X7L8vdalS06VlBCia17LjIlgegrwwflCoil11SqQBNW4Ws5zz3iGdDrU_Rte5yu3UzueyW12fhJkF__x_EW-0Vn8v79tsnf0oQLnRhCInhkAW12YswG2DvVQcUu-dZJVzJW31i9IKz6bb5wHHeEdQBnkX8A_c9BEbN6hTkfocrq1-ifjSFSiMqZEVda0B-LPis4EazXgu83Mcg9TENipmQDDa1mbCcKrh0NG8cKjpkBZZ8P-Ii3HSBI7iiCb0W3YuQnESGQ576Hieb4J8RIRAxKODHlGA3h-nZn2IgM11NtZbrnbAHaGAGQppxmWIQNxsxui8hQkTGtSdtmG6lboUTize6oArP-9s1Iwzn8pq4Uf0D3iypdN7axGwLuPJvOyZnLwaM38GLZX20GILn-TOaepT2mD0YcSbOTSIDwv7VM1URmnB_Qes_8ITKcKcraQx54QPz8qBP9p5LYAPyBDTevJRRrLxeKn3MLcAJOaOWMfenx5BgHm_BJx6cfkQIKsL6yZsMFa5uu09e-sm1kiwKvjpauDcqukPGgDoD68uBg5ta8JimSddZRZwxILSDmiwBLj73BeY1jGOfgJTw2CdaUChwg3sypUZnXxPomAEWYSYLDZQCwX0Vsq1ovn-HAmQRAYPUxOVDt0OtxfGUlD1d8TZLKjbQanCoNA1saBbSNOzIkDWINe9RmTyQjzbbE0mox2yzJxiRSbL3g98vSNBQZcKOu0Ht7J81g17uthmv7DsrllA7-VvZ9yVvTPBL8AbghA7KCZGl7g99nIkRVn9Isq0vLu8Z4Wq_x36URqQwJFilouIwLvSfn3zyJzbYMGxXWYTm5Iqxziroz2UWQPwX4HimhltoVNbcK-WFteFWOc2ECMoXUsqwwtPqovkBe3Wk7vAJ-CVhE35tIj5OELyPRNRllrh3BePhmGDgprCRb6JfoewimNW6ztNCRRlDdpaiVjZ1xZ95JZvtuYbNNqrsbfsxy05ZhZ1Q6LXXjOD2YJxcKOwunsPVhNNFkj4nxpjh8cIdix_IssE2LsCtmXm4_x2Wg0GdxfsGEl2-faFO_B6BadMYF-tY378MuqDZOopeRb8n_GBPIGULPID9VXmXEfECOe5vXBQo-vTlKF1KKkZQPPzjqWAVjyVuqoVKrLQ2YTkOZMLmprVbnmQi40jXYMh8mBiK1PgPa_LG3VUCr0S8PRbNdN1CGyqP7iXQsj_KwJ5pZ8EgkG1FQ9vcAMpbIj6eXzcOZ5gM1Hz3RMp4BUBbNUbF0axqoBJV2uRYsaAVYHzmBK2jcifjO9z_uJrxDgCJ3ucfiMbzI-m-EPcS17QADoA0nb_9JOV6wiDbIeytRujzs51rxQM5-9U0p0-25sYLbwe8dIcR6UOaThVa-xMJHkyIKGAHYtmhq5-wuXxg1qQ2Sqcw93j1sZsip1deXkk3_X8XhFc__ZEVQZ7xLat3FPbHgmCv8qDowekgkK_nr944_lKTZGURCvGmAwq_5CO3NOVE28NQLpkMOyJ38xOCvi7dmKjj6z83r0YfWnR2xh_vXsZciff9Q2R-TwnCSORHa-gQchtNiXsVEAf3G5fesGB9b7WNze-wFDqEkTuyW2jv7AxYUW-MBi1sshQ56jv0xMVKwtIiMEUJr9AZ61mieznaQLjPg-WKDwoqK2SuRZN4YleW1TgVxajIHuSQ9t_K_PU_yeyfoZCUvW7tmMRGCM9sTKdIRNwXS12I_8SDLjgK2uOVarBCuxRol6cgZVkBIsBcUJJXv2vx0O9dL0ZicCVfAfxNLNmcAtmTqZEq4SuyrYBBw10155ujL_dZETa8TRYfCXggq0978pVFWx9Iiqksl4cgiLEzhWClXGcpODlsb0KMPQyv3t5JV8lMxRoQIn5aDaA4VMUJYlDqHmExg7VC9I5SNJcgXGdGMqoTRTCx2bw25s7WUw5Q3jo3l0V2RGJzPRYzbMR7oZh9Tx-h_1gc94tYr-yPFE7FxA7Asn4PnUt2GksOqOvu2LGc40hxW9UTy5DDsEdqgl82qWDNzmwhigJHQkLdk8QnD47ehSwqq5FHfMsMVpmyI0db9-tCFkma8-Kyr61r5C7HsEvkYHUPEWjfeJlbqnM_vu8o4U-_iw8v0dA_GRogz-TuMDmfOJzhIEdbC0HUAzM7c4weQCu76AmPDs8XV4IpIpfLr_yOs9HUsMgEawFAJNZr-tYmSD9isWSHdEzoaDZ_8Du4XO22O4mjAObgAypYouhvDXzOXn4SCBpaoNcVNoNyJUY499wxSjxPih8aVs14DkV70Hxo6U29sQpBm8irdXoGKQRgFHSPKpwtxpu_894yrhCILvI8NZVydBa51HnpeD01BUDCfeLP4egYat4PHt-mVpuTxLWk3khqmtmcwQkHZn2H1ierdOv76Jbn_bBoqIeAKlq6p5-DDqm6UnwgUPDHXRpkgFz8ZuYpTd6v73NuoXQgmwiq2-a1UgYojM8B3Aik4Gvv90FD72v9FtJYBcIK-VnpEMHqp1o10A-Opt9vLdDpxowDHVp08_vAuVEWiq29AB-jc1IetQSlZyJ3lvkynrnxJxRpfWQWtFzLv76x0cwfGS82qi2lio6qTmO9AiUghaUQuX8nXneFeIj0YgfGwsjVSB2ks0AkNWpbVmhnoQORnNy4gqfhVgmn2e_SxnXuBhgQulUpwp7wz_AZS6KNLHkjW6gvf65AWE5mLRiJj1p8ohyO9n9rgpUYsRSnPOLSVqlQuFVtCVcUK4wBmOroXBsTiUq2WX_03L7aQmYK4lvChCtM5vDVOia8E1FJpUYehcQhiTYGwh2WBcBlQSX0SvK_BWS0jUGfoXBORCKRFGVyMrYlwYLk1xOiVyLw_wv1vU7VUfS5jfcBnlIYB4EmPEGrZVy9_G-4aVJbLLpXFemj_snci2FDozebRm8fRsvNabCkT8FTqmzPKpuoisVTZle5qKNesO7FR_IIUjIKDEOs1ftg1vSU_Ul84-A9S289VPoocXY0h2MN3wSHcHAI7vbxaoL37muqDoOXYSbt6Zlw0RSYN1IuGV9Qo0PQbdRaOK6739wL7LjwmkjDD0yCBnqDl2tAwYQHdSH-iYzV1ho3yoL-EWEVJiMV9ZZEsF5n2lxzag8No0SCEOy-EjxBCN6shgr3L_rtaJj1Aejoq6j2QJscMrb3ICcXDGzC42dKuVYigomBTuR8yt7LUHehqASGFTDK3rfWVSGbV2Sexj2B6eGQn1D1vwpc1YkuDcZ4GTKAZ0NQNOopqYm7gnvBf43zPoz996Gs5O-D5I-ka087T7SusQY3AzlAnMCxgYl8vKvbMRzbJyoANsrjzYdx8fl6j2OUln4IcdHfSaW4cg5OkxRMjZeOtmxC7cft8rDGR-HgNvpu2mNApErSdFkW8cJTUQ0GfXJ6zYqU5SZe5tb6ze3BV4mkJsIGnBB_Ed2GM0SrpWSD-V4UXaDrJsiM6tDRN98jpBXUKJD3Sm_NVbg5ynJfnpPNycID1WrospynFWm8D_rRJjcws_e0a7sk85xWjfFBKMuiBTQfU9IUBjxSHCmBTQuZ70B4nt9K-27en-_1ovkDZCotLQ6xgRHpFZR-smaywoICmYXF5jzqz_yL0bxVHz0A6pveXBzgdidET5J0-E4aGoUJCDMoZBiwCRrTsZcaAPQasDPumg9gbbNpc6ViSVl9v30OgI2SZLfT2omfPdK2CM92KcvxSB7oSkBbC8WF5HLcp3j8TIpFBilUXUn0on5Z1pr-cpe25rIHKarUtGNessENVVF4bJ3q8AFlixiuu42NxwdZ-gnxYcburOuMmDPFdti5lEaGS_xEEnmfypPkE0VxKe3H-gckBid3HYT_lY_qoiDATeYvbCvoyYHiz1zqHfW9W8quzFrmgyiK7tPsfbxnGYePg1VbR_EKoSxV80QEJBy-d8tvW5rdiY56SQRaEgih66dg-o2f5N5ODOAtktRSTn6JFNARAjUR_FiyZKB02VHBKLEbHvNDOc45d9sNk4LBcWDw9k7f74G-DZlCzo9AUty3q5FSFNggpLZGB2slmBc9RFdtByZ6-LjQZmuumX9d4IL5C520okc7tiB4Vs2uLwaGDn8kknioh6HtgnITm21BCT5y6zKvIfDunph7IMn5Wfw-3BVeRKlMdMwmrVWVmXQ5wTaacNNAi1zfGcj6huBjwvwGM9d895kkvCOe4bR008F-t6k1w7oDJkREcs9lxYOAnJ9JYD_yd77alAgd1tgQj56mudXJwPHd41nrESYiad1OwjoRMfuMCyEZCFDBilqb3XLgK4y4mmuYmra9WOYOaEnKMfgabUulKhYPqQ7CMwuZ4JH6VAsYDgd5DxE5JQIx_CFWrjghI_IUvA5lx8GQGQ2EfgS4Y8DMfMTYTB6ef3mcr-zZpej9COJw1qW0QH3cye0fCxTIeNqF23a667tD1FmaOlAs_nP9BivRg9HSfOW-hEvSviN7WbYOhYlhSJlmDOm3kuCzntZI5hjYbAD7B8OF9PqtfDoBA7PCmqhWylXXE4hXMbC_94Rth3vKfBViJLcn8vLN6SPTTr-NlXtEUAnQ8BxjBPs1s84sIvK4hGsSM5JgOvA3z4D78pHtfVIwq29D4rn1psA961rH-I8jOaYrZqKaQjwR6L2-0m2gDIScIe7iRinTeHW2F_STujym4gM-koUsYLGOT-Oqmb6chenApt5bSB2OG4fozL-11zEB3L1IFPOQ64c2XubHjksbVUkMbP8mpCnalJOJ-JvOZm_k0s9LMjC_1ZVsvyBqRxvXFlzdOalN5mXnlHpLZPFRk5CZFp9ZQtTwV0JitsTe6GSIokeNAsyixYlf2oD5w-TQ4LtN78iAaw_YOMlmVe_NXDSMV3alf7N6QDQDvBBfmKPvlxD_AWZ8_lgn8ZR1zcW5Bt_jggrtv3G18H_8p41r6Rm5M8HPH_DYpXtBox9Z4WrwwFoAGHwioTqBjsLNOvHKOQbawUU-ripzy0Pil5HmggsbCxY0WzdAAthC-01i-i40GZXKtnKcKAJyjcElJH0H5QvfAYDjLk-YQn8caab5aoYCublYNZL0vZ3blkxtwQ5FJ1Jvxzb-1Z4BpXjayECtJRiZoUaQwq6lshtgcsjwXOH-BjzcVXsPP8FyeO49De2sXJH_uAU4GeHFA7PwMxPRQZl17GprmpkbVQUmVrW8rDo6JmavRRFQ18UIEKH_-QnoAjhFu3hTHXsDkCnd1DyeDpAzr5gZSYnpWPzkqv1JKmSUDpuXCldHo5CeOO2-z0Ks9eVHrrbkfgZa2j19TJPKBWVoO8wfT8WeQ-RyAG9B5aT9dXwwAU0A5JxuyRya_lP2qOBCD-LpK65nY5w2m-EgPEOZ61TBsUcfR5fdZ4VRHR551yj10plqmCN4z9YjrKTspyqxATOsOc8QVmkslCBMHjtPxCH9DPlo96xM2eEc0L5ME9am2gU6RK5DmoZbi2A0pc-GxG8fSqQiV2yrnVZNhpLeQxZ8reHI1fpfILFiAAP8uA3M85kmItdgfjUYP_G2aji2pCELX0han-lVvBnwjS-E5L31gCma_bFacH8f9FftAd2CEb4uMiAWTDAvSibEt8RZ0LsXEyskonClNKrjyAUNOV2Rx90G7g8koZKt7ftfLkqHQHAVnphgHd5t9rUkJnAuR4ixoMelxDITHLNMmtqTK3cSFcu9xIQ7BYfhfrwZ9G7iEv5GTUl7FGAYdAHo3MUrtRex-XW3ZOk4Kw-T8DZqsnZMVWNjKLHQ5wr3tWilNd7KvYk7DUlTGVc-5xcAKGrbAnW_UXlDKDLZW_etIx_IaJ7rGHYeatIBnYSI1P0sMQ-L8aokLAdCTo3WTlRKqIftji6eewqrI8OWCFV-1Kbgv5eoMpLZQuLbYxIa0KGrPRD7CxXX0uRBCJy1RarMvfhLsJUzMLtDILW35yWeHt3naPxZiRrX_wJ5L7EIIGqoxCj2uTFUE18btJDeQrUaTsI4taA8TBMDPRMoy-5YEyseSeUxql-mxtq-Y_sATr5rPdpVxUqYU4ggdj_Desz9BHNR5gcGZquEIMz3SxaU5ngTUjbkh0kmpE2XQiyWfN5vkjHFv9ymCdp8RYDHm6YwP5YX6DEeU8xyRYIqlWGkYI-efCn9vnB_V_gZmqBgY1_9C7n1OeNpA6yHuaYikSPE2ZNDvdwA2kL_vvPpqjv3RuxcX-z9651j6UKReYIMxEon0RJoHAhKGswP-hzVP_dnw5ivHRKB0mCAqCm0Ho5ojpbElzedh9tlWkYAeA7PhgUJ2OgsNfABRc1oymdatJ0tM6UYvtXQXgL69R5mIxgnIFPUF0QbQ5Vp1gANGUhlMUvCYI8uOyqaVLCjaxGOG3bJ1Kwdb_z1SluWe7kICkXI0PsKIYfqPcnMdEesn3Wc9CnVkjT9Y07og0F5-xvxl27eszNaoSd2ELpLyMQNX7G9z1NPrDxd-TH6o8YITsc4KqMWvzP11dH41V2rBWcL1lQNqPEfaU8tKdrJRfhQKgGdRbmlccTIqCYWC0kIsSZjPMW5d4k5ZdjOIj1FlL9oQ-81CBWm-qPsLbGu4u_Ou9rLSAxWx2MCXuXFjAIhU89Jf-9DVGWJ-1SO0gp1WZRecN7THynV4mu5z_2hoMBQ1clr9teOtnoxznqIpqUCnxxsPMZ_bBy58-fgRT0r2fe698k4PBJDUudH1TVIs4hZ3R0veJHc_HUB_fgTflHXqd2_jOR4z_nXR44bZ-_2BYDVjltKwzLpL3a9qb_X1YuldiyCciSBPTPnyaE56wO369VnbaPjInWh1gVAdhVzh-Jz3y3JC6Fi_ohlDLm1zH7SzgGweHxyNmqVHrxHzxtiKLzDOvdnGujF3gphIiwQnnxlYY5_KUIyXzrNT5WsndQE2sn9EIat2Gd0ssTNycV4YFX1ZO4hsc9NLWUG47b4IXf63sqPHKuuSVUlBMFsJRr_JSj4iorAwvQ1XamLfed6tEFkKE86BTnXlgZCTSiSI7a_SoRjtReKa8z07GrVxFqtRq6iiHUFgf9GnkPfkYK6NEAQs-Fh7906jJsFtkCMUE6N8zmts8k5ODhz_dS2OrPxj0OLCLn7iCx_ELk9eODBg84yC_luFUDKVoeSVZFbm6HBbjLhjdmrYsy6o_PzOUmolksiy33k92RAr9D4Wzisuz9VL4JdDoNg0MHoJmDBbF9ft5I9PKGwdu3kEXmoovvb5ljvpnk4GhnopEYC91pTy62lLZnXgG8SFdf1Taffi0fuqsvXUMtCFpBbzBLIGbT9kiVKiw-kXfgYGYZuannz7KFmJUaT6CHtFA8G0y_jaU7eBKhTxML-V122zP_dEc1c0ZX0VYirPBGNsfDfiiAuukv0UpWh3LqWkTcp7kuX6ke1xEEigfGQRqtOoYdOd7WZIsD55gAJ1wiD8JERIbN_L6Xh0ST7uapO78YSu4gY8TVL_KsMxBCekaB5V1LjijTTMPJBQXc7gz68dTz-Ez3YdkMTn8nqeERxsdEKKKwHelRm6ktBmi9Wyd5F5Gset3qj5QfXICzDC-3Jg4sgsP72NhrDHHurN4tAUm6RyC_MvTVTQWowJonCe-OAs2WIUHyspgwkYGMROUGaOOzpbj2k-MQKczicmCSiGpGxn5PqzDHsEGPUdm2DkJRKssiMp7HoiaMcHGSprztA2KHOUG_bcQbmkAjD5pNi1U9VzbyL6fYm7B5SRTu0AS_WOkrWDvRXglXXuur46vzwdLE-f9BzGDza4Vn4rbs6UnJLxNQct5Ao5d_Zn_oCD32Ukszm0A6K9DhsfCUB6RvtI-v1LYCF6STInb94QPjA6F3-KQliYwKhBLFFNo6d_s6UTypK_jvmJJ2UJsMWFh86magUAB1JI_ygYXt2g3R5lg1IYcyfT4trrKUzoPsxqZig0sh2_P2760NFPdLlVK8NqJQ41or_VMHm49G9TVg4ztTHpXIi68otlmbacmpDMsEIqe4tyd-3dSVKGEu39j3df88ZfUG15Fi_w7CnXx4AE22z2uxZaGcn2o-EXnG5XNSCFuXgDH1csiG2hVU-Zgs8icqVStYxgVM42OsudD-QLrsoK39TdUO-ya-d5N_ibmWgRtwxMdPMAa1eB1rPx5-Ujt7QtccP5MLdlNgosW5WvxwLjCRnrVX4e8sz6zGj7xXp7fujifmbio-kMzCMVJCmgA7CJBIa51v8cHoZBHiekpZju69mBmCN2jJ41IHrYsahJLMJKdbsPpFQaGFX8jemvZHuFplsaBHqRiAosGUvzdEAGUNASfFFQAgTryPUSnv4cPCrKULwfe5kEfeOBNVMhrfWGMemeNxG5i6r1cC_Xtw5JOK1rl8CfBbz-tH8HN1S56_2PQ7uULKsAri1T7p7nxW1f3CWy6OYQzaBIN7qeK9j3OLmg39W3PUqBjalcNpjIZU04_oVVpwB7UsmyP9ryqAxMqwZdgL8yJTtAdiBGfSa6NrSoXUuVjqqFrX0XC1so-5g2W2xnZJH-opQ3Sfe_XUAm5Os01hSRxr112q9HNnSc51EMqCpl4WU8f5PxGwOSZkWY4ntrLBSEbMYJaTi7syiC7oqotuglaHxL7n4JIsmgPoIOG5V92kFyjhTyZ450W0uvp8vCF0iHtm3mQlo6Ky3GeVPBS9oMk0gNQ9GFQV975Y1Tw7_rVlbrEjAw6wNWirb_taFcXr0XyTsJmerrdblrTZsnztKdeDwjme9eSgWgUIkbgLlpT0t813-Jg4LQUyBXCu3w8z3JhBX87l-cx_izhR6zbsl2yUgUzr8xF_XpDCizzCQxs63pV3ouSNlppVqLODUx2If4yRJZ9eQ596eaxCVWz4SYZhnmMnJVyWDDT2ibVz2Yz2GyPf7I4jTDwlDtrublmjuVH4lqJMqtmwA0jG_dFe-vVJuiW-rW6z3HNjW_w1HXWr7-R64tx2pfjwuVDtWzLWqsbsZmWElGKibeRhr_Y7yJPsOJuwyY3JoN_rSWI8vnrcVprCs0jUZH0kuOtlzseIx_dBMfhwtk94Rx34s4iC0Te0Z_Gb-0wUI63zcJugw9GXOC-z6_wX_xSG4DLqSaXxqX1N_uZ5vtuTOADurggblVWAKG3LXW5Q6H4w7mbpNW1EtYxPjY_nzSWcMrhW9NgdO7DcA8QLiskSW4-jG53YwSR4PPmr_WnAx4xxIeaRb9dB_1B-kDSqaH2tgNZxzD-ZyNxHA4ooLSurO-aGm-SD4Rc_ohjUzUiyNSWdFIe5_AbCkhAj9Y0F_OOJHfLJ8MZAEUUK_rPQzbHBMNTIyZxSFXAc-qmN2FoIs3t7SnYyY3M_z1vZNeNpvLzih3NoRBhY2xlYGGsUdJrmLjrm8dMrHIkMPbZ5h-PE306udFJONUY4v4aMc9T1SSIoY_5d4kIjRaNBPhZYRH4fqDqW7nEnK3U20FsDj6DMOzA5qxSO5tzTDUDToh8jMj"
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "n4J5auu9BKu9vr0P5MKTqQ0",
+  "usage_metadata": {
+    "candidates_token_count": 11394,
+    "prompt_token_count": 64846,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 58520
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 6326
+      }
+    ],
+    "thoughts_token_count": 6559,
+    "total_token_count": 82799
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "2026-09-15",
+    "identity": {
+      "security_code": "6702",
+      "company_name_ja": "富士通株式会社",
+      "company_name_en": "Fujitsu Limited",
+      "latest_filename": "01_2027_Q1_tanshin.pdf",
+      "latest_period_ja": "2027年3月期 第1四半期",
+      "latest_period_en": "FY2027 Q1"
+    },
+    "claims": [
+      {
+        "claim_id": "claim_overview_01",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "富士通はITサービスおよびテクノロジーソリューションを提供するグローバルICT企業である",
+        "body_ja": "富士通は、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3事業セグメントを展開しています。主力のサービスソリューションでは「Uvance」を中心にグローバル共通の価値提供サービスを創出し、エンタープライズやパブリックの顧客層に対して業種・業務軸のサービスを提供しています。また、ハードウェアソリューションではサーバーや通信インフラ機器、ユビキタスソリューションではPC等のクライアントデバイスを提供し、収益基盤を形成しています。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0001"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_latest_key_01",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2027年3月期第1四半期の売上収益は3.9%増、営業利益は56.9%増と大幅増益を達成した",
+        "body_ja": "2027年3月期第1四半期の連結業績は、売上収益が前年同期比3.9%増の779,377百万円、営業利益が同56.9%増の52,534百万円となりました。一過性損益を除いた調整後営業利益も前年同期の35,119百万円から54,911百万円へ56.4%増加し、本業の収益性が着実に向上しています。一方で、前同期に計上されていた非継続事業利益の剥落等により親会社の所有者に帰属する四半期利益は40,134百万円（76.6%減）となりました。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_latest_key_02",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "営業キャッシュ・フローは2,266億円の創出を維持し、財務持分比率は61.5%へと向上した",
+        "body_ja": "当第1四半期累計期間における営業活動によるキャッシュ・フローは226,654百万円と、前年同期（226,821百万円）と同水準の豊富なキャッシュ創出力を維持しました。現金及び現金同等物の四半期末残高は597,934百万円を確保しており、親会社所有者帰属持分比率は前年度末の59.4%から61.5%へ上昇するなど、自己資本の拡充が進んでいます。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0003",
+          "01_2027_Q1_tanshin.pdf:s0004"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_latest_key_03",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "通期連結業績予想として売上収益3.51兆円、調整後営業利益4,250億円を据え置いた",
+        "body_ja": "2027年3月期の通期連結業績予想は、売上収益3,510,000百万円（前期比0.2%増）、営業利益415,000百万円（同19.1%増）、調整後営業利益425,000百万円（同8.8%増）とする期初計画を維持しています。年間配当予想についても1株当たり55.00円（第2四半期末25.00円、期末30.00円）を変更していません。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0005"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_latest_driver_01",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "サービスソリューションの調整後営業利益が628億円へ増加し全体業績を牽引した",
+        "body_ja": "当第1四半期において、主力のサービスソリューションの外部収益は前年同期の507,605百万円から545,936百万円へ拡大しました。調整後営業利益も前年同期の47,842百万円から62,801百万円へと拡大し、グループ全体の利益成長を強く牽引しました。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0006"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_latest_driver_02",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "ハードウェアソリューションの調整後営業利益はマイナス37億円へ落ち込んだ",
+        "body_ja": "ハードウェアソリューションの外部収益は192,354百万円（前年同期186,941百万円）と堅調に推移したものの、調整後営業利益は前年同期の1,337百万円からマイナス3,743百万円へ悪化しました。セグメント間での収益性のばらつきが鮮明となっています。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0006"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_latest_outlook_01",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "通期で調整後営業益8.8%増を目指し、本業での増益基調継続を見込む",
+        "body_ja": "2027年3月期通期の調整後営業利益目標は425,000百万円（前期比8.8%増）、調整後当期利益目標は320,000百万円（同7.3%増）と設定されています。サービスソリューション領域における需要取り込みと高付加価値化により、通期での本業利益成長を目指す方針です。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0005"
+        ],
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_latest_risk_01",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "主要市場での景気減速や為替・部品調達環境の変動が不確実性要因となる",
+        "body_ja": "会社側は業績予想の前提条件として、日本、欧州、北米、オセアニア、アジア等の主要市場における景気動向、為替動向、金利変動、部品調達環境の変化をリスク要因にあげています。特にグローバル展開に伴うマクロ環境の変化が業績に影響を与える可能性があります。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0007"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_latest_risk_02",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "不採算プロジェクトの発生や技術開発競争による市場ポジション変化の不確実性がある",
+        "body_ja": "システム構築やサービス提供における「不採算プロジェクト発生の可能性」に加え、「技術開発競争による市場ポジションの変化」や「製品・サービスの欠陥や瑕疵に関するリスク」が注記事項として提示されています。大型案件のプロジェクト管理と技術優位性の維持が課題となります。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0007"
+        ],
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_latest_context_01",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "サービス主導の成長と事業買収の進捗が示される一方、ハードウェアの損益改善が今後の焦点である",
+        "body_ja": "2027年3月期第1四半期において、富士通はサービスソリューションの利益拡大により大幅な営業増益を達成しました。また、全社的な成長領域である「Uvance」の強化に向け、データ＆AI領域のケイパビリティ補完を目的として株式会社ブレインパッドの株式86.30%を取得（2025年12月企業結合）し、暫定的な会計処理の確定も当四半期に完了しています。\n\n一方で、ハードウェアソリューションの調整後営業損益が赤字化しており、通期目標達成に向けて同セグメントの収益性回復が課題となります。主要市場の景気や不採算プロジェクトのリスクを管理しつつ、サービス中心の収益モデルを維持できるかが確認点となります。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0002",
+          "01_2027_Q1_tanshin.pdf:s0006",
+          "01_2027_Q1_tanshin.pdf:s0008"
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_persp_01",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "10年間の軌跡：ハード・デバイス依存からの脱却とサービス中心の高収益体制への構造転換",
+        "body_ja": "過去10年間の富士通の業績軌跡は、従来のハードウェアプロダクトやデバイス中心の事業構造から、システムインテグレーションおよび「Fujitsu Uvance」に代表されるITサービス主導の高収益モデルへの明確な転換を示しています。初期（2017〜2020年度）においては、海外ビジネスのデジタル化や欧州拠点のリソースシフトを含む大規模な「ビジネスモデル変革費用」を連続して計上し、低収益事業の再編を断行しました。中期（2021〜2023年度）にかけては国内SI需要の堅調な推移を背景に本業の収益性が大幅に改善し、直近期（2024〜2026年度）には新光電気工業やFDKなどのデバイス事業の非継続事業化・売却を通じてポートフォリオの集中を完了させました。一過性の再編費用を消化しながらも、サービスソリューションを核とする調整後営業利益基盤を確立したプロセスとして評価されます。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0001",
+          "11_2017_FY_tanshin.pdf:s0002",
+          "07_2021_FY_tanshin.pdf:s0001",
+          "03_2025_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_const_01",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "国内サービスソリューション（SI・ITサービス）における高い需要捕捉力と収益創出の継続",
+        "body_ja": "富士通の国内サービスソリューションおよびシステムインテグレーション事業は、10年間を通じて一貫してグループの基幹的利益源として機能してきました。初期（2017年3月期）において金融・公共分野の大型案件や製造・サービス・通信向けの堅調な需要を背景に国内サービスが伸長（11_2017_FY_tanshin.pdf）し、中期（2021年3月期）においても営業利益2,663億円の達成に貢献（07_2021_FY_tanshin.pdf）しました。直近年（2026年3月期）でもサービスソリューションの調整後営業利益は3,614億円に達して全社利益の大部分を占めています（02_2026_FY_tanshin.pdf）。顧客のDX需要を安定して取り込む事業能力は10年間を通じて高い持持続性を示しています。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0003",
+          "07_2021_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_const_02",
+        "section": "trend.consistent",
+        "order": 2,
+        "headline_ja": "本業利益（調整後営業利益）を明確化し構造改革費用を区分整理する会計管理手法の定着",
+        "body_ja": "富士通は、事業再編やM&A等に伴う一過性損益（調整項目）を除外した「調整後営業利益」を本業の実質的な収益指標として一貫して位置付けてきました。初期の2017年3月期には「ビジネスモデル変革費用」として447億円を計上（11_2017_FY_tanshin.pdf）、中期の2024年3月期にも事業再編・事業構造改革費用1,073億円を控除して調整後営業利益2,836億円を明示（04_2024_FY_tanshin.pdf）、直近の2026年3月期にも事業再編費用369億円を調整項目として処理し調整後営業利益3,905億円を提示（02_2026_FY_tanshin.pdf）しています。一過性費用と本業収益性を区別して評価・管理する姿勢が貫かれています。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0001",
+          "04_2024_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_trend_change_01",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "ノンコア事業（デバイス等）の切り離しと「Fujitsu Uvance」への事業構造の集約",
+        "body_ja": "富士通の事業ポートフォリオは、ハードウェア・デバイスの自社保有から、サービスを中心とした事業構成へと劇的に変化しました。変化前（2017年3月期）はデバイスソリューションで売上高5,443億円を計上するなどハード関連の比重が一定程度存在していました（11_2017_FY_tanshin.pdf）。過渡期（2025年3月期）において、新光電気工業の株式公開買付け成立やFDKの株式譲渡に伴いデバイスソリューションを非継続事業へ分類変更しました（03_2025_FY_tanshin.pdf）。現在（2026年3月期）においては、「Fujitsu Uvance」を中核とするサービスソリューション事業が調整後営業利益3,614億円を創出する柱となり、サービスモデルへの転換を完了しています（02_2026_FY_tanshin.pdf）。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0004",
+          "03_2025_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_change_02",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "海外事業における構造改革の推進とグローバル体制の再構築",
+        "body_ja": "海外ビジネスの推進方法が、従来の拠点展開・人員抱え込み型から効率的なデジタルサービス主導型へと転換しました。変化前（2017年3月期）には欧州子会社のFTSおよびFS等において、デジタルトランスフォーメーション推進や人員対策として294億円の費用を計上し構造改革を進めていました（11_2017_FY_tanshin.pdf）。過渡期を経て、現在（2026年3月期）のセグメント構成では「リージョンズ(海外)」として「Uvance」のインプリメンテーションを含むサービスビジネスの提供・実装へ体質を改め、収益管理の再編を達成しています（02_2026_FY_tanshin.pdf）。",
+        "evidence_ids": [
+          "11_2017_FY_tanshin.pdf:s0002",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_cap_01",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "業績・キャッシュ拡大に伴う積極的な自己株式取得と株主還元の拡充へのシフト",
+        "body_ja": "資本配分の優先順位は、過去10年間で自己資本の補強から積極的な株主還元・資本効率向上へと明確に変化しました。初期（2019年3月期）の自己株式取得は223億円規模にとどまっていましたが（09_2019_FY_tanshin.pdf）、中期（2023年3月期）には利益およびキャッシュ・フローの拡大を踏まえ1,500億円を上限とする自己株式取得を決議（05_2023_FY_tanshin.pdf）、直近（2026年3月期）においても1,500億円を上限とする自己株式取得を決議しました（02_2026_FY_tanshin.pdf）。創出した営業キャッシュ・フローを事業再編やM&Aだけでなく株主還元へ還元する資本規律が定着しています。",
+        "evidence_ids": [
+          "09_2019_FY_tanshin.pdf:s0001",
+          "05_2023_FY_tanshin.pdf:s0001",
+          "02_2026_FY_tanshin.pdf:s0003"
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_trend_imp_01",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "事業ポートフォリオ再編完了後におけるサービスソリューションの成長性と利益率の持続的維持が検証課題となる",
+        "body_ja": "デバイス事業等の売却・非継続事業化によりポートフォリオの整理が完了した現在の富士通にとって、今後の投資判断の軸は「サービスソリューション（特にUvance）」がグローバル市場において高い成長率と調整後営業利益率を維持できるかに移行します。一過性の再編費用が減少する一方で、ハードウェア部門の損益悪化や不採算プロジェクトのリスクをサービス事業の増益で相殺し続けられるか、そして買収したブレインパッド等のシナジーを具体的に利益へ還元できるかが市場の焦点となります。",
+        "evidence_ids": [
+          "01_2027_Q1_tanshin.pdf:s0002",
+          "01_2027_Q1_tanshin.pdf:s0006",
+          "01_2027_Q1_tanshin.pdf:s0008",
+          "02_2026_FY_tanshin.pdf:s0002"
+        ],
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 9,
+        "exact_quote_ja": "当社は、経営組織の形態、製品・サービスの特性に基づき、複数の事業セグメントを集約した上で、「サービスソリューション」、「ハードウェアソリューション」、「ユビキタスソリューション」の3つを報告セグメントとしております。各報告セグメントに含まれる主な製品及びサービスの種類は以下のとおりであります。① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行っております。",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "要約四半期連結財務諸表に関する注記事項（セグメント情報）",
+        "tags": [
+          "segment",
+          "overview"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2027年3月期第1四半期 売上収益 779,377 3.9% 営業利益 52,534 56.9% 親会社の所有者に帰属する四半期利益 40,134 △76.6% ＜調整後＞ 売上収益 779,377 3.9% 営業利益 54,911 56.4%",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "連結経営成績",
+        "tags": [
+          "financials",
+          "earnings"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 8,
+        "exact_quote_ja": "営業活動によるキャッシュ・フロー 当第１四半期 226,654 前第１四半期 226,821 現金及び現金同等物の四半期末残高 当第１四半期 597,934 前第１四半期 641,442",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "要約四半期連結キャッシュ・フロー計算書",
+        "tags": [
+          "cash_flow"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2027年3月期第1四半期 資産合計 3,308,536 親会社の所有者に帰属する持分 2,035,328 親会社所有者帰属持分比率 61.5% 2026年3月期 資産合計 3,416,621 親会社の所有者に帰属する持分 2,028,787 親会社所有者帰属持分比率 59.4%",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "連結財政状態",
+        "tags": [
+          "balance_sheet"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 2,
+        "exact_quote_ja": "通期 売上収益 3,510,000 0.2% 営業利益 415,000 19.1% 親会社の所有者に帰属する当期利益 310,000 △31.0% ＜調整後＞ 通期 売上収益 3,510,000 0.2% 営業利益 425,000 8.8% 2027年3月期(予想) 年間配当金合計 55.00円",
+        "period_label_ja": "2027年3月期予想",
+        "period_label_en": "FY2027 Forecast",
+        "statement_type": "forecast",
+        "source_section": "連結業績予想・配当の状況",
+        "tags": [
+          "forecast",
+          "dividend"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 10,
+        "exact_quote_ja": "当第１四半期 外部収益 サービスソリューション 545,936 ハードウェアソリューション 192,354 ユビキタスソリューション 34,409 調整後営業利益 サービスソリューション 62,801 ハードウェアソリューション △3,743 ユビキタスソリューション 4,466",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "報告セグメントの売上収益、営業利益及びその他の項目の金額に関する情報",
+        "tags": [
+          "segment_financials"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 2,
+        "exact_quote_ja": "実際の業績等に影響を与える可能性のある重要な要因には、以下の事項があります。・主要市場における景気動向(特に日本、欧州、北米、オセアニア、中国を含むアジア)・為替動向、金利変動・価格競争の激化・技術開発競争による市場ポジションの変化・部品調達環境の変化・不採算プロジェクト発生の可能性",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "risk",
+        "source_section": "業績予想の適切な利用に関する説明、その他特記事項",
+        "tags": [
+          "risk_factors"
+        ]
+      },
+      {
+        "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
+        "source_filename": "01_2027_Q1_tanshin.pdf",
+        "pdf_page": 11,
+        "exact_quote_ja": "当社は、2025年10月30日開催の取締役会で、株式会社ブレインパッド（以下、ブレインパッド）に対する金融商品取引法に定める公開買付け（以下、本公開買付け）を決議し、本決議に基づき、当社が本公開買付けを実施した結果、2025年12月22日にブレインパッドの発行済普通株式の86.30%を取得しました。",
+        "period_label_ja": "2027年3月期第1四半期",
+        "period_label_en": "FY2027 Q1",
+        "statement_type": "actual",
+        "source_section": "株式会社ブレインパッドの取得について",
+        "tags": [
+          "m_and_a"
+        ]
+      },
+      {
+        "evidence_id": "11_2017_FY_tanshin.pdf:s0001",
+        "source_filename": "11_2017_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "ビジネスモデル変革費用の当年度の計上額は447億円、前年度に比べ31億円増加しました。当年度の内訳は、海外ビジネスのデジタル化へのシフト、効率化に向けた構造改革費用が340億円(内、欧州のデジタル化へのシフトに向けた費用294億円)国内データセンター再編費用が39億円、国内外の生産拠点の再編費用66億円になります。",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "経営成績等の概況（１）経営成績の概況",
+        "tags": [
+          "restructuring"
+        ]
+      },
+      {
+        "evidence_id": "11_2017_FY_tanshin.pdf:s0002",
+        "source_filename": "11_2017_FY_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "欧州地域の子会社であるＦＴＳ及びＦＳにおいて、サービスビジネスのデジタルトランスフォーメーションを進めるための費用を、294億円計上いたしました。",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "〔欧州子会社における、デジタル化へのシフトに向けた費用について〕",
+        "tags": [
+          "europe_restructuring"
+        ]
+      },
+      {
+        "evidence_id": "11_2017_FY_tanshin.pdf:s0003",
+        "source_filename": "11_2017_FY_tanshin.pdf",
+        "pdf_page": 8,
+        "exact_quote_ja": "サービスは、システムインテグレーションにおいて金融分野の大型プロジェクト商談及び公共分野のマイナンバー商談の開発がピークを越えたものの、製造業、サービス業に加え、通信キャリア向けが伸長し高水準であった前年度の売上を上回りました。",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "テクノロジーソリューション",
+        "tags": [
+          "services"
+        ]
+      },
+      {
+        "evidence_id": "11_2017_FY_tanshin.pdf:s0004",
+        "source_filename": "11_2017_FY_tanshin.pdf",
+        "pdf_page": 6,
+        "exact_quote_ja": "2016年度 デバイスソリューション 売上収益 5,443億円 営業利益 42億円",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "事業別セグメントの状況",
+        "tags": [
+          "device_solutions"
+        ]
+      },
+      {
+        "evidence_id": "09_2019_FY_tanshin.pdf:s0001",
+        "source_filename": "09_2019_FY_tanshin.pdf",
+        "pdf_page": 6,
+        "exact_quote_ja": "自己株式の取得による支出 当年度 △22,327百万円 前年度 △106百万円",
+        "period_label_ja": "2019年3月期",
+        "period_label_en": "FY2019",
+        "statement_type": "actual",
+        "source_section": "連結キャッシュ・フロー計算書",
+        "tags": [
+          "share_buyback"
+        ]
+      },
+      {
+        "evidence_id": "07_2021_FY_tanshin.pdf:s0001",
+        "source_filename": "07_2021_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2021年3月期 売上収益 3,589,702 △6.9% 営業利益 266,324 25.9% 親会社の所有者に帰属する当期利益 202,700 26.7%",
+        "period_label_ja": "2021年3月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "連結経営成績",
+        "tags": [
+          "financials"
+        ]
+      },
+      {
+        "evidence_id": "05_2023_FY_tanshin.pdf:s0001",
+        "source_filename": "05_2023_FY_tanshin.pdf",
+        "pdf_page": 8,
+        "exact_quote_ja": "2022年度及び2023年度の利益並びにキャッシュ・フローの拡大など財務状況の改善を踏まえ、事業環境なども総合的に勘案し、株主還元の充実と資本効率の向上を図るため実施するものです。（取得価額の総額：1,500億円（上限））",
+        "period_label_ja": "2023年3月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象（自己株式の取得）",
+        "tags": [
+          "capital_allocation",
+          "share_buyback"
+        ]
+      },
+      {
+        "evidence_id": "04_2024_FY_tanshin.pdf:s0001",
+        "source_filename": "04_2024_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2024年3月期 売上収益 3,756,059 1.1% 営業利益 160,260 △52.2% ＜調整後＞ 営業利益 283,685 △11.6%",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "連結経営成績",
+        "tags": [
+          "adjusted_op"
+        ]
+      },
+      {
+        "evidence_id": "03_2025_FY_tanshin.pdf:s0001",
+        "source_filename": "03_2025_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "第4四半期よりデバイスソリューションを非継続事業に分類しております。これは主に、新光電気工業(株)の株式に対する公開買付けの成立及びFDK(株)の株式譲渡に伴うものです。",
+        "period_label_ja": "2025年3月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "連結経営成績（注記事項）",
+        "tags": [
+          "discontinued_operations",
+          "portfolio"
+        ]
+      },
+      {
+        "evidence_id": "02_2026_FY_tanshin.pdf:s0001",
+        "source_filename": "02_2026_FY_tanshin.pdf",
+        "pdf_page": 1,
+        "exact_quote_ja": "2026年3月期 売上収益 3,502,971 △1.3% 営業利益 348,329 31.4% ＜調整後＞ 営業利益 390,589 27.1%",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "連結経営成績",
+        "tags": [
+          "financials"
+        ]
+      },
+      {
+        "evidence_id": "02_2026_FY_tanshin.pdf:s0002",
+        "source_filename": "02_2026_FY_tanshin.pdf",
+        "pdf_page": 10,
+        "exact_quote_ja": "① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行う「グローバルソリューション」、日本市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(Japan)」、海外市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(海外)」により構成されています。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "セグメント情報（報告セグメントの概要）",
+        "tags": [
+          "uvance",
+          "segment"
+        ]
+      },
+      {
+        "evidence_id": "02_2026_FY_tanshin.pdf:s0003",
+        "source_filename": "02_2026_FY_tanshin.pdf",
+        "pdf_page": 13,
+        "exact_quote_ja": "当連結会計年度実績及び翌連結会計年度予想の利益とキャッシュ・フローの拡大を背景として、事業環境や財務状況、資本効率の向上などを総合的に検討した結果、実施するものです。（株式の取得価額の総額：1,500億円（上限））",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "重要な後発事象（自己株式の取得）",
+        "tags": [
+          "share_buyback"
+        ]
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "初期のビジネスモデル変革（欧州等でのリソースシフト）から、中期のFujitsu Uvance構想、直近のデバイス事業（新光電気工業・FDK）の売却・非継続事業化に至るまで、ITサービスソリューションへの集中という基本戦略が一貫しています。事業再編に伴う過渡的な損益の振れを「調整後営業利益」で明確に区分表示しながら実行しており、戦略的論理の整合性が高く保たれています。",
+          "evidence_ids": [
+            "11_2017_FY_tanshin.pdf:s0001",
+            "03_2025_FY_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0002"
+          ]
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "発表された構造改革施策（海外子会社のリソースシフトや国内データセンター・生産拠点の再編）を計画通りに実行し、その後デバイス事業の譲渡やブレインパッド等の成長領域でのM&Aを完遂しています。サービスソリューションの調整後営業利益が着実に増加していることから、施策の実行と事業成果の創出が確認できます。",
+          "evidence_ids": [
+            "11_2017_FY_tanshin.pdf:s0001",
+            "03_2025_FY_tanshin.pdf:s0001",
+            "01_2027_Q1_tanshin.pdf:s0008"
+          ]
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "過渡期において業績予想の修正や事業再編費用の発生に伴う営業利益の振れ幅が存在したものの、調整後営業利益を軸とした本業での業績管理を徹底し、中期的に利益水準を底上げしてきました。年度ごとの公表予想値に対する規律は概ね維持されているものの、一過性損益の影響度合いに波があるため mixed（2）の評価としています。",
+          "evidence_ids": [
+            "11_2017_FY_tanshin.pdf:s0001",
+            "04_2024_FY_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0001"
+          ]
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "一過性の事業再編費用やM&A関連費用、制度変更損益等を「調整項目」として開示し、営業利益と調整後営業利益の差異を各決算短信で極めて明確に説明しています。非コア事業の売却に伴う非継続事業への組み替えや、主要なリスク要因についても継続的かつ透明性の高い開示を行っています。",
+          "evidence_ids": [
+            "01_2027_Q1_tanshin.pdf:s0002",
+            "03_2025_FY_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0001"
+          ]
+        }
+      ],
+      "overall_rationale_ja": "富士通の経営一貫性は総じて高く保たれています（概ね高い一貫性）。10年間にわたり、自社ハードウェアやデバイス事業の比重を下げ、ITサービス・「Fujitsu Uvance」へのリソース集中を進めるという戦略の軸がブレていません。構造改革費用の計上やポートフォリオ再編のプロセスを「調整後営業利益」という指標で明確に区分・説明する開示姿勢が徹底されており、創出したキャッシュ・フローに基づく株主還元の拡充も含めて有言実行がなされています。"
+    },
+    "model_notes": []
+  }
+}

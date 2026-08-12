@@ -1,0 +1,46 @@
+{
+  "valid": false,
+  "publishable": false,
+  "factual_integrity_passed": false,
+  "quality_gate_passed": true,
+  "blocking_error_count": 1,
+  "warning_count": 2,
+  "language": "ja",
+  "issues": [
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_risk_01",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "management_consistency_discussion_coverage_low",
+      "message": "Less than half of the score evidence comes from management discussion.",
+      "claim_id": null,
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "trend_management_discussion_coverage_low",
+      "message": "Less than half of trend evidence references come from management discussion.",
+      "claim_id": null,
+      "evidence_id": null
+    }
+  ],
+  "statistics": {
+    "claims": 18,
+    "evidence_records": 41,
+    "citation_references": 77,
+    "trend_management_discussion_share": 0.125,
+    "management_consistency_score": 0.5,
+    "management_consistency_evidence_confidence": 0.6042,
+    "errors": 1,
+    "warnings": 2,
+    "blocking_errors": 1
+  }
+}
