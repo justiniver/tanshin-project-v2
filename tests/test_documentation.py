@@ -59,7 +59,11 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("quotations. Gemini is not asked", readme)
         self.assertIn("otherwise the Japanese name is", readme)
         self.assertIn("retained rather than translated by meaning", readme)
-        self.assertIn("arithmetic mean of the available subscores", readme)
+        self.assertIn("uses their arithmetic mean", readme)
+        self.assertIn(
+            "evidence-confidence diagnostic rather than erasing",
+            readme,
+        )
         self.assertIn(
             r".\scripts\run_reports.ps1 1878 --pro",
             readme,

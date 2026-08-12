@@ -1,22 +1,541 @@
 <document_manifest>
 security_code: 1808
 latest_filename: 01_2026_FY_tanshin.pdf
-selected_sources:
-- 01_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 53, roles latest, trend_year_end
-- 05_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 54, roles trend_year_end
-- 09_2024-05-10_tanshin.pdf: FY label 2024, period FY, pages 50, roles trend_year_end
-- 13_2023-05-11_tanshin.pdf: FY label 2023, period FY, pages 50, roles trend_year_end
-- 17_2022-05-12_tanshin.pdf: FY label 2022, period FY, pages 52, roles trend_year_end
-- 21_2021-05-13_tanshin.pdf: FY label 2021, period FY, pages 50, roles trend_year_end
-- 25_2020-05-14_tanshin.pdf: FY label 2020, period FY, pages 51, roles trend_year_end
-- 29_2019-05-10_tanshin.pdf: FY label 2019, period FY, pages 49, roles trend_year_end
-- 33_2018-05-11_tanshin.pdf: FY label 2018, period FY, pages 51, roles trend_year_end
-- 37_2017-05-12_tanshin.pdf: FY label 2017, period FY, pages 49, roles trend_year_end
 trend_period_buckets:
 - early: 37_2017-05-12_tanshin.pdf (FY2017), 33_2018-05-11_tanshin.pdf (FY2018), 29_2019-05-10_tanshin.pdf (FY2019), 25_2020-05-14_tanshin.pdf (FY2020)
 - middle: 21_2021-05-13_tanshin.pdf (FY2021), 17_2022-05-12_tanshin.pdf (FY2022), 13_2023-05-11_tanshin.pdf (FY2023)
 - recent: 09_2024-05-10_tanshin.pdf (FY2024), 05_2025_FY_tanshin.pdf (FY2025), 01_2026_FY_tanshin.pdf (FY2026)
 </document_manifest>
+
+<research_metrics>
+{
+  "business_drivers": {
+    "total": 4,
+    "by_direction": {
+      "mixed": 1,
+      "positive": 3
+    },
+    "by_nature": {
+      "cyclical": 2,
+      "structural": 2
+    },
+    "primary_driver_ids": [
+      "driver_1",
+      "driver_2",
+      "driver_3"
+    ]
+  },
+  "commitments": {
+    "total": 3,
+    "by_type": {
+      "medium_term_target": 3
+    },
+    "by_outcome": {
+      "achieved": 1,
+      "partly_achieved": 1,
+      "pending": 1
+    },
+    "annual_forecasts_with_observable_outcomes": 0,
+    "medium_term_targets_with_observable_outcomes": 2,
+    "observed_revision_count": 0,
+    "revision_direction_counts": {},
+    "forecast_posture_counts": {},
+    "missed_or_delayed_ids": []
+  },
+  "management_themes": {
+    "total": 3,
+    "by_development": {
+      "persistent": 1,
+      "strengthened": 2
+    },
+    "changed_or_abandoned_ids": []
+  },
+  "coverage": {
+    "evidence_records": 15,
+    "management_consistency_components": 4,
+    "research_notes": [
+      "本ドシエは提示された10期分の決算短信（2017年3月期〜2026年3月期）に基づき作成されている。",
+      "2026年3月期より新中期経営計画「HASEKO Evolution Plan」が開始されており、初年度の連結経常利益は941億円（予想900億円を超過）となった。"
+    ]
+  },
+  "interpretation_guardrail": "Counts describe only observations present in the selected filings. They are not a complete revision history unless the selected corpus contains every relevant revision disclosure."
+}
+</research_metrics>
+
+<research_dossier>
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "1808",
+    "company_name_ja": "株式会社長谷工コーポレーション",
+    "company_name_en": "HASEKO Corporation",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "latest_period_ja": "2026年3月期",
+    "latest_period_en": "FY2026"
+  },
+  "evidence": [
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆2,731億円（同8.1％増）、完成工事総利益率の改善により営業利益は987億円（同16.6％増）、経常利益は941億円（同12.8％増）、親会社株主に帰属する当期純利益は548億円（同59.2％増）の増収増益となりました。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "このような中、中期経営計画「ＨＡＳＥＫＯ Ｅｖｏｌｕｔｉｏｎ Ｐｌａｎ」の初年度となる当連結会計年度につきましては、完成工事総利益率の改善により、連結経常利益は予想の900億円を上回り、941億円となりました。",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "medium_term_plan"
+      ]
+    },
+    {
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 13,
+      "exact_quote_ja": "2028年３月期 連結経常利益 1,000億円以上 2031年３月期 連結経常利益 1,300億円以上 安定的に1,000億円以上を計上できる収益基盤の確立 ＲＯＥ 10％を上回る水準を維持し、2031年3月期までに13％程度を目指す",
+      "period_label_ja": "2026年3月期",
+      "period_label_en": "FY2026",
+      "statement_type": "target",
+      "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+      "tags": [
+        "management_discussion",
+        "medium_term_target"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0004",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆1,774億円（同7.6％増）、販売費及び一般管理費の増加により営業利益は847億円（同1.2％減）、経常利益は834億円（同0.1％増）、海外関連事業において特別損失として減損損失、投資有価証券評価損及び訴訟損失引当金繰入額を計上したことにより、親会社株主に帰属する当期純利益は345億円（同38.5％減）の増収減益となりました。",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "exact_quote_ja": "物価上昇を上回る賃金アップを念頭にした処遇改善による人件費上昇を吸収しながら、計画数値である2025年３月期の連結子会社経常利益300億円以上、５期合計連結経常利益4,000億円を達成し、また年間配当額の下限を80円（2025年３月期は配当85円）とすることで、株主還元の充実も行ってまいりました。",
+      "period_label_ja": "2025年3月期",
+      "period_label_en": "FY2025",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+      "tags": [
+        "management_discussion",
+        "medium_term_plan"
+      ]
+    },
+    {
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0006",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆944億円（同6.5％増）、完成工事総利益率の低下により営業利益は857億円（同4.9％減）、経常利益は833億円（同5.6％減）、親会社株主に帰属する当期純利益は560億円（同5.5％減）の増収減益となりました。",
+      "period_label_ja": "2024年3月期",
+      "period_label_en": "FY2024",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "pdf_page": 11,
+      "exact_quote_ja": "2025年３月期 連結経常利益 1,000億円 2025年３月期 連結子会社経常利益 300億円以上 2021年３月期～2025年３月期 ５期合計連結経常利益 4,000億円",
+      "period_label_ja": "2024年3月期",
+      "period_label_en": "FY2024",
+      "statement_type": "target",
+      "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+      "tags": [
+        "management_discussion",
+        "medium_term_target"
+      ]
+    },
+    {
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0008",
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、連結子会社における不動産の取扱量増加及び当社における建築受注用地の取扱量増加により売上高は１兆273億円（同12.9％増）、主に不動産利益の増加により営業利益は902億円（同9.0％増）、経常利益は883億円（同7.8％増）、親会社株主に帰属する当期純利益は593億円（同8.9％増）の増収増益となりました。",
+      "period_label_ja": "2023年3月期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0009",
+      "source_filename": "13_2023-05-11_tanshin.pdf",
+      "pdf_page": 5,
+      "exact_quote_ja": "建設工事では、当社の土地情報収集力や商品企画力、施工品質や工期遵守に対する姿勢、効率的な生産体制等について事業主から評価を頂いている一方、資材労務費の高騰等の影響により、当期の完成工事総利益率は低下いたしました。",
+      "period_label_ja": "2023年3月期",
+      "period_label_en": "FY2023",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況 ②セグメントの業績",
+      "tags": [
+        "management_discussion",
+        "material_costs",
+        "labor_costs"
+      ]
+    },
+    {
+      "evidence_id": "17_2022-05-12_tanshin.pdf:s0010",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、当社における完成工事高が減少したものの、当社における建築受注用地の取扱量増加及び連結子会社における不動産の取扱量増加により売上高は9,097億円（同12.4％増）、主に不動産利益の増加により営業利益は827億円（同13.4％増）、経常利益は819億円（同14.0％増）、親会社株主に帰属する当期純利益は545億円（同12.9％増）の増収増益となりました。",
+      "period_label_ja": "2022年3月期",
+      "period_label_en": "FY2022",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "21_2021-05-13_tanshin.pdf:s0011",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、主にマンション建築工事の施工量減少により売上高は8,094億円（同4.3％減）、主にマンション建築工事の施工量減少及びマンション建築工事の完成工事総利益率の低下に伴う工事利益の減少により営業利益は729億円（同15.1％減）、経常利益は718億円（同15.7％減）、親会社株主に帰属する当期純利益は483億円（同19.4％減）の減収減益となりました。",
+      "period_label_ja": "2021年3月期",
+      "period_label_en": "FY2021",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "25_2020-05-14_tanshin.pdf:s0012",
+      "source_filename": "25_2020-05-14_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "当連結会計年度における業績は、主に不動産の取扱量減少により売上高は8,460億円（同5.0％減）、主にマンション建築工事の完成工事総利益率の低下により、営業利益は859億円（同12.7％減）、経常利益は853億円（同15.1％減）の減収減益となりました。",
+      "period_label_ja": "2020年3月期",
+      "period_label_en": "FY2020",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "29_2019-05-10_tanshin.pdf:s0013",
+      "source_filename": "29_2019-05-10_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大及び不動産の取扱量増大により売上高は8,910億円（同9.6％増）となりましたが、マンション建築工事の完成工事総利益率の低下により、営業利益は984億円（同2.4％減）、経常利益は1,004億円（同0.1％減）の増収減益となりました。",
+      "period_label_ja": "2019年3月期",
+      "period_label_en": "FY2019",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "33_2018-05-11_tanshin.pdf:s0014",
+      "source_filename": "33_2018-05-11_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大により売上高は8,133億円（同5.3％増）、マンション建築工事の完成工事総利益率の改善により営業利益は1,008億円（同13.2％増）、経常利益は1,005億円（同13.1％増）、親会社株主に帰属する当期純利益は723億円（同23.0％増）の増収増益となりました。",
+      "period_label_ja": "2018年3月期",
+      "period_label_en": "FY2018",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    },
+    {
+      "evidence_id": "37_2017-05-12_tanshin.pdf:s0015",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "exact_quote_ja": "以上の結果、当連結会計年度における業績は、売上高は7,723億円（同1.9％減）となりましたが、マンション建築工事の完成工事総利益率の改善により、営業利益は890億円（同29.5％増）、経常利益は888億円（同31.9％増）、親会社株主に帰属する当期純利益は588億円（同14.7％増）の増益となりました。",
+      "period_label_ja": "2017年3月期",
+      "period_label_en": "FY2017",
+      "statement_type": "actual",
+      "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+      "tags": [
+        "management_discussion",
+        "financial_results"
+      ]
+    }
+  ],
+  "business_drivers": [
+    {
+      "driver_id": "driver_1",
+      "canonical_tag": "customer_demand",
+      "label_ja": "マンション建築工事の施工量及び受注動向",
+      "direction": "positive",
+      "importance": "primary",
+      "nature": "cyclical",
+      "affected_area_ja": "建設関連事業 売上高・営業利益",
+      "summary_ja": "分譲マンションを中心とする建築工事の施工量や受注高の変動が、主力の建設関連事業における売上高及び利益を直接牽引・減速させる伝達メカニズムとなっている。",
+      "observed_periods_ja": [
+        "2017年3月期",
+        "2018年3月期",
+        "2019年3月期",
+        "2021年3月期",
+        "2024年3月期",
+        "2025年3月期",
+        "2026年3月期"
+      ],
+      "evidence_ids": [
+        "37_2017-05-12_tanshin.pdf:s0015",
+        "33_2018-05-11_tanshin.pdf:s0014",
+        "29_2019-05-10_tanshin.pdf:s0013",
+        "21_2021-05-13_tanshin.pdf:s0011",
+        "09_2024-05-10_tanshin.pdf:s0006",
+        "05_2025_FY_tanshin.pdf:s0004",
+        "01_2026_FY_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "driver_id": "driver_2",
+      "canonical_tag": "material_costs",
+      "label_ja": "資材・労務費高騰と完成工事総利益率",
+      "direction": "mixed",
+      "importance": "primary",
+      "nature": "structural",
+      "affected_area_ja": "建設関連事業 完成工事総利益率・営業利益",
+      "summary_ja": "資材価格や労務費の高騰が完成工事総利益率の押し下げ要因となる一方、受注時採算の改善や原価低減努力の推進によって完成工事総利益率が改善・復調する循環的・構造的メカニズムを持つ。",
+      "observed_periods_ja": [
+        "2017年3月期",
+        "2018年3月期",
+        "2019年3月期",
+        "2020年3月期",
+        "2021年3月期",
+        "2023年3月期",
+        "2024年3月期",
+        "2025年3月期",
+        "2026年3月期"
+      ],
+      "evidence_ids": [
+        "37_2017-05-12_tanshin.pdf:s0015",
+        "33_2018-05-11_tanshin.pdf:s0014",
+        "29_2019-05-10_tanshin.pdf:s0013",
+        "13_2023-05-11_tanshin.pdf:s0009",
+        "09_2024-05-10_tanshin.pdf:s0006",
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0002"
+      ]
+    },
+    {
+      "driver_id": "driver_3",
+      "canonical_tag": "property_prices",
+      "label_ja": "不動産取扱量及び分譲マンションの販売・引渡",
+      "direction": "positive",
+      "importance": "primary",
+      "nature": "cyclical",
+      "affected_area_ja": "不動産関連事業 売上高・営業利益",
+      "summary_ja": "分譲マンションの新規引渡し戸数や収益不動産の売却・仲介取扱量の増減、及び建築受注用地の取扱量変動が不動産関連事業等の利益を変動させる。",
+      "observed_periods_ja": [
+        "2019年3月期",
+        "2020年3月期",
+        "2022年3月期",
+        "2023年3月期",
+        "2024年3月期",
+        "2025年3月期",
+        "2026年3月期"
+      ],
+      "evidence_ids": [
+        "29_2019-05-10_tanshin.pdf:s0013",
+        "25_2020-05-14_tanshin.pdf:s0012",
+        "17_2022-05-12_tanshin.pdf:s0010",
+        "13_2023-05-11_tanshin.pdf:s0008",
+        "09_2024-05-10_tanshin.pdf:s0006",
+        "05_2025_FY_tanshin.pdf:s0004",
+        "01_2026_FY_tanshin.pdf:s0001"
+      ]
+    },
+    {
+      "driver_id": "driver_4",
+      "canonical_tag": "volume",
+      "label_ja": "分譲・賃貸マンション管理戸数の蓄積",
+      "direction": "positive",
+      "importance": "secondary",
+      "nature": "structural",
+      "affected_area_ja": "管理運営事業（旧サービス関連事業） 売上高・営業利益",
+      "summary_ja": "分譲マンション管理戸数や賃貸マンション・社宅運営管理戸数の新規受託・継続受託による累積が、収益の下振れを防ぐ安定的なストック型収益基盤を形成している。",
+      "observed_periods_ja": [
+        "2021年3月期",
+        "2022年3月期",
+        "2023年3月期",
+        "2024年3月期",
+        "2025年3月期",
+        "2026年3月期"
+      ],
+      "evidence_ids": [
+        "05_2025_FY_tanshin.pdf:s0005"
+      ]
+    }
+  ],
+  "commitments": [
+    {
+      "commitment_id": "commit_1",
+      "commitment_type": "medium_term_target",
+      "statement_period_ja": "2018年3月期",
+      "commitment_ja": "中期経営計画「NBj計画」3期合計連結経常利益 2,400億円",
+      "due_period_ja": "2020年3月期",
+      "outcome_status": "achieved",
+      "outcome_ja": "3期（2018年3月期:1,005億円、2019年3月期:1,004億円、2020年3月期:853億円）の累計連結経常利益は2,862億円となり、目標の2,400億円を上回って達成した。",
+      "revision_direction": "none_observed",
+      "forecast_posture": "balanced",
+      "evidence_ids": [
+        "33_2018-05-11_tanshin.pdf:s0014",
+        "29_2019-05-10_tanshin.pdf:s0013",
+        "25_2020-05-14_tanshin.pdf:s0012"
+      ]
+    },
+    {
+      "commitment_id": "commit_2",
+      "commitment_type": "medium_term_target",
+      "statement_period_ja": "2021年3月期",
+      "commitment_ja": "中期経営計画「NS計画」5期合計連結経常利益 4,000億円、2025年3月期 連結経常利益 1,000億円",
+      "due_period_ja": "2025年3月期",
+      "outcome_status": "partly_achieved",
+      "outcome_ja": "5期合計の連結経常利益は4,073億円となり5期累計目標（4,000億円）を達成した一方、2025年3月期単年度の連結経常利益は834億円となり単年度目標（1,000億円）は未達となった。",
+      "revision_direction": "none_observed",
+      "forecast_posture": "balanced",
+      "evidence_ids": [
+        "21_2021-05-13_tanshin.pdf:s0011",
+        "09_2024-05-10_tanshin.pdf:s0007",
+        "05_2025_FY_tanshin.pdf:s0005"
+      ]
+    },
+    {
+      "commitment_id": "commit_3",
+      "commitment_type": "medium_term_target",
+      "statement_period_ja": "2026年3月期",
+      "commitment_ja": "中期経営計画「HASEKO Evolution Plan」2028年3月期 連結経常利益 1,000億円以上、2031年3月期 連結経常利益 1,300億円以上",
+      "due_period_ja": "2031年3月期",
+      "outcome_status": "pending",
+      "outcome_ja": "計画初年度（2026年3月期）の連結経常利益は941億円を達成。2028年3月期及び2031年3月期の達成状況は対象期間中のため未確定。",
+      "revision_direction": "none_observed",
+      "forecast_posture": "not_assessable",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:s0002",
+        "01_2026_FY_tanshin.pdf:s0003"
+      ]
+    }
+  ],
+  "management_themes": [
+    {
+      "theme_id": "theme_1",
+      "label_ja": "分譲マンション施工の採算性確保と完成工事総利益率の維持・向上",
+      "development": "persistent",
+      "early_period_ja": "2017年3月期〜2020年3月期",
+      "middle_period_ja": "2021年3月期〜2023年3月期",
+      "recent_period_ja": "2024年3月期〜2026年3月期",
+      "interpretation_ja": "土地情報収集力と特入施工の強みを活かした受注時採算の厳格管理、現場の原価低減努力の推進により、資材・労務費高騰局面におれても完成工事総利益率の改善・維持を経営の中心テーマに掲げ続けている。",
+      "evidence_ids": [
+        "37_2017-05-12_tanshin.pdf:s0015",
+        "13_2023-05-11_tanshin.pdf:s0009",
+        "01_2026_FY_tanshin.pdf:s0001",
+        "01_2026_FY_tanshin.pdf:s0002"
+      ]
+    },
+    {
+      "theme_id": "theme_2",
+      "label_ja": "ストック型ビジネス（管理運営・サービス関連事業）の拡大による収益基盤平準化",
+      "development": "strengthened",
+      "early_period_ja": "2017年3月期〜2020年3月期",
+      "middle_period_ja": "2021年3月期〜2023年3月期",
+      "recent_period_ja": "2024年3月期〜2026年3月期",
+      "interpretation_ja": "分譲マンションや賃貸マンション・社宅の管理戸数増、大規模修繕・リフォーム、シニア事業の強化を進め、建築請負依存からの脱却と安定収益の蓄積を強化している。",
+      "evidence_ids": [
+        "05_2025_FY_tanshin.pdf:s0005"
+      ]
+    },
+    {
+      "theme_id": "theme_3",
+      "label_ja": "株主還元の拡充（累進配当・総還元性向目標の設定）",
+      "development": "strengthened",
+      "early_period_ja": "2017年3月期〜2020年3月期",
+      "middle_period_ja": "2021年3月期〜2023年3月期",
+      "recent_period_ja": "2024年3月期〜2026年3月期",
+      "interpretation_ja": "配当の下限設定（70円→80円等）から、総還元性向40％〜50％程度の設定、累進配当の導入、機動的な自己株式取得へと株主還元方針を段階的に強化・拡充させている。",
+      "evidence_ids": [
+        "05_2025_FY_tanshin.pdf:s0005"
+      ]
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "分譲マンション施工の強みを中核としながら、管理運営事業や不動産関連事業への事業領域拡大を一貫して進めており、戦略の筋道と事業の方向性に高い整合性が認められる。",
+        "evidence_ids": [
+          "05_2025_FY_tanshin.pdf:s0005",
+          "01_2026_FY_tanshin.pdf:s0002"
+        ]
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "「NBj計画」の3期累計連結経常利益（目標2,400億円に対し実績2,862億円）及び「NS計画」の5期累計連結経常利益（目標4,000億円に対し実績4,073億円）の双方で累計目標を達成しており、高い実行力が維持されている。",
+        "evidence_ids": [
+          "25_2020-05-14_tanshin.pdf:s0012",
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 2,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "NS計画における5期累計経常利益目標（4,000億円）は達成したものの、最終年度（2025年3月期）の単年度目標（1,000億円に対し実績834億円）が未達に終わるなど、単年度目標の規律面で一部過大な見通し設定がみられた。",
+        "evidence_ids": [
+          "09_2024-05-10_tanshin.pdf:s0007",
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "rationale_ja": "資材・労務費高騰による完成工事総利益率の低下や、海外関連事業における特別損失（減損損失・有価証券評価損等）の発生理由について、決算短信の経営成績概況等で客観的かつ具体的に要因を開示している。",
+        "evidence_ids": [
+          "05_2025_FY_tanshin.pdf:s0004",
+          "13_2023-05-11_tanshin.pdf:s0009"
+        ]
+      }
+    ],
+    "overall_rationale_ja": "株式会社長谷工コーポレーションは、基幹事業である分譲マンション建築請負での高い市場シェアと受注時採算管理を強みとしつつ、管理運営・サービス関連事業や不動産開発への多角化を首尾一貫して推進している。中期経営計画「NBj計画」（3期累計経常利益2,400億円目標に対し2,862億円達成）及び「NS計画」（5期累計経常利益4,000億円目標に対し4,073億円達成）において、ともに累計目標を達成しており、戦略実行力と有言実行の姿勢が確認できる。一方、NS計画最終年度（2025年3月期）の単年度経常利益目標1,000億円に対して実績が834億円にとどまった点や、海外事業での減損損失計上などの課題は存在するが、資材・労務費高騰や外部環境変化の影響に関する開示姿勢は透明性が高く、総じて経営の整合性は良好と評価できる。"
+  },
+  "research_notes": [
+    "本ドシエは提示された10期分の決算短信（2017年3月期〜2026年3月期）に基づき作成されている。",
+    "2026年3月期より新中期経営計画「HASEKO Evolution Plan」が開始されており、初年度の連結経常利益は941億円（予想900億円を超過）となった。"
+  ]
+}
+</research_dossier>
 
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
@@ -158,9 +677,9 @@ placeholder relationships, or wording. Do not return Markdown.
 </report_blueprint>
 
 <analysis_task>
-Create a Japanese investor report for security code 1808.
-The latest filing is 01_2026_FY_tanshin.pdf. The trend period consists only
-of the selected year-end sources identified in the manifest.
+Create the final Japanese investor analysis for security code
+1808 from the supplied research dossier. The latest filing
+is 01_2026_FY_tanshin.pdf.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -172,7 +691,10 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: at least 2 claims using the latest filing
+- latest.business_driver: 4-6 distinct driver claims when supported. Begin each
+  headline with a concise reader-facing driver tag and direction, such as
+  「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
+  transmission mechanism and affected segment or metric
 - latest.outlook: at least 1 claim using the latest filing
 - latest.risk: at least 2 claims using the latest filing
 - latest.context: target 1 integrated claim using the latest filing, written as
@@ -182,6 +704,10 @@ Coverage targets (grounding overrides counts):
 - trend.change: 2-3 genuinely different material changes
 - trend.capital_allocation: at least 1 distinct capital-allocation development
 - trend.implication: target 1 current investor implication
+- management.strategy: exactly 1 detailed explanation
+- management.execution: exactly 1 detailed explanation
+- management.forecast_discipline: exactly 1 detailed explanation
+- management.accountability: exactly 1 detailed explanation
 
 These are coverage targets, not permission to create weak, repetitive, or
 unsupported claims. Return fewer claims when necessary. For each underfilled
@@ -189,31 +715,20 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. First identify relevant evidence across the supplied PDFs internally. Rank it
-   by investor materiality before selecting claims. Do not split one financial
-   result into several key takeaways merely to satisfy the claim count.
-   For the trend analysis, begin with the qualitative management discussion:
-   経営成績に関する説明 or 経営成績等の概況, 財政状態に関する説明,
-   cash-flow discussion, 業績予想などの将来予測情報に関する説明,
-   management-plan progress, capital allocation, and management's discussion
-   of risks. Use financial-summary tables and notes as corroboration rather than
-   allowing a sequence of headline figures to become the trend thesis.
-2. Before choosing the trend themes, internally test each candidate using four
-   questions: what management said or prioritized; what subsequently happened;
-   what material evidence limits or contradicts the interpretation; and why that
-   record matters now. Reject themes that cannot answer the first three questions
-   with management-discussion evidence from the required period buckets.
-3. Ensure the key takeaways are diversified. Do not use separate sales, operating
+1. Rank the dossier findings by investor materiality before selecting claims.
+   Do not split one financial result into several takeaways merely to satisfy a
+   claim count. Treat the dossier as the full evidence boundary.
+2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
-4. Determine one unifying decade thesis and a small set of non-overlapping
+3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
    cyclical financial outcomes, and connect strategy, profitability, capital
    allocation, risk, and the latest position.
-5. Apply the following source tests wherever the relevant disclosures exist:
+4. Apply the following tests wherever the dossier supports them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -238,7 +753,7 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-6. Apply these admission rules to the trend sections:
+5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
      the decade's central continuity, principal change, and material tension.
@@ -253,53 +768,36 @@ Analysis requirements:
    - The latest filing may update the current state but does not replace a recent
      year-end source. Evidence from one year or adjacent years belongs in latest
      context or risk, not in a decade theme.
-7. For every major growth theme, actively look for a contraction, miss, reversal,
-   or cyclical downturn in the supplied period. If one exists, explain what it
-   shows about durability rather than presenting only favorable years. Explain
-   what would confirm or disconfirm the latest interpretation. Do not convert an
-   ambition into implementation, implementation into an outcome, or one favorable
-   result into proof of durable change. A completed reorganization, acquisition,
-   divestiture, or investment establishes that the action occurred, not that its
-   intended economic outcome has been achieved.
-8. Treat capital allocation broadly: organic investment in people, marketing,
+6. For every major growth theme, use the dossier's contrary evidence, miss,
+   reversal, or cyclical downturn when one is present. Explain what it shows
+   about durability. Do not convert ambition into implementation or
+   implementation into an achieved economic outcome.
+7. Treat capital allocation broadly: organic investment in people, marketing,
    development and capacity; acquisitions and divestitures; securities, debt and
    balance-sheet deployment; and dividends or buybacks. Discuss material shifts
    and trade-offs rather than listing every cash-flow item. Keep this analysis in
    its own section and do not repeat the same facts as separate strategic changes.
-9. Use restrained language when evidence is mixed. Avoid promotional expressions
+8. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
    evidence establishes that conclusion.
-10. Give more space to material themes and less to secondary ones. As advisory
+9. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
    Never add repetition, generic background, or weak themes merely to reach a length.
 
-Management-consistency assessment:
-- Return one component for each required dimension.
-- Use 0 for materially inconsistent, 1 for weak, 2 for mixed, 3 for generally
-  consistent, and 4 for highly consistent. Compare early, middle, and recent
-  management commentary and cite evidence from all three periods for each rating
-  when available. A rating of 4 requires convincing early-, middle-, and
-  recent-period follow-through and no omitted material counterexample.
-- If longitudinal evidence is insufficient, set evidence_sufficiency to
-  "insufficient", set rating to null, cite whatever relevant evidence exists,
-  and explain the limitation. Use rating 2 only when the evidence itself is mixed.
-- Otherwise set evidence_sufficiency to "sufficient" and provide a 0-4 rating.
-- strategic_coherence: whether stated priorities and the logic of successive
-  plans remain coherent; explained adaptation is not automatically inconsistency
-- execution_follow_through: whether announced initiatives are later implemented
-  and associated operational or financial outcomes are discussed
-- forecast_target_discipline: whether forecasts and targets are subsequently met,
-  credibly revised, or transparently reconciled with outcomes; evaluate annual,
-  endpoint, and cumulative commitments separately
-- accountability_transparency: whether misses, trade-offs, changed assumptions,
-  and abandoned priorities are explained rather than silently replaced
-- Base these ratings primarily on management-discussion passages, not on raw
-  financial-table sequences or the mere repetition of plan slogans.
-- Each rationale must state the strongest supporting evidence and any material
-  contrary evidence. Repetition of a strategic priority without a later outcome
-  is not execution follow-through.
+Management-consistency explanations:
+- The dossier already contains the four ratings used by local scoring. Do not
+  recalculate or change them.
+- Produce one claim for each management.* section. Explain the corresponding
+  rating through concrete examples: targets achieved or missed, observed
+  revisions, forecast posture, implementation outcomes, commentary changes,
+  and management's treatment of setbacks.
+- Use the deterministic research counts when useful, but state that revision
+  counts cover only the selected filings. Never create a complete-history claim
+  from incomplete coverage.
+- Mention the strongest supporting observation and material contrary evidence.
+- A repeated priority without a later action or outcome is not execution.
 
 Quality profile:
 - Write sober, readable investor research, not promotional corporate copy.
@@ -325,8 +823,10 @@ Quality profile:
 
 Response details:
 - period_label_ja and period_label_en must be concise citation labels, not prose.
-- Do not return figure, date, or qualifier mapping arrays; local code derives them.
+- Cite only evidence IDs present in the dossier.
+- Do not return evidence records, management ratings, or figure/date/qualifier
+  mapping arrays; local code supplies or derives them.
 
-Based only on the supplied PDFs, return the schema-conforming JSON. Omit any
-assertion that cannot be grounded; grounding takes priority over coverage and length.
+Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
+that cannot be grounded; grounding takes priority over coverage and length.
 </analysis_task>

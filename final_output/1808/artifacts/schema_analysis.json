@@ -51,87 +51,6 @@
       "title": "CompanyIdentity",
       "type": "object"
     },
-    "EvidenceRecord": {
-      "additionalProperties": false,
-      "properties": {
-        "evidence_id": {
-          "description": "Unique stable ID formatted as <source_filename>:sNNNN, using a four-digit sequence within the response.",
-          "minLength": 1,
-          "title": "Evidence Id",
-          "type": "string"
-        },
-        "source_filename": {
-          "description": "Exact source_filename from the metadata preceding the cited PDF.",
-          "minLength": 1,
-          "title": "Source Filename",
-          "type": "string"
-        },
-        "pdf_page": {
-          "description": "Physical 1-indexed PDF page containing the quote; never a printed footer, contents-page, or document page label.",
-          "minimum": 1,
-          "title": "Pdf Page",
-          "type": "integer"
-        },
-        "exact_quote_ja": {
-          "description": "Verbatim contiguous Japanese sentence or short passage that contains the material facts, figures, dates, qualifiers, and causal wording used.",
-          "minLength": 1,
-          "title": "Exact Quote Ja",
-          "type": "string"
-        },
-        "period_label_ja": {
-          "description": "Concise Japanese period label suitable for a citation.",
-          "minLength": 1,
-          "title": "Period Label Ja",
-          "type": "string"
-        },
-        "period_label_en": {
-          "description": "Concise English equivalent of period_label_ja.",
-          "minLength": 1,
-          "title": "Period Label En",
-          "type": "string"
-        },
-        "statement_type": {
-          "$ref": "#/$defs/StatementType",
-          "description": "Nature of the quoted source statement, not the analyst's tone."
-        },
-        "source_section": {
-          "description": "Concise filing section or table name where the quote appears.",
-          "minLength": 1,
-          "title": "Source Section",
-          "type": "string"
-        },
-        "tags": {
-          "description": "Optional short topical labels; use an empty list when unnecessary.",
-          "items": {
-            "type": "string"
-          },
-          "title": "Tags",
-          "type": "array"
-        }
-      },
-      "required": [
-        "evidence_id",
-        "source_filename",
-        "pdf_page",
-        "exact_quote_ja",
-        "period_label_ja",
-        "period_label_en",
-        "statement_type",
-        "source_section"
-      ],
-      "title": "EvidenceRecord",
-      "type": "object"
-    },
-    "ManagementConsistencyDimension": {
-      "enum": [
-        "strategic_coherence",
-        "execution_follow_through",
-        "forecast_target_discipline",
-        "accountability_transparency"
-      ],
-      "title": "ManagementConsistencyDimension",
-      "type": "string"
-    },
     "ModelAnalysisClaim": {
       "description": "Quality-focused model response claim; support spans are derived locally.",
       "properties": {
@@ -202,89 +121,6 @@
       "title": "ModelAnalysisClaim",
       "type": "object"
     },
-    "ModelManagementConsistency": {
-      "description": "Model inputs only; Python calculates the published score.",
-      "properties": {
-        "components": {
-          "description": "Exactly one component for each of the four required consistency dimensions.",
-          "items": {
-            "$ref": "#/$defs/ModelManagementConsistencyComponent"
-          },
-          "maxItems": 4,
-          "minItems": 4,
-          "title": "Components",
-          "type": "array"
-        },
-        "overall_rationale_ja": {
-          "description": "Concise synthesis of the company's management consistency across the selected trend period, including the strongest evidence for and against consistency and any important qualifications.",
-          "minLength": 1,
-          "title": "Overall Rationale Ja",
-          "type": "string"
-        }
-      },
-      "required": [
-        "components",
-        "overall_rationale_ja"
-      ],
-      "title": "ModelManagementConsistency",
-      "type": "object"
-    },
-    "ModelManagementConsistencyComponent": {
-      "description": "One model-rated input to the locally calculated consistency score.",
-      "properties": {
-        "dimension": {
-          "$ref": "#/$defs/ManagementConsistencyDimension",
-          "description": "Exact consistency dimension being assessed."
-        },
-        "rating": {
-          "anyOf": [
-            {
-              "maximum": 4,
-              "minimum": 0,
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "description": "Evidence-based ordinal rating: 0 materially inconsistent, 1 weak, 2 mixed, 3 generally consistent, or 4 highly consistent. Use null when longitudinal evidence is insufficient.",
-          "title": "Rating"
-        },
-        "evidence_sufficiency": {
-          "description": "Whether the selected filings provide enough longitudinal evidence to assign this component a substantive rating.",
-          "enum": [
-            "sufficient",
-            "insufficient"
-          ],
-          "title": "Evidence Sufficiency",
-          "type": "string"
-        },
-        "rationale_ja": {
-          "description": "Concise Japanese explanation comparing what management said with later actions, outcomes, revisions, or explanations. State both the strongest supporting evidence and any material counterevidence, and compare targets with results using the same scope and time horizon.",
-          "minLength": 1,
-          "title": "Rationale Ja",
-          "type": "string"
-        },
-        "evidence_ids": {
-          "description": "Evidence IDs from management-discussion passages that support the rating or explain why the evidence is insufficient.",
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Evidence Ids",
-          "type": "array"
-        }
-      },
-      "required": [
-        "dimension",
-        "rating",
-        "evidence_sufficiency",
-        "rationale_ja",
-        "evidence_ids"
-      ],
-      "title": "ModelManagementConsistencyComponent",
-      "type": "object"
-    },
     "SectionKey": {
       "enum": [
         "latest.key_takeaway",
@@ -297,7 +133,11 @@
         "trend.change",
         "trend.capital_allocation",
         "trend.implication",
-        "company.overview"
+        "company.overview",
+        "management.strategy",
+        "management.execution",
+        "management.forecast_discipline",
+        "management.accountability"
       ],
       "title": "SectionKey",
       "type": "string"
@@ -315,20 +155,17 @@
       "type": "string"
     }
   },
-  "description": "Lightweight schema returned by Gemini before local normalization.",
+  "description": "Dossier-backed analytical prose returned by the second Japanese request.",
   "properties": {
     "schema_version": {
-      "description": "Response-format version identifier; use one consistent value.",
       "minLength": 1,
       "title": "Schema Version",
       "type": "string"
     },
     "identity": {
-      "$ref": "#/$defs/CompanyIdentity",
-      "description": "Issuer and latest-report identity derived from the supplied PDFs."
+      "$ref": "#/$defs/CompanyIdentity"
     },
     "claims": {
-      "description": "Grounded report claims ordered by section and then by the order field. Coverage targets may be underfilled rather than padded with weak claims.",
       "items": {
         "$ref": "#/$defs/ModelAnalysisClaim"
       },
@@ -336,21 +173,7 @@
       "title": "Claims",
       "type": "array"
     },
-    "evidence": {
-      "description": "Deduplicated evidence ledger containing every evidence ID cited by a claim.",
-      "items": {
-        "$ref": "#/$defs/EvidenceRecord"
-      },
-      "minItems": 1,
-      "title": "Evidence",
-      "type": "array"
-    },
-    "management_consistency": {
-      "$ref": "#/$defs/ModelManagementConsistency",
-      "description": "Four evidence-based management-consistency component ratings. Python calculates the published score from these inputs."
-    },
     "model_notes": {
-      "description": "Optional concise disclosure of source ambiguity, omitted material, or a coverage shortfall. Use coverage_shortfall:<section>:<reason> when the evidence does not support a requested claim count. Never use this field for report prose.",
       "items": {
         "type": "string"
       },
@@ -361,10 +184,8 @@
   "required": [
     "schema_version",
     "identity",
-    "claims",
-    "evidence",
-    "management_consistency"
+    "claims"
   ],
-  "title": "JapaneseModelResponse",
+  "title": "JapaneseSynthesisResponse",
   "type": "object"
 }

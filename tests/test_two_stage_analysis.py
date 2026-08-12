@@ -14,6 +14,7 @@ from tanshin_pipeline.research import (
 )
 from tanshin_pipeline.schemas import (
     JapaneseSynthesisResponse,
+    ManagementConsistencyDimension,
     materialize_japanese_synthesis,
 )
 from tanshin_pipeline.selection import select_filings
@@ -56,6 +57,19 @@ class TwoStageAnalysisTests(unittest.TestCase):
         broken = self.dossier.model_copy(deep=True)
         broken.business_drivers[0].evidence_ids.append("missing:evidence")
         with self.assertRaisesRegex(ValueError, "absent from its ledger"):
+            validate_research_dossier(broken)
+
+    def test_duplicate_consistency_dimension_is_rejected_before_synthesis(
+        self,
+    ) -> None:
+        broken = self.dossier.model_copy(deep=True)
+        broken.management_consistency.components[0].dimension = (
+            ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH
+        )
+        with self.assertRaisesRegex(
+            ValueError,
+            "exactly one management-consistency component",
+        ):
             validate_research_dossier(broken)
 
     def test_synthesis_uses_dossier_evidence_and_renders_score_details(self) -> None:

@@ -253,7 +253,12 @@ Research priorities:
    The rationale must identify concrete commitments, later actions or results,
    important misses or revisions, and contrary evidence. Rate 0 materially
    inconsistent, 1 weak, 2 mixed, 3 generally consistent, and 4 highly
-   consistent. Use null with insufficient evidence rather than a neutral rating.
+   consistent. The selected corpus normally provides enough management discussion
+   for all four ratings, so make the best evidence-based assessment even when
+   coverage is uneven and explain the limitation in the rationale. Use null only
+   in the exceptional case where, after reviewing every selected filing, no
+   defensible assessment can be made for that dimension; do not use null merely
+   because the strongest examples come from one part of the trend period.
 9. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
    targets, missing outcomes, or other material research limitations.
 

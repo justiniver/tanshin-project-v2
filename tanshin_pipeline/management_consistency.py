@@ -14,7 +14,7 @@ from .schemas import (
 )
 
 
-METHODOLOGY_VERSION = "management-consistency-v5"
+METHODOLOGY_VERSION = "management-consistency-v6"
 COMPONENT_WEIGHTS = {
     ManagementConsistencyDimension.STRATEGIC_COHERENCE: 0.25,
     ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH: 0.25,
@@ -79,10 +79,12 @@ def calculate_management_consistency(
     """Apply fixed weights and calculate a separate evidence-confidence score.
 
     Gemini supplies component ratings, sufficiency judgments, and rationales.
-    Python owns the weights, evidence resolution, minimum longitudinal coverage,
-    confidence measure, and the published 0-1 scale. Components without enough
-    longitudinal evidence remain unscored and are excluded from the overall
-    arithmetic mean. If every component is unavailable, the overall neutral
+    Python owns the weights, evidence resolution, confidence measure, and the
+    published 0-1 scale. A model rating supported by at least one selected,
+    resolvable evidence record remains scored; uneven period coverage lowers
+    evidence confidence instead of erasing the rating. Components remain blank
+    only when the research pass explicitly returns no rating or supplies no
+    usable evidence. If every component is unavailable, the overall neutral
     fallback is 0.50 while all component scores remain blank.
     """
 
@@ -152,25 +154,19 @@ def calculate_management_consistency(
         )
         if dimension not in supplied_by_dimension:
             component_confidence = 0.0
-        locally_sufficient = (
-            len(years) >= 2
-            and len(covered_buckets) >= 2
-            and len(management_ids) >= 1
-        )
+        # The research request has already reviewed the complete selected
+        # filing set and made the substantive rating. Local coverage metrics
+        # are valuable confidence diagnostics, but they must not contradict
+        # that rating merely because its strongest cited examples fall into
+        # one period bucket. This was the source of numeric explanations being
+        # rendered beside blank subscores.
+        locally_scorable = supplied.rating is not None and bool(valid_ids)
         evidence_sufficiency = (
             "sufficient"
-            if (
-                supplied.evidence_sufficiency == "sufficient"
-                and supplied.rating is not None
-                and locally_sufficient
-            )
+            if locally_scorable
             else "insufficient"
         )
-        rating = (
-            supplied.rating
-            if evidence_sufficiency == "sufficient"
-            else None
-        )
+        rating = supplied.rating if locally_scorable else None
         all_valid_evidence_ids.update(valid_ids)
         all_years.update(years)
         management_discussion_ids.update(management_ids)

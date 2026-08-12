@@ -163,8 +163,10 @@ class ModelManagementConsistencyComponent(BaseModel):
         le=4,
         description=(
             "Evidence-based ordinal rating: 0 materially inconsistent, 1 weak, "
-            "2 mixed, 3 generally consistent, or 4 highly consistent. Use null "
-            "when longitudinal evidence is insufficient."
+            "2 mixed, 3 generally consistent, or 4 highly consistent. Assign a "
+            "best evidence-based rating whenever the selected longitudinal "
+            "filings permit a defensible assessment. Use null only in the "
+            "exceptional case where no defensible assessment can be made."
         ),
     )
     evidence_sufficiency: Literal["sufficient", "insufficient"] = Field(
@@ -220,8 +222,9 @@ class ManagementConsistencyComponent(StrictModel):
         le=1,
         description=(
             "Published 0-1 component score. After local calculation, this remains "
-            "null when longitudinal evidence is insufficient; missing components "
-            "are excluded from the overall arithmetic mean."
+            "null only when the research pass supplied no defensible rating or no "
+            "selected evidence resolves for it; missing components are excluded "
+            "from the overall arithmetic mean."
         ),
     )
     weight: float = Field(ge=0, le=1)

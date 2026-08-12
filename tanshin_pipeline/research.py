@@ -5,7 +5,10 @@ from __future__ import annotations
 from collections import Counter
 from typing import Any, Iterable
 
-from .schemas import JapaneseResearchDossier
+from .schemas import (
+    JapaneseResearchDossier,
+    ManagementConsistencyDimension,
+)
 
 
 def _counts(values: Iterable[str]) -> dict[str, int]:
@@ -14,6 +17,35 @@ def _counts(values: Iterable[str]) -> dict[str, int]:
 
 def validate_research_dossier(dossier: JapaneseResearchDossier) -> None:
     """Reject structurally unusable references before synthesis."""
+
+    expected_dimensions = set(ManagementConsistencyDimension)
+    supplied_dimensions = [
+        component.dimension
+        for component in dossier.management_consistency.components
+    ]
+    if (
+        len(supplied_dimensions) != len(expected_dimensions)
+        or set(supplied_dimensions) != expected_dimensions
+    ):
+        missing = sorted(
+            dimension.value
+            for dimension in expected_dimensions - set(supplied_dimensions)
+        )
+        duplicates = sorted(
+            dimension.value
+            for dimension, count in Counter(supplied_dimensions).items()
+            if count > 1
+        )
+        details: list[str] = []
+        if missing:
+            details.append("missing " + ", ".join(missing))
+        if duplicates:
+            details.append("duplicated " + ", ".join(duplicates))
+        raise ValueError(
+            "The research dossier must contain exactly one management-consistency "
+            "component for each required dimension"
+            + (": " + "; ".join(details) if details else ".")
+        )
 
     evidence_ids = {item.evidence_id for item in dossier.evidence}
     referenced: set[str] = set()

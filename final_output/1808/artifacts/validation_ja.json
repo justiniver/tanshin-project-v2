@@ -1,21 +1,46 @@
 {
-  "valid": true,
-  "publishable": true,
-  "factual_integrity_passed": true,
+  "valid": false,
+  "publishable": false,
+  "factual_integrity_passed": false,
   "quality_gate_passed": true,
-  "blocking_error_count": 0,
-  "warning_count": 0,
+  "blocking_error_count": 1,
+  "warning_count": 2,
   "language": "ja",
-  "issues": [],
+  "issues": [
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "claim_latest_risk_1",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "claim_latest_risk_2",
+      "evidence_id": null
+    },
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_latest_risk_2",
+      "evidence_id": null
+    }
+  ],
   "statistics": {
-    "claims": 17,
-    "evidence_records": 35,
-    "citation_references": 57,
-    "trend_management_discussion_share": 0.9714,
-    "management_consistency_score": 0.62,
-    "management_consistency_evidence_confidence": 0.7084,
-    "errors": 0,
-    "warnings": 0,
-    "blocking_errors": 0
+    "claims": 23,
+    "evidence_records": 25,
+    "citation_references": 66,
+    "trend_management_discussion_share": 1.0,
+    "management_consistency_score": 0.69,
+    "management_consistency_evidence_confidence": 0.6083,
+    "errors": 1,
+    "warnings": 2,
+    "blocking_errors": 1
   }
 }

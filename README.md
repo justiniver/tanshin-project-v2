@@ -452,13 +452,15 @@ The four components are:
 - accountability and transparency.
 
 The research pass supplies evidence-based component ratings and concrete
-commitment, outcome, revision, and commentary records. Python verifies whether each
-component has enough longitudinal and management-discussion evidence, converts
-supported ratings to 0–1 subscores, leaves unsupported subscores blank, and
-uses the arithmetic mean of the available subscores. If no component can be
-assessed, the overall fallback is `0.50`. The synthesis pass writes a concise
-natural-language explanation beneath every subscore, including supporting and
-contrary evidence. The full calculation is stored in
+commitment, outcome, revision, and commentary records. Python resolves each
+rating's selected evidence, converts the four ratings to 0–1 subscores, and
+uses their arithmetic mean. Uneven period coverage lowers the separately stored
+evidence-confidence diagnostic rather than erasing an otherwise supported
+subscore. A subscore remains blank only in the exceptional case where the
+research pass cannot make a defensible assessment or none of its evidence
+resolves. If no component can be assessed, the overall fallback is `0.50`.
+The synthesis pass writes a concise natural-language explanation beneath every
+subscore, including supporting and contrary evidence. The full calculation is stored in
 `management_consistency.json`.
 
 ### English translation
