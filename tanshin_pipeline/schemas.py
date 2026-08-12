@@ -7,6 +7,17 @@ from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
+from .config import (
+    RESEARCH_MAX_BUSINESS_DRIVERS,
+    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+    RESEARCH_MAX_COMMITMENTS,
+    RESEARCH_MAX_DISCLOSURES,
+    RESEARCH_MAX_EVIDENCE_RECORDS,
+    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+    RESEARCH_MAX_MANAGEMENT_THEMES,
+    RESEARCH_MAX_NOTES,
+)
+
 
 NonEmpty = Annotated[str, Field(min_length=1)]
 ModelProfile = Literal[
@@ -143,6 +154,80 @@ class ThemeDevelopment(str, Enum):
     ABANDONED = "abandoned"
 
 
+class FilingCoverageStatus(str, Enum):
+    COMPLETE = "complete"
+    PARTIAL = "partial"
+    NO_MATERIAL_DISCLOSURE = "no_material_disclosure"
+
+
+class FinancialMetric(str, Enum):
+    REVENUE = "revenue"
+    OPERATING_PROFIT = "operating_profit"
+    ORDINARY_PROFIT = "ordinary_profit"
+    PRETAX_PROFIT = "pretax_profit"
+    NET_INCOME = "net_income"
+    OPERATING_CASH_FLOW = "operating_cash_flow"
+    INVESTING_CASH_FLOW = "investing_cash_flow"
+    FREE_CASH_FLOW = "free_cash_flow"
+    TOTAL_ASSETS = "total_assets"
+    NET_ASSETS = "net_assets"
+    INTEREST_BEARING_DEBT = "interest_bearing_debt"
+    DIVIDEND_PER_SHARE = "dividend_per_share"
+    SEGMENT_REVENUE = "segment_revenue"
+    SEGMENT_PROFIT = "segment_profit"
+    OTHER = "other"
+
+
+class FinancialScope(str, Enum):
+    CONSOLIDATED = "consolidated"
+    COMPANY_ONLY = "company_only"
+    SEGMENT = "segment"
+    OTHER = "other"
+
+
+class FinancialValueKind(str, Enum):
+    MONETARY = "monetary"
+    PERCENTAGE = "percentage"
+    PER_SHARE = "per_share"
+    COUNT = "count"
+    RATIO = "ratio"
+    OTHER = "other"
+
+
+class ForecastVersion(str, Enum):
+    ORIGINAL = "original"
+    REVISED = "revised"
+    LATEST = "latest"
+    NOT_APPLICABLE = "not_applicable"
+
+
+class CommentaryTone(str, Enum):
+    POSITIVE = "positive"
+    NEGATIVE = "negative"
+    MIXED = "mixed"
+    NEUTRAL = "neutral"
+    UNCERTAIN = "uncertain"
+
+
+class CommentaryIntensity(str, Enum):
+    LOW = "low"
+    MODERATE = "moderate"
+    HIGH = "high"
+    NOT_ASSESSABLE = "not_assessable"
+
+
+class DisclosureCategory(str, Enum):
+    IMPAIRMENT = "impairment"
+    UNUSUAL_GAIN_OR_LOSS = "unusual_gain_or_loss"
+    LITIGATION_OR_REGULATORY = "litigation_or_regulatory"
+    ACCOUNTING_OR_ESTIMATE_CHANGE = "accounting_or_estimate_change"
+    GOING_CONCERN = "going_concern"
+    RELATED_PARTY = "related_party"
+    CAPITAL_ALLOCATION = "capital_allocation"
+    RISK = "risk"
+    OTHER = "other"
+
+
 class ManagementConsistencyDimension(str, Enum):
     STRATEGIC_COHERENCE = "strategic_coherence"
     EXECUTION_FOLLOW_THROUGH = "execution_follow_through"
@@ -184,6 +269,7 @@ class ModelManagementConsistencyComponent(BaseModel):
         )
     )
     evidence_ids: list[NonEmpty] = Field(
+        max_length=4,
         description=(
             "Evidence IDs from management-discussion passages that support the "
             "rating or explain why the evidence is insufficient."
@@ -357,8 +443,103 @@ class EvidenceRecord(StrictModel):
     )
     tags: list[str] = Field(
         default_factory=list,
+        max_length=4,
         description="Optional short topical labels; use an empty list when unnecessary.",
     )
+
+
+class ResearchFilingCoverage(BaseModel):
+    """Coverage ledger proving that every selected filing was inspected."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty = Field(
+        description="Exact filename of one selected filing."
+    )
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period: FilingPeriod
+    period_label_ja: NonEmpty
+    is_latest: bool
+    coverage_status: FilingCoverageStatus
+    management_discussion_evidence_ids: list[NonEmpty] = Field(max_length=3)
+    outlook_evidence_ids: list[NonEmpty] = Field(max_length=2)
+    segment_evidence_ids: list[NonEmpty] = Field(max_length=2)
+    cash_flow_evidence_ids: list[NonEmpty] = Field(max_length=1)
+    capital_allocation_evidence_ids: list[NonEmpty] = Field(max_length=1)
+    footnote_evidence_ids: list[NonEmpty] = Field(max_length=1)
+    financial_observation_ids: list[NonEmpty] = Field(max_length=8)
+    commentary_observation_ids: list[NonEmpty] = Field(max_length=2)
+    disclosure_ids: list[NonEmpty] = Field(max_length=2)
+    coverage_gaps: list[str] = Field(
+        max_length=6,
+        description=(
+            "Concise missing or unavailable categories. Use an empty list when "
+            "coverage is complete; never silently omit an unavailable category."
+        )
+    )
+
+
+class ResearchFinancialObservation(BaseModel):
+    """One exact financial value used for local comparisons."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    observation_id: NonEmpty
+    source_filename: NonEmpty
+    metric: FinancialMetric
+    metric_label_ja: NonEmpty
+    scope: FinancialScope
+    scope_label_ja: NonEmpty
+    value_kind: FinancialValueKind
+    statement_type: Literal["actual", "forecast", "target"]
+    forecast_version: ForecastVersion
+    target_fiscal_year: int = Field(ge=1900, le=2200)
+    target_period: FilingPeriod
+    value_surface_ja: NonEmpty = Field(
+        description=(
+            "Exact monetary, percentage, per-share, count, or ratio substring "
+            "as written in the cited evidence."
+        )
+    )
+    evidence_id: NonEmpty
+
+
+class ResearchCommentaryObservation(BaseModel):
+    """One filing-specific management-commentary observation."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    observation_id: NonEmpty
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period_label_ja: NonEmpty
+    canonical_tag: NonEmpty = Field(
+        description=(
+            "Stable reusable category such as demand, volume, pricing, "
+            "material_costs, labor_costs, foreign_exchange, interest_rates, "
+            "capital_allocation, overseas_execution, or other."
+        )
+    )
+    label_ja: NonEmpty
+    tone: CommentaryTone
+    intensity: CommentaryIntensity
+    summary_ja: NonEmpty
+    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=2)
+
+
+class ResearchDisclosureRecord(BaseModel):
+    """Material footnote or mandatory-disclosure signal."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    disclosure_id: NonEmpty
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    category: DisclosureCategory
+    label_ja: NonEmpty
+    summary_ja: NonEmpty
+    importance: Literal["primary", "secondary"]
+    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=2)
 
 
 class ResearchBusinessDriver(BaseModel):
@@ -389,8 +570,8 @@ class ResearchBusinessDriver(BaseModel):
             "mechanism, including material qualifications."
         )
     )
-    observed_periods_ja: list[NonEmpty] = Field(min_length=1)
-    evidence_ids: list[NonEmpty] = Field(min_length=1)
+    observed_periods_ja: list[NonEmpty] = Field(min_length=1, max_length=5)
+    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=4)
 
 
 class ResearchCommitmentRecord(BaseModel):
@@ -414,6 +595,7 @@ class ResearchCommitmentRecord(BaseModel):
     forecast_posture: ForecastPosture
     evidence_ids: list[NonEmpty] = Field(
         min_length=1,
+        max_length=4,
         description=(
             "Evidence for the original statement and, when observable, its "
             "revision or later outcome."
@@ -438,7 +620,7 @@ class ResearchThemeRecord(BaseModel):
             "did, and what outcome or unresolved tension is visible."
         )
     )
-    evidence_ids: list[NonEmpty] = Field(min_length=1)
+    evidence_ids: list[NonEmpty] = Field(min_length=1, max_length=4)
 
 
 class JapaneseResearchDossier(BaseModel):
@@ -448,12 +630,36 @@ class JapaneseResearchDossier(BaseModel):
 
     schema_version: NonEmpty
     identity: CompanyIdentity
-    evidence: list[EvidenceRecord] = Field(min_length=1)
-    business_drivers: list[ResearchBusinessDriver] = Field(min_length=1)
-    commitments: list[ResearchCommitmentRecord] = Field(default_factory=list)
-    management_themes: list[ResearchThemeRecord] = Field(default_factory=list)
+    evidence: list[EvidenceRecord] = Field(
+        min_length=1,
+        max_length=RESEARCH_MAX_EVIDENCE_RECORDS,
+    )
+    filing_coverage: list[ResearchFilingCoverage] = Field(min_length=1)
+    financial_observations: list[ResearchFinancialObservation] = Field(
+        max_length=RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+    )
+    commentary_observations: list[ResearchCommentaryObservation] = Field(
+        max_length=RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+    )
+    disclosures: list[ResearchDisclosureRecord] = Field(
+        max_length=RESEARCH_MAX_DISCLOSURES,
+    )
+    business_drivers: list[ResearchBusinessDriver] = Field(
+        max_length=RESEARCH_MAX_BUSINESS_DRIVERS,
+    )
+    commitments: list[ResearchCommitmentRecord] = Field(
+        default_factory=list,
+        max_length=RESEARCH_MAX_COMMITMENTS,
+    )
+    management_themes: list[ResearchThemeRecord] = Field(
+        default_factory=list,
+        max_length=RESEARCH_MAX_MANAGEMENT_THEMES,
+    )
     management_consistency: ModelManagementConsistency
-    research_notes: list[str] = Field(default_factory=list)
+    research_notes: list[str] = Field(
+        default_factory=list,
+        max_length=RESEARCH_MAX_NOTES,
+    )
 
 
 class AnalysisClaim(StrictModel):

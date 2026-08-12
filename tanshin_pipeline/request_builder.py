@@ -211,7 +211,7 @@ def build_analysis_spec(
     provider_profile: ProviderProfile | None = DEFAULT_MODEL_PROFILE,
 ) -> RequestSpec:
     blueprint = load_generic_blueprint(repository_root)
-    metrics = build_research_metrics(dossier)
+    metrics = build_research_metrics(dossier, manifest)
     prompt = build_analysis_prompt(manifest, blueprint, dossier, metrics)
     task_marker = "<analysis_task>"
     task_index = prompt.index(task_marker)

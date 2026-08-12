@@ -389,7 +389,16 @@ The research request is recorded in `request_plan_research.json`.
 The research pass builds a reusable, source-grounded dossier containing:
 
 - company and reporting-period identity;
+- exactly one coverage record for every selected filing, including explicit
+  gaps instead of silent omission;
 - a deduplicated evidence ledger with source filenames and physical PDF pages;
+- filing-specific financial observations for actual results, forecasts, targets,
+  dividends, segment results, cash flow, and other decision-useful values;
+- filing-specific management-commentary observations under stable driver tags,
+  retaining repeated wording so continuity, intensification, softening, or
+  reframing can be compared;
+- material footnote and mandatory-disclosure records, including impairments,
+  unusual gains or losses, regulatory matters, accounting changes, and risks;
 - short business-driver tags, direction, importance, affected area, and
   operating or financial mechanism;
 - forecasts, medium-term targets, strategic commitments, later outcomes, and
@@ -399,9 +408,24 @@ The research pass builds a reusable, source-grounded dossier containing:
 - management themes across early, middle, and recent periods;
 - evidence-based inputs for the four management-consistency dimensions.
 
-The second request receives the dossier, deterministic summary counts, and the
-fact-free report blueprint. It receives no PDFs and cannot add evidence. Its job
-is to rank material findings and write the final analytical claims, including:
+The research response is deliberately compact so exact quotations and structured
+records do not crowd out later sections. It keeps at most 36 shared evidence
+records, 28 financial observations, 22 commentary observations, 12 material
+disclosures, 5 business drivers, 8 commitments, and 4 management themes.
+These are ceilings rather than quotas. The same evidence ID is reused across
+coverage categories and analytical records whenever one source sentence supports
+several purposes.
+
+Before the second request, Python matches comparable forecasts with later
+actuals, summarizes target follow-through, compares extracted management wording,
+counts material disclosures, and calculates the four 0–1 management-consistency
+subscores. These calculations and their limitations are stored in
+`research_metrics.json`.
+
+The second request receives the dossier, those deterministic comparisons, and
+the fact-free report blueprint. It receives no PDFs, performs no fresh
+arithmetic, and cannot add evidence. Its job is to rank material findings and
+write the final analytical claims, including:
 
 - a concise, plain-language company overview;
 - latest-filing management takeaways;
@@ -415,13 +439,16 @@ The trend section prioritizes qualitative management discussion, including
 経営成績, 財政状態, cash-flow discussion, future outlook, management-plan
 progress, capital allocation, and management explanations of risks or misses.
 Summary tables mainly corroborate figures rather than becoming the trend thesis.
+When the selected filings show no meaningful qualitative development, the model
+may report that limitation and emphasize the financial, forecast, target,
+disclosure, or capital-allocation record rather than forcing a weak theme.
 
-The selected company corpus does not contain peer-company filings, so the
-pipeline does not claim that management is a peer leader, laggard, or forward
-indicator. Reliable peer comparison requires a separately defined peer set and
-comparable peer evidence. Likewise, the dossier captures decision-useful
+This version remains limited to the selected latest and year-end Tanshin corpus.
+It does not add quarterly-commentary analysis, peer comparison, Yuho filings, or
+company presentation materials. The dossier captures decision-useful
 longitudinal financial evidence, but it is not intended to replace a standardized
-XBRL-based long-term financial statement table.
+XBRL-based long-term financial statement table or a full-depth multi-source
+company report.
 
 Every company receives the same fact-free structure from
 `prompt_assets/generic_report_blueprint_ja.md`. Company exemplars under
@@ -451,14 +478,15 @@ The four components are:
 - forecast and target discipline;
 - accountability and transparency.
 
-The research pass supplies evidence-based component ratings and concrete
-commitment, outcome, revision, and commentary records. Python resolves each
-rating's selected evidence, converts the four ratings to 0–1 subscores, and
-uses their arithmetic mean. Uneven period coverage lowers the separately stored
-evidence-confidence diagnostic rather than erasing an otherwise supported
-subscore. A subscore remains blank only in the exceptional case where the
-research pass cannot make a defensible assessment or none of its evidence
-resolves. If no component can be assessed, the overall fallback is `0.50`.
+The research pass supplies evidence-based component ratings plus filing-level
+commitment, outcome, financial, disclosure, and commentary records. Python
+resolves each rating's selected evidence, converts the four ratings to 0–1
+subscores, and uses their arithmetic mean before synthesis. Uneven period
+coverage lowers the separately stored evidence-confidence diagnostic rather
+than erasing an otherwise supported subscore. A subscore remains blank only in
+the exceptional case where the research pass cannot make a defensible
+assessment or none of its evidence resolves. If no component can be assessed,
+the overall fallback is `0.50`.
 The synthesis pass writes a concise natural-language explanation beneath every
 subscore, including supporting and contrary evidence. The full calculation is stored in
 `management_consistency.json`.
@@ -616,7 +644,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
 | `model_response_research.raw.json` | Raw research-provider response |
 | `research.structured.json` | Parsed PDF-grounded research dossier |
-| `research_metrics.json` | Deterministic driver, commitment, outcome, revision, and theme counts |
+| `research_metrics.json` | Filing coverage, forecast/actual comparisons, target follow-through, commentary changes, disclosures, drivers, themes, and consistency subscores |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |
 | `analysis_ja.normalized.json` | Locally normalized Japanese analysis |
@@ -722,6 +750,14 @@ request exceeds the current usage-tier ceiling. Sol uses low-detail PDF page
 images by default to reduce this load while retaining extracted PDF text. If a
 low-detail request still exceeds the stated ceiling, use an account tier with
 sufficient TPM or reduce the selected source volume before manually rerunning.
+
+### Response reached its output-token limit
+
+The provider returned a truncated structured response rather than a complete
+JSON object. The raw provider response is retained in the applicable
+`model_response_*.raw.json` artifact. Research uses low thinking and bounded
+array sizes to reduce this risk; do not repair a partial dossier or publish from
+it.
 
 ### API key not configured
 

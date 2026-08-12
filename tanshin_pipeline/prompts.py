@@ -6,6 +6,15 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
+from .config import (
+    RESEARCH_MAX_BUSINESS_DRIVERS,
+    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+    RESEARCH_MAX_COMMITMENTS,
+    RESEARCH_MAX_DISCLOSURES,
+    RESEARCH_MAX_EVIDENCE_RECORDS,
+    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+    RESEARCH_MAX_MANAGEMENT_THEMES,
+)
 from .schemas import JapaneseAnalysis, JapaneseResearchDossier, SelectionManifest
 from .translation_contract import build_translation_input
 
@@ -216,40 +225,48 @@ Build a reusable longitudinal research dossier for security code
 {manifest.security_code}. The latest filing is {manifest.latest_filename}.
 
 Research priorities:
-1. Collect a deduplicated evidence ledger sufficient to support a company
-   overview, latest-period summary, business drivers, outlook, risks, decade
-   perspective, recurring themes, material changes, capital allocation, current
-   implications, and management-consistency assessment.
-2. Prioritize qualitative management discussion: 経営成績, 財政状態,
-   cash-flow discussion, 将来予測情報, plan progress, capital allocation,
-   risks, misses, impairments, and changes in assumptions. Use summary tables
-   mainly to corroborate exact figures.
-3. Extract 4-8 distinct business drivers when supported. Use a short reusable
-   canonical_tag such as customer_demand, volume, utilization, pricing,
-   product_mix, material_costs, labor_costs, energy_costs, interest_rates,
-   foreign_exchange, property_prices, rent, regulation, capacity,
-   technology_investment, competition, acquisitions, or other. State direction,
-   importance, structural/cyclical nature, affected area, mechanism, periods,
-   and evidence.
-4. Connect explicit forecasts, medium-term targets, strategic commitments, and
-   capital-allocation commitments with later outcomes whenever the selected
-   filings permit. Keep original statements and later outcomes in the same
-   organizational scope and time horizon. Distinguish achieved, exceeded,
-   partly achieved, missed, delayed, revised, withdrawn, pending, and not
-   observable.
-5. For annual forecasts, classify forecast_posture only when an issued forecast
-   can be compared with a later actual result. Conservative means the later
-   comparable actual materially exceeded guidance; aggressive means it
-   materially missed; balanced means broadly aligned. Use mixed when the
-   comparable metrics differ. Otherwise use not_assessable.
-6. Record revision_direction only for revisions visible in the selected
-   filings. Never infer that none occurred outside the selected corpus.
-7. Extract 4-8 decision-useful management themes spanning early, middle, and
-   recent periods where possible. Distinguish persistent, introduced,
-   strengthened, changed, deprioritized, and abandoned themes. Explain actions,
-   later outcomes, and unresolved tensions rather than merely counting repeated
-   slogans.
-8. Return one management-consistency component for each required dimension.
+1. Work coverage-first, not conclusion-first. Return exactly one filing_coverage
+   record for every selected source, even when a filing contains no material
+   change. A coverage record proves the filing was reviewed; it is not an
+   instruction to reproduce the filing exhaustively. Use coverage_gaps only for
+   genuinely absent or ambiguous source categories.
+2. For each filing, inspect management discussion, outlook, segment discussion,
+   cash-flow discussion, capital allocation and dividends, and material footnotes
+   or mandatory disclosures. Reuse one evidence record across several coverage
+   categories when the same sentence supports them.
+3. Keep financial_observations selective. Use at most 8 from the latest filing
+   and at most 2 from each historical filing, never more than
+   {RESEARCH_MAX_FINANCIAL_OBSERVATIONS} total. Prioritize latest actual results,
+   guidance, dividends, cash flow, material targets, comparable annual forecasts
+   and later actuals, and explicit revisions. Do not reproduce an entire summary
+   table or duplicate the same value, scope, period, and statement type. Preserve
+   value_surface_ja, metric, scope, target period, statement type, and forecast
+   version exactly; local code performs the arithmetic.
+4. Use at most 2 commentary_observations per filing and no more than
+   {RESEARCH_MAX_COMMENTARY_OBSERVATIONS} total. Prefer stable tags that recur
+   across filings or wording whose tone or intensity materially changed.
+   Routine boilerplate needs an observation only when it provides a useful
+   continuity baseline. Do not force a change where none exists.
+5. Record only decision-useful mandatory disclosures: at most 2 from the latest
+   filing, normally at most 1 from a historical filing, and no more than
+   {RESEARCH_MAX_DISCLOSURES} total. Prioritize impairments, unusual gains or
+   losses, regulatory matters, accounting changes, capital allocation, and
+   material risks; omit routine immaterial notes.
+6. After filing coverage, extract 3-{RESEARCH_MAX_BUSINESS_DRIVERS} distinct
+   business drivers. Use stable tags such as customer_demand, volume, pricing,
+   product_mix, material_costs, labor_costs, interest_rates, foreign_exchange,
+   property_prices, rent, regulation, technology_investment, competition,
+   acquisitions, or other. State the affected area and mechanism concisely.
+7. Return no more than {RESEARCH_MAX_COMMITMENTS} material forecasts, targets,
+   strategic commitments, or capital-allocation commitments. Connect an original
+   statement with a later outcome only when scope and horizon are comparable.
+   Record revisions only when visible in the selected filings. Do not infer a
+   complete revision history or calculate forecast accuracy.
+8. Return at most {RESEARCH_MAX_MANAGEMENT_THEMES} genuinely decision-useful
+   themes spanning early, middle, and recent periods. Distinguish persistence
+   from introduction, strengthening, change, deprioritization, or abandonment.
+   Return fewer or none when the filings show no material development.
+9. Return one management-consistency component for each required dimension.
    The rationale must identify concrete commitments, later actions or results,
    important misses or revisions, and contrary evidence. Rate 0 materially
    inconsistent, 1 weak, 2 mixed, 3 generally consistent, and 4 highly
@@ -259,18 +276,30 @@ Research priorities:
    in the exceptional case where, after reviewing every selected filing, no
    defensible assessment can be made for that dimension; do not use null merely
    because the strongest examples come from one part of the trend period.
-9. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
+10. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
    targets, missing outcomes, or other material research limitations.
 
 Evidence requirements:
 - Use exact authoritative filenames from the metadata.
 - Use physical 1-indexed PDF pages.
-- Evidence quotes must be sufficiently complete verbatim Japanese sentences or
-  short contiguous passages.
+- Evidence quotes should normally be one complete verbatim Japanese sentence.
+  Include an adjacent sentence only when needed for a material qualifier or
+  causal relationship.
+- Retain 6-8 decision-useful evidence records from the latest filing and 2-3
+  from each historical filing, subject to a hard dossier maximum of
+  {RESEARCH_MAX_EVIDENCE_RECORDS}. These are ceilings and coverage guides, not
+  quotas: use fewer whenever fewer strong records support the analysis.
+- Create evidence only when it is cited by an observation, driver, commitment,
+  theme, consistency component, or material coverage category. Reuse the same
+  evidence ID across records instead of repeating the quotation under a new ID.
 - Use unique IDs in the form <source_filename>:sNNNN.
 - Include support for both the original commitment and later result when an
   outcome is classified.
 - Tag management-commentary evidence with management_discussion.
+- Use unique stable IDs for every filing-level financial observation, commentary
+  observation, and disclosure, and list each ID in exactly one filing_coverage
+  record for its source filing.
+- All requested counts are upper bounds. Grounding always overrides a count.
 
 Return only the schema-conforming JapaneseResearchDossier.
 </research_task>
@@ -332,8 +361,10 @@ Coverage targets (grounding overrides counts):
 - latest.context: target 1 integrated claim using the latest filing, written as
   2-3 short paragraphs when needed for readability
 - trend.perspective: target 1 integrated synthesis
-- trend.consistent: at least 2 genuinely different recurring themes
-- trend.change: 2-3 genuinely different material changes
+- trend.consistent: target 1-2 genuinely different recurring themes when supported
+- trend.change: target 1-3 genuinely different material changes when supported;
+  omit this section's claims rather than inventing a change when the dossier and
+  commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
 - trend.implication: target 1 current investor implication
 - management.strategy: exactly 1 detailed explanation
@@ -349,13 +380,18 @@ coverage_shortfall:<section>:<concise Japanese reason>.
 Analysis requirements:
 1. Rank the dossier findings by investor materiality before selecting claims.
    Do not split one financial result into several takeaways merely to satisfy a
-   claim count. Treat the dossier as the full evidence boundary.
+   claim count. Treat the dossier as the full evidence boundary. Use
+   filing_coverage to notice explicit source gaps rather than interpreting an
+   absent observation as proof that management did not discuss a topic.
 2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
+   Give material latest-filing guidance, segment performance, cash-flow drivers,
+   dividends, capital allocation, and mandatory disclosures appropriate weight
+   when the filing coverage shows they are available.
 3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
    cyclical financial outcomes, and connect strategy, profitability, capital
@@ -385,6 +421,14 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
+   - Use financial_observations and the locally calculated forecast_accuracy
+     comparisons instead of doing fresh arithmetic. Do not describe a persistent
+     over- or under-delivery pattern unless more than one comparable observation
+     supports it.
+   - Use locally calculated commentary changes as review signals. A high lexical
+     similarity can support continuity; intensified, softened, tone_changed, or
+     reframed signals require interpretation from the cited source passages.
+     Never treat a missing observation as proof that commentary was removed.
 5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
@@ -400,6 +444,9 @@ Analysis requirements:
    - The latest filing may update the current state but does not replace a recent
      year-end source. Evidence from one year or adjacent years belongs in latest
      context or risk, not in a decade theme.
+   - If the selected filings contain no material strategic or commentary change,
+     state that limitation through model_notes and concentrate the report on the
+     financial, forecast, target, disclosure, and capital-allocation record.
 6. For every major growth theme, use the dossier's contrary evidence, miss,
    reversal, or cyclical downturn when one is present. Explain what it shows
    about durability. Do not convert ambition into implementation or
@@ -419,8 +466,8 @@ Analysis requirements:
    Never add repetition, generic background, or weak themes merely to reach a length.
 
 Management-consistency explanations:
-- The dossier already contains the four ratings used by local scoring. Do not
-  recalculate or change them.
+- research_metrics contains the four locally calculated 0-1 subscores and
+  overall score. Do not recalculate or change them.
 - Produce one claim for each management.* section. Explain the corresponding
   rating through concrete examples: targets achieved or missed, observed
   revisions, forecast posture, implementation outcomes, commentary changes,

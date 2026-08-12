@@ -61,9 +61,11 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("retained rather than translated by meaning", readme)
         self.assertIn("uses their arithmetic mean", readme)
         self.assertIn(
-            "evidence-confidence diagnostic rather than erasing",
+            "evidence-confidence diagnostic rather",
             readme,
         )
+        self.assertIn("exactly one coverage record", readme)
+        self.assertIn("forecast/actual comparisons", readme)
         self.assertIn(
             r".\scripts\run_reports.ps1 1878 --pro",
             readme,

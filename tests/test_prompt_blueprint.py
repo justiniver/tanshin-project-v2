@@ -4,6 +4,15 @@ import json
 import unittest
 from pathlib import Path
 
+from tanshin_pipeline.config import (
+    RESEARCH_MAX_BUSINESS_DRIVERS,
+    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+    RESEARCH_MAX_COMMITMENTS,
+    RESEARCH_MAX_DISCLOSURES,
+    RESEARCH_MAX_EVIDENCE_RECORDS,
+    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+    RESEARCH_MAX_MANAGEMENT_THEMES,
+)
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.prompts import (
     ANALYSIS_SYSTEM_PROMPT,
@@ -20,6 +29,7 @@ from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
     JapaneseModelResponse,
+    JapaneseResearchDossier,
 )
 from tanshin_pipeline.selection import select_filings
 from tests.helpers import fake_research_dossier
@@ -53,16 +63,9 @@ class PromptBlueprintTests(unittest.TestCase):
         blueprint_hashes: set[str | None] = set()
         for security_code in ("1808", "3923", "6361"):
             manifest = select_filings(REPOSITORY_ROOT, security_code)
-            base = fake_research_dossier(REPOSITORY_ROOT)
-            dossier = base.model_copy(
-                update={
-                    "identity": base.identity.model_copy(
-                        update={
-                            "security_code": security_code,
-                            "latest_filename": manifest.latest_filename,
-                        }
-                    )
-                }
+            dossier = fake_research_dossier(
+                REPOSITORY_ROOT,
+                security_code,
             )
             research_spec = build_research_spec(REPOSITORY_ROOT, manifest)
             spec = build_analysis_spec(REPOSITORY_ROOT, manifest, dossier)
@@ -206,7 +209,16 @@ class PromptBlueprintTests(unittest.TestCase):
 
     def test_model_facing_schema_fields_have_descriptions(self) -> None:
         analysis_schema = JapaneseModelResponse.model_json_schema()
+        research_schema = JapaneseResearchDossier.model_json_schema()
         translation_schema = EnglishTranslationPatch.model_json_schema()
+        self.assertIn("filing_coverage", research_schema["properties"])
+        self.assertIn("financial_observations", research_schema["properties"])
+        self.assertIn("commentary_observations", research_schema["properties"])
+        self.assertIn("disclosures", research_schema["properties"])
+        self.assertIn(
+            "coverage_gaps",
+            research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
+        )
         self.assertIn(
             "description",
             analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"],
@@ -260,6 +272,52 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertNotIn("statement_type", patch_claim)
         self.assertNotIn("source_surface_ja", json.dumps(translation_schema))
         self.assertNotIn("EvidenceTranslation", translation_schema["$defs"])
+
+    def test_research_request_has_compact_native_output_limits(self) -> None:
+        manifest = select_filings(REPOSITORY_ROOT, "1808")
+        spec = build_research_spec(REPOSITORY_ROOT, manifest)
+        properties = spec.response_schema["properties"]
+        self.assertEqual(
+            properties["evidence"]["maxItems"],
+            RESEARCH_MAX_EVIDENCE_RECORDS,
+        )
+        self.assertEqual(
+            properties["financial_observations"]["maxItems"],
+            RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
+        )
+        self.assertEqual(
+            properties["commentary_observations"]["maxItems"],
+            RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
+        )
+        self.assertEqual(
+            properties["disclosures"]["maxItems"],
+            RESEARCH_MAX_DISCLOSURES,
+        )
+        self.assertEqual(
+            properties["business_drivers"]["maxItems"],
+            RESEARCH_MAX_BUSINESS_DRIVERS,
+        )
+        self.assertEqual(
+            properties["commitments"]["maxItems"],
+            RESEARCH_MAX_COMMITMENTS,
+        )
+        self.assertEqual(
+            properties["management_themes"]["maxItems"],
+            RESEARCH_MAX_MANAGEMENT_THEMES,
+        )
+        coverage_properties = spec.response_schema["$defs"][
+            "ResearchFilingCoverage"
+        ]["properties"]
+        self.assertEqual(
+            coverage_properties["commentary_observation_ids"]["maxItems"],
+            2,
+        )
+        self.assertIn(
+            f"hard dossier maximum of\n  {RESEARCH_MAX_EVIDENCE_RECORDS}",
+            spec.prompt,
+        )
+        self.assertIn("All requested counts are upper bounds", spec.prompt)
+        self.assertNotIn("8-15 decision-useful evidence", spec.prompt)
 
 
 if __name__ == "__main__":

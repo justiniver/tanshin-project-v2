@@ -125,8 +125,14 @@ def _structured_payload(response: Any) -> dict[str, Any]:
     try:
         payload = json.loads(text)
     except json.JSONDecodeError as exc:
+        message = (
+            "Gemini response reached its output-token limit before completing "
+            "valid JSON."
+            if _finish_reason(response) == "MAX_TOKENS"
+            else "Gemini response text was not valid JSON."
+        )
         raise GeminiResponseError(
-            "Gemini response text was not valid JSON.",
+            message,
             raw_response=_response_payload(response),
         ) from exc
     if not isinstance(payload, dict):
@@ -210,7 +216,9 @@ def execute_request(
         types.Part.from_text(text=spec.task_prompt or spec.prompt)
     )
     contents = [types.Content(role="user", parts=parts)]
-    if spec.stage in {"research", "analysis"}:
+    if spec.stage == "research":
+        thinking_level = types.ThinkingLevel.LOW
+    elif spec.stage == "analysis":
         thinking_level = types.ThinkingLevel.MEDIUM
     elif spec.model == PRO_GEMINI_MODEL:
         thinking_level = types.ThinkingLevel.LOW

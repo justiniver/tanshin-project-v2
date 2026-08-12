@@ -177,6 +177,10 @@ class RuntimeMockTests(unittest.TestCase):
             call["config"].response_json_schema,
             self.spec.response_schema,
         )
+        self.assertEqual(
+            call["config"].thinking_config.thinking_level,
+            types.ThinkingLevel.LOW,
+        )
         self.assertTrue(
             call["contents"][0].parts[-1].text.rstrip().endswith(
                 "</research_task>"
@@ -326,6 +330,65 @@ class RuntimeMockTests(unittest.TestCase):
                 "text"
             ],
             '{"claims": [',
+        )
+
+    def test_max_token_truncation_has_a_specific_failure_summary(self) -> None:
+        class TruncatedResponse:
+            parsed = None
+            text = '{"evidence": [{"evidence_id": "unfinished'
+            usage_metadata = None
+            model_version = "fake-model-version"
+            response_id = "truncated-response-id"
+
+            @property
+            def candidates(self):
+                return [
+                    type(
+                        "Candidate",
+                        (),
+                        {"finish_reason": types.FinishReason.MAX_TOKENS},
+                    )()
+                ]
+
+            def model_dump(self, **_kwargs):
+                return {
+                    "response_id": self.response_id,
+                    "model_version": self.model_version,
+                    "candidates": [
+                        {
+                            "content": {
+                                "role": "model",
+                                "parts": [{"text": self.text}],
+                            },
+                            "finish_reason": "MAX_TOKENS",
+                        }
+                    ],
+                }
+
+        fake = _FakeClient(TruncatedResponse())
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            with self.assertRaisesRegex(
+                GeminiResponseError,
+                "output-token limit",
+            ) as raised:
+                execute_request(
+                    REPOSITORY_ROOT,
+                    self.spec,
+                    confirmed_request_id=self.spec.plan().request_id,
+                    client_factory=lambda: fake,
+                    configured_model_getter=lambda: self.spec.model,
+                )
+        self.assertEqual(
+            raised.exception.raw_response["response_id"],
+            "truncated-response-id",
         )
 
     def test_pro_translation_uses_low_thinking_and_selected_model(self) -> None:

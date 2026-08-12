@@ -1,23 +1,11 @@
 {
-  "schema_version": "2.0",
+  "status": "pending_research_dossier",
   "stage": "analysis",
-  "security_code": "1808",
   "model_profile": "default",
   "provider": "gemini",
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
-  "request_options": {},
-  "request_id": "bc4aa0382c1ddcb0",
-  "manifest_id": "82ec9bc80448dba2",
-  "system_prompt_sha256": "3c800ffdc50efdfa100d98fda7a9efbc0fd63ae273a4fd12194a8d74df84d455",
-  "prompt_sha256": "cf0a7579b912a47fc0cd5b4819f317688a6d04325c7c619db492e6e87c674480",
-  "response_schema_sha256": "cefec3792483eb2b8209b93cff66c182a59c47bf29638ee82115397f42519671",
-  "files": [],
-  "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
-  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
-  "exemplar_path": null,
-  "exemplar_sha256": null,
-  "max_output_tokens": 32768,
-  "makes_network_request": true,
-  "request_count_if_executed": 1
+  "makes_network_request_when_executed": true,
+  "request_count_if_executed": 1,
+  "note": "Complete and persist research dossier before preparing the analysis request ID."
 }

@@ -43,6 +43,11 @@ TANSHIN PIPELINE WORKING RULES
     credential, preserve a 75-second inter-stage cooldown whenever their
     combined estimated input and maximum-output allowance reaches 225,000
     tokens, leaving 10% headroom below the 250,000-token planning limit.
+    Research is coverage-first: every selected filing receives an explicit
+    coverage record, while Python derives forecast, target, commentary-change,
+    and management-consistency metrics before the synthesis request.
+    Keep the research dossier bounded and reuse shared evidence IDs; requested
+    counts are ceilings rather than quotas.
 
 9. For a default, primary-key-only run, explain that generation should be free
     when GEMINI_API_KEY is eligible for Gemini's free tier. Any displayed yen

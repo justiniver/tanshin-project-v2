@@ -416,7 +416,10 @@ def prepare_research(
     return prepared
 
 
-def _load_research(paths: OutputPaths) -> JapaneseResearchDossier:
+def _load_research(
+    paths: OutputPaths,
+    manifest: SelectionManifest,
+) -> JapaneseResearchDossier:
     if not paths.research_structured.is_file():
         raise PipelineValidationError(
             f"Stored research dossier is missing: {paths.research_structured}"
@@ -425,7 +428,7 @@ def _load_research(paths: OutputPaths) -> JapaneseResearchDossier:
         read_json(paths.research_structured)
     )
     try:
-        validate_research_dossier(dossier)
+        validate_research_dossier(dossier, manifest)
     except ValueError as exc:
         raise PipelineValidationError(str(exc)) from exc
     return dossier
@@ -447,7 +450,7 @@ def prepare_analysis(
     configuration = _profile_configuration(model_profile)
     manifest = select_filings(repository_root, security_code)
     paths = output_paths(output_root, security_code, report_date=report_date)
-    dossier = _load_research(paths)
+    dossier = _load_research(paths, manifest)
     if dossier.identity.security_code != security_code:
         raise PipelineValidationError(
             "Stored research dossier security code does not match the request."
@@ -507,7 +510,10 @@ def prepare_analysis(
     write_text(paths.analysis_system_prompt, spec.system_prompt)
     write_text(paths.analysis_prompt, spec.prompt)
     write_json(paths.analysis_schema, spec.response_schema)
-    write_json(paths.research_metrics, build_research_metrics(dossier))
+    write_json(
+        paths.research_metrics,
+        build_research_metrics(dossier, manifest),
+    )
     write_json(
         paths.translation_request_plan,
         _pending_stage_plan(
@@ -872,7 +878,7 @@ def prepare_translation(
     configuration = _profile_configuration(model_profile)
     paths = output_paths(output_root, security_code, report_date=report_date)
     manifest = select_filings(repository_root, security_code)
-    dossier = _load_research(paths)
+    dossier = _load_research(paths, manifest)
     analysis = _load_analysis(paths)
     clean_report = render_japanese(analysis)
     exemplar_path = (
@@ -1259,7 +1265,7 @@ def execute_research(
         result=result,
     )
     try:
-        validate_research_dossier(result.structured)
+        validate_research_dossier(result.structured, prepared.manifest)
     except ValueError as exc:
         wrapped = PipelineValidationError(str(exc))
         _write_processing_failure_report_status(
@@ -1273,7 +1279,10 @@ def execute_research(
         )
         raise wrapped from exc
     write_json(paths.research_structured, result.structured)
-    write_json(paths.research_metrics, build_research_metrics(result.structured))
+    write_json(
+        paths.research_metrics,
+        build_research_metrics(result.structured, prepared.manifest),
+    )
     _record_stage_usage(
         paths,
         stage="research",
