@@ -1,11 +1,23 @@
 {
-  "status": "pending_research_dossier",
+  "schema_version": "2.1",
   "stage": "analysis",
+  "security_code": "1808",
   "model_profile": "default",
   "provider": "gemini",
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
-  "makes_network_request_when_executed": true,
-  "request_count_if_executed": 1,
-  "note": "Complete and persist research dossier before preparing the analysis request ID."
+  "request_options": {},
+  "request_id": "819a58bb41eb8da6",
+  "manifest_id": "82ec9bc80448dba2",
+  "system_prompt_sha256": "b498407a81f519298c1b2c42e7009901e700e4b59a96747cc0e3681898a2eb98",
+  "prompt_sha256": "b9936c8e6aa9ce8177c2917bcf4bdf0dbed47dd553b8b17fe5fc9093395bf0f3",
+  "response_schema_sha256": "bcc733ee23a8ec68eeba9b5851dc21aae58c7789d2aebe093494ef7eb0f4ca1c",
+  "files": [],
+  "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
+  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
+  "exemplar_path": null,
+  "exemplar_sha256": null,
+  "max_output_tokens": 32768,
+  "makes_network_request": true,
+  "request_count_if_executed": 1
 }

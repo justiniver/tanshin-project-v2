@@ -392,10 +392,17 @@ analysis. It builds a reusable, source-grounded dossier containing:
 - company and reporting-period identity;
 - exactly one coverage record for every selected filing, including explicit
   gaps instead of silent omission;
+- seven explicit qualitative section packets per filing covering operating
+  results, financial condition, forward-looking information, strategy and plan
+  progress, segment and business conditions, capital allocation, and material
+  footnotes;
 - lightweight source records with source filenames, physical PDF pages, source
   sections, statement types, and concise faithful summaries;
-- filing-specific financial observations for actual results, forecasts, targets,
-  dividends, segment results, cash flow, and other decision-useful values;
+- compact year-end financial anchors that pair one consistent annual actual
+  metric with the next original forecast where available;
+- supplemental financial observations for latest results, guidance revisions,
+  dividends, segment results, cash flow, balance-sheet changes, and other
+  decision-useful values outside that anchor series;
 - filing-specific management-commentary observations under stable driver tags,
   retaining repeated wording so continuity, intensification, softening, or
   reframing can be compared;
@@ -408,15 +415,19 @@ analysis. It builds a reusable, source-grounded dossier containing:
 Request 1 does not rank business drivers, decide decade themes, score management,
 or draft report conclusions. Those tasks belong to request 2. The research
 response is deliberately compact and does not require exact quotation
-transcription or citation-ready spans. It keeps at most 48 shared source
-records, 28 financial observations, 20 commentary observations, 8 material
-disclosures, and 8 commitments. These are ceilings rather than quotas.
+transcription or citation-ready spans. It keeps at most 72 shared source
+records, 12 annual financial anchors, 12 supplemental financial observations,
+28 commentary observations, 8 material disclosures, and 8 commitments. These
+are ceilings rather than quotas.
 
 The information budget is intentionally comparison-first:
 
-- historical financial slots primarily capture one consistently available
-  profitability anchor, pairing each year-end actual with the next annual
-  forecast where available;
+- historical financial values are compressed into one consistently available
+  profitability anchor per year-end filing, pairing the current actual with the
+  next original annual forecast where available;
+- the saved response budget is reserved first for the qualitative management
+  discussion in each filing; every section is marked extracted, not material,
+  or unavailable rather than being silently skipped;
 - commentary slots favor recurring comparison tracks and meaningful wording or
   emphasis changes across early, middle, and recent filings instead of
   collecting unrelated boilerplate;

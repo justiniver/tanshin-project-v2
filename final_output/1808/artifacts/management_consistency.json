@@ -2,20 +2,23 @@
   "methodology_version": "management-consistency-v6",
   "score": 0.75,
   "raw_score": 0.75,
-  "evidence_confidence": 0.7292,
+  "evidence_confidence": 0.6875,
   "confidence_label": "moderate",
-  "evidence_coverage": 0.7292,
+  "evidence_coverage": 0.6875,
   "distinct_fiscal_years": [
     2017,
+    2018,
+    2019,
     2020,
     2021,
+    2022,
     2023,
     2024,
     2025,
     2026
   ],
-  "evidence_count": 12,
-  "management_discussion_evidence_share": 0.75,
+  "evidence_count": 22,
+  "management_discussion_evidence_share": 0.3182,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -23,49 +26,47 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "マンション建設を中心とするコア事業の強化、サービス・不動産領域への展開、木造・木質化領域へのM&A（細田工務店、ウッドフレンズ）という戦略方針は一貫しており、中期経営計画（NBj計画、NS計画、HASEKO Evolution Plan）の流れに整合している。",
+      "rationale_ja": "マンション建設受託の強みを核とし、管理・リフォーム・戸建・海外など事業領域の拡張を一貫した方針のもと推進している。新中期計画でも成長投資4,000億円と還元強化の整合性が保たれている。",
       "evidence_ids": [
-        "37_2017-05-12_tanshin.pdf:s0002",
-        "25_2020-05-14_tanshin.pdf:s0002",
-        "21_2021-05-13_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0008"
+        "01_2026_FY_tanshin.pdf:r004",
+        "01_2026_FY_tanshin.pdf:r005",
+        "01_2026_FY_tanshin.pdf:r006"
       ],
       "distinct_fiscal_years": [
-        2017,
-        2020,
-        2021,
-        2026
-      ],
-      "management_discussion_evidence_count": 2,
-      "covered_period_buckets": [
-        "early",
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.95
-    },
-    {
-      "dimension": "execution_follow_through",
-      "rating": 3,
-      "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
-      "weight": 0.25,
-      "rationale_ja": "資材・労務費の高騰という外要因に対して、受注時採算の厳格化や価格転嫁、不動産取扱量の調整によって対応し、2026年3月期には完成工事総利益率の反転上昇を達成するなど有言実行のプロセスが確認できる。",
-      "evidence_ids": [
-        "13_2023-05-11_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0004"
-      ],
-      "distinct_fiscal_years": [
-        2023,
         2026
       ],
       "management_discussion_evidence_count": 3,
       "covered_period_buckets": [
-        "middle",
         "recent"
       ],
-      "evidence_confidence": 0.75
+      "evidence_confidence": 0.5
+    },
+    {
+      "dimension": "execution_follow_through",
+      "rating": 2,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.5,
+      "weight": 0.25,
+      "rationale_ja": "細田工務店やウッドフレンズの買収、事業譲渡など国内再編は確実に実行されている。一方で、2025年3月期における海外不動産事業等の168.6億円の減損損失計上や、子会社での公取委立入検査など、拡大分野でのリスク管理・執行統制に一部課題が観察される。",
+      "evidence_ids": [
+        "29_2019-05-10_tanshin.pdf:r003",
+        "25_2020-05-14_tanshin.pdf:r003",
+        "05_2025_FY_tanshin.pdf:r004",
+        "05_2025_FY_tanshin.pdf:r005",
+        "01_2026_FY_tanshin.pdf:r007"
+      ],
+      "distinct_fiscal_years": [
+        2019,
+        2020,
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 1,
+      "covered_period_buckets": [
+        "early",
+        "recent"
+      ],
+      "evidence_confidence": 0.7367
     },
     {
       "dimension": "forecast_target_discipline",
@@ -73,46 +74,65 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "「NBj計画」（3期合計経常利益2,400億円目標に対して2,862億円達成）および「NS計画」（5期合計経常利益4,000億円目標に対して4,087億円達成）のいずれの中期経営目標も達成。毎期の通期経常利益目標に対しても大きな上振れ・下振れなく安定した規律を保っている。",
+      "rationale_ja": "観察可能な9期の期初経常利益予想と実績の比較において、実績が期初予想を下回った事例はなく、6期で上回り、3期で概ね予想通りとなった。極めて堅実で信頼性の高い予想設定規律が維持されている。",
       "evidence_ids": [
-        "37_2017-05-12_tanshin.pdf:s0002",
-        "25_2020-05-14_tanshin.pdf:s0001",
-        "09_2024-05-10_tanshin.pdf:s0002",
-        "05_2025_FY_tanshin.pdf:s0002"
+        "37_2017-05-12_tanshin.pdf:r001",
+        "37_2017-05-12_tanshin.pdf:r002",
+        "33_2018-05-11_tanshin.pdf:r001",
+        "29_2019-05-10_tanshin.pdf:r001",
+        "25_2020-05-14_tanshin.pdf:r001",
+        "21_2021-05-13_tanshin.pdf:r001",
+        "17_2022-05-12_tanshin.pdf:r001",
+        "13_2023-05-11_tanshin.pdf:r001",
+        "09_2024-05-10_tanshin.pdf:r001",
+        "05_2025_FY_tanshin.pdf:r001",
+        "01_2026_FY_tanshin.pdf:r001"
       ],
       "distinct_fiscal_years": [
         2017,
+        2018,
+        2019,
         2020,
+        2021,
+        2022,
+        2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "management_discussion_evidence_count": 4,
+      "management_discussion_evidence_count": 0,
       "covered_period_buckets": [
         "early",
+        "middle",
         "recent"
       ],
-      "evidence_confidence": 0.8167
+      "evidence_confidence": 0.9
     },
     {
       "dimension": "accountability_transparency",
-      "rating": 2,
+      "rating": 3,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.5,
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "業績の主要因（完成工事総利益率の変動や不動産取扱量の変化）は適切に説明されている。一方、2025年3月期における海外事業を中心とした168.6億円の大型減損損失計上や特別損失の発生に関して、事前のリスク兆候に関する説明が限定的であった点は課題が残る。",
+      "rationale_ja": "資材・労務費高騰や完成工事利益率の推移について明確に定量的・定性的に開示・説明している。公取委の立入検査や大規模減損損失についても適時に公表しており、透明性は確保されている。",
       "evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0001",
-        "05_2025_FY_tanshin.pdf:s0003"
+        "09_2024-05-10_tanshin.pdf:r003",
+        "05_2025_FY_tanshin.pdf:r003",
+        "05_2025_FY_tanshin.pdf:r004",
+        "05_2025_FY_tanshin.pdf:r005",
+        "01_2026_FY_tanshin.pdf:r003"
       ],
       "distinct_fiscal_years": [
-        2025
+        2024,
+        2025,
+        2026
       ],
-      "management_discussion_evidence_count": 1,
+      "management_discussion_evidence_count": 4,
       "covered_period_buckets": [
         "recent"
       ],
-      "evidence_confidence": 0.4
+      "evidence_confidence": 0.6133
     }
   ],
-  "overall_rationale_ja": "長谷工コーポレーションの経営一貫性は総じて極めて高い。2代にわたる5カ年・3カ年の中期経営計画において、掲げた累積連結経常利益目標（NBj計画2,400億円、NS計画4,000億円）をともに完遂した。インフレ下での完成工事総利益率圧迫に対しても、受注採算の厳格化と不動産売却による利益補完を巧みに組み合わせ、2026年3月期には建築粗利率の回復を果たした。株主還元についても配当金下限（80円）の約定を守り増配を継続している。2025年3月期の海外事業減損など一部の不透明感はあるものの、経営目標の有言実行力と戦略的整合性は高い水準にある。"
+  "overall_rationale_ja": "長谷工コーポレーションの経営陣は、強みであるマンション施工を核とした事業戦略と保守的で信頼性の高い業績予想規律（9期連続で期初予想を達成・上振れ）において優れた一貫性を示している。また、コスト影響や不利益情報（公取委立入検査や減損）に対する開示姿勢も透明性が高い。一方で、海外不動産投資での大幅減損や子会社のコンプライアンス事案に見られるよう、事業領域多角化に伴う執行・リスク管理の面で課題が残るため、総合評価としては概ね堅実（3）と判断される。"
 }

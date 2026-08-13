@@ -1,6 +1,6 @@
 {
-  "schema_version": "2.0",
-  "run_id": "28de1e48686c89be",
+  "schema_version": "2.1",
+  "run_id": "819a58bb41eb8da6",
   "stage": "analysis",
   "model_profile": "default",
   "provider": "gemini",
@@ -8,22 +8,22 @@
   "model": "gemini-3.6-flash",
   "state": "SUCCESS",
   "api_request_completed": true,
-  "started_at_utc": "2026-08-12T08:04:14.387977+00:00",
-  "updated_at_utc": "2026-08-12T08:05:06.723809+00:00",
-  "response_id": "ACl8aqO6Ec6i1e8Pup6AgA8",
+  "started_at_utc": "2026-08-13T00:43:55.591405+00:00",
+  "updated_at_utc": "2026-08-13T00:45:08.179033+00:00",
+  "response_id": "TBN9avf0Of2T1e8P05isoQs",
   "model_version": "gemini-3.6-flash",
   "finish_reason": "STOP",
   "attempts": 1,
   "usage_metadata": {
-    "candidates_token_count": 6684,
-    "prompt_token_count": 31172,
+    "candidates_token_count": 7961,
+    "prompt_token_count": 27620,
     "prompt_tokens_details": [
       {
         "modality": "TEXT",
-        "token_count": 31172
+        "token_count": 27620
       }
     ],
-    "thoughts_token_count": 4400,
-    "total_token_count": 42256
+    "thoughts_token_count": 10366,
+    "total_token_count": 45947
   }
 }

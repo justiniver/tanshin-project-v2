@@ -58,6 +58,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
         properties = schema["properties"]
         self.assertIn("source_records", properties)
         self.assertIn("filing_coverage", properties)
+        self.assertIn("annual_financial_anchors", properties)
         self.assertIn("financial_observations", properties)
         self.assertIn("commentary_observations", properties)
         self.assertNotIn("evidence", properties)
@@ -222,19 +223,28 @@ class TwoStageAnalysisTests(unittest.TestCase):
             item["source_filename"]: item
             for item in payload["filing_coverage"]
         }
-        coverage[earlier.filename]["outlook_record_ids"].append(forecast_id)
-        coverage[earlier.filename]["management_discussion_record_ids"].append(
-            earlier_commentary_id
+        earlier_outlook = coverage[earlier.filename][
+            "forward_looking_information"
+        ]
+        earlier_outlook.update(
+            {
+                "status": "extracted",
+                "source_record_ids": [forecast_id],
+                "coverage_note": None,
+            }
         )
+        coverage[earlier.filename]["operating_results"][
+            "source_record_ids"
+        ].append(earlier_commentary_id)
         coverage[earlier.filename]["financial_observation_ids"].append(
             "forecast"
         )
         coverage[earlier.filename]["commentary_observation_ids"].append(
             "commentary-earlier"
         )
-        coverage[later.filename]["management_discussion_record_ids"].extend(
-            [actual_id, later_commentary_id]
-        )
+        coverage[later.filename]["operating_results"][
+            "source_record_ids"
+        ].extend([actual_id, later_commentary_id])
         coverage[later.filename]["financial_observation_ids"].append("actual")
         coverage[later.filename]["commentary_observation_ids"].append(
             "commentary-later"
@@ -254,11 +264,117 @@ class TwoStageAnalysisTests(unittest.TestCase):
             1,
         )
 
+    def test_compact_annual_anchors_feed_forecast_metrics(self) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        year_ends = sorted(
+            (
+                item
+                for item in self.manifest.selected_files
+                if "trend_year_end" in item.roles
+            ),
+            key=lambda item: item.fiscal_year,
+        )
+        earlier, later = year_ends[-2:]
+        forecast_record_id = f"{earlier.filename}:r9101"
+        actual_record_id = f"{later.filename}:r9102"
+        payload["source_records"].extend(
+            [
+                {
+                    "record_id": forecast_record_id,
+                    "source_filename": earlier.filename,
+                    "pdf_page": 1,
+                    "period_label_ja": f"FY{earlier.fiscal_year}",
+                    "period_label_en": f"FY{earlier.fiscal_year}",
+                    "statement_type": "forecast",
+                    "source_section": "業績予想",
+                    "summary_ja": "翌年度の経常利益は900億円を予想した。",
+                    "tags": ["outlook"],
+                },
+                {
+                    "record_id": actual_record_id,
+                    "source_filename": later.filename,
+                    "pdf_page": 1,
+                    "period_label_ja": f"FY{later.fiscal_year}",
+                    "period_label_en": f"FY{later.fiscal_year}",
+                    "statement_type": "actual",
+                    "source_section": "経営成績",
+                    "summary_ja": "経常利益は941億円となった。",
+                    "tags": ["operating_results"],
+                },
+            ]
+        )
+        payload["annual_financial_anchors"] = [
+            {
+                "anchor_id": "anchor-earlier",
+                "source_filename": earlier.filename,
+                "metric": "ordinary_profit",
+                "metric_label_ja": "経常利益",
+                "scope": "consolidated",
+                "scope_label_ja": "連結",
+                "value_kind": "monetary",
+                "actual": None,
+                "next_original_forecast": {
+                    "target_fiscal_year": later.fiscal_year,
+                    "target_period": "FY",
+                    "value_surface_ja": "900億円",
+                    "source_record_id": forecast_record_id,
+                },
+            },
+            {
+                "anchor_id": "anchor-later",
+                "source_filename": later.filename,
+                "metric": "ordinary_profit",
+                "metric_label_ja": "経常利益",
+                "scope": "consolidated",
+                "scope_label_ja": "連結",
+                "value_kind": "monetary",
+                "actual": {
+                    "target_fiscal_year": later.fiscal_year,
+                    "target_period": "FY",
+                    "value_surface_ja": "941億円",
+                    "source_record_id": actual_record_id,
+                },
+                "next_original_forecast": None,
+            },
+        ]
+        coverage = {
+            item["source_filename"]: item
+            for item in payload["filing_coverage"]
+        }
+        coverage[earlier.filename]["forward_looking_information"] = {
+            "status": "extracted",
+            "source_record_ids": [forecast_record_id],
+            "coverage_note": None,
+        }
+        coverage[earlier.filename]["annual_financial_anchor_ids"].append(
+            "anchor-earlier"
+        )
+        coverage[later.filename]["operating_results"][
+            "source_record_ids"
+        ].append(actual_record_id)
+        coverage[later.filename]["annual_financial_anchor_ids"].append(
+            "anchor-later"
+        )
+
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        validate_research_dossier(dossier, self.manifest)
+        metrics = build_research_metrics(dossier, self.manifest)
+        financial = metrics["financial_observations"]
+        self.assertEqual(financial["annual_anchor_count"], 2)
+        self.assertEqual(financial["annual_anchor_value_count"], 2)
+        self.assertEqual(
+            financial["forecast_accuracy"]["observable_comparisons"],
+            1,
+        )
+        self.assertEqual(
+            financial["forecast_accuracy"]["comparisons"][0]["result"],
+            "actual_above_forecast",
+        )
+
     def test_unresolved_source_record_is_rejected(self) -> None:
         broken = self.dossier.model_copy(deep=True)
-        broken.filing_coverage[0].management_discussion_record_ids.append(
-            "missing:record"
-        )
+        section = broken.filing_coverage[0].operating_results
+        section.source_record_ids.append("missing:record")
         with self.assertRaisesRegex(ValueError, "absent from its provenance"):
             validate_research_dossier(broken)
 

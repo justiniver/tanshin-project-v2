@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .config import (
+    RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
     RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
     RESEARCH_MAX_COMMITMENTS,
     RESEARCH_MAX_DISCLOSURES,
@@ -221,44 +222,71 @@ Build a reusable filing-extraction dossier for security code
 
 Work filing by filing:
 1. Return exactly one filing_coverage record for every selected PDF. Its
-   observation and source-record IDs make the per-filing extraction explicit.
-   A filing with no material item still receives a coverage record and a concise
-   coverage gap; do not manufacture content.
-2. For every filing, inspect management discussion, outlook, segment discussion,
-   cash-flow discussion, capital allocation and dividends, and material
-   footnotes or mandatory disclosures. Extract the information that could
-   change an investor's understanding, not routine boilerplate.
-3. For financial_observations, prioritize a comparable annual anchor. Prefer
-   consolidated ordinary profit, then operating profit, net income, and revenue.
-   For historical year-end filings, retain the current-year actual and the next
-   annual original forecast for that anchor when both are available. A matched
-   forecast/result pair is more useful than a broad table of unmatched actuals.
-   From the latest filing, also retain core results, next guidance, and material
-   cash-flow, balance-sheet, dividend, or segment values. Do not exceed
-   {RESEARCH_MAX_FINANCIAL_OBSERVATIONS} observations. Local code performs the
-   arithmetic and matching.
-4. Extract up to {RESEARCH_MAX_COMMENTARY_OBSERVATIONS} filing-specific
+   section packets and structured-item IDs make the per-filing extraction
+   explicit. A filing with no material item still receives a coverage record;
+   do not manufacture content.
+2. Complete all seven qualitative section packets before allocating space to
+   supplementary figures:
+   - operating_results: 経営成績に関する説明 and management's explanation of
+     operating and earnings drivers
+   - financial_condition: 財政状態に関する説明, cash flow, working capital,
+     debt, liquidity, and balance-sheet developments
+   - forward_looking_information: 業績予想などの将来予測情報に関する説明,
+     forecast assumptions, revisions, risks, and outlook
+   - strategy_and_plan_progress: initiatives, medium-term-plan progress,
+     management responses, and operational follow-through
+   - segment_and_business_conditions: material segment, product, market,
+     customer, or geographic conditions
+   - capital_allocation: dividends, investment, acquisitions, disposals, debt,
+     and cash deployment
+   - material_footnotes: decision-useful mandatory disclosures and footnotes
+   Use extracted with linked records when useful text exists. Use not_material
+   only after inspecting a section that contains no decision-useful information,
+   and not_available only when the section is absent or unreadable. Do not use
+   either status merely to conserve output space.
+3. Qualitative source records take priority over broad numeric coverage. A
+   year-end filing should normally retain the material explanation of results,
+   financial condition, and outlook when those sections exist. Preserve what
+   management says caused the result, what changed, what action it took, what
+   it expects next, and any important qualification. The latest filing may use
+   fuller coverage; older filings should remain concise but individually useful.
+4. Use annual_financial_anchors for the historical financial spine. Prefer one
+   consistently available consolidated metric across the selected year-end
+   filings: ordinary profit, then operating profit, net income, and revenue.
+   Each anchor compactly pairs that filing's current-year actual with its next
+   original annual forecast when available. Return at most
+   {RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS} anchors; do not repeat these values
+   in financial_observations.
+5. Use up to {RESEARCH_MAX_FINANCIAL_OBSERVATIONS} financial_observations only
+   for decision-useful values outside the anchor series: latest results and
+   guidance, explicit revisions, cash flow, working capital, debt, dividends,
+   or material segment values. Local code performs arithmetic and matching.
+6. Extract up to {RESEARCH_MAX_COMMENTARY_OBSERVATIONS} filing-specific
    management-commentary observations. Apply stable canonical tags to genuinely
    comparable subjects such as demand, volume, pricing, costs, labor,
    profitability, foreign exchange, interest rates, execution, or strategy.
-   Prefer repeated subjects and turning points, but record what the filing says
-   rather than deciding the decade theme.
-5. Extract up to {RESEARCH_MAX_DISCLOSURES} material disclosures that affect
+   Build this comparison index from the retained qualitative records. Prefer
+   recurring tracks and meaningful changes in wording, tone, or emphasis, but
+   record what each filing says rather than deciding the decade theme. Where
+   supported, prefer a few tracks with observations across early, middle, and
+   recent filings over many isolated one-period tags.
+7. Extract up to {RESEARCH_MAX_DISCLOSURES} material disclosures that affect
    performance, risk, capital deployment, or follow-through: impairments,
    unusual gains or losses, regulatory/accounting matters, acquisitions,
    disposals, or major capital-allocation events. Omit routine notes.
-6. Extract up to {RESEARCH_MAX_COMMITMENTS} material forecasts, medium-term
+8. Extract up to {RESEARCH_MAX_COMMITMENTS} material forecasts, medium-term
    targets, strategic commitments, and capital-allocation promises. Record an
    achieved, missed, revised, delayed, or withdrawn outcome only when a selected
-   filing explicitly reports it. Keep annual numeric forecasts in
-   financial_observations rather than duplicating them.
-7. Do not return business-driver rankings, longitudinal themes, consistency
+   filing explicitly reports it. Do not duplicate ordinary annual forecasts
+   already represented by annual_financial_anchors.
+9. Do not return business-driver rankings, longitudinal themes, consistency
    ratings, or final-report conclusions. Request 2 performs that analysis.
-8. Use research_notes only for incomplete forecast coverage, ambiguous targets,
+10. Use research_notes only for incomplete forecast coverage, ambiguous targets,
    missing outcomes, unreadable source material, or another material limitation.
 
 Source-record requirements:
-- Create a source_record only for information retained elsewhere in the dossier.
+- Create a source_record only for information retained in a qualitative section,
+  annual anchor, observation, disclosure, or commitment.
 - Use exact authoritative filenames and physical 1-indexed PDF pages.
 - summary_ja should be a concise faithful description, not a polished report
   sentence. Exact quotation boundaries and verbatim transcription are not
@@ -267,7 +295,7 @@ Source-record requirements:
 - Use stable unique record IDs such as <source_filename>:rNNNN.
 - Keep at most {RESEARCH_MAX_SOURCE_RECORDS} source records. This and all other
   counts are ceilings, not quotas; grounding and materiality take priority.
-- List every observation, disclosure, and commitment ID in exactly one
+- List every anchor, observation, disclosure, and commitment ID in exactly one
   filing_coverage record belonging to its source filing.
 
 Return only the schema-conforming JapaneseResearchDossier.
@@ -349,9 +377,13 @@ coverage_shortfall:<section>:<concise Japanese reason>.
 Analysis requirements:
 1. Rank the dossier findings by investor materiality before selecting claims.
    Do not split one financial result into several takeaways merely to satisfy a
-   claim count. Treat the dossier as the full evidence boundary. Use
-   filing_coverage to notice explicit source gaps rather than interpreting an
-   absent observation as proof that management did not discuss a topic.
+   claim count. First read the per-filing qualitative section packets in
+   chronological order, then use commentary observations and local metrics as
+   comparison aids. Treat the dossier as the full evidence boundary. Use
+   filing_coverage and its explicit qualitative section statuses to notice
+   source gaps rather than interpreting an absent observation as proof that
+   management did not discuss a topic. Commentary observations are an index,
+   not the only qualitative evidence available for synthesis.
 2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
@@ -392,8 +424,9 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-   - Use financial_observations and the locally calculated forecast_accuracy
-     and revision comparisons instead of doing fresh arithmetic. State the
+   - Use annual_financial_anchors, supplemental financial_observations, and the
+     locally calculated forecast_accuracy and revision comparisons instead of
+     doing fresh arithmetic. State the
      observed sample size when characterizing forecast behavior. Do not describe
      a persistent over- or under-delivery pattern unless at least three original
      forecast-result pairs support it. Compare the latest annual guidance with

@@ -4,27 +4,67 @@
   "factual_integrity_passed": false,
   "quality_gate_passed": true,
   "blocking_error_count": 1,
-  "warning_count": 0,
+  "warning_count": 5,
   "language": "ja",
   "issues": [
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "c_latest_business_driver_3",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "c_latest_risk_1",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "latest_claim_missing_latest_source",
+      "message": "Latest-summary claim is not grounded in the latest filing.",
+      "claim_id": "c_latest_risk_2",
+      "evidence_id": null
+    },
     {
       "severity": "error",
       "category": "factual_integrity",
       "code": "achieved_language_for_non_actual",
       "message": "Forecast/target/risk claim uses achieved-result language.",
-      "claim_id": "claim_latest_risk_2",
+      "claim_id": "c_latest_risk_2",
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "management_consistency_discussion_coverage_low",
+      "message": "Less than half of the score evidence comes from management discussion.",
+      "claim_id": null,
+      "evidence_id": null
+    },
+    {
+      "severity": "warning",
+      "category": "diagnostic",
+      "code": "trend_management_discussion_coverage_low",
+      "message": "Less than half of trend evidence references come from management discussion.",
+      "claim_id": null,
       "evidence_id": null
     }
   ],
   "statistics": {
-    "claims": 21,
-    "evidence_records": 38,
-    "citation_references": 94,
-    "trend_management_discussion_share": 0.8571,
+    "claims": 20,
+    "evidence_records": 36,
+    "citation_references": 85,
+    "trend_management_discussion_share": 0.2881,
     "management_consistency_score": 0.75,
-    "management_consistency_evidence_confidence": 0.7292,
+    "management_consistency_evidence_confidence": 0.6875,
     "errors": 1,
-    "warnings": 0,
+    "warnings": 5,
     "blocking_errors": 1
   }
 }

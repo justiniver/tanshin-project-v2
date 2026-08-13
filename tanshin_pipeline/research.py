@@ -13,7 +13,9 @@ from .english_financials import extract_japanese_financial_amounts
 from .schemas import (
     CommentaryIntensity,
     JapaneseResearchDossier,
+    ResearchAnnualFinancialAnchor,
     ResearchCommentaryObservation,
+    ResearchFilingCoverage,
     ResearchFinancialObservation,
     SelectionManifest,
 )
@@ -27,6 +29,15 @@ _INTENSITY_ORDER = {
     CommentaryIntensity.HIGH: 3,
     CommentaryIntensity.NOT_ASSESSABLE: 0,
 }
+_DISCUSSION_SECTION_FIELDS = (
+    "operating_results",
+    "financial_condition",
+    "forward_looking_information",
+    "strategy_and_plan_progress",
+    "segment_and_business_conditions",
+    "capital_allocation",
+    "material_footnotes",
+)
 
 
 def _counts(values: Iterable[str]) -> dict[str, int]:
@@ -47,15 +58,25 @@ def _canonical_text(value: str) -> str:
     return re.sub(r"[\s、。・,.;:：；（）()「」『』【】\[\]]+", "", normalized)
 
 
+def _discussion_sections(
+    coverage: ResearchFilingCoverage,
+) -> dict[str, Any]:
+    return {
+        field: getattr(coverage, field)
+        for field in _DISCUSSION_SECTION_FIELDS
+    }
+
+
 def _record_references(dossier: JapaneseResearchDossier) -> set[str]:
     referenced: set[str] = set()
     for coverage in dossier.filing_coverage:
-        referenced.update(coverage.management_discussion_record_ids)
-        referenced.update(coverage.outlook_record_ids)
-        referenced.update(coverage.segment_record_ids)
-        referenced.update(coverage.cash_flow_record_ids)
-        referenced.update(coverage.capital_allocation_record_ids)
-        referenced.update(coverage.footnote_record_ids)
+        for section in _discussion_sections(coverage).values():
+            referenced.update(section.source_record_ids)
+    for anchor in dossier.annual_financial_anchors:
+        if anchor.actual is not None:
+            referenced.add(anchor.actual.source_record_id)
+        if anchor.next_original_forecast is not None:
+            referenced.add(anchor.next_original_forecast.source_record_id)
     for observation in dossier.financial_observations:
         referenced.add(observation.source_record_id)
     for observation in dossier.commentary_observations:
@@ -77,6 +98,9 @@ def validate_research_dossier(
         "source record": [item.record_id for item in dossier.source_records],
         "filing coverage": [
             item.source_filename for item in dossier.filing_coverage
+        ],
+        "annual financial anchor": [
+            item.anchor_id for item in dossier.annual_financial_anchors
         ],
         "financial observation": [
             item.observation_id for item in dossier.financial_observations
@@ -109,6 +133,9 @@ def validate_research_dossier(
     financial_by_id = {
         item.observation_id: item for item in dossier.financial_observations
     }
+    anchor_by_id = {
+        item.anchor_id: item for item in dossier.annual_financial_anchors
+    }
     commentary_by_id = {
         item.observation_id: item for item in dossier.commentary_observations
     }
@@ -119,6 +146,7 @@ def validate_research_dossier(
         item.commitment_id: item for item in dossier.commitments
     }
     covered_ids: dict[str, set[str]] = {
+        "annual financial anchor": set(),
         "financial": set(),
         "commentary": set(),
         "disclosure": set(),
@@ -126,14 +154,29 @@ def validate_research_dossier(
     }
     coverage_errors: list[str] = []
     for coverage in dossier.filing_coverage:
+        sections = _discussion_sections(coverage)
         category_record_ids = {
-            *coverage.management_discussion_record_ids,
-            *coverage.outlook_record_ids,
-            *coverage.segment_record_ids,
-            *coverage.cash_flow_record_ids,
-            *coverage.capital_allocation_record_ids,
-            *coverage.footnote_record_ids,
+            record_id
+            for section in sections.values()
+            for record_id in section.source_record_ids
         }
+        for label, section in sections.items():
+            if (
+                section.status.value == "extracted"
+                and not section.source_record_ids
+            ):
+                coverage_errors.append(
+                    f"{coverage.source_filename} marks {label} extracted "
+                    "without a source record"
+                )
+            if (
+                section.status.value != "extracted"
+                and section.source_record_ids
+            ):
+                coverage_errors.append(
+                    f"{coverage.source_filename} attaches source records to "
+                    f"{label} while its status is {section.status.value}"
+                )
         mismatched = sorted(
             record_id
             for record_id in category_record_ids
@@ -146,6 +189,11 @@ def validate_research_dossier(
                 f"filing: {', '.join(mismatched)}"
             )
         assignments = (
+            (
+                "annual financial anchor",
+                coverage.annual_financial_anchor_ids,
+                anchor_by_id,
+            ),
             (
                 "financial",
                 coverage.financial_observation_ids,
@@ -174,6 +222,7 @@ def validate_research_dossier(
                     )
                 covered_ids[label].add(identifier)
     for label, records in (
+        ("annual financial anchor", anchor_by_id),
         ("financial", financial_by_id),
         ("commentary", commentary_by_id),
         ("disclosure", disclosure_by_id),
@@ -242,6 +291,7 @@ def validate_research_dossier(
             item.source_filename
             for item in [
                 *dossier.source_records,
+                *dossier.annual_financial_anchors,
                 *dossier.financial_observations,
                 *dossier.commentary_observations,
                 *dossier.disclosures,
@@ -258,6 +308,22 @@ def validate_research_dossier(
 
     source_mismatches: list[str] = []
     value_surface_mismatches: list[str] = []
+    for anchor in dossier.annual_financial_anchors:
+        for point, label in (
+            (anchor.actual, "actual"),
+            (anchor.next_original_forecast, "forecast"),
+        ):
+            if point is None:
+                continue
+            record = records_by_id[point.source_record_id]
+            if record.source_filename != anchor.source_filename:
+                source_mismatches.append(f"{anchor.anchor_id}:{label}")
+            if _normalized(point.value_surface_ja) not in _normalized(
+                record.summary_ja
+            ):
+                value_surface_mismatches.append(
+                    f"{anchor.anchor_id}:{label}"
+                )
     for observation in dossier.financial_observations:
         record = records_by_id[observation.source_record_id]
         if record.source_filename != observation.source_filename:
@@ -291,6 +357,53 @@ def validate_research_dossier(
             "supporting source summaries: "
             + ", ".join(sorted(value_surface_mismatches))
         )
+
+
+def _anchor_observation(
+    anchor: ResearchAnnualFinancialAnchor,
+    *,
+    point_name: str,
+) -> ResearchFinancialObservation | None:
+    point = (
+        anchor.actual
+        if point_name == "actual"
+        else anchor.next_original_forecast
+    )
+    if point is None:
+        return None
+    return ResearchFinancialObservation(
+        observation_id=f"{anchor.anchor_id}:{point_name}",
+        source_filename=anchor.source_filename,
+        metric=anchor.metric,
+        metric_label_ja=anchor.metric_label_ja,
+        scope=anchor.scope,
+        scope_label_ja=anchor.scope_label_ja,
+        value_kind=anchor.value_kind,
+        statement_type=point_name,
+        forecast_version=(
+            "not_applicable" if point_name == "actual" else "original"
+        ),
+        target_fiscal_year=point.target_fiscal_year,
+        target_period=point.target_period,
+        value_surface_ja=point.value_surface_ja,
+        source_record_id=point.source_record_id,
+    )
+
+
+def _financial_observations_for_metrics(
+    dossier: JapaneseResearchDossier,
+) -> list[ResearchFinancialObservation]:
+    observations: list[ResearchFinancialObservation] = []
+    for anchor in dossier.annual_financial_anchors:
+        for point_name in ("actual", "forecast"):
+            observation = _anchor_observation(
+                anchor,
+                point_name=point_name,
+            )
+            if observation is not None:
+                observations.append(observation)
+    observations.extend(dossier.financial_observations)
+    return observations
 
 
 def _numeric_value(
@@ -728,7 +841,22 @@ def _build_research_metrics_unchecked(
         for item in dossier.filing_coverage
         if item.coverage_gaps
     ]
-    forecasts = _forecast_metrics(dossier.financial_observations)
+    financial_observations = _financial_observations_for_metrics(dossier)
+    forecasts = _forecast_metrics(financial_observations)
+    section_coverage = {
+        field: {
+            "status_counts": _counts(
+                getattr(item, field).status.value
+                for item in dossier.filing_coverage
+            ),
+            "source_records": sum(
+                len(getattr(item, field).source_record_ids)
+                for item in dossier.filing_coverage
+            ),
+        }
+        for field in _DISCUSSION_SECTION_FIELDS
+    }
+    latest_sections = _discussion_sections(latest)
     return {
         "filing_coverage": {
             "selected_filings": len(dossier.filing_coverage),
@@ -737,44 +865,53 @@ def _build_research_metrics_unchecked(
             ),
             "filings_with_explicit_gaps": len(gaps),
             "coverage_gaps": gaps,
+            "qualitative_sections": section_coverage,
             "latest_filing": {
                 "source_filename": latest.source_filename,
+                "annual_financial_anchors": len(
+                    latest.annual_financial_anchor_ids
+                ),
                 "financial_observations": len(
                     latest.financial_observation_ids
                 ),
-                "management_discussion_records": len(
-                    latest.management_discussion_record_ids
-                ),
-                "outlook_records": len(latest.outlook_record_ids),
-                "segment_records": len(latest.segment_record_ids),
-                "cash_flow_records": len(latest.cash_flow_record_ids),
-                "capital_allocation_records": len(
-                    latest.capital_allocation_record_ids
-                ),
-                "footnote_records": len(latest.footnote_record_ids),
+                "qualitative_sections": {
+                    field: {
+                        "status": section.status.value,
+                        "source_records": len(section.source_record_ids),
+                    }
+                    for field, section in latest_sections.items()
+                },
             },
         },
         "financial_observations": {
-            "total": len(dossier.financial_observations),
+            "total": len(financial_observations),
+            "annual_anchor_count": len(
+                dossier.annual_financial_anchors
+            ),
+            "annual_anchor_value_count": (
+                len(financial_observations)
+                - len(dossier.financial_observations)
+            ),
+            "supplemental_count": len(dossier.financial_observations),
             "by_metric": _counts(
-                item.metric.value for item in dossier.financial_observations
+                item.metric.value for item in financial_observations
             ),
             "by_statement_type": _counts(
                 item.statement_type
-                for item in dossier.financial_observations
+                for item in financial_observations
             ),
             "forecast_version_counts": _counts(
                 item.forecast_version.value
-                for item in dossier.financial_observations
+                for item in financial_observations
                 if item.statement_type == "forecast"
             ),
             "annual_anchor_series": _annual_anchor_series(
-                dossier.financial_observations,
+                financial_observations,
                 forecasts,
             ),
             "forecast_accuracy": forecasts,
             "forecast_revisions": _forecast_revision_metrics(
-                dossier.financial_observations
+                financial_observations
             ),
         },
         "commentary": _commentary_metrics(
@@ -858,7 +995,15 @@ def build_research_metrics(
                 "selected_filings": len(dossier.filing_coverage),
             },
             "financial_observations": {
-                "total": len(dossier.financial_observations),
+                "total": len(
+                    _financial_observations_for_metrics(dossier)
+                ),
+                "annual_anchor_count": len(
+                    dossier.annual_financial_anchors
+                ),
+                "supplemental_count": len(
+                    dossier.financial_observations
+                ),
             },
             "commentary": {
                 "observations": len(dossier.commentary_observations),

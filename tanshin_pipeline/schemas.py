@@ -148,6 +148,12 @@ class FilingCoverageStatus(str, Enum):
     NO_MATERIAL_DISCLOSURE = "no_material_disclosure"
 
 
+class DiscussionCoverageStatus(str, Enum):
+    EXTRACTED = "extracted"
+    NOT_MATERIAL = "not_material"
+    NOT_AVAILABLE = "not_available"
+
+
 class FinancialMetric(str, Enum):
     REVENUE = "revenue"
     OPERATING_PROFIT = "operating_profit"
@@ -468,6 +474,34 @@ class ResearchSourceRecord(BaseModel):
     tags: list[str] = Field(default_factory=list)
 
 
+class ResearchDiscussionSection(BaseModel):
+    """Explicit inspection result for one qualitative filing section."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    status: DiscussionCoverageStatus = Field(
+        description=(
+            "Use extracted when useful management discussion was retained, "
+            "not_material when the section was inspected but contained only "
+            "routine or immaterial text, and not_available when the filing did "
+            "not contain the section or it could not be read."
+        )
+    )
+    source_record_ids: list[NonEmpty] = Field(
+        description=(
+            "Source records retained from this section. Keep empty only when "
+            "status is not_material or not_available."
+        )
+    )
+    coverage_note: str | None = Field(
+        default=None,
+        description=(
+            "Concise reason for not_material or not_available. Normally null "
+            "when status is extracted."
+        ),
+    )
+
+
 class ResearchFilingCoverage(BaseModel):
     """Coverage ledger proving that every selected filing was inspected."""
 
@@ -481,12 +515,49 @@ class ResearchFilingCoverage(BaseModel):
     period_label_ja: NonEmpty
     is_latest: bool
     coverage_status: FilingCoverageStatus
-    management_discussion_record_ids: list[NonEmpty]
-    outlook_record_ids: list[NonEmpty]
-    segment_record_ids: list[NonEmpty]
-    cash_flow_record_ids: list[NonEmpty]
-    capital_allocation_record_ids: list[NonEmpty]
-    footnote_record_ids: list[NonEmpty]
+    operating_results: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of 経営成績に関する説明 and management's explanation of "
+            "the period's operating and earnings drivers."
+        )
+    )
+    financial_condition: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of 財政状態に関する説明, cash flow, working capital, "
+            "debt, liquidity, and other balance-sheet developments."
+        )
+    )
+    forward_looking_information: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of 業績予想などの将来予測情報に関する説明, assumptions, "
+            "risks, forecast revisions, and management's outlook."
+        )
+    )
+    strategy_and_plan_progress: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of strategy, medium-term-plan progress, operational "
+            "initiatives, and management's stated response to results."
+        )
+    )
+    segment_and_business_conditions: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of segment, product, market, customer, geography, and "
+            "business-specific conditions discussed by management."
+        )
+    )
+    capital_allocation: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of dividends, investment, acquisitions, disposals, debt, "
+            "cash deployment, and other capital-allocation discussion."
+        )
+    )
+    material_footnotes: ResearchDiscussionSection = Field(
+        description=(
+            "Coverage of decision-useful mandatory disclosures and footnotes, "
+            "excluding routine notes."
+        )
+    )
+    annual_financial_anchor_ids: list[NonEmpty]
     financial_observation_ids: list[NonEmpty]
     commentary_observation_ids: list[NonEmpty]
     disclosure_ids: list[NonEmpty]
@@ -499,15 +570,55 @@ class ResearchFilingCoverage(BaseModel):
     )
 
 
+class ResearchAnnualFinancialPoint(BaseModel):
+    """One actual or original-forecast value inside a compact annual anchor."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    target_fiscal_year: int = Field(ge=1900, le=2200)
+    target_period: FilingPeriod
+    value_surface_ja: NonEmpty = Field(
+        description="Exact monetary, percentage, per-share, count, or ratio surface."
+    )
+    source_record_id: NonEmpty
+
+
+class ResearchAnnualFinancialAnchor(BaseModel):
+    """One year-end actual paired with the next original annual forecast."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    anchor_id: NonEmpty
+    source_filename: NonEmpty
+    metric: FinancialMetric
+    metric_label_ja: NonEmpty
+    scope: FinancialScope
+    scope_label_ja: NonEmpty
+    value_kind: FinancialValueKind
+    actual: ResearchAnnualFinancialPoint | None = Field(
+        description=(
+            "Current year-end actual for the selected anchor metric, or null "
+            "when the filing does not disclose a usable value."
+        )
+    )
+    next_original_forecast: ResearchAnnualFinancialPoint | None = Field(
+        description=(
+            "The first disclosed next-year annual forecast for the same metric "
+            "and scope, or null when unavailable."
+        )
+    )
+
+
 class ResearchFinancialObservation(BaseModel):
-    """One exact financial value used for local time-series comparisons."""
+    """A useful financial value outside the compact annual anchor series."""
 
     model_config = ConfigDict(extra="ignore")
 
     observation_id: NonEmpty = Field(
         description=(
-            "Stable unique observation ID. Comparable forecasts and actuals use "
-            "the same metric, scope, target fiscal year, period, and value kind."
+            "Stable unique observation ID for a latest-period, revised-guidance, "
+            "cash-flow, balance-sheet, dividend, segment, or other supplemental "
+            "value not already represented in annual_financial_anchors."
         )
     )
     source_filename: NonEmpty
@@ -670,6 +781,7 @@ class JapaneseResearchDossier(BaseModel):
     identity: CompanyIdentity
     source_records: list[ResearchSourceRecord] = Field(min_length=1)
     filing_coverage: list[ResearchFilingCoverage] = Field(min_length=1)
+    annual_financial_anchors: list[ResearchAnnualFinancialAnchor]
     financial_observations: list[ResearchFinancialObservation]
     commentary_observations: list[ResearchCommentaryObservation]
     disclosures: list[ResearchDisclosureRecord]

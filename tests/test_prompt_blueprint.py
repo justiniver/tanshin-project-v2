@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from tanshin_pipeline.config import (
+    RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
     RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
     RESEARCH_MAX_COMMITMENTS,
     RESEARCH_MAX_DISCLOSURES,
@@ -211,6 +212,10 @@ class PromptBlueprintTests(unittest.TestCase):
         translation_schema = EnglishTranslationPatch.model_json_schema()
         self.assertIn("source_records", research_schema["properties"])
         self.assertIn("filing_coverage", research_schema["properties"])
+        self.assertIn(
+            "annual_financial_anchors",
+            research_schema["properties"],
+        )
         self.assertIn("financial_observations", research_schema["properties"])
         self.assertIn("commentary_observations", research_schema["properties"])
         self.assertIn("disclosures", research_schema["properties"])
@@ -218,6 +223,10 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertNotIn("management_consistency", research_schema["properties"])
         self.assertIn(
             "coverage_gaps",
+            research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
+        )
+        self.assertIn(
+            "operating_results",
             research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
         )
         self.assertIn(
@@ -264,22 +273,25 @@ class PromptBlueprintTests(unittest.TestCase):
             "maxItems",
             provider_properties["financial_observations"],
         )
+        self.assertNotIn(
+            "maxItems",
+            provider_properties["annual_financial_anchors"],
+        )
         self.assertIn(
             f"at most {RESEARCH_MAX_SOURCE_RECORDS} source records",
             spec.prompt,
         )
         for ceiling in (
+            RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
             RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
             RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
             RESEARCH_MAX_DISCLOSURES,
             RESEARCH_MAX_COMMITMENTS,
         ):
             self.assertIn(str(ceiling), spec.prompt)
-        self.assertIn("comparable annual anchor", spec.prompt)
-        self.assertIn(
-            "current-year actual and the next",
-            spec.prompt,
-        )
+        self.assertIn("Complete all seven qualitative section packets", spec.prompt)
+        self.assertIn("annual_financial_anchors", spec.prompt)
+        self.assertIn("current-year actual with its next", spec.prompt)
         self.assertIn("counts are ceilings, not quotas", normalized_prompt)
         self.assertIn("Do not return business-driver rankings", spec.prompt)
         self.assertIn("management-consistency ratings", RESEARCH_SYSTEM_PROMPT)

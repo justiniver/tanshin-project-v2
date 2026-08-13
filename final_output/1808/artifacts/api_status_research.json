@@ -6,13 +6,27 @@
   "provider": "gemini",
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
-  "state": "TEMPORARILY_UNAVAILABLE",
-  "api_request_completed": false,
-  "started_at_utc": "2026-08-13T00:34:43.023140+00:00",
-  "updated_at_utc": "2026-08-13T00:35:53.239883+00:00",
-  "error_type": "ServerError",
-  "status_code": 503,
-  "error_summary": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-  "retryable": true,
-  "retry_guidance": "The model provider returned a temporary service-capacity error. Wait and manually rerun the same one-line stage command; no automatic retry was attempted."
+  "state": "SUCCESS",
+  "api_request_completed": true,
+  "started_at_utc": "2026-08-13T00:38:45.924380+00:00",
+  "updated_at_utc": "2026-08-13T00:42:39.975052+00:00",
+  "response_id": "FxJ9av2rJrWK2roPip_iqAk",
+  "model_version": "gemini-3.6-flash",
+  "finish_reason": "STOP",
+  "attempts": 1,
+  "usage_metadata": {
+    "candidates_token_count": 17283,
+    "prompt_token_count": 273473,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 270788
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2685
+      }
+    ],
+    "total_token_count": 290756
+  }
 }

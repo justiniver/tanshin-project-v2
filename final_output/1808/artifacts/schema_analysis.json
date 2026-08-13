@@ -1,125 +1,14 @@
 {
   "$defs": {
-    "CompanyIdentity": {
-      "additionalProperties": false,
-      "properties": {
-        "security_code": {
-          "description": "Exact requested security code; do not infer a different issuer.",
-          "minLength": 1,
-          "title": "Security Code",
-          "type": "string"
-        },
-        "company_name_ja": {
-          "description": "Japanese company name stated in the latest supplied filing.",
-          "minLength": 1,
-          "title": "Company Name Ja",
-          "type": "string"
-        },
-        "company_name_en": {
-          "description": "English company name stated in the supplied filings, or a faithful romanization when no English name is shown.",
-          "minLength": 1,
-          "title": "Company Name En",
-          "type": "string"
-        },
-        "latest_filename": {
-          "description": "Exact authoritative filename of the filing identified as latest.",
-          "minLength": 1,
-          "title": "Latest Filename",
-          "type": "string"
-        },
-        "latest_period_ja": {
-          "description": "Concise Japanese reporting-period label for the latest filing.",
-          "minLength": 1,
-          "title": "Latest Period Ja",
-          "type": "string"
-        },
-        "latest_period_en": {
-          "description": "Concise English equivalent of latest_period_ja.",
-          "minLength": 1,
-          "title": "Latest Period En",
-          "type": "string"
-        }
-      },
-      "required": [
-        "security_code",
-        "company_name_ja",
-        "company_name_en",
-        "latest_filename",
-        "latest_period_ja",
-        "latest_period_en"
+    "ManagementConsistencyDimension": {
+      "enum": [
+        "strategic_coherence",
+        "execution_follow_through",
+        "forecast_target_discipline",
+        "accountability_transparency"
       ],
-      "title": "CompanyIdentity",
-      "type": "object"
-    },
-    "ModelAnalysisClaim": {
-      "description": "Quality-focused model response claim; support spans are derived locally.",
-      "properties": {
-        "claim_id": {
-          "description": "Unique stable claim ID, concise and descriptive within this report.",
-          "minLength": 1,
-          "title": "Claim Id",
-          "type": "string"
-        },
-        "section": {
-          "$ref": "#/$defs/SectionKey",
-          "description": "Exact report section that this claim belongs to."
-        },
-        "order": {
-          "description": "1-indexed display order within the claim's section.",
-          "minimum": 1,
-          "title": "Order",
-          "type": "integer"
-        },
-        "headline_ja": {
-          "description": "Concise analytical conclusion in Japanese, not a generic topic label or promotional slogan.",
-          "minLength": 1,
-          "title": "Headline Ja",
-          "type": "string"
-        },
-        "body_ja": {
-          "description": "Evidence-grounded Japanese analysis explaining the conclusion, its period contrast, investor significance, material counterevidence or uncertainty, and the difference between management statements and subsequent outcomes without duplicating other claims or calculating unsupported values. A trend.consistent claim must explain a mechanism observed across early, middle, and recent periods and address a disclosed counterperiod. A trend.change claim must state the before, transition, and current condition.",
-          "minLength": 1,
-          "title": "Body Ja",
-          "type": "string"
-        },
-        "evidence_ids": {
-          "description": "Unique evidence IDs from this response that collectively support every material factual assertion in the headline and body. For trend.consistent, cite separated year-end filings spanning early, middle, and recent period buckets. For trend.change, cite the before, transition, and current stages.",
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "minItems": 1,
-          "title": "Evidence Ids",
-          "type": "array"
-        },
-        "statement_type": {
-          "$ref": "#/$defs/StatementType",
-          "description": "Nature of the claim after accounting for all cited statements."
-        },
-        "is_inference": {
-          "default": false,
-          "description": "True only when the claim contains analyst inference.",
-          "title": "Is Inference",
-          "type": "boolean"
-        },
-        "causal": {
-          "default": false,
-          "description": "True when the claim asserts or infers a cause-and-effect relationship.",
-          "title": "Causal",
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "claim_id",
-        "section",
-        "order",
-        "headline_ja",
-        "body_ja",
-        "evidence_ids",
-        "statement_type"
-      ],
-      "title": "ModelAnalysisClaim",
-      "type": "object"
+      "title": "ManagementConsistencyDimension",
+      "type": "string"
     },
     "SectionKey": {
       "enum": [
@@ -153,6 +42,146 @@
       ],
       "title": "StatementType",
       "type": "string"
+    },
+    "SynthesisAnalysisClaim": {
+      "description": "Analytical claim linked to lightweight extraction records.",
+      "properties": {
+        "claim_id": {
+          "minLength": 1,
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "section": {
+          "$ref": "#/$defs/SectionKey"
+        },
+        "order": {
+          "minimum": 1,
+          "title": "Order",
+          "type": "integer"
+        },
+        "headline_ja": {
+          "description": "Concise analytical conclusion in Japanese.",
+          "minLength": 1,
+          "title": "Headline Ja",
+          "type": "string"
+        },
+        "body_ja": {
+          "description": "Investor-oriented Japanese analysis that explains the conclusion, period contrast, significance, and material uncertainty without duplicating other claims.",
+          "minLength": 1,
+          "title": "Body Ja",
+          "type": "string"
+        },
+        "source_record_ids": {
+          "description": "IDs of extracted source records used for this conclusion. These links are internal provenance and are not rendered as citations.",
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Source Record Ids",
+          "type": "array"
+        },
+        "statement_type": {
+          "$ref": "#/$defs/StatementType"
+        },
+        "is_inference": {
+          "default": false,
+          "title": "Is Inference",
+          "type": "boolean"
+        },
+        "causal": {
+          "default": false,
+          "title": "Causal",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "claim_id",
+        "section",
+        "order",
+        "headline_ja",
+        "body_ja",
+        "source_record_ids",
+        "statement_type"
+      ],
+      "title": "SynthesisAnalysisClaim",
+      "type": "object"
+    },
+    "SynthesisManagementConsistency": {
+      "properties": {
+        "components": {
+          "items": {
+            "$ref": "#/$defs/SynthesisManagementConsistencyComponent"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "title": "Components",
+          "type": "array"
+        },
+        "overall_rationale_ja": {
+          "minLength": 1,
+          "title": "Overall Rationale Ja",
+          "type": "string"
+        }
+      },
+      "required": [
+        "components",
+        "overall_rationale_ja"
+      ],
+      "title": "SynthesisManagementConsistency",
+      "type": "object"
+    },
+    "SynthesisManagementConsistencyComponent": {
+      "description": "One synthesis-stage management-consistency assessment.",
+      "properties": {
+        "dimension": {
+          "$ref": "#/$defs/ManagementConsistencyDimension"
+        },
+        "rating": {
+          "anyOf": [
+            {
+              "maximum": 4,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Rating"
+        },
+        "evidence_sufficiency": {
+          "enum": [
+            "sufficient",
+            "insufficient"
+          ],
+          "title": "Evidence Sufficiency",
+          "type": "string"
+        },
+        "rationale_ja": {
+          "minLength": 1,
+          "title": "Rationale Ja",
+          "type": "string"
+        },
+        "source_record_ids": {
+          "description": "Extraction records supporting the rating, including contrary information where available.",
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Source Record Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "rating",
+        "evidence_sufficiency",
+        "rationale_ja",
+        "source_record_ids"
+      ],
+      "title": "SynthesisManagementConsistencyComponent",
+      "type": "object"
     }
   },
   "description": "Dossier-backed analytical prose returned by the second Japanese request.",
@@ -162,16 +191,16 @@
       "title": "Schema Version",
       "type": "string"
     },
-    "identity": {
-      "$ref": "#/$defs/CompanyIdentity"
-    },
     "claims": {
       "items": {
-        "$ref": "#/$defs/ModelAnalysisClaim"
+        "$ref": "#/$defs/SynthesisAnalysisClaim"
       },
       "minItems": 1,
       "title": "Claims",
       "type": "array"
+    },
+    "management_consistency": {
+      "$ref": "#/$defs/SynthesisManagementConsistency"
     },
     "model_notes": {
       "items": {
@@ -183,8 +212,8 @@
   },
   "required": [
     "schema_version",
-    "identity",
-    "claims"
+    "claims",
+    "management_consistency"
   ],
   "title": "JapaneseSynthesisResponse",
   "type": "object"

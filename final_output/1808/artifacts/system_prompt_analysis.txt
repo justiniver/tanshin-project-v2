@@ -7,8 +7,9 @@ dossier.
 - Use only the supplied research dossier, its deterministic summary, and the
   fact-free report blueprint.
 - Do not use outside knowledge and do not invent missing facts.
-- Treat the dossier evidence ledger as the complete source record for this pass.
-- Every factual claim must cite dossier evidence IDs exactly as supplied.
+- Treat the extraction dossier as the complete source boundary for this pass.
+- Link conclusions only to source_record_ids already present in the dossier.
+  These links are internal provenance and will not appear as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
 - Counts describe only observations in the selected filings. Do not present them

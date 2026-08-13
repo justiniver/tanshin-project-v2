@@ -59,6 +59,11 @@ def _filing_coverage(
     coverage = []
     for selected in manifest.selected_files:
         record_ids = records_by_filename.get(selected.filename, [])
+        absent = {
+            "status": "not_available",
+            "source_record_ids": [],
+            "coverage_note": empty_message,
+        }
         coverage.append(
             {
                 "source_filename": selected.filename,
@@ -69,12 +74,22 @@ def _filing_coverage(
                 "coverage_status": (
                     "complete" if record_ids else "no_material_disclosure"
                 ),
-                "management_discussion_record_ids": record_ids[:3],
-                "outlook_record_ids": [],
-                "segment_record_ids": [],
-                "cash_flow_record_ids": [],
-                "capital_allocation_record_ids": [],
-                "footnote_record_ids": [],
+                "operating_results": (
+                    {
+                        "status": "extracted",
+                        "source_record_ids": record_ids[:3],
+                        "coverage_note": None,
+                    }
+                    if record_ids
+                    else absent
+                ),
+                "financial_condition": absent,
+                "forward_looking_information": absent,
+                "strategy_and_plan_progress": absent,
+                "segment_and_business_conditions": absent,
+                "capital_allocation": absent,
+                "material_footnotes": absent,
+                "annual_financial_anchor_ids": [],
                 "financial_observation_ids": [],
                 "commentary_observation_ids": [],
                 "disclosure_ids": [],
@@ -114,6 +129,7 @@ def fake_research_dossier(
                 evidence,
                 "Offline fixture contains no observations for this filing.",
             ),
+            "annual_financial_anchors": [],
             "financial_observations": [],
             "commentary_observations": [],
             "disclosures": [],
@@ -142,6 +158,7 @@ def dossier_from_analysis_payload(
                 evidence,
                 "Adapted fixture has no observations for this filing.",
             ),
+            "annual_financial_anchors": [],
             "financial_observations": [],
             "commentary_observations": [],
             "disclosures": [],

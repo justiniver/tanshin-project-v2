@@ -90,16 +90,20 @@ normalization, validation, rendering, retry, and failure tests.
   dossier-backed synthesis. Optional English translation is a third call.
   The second call receives no PDFs, and no report is rendered until it succeeds.
 - Keep the first Japanese request coverage-first: it must return one coverage
-  record per selected filing plus filing-level financial, commentary, and
-  disclosure observations. Local code derives comparisons and subscores; the
-  second request ranks those findings and writes the existing report structure.
+  record per selected filing with explicit packets for operating results,
+  financial condition, forward-looking information, strategy and plan
+  progress, segment conditions, capital allocation, and material footnotes.
+  Local code derives comparisons and subscores; the second request ranks those
+  findings and writes the existing report structure.
 - Keep research extraction compact. Array ceilings are source constants, counts
   are never quotas, and one evidence record should be reused wherever a single
   source sentence supports multiple research records.
-- Allocate historical financial slots to a consistent annual forecast anchor
-  and later actuals before broad time-series duplication. Allocate commentary
-  slots to a few recurring multi-period comparison tracks, and prioritize
-  commitments with observable outcomes over pending promises.
+- Compress historical financial slots into one consistent annual anchor per
+  year-end filing, pairing the current actual and next original forecast where
+  available. Use the saved response budget for concise qualitative discussion
+  from every filing. Allocate commentary slots to a few recurring multi-period
+  comparison tracks, and prioritize commitments with observable outcomes over
+  pending promises.
 - The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for research,
   synthesis, and translation. `--key2-translation` changes only translation to
   `GEMINI_API_KEY2`. When consecutive stages share a Gemini credential and their
