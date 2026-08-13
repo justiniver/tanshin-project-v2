@@ -897,15 +897,19 @@ class ResearchCapitalReturn(BaseModel):
     return_ja: NonEmpty = Field(
         description=(
             "Later recurring profit or loss, margin, cash generation, productive "
-            "use, impairment, or exit evidence relevant to the capital absorbed."
+            "use, impairment, or exit evidence relevant to the capital absorbed. "
+            "Management's favorable characterization, an asset increase, or a "
+            "wider group result without a stated attribution is not a return for "
+            "the destination."
         )
     )
     attribution: CapitalAllocationOutcomeAttribution = Field(
         description=(
             "Use direct for separately disclosed destination-level returns, "
             "management_linked when management explicitly connects a wider result "
-            "to the destination, aggregate_only when only a segment or group result "
-            "is visible, and unattributed when no connection is stated."
+            "to the destination (a management claim, not independent verification), "
+            "aggregate_only when only a segment or group result is visible, and "
+            "unattributed when no connection is stated."
         )
     )
     signal: CapitalAllocationOutcomeSignal = Field(
@@ -1035,7 +1039,9 @@ class ResearchMemoItem(BaseModel):
         description=(
             "Concise, faithful Japanese summary retaining the original figures, "
             "periods, qualifiers, causes, actions, and forecast status needed for "
-            "later analysis. For capital allocation, prioritize the material "
+            "later analysis. Attribute management explanations explicitly and do "
+            "not rewrite them as independently established outcomes. For capital "
+            "allocation, prioritize the material "
             "decision, its stated purpose, funding or trade-off, and any later "
             "operating, profit, margin, cash, capacity, impairment, disposal, "
             "debt, liquidity, or distribution outcome. Exact quotation is not "
@@ -1184,9 +1190,11 @@ class SynthesisAnalysisClaim(BaseModel):
     )
     body_ja: NonEmpty = Field(
         description=(
-            "Investor-oriented Japanese analysis that explains the conclusion, "
-            "period contrast, significance, and material uncertainty without "
-            "duplicating other claims."
+            "Independent investor-oriented Japanese analysis that explains the "
+            "conclusion, period contrast, significance, and material uncertainty "
+            "without duplicating other claims. Distinguish management's assertions "
+            "from observable outcomes and do not adopt promotional management "
+            "language as the analyst's conclusion."
         )
     )
     statement_type: StatementType

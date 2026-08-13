@@ -190,6 +190,18 @@ class PromptBlueprintTests(unittest.TestCase):
             "distinguish capital absorbed by a destination",
             ANALYSIS_SYSTEM_PROMPT,
         )
+        self.assertIn(
+            "Treat management commentary as a claim",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertIn(
+            "Group-wide ROE, EPS, BVPS",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertIn(
+            "not as independent proof",
+            " ".join(RESEARCH_SYSTEM_PROMPT.split()),
+        )
         self.assertNotIn("WACC", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("Return only one JSON object", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("# Non-negotiable invariants", TRANSLATION_SYSTEM_PROMPT)
@@ -272,6 +284,10 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("attribution", capital_return)
         self.assertIn("signal", capital_return)
         self.assertIn(
+            "not independent verification",
+            capital_return["attribution"]["description"],
+        )
+        self.assertIn(
             "effect_type",
             research_schema["$defs"]["ResearchCapitalImmediateEffect"][
                 "properties"
@@ -294,6 +310,12 @@ class PromptBlueprintTests(unittest.TestCase):
             analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
                 "body_ja"
             ],
+        )
+        self.assertIn(
+            "Distinguish management's assertions",
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
+                "body_ja"
+            ]["description"],
         )
         self.assertNotIn(
             "sources",
@@ -354,6 +376,14 @@ class PromptBlueprintTests(unittest.TestCase):
             normalized_prompt,
         )
         self.assertIn(
+            "keep them separate from observable results",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "company-wide ROE, EPS, BVPS",
+            normalized_prompt,
+        )
+        self.assertIn(
             "Do not decide whether capital allocation created value",
             spec.prompt,
         )
@@ -362,6 +392,29 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Do not select the decade thesis", spec.prompt)
         self.assertIn("not polished report prose", normalized_prompt)
         self.assertIn("Do not decide the final", RESEARCH_SYSTEM_PROMPT)
+
+        analysis = build_analysis_spec(
+            REPOSITORY_ROOT,
+            manifest,
+            fake_research_dossier(REPOSITORY_ROOT),
+        )
+        normalized_analysis = " ".join(analysis.prompt.split())
+        self.assertIn(
+            "Treat management's narrative as a hypothesis to evaluate",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "Do not say \"most\" or \"the majority\" of capital",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "A shareholder distribution returns capital but does not by itself",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "aggregate-only or unattributed evidence cannot establish it",
+            normalized_analysis,
+        )
 
 
 if __name__ == "__main__":

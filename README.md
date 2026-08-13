@@ -454,10 +454,15 @@ including:
   assessment of whether the decade's allocation tracks created value;
 - detailed explanations beneath each management-consistency subscore.
 
-The trend section prioritizes qualitative management discussion, including
-経営成績, 財政状態, cash-flow discussion, future outlook, management-plan
-progress, capital allocation, and management explanations of risks or misses.
-Summary tables mainly corroborate figures rather than becoming the trend thesis.
+The trend section uses qualitative management discussion—including 経営成績,
+財政状態, cash-flow discussion, future outlook, management-plan progress,
+capital allocation, and explanations of risks or misses—to identify claims and
+changes in emphasis. It does not adopt management's framing as its conclusion.
+Reported results, financial condition, cash flow, mandatory footnotes,
+impairments, misses, and later filings are used to test those statements.
+Confident or repeated management language is not proof of execution, durability,
+or value creation. Summary tables corroborate figures rather than becoming the
+trend thesis.
 Its capital-allocation value-creation subsection leads with a supported judgment
 about where incremental capital went and whether it increasingly favored the
 businesses producing the strongest subsequent returns. It follows the decade's
@@ -478,6 +483,13 @@ performance, and financial strain count against. The assessment also asks
 whether management added capital after strong results and reduced or exited
 weak uses, rather than making missing disclosure or the mere act of spending and
 distributing capital its thesis.
+Management-linked return records preserve management's causal explanation but
+are not independent verification. Group-wide ROE, EPS, BVPS, share-price
+performance, or aggregate profit is not attributed to a particular investment
+without destination-level evidence. Paying a dividend or executing a buyback is
+a use of capital, not proof by itself that value was created. Claims about where
+"most" capital went require comparable amounts or an unambiguous directional
+record.
 When the selected filings show no meaningful qualitative development, the model
 may report that limitation and emphasize the financial, forecast, target,
 disclosure, or capital-allocation record rather than forcing a weak theme.

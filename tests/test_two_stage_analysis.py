@@ -416,6 +416,93 @@ class TwoStageAnalysisTests(unittest.TestCase):
             {"distribution_execution": 1},
         )
         self.assertEqual(capital["by_return_type"], {"profit_or_loss": 1})
+        self.assertEqual(capital["tracks_with_direct_return_evidence"], 1)
+        self.assertEqual(
+            capital["tracks_with_only_management_or_aggregate_returns"],
+            0,
+        )
+        domestic, distribution = capital["records"]
+        self.assertTrue(domestic["has_destination_level_return_evidence"])
+        self.assertEqual(domestic["direct_return_count"], 1)
+        self.assertFalse(distribution["has_destination_level_return_evidence"])
+        self.assertEqual(distribution["subsequent_return_count"], 0)
+        self.assertIn(
+            "shareholder distribution cannot establish",
+            capital["interpretation_guardrail"],
+        )
+
+    def test_aggregate_or_management_linked_returns_are_not_direct_evidence(
+        self,
+    ) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        year_ends = sorted(
+            (
+                item
+                for item in self.manifest.selected_files
+                if "trend_year_end" in item.roles
+            ),
+            key=lambda item: item.fiscal_year,
+        )
+        early, recent = year_ends[-2:]
+        payload["capital_allocation_tracks"] = [
+            {
+                "track_label_ja": "買収先",
+                "track_type": "acquisition",
+                "capital_destination_ja": "買収先事業",
+                "start_fiscal_year": early.fiscal_year,
+                "end_fiscal_year": recent.fiscal_year,
+                "stated_rationale_ja": "シナジー創出を目指す。",
+                "capital_inputs": [
+                    {
+                        "source_filename": early.filename,
+                        "fiscal_year": early.fiscal_year,
+                        "period_label_ja": f"FY{early.fiscal_year}",
+                        "input_type": "acquisition_or_investment_spend",
+                        "amount_or_scale_ja": "20 億円",
+                        "input_ja": "買収を実施した。",
+                        "relative_priority_ja": None,
+                    }
+                ],
+                "immediate_effects": [],
+                "subsequent_returns": [
+                    {
+                        "source_filename": recent.filename,
+                        "fiscal_year": recent.fiscal_year,
+                        "period_label_ja": f"FY{recent.fiscal_year}",
+                        "return_type": "profit_or_loss",
+                        "return_ja": "経営陣は買収がセグメント増益に寄与したと説明した。",
+                        "attribution": "management_linked",
+                        "signal": "positive",
+                    },
+                    {
+                        "source_filename": recent.filename,
+                        "fiscal_year": recent.fiscal_year,
+                        "period_label_ja": f"FY{recent.fiscal_year}",
+                        "return_type": "profit_or_loss",
+                        "return_ja": "セグメント全体の利益が増加した。",
+                        "attribution": "aggregate_only",
+                        "signal": "positive",
+                    },
+                ],
+                "adverse_evidence_ja": [],
+                "record_maturity": "partial_record",
+                "disclosure_limit_ja": "買収先単体の損益は非開示。",
+            }
+        ]
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        capital = build_research_metrics(
+            dossier,
+            self.manifest,
+        )["capital_allocation"]
+        record = capital["records"][0]
+        self.assertEqual(capital["tracks_with_direct_return_evidence"], 0)
+        self.assertEqual(
+            capital["tracks_with_only_management_or_aggregate_returns"],
+            1,
+        )
+        self.assertEqual(record["management_linked_return_count"], 1)
+        self.assertEqual(record["non_attributable_return_count"], 1)
+        self.assertFalse(record["has_destination_level_return_evidence"])
 
     def test_transaction_accounting_effect_cannot_be_a_return_type(self) -> None:
         payload = self.dossier.model_dump(mode="json")

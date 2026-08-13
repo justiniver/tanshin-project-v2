@@ -374,6 +374,21 @@ def _capital_allocation_metrics(
         "tracks_with_subsequent_returns": sum(
             bool(item.subsequent_returns) for item in tracks
         ),
+        "tracks_with_direct_return_evidence": sum(
+            any(
+                outcome.attribution.value == "direct"
+                for outcome in item.subsequent_returns
+            )
+            for item in tracks
+        ),
+        "tracks_with_only_management_or_aggregate_returns": sum(
+            bool(item.subsequent_returns)
+            and not any(
+                outcome.attribution.value == "direct"
+                for outcome in item.subsequent_returns
+            )
+            for item in tracks
+        ),
         "capital_input_records": sum(
             len(item.capital_inputs) for item in tracks
         ),
@@ -421,6 +436,22 @@ def _capital_allocation_metrics(
                 "record_maturity": item.record_maturity.value,
                 "immediate_effect_count": len(item.immediate_effects),
                 "subsequent_return_count": len(item.subsequent_returns),
+                "direct_return_count": sum(
+                    outcome.attribution.value == "direct"
+                    for outcome in item.subsequent_returns
+                ),
+                "management_linked_return_count": sum(
+                    outcome.attribution.value == "management_linked"
+                    for outcome in item.subsequent_returns
+                ),
+                "non_attributable_return_count": sum(
+                    outcome.attribution.value in {"aggregate_only", "unattributed"}
+                    for outcome in item.subsequent_returns
+                ),
+                "has_destination_level_return_evidence": any(
+                    outcome.attribution.value == "direct"
+                    for outcome in item.subsequent_returns
+                ),
                 "return_attribution_counts": _counts(
                     outcome.attribution.value
                     for outcome in item.subsequent_returns
@@ -433,8 +464,11 @@ def _capital_allocation_metrics(
         "interpretation_guardrail": (
             "These are allocation-track extraction records, not value-creation "
             "verdicts. Immediate transaction or accounting effects are not "
-            "subsequent returns. Aggregate-only or unattributed returns cannot "
-            "establish that a specific destination created value."
+            "subsequent returns. Management-linked returns preserve management's "
+            "attribution but do not independently verify it. Aggregate-only or "
+            "unattributed returns, group-wide ROE/EPS/BVPS, and the execution of "
+            "a shareholder distribution cannot establish that a specific "
+            "destination created value."
         ),
     }
 
