@@ -410,11 +410,15 @@ def validate_japanese(
                 )
                 continue
             model_pattern = re.escape(evidence.source_filename) + r":s\d{4}"
+            source_record_pattern = (
+                re.escape(evidence.source_filename) + r":r\d{4}"
+            )
             repair_pattern = (
                 re.escape(evidence.source_filename) + r":r\d{4}-[0-9a-f]{8}"
             )
             if not (
                 re.fullmatch(model_pattern, evidence.evidence_id)
+                or re.fullmatch(source_record_pattern, evidence.evidence_id)
                 or re.fullmatch(repair_pattern, evidence.evidence_id)
             ):
                 _issue(

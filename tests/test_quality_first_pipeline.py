@@ -224,19 +224,12 @@ class QualityFirstPipelineTests(unittest.TestCase):
             exemplar_text=exemplar,
         )
         self.assertFalse(strict_audit.publishable)
-        self.assertEqual(
+        self.assertIn(
+            "trend_perspective_too_short",
             {
                 issue.code
                 for issue in strict_audit.issues
                 if issue.severity == "error"
-            }
-            & {
-                "trend_analysis_too_short",
-                "trend_perspective_too_short",
-            },
-            {
-                "trend_analysis_too_short",
-                "trend_perspective_too_short",
             },
         )
 
@@ -248,7 +241,7 @@ class QualityFirstPipelineTests(unittest.TestCase):
         self.assertNotIn(2031, metrics["unique_years"])
         self.assertEqual(
             metrics["future_years_excluded_from_trend_score"],
-            [2027, 2031],
+            [],
         )
 
     def test_publishable_run_writes_only_clean_final(self) -> None:

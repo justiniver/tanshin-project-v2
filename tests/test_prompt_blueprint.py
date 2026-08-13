@@ -5,13 +5,11 @@ import unittest
 from pathlib import Path
 
 from tanshin_pipeline.config import (
-    RESEARCH_MAX_BUSINESS_DRIVERS,
     RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
     RESEARCH_MAX_COMMITMENTS,
     RESEARCH_MAX_DISCLOSURES,
-    RESEARCH_MAX_EVIDENCE_RECORDS,
     RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    RESEARCH_MAX_MANAGEMENT_THEMES,
+    RESEARCH_MAX_SOURCE_RECORDS,
 )
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.prompts import (
@@ -28,8 +26,8 @@ from tanshin_pipeline.request_builder import (
 from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
-    JapaneseModelResponse,
     JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
 )
 from tanshin_pipeline.selection import select_filings
 from tests.helpers import fake_research_dossier
@@ -208,54 +206,37 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Translate company.overview", prompt)
 
     def test_model_facing_schema_fields_have_descriptions(self) -> None:
-        analysis_schema = JapaneseModelResponse.model_json_schema()
+        analysis_schema = JapaneseSynthesisResponse.model_json_schema()
         research_schema = JapaneseResearchDossier.model_json_schema()
         translation_schema = EnglishTranslationPatch.model_json_schema()
+        self.assertIn("source_records", research_schema["properties"])
         self.assertIn("filing_coverage", research_schema["properties"])
         self.assertIn("financial_observations", research_schema["properties"])
         self.assertIn("commentary_observations", research_schema["properties"])
         self.assertIn("disclosures", research_schema["properties"])
+        self.assertNotIn("evidence", research_schema["properties"])
+        self.assertNotIn("management_consistency", research_schema["properties"])
         self.assertIn(
             "coverage_gaps",
             research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
         )
         self.assertIn(
             "description",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"],
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
+                "body_ja"
+            ],
         )
         self.assertIn(
             "description",
-            analysis_schema["$defs"]["EvidenceRecord"]["properties"]["pdf_page"],
+            research_schema["$defs"]["ResearchSourceRecord"]["properties"][
+                "pdf_page"
+            ],
         )
         self.assertIn(
             "description",
-            analysis_schema["$defs"]["ModelManagementConsistencyComponent"][
-                "properties"
-            ]["rating"],
-        )
-        self.assertIn(
-            "counterevidence",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
+                "source_record_ids"
             ],
-        )
-        self.assertIn(
-            "early, middle, and recent periods",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
-            ],
-        )
-        self.assertIn(
-            "before, transition, and current condition",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
-            ],
-        )
-        self.assertIn(
-            "same scope and time horizon",
-            analysis_schema["$defs"]["ModelManagementConsistencyComponent"][
-                "properties"
-            ]["rationale_ja"]["description"],
         )
         self.assertIn(
             "description",
@@ -278,45 +259,30 @@ class PromptBlueprintTests(unittest.TestCase):
         spec = build_research_spec(REPOSITORY_ROOT, manifest)
         normalized_prompt = " ".join(spec.prompt.split())
         provider_properties = spec.response_schema["properties"]
-        self.assertNotIn("maxItems", provider_properties["evidence"])
+        self.assertNotIn("maxItems", provider_properties["source_records"])
         self.assertNotIn(
             "maxItems",
             provider_properties["financial_observations"],
         )
-        self.assertEqual(
-            spec.response_schema["$defs"]["ModelManagementConsistency"][
-                "properties"
-            ]["components"]["maxItems"],
-            4,
-        )
         self.assertIn(
-            f"hard dossier maximum of\n  {RESEARCH_MAX_EVIDENCE_RECORDS}",
+            f"at most {RESEARCH_MAX_SOURCE_RECORDS} source records",
             spec.prompt,
         )
         for ceiling in (
             RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
             RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
             RESEARCH_MAX_DISCLOSURES,
-            RESEARCH_MAX_BUSINESS_DRIVERS,
             RESEARCH_MAX_COMMITMENTS,
-            RESEARCH_MAX_MANAGEMENT_THEMES,
         ):
             self.assertIn(str(ceiling), spec.prompt)
-        self.assertIn("forecast anchor", spec.prompt)
+        self.assertIn("comparable annual anchor", spec.prompt)
         self.assertIn(
-            "current-year actual and next-year original forecast",
+            "current-year actual and the next",
             spec.prompt,
         )
-        self.assertIn(
-            "2-3 longitudinal comparison tracks",
-            spec.prompt,
-        )
-        self.assertIn(
-            "do not default every component to the same rating",
-            normalized_prompt,
-        )
-        self.assertIn("All requested counts are upper bounds", spec.prompt)
-        self.assertNotIn("8-15 decision-useful evidence", spec.prompt)
+        self.assertIn("counts are ceilings, not quotas", normalized_prompt)
+        self.assertIn("Do not return business-driver rankings", spec.prompt)
+        self.assertIn("management-consistency ratings", RESEARCH_SYSTEM_PROMPT)
 
 
 if __name__ == "__main__":

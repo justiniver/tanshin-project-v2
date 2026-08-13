@@ -154,11 +154,11 @@ class ValidationRenderingTests(unittest.TestCase):
         en = render_english(self.analysis, self.translation)
         self.assertIn("## 1. エグゼクティブサマリー", ja)
         self.assertIn("### 資本配分の変化", ja)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", ja)
+        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", ja)
         self.assertIn("## 1. Executive summary", en)
         self.assertIn("### Capital-allocation developments", en)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", en)
-        self.assertIn(self.analysis.evidence[0].exact_quote_ja, en)
+        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", en)
+        self.assertNotIn(self.analysis.evidence[0].exact_quote_ja, en)
         self.assertNotIn(
             self.translation.evidence_translations[0].quote_en,
             en,
@@ -256,7 +256,7 @@ class ValidationRenderingTests(unittest.TestCase):
         changed = self.translation.model_copy(deep=True)
         changed.evidence_translations = []
         rendered = render_english(self.analysis, changed)
-        self.assertIn(self.analysis.evidence[0].exact_quote_ja, rendered)
+        self.assertNotIn(self.analysis.evidence[0].exact_quote_ja, rendered)
         self.assertNotIn("[English translation unavailable]", rendered)
         validation = validate_english(changed, self.analysis, self.manifest)
         self.assertTrue(validation.publishable)
@@ -289,7 +289,7 @@ class ValidationRenderingTests(unittest.TestCase):
         self.assertGreater(warning_only.warning_count, 0)
         draft = render_japanese_draft(self.analysis, warning_only)
         self.assertNotIn("[!WARNING]", draft)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", draft)
+        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", draft)
 
     def test_offline_comparison_rubric(self) -> None:
         generated = render_english(self.analysis, self.translation)
@@ -308,7 +308,6 @@ class ValidationRenderingTests(unittest.TestCase):
                 "executive_breadth",
                 "analytical_depth",
                 "trend_specificity",
-                "evidence_density",
                 "tone",
                 "repetition",
                 "readability",

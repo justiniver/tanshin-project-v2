@@ -29,7 +29,8 @@ TANSHIN PIPELINE WORKING RULES
    notation, and per-share amounts as forms such as ¥95 per share. Preserve
    economic value within display precision, scale, sign, percentages, margins,
    payout ratios, and statement type; never perform foreign-exchange conversion.
-   English evidence ledgers render the original Japanese quotations.
+   Reader-facing reports do not render inline citations or evidence ledgers.
+   Lightweight source provenance remains in structured diagnostic artifacts.
 
 7. Keep model names as source constants in tanshin_pipeline/config.py. The .env
    file is credentials-only and may contain GEMINI_API_KEY, GEMINI_API_KEY2,
@@ -44,10 +45,12 @@ TANSHIN PIPELINE WORKING RULES
     combined estimated input and maximum-output allowance reaches 225,000
     tokens, leaving 10% headroom below the 250,000-token planning limit.
     Research is coverage-first: every selected filing receives an explicit
-    coverage record, while Python derives forecast, target, commentary-change,
-    and management-consistency metrics before the synthesis request.
-    Keep the research dossier bounded and reuse shared evidence IDs; requested
-    counts are ceilings rather than quotas.
+    coverage record, while Python derives forecast, target, and
+    commentary-change metrics before the synthesis request. Request 1 extracts
+    filing-specific information and does not rank business drivers, decide
+    longitudinal themes, score management, or draft final conclusions.
+    Keep the research dossier bounded and reuse lightweight source records;
+    requested counts are ceilings rather than quotas.
     Within that bounded dossier, prioritize comparable annual forecast-result
     pairs, recurring management-commentary tracks, and commitments with later
     outcomes over broad historical table duplication, miscellaneous boilerplate,

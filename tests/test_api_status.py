@@ -74,9 +74,9 @@ class ApiStatusTests(unittest.TestCase):
             )
             self.assertEqual(
                 read_json(prepared.paths.research_metrics)[
-                    "business_drivers"
-                ]["total"],
-                1,
+                    "coverage"
+                ]["source_records"],
+                len(dossier.source_records),
             )
             status = read_json(prepared.paths.research_api_status)
             self.assertEqual(status["state"], "SUCCESS")
@@ -86,11 +86,11 @@ class ApiStatusTests(unittest.TestCase):
         self,
     ) -> None:
         payload = fake_research_dossier(REPOSITORY_ROOT).model_dump(mode="json")
-        evidence = payload["evidence"][0]
+        source_record = payload["source_records"][0]
         payload["financial_observations"] = [
             {
                 "observation_id": "diagnostic-only-mismatch",
-                "source_filename": evidence["source_filename"],
+                "source_filename": source_record["source_filename"],
                 "metric": "revenue",
                 "metric_label_ja": "売上高",
                 "scope": "consolidated",
@@ -101,13 +101,13 @@ class ApiStatusTests(unittest.TestCase):
                 "target_fiscal_year": 2026,
                 "target_period": "FY",
                 "value_surface_ja": "999百万円",
-                "evidence_id": evidence["evidence_id"],
+                "source_record_id": source_record["record_id"],
             }
         ]
         coverage = next(
             item
             for item in payload["filing_coverage"]
-            if item["source_filename"] == evidence["source_filename"]
+            if item["source_filename"] == source_record["source_filename"]
         )
         coverage["financial_observation_ids"] = [
             "diagnostic-only-mismatch"

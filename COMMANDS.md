@@ -2,8 +2,11 @@
 
 All commands first show the selected PDFs, models, and maximum estimated cost,
 then ask whether to proceed and whether to generate English. A Japanese report
-uses two requests: a PDF-backed research dossier followed by a dossier-backed
-analytical synthesis. English translation is an optional third request.
+uses two requests: a PDF-backed per-filing extraction dossier followed by a
+dossier-backed analytical synthesis. The first request does not draft
+conclusions or score management, and the rendered reports do not include inline
+citations or an evidence ledger. English translation is an optional third
+request.
 
 Model names are fixed in `tanshin_pipeline/config.py`. `.env` contains only
 `GEMINI_API_KEY`, `GEMINI_API_KEY2`, and `OPENAI_API_KEY`.

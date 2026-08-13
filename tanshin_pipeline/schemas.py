@@ -434,6 +434,40 @@ class EvidenceRecord(StrictModel):
     )
 
 
+class ResearchSourceRecord(BaseModel):
+    """Lightweight provenance attached to extracted filing information."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    record_id: NonEmpty = Field(
+        description=(
+            "Stable unique source-record ID used only to connect synthesis "
+            "conclusions to extracted filing information."
+        )
+    )
+    source_filename: NonEmpty = Field(
+        description="Exact filename of the selected filing."
+    )
+    pdf_page: int = Field(
+        ge=1,
+        description=(
+            "Physical PDF page where the information was found. This is "
+            "lightweight provenance, not a request for citation-ready quotation."
+        ),
+    )
+    period_label_ja: NonEmpty
+    period_label_en: NonEmpty
+    statement_type: StatementType
+    source_section: NonEmpty
+    summary_ja: NonEmpty = Field(
+        description=(
+            "Concise faithful summary of the useful source information. Exact "
+            "quotation boundaries and verbatim transcription are not required."
+        )
+    )
+    tags: list[str] = Field(default_factory=list)
+
+
 class ResearchFilingCoverage(BaseModel):
     """Coverage ledger proving that every selected filing was inspected."""
 
@@ -447,15 +481,16 @@ class ResearchFilingCoverage(BaseModel):
     period_label_ja: NonEmpty
     is_latest: bool
     coverage_status: FilingCoverageStatus
-    management_discussion_evidence_ids: list[NonEmpty]
-    outlook_evidence_ids: list[NonEmpty]
-    segment_evidence_ids: list[NonEmpty]
-    cash_flow_evidence_ids: list[NonEmpty]
-    capital_allocation_evidence_ids: list[NonEmpty]
-    footnote_evidence_ids: list[NonEmpty]
+    management_discussion_record_ids: list[NonEmpty]
+    outlook_record_ids: list[NonEmpty]
+    segment_record_ids: list[NonEmpty]
+    cash_flow_record_ids: list[NonEmpty]
+    capital_allocation_record_ids: list[NonEmpty]
+    footnote_record_ids: list[NonEmpty]
     financial_observation_ids: list[NonEmpty]
     commentary_observation_ids: list[NonEmpty]
     disclosure_ids: list[NonEmpty]
+    commitment_ids: list[NonEmpty]
     coverage_gaps: list[str] = Field(
         description=(
             "Concise missing or unavailable categories. Use an empty list when "
@@ -494,11 +529,11 @@ class ResearchFinancialObservation(BaseModel):
     target_period: FilingPeriod
     value_surface_ja: NonEmpty = Field(
         description=(
-            "Exact monetary, percentage, per-share, count, or ratio substring "
-            "as written in the cited evidence."
+            "Monetary, percentage, per-share, count, or ratio surface as "
+            "written in the filing."
         )
     )
-    evidence_id: NonEmpty
+    source_record_id: NonEmpty
 
 
 class ResearchCommentaryObservation(BaseModel):
@@ -523,7 +558,7 @@ class ResearchCommentaryObservation(BaseModel):
     tone: CommentaryTone
     intensity: CommentaryIntensity
     summary_ja: NonEmpty
-    evidence_ids: list[NonEmpty] = Field(min_length=1)
+    source_record_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class ResearchDisclosureRecord(BaseModel):
@@ -538,7 +573,7 @@ class ResearchDisclosureRecord(BaseModel):
     label_ja: NonEmpty
     summary_ja: NonEmpty
     importance: Literal["primary", "secondary"]
-    evidence_ids: list[NonEmpty] = Field(min_length=1)
+    source_record_ids: list[NonEmpty] = Field(min_length=1)
 
 
 class ResearchBusinessDriver(BaseModel):
@@ -579,6 +614,9 @@ class ResearchCommitmentRecord(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     commitment_id: NonEmpty
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period_label_ja: NonEmpty
     commitment_type: CommitmentType
     statement_period_ja: NonEmpty
     commitment_ja: NonEmpty
@@ -592,12 +630,13 @@ class ResearchCommitmentRecord(BaseModel):
     )
     revision_direction: RevisionDirection
     forecast_posture: ForecastPosture
-    evidence_ids: list[NonEmpty] = Field(
+    source_record_ids: list[NonEmpty] = Field(
         min_length=1,
         description=(
-            "Evidence for the original statement and, when observable, its "
-            "revision or later outcome. Do not duplicate an ordinary annual "
-            "numeric forecast already represented by paired financial observations."
+            "Source records for the original statement and, when explicitly "
+            "disclosed, its revision or later outcome. Do not duplicate an "
+            "ordinary annual numeric forecast already represented by paired "
+            "financial observations."
         ),
     )
 
@@ -623,21 +662,18 @@ class ResearchThemeRecord(BaseModel):
 
 
 class JapaneseResearchDossier(BaseModel):
-    """PDF-backed research output consumed by the separate synthesis request."""
+    """PDF-backed extraction output consumed by the synthesis request."""
 
     model_config = ConfigDict(extra="ignore")
 
     schema_version: NonEmpty
     identity: CompanyIdentity
-    evidence: list[EvidenceRecord] = Field(min_length=1)
+    source_records: list[ResearchSourceRecord] = Field(min_length=1)
     filing_coverage: list[ResearchFilingCoverage] = Field(min_length=1)
     financial_observations: list[ResearchFinancialObservation]
     commentary_observations: list[ResearchCommentaryObservation]
     disclosures: list[ResearchDisclosureRecord]
-    business_drivers: list[ResearchBusinessDriver]
     commitments: list[ResearchCommitmentRecord] = Field(default_factory=list)
-    management_themes: list[ResearchThemeRecord] = Field(default_factory=list)
-    management_consistency: ModelManagementConsistency
     research_notes: list[str] = Field(default_factory=list)
 
 
@@ -711,6 +747,63 @@ class ModelAnalysisClaim(BaseModel):
     )
 
 
+class SynthesisAnalysisClaim(BaseModel):
+    """Analytical claim linked to lightweight extraction records."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    claim_id: NonEmpty
+    section: SectionKey
+    order: int = Field(ge=1)
+    headline_ja: NonEmpty = Field(
+        description="Concise analytical conclusion in Japanese."
+    )
+    body_ja: NonEmpty = Field(
+        description=(
+            "Investor-oriented Japanese analysis that explains the conclusion, "
+            "period contrast, significance, and material uncertainty without "
+            "duplicating other claims."
+        )
+    )
+    source_record_ids: list[NonEmpty] = Field(
+        min_length=1,
+        description=(
+            "IDs of extracted source records used for this conclusion. These "
+            "links are internal provenance and are not rendered as citations."
+        ),
+    )
+    statement_type: StatementType
+    is_inference: bool = False
+    causal: bool = False
+
+
+class SynthesisManagementConsistencyComponent(BaseModel):
+    """One synthesis-stage management-consistency assessment."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    dimension: ManagementConsistencyDimension
+    rating: int | None = Field(ge=0, le=4)
+    evidence_sufficiency: Literal["sufficient", "insufficient"]
+    rationale_ja: NonEmpty
+    source_record_ids: list[NonEmpty] = Field(
+        description=(
+            "Extraction records supporting the rating, including contrary "
+            "information where available."
+        )
+    )
+
+
+class SynthesisManagementConsistency(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    components: list[SynthesisManagementConsistencyComponent] = Field(
+        min_length=4,
+        max_length=4,
+    )
+    overall_rationale_ja: NonEmpty
+
+
 class JapaneseModelResponse(BaseModel):
     """Lightweight schema returned by Gemini before local normalization."""
 
@@ -758,8 +851,8 @@ class JapaneseSynthesisResponse(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     schema_version: NonEmpty
-    identity: CompanyIdentity
-    claims: list[ModelAnalysisClaim] = Field(min_length=1)
+    claims: list["SynthesisAnalysisClaim"] = Field(min_length=1)
+    management_consistency: "SynthesisManagementConsistency"
     model_notes: list[str] = Field(default_factory=list)
 
 
@@ -1168,26 +1261,26 @@ def materialize_japanese_synthesis(
     dossier: JapaneseResearchDossier,
     response: JapaneseSynthesisResponse,
 ) -> JapaneseAnalysis:
-    """Combine dossier evidence with synthesis prose into the internal schema."""
+    """Combine extracted source records with synthesis prose."""
 
-    if response.identity.model_dump(mode="json") != dossier.identity.model_dump(
-        mode="json"
-    ):
-        raise ValueError(
-            "The synthesis response changed the issuer or latest-filing identity."
-        )
-    evidence_ids = {item.evidence_id for item in dossier.evidence}
+    source_record_ids = {item.record_id for item in dossier.source_records}
     unresolved = sorted(
         {
-            evidence_id
+            record_id
             for claim in response.claims
-            for evidence_id in claim.evidence_ids
-            if evidence_id not in evidence_ids
+            for record_id in claim.source_record_ids
+            if record_id not in source_record_ids
+        }
+        | {
+            record_id
+            for component in response.management_consistency.components
+            for record_id in component.source_record_ids
+            if record_id not in source_record_ids
         }
     )
     if unresolved:
         raise ValueError(
-            "The synthesis response cited evidence IDs absent from the research "
+            "The synthesis response references source records absent from the research "
             f"dossier: {', '.join(unresolved)}."
         )
     assessment = ManagementConsistencyAssessment(
@@ -1204,25 +1297,49 @@ def materialize_japanese_synthesis(
                 ),
                 weight=0,
                 rationale_ja=component.rationale_ja,
-                evidence_ids=list(component.evidence_ids),
+                evidence_ids=list(component.source_record_ids),
             )
-            for component in dossier.management_consistency.components
+            for component in response.management_consistency.components
         ],
-        overall_rationale_ja=dossier.management_consistency.overall_rationale_ja,
+        overall_rationale_ja=(
+            response.management_consistency.overall_rationale_ja
+        ),
     )
+    provenance = [
+        EvidenceRecord(
+            evidence_id=item.record_id,
+            source_filename=item.source_filename,
+            pdf_page=item.pdf_page,
+            exact_quote_ja=item.summary_ja,
+            period_label_ja=item.period_label_ja,
+            period_label_en=item.period_label_en,
+            statement_type=item.statement_type,
+            source_section=item.source_section,
+            tags=list(item.tags),
+        )
+        for item in dossier.source_records
+    ]
     return JapaneseAnalysis(
         schema_version=response.schema_version,
-        identity=response.identity.model_copy(deep=True),
+        identity=dossier.identity.model_copy(deep=True),
         claims=[
             AnalysisClaim(
-                **claim.model_dump(mode="python"),
+                claim_id=claim.claim_id,
+                section=claim.section,
+                order=claim.order,
+                headline_ja=claim.headline_ja,
+                body_ja=claim.body_ja,
+                evidence_ids=list(claim.source_record_ids),
+                statement_type=claim.statement_type,
+                is_inference=claim.is_inference,
+                causal=claim.causal,
                 figures=[],
                 dates=[],
                 qualifiers=[],
             )
             for claim in response.claims
         ],
-        evidence=[item.model_copy(deep=True) for item in dossier.evidence],
+        evidence=provenance,
         management_consistency=assessment,
         model_notes=[
             *dossier.research_notes,

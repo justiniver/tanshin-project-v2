@@ -112,97 +112,6 @@
       "title": "DisclosureCategory",
       "type": "string"
     },
-    "DriverDirection": {
-      "enum": [
-        "positive",
-        "negative",
-        "mixed",
-        "uncertain"
-      ],
-      "title": "DriverDirection",
-      "type": "string"
-    },
-    "DriverNature": {
-      "enum": [
-        "structural",
-        "cyclical",
-        "company_specific",
-        "mixed"
-      ],
-      "title": "DriverNature",
-      "type": "string"
-    },
-    "EvidenceRecord": {
-      "additionalProperties": false,
-      "properties": {
-        "evidence_id": {
-          "description": "Unique stable ID formatted as <source_filename>:sNNNN, using a four-digit sequence within the response.",
-          "minLength": 1,
-          "title": "Evidence Id",
-          "type": "string"
-        },
-        "source_filename": {
-          "description": "Exact source_filename from the metadata preceding the cited PDF.",
-          "minLength": 1,
-          "title": "Source Filename",
-          "type": "string"
-        },
-        "pdf_page": {
-          "description": "Physical 1-indexed PDF page containing the quote; never a printed footer, contents-page, or document page label.",
-          "minimum": 1,
-          "title": "Pdf Page",
-          "type": "integer"
-        },
-        "exact_quote_ja": {
-          "description": "Verbatim contiguous Japanese sentence or short passage that contains the material facts, figures, dates, qualifiers, and causal wording used.",
-          "minLength": 1,
-          "title": "Exact Quote Ja",
-          "type": "string"
-        },
-        "period_label_ja": {
-          "description": "Concise Japanese period label suitable for a citation.",
-          "minLength": 1,
-          "title": "Period Label Ja",
-          "type": "string"
-        },
-        "period_label_en": {
-          "description": "Concise English equivalent of period_label_ja.",
-          "minLength": 1,
-          "title": "Period Label En",
-          "type": "string"
-        },
-        "statement_type": {
-          "$ref": "#/$defs/StatementType",
-          "description": "Nature of the quoted source statement, not the analyst's tone."
-        },
-        "source_section": {
-          "description": "Concise filing section or table name where the quote appears.",
-          "minLength": 1,
-          "title": "Source Section",
-          "type": "string"
-        },
-        "tags": {
-          "description": "Optional short topical labels; use an empty list when unnecessary.",
-          "items": {
-            "type": "string"
-          },
-          "title": "Tags",
-          "type": "array"
-        }
-      },
-      "required": [
-        "evidence_id",
-        "source_filename",
-        "pdf_page",
-        "exact_quote_ja",
-        "period_label_ja",
-        "period_label_en",
-        "statement_type",
-        "source_section"
-      ],
-      "title": "EvidenceRecord",
-      "type": "object"
-    },
     "FilingCoverageStatus": {
       "enum": [
         "complete",
@@ -287,179 +196,6 @@
       "title": "ForecastVersion",
       "type": "string"
     },
-    "ManagementConsistencyDimension": {
-      "enum": [
-        "strategic_coherence",
-        "execution_follow_through",
-        "forecast_target_discipline",
-        "accountability_transparency"
-      ],
-      "title": "ManagementConsistencyDimension",
-      "type": "string"
-    },
-    "ModelManagementConsistency": {
-      "description": "Model inputs only; Python calculates the published score.",
-      "properties": {
-        "components": {
-          "description": "Exactly one component for each of the four required consistency dimensions.",
-          "items": {
-            "$ref": "#/$defs/ModelManagementConsistencyComponent"
-          },
-          "maxItems": 4,
-          "minItems": 4,
-          "title": "Components",
-          "type": "array"
-        },
-        "overall_rationale_ja": {
-          "description": "Concise synthesis of the company's management consistency across the selected trend period, including the strongest evidence for and against consistency and any important qualifications.",
-          "minLength": 1,
-          "title": "Overall Rationale Ja",
-          "type": "string"
-        }
-      },
-      "required": [
-        "components",
-        "overall_rationale_ja"
-      ],
-      "title": "ModelManagementConsistency",
-      "type": "object"
-    },
-    "ModelManagementConsistencyComponent": {
-      "description": "One model-rated input to the locally calculated consistency score.",
-      "properties": {
-        "dimension": {
-          "$ref": "#/$defs/ManagementConsistencyDimension",
-          "description": "Exact consistency dimension being assessed."
-        },
-        "rating": {
-          "anyOf": [
-            {
-              "maximum": 4,
-              "minimum": 0,
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "description": "Evidence-based ordinal rating: 0 materially inconsistent, 1 weak, 2 mixed, 3 generally consistent, or 4 highly consistent. Assign a best evidence-based rating whenever the selected longitudinal filings permit a defensible assessment. Use null only in the exceptional case where no defensible assessment can be made.",
-          "title": "Rating"
-        },
-        "evidence_sufficiency": {
-          "description": "Whether the selected filings provide enough longitudinal evidence to assign this component a substantive rating.",
-          "enum": [
-            "sufficient",
-            "insufficient"
-          ],
-          "title": "Evidence Sufficiency",
-          "type": "string"
-        },
-        "rationale_ja": {
-          "description": "Concise Japanese explanation comparing what management said with later actions, outcomes, revisions, or explanations. State both the strongest supporting evidence and any material counterevidence, and compare targets with results using the same scope and time horizon.",
-          "minLength": 1,
-          "title": "Rationale Ja",
-          "type": "string"
-        },
-        "evidence_ids": {
-          "description": "Evidence IDs from management-discussion passages that support the rating or explain why the evidence is insufficient.",
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Evidence Ids",
-          "type": "array"
-        }
-      },
-      "required": [
-        "dimension",
-        "rating",
-        "evidence_sufficiency",
-        "rationale_ja",
-        "evidence_ids"
-      ],
-      "title": "ModelManagementConsistencyComponent",
-      "type": "object"
-    },
-    "ResearchBusinessDriver": {
-      "description": "One comparable business driver extracted from the selected filings.",
-      "properties": {
-        "driver_id": {
-          "minLength": 1,
-          "title": "Driver Id",
-          "type": "string"
-        },
-        "canonical_tag": {
-          "description": "Short reusable driver category such as customer_demand, pricing, material_costs, labor_costs, interest_rates, foreign_exchange, utilization, regulation, technology_investment, or other.",
-          "minLength": 1,
-          "title": "Canonical Tag",
-          "type": "string"
-        },
-        "label_ja": {
-          "description": "Concise Japanese reader-facing driver label.",
-          "minLength": 1,
-          "title": "Label Ja",
-          "type": "string"
-        },
-        "direction": {
-          "$ref": "#/$defs/DriverDirection"
-        },
-        "importance": {
-          "enum": [
-            "primary",
-            "secondary"
-          ],
-          "title": "Importance",
-          "type": "string"
-        },
-        "nature": {
-          "$ref": "#/$defs/DriverNature"
-        },
-        "affected_area_ja": {
-          "description": "Business, segment, margin, cash-flow, or balance-sheet area affected.",
-          "minLength": 1,
-          "title": "Affected Area Ja",
-          "type": "string"
-        },
-        "summary_ja": {
-          "description": "Concise explanation of the operating or financial transmission mechanism, including material qualifications.",
-          "minLength": 1,
-          "title": "Summary Ja",
-          "type": "string"
-        },
-        "observed_periods_ja": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "minItems": 1,
-          "title": "Observed Periods Ja",
-          "type": "array"
-        },
-        "evidence_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "minItems": 1,
-          "title": "Evidence Ids",
-          "type": "array"
-        }
-      },
-      "required": [
-        "driver_id",
-        "canonical_tag",
-        "label_ja",
-        "direction",
-        "importance",
-        "nature",
-        "affected_area_ja",
-        "summary_ja",
-        "observed_periods_ja",
-        "evidence_ids"
-      ],
-      "title": "ResearchBusinessDriver",
-      "type": "object"
-    },
     "ResearchCommentaryObservation": {
       "description": "One filing-specific management-commentary observation.",
       "properties": {
@@ -506,13 +242,13 @@
           "title": "Summary Ja",
           "type": "string"
         },
-        "evidence_ids": {
+        "source_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
           "minItems": 1,
-          "title": "Evidence Ids",
+          "title": "Source Record Ids",
           "type": "array"
         }
       },
@@ -526,7 +262,7 @@
         "tone",
         "intensity",
         "summary_ja",
-        "evidence_ids"
+        "source_record_ids"
       ],
       "title": "ResearchCommentaryObservation",
       "type": "object"
@@ -537,6 +273,22 @@
         "commitment_id": {
           "minLength": 1,
           "title": "Commitment Id",
+          "type": "string"
+        },
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
           "type": "string"
         },
         "commitment_type": {
@@ -572,19 +324,22 @@
         "forecast_posture": {
           "$ref": "#/$defs/ForecastPosture"
         },
-        "evidence_ids": {
-          "description": "Evidence for the original statement and, when observable, its revision or later outcome. Do not duplicate an ordinary annual numeric forecast already represented by paired financial observations.",
+        "source_record_ids": {
+          "description": "Source records for the original statement and, when explicitly disclosed, its revision or later outcome. Do not duplicate an ordinary annual numeric forecast already represented by paired financial observations.",
           "items": {
             "minLength": 1,
             "type": "string"
           },
           "minItems": 1,
-          "title": "Evidence Ids",
+          "title": "Source Record Ids",
           "type": "array"
         }
       },
       "required": [
         "commitment_id",
+        "source_filename",
+        "fiscal_year",
+        "period_label_ja",
         "commitment_type",
         "statement_period_ja",
         "commitment_ja",
@@ -593,7 +348,7 @@
         "outcome_ja",
         "revision_direction",
         "forecast_posture",
-        "evidence_ids"
+        "source_record_ids"
       ],
       "title": "ResearchCommitmentRecord",
       "type": "object"
@@ -638,13 +393,13 @@
           "title": "Importance",
           "type": "string"
         },
-        "evidence_ids": {
+        "source_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
           "minItems": 1,
-          "title": "Evidence Ids",
+          "title": "Source Record Ids",
           "type": "array"
         }
       },
@@ -656,7 +411,7 @@
         "label_ja",
         "summary_ja",
         "importance",
-        "evidence_ids"
+        "source_record_ids"
       ],
       "title": "ResearchDisclosureRecord",
       "type": "object"
@@ -691,52 +446,52 @@
         "coverage_status": {
           "$ref": "#/$defs/FilingCoverageStatus"
         },
-        "management_discussion_evidence_ids": {
+        "management_discussion_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Management Discussion Evidence Ids",
+          "title": "Management Discussion Record Ids",
           "type": "array"
         },
-        "outlook_evidence_ids": {
+        "outlook_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Outlook Evidence Ids",
+          "title": "Outlook Record Ids",
           "type": "array"
         },
-        "segment_evidence_ids": {
+        "segment_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Segment Evidence Ids",
+          "title": "Segment Record Ids",
           "type": "array"
         },
-        "cash_flow_evidence_ids": {
+        "cash_flow_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Cash Flow Evidence Ids",
+          "title": "Cash Flow Record Ids",
           "type": "array"
         },
-        "capital_allocation_evidence_ids": {
+        "capital_allocation_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Capital Allocation Evidence Ids",
+          "title": "Capital Allocation Record Ids",
           "type": "array"
         },
-        "footnote_evidence_ids": {
+        "footnote_record_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Footnote Evidence Ids",
+          "title": "Footnote Record Ids",
           "type": "array"
         },
         "financial_observation_ids": {
@@ -763,6 +518,14 @@
           "title": "Disclosure Ids",
           "type": "array"
         },
+        "commitment_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Commitment Ids",
+          "type": "array"
+        },
         "coverage_gaps": {
           "description": "Concise missing or unavailable categories. Use an empty list when coverage is complete; never silently omit an unavailable category.",
           "items": {
@@ -779,15 +542,16 @@
         "period_label_ja",
         "is_latest",
         "coverage_status",
-        "management_discussion_evidence_ids",
-        "outlook_evidence_ids",
-        "segment_evidence_ids",
-        "cash_flow_evidence_ids",
-        "capital_allocation_evidence_ids",
-        "footnote_evidence_ids",
+        "management_discussion_record_ids",
+        "outlook_record_ids",
+        "segment_record_ids",
+        "cash_flow_record_ids",
+        "capital_allocation_record_ids",
+        "footnote_record_ids",
         "financial_observation_ids",
         "commentary_observation_ids",
         "disclosure_ids",
+        "commitment_ids",
         "coverage_gaps"
       ],
       "title": "ResearchFilingCoverage",
@@ -849,14 +613,14 @@
           "$ref": "#/$defs/FilingPeriod"
         },
         "value_surface_ja": {
-          "description": "Exact monetary, percentage, per-share, count, or ratio substring as written in the cited evidence.",
+          "description": "Monetary, percentage, per-share, count, or ratio surface as written in the filing.",
           "minLength": 1,
           "title": "Value Surface Ja",
           "type": "string"
         },
-        "evidence_id": {
+        "source_record_id": {
           "minLength": 1,
-          "title": "Evidence Id",
+          "title": "Source Record Id",
           "type": "string"
         }
       },
@@ -873,69 +637,75 @@
         "target_fiscal_year",
         "target_period",
         "value_surface_ja",
-        "evidence_id"
+        "source_record_id"
       ],
       "title": "ResearchFinancialObservation",
       "type": "object"
     },
-    "ResearchThemeRecord": {
-      "description": "A compact synthesis of an already evidenced longitudinal theme.",
+    "ResearchSourceRecord": {
+      "description": "Lightweight provenance attached to extracted filing information.",
       "properties": {
-        "theme_id": {
+        "record_id": {
+          "description": "Stable unique source-record ID used only to connect synthesis conclusions to extracted filing information.",
           "minLength": 1,
-          "title": "Theme Id",
+          "title": "Record Id",
           "type": "string"
         },
-        "label_ja": {
+        "source_filename": {
+          "description": "Exact filename of the selected filing.",
           "minLength": 1,
-          "title": "Label Ja",
+          "title": "Source Filename",
           "type": "string"
         },
-        "development": {
-          "$ref": "#/$defs/ThemeDevelopment"
+        "pdf_page": {
+          "description": "Physical PDF page where the information was found. This is lightweight provenance, not a request for citation-ready quotation.",
+          "minimum": 1,
+          "title": "Pdf Page",
+          "type": "integer"
         },
-        "early_period_ja": {
+        "period_label_ja": {
           "minLength": 1,
-          "title": "Early Period Ja",
+          "title": "Period Label Ja",
           "type": "string"
         },
-        "middle_period_ja": {
+        "period_label_en": {
           "minLength": 1,
-          "title": "Middle Period Ja",
+          "title": "Period Label En",
           "type": "string"
         },
-        "recent_period_ja": {
+        "statement_type": {
+          "$ref": "#/$defs/StatementType"
+        },
+        "source_section": {
           "minLength": 1,
-          "title": "Recent Period Ja",
+          "title": "Source Section",
           "type": "string"
         },
-        "interpretation_ja": {
-          "description": "What remained consistent or changed, what management subsequently did, and what outcome or unresolved tension is visible.",
+        "summary_ja": {
+          "description": "Concise faithful summary of the useful source information. Exact quotation boundaries and verbatim transcription are not required.",
           "minLength": 1,
-          "title": "Interpretation Ja",
+          "title": "Summary Ja",
           "type": "string"
         },
-        "evidence_ids": {
+        "tags": {
           "items": {
-            "minLength": 1,
             "type": "string"
           },
-          "minItems": 1,
-          "title": "Evidence Ids",
+          "title": "Tags",
           "type": "array"
         }
       },
       "required": [
-        "theme_id",
-        "label_ja",
-        "development",
-        "early_period_ja",
-        "middle_period_ja",
-        "recent_period_ja",
-        "interpretation_ja",
-        "evidence_ids"
+        "record_id",
+        "source_filename",
+        "pdf_page",
+        "period_label_ja",
+        "period_label_en",
+        "statement_type",
+        "source_section",
+        "summary_ja"
       ],
-      "title": "ResearchThemeRecord",
+      "title": "ResearchSourceRecord",
       "type": "object"
     },
     "RevisionDirection": {
@@ -960,21 +730,9 @@
       ],
       "title": "StatementType",
       "type": "string"
-    },
-    "ThemeDevelopment": {
-      "enum": [
-        "persistent",
-        "introduced",
-        "strengthened",
-        "changed",
-        "deprioritized",
-        "abandoned"
-      ],
-      "title": "ThemeDevelopment",
-      "type": "string"
     }
   },
-  "description": "PDF-backed research output consumed by the separate synthesis request.",
+  "description": "PDF-backed extraction output consumed by the synthesis request.",
   "properties": {
     "schema_version": {
       "minLength": 1,
@@ -984,12 +742,12 @@
     "identity": {
       "$ref": "#/$defs/CompanyIdentity"
     },
-    "evidence": {
+    "source_records": {
       "items": {
-        "$ref": "#/$defs/EvidenceRecord"
+        "$ref": "#/$defs/ResearchSourceRecord"
       },
       "minItems": 1,
-      "title": "Evidence",
+      "title": "Source Records",
       "type": "array"
     },
     "filing_coverage": {
@@ -1021,29 +779,12 @@
       "title": "Disclosures",
       "type": "array"
     },
-    "business_drivers": {
-      "items": {
-        "$ref": "#/$defs/ResearchBusinessDriver"
-      },
-      "title": "Business Drivers",
-      "type": "array"
-    },
     "commitments": {
       "items": {
         "$ref": "#/$defs/ResearchCommitmentRecord"
       },
       "title": "Commitments",
       "type": "array"
-    },
-    "management_themes": {
-      "items": {
-        "$ref": "#/$defs/ResearchThemeRecord"
-      },
-      "title": "Management Themes",
-      "type": "array"
-    },
-    "management_consistency": {
-      "$ref": "#/$defs/ModelManagementConsistency"
     },
     "research_notes": {
       "items": {
@@ -1056,13 +797,11 @@
   "required": [
     "schema_version",
     "identity",
-    "evidence",
+    "source_records",
     "filing_coverage",
     "financial_observations",
     "commentary_observations",
-    "disclosures",
-    "business_drivers",
-    "management_consistency"
+    "disclosures"
   ],
   "title": "JapaneseResearchDossier",
   "type": "object"

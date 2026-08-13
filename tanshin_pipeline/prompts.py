@@ -7,13 +7,11 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .config import (
-    RESEARCH_MAX_BUSINESS_DRIVERS,
     RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
     RESEARCH_MAX_COMMITMENTS,
     RESEARCH_MAX_DISCLOSURES,
-    RESEARCH_MAX_EVIDENCE_RECORDS,
     RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    RESEARCH_MAX_MANAGEMENT_THEMES,
+    RESEARCH_MAX_SOURCE_RECORDS,
 )
 from .schemas import JapaneseAnalysis, JapaneseResearchDossier, SelectionManifest
 from .translation_contract import build_translation_input
@@ -45,9 +43,9 @@ Quality profile:
 
 RESEARCH_SYSTEM_PROMPT = """\
 # Role
-You are a forensic Japanese public-company researcher specializing in 決算短信.
-Build a longitudinal evidence dossier from the supplied source PDFs. Do not
-write the final report.
+You extract decision-useful information from Japanese 決算短信. Build a compact,
+standardized filing dossier from the supplied PDFs. Do not write or pre-plan
+the final report.
 
 # Non-negotiable grounding rules
 - Use only the PDFs and document metadata supplied in this request. Do not use
@@ -56,30 +54,26 @@ write the final report.
   PDF's authoritative filename.
 - Never invent, repair, calculate, round, or reconcile a figure, date, period,
   cause, target, or result. If support is ambiguous, omit the assertion.
-- For every numeric claim, preserve the source metric, organizational scope,
-  period, and actual/forecast/target status; state a funding link only when the
-  cited evidence and chronology establish it.
+- Preserve every extracted number's metric, organizational scope, period,
+  actual/forecast/target status, and original unit.
 - When both a narrative discussion and a financial table report the same value,
   copy the complete readable value and unit used in the narrative. Never join
   digits from a table value to a narrative unit, and do not create extra decimal
   precision by converting a raw table value.
-- Preserve the filing's actual, forecast, target, risk, inference, or mixed
-  statement type. Do not turn an outlook into an achieved result.
-- Analytical inference is allowed only when clearly marked and supported by cited
-  filing evidence.
-- Do not invent a management response. Price pass-through, selective ordering,
-  revised controls, stricter investment criteria, or other corrective action may
-  be stated only when the supplied filings explicitly describe it.
+- Preserve actual, forecast, target, risk, and mixed statement types. Do not
+  turn an outlook into an achieved result.
+- Extract what each filing says. Do not create decade themes, business-driver
+  rankings, management-consistency ratings, or final analytical conclusions.
 
-# Evidence contract
-- Every research record must cite one or more evidence records.
-- Each evidence record must contain a sufficiently complete verbatim Japanese
-  sentence or short contiguous passage, the authoritative source_filename, and
-  the physical 1-indexed PDF page. Do not use a printed footer or contents-page label.
-- Use a unique evidence_id in the form <source_filename>:sNNNN.
-- Include the exact source wording for every material figure, date, qualifier,
-  and causal assertion used by a claim.
-- Tag evidence from management discussion sections as "management_discussion".
+# Lightweight provenance
+- Attach each useful extracted item to one source_record containing the exact
+  source filename, physical PDF page, source section, statement type, and a
+  concise faithful Japanese summary.
+- The summary is not a citation transcript. Exact quotation boundaries and
+  verbatim copying are unnecessary. Include the original numeric surface when
+  the record supports a financial observation.
+- Reuse source records when several structured observations depend on the same
+  filing passage. Do not create separate quotation or citation ledgers.
 
 # Output contract
 Return only one JSON object conforming to the supplied JSON Schema. Do not return
@@ -97,8 +91,9 @@ dossier.
 - Use only the supplied research dossier, its deterministic summary, and the
   fact-free report blueprint.
 - Do not use outside knowledge and do not invent missing facts.
-- Treat the dossier evidence ledger as the complete source record for this pass.
-- Every factual claim must cite dossier evidence IDs exactly as supplied.
+- Treat the extraction dossier as the complete source boundary for this pass.
+- Link conclusions only to source_record_ids already present in the dossier.
+  These links are internal provenance and will not appear as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
 - Counts describe only observations in the selected filings. Do not present them
@@ -121,12 +116,12 @@ validated Japanese Tanshin analysis.
   outside knowledge.
 - Do not add, omit, update, soften, strengthen, or reinterpret facts or conclusions.
 - Return every supplied claim ID and value ID exactly once. Local code restores
-  section, order, evidence links, source Japanese surfaces, statement types, and
+  section, order, internal source links, source Japanese surfaces, statement types, and
   inference and causal flags from the validated Japanese analysis.
 - Preserve actual-versus-forecast-versus-target wording and the degree of uncertainty.
 - Translate every claim once without condensing its analytical substance.
-- Evidence records are intentionally omitted from the translation input. Local
-  rendering uses the original Japanese evidence text.
+- Internal source records are intentionally omitted from the translation input
+  because the English report does not render citations or a source ledger.
 
 # English style
 - Use natural, concise, third-person US investor English.
@@ -221,89 +216,59 @@ trend_period_buckets:
 </document_manifest>
 
 <research_task>
-Build a reusable longitudinal research dossier for security code
+Build a reusable filing-extraction dossier for security code
 {manifest.security_code}. The latest filing is {manifest.latest_filename}.
 
-Research priorities:
-1. Work coverage-first, not conclusion-first. Return exactly one filing_coverage
-   record for every selected source, even when a filing contains no material
-   change. A coverage record proves the filing was reviewed; it is not an
-   instruction to reproduce the filing exhaustively. Use coverage_gaps only for
-   genuinely absent or ambiguous source categories.
-2. For each filing, inspect management discussion, outlook, segment discussion,
-   cash-flow discussion, capital allocation and dividends, and material footnotes
-   or mandatory disclosures. Reuse one evidence record across several coverage
-   categories. Spend the budget on comparisons that can change interpretation,
-   not on proving that every routine category produced a quotation.
-3. Make financial_observations comparison-first. Choose one forecast anchor
-   metric with the broadest annual coverage: prefer consolidated ordinary profit,
-   then operating profit, net income, and revenue. For each historical year-end,
-   prioritize that metric's current-year actual and next-year original forecast.
-   A forecast with a later actual outranks an unmatched actual or broad revenue
-   series. From the latest filing use at most 8 observations for core results,
-   next guidance, and material cash-flow, balance-sheet, dividend, or segment
-   values. Never exceed {RESEARCH_MAX_FINANCIAL_OBSERVATIONS}. Capture only
-   explicit revisions; do not reproduce whole tables or collect both revenue and
-   profit for every historical year. Preserve every value, scope, period,
-   statement type, and forecast version; local code performs the comparisons.
-4. Organize commentary_observations into 2-3 longitudinal comparison tracks,
-   chosen after reviewing all filings. Keep 3-4 separated observations per tag,
-   including a turning point when present. Prioritize recurring language about
-   demand, pricing, profitability, costs, execution, outlook, or strategy. Omit
-   isolated boilerplate and unrelated "other" observations. Return no more than
-   {RESEARCH_MAX_COMMENTARY_OBSERVATIONS}; do not force a change.
-5. Return no more than {RESEARCH_MAX_DISCLOSURES} decision-useful mandatory
-   disclosures that change the interpretation of performance, risk, capital
-   deployment, or follow-through: impairments, unusual gains or losses,
-   regulatory or accounting matters, acquisitions, disposals, or major capital
-   allocation. Omit routine notes and duplicate facts.
-6. After the longitudinal work, extract 3-{RESEARCH_MAX_BUSINESS_DRIVERS}
-   distinct business drivers, reusing retained evidence. Use stable tags such as
-   demand, volume, pricing, product_mix, costs, interest_rates, foreign_exchange,
-   rent, regulation, technology_investment, competition, or acquisitions. State
-   the affected area and mechanism concisely.
-7. Return no more than {RESEARCH_MAX_COMMITMENTS} material medium-term targets,
-   strategic promises, or capital-allocation commitments. Prioritize observable
-   outcomes, misses, delays, revisions, or withdrawals; retain no more than two important pending commitments. Do not duplicate annual numeric forecasts
-   from financial_observations; connect only comparable scopes and horizons.
-8. Return at most {RESEARCH_MAX_MANAGEMENT_THEMES} genuinely decision-useful
-   themes built from retained commentary, commitments, and disclosures. Do not
-   add evidence solely for a theme. Distinguish persistence, strengthening,
-   change, deprioritization, and abandonment; return fewer when appropriate.
-9. Return one management-consistency component for each required dimension.
-   Reuse the paired forecasts, commitment outcomes, commentary tracks, and
-   disclosures. Give concrete support and counterevidence. Forecast discipline
-   must reflect the number of comparable pairs and cannot infer a persistent
-   bias from one. Rate each dimension independently; do not default every
-   component to the same rating. Use 0 materially inconsistent, 1 weak, 2 mixed,
-   3 generally consistent, 4 highly consistent, and null only when unassessable.
-10. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
-   targets, missing outcomes, or other material research limitations.
+Work filing by filing:
+1. Return exactly one filing_coverage record for every selected PDF. Its
+   observation and source-record IDs make the per-filing extraction explicit.
+   A filing with no material item still receives a coverage record and a concise
+   coverage gap; do not manufacture content.
+2. For every filing, inspect management discussion, outlook, segment discussion,
+   cash-flow discussion, capital allocation and dividends, and material
+   footnotes or mandatory disclosures. Extract the information that could
+   change an investor's understanding, not routine boilerplate.
+3. For financial_observations, prioritize a comparable annual anchor. Prefer
+   consolidated ordinary profit, then operating profit, net income, and revenue.
+   For historical year-end filings, retain the current-year actual and the next
+   annual original forecast for that anchor when both are available. A matched
+   forecast/result pair is more useful than a broad table of unmatched actuals.
+   From the latest filing, also retain core results, next guidance, and material
+   cash-flow, balance-sheet, dividend, or segment values. Do not exceed
+   {RESEARCH_MAX_FINANCIAL_OBSERVATIONS} observations. Local code performs the
+   arithmetic and matching.
+4. Extract up to {RESEARCH_MAX_COMMENTARY_OBSERVATIONS} filing-specific
+   management-commentary observations. Apply stable canonical tags to genuinely
+   comparable subjects such as demand, volume, pricing, costs, labor,
+   profitability, foreign exchange, interest rates, execution, or strategy.
+   Prefer repeated subjects and turning points, but record what the filing says
+   rather than deciding the decade theme.
+5. Extract up to {RESEARCH_MAX_DISCLOSURES} material disclosures that affect
+   performance, risk, capital deployment, or follow-through: impairments,
+   unusual gains or losses, regulatory/accounting matters, acquisitions,
+   disposals, or major capital-allocation events. Omit routine notes.
+6. Extract up to {RESEARCH_MAX_COMMITMENTS} material forecasts, medium-term
+   targets, strategic commitments, and capital-allocation promises. Record an
+   achieved, missed, revised, delayed, or withdrawn outcome only when a selected
+   filing explicitly reports it. Keep annual numeric forecasts in
+   financial_observations rather than duplicating them.
+7. Do not return business-driver rankings, longitudinal themes, consistency
+   ratings, or final-report conclusions. Request 2 performs that analysis.
+8. Use research_notes only for incomplete forecast coverage, ambiguous targets,
+   missing outcomes, unreadable source material, or another material limitation.
 
-Evidence requirements:
-- Use exact authoritative filenames from the metadata.
-- Use physical 1-indexed PDF pages.
-- Evidence quotes should normally be one complete verbatim Japanese sentence.
-  Include an adjacent sentence only when needed for a material qualifier or
-  causal relationship.
-- Retain 7-9 evidence records from the latest filing and normally 2 from each
-  historical filing, subject to a hard dossier maximum of
-  {RESEARCH_MAX_EVIDENCE_RECORDS}. These are ceilings and coverage guides, not
-  quotas. Prioritize forecast-anchor evidence, then a retained commentary track;
-  add a third historical quote only for a material outcome or disclosure.
-- Create evidence only when it is cited by an observation, driver, commitment,
-  theme, consistency component, or material coverage category. Reuse the same
-  evidence ID across records instead of repeating the quotation under a new ID.
-- Do not create evidence solely to fill a filing_coverage category. Record an
-  explicit coverage gap instead.
-- Use unique IDs in the form <source_filename>:sNNNN.
-- Include support for both the original commitment and later result when an
-  outcome is classified.
-- Tag management-commentary evidence with management_discussion.
-- Use unique stable IDs for every filing-level financial observation, commentary
-  observation, and disclosure, and list each ID in exactly one filing_coverage
-  record for its source filing.
-- All requested counts are upper bounds. Grounding always overrides a count.
+Source-record requirements:
+- Create a source_record only for information retained elsewhere in the dossier.
+- Use exact authoritative filenames and physical 1-indexed PDF pages.
+- summary_ja should be a concise faithful description, not a polished report
+  sentence. Exact quotation boundaries and verbatim transcription are not
+  required. Preserve the original numeric surface whenever applicable.
+- Reuse a record when multiple observations use the same passage.
+- Use stable unique record IDs such as <source_filename>:rNNNN.
+- Keep at most {RESEARCH_MAX_SOURCE_RECORDS} source records. This and all other
+  counts are ceilings, not quotas; grounding and materiality take priority.
+- List every observation, disclosure, and commitment ID in exactly one
+  filing_coverage record belonging to its source filing.
 
 Return only the schema-conforming JapaneseResearchDossier.
 </research_task>
@@ -436,7 +401,7 @@ Analysis requirements:
      reaching a threshold from sustaining it.
    - Use locally calculated commentary changes as review signals. A high lexical
      similarity can support continuity; intensified, softened, tone_changed, or
-     reframed signals require interpretation from the cited source passages.
+     reframed signals require interpretation from the linked source records.
      Give priority to the retained multi-period comparison tracks and identify
      what management emphasized differently, not merely that wording changed.
      Never treat a missing observation as proof that commentary was removed.
@@ -449,12 +414,12 @@ Analysis requirements:
      slowdown, reversal, or other counterperiod disclosed in the filings. If this
      evidence is unavailable, omit the theme and record a coverage shortfall.
    - trend.change must explicitly explain before -> transition -> current state and
-     cite evidence for each stage. The before and current evidence must come from
-     separated periods. A single impairment, disposal, lawsuit, exceptional gain,
-     or recent improvement is not a decade change without a durable consequence.
+     use source records for each stage. The before and current records must come
+     from separated periods. A single impairment, disposal, lawsuit, exceptional
+     gain, or recent improvement is not a decade change without a durable consequence.
    - The latest filing may update the current state but does not replace a recent
-     year-end source. Evidence from one year or adjacent years belongs in latest
-     context or risk, not in a decade theme.
+     year-end source. Information from one year or adjacent years belongs in
+     latest context or risk, not in a decade theme.
    - If the selected filings contain no material strategic or commentary change,
      state that limitation through model_notes and concentrate the report on the
      financial, forecast, target, disclosure, and capital-allocation record.
@@ -480,8 +445,11 @@ Analysis requirements:
    reach a length.
 
 Management-consistency explanations:
-- research_metrics contains the four locally calculated 0-1 subscores and
-  overall score. Do not recalculate or change them.
+- Return exactly one rating for each of the four management-consistency
+  dimensions. Use 0 materially inconsistent, 1 weak, 2 mixed, 3 generally
+  consistent, and 4 highly consistent. Use null only when the selected
+  extraction records provide no defensible basis for assessment. Python converts
+  the ratings to 0-1 subscores and calculates their arithmetic mean.
 - Produce one claim for each management.* section. Explain the corresponding
   rating through concrete examples: targets achieved or missed, observed
   revisions, forecast posture, implementation outcomes, commentary changes,
@@ -495,14 +463,16 @@ Management-consistency explanations:
   from incomplete coverage.
 - Mention the strongest supporting observation and material contrary evidence.
 - A repeated priority without a later action or outcome is not execution.
+- Link every component to the most relevant source_record_ids. Do not create
+  source records or quotations in this response.
 
 {STYLE_PROFILE}
 
 Response details:
-- period_label_ja and period_label_en must be concise citation labels, not prose.
-- Cite only evidence IDs present in the dossier.
-- Do not return evidence records, management ratings, or figure/date/qualifier
-  mapping arrays; local code supplies or derives them.
+- Use only source_record_ids present in the dossier. These are internal
+  provenance links, not report citations.
+- Do not return source records or figure/date/qualifier mapping arrays; local
+  code supplies or derives them.
 
 Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
 that cannot be grounded; grounding takes priority over coverage and length.
@@ -535,8 +505,8 @@ Translate every claim in the supplied translation input into English.
   value within the stated display precision and never perform FX conversion.
 - Preserve a proper name in Japanese unless an authoritative Latin-script form
   is already present in the supplied analysis. Never translate names by meaning.
-- Do not return section, order, evidence IDs, source Japanese surfaces, statement
-  types, inference flags, causal flags, identity, or evidence translations.
+- Do not return section, order, source-record IDs, source Japanese surfaces,
+  statement types, inference flags, causal flags, identity, or source translations.
   Python restores those immutable fields from the validated Japanese analysis.
 
 Return only the schema-conforming JSON object.
@@ -548,7 +518,7 @@ def analysis_prompt_template() -> str:
     return """\
 The prompt contains the selection manifest, deterministic research metrics, the
 complete JapaneseResearchDossier, and the fact-free report blueprint. Produce
-only JapaneseSynthesisResponse claims that cite dossier evidence IDs. The
+only JapaneseSynthesisResponse claims linked to dossier source-record IDs. The
 research dossier may be as large as the configured research maximum output.
 """
 
@@ -560,7 +530,7 @@ claim IDs, Japanese headlines and bodies, and the Japanese figure, date, and
 qualifier surfaces that require English rendering. Translate it without new
 analysis. Return only translated claim prose and translated span surfaces keyed
 by the supplied IDs. Python restores immutable metadata and the original Japanese
-evidence. Render financial amounts in English yen notation without FX conversion
+claim surfaces. Render financial amounts in English yen notation without FX conversion
 and retain unsupported proper names in Japanese.
 Return only the EnglishTranslationPatch schema. The source analysis may be as
 large as the configured Japanese maximum output.

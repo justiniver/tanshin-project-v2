@@ -55,8 +55,8 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("should be free when that key is eligible", readme)
         self.assertIn("paid-tier upper-bound", readme)
         self.assertNotIn("150 per USD", readme)
-        self.assertIn("original Japanese", readme)
-        self.assertIn("quotations. Gemini is not asked", readme)
+        self.assertIn("Neither language renders inline citations", readme)
+        self.assertIn("Lightweight\nsource provenance remains", readme)
         self.assertIn("otherwise the Japanese name is", readme)
         self.assertIn("retained rather than translated by meaning", readme)
         self.assertIn("uses their arithmetic mean", readme)
@@ -240,7 +240,7 @@ class DocumentationTests(unittest.TestCase):
             "Deterministic validation is intentionally non-gating",
             "Final quality review is manual",
             "A Japanese report",
-            "PDF-backed research dossier",
+            "PDF-backed per-filing extraction dossier",
             "`final_output/{security_code}/`",
             "`analysis_ja_{security_code}_{YYYYMMDD}.md`",
             "`analysis_en_{security_code}_{YYYYMMDD}.md`",

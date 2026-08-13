@@ -293,7 +293,7 @@ The runner:
 5. archives existing company outputs in a timestamped history directory while
    preserving their filenames;
 6. runs the first company's PDF-backed research request with one API attempt;
-7. stores the evidence dossier and prepares the Japanese synthesis offline;
+7. stores the filing-extraction dossier and prepares the Japanese synthesis offline;
 8. runs the synthesis request without resubmitting the PDFs;
 9. prepares that company's optional English translation;
 10. between consecutive Gemini stages using the same credential, waits
@@ -386,12 +386,14 @@ preflight rejects a selection if any PDF or the combined inline payload reaches
 50 MB. Sol uses low PDF image detail while retaining each PDF's extracted text.
 The research request is recorded in `request_plan_research.json`.
 
-The research pass builds a reusable, source-grounded dossier containing:
+The research pass is deliberately an extraction pass, not a preliminary
+analysis. It builds a reusable, source-grounded dossier containing:
 
 - company and reporting-period identity;
 - exactly one coverage record for every selected filing, including explicit
   gaps instead of silent omission;
-- a deduplicated evidence ledger with source filenames and physical PDF pages;
+- lightweight source records with source filenames, physical PDF pages, source
+  sections, statement types, and concise faithful summaries;
 - filing-specific financial observations for actual results, forecasts, targets,
   dividends, segment results, cash flow, and other decision-useful values;
 - filing-specific management-commentary observations under stable driver tags,
@@ -399,28 +401,25 @@ The research pass builds a reusable, source-grounded dossier containing:
   reframing can be compared;
 - material footnote and mandatory-disclosure records, including impairments,
   unusual gains or losses, regulatory matters, accounting changes, and risks;
-- short business-driver tags, direction, importance, affected area, and
-  operating or financial mechanism;
 - forecasts, medium-term targets, strategic commitments, later outcomes, and
   revisions observable in the selected filings;
-- forecast posture only where comparable guidance and later actual results are
-  available;
-- management themes across early, middle, and recent periods;
-- evidence-based inputs for the four management-consistency dimensions.
+- the original numeric surfaces needed for local forecast/result comparisons.
 
-The research response is deliberately compact so exact quotations and structured
-records do not crowd out later sections. It keeps at most 36 shared evidence
-records, 28 financial observations, 14 commentary observations, 6 material
-disclosures, 4 business drivers, 6 commitments, and 3 management themes.
-These are ceilings rather than quotas.
+Request 1 does not rank business drivers, decide decade themes, score management,
+or draft report conclusions. Those tasks belong to request 2. The research
+response is deliberately compact and does not require exact quotation
+transcription or citation-ready spans. It keeps at most 48 shared source
+records, 28 financial observations, 20 commentary observations, 8 material
+disclosures, and 8 commitments. These are ceilings rather than quotas.
 
 The information budget is intentionally comparison-first:
 
 - historical financial slots primarily capture one consistently available
   profitability anchor, pairing each year-end actual with the next annual
   forecast where available;
-- commentary slots form two or three recurring comparison tracks across early,
-  middle, and recent filings instead of collecting unrelated boilerplate;
+- commentary slots favor recurring comparison tracks and meaningful wording or
+  emphasis changes across early, middle, and recent filings instead of
+  collecting unrelated boilerplate;
 - commitment slots prioritize targets and promises with observable later
   outcomes, misses, delays, or revisions, with at most two important pending
   commitments;
@@ -430,22 +429,22 @@ The information budget is intentionally comparison-first:
 
 Broad historical revenue-and-profit duplication, miscellaneous commentary,
 routine footnotes, and themes that merely repeat other records are deliberately
-deprioritized. The same evidence ID is reused across coverage categories and
-analytical records whenever one source sentence supports several purposes.
+deprioritized. The same source record is reused across coverage categories and
+structured observations whenever one filing passage supports several purposes.
 
 Before the second request, Python matches comparable forecasts with later
 actuals, identifies explicit forecast revisions, reports the observed sample
 size and any conservative, optimistic, in-line, or mixed forecast signal,
 constructs the selected annual financial anchor series, summarizes target
 follow-through, and compares extracted management wording by recurring track.
-It also counts material disclosures and calculates the four 0–1
-management-consistency subscores. These calculations and their limitations are
-stored in `research_metrics.json`.
+It also counts material disclosures. These calculations and their limitations
+are stored in `research_metrics.json`.
 
 The second request receives the dossier, those deterministic comparisons, and
 the fact-free report blueprint. It receives no PDFs, performs no fresh
-arithmetic, and cannot add evidence. Its job is to rank material findings and
-write the final analytical claims, including:
+arithmetic, and cannot add source records. Its job is to rank material findings,
+assess the four management-consistency dimensions, and write the final
+analytical claims, including:
 
 - a concise, plain-language company overview;
 - latest-filing management takeaways;
@@ -477,10 +476,12 @@ to either analysis provider.
 
 ### Japanese normalization and rendering
 
-Local code normalizes the structured Japanese response, repairs supported PDF
-extraction issues when uniquely resolvable, derives stable evidence mappings,
-calculates management consistency, records an audit trail, and renders the
-Japanese Markdown.
+Local code converts request 2's source-record links into the richer internal
+representation used by normalization and diagnostics, derives supported numeric
+spans where possible, calculates management consistency, records an audit trail,
+and renders the Japanese Markdown. Source links remain in JSON artifacts for
+review but are not displayed as inline citations or as an evidence ledger in the
+Markdown.
 
 Report prose is never manually patched. Improvements belong in prompts,
 schemas, normalization, validation, or rendering.
@@ -498,17 +499,17 @@ The four components are:
 - forecast and target discipline;
 - accountability and transparency.
 
-The research pass supplies evidence-based component ratings plus filing-level
-commitment, outcome, financial, disclosure, and commentary records. Python
-resolves each rating's selected evidence, converts the four ratings to 0–1
-subscores, and uses their arithmetic mean before synthesis. Uneven period
+The synthesis pass supplies evidence-based component ratings after comparing the
+research dossier's commitment, outcome, financial, disclosure, and commentary
+records. Python resolves each rating's selected source records, converts the
+four ratings to 0–1 subscores, and uses their arithmetic mean. Uneven period
 coverage lowers the separately stored evidence-confidence diagnostic rather
 than erasing an otherwise supported subscore. A subscore remains blank only in
-the exceptional case where the research pass cannot make a defensible
-assessment or none of its evidence resolves. If no component can be assessed,
+the exceptional case where the synthesis pass cannot make a defensible
+assessment or none of its source records resolves. If no component can be assessed,
 the overall fallback is `0.50`.
-The synthesis pass writes a concise natural-language explanation beneath every
-subscore, including supporting and contrary evidence. The full calculation is stored in
+The synthesis pass also writes a concise natural-language explanation beneath
+every subscore, including supporting and contrary information. The full calculation is stored in
 `management_consistency.json`.
 
 ### English translation
@@ -521,7 +522,7 @@ secondary Gemini key. The stage receives a compact projection of the validated
 Japanese analysis, not the PDFs. That projection contains only issuer context,
 claim IDs, Japanese claim prose, and figure/date/qualifier surfaces that require
 English rendering. The model returns a translation patch; Python restores
-schema version, identity, section, ordering, evidence links, statement types,
+schema version, identity, section, ordering, internal source links, statement types,
 flags, and source Japanese surfaces from the same validated analysis snapshot.
 
 The analytical narrative and financial presentation are English. Statement
@@ -537,9 +538,10 @@ retain their original numeric values. Proper names use an authoritative
 Latin-script form only when it is supplied by the analysis; otherwise the Japanese name is
 retained rather than translated by meaning.
 
-The collapsed English evidence ledger displays the original Japanese
-quotations. Gemini is not asked to translate the evidence ledger, which avoids
-introducing monetary-scale and proper-name errors into the source record.
+Neither language renders inline citations or an evidence ledger. Lightweight
+source provenance remains available in the structured and diagnostic artifacts,
+so the model can stay grounded without making the reader-facing report carry
+citation mechanics.
 `analysis_en.normalized.json` is retained as a compatibility artifact but is a
 semantic pass-through copy, and `normalization_en.json` records
 `mode: model_rendered_english_financial_notation`.
@@ -630,13 +632,13 @@ Default validation is deliberately permissive and still flags high-signal
 conditions such as:
 
 - wrong security code, company identity, or latest filing;
-- duplicate or unresolved claim/evidence identities;
+- duplicate or unresolved claim/source-record identities;
 - unselected source files or impossible physical pages;
 - actual/forecast/target statement-type contradictions;
-- material Japanese/English claim-set or evidence-set changes;
+- material Japanese/English claim-set or internal-source-set changes;
 - unresolved references in rendered Markdown.
 
-Citation formatting, exact-quote boundaries, causal flags, section counts,
+Source-page discrepancies, summary boundaries, causal flags, section counts,
 length heuristics, and similar signals are normally warnings or suppressed
 diagnostics. The English validator converts both the original Japanese amount
 and the translated English yen expression to an exact yen value for comparison.
@@ -664,7 +666,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
 | `model_response_research.raw.json` | Raw research-provider response |
 | `research.structured.json` | Parsed PDF-grounded research dossier |
-| `research_metrics.json` | Filing coverage, forecast/actual comparisons, target follow-through, commentary changes, disclosures, drivers, themes, and consistency subscores |
+| `research_metrics.json` | Filing coverage, forecast/actual comparisons, target follow-through, commentary changes, disclosures, and extraction diagnostics |
 | `validation_research.json` | Non-gating research-dossier diagnostics; warnings never stop synthesis |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |
@@ -672,10 +674,10 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `analysis_en.structured.json` | Full English translation materialized locally from the model patch |
 | `analysis_en.normalized.json` | English compatibility copy with model-rendered yen notation |
 | `normalization_ja.json` / `normalization_en.json` | Normalization audit records |
-| `management_consistency.json` | Score inputs, subscores, evidence, and calculation |
+| `management_consistency.json` | Synthesis ratings, locally calculated subscores, source coverage, and calculation |
 | `validation_ja.json` / `validation_en.json` | Diagnostics and structural checks |
 | `report_status_ja.json` / `report_status_en.json` | Current report/run state |
-| `evidence_ledger.json` | Original Japanese evidence used by both reports |
+| `evidence_ledger.json` | Compatibility artifact containing internal Japanese source provenance; not rendered in either report |
 | `token_usage.json` | Model-reported usage for research, synthesis, and translation |
 | `cost.json` | Estimated and available actual cost information |
 | `run_metadata.json` | Models, manifest, mode, output path, and request count |
@@ -738,8 +740,8 @@ prepares the stored dossier for the separate synthesis stage.
 ```
 
 The comparison covers structure, section coverage, executive breadth,
-analytical depth, trend specificity, evidence density, tone, repetition,
-readability, and approximate length. Its score is advisory.
+analytical depth, trend specificity, tone, repetition, readability, and
+approximate length. Its score is advisory.
 
 ## Testing
 

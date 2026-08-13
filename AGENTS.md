@@ -116,9 +116,10 @@ normalization, validation, rendering, retry, and failure tests.
   that threshold, and forms such as `¥95 per share` for per-share amounts.
   Preserve economic value within display precision, scale, sign, percentages,
   margins, and ratios; never perform foreign-exchange conversion.
-- Render English-report evidence quotations from the original Japanese, and
-  preserve Japanese proper names whenever the source analysis does not provide
-  an authoritative Latin-script form.
+- Do not render inline citations or evidence ledgers in either report.
+  Preserve lightweight source provenance in structured artifacts, and preserve
+  Japanese proper names whenever the source analysis does not provide an
+  authoritative Latin-script form.
 - When a live evaluation is needed, stop and give the human the exact command,
   expected companies/files, maximum estimated cost in yen, and expected
   artifacts.

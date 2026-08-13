@@ -19,89 +19,59 @@ trend_period_buckets:
 </document_manifest>
 
 <research_task>
-Build a reusable longitudinal research dossier for security code
+Build a reusable filing-extraction dossier for security code
 1808. The latest filing is 01_2026_FY_tanshin.pdf.
 
-Research priorities:
-1. Work coverage-first, not conclusion-first. Return exactly one filing_coverage
-   record for every selected source, even when a filing contains no material
-   change. A coverage record proves the filing was reviewed; it is not an
-   instruction to reproduce the filing exhaustively. Use coverage_gaps only for
-   genuinely absent or ambiguous source categories.
-2. For each filing, inspect management discussion, outlook, segment discussion,
-   cash-flow discussion, capital allocation and dividends, and material footnotes
-   or mandatory disclosures. Reuse one evidence record across several coverage
-   categories. Spend the budget on comparisons that can change interpretation,
-   not on proving that every routine category produced a quotation.
-3. Make financial_observations comparison-first. Choose one forecast anchor
-   metric with the broadest annual coverage: prefer consolidated ordinary profit,
-   then operating profit, net income, and revenue. For each historical year-end,
-   prioritize that metric's current-year actual and next-year original forecast.
-   A forecast with a later actual outranks an unmatched actual or broad revenue
-   series. From the latest filing use at most 8 observations for core results,
-   next guidance, and material cash-flow, balance-sheet, dividend, or segment
-   values. Never exceed 28. Capture only
-   explicit revisions; do not reproduce whole tables or collect both revenue and
-   profit for every historical year. Preserve every value, scope, period,
-   statement type, and forecast version; local code performs the comparisons.
-4. Organize commentary_observations into 2-3 longitudinal comparison tracks,
-   chosen after reviewing all filings. Keep 3-4 separated observations per tag,
-   including a turning point when present. Prioritize recurring language about
-   demand, pricing, profitability, costs, execution, outlook, or strategy. Omit
-   isolated boilerplate and unrelated "other" observations. Return no more than
-   14; do not force a change.
-5. Return no more than 6 decision-useful mandatory
-   disclosures that change the interpretation of performance, risk, capital
-   deployment, or follow-through: impairments, unusual gains or losses,
-   regulatory or accounting matters, acquisitions, disposals, or major capital
-   allocation. Omit routine notes and duplicate facts.
-6. After the longitudinal work, extract 3-4
-   distinct business drivers, reusing retained evidence. Use stable tags such as
-   demand, volume, pricing, product_mix, costs, interest_rates, foreign_exchange,
-   rent, regulation, technology_investment, competition, or acquisitions. State
-   the affected area and mechanism concisely.
-7. Return no more than 6 material medium-term targets,
-   strategic promises, or capital-allocation commitments. Prioritize observable
-   outcomes, misses, delays, revisions, or withdrawals; retain no more than two important pending commitments. Do not duplicate annual numeric forecasts
-   from financial_observations; connect only comparable scopes and horizons.
-8. Return at most 3 genuinely decision-useful
-   themes built from retained commentary, commitments, and disclosures. Do not
-   add evidence solely for a theme. Distinguish persistence, strengthening,
-   change, deprioritization, and abandonment; return fewer when appropriate.
-9. Return one management-consistency component for each required dimension.
-   Reuse the paired forecasts, commitment outcomes, commentary tracks, and
-   disclosures. Give concrete support and counterevidence. Forecast discipline
-   must reflect the number of comparable pairs and cannot infer a persistent
-   bias from one. Rate each dimension independently; do not default every
-   component to the same rating. Use 0 materially inconsistent, 1 weak, 2 mixed,
-   3 generally consistent, 4 highly consistent, and null only when unassessable.
-10. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
-   targets, missing outcomes, or other material research limitations.
+Work filing by filing:
+1. Return exactly one filing_coverage record for every selected PDF. Its
+   observation and source-record IDs make the per-filing extraction explicit.
+   A filing with no material item still receives a coverage record and a concise
+   coverage gap; do not manufacture content.
+2. For every filing, inspect management discussion, outlook, segment discussion,
+   cash-flow discussion, capital allocation and dividends, and material
+   footnotes or mandatory disclosures. Extract the information that could
+   change an investor's understanding, not routine boilerplate.
+3. For financial_observations, prioritize a comparable annual anchor. Prefer
+   consolidated ordinary profit, then operating profit, net income, and revenue.
+   For historical year-end filings, retain the current-year actual and the next
+   annual original forecast for that anchor when both are available. A matched
+   forecast/result pair is more useful than a broad table of unmatched actuals.
+   From the latest filing, also retain core results, next guidance, and material
+   cash-flow, balance-sheet, dividend, or segment values. Do not exceed
+   28 observations. Local code performs the
+   arithmetic and matching.
+4. Extract up to 20 filing-specific
+   management-commentary observations. Apply stable canonical tags to genuinely
+   comparable subjects such as demand, volume, pricing, costs, labor,
+   profitability, foreign exchange, interest rates, execution, or strategy.
+   Prefer repeated subjects and turning points, but record what the filing says
+   rather than deciding the decade theme.
+5. Extract up to 8 material disclosures that affect
+   performance, risk, capital deployment, or follow-through: impairments,
+   unusual gains or losses, regulatory/accounting matters, acquisitions,
+   disposals, or major capital-allocation events. Omit routine notes.
+6. Extract up to 8 material forecasts, medium-term
+   targets, strategic commitments, and capital-allocation promises. Record an
+   achieved, missed, revised, delayed, or withdrawn outcome only when a selected
+   filing explicitly reports it. Keep annual numeric forecasts in
+   financial_observations rather than duplicating them.
+7. Do not return business-driver rankings, longitudinal themes, consistency
+   ratings, or final-report conclusions. Request 2 performs that analysis.
+8. Use research_notes only for incomplete forecast coverage, ambiguous targets,
+   missing outcomes, unreadable source material, or another material limitation.
 
-Evidence requirements:
-- Use exact authoritative filenames from the metadata.
-- Use physical 1-indexed PDF pages.
-- Evidence quotes should normally be one complete verbatim Japanese sentence.
-  Include an adjacent sentence only when needed for a material qualifier or
-  causal relationship.
-- Retain 7-9 evidence records from the latest filing and normally 2 from each
-  historical filing, subject to a hard dossier maximum of
-  36. These are ceilings and coverage guides, not
-  quotas. Prioritize forecast-anchor evidence, then a retained commentary track;
-  add a third historical quote only for a material outcome or disclosure.
-- Create evidence only when it is cited by an observation, driver, commitment,
-  theme, consistency component, or material coverage category. Reuse the same
-  evidence ID across records instead of repeating the quotation under a new ID.
-- Do not create evidence solely to fill a filing_coverage category. Record an
-  explicit coverage gap instead.
-- Use unique IDs in the form <source_filename>:sNNNN.
-- Include support for both the original commitment and later result when an
-  outcome is classified.
-- Tag management-commentary evidence with management_discussion.
-- Use unique stable IDs for every filing-level financial observation, commentary
-  observation, and disclosure, and list each ID in exactly one filing_coverage
-  record for its source filing.
-- All requested counts are upper bounds. Grounding always overrides a count.
+Source-record requirements:
+- Create a source_record only for information retained elsewhere in the dossier.
+- Use exact authoritative filenames and physical 1-indexed PDF pages.
+- summary_ja should be a concise faithful description, not a polished report
+  sentence. Exact quotation boundaries and verbatim transcription are not
+  required. Preserve the original numeric surface whenever applicable.
+- Reuse a record when multiple observations use the same passage.
+- Use stable unique record IDs such as <source_filename>:rNNNN.
+- Keep at most 48 source records. This and all other
+  counts are ceilings, not quotas; grounding and materiality take priority.
+- List every observation, disclosure, and commitment ID in exactly one
+  filing_coverage record belonging to its source filing.
 
 Return only the schema-conforming JapaneseResearchDossier.
 </research_task>
