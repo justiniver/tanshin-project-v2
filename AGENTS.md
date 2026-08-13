@@ -95,6 +95,10 @@ normalization, validation, rendering, retry, and failure tests.
   strategy and execution, segment and business drivers, capital allocation, and
   material footnotes. It must not rank themes, score management, or draft the
   report.
+- It may also organize a small number of material capital decisions into factual
+  cross-filing lifecycle records: action and rationale, later outcome,
+  attribution strength, contrary evidence, and record maturity. It must not make
+  the value-creation verdict.
 - Keep research extraction compact. Do not recreate source-ID graphs, commentary
   taxonomies, citation-ready quotations, or synthesis conclusions in request 1.
   Combine related same-page statements when that preserves their figures,
@@ -123,10 +127,11 @@ normalization, validation, rendering, retry, and failure tests.
   that threshold, and forms such as `¥95 per share` for per-share amounts.
   Preserve economic value within display precision, scale, sign, percentages,
   margins, and ratios; never perform foreign-exchange conversion.
-- Do not render inline citations or evidence ledgers in either report.
-  Preserve lightweight source provenance in structured artifacts, and preserve
-  Japanese proper names whenever the source analysis does not provide an
-  authoritative Latin-script form.
+- Current synthesis and translation responses are citation-free: do not request
+  source IDs, quotations, page references, evidence records, or evidence
+  ledgers from those stages. Research-map page locations remain compact
+  navigation aids. Preserve Japanese proper names whenever the source analysis
+  does not provide an authoritative Latin-script form.
 - When a live evaluation is needed, stop and give the human the exact command,
   expected companies/files, maximum estimated cost in yen, and expected
   artifacts.

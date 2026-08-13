@@ -11,7 +11,6 @@ from tanshin_pipeline.evaluation import (
 from tanshin_pipeline.normalization import numeric_surfaces
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.render import (
-    bilingual_evidence_ledger,
     render_english,
     render_japanese,
     render_japanese_draft,
@@ -109,7 +108,7 @@ class ValidationRenderingTests(unittest.TestCase):
         for claim in changed.claims:
             claim.evidence_ids = [
                 "04_2026_Q1_tanshin.pdf:s0001"
-                if value == "05_2025_FY_tanshin.pdf:s0001"
+                if value == "06_2025_FY_tanshin.pdf:s0001"
                 else value
                 for value in claim.evidence_ids
             ]
@@ -141,7 +140,7 @@ class ValidationRenderingTests(unittest.TestCase):
 
     def test_cross_language_evidence_change_is_rejected(self) -> None:
         changed = self.translation.model_copy(deep=True)
-        changed.claims[0].evidence_ids = ["05_2025_FY_tanshin.pdf:s0001"]
+        changed.claims[0].evidence_ids = ["06_2025_FY_tanshin.pdf:s0001"]
         result = validate_english(changed, self.analysis, self.manifest)
         self.assertFalse(result.valid)
         self.assertIn(
@@ -154,10 +153,10 @@ class ValidationRenderingTests(unittest.TestCase):
         en = render_english(self.analysis, self.translation)
         self.assertIn("## 1. エグゼクティブサマリー", ja)
         self.assertIn("### 資本配分の変化", ja)
-        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", ja)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", ja)
         self.assertIn("## 1. Executive summary", en)
         self.assertIn("### Capital-allocation developments", en)
-        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", en)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", en)
         self.assertNotIn(self.analysis.evidence[0].exact_quote_ja, en)
         self.assertNotIn(
             self.translation.evidence_translations[0].quote_en,
@@ -320,14 +319,6 @@ class ValidationRenderingTests(unittest.TestCase):
         validation = validate_english(changed, self.analysis, self.manifest)
         self.assertTrue(validation.publishable)
 
-        ledger = bilingual_evidence_ledger(self.analysis, changed)
-        self.assertIsNone(ledger[0]["quote_en"])
-        self.assertEqual(ledger[0]["rendered_quote_language"], "ja")
-        self.assertEqual(
-            ledger[0]["rendered_quote"],
-            self.analysis.evidence[0].exact_quote_ja,
-        )
-
     def test_fiscal_period_is_one_numeric_surface(self) -> None:
         self.assertEqual(
             numeric_surfaces("2026年3月期、総還元性向50％、6期合計"),
@@ -348,7 +339,7 @@ class ValidationRenderingTests(unittest.TestCase):
         self.assertGreater(warning_only.warning_count, 0)
         draft = render_japanese_draft(self.analysis, warning_only)
         self.assertNotIn("[!WARNING]", draft)
-        self.assertNotIn("01_2026_FY_tanshin.pdf:s0001", draft)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", draft)
 
     def test_offline_comparison_rubric(self) -> None:
         generated = render_english(self.analysis, self.translation)

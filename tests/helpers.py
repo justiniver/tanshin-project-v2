@@ -119,6 +119,7 @@ def _research_payload_from_analysis(
         "schema_version": "2.3-test",
         "identity": identity,
         "filings": filings,
+        "capital_allocation_decisions": [],
         "research_notes": ["Stored offline chronological research map."],
     }
 
@@ -155,30 +156,11 @@ def dossier_from_analysis_payload(
     )
 
 
-def _source_reference(evidence: dict) -> dict:
-    return {
-        "source_filename": evidence["source_filename"],
-        "pdf_page": evidence["pdf_page"],
-        "source_section": evidence["source_section"],
-        "statement_type": evidence["statement_type"],
-        "support_summary_ja": evidence["exact_quote_ja"],
-    }
-
-
 def synthesis_from_analysis_payload(
     payload: dict,
 ) -> JapaneseSynthesisResponse:
-    evidence_by_id = {
-        item["evidence_id"]: item for item in payload.get("evidence", [])
-    }
-    fallback = next(iter(evidence_by_id.values()))
     claims = []
     for claim in payload["claims"]:
-        linked = [
-            evidence_by_id[value]
-            for value in claim.get("evidence_ids", [])
-            if value in evidence_by_id
-        ] or [fallback]
         claims.append(
             {
                 "claim_id": claim["claim_id"],
@@ -186,7 +168,6 @@ def synthesis_from_analysis_payload(
                 "order": claim["order"],
                 "headline_ja": claim["headline_ja"],
                 "body_ja": claim["body_ja"],
-                "sources": [_source_reference(item) for item in linked],
                 "statement_type": claim["statement_type"],
                 "is_inference": claim.get("is_inference", False),
                 "causal": claim.get("causal", False),
@@ -207,11 +188,6 @@ def synthesis_from_analysis_payload(
     components = []
     for dimension in dimensions:
         source = by_dimension.get(dimension) or {}
-        linked = [
-            evidence_by_id[value]
-            for value in source.get("evidence_ids", [])
-            if value in evidence_by_id
-        ] or [fallback]
         components.append(
             {
                 "dimension": dimension,
@@ -224,7 +200,6 @@ def synthesis_from_analysis_payload(
                     "rationale_ja",
                     "Selected filings support a mixed but assessable result.",
                 ),
-                "sources": [_source_reference(item) for item in linked],
             }
         )
 

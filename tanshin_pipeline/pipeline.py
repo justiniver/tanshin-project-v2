@@ -43,11 +43,7 @@ from .prompts import (
     translation_prompt_template,
 )
 from .research import build_research_metrics, validate_research_dossier
-from .render import (
-    bilingual_evidence_ledger,
-    render_english,
-    render_japanese,
-)
+from .render import render_english, render_japanese
 from .request_builder import (
     RequestSpec,
     build_analysis_spec,
@@ -633,6 +629,12 @@ def _discard_report_path(path: Path) -> None:
         path.unlink()
 
 
+def _discard_legacy_evidence_ledger(paths: OutputPaths) -> None:
+    """Remove a pre-citation-free artifact that may remain from an older run."""
+
+    _discard_report_path(paths.artifacts_dir / "evidence_ledger.json")
+
+
 def _invalidate_dependent_english_report(
     prepared: PreparedRun,
     *,
@@ -869,7 +871,7 @@ def _process_japanese_response(
     )
     write_json(paths.analysis_validation, validation)
     retired = _retire_current_report(paths, "ja")
-    write_json(paths.evidence_ledger, bilingual_evidence_ledger(normalized.analysis))
+    _discard_legacy_evidence_ledger(paths)
     write_json(
         paths.evaluation_ja,
         compare_reports(
@@ -1576,10 +1578,7 @@ def _process_english_response(
         mode=mode,
         previous_final_archived_to=retired,
     )
-    write_json(
-        paths.evidence_ledger,
-        bilingual_evidence_ledger(analysis, preserved.translation),
-    )
+    _discard_legacy_evidence_ledger(paths)
     write_json(
         paths.evaluation_en,
         compare_reports(

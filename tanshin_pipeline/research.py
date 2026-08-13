@@ -99,6 +99,36 @@ def validate_research_dossier(
                     f"{memo.source_filename} has the wrong latest-filing flag."
                 )
 
+        for decision in dossier.capital_allocation_decisions:
+            source = selected.get(decision.decision_source_filename)
+            if source is None:
+                problems.append(
+                    "Capital-allocation decision references an unselected filing: "
+                    f"{decision.decision_source_filename}."
+                )
+            elif decision.decision_fiscal_year != source.fiscal_year:
+                problems.append(
+                    f"{decision.decision_label_ja} has the wrong decision fiscal year."
+                )
+            for outcome in decision.subsequent_outcomes:
+                outcome_source = selected.get(outcome.source_filename)
+                if outcome_source is None:
+                    problems.append(
+                        "Capital-allocation outcome references an unselected filing: "
+                        f"{outcome.source_filename}."
+                    )
+                    continue
+                if outcome.fiscal_year != outcome_source.fiscal_year:
+                    problems.append(
+                        f"{decision.decision_label_ja} has an outcome with the wrong "
+                        "fiscal year."
+                    )
+                if outcome.fiscal_year < decision.decision_fiscal_year:
+                    problems.append(
+                        f"{decision.decision_label_ja} has an outcome before the "
+                        "decision fiscal year."
+                    )
+
     for memo in dossier.filings:
         categories = [item.category for item in memo.items]
         unavailable = set(memo.unavailable_categories)
@@ -329,6 +359,61 @@ def _annual_series(dossier: JapaneseResearchDossier) -> dict[str, Any]:
     }
 
 
+def _capital_allocation_metrics(
+    dossier: JapaneseResearchDossier,
+) -> dict[str, Any]:
+    decisions = dossier.capital_allocation_decisions
+    attribution_counts = Counter(
+        outcome.attribution.value
+        for decision in decisions
+        for outcome in decision.subsequent_outcomes
+    )
+    signal_counts = Counter(
+        outcome.signal.value
+        for decision in decisions
+        for outcome in decision.subsequent_outcomes
+    )
+    return {
+        "decision_records": len(decisions),
+        "decisions_with_later_outcomes": sum(
+            bool(item.subsequent_outcomes) for item in decisions
+        ),
+        "outcome_records": sum(
+            len(item.subsequent_outcomes) for item in decisions
+        ),
+        "by_decision_type": _counts(
+            item.decision_type.value for item in decisions
+        ),
+        "by_record_maturity": _counts(
+            item.record_maturity.value for item in decisions
+        ),
+        "by_outcome_attribution": dict(sorted(attribution_counts.items())),
+        "by_outcome_signal": dict(sorted(signal_counts.items())),
+        "records": [
+            {
+                "decision_label_ja": item.decision_label_ja,
+                "decision_type": item.decision_type.value,
+                "decision_source_filename": item.decision_source_filename,
+                "decision_fiscal_year": item.decision_fiscal_year,
+                "record_maturity": item.record_maturity.value,
+                "outcome_count": len(item.subsequent_outcomes),
+                "outcome_attribution_counts": _counts(
+                    outcome.attribution.value
+                    for outcome in item.subsequent_outcomes
+                ),
+                "has_adverse_evidence": bool(item.adverse_evidence_ja),
+                "has_disclosure_limit": item.disclosure_limit_ja is not None,
+            }
+            for item in decisions
+        ],
+        "interpretation_guardrail": (
+            "These are extraction records, not value-creation verdicts. "
+            "Aggregate-only or unattributed outcomes cannot establish that a "
+            "specific allocation decision created value."
+        ),
+    }
+
+
 def _build_research_metrics_unchecked(
     dossier: JapaneseResearchDossier,
 ) -> dict[str, Any]:
@@ -363,6 +448,7 @@ def _build_research_metrics_unchecked(
             "per_filing": per_filing,
         },
         "financial_observations": _annual_series(dossier),
+        "capital_allocation": _capital_allocation_metrics(dossier),
         "coverage": {
             "research_notes": list(dossier.research_notes),
         },

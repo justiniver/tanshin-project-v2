@@ -121,7 +121,7 @@ class QualityFirstPipelineTests(unittest.TestCase):
                     "rating": 2,
                     "evidence_sufficiency": "sufficient",
                     "rationale_ja": "複数期の経営者説明を比較した中立的な評価です。",
-                    "evidence_ids": ["01_2026_FY_tanshin.pdf:s0001"],
+                    "evidence_ids": ["02_2026_FY_tanshin.pdf:s0001"],
                 }
                 for dimension in (
                     "strategic_coherence",
@@ -267,6 +267,8 @@ class QualityFirstPipelineTests(unittest.TestCase):
                 paths.analysis_structured,
                 synthesis_from_analysis_payload(payload),
             )
+            legacy_ledger = paths.artifacts_dir / "evidence_ledger.json"
+            write_json(legacy_ledger, [{"legacy": True}])
             write_text(paths.report_ja_draft, "stale draft")
             result = reprocess_stored_analysis(
                 REPOSITORY_ROOT,
@@ -282,6 +284,12 @@ class QualityFirstPipelineTests(unittest.TestCase):
             self.assertTrue(status["report_generated"])
             self.assertFalse(status["requires_review"])
             self.assertEqual(status["publication_state"], "generated")
+            validation = read_json(paths.analysis_validation)
+            self.assertEqual(
+                validation["statistics"]["citation_mode"],
+                "disabled",
+            )
+            self.assertFalse(legacy_ledger.exists())
             final = paths.report_ja.read_text(encoding="utf-8")
             self.assertNotIn("[!WARNING]", final)
 
@@ -383,7 +391,7 @@ class QualityFirstPipelineTests(unittest.TestCase):
                 patch.object(index, "_fitz_text", return_value="fallback text"),
             ):
                 self.assertEqual(
-                    index.page_text("01_2026_FY_tanshin.pdf", 1),
+                    index.page_text("02_2026_FY_tanshin.pdf", 1),
                     "fallback text",
                 )
         finally:
@@ -395,8 +403,8 @@ class QualityFirstPipelineTests(unittest.TestCase):
 
     def test_period_aliases_and_rounded_thresholds_are_supported(self) -> None:
         latest = EvidenceRecord(
-            evidence_id="01_2026_FY_tanshin.pdf:s9998",
-            source_filename="01_2026_FY_tanshin.pdf",
+            evidence_id="02_2026_FY_tanshin.pdf:s9998",
+            source_filename="02_2026_FY_tanshin.pdf",
             pdf_page=8,
             exact_quote_ja="2026年度の新規供給戸数は増加する見込みです。",
             period_label_ja="2026年3月期",
@@ -405,8 +413,8 @@ class QualityFirstPipelineTests(unittest.TestCase):
             source_section="outlook",
         )
         historical = EvidenceRecord(
-            evidence_id="21_2021-05-13_tanshin.pdf:s9999",
-            source_filename="21_2021-05-13_tanshin.pdf",
+            evidence_id="22_2021-05-13_tanshin.pdf:s9999",
+            source_filename="22_2021-05-13_tanshin.pdf",
             pdf_page=5,
             exact_quote_ja="完成工事総利益率が低下しました。",
             period_label_ja="2021年3月期",

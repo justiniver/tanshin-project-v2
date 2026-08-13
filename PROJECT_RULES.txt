@@ -29,8 +29,11 @@ TANSHIN PIPELINE WORKING RULES
    notation, and per-share amounts as forms such as ¥95 per share. Preserve
    economic value within display precision, scale, sign, percentages, margins,
    payout ratios, and statement type; never perform foreign-exchange conversion.
-   Reader-facing reports do not render inline citations or evidence ledgers.
-   Lightweight source provenance remains in structured diagnostic artifacts.
+   Current synthesis and translation responses do not contain citation
+   bookkeeping. Do not request or persist a synthesis/translation citation
+   graph of source IDs, quotations, page references, evidence records, or
+   evidence ledgers. Research-map page locations remain compact navigation
+   aids, not report citations.
 
 7. Keep model names as source constants in tanshin_pipeline/config.py. The .env
    file is credentials-only and may contain GEMINI_API_KEY, GEMINI_API_KEY2,
@@ -51,6 +54,10 @@ TANSHIN PIPELINE WORKING RULES
     business drivers, decide longitudinal themes, score management, or draft
     final conclusions. Do not recreate source-ID graphs, commentary taxonomies,
     or citation-ready quotations in the research response.
+    It may organize a small number of material capital-allocation decisions into
+    cross-filing factual lifecycle records: action and rationale, later outcome,
+    attribution strength, contrary evidence, and record maturity. These records
+    must not decide whether value was created.
     Require direct per-filing observations covering operating results, financial
     condition, forward-looking information, strategy and execution, segment and
     business drivers, capital allocation, and material footnotes. Compress

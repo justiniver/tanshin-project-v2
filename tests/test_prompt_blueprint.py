@@ -60,6 +60,7 @@ class PromptBlueprintTests(unittest.TestCase):
             )
             research_spec = build_research_spec(REPOSITORY_ROOT, manifest)
             spec = build_analysis_spec(REPOSITORY_ROOT, manifest, dossier)
+            normalized_prompt = " ".join(spec.prompt.split())
             plan = spec.plan()
             blueprint_hashes.add(plan.style_blueprint_sha256)
             self.assertGreater(len(research_spec.files), 0)
@@ -120,9 +121,28 @@ class PromptBlueprintTests(unittest.TestCase):
                 spec.prompt,
             )
             self.assertIn('answer the question "Did capital allocation', spec.prompt)
-            self.assertIn("two to four most material allocation", spec.prompt)
+            self.assertIn(
+                "two to four most material allocation",
+                normalized_prompt,
+            )
             self.assertIn("scale, persistence, and effect", spec.prompt)
             self.assertIn("actions, not outcomes by themselves", spec.prompt)
+            self.assertIn(
+                "strength of attribution",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "aggregate segment or group growth",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "should normally remain \"not yet established\"",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "future test elsewhere in the same report",
+                normalized_prompt,
+            )
             self.assertIn("strongest positive outcome", spec.prompt)
             self.assertIn("do not turn the section into an inventory", spec.prompt)
             self.assertNotIn("WACC", spec.prompt)
@@ -238,6 +258,20 @@ class PromptBlueprintTests(unittest.TestCase):
             "annual_financial_anchor",
             research_schema["$defs"]["ResearchFilingMemo"]["properties"],
         )
+        self.assertIn(
+            "capital_allocation_decisions",
+            research_schema["properties"],
+        )
+        capital_decision = research_schema["$defs"][
+            "ResearchCapitalAllocationDecision"
+        ]["properties"]
+        self.assertIn("subsequent_outcomes", capital_decision)
+        self.assertIn("record_maturity", capital_decision)
+        capital_outcome = research_schema["$defs"][
+            "ResearchCapitalAllocationOutcome"
+        ]["properties"]
+        self.assertIn("attribution", capital_outcome)
+        self.assertIn("signal", capital_outcome)
         self.assertNotIn("evidence", research_schema["properties"])
         self.assertNotIn("management_consistency", research_schema["properties"])
         self.assertIn(
@@ -256,12 +290,11 @@ class PromptBlueprintTests(unittest.TestCase):
                 "body_ja"
             ],
         )
-        self.assertIn(
-            "description",
-            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
-                "sources"
-            ],
+        self.assertNotIn(
+            "sources",
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"],
         )
+        self.assertNotIn("SynthesisSourceReference", analysis_schema["$defs"])
         self.assertIn(
             "description",
             translation_schema["$defs"]["TranslatedClaimPatch"]["properties"][
@@ -289,6 +322,13 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("exactly one `filings` memo for every selected PDF", spec.prompt)
         self.assertIn("Core management discussion is not disposable", spec.prompt)
         self.assertIn("annual_financial_anchor", spec.prompt)
+        self.assertIn("`capital_allocation_decisions`", spec.prompt)
+        self.assertIn("compact cross-filing decision-to-outcome map", spec.prompt)
+        self.assertIn("label each outcome `direct`", spec.prompt)
+        self.assertIn(
+            "goodwill, negative goodwill, an accounting gain",
+            normalized_prompt,
+        )
         self.assertIn("same consistently available consolidated metric", spec.prompt)
         self.assertIn("Prioritize material decision -> funding", spec.prompt)
         self.assertIn(

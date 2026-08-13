@@ -426,26 +426,3 @@ def render_english_draft(
 ) -> str:
     del validation
     return render_english(analysis, translation)
-
-
-def bilingual_evidence_ledger(
-    analysis: JapaneseAnalysis,
-    translation: EnglishTranslation | None = None,
-) -> list[dict[str, object]]:
-    del translation
-    return [
-        {
-            **evidence.model_dump(mode="json"),
-            "quote_en": None,
-            "rendered_quote": evidence.exact_quote_ja,
-            "rendered_quote_language": "ja",
-        }
-        for evidence in sorted(
-            analysis.evidence,
-            key=lambda item: (
-                item.source_filename,
-                item.pdf_page,
-                item.evidence_id,
-            ),
-        )
-    ]

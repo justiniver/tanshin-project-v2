@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 from enum import Enum
 from typing import Annotated, Literal
 
@@ -223,6 +222,36 @@ class DisclosureCategory(str, Enum):
     OTHER = "other"
 
 
+class CapitalAllocationDecisionType(str, Enum):
+    ORGANIC_INVESTMENT = "organic_investment"
+    ACQUISITION = "acquisition"
+    DIVESTITURE = "divestiture"
+    SHAREHOLDER_RETURN = "shareholder_return"
+    DEBT_OR_LIQUIDITY = "debt_or_liquidity"
+    OTHER = "other"
+
+
+class CapitalAllocationOutcomeAttribution(str, Enum):
+    DIRECT = "direct"
+    MANAGEMENT_LINKED = "management_linked"
+    AGGREGATE_ONLY = "aggregate_only"
+    UNATTRIBUTED = "unattributed"
+
+
+class CapitalAllocationOutcomeSignal(str, Enum):
+    POSITIVE = "positive"
+    NEGATIVE = "negative"
+    MIXED = "mixed"
+    NEUTRAL = "neutral"
+
+
+class CapitalAllocationRecordMaturity(str, Enum):
+    MATURE_RECORD = "mature_record"
+    PARTIAL_RECORD = "partial_record"
+    TOO_RECENT = "too_recent"
+    NOT_OBSERVABLE = "not_observable"
+
+
 class ManagementConsistencyDimension(str, Enum):
     STRATEGIC_COHERENCE = "strategic_coherence"
     EXECUTION_FOLLOW_THROUGH = "execution_follow_through"
@@ -302,9 +331,8 @@ class ManagementConsistencyComponent(StrictModel):
         le=1,
         description=(
             "Published 0-1 component score. After local calculation, this remains "
-            "null only when the research pass supplied no defensible rating or no "
-            "selected evidence resolves for it; missing components are excluded "
-            "from the overall arithmetic mean."
+            "null only when the synthesis pass supplied no defensible rating; "
+            "missing components are excluded from the overall arithmetic mean."
         ),
     )
     weight: float = Field(ge=0, le=1)
@@ -398,7 +426,7 @@ class SupportedSpan(StrictModel):
     value_id: NonEmpty
     claim_surface_ja: NonEmpty
     source_surface_ja: NonEmpty
-    evidence_id: NonEmpty
+    evidence_id: NonEmpty | None = None
 
 
 class EvidenceRecord(StrictModel):
@@ -775,6 +803,102 @@ class ResearchThemeRecord(BaseModel):
     evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
+class ResearchCapitalAllocationOutcome(BaseModel):
+    """A later disclosed result connected to one capital-allocation decision."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period_label_ja: NonEmpty
+    outcome_ja: NonEmpty = Field(
+        description=(
+            "Concise later operating, profit, margin, cash, capacity, utilization, "
+            "impairment, disposal, financing, or distribution result. Preserve "
+            "whether the filing itself connects this result to the decision."
+        )
+    )
+    attribution: CapitalAllocationOutcomeAttribution = Field(
+        description=(
+            "Use direct for separately disclosed decision-level results, "
+            "management_linked when management explicitly connects an aggregate "
+            "result to the decision, aggregate_only when only a wider segment or "
+            "group result is visible, and unattributed when no connection is stated."
+        )
+    )
+    signal: CapitalAllocationOutcomeSignal = Field(
+        description=(
+            "Direction of the disclosed outcome itself, without deciding whether "
+            "the original allocation created value overall."
+        )
+    )
+
+
+class ResearchCapitalAllocationDecision(BaseModel):
+    """Compact decision-to-outcome record for a material use of capital."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    decision_label_ja: NonEmpty = Field(
+        description=(
+            "Short transaction or program label that remains recognizable across "
+            "later filings."
+        )
+    )
+    decision_type: CapitalAllocationDecisionType
+    decision_source_filename: NonEmpty
+    decision_fiscal_year: int = Field(ge=1900, le=2200)
+    decision_period_ja: NonEmpty
+    amount_or_scale_ja: str | None = Field(
+        default=None,
+        description=(
+            "Material amount or scale exactly as disclosed, or null when unavailable."
+        ),
+    )
+    decision_ja: NonEmpty = Field(
+        description="What management allocated, acquired, sold, returned, or financed."
+    )
+    stated_rationale_ja: NonEmpty = Field(
+        description="Management's stated purpose without treating it as an outcome."
+    )
+    funding_or_tradeoff_ja: str | None = Field(
+        default=None,
+        description=(
+            "Disclosed funding method, balance-sheet effect, alternative use, or "
+            "trade-off, or null when the filings do not provide one."
+        ),
+    )
+    subsequent_outcomes: list[ResearchCapitalAllocationOutcome] = Field(
+        default_factory=list,
+        description=(
+            "Later disclosed results potentially relevant to this decision. Keep "
+            "aggregate or unattributed observations explicitly labeled rather than "
+            "presenting them as decision-level performance."
+        ),
+    )
+    adverse_evidence_ja: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Concise contrary signals such as persistent losses, impairment, delayed "
+            "utilization, disposal after weak performance, or financial strain."
+        ),
+    )
+    record_maturity: CapitalAllocationRecordMaturity = Field(
+        description=(
+            "Whether the selected filing window contains a mature, partial, too "
+            "recent, or otherwise unobservable outcome record. This is not a "
+            "value-creation verdict."
+        )
+    )
+    disclosure_limit_ja: str | None = Field(
+        default=None,
+        description=(
+            "Material attribution or disclosure limitation, or null when the record "
+            "is sufficiently specific."
+        ),
+    )
+
+
 class JapaneseResearchDossier(BaseModel):
     """Compact chronological research map consumed by synthesis."""
 
@@ -786,6 +910,15 @@ class JapaneseResearchDossier(BaseModel):
         min_length=1,
         description=(
             "Exactly one chronological research memo for every selected PDF."
+        ),
+    )
+    capital_allocation_decisions: list[ResearchCapitalAllocationDecision] = Field(
+        description=(
+            "Compact cross-filing decision-to-outcome records for the most material "
+            "capital deployments in the selected period. These records organize "
+            "facts for synthesis but do not decide whether value was created. "
+            "Return an empty list when the selected filings contain no defensible "
+            "material record."
         ),
     )
     research_notes: list[str] = Field(default_factory=list)
@@ -890,7 +1023,7 @@ class AnalysisClaim(StrictModel):
     order: int = Field(ge=1)
     headline_ja: NonEmpty
     body_ja: NonEmpty
-    evidence_ids: list[NonEmpty] = Field(min_length=1)
+    evidence_ids: list[NonEmpty] = Field(default_factory=list)
     statement_type: StatementType
     is_inference: bool = False
     causal: bool = False
@@ -955,7 +1088,7 @@ class ModelAnalysisClaim(BaseModel):
 
 
 class SynthesisAnalysisClaim(BaseModel):
-    """Analytical claim with lightweight, non-rendered PDF provenance."""
+    """One citation-free analytical claim from the PDF-backed synthesis pass."""
 
     model_config = ConfigDict(extra="ignore")
 
@@ -972,13 +1105,6 @@ class SynthesisAnalysisClaim(BaseModel):
             "duplicating other claims."
         )
     )
-    sources: list["SynthesisSourceReference"] = Field(
-        min_length=1,
-        description=(
-            "Small set of PDF locations supporting the material facts in this "
-            "claim. These references remain internal and are not rendered."
-        ),
-    )
     statement_type: StatementType
     is_inference: bool = False
     causal: bool = False
@@ -993,29 +1119,6 @@ class SynthesisManagementConsistencyComponent(BaseModel):
     rating: int | None = Field(ge=0, le=4)
     evidence_sufficiency: Literal["sufficient", "insufficient"]
     rationale_ja: NonEmpty
-    sources: list["SynthesisSourceReference"] = Field(
-        description=(
-            "PDF locations supporting the rating, including contrary information "
-            "where available. May be empty only when evidence is insufficient."
-        )
-    )
-
-
-class SynthesisSourceReference(BaseModel):
-    """Compact source support generated by the PDF-backed synthesis call."""
-
-    model_config = ConfigDict(extra="ignore")
-
-    source_filename: NonEmpty
-    pdf_page: int = Field(ge=1)
-    source_section: NonEmpty
-    statement_type: StatementType
-    support_summary_ja: NonEmpty = Field(
-        description=(
-            "Faithful Japanese summary of the supporting passage. Exact quotation "
-            "boundaries are unnecessary; preserve relevant numeric surfaces."
-        )
-    )
 
 
 class SynthesisManagementConsistency(BaseModel):
@@ -1084,7 +1187,7 @@ class JapaneseAnalysis(StrictModel):
     schema_version: NonEmpty
     identity: CompanyIdentity
     claims: list[AnalysisClaim] = Field(min_length=1)
-    evidence: list[EvidenceRecord] = Field(min_length=1)
+    evidence: list[EvidenceRecord] = Field(default_factory=list)
     management_consistency: ManagementConsistencyAssessment | None = None
     model_notes: list[str] = Field(default_factory=list)
 
@@ -1226,8 +1329,12 @@ class TranslatedSpan(StrictModel):
     source_surface_ja: NonEmpty = Field(
         description="Exact unchanged source_surface_ja from the Japanese analysis."
     )
-    evidence_id: NonEmpty = Field(
-        description="Exact unchanged evidence_id from the Japanese supported span."
+    evidence_id: NonEmpty | None = Field(
+        default=None,
+        description=(
+            "Legacy provenance link when present. New citation-free reports leave "
+            "this null."
+        ),
     )
 
 
@@ -1255,8 +1362,11 @@ class TranslatedClaim(StrictModel):
         )
     )
     evidence_ids: list[NonEmpty] = Field(
-        min_length=1,
-        description="Exact unchanged evidence ID list from the Japanese claim.",
+        default_factory=list,
+        description=(
+            "Legacy provenance links when present. New citation-free reports use "
+            "an empty list."
+        ),
     )
     statement_type: StatementType = Field(
         description="Exact unchanged statement type from the Japanese claim."
@@ -1485,106 +1595,8 @@ def materialize_japanese_synthesis(
     dossier: JapaneseResearchDossier,
     response: JapaneseSynthesisResponse,
 ) -> JapaneseAnalysis:
-    """Combine PDF-backed synthesis prose with locally derived provenance IDs."""
+    """Combine citation-free synthesis prose with the dossier identity."""
 
-    selected_filenames = {item.source_filename for item in dossier.filings}
-    invalid_sources = sorted(
-        {
-            source.source_filename
-            for claim in response.claims
-            for source in claim.sources
-            if source.source_filename not in selected_filenames
-        }
-        | {
-            source.source_filename
-            for component in response.management_consistency.components
-            for source in component.sources
-            if source.source_filename not in selected_filenames
-        }
-    )
-    if invalid_sources:
-        raise ValueError(
-            "The synthesis response references unselected PDFs: "
-            f"{', '.join(invalid_sources)}."
-        )
-
-    page_counts = {
-        item.source_filename: item.pdf_page_count for item in dossier.filings
-    }
-    invalid_pages = sorted(
-        {
-            f"{source.source_filename}:p{source.pdf_page}"
-            for claim in response.claims
-            for source in claim.sources
-            if (
-                source.source_filename in page_counts
-                and source.pdf_page > page_counts[source.source_filename]
-            )
-        }
-        | {
-            f"{source.source_filename}:p{source.pdf_page}"
-            for component in response.management_consistency.components
-            for source in component.sources
-            if (
-                source.source_filename in page_counts
-                and source.pdf_page > page_counts[source.source_filename]
-            )
-        }
-    )
-    if invalid_pages:
-        raise ValueError(
-            "The synthesis response references pages beyond the research map: "
-            f"{', '.join(invalid_pages)}."
-        )
-
-    evidence_by_key: dict[
-        tuple[str, int, str, str, str],
-        EvidenceRecord,
-    ] = {}
-
-    def evidence_for(source: SynthesisSourceReference) -> EvidenceRecord:
-        key = (
-            source.source_filename,
-            source.pdf_page,
-            source.source_section,
-            source.statement_type.value,
-            source.support_summary_ja,
-        )
-        existing = evidence_by_key.get(key)
-        if existing is not None:
-            return existing
-        digest = hashlib.sha256(
-            "\x1f".join(str(value) for value in key).encode("utf-8")
-        ).hexdigest()[:8]
-        filing = next(
-            item
-            for item in dossier.filings
-            if item.source_filename == source.source_filename
-        )
-        evidence = EvidenceRecord(
-            evidence_id=(
-                f"{source.source_filename}:r{source.pdf_page:04d}-{digest}"
-            ),
-            source_filename=source.source_filename,
-            pdf_page=source.pdf_page,
-            exact_quote_ja=source.support_summary_ja,
-            period_label_ja=filing.period_label_ja,
-            period_label_en=f"FY{filing.fiscal_year} {filing.period.value}",
-            statement_type=source.statement_type,
-            source_section=source.source_section,
-            tags=["synthesis_provenance"],
-        )
-        evidence_by_key[key] = evidence
-        return evidence
-
-    claim_evidence_ids = [
-        [evidence_for(source).evidence_id for source in claim.sources]
-        for claim in response.claims
-    ]
-    component_evidence_ids = [
-        [evidence_for(source).evidence_id for source in component.sources]
-        for component in response.management_consistency.components
-    ]
     assessment = ManagementConsistencyAssessment(
         methodology_version="management-consistency-v1-pending",
         components=[
@@ -1599,11 +1611,9 @@ def materialize_japanese_synthesis(
                 ),
                 weight=0,
                 rationale_ja=component.rationale_ja,
-                evidence_ids=component_evidence_ids[index],
+                evidence_ids=[],
             )
-            for index, component in enumerate(
-                response.management_consistency.components
-            )
+            for component in response.management_consistency.components
         ],
         overall_rationale_ja=(
             response.management_consistency.overall_rationale_ja
@@ -1619,7 +1629,7 @@ def materialize_japanese_synthesis(
                 order=claim.order,
                 headline_ja=claim.headline_ja,
                 body_ja=claim.body_ja,
-                evidence_ids=claim_evidence_ids[index],
+                evidence_ids=[],
                 statement_type=claim.statement_type,
                 is_inference=claim.is_inference,
                 causal=claim.causal,
@@ -1627,9 +1637,9 @@ def materialize_japanese_synthesis(
                 dates=[],
                 qualifiers=[],
             )
-            for index, claim in enumerate(response.claims)
+            for claim in response.claims
         ],
-        evidence=list(evidence_by_key.values()),
+        evidence=[],
         management_consistency=assessment,
         model_notes=[
             *dossier.research_notes,

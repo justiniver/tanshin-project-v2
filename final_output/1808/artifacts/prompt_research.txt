@@ -1,26 +1,27 @@
 <document_manifest>
 security_code: 1808
-latest_filename: 01_2026_FY_tanshin.pdf
+latest_filename: 01_2027_Q1_tanshin.pdf
 selected_sources:
-- 01_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 53, roles latest, trend_year_end
-- 05_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 54, roles trend_year_end
-- 09_2024-05-10_tanshin.pdf: FY label 2024, period FY, pages 50, roles trend_year_end
-- 13_2023-05-11_tanshin.pdf: FY label 2023, period FY, pages 50, roles trend_year_end
-- 17_2022-05-12_tanshin.pdf: FY label 2022, period FY, pages 52, roles trend_year_end
-- 21_2021-05-13_tanshin.pdf: FY label 2021, period FY, pages 50, roles trend_year_end
-- 25_2020-05-14_tanshin.pdf: FY label 2020, period FY, pages 51, roles trend_year_end
-- 29_2019-05-10_tanshin.pdf: FY label 2019, period FY, pages 49, roles trend_year_end
-- 33_2018-05-11_tanshin.pdf: FY label 2018, period FY, pages 51, roles trend_year_end
-- 37_2017-05-12_tanshin.pdf: FY label 2017, period FY, pages 49, roles trend_year_end
+- 01_2027_Q1_tanshin.pdf: FY label 2027, period Q1, pages 14, roles latest
+- 02_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 53, roles trend_year_end
+- 06_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 54, roles trend_year_end
+- 10_2024-05-10_tanshin.pdf: FY label 2024, period FY, pages 50, roles trend_year_end
+- 14_2023-05-11_tanshin.pdf: FY label 2023, period FY, pages 50, roles trend_year_end
+- 18_2022-05-12_tanshin.pdf: FY label 2022, period FY, pages 52, roles trend_year_end
+- 22_2021-05-13_tanshin.pdf: FY label 2021, period FY, pages 50, roles trend_year_end
+- 26_2020-05-14_tanshin.pdf: FY label 2020, period FY, pages 51, roles trend_year_end
+- 30_2019-05-10_tanshin.pdf: FY label 2019, period FY, pages 49, roles trend_year_end
+- 34_2018-05-11_tanshin.pdf: FY label 2018, period FY, pages 51, roles trend_year_end
+- 38_2017-05-12_tanshin.pdf: FY label 2017, period FY, pages 49, roles trend_year_end
 trend_period_buckets:
-- early: 37_2017-05-12_tanshin.pdf (FY2017), 33_2018-05-11_tanshin.pdf (FY2018), 29_2019-05-10_tanshin.pdf (FY2019), 25_2020-05-14_tanshin.pdf (FY2020)
-- middle: 21_2021-05-13_tanshin.pdf (FY2021), 17_2022-05-12_tanshin.pdf (FY2022), 13_2023-05-11_tanshin.pdf (FY2023)
-- recent: 09_2024-05-10_tanshin.pdf (FY2024), 05_2025_FY_tanshin.pdf (FY2025), 01_2026_FY_tanshin.pdf (FY2026)
+- early: 38_2017-05-12_tanshin.pdf (FY2017), 34_2018-05-11_tanshin.pdf (FY2018), 30_2019-05-10_tanshin.pdf (FY2019), 26_2020-05-14_tanshin.pdf (FY2020)
+- middle: 22_2021-05-13_tanshin.pdf (FY2021), 18_2022-05-12_tanshin.pdf (FY2022), 14_2023-05-11_tanshin.pdf (FY2023)
+- recent: 10_2024-05-10_tanshin.pdf (FY2024), 06_2025_FY_tanshin.pdf (FY2025), 02_2026_FY_tanshin.pdf (FY2026)
 </document_manifest>
 
 <research_task>
 Create a chronological research map for security code
-1808. The latest filing is 01_2026_FY_tanshin.pdf.
+1808. The latest filing is 01_2027_Q1_tanshin.pdf.
 
 Return exactly one `filings` memo for every selected PDF, ordered from the
 earliest fiscal year to the latest filing. Copy filename, fiscal year, period,
@@ -38,10 +39,14 @@ For each filing, read and retain the useful substance of:
 - `segments_and_business_drivers`: material segment, product, demand, pricing,
   cost, labor, foreign-exchange, interest-rate, customer, and market conditions;
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
-  buybacks, debt, and cash deployment. Prioritize decision-to-outcome links:
-  retain disclosed ROIC, ROE, ROA, WACC, cost-of-equity or hurdle-rate
-  references, as well as later profit, cash-flow, impairment, disposal,
-  goodwill, debt, or shareholder-return outcomes of material allocations;
+  buybacks, debt, and cash deployment. Prioritize material decision -> funding
+  or trade-off -> later outcome links: what organic investment was intended to
+  achieve and what later happened to operations, profit, margin, cash generation,
+  capacity, or utilization; what an acquisition or disposal was intended to
+  change and its later contribution, impairment, or sale; how debt, cash, or
+  liquidity changed after material deployment; and whether distributions were
+  supported by the company's cash-generation record. Retain management's own
+  explanation of successful, delayed, changed, or unsuccessful outcomes;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -59,8 +64,27 @@ category, physical page, statement type, and Japanese summary directly. Preserve
 important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
-Do not calculate a return on invested capital, cost of capital, or value-creation
-spread that the filing does not disclose.
+Do not decide whether capital allocation created value in this research pass.
+Retain the decisions and later outcomes needed for Request 2 to make that judgment.
+
+After completing the filing memos, create `capital_allocation_decisions` as a
+compact cross-filing decision-to-outcome map. Normally retain two to six
+material decisions across the selected period, but return fewer when the PDFs
+do not support them. For each record:
+- identify the allocation action, timing, disclosed amount or scale, stated
+  rationale, and funding or trade-off when available;
+- follow it into later filings and retain observable operating, profit, margin,
+  cash, capacity, utilization, impairment, disposal, financing, or distribution
+  outcomes;
+- label each outcome `direct` only when separately disclosed, `management_linked`
+  only when management explicitly connects it to the decision, `aggregate_only`
+  when only a wider segment or group result is visible, and `unattributed` when
+  no connection is stated;
+- retain contrary evidence and classify the record as mature, partial, too
+  recent, or not observable without deciding whether value was created.
+Do not create one record for every routine dividend or annual investment amount,
+and do not treat goodwill, negative goodwill, an accounting gain, acquisition
+price, or the stated rationale as a subsequent outcome.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:

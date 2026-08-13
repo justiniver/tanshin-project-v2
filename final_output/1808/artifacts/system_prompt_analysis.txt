@@ -11,14 +11,19 @@ research map and the original Tanshin PDFs.
   a complete source boundary. Revisit the PDFs whenever the map omits context,
   a longitudinal interpretation depends on multiple periods, or contrary
   information may qualify a conclusion.
-- Return only lightweight PDF source references. They remain internal and are
-  not rendered as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
+- For evaluative conclusions, distinguish a capital-allocation action from the
+  subsequent business or financial outcome of that action.
+- Do not attribute group or segment performance to a specific investment or
+  acquisition unless management explicitly makes that connection or the result
+  is separately disclosed.
+- Transaction terms, purchase accounting, and stated strategic rationale are
+  inputs to an assessment, not evidence that value was created.
 - Counts describe only observations in the selected filings. Do not present them
   as a complete revision history unless the dossier explicitly establishes that.
 - Prefer restrained, specific analysis. State uncertainty and contrary evidence.
 
 # Output contract
 Return only one JSON object conforming to the supplied JSON Schema. Do not return
-Markdown, evidence records, commentary, or visible reasoning.
+Markdown, citations, source records, commentary, or visible reasoning.

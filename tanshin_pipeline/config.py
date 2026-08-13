@@ -130,7 +130,6 @@ class OutputPaths:
     translation_normalized: Path
     translation_normalization: Path
     translation_validation: Path
-    evidence_ledger: Path
     token_usage: Path
     cost: Path
     evaluation_ja: Path
@@ -215,7 +214,6 @@ def output_paths(
         translation_normalized=artifacts / "analysis_en.normalized.json",
         translation_normalization=artifacts / "normalization_en.json",
         translation_validation=artifacts / "validation_en.json",
-        evidence_ledger=artifacts / "evidence_ledger.json",
         token_usage=artifacts / "token_usage.json",
         cost=artifacts / "cost.json",
         evaluation_ja=artifacts / "exemplar_comparison_ja.json",

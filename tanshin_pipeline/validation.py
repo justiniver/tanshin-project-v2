@@ -299,6 +299,11 @@ def _validate_supported_spans(
                 severity=severity,
                 category=category,
             )
+        if span.evidence_id is None:
+            # Current synthesis responses are deliberately citation-free. The
+            # span still protects the value/qualifier across translation, but
+            # there is no source graph to resolve.
+            continue
         if span.evidence_id not in claim.evidence_ids:
             _issue(
                 issues,
@@ -384,10 +389,25 @@ def validate_japanese(
     issues: list[ValidationIssue] = []
     selected_by_name = {item.filename: item for item in manifest.selected_files}
     evidence_by_id: dict[str, object] = {}
+    citation_mode = bool(
+        analysis.evidence
+        or any(claim.evidence_ids for claim in analysis.claims)
+        or (
+            analysis.management_consistency is not None
+            and any(
+                component.evidence_ids
+                for component in analysis.management_consistency.components
+            )
+        )
+    )
     evidence_counts = Counter(item.evidence_id for item in analysis.evidence)
     text_index = (
         PdfTextIndex(repository_root, manifest)
-        if repository_root is not None and policy.verify_quote_on_page
+        if (
+            citation_mode
+            and repository_root is not None
+            and policy.verify_quote_on_page
+        )
         else None
     )
     try:
@@ -509,7 +529,10 @@ def validate_japanese(
         section_orders[claim.section].append(claim.order)
         total_refs += len(claim.evidence_ids)
         used_evidence.update(claim.evidence_ids)
-        if len(claim.evidence_ids) != len(set(claim.evidence_ids)):
+        if (
+            citation_mode
+            and len(claim.evidence_ids) != len(set(claim.evidence_ids))
+        ):
             _issue(
                 issues,
                 "duplicate_claim_evidence",
@@ -518,17 +541,18 @@ def validate_japanese(
                 severity="warning",
                 category="diagnostic",
             )
-        for evidence_id in claim.evidence_ids:
-            if evidence_id not in evidence_by_id:
-                _issue(
-                    issues,
-                    "unresolved_evidence",
-                    "Claim citation does not resolve to an evidence record.",
-                    claim_id=claim.claim_id,
-                    evidence_id=evidence_id,
-                )
+        if citation_mode:
+            for evidence_id in claim.evidence_ids:
+                if evidence_id not in evidence_by_id:
+                    _issue(
+                        issues,
+                        "unresolved_evidence",
+                        "Claim citation does not resolve to an evidence record.",
+                        claim_id=claim.claim_id,
+                        evidence_id=evidence_id,
+                    )
 
-        if claim.section in LATEST_SECTIONS:
+        if citation_mode and claim.section in LATEST_SECTIONS:
             latest_cited = any(
                 evidence_by_id.get(evidence_id) is not None
                 and getattr(evidence_by_id[evidence_id], "source_filename")
@@ -542,7 +566,7 @@ def validate_japanese(
                     "Latest-summary claim is not grounded in the latest filing.",
                     claim_id=claim.claim_id,
                 )
-        else:
+        elif citation_mode:
             for evidence_id in claim.evidence_ids:
                 evidence = evidence_by_id.get(evidence_id)
                 if evidence is None:
@@ -602,27 +626,30 @@ def validate_japanese(
                         category="diagnostic",
                     )
 
-        historical_years = {
-            int(year)
-            for year in _YEAR_RE.findall(_normalized(claim.body_ja))
-            if int(year) < manifest.window.anchor_fiscal_year
-        }
-        cited_years = {
-            selected_by_name[getattr(evidence_by_id[evidence_id], "source_filename")].fiscal_year
-            for evidence_id in claim.evidence_ids
-            if evidence_id in evidence_by_id
-            and getattr(evidence_by_id[evidence_id], "source_filename")
-            in selected_by_name
-        }
-        for year in sorted(historical_years - cited_years):
-            _issue(
-                issues,
-                "historical_year_not_cited",
-                f"Claim mentions {year} without same-year evidence.",
-                claim_id=claim.claim_id,
-                severity="warning",
-                category="diagnostic",
-            )
+        if citation_mode:
+            historical_years = {
+                int(year)
+                for year in _YEAR_RE.findall(_normalized(claim.body_ja))
+                if int(year) < manifest.window.anchor_fiscal_year
+            }
+            cited_years = {
+                selected_by_name[
+                    getattr(evidence_by_id[evidence_id], "source_filename")
+                ].fiscal_year
+                for evidence_id in claim.evidence_ids
+                if evidence_id in evidence_by_id
+                and getattr(evidence_by_id[evidence_id], "source_filename")
+                in selected_by_name
+            }
+            for year in sorted(historical_years - cited_years):
+                _issue(
+                    issues,
+                    "historical_year_not_cited",
+                    f"Claim mentions {year} without same-year evidence.",
+                    claim_id=claim.claim_id,
+                    severity="warning",
+                    category="diagnostic",
+                )
 
         _validate_supported_spans(
             claim,
@@ -688,7 +715,7 @@ def validate_japanese(
                 severity="warning",
                 category="diagnostic",
             )
-        if claim.causal and not claim.is_inference:
+        if citation_mode and claim.causal and not claim.is_inference:
             source_text = " ".join(
                 getattr(evidence_by_id[evidence_id], "exact_quote_ja")
                 for evidence_id in claim.evidence_ids
@@ -766,32 +793,35 @@ def validate_japanese(
                 severity="warning",
                 category="diagnostic",
             )
-        assessment_evidence_ids = {
-            evidence_id
-            for component in assessment.components
-            for evidence_id in component.evidence_ids
-        }
-        used_evidence.update(assessment_evidence_ids)
-        unresolved_assessment_ids = assessment_evidence_ids - set(evidence_by_id)
-        if unresolved_assessment_ids:
-            _issue(
-                issues,
-                "management_consistency_evidence_unresolved",
-                "Some management-consistency evidence IDs do not resolve.",
-                severity="warning",
-                category="diagnostic",
+        if citation_mode:
+            assessment_evidence_ids = {
+                evidence_id
+                for component in assessment.components
+                for evidence_id in component.evidence_ids
+            }
+            used_evidence.update(assessment_evidence_ids)
+            unresolved_assessment_ids = assessment_evidence_ids - set(
+                evidence_by_id
             )
-        if (
-            assessment.management_discussion_evidence_share is not None
-            and assessment.management_discussion_evidence_share < 0.5
-        ):
-            _issue(
-                issues,
-                "management_consistency_discussion_coverage_low",
-                "Less than half of the score evidence comes from management discussion.",
-                severity="warning",
-                category="diagnostic",
-            )
+            if unresolved_assessment_ids:
+                _issue(
+                    issues,
+                    "management_consistency_evidence_unresolved",
+                    "Some management-consistency evidence IDs do not resolve.",
+                    severity="warning",
+                    category="diagnostic",
+                )
+            if (
+                assessment.management_discussion_evidence_share is not None
+                and assessment.management_discussion_evidence_share < 0.5
+            ):
+                _issue(
+                    issues,
+                    "management_consistency_discussion_coverage_low",
+                    "Less than half of the score evidence comes from management discussion.",
+                    severity="warning",
+                    category="diagnostic",
+                )
     trend_discussion_share = (
         trend_management_discussion_refs / trend_evidence_refs
         if trend_evidence_refs
@@ -828,17 +858,19 @@ def validate_japanese(
                     message,
                     category="essential_quality",
                 )
-    for evidence_id in sorted(set(evidence_by_id) - used_evidence):
-        _issue(
-            issues,
-            "unused_evidence",
-            "Evidence record is not cited by any claim.",
-            evidence_id=evidence_id,
-            severity="warning",
-            category="diagnostic",
-        )
+    if citation_mode:
+        for evidence_id in sorted(set(evidence_by_id) - used_evidence):
+            _issue(
+                issues,
+                "unused_evidence",
+                "Evidence record is not cited by any claim.",
+                evidence_id=evidence_id,
+                severity="warning",
+                category="diagnostic",
+            )
     statistics: dict[str, int | float | str | bool] = {
         "claims": len(analysis.claims),
+        "citation_mode": "legacy" if citation_mode else "disabled",
         "evidence_records": len(analysis.evidence),
         "citation_references": total_refs,
         "trend_management_discussion_share": round(
@@ -1163,6 +1195,12 @@ def validate_english(
             "claims": len(translation.claims),
             "legacy_evidence_translations_ignored": len(
                 translation.evidence_translations
+            ),
+            "citation_mode": (
+                "legacy"
+                if analysis.evidence
+                or any(claim.evidence_ids for claim in analysis.claims)
+                else "disabled"
             ),
             "citation_references": total_refs,
             "manifest_id": manifest.manifest_id,

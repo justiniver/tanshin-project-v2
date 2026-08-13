@@ -55,15 +55,12 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("should be free when that key is eligible", readme)
         self.assertIn("paid-tier upper-bound", readme)
         self.assertNotIn("150 per USD", readme)
-        self.assertIn("Neither language renders inline citations", readme)
-        self.assertIn("Lightweight\nsource provenance remains", readme)
+        self.assertIn("Request 2 is citation-free", readme)
+        self.assertIn("New runs do not create an evidence ledger", readme)
+        self.assertIn("Neither language contains citation bookkeeping", readme)
         self.assertIn("otherwise the Japanese name is", readme)
         self.assertIn("retained rather than translated by meaning", readme)
         self.assertIn("uses their arithmetic mean", readme)
-        self.assertIn(
-            "evidence-confidence diagnostic rather",
-            readme,
-        )
         self.assertIn("exactly one memo for every selected filing", readme)
         self.assertIn("Both Japanese requests receive the selected PDFs", readme)
         self.assertIn("map directs attention", readme)

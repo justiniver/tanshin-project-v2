@@ -79,13 +79,12 @@ def calculate_management_consistency(
     """Apply fixed weights and calculate a separate evidence-confidence score.
 
     Gemini supplies component ratings, sufficiency judgments, and rationales.
-    Python owns the weights, evidence resolution, confidence measure, and the
-    published 0-1 scale. A model rating supported by at least one selected,
-    resolvable evidence record remains scored; uneven period coverage lowers
-    evidence confidence instead of erasing the rating. Components remain blank
-    only when the research pass explicitly returns no rating or supplies no
-    usable evidence. If every component is unavailable, the overall neutral
-    fallback is 0.50 while all component scores remain blank.
+    Python owns the weights and published 0-1 scale. Current synthesis responses
+    intentionally contain no citation records, so a supplied rating remains
+    scorable without an evidence ID. Legacy evidence records, when present, are
+    still used only for the separate confidence diagnostics. Components remain
+    blank only when the model explicitly returns no rating. If every component
+    is unavailable, the overall neutral fallback is 0.50.
     """
 
     if assessment is None:
@@ -98,6 +97,9 @@ def calculate_management_consistency(
         )
 
     evidence_by_id = {item.evidence_id: item for item in evidence}
+    citation_free = not evidence and not any(
+        component.evidence_ids for component in assessment.components
+    )
     filing_by_name = {item.filename: item for item in manifest.selected_files}
     bucket_by_year = _period_bucket_map(manifest.window.unique_years)
     supplied_by_dimension: dict[
@@ -154,13 +156,10 @@ def calculate_management_consistency(
         )
         if dimension not in supplied_by_dimension:
             component_confidence = 0.0
-        # The research request has already reviewed the complete selected
-        # filing set and made the substantive rating. Local coverage metrics
-        # are valuable confidence diagnostics, but they must not contradict
-        # that rating merely because its strongest cited examples fall into
-        # one period bucket. This was the source of numeric explanations being
-        # rendered beside blank subscores.
-        locally_scorable = supplied.rating is not None and bool(valid_ids)
+        # The PDF-backed synthesis request has already reviewed the complete
+        # selected filing set. Citation-free responses deliberately supply no
+        # evidence IDs, so local provenance coverage must never erase a rating.
+        locally_scorable = supplied.rating is not None
         evidence_sufficiency = (
             "sufficient"
             if locally_scorable
@@ -223,12 +222,20 @@ def calculate_management_consistency(
         methodology_version=METHODOLOGY_VERSION,
         score=round(raw_score, 2),
         raw_score=round(raw_score, 4),
-        evidence_confidence=round(evidence_confidence, 4),
-        confidence_label=_confidence_label(evidence_confidence),
-        evidence_coverage=round(evidence_confidence, 4),
+        evidence_confidence=(
+            None if citation_free else round(evidence_confidence, 4)
+        ),
+        confidence_label=(
+            None if citation_free else _confidence_label(evidence_confidence)
+        ),
+        evidence_coverage=(
+            None if citation_free else round(evidence_confidence, 4)
+        ),
         distinct_fiscal_years=sorted(all_years),
         evidence_count=len(all_valid_evidence_ids),
-        management_discussion_evidence_share=round(discussion_share, 4),
+        management_discussion_evidence_share=(
+            None if citation_free else round(discussion_share, 4)
+        ),
         components=completed_components,
         overall_rationale_ja=assessment.overall_rationale_ja,
     )

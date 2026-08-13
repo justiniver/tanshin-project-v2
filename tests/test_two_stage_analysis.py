@@ -63,12 +63,34 @@ class TwoStageAnalysisTests(unittest.TestCase):
         properties = schema["properties"]
         self.assertEqual(
             set(properties),
-            {"schema_version", "identity", "filings", "research_notes"},
+            {
+                "schema_version",
+                "identity",
+                "filings",
+                "capital_allocation_decisions",
+                "research_notes",
+            },
+        )
+        self.assertIn(
+            "capital_allocation_decisions",
+            schema["required"],
         )
         filing = schema["$defs"]["ResearchFilingMemo"]["properties"]
         self.assertIn("items", filing)
         self.assertIn("annual_financial_anchor", filing)
         self.assertIn("unavailable_categories", filing)
+        decision = schema["$defs"]["ResearchCapitalAllocationDecision"][
+            "properties"
+        ]
+        self.assertIn("stated_rationale_ja", decision)
+        self.assertIn("subsequent_outcomes", decision)
+        self.assertIn("adverse_evidence_ja", decision)
+        self.assertIn("record_maturity", decision)
+        outcome = schema["$defs"]["ResearchCapitalAllocationOutcome"][
+            "properties"
+        ]
+        self.assertIn("attribution", outcome)
+        self.assertIn("signal", outcome)
         for obsolete in (
             "source_records",
             "filing_coverage",
@@ -78,7 +100,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
         ):
             self.assertNotIn(obsolete, properties)
 
-    def test_synthesis_schema_uses_small_pdf_source_references(self) -> None:
+    def test_synthesis_schema_is_citation_free(self) -> None:
         spec = build_analysis_spec(
             REPOSITORY_ROOT,
             self.manifest,
@@ -87,22 +109,10 @@ class TwoStageAnalysisTests(unittest.TestCase):
         claim = spec.response_schema["$defs"]["SynthesisAnalysisClaim"][
             "properties"
         ]
-        self.assertIn("sources", claim)
+        self.assertNotIn("sources", claim)
         self.assertNotIn("source_record_ids", claim)
         self.assertNotIn("evidence_ids", claim)
-        reference = spec.response_schema["$defs"]["SynthesisSourceReference"][
-            "properties"
-        ]
-        self.assertEqual(
-            set(reference),
-            {
-                "source_filename",
-                "pdf_page",
-                "source_section",
-                "statement_type",
-                "support_summary_ja",
-            },
-        )
+        self.assertNotIn("SynthesisSourceReference", spec.response_schema["$defs"])
 
     def test_metrics_compare_original_forecasts_with_later_actuals(self) -> None:
         payload = self.dossier.model_dump(mode="json")
@@ -123,7 +133,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
                 "category": "forward_looking_information",
                 "pdf_page": 1,
                 "statement_type": "forecast",
-                "summary_ja": "翌年度の経常利益を900億円と予想した。",
+                "summary_ja": "翌年度の経常利益を900 億円と予想した。",
             }
         )
         memos[earlier.filename]["annual_financial_anchor"] = {
@@ -136,7 +146,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "next_original_forecast": {
                 "target_fiscal_year": later.fiscal_year,
                 "target_period": "FY",
-                "value_surface_ja": "900億円",
+                "value_surface_ja": "900 億円",
                 "pdf_page": 1,
             },
         }
@@ -145,7 +155,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
                 "category": "operating_results",
                 "pdf_page": 1,
                 "statement_type": "actual",
-                "summary_ja": "経常利益は941億円となった。",
+                "summary_ja": "経常利益は941 億円となった。",
             }
         )
         memos[later.filename]["annual_financial_anchor"] = {
@@ -157,7 +167,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "actual": {
                 "target_fiscal_year": later.fiscal_year,
                 "target_period": "FY",
-                "value_surface_ja": "941億円",
+                "value_surface_ja": "941 億円",
                 "pdf_page": 1,
             },
             "next_original_forecast": None,
@@ -172,6 +182,93 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "actual_above_forecast",
         )
 
+    def test_capital_allocation_metrics_preserve_attribution_and_maturity(
+        self,
+    ) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        year_ends = sorted(
+            (
+                item
+                for item in self.manifest.selected_files
+                if "trend_year_end" in item.roles
+            ),
+            key=lambda item: item.fiscal_year,
+        )
+        decision_source, outcome_source = year_ends[-2:]
+        payload["capital_allocation_decisions"] = [
+            {
+                "decision_label_ja": "Material acquisition",
+                "decision_type": "acquisition",
+                "decision_source_filename": decision_source.filename,
+                "decision_fiscal_year": decision_source.fiscal_year,
+                "decision_period_ja": f"FY{decision_source.fiscal_year}",
+                "amount_or_scale_ja": "100 億円",
+                "decision_ja": "A subsidiary was acquired.",
+                "stated_rationale_ja": "Management sought to expand the business.",
+                "funding_or_tradeoff_ja": None,
+                "subsequent_outcomes": [
+                    {
+                        "source_filename": outcome_source.filename,
+                        "fiscal_year": outcome_source.fiscal_year,
+                        "period_label_ja": f"FY{outcome_source.fiscal_year}",
+                        "outcome_ja": (
+                            "Only aggregate segment growth was disclosed."
+                        ),
+                        "attribution": "aggregate_only",
+                        "signal": "positive",
+                    }
+                ],
+                "adverse_evidence_ja": [],
+                "record_maturity": "partial_record",
+                "disclosure_limit_ja": (
+                    "The acquired company's standalone contribution is unavailable."
+                ),
+            }
+        ]
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        validate_research_dossier(dossier, self.manifest)
+        capital = build_research_metrics(
+            dossier,
+            self.manifest,
+        )["capital_allocation"]
+        self.assertEqual(capital["decision_records"], 1)
+        self.assertEqual(capital["decisions_with_later_outcomes"], 1)
+        self.assertEqual(capital["by_decision_type"], {"acquisition": 1})
+        self.assertEqual(
+            capital["by_record_maturity"],
+            {"partial_record": 1},
+        )
+        self.assertEqual(
+            capital["by_outcome_attribution"],
+            {"aggregate_only": 1},
+        )
+        self.assertTrue(capital["records"][0]["has_disclosure_limit"])
+
+    def test_capital_allocation_validation_rejects_unselected_sources(
+        self,
+    ) -> None:
+        payload = self.dossier.model_dump(mode="json")
+        payload["capital_allocation_decisions"] = [
+            {
+                "decision_label_ja": "Material acquisition",
+                "decision_type": "acquisition",
+                "decision_source_filename": "not-selected.pdf",
+                "decision_fiscal_year": 2025,
+                "decision_period_ja": "FY2025",
+                "amount_or_scale_ja": None,
+                "decision_ja": "A subsidiary was acquired.",
+                "stated_rationale_ja": "Management sought business expansion.",
+                "funding_or_tradeoff_ja": None,
+                "subsequent_outcomes": [],
+                "adverse_evidence_ja": [],
+                "record_maturity": "not_observable",
+                "disclosure_limit_ja": None,
+            }
+        ]
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        with self.assertRaisesRegex(ValueError, "unselected filing"):
+            validate_research_dossier(dossier, self.manifest)
+
     def test_research_validation_catches_missing_memo_and_invalid_page(self) -> None:
         missing = self.dossier.model_copy(deep=True)
         missing.filings.pop()
@@ -185,26 +282,19 @@ class TwoStageAnalysisTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "invalid page"):
             validate_research_dossier(invalid, self.manifest)
 
-    def test_synthesis_can_use_a_valid_pdf_passage_omitted_from_the_map(
-        self,
-    ) -> None:
+    def test_synthesis_materialization_creates_no_citation_graph(self) -> None:
         synthesis = fake_synthesis_response(REPOSITORY_ROOT)
-        source = synthesis.claims[0].sources[0]
-        source.source_filename = self.manifest.selected_files[-1].filename
-        source.pdf_page = 1
-        source.support_summary_ja = "研究マップにないがPDFで確認した情報。"
         analysis = materialize_japanese_synthesis(self.dossier, synthesis)
         report = render_japanese(analysis)
-        self.assertTrue(analysis.claims[0].evidence_ids[0].startswith(
-            f"{source.source_filename}:r0001-"
-        ))
-        self.assertNotIn(analysis.claims[0].evidence_ids[0], report)
-
-    def test_unselected_pdf_reference_is_rejected(self) -> None:
-        synthesis = fake_synthesis_response(REPOSITORY_ROOT)
-        synthesis.claims[0].sources[0].source_filename = "not-selected.pdf"
-        with self.assertRaisesRegex(ValueError, "unselected PDFs"):
-            materialize_japanese_synthesis(self.dossier, synthesis)
+        self.assertEqual(analysis.evidence, [])
+        self.assertTrue(all(not claim.evidence_ids for claim in analysis.claims))
+        self.assertTrue(
+            all(
+                not component.evidence_ids
+                for component in analysis.management_consistency.components
+            )
+        )
+        self.assertNotIn("evidence_id", report)
 
     def test_stored_raw_research_can_be_reprocessed_without_network(self) -> None:
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:

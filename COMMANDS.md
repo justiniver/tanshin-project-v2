@@ -5,8 +5,8 @@ then ask whether to proceed and whether to generate English. A Japanese report
 uses two requests: a PDF-backed chronological filing map followed by analytical
 synthesis using both that map and the original PDFs. The first request does not
 draft conclusions or score management. The map focuses the second request but
-does not restrict it from revisiting the filings. Rendered reports do not
-include inline citations or an evidence ledger. English translation is an
+does not restrict it from revisiting the filings. Synthesis and translation are
+citation-free and do not create an evidence ledger. English translation is an
 optional third request.
 
 Model names are fixed in `tanshin_pipeline/config.py`. `.env` contains only

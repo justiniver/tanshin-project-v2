@@ -399,6 +399,9 @@ analysis. It builds a compact chronological map containing:
 - physical page locations and statement types as navigation aids;
 - compact year-end financial anchors that pair one consistently available
   annual actual metric with the next original forecast where available;
+- compact cross-filing records for material capital-allocation decisions,
+  separating the action and rationale from later outcomes, attribution strength,
+  contrary evidence, and how mature the observable record is;
 - explicit unavailable categories and source limitations rather than silent
   omission.
 
@@ -455,6 +458,10 @@ Its capital-allocation value-creation subsection leads with a supported judgment
 about the observed decision-and-outcome record. It follows the decade's most
 material investments, acquisitions, disposals, balance-sheet choices, and
 shareholder distributions into their later operating and financial outcomes.
+Decision-level or management-linked outcomes are distinguished from aggregate
+segment or group performance. Transaction terms, goodwill, negative goodwill,
+accounting gains, and stated rationale are not treated as proof of subsequent
+value creation, while recent decisions may appropriately remain unproven.
 Recurring profit, margin, cash generation, useful capacity, and a stronger core
 business count in favor; persistent losses, impairments, failed expansion,
 disposals after weak performance, and financial strain count against. The
@@ -479,12 +486,12 @@ to either analysis provider.
 
 ### Japanese normalization and rendering
 
-Local code converts request 2's lightweight PDF source locations into the richer internal
-representation used by normalization and diagnostics, derives supported numeric
-spans where possible, calculates management consistency, records an audit trail,
-and renders the Japanese Markdown. Source links remain in JSON artifacts for
-review but are not displayed as inline citations or as an evidence ledger in the
-Markdown.
+Request 2 is citation-free: it returns analytical claims and management ratings,
+not source IDs, quotations, page references, or evidence records. Local code
+derives value spans from the claim prose so figures, dates, qualifiers, and
+financial scale can still be protected through translation. It also calculates
+management consistency, records a normalization audit, and renders the Japanese
+Markdown. New runs do not create an evidence ledger.
 
 Report prose is never manually patched. Improvements belong in prompts,
 schemas, normalization, validation, or rendering.
@@ -502,15 +509,11 @@ The four components are:
 - forecast and target discipline;
 - accountability and transparency.
 
-The synthesis pass supplies evidence-based component ratings after reviewing the
-chronological map and the selected PDFs. It returns a small number of internal
-source locations for each rating. Python resolves those locations, converts the
-four ratings to 0–1 subscores, and uses their arithmetic mean. Uneven period
-coverage lowers the separately stored evidence-confidence diagnostic rather
-than erasing an otherwise supported subscore. A subscore remains blank only in
-the exceptional case where the synthesis pass cannot make a defensible
-assessment or none of its source locations resolves. If no component can be assessed,
-the overall fallback is `0.50`.
+The synthesis pass supplies component ratings after reviewing the chronological
+map and the selected PDFs. Python converts the four ratings to 0–1 subscores and
+uses their arithmetic mean. A subscore remains blank only in the exceptional
+case where the synthesis pass cannot make a defensible assessment. If no
+component can be assessed, the overall fallback is `0.50`.
 The synthesis pass also writes a concise natural-language explanation beneath
 every subscore, including supporting and contrary information. The full calculation is stored in
 `management_consistency.json`.
@@ -525,8 +528,8 @@ secondary Gemini key. The stage receives a compact projection of the validated
 Japanese analysis, not the PDFs. That projection contains only issuer context,
 claim IDs, Japanese claim prose, and figure/date/qualifier surfaces that require
 English rendering. The model returns a translation patch; Python restores
-schema version, identity, section, ordering, internal source links, statement types,
-flags, and source Japanese surfaces from the same validated analysis snapshot.
+schema version, identity, section, ordering, statement types, flags, and source
+Japanese surfaces from the same Japanese analysis snapshot.
 
 The analytical narrative and financial presentation are English. Statement
 amounts of at least ¥1 billion use one-decimal billion notation such as
@@ -541,10 +544,10 @@ retain their original numeric values. Proper names use an authoritative
 Latin-script form only when it is supplied by the analysis; otherwise the Japanese name is
 retained rather than translated by meaning.
 
-Neither language renders inline citations or an evidence ledger. Lightweight
-source provenance remains available in the structured and diagnostic artifacts,
-so the model can stay grounded without making the reader-facing report carry
-citation mechanics.
+Neither language contains citation bookkeeping. Grounding happens inside the
+PDF-backed research and synthesis requests, while structured artifacts retain
+the model's claims, value spans, diagnostics, and normalization audit rather
+than a citation graph.
 `analysis_en.normalized.json` is retained as a compatibility artifact but is a
 semantic pass-through copy, and `normalization_en.json` records
 `mode: model_rendered_english_financial_notation`.
@@ -669,7 +672,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
 | `model_response_research.raw.json` | Raw research-provider response |
 | `research.structured.json` | Parsed chronological filing research map |
-| `research_metrics.json` | Filing/category coverage, annual anchors, forecast/actual comparisons, and extraction diagnostics |
+| `research_metrics.json` | Filing/category coverage, annual anchors, forecast/actual comparisons, capital-decision lifecycle coverage, and extraction diagnostics |
 | `validation_research.json` | Non-gating research-map diagnostics; warnings never stop synthesis |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |
@@ -677,10 +680,9 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `analysis_en.structured.json` | Full English translation materialized locally from the model patch |
 | `analysis_en.normalized.json` | English compatibility copy with model-rendered yen notation |
 | `normalization_ja.json` / `normalization_en.json` | Normalization audit records |
-| `management_consistency.json` | Synthesis ratings, locally calculated subscores, source coverage, and calculation |
+| `management_consistency.json` | Synthesis ratings, locally calculated subscores, and calculation |
 | `validation_ja.json` / `validation_en.json` | Diagnostics and structural checks |
 | `report_status_ja.json` / `report_status_en.json` | Current report/run state |
-| `evidence_ledger.json` | Compatibility artifact containing internal Japanese source provenance; not rendered in either report |
 | `token_usage.json` | Model-reported usage for research, synthesis, and translation |
 | `cost.json` | Estimated and available actual cost information |
 | `run_metadata.json` | Models, manifest, mode, output path, and request count |

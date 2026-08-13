@@ -1,5 +1,47 @@
 {
   "$defs": {
+    "CapitalAllocationDecisionType": {
+      "enum": [
+        "organic_investment",
+        "acquisition",
+        "divestiture",
+        "shareholder_return",
+        "debt_or_liquidity",
+        "other"
+      ],
+      "title": "CapitalAllocationDecisionType",
+      "type": "string"
+    },
+    "CapitalAllocationOutcomeAttribution": {
+      "enum": [
+        "direct",
+        "management_linked",
+        "aggregate_only",
+        "unattributed"
+      ],
+      "title": "CapitalAllocationOutcomeAttribution",
+      "type": "string"
+    },
+    "CapitalAllocationOutcomeSignal": {
+      "enum": [
+        "positive",
+        "negative",
+        "mixed",
+        "neutral"
+      ],
+      "title": "CapitalAllocationOutcomeSignal",
+      "type": "string"
+    },
+    "CapitalAllocationRecordMaturity": {
+      "enum": [
+        "mature_record",
+        "partial_record",
+        "too_recent",
+        "not_observable"
+      ],
+      "title": "CapitalAllocationRecordMaturity",
+      "type": "string"
+    },
     "CompanyIdentity": {
       "additionalProperties": false,
       "properties": {
@@ -104,6 +146,164 @@
       ],
       "title": "FinancialValueKind",
       "type": "string"
+    },
+    "ResearchCapitalAllocationDecision": {
+      "description": "Compact decision-to-outcome record for a material use of capital.",
+      "properties": {
+        "decision_label_ja": {
+          "description": "Short transaction or program label that remains recognizable across later filings.",
+          "minLength": 1,
+          "title": "Decision Label Ja",
+          "type": "string"
+        },
+        "decision_type": {
+          "$ref": "#/$defs/CapitalAllocationDecisionType"
+        },
+        "decision_source_filename": {
+          "minLength": 1,
+          "title": "Decision Source Filename",
+          "type": "string"
+        },
+        "decision_fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Decision Fiscal Year",
+          "type": "integer"
+        },
+        "decision_period_ja": {
+          "minLength": 1,
+          "title": "Decision Period Ja",
+          "type": "string"
+        },
+        "amount_or_scale_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Material amount or scale exactly as disclosed, or null when unavailable.",
+          "title": "Amount Or Scale Ja"
+        },
+        "decision_ja": {
+          "description": "What management allocated, acquired, sold, returned, or financed.",
+          "minLength": 1,
+          "title": "Decision Ja",
+          "type": "string"
+        },
+        "stated_rationale_ja": {
+          "description": "Management's stated purpose without treating it as an outcome.",
+          "minLength": 1,
+          "title": "Stated Rationale Ja",
+          "type": "string"
+        },
+        "funding_or_tradeoff_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Disclosed funding method, balance-sheet effect, alternative use, or trade-off, or null when the filings do not provide one.",
+          "title": "Funding Or Tradeoff Ja"
+        },
+        "subsequent_outcomes": {
+          "description": "Later disclosed results potentially relevant to this decision. Keep aggregate or unattributed observations explicitly labeled rather than presenting them as decision-level performance.",
+          "items": {
+            "$ref": "#/$defs/ResearchCapitalAllocationOutcome"
+          },
+          "title": "Subsequent Outcomes",
+          "type": "array"
+        },
+        "adverse_evidence_ja": {
+          "description": "Concise contrary signals such as persistent losses, impairment, delayed utilization, disposal after weak performance, or financial strain.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Adverse Evidence Ja",
+          "type": "array"
+        },
+        "record_maturity": {
+          "$ref": "#/$defs/CapitalAllocationRecordMaturity",
+          "description": "Whether the selected filing window contains a mature, partial, too recent, or otherwise unobservable outcome record. This is not a value-creation verdict."
+        },
+        "disclosure_limit_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Material attribution or disclosure limitation, or null when the record is sufficiently specific.",
+          "title": "Disclosure Limit Ja"
+        }
+      },
+      "required": [
+        "decision_label_ja",
+        "decision_type",
+        "decision_source_filename",
+        "decision_fiscal_year",
+        "decision_period_ja",
+        "decision_ja",
+        "stated_rationale_ja",
+        "record_maturity"
+      ],
+      "title": "ResearchCapitalAllocationDecision",
+      "type": "object"
+    },
+    "ResearchCapitalAllocationOutcome": {
+      "description": "A later disclosed result connected to one capital-allocation decision.",
+      "properties": {
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
+          "type": "string"
+        },
+        "outcome_ja": {
+          "description": "Concise later operating, profit, margin, cash, capacity, utilization, impairment, disposal, financing, or distribution result. Preserve whether the filing itself connects this result to the decision.",
+          "minLength": 1,
+          "title": "Outcome Ja",
+          "type": "string"
+        },
+        "attribution": {
+          "$ref": "#/$defs/CapitalAllocationOutcomeAttribution",
+          "description": "Use direct for separately disclosed decision-level results, management_linked when management explicitly connects an aggregate result to the decision, aggregate_only when only a wider segment or group result is visible, and unattributed when no connection is stated."
+        },
+        "signal": {
+          "$ref": "#/$defs/CapitalAllocationOutcomeSignal",
+          "description": "Direction of the disclosed outcome itself, without deciding whether the original allocation created value overall."
+        }
+      },
+      "required": [
+        "source_filename",
+        "fiscal_year",
+        "period_label_ja",
+        "outcome_ja",
+        "attribution",
+        "signal"
+      ],
+      "title": "ResearchCapitalAllocationOutcome",
+      "type": "object"
     },
     "ResearchFilingMemo": {
       "description": "Direct, high-recall summary of one selected filing.",
@@ -309,7 +509,7 @@
           "$ref": "#/$defs/StatementType"
         },
         "summary_ja": {
-          "description": "Concise, faithful Japanese summary retaining the original figures, periods, qualifiers, causes, actions, and forecast status needed for later analysis. For capital allocation, retain disclosed return measures, capital-cost or hurdle references, and later economic outcomes of material investments when available. Exact quotation is not required.",
+          "description": "Concise, faithful Japanese summary retaining the original figures, periods, qualifiers, causes, actions, and forecast status needed for later analysis. For capital allocation, prioritize the material decision, its stated purpose, funding or trade-off, and any later operating, profit, margin, cash, capacity, impairment, disposal, debt, liquidity, or distribution outcome. Exact quotation is not required.",
           "minLength": 1,
           "title": "Summary Ja",
           "type": "string"
@@ -356,6 +556,14 @@
       "title": "Filings",
       "type": "array"
     },
+    "capital_allocation_decisions": {
+      "description": "Compact cross-filing decision-to-outcome records for the most material capital deployments in the selected period. These records organize facts for synthesis but do not decide whether value was created. Return an empty list when the selected filings contain no defensible material record.",
+      "items": {
+        "$ref": "#/$defs/ResearchCapitalAllocationDecision"
+      },
+      "title": "Capital Allocation Decisions",
+      "type": "array"
+    },
     "research_notes": {
       "items": {
         "type": "string"
@@ -367,7 +575,8 @@
   "required": [
     "schema_version",
     "identity",
-    "filings"
+    "filings",
+    "capital_allocation_decisions"
   ],
   "title": "JapaneseResearchDossier",
   "type": "object"

@@ -80,19 +80,22 @@ research map and the original Tanshin PDFs.
   a complete source boundary. Revisit the PDFs whenever the map omits context,
   a longitudinal interpretation depends on multiple periods, or contrary
   information may qualify a conclusion.
-- Return only lightweight PDF source references. They remain internal and are
-  not rendered as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
 - For evaluative conclusions, distinguish a capital-allocation action from the
   subsequent business or financial outcome of that action.
+- Do not attribute group or segment performance to a specific investment or
+  acquisition unless management explicitly makes that connection or the result
+  is separately disclosed.
+- Transaction terms, purchase accounting, and stated strategic rationale are
+  inputs to an assessment, not evidence that value was created.
 - Counts describe only observations in the selected filings. Do not present them
   as a complete revision history unless the dossier explicitly establishes that.
 - Prefer restrained, specific analysis. State uncertainty and contrary evidence.
 
 # Output contract
 Return only one JSON object conforming to the supplied JSON Schema. Do not return
-Markdown, evidence records, commentary, or visible reasoning.
+Markdown, citations, source records, commentary, or visible reasoning.
 """
 
 
@@ -106,12 +109,11 @@ validated Japanese Tanshin analysis.
   outside knowledge.
 - Do not add, omit, update, soften, strengthen, or reinterpret facts or conclusions.
 - Return every supplied claim ID and value ID exactly once. Local code restores
-  section, order, internal source links, source Japanese surfaces, statement types, and
-  inference and causal flags from the validated Japanese analysis.
+  section, order, source Japanese surfaces, statement types, and inference and
+  causal flags from the Japanese analysis.
 - Preserve actual-versus-forecast-versus-target wording and the degree of uncertainty.
 - Translate every claim once without condensing its analytical substance.
-- Internal source records are intentionally omitted from the translation input
-  because the English report does not render citations or a source ledger.
+- The translation input intentionally contains no citations or source records.
 
 # English style
 - Use natural, concise, third-person US investor English.
@@ -252,6 +254,25 @@ scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
 Do not decide whether capital allocation created value in this research pass.
 Retain the decisions and later outcomes needed for Request 2 to make that judgment.
+
+After completing the filing memos, create `capital_allocation_decisions` as a
+compact cross-filing decision-to-outcome map. Normally retain two to six
+material decisions across the selected period, but return fewer when the PDFs
+do not support them. For each record:
+- identify the allocation action, timing, disclosed amount or scale, stated
+  rationale, and funding or trade-off when available;
+- follow it into later filings and retain observable operating, profit, margin,
+  cash, capacity, utilization, impairment, disposal, financing, or distribution
+  outcomes;
+- label each outcome `direct` only when separately disclosed, `management_linked`
+  only when management explicitly connects it to the decision, `aggregate_only`
+  when only a wider segment or group result is visible, and `unattributed` when
+  no connection is stated;
+- retain contrary evidence and classify the record as mature, partial, too
+  recent, or not observable without deciding whether value was created.
+Do not create one record for every routine dividend or annual investment amount,
+and do not treat goodwill, negative goodwill, an accounting gain, acquisition
+price, or the stated rationale as a subsequent outcome.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:
@@ -429,9 +450,12 @@ Analysis requirements:
    and trade-offs rather than listing every cash-flow item. Keep this analysis in
    its own section and do not repeat the same facts as separate strategic changes.
 8. In trend.capital_value_creation, answer the question "Did capital allocation
-   create value?" directly. Select the two to four most material allocation
-   choices across the decade and follow each from decision and stated purpose to
-   the subsequent outcome shown in later filings. Weight the outcomes by their
+   create value?" directly. Use `capital_allocation_decisions` as an index, verify
+   the important facts in the PDFs, and select the two to four most material
+   allocation decisions for the overall record. For each selected decision,
+   distinguish:
+   action and stated purpose -> later observable result -> strength of attribution
+   -> maturity of the record -> decision-level conclusion. Weight outcomes by
    scale, persistence, and effect on the business:
    - recurring profit, margin, cash generation, useful capacity, or a stronger
      core business supports value creation;
@@ -439,6 +463,16 @@ Analysis requirements:
      performance, or financial strain weighs against it;
    - dividends, buybacks, acquisitions, investment spending, cash accumulation,
      and debt issuance are actions, not outcomes by themselves.
+   Purchase price, goodwill, negative goodwill, bargain-purchase accounting, and
+   disposal gains establish transaction economics or accounting effects, not
+   subsequent operating value by themselves. Do not assign an acquired company
+   credit for aggregate segment or group growth unless management explicitly
+   connects the result or the filing separately discloses its contribution.
+   A favorable but incomplete record may support "likely" or "provisional"
+   value creation; a recent decision or one with only aggregate outcomes should
+   normally remain "not yet established". Do not call a decision proven in one
+   sentence while describing its synergies, contribution, or execution as a
+   future test elsewhere in the same report.
    Reach one overall judgment: yes, mostly yes, mixed, mostly no, no, or not
    enough evidence. The headline and opening sentence must give that answer and
    the main reason. Then explain the strongest positive outcome, the strongest
@@ -478,16 +512,13 @@ Management-consistency explanations:
   claim from incomplete coverage.
 - Mention the strongest supporting observation and material contrary evidence.
 - A repeated priority without a later action or outcome is not execution.
-- Attach a small number of `sources` to every claim and assessed component.
-  Each source contains an exact selected filename, valid physical page, concise
-  section label, statement type, and faithful support summary. These references
-  are internal diagnostics, not report citations. Reuse the same source details
-  where appropriate and do not create an exhaustive evidence ledger.
+- Do not return citations, source locations, quotations, or evidence records.
+  Ground the prose by reviewing the supplied map and PDFs, but spend the response
+  budget on analysis and the four rating rationales.
 
 {STYLE_PROFILE}
 
 Response details:
-- Source references may come from the research map or from direct PDF review.
 - Do not return figure/date/qualifier mapping arrays; local code derives them.
 
 Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
@@ -521,8 +552,8 @@ Translate every claim in the supplied translation input into English.
   value within the stated display precision and never perform FX conversion.
 - Preserve a proper name in Japanese unless an authoritative Latin-script form
   is already present in the supplied analysis. Never translate names by meaning.
-- Do not return section, order, source-record IDs, source Japanese surfaces,
-  statement types, inference flags, causal flags, identity, or source translations.
+- Do not return section, order, source Japanese surfaces, statement types,
+  inference flags, causal flags, identity, citations, or source translations.
   Python restores those immutable fields from the validated Japanese analysis.
 
 Return only the schema-conforming JSON object.
@@ -536,8 +567,9 @@ The prompt contains the selection manifest, deterministic research metrics, the
 complete chronological JapaneseResearchDossier, and the fact-free report
 blueprint. The selected PDFs are supplied again and remain authoritative.
 Produce only JapaneseSynthesisResponse claims with a small number of internal
-PDF source references. The research map may be as large as the configured
-research maximum output.
+management-consistency ratings and rationales. Do not return citations or PDF
+source references. The research map may be as large as the configured research
+maximum output.
 """
 
 
