@@ -120,12 +120,30 @@ class PromptBlueprintTests(unittest.TestCase):
                 "trend.capital_value_creation: exactly 1",
                 spec.prompt,
             )
-            self.assertIn('answer the question "Did capital allocation', spec.prompt)
             self.assertIn(
-                "two to four most material allocation",
+                "In trend.capital_value_creation, answer both questions directly",
+                spec.prompt,
+            )
+            self.assertIn(
+                "Where did incremental capital go?",
                 normalized_prompt,
             )
-            self.assertIn("scale, persistence, and effect", spec.prompt)
+            self.assertIn(
+                "businesses producing the strongest subsequent returns",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "directional mix of incremental capital",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "revenue growth without corresponding profit",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "reallocated capital in the economically sensible direction",
+                normalized_prompt,
+            )
             self.assertIn("actions, not outcomes by themselves", spec.prompt)
             self.assertIn(
                 "strength of attribution",
@@ -143,8 +161,11 @@ class PromptBlueprintTests(unittest.TestCase):
                 "future test elsewhere in the same report",
                 normalized_prompt,
             )
-            self.assertIn("strongest positive outcome", spec.prompt)
-            self.assertIn("do not turn the section into an inventory", spec.prompt)
+            self.assertIn("strongest productive destination", spec.prompt)
+            self.assertIn(
+                "rather than making missing disclosure the thesis",
+                spec.prompt,
+            )
             self.assertNotIn("WACC", spec.prompt)
             self.assertNotIn("cost-of-capital", spec.prompt)
             self.assertNotIn("evidence", spec.response_schema["required"])
@@ -177,9 +198,9 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("既存中核、主力候補、育成対象", blueprint.text)
         self.assertIn("成長投資、買収・売却、財務運営", blueprint.text)
         self.assertIn("### 資本配分は価値を創出したか", blueprint.text)
-        self.assertIn("重要な資金配分を二～四件", blueprint.text)
-        self.assertIn("規模と持続性", blueprint.text)
-        self.assertIn("全体として価値を創出したかを明確に", blueprint.text)
+        self.assertIn("追加資本がどの事業・用途へ向かい", blueprint.text)
+        self.assertIn("高リターン事業へ資本が重点配分されたか", blueprint.text)
+        self.assertIn("売上成長だけで魅力的なリターンとみなさず", blueprint.text)
         self.assertNotIn("WACC", blueprint.text)
         self.assertNotIn("資本コスト", blueprint.text)
         self.assertIn("経済的成果が証明されたことを区別", blueprint.text)
@@ -323,16 +344,22 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Core management discussion is not disposable", spec.prompt)
         self.assertIn("annual_financial_anchor", spec.prompt)
         self.assertIn("`capital_allocation_decisions`", spec.prompt)
-        self.assertIn("compact cross-filing decision-to-outcome map", spec.prompt)
+        self.assertIn(
+            "compact cross-filing allocation-destination-to-outcome map",
+            spec.prompt,
+        )
         self.assertIn("label each outcome `direct`", spec.prompt)
         self.assertIn(
             "goodwill, negative goodwill, an accounting gain",
             normalized_prompt,
         )
         self.assertIn("same consistently available consolidated metric", spec.prompt)
-        self.assertIn("Prioritize material decision -> funding", spec.prompt)
         self.assertIn(
-            "what an acquisition or disposal was intended to change",
+            "Prioritize material allocation -> destination and funding",
+            spec.prompt,
+        )
+        self.assertIn(
+            "whether its priority rose or fell relative to other uses",
             normalized_prompt,
         )
         self.assertIn(

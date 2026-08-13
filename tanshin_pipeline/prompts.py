@@ -227,13 +227,14 @@ For each filing, read and retain the useful substance of:
 - `segments_and_business_drivers`: material segment, product, demand, pricing,
   cost, labor, foreign-exchange, interest-rate, customer, and market conditions;
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
-  buybacks, debt, and cash deployment. Prioritize material decision -> funding
-  or trade-off -> later outcome links: what organic investment was intended to
-  achieve and what later happened to operations, profit, margin, cash generation,
-  capacity, or utilization; what an acquisition or disposal was intended to
-  change and its later contribution, impairment, or sale; how debt, cash, or
-  liquidity changed after material deployment; and whether distributions were
-  supported by the company's cash-generation record. Retain management's own
+  buybacks, debt, and cash deployment. Identify which business, segment,
+  capability, asset, balance-sheet use, or shareholder destination received or
+  released capital. Prioritize material allocation -> destination and funding
+  or trade-off -> later return links: where people, marketing, development,
+  capacity, acquisition, or financial capital was directed; whether its priority
+  rose or fell relative to other uses; and what later happened to recurring
+  profit, margin, cash generation, capacity, utilization, impairment, or disposal.
+  Do not infer investment merely from revenue growth. Retain management's own
   explanation of successful, delayed, changed, or unsuccessful outcomes;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
@@ -256,11 +257,20 @@ Do not decide whether capital allocation created value in this research pass.
 Retain the decisions and later outcomes needed for Request 2 to make that judgment.
 
 After completing the filing memos, create `capital_allocation_decisions` as a
-compact cross-filing decision-to-outcome map. Normally retain two to six
-material decisions across the selected period, but return fewer when the PDFs
-do not support them. For each record:
-- identify the allocation action, timing, disclosed amount or scale, stated
-  rationale, and funding or trade-off when available;
+compact cross-filing allocation-destination-to-outcome map. Normally retain two
+to six material allocation tracks across the selected period, but return fewer
+when the PDFs do not support them. Collectively, the records should show how the
+mix changed among the company's material businesses and other capital uses, not
+only isolated M&A or securities transactions. Include a material organic
+business-investment track when the filings distinguish its capital inputs and
+later operating returns. For each record:
+- identify the allocation action, destination, timing, disclosed amount or
+  scale, stated rationale, and funding or trade-off when available;
+- retain comparative evidence that the destination gained, retained, or lost
+  priority relative to other uses. When precise segment invested capital is not
+  disclosed, describe only the supported directional change using items such as
+  segment assets, capex, acquisition spend, headcount, marketing, development,
+  or explicit management priorities; never manufacture an allocation percentage;
 - follow it into later filings and retain observable operating, profit, margin,
   cash, capacity, utilization, impairment, disposal, financing, or distribution
   outcomes;
@@ -446,21 +456,30 @@ Analysis requirements:
    implementation into an achieved economic outcome.
 7. Treat capital allocation broadly: organic investment in people, marketing,
    development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Discuss material shifts
-   and trade-offs rather than listing every cash-flow item. Keep this analysis in
-   its own section and do not repeat the same facts as separate strategic changes.
-8. In trend.capital_value_creation, answer the question "Did capital allocation
-   create value?" directly. Use `capital_allocation_decisions` as an index, verify
-   the important facts in the PDFs, and select the two to four most material
-   allocation decisions for the overall record. For each selected decision,
+   balance-sheet deployment; and dividends or buybacks. Reconstruct the
+   directional mix of incremental capital across material businesses and other
+   uses. Do not claim a quantified segment invested-capital mix unless the PDFs
+   disclose it. Discuss material shifts and trade-offs rather than listing every
+   cash-flow item, and do not repeat the same facts as strategic changes.
+8. In trend.capital_value_creation, answer both questions directly:
+   "Where did incremental capital go?" and "Did capital increasingly flow toward
+   the businesses producing the strongest subsequent returns?" Use
+   `capital_allocation_decisions` as an index and verify the important facts in
+   the PDFs. Select the two to four most material destinations or allocation
+   tracks, not merely the most visible transactions. For each selected track,
    distinguish:
-   action and stated purpose -> later observable result -> strength of attribution
-   -> maturity of the record -> decision-level conclusion. Weight outcomes by
-   scale, persistence, and effect on the business:
-   - recurring profit, margin, cash generation, useful capacity, or a stronger
-     core business supports value creation;
+   capital input and destination -> change in relative priority -> later
+   observable return -> strength of attribution -> maturity of the record.
+   Compare destinations using the strongest available evidence:
+   - recurring profit, improving margin, cash generation, productive capacity,
+     or a stronger core business supports an attractive return;
+   - revenue growth without corresponding profit, margin, or cash evidence does
+     not by itself establish an attractive return;
    - persistent losses, impairment, failed expansion, disposal after weak
-     performance, or financial strain weighs against it;
+     performance, or continuing financial support weighs against it;
+   - increasing capital after strong evidence and reducing or exiting capital
+     after weak evidence supports allocation discipline; continuing to subsidize
+     a weak destination without improvement weighs against it;
    - dividends, buybacks, acquisitions, investment spending, cash accumulation,
      and debt issuance are actions, not outcomes by themselves.
    Purchase price, goodwill, negative goodwill, bargain-purchase accounting, and
@@ -474,15 +493,16 @@ Analysis requirements:
    sentence while describing its synergies, contribution, or execution as a
    future test elsewhere in the same report.
    Reach one overall judgment: yes, mostly yes, mixed, mostly no, no, or not
-   enough evidence. The headline and opening sentence must give that answer and
-   the main reason. Then explain the strongest positive outcome, the strongest
-   negative or offsetting outcome, and why the balance supports the judgment.
-   When a particular decision has no observable later outcome, say only that its
-   result is not established; do not turn the section into an inventory of
-   unavailable disclosures. Use "not enough evidence" as the overall judgment
-   only when the decade contains no meaningful decision-to-outcome record.
-   Keep this assessment separate from the preceding description of how allocation
-   priorities changed.
+   enough evidence. The headline and opening sentence must state whether the
+   allocation mix favored the higher-return businesses and why. Then explain
+   the strongest productive destination, the largest weak or value-destructive
+   destination, and whether management subsequently reallocated capital in the
+   economically sensible direction. When precise segment capital is unavailable,
+   give a restrained directional judgment from disclosed allocation inputs and
+   outcomes rather than making missing disclosure the thesis. Use "not enough
+   evidence" only when the decade contains no meaningful allocation-to-return
+   record. Keep this assessment separate from the preceding description of how
+   allocation priorities changed.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing

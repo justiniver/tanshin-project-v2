@@ -11,11 +11,10 @@ trend_period_buckets:
 {
   "filing_coverage": {
     "selected_filings": 11,
-    "memo_items": 56,
+    "memo_items": 41,
     "category_counts": {
       "business_overview": 1,
-      "capital_allocation": 13,
-      "financial_condition": 11,
+      "capital_allocation": 9,
       "forward_looking_information": 11,
       "operating_results": 11,
       "segments_and_business_drivers": 5,
@@ -27,13 +26,12 @@ trend_period_buckets:
         "fiscal_year": 2017,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "segments_and_business_drivers": 1
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -43,13 +41,11 @@ trend_period_buckets:
         "fiscal_year": 2018,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
-          "operating_results": 1,
-          "strategy_and_execution": 1
+          "operating_results": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -59,10 +55,9 @@ trend_period_buckets:
         "fiscal_year": 2019,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 2,
-          "financial_condition": 1,
+          "capital_allocation": 1,
           "forward_looking_information": 1,
           "operating_results": 1
         },
@@ -74,10 +69,9 @@ trend_period_buckets:
         "fiscal_year": 2020,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "strategy_and_execution": 1
@@ -90,10 +84,9 @@ trend_period_buckets:
         "fiscal_year": 2021,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 4,
+        "memo_items": 3,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1
         },
@@ -105,10 +98,9 @@ trend_period_buckets:
         "fiscal_year": 2022,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -121,10 +113,8 @@ trend_period_buckets:
         "fiscal_year": 2023,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -137,13 +127,11 @@ trend_period_buckets:
         "fiscal_year": 2024,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "segments_and_business_drivers": 1
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -153,13 +141,12 @@ trend_period_buckets:
         "fiscal_year": 2025,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 6,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "strategy_and_execution": 2
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -172,9 +159,9 @@ trend_period_buckets:
         "memo_items": 5,
         "category_counts": {
           "capital_allocation": 2,
-          "financial_condition": 1,
           "forward_looking_information": 1,
-          "operating_results": 1
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -184,11 +171,10 @@ trend_period_buckets:
         "fiscal_year": 2027,
         "period": "Q1",
         "is_latest": true,
-        "memo_items": 6,
+        "memo_items": 5,
         "category_counts": {
           "business_overview": 1,
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -528,44 +514,34 @@ trend_period_buckets:
     }
   },
   "capital_allocation": {
-    "decision_records": 3,
-    "decisions_with_later_outcomes": 3,
+    "decision_records": 4,
+    "decisions_with_later_outcomes": 4,
+    "decisions_with_relative_allocation_evidence": 4,
     "outcome_records": 4,
     "by_decision_type": {
       "acquisition": 2,
-      "divestiture": 1
+      "divestiture": 1,
+      "shareholder_return": 1
     },
     "by_record_maturity": {
-      "mature_record": 3
+      "mature_record": 3,
+      "partial_record": 1
     },
     "by_outcome_attribution": {
       "direct": 3,
       "management_linked": 1
     },
     "by_outcome_signal": {
-      "neutral": 1,
-      "positive": 3
+      "positive": 4
     },
     "records": [
       {
-        "decision_label_ja": "細田工務店の完全子会社化（TOB）",
-        "decision_type": "acquisition",
-        "decision_source_filename": "26_2020-05-14_tanshin.pdf",
-        "decision_fiscal_year": 2020,
-        "record_maturity": "mature_record",
-        "outcome_count": 2,
-        "outcome_attribution_counts": {
-          "direct": 1,
-          "management_linked": 1
-        },
-        "has_adverse_evidence": false,
-        "has_disclosure_limit": false
-      },
-      {
-        "decision_label_ja": "ウッドフレンズの完全子会社化（TOB）",
-        "decision_type": "acquisition",
-        "decision_source_filename": "06_2025_FY_tanshin.pdf",
-        "decision_fiscal_year": 2025,
+        "decision_label_ja": "株主還元の拡充（増配および自己株式取得）",
+        "decision_type": "shareholder_return",
+        "capital_destination_ja": "株主還元（配当および自己株式取得）",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "34_2018-05-11_tanshin.pdf",
+        "decision_fiscal_year": 2018,
         "record_maturity": "mature_record",
         "outcome_count": 1,
         "outcome_attribution_counts": {
@@ -577,12 +553,44 @@ trend_period_buckets:
       {
         "decision_label_ja": "スマートマンション事業の譲渡",
         "decision_type": "divestiture",
+        "capital_destination_ja": "長谷工アネシス（スマートマンション事業）から事業資金の回収およびNext Powerへの承継",
+        "has_relative_allocation_evidence": true,
         "decision_source_filename": "30_2019-05-10_tanshin.pdf",
         "decision_fiscal_year": 2019,
         "record_maturity": "mature_record",
         "outcome_count": 1,
         "outcome_attribution_counts": {
           "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "decision_label_ja": "細田工務店の買収（木造戸建住宅事業の強化）",
+        "decision_type": "acquisition",
+        "capital_destination_ja": "株式会社細田工務店",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "26_2020-05-14_tanshin.pdf",
+        "decision_fiscal_year": 2020,
+        "record_maturity": "mature_record",
+        "outcome_count": 1,
+        "outcome_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "decision_label_ja": "ウッドフレンズの買収（木造化・木質化推進）",
+        "decision_type": "acquisition",
+        "capital_destination_ja": "株式会社ウッドフレンズ",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "06_2025_FY_tanshin.pdf",
+        "decision_fiscal_year": 2025,
+        "record_maturity": "partial_record",
+        "outcome_count": 1,
+        "outcome_attribution_counts": {
+          "management_linked": 1
         },
         "has_adverse_evidence": false,
         "has_disclosure_limit": false
@@ -596,7 +604,7 @@ trend_period_buckets:
   "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
   "diagnostics": {
     "validation_passed": false,
-    "validation_warning": "38_2017-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 38_2017-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf actual anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf actual anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations.",
+    "validation_warning": "38_2017-05-12_tanshin.pdf does not cover core category financial_condition. 38_2017-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 38_2017-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf does not cover core category financial_condition. 34_2018-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf does not cover core category financial_condition. 30_2019-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf does not cover core category financial_condition. 26_2020-05-14_tanshin.pdf actual anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf does not cover core category financial_condition. 22_2021-05-13_tanshin.pdf actual anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf does not cover core category financial_condition. 18_2022-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf does not cover core category financial_condition. 14_2023-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf does not cover core category financial_condition. 10_2024-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf does not cover core category financial_condition. 06_2025_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf does not cover core category financial_condition. 02_2026_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 01_2027_Q1_tanshin.pdf does not cover core category financial_condition.",
     "metrics_complete": true,
     "metrics_warning": null,
     "non_gating": true
@@ -620,7 +628,7 @@ trend_period_buckets:
       "source_filename": "38_2017-05-12_tanshin.pdf",
       "fiscal_year": 2017,
       "period": "FY",
-      "period_label_ja": "平成29年3月期 通期",
+      "period_label_ja": "2017年3月期 通期",
       "is_latest": false,
       "pdf_page_count": 49,
       "items": [
@@ -628,31 +636,25 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "平成29年3月期の連結業績は、売上高7,723億円（前期比1.9％減）となったものの、マンション建築工事の完成工事総利益率の改善により、営業利益890億円（同29.5％増）、経常利益888億円（同31.9％増）、親会社株主に帰属する当期純利益588億円（同14.7％増）の増益となった。"
+          "summary_ja": "2017年3月期の連結業績は、売上高7,723億円（前期比1.9%減）となったものの、完成工事総利益率の改善により営業利益890億円（同29.5%増）、経常利益888億円（同31.9%増）、親会社株主に帰属する当期純利益588億円（同14.7%増）と大幅増益を達成。"
         },
         {
           "category": "segments_and_business_drivers",
           "pdf_page": 3,
           "statement_type": "actual",
-          "summary_ja": "建設関連事業は売上高5,687億円（前期比4.6％減）、営業利益819億円（同14.8％増）。大型物件の受注や完成工事総利益率の改善が寄与。サービス関連事業は売上高2,083億円（同12.0％増）、営業利益97億円（同10.5％増）となった。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "総資産は現金預金の増加等で6,309億円（前期末比409億円増）、純資産は2,385億円（同531億円増）。自己資本比率は37.7％に上昇。営業キャッシュ・フローは1,095億円の収入超過。"
-        },
-        {
-          "category": "capital_allocation",
-          "pdf_page": 6,
-          "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり30円（普通配当20円、特別配当5円、創業80周年記念配当5円）。次期は1株当たり40円（普通配当20円、特別配当20円）を予定。"
+          "summary_ja": "建設関連事業は売上高5,687億円（前期比4.6%減）、営業利益819億円（同14.8%増）。物件の大型化や施工中の原価低減努力が奏功。サービス関連事業は売上高2,083億円（同12.0%増）、営業利益97億円（同10.5%増）と拡大。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "平成30年3月期の連結業績予想は、売上高8,000億円（前期比3.6％増）、営業利益920億円（同3.3％増）、経常利益910億円（同2.4％増）、親会社株主に帰属する当期純利益630億円（同7.2％増）を見込む。"
+          "summary_ja": "2018年3月期通期の連結業績予想は、新築分譲マンションを中心とした建築工事の売上増を見込み、売上高8,000億円（前期比3.6%増）、営業利益920億円（同3.3%増）、経常利益910億円（同2.4%増）、親会社株主に帰属する当期純利益630億円（同7.2%増）を予想。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 10,
+          "statement_type": "target",
+          "summary_ja": "新中期経営計画「NBj計画」（2018年3月期〜2020年3月期）を策定。3期合計連結経常利益2,400億円、2020年3月期の連結子会社経常利益200億円以上を目指し、コア事業の強化や不動産関連事業への投資拡大を掲げる。"
         }
       ],
       "annual_financial_anchor": {
@@ -681,7 +683,7 @@ trend_period_buckets:
       "source_filename": "34_2018-05-11_tanshin.pdf",
       "fiscal_year": 2018,
       "period": "FY",
-      "period_label_ja": "平成30年3月期 通期",
+      "period_label_ja": "2018年3月期 通期",
       "is_latest": false,
       "pdf_page_count": 51,
       "items": [
@@ -689,31 +691,19 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "平成30年3月期の連結業績は、マンション建築工事の施工量増大及び完成工事総利益率の改善により、売上高8,133億円（前期比5.3％増）、営業利益1,008億円（同13.2％増）、経常利益1,005億円（同13.1％増）、親会社株主に帰属する当期純利益723億円（同23.0％増）と最高益を更新。"
-        },
-        {
-          "category": "strategy_and_execution",
-          "pdf_page": 2,
-          "statement_type": "mixed",
-          "summary_ja": "中期経営計画「NBj計画」の初年度において、連結経常利益1,005億円を計上し、過去最高を達成。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "総資産は販売用不動産及び不動産事業支出金の増加により6,883億円（前期末比574億円増）、純資産は2,968億円。自己資本比率は43.0％に向上。"
+          "summary_ja": "2018年3月期は、マンション建築工事の施工量増大と完成工事総利益率の改善により、売上高8,133億円（前期比5.3%増）、営業利益1,008億円（同13.2%増）、経常利益1,005億円（同13.1%増）、親会社株主に帰属する当期純利益723億円（同23.0%増）となり、過去最高の経常利益を更新。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 6,
           "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり50円（普通配当20円、特別配当30円）。自己株式取得を実施。次期年間配当は50円（普通配当20円、特別配当30円）を予定。"
+          "summary_ja": "年間配当金を前期の30円から50円（普通配当20円、特別配当30円）へ大幅増配。自己株式の取得も45億円実施。強固な財務基盤を維持しつつ株主還元を拡充。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "平成31年3月期の連結業績予想は、売上高8,800億円（前期比8.2％増）、営業利益965億円（同4.3％減）、経常利益950億円（同5.5％減）、親会社株主に帰属する当期純利益750億円（同3.7％増）を見込む。"
+          "summary_ja": "2019年3月期は売上高8,800億円（前期比8.2%増）を見込む一方、資材・労務費の上昇等を考慮し、営業利益965億円（同4.3%減）、経常利益950億円（同5.5%減）と減益を予想。"
         }
       ],
       "annual_financial_anchor": {
@@ -750,31 +740,19 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2019年3月期の連結業績は、売上高8,910億円（前期比9.6％増）、営業利益984億円（同2.4％減）、経常利益1,004億円（同0.1％減）、親会社株主に帰属する当期純利益874億円（同20.9％増）。事業譲渡益の計上等により純利益は大幅増益。"
+          "summary_ja": "2019年3月期は、建築工事・不動産の取扱量増大により売上高8,910億円（前期比9.6%増）となったが、完成工事総利益率低下により営業利益984億円（同2.4%減）、経常利益1,004億円（同0.1%減）。事業譲渡益の計上等により親会社株主に帰属する当期純利益は874億円（同20.9%増）。"
         },
         {
           "category": "capital_allocation",
-          "pdf_page": 5,
+          "pdf_page": 33,
           "statement_type": "actual",
-          "summary_ja": "連結子会社長谷工アネシスのスマートマンション事業（高圧一括受電サービス事業等）をNext Power株式会社へ譲渡し、事業譲渡益213.49億円を計上。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は売上債権や販売用不動産の増加等で7,732億円（前期末比855億円増）、純資産は3,681億円。自己資本比率は47.5％。"
-        },
-        {
-          "category": "capital_allocation",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "年間配当は前期比30円増配の1株当たり80円（普通配当20円、特別配当60円）。次期年間配当予想は60円。"
+          "summary_ja": "連結子会社長谷工アネシスのスマートマンション事業をNext Power株式会社へ譲渡し、事業譲渡益213億円（特別利益）を計上。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 6,
           "statement_type": "forecast",
-          "summary_ja": "2020年3月期の連結業績予想は、売上高8,600億円（前期比3.5％減）、営業利益860億円（同12.6％減）、経常利益850億円（同15.3％減）、親会社株主に帰属する当期純利益600億円（同31.3％減）を見込む。"
+          "summary_ja": "2020年3月期通期予想は、NBj計画最終年として売上高8,600億円（前期比3.5%減）、営業利益860億円（同12.6%減）、経常利益850億円（同15.3%減）、親会社株主に帰属する当期純利益600億円（同31.3%減）を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -811,31 +789,25 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2020年3月期の連結業績は、不動産取扱量の減少や完成工事総利益率の低下により、売上高8,460億円（前期比5.0％減）、営業利益859億円（同12.7％減）、経常利益853億円（同15.1％減）、親会社株主に帰属する当期純利益599億円（同31.5％減）となった。"
+          "summary_ja": "2020年3月期は、不動産取扱量の減少や完成工事総利益率の低下により、売上高8,460億円（前期比5.0%減）、営業利益859億円（同12.7%減）、経常利益853億円（同15.1%減）。前期の事業譲渡益反動もあり当期純利益は599億円（同31.5%減）。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 34,
           "statement_type": "actual",
-          "summary_ja": "2020年2月に株式会社細田工務店を株式公開買付け等により完全子会社化（取得原価21.86億円）。負ののれん発生益22.27億円を特別利益に計上。"
+          "summary_ja": "木造戸建住宅事業の強化を目的に株式会社細田工務店を株式公開買付けにより100%子会社化（取得原価21.9億円、負ののれん発生益22.3億円を計上）。"
         },
         {
           "category": "strategy_and_execution",
           "pdf_page": 9,
-          "statement_type": "mixed",
-          "summary_ja": "新中期経営計画「HASEKO Next Stage Plan（NS計画）」（2021年3月期～2025年3月期）を策定。5か年で成長戦略投資2,400億円、5期合計連結経常利益4,000億円、総還元性向40％程度を掲げる。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は7,993億円（前期末比261億円増）、純資産は3,877億円。自己資本比率は48.5％。営業キャッシュ・フローはたな卸資産増加により153億円の支出超過。"
+          "statement_type": "target",
+          "summary_ja": "新中期経営計画「HASEKO Evolution Plan」（2021年3月期〜2025年3月期）を策定。5期合計連結経常利益4,000億円、2025年3月期経常利益1,000億円を目指し、5年間で2,400億円の成長戦略投資を計画。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 6,
           "statement_type": "forecast",
-          "summary_ja": "2021年3月期の連結業績予想は、新型コロナウイルス感染症の影響を慎重に見込み、売上高8,000億円（前期比5.4％減）、営業利益725億円（同15.6％減）、経常利益700億円（同17.9％減）、親会社株主に帰属する当期純利益490億円（同18.1％減）を見込む。"
+          "summary_ja": "2021年3月期予想は新型コロナウイルス感染症の影響を織り込み、売上高8,000億円（前期比5.4%減）、営業利益725億円（同15.6%減）、経常利益700億円（同17.9%減）を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -872,25 +844,19 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2021年3月期の連結業績は、コロナ禍によるマンション建築工事の施工量減少や完成工事総利益率低下の影響等により、売上高8,094億円（前期比4.3％減）、営業利益729億円（同15.1％減）、経常利益718億円（同15.7％減）、親会社株主に帰属する当期純利益483億円（同19.4％減）となった。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "総資産は不動産取得等により9,537億円（前期末比1,543億円増）、有利子負債は2,683億円（同1,156億円増）。営業キャッシュ・フローは319億円の収入超過へ改善。"
+          "summary_ja": "2021年3月期はコロナ禍による施工量減少や工事粗利益率低下等により、売上高8,094億円（前期比4.3%減）、営業利益729億円（同15.1%減）、経常利益718億円（同15.7%減）、当期純利益483億円（同19.4%減）となったが、期初予想（経常利益700億円）は超過達成。"
         },
         {
           "category": "capital_allocation",
-          "pdf_page": 6,
+          "pdf_page": 19,
           "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり70円（中間35円、期末35円）。自己株式取得215億円を実施。"
+          "summary_ja": "自己株式取得215億円を実施。配当金支払額250億円とあわせて株主還元を強化。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "2022年3月期の連結業績予想は、売上高8,500億円（前期比5.0％増）、営業利益780億円（同7.0％増）、経常利益750億円（同4.4％増）、親会社株主に帰属する当期純利益510億円（同5.7％増）を見込む。"
+          "summary_ja": "2022年3月期業績予想は、売上高8,500億円（前期比5.0%増）、営業利益780億円（同7.0%増）、経常利益750億円（同4.4%増）、親会社株主に帰属する当期純利益510億円（同5.7%増）と回復を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -927,31 +893,25 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2022年3月期の連結業績は、不動産取扱量の増加や分譲マンション引渡しの順調な推移により、売上高9,097億円（前期比12.4％増）、営業利益827億円（同13.4％増）、経常利益819億円（同14.0％増）、親会社株主に帰属する当期純利益545億円（同12.9％増）と増収増益。"
+          "summary_ja": "2022年3月期は、不動産取扱量の増加等により売上高9,097億円（前期比12.4%増）、営業利益827億円（同13.4%増）、経常利益819億円（同14.0%増）、親会社株主に帰属する当期純利益545億円（同12.9%増）と増収増益に転じた。"
         },
         {
           "category": "segments_and_business_drivers",
           "pdf_page": 3,
           "statement_type": "actual",
-          "summary_ja": "建設関連事業は売上高6,465億円（前期比5.6％増）、営業利益633億円（同2.1％減）。不動産関連事業は売上高1,081億円（同45.6％増）、営業利益156億円（同83.5％増）と大幅伸長。海外関連事業は資産の見直しに伴い営業損失43億円を計上。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は1兆819億円（前期末比1,282億円増）と1兆円を突破。有利子負債は3,121億円。営業キャッシュ・フローは654億円の収入超過。"
+          "summary_ja": "不動産関連事業が売上高1,081億円（前期比45.6%増）、営業利益156億円（同83.5%増）と大幅伸長。海外関連事業ではハワイ資産の使用可能性見直しに伴い営業損失43億円を計上。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 5,
           "statement_type": "actual",
-          "summary_ja": "株主還元方針を変更し、1株当たり年間配当金の下限を70円から80円に引き上げ。当期配当は80円（中間35円、期末45円）を実施。"
+          "summary_ja": "配当方針を変更し、1株当たり年間配当金の下限を70円から80円に引き上げ。当期配当は80円を実施。"
         },
         {
           "category": "forward_looking_information",
-          "pdf_page": 6,
+          "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "2023年3月期の連結業績予想は、売上高9,600億円（前期比5.5％増）、営業利益870億円（同5.2％増）、経常利益850億円（同3.8％増）、親会社株主に帰属する当期純利益570億円（同4.6％増）を見込む。"
+          "summary_ja": "2023年3月期予想は、売上高9,600億円（前期比5.5%増）、営業利益870億円（同5.2%増）、経常利益850億円（同3.8%増）と引き続き増益を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -988,31 +948,19 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2023年3月期の連結業績は、不動産売上高の伸長により売上高1兆273億円（前期比12.9％増）となり過去最高を更新。営業利益902億円（同9.0％増）、経常利益883億円（同7.8％増）、親会社株主に帰属する当期純利益593億円（同8.9％増）となった。"
+          "summary_ja": "2023年3月期は、不動産売上高の伸長により連結売上高1兆273億円（前期比12.9%増）と過去最高を更新。営業利益902億円（同9.0%増）、経常利益883億円（同7.8%増）、親会社株主に帰属する当期純利益593億円（同8.9%増）。"
         },
         {
           "category": "segments_and_business_drivers",
           "pdf_page": 3,
           "statement_type": "actual",
-          "summary_ja": "資材・労務費の高騰等の影響を受けて建設関連事業の完成工事総利益率は低下したものの、不動産関連事業における大型案件の新規引渡し順調等により利益を補い増益を達成。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は1兆1,981億円（前期末比1,162億円増）、純資産は4,541億円。営業キャッシュ・フローは棚卸資産増加に伴い519億円の支出超過。"
-        },
-        {
-          "category": "capital_allocation",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり80円（中間40円、期末40円）を実施。次期も80円を予定。"
+          "summary_ja": "建設関連事業において資材・労務費高騰の影響を受け完成工事総利益率は低下したが、建築受注用地取扱量の増加で売上高7,467億円（同15.5%増）、営業利益669億円（同5.8%増）を確保。"
         },
         {
           "category": "forward_looking_information",
-          "pdf_page": 6,
+          "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "2024年3月期の連結業績予想は、売上高1兆800億円（前期比5.1％増）、営業利益880億円（同2.4％減）、経常利益830億円（同6.0％減）、親会社株主に帰属する当期純利益555億円（同6.4％減）を見込む。"
+          "summary_ja": "2024年3月期予想は、売上高1兆800億円（前期比5.1%増）、営業利益880億円（同2.4%減）、経常利益830億円（同6.0%減）と資材高騰等を踏まえ小幅減益を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -1049,31 +997,19 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2024年3月期の連結業績は、売上高1兆944億円（前期比6.5％増）と連続で過去最高を更新。一方、資材・労務費高騰による完成工事総利益率低下の影響を受け、営業利益857億円（同4.9％減）、経常利益833億円（同5.6％減）、親会社株主に帰属する当期純利益560億円（同5.5％減）となった。"
+          "summary_ja": "2024年3月期は、売上高1兆944億円（前期比6.5%増）となったが、資材・労務費高騰による完成工事総利益率の低下により、営業利益857億円（同4.9%減）、経常利益833億円（同5.6%減）、親会社株主に帰属する当期純利益560億円（同5.5%減）。経常利益は期初予想（830億円）を上回る。"
         },
         {
-          "category": "segments_and_business_drivers",
-          "pdf_page": 3,
+          "category": "strategy_and_execution",
+          "pdf_page": 6,
           "statement_type": "actual",
-          "summary_ja": "建設関連事業は売上高7,765億円（前期比4.0％増）、営業利益578億円（同13.6％減）。サービス関連事業は売上高2,675億円（同14.7％増）、営業利益192億円（同28.5％増）と好調に推移。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は1兆3,512億円（前期末比1,531億円増）、純資産は5,112億円。自己資本比率は37.8％。営業キャッシュ・フローは売上債権減少等により1,150億円の収入超過へ大きく好転。"
-        },
-        {
-          "category": "capital_allocation",
-          "pdf_page": 5,
-          "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり85円（中間40円、期末45円）に増配。次期は年間85円を予定。"
+          "summary_ja": "NS計画（2021年3月期〜2025年3月期）4年目を終了。BIM/LIMの活用やDX推進、再開発・建替事業の拡大を重点的に推進。"
         },
         {
           "category": "forward_looking_information",
-          "pdf_page": 6,
+          "pdf_page": 7,
           "statement_type": "forecast",
-          "summary_ja": "2025年3月期の連結業績予想は、売上高1兆1,800億円（前期比7.8％増）、営業利益820億円（同4.4％減）、経常利益800億円（同4.0％減）、親会社株主に帰属する当期純利益530億円（同5.4％減）を見込む。"
+          "summary_ja": "2025年3月期予想は、売上高1兆1,800億円（前期比7.8%増）、営業利益820億円（同4.4%減）、経常利益800億円（同4.0%減）、親会社株主に帰属する当期純利益530億円（同5.4%減）と増収減益を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -1110,37 +1046,25 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "2025年3月期の連結業績は、売上高1兆1,774億円（前期比7.6％増）、営業利益847億円（同1.2％減）、経常利益834億円（同0.1％増）。海外関連事業における減損損失（168.61億円）や投資有価証券評価損（29.90億円）等の特別損失計上により、親会社株主に帰属する当期純利益は345億円（同38.5％減）となった。"
-        },
-        {
-          "category": "strategy_and_execution",
-          "pdf_page": 2,
-          "statement_type": "actual",
-          "summary_ja": "中期経営計画「NS計画」の最終年において、5期合計連結経常利益4,000億円（実績4,118億円）及び連結子会社経常利益300億円以上（実績356億円）の目標を達成。"
+          "summary_ja": "2025年3月期は売上高1兆1,774億円（前期比7.6%増）、営業利益847億円（同1.2%減）、経常利益834億円（同0.1%増）。海外関連事業で特別損失（減損損失169億円、投資有価証券評価損30億円、訴訟損失引当金繰入30億円）を計上したため、親会社株主に帰属する当期純利益は345億円（同38.5%減）と大幅減益。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 41,
-          "statement_type": "forecast",
-          "summary_ja": "2025年4月、株式会社ウッドフレンズに対する公開買付けの実施を決議（買付代金約25.08億円）し、完全子会社化を目指す方針を発表。"
+          "statement_type": "actual",
+          "summary_ja": "木質化・木造化推進および供給体制強化のため、株式会社ウッドフレンズに対する公開買付けの実施を決定（買付代金約25億円、2026年3月期中に連結化）。"
         },
         {
           "category": "strategy_and_execution",
           "pdf_page": 10,
           "statement_type": "target",
-          "summary_ja": "新中期経営計画「HASEKO Evolution Plan」（2026年3月期～2031年3月期）を発表。6か年ネット投資額4,000億円、2028年3月期連結経常利益1,000億円以上、総還元性向50％程度、累進配当の実施を掲げる。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は1兆3,652億円（前期末比140億円増）、純資産は5,320億円。自己資本比率は39.0％。営業キャッシュ・フローは39億円の収入超過。"
+          "summary_ja": "新中期経営計画「HASEKO Evolution Plan」（2026年3月期〜2031年3月期）を策定。2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上を目指し、6年間でネット投資額4,000億円を計画。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 6,
           "statement_type": "forecast",
-          "summary_ja": "2026年3月期の連結業績予想は、売上高1兆2,300億円（前期比4.5％増）、営業利益920億円（同8.6％増）、経常利益850億円（同1.9％増）、親会社株主に帰属する当期純利益550億円（同59.7％増）を見込む。"
+          "summary_ja": "2026年3月期予想は、売上高1兆2,300億円（前期比4.5%増）、営業利益920億円（同8.6%増）、経常利益850億円（同1.9%増）、親会社株主に帰属する当期純利益550億円（同59.7%増）と業績回復を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -1177,31 +1101,31 @@ trend_period_buckets:
           "category": "operating_results",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "新中計「HASEKO Evolution Plan」初年度である2026年3月期の連結業績は、完成工事高の増加及び不動産取扱量増加、完成工事総利益率の改善等により、売上高1兆2,731億円（前期比8.1％増）、営業利益987億円（同16.6％増）、経常利益941億円（同12.8％増）、親会社株主に帰属する当期純利益548億円（同59.2％増）の大幅増収増益。"
+          "summary_ja": "2026年3月期（新中計初年度）は、完成工事高の増加や採算改善により、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）と大幅な増収増益。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 36,
           "statement_type": "actual",
-          "summary_ja": "TOB及び売渡請求により株式会社ウッドフレンズを完全子会社化（取得原価25.08億円）。木造・木質化事業の推進を図る。"
+          "summary_ja": "TOBにより株式会社ウッドフレンズを完全子会社化（取得原価25.1億円）。また自己株式取得201億円を実施。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 3,
+          "statement_type": "actual",
+          "summary_ja": "建設関連事業は受注採算改善により営業利益685億円（前期比21.6%増）。不動産関連事業も分譲マンション新規引渡し増で営業利益356億円（同9.2%増）。一方、海外事業は営業損失61億円を計上。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 5,
           "statement_type": "actual",
-          "summary_ja": "年間配当は1株当たり95円（中間45円、期末50円）。自己株式の取得201億円（8,314千株）を実施し、自己株式消却を実施。次期年間配当予想は100円（累進配当継続）。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 4,
-          "statement_type": "actual",
-          "summary_ja": "総資産は1兆4,177億円（前期末比525億円増）、純資産は5,635億円。自己資本比率は39.7％。営業キャッシュ・フローは棚卸資産減少等により1,574億円の収入超過と大幅増。"
+          "summary_ja": "新株主還元方針（6期合計総還元性向50%程度、累進配当導入）に基づき、年間配当金を1株当たり95円（前年は85円）に増配。次期は100円を予定。"
         },
         {
           "category": "forward_looking_information",
           "pdf_page": 6,
           "statement_type": "forecast",
-          "summary_ja": "2027年3月期の連結業績予想は、売上高1兆3,800億円（前期比8.4％増）、営業利益1,100億円（同11.4％増）、経常利益1,050億円（同11.6％増）、親会社株主に帰属する当期純利益660億円（同20.4％増）を見込む。"
+          "summary_ja": "2027年3月期予想は、売上高1兆3,800億円（前期比8.4%増）、営業利益1,100億円（同11.4%増）、経常利益1,050億円（同11.6%増）、親会社株主に帰属する当期純利益660億円（同20.4%増）と順調な成長を見込む。"
         }
       ],
       "annual_financial_anchor": {
@@ -1238,37 +1162,31 @@ trend_period_buckets:
           "category": "business_overview",
           "pdf_page": 4,
           "statement_type": "actual",
-          "summary_ja": "当社グループはマンション等の企画・設計・施工を行う総合建設業を主軸とする「建設関連事業」、新築分譲マンション開発や不動産流通・仲介等を行う「不動産関連事業」、分譲・賃貸マンション管理、大規模修繕、シニアサービス等を展開する「管理運営事業」、及び海外不動産開発等を行う「海外事業」で構成される。"
+          "summary_ja": "当社グループはマンションに特化した総合建設業をコアとし、土地情報収集から企画・設計、施工、販売受託、建物管理・大規模修繕、不動産分譲・賃貸、シニア事業、海外事業までを手掛ける「住まいと暮らし」の総合企業グループ。"
         },
         {
           "category": "operating_results",
-          "pdf_page": 2,
+          "pdf_page": 1,
           "statement_type": "actual",
-          "summary_ja": "当第1四半期連結累計期間の業績は、売上高3,121億円（前年同期比9.2％増）、営業利益299億円（同46.0％増）、経常利益305億円（同58.9％増）、親会社株主に帰属する四半期純利益213億円（同68.5％増）の大幅増収増益となった。完成工事総利益率の上昇が寄与。"
+          "summary_ja": "2027年3月期第1四半期の連結業績は、売上高3,121億円（前年同期比9.2%増）、完成工事総利益率の上昇等により営業利益299億円（同46.0%増）、経常利益305億円（同58.9%増）、親会社株主に帰属する四半期純利益213億円（同68.5%増）の大幅増益。"
         },
         {
           "category": "segments_and_business_drivers",
           "pdf_page": 2,
           "statement_type": "actual",
-          "summary_ja": "建設関連事業は売上高2,350億円（前年同期比3.7％増）、営業利益232億円（同50.6％増）と完成工事総利益率上昇が牽引。不動産関連事業は売上高598億円（同18.6％増）、営業利益69億円（同12.2％増）。管理運営事業は売上高375億円（同0.4％減）、営業利益17億円（同3.9％減）。海外事業は売上高12億円、営業損失4億円（前年同期は営業損失1億円）。"
-        },
-        {
-          "category": "financial_condition",
-          "pdf_page": 3,
-          "statement_type": "actual",
-          "summary_ja": "当第1四半期連結会計期間末の連結総資産は1兆3,531億円（前連結会計年度末比647億円減）、連結純資産は5,706億円（同72億円増）。自己資本比率は42.1％に上昇。"
+          "summary_ja": "建設関連事業は完成工事総利益率が向上し営業利益232億円（前年同期比50.6%増）。不動産関連事業も引渡し増加で営業利益69億円（同12.2%増）。管理運営事業は営業利益17億円（同3.9%減）、海外事業は営業損失4億円。"
         },
         {
           "category": "forward_looking_information",
-          "pdf_page": 3,
-          "statement_type": "mixed",
-          "summary_ja": "通期連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更はない。なお、個別業績予想について、グループ内組織再編で当初見込んでいた特別利益を計上しない見込みとなったため、個別の当期純利益予想を690億円（従来予想760億円から70億円減額）へ修正。連結予想への影響はない。"
+          "pdf_page": 1,
+          "statement_type": "forecast",
+          "summary_ja": "2027年3月期通期の連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更なし。一方、個別業績予想はグループ内再編に伴う特別利益計上の見直しにより当期純利益を690億円に下向修正（連結への影響はなし）。"
         },
         {
           "category": "capital_allocation",
           "pdf_page": 11,
           "statement_type": "actual",
-          "summary_ja": "2026年8月6日開催の取締役会において、株式給付信託（BBT）及び株式給付型ESOPへの追加拠出に伴い、第三者割当による自己株式の処分（普通株式4,151,500株、処分価額1株につき2,659.5円、処分総額約110.41億円）を決議。"
+          "summary_ja": "株式給付信託（BBT）及びESOPへの追加拠出に伴い、第三者割当による自己株式の処分（普通株式4,151,500株、処分総額約110.4億円、処分期日2026年8月21日）を決定。"
         }
       ],
       "annual_financial_anchor": null,
@@ -1278,53 +1196,23 @@ trend_period_buckets:
   ],
   "capital_allocation_decisions": [
     {
-      "decision_label_ja": "細田工務店の完全子会社化（TOB）",
-      "decision_type": "acquisition",
-      "decision_source_filename": "26_2020-05-14_tanshin.pdf",
-      "decision_fiscal_year": 2020,
-      "decision_period_ja": "2020年3月期",
-      "amount_or_scale_ja": "取得原価 2,186百万円",
-      "decision_ja": "株式会社細田工務店の株式を公開買付け等により取得し完全子会社化。",
-      "stated_rationale_ja": "戸建住宅事業の施工・販売体制の強化及びグループでの住宅事業領域の拡大。",
-      "funding_or_tradeoff_ja": "手元現金等を対価として買付。",
-      "subsequent_outcomes": [
-        {
-          "source_filename": "26_2020-05-14_tanshin.pdf",
-          "fiscal_year": 2020,
-          "period_label_ja": "2020年3月期",
-          "outcome_ja": "企業結合時に負ののれん発生益2,227百万円を特別利益に計上。",
-          "attribution": "direct",
-          "signal": "positive"
-        },
-        {
-          "source_filename": "22_2021-05-13_tanshin.pdf",
-          "fiscal_year": 2021,
-          "period_label_ja": "2021年3月期",
-          "outcome_ja": "建設関連事業子会社として戸建住宅の施工・分譲を継続推進。",
-          "attribution": "management_linked",
-          "signal": "neutral"
-        }
-      ],
-      "adverse_evidence_ja": [],
-      "record_maturity": "mature_record",
-      "disclosure_limit_ja": null
-    },
-    {
-      "decision_label_ja": "ウッドフレンズの完全子会社化（TOB）",
-      "decision_type": "acquisition",
-      "decision_source_filename": "06_2025_FY_tanshin.pdf",
-      "decision_fiscal_year": 2025,
-      "decision_period_ja": "2025年3月期",
-      "amount_or_scale_ja": "取得原価 2,508百万円（買付代金約25.08億円）",
-      "decision_ja": "株式会社ウッドフレンズに対するTOB及び株式売渡請求を実施し完全子会社化。",
-      "stated_rationale_ja": "住宅の木造化・木質化推進、国産材の活用及び木質資源カスケード事業の強化。",
-      "funding_or_tradeoff_ja": "自己資金を充当。",
+      "decision_label_ja": "株主還元の拡充（増配および自己株式取得）",
+      "decision_type": "shareholder_return",
+      "capital_destination_ja": "株主還元（配当および自己株式取得）",
+      "relative_allocation_evidence_ja": "中期経営計画において総還元性向40%〜50%程度を掲げ、下限配当の設定や累進配当の導入、機動的な自己株式取得を通じて配当額を年間30円から100円予想へと拡大。",
+      "decision_source_filename": "34_2018-05-11_tanshin.pdf",
+      "decision_fiscal_year": 2018,
+      "decision_period_ja": "2018年3月期",
+      "amount_or_scale_ja": "配当金支払額年間150億円〜256億円規模、自己株式取得累計数百億円規模",
+      "decision_ja": "配当性向目標の上方修正、下限配当設定、累進配当導入および機動的な自己株式取得を実施。",
+      "stated_rationale_ja": "強固な財務基盤を維持しつつ、成長投資とのバランスを考慮した株主還元の拡充を図るため。",
+      "funding_or_tradeoff_ja": "営業キャッシュ・フローおよび自己資金を充当。",
       "subsequent_outcomes": [
         {
           "source_filename": "02_2026_FY_tanshin.pdf",
           "fiscal_year": 2026,
           "period_label_ja": "2026年3月期",
-          "outcome_ja": "完全子会社化を完了。建設関連事業セグメント資産が17,945百万円増加、管理運営事業セグメント資産が2,635百万円増加。発生したのれん288百万円は金額的重要性が乏しいため一括償却。",
+          "outcome_ja": "年間配当金1株当たり95円を実施し、2027年3月期予想は100円を掲げる。2026年3月期には自己株式取得201億円も実施。",
           "attribution": "direct",
           "signal": "positive"
         }
@@ -1336,25 +1224,79 @@ trend_period_buckets:
     {
       "decision_label_ja": "スマートマンション事業の譲渡",
       "decision_type": "divestiture",
+      "capital_destination_ja": "長谷工アネシス（スマートマンション事業）から事業資金の回収およびNext Powerへの承継",
+      "relative_allocation_evidence_ja": "電力一括購入事業を外部専門企業へ承継し、コア事業・成長分野へ経営資源を再配分。",
       "decision_source_filename": "30_2019-05-10_tanshin.pdf",
       "decision_fiscal_year": 2019,
       "decision_period_ja": "2019年3月期",
-      "amount_or_scale_ja": "事業譲渡価額 21,349百万円",
-      "decision_ja": "連結子会社長谷工アネシスのスマートマンション事業（高圧一括受電サービス事業等）をNext Power株式会社へ譲渡。",
-      "stated_rationale_ja": "エネルギー分野の専門会社への事業承継によるサービス拡大と契約者の利便性向上。",
-      "funding_or_tradeoff_ja": "事業譲渡による現金対価受領（差引収入20,401百万円）。",
+      "amount_or_scale_ja": "事業譲渡価額213.49億円",
+      "decision_ja": "長谷工アネシスの高圧一括受電サービス事業及び共用部電力小売りサービス事業をNext Power株式会社へ吸収分割により譲渡。",
+      "stated_rationale_ja": "エネルギー分野の専門会社へ事業承継することで顧客の利便性向上を図るとともに、経営資源をコア領域に集中させるため。",
+      "funding_or_tradeoff_ja": "事業譲渡対価として現金204億円（純額）を受領。",
       "subsequent_outcomes": [
         {
           "source_filename": "30_2019-05-10_tanshin.pdf",
           "fiscal_year": 2019,
           "period_label_ja": "2019年3月期",
-          "outcome_ja": "特別利益として事業譲渡益21,349百万円を計上し、当期純利益87,391百万円（前期比20.9％増）の大幅増益に寄与。",
+          "outcome_ja": "事業譲渡益213.49億円を特別利益に計上し、当期純利益の押し上げに貢献。",
           "attribution": "direct",
           "signal": "positive"
         }
       ],
       "adverse_evidence_ja": [],
       "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "decision_label_ja": "細田工務店の買収（木造戸建住宅事業の強化）",
+      "decision_type": "acquisition",
+      "capital_destination_ja": "株式会社細田工務店",
+      "relative_allocation_evidence_ja": "分譲マンション以外の住宅領域（木造戸建事業）への拡充のため、買収資金を投入。",
+      "decision_source_filename": "26_2020-05-14_tanshin.pdf",
+      "decision_fiscal_year": 2020,
+      "decision_period_ja": "2020年3月期",
+      "amount_or_scale_ja": "取得原価21.86億円（TOBによる100%子会社化）",
+      "decision_ja": "株式会社細田工務店を株式公開買付けにより完全子会社化。",
+      "stated_rationale_ja": "木造戸建住宅の設計・施工・販売の強みをグループに取り込み、戸建事業の拡大および「住まいと暮らし」に関する事業拡大を図るため。",
+      "funding_or_tradeoff_ja": "自己資金（現金）を対価として充当。",
+      "subsequent_outcomes": [
+        {
+          "source_filename": "26_2020-05-14_tanshin.pdf",
+          "fiscal_year": 2020,
+          "period_label_ja": "2020年3月期",
+          "outcome_ja": "時価純資産額が取得原価を上回ったため、負ののれん発生益22.27億円を特別利益に計上。",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "decision_label_ja": "ウッドフレンズの買収（木造化・木質化推進）",
+      "decision_type": "acquisition",
+      "capital_destination_ja": "株式会社ウッドフレンズ",
+      "relative_allocation_evidence_ja": "脱炭素社会対応および木造分譲・資材供給力の強化に向けた成長戦略投資の一環。",
+      "decision_source_filename": "06_2025_FY_tanshin.pdf",
+      "decision_fiscal_year": 2025,
+      "decision_period_ja": "2025年3月期",
+      "amount_or_scale_ja": "取得原価25.08億円（TOBおよび売渡請求により100%子会社化）",
+      "decision_ja": "株式会社ウッドフレンズの普通株式をTOB等により買収し、完全子会社化。",
+      "stated_rationale_ja": "「木質資源カスケード事業」を展開する同社をグループ傘下に加え、マンション木造共用棟やハイブリッド木造住宅の開発・推進を加速させるため。",
+      "funding_or_tradeoff_ja": "自己資金（現金）を充当。",
+      "subsequent_outcomes": [
+        {
+          "source_filename": "02_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期",
+          "outcome_ja": "2026年3月期より連結子会社化。建設関連事業資産179.5億円、管理運営事業資産26.4億円の増加に寄与。",
+          "attribution": "management_linked",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "partial_record",
       "disclosure_limit_ja": null
     }
   ],
@@ -1482,14 +1424,16 @@ placeholder relationships, or wording. Do not return Markdown.
 ### 資本配分は価値を創出したか
 
 **[創出した、概ね創出した、成果は混在、あまり創出しなかった、創出しなかった、
-または判断材料不足という結論]** [過去10年間の重要な資金配分を二～四件選び、
-当初の目的とその後の利益・利益率・キャッシュ、事業基盤、設備稼働、買収事業の
-貢献、減損・売却、財務負担などの結果をつなげる。規模と持続性を踏まえて最も
-強い成果と最も重要な失敗・反証を比較し、全体として価値を創出したかを明確に
-答える。投資、買収、配当、自己株式取得、現金保有、借入の実施自体は成果と
-みなさない。個別施策に直接結び付く成果と、会社・セグメント全体の成果しか
-確認できない場合を区別する。実施から日が浅い施策や後続結果を確認できない施策は、
-その結果が未確立であることだけを簡潔に示し、資料不足の説明を分析の中心にしない。]
+または判断材料不足という結論]** [過去10年間に追加資本がどの事業・用途へ向かい、
+その配分先が後にどの程度の利益・利益率・キャッシュを生んだかを比較する。正確な
+セグメント投下資本が非開示の場合は、人員、開発、マーケティング、設備、買収等の
+開示から配分方向だけを慎重に判断し、比率を推定しない。二～四の重要な配分先について、
+資本投入、相対的な優先順位、その後のリターン、帰属の強さをつなげる。成長後に資本を
+増やしたか、不振後に縮小・撤退したかも確認し、高リターン事業へ資本が重点配分されたかを
+明確に答える。売上成長だけで魅力的なリターンとみなさず、利益、利益率、キャッシュ、
+稼働・活用状況、減損・売却、継続的な資金負担を重視する。投資、買収、配当、自己株式取得、
+現金保有、借入の実施自体は成果とみなさない。実施から日が浅い施策は結果が未確立である
+ことだけを簡潔に示し、資料不足の説明を分析の中心にしない。]
 
 ### 最新コメントから読み取れる現在地
 
@@ -1638,21 +1582,30 @@ Analysis requirements:
    implementation into an achieved economic outcome.
 7. Treat capital allocation broadly: organic investment in people, marketing,
    development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Discuss material shifts
-   and trade-offs rather than listing every cash-flow item. Keep this analysis in
-   its own section and do not repeat the same facts as separate strategic changes.
-8. In trend.capital_value_creation, answer the question "Did capital allocation
-   create value?" directly. Use `capital_allocation_decisions` as an index, verify
-   the important facts in the PDFs, and select the two to four most material
-   allocation decisions for the overall record. For each selected decision,
+   balance-sheet deployment; and dividends or buybacks. Reconstruct the
+   directional mix of incremental capital across material businesses and other
+   uses. Do not claim a quantified segment invested-capital mix unless the PDFs
+   disclose it. Discuss material shifts and trade-offs rather than listing every
+   cash-flow item, and do not repeat the same facts as strategic changes.
+8. In trend.capital_value_creation, answer both questions directly:
+   "Where did incremental capital go?" and "Did capital increasingly flow toward
+   the businesses producing the strongest subsequent returns?" Use
+   `capital_allocation_decisions` as an index and verify the important facts in
+   the PDFs. Select the two to four most material destinations or allocation
+   tracks, not merely the most visible transactions. For each selected track,
    distinguish:
-   action and stated purpose -> later observable result -> strength of attribution
-   -> maturity of the record -> decision-level conclusion. Weight outcomes by
-   scale, persistence, and effect on the business:
-   - recurring profit, margin, cash generation, useful capacity, or a stronger
-     core business supports value creation;
+   capital input and destination -> change in relative priority -> later
+   observable return -> strength of attribution -> maturity of the record.
+   Compare destinations using the strongest available evidence:
+   - recurring profit, improving margin, cash generation, productive capacity,
+     or a stronger core business supports an attractive return;
+   - revenue growth without corresponding profit, margin, or cash evidence does
+     not by itself establish an attractive return;
    - persistent losses, impairment, failed expansion, disposal after weak
-     performance, or financial strain weighs against it;
+     performance, or continuing financial support weighs against it;
+   - increasing capital after strong evidence and reducing or exiting capital
+     after weak evidence supports allocation discipline; continuing to subsidize
+     a weak destination without improvement weighs against it;
    - dividends, buybacks, acquisitions, investment spending, cash accumulation,
      and debt issuance are actions, not outcomes by themselves.
    Purchase price, goodwill, negative goodwill, bargain-purchase accounting, and
@@ -1666,15 +1619,16 @@ Analysis requirements:
    sentence while describing its synergies, contribution, or execution as a
    future test elsewhere in the same report.
    Reach one overall judgment: yes, mostly yes, mixed, mostly no, no, or not
-   enough evidence. The headline and opening sentence must give that answer and
-   the main reason. Then explain the strongest positive outcome, the strongest
-   negative or offsetting outcome, and why the balance supports the judgment.
-   When a particular decision has no observable later outcome, say only that its
-   result is not established; do not turn the section into an inventory of
-   unavailable disclosures. Use "not enough evidence" as the overall judgment
-   only when the decade contains no meaningful decision-to-outcome record.
-   Keep this assessment separate from the preceding description of how allocation
-   priorities changed.
+   enough evidence. The headline and opening sentence must state whether the
+   allocation mix favored the higher-return businesses and why. Then explain
+   the strongest productive destination, the largest weak or value-destructive
+   destination, and whether management subsequently reallocated capital in the
+   economically sensible direction. When precise segment capital is unavailable,
+   give a restrained directional judgment from disclosed allocation inputs and
+   outcomes rather than making missing disclosure the thesis. Use "not enough
+   evidence" only when the decade contains no meaningful allocation-to-return
+   record. Keep this assessment separate from the preceding description of how
+   allocation priorities changed.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing

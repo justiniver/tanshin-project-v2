@@ -51,7 +51,15 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertIn("attention guide", synthesis.prompt)
         self.assertIn("authoritative", synthesis.prompt)
         self.assertIn("trend.capital_value_creation", synthesis.prompt)
-        self.assertIn('answer the question "Did capital allocation', synthesis.prompt)
+        self.assertIn(
+            "answer both questions directly",
+            synthesis.prompt,
+        )
+        self.assertIn('"Where did incremental capital go?"', synthesis.prompt)
+        self.assertIn(
+            "businesses producing the strongest subsequent returns",
+            synthesis.prompt,
+        )
         self.assertIn("actions, not outcomes by themselves", synthesis.prompt)
         self.assertNotIn("WACC", synthesis.prompt)
 
@@ -83,6 +91,8 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "properties"
         ]
         self.assertIn("stated_rationale_ja", decision)
+        self.assertIn("capital_destination_ja", decision)
+        self.assertIn("relative_allocation_evidence_ja", decision)
         self.assertIn("subsequent_outcomes", decision)
         self.assertIn("adverse_evidence_ja", decision)
         self.assertIn("record_maturity", decision)
@@ -199,6 +209,10 @@ class TwoStageAnalysisTests(unittest.TestCase):
             {
                 "decision_label_ja": "Material acquisition",
                 "decision_type": "acquisition",
+                "capital_destination_ja": "Growth segment",
+                "relative_allocation_evidence_ja": (
+                    "Capital priority shifted toward the growth segment."
+                ),
                 "decision_source_filename": decision_source.filename,
                 "decision_fiscal_year": decision_source.fiscal_year,
                 "decision_period_ja": f"FY{decision_source.fiscal_year}",
@@ -242,6 +256,17 @@ class TwoStageAnalysisTests(unittest.TestCase):
             capital["by_outcome_attribution"],
             {"aggregate_only": 1},
         )
+        self.assertEqual(
+            capital["decisions_with_relative_allocation_evidence"],
+            1,
+        )
+        self.assertEqual(
+            capital["records"][0]["capital_destination_ja"],
+            "Growth segment",
+        )
+        self.assertTrue(
+            capital["records"][0]["has_relative_allocation_evidence"]
+        )
         self.assertTrue(capital["records"][0]["has_disclosure_limit"])
 
     def test_capital_allocation_validation_rejects_unselected_sources(
@@ -252,6 +277,8 @@ class TwoStageAnalysisTests(unittest.TestCase):
             {
                 "decision_label_ja": "Material acquisition",
                 "decision_type": "acquisition",
+                "capital_destination_ja": "Growth segment",
+                "relative_allocation_evidence_ja": None,
                 "decision_source_filename": "not-selected.pdf",
                 "decision_fiscal_year": 2025,
                 "decision_period_ja": "FY2025",

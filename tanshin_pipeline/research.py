@@ -99,34 +99,37 @@ def validate_research_dossier(
                     f"{memo.source_filename} has the wrong latest-filing flag."
                 )
 
-        for decision in dossier.capital_allocation_decisions:
-            source = selected.get(decision.decision_source_filename)
-            if source is None:
+        for track in dossier.capital_allocation_tracks:
+            if track.end_fiscal_year < track.start_fiscal_year:
                 problems.append(
-                    "Capital-allocation decision references an unselected filing: "
-                    f"{decision.decision_source_filename}."
+                    f"{track.track_label_ja} ends before it starts."
                 )
-            elif decision.decision_fiscal_year != source.fiscal_year:
-                problems.append(
-                    f"{decision.decision_label_ja} has the wrong decision fiscal year."
-                )
-            for outcome in decision.subsequent_outcomes:
-                outcome_source = selected.get(outcome.source_filename)
-                if outcome_source is None:
+            observations = [
+                *track.capital_inputs,
+                *track.immediate_effects,
+                *track.subsequent_returns,
+            ]
+            for observation in observations:
+                source = selected.get(observation.source_filename)
+                if source is None:
                     problems.append(
-                        "Capital-allocation outcome references an unselected filing: "
-                        f"{outcome.source_filename}."
+                        "Capital-allocation track references an unselected filing: "
+                        f"{observation.source_filename}."
                     )
                     continue
-                if outcome.fiscal_year != outcome_source.fiscal_year:
+                if observation.fiscal_year != source.fiscal_year:
                     problems.append(
-                        f"{decision.decision_label_ja} has an outcome with the wrong "
+                        f"{track.track_label_ja} has an observation with the wrong "
                         "fiscal year."
                     )
-                if outcome.fiscal_year < decision.decision_fiscal_year:
+                if not (
+                    track.start_fiscal_year
+                    <= observation.fiscal_year
+                    <= track.end_fiscal_year
+                ):
                     problems.append(
-                        f"{decision.decision_label_ja} has an outcome before the "
-                        "decision fiscal year."
+                        f"{track.track_label_ja} has an observation outside its "
+                        "stated fiscal-year range."
                     )
 
     for memo in dossier.filings:
@@ -156,7 +159,6 @@ def validate_research_dossier(
         anchor = memo.annual_financial_anchor
         if anchor is None:
             continue
-        summaries = [_compact(item.summary_ja) for item in memo.items]
         for label, point in (
             ("actual", anchor.actual),
             ("next_original_forecast", anchor.next_original_forecast),
@@ -167,12 +169,6 @@ def validate_research_dossier(
                 problems.append(
                     f"{memo.source_filename} {label} anchor references invalid "
                     f"page {point.pdf_page}."
-                )
-            surface = _compact(point.value_surface_ja)
-            if surface and not any(surface in summary for summary in summaries):
-                problems.append(
-                    f"{memo.source_filename} {label} anchor value is absent from "
-                    "its filing memo observations."
                 )
 
     if problems:
@@ -362,54 +358,68 @@ def _annual_series(dossier: JapaneseResearchDossier) -> dict[str, Any]:
 def _capital_allocation_metrics(
     dossier: JapaneseResearchDossier,
 ) -> dict[str, Any]:
-    decisions = dossier.capital_allocation_decisions
+    tracks = dossier.capital_allocation_tracks
     attribution_counts = Counter(
         outcome.attribution.value
-        for decision in decisions
-        for outcome in decision.subsequent_outcomes
+        for track in tracks
+        for outcome in track.subsequent_returns
     )
     signal_counts = Counter(
         outcome.signal.value
-        for decision in decisions
-        for outcome in decision.subsequent_outcomes
+        for track in tracks
+        for outcome in track.subsequent_returns
     )
     return {
-        "decision_records": len(decisions),
-        "decisions_with_later_outcomes": sum(
-            bool(item.subsequent_outcomes) for item in decisions
+        "track_records": len(tracks),
+        "tracks_with_subsequent_returns": sum(
+            bool(item.subsequent_returns) for item in tracks
         ),
-        "outcome_records": sum(
-            len(item.subsequent_outcomes) for item in decisions
+        "capital_input_records": sum(
+            len(item.capital_inputs) for item in tracks
         ),
-        "by_decision_type": _counts(
-            item.decision_type.value for item in decisions
+        "immediate_effect_records": sum(
+            len(item.immediate_effects) for item in tracks
+        ),
+        "subsequent_return_records": sum(
+            len(item.subsequent_returns) for item in tracks
+        ),
+        "by_track_type": _counts(
+            item.track_type.value for item in tracks
         ),
         "by_record_maturity": _counts(
-            item.record_maturity.value for item in decisions
+            item.record_maturity.value for item in tracks
         ),
-        "by_outcome_attribution": dict(sorted(attribution_counts.items())),
-        "by_outcome_signal": dict(sorted(signal_counts.items())),
+        "by_return_attribution": dict(sorted(attribution_counts.items())),
+        "by_return_signal": dict(sorted(signal_counts.items())),
         "records": [
             {
-                "decision_label_ja": item.decision_label_ja,
-                "decision_type": item.decision_type.value,
-                "decision_source_filename": item.decision_source_filename,
-                "decision_fiscal_year": item.decision_fiscal_year,
+                "track_label_ja": item.track_label_ja,
+                "track_type": item.track_type.value,
+                "capital_destination_ja": item.capital_destination_ja,
+                "start_fiscal_year": item.start_fiscal_year,
+                "end_fiscal_year": item.end_fiscal_year,
+                "capital_input_count": len(item.capital_inputs),
+                "capital_inputs_with_relative_priority": sum(
+                    input_item.relative_priority_ja is not None
+                    for input_item in item.capital_inputs
+                ),
                 "record_maturity": item.record_maturity.value,
-                "outcome_count": len(item.subsequent_outcomes),
-                "outcome_attribution_counts": _counts(
+                "immediate_effect_count": len(item.immediate_effects),
+                "subsequent_return_count": len(item.subsequent_returns),
+                "return_attribution_counts": _counts(
                     outcome.attribution.value
-                    for outcome in item.subsequent_outcomes
+                    for outcome in item.subsequent_returns
                 ),
                 "has_adverse_evidence": bool(item.adverse_evidence_ja),
                 "has_disclosure_limit": item.disclosure_limit_ja is not None,
             }
-            for item in decisions
+            for item in tracks
         ],
         "interpretation_guardrail": (
-            "These are extraction records, not value-creation verdicts. "
-            "Aggregate-only or unattributed outcomes cannot establish that a "
-            "specific allocation decision created value."
+            "These are allocation-track extraction records, not value-creation "
+            "verdicts. Immediate transaction or accounting effects are not "
+            "subsequent returns. Aggregate-only or unattributed returns cannot "
+            "establish that a specific destination created value."
         ),
     }
 

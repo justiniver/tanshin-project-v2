@@ -222,13 +222,44 @@ class DisclosureCategory(str, Enum):
     OTHER = "other"
 
 
-class CapitalAllocationDecisionType(str, Enum):
-    ORGANIC_INVESTMENT = "organic_investment"
+class CapitalAllocationTrackType(str, Enum):
+    ORGANIC_ACCUMULATION = "organic_accumulation"
     ACQUISITION = "acquisition"
     DIVESTITURE = "divestiture"
+    FINANCIAL_INVESTMENT = "financial_investment"
     SHAREHOLDER_RETURN = "shareholder_return"
     DEBT_OR_LIQUIDITY = "debt_or_liquidity"
     OTHER = "other"
+
+
+class CapitalInputType(str, Enum):
+    SEGMENT_OR_OPERATING_ASSETS = "segment_or_operating_assets"
+    WORKING_CAPITAL_OR_INVENTORY = "working_capital_or_inventory"
+    PEOPLE_MARKETING_OR_DEVELOPMENT = "people_marketing_or_development"
+    CAPACITY_OR_FIXED_ASSETS = "capacity_or_fixed_assets"
+    ACQUISITION_OR_INVESTMENT_SPEND = "acquisition_or_investment_spend"
+    DEBT_OR_LIQUIDITY = "debt_or_liquidity"
+    SHAREHOLDER_DISTRIBUTION = "shareholder_distribution"
+    OTHER = "other"
+
+
+class CapitalImmediateEffectType(str, Enum):
+    PURCHASE_PRICE_OR_PROCEEDS = "purchase_price_or_proceeds"
+    DISPOSAL_GAIN_OR_LOSS = "disposal_gain_or_loss"
+    GOODWILL_OR_NEGATIVE_GOODWILL = "goodwill_or_negative_goodwill"
+    FINANCING_PROCEEDS_OR_REPAYMENT = "financing_proceeds_or_repayment"
+    DISTRIBUTION_EXECUTION = "distribution_execution"
+    OTHER = "other"
+
+
+class CapitalReturnType(str, Enum):
+    PROFIT_OR_LOSS = "profit_or_loss"
+    MARGIN = "margin"
+    CASH_GENERATION = "cash_generation"
+    PRODUCTIVE_CAPACITY_OR_UTILIZATION = "productive_capacity_or_utilization"
+    IMPAIRMENT_OR_WRITE_DOWN = "impairment_or_write_down"
+    EXIT_AFTER_WEAK_PERFORMANCE = "exit_after_weak_performance"
+    OTHER_OPERATING_OR_FINANCIAL_RETURN = "other_operating_or_financial_return"
 
 
 class CapitalAllocationOutcomeAttribution(str, Enum):
@@ -803,77 +834,128 @@ class ResearchThemeRecord(BaseModel):
     evidence_ids: list[NonEmpty] = Field(min_length=1)
 
 
-class ResearchCapitalAllocationOutcome(BaseModel):
-    """A later disclosed result connected to one capital-allocation decision."""
+class ResearchCapitalInput(BaseModel):
+    """One disclosed indication that capital was directed to a destination."""
 
     model_config = ConfigDict(extra="ignore")
 
     source_filename: NonEmpty
     fiscal_year: int = Field(ge=1900, le=2200)
     period_label_ja: NonEmpty
-    outcome_ja: NonEmpty = Field(
+    input_type: CapitalInputType
+    amount_or_scale_ja: str | None = Field(
+        default=None,
         description=(
-            "Concise later operating, profit, margin, cash, capacity, utilization, "
-            "impairment, disposal, financing, or distribution result. Preserve "
-            "whether the filing itself connects this result to the decision."
+            "Exact disclosed capital amount, asset balance, spending amount, "
+            "headcount, capacity, or other scale, or null when only direction "
+            "is disclosed."
+        )
+    )
+    input_ja: NonEmpty = Field(
+        description=(
+            "What capital was absorbed, released, financed, or distributed and "
+            "which destination it affected."
+        )
+    )
+    relative_priority_ja: str | None = Field(
+        default=None,
+        description=(
+            "Supported evidence that this destination gained, retained, or lost "
+            "priority relative to other capital uses, or null when no comparative "
+            "statement is defensible."
+        )
+    )
+
+
+class ResearchCapitalImmediateEffect(BaseModel):
+    """Transaction or accounting effect that is not a subsequent return."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period_label_ja: NonEmpty
+    effect_type: CapitalImmediateEffectType
+    effect_ja: NonEmpty = Field(
+        description=(
+            "Purchase price, proceeds, disposal gain or loss, goodwill, financing "
+            "flow, distribution execution, or another immediate effect. This field "
+            "must not characterize the effect as proof of an economic return."
+        )
+    )
+
+
+class ResearchCapitalReturn(BaseModel):
+    """A later operating or financial return connected to an allocation track."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period_label_ja: NonEmpty
+    return_type: CapitalReturnType
+    return_ja: NonEmpty = Field(
+        description=(
+            "Later recurring profit or loss, margin, cash generation, productive "
+            "use, impairment, or exit evidence relevant to the capital absorbed."
         )
     )
     attribution: CapitalAllocationOutcomeAttribution = Field(
         description=(
-            "Use direct for separately disclosed decision-level results, "
-            "management_linked when management explicitly connects an aggregate "
-            "result to the decision, aggregate_only when only a wider segment or "
-            "group result is visible, and unattributed when no connection is stated."
+            "Use direct for separately disclosed destination-level returns, "
+            "management_linked when management explicitly connects a wider result "
+            "to the destination, aggregate_only when only a segment or group result "
+            "is visible, and unattributed when no connection is stated."
         )
     )
     signal: CapitalAllocationOutcomeSignal = Field(
-        description=(
-            "Direction of the disclosed outcome itself, without deciding whether "
-            "the original allocation created value overall."
-        )
+        description="Direction of the return evidence, not the final track verdict."
     )
 
 
-class ResearchCapitalAllocationDecision(BaseModel):
-    """Compact decision-to-outcome record for a material use of capital."""
+class ResearchCapitalAllocationTrack(BaseModel):
+    """Capital destination followed from input through later economic returns."""
 
     model_config = ConfigDict(extra="ignore")
 
-    decision_label_ja: NonEmpty = Field(
+    track_label_ja: NonEmpty = Field(
         description=(
-            "Short transaction or program label that remains recognizable across "
-            "later filings."
+            "Short label for a business, asset category, investment program, "
+            "distribution program, or other capital destination."
         )
     )
-    decision_type: CapitalAllocationDecisionType
-    decision_source_filename: NonEmpty
-    decision_fiscal_year: int = Field(ge=1900, le=2200)
-    decision_period_ja: NonEmpty
-    amount_or_scale_ja: str | None = Field(
+    track_type: CapitalAllocationTrackType
+    capital_destination_ja: NonEmpty
+    start_fiscal_year: int = Field(ge=1900, le=2200)
+    end_fiscal_year: int = Field(ge=1900, le=2200)
+    stated_rationale_ja: str | None = Field(
         default=None,
         description=(
-            "Material amount or scale exactly as disclosed, or null when unavailable."
+            "Management's stated purpose when disclosed, or null for a capital "
+            "accumulation pattern inferred directly from reported balances."
         ),
     )
-    decision_ja: NonEmpty = Field(
-        description="What management allocated, acquired, sold, returned, or financed."
-    )
-    stated_rationale_ja: NonEmpty = Field(
-        description="Management's stated purpose without treating it as an outcome."
-    )
-    funding_or_tradeoff_ja: str | None = Field(
-        default=None,
+    capital_inputs: list[ResearchCapitalInput] = Field(
+        min_length=1,
         description=(
-            "Disclosed funding method, balance-sheet effect, alternative use, or "
-            "trade-off, or null when the filings do not provide one."
+            "Disclosed observations showing capital directed to or released from "
+            "this destination. A track may be a persistent multi-year accumulation "
+            "without a discrete announced decision."
         ),
     )
-    subsequent_outcomes: list[ResearchCapitalAllocationOutcome] = Field(
+    immediate_effects: list[ResearchCapitalImmediateEffect] = Field(
         default_factory=list,
         description=(
-            "Later disclosed results potentially relevant to this decision. Keep "
-            "aggregate or unattributed observations explicitly labeled rather than "
-            "presenting them as decision-level performance."
+            "Transaction and accounting effects kept structurally separate from "
+            "subsequent economic returns."
+        ),
+    )
+    subsequent_returns: list[ResearchCapitalReturn] = Field(
+        default_factory=list,
+        description=(
+            "Later operating or financial returns relevant to the capital absorbed. "
+            "Revenue growth alone is not sufficient unless profit, margin, cash, "
+            "productive use, impairment, or exit evidence is also retained."
         ),
     )
     adverse_evidence_ja: list[str] = Field(
@@ -886,7 +968,7 @@ class ResearchCapitalAllocationDecision(BaseModel):
     record_maturity: CapitalAllocationRecordMaturity = Field(
         description=(
             "Whether the selected filing window contains a mature, partial, too "
-            "recent, or otherwise unobservable outcome record. This is not a "
+            "recent, or otherwise unobservable return record. This is not a "
             "value-creation verdict."
         )
     )
@@ -912,11 +994,13 @@ class JapaneseResearchDossier(BaseModel):
             "Exactly one chronological research memo for every selected PDF."
         ),
     )
-    capital_allocation_decisions: list[ResearchCapitalAllocationDecision] = Field(
+    capital_allocation_tracks: list[ResearchCapitalAllocationTrack] = Field(
         description=(
-            "Compact cross-filing decision-to-outcome records for the most material "
-            "capital deployments in the selected period. These records organize "
-            "facts for synthesis but do not decide whether value was created. "
+            "Compact cross-filing capital-destination records for the most material "
+            "accumulations, releases, and distributions in the selected period. "
+            "Capital inputs, immediate effects, and subsequent returns remain "
+            "separate. These records organize facts for synthesis but do not decide "
+            "whether value was created. "
             "Return an empty list when the selected filings contain no defensible "
             "material record."
         ),
@@ -1111,14 +1195,13 @@ class SynthesisAnalysisClaim(BaseModel):
 
 
 class SynthesisManagementConsistencyComponent(BaseModel):
-    """One synthesis-stage management-consistency assessment."""
+    """Rating metadata; the corresponding management claim contains the rationale."""
 
     model_config = ConfigDict(extra="ignore")
 
     dimension: ManagementConsistencyDimension
     rating: int | None = Field(ge=0, le=4)
     evidence_sufficiency: Literal["sufficient", "insufficient"]
-    rationale_ja: NonEmpty
 
 
 class SynthesisManagementConsistency(BaseModel):
@@ -1128,7 +1211,6 @@ class SynthesisManagementConsistency(BaseModel):
         min_length=4,
         max_length=4,
     )
-    overall_rationale_ja: NonEmpty
 
 
 class JapaneseModelResponse(BaseModel):
@@ -1597,6 +1679,25 @@ def materialize_japanese_synthesis(
 ) -> JapaneseAnalysis:
     """Combine citation-free synthesis prose with the dossier identity."""
 
+    section_by_dimension = {
+        ManagementConsistencyDimension.STRATEGIC_COHERENCE: (
+            SectionKey.MANAGEMENT_STRATEGY
+        ),
+        ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH: (
+            SectionKey.MANAGEMENT_EXECUTION
+        ),
+        ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE: (
+            SectionKey.MANAGEMENT_FORECAST_DISCIPLINE
+        ),
+        ManagementConsistencyDimension.ACCOUNTABILITY_TRANSPARENCY: (
+            SectionKey.MANAGEMENT_ACCOUNTABILITY
+        ),
+    }
+    rationale_by_section = {
+        claim.section: claim.body_ja
+        for claim in response.claims
+        if claim.section in set(section_by_dimension.values())
+    }
     assessment = ManagementConsistencyAssessment(
         methodology_version="management-consistency-v1-pending",
         components=[
@@ -1610,14 +1711,15 @@ def materialize_japanese_synthesis(
                     else None
                 ),
                 weight=0,
-                rationale_ja=component.rationale_ja,
+                rationale_ja=rationale_by_section.get(
+                    section_by_dimension[component.dimension],
+                    "対応する経営一貫性評価の本文を参照。",
+                ),
                 evidence_ids=[],
             )
             for component in response.management_consistency.components
         ],
-        overall_rationale_ja=(
-            response.management_consistency.overall_rationale_ja
-        ),
+        overall_rationale_ja="各項目の根拠は対応する経営一貫性評価の本文に記載。",
     )
     return JapaneseAnalysis(
         schema_version=response.schema_version,

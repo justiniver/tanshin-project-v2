@@ -1,11 +1,10 @@
 {
   "filing_coverage": {
     "selected_filings": 11,
-    "memo_items": 56,
+    "memo_items": 41,
     "category_counts": {
       "business_overview": 1,
-      "capital_allocation": 13,
-      "financial_condition": 11,
+      "capital_allocation": 9,
       "forward_looking_information": 11,
       "operating_results": 11,
       "segments_and_business_drivers": 5,
@@ -17,13 +16,12 @@
         "fiscal_year": 2017,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "segments_and_business_drivers": 1
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -33,13 +31,11 @@
         "fiscal_year": 2018,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
-          "operating_results": 1,
-          "strategy_and_execution": 1
+          "operating_results": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -49,10 +45,9 @@
         "fiscal_year": 2019,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 2,
-          "financial_condition": 1,
+          "capital_allocation": 1,
           "forward_looking_information": 1,
           "operating_results": 1
         },
@@ -64,10 +59,9 @@
         "fiscal_year": 2020,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "strategy_and_execution": 1
@@ -80,10 +74,9 @@
         "fiscal_year": 2021,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 4,
+        "memo_items": 3,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1
         },
@@ -95,10 +88,9 @@
         "fiscal_year": 2022,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -111,10 +103,8 @@
         "fiscal_year": 2023,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -127,13 +117,11 @@
         "fiscal_year": 2024,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 5,
+        "memo_items": 3,
         "category_counts": {
-          "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "segments_and_business_drivers": 1
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -143,13 +131,12 @@
         "fiscal_year": 2025,
         "period": "FY",
         "is_latest": false,
-        "memo_items": 6,
+        "memo_items": 4,
         "category_counts": {
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
-          "strategy_and_execution": 2
+          "strategy_and_execution": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -162,9 +149,9 @@
         "memo_items": 5,
         "category_counts": {
           "capital_allocation": 2,
-          "financial_condition": 1,
           "forward_looking_information": 1,
-          "operating_results": 1
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
         "unavailable_categories": [],
         "has_annual_financial_anchor": true
@@ -174,11 +161,10 @@
         "fiscal_year": 2027,
         "period": "Q1",
         "is_latest": true,
-        "memo_items": 6,
+        "memo_items": 5,
         "category_counts": {
           "business_overview": 1,
           "capital_allocation": 1,
-          "financial_condition": 1,
           "forward_looking_information": 1,
           "operating_results": 1,
           "segments_and_business_drivers": 1
@@ -518,44 +504,34 @@
     }
   },
   "capital_allocation": {
-    "decision_records": 3,
-    "decisions_with_later_outcomes": 3,
+    "decision_records": 4,
+    "decisions_with_later_outcomes": 4,
+    "decisions_with_relative_allocation_evidence": 4,
     "outcome_records": 4,
     "by_decision_type": {
       "acquisition": 2,
-      "divestiture": 1
+      "divestiture": 1,
+      "shareholder_return": 1
     },
     "by_record_maturity": {
-      "mature_record": 3
+      "mature_record": 3,
+      "partial_record": 1
     },
     "by_outcome_attribution": {
       "direct": 3,
       "management_linked": 1
     },
     "by_outcome_signal": {
-      "neutral": 1,
-      "positive": 3
+      "positive": 4
     },
     "records": [
       {
-        "decision_label_ja": "細田工務店の完全子会社化（TOB）",
-        "decision_type": "acquisition",
-        "decision_source_filename": "26_2020-05-14_tanshin.pdf",
-        "decision_fiscal_year": 2020,
-        "record_maturity": "mature_record",
-        "outcome_count": 2,
-        "outcome_attribution_counts": {
-          "direct": 1,
-          "management_linked": 1
-        },
-        "has_adverse_evidence": false,
-        "has_disclosure_limit": false
-      },
-      {
-        "decision_label_ja": "ウッドフレンズの完全子会社化（TOB）",
-        "decision_type": "acquisition",
-        "decision_source_filename": "06_2025_FY_tanshin.pdf",
-        "decision_fiscal_year": 2025,
+        "decision_label_ja": "株主還元の拡充（増配および自己株式取得）",
+        "decision_type": "shareholder_return",
+        "capital_destination_ja": "株主還元（配当および自己株式取得）",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "34_2018-05-11_tanshin.pdf",
+        "decision_fiscal_year": 2018,
         "record_maturity": "mature_record",
         "outcome_count": 1,
         "outcome_attribution_counts": {
@@ -567,12 +543,44 @@
       {
         "decision_label_ja": "スマートマンション事業の譲渡",
         "decision_type": "divestiture",
+        "capital_destination_ja": "長谷工アネシス（スマートマンション事業）から事業資金の回収およびNext Powerへの承継",
+        "has_relative_allocation_evidence": true,
         "decision_source_filename": "30_2019-05-10_tanshin.pdf",
         "decision_fiscal_year": 2019,
         "record_maturity": "mature_record",
         "outcome_count": 1,
         "outcome_attribution_counts": {
           "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "decision_label_ja": "細田工務店の買収（木造戸建住宅事業の強化）",
+        "decision_type": "acquisition",
+        "capital_destination_ja": "株式会社細田工務店",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "26_2020-05-14_tanshin.pdf",
+        "decision_fiscal_year": 2020,
+        "record_maturity": "mature_record",
+        "outcome_count": 1,
+        "outcome_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "decision_label_ja": "ウッドフレンズの買収（木造化・木質化推進）",
+        "decision_type": "acquisition",
+        "capital_destination_ja": "株式会社ウッドフレンズ",
+        "has_relative_allocation_evidence": true,
+        "decision_source_filename": "06_2025_FY_tanshin.pdf",
+        "decision_fiscal_year": 2025,
+        "record_maturity": "partial_record",
+        "outcome_count": 1,
+        "outcome_attribution_counts": {
+          "management_linked": 1
         },
         "has_adverse_evidence": false,
         "has_disclosure_limit": false
@@ -586,7 +594,7 @@
   "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
   "diagnostics": {
     "validation_passed": false,
-    "validation_warning": "38_2017-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 38_2017-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf actual anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf actual anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations.",
+    "validation_warning": "38_2017-05-12_tanshin.pdf does not cover core category financial_condition. 38_2017-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 38_2017-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf does not cover core category financial_condition. 34_2018-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 34_2018-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf does not cover core category financial_condition. 30_2019-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 30_2019-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf does not cover core category financial_condition. 26_2020-05-14_tanshin.pdf actual anchor value is absent from its filing memo observations. 26_2020-05-14_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf does not cover core category financial_condition. 22_2021-05-13_tanshin.pdf actual anchor value is absent from its filing memo observations. 22_2021-05-13_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf does not cover core category financial_condition. 18_2022-05-12_tanshin.pdf actual anchor value is absent from its filing memo observations. 18_2022-05-12_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf does not cover core category financial_condition. 14_2023-05-11_tanshin.pdf actual anchor value is absent from its filing memo observations. 14_2023-05-11_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf does not cover core category financial_condition. 10_2024-05-10_tanshin.pdf actual anchor value is absent from its filing memo observations. 10_2024-05-10_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf does not cover core category financial_condition. 06_2025_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 06_2025_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf does not cover core category financial_condition. 02_2026_FY_tanshin.pdf actual anchor value is absent from its filing memo observations. 02_2026_FY_tanshin.pdf next_original_forecast anchor value is absent from its filing memo observations. 01_2027_Q1_tanshin.pdf does not cover core category financial_condition.",
     "metrics_complete": true,
     "metrics_warning": null,
     "non_gating": true

@@ -5,16 +5,16 @@
     "executive_breadth": 5.0,
     "analytical_depth": 3.5,
     "trend_specificity": 4.0,
-    "tone": 3.2,
+    "tone": 4.4,
     "repetition": 5.0,
-    "readability": 5.0,
+    "readability": 4.5,
     "approximate_length": 5.0
   },
-  "overall_score_0_to_5": 4.52,
+  "overall_score_0_to_5": 4.6,
   "generated_metrics": {
-    "main_characters": 5888,
-    "trend_narrative_characters": 3423,
-    "trend_perspective_narrative_characters": 358,
+    "main_characters": 5897,
+    "trend_narrative_characters": 3438,
+    "trend_perspective_narrative_characters": 318,
     "headings": [
       "# 株式会社長谷工コーポレーション（1808）",
       "## 企業概要",
@@ -37,36 +37,42 @@
     "citation_references_per_1000_chars": 0.0,
     "unique_years": [
       2017,
+      2018,
       2019,
       2020,
       2021,
+      2022,
       2023,
       2024,
       2025,
       2026,
       2027
     ],
-    "future_years_excluded_from_trend_score": [],
+    "future_years_excluded_from_trend_score": [
+      2028,
+      2031
+    ],
     "year_span": 10,
-    "bold_analytical_themes": 8,
-    "contrast_terms": 13,
-    "sentence_count": 81,
-    "average_sentence_characters": 63.54,
-    "long_sentence_count": 0,
+    "bold_analytical_themes": 7,
+    "contrast_terms": 10,
+    "sentence_count": 71,
+    "average_sentence_characters": 74.97,
+    "long_sentence_count": 2,
     "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
-    "promotional_terms": 3,
+    "promotional_terms": 1,
     "first_person_terms": 0,
     "key_takeaway_categories": [
       "earnings_profitability",
       "cash_flow_balance_sheet",
       "operations",
       "outlook_targets",
-      "risk_uncertainty"
+      "capital_allocation"
     ],
     "key_takeaway_category_count": 5,
     "middle_period_years": [
       2021,
+      2022,
       2023,
       2024
     ],
@@ -131,9 +137,9 @@
     "trend_theme_average_years": 3.71,
     "trend_themes_with_three_periods": 6
   },
-  "length_ratio_to_exemplar": 1.153,
-  "trend_length_ratio_to_exemplar": 2.073,
-  "perspective_length_ratio_to_exemplar": 1.069,
+  "length_ratio_to_exemplar": 1.155,
+  "trend_length_ratio_to_exemplar": 2.082,
+  "perspective_length_ratio_to_exemplar": 0.949,
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",

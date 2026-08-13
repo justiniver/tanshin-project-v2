@@ -399,9 +399,9 @@ analysis. It builds a compact chronological map containing:
 - physical page locations and statement types as navigation aids;
 - compact year-end financial anchors that pair one consistently available
   annual actual metric with the next original forecast where available;
-- compact cross-filing records for material capital-allocation decisions,
-  separating the action and rationale from later outcomes, attribution strength,
-  contrary evidence, and how mature the observable record is;
+- compact cross-filing records for material capital-allocation tracks, identifying
+  which business or other use received capital, how its relative priority changed,
+  and what later profit, margin, cash, impairment, or disposal outcomes followed;
 - explicit unavailable categories and source limitations rather than silent
   omission.
 
@@ -455,19 +455,24 @@ The trend section prioritizes qualitative management discussion, including
 progress, capital allocation, and management explanations of risks or misses.
 Summary tables mainly corroborate figures rather than becoming the trend thesis.
 Its capital-allocation value-creation subsection leads with a supported judgment
-about the observed decision-and-outcome record. It follows the decade's most
-material investments, acquisitions, disposals, balance-sheet choices, and
-shareholder distributions into their later operating and financial outcomes.
+about where incremental capital went and whether it increasingly favored the
+businesses producing the strongest subsequent returns. It follows the decade's
+most material organic business investments, acquisitions, disposals,
+balance-sheet choices, and shareholder distributions into their later operating
+and financial outcomes. When segment invested capital is not disclosed, it uses
+directional evidence such as people, marketing, development, capacity,
+acquisition spend, and stated priorities without inventing an allocation ratio.
 Decision-level or management-linked outcomes are distinguished from aggregate
 segment or group performance. Transaction terms, goodwill, negative goodwill,
 accounting gains, and stated rationale are not treated as proof of subsequent
-value creation, while recent decisions may appropriately remain unproven.
-Recurring profit, margin, cash generation, useful capacity, and a stronger core
-business count in favor; persistent losses, impairments, failed expansion,
-disposals after weak performance, and financial strain count against. The
-section answers whether the overall record created value rather than making
-missing disclosure or the mere act of spending and distributing capital its
-thesis.
+value creation, while revenue growth alone does not establish an attractive
+return and recent decisions may appropriately remain unproven. Recurring profit,
+margin, cash generation, useful capacity, and a stronger core business count in
+favor; persistent losses, impairments, failed expansion, disposals after weak
+performance, and financial strain count against. The assessment also asks
+whether management added capital after strong results and reduced or exited
+weak uses, rather than making missing disclosure or the mere act of spending and
+distributing capital its thesis.
 When the selected filings show no meaningful qualitative development, the model
 may report that limitation and emphasize the financial, forecast, target,
 disclosure, or capital-allocation record rather than forcing a weak theme.

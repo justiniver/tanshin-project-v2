@@ -159,6 +159,25 @@
         "decision_type": {
           "$ref": "#/$defs/CapitalAllocationDecisionType"
         },
+        "capital_destination_ja": {
+          "description": "The business, segment, capability, asset, balance-sheet use, or shareholder destination that received or released capital.",
+          "minLength": 1,
+          "title": "Capital Destination Ja",
+          "type": "string"
+        },
+        "relative_allocation_evidence_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Concise disclosed evidence that this destination gained, retained, or lost priority relative to other capital uses, or null when the filings do not support a comparative allocation statement.",
+          "title": "Relative Allocation Evidence Ja"
+        },
         "decision_source_filename": {
           "minLength": 1,
           "title": "Decision Source Filename",
@@ -250,6 +269,7 @@
       "required": [
         "decision_label_ja",
         "decision_type",
+        "capital_destination_ja",
         "decision_source_filename",
         "decision_fiscal_year",
         "decision_period_ja",
