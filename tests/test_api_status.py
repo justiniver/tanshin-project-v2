@@ -74,9 +74,9 @@ class ApiStatusTests(unittest.TestCase):
             )
             self.assertEqual(
                 read_json(prepared.paths.research_metrics)[
-                    "coverage"
-                ]["source_records"],
-                len(dossier.source_records),
+                    "filing_coverage"
+                ]["memo_items"],
+                sum(len(item.items) for item in dossier.filings),
             )
             status = read_json(prepared.paths.research_api_status)
             self.assertEqual(status["state"], "SUCCESS")
@@ -86,32 +86,9 @@ class ApiStatusTests(unittest.TestCase):
         self,
     ) -> None:
         payload = fake_research_dossier(REPOSITORY_ROOT).model_dump(mode="json")
-        source_record = payload["source_records"][0]
-        payload["financial_observations"] = [
-            {
-                "observation_id": "diagnostic-only-mismatch",
-                "source_filename": source_record["source_filename"],
-                "metric": "revenue",
-                "metric_label_ja": "売上高",
-                "scope": "consolidated",
-                "scope_label_ja": "連結",
-                "value_kind": "monetary",
-                "statement_type": "actual",
-                "forecast_version": "not_applicable",
-                "target_fiscal_year": 2026,
-                "target_period": "FY",
-                "value_surface_ja": "999百万円",
-                "source_record_id": source_record["record_id"],
-            }
-        ]
-        coverage = next(
-            item
-            for item in payload["filing_coverage"]
-            if item["source_filename"] == source_record["source_filename"]
+        payload["filings"][0]["items"][0]["pdf_page"] = (
+            payload["filings"][0]["pdf_page_count"] + 1
         )
-        coverage["financial_observation_ids"] = [
-            "diagnostic-only-mismatch"
-        ]
         dossier = JapaneseResearchDossier.model_validate(payload)
         research_result = ExecutionResult(
             structured=dossier,

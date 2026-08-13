@@ -320,7 +320,7 @@ def _persist_research_preflight(
             model_profile=prepared.spec.model_profile,
             route=configuration.analysis,
             model=prepared.cost.analysis.model,
-            dependency="research_dossier",
+            dependency="research_map",
         ),
     )
     write_json(
@@ -423,7 +423,7 @@ def _load_research(
 ) -> JapaneseResearchDossier:
     if not paths.research_structured.is_file():
         raise PipelineValidationError(
-            f"Stored research dossier is missing: {paths.research_structured}"
+            f"Stored research map is missing: {paths.research_structured}"
         )
     try:
         return JapaneseResearchDossier.model_validate(
@@ -431,7 +431,7 @@ def _load_research(
         )
     except ValueError as exc:
         raise PipelineValidationError(
-            f"Stored research dossier cannot be parsed: {exc}"
+            f"Stored research map cannot be parsed: {exc}"
         ) from exc
 
 
@@ -454,7 +454,7 @@ def _write_research_diagnostics(
         "warning_count": 0 if warning is None else 1,
         "warnings": [] if warning is None else [warning],
         "policy": (
-            "A parseable research dossier proceeds to synthesis. Deterministic "
+            "A parseable research map proceeds to synthesis. Deterministic "
             "research findings are diagnostics and do not stop report generation."
         ),
     }
@@ -479,15 +479,16 @@ def prepare_analysis(
     ).resolve()
     configuration = _profile_configuration(model_profile)
     manifest = select_filings(repository_root, security_code)
+    _validate_inline_pdf_limits(manifest, configuration.analysis)
     paths = output_paths(output_root, security_code, report_date=report_date)
     dossier = _load_research(paths, manifest)
     if dossier.identity.security_code != security_code:
         raise PipelineValidationError(
-            "Stored research dossier security code does not match the request."
+            "Stored research map security code does not match the request."
         )
     if dossier.identity.latest_filename != manifest.latest_filename:
         raise PipelineValidationError(
-            "Stored research dossier latest filing does not match the current selection."
+            "Stored research map latest filing does not match the current selection."
         )
     spec = build_analysis_spec(
         repository_root,
@@ -1385,7 +1386,7 @@ def execute_analysis(
     dossier = prepared.research_source
     if dossier is None:
         raise PipelineValidationError(
-            "Prepared analysis is missing its source research dossier."
+            "Prepared analysis is missing its source research map."
         )
     try:
         analysis = materialize_japanese_synthesis(dossier, result.structured)
@@ -1614,7 +1615,7 @@ def reprocess_stored_analysis(
     dossier = prepared.research_source
     if dossier is None:
         raise PipelineValidationError(
-            "Stored analysis reprocessing is missing its research dossier."
+            "Stored analysis reprocessing is missing its research map."
         )
     payload = read_json(prepared.paths.analysis_structured)
     try:

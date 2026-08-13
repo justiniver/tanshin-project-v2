@@ -16,10 +16,17 @@ from tanshin_pipeline.config import OPENAI_SOL_MODEL
 from tanshin_pipeline.gemini_runtime import LiveApiSafetyError
 from tanshin_pipeline.openai_runtime import OpenAIResponseError, execute_request
 from tanshin_pipeline.persistence import read_json
-from tanshin_pipeline.request_builder import build_research_spec, sha256_json
-from tanshin_pipeline.schemas import JapaneseResearchDossier
+from tanshin_pipeline.request_builder import (
+    build_analysis_spec,
+    build_research_spec,
+    sha256_json,
+)
+from tanshin_pipeline.schemas import (
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
+)
 from tanshin_pipeline.selection import select_filings
-from tests.helpers import fake_research_dossier
+from tests.helpers import fake_research_dossier, fake_synthesis_response
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -146,6 +153,44 @@ class OpenAIRuntimeTests(unittest.TestCase):
         self.assertEqual(result.usage["prompt_token_count"], 1_000)
         self.assertEqual(result.usage["candidates_token_count"], 220)
         self.assertEqual(result.usage["thoughts_token_count"], 80)
+
+    def test_analysis_request_also_uses_inline_pdfs(self) -> None:
+        manifest = select_filings(REPOSITORY_ROOT, "1808")
+        spec = build_analysis_spec(
+            REPOSITORY_ROOT,
+            manifest,
+            fake_research_dossier(REPOSITORY_ROOT),
+            model=OPENAI_SOL_MODEL,
+            model_profile="sol",
+            provider="openai",
+            provider_profile=None,
+        )
+        parsed = fake_synthesis_response(REPOSITORY_ROOT)
+        fake = _FakeClient(_FakeResponse(parsed))
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            result = execute_request(
+                REPOSITORY_ROOT,
+                spec,
+                confirmed_request_id=spec.plan().request_id,
+                client_factory=lambda: fake,
+                configured_model_getter=lambda: OPENAI_SOL_MODEL,
+            )
+        self.assertIsInstance(result.structured, JapaneseSynthesisResponse)
+        call = fake.responses.calls[0]
+        self.assertIs(call["text_format"], JapaneseSynthesisResponse)
+        content = call["input"][0]["content"]
+        self.assertEqual(len(content), len(spec.files) * 2 + 2)
+        self.assertIn("<research_map>", content[0]["text"])
+        self.assertEqual(content[2]["type"], "input_file")
+        self.assertTrue(content[-1]["text"].rstrip().endswith("</analysis_task>"))
 
     def test_official_sdk_serializes_verbosity_inside_text(self) -> None:
         captured: dict[str, object] = {}

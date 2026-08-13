@@ -43,6 +43,18 @@ class ManualWrapperTests(unittest.TestCase):
         )
         self.assertNotIn('"output\\$SecurityCode', script)
         self.assertIn("Fact-free style blueprint:", script)
+        self.assertIn(
+            "Expected result: a stored chronological PDF research map.",
+            script,
+        )
+        self.assertIn(
+            "Research map: supplied as an attention guide; PDFs remain authoritative.",
+            script,
+        )
+        self.assertNotIn(
+            "PDFs submitted: none (stored research dossier only)",
+            script,
+        )
         self.assertIn("Estimated maximum stage cost: JPY {0:N0}", script)
         self.assertIn(
             "Billing note: This profile uses only GEMINI_API_KEY",
@@ -117,7 +129,11 @@ class ManualWrapperTests(unittest.TestCase):
         self.assertIn("RESEARCH RECOVERY STATE: SUCCESS", script)
         self.assertIn("--reprocess-stored", script)
         self.assertIn("Research provider/model:", script)
-        self.assertIn("PDFs submitted in research request:", script)
+        self.assertIn("PDFs submitted in each Japanese request:", script)
+        self.assertIn(
+            "Japanese workflow: PDF research map, then map-guided PDF synthesis.",
+            script,
+        )
         self.assertIn("PREVIEW ONLY: no API request was sent.", script)
         self.assertIn("$reportDate = Get-Date -Format 'yyyyMMdd'", script)
         self.assertEqual(script.count("--report-date $reportDate"), 3)

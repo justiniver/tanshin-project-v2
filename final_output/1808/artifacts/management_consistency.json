@@ -1,23 +1,17 @@
 {
   "methodology_version": "management-consistency-v6",
-  "score": 0.81,
-  "raw_score": 0.8125,
-  "evidence_confidence": 0.5834,
+  "score": 0.69,
+  "raw_score": 0.6875,
+  "evidence_confidence": 0.525,
   "confidence_label": "moderate",
-  "evidence_coverage": 0.5834,
+  "evidence_coverage": 0.525,
   "distinct_fiscal_years": [
     2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
     2025,
     2026
   ],
-  "evidence_count": 17,
-  "management_discussion_evidence_share": 0.2941,
+  "evidence_count": 8,
+  "management_discussion_evidence_share": 0.625,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -25,32 +19,31 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "中長期計画「HASEKO Evolution Plan」において、2028年3月期経常利益1,000億円以上、2031年3月期1,300億円以上、ROE13%目標などの具体的な定量目標と、6か年で4,000億円のネット投資枠組みを明確に設定している。建築事業の採算改善と戸建・サービス事業等の多角化が戦略的に整合している。",
+      "rationale_ja": "国内マンション事業での「持ち込み特命施工」を軸に、管理運営や不動産事業への拡張を進める戦略は首尾一貫している。新中計での「3つの輪」体制への再編も戦略課題に即している。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:r006",
-        "01_2026_FY_tanshin.pdf:r007"
+        "05_2025_FY_tanshin.pdf:r0010-923f5a56",
+        "01_2026_FY_tanshin.pdf:r0009-6be1bf86"
       ],
       "distinct_fiscal_years": [
+        2025,
         2026
       ],
       "management_discussion_evidence_count": 1,
       "covered_period_buckets": [
         "recent"
       ],
-      "evidence_confidence": 0.4
+      "evidence_confidence": 0.4667
     },
     {
       "dimension": "execution_follow_through",
-      "rating": 3,
+      "rating": 2,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
+      "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "資材・労務費高騰に対し受注時採算の厳格化と現場効率化を推進し、2026年3月期に完成工事利益率の改善を実現した。またウッドフレンズの完全子会社化や棚卸資産の圧縮による1,574億円の営業CF創出など、計画された施策を着実に実行している。一方で2025年3月期には海外不動産で168億61百万円の減損損失を出しており、投資案件の評価面で課題が残る。",
+      "rationale_ja": "国内での土地情報収集や管理戸数拡大、株主還元拡充は着実に実行されているが、FY2025〜FY2026における海外事業の減損および営業損失の継続（FY2026に61億円の営業損失）など、海外投資の収益化に課題がある。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:r003",
-        "01_2026_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r008",
-        "05_2025_FY_tanshin.pdf:r004"
+        "05_2025_FY_tanshin.pdf:r0002-acc3532e",
+        "01_2026_FY_tanshin.pdf:r0003-4d1b055e"
       ],
       "distinct_fiscal_years": [
         2025,
@@ -64,40 +57,25 @@
     },
     {
       "dimension": "forecast_target_discipline",
-      "rating": 4,
+      "rating": 3,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 1.0,
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "観察対象となった9期の通期経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、同水準が3期であり、期初予想を未達となった期は0件である。保守的かつ着実な業績予想管理が徹底されている。",
+      "rationale_ja": "過去9期の通期連結経常利益予想において、実績が予想を上回る結果が6回、概ね予想通りが3回であり、期初予想を下回った実績はなく、極めて規律ある保守的な予想管理が行われている。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:r001",
-        "05_2025_FY_tanshin.pdf:r001",
-        "09_2024-05-10_tanshin.pdf:r001",
-        "13_2023-05-11_tanshin.pdf:r001",
-        "17_2022-05-12_tanshin.pdf:r001",
-        "21_2021-05-13_tanshin.pdf:r001",
-        "25_2020-05-14_tanshin.pdf:r001",
-        "29_2019-05-10_tanshin.pdf:r001",
-        "33_2018-05-11_tanshin.pdf:r001"
+        "33_2018-05-11_tanshin.pdf:r0002-b401ac5e",
+        "01_2026_FY_tanshin.pdf:r0002-a9879a81"
       ],
       "distinct_fiscal_years": [
         2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
         2026
       ],
       "management_discussion_evidence_count": 0,
       "covered_period_buckets": [
         "early",
-        "middle",
         "recent"
       ],
-      "evidence_confidence": 0.9
+      "evidence_confidence": 0.6
     },
     {
       "dimension": "accountability_transparency",
@@ -105,12 +83,10 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "資材・労務費高騰による利益率低下の影響や、海外不動産における巨額の減損損失を隠さず適時に開示している。新中期経営計画での累進配当方針や総還元性向50%目標、詳細な投資内訳の開示など、株主への説明責任を高度に果たしている。",
+      "rationale_ja": "セグメント区分の変更に伴う組替後数値の開示や、海外事業での減損損失・訴訟損失引当金の計上要因について速やかかつ詳細に説明しており、説明責任と透明性が高い。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r006",
-        "05_2025_FY_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004"
+        "05_2025_FY_tanshin.pdf:r0002-0551dc44",
+        "01_2026_FY_tanshin.pdf:r0003-2342590a"
       ],
       "distinct_fiscal_years": [
         2025,
@@ -123,5 +99,5 @@
       "evidence_confidence": 0.5167
     }
   ],
-  "overall_rationale_ja": "長谷工コーポレーションの経営陣は、通期業績予想において全9期で未達を出さない非常に高い業績管理規律（実績上振れ6期・トントン3期）を維持している。資材・労務費高騰に対して受注採算改善で迅速に対応し、2026年3月期には大幅な業績回復と1,574億円の営業CFを創出した。新中期経営計画「HASEKO Evolution Plan」での投資枠組みや累進配当方針の開示も透明性が高く、2025年3月期の海外不動産減損という逆風に対しても説明責任を果たしていることから、総合的に高い経営一貫性を備えていると評価できる。"
+  "overall_rationale_ja": "長谷工コーポレーションは、特命受注ノウハウを核とした高い戦略的一貫性と、期初予想を下回らない堅実な業績予想規律を有している。株主還元の拡充や国内コア事業の執行力は高い一方、海外不動産開発における減損や損失の計上といった実行上の課題も観察されるが、総じて経営の一貫性と透明性は高水準にある。"
 }

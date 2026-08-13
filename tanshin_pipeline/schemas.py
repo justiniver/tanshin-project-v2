@@ -403,8 +403,9 @@ class SupportedSpan(StrictModel):
 class EvidenceRecord(StrictModel):
     evidence_id: NonEmpty = Field(
         description=(
-            "Unique stable ID formatted as <source_filename>:sNNNN, using a "
-            "four-digit sequence within the response."
+            "Unique stable model ID formatted as <source_filename>:sNNNN or "
+            "locally derived ID formatted as "
+            "<source_filename>:r<page>-<summary-hash>."
         )
     )
     source_filename: NonEmpty = Field(
@@ -1064,7 +1065,7 @@ class JapaneseModelResponse(BaseModel):
 
 
 class JapaneseSynthesisResponse(BaseModel):
-    """Dossier-backed analytical prose returned by the second Japanese request."""
+    """PDF-backed analytical prose guided by the chronological research map."""
 
     model_config = ConfigDict(extra="ignore")
 
@@ -1510,13 +1511,19 @@ def materialize_japanese_synthesis(
             f"{source.source_filename}:p{source.pdf_page}"
             for claim in response.claims
             for source in claim.sources
-            if source.pdf_page > page_counts[source.source_filename]
+            if (
+                source.source_filename in page_counts
+                and source.pdf_page > page_counts[source.source_filename]
+            )
         }
         | {
             f"{source.source_filename}:p{source.pdf_page}"
             for component in response.management_consistency.components
             for source in component.sources
-            if source.pdf_page > page_counts[source.source_filename]
+            if (
+                source.source_filename in page_counts
+                and source.pdf_page > page_counts[source.source_filename]
+            )
         }
     )
     if invalid_pages:
@@ -1543,7 +1550,7 @@ def materialize_japanese_synthesis(
             return existing
         digest = hashlib.sha256(
             "\x1f".join(str(value) for value in key).encode("utf-8")
-        ).hexdigest()[:10]
+        ).hexdigest()[:8]
         filing = next(
             item
             for item in dossier.filings
@@ -1551,7 +1558,7 @@ def materialize_japanese_synthesis(
         )
         evidence = EvidenceRecord(
             evidence_id=(
-                f"{source.source_filename}:p{source.pdf_page:04d}-{digest}"
+                f"{source.source_filename}:r{source.pdf_page:04d}-{digest}"
             ),
             source_filename=source.source_filename,
             pdf_page=source.pdf_page,

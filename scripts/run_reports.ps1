@@ -368,7 +368,7 @@ function Write-ResearchPreparation {
         'Estimated maximum optional translation cost: JPY {0:N0}' -f
         $cost.translation.maximum_stage_cost_jpy
     )
-    Write-Host "PDFs submitted in research request: $($plan.files.Count)"
+    Write-Host "PDFs submitted in each Japanese request: $($plan.files.Count)"
     foreach ($file in $plan.files) {
         Write-Host "  - $($file.filename) ($($file.page_count) pages)"
     }
@@ -381,7 +381,7 @@ function Write-ResearchPreparation {
         "analysis_en_${code}_$reportDate.md"
     )
     Write-Host (
-        'Japanese workflow: PDF research dossier, then dossier-based synthesis. '
+        'Japanese workflow: PDF research map, then map-guided PDF synthesis. '
     )
     Write-Host (
         'Research diagnostics: model_response_research.raw.json, ' +

@@ -29,113 +29,117 @@ def workspace_temp_directory(repository_root: Path) -> Iterator[Path]:
             shutil.rmtree(path)
 
 
-def _source_records_from_evidence(evidence: list[dict]) -> list[dict]:
-    return [
-        {
-            "record_id": item["evidence_id"],
-            "source_filename": item["source_filename"],
-            "pdf_page": item["pdf_page"],
-            "period_label_ja": item["period_label_ja"],
-            "period_label_en": item["period_label_en"],
-            "statement_type": item["statement_type"],
-            "source_section": item["source_section"],
-            "summary_ja": item["exact_quote_ja"],
-            "tags": item.get("tags", []),
-        }
-        for item in evidence
-    ]
-
-
-def _filing_coverage(
-    manifest: object,
+def _memo_items(
+    *,
+    source_filename: str,
+    is_latest: bool,
     evidence: list[dict],
-    empty_message: str,
 ) -> list[dict]:
-    records_by_filename: dict[str, list[str]] = {}
-    for item in evidence:
-        records_by_filename.setdefault(item["source_filename"], []).append(
-            item["evidence_id"]
+    matching = [
+        item for item in evidence if item["source_filename"] == source_filename
+    ]
+    seed = matching[0] if matching else None
+    page = int(seed["pdf_page"]) if seed else 1
+    statement_type = seed["statement_type"] if seed else "actual"
+    summary = (
+        seed["exact_quote_ja"]
+        if seed
+        else f"{source_filename} のオフライン検証用経営説明。"
+    )
+    items = [
+        {
+            "category": "operating_results",
+            "pdf_page": page,
+            "statement_type": statement_type,
+            "summary_ja": summary,
+        },
+        {
+            "category": "financial_condition",
+            "pdf_page": page,
+            "statement_type": "actual",
+            "summary_ja": f"{summary} 財政状態を含む。",
+        },
+        {
+            "category": "forward_looking_information",
+            "pdf_page": page,
+            "statement_type": "forecast",
+            "summary_ja": f"{summary} 将来見通しを含む。",
+        },
+    ]
+    if is_latest:
+        items.append(
+            {
+                "category": "business_overview",
+                "pdf_page": page,
+                "statement_type": "actual",
+                "summary_ja": f"{summary} 主要事業の概要を含む。",
+            }
         )
-    coverage = []
-    for selected in manifest.selected_files:
-        record_ids = records_by_filename.get(selected.filename, [])
-        absent = {
-            "status": "not_available",
-            "source_record_ids": [],
-            "coverage_note": empty_message,
-        }
-        coverage.append(
+    return items
+
+
+def _research_payload_from_analysis(
+    payload: dict,
+    repository_root: Path,
+) -> dict:
+    security_code = payload["identity"]["security_code"]
+    manifest = select_filings(repository_root, security_code)
+    identity = dict(payload["identity"])
+    identity["latest_filename"] = manifest.latest_filename
+    evidence = payload.get("evidence", [])
+    selected_names = {item.filename for item in manifest.selected_files}
+    usable_evidence = [
+        item for item in evidence if item["source_filename"] in selected_names
+    ]
+    filings = []
+    for selected in sorted(
+        manifest.selected_files,
+        key=lambda item: (item.fiscal_year, item.filename),
+    ):
+        is_latest = selected.filename == manifest.latest_filename
+        filings.append(
             {
                 "source_filename": selected.filename,
                 "fiscal_year": selected.fiscal_year,
                 "period": selected.period,
                 "period_label_ja": f"FY{selected.fiscal_year}",
-                "is_latest": selected.filename == manifest.latest_filename,
-                "coverage_status": (
-                    "complete" if record_ids else "no_material_disclosure"
+                "is_latest": is_latest,
+                "pdf_page_count": selected.page_count,
+                "items": _memo_items(
+                    source_filename=selected.filename,
+                    is_latest=is_latest,
+                    evidence=usable_evidence,
                 ),
-                "operating_results": (
-                    {
-                        "status": "extracted",
-                        "source_record_ids": record_ids[:3],
-                        "coverage_note": None,
-                    }
-                    if record_ids
-                    else absent
-                ),
-                "financial_condition": absent,
-                "forward_looking_information": absent,
-                "strategy_and_plan_progress": absent,
-                "segment_and_business_conditions": absent,
-                "capital_allocation": absent,
-                "material_footnotes": absent,
-                "annual_financial_anchor_ids": [],
-                "financial_observation_ids": [],
-                "commentary_observation_ids": [],
-                "disclosure_ids": [],
-                "commitment_ids": [],
-                "coverage_gaps": [] if record_ids else [empty_message],
+                "annual_financial_anchor": None,
+                "unavailable_categories": [],
+                "notes": [],
             }
         )
-    return coverage
+    return {
+        "schema_version": "2.3-test",
+        "identity": identity,
+        "filings": filings,
+        "research_notes": ["Stored offline chronological research map."],
+    }
 
 
 def fake_research_dossier(
     repository_root: Path,
     security_code: str = "1808",
 ) -> JapaneseResearchDossier:
-    """Build a small, internally consistent extraction dossier."""
+    """Build a small, internally consistent chronological research map."""
 
     payload = read_json(
         repository_root / "tests" / "fixtures" / "fake_analysis_ja.json"
     )
-    manifest = select_filings(repository_root, security_code)
     payload["identity"]["security_code"] = security_code
+    manifest = select_filings(repository_root, security_code)
     payload["identity"]["latest_filename"] = manifest.latest_filename
-    evidence = payload["evidence"]
     if security_code != "1808":
-        for sequence, item in enumerate(evidence, start=1):
+        for item in payload.get("evidence", []):
             item["source_filename"] = manifest.latest_filename
-            item["evidence_id"] = (
-                f"{manifest.latest_filename}:s{sequence:04d}"
-            )
     return JapaneseResearchDossier.model_validate(
-        {
-            "schema_version": "2.1-test",
-            "identity": payload["identity"],
-            "source_records": _source_records_from_evidence(evidence),
-            "filing_coverage": _filing_coverage(
-                manifest,
-                evidence,
-                "Offline fixture contains no observations for this filing.",
-            ),
-            "annual_financial_anchors": [],
-            "financial_observations": [],
-            "commentary_observations": [],
-            "disclosures": [],
-            "commitments": [],
-            "research_notes": ["Stored offline test dossier."],
-        }
+        _research_payload_from_analysis(payload, repository_root)
     )
 
 
@@ -143,51 +147,51 @@ def dossier_from_analysis_payload(
     payload: dict,
     repository_root: Path | None = None,
 ) -> JapaneseResearchDossier:
-    """Adapt a stored full-analysis fixture to the extraction-side test contract."""
+    """Adapt a stored full-analysis fixture to the research-map contract."""
 
-    evidence = payload["evidence"]
     root = repository_root or Path(__file__).resolve().parents[1]
-    manifest = select_filings(root, payload["identity"]["security_code"])
     return JapaneseResearchDossier.model_validate(
-        {
-            "schema_version": "2.1-test",
-            "identity": payload["identity"],
-            "source_records": _source_records_from_evidence(evidence),
-            "filing_coverage": _filing_coverage(
-                manifest,
-                evidence,
-                "Adapted fixture has no observations for this filing.",
-            ),
-            "annual_financial_anchors": [],
-            "financial_observations": [],
-            "commentary_observations": [],
-            "disclosures": [],
-            "commitments": [],
-            "research_notes": ["Adapted offline regression fixture."],
-        }
+        _research_payload_from_analysis(payload, root)
     )
+
+
+def _source_reference(evidence: dict) -> dict:
+    return {
+        "source_filename": evidence["source_filename"],
+        "pdf_page": evidence["pdf_page"],
+        "source_section": evidence["source_section"],
+        "statement_type": evidence["statement_type"],
+        "support_summary_ja": evidence["exact_quote_ja"],
+    }
 
 
 def synthesis_from_analysis_payload(
     payload: dict,
 ) -> JapaneseSynthesisResponse:
-    evidence_ids = [
-        item["evidence_id"] for item in payload.get("evidence", [])
-    ]
-    evidence_set = set(evidence_ids)
-    fallback_ids = evidence_ids[:2]
+    evidence_by_id = {
+        item["evidence_id"]: item for item in payload.get("evidence", [])
+    }
+    fallback = next(iter(evidence_by_id.values()))
     claims = []
     for claim in payload["claims"]:
-        item = dict(claim)
-        item["source_record_ids"] = [
-            value
-            for value in item.pop("evidence_ids", [])
-            if value in evidence_set
-        ] or fallback_ids
-        item.pop("figures", None)
-        item.pop("dates", None)
-        item.pop("qualifiers", None)
-        claims.append(item)
+        linked = [
+            evidence_by_id[value]
+            for value in claim.get("evidence_ids", [])
+            if value in evidence_by_id
+        ] or [fallback]
+        claims.append(
+            {
+                "claim_id": claim["claim_id"],
+                "section": claim["section"],
+                "order": claim["order"],
+                "headline_ja": claim["headline_ja"],
+                "body_ja": claim["body_ja"],
+                "sources": [_source_reference(item) for item in linked],
+                "statement_type": claim["statement_type"],
+                "is_inference": claim.get("is_inference", False),
+                "causal": claim.get("causal", False),
+            }
+        )
 
     management = payload.get("management_consistency") or {}
     by_dimension = {
@@ -204,10 +208,10 @@ def synthesis_from_analysis_payload(
     for dimension in dimensions:
         source = by_dimension.get(dimension) or {}
         linked = [
-            value
+            evidence_by_id[value]
             for value in source.get("evidence_ids", [])
-            if value in evidence_set
-        ] or fallback_ids
+            if value in evidence_by_id
+        ] or [fallback]
         components.append(
             {
                 "dimension": dimension,
@@ -220,13 +224,13 @@ def synthesis_from_analysis_payload(
                     "rationale_ja",
                     "Selected filings support a mixed but assessable result.",
                 ),
-                "source_record_ids": linked,
+                "sources": [_source_reference(item) for item in linked],
             }
         )
 
     return JapaneseSynthesisResponse.model_validate(
         {
-            "schema_version": "2.1-test",
+            "schema_version": "2.3-test",
             "claims": claims,
             "management_consistency": {
                 "components": components,
@@ -248,8 +252,7 @@ def fake_synthesis_response(repository_root: Path) -> JapaneseSynthesisResponse:
 
 
 def persist_fake_research(repository_root: Path, paths: object) -> None:
-    dossier = fake_research_dossier(repository_root)
-    write_json(paths.research_structured, dossier)
+    write_json(paths.research_structured, fake_research_dossier(repository_root))
 
 
 def persist_research_for_payload(paths: object, payload: dict) -> None:

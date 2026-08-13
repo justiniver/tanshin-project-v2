@@ -163,13 +163,17 @@ try {
         foreach ($file in $plan.files) {
             Write-Host "  - $($file.filename) ($($file.page_count) pages)"
         }
-        Write-Host 'Expected result: a stored PDF-grounded research dossier.'
+        Write-Host 'Expected result: a stored chronological PDF research map.'
         Write-Host "Diagnostics: final_output\$SecurityCode\artifacts\model_response_research.raw.json,"
         Write-Host '  research.structured.json, research_metrics.json,'
         Write-Host '  validation_research.json, api_status_research.json,'
         Write-Host '  token_usage.json, and cost.json'
     } elseif ($Stage -eq 'analysis') {
-        Write-Host 'PDFs submitted: none (stored research dossier only)'
+        Write-Host "PDFs submitted: $($plan.files.Count)"
+        foreach ($file in $plan.files) {
+            Write-Host "  - $($file.filename) ($($file.page_count) pages)"
+        }
+        Write-Host 'Research map: supplied as an attention guide; PDFs remain authoritative.'
         Write-Host (
             "Expected final on success: " +
             "final_output\$SecurityCode\" +

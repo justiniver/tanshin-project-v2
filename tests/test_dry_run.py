@@ -66,6 +66,23 @@ class DryRunTests(unittest.TestCase):
             self.assertEqual(cost["display_currency"], "JPY")
             self.assertEqual(cost["usd_to_jpy_rate"], 150.0)
             self.assertGreater(cost["maximum_one_pass_cost_jpy"], 0)
+            self.assertGreater(
+                cost["analysis"]["estimated_input_tokens"],
+                manifest["total_selected_pages"] * cost["pdf_tokens_per_page"],
+            )
+            self.assertTrue(
+                any(
+                    "included in both Japanese requests" in assumption
+                    for assumption in cost["assumptions"]
+                )
+            )
+            pending_analysis = read_json(
+                artifacts / "request_plan_analysis.json"
+            )
+            self.assertEqual(
+                pending_analysis["status"],
+                "pending_research_map",
+            )
             self.assertIn("JPY", stdout.getvalue())
             self.assertNotIn("Yen conversion assumption", stdout.getvalue())
             self.assertIn(

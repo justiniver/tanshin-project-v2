@@ -5,25 +5,25 @@
   "pdf_tokens_per_page": 540,
   "research": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 282229,
+    "estimated_input_tokens": 278460,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.423343,
+    "input_cost_usd": 0.41769,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.669103,
-    "input_cost_jpy": 63.5,
+    "maximum_stage_cost_usd": 0.66345,
+    "input_cost_jpy": 62.65,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 100.37
+    "maximum_stage_cost_jpy": 99.52
   },
   "analysis": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 23792,
+    "estimated_input_tokens": 297500,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.035688,
+    "input_cost_usd": 0.44625,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.281448,
-    "input_cost_jpy": 5.35,
+    "maximum_stage_cost_usd": 0.69201,
+    "input_cost_jpy": 66.94,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 42.22
+    "maximum_stage_cost_jpy": 103.8
   },
   "translation": {
     "model": "gemini-3.6-flash",
@@ -36,14 +36,15 @@
     "maximum_output_cost_jpy": 27.65,
     "maximum_stage_cost_jpy": 35.3
   },
-  "maximum_one_pass_cost_usd": 1.185891,
-  "maximum_configured_cost_usd": 1.185891,
-  "maximum_one_pass_cost_jpy": 177.88,
-  "maximum_configured_cost_jpy": 177.88,
+  "maximum_one_pass_cost_usd": 1.5908,
+  "maximum_configured_cost_usd": 1.5908,
+  "maximum_one_pass_cost_jpy": 238.62,
+  "maximum_configured_cost_jpy": 238.62,
   "maximum_api_attempts_per_stage": 1,
   "assumptions": [
     "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",
     "No separate native-PDF text increment is added beyond the selected per-page planning estimate.",
+    "The selected PDFs and their document metadata are included in both Japanese requests: research and final analysis.",
     "System instructions, document metadata, prompts, and response schemas use a conservative multilingual character-based estimate.",
     "The materialized analysis prompt already contains its research dossier, so no separate research-output allowance is added.",
     "Translation planning reserves the configured maximum analysis output because the source analysis is not materialized yet.",
@@ -55,19 +56,19 @@
   "actual_cost_by_stage_usd": {
     "research": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 273847,
-      "billed_output_and_thinking_tokens": 17234,
-      "cost_usd": 0.540026,
-      "cost_jpy": 81.0
+      "input_tokens": 273306,
+      "billed_output_and_thinking_tokens": 11199,
+      "cost_usd": 0.493951,
+      "cost_jpy": 74.09
     },
     "analysis": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 27786,
-      "billed_output_and_thinking_tokens": 18743,
-      "cost_usd": 0.182251,
-      "cost_jpy": 27.34
+      "input_tokens": 293681,
+      "billed_output_and_thinking_tokens": 17778,
+      "cost_usd": 0.573856,
+      "cost_jpy": 86.08
     }
   },
-  "actual_cost_total_usd": 0.722277,
-  "actual_cost_total_jpy": 108.34
+  "actual_cost_total_usd": 1.067807,
+  "actual_cost_total_jpy": 160.17
 }

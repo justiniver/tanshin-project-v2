@@ -249,11 +249,12 @@ def build_analysis_spec(
         prompt=prompt,
         response_schema=response_schema_for(JapaneseSynthesisResponse, provider),
         max_output_tokens=ANALYSIS_MAX_OUTPUT_TOKENS,
-        files=(),
+        files=_request_files(manifest),
         request_options=(
             {
                 "reasoning_effort": "medium",
                 "text_verbosity": "high",
+                "pdf_detail": OPENAI_PDF_DETAIL,
                 "store": False,
             }
             if provider == "openai"

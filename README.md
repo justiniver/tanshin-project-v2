@@ -10,10 +10,11 @@ investor-oriented Markdown reports:
   diagnostics, token usage, cost, and run status.
 
 The pipeline is company-agnostic. PDFs are selected deterministically, then the
-selected analysis provider receives them directly in a research pass. A second
-request turns that grounded dossier into the Japanese analysis without
-resubmitting the PDFs. Optional English translation is a third request. The
-default CLI and ordinary test suite are offline.
+selected analysis provider receives them directly in a chronological research
+pass. A second request receives both that compact research map and the original
+PDFs, using the map to focus its review while keeping the filings authoritative.
+Optional English translation is a third request. The default CLI and ordinary
+test suite are offline.
 
 For a compact list of model combinations and commands, see
 [COMMANDS.md](COMMANDS.md).
@@ -293,8 +294,8 @@ The runner:
 5. archives existing company outputs in a timestamped history directory while
    preserving their filenames;
 6. runs the first company's PDF-backed research request with one API attempt;
-7. stores the filing-extraction dossier and prepares the Japanese synthesis offline;
-8. runs the synthesis request without resubmitting the PDFs;
+7. stores the chronological filing map and prepares the Japanese synthesis offline;
+8. runs the synthesis request with both that map and the selected PDFs;
 9. prepares that company's optional English translation;
 10. between consecutive Gemini stages using the same credential, waits
    75 seconds when their combined estimated input and maximum-output allowance
@@ -380,82 +381,62 @@ source-configured `gemini-3.1-pro-preview`; Pro-translation and key2-translation
 retain default Flash for both Japanese stages. Under Sol, both Japanese stages
 use `gpt-5.6-sol`.
 
-The first request is the only one that receives PDFs. Selected files are sent
-inline; neither the Gemini Files API nor the OpenAI Files API is used. Sol
-preflight rejects a selection if any PDF or the combined inline payload reaches
-50 MB. Sol uses low PDF image detail while retaining each PDF's extracted text.
-The research request is recorded in `request_plan_research.json`.
+Both Japanese requests receive the selected PDFs inline; neither the Gemini
+Files API nor the OpenAI Files API is used. Sol preflight rejects a selection
+if any PDF or the combined inline payload reaches 50 MB. Sol uses low PDF image
+detail while retaining each PDF's extracted text. The research request is
+recorded in `request_plan_research.json`.
 
 The research pass is deliberately an extraction pass, not a preliminary
-analysis. It builds a reusable, source-grounded dossier containing:
+analysis. It builds a compact chronological map containing:
 
 - company and reporting-period identity;
-- exactly one coverage record for every selected filing, including explicit
-  gaps instead of silent omission;
-- seven explicit qualitative section packets per filing covering operating
-  results, financial condition, forward-looking information, strategy and plan
-  progress, segment and business conditions, capital allocation, and material
-  footnotes;
-- lightweight source records with source filenames, physical PDF pages, source
-  sections, statement types, and concise faithful summaries;
-- compact year-end financial anchors that pair one consistent annual actual
-  metric with the next original forecast where available;
-- supplemental financial observations for latest results, guidance revisions,
-  dividends, segment results, cash flow, balance-sheet changes, and other
-  decision-useful values outside that anchor series;
-- filing-specific management-commentary observations under stable driver tags,
-  retaining repeated wording so continuity, intensification, softening, or
-  reframing can be compared;
-- material footnote and mandatory-disclosure records, including impairments,
-  unusual gains or losses, regulatory matters, accounting changes, and risks;
-- forecasts, medium-term targets, strategic commitments, later outcomes, and
-  revisions observable in the selected filings;
-- the original numeric surfaces needed for local forecast/result comparisons.
+- exactly one memo for every selected filing, ordered chronologically;
+- dense filing-specific observations from operating results, financial
+  condition, forward-looking information, strategy and execution, segment and
+  business drivers, capital allocation, and material footnotes;
+- a durable business overview from the latest filing;
+- physical page locations and statement types as navigation aids;
+- compact year-end financial anchors that pair one consistently available
+  annual actual metric with the next original forecast where available;
+- explicit unavailable categories and source limitations rather than silent
+  omission.
 
 Request 1 does not rank business drivers, decide decade themes, score management,
 or draft report conclusions. Those tasks belong to request 2. The research
-response is deliberately compact and does not require exact quotation
-transcription or citation-ready spans. It keeps at most 72 shared source
-records, 12 annual financial anchors, 12 supplemental financial observations,
-28 commentary observations, 8 material disclosures, and 8 commitments. These
-are ceilings rather than quotas.
+response is deliberately compact and does not create IDs, theme graphs,
+commentary tags, citation-ready quotations, or an evidence ledger. Closely
+related same-page statements may be combined into a dense memo item.
 
 The information budget is intentionally comparison-first:
 
 - historical financial values are compressed into one consistently available
   profitability anchor per year-end filing, pairing the current actual with the
   next original annual forecast where available;
-- the saved response budget is reserved first for the qualitative management
-  discussion in each filing; every section is marked extracted, not material,
-  or unavailable rather than being silently skipped;
-- commentary slots favor recurring comparison tracks and meaningful wording or
-  emphasis changes across early, middle, and recent filings instead of
-  collecting unrelated boilerplate;
-- commitment slots prioritize targets and promises with observable later
-  outcomes, misses, delays, or revisions, with at most two important pending
-  commitments;
-- disclosure slots retain only footnotes or mandatory disclosures that
-  materially change the interpretation of performance, risk, capital
-  deployment, or management follow-through.
+- the response budget is reserved first for the qualitative management
+  discussion in each filing, including changes in causes, qualifications,
+  actions, confidence, and outlook;
+- older filings remain concise but independently useful, while the latest memo
+  carries more current operating, balance-sheet, outlook, risk, and business
+  context;
+- material footnotes are retained when they change the interpretation of
+  performance, risk, capital deployment, or management follow-through.
 
-Broad historical revenue-and-profit duplication, miscellaneous commentary,
-routine footnotes, and themes that merely repeat other records are deliberately
-deprioritized. The same source record is reused across coverage categories and
-structured observations whenever one filing passage supports several purposes.
+Broad historical table duplication, routine footnotes, and polished analytical
+conclusions are deliberately deprioritized in request 1.
 
-Before the second request, Python matches comparable forecasts with later
-actuals, identifies explicit forecast revisions, reports the observed sample
-size and any conservative, optimistic, in-line, or mixed forecast signal,
-constructs the selected annual financial anchor series, summarizes target
-follow-through, and compares extracted management wording by recurring track.
-It also counts material disclosures. These calculations and their limitations
-are stored in `research_metrics.json`.
+Before the second request, Python matches comparable original annual forecasts
+with later actuals and constructs the selected annual financial anchor series.
+It also summarizes filing and category coverage. These calculations and their
+limitations are stored in `research_metrics.json`.
 
-The second request receives the dossier, those deterministic comparisons, and
-the fact-free report blueprint. It receives no PDFs, performs no fresh
-arithmetic, and cannot add source records. Its job is to rank material findings,
-assess the four management-consistency dimensions, and write the final
-analytical claims, including:
+The second request receives the research map, those deterministic comparisons,
+the fact-free report blueprint, and all selected PDFs. The map directs attention
+to likely useful passages but is not a source boundary: the model is instructed
+to revisit the filings for omitted context, competing interpretations, and
+contrary evidence. Its job is to rank material findings, assess the four
+management-consistency dimensions, and write the final analytical claims,
+including:
 
 - a concise, plain-language company overview;
 - latest-filing management takeaways;
@@ -475,7 +456,7 @@ disclosure, or capital-allocation record rather than forcing a weak theme.
 
 This version remains limited to the selected latest and year-end Tanshin corpus.
 It does not add quarterly-commentary analysis, peer comparison, Yuho filings, or
-company presentation materials. The dossier captures decision-useful
+company presentation materials. The research map captures decision-useful
 longitudinal financial evidence, but it is not intended to replace a standardized
 XBRL-based long-term financial statement table or a full-depth multi-source
 company report.
@@ -487,7 +468,7 @@ to either analysis provider.
 
 ### Japanese normalization and rendering
 
-Local code converts request 2's source-record links into the richer internal
+Local code converts request 2's lightweight PDF source locations into the richer internal
 representation used by normalization and diagnostics, derives supported numeric
 spans where possible, calculates management consistency, records an audit trail,
 and renders the Japanese Markdown. Source links remain in JSON artifacts for
@@ -510,14 +491,14 @@ The four components are:
 - forecast and target discipline;
 - accountability and transparency.
 
-The synthesis pass supplies evidence-based component ratings after comparing the
-research dossier's commitment, outcome, financial, disclosure, and commentary
-records. Python resolves each rating's selected source records, converts the
+The synthesis pass supplies evidence-based component ratings after reviewing the
+chronological map and the selected PDFs. It returns a small number of internal
+source locations for each rating. Python resolves those locations, converts the
 four ratings to 0–1 subscores, and uses their arithmetic mean. Uneven period
 coverage lowers the separately stored evidence-confidence diagnostic rather
 than erasing an otherwise supported subscore. A subscore remains blank only in
 the exceptional case where the synthesis pass cannot make a defensible
-assessment or none of its source records resolves. If no component can be assessed,
+assessment or none of its source locations resolves. If no component can be assessed,
 the overall fallback is `0.50`.
 The synthesis pass also writes a concise natural-language explanation beneath
 every subscore, including supporting and contrary information. The full calculation is stored in
@@ -643,7 +624,7 @@ Default validation is deliberately permissive and still flags high-signal
 conditions such as:
 
 - wrong security code, company identity, or latest filing;
-- duplicate or unresolved claim/source-record identities;
+- duplicate or unresolved claim/source identities;
 - unselected source files or impossible physical pages;
 - actual/forecast/target statement-type contradictions;
 - material Japanese/English claim-set or internal-source-set changes;
@@ -671,14 +652,14 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | --- | --- |
 | `selection_manifest.json` | Selected latest and trend filings with reasons |
 | `request_plan_research.json` | PDF-backed research model, request ID, files, hashes, and limits |
-| `request_plan_analysis.json` | Dossier-backed synthesis model, request ID, hashes, and limits |
+| `request_plan_analysis.json` | PDF-backed synthesis model, request ID, files, hashes, and limits |
 | `request_plan_translation.json` | Translation request plan |
 | `prompt_research.txt` / `prompt_analysis.txt` / `prompt_translation.txt` | Complete stage prompts |
 | `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
 | `model_response_research.raw.json` | Raw research-provider response |
-| `research.structured.json` | Parsed PDF-grounded research dossier |
-| `research_metrics.json` | Filing coverage, forecast/actual comparisons, target follow-through, commentary changes, disclosures, and extraction diagnostics |
-| `validation_research.json` | Non-gating research-dossier diagnostics; warnings never stop synthesis |
+| `research.structured.json` | Parsed chronological filing research map |
+| `research_metrics.json` | Filing/category coverage, annual anchors, forecast/actual comparisons, and extraction diagnostics |
+| `validation_research.json` | Non-gating research-map diagnostics; warnings never stop synthesis |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |
 | `analysis_ja.normalized.json` | Locally normalized Japanese analysis |
@@ -714,7 +695,7 @@ Use this when diagnosing or rerunning one specific stage:
 .\scripts\run_gemini_stage.ps1 1808 research -Pro -Execute
 ```
 
-After research succeeds, use `analysis` for the dossier-backed synthesis;
+After research succeeds, use `analysis` for the PDF-backed, research-map-guided synthesis;
 translation uses `translation`. The live form
 requires exact interactive confirmation of the request ID. This legacy
 single-stage wrapper remains Gemini-specific; use `run_reports.ps1 --sol` for

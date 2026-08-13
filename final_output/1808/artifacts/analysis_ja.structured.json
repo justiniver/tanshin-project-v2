@@ -1,310 +1,601 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.0.0",
   "claims": [
     {
-      "claim_id": "c001",
+      "claim_id": "claim_001",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "マンション建設・開発を中核とする総合不動産建設事業モデル",
-      "body_ja": "長谷工コーポレーションは、分譲マンションの施工および施工企画を中核とし、不動産開発や管理・サービス事業を展開する建築・不動産企業である。土地仕入れの企画提案から建設、販売、管理・改修に至るまで一貫した事業体制を備え、主に不動産デベロッパーやマンション需要者を顧客としている。特化型の施工能力と関連サービスの拡大により安定的な収益基盤を構築している。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r003"
+      "headline_ja": "分譲マンションの特化型特命施工と企画開発から管理運営までの一貫体制",
+      "body_ja": "長谷工コーポレーションは、分譲マンションの企画・設計から施工までを一貫して手掛ける建設関連事業を中核とし、マンションや戸建の分譲・仲介を行う不動産関連事業、賃貸・分譲マンションの建物管理や大規模修繕・シニアサービス等を展開する管理運営事業、ならびに海外での不動産開発等を多角的に展開する総合住宅・生活関連企業集団である。土地情報の独自の収集力と商品企画力を強みとし、土地持ち込み型の特命受注を中心とした生産・事業モデルによって高い施工シェアと収益性を構築している。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 7,
+          "source_section": "企業集団の状況",
+          "statement_type": "actual",
+          "support_summary_ja": "長谷工グループは、建設関連事業、不動産関連事業、管理運営事業、海外事業を展開する総合住宅・生活関連企業集団である。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "c002",
+      "claim_id": "claim_002",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年3月期は完成工事高伸長と利益率改善で大幅増益を達成",
-      "body_ja": "2026年3月期連結業績は売上高1兆2,731億36百万円（8.1%増）、営業利益987億43百万円（16.6%増）、経常利益940億51百万円（12.8%増）となった。完成工事高の増加や不動産取扱量の拡大に加え、完成工事総利益率が改善したことで、期初予想の経常利益900億円を上回る着地となった。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r001",
-        "01_2026_FY_tanshin.pdf:r003"
+      "headline_ja": "2026年3月期は受注採算改善と不動産取扱量増により増収増益を達成",
+      "body_ja": "2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）となった。建設関連事業における受注時採算の改善に伴う完成工事総利益率の上昇や、不動産関連事業の取引拡大が全体を牽引し、期初予想を上回る着地となった。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績等の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "2026年3月期連結業績は売上高1兆2,731億円、営業利益987億円、経常利益941億円、親会社株主に帰属する当期純利益548億円で増収増益。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "c003",
+      "claim_id": "claim_003",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "棚卸資産の圧縮により営業キャッシュ・フローが1,574億円に急拡大",
-      "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過（前期は39億円の収入超過）と大幅に拡大した。主に棚卸資産の減少に伴う542億円の資金増加などが寄与しており、運転資金の効率化がキャッシュ創出能力を力強く押し上げた。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r004"
+      "headline_ja": "棚卸資産の減少等により営業キャッシュ・フローが1,574億円の大幅収入超過へ改善",
+      "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過となり、前期の39億円から大幅に増加した。これは主に棚卸資産の減少に伴う資金増加（542億円）や税金等調整前当期純利益（895億円）の計上によるものである。期末現金及び現金同等物残高は前末比523億円増の2,881億円となり、手元流動性を高めている。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 4,
+          "source_section": "当期のキャッシュ・フローの概況",
+          "statement_type": "actual",
+          "support_summary_ja": "営業CFは前年の39億円から1,574億円の収入超過へ大幅増加。棚卸資産の減少伴う資金増加542億円などが寄与。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "c004",
+      "claim_id": "claim_004",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "新中期経営計画の始動と累進配当・総還元性向50%方針の打ち出し",
-      "body_ja": "新中期経営計画「HASEKO Evolution Plan」を開始し、6か年合計ネット投資額4,000億円を設定するとともに、総還元性向50%程度および累進配当を基本方針とした。2026年3月期の年間配当を95円とし、2027年3月期予想では100円への増配を計画している。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r006"
-      ],
-      "statement_type": "target",
-      "is_inference": false,
-      "causal": false
-    },
-    {
-      "claim_id": "c005",
-      "section": "latest.business_driver",
-      "order": 1,
-      "headline_ja": "完成工事高・不動産取扱量｜増収要因",
-      "body_ja": "建築事業における施工進捗に伴う完成工事高の増加および不動産関連事業における取引量の増加が売上高を牽引し、前年同期比8.1%の増収に貢献した。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r003"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "c006",
-      "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "受注時採算・利益率｜改善要因",
-      "body_ja": "過去数期にわたる資材・労務費高騰による利益率圧迫に対し、受注時採算の厳格化と現場施工の効率化が進んだことで完成工事総利益率が改善し、経常利益を期初予想以上に押し上げた。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r003"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "c007",
-      "section": "latest.business_driver",
-      "order": 3,
-      "headline_ja": "サービス関連事業｜安定貢献",
-      "body_ja": "マンション管理や大規模修繕等のサービス関連事業が着実に利益を積み重ね、建設事業の採算変動に対する緩衝材として連結利益の底上げに寄与した。",
-      "source_record_ids": [
-        "05_2025_FY_tanshin.pdf:r003",
-        "09_2024-05-10_tanshin.pdf:r003"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "c008",
-      "section": "latest.outlook",
-      "order": 1,
-      "headline_ja": "2027年3月期は経常利益1,050億円への連続増益を見込む",
-      "body_ja": "2027年3月期の連結業績予想として売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円を設定した。新中期経営計画の初年度として、建築事業の需要確保と不動産開発・サービス事業の成長を通じて二桁増益を目指している。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r002",
-        "01_2026_FY_tanshin.pdf:r007"
+      "headline_ja": "次期は増益予想を掲げ、年間配当は1株当たり100円へ増配予定",
+      "body_ja": "2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、経常利益1,050億円（同11.6%増）を見込む。新中期経営計画「HASEKO Evolution Plan」の株主還元方針に基づき、当期の年間配当金95円（前年の85円から10円増配）に続き、次期は100円への増配を予定している。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 1,
+          "source_section": "業績予想 / 配当の状況",
+          "statement_type": "forecast",
+          "support_summary_ja": "2027年3月期通期予想は経常利益1,050億円。年間配当予想は100円（当期は95円）。"
+        }
       ],
       "statement_type": "forecast",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "c009",
+      "claim_id": "claim_005",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "受注採算｜追い風：建築工事における受注時採算の改善が粗利益率を押し上げ",
+      "body_ja": "建設関連事業では、土地情報収集力と商品企画力を強みに受注時採算の改善を徹底した結果、完成工事総利益率が上昇した。資材・労務費の高騰が継続する環境下においても、販売価格の上昇や効率的生産体制の維持により収益性を高め、セグメント営業利益は685億円（前期比21.6%増）となった。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績（建設関連事業）",
+          "statement_type": "actual",
+          "support_summary_ja": "受注時採算の改善により完成工事総利益率が上昇し、建設関連事業の営業利益は685億円（同21.6%増）となった。"
+        }
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_006",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "分譲引渡・仲介｜追い風：新規分譲引渡しや収益不動産売却の増加が不動産事業を牽引",
+      "body_ja": "不動産関連事業では、新築分譲マンションの新規引渡しや収益不動産の売却が順調に進捗したほか、不動産仲介の取扱件数が増加した。これによりセグメント売上高は2,932億円（前期比16.0%増）、営業利益は356億円（同9.2%増）となり、連結業績の押し上げに貢献した。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績（不動産関連事業）",
+          "statement_type": "actual",
+          "support_summary_ja": "分譲マンションの新規引渡しや収益不動産の売却増加、仲介取扱件数の増加で売上高2,932億円、営業利益356億円。"
+        }
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_007",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "海外事業｜逆風：ハワイ州開発事業の低迷等により営業損失61億円を計上",
+      "body_ja": "海外事業においては、米国ハワイ州オアフ島での戸建分譲開発や商業施設運営を推進しているものの、進捗の遅れ等の影響により売上高43億円に対して営業損失61億円（前年は営業損失57億円）を計上した。国内事業の好調がカバーしているものの、早期の収益化が課題となっている。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績（海外事業）",
+          "statement_type": "actual",
+          "support_summary_ja": "海外事業は売上高43億円、営業損失61億円（前期は営業損失57億円）となった。"
+        }
+      ],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_008",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "2027年3月期は経常利益1,050億円を目指し新中計目標の達成に向け進展",
+      "body_ja": "2027年3月期の通期連結予想は売上高1兆3,800億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円を見込んでいる。首都圏・近畿圏でのマンション価格上昇と堅調な需要に支えられ、受注高単体7,300億円を確保するとともに、新中期経営計画の目標である2028年3月期連結経常利益1,000億円以上という水準の達成を見据えている。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 6,
+          "source_section": "今後の見通し",
+          "statement_type": "forecast",
+          "support_summary_ja": "2027年3月期通期予想は売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円を見込む。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 11,
+          "source_section": "経営目標・株主還元方針",
+          "statement_type": "target",
+          "support_summary_ja": "2028年3月期連結経常利益1,000億円以上を経営目標に掲げる。"
+        }
+      ],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_009",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "資材・労務コストの再高騰による完成工事利益率の再圧迫リスク",
-      "body_ja": "2024年3月期・2025年3月期に完成工事総利益率の低下要因となった建設資材費や人件費の上昇が再び加速した場合、進行中案件の採算が低下するリスクが存在する。",
-      "source_record_ids": [
-        "05_2025_FY_tanshin.pdf:r003",
-        "09_2024-05-10_tanshin.pdf:r003"
+      "headline_ja": "建築資材・労務費の高騰および時間外労働上限規制による工事原価・工程リスク",
+      "body_ja": "建設業界全体で資材価格の高騰や労務費の上昇が続いており、働き方改革に伴う時間外労働の上限規制の適用や技能労働者不足が施工進捗や工事原価に影響を及ぼす不確実性が存在する。受注時採算の厳格管理やBIM・ICTの活用による工期短縮・効率化が継続的な課題となる。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 6,
+          "source_section": "今後の見通し",
+          "statement_type": "risk",
+          "support_summary_ja": "資材・労務費高騰、時間外労働上限規制への対応、技能労働者不足など建設業界の課題が指摘されている。"
+        }
       ],
       "statement_type": "risk",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "c010",
+      "claim_id": "claim_010",
       "section": "latest.risk",
       "order": 2,
-      "headline_ja": "海外事業不動産における収益性低下および減損計上リスク",
-      "body_ja": "2025年3月期に海外関連事業用不動産等の収益性低下から168億61百万円の減損損失を特別損失として計上しており、海外不動産市場の変動や投資案件の収益性悪化が再び特別損失をもたらす不確実性がある。",
-      "source_record_ids": [
-        "05_2025_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r006"
+      "headline_ja": "住宅ローン金利の上昇懸念とマンション販売価格上昇による需要抑制リスク",
+      "body_ja": "首都圏の分譲単価が1,419千円/㎡（前期比15.4%増）、平均価格が9,383万円（同15.3%増）と過去最高値を更新する一方、時間をかけた販売姿勢の強まりから初月販売率は低下している。今後の景気動向や金融政策変更に伴う住宅ローン金利の上昇が、購買マインドに影響を与える懸念がある。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "当連結会計年度の概況",
+          "statement_type": "risk",
+          "support_summary_ja": "マンション価格上昇継続の一方、初月販売率は低下。金融政策や景気の動向を注視する必要がある。"
+        }
       ],
       "statement_type": "risk",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "c011",
+      "claim_id": "claim_011",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "コスト高騰による採算低迷期を脱し新中期計画による成長フェーズへ移行",
-      "body_ja": "2024年3月期および2025年3月期は資材・労務費の高騰により完成工事総利益率が圧迫され、経常利益は830億円台にとどまる停滞期となった。これに対し2026年3月期は採算性の改善と不動産取引の拡大により940億51百万円へ大幅に回復し、過去の抑制傾向からの転換を示した。同時に、海外資産の減損といった課題に対応しつつ、ウッドフレンズの完全子会社化など国内基盤の強化を進行。新たに掲げた中期経営計画「HASEKO Evolution Plan」では2028年3月期経常利益1,000億円以上、2031年3月期1,300億円以上を掲げており、投資家は今後、建設施工における適正採算の持続性と新規投資の収益化を見極める必要がある。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r001",
-        "01_2026_FY_tanshin.pdf:r003",
-        "01_2026_FY_tanshin.pdf:r007",
-        "05_2025_FY_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004",
-        "09_2024-05-10_tanshin.pdf:r003"
+      "headline_ja": "新中期経営計画の初年度として「3つの輪」体制を始動し高水準の収益性を確保",
+      "body_ja": "2026年3月期は、新たな中期経営計画「HASEKO Evolution Plan」の初年度にあたり、従来の「建設」と「サービス」の2輪から、「建設関連」「不動産関連」「管理運営」の3輪体制へセグメント区分を再編した。資材高騰等の外部環境の厳しさは残るものの、土地情報収集力に裏打ちされた特命受注ノウハウと全セグメントでの増益により、連結経常利益941億円を達成した。Wood Friendsの完全子会社化など木造・木質化領域への成長投資も進め、収益基盤の多様化と資本効率向上を図る現在地にある。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績等の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "新中計初年度に連結経常利益941億円を達成。完成工事総利益率や不動産取扱量が改善。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 36,
+          "source_section": "企業結合等関係",
+          "statement_type": "actual",
+          "support_summary_ja": "Wood FriendsをTOBおよび売渡請求により100%完全子会社化。"
+        }
       ],
       "statement_type": "mixed",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "c012",
+      "claim_id": "claim_012",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "10年間の業績軌跡：高水準利益からコスト圧迫・構造調整を経て再成長へ",
-      "body_ja": "長谷工コーポレーションの10年間（2017年3月期～2026年3月期）の経常利益は、初期（2017～2020年）に1,000億円前後の高い水準を記録した後、中期（2021～2023年）の700～800億円台への調整、直近（2024～2025年）の資材・労務費高騰による利益率圧迫を経験した。直近の2026年3月期には採算改善により941億円まで復調。非建設分野への投資（細田工務店やウッドフレンズ等の子会社化、スマートマンション事業譲渡など）による事業多様化と、建設本業におけるコスト吸収力が長期的な収益復元力を左右している。",
-      "source_record_ids": [
-        "37_2017-05-12_tanshin.pdf:r001",
-        "33_2018-05-11_tanshin.pdf:r001",
-        "29_2019-05-10_tanshin.pdf:r001",
-        "25_2020-05-14_tanshin.pdf:r001",
-        "21_2021-05-13_tanshin.pdf:r001",
-        "17_2022-05-12_tanshin.pdf:r001",
-        "13_2023-05-11_tanshin.pdf:r001",
-        "09_2024-05-10_tanshin.pdf:r001",
-        "05_2025_FY_tanshin.pdf:r001",
-        "01_2026_FY_tanshin.pdf:r001"
+      "headline_ja": "10年間の軌跡：完成工事利益率の波動を不動産・管理運営の拡大と原価管理で克服",
+      "body_ja": "過去10年間の業績推移を見ると、FY2018〜FY2019に連結経常利益1,000億円超の高水準に達した後、コロナ禍や資材・労務費の高騰を受けた完成工事総利益率の低下により、FY2021〜FY2025には経常利益700億〜800億円台へと一時落ち込んだ。しかし、この間も受注残高を高水準で維持するとともに、ストック型ビジネスである管理運営事業の受託戸数拡大や不動産開発利益の積み上げにより下値を支えた。直近のFY2026には受注時採算の改善と不動産取扱量の増加により経常利益941億円までV字回復を果たしており、特命施工モデルの強みと非建設分野の成長を両立させる事業構造への深化が証明されている。",
+      "sources": [
+        {
+          "source_filename": "37_2017-05-12_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績に関する説明",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2017連結経常利益は888億円。"
+        },
+        {
+          "source_filename": "33_2018-05-11_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績に関する説明",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2018連結経常利益は1,005億円で過去最高を記録。"
+        },
+        {
+          "source_filename": "21_2021-05-13_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績に関する説明",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2021連結経常利益はコロナ禍等の影響で718億円へ低下。"
+        },
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績等の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2025連結経常利益は834億円。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績等の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2026連結経常利益は941億円まで回復。"
+        }
       ],
-      "statement_type": "actual",
+      "statement_type": "mixed",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "c013",
+      "claim_id": "claim_013",
       "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "期初予想に対する慎重な策定方針と全期間にわたる予想上振れ傾向",
-      "body_ja": "初期（2018～2019年）、中期（2021～2023年）、直近（2024～2026年）の全期間を通じて、期初に提示する通期経常利益予想は実態より控えめに設定され、検証可能な9期のうち6期で実績が期初予想を上回った（3期はほぼトントン）。期初予想に対して着実に実績を積み上げる管理スタイルが一貫して維持されている。",
-      "source_record_ids": [
-        "37_2017-05-12_tanshin.pdf:r002",
-        "33_2018-05-11_tanshin.pdf:r001",
-        "21_2021-05-13_tanshin.pdf:r002",
-        "17_2022-05-12_tanshin.pdf:r001",
-        "09_2024-05-10_tanshin.pdf:r002",
-        "05_2025_FY_tanshin.pdf:r001",
-        "01_2026_FY_tanshin.pdf:r001"
+      "headline_ja": "土地情報収集力を起点とする「持ち込み型特命受注モデル」の持続的強み",
+      "body_ja": "早期（FY2017〜）から直近（FY2026）に至るまで、同社の最大の強みは事業主に対する独自の土地情報提案力と商品企画力に基づいた「持ち込み型特命受注」にある。競争入札を避け、企画から施工・販売・管理までを一貫して受注するモデルを維持することで、分譲マンション建設における高いシェアと相場変動下での案件確保能力を持続させている。",
+      "sources": [
+        {
+          "source_filename": "37_2017-05-12_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "分譲マンション新築工事受注は107件と好調を維持。"
+        },
+        {
+          "source_filename": "21_2021-05-13_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "土地情報収集力や商品企画力が高く評価されている。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "土地情報収集力や商品企画力、施工品質への評価から受注時採算が改善。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
-      "causal": false
+      "causal": true
     },
     {
-      "claim_id": "c014",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "建築受託一辺倒から戸建・住宅関連M&Aによる事業領域の多角化へ",
-      "body_ja": "初期は分譲マンション施工を中心とする建築事業主導の構造であったが、中期に細田工務店の完全子会社化（2020年）、直近にウッドフレンズの完全子会社化（2025年）を実行し、戸建住宅や地域木造建築分野への多角化を推進。一方でスマートマンション事業の譲渡（2019年）や海外不動産減損（2025年）など、不採算・非コア領域の整理を伴う事業再編を実施した。",
-      "source_record_ids": [
-        "29_2019-05-10_tanshin.pdf:r003",
-        "25_2020-05-14_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r008"
+      "claim_id": "claim_014",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "分譲・賃貸マンション管理戸数の累積的拡大によるストック収益基盤の強化",
+      "body_ja": "管理運営（旧サービス関連）事業における分譲マンション管理戸数は、FY2017末の36.9万戸からFY2021末の41.0万戸、FY2026末の44.8万戸へと着実に拡大を続けた。大規模修繕工事や賃貸管理、社宅代行、シニアサービスを含めたフロー・ストック双方の需要を補捕捉する体制が、建設事業の採算変動に対する緩衝材として機能している。",
+      "sources": [
+        {
+          "source_filename": "37_2017-05-12_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "サービス関連事業で分譲マンション管理や大規模修繕が順調に拡大。"
+        },
+        {
+          "source_filename": "21_2021-05-13_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "分譲マンション管理戸数は410,412戸に増加。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "分譲マンション管理戸数は448,076戸に達する。"
+        }
       ],
       "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_015",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "事業体制の進化：従来の2輪体制から「建設関連・不動産関連・管理運営」の3輪体制へ推進",
+      "body_ja": "早期（FY2017）や中期（FY2021「NS計画」）においては「建設関連」と「サービス関連」の2輪体制で経営が進められていたが、直近のFY2025・FY2026（「HASEKO Evolution Plan」）より、「建設関連」「不動産関連」「管理運営」の3輪体制へとセグメント構造を組み替えた。各事業の役割と責任を細分化・明確化し、不動産開発投資の拡大と管理運営の収益化を加速させる体制へと転換している。",
+      "sources": [
+        {
+          "source_filename": "37_2017-05-12_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "当時は建設関連事業とサービス関連事業等の区分で構成。"
+        },
+        {
+          "source_filename": "21_2021-05-13_tanshin.pdf",
+          "pdf_page": 10,
+          "source_section": "中長期的な経営戦略",
+          "statement_type": "actual",
+          "support_summary_ja": "NS計画では建設関連とサービス関連の両輪体制を基本方針とした。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "新中計策定を機に建設関連・不動産関連・管理運営・海外の4区分に報告セグメントを変更。"
+        }
+      ],
+      "statement_type": "mixed",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "c015",
+      "claim_id": "claim_016",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "採算管理の適応：インフレ・資材高騰局面に対する受注時採算厳格化へのシフト",
+      "body_ja": "早期（FY2017〜FY2018）は完成工事総利益率の改善が利益成長を牽引していたが、中期（FY2022〜FY2025）は資材・労務費の高騰により完成工事総利益率が低下傾向に陥った。これに対し直近（FY2026）では、設計・施工のデジタル化や分譲価格上昇を織り込んだ受注時採算の見直しを徹底することで、高コスト環境下においても完成工事総利益率を再上昇させる構造へと適応させた。",
+      "sources": [
+        {
+          "source_filename": "33_2018-05-11_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "完成工事総利益率の改善が営業利益を押し上げた。"
+        },
+        {
+          "source_filename": "09_2024-05-10_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "資材・労務費高騰で完成工事総利益率が低下。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "受注時採算の改善により完成工事総利益率が反転上昇。"
+        }
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_017",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "資産効率化とM&A・DX・不動産への成長投資および株主還元の拡充",
-      "body_ja": "2026年3月期に始動した新中期計画では6年間でネット投資4,000億円（国内不動産1,200億円、海外不動産400億円、建設関連/R&D1,000億円、DX400億円、新規事業/M&A1,000億円）を配分する方針を明示。また総還元性向50%程度・累進配当を掲げ、棚卸資産圧縮による営業CF（1,574億円）を活用しながら成長投資と株主還元の両立を図っている。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r006"
+      "headline_ja": "株主還元の積極化（累進配当・総還元性向向上）と成長投資（4,000億円）の両立",
+      "body_ja": "早期（FY2017：年間30円）から中期（FY2022：年間80円下限設定）を経て、直近のFY2026では年間95円、FY2027予想では年間100円へと配当水準を大幅に引き上げてきた。新中計では「6期合計総還元性向50%程度」「累進配当」を掲げると同時に、6年間で4,000億円（国内・海外不動産、DX、Wood Friends等のM&A）のネット投資を計画しており、財務健全性を保ちつつ資本効率を高める姿勢を強めている。",
+      "sources": [
+        {
+          "source_filename": "37_2017-05-12_tanshin.pdf",
+          "pdf_page": 6,
+          "source_section": "配当の状況",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2017の年間配当金は30円。"
+        },
+        {
+          "source_filename": "17_2022-05-12_tanshin.pdf",
+          "pdf_page": 5,
+          "source_section": "利益配分に関する基本方針",
+          "statement_type": "actual",
+          "support_summary_ja": "年間配当金の下限を80円に引き上げ。"
+        },
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 12,
+          "source_section": "経営基盤強化（財務戦略）",
+          "statement_type": "target",
+          "support_summary_ja": "6か年で4,000億円のネット投資計画、総還元性向50%程度、累進配当を設定。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 5,
+          "source_section": "利益配分に関する基本方針",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2026配当は95円、FY2027予想は100円。"
+        }
       ],
-      "statement_type": "target",
+      "statement_type": "mixed",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "c016",
+      "claim_id": "claim_018",
       "section": "trend.implication",
       "order": 1,
-      "headline_ja": "完成工事利益率の維持力と新中期計画における投資効率の検証が焦点",
-      "body_ja": "投資家にとっての今後の検証軸は、2026年3月期に見られた完成工事総利益率の改善が持続するか、および4,000億円規模のネット投資計画（特に海外不動産や新規M&A）が過去の海外減損等の教訓を活かして目標ROE（10%超維持・13%目標）に見合うリターンを生み出せるかである。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r003",
-        "01_2026_FY_tanshin.pdf:r006",
-        "01_2026_FY_tanshin.pdf:r007",
-        "05_2025_FY_tanshin.pdf:r004"
+      "headline_ja": "投資家への示唆：建築利益率の復元力と不動産・管理の収益貢献による中計目標の達成確度",
+      "body_ja": "投資家が確認すべき核心は、資材高騰下での建築工事総利益率の改善が持続可能か否か、および不動産売却益への依存度である。同社は高水準の施工繰越高（個別で9,400億円）を背景に受注時採算をコントロールできる立場にあり、ストック事業の拡大と相まって新中計の「経常利益1,000億円超の安定計上」に向けた収益基盤の質的向上が進んでいる。",
+      "sources": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "当連結会計年度の概況",
+          "statement_type": "inference",
+          "support_summary_ja": "完成工事総利益率の改善等により連結経常利益は941億円を計上。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 11,
+          "source_section": "経営目標・株主還元方針",
+          "statement_type": "target",
+          "support_summary_ja": "安定的に1,000億円以上を計上できる収益基盤の確立を目指す。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 50,
+          "source_section": "個別受注高、売上高及び繰越高の状況",
+          "statement_type": "actual",
+          "support_summary_ja": "単体での次期繰越工事高は9,400億円を確保。"
+        }
       ],
       "statement_type": "inference",
       "is_inference": true,
-      "causal": false
-    },
-    {
-      "claim_id": "c017",
-      "section": "management.strategy",
-      "order": 1,
-      "headline_ja": "中期目標と明確な資本配分枠組みによる総合不動産建設グループへの進化戦略",
-      "body_ja": "「HASEKO Evolution Plan」において2028年3月期経常利益1,000億円以上、2031年3月期1,300億円以上、ROE13%程度という明確な中長期目標を設定。ネット投資4,000億円のセグメント別枠組みを提示し、コア事業の競争力強化と非建設分野の成長を両立させる整合的な戦略を描いている。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r006",
-        "01_2026_FY_tanshin.pdf:r007"
-      ],
-      "statement_type": "target",
-      "is_inference": false,
-      "causal": false
-    },
-    {
-      "claim_id": "c018",
-      "section": "management.execution",
-      "order": 1,
-      "headline_ja": "採算厳格化による本業利益率回復と国内M&A・棚卸圧縮の実績",
-      "body_ja": "コスト高騰期を経て受注採算の見直しと施工効率化を進め、2026年3月期に完成工事利益率の改善と経常利益の計画超過（941億円）を達成。さらにウッドフレンズのTOB完全子会社化や棚卸資産圧縮による巨額の営業CF創出を実行しており、施策の遂行能力が示されている。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r003",
-        "01_2026_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r008"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "c019",
+      "claim_id": "claim_019",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "「3つの輪」の連携と成長投資による持続的企業価値向上の戦略的整合性",
+      "body_ja": "「HASEKO Evolution Plan」において、従来の強みである建設関連事業に加えて、不動産関連・管理運営事業を独立した成長柱と位置付け、国内主要都市や海外への展開、DX推進、木造・木質化領域（Wood Friends完全子会社化等）の取り込みを図る戦略は整合性が高い。国内分譲マンション着工戸数の長期的頭打ちに備え、ストックビジネスや環境対応技術への資源配分を明示している。",
+      "sources": [
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 10,
+          "source_section": "中長期的な経営戦略",
+          "statement_type": "target",
+          "support_summary_ja": "基本方針を「建設関連」「不動産関連」「管理運営」の3つの輪に細分化・進化。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 36,
+          "source_section": "企業結合等関係",
+          "statement_type": "actual",
+          "support_summary_ja": "Wood Friendsを完全子会社化し、ハイブリッド木造住宅や木質化技術の導入を加速。"
+        }
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_020",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "国内特命受注と還元拡充の高い実行力の一方、海外事業の損失継続が課題",
+      "body_ja": "国内コア事業においては、土地持ち込み提案による特命受注獲得、管理戸数の着実な積み上げ、配当増額や自己株式取得（FY2026に201億円実施）など、計画された施策を確実に実行している。一方で、FY2025に海外関連事業で特別損失（減損・訴訟損失等）を計上し、FY2026も海外営業損失61億円を計上するなど、海外不動産開発におけるリスク管理と収益化の実行には課題を残している。",
+      "sources": [
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "経営成績等の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "海外関連事業において特別損失（減損損失、評価損、訴訟損失引当金）を計上。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "海外事業は売上高43億円、営業損失61億円を計上。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 4,
+          "source_section": "当期のキャッシュ・フローの概況",
+          "statement_type": "actual",
+          "support_summary_ja": "自己株式の取得に伴う資金減少201億円を計上。"
+        }
+      ],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_021",
       "section": "management.forecast_discipline",
       "order": 1,
-      "headline_ja": "通期予想9期全件で実績が下回らず、保守的かつ規律ある予想策定",
-      "body_ja": "比較可能な9期の通期経常利益において、実績が期初予想を上回った期が6期（2018, 2019, 2022, 2023, 2025, 2026年3月期）、ほぼ同水準となった期が3期（2020, 2021, 2024年3月期）であり、期初予想を下回った期は0件であった。非常に規律ある保守的な業績予想管理が行われている。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r001",
-        "05_2025_FY_tanshin.pdf:r001",
-        "09_2024-05-10_tanshin.pdf:r001",
-        "13_2023-05-11_tanshin.pdf:r001",
-        "17_2022-05-12_tanshin.pdf:r001",
-        "21_2021-05-13_tanshin.pdf:r001",
-        "25_2020-05-14_tanshin.pdf:r001",
-        "29_2019-05-10_tanshin.pdf:r001",
-        "33_2018-05-11_tanshin.pdf:r001"
+      "headline_ja": "通期経常利益予想に対する高い達成度と保守的な期初予想規律",
+      "body_ja": "過去9年間の観察可能な通期連結経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、概ね予想通り（誤差5%未満）であった期が3期であり、予想を下回った期は0期であった。期初には資材高騰や市況不確実性を手堅く織り込み、期中に上振れる傾向が定着しており、経営陣の業績予想規律は極めて堅実かつ保守的であると評価できる。",
+      "sources": [
+        {
+          "source_filename": "33_2018-05-11_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "連結経営成績",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2018経常利益実績1,005億円（予想910億円）。"
+        },
+        {
+          "source_filename": "25_2020-05-14_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "連結経営成績",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2020経常利益実績853億円（予想850億円）。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "連結経営成績",
+          "statement_type": "actual",
+          "support_summary_ja": "FY2026経常利益実績941億円（予想850億円）。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "c020",
+      "claim_id": "claim_022",
       "section": "management.accountability",
       "order": 1,
-      "headline_ja": "利益率悪化や海外減損に関する素早い要因開示と還元方針の透明性",
-      "body_ja": "資材・労務費高騰による完成工事利益率の低下や海外不動産における168億61百万円の減損損失計上について、決算短信等で主要要因を明確に開示している。また新中期計画における累進配当方針や総還元性向50%などの還元指標、投資枠組みを具体的に示しており、透明性の高い説明責任を果たしている。",
-      "source_record_ids": [
-        "01_2026_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r006",
-        "05_2025_FY_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004"
+      "headline_ja": "業績変動要因や特別損失に関する透明性の高い開示と修正説明責任の履行",
+      "body_ja": "FY2025における海外事業の減損損失計上や、子会社の独占禁止法違反疑いに関する立ち入り検査などの不祥事・損失事象が発生した際、決算短信や補足資料において遅滞なく事実関係と財務影響を開示している。また、中計の移行やセグメント再編に際しても組み替え後の前年比較数値を明示するなど、投資家に対する説明責任と透明性は十分に確保されている。",
+      "sources": [
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 2,
+          "source_section": "当連結会計年度の概況",
+          "statement_type": "actual",
+          "support_summary_ja": "海外関連事業での特別損失計上要因を説明。"
+        },
+        {
+          "source_filename": "05_2025_FY_tanshin.pdf",
+          "pdf_page": 8,
+          "source_section": "今後の見通し",
+          "statement_type": "actual",
+          "support_summary_ja": "子会社長谷工リフォームへの独占禁止法違反疑いによる公取委立入検査について開示。"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "pdf_page": 3,
+          "source_section": "セグメントの業績",
+          "statement_type": "actual",
+          "support_summary_ja": "セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。"
+        }
       ],
       "statement_type": "actual",
       "is_inference": false,
@@ -317,55 +608,92 @@
         "dimension": "strategic_coherence",
         "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "中長期計画「HASEKO Evolution Plan」において、2028年3月期経常利益1,000億円以上、2031年3月期1,300億円以上、ROE13%目標などの具体的な定量目標と、6か年で4,000億円のネット投資枠組みを明確に設定している。建築事業の採算改善と戸建・サービス事業等の多角化が戦略的に整合している。",
-        "source_record_ids": [
-          "01_2026_FY_tanshin.pdf:r006",
-          "01_2026_FY_tanshin.pdf:r007"
+        "rationale_ja": "国内マンション事業での「持ち込み特命施工」を軸に、管理運営や不動産事業への拡張を進める戦略は首尾一貫している。新中計での「3つの輪」体制への再編も戦略課題に即している。",
+        "sources": [
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 10,
+            "source_section": "中長期的な経営戦略",
+            "statement_type": "target",
+            "support_summary_ja": "基本方針を3つの輪に細分化し、持続的成長と資本効率経営を強化。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 9,
+            "source_section": "経営方針",
+            "statement_type": "actual",
+            "support_summary_ja": "「3つの輪」の連携と切磋琢磨を推進し、完成工事総利益率の上昇を実現。"
+          }
         ]
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
+        "rating": 2,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "資材・労務費高騰に対し受注時採算の厳格化と現場効率化を推進し、2026年3月期に完成工事利益率の改善を実現した。またウッドフレンズの完全子会社化や棚卸資産の圧縮による1,574億円の営業CF創出など、計画された施策を着実に実行している。一方で2025年3月期には海外不動産で168億61百万円の減損損失を出しており、投資案件の評価面で課題が残る。",
-        "source_record_ids": [
-          "01_2026_FY_tanshin.pdf:r003",
-          "01_2026_FY_tanshin.pdf:r004",
-          "01_2026_FY_tanshin.pdf:r008",
-          "05_2025_FY_tanshin.pdf:r004"
+        "rationale_ja": "国内での土地情報収集や管理戸数拡大、株主還元拡充は着実に実行されているが、FY2025〜FY2026における海外事業の減損および営業損失の継続（FY2026に61億円の営業損失）など、海外投資の収益化に課題がある。",
+        "sources": [
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 2,
+            "source_section": "当連結会計年度の概況",
+            "statement_type": "actual",
+            "support_summary_ja": "海外関連事業において特別損失を計上。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 3,
+            "source_section": "セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "海外事業で営業損失61億円を計上。"
+          }
         ]
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 4,
+        "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "観察対象となった9期の通期経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、同水準が3期であり、期初予想を未達となった期は0件である。保守的かつ着実な業績予想管理が徹底されている。",
-        "source_record_ids": [
-          "01_2026_FY_tanshin.pdf:r001",
-          "05_2025_FY_tanshin.pdf:r001",
-          "09_2024-05-10_tanshin.pdf:r001",
-          "13_2023-05-11_tanshin.pdf:r001",
-          "17_2022-05-12_tanshin.pdf:r001",
-          "21_2021-05-13_tanshin.pdf:r001",
-          "25_2020-05-14_tanshin.pdf:r001",
-          "29_2019-05-10_tanshin.pdf:r001",
-          "33_2018-05-11_tanshin.pdf:r001"
+        "rationale_ja": "過去9期の通期連結経常利益予想において、実績が予想を上回る結果が6回、概ね予想通りが3回であり、期初予想を下回った実績はなく、極めて規律ある保守的な予想管理が行われている。",
+        "sources": [
+          {
+            "source_filename": "33_2018-05-11_tanshin.pdf",
+            "pdf_page": 2,
+            "source_section": "連結経営成績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2018経常利益実績1,005億円（予想910億円）。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 2,
+            "source_section": "連結経営成績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2026経常利益実績941億円（予想850億円）。"
+          }
         ]
       },
       {
         "dimension": "accountability_transparency",
         "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "rationale_ja": "資材・労務費高騰による利益率低下の影響や、海外不動産における巨額の減損損失を隠さず適時に開示している。新中期経営計画での累進配当方針や総還元性向50%目標、詳細な投資内訳の開示など、株主への説明責任を高度に果たしている。",
-        "source_record_ids": [
-          "01_2026_FY_tanshin.pdf:r005",
-          "01_2026_FY_tanshin.pdf:r006",
-          "05_2025_FY_tanshin.pdf:r003",
-          "05_2025_FY_tanshin.pdf:r004"
+        "rationale_ja": "セグメント区分の変更に伴う組替後数値の開示や、海外事業での減損損失・訴訟損失引当金の計上要因について速やかかつ詳細に説明しており、説明責任と透明性が高い。",
+        "sources": [
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 2,
+            "source_section": "当連結会計年度の概況",
+            "statement_type": "actual",
+            "support_summary_ja": "海外関連事業での特別損失計上要因を開示。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 3,
+            "source_section": "セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。"
+          }
         ]
       }
     ],
-    "overall_rationale_ja": "長谷工コーポレーションの経営陣は、通期業績予想において全9期で未達を出さない非常に高い業績管理規律（実績上振れ6期・トントン3期）を維持している。資材・労務費高騰に対して受注採算改善で迅速に対応し、2026年3月期には大幅な業績回復と1,574億円の営業CFを創出した。新中期経営計画「HASEKO Evolution Plan」での投資枠組みや累進配当方針の開示も透明性が高く、2025年3月期の海外不動産減損という逆風に対しても説明責任を果たしていることから、総合的に高い経営一貫性を備えていると評価できる。"
+    "overall_rationale_ja": "長谷工コーポレーションは、特命受注ノウハウを核とした高い戦略的一貫性と、期初予想を下回らない堅実な業績予想規律を有している。株主還元の拡充や国内コア事業の執行力は高い一方、海外不動産開発における減損や損失の計上といった実行上の課題も観察されるが、総じて経営の一貫性と透明性は高水準にある。"
   },
   "model_notes": []
 }

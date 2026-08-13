@@ -121,6 +121,8 @@ def estimate_cost(
     research_input = pdf_tokens + estimate_text_tokens(research_text)
     analysis_input = (
         (0 if analysis_prompt_includes_source else RESEARCH_MAX_OUTPUT_TOKENS)
+        + pdf_tokens
+        + estimate_text_tokens(document_metadata)
         + estimate_text_tokens(analysis_system_prompt)
         + estimate_text_tokens(analysis_prompt)
         + estimate_text_tokens(analysis_schema_text)
@@ -181,6 +183,10 @@ def estimate_cost(
             (
                 "No separate native-PDF text increment is added beyond the "
                 "selected per-page planning estimate."
+            ),
+            (
+                "The selected PDFs and their document metadata are included in "
+                "both Japanese requests: research and final analysis."
             ),
             (
                 "System instructions, document metadata, prompts, and response "

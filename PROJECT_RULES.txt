@@ -37,28 +37,29 @@ TANSHIN PIPELINE WORKING RULES
    and OPENAI_API_KEY.
 
 8. A Japanese report uses a PDF-backed research request and a separate
-    dossier-backed synthesis request. Optional English translation is a third
-    request. The default profile uses gemini-3.6-flash with GEMINI_API_KEY for
+    PDF-backed, research-map-guided synthesis request. Optional English
+    translation is a third request. The default profile uses gemini-3.6-flash
+    with GEMINI_API_KEY for
     every stage. The key2-translation profile changes only the translation
     credential to GEMINI_API_KEY2. When consecutive stages share a Gemini
     credential, preserve a 75-second inter-stage cooldown whenever their
     combined estimated input and maximum-output allowance reaches 225,000
     tokens, leaving 10% headroom below the 250,000-token planning limit.
-    Research is coverage-first: every selected filing receives an explicit
-    coverage record, while Python derives forecast, target, and
-    commentary-change metrics before the synthesis request. Request 1 extracts
-    filing-specific information and does not rank business drivers, decide
-    longitudinal themes, score management, or draft final conclusions.
-    Keep the research dossier bounded and reuse lightweight source records;
-    requested counts are ceilings rather than quotas.
-    Within that bounded dossier, require explicit per-filing coverage of
-    operating results, financial condition, forward-looking information,
-    strategy and plan progress, segment conditions, capital allocation, and
-    material footnotes. Compress comparable annual forecast-result pairs into
-    one financial anchor per year-end filing so qualitative management
-    discussion, recurring commentary tracks, and commitments with later
-    outcomes take priority over broad historical table duplication,
-    miscellaneous boilerplate, or routine footnotes.
+    Research is coverage-first: every selected filing receives one chronological
+    memo, while Python derives comparable annual forecast/result metrics before
+    synthesis. Request 1 extracts filing-specific information and does not rank
+    business drivers, decide longitudinal themes, score management, or draft
+    final conclusions. Do not recreate source-ID graphs, commentary taxonomies,
+    or citation-ready quotations in the research response.
+    Require direct per-filing observations covering operating results, financial
+    condition, forward-looking information, strategy and execution, segment and
+    business drivers, capital allocation, and material footnotes. Compress
+    comparable annual forecast-result pairs into one financial anchor per
+    year-end filing so qualitative management discussion takes priority over
+    broad historical table duplication or routine footnotes.
+    Request 2 receives the map and the selected PDFs. The map is an attention
+    guide rather than a source boundary; PDFs remain authoritative for context,
+    counterevidence, and final conclusions.
 
 9. For a default, primary-key-only run, explain that generation should be free
     when GEMINI_API_KEY is eligible for Gemini's free tier. Any displayed yen
@@ -70,5 +71,5 @@ TANSHIN PIPELINE WORKING RULES
     can be parsed, normalized, and rendered. Manual review is the publication
     authority. API, structured-output parsing, missing-artifact, processing, and
     rendering failures may still stop the pipeline.
-    Research-dossier cross-checks follow the same policy: a Pydantic-parseable
-    dossier proceeds to synthesis while findings remain diagnostic artifacts.
+    Research-map cross-checks follow the same policy: a Pydantic-parseable map
+    proceeds to synthesis while findings remain diagnostic artifacts.

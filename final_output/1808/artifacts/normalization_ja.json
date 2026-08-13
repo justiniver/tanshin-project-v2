@@ -1,59 +1,72 @@
 {
-  "change_count": 101,
+  "change_count": 59,
   "changes": [
     {
       "type": "supported_span_added",
-      "claim_id": "c002",
+      "claim_id": "claim_002",
       "kind": "date",
       "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-812caef1"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_002",
+      "kind": "figure",
+      "surface": "1兆2,731億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-812caef1"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_002",
+      "kind": "figure",
+      "surface": "987億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-812caef1"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_002",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-812caef1"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_002",
+      "kind": "figure",
+      "surface": "548億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-812caef1"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_003",
+      "kind": "figure",
+      "surface": "1,574億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-048087a9"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_003",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-048087a9"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_003",
+      "kind": "figure",
+      "surface": "39億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-048087a9"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_003",
+      "kind": "figure",
+      "surface": "542億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-048087a9"
     },
     {
       "type": "derived_evidence_added",
-      "claim_id": "c002",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-48d842e8",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "quote": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は1兆2,731億円(同8.1%増)、完成工事総利益率の改善により営業利益は987億円(同16.6%増)、経常利益は941億円(同12.8%増)、親会社株主に帰属する当期純利益は548億円(同59.2%増)の増収増益となりました。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-48d842e8"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "2,731",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-48d842e8"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "8.1%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "987",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-48d842e8"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "16.6%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "c002",
+      "claim_id": "claim_004",
       "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c947aa06",
       "source_filename": "01_2026_FY_tanshin.pdf",
       "pdf_page": 1,
@@ -61,178 +74,167 @@
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c002",
+      "claim_id": "claim_004",
       "kind": "figure",
-      "surface": "940",
+      "surface": "1",
       "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c947aa06"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "12.8%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c002",
-      "kind": "figure",
-      "surface": "900億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c002",
-      "claim_surface": "予想",
-      "source_surface": "予想",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "statement_type_reconciled",
-      "claim_id": "c002",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "forecast"
-      ]
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c003",
-      "kind": "figure",
-      "surface": "1,574億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c003",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c003",
-      "kind": "figure",
-      "surface": "39億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c003",
-      "kind": "figure",
-      "surface": "542億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
-      "kind": "figure",
-      "surface": "50%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
-      "kind": "figure",
-      "surface": "6",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
-      "kind": "figure",
-      "surface": "4,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
-      "kind": "figure",
-      "surface": "95円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c004",
+      "claim_id": "claim_004",
       "kind": "figure",
       "surface": "100円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c004",
-      "claim_surface": "程度",
-      "source_surface": "程度",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c004",
-      "claim_surface": "予想",
-      "source_surface": "予想",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c2fb0354"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c005",
-      "kind": "figure",
-      "surface": "8.1%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-48d842e8"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c006",
-      "claim_surface": "予想",
-      "source_surface": "予想",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c008",
+      "claim_id": "claim_004",
       "kind": "date",
       "surface": "2027年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r002"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c2fb0354"
+    },
+    {
+      "type": "uniquely_supported_evidence_added",
+      "claim_id": "claim_004",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503",
+      "surface": "1兆3,800億円"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c008",
-      "kind": "figure",
-      "surface": "1,050億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r002"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c008",
+      "claim_id": "claim_004",
       "kind": "figure",
       "surface": "1兆3,800億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r002"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c008",
+      "claim_id": "claim_004",
       "kind": "figure",
-      "surface": "1,100億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r002"
+      "surface": "1,050億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c2fb0354"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_004",
+      "kind": "figure",
+      "surface": "95円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c2fb0354"
     },
     {
       "type": "qualifier_span_added",
-      "claim_id": "c008",
+      "claim_id": "claim_004",
+      "claim_surface": "見込む",
+      "source_surface": "見込む",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_004",
+      "claim_surface": "予定",
+      "source_surface": "予想",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c2fb0354"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_005",
+      "kind": "figure",
+      "surface": "685億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-dc937e15"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_005",
+      "kind": "figure",
+      "surface": "21.6%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-dc937e15"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_006",
+      "kind": "figure",
+      "surface": "2,932億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-4a4dd413"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_006",
+      "kind": "figure",
+      "surface": "356億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-4a4dd413"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_007",
+      "kind": "figure",
+      "surface": "61億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-94e33eeb"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_007",
+      "kind": "figure",
+      "surface": "43億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-94e33eeb"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_007",
+      "kind": "figure",
+      "surface": "57億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-94e33eeb"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_008",
+      "kind": "date",
+      "surface": "2027年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_008",
+      "kind": "figure",
+      "surface": "1,050億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_008",
+      "kind": "figure",
+      "surface": "1兆3,800億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_008",
+      "kind": "date",
+      "surface": "2028年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0011-928a0d08"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_008",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0011-928a0d08"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_008",
+      "claim_surface": "見込んでいる",
+      "source_surface": "見込む",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_008",
       "claim_surface": "予想",
       "source_surface": "予想",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r002"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0006-46d0b503"
     },
     {
       "type": "statement_type_reconciled",
-      "claim_id": "c008",
+      "claim_id": "claim_008",
       "from": "forecast",
       "to": "mixed",
       "source_types": [
@@ -242,514 +244,188 @@
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c009",
-      "kind": "date",
-      "surface": "2024年3月期",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c009",
-      "kind": "date",
-      "surface": "2025年3月期",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c010",
-      "kind": "date",
-      "surface": "2025年3月期",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "c010",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-6b8e38b5",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "pdf_page": 34,
-      "quote": "を減損損失(16,861百万円)として特別損失に計上しました。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c010",
-      "kind": "figure",
-      "surface": "168",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-6b8e38b5"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c010",
-      "kind": "figure",
-      "surface": "61百万円",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-6b8e38b5"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "c010",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-00a643b5",
-      "source_filename": "05_2025_FY_tanshin.pdf",
-      "pdf_page": 34,
-      "quote": "海外関連事業用不動産の回収可能価額は公正価値により測定しております。"
-    },
-    {
-      "type": "statement_type_reconciled",
-      "claim_id": "c010",
-      "from": "risk",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "target"
-      ]
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "date",
-      "surface": "2024年3月期",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "date",
-      "surface": "2025年3月期",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "figure",
-      "surface": "830億円",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
+      "claim_id": "claim_011",
       "kind": "date",
       "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-bdd8d290"
+    },
+    {
+      "type": "uniquely_supported_evidence_added",
+      "claim_id": "claim_011",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c947aa06",
+      "surface": "2"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c011",
+      "claim_id": "claim_011",
       "kind": "figure",
-      "surface": "940",
+      "surface": "2",
       "evidence_id": "01_2026_FY_tanshin.pdf:r0001-c947aa06"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "date",
-      "surface": "2028年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "figure",
-      "surface": "1,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "date",
-      "surface": "2031年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c011",
-      "kind": "figure",
-      "surface": "1,300億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c012",
-      "kind": "date",
-      "surface": "2017年3月期",
-      "evidence_id": "37_2017-05-12_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c012",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c012",
-      "kind": "date",
-      "surface": "2020年",
-      "evidence_id": "25_2020-05-14_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c012",
-      "kind": "date",
-      "surface": "2023年",
-      "evidence_id": "13_2023-05-11_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c012",
-      "kind": "date",
-      "surface": "2025年",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c013",
-      "kind": "date",
-      "surface": "2026年",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
-    },
-    {
-      "type": "uniquely_supported_evidence_added",
-      "claim_id": "c013",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005",
-      "surface": "6期"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c013",
-      "kind": "figure",
-      "surface": "6期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c013",
-      "claim_surface": "予想",
-      "source_surface": "予想",
-      "evidence_id": "37_2017-05-12_tanshin.pdf:r002"
-    },
-    {
-      "type": "statement_type_reconciled",
-      "claim_id": "c013",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "forecast",
-        "target"
-      ]
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c014",
-      "kind": "date",
-      "surface": "2020年",
-      "evidence_id": "25_2020-05-14_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c014",
-      "kind": "date",
-      "surface": "2025年",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c014",
-      "kind": "date",
-      "surface": "2019年",
-      "evidence_id": "29_2019-05-10_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "4,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "1,200億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "400億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "50%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c015",
-      "kind": "figure",
-      "surface": "1,574億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r004"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c015",
-      "claim_surface": "程度",
-      "source_surface": "程度",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "statement_type_reconciled",
-      "claim_id": "c015",
-      "from": "target",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "target"
-      ]
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c016",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c016",
-      "kind": "figure",
-      "surface": "4,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c016",
-      "kind": "figure",
-      "surface": "10%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c016",
-      "kind": "figure",
-      "surface": "13%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c017",
-      "kind": "date",
-      "surface": "2028年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c017",
-      "kind": "figure",
-      "surface": "1,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c017",
-      "kind": "date",
-      "surface": "2031年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c017",
-      "kind": "figure",
-      "surface": "1,300億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c017",
-      "kind": "figure",
-      "surface": "4,000億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r006"
-    },
-    {
-      "type": "qualifier_span_added",
-      "claim_id": "c017",
-      "claim_surface": "程度",
-      "source_surface": "程度",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r007"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c018",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "c018",
+      "claim_id": "claim_011",
       "kind": "figure",
       "surface": "941億円",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r003"
-    },
-    {
-      "type": "uniquely_supported_evidence_added",
-      "claim_id": "c019",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005",
-      "surface": "6期"
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-bdd8d290"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
+      "claim_id": "claim_012",
       "kind": "figure",
-      "surface": "6期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
+      "surface": "1,000億円",
+      "evidence_id": "33_2018-05-11_tanshin.pdf:r0002-2982208e"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_012",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0002-57278d14"
     },
     {
       "type": "derived_evidence_added",
-      "claim_id": "c019",
-      "evidence_id": "29_2019-05-10_tanshin.pdf:r0001-2cd044c1",
-      "source_filename": "29_2019-05-10_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "(注)2018年3月期の期末配当金40円には、特別配当30円を含んでおります。"
+      "claim_id": "claim_015",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0010-adfc4671",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 10,
+      "quote": "2.企業集団の状況当社グループは、当社、子会社83社及び関連会社5社で構成され、建設関連事業、不動産関連事業、サービス関連事業及び海外関連事業を主要な事業として事業活動を展開しております。"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
+      "claim_id": "claim_015",
       "kind": "figure",
-      "surface": "2018,",
-      "evidence_id": "29_2019-05-10_tanshin.pdf:r0001-2cd044c1"
+      "surface": "2",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0010-adfc4671"
     },
     {
       "type": "derived_evidence_added",
-      "claim_id": "c019",
-      "evidence_id": "17_2022-05-12_tanshin.pdf:r0001-8ef11d72",
-      "source_filename": "17_2022-05-12_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "2023年3月期(予想) - 40.00 - 40.0080.0038.5(注)本日公表の「配当方針の変更及び剰余金の配当に関するお知らせ」も併せてご覧下さい。"
+      "claim_id": "claim_015",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0010-df150040",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 10,
+      "quote": "当社グループは、当社、子会社83社及び関連会社5社で構成され、建設関連事業、不動産関連事業、サービス関連事業及び海外関連事業を主要な事業として事業活動を展開しております。"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
+      "claim_id": "claim_015",
       "kind": "figure",
-      "surface": "2023,",
-      "evidence_id": "17_2022-05-12_tanshin.pdf:r0001-8ef11d72"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "c019",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0007-98d558d6",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 7,
-      "quote": "当社は、2025年2月に策定した「中期経営計画(2026年3月期~2031年3月期)」において、以下の内容を株主還元方針としております。"
+      "surface": "3",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0010-df150040"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
+      "claim_id": "claim_017",
       "kind": "figure",
-      "surface": "2025,",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r0007-98d558d6"
+      "surface": "4,000億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0012-37982354"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
-      "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r001"
+      "claim_id": "claim_017",
+      "kind": "figure",
+      "surface": "30円",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:r0006-d0404b96"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c019",
-      "kind": "date",
-      "surface": "2024年3月期",
-      "evidence_id": "09_2024-05-10_tanshin.pdf:r001"
+      "claim_id": "claim_017",
+      "kind": "figure",
+      "surface": "80円",
+      "evidence_id": "17_2022-05-12_tanshin.pdf:r0005-a6fd01ff"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_017",
+      "kind": "figure",
+      "surface": "95円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0005-cbbcd224"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_017",
+      "kind": "figure",
+      "surface": "100円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0005-cbbcd224"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_017",
+      "kind": "figure",
+      "surface": "50%",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0012-37982354"
     },
     {
       "type": "qualifier_span_added",
-      "claim_id": "c019",
+      "claim_id": "claim_017",
+      "claim_surface": "程度",
+      "source_surface": "程度",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0012-37982354"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_017",
       "claim_surface": "予想",
       "source_surface": "予想",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
-    },
-    {
-      "type": "statement_type_reconciled",
-      "claim_id": "c019",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "forecast",
-        "target"
-      ]
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0005-cbbcd224"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c020",
+      "claim_id": "claim_018",
       "kind": "figure",
-      "surface": "168",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-6b8e38b5"
+      "surface": "9,400億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0050-49402ff3"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c020",
+      "claim_id": "claim_018",
       "kind": "figure",
-      "surface": "61百万円",
-      "evidence_id": "05_2025_FY_tanshin.pdf:r0034-6b8e38b5"
+      "surface": "1,000億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0011-eea47e51"
     },
     {
       "type": "supported_span_added",
-      "claim_id": "c020",
+      "claim_id": "claim_019",
       "kind": "figure",
-      "surface": "50%",
-      "evidence_id": "01_2026_FY_tanshin.pdf:r005"
+      "surface": "3",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0010-6690fdf3"
     },
     {
-      "type": "statement_type_reconciled",
-      "claim_id": "c020",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "target"
-      ]
+      "type": "supported_span_added",
+      "claim_id": "claim_020",
+      "kind": "figure",
+      "surface": "201億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-9f11f8db"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_020",
+      "kind": "figure",
+      "surface": "61億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0003-15112b0c"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_021",
+      "claim_surface": "予想",
+      "source_surface": "予想",
+      "evidence_id": "33_2018-05-11_tanshin.pdf:r0002-b401ac5e"
     },
     {
       "type": "management_consistency_calculated",
       "methodology_version": "management-consistency-v6",
-      "score": 0.81,
-      "raw_score": 0.8125,
-      "evidence_confidence": 0.5834,
+      "score": 0.69,
+      "raw_score": 0.6875,
+      "evidence_confidence": 0.525,
       "confidence_label": "moderate",
-      "evidence_coverage": 0.5834,
+      "evidence_coverage": 0.525,
       "distinct_fiscal_years": [
         2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
         2025,
         2026
       ],
-      "evidence_count": 17,
-      "management_discussion_evidence_share": 0.2941,
+      "evidence_count": 8,
+      "management_discussion_evidence_share": 0.625,
       "insufficient_dimensions": [],
       "excluded_dimensions": [],
       "score_calculation_method": "arithmetic_mean_of_available_normalized_components",

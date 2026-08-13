@@ -1,180 +1,393 @@
 {
   "filing_coverage": {
     "selected_filings": 10,
-    "status_counts": {
-      "complete": 10
+    "memo_items": 55,
+    "category_counts": {
+      "business_overview": 1,
+      "capital_allocation": 10,
+      "financial_condition": 10,
+      "forward_looking_information": 10,
+      "material_footnote": 2,
+      "operating_results": 10,
+      "segments_and_business_drivers": 10,
+      "strategy_and_execution": 2
     },
-    "filings_with_explicit_gaps": 0,
-    "coverage_gaps": [],
-    "qualitative_sections": {
-      "operating_results": {
-        "status_counts": {
-          "extracted": 10
+    "per_filing": [
+      {
+        "source_filename": "37_2017-05-12_tanshin.pdf",
+        "fiscal_year": 2017,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 14
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "financial_condition": {
-        "status_counts": {
-          "extracted": 1,
-          "not_material": 9
+      {
+        "source_filename": "33_2018-05-11_tanshin.pdf",
+        "fiscal_year": 2018,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 1
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "forward_looking_information": {
-        "status_counts": {
-          "extracted": 10
+      {
+        "source_filename": "29_2019-05-10_tanshin.pdf",
+        "fiscal_year": 2019,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 10
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "strategy_and_plan_progress": {
-        "status_counts": {
-          "extracted": 1,
-          "not_material": 9
+      {
+        "source_filename": "25_2020-05-14_tanshin.pdf",
+        "fiscal_year": 2020,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 2
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "segment_and_business_conditions": {
-        "status_counts": {
-          "extracted": 4,
-          "not_material": 6
+      {
+        "source_filename": "21_2021-05-13_tanshin.pdf",
+        "fiscal_year": 2021,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 4
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "capital_allocation": {
-        "status_counts": {
-          "extracted": 1,
-          "not_material": 9
+      {
+        "source_filename": "17_2022-05-12_tanshin.pdf",
+        "fiscal_year": 2022,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 1
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       },
-      "material_footnotes": {
-        "status_counts": {
-          "extracted": 4,
-          "not_material": 6
+      {
+        "source_filename": "13_2023-05-11_tanshin.pdf",
+        "fiscal_year": 2023,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
         },
-        "source_records": 4
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "09_2024-05-10_tanshin.pdf",
+        "fiscal_year": 2024,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "05_2025_FY_tanshin.pdf",
+        "fiscal_year": 2025,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 7,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "fiscal_year": 2026,
+        "period": "FY",
+        "is_latest": true,
+        "memo_items": 8,
+        "category_counts": {
+          "business_overview": 1,
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
       }
-    },
-    "latest_filing": {
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "annual_financial_anchors": 1,
-      "financial_observations": 0,
-      "qualitative_sections": {
-        "operating_results": {
-          "status": "extracted",
-          "source_records": 2
-        },
-        "financial_condition": {
-          "status": "extracted",
-          "source_records": 1
-        },
-        "forward_looking_information": {
-          "status": "extracted",
-          "source_records": 1
-        },
-        "strategy_and_plan_progress": {
-          "status": "extracted",
-          "source_records": 2
-        },
-        "segment_and_business_conditions": {
-          "status": "extracted",
-          "source_records": 1
-        },
-        "capital_allocation": {
-          "status": "extracted",
-          "source_records": 1
-        },
-        "material_footnotes": {
-          "status": "extracted",
-          "source_records": 1
-        }
-      }
-    }
+    ]
   },
   "financial_observations": {
-    "total": 20,
     "annual_anchor_count": 10,
     "annual_anchor_value_count": 20,
-    "supplemental_count": 0,
     "by_metric": {
-      "ordinary_profit": 20
+      "ordinary_profit": 10
     },
-    "by_statement_type": {
-      "actual": 10,
-      "forecast": 10
-    },
-    "forecast_version_counts": {
-      "original": 10
-    },
-    "annual_anchor_series": {
-      "metric": "ordinary_profit",
-      "metric_label_ja": "経常利益",
-      "actual_years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "comparable_forecast_pairs": 9,
-      "series": [
-        {
-          "target_fiscal_year": 2017,
-          "value_surface_ja": "88,827百万円",
-          "source_record_id": "37_2017-05-12_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2018,
-          "value_surface_ja": "100,497百万円",
-          "source_record_id": "33_2018-05-11_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2019,
-          "value_surface_ja": "100,369百万円",
-          "source_record_id": "29_2019-05-10_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2020,
-          "value_surface_ja": "85,253百万円",
-          "source_record_id": "25_2020-05-14_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2021,
-          "value_surface_ja": "71,832百万円",
-          "source_record_id": "21_2021-05-13_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2022,
-          "value_surface_ja": "81,871百万円",
-          "source_record_id": "17_2022-05-12_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2023,
-          "value_surface_ja": "88,265百万円",
-          "source_record_id": "13_2023-05-11_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2024,
-          "value_surface_ja": "83,334百万円",
-          "source_record_id": "09_2024-05-10_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2025,
-          "value_surface_ja": "83,408百万円",
-          "source_record_id": "05_2025_FY_tanshin.pdf:r001"
-        },
-        {
-          "target_fiscal_year": 2026,
-          "value_surface_ja": "94,051百万円",
-          "source_record_id": "01_2026_FY_tanshin.pdf:r001"
-        }
-      ]
-    },
+    "series": [
+      {
+        "source_filename": "37_2017-05-12_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "value_surface_ja": "888億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "37_2017-05-12_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "910億円",
+        "pdf_page": 7
+      },
+      {
+        "source_filename": "33_2018-05-11_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "1,005億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "33_2018-05-11_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "950億円",
+        "pdf_page": 7
+      },
+      {
+        "source_filename": "29_2019-05-10_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "1,004億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "29_2019-05-10_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "850億円",
+        "pdf_page": 6
+      },
+      {
+        "source_filename": "25_2020-05-14_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "853億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "25_2020-05-14_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "700億円",
+        "pdf_page": 6
+      },
+      {
+        "source_filename": "21_2021-05-13_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "718億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "21_2021-05-13_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "750億円",
+        "pdf_page": 7
+      },
+      {
+        "source_filename": "17_2022-05-12_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "819億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "17_2022-05-12_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "850億円",
+        "pdf_page": 6
+      },
+      {
+        "source_filename": "13_2023-05-11_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "883億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "13_2023-05-11_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "830億円",
+        "pdf_page": 6
+      },
+      {
+        "source_filename": "09_2024-05-10_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "833億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "09_2024-05-10_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "800億円",
+        "pdf_page": 6
+      },
+      {
+        "source_filename": "05_2025_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "834億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "05_2025_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "850億円",
+        "pdf_page": 7
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "941億円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2027,
+        "target_period": "FY",
+        "value_surface_ja": "1,050億円",
+        "pdf_page": 6
+      }
+    ],
     "forecast_accuracy": {
       "original_forecasts_observed": 10,
       "original_forecasts_matched_to_actuals": 9,
@@ -186,256 +399,123 @@
       "posture_signal": "broadly_in_line",
       "comparisons": [
         {
-          "forecast_observation_id": "anchor_2025:forecast",
-          "actual_observation_id": "anchor_2026:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2026,
-          "forecast_version": "original",
-          "forecast_surface_ja": "85,000百万円",
-          "actual_surface_ja": "94,051百万円",
-          "percentage_error": 10.6482,
-          "result": "actual_above_forecast",
-          "source_record_ids": [
-            "05_2025_FY_tanshin.pdf:r002",
-            "01_2026_FY_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2024:forecast",
-          "actual_observation_id": "anchor_2025:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2025,
-          "forecast_version": "original",
-          "forecast_surface_ja": "80,000百万円",
-          "actual_surface_ja": "83,408百万円",
-          "percentage_error": 4.26,
-          "result": "actual_above_forecast",
-          "source_record_ids": [
-            "09_2024-05-10_tanshin.pdf:r002",
-            "05_2025_FY_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2023:forecast",
-          "actual_observation_id": "anchor_2024:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2024,
-          "forecast_version": "original",
-          "forecast_surface_ja": "83,000百万円",
-          "actual_surface_ja": "83,334百万円",
-          "percentage_error": 0.4024,
-          "result": "broadly_in_line",
-          "source_record_ids": [
-            "13_2023-05-11_tanshin.pdf:r002",
-            "09_2024-05-10_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2022:forecast",
-          "actual_observation_id": "anchor_2023:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2023,
-          "forecast_version": "original",
-          "forecast_surface_ja": "85,000百万円",
-          "actual_surface_ja": "88,265百万円",
-          "percentage_error": 3.8412,
-          "result": "actual_above_forecast",
-          "source_record_ids": [
-            "17_2022-05-12_tanshin.pdf:r002",
-            "13_2023-05-11_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2021:forecast",
-          "actual_observation_id": "anchor_2022:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2022,
-          "forecast_version": "original",
-          "forecast_surface_ja": "75,000百万円",
-          "actual_surface_ja": "81,871百万円",
-          "percentage_error": 9.1613,
-          "result": "actual_above_forecast",
-          "source_record_ids": [
-            "21_2021-05-13_tanshin.pdf:r002",
-            "17_2022-05-12_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2020:forecast",
-          "actual_observation_id": "anchor_2021:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2021,
-          "forecast_version": "original",
-          "forecast_surface_ja": "70,000百万円",
-          "actual_surface_ja": "71,832百万円",
-          "percentage_error": 2.6171,
-          "result": "broadly_in_line",
-          "source_record_ids": [
-            "25_2020-05-14_tanshin.pdf:r002",
-            "21_2021-05-13_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2019:forecast",
-          "actual_observation_id": "anchor_2020:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2020,
-          "forecast_version": "original",
-          "forecast_surface_ja": "85,000百万円",
-          "actual_surface_ja": "85,253百万円",
-          "percentage_error": 0.2976,
-          "result": "broadly_in_line",
-          "source_record_ids": [
-            "29_2019-05-10_tanshin.pdf:r002",
-            "25_2020-05-14_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2018:forecast",
-          "actual_observation_id": "anchor_2019:actual",
-          "metric": "ordinary_profit",
-          "target_fiscal_year": 2019,
-          "forecast_version": "original",
-          "forecast_surface_ja": "95,000百万円",
-          "actual_surface_ja": "100,369百万円",
-          "percentage_error": 5.6516,
-          "result": "actual_above_forecast",
-          "source_record_ids": [
-            "33_2018-05-11_tanshin.pdf:r002",
-            "29_2019-05-10_tanshin.pdf:r001"
-          ]
-        },
-        {
-          "forecast_observation_id": "anchor_2017:forecast",
-          "actual_observation_id": "anchor_2018:actual",
           "metric": "ordinary_profit",
           "target_fiscal_year": 2018,
-          "forecast_version": "original",
-          "forecast_surface_ja": "91,000百万円",
-          "actual_surface_ja": "100,497百万円",
-          "percentage_error": 10.4363,
+          "forecast_surface_ja": "910億円",
+          "actual_surface_ja": "1,005億円",
+          "percentage_error": 10.4396,
           "result": "actual_above_forecast",
-          "source_record_ids": [
-            "37_2017-05-12_tanshin.pdf:r002",
-            "33_2018-05-11_tanshin.pdf:r001"
+          "source_filenames": [
+            "37_2017-05-12_tanshin.pdf",
+            "33_2018-05-11_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2019,
+          "forecast_surface_ja": "950億円",
+          "actual_surface_ja": "1,004億円",
+          "percentage_error": 5.6842,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "33_2018-05-11_tanshin.pdf",
+            "29_2019-05-10_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2020,
+          "forecast_surface_ja": "850億円",
+          "actual_surface_ja": "853億円",
+          "percentage_error": 0.3529,
+          "result": "broadly_in_line",
+          "source_filenames": [
+            "29_2019-05-10_tanshin.pdf",
+            "25_2020-05-14_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2021,
+          "forecast_surface_ja": "700億円",
+          "actual_surface_ja": "718億円",
+          "percentage_error": 2.5714,
+          "result": "broadly_in_line",
+          "source_filenames": [
+            "25_2020-05-14_tanshin.pdf",
+            "21_2021-05-13_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2022,
+          "forecast_surface_ja": "750億円",
+          "actual_surface_ja": "819億円",
+          "percentage_error": 9.2,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "21_2021-05-13_tanshin.pdf",
+            "17_2022-05-12_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2023,
+          "forecast_surface_ja": "850億円",
+          "actual_surface_ja": "883億円",
+          "percentage_error": 3.8824,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "17_2022-05-12_tanshin.pdf",
+            "13_2023-05-11_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2024,
+          "forecast_surface_ja": "830億円",
+          "actual_surface_ja": "833億円",
+          "percentage_error": 0.3614,
+          "result": "broadly_in_line",
+          "source_filenames": [
+            "13_2023-05-11_tanshin.pdf",
+            "09_2024-05-10_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2025,
+          "forecast_surface_ja": "800億円",
+          "actual_surface_ja": "834億円",
+          "percentage_error": 4.25,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "09_2024-05-10_tanshin.pdf",
+            "05_2025_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2026,
+          "forecast_surface_ja": "850億円",
+          "actual_surface_ja": "941億円",
+          "percentage_error": 10.7059,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "05_2025_FY_tanshin.pdf",
+            "01_2026_FY_tanshin.pdf"
           ]
         }
       ]
-    },
-    "forecast_revisions": {
-      "comparable_revisions": 0,
-      "direction_counts": {},
-      "revisions": []
     }
   },
-  "commentary": {
-    "observations": 3,
-    "distinct_tags": 2,
-    "comparable_tags": 1,
-    "multi_period_tags": 0,
-    "observations_by_tag": {
-      "material_costs": 2,
-      "profitability": 1
-    },
-    "change_counts": {
-      "wording_changed": 1
-    },
-    "tracks": [
-      {
-        "canonical_tag": "material_costs",
-        "label_ja": "資材・労務費高騰の影響",
-        "observation_count": 2,
-        "fiscal_years": [
-          2024,
-          2025
-        ],
-        "tone_counts": {
-          "negative": 2
-        },
-        "intensity_counts": {
-          "moderate": 2
-        },
-        "change_counts": {
-          "wording_changed": 1
-        }
-      },
-      {
-        "canonical_tag": "profitability",
-        "label_ja": "完成工事総利益率の改善",
-        "observation_count": 1,
-        "fiscal_years": [
-          2026
-        ],
-        "tone_counts": {
-          "positive": 1
-        },
-        "intensity_counts": {
-          "moderate": 1
-        },
-        "change_counts": {}
-      }
-    ],
-    "changes": [
-      {
-        "canonical_tag": "material_costs",
-        "label_ja": "資材・労務費高騰の影響",
-        "from_observation_id": "comm_2024_costs",
-        "to_observation_id": "comm_2025_material_costs",
-        "from_period_ja": "2024年3月期 通期",
-        "to_period_ja": "2025年3月期 通期",
-        "from_tone": "negative",
-        "to_tone": "negative",
-        "from_intensity": "moderate",
-        "to_intensity": "moderate",
-        "lexical_similarity": 0.8077,
-        "change_type": "wording_changed",
-        "source_record_ids": [
-          "09_2024-05-10_tanshin.pdf:r003",
-          "05_2025_FY_tanshin.pdf:r003"
-        ]
-      }
-    ],
-    "interpretation_guardrail": "Text and tone changes compare only extracted observations in the selected filings. They are review signals, not proof that an unrecorded topic disappeared."
-  },
-  "disclosures": {
-    "total": 4,
-    "by_category": {
-      "capital_allocation": 2,
-      "impairment": 1,
-      "unusual_gain_or_loss": 1
-    },
-    "primary_ids": [
-      "disc_2026_woodfriends",
-      "disc_2025_impairment",
-      "disc_2020_hosoda",
-      "disc_2019_nextpower"
+  "coverage": {
+    "research_notes": [
+      "対象全10期間（FY2017～FY2026）の決算短信PDFより、各期の経営成績、財政状態、セグメント動向、キャピタルアロケーション、将来予想等の主要注記・定量定性情報を抽出してクロノロジカルに整理。",
+      "通期業績アンカー指標には、比較可能性を保持するため全期共通で開示されている連結「経常利益」を採用。"
     ]
   },
-  "commitments": {
-    "total": 1,
-    "by_type": {
-      "medium_term_target": 1
-    },
-    "by_outcome": {
-      "pending": 1
-    },
-    "observable_outcomes": 0,
-    "target_follow_through": {
-      "assessed": 0,
-      "achieved_or_exceeded": 0,
-      "partly_achieved_or_revised": 0,
-      "missed_delayed_or_withdrawn": 0,
-      "achievement_rate": null
-    },
-    "observed_revision_count": 0,
-    "revision_direction_counts": {},
-    "missed_or_delayed_ids": []
-  },
-  "coverage": {
-    "source_records": 32,
-    "research_notes": []
-  },
-  "interpretation_guardrail": "Counts and comparisons describe only extracted observations from the selected latest/year-end Tanshin corpus. Synthesis must not treat missing extraction records as proof that a topic was absent.",
+  "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
   "diagnostics": {
     "validation_passed": true,
     "validation_warning": null,

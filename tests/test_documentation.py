@@ -64,7 +64,10 @@ class DocumentationTests(unittest.TestCase):
             "evidence-confidence diagnostic rather",
             readme,
         )
-        self.assertIn("exactly one coverage record", readme)
+        self.assertIn("exactly one memo for every selected filing", readme)
+        self.assertIn("Both Japanese requests receive the selected PDFs", readme)
+        self.assertIn("map directs attention", readme)
+        self.assertIn("is not a source boundary", readme)
         self.assertIn("forecast/actual comparisons", readme)
         self.assertIn(
             r".\scripts\run_reports.ps1 1878 --pro",
@@ -100,7 +103,10 @@ class DocumentationTests(unittest.TestCase):
             "`gemini-3.6-flash` and `GEMINI_API_KEY` perform",
             readme,
         )
-        self.assertIn("request turns that grounded dossier", readme)
+        self.assertIn(
+            "A second request receives both that compact research map",
+            readme,
+        )
         self.assertIn("Optional English translation is a third request", readme)
         self.assertIn("request_plan_research.json", readme)
         self.assertIn("research.structured.json", readme)
@@ -195,7 +201,8 @@ class DocumentationTests(unittest.TestCase):
             "combined estimated input plus maximum-output allowance",
             guide,
         )
-        self.assertIn("PDF-backed research followed by", guide)
+        self.assertIn("two PDF-backed model calls", guide)
+        self.assertIn("attention\n  guide, not a source boundary", guide)
         self.assertIn("225,000", guide)
         self.assertIn(
             "Deterministic validation is intentionally non-gating",
@@ -240,7 +247,8 @@ class DocumentationTests(unittest.TestCase):
             "Deterministic validation is intentionally non-gating",
             "Final quality review is manual",
             "A Japanese report",
-            "PDF-backed per-filing extraction dossier",
+            "PDF-backed chronological filing map",
+            "using both that map and the original PDFs",
             "`final_output/{security_code}/`",
             "`analysis_ja_{security_code}_{YYYYMMDD}.md`",
             "`analysis_en_{security_code}_{YYYYMMDD}.md`",

@@ -17,6 +17,7 @@ from tanshin_pipeline.gemini_runtime import (
 )
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.request_builder import (
+    build_analysis_spec,
     build_research_spec,
     build_translation_spec,
 )
@@ -24,11 +25,12 @@ from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
     JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
     materialize_japanese_analysis,
     parse_japanese_analysis_payload,
 )
 from tanshin_pipeline.selection import select_filings
-from tests.helpers import fake_research_dossier
+from tests.helpers import fake_research_dossier, fake_synthesis_response
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -189,6 +191,45 @@ class RuntimeMockTests(unittest.TestCase):
         self.assertTrue(fake.closed)
         self.assertEqual(result.attempts, 1)
         self.assertEqual(result.finish_reason, "STOP")
+
+    def test_analysis_request_places_the_research_map_before_inline_pdfs(
+        self,
+    ) -> None:
+        dossier = fake_research_dossier(REPOSITORY_ROOT)
+        spec = build_analysis_spec(
+            REPOSITORY_ROOT,
+            self.manifest,
+            dossier,
+        )
+        payload = fake_synthesis_response(REPOSITORY_ROOT).model_dump(mode="json")
+        fake = _FakeClient(_FakeResponse(payload))
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            result = execute_request(
+                REPOSITORY_ROOT,
+                spec,
+                confirmed_request_id=spec.plan().request_id,
+                client_factory=lambda: fake,
+                configured_model_getter=lambda: spec.model,
+            )
+        self.assertIsInstance(result.structured, JapaneseSynthesisResponse)
+        call = fake.models.calls[0]
+        parts = call["contents"][0].parts
+        self.assertEqual(len(parts), len(spec.files) * 2 + 2)
+        self.assertIn("<research_map>", parts[0].text)
+        self.assertIn("<DOCUMENT_METADATA>", parts[1].text)
+        self.assertTrue(parts[-1].text.rstrip().endswith("</analysis_task>"))
+        self.assertEqual(
+            call["config"].thinking_config.thinking_level,
+            types.ThinkingLevel.MEDIUM,
+        )
 
     def test_retry_helper(self) -> None:
         state = {"calls": 0}

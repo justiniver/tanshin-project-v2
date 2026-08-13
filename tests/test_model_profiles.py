@@ -119,7 +119,7 @@ class ModelProfileTests(unittest.TestCase):
             self.assertEqual(research_plan["model_profile"], "default")
             self.assertEqual(research_plan["provider_profile"], "default")
             self.assertEqual(research_plan["model"], DEFAULT_ANALYSIS_MODEL)
-            self.assertEqual(analysis_plan["status"], "pending_research_dossier")
+            self.assertEqual(analysis_plan["status"], "pending_research_map")
             self.assertEqual(translation_plan["model_profile"], "default")
             self.assertEqual(translation_plan["provider_profile"], "default")
             self.assertEqual(
@@ -246,7 +246,7 @@ class ModelProfileTests(unittest.TestCase):
             self.assertEqual(research_plan["provider"], "gemini")
             self.assertEqual(research_plan["provider_profile"], "pro")
             self.assertEqual(research_plan["model"], PRO_GEMINI_MODEL)
-            self.assertEqual(analysis_plan["status"], "pending_research_dossier")
+            self.assertEqual(analysis_plan["status"], "pending_research_map")
             self.assertEqual(translation_plan["model_profile"], "pro")
             self.assertEqual(translation_plan["model"], PRO_GEMINI_MODEL)
             self.assertEqual(cost["analysis"]["model"], PRO_GEMINI_MODEL)

@@ -4,14 +4,6 @@ import json
 import unittest
 from pathlib import Path
 
-from tanshin_pipeline.config import (
-    RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
-    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-    RESEARCH_MAX_COMMITMENTS,
-    RESEARCH_MAX_DISCLOSURES,
-    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    RESEARCH_MAX_SOURCE_RECORDS,
-)
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.prompts import (
     ANALYSIS_SYSTEM_PROMPT,
@@ -71,7 +63,10 @@ class PromptBlueprintTests(unittest.TestCase):
             plan = spec.plan()
             blueprint_hashes.add(plan.style_blueprint_sha256)
             self.assertGreater(len(research_spec.files), 0)
-            self.assertEqual(spec.files, ())
+            self.assertEqual(
+                [item.filename for item in spec.files],
+                [item.filename for item in manifest.selected_files],
+            )
             self.assertEqual(
                 plan.style_blueprint_path,
                 "prompt_assets/generic_report_blueprint_ja.md",
@@ -106,7 +101,7 @@ class PromptBlueprintTests(unittest.TestCase):
             self.assertIn("- middle:", spec.prompt)
             self.assertIn("- recent:", spec.prompt)
             self.assertIn("coverage_shortfall:<section>", spec.prompt)
-            self.assertIn("<research_dossier>", spec.prompt)
+            self.assertIn("<research_map>", spec.prompt)
             self.assertIn("<research_metrics>", spec.prompt)
             self.assertIn(
                 "before -> transition -> current state",
@@ -123,7 +118,7 @@ class PromptBlueprintTests(unittest.TestCase):
             self.assertNotIn("evidence", spec.response_schema["required"])
             self.assertLess(
                 spec.prompt.index("<document_manifest>"),
-                spec.prompt.index("<research_dossier>"),
+                spec.prompt.index("<research_map>"),
             )
             self.assertLess(
                 spec.prompt.index("</report_blueprint>"),
@@ -210,24 +205,27 @@ class PromptBlueprintTests(unittest.TestCase):
         analysis_schema = JapaneseSynthesisResponse.model_json_schema()
         research_schema = JapaneseResearchDossier.model_json_schema()
         translation_schema = EnglishTranslationPatch.model_json_schema()
-        self.assertIn("source_records", research_schema["properties"])
-        self.assertIn("filing_coverage", research_schema["properties"])
+        self.assertIn("filings", research_schema["properties"])
+        self.assertIn("research_notes", research_schema["properties"])
         self.assertIn(
-            "annual_financial_anchors",
-            research_schema["properties"],
+            "items",
+            research_schema["$defs"]["ResearchFilingMemo"]["properties"],
         )
-        self.assertIn("financial_observations", research_schema["properties"])
-        self.assertIn("commentary_observations", research_schema["properties"])
-        self.assertIn("disclosures", research_schema["properties"])
+        self.assertIn(
+            "annual_financial_anchor",
+            research_schema["$defs"]["ResearchFilingMemo"]["properties"],
+        )
         self.assertNotIn("evidence", research_schema["properties"])
         self.assertNotIn("management_consistency", research_schema["properties"])
         self.assertIn(
-            "coverage_gaps",
-            research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
+            "pdf_page",
+            research_schema["$defs"]["ResearchMemoItem"]["properties"],
         )
         self.assertIn(
-            "operating_results",
-            research_schema["$defs"]["ResearchFilingCoverage"]["properties"],
+            "description",
+            research_schema["$defs"]["ResearchMemoItem"]["properties"][
+                "pdf_page"
+            ],
         )
         self.assertIn(
             "description",
@@ -237,14 +235,8 @@ class PromptBlueprintTests(unittest.TestCase):
         )
         self.assertIn(
             "description",
-            research_schema["$defs"]["ResearchSourceRecord"]["properties"][
-                "pdf_page"
-            ],
-        )
-        self.assertIn(
-            "description",
             analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
-                "source_record_ids"
+                "sources"
             ],
         )
         self.assertIn(
@@ -268,33 +260,16 @@ class PromptBlueprintTests(unittest.TestCase):
         spec = build_research_spec(REPOSITORY_ROOT, manifest)
         normalized_prompt = " ".join(spec.prompt.split())
         provider_properties = spec.response_schema["properties"]
-        self.assertNotIn("maxItems", provider_properties["source_records"])
-        self.assertNotIn(
-            "maxItems",
-            provider_properties["financial_observations"],
-        )
-        self.assertNotIn(
-            "maxItems",
-            provider_properties["annual_financial_anchors"],
-        )
-        self.assertIn(
-            f"at most {RESEARCH_MAX_SOURCE_RECORDS} source records",
-            spec.prompt,
-        )
-        for ceiling in (
-            RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
-            RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-            RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-            RESEARCH_MAX_DISCLOSURES,
-            RESEARCH_MAX_COMMITMENTS,
-        ):
-            self.assertIn(str(ceiling), spec.prompt)
-        self.assertIn("Complete all seven qualitative section packets", spec.prompt)
-        self.assertIn("annual_financial_anchors", spec.prompt)
-        self.assertIn("current-year actual with its next", spec.prompt)
-        self.assertIn("counts are ceilings, not quotas", normalized_prompt)
-        self.assertIn("Do not return business-driver rankings", spec.prompt)
-        self.assertIn("management-consistency ratings", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("filings", provider_properties)
+        self.assertNotIn("source_records", provider_properties)
+        self.assertNotIn("maxItems", provider_properties["filings"])
+        self.assertIn("exactly one `filings` memo for every selected PDF", spec.prompt)
+        self.assertIn("Core management discussion is not disposable", spec.prompt)
+        self.assertIn("annual_financial_anchor", spec.prompt)
+        self.assertIn("same consistently available consolidated metric", spec.prompt)
+        self.assertIn("Do not select the decade thesis", spec.prompt)
+        self.assertIn("not polished report prose", normalized_prompt)
+        self.assertIn("Do not decide the final", RESEARCH_SYSTEM_PROMPT)
 
 
 if __name__ == "__main__":

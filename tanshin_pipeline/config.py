@@ -7,7 +7,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 
-SCHEMA_VERSION = "2.2"
+SCHEMA_VERSION = "2.3"
 DEFAULT_OUTPUT_DIRECTORY = "final_output"
 DEFAULT_MODEL_PROFILE = "default"
 KEY2_TRANSLATION_MODEL_PROFILE = "key2-translation"
@@ -31,17 +31,6 @@ OPENAI_MAX_INLINE_PDF_BYTES = 50_000_000
 RESEARCH_MAX_OUTPUT_TOKENS = 32_768
 ANALYSIS_MAX_OUTPUT_TOKENS = 32_768
 TRANSLATION_MAX_OUTPUT_TOKENS = 24_576
-# Keep the PDF-backed research response comfortably below the model's output
-# ceiling. These are extraction ceilings, not minimum coverage requirements.
-# Historical forecast/result pairs use compact annual anchors so more of the
-# response budget remains available for management discussion.
-RESEARCH_MAX_SOURCE_RECORDS = 72
-RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS = 12
-RESEARCH_MAX_FINANCIAL_OBSERVATIONS = 12
-RESEARCH_MAX_COMMENTARY_OBSERVATIONS = 28
-RESEARCH_MAX_DISCLOSURES = 8
-RESEARCH_MAX_COMMITMENTS = 8
-RESEARCH_MAX_NOTES = 6
 DEFAULT_MAX_API_ATTEMPTS = 1
 LIVE_CONFIRMATION_VALUE = "MANUAL_USER_RUN"
 # Cost preparation remains fully offline. Model list prices are denominated in

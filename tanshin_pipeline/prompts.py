@@ -277,9 +277,9 @@ trend_period_buckets:
 {json.dumps(research_metrics, ensure_ascii=False, indent=2)}
 </research_metrics>
 
-<research_dossier>
+<research_map>
 {json.dumps(dossier_payload, ensure_ascii=False, indent=2)}
-</research_dossier>
+</research_map>
 
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
@@ -500,9 +500,11 @@ Return only the schema-conforming JSON object.
 def analysis_prompt_template() -> str:
     return """\
 The prompt contains the selection manifest, deterministic research metrics, the
-complete JapaneseResearchDossier, and the fact-free report blueprint. Produce
-only JapaneseSynthesisResponse claims linked to dossier source-record IDs. The
-research dossier may be as large as the configured research maximum output.
+complete chronological JapaneseResearchDossier, and the fact-free report
+blueprint. The selected PDFs are supplied again and remain authoritative.
+Produce only JapaneseSynthesisResponse claims with a small number of internal
+PDF source references. The research map may be as large as the configured
+research maximum output.
 """
 
 

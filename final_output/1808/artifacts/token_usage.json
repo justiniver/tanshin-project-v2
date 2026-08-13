@@ -26,22 +26,22 @@
     "provider": "gemini",
     "model": "gemini-3.6-flash",
     "model_version": "gemini-3.6-flash",
-    "response_id": "gRp9asbPKtHAvr0P2My_yAs",
+    "response_id": "BTp9auOHMd250-kP2t7E6AU",
     "attempts": 1,
     "usage_metadata": {
-      "candidates_token_count": 17234,
-      "prompt_token_count": 273847,
+      "candidates_token_count": 11199,
+      "prompt_token_count": 273306,
       "prompt_tokens_details": [
         {
           "modality": "TEXT",
-          "token_count": 3059
+          "token_count": 2518
         },
         {
           "modality": "IMAGE",
           "token_count": 270788
         }
       ],
-      "total_token_count": 291081
+      "total_token_count": 284505
     }
   },
   "analysis": {
@@ -49,19 +49,23 @@
     "provider": "gemini",
     "model": "gemini-3.6-flash",
     "model_version": "gemini-3.6-flash",
-    "response_id": "Vht9avfPBcGr2roP7qS2oAc",
+    "response_id": "yDp9av6dHNeQvr0PrY_U0As",
     "attempts": 1,
     "usage_metadata": {
-      "candidates_token_count": 7207,
-      "prompt_token_count": 27786,
+      "candidates_token_count": 11193,
+      "prompt_token_count": 293681,
       "prompt_tokens_details": [
         {
           "modality": "TEXT",
-          "token_count": 27786
+          "token_count": 22893
+        },
+        {
+          "modality": "IMAGE",
+          "token_count": 270788
         }
       ],
-      "thoughts_token_count": 11536,
-      "total_token_count": 46529
+      "thoughts_token_count": 6585,
+      "total_token_count": 311459
     }
   }
 }

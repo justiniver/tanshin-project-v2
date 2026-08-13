@@ -45,7 +45,7 @@ normalization, validation, rendering, retry, and failure tests.
 
 - `tanshin_pipeline/selection.py`: filing discovery and manifest construction.
 - `tanshin_pipeline/prompts.py`: research, synthesis, and translation prompts.
-- `tanshin_pipeline/research.py`: deterministic summaries of the research dossier.
+- `tanshin_pipeline/research.py`: deterministic summaries of the chronological research map.
 - `tanshin_pipeline/schemas.py`: model-facing and normalized data contracts.
 - `tanshin_pipeline/request_builder.py`: inspectable request specifications.
 - `tanshin_pipeline/gemini_runtime.py`: gated Gemini request boundary.
@@ -77,7 +77,7 @@ normalization, validation, rendering, retry, and failure tests.
   draft-only or validation-blocked publication behavior unless the user
   explicitly changes this policy.
 - The same non-gating policy applies between research and synthesis. Once the
-  provider returns a Pydantic-parseable research dossier, persist it, record
+  provider returns a Pydantic-parseable research map, persist it, record
   deterministic findings in `validation_research.json`, and continue. Only a
   provider failure or an unparseable response may stop before synthesis.
 - Keep model-profile labels and model names inspectable, but never log
@@ -86,24 +86,27 @@ normalization, validation, rendering, retry, and failure tests.
   stages. The `sol` profile uses OpenAI for analysis and the secondary Gemini
   profile for translation. Model names are constants in
   `tanshin_pipeline/config.py`; `.env` contains credentials only.
-- A Japanese report uses two model calls: PDF-backed research followed by
-  dossier-backed synthesis. Optional English translation is a third call.
-  The second call receives no PDFs, and no report is rendered until it succeeds.
-- Keep the first Japanese request coverage-first: it must return one coverage
-  record per selected filing with explicit packets for operating results,
-  financial condition, forward-looking information, strategy and plan
-  progress, segment conditions, capital allocation, and material footnotes.
-  Local code derives comparisons and subscores; the second request ranks those
-  findings and writes the existing report structure.
-- Keep research extraction compact. Array ceilings are source constants, counts
-  are never quotas, and one evidence record should be reused wherever a single
-  source sentence supports multiple research records.
-- Compress historical financial slots into one consistent annual anchor per
-  year-end filing, pairing the current actual and next original forecast where
-  available. Use the saved response budget for concise qualitative discussion
-  from every filing. Allocate commentary slots to a few recurring multi-period
-  comparison tracks, and prioritize commitments with observable outcomes over
-  pending promises.
+- A Japanese report uses two PDF-backed model calls: chronological research
+  mapping followed by research-map-guided synthesis. Optional English
+  translation is a third call. No report is rendered until synthesis succeeds.
+- Keep the first Japanese request coverage-first and mechanically simple: return
+  exactly one chronological memo per selected filing with dense observations
+  for operating results, financial condition, forward-looking information,
+  strategy and execution, segment and business drivers, capital allocation, and
+  material footnotes. It must not rank themes, score management, or draft the
+  report.
+- Keep research extraction compact. Do not recreate source-ID graphs, commentary
+  taxonomies, citation-ready quotations, or synthesis conclusions in request 1.
+  Combine related same-page statements when that preserves their figures,
+  periods, qualifiers, scope, and statement type.
+- Compress historical financials into one consistent annual anchor per year-end
+  filing, pairing the current actual and next original forecast where available.
+  Use the remaining response budget for concise qualitative management
+  discussion from every filing.
+- The second request receives the chronological map, local annual comparisons,
+  fact-free blueprint, and all selected PDFs. Treat the map as an attention
+  guide, not a source boundary; revisit the filings for missing context,
+  competing interpretations, and contrary evidence.
 - The default profile uses `gemini-3.6-flash` with `GEMINI_API_KEY` for research,
   synthesis, and translation. `--key2-translation` changes only translation to
   `GEMINI_API_KEY2`. When consecutive stages share a Gemini credential and their
