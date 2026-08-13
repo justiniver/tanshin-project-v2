@@ -443,13 +443,24 @@ including:
 - key business and financial drivers;
 - outlook, targets, risks, and uncertainty;
 - a multi-period strategic perspective;
-- consistent themes, material changes, and capital allocation;
+- consistent themes, material changes, capital-allocation developments, and an
+  assessment of whether the decade's allocation decisions created value;
 - detailed explanations beneath each management-consistency subscore.
 
 The trend section prioritizes qualitative management discussion, including
 経営成績, 財政状態, cash-flow discussion, future outlook, management-plan
 progress, capital allocation, and management explanations of risks or misses.
 Summary tables mainly corroborate figures rather than becoming the trend thesis.
+Its capital-allocation value-creation subsection leads with a supported judgment
+about the observed decision-and-outcome record. It follows the decade's most
+material investments, acquisitions, disposals, balance-sheet choices, and
+shareholder distributions into their later operating and financial outcomes.
+Recurring profit, margin, cash generation, useful capacity, and a stronger core
+business count in favor; persistent losses, impairments, failed expansion,
+disposals after weak performance, and financial strain count against. The
+section answers whether the overall record created value rather than making
+missing disclosure or the mere act of spending and distributing capital its
+thesis.
 When the selected filings show no meaningful qualitative development, the model
 may report that limitation and emphasize the financial, forecast, target,
 disclosure, or capital-allocation record rather than forcing a weak theme.

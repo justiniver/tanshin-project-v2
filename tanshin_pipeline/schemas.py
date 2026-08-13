@@ -361,6 +361,7 @@ class SectionKey(str, Enum):
     TREND_CONSISTENT = "trend.consistent"
     TREND_CHANGE = "trend.change"
     TREND_CAPITAL_ALLOCATION = "trend.capital_allocation"
+    TREND_CAPITAL_VALUE_CREATION = "trend.capital_value_creation"
     TREND_IMPLICATION = "trend.implication"
     COMPANY_OVERVIEW = "company.overview"
     MANAGEMENT_STRATEGY = "management.strategy"
@@ -817,7 +818,11 @@ class ResearchMemoItem(BaseModel):
         description=(
             "Concise, faithful Japanese summary retaining the original figures, "
             "periods, qualifiers, causes, actions, and forecast status needed for "
-            "later analysis. Exact quotation is not required."
+            "later analysis. For capital allocation, prioritize the material "
+            "decision, its stated purpose, funding or trade-off, and any later "
+            "operating, profit, margin, cash, capacity, impairment, disposal, "
+            "debt, liquidity, or distribution outcome. Exact quotation is not "
+            "required."
         )
     )
 

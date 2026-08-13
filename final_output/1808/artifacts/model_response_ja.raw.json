@@ -5,12 +5,12 @@
       "content-type": "application/json; charset=UTF-8",
       "vary": "Origin, X-Origin, Referer",
       "content-encoding": "gzip",
-      "date": "Thu, 13 Aug 2026 03:34:02 GMT",
+      "date": "Thu, 13 Aug 2026 04:33:18 GMT",
       "server": "scaffolding on HTTPServer2",
       "x-xss-protection": "0",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "server-timing": "gfet4t7; dur=99066",
+      "server-timing": "gfet4t7; dur=188198",
       "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
       "transfer-encoding": "chunked"
     }
@@ -20,8 +20,8 @@
       "content": {
         "parts": [
           {
-            "text": "{\n  \"schema_version\": \"1.0.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_001\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"分譲マンションの特化型特命施工と企画開発から管理運営までの一貫体制\",\n      \"body_ja\": \"長谷工コーポレーションは、分譲マンションの企画・設計から施工までを一貫して手掛ける建設関連事業を中核とし、マンションや戸建の分譲・仲介を行う不動産関連事業、賃貸・分譲マンションの建物管理や大規模修繕・シニアサービス等を展開する管理運営事業、ならびに海外での不動産開発等を多角的に展開する総合住宅・生活関連企業集団である。土地情報の独自の収集力と商品企画力を強みとし、土地持ち込み型の特命受注を中心とした生産・事業モデルによって高い施工シェアと収益性を構築している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"企業集団の状況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"長谷工グループは、建設関連事業、不動産関連事業、管理運営事業、海外事業を展開する総合住宅・生活関連企業集団である。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_002\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年3月期は受注採算改善と不動産取扱量増により増収増益を達成\",\n      \"body_ja\": \"2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）となった。建設関連事業における受注時採算の改善に伴う完成工事総利益率の上昇や、不動産関連事業の取引拡大が全体を牽引し、期初予想を上回る着地となった。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績等の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2026年3月期連結業績は売上高1兆2,731億円、営業利益987億円、経常利益941億円、親会社株主に帰属する当期純利益548億円で増収増益。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_003\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"棚卸資産の減少等により営業キャッシュ・フローが1,574億円の大幅収入超過へ改善\",\n      \"body_ja\": \"2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過となり、前期の39億円から大幅に増加した。これは主に棚卸資産の減少に伴う資金増加（542億円）や税金等調整前当期純利益（895億円）の計上によるものである。期末現金及び現金同等物残高は前末比523億円増の2,881億円となり、手元流動性を高めている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 4,\n          \"source_section\": \"当期のキャッシュ・フローの概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"営業CFは前年の39億円から1,574億円の収入超過へ大幅増加。棚卸資産の減少伴う資金増加542億円などが寄与。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_004\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"次期は増益予想を掲げ、年間配当は1株当たり100円へ増配予定\",\n      \"body_ja\": \"2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、経常利益1,050億円（同11.6%増）を見込む。新中期経営計画「HASEKO Evolution Plan」の株主還元方針に基づき、当期の年間配当金95円（前年の85円から10円増配）に続き、次期は100円への増配を予定している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"業績予想 / 配当の状況\",\n          \"statement_type\": \"forecast\",\n          \"support_summary_ja\": \"2027年3月期通期予想は経常利益1,050億円。年間配当予想は100円（当期は95円）。\"\n        }\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_005\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"受注採算｜追い風：建築工事における受注時採算の改善が粗利益率を押し上げ\",\n      \"body_ja\": \"建設関連事業では、土地情報収集力と商品企画力を強みに受注時採算の改善を徹底した結果、完成工事総利益率が上昇した。資材・労務費の高騰が継続する環境下においても、販売価格の上昇や効率的生産体制の維持により収益性を高め、セグメント営業利益は685億円（前期比21.6%増）となった。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績（建設関連事業）\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"受注時採算の改善により完成工事総利益率が上昇し、建設関連事業の営業利益は685億円（同21.6%増）となった。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_006\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"分譲引渡・仲介｜追い風：新規分譲引渡しや収益不動産売却の増加が不動産事業を牽引\",\n      \"body_ja\": \"不動産関連事業では、新築分譲マンションの新規引渡しや収益不動産の売却が順調に進捗したほか、不動産仲介の取扱件数が増加した。これによりセグメント売上高は2,932億円（前期比16.0%増）、営業利益は356億円（同9.2%増）となり、連結業績の押し上げに貢献した。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績（不動産関連事業）\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"分譲マンションの新規引渡しや収益不動産の売却増加、仲介取扱件数の増加で売上高2,932億円、営業利益356億円。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_007\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"海外事業｜逆風：ハワイ州開発事業の低迷等により営業損失61億円を計上\",\n      \"body_ja\": \"海外事業においては、米国ハワイ州オアフ島での戸建分譲開発や商業施設運営を推進しているものの、進捗の遅れ等の影響により売上高43億円に対して営業損失61億円（前年は営業損失57億円）を計上した。国内事業の好調がカバーしているものの、早期の収益化が課題となっている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績（海外事業）\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外事業は売上高43億円、営業損失61億円（前期は営業損失57億円）となった。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_008\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期は経常利益1,050億円を目指し新中計目標の達成に向け進展\",\n      \"body_ja\": \"2027年3月期の通期連結予想は売上高1兆3,800億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円を見込んでいる。首都圏・近畿圏でのマンション価格上昇と堅調な需要に支えられ、受注高単体7,300億円を確保するとともに、新中期経営計画の目標である2028年3月期連結経常利益1,000億円以上という水準の達成を見据えている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 6,\n          \"source_section\": \"今後の見通し\",\n          \"statement_type\": \"forecast\",\n          \"support_summary_ja\": \"2027年3月期通期予想は売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円を見込む。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 11,\n          \"source_section\": \"経営目標・株主還元方針\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"2028年3月期連結経常利益1,000億円以上を経営目標に掲げる。\"\n        }\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_009\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"建築資材・労務費の高騰および時間外労働上限規制による工事原価・工程リスク\",\n      \"body_ja\": \"建設業界全体で資材価格の高騰や労務費の上昇が続いており、働き方改革に伴う時間外労働の上限規制の適用や技能労働者不足が施工進捗や工事原価に影響を及ぼす不確実性が存在する。受注時採算の厳格管理やBIM・ICTの活用による工期短縮・効率化が継続的な課題となる。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 6,\n          \"source_section\": \"今後の見通し\",\n          \"statement_type\": \"risk\",\n          \"support_summary_ja\": \"資材・労務費高騰、時間外労働上限規制への対応、技能労働者不足など建設業界の課題が指摘されている。\"\n        }\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_010\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"住宅ローン金利の上昇懸念とマンション販売価格上昇による需要抑制リスク\",\n      \"body_ja\": \"首都圏の分譲単価が1,419千円/㎡（前期比15.4%増）、平均価格が9,383万円（同15.3%増）と過去最高値を更新する一方、時間をかけた販売姿勢の強まりから初月販売率は低下している。今後の景気動向や金融政策変更に伴う住宅ローン金利の上昇が、購買マインドに影響を与える懸念がある。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"当連結会計年度の概況\",\n          \"statement_type\": \"risk\",\n          \"support_summary_ja\": \"マンション価格上昇継続の一方、初月販売率は低下。金融政策や景気の動向を注視する必要がある。\"\n        }\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_011\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"新中期経営計画の初年度として「3つの輪」体制を始動し高水準の収益性を確保\",\n      \"body_ja\": \"2026年3月期は、新たな中期経営計画「HASEKO Evolution Plan」の初年度にあたり、従来の「建設」と「サービス」の2輪から、「建設関連」「不動産関連」「管理運営」の3輪体制へセグメント区分を再編した。資材高騰等の外部環境の厳しさは残るものの、土地情報収集力に裏打ちされた特命受注ノウハウと全セグメントでの増益により、連結経常利益941億円を達成した。Wood Friendsの完全子会社化など木造・木質化領域への成長投資も進め、収益基盤の多様化と資本効率向上を図る現在地にある。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績等の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"新中計初年度に連結経常利益941億円を達成。完成工事総利益率や不動産取扱量が改善。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 36,\n          \"source_section\": \"企業結合等関係\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"Wood FriendsをTOBおよび売渡請求により100%完全子会社化。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_012\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"10年間の軌跡：完成工事利益率の波動を不動産・管理運営の拡大と原価管理で克服\",\n      \"body_ja\": \"過去10年間の業績推移を見ると、FY2018〜FY2019に連結経常利益1,000億円超の高水準に達した後、コロナ禍や資材・労務費の高騰を受けた完成工事総利益率の低下により、FY2021〜FY2025には経常利益700億〜800億円台へと一時落ち込んだ。しかし、この間も受注残高を高水準で維持するとともに、ストック型ビジネスである管理運営事業の受託戸数拡大や不動産開発利益の積み上げにより下値を支えた。直近のFY2026には受注時採算の改善と不動産取扱量の増加により経常利益941億円までV字回復を果たしており、特命施工モデルの強みと非建設分野の成長を両立させる事業構造への深化が証明されている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績に関する説明\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017連結経常利益は888億円。\"\n        },\n        {\n          \"source_filename\": \"33_2018-05-11_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績に関する説明\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2018連結経常利益は1,005億円で過去最高を記録。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績に関する説明\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2021連結経常利益はコロナ禍等の影響で718億円へ低下。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績等の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2025連結経常利益は834億円。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績等の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026連結経常利益は941億円まで回復。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_013\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"土地情報収集力を起点とする「持ち込み型特命受注モデル」の持続的強み\",\n      \"body_ja\": \"早期（FY2017〜）から直近（FY2026）に至るまで、同社の最大の強みは事業主に対する独自の土地情報提案力と商品企画力に基づいた「持ち込み型特命受注」にある。競争入札を避け、企画から施工・販売・管理までを一貫して受注するモデルを維持することで、分譲マンション建設における高いシェアと相場変動下での案件確保能力を持続させている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"分譲マンション新築工事受注は107件と好調を維持。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"土地情報収集力や商品企画力が高く評価されている。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"土地情報収集力や商品企画力、施工品質への評価から受注時採算が改善。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_014\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"分譲・賃貸マンション管理戸数の累積的拡大によるストック収益基盤の強化\",\n      \"body_ja\": \"管理運営（旧サービス関連）事業における分譲マンション管理戸数は、FY2017末の36.9万戸からFY2021末の41.0万戸、FY2026末の44.8万戸へと着実に拡大を続けた。大規模修繕工事や賃貸管理、社宅代行、シニアサービスを含めたフロー・ストック双方の需要を補捕捉する体制が、建設事業の採算変動に対する緩衝材として機能している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"サービス関連事業で分譲マンション管理や大規模修繕が順調に拡大。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"分譲マンション管理戸数は410,412戸に増加。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"分譲マンション管理戸数は448,076戸に達する。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_015\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"事業体制の進化：従来の2輪体制から「建設関連・不動産関連・管理運営」の3輪体制へ推進\",\n      \"body_ja\": \"早期（FY2017）や中期（FY2021「NS計画」）においては「建設関連」と「サービス関連」の2輪体制で経営が進められていたが、直近のFY2025・FY2026（「HASEKO Evolution Plan」）より、「建設関連」「不動産関連」「管理運営」の3輪体制へとセグメント構造を組み替えた。各事業の役割と責任を細分化・明確化し、不動産開発投資の拡大と管理運営の収益化を加速させる体制へと転換している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"当時は建設関連事業とサービス関連事業等の区分で構成。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 10,\n          \"source_section\": \"中長期的な経営戦略\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"NS計画では建設関連とサービス関連の両輪体制を基本方針とした。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"新中計策定を機に建設関連・不動産関連・管理運営・海外の4区分に報告セグメントを変更。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_016\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"採算管理の適応：インフレ・資材高騰局面に対する受注時採算厳格化へのシフト\",\n      \"body_ja\": \"早期（FY2017〜FY2018）は完成工事総利益率の改善が利益成長を牽引していたが、中期（FY2022〜FY2025）は資材・労務費の高騰により完成工事総利益率が低下傾向に陥った。これに対し直近（FY2026）では、設計・施工のデジタル化や分譲価格上昇を織り込んだ受注時採算の見直しを徹底することで、高コスト環境下においても完成工事総利益率を再上昇させる構造へと適応させた。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"33_2018-05-11_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"完成工事総利益率の改善が営業利益を押し上げた。\"\n        },\n        {\n          \"source_filename\": \"09_2024-05-10_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"資材・労務費高騰で完成工事総利益率が低下。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"受注時採算の改善により完成工事総利益率が反転上昇。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_017\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"株主還元の積極化（累進配当・総還元性向向上）と成長投資（4,000億円）の両立\",\n      \"body_ja\": \"早期（FY2017：年間30円）から中期（FY2022：年間80円下限設定）を経て、直近のFY2026では年間95円、FY2027予想では年間100円へと配当水準を大幅に引き上げてきた。新中計では「6期合計総還元性向50%程度」「累進配当」を掲げると同時に、6年間で4,000億円（国内・海外不動産、DX、Wood Friends等のM&A）のネット投資を計画しており、財務健全性を保ちつつ資本効率を高める姿勢を強めている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 6,\n          \"source_section\": \"配当の状況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017の年間配当金は30円。\"\n        },\n        {\n          \"source_filename\": \"17_2022-05-12_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"利益配分に関する基本方針\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"年間配当金の下限を80円に引き上げ。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 12,\n          \"source_section\": \"経営基盤強化（財務戦略）\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"6か年で4,000億円のネット投資計画、総還元性向50%程度、累進配当を設定。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"利益配分に関する基本方針\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026配当は95円、FY2027予想は100円。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_018\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"投資家への示唆：建築利益率の復元力と不動産・管理の収益貢献による中計目標の達成確度\",\n      \"body_ja\": \"投資家が確認すべき核心は、資材高騰下での建築工事総利益率の改善が持続可能か否か、および不動産売却益への依存度である。同社は高水準の施工繰越高（個別で9,400億円）を背景に受注時採算をコントロールできる立場にあり、ストック事業の拡大と相まって新中計の「経常利益1,000億円超の安定計上」に向けた収益基盤の質的向上が進んでいる。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"当連結会計年度の概況\",\n          \"statement_type\": \"inference\",\n          \"support_summary_ja\": \"完成工事総利益率の改善等により連結経常利益は941億円を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 11,\n          \"source_section\": \"経営目標・株主還元方針\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"安定的に1,000億円以上を計上できる収益基盤の確立を目指す。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 50,\n          \"source_section\": \"個別受注高、売上高及び繰越高の状況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"単体での次期繰越工事高は9,400億円を確保。\"\n        }\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_019\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"「3つの輪」の連携と成長投資による持続的企業価値向上の戦略的整合性\",\n      \"body_ja\": \"「HASEKO Evolution Plan」において、従来の強みである建設関連事業に加えて、不動産関連・管理運営事業を独立した成長柱と位置付け、国内主要都市や海外への展開、DX推進、木造・木質化領域（Wood Friends完全子会社化等）の取り込みを図る戦略は整合性が高い。国内分譲マンション着工戸数の長期的頭打ちに備え、ストックビジネスや環境対応技術への資源配分を明示している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 10,\n          \"source_section\": \"中長期的な経営戦略\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"基本方針を「建設関連」「不動産関連」「管理運営」の3つの輪に細分化・進化。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 36,\n          \"source_section\": \"企業結合等関係\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"Wood Friendsを完全子会社化し、ハイブリッド木造住宅や木質化技術の導入を加速。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_020\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"国内特命受注と還元拡充の高い実行力の一方、海外事業の損失継続が課題\",\n      \"body_ja\": \"国内コア事業においては、土地持ち込み提案による特命受注獲得、管理戸数の着実な積み上げ、配当増額や自己株式取得（FY2026に201億円実施）など、計画された施策を確実に実行している。一方で、FY2025に海外関連事業で特別損失（減損・訴訟損失等）を計上し、FY2026も海外営業損失61億円を計上するなど、海外不動産開発におけるリスク管理と収益化の実行には課題を残している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"経営成績等の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外関連事業において特別損失（減損損失、評価損、訴訟損失引当金）を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外事業は売上高43億円、営業損失61億円を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 4,\n          \"source_section\": \"当期のキャッシュ・フローの概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"自己株式の取得に伴う資金減少201億円を計上。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_021\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"通期経常利益予想に対する高い達成度と保守的な期初予想規律\",\n      \"body_ja\": \"過去9年間の観察可能な通期連結経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、概ね予想通り（誤差5%未満）であった期が3期であり、予想を下回った期は0期であった。期初には資材高騰や市況不確実性を手堅く織り込み、期中に上振れる傾向が定着しており、経営陣の業績予想規律は極めて堅実かつ保守的であると評価できる。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"33_2018-05-11_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"連結経営成績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2018経常利益実績1,005億円（予想910億円）。\"\n        },\n        {\n          \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"連結経営成績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2020経常利益実績853億円（予想850億円）。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"連結経営成績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026経常利益実績941億円（予想850億円）。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_022\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"業績変動要因や特別損失に関する透明性の高い開示と修正説明責任の履行\",\n      \"body_ja\": \"FY2025における海外事業の減損損失計上や、子会社の独占禁止法違反疑いに関する立ち入り検査などの不祥事・損失事象が発生した際、決算短信や補足資料において遅滞なく事実関係と財務影響を開示している。また、中計の移行やセグメント再編に際しても組み替え後の前年比較数値を明示するなど、投資家に対する説明責任と透明性は十分に確保されている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 2,\n          \"source_section\": \"当連結会計年度の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外関連事業での特別損失計上要因を説明。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 8,\n          \"source_section\": \"今後の見通し\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"子会社長谷工リフォームへの独占禁止法違反疑いによる公取委立入検査について開示。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 3,\n          \"source_section\": \"セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"国内マンション事業での「持ち込み特命施工」を軸に、管理運営や不動産事業への拡張を進める戦略は首尾一貫している。新中計での「3つの輪」体制への再編も戦略課題に即している。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n            \"pdf_page\": 10,\n            \"source_section\": \"中長期的な経営戦略\",\n            \"statement_type\": \"target\",\n            \"support_summary_ja\": \"基本方針を3つの輪に細分化し、持続的成長と資本効率経営を強化。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 9,\n            \"source_section\": \"経営方針\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"「3つの輪」の連携と切磋琢磨を推進し、完成工事総利益率の上昇を実現。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"国内での土地情報収集や管理戸数拡大、株主還元拡充は着実に実行されているが、FY2025〜FY2026における海外事業の減損および営業損失の継続（FY2026に61億円の営業損失）など、海外投資の収益化に課題がある。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n            \"pdf_page\": 2,\n            \"source_section\": \"当連結会計年度の概況\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"海外関連事業において特別損失を計上。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 3,\n            \"source_section\": \"セグメントの業績\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"海外事業で営業損失61億円を計上。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"過去9期の通期連結経常利益予想において、実績が予想を上回る結果が6回、概ね予想通りが3回であり、期初予想を下回った実績はなく、極めて規律ある保守的な予想管理が行われている。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"33_2018-05-11_tanshin.pdf\",\n            \"pdf_page\": 2,\n            \"source_section\": \"連結経営成績\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"FY2018経常利益実績1,005億円（予想910億円）。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 2,\n            \"source_section\": \"連結経営成績\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"FY2026経常利益実績941億円（予想850億円）。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"セグメント区分の変更に伴う組替後数値の開示や、海外事業での減損損失・訴訟損失引当金の計上要因について速やかかつ詳細に説明しており、説明責任と透明性が高い。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n            \"pdf_page\": 2,\n            \"source_section\": \"当連結会計年度の概況\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"海外関連事業での特別損失計上要因を開示。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 3,\n            \"source_section\": \"セグメントの業績\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。\"\n          }\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"長谷工コーポレーションは、特命受注ノウハウを核とした高い戦略的一貫性と、期初予想を下回らない堅実な業績予想規律を有している。株主還元の拡充や国内コア事業の執行力は高い一方、海外不動産開発における減損や損失の計上といった実行上の課題も観察されるが、総じて経営の一貫性と透明性は高水準にある。\"\n  },\n  \"model_notes\": []\n}",
-            "thought_signature": "EqmxAQqlsQEBEU0yD0vUpw3pp2Ij-_S-qZSfw6fFS1nQ8MNtCH3Nn4-owYiTfJXFH1xoRCMvmdBTiYZUFde7quFkhAgOznfq3j5J2wnEhMdlxAJ_Ri20aIjbh8oiLrqrTnygQIfAQ4zPf-EaJzBig31jlBEWOXkBOeoRuCY-Tf_5Vwsf5dXzjUQpQNt1Bbq9rb-HNe4gLNoQsmezV-WDS5t5gpgyK2N_EOnQ_RyuT6yXrj5GpV1gl--IhvqnpXGeneBqIX33-xrHyk2ymlUkufwRNAw78OBpyjafP-pRwP1xswt81H676GvOvNfLMHdmW7Dlkz9XyfpM5eJ63G5SM1hXj048vNrIFfW3Xwmt5Ub3DFXXAfwN3ziUp417XCT9e9pGhJd-aMP2sCM04uFA14-dOF0cdSaPZeb02kpQfT4zNUsUS2TS9SNQW_m0nVI7ZfQ2fSbkDfZK8hHgkN4YJT_LRHEwGXPMm_z-ezpJJdXbCGQUZfCf2usj3nIi456kdFs8lUOfbLXgLsFpT6PZp46FA2iSyWGtA1OtBCtrbw7--rfv2s3ITgdEnOg8fXfKM--ykAK6WJjxROCKhJPwd1gAuzdPqRlUKTrjISEMEDpckVkqaRfiStJ5_OtIXPMlHjfEd7WIwWPnJBxXln1Pr7JD-A0wAZTK3IVdc0LQJKjvxxkD1jPu7vONFCLkcN63_WehKkp1TLFvnOjhAx4PpaGlYWa_z0kUSVrJ4UG69PtbB-39Us6A77Vi6F1OxcZ_I4Zds_M58tQhIW4fGvRaH5J9J-jYISft543c_cZJw6-dGmp4TgGE4UMHpBwXuuJqpxgz7HQSHYLuPOHi3Z5MHqG5NHw2a7AXDA-oDuexytWVvia1Q5pdSfIjfljTfv39E4sZLpYp5hUE83AepAwchDm__J0OMCfmw2vSUjLR4chQ4Sz5yWGFKl6jYea4lXlkqsaAaV8WBRsUa7d5PHeFQxXboc2oQK9GuE40XP5NPA_IxrGeaXeSTLEFAMtJ9q-eIJS76HhK9gmCJMk5sVkPd_29tCImhLGHMY9dBQaqmS0d_1JCJ6eEPJSbevNqqdlcm7EjUGvlw3iaiKsj9Eec07BXhT9ma2LyXl0utvKUl3MVUYoBqx5_PHkWolXnTtQzUSoGa7hBVEw_qHvy_HqmT6YHdC13HPkEx6jRnCxtYOeBNngZgYHIjgV82RhUD-w9Ka_qlCR7bMyZdsN7dPd9ZVhTFPThiCfOsJDvHsd5uWIMiBG8AQYukUdy-x4zzAKUniCzKwm1Pegnoa1yVgLbF-oBiEVZgykfU5733msb_znVGhqtRXrvfoLLm1e_XraHuaJRSF0Q2kIPzbhfJUM1OUV0hBYqjta12pVm9-8eZ3_ni1mdxmArwjRE0JD_0g-z_5pjKoo9-peaTwcv_q_VZGIJ-WPxi8tmIXddr1-AN2PHOc1tNjgANp2LVzMKq03MUBmnra2iHtk5Itd_ve0hK1RX74Jwoxgew83txQT9VdNCs4zlyvHb6xJw6zAFnA9fHWtU82SmpvwxwXdGInv9di7rXNojZrX6KSsMdqyhpwQlWZ05vy0GVNjomJQsOqAP9Y-B6AG94q8SeDoj3qAOq4I6VF9kaYBuWarHJZSCxTUDQApcD8eCaqqAXW_n0KzlWkanZuPmvBXqG9Gfj5evZ0e_lsrjBqbFpAUoBXiS3dHW-OjwEhogyXrCWFufI0ykwa0R9tWfH9g5X05mM46phTT9y8YSYTxQreG6jIy_9K6YV0e51qxeSnmnnzBXwEoZy0fcj538DnX6wYIqlIWJJ_nrk7TJcPCyiZFI4m17f3pwzs4VjhHNwhk29TfCqzJBULuZMpEN3JQuDGHgCwGE0A7omLxzw5bSnJ9CaJfrUvNqyh16QLiZ3icfhbftppwMbAotHsOGAHuFXZJr4GWIvS2FOLTcbISAP8ZzUloGEGGHpc1wnFUG1mOHSp8sUiUa3lTTcY9uXJ5olIMGXGg3wHpCENm0FKbfsBHLCOilXG6VVMTbhBaIpeHso3tpW3mbNVhWPOnbffG_bVkLcGXjJgqF1JPwZuyOPQPJczbb3I6l48LVUQ5rQhO2VGJpNOaEXIuydYpDd25aXGLCTj-xYQSDVUQYoaqL61vMkiQVk49qAzYV38rYa81hMwWBRDNSJ0SCOO6mQy8syGdNcXFuIKS41JucxCEd7AZUfw-ZtSkU3Thn-Yjg3-HTR_7TaVyU3i5GTRsWVa5FX7PQwWO6DXAgszavCwa1fDUCexIEwqnmpV63uMBATLrOc-KIsRV169SCCgkNpnkuwY0t6DzkJ-IvbE48cc3CsZqb38ybWFoHbLHW0-5z43tPAKyxYEVWQ_rS5YWZC855JHOx8JOyhtJY7b0GhrMOonMe2idTazAr9SbyYJMcpnwXSTWlooI9Udm3iu3T2cUyirfRbQZTJnmjQdE1kSeF-Vc_6h_GqYD2Mtb0ol_G5snF5juQH4ku9F4G5Qb1tuPO_AIxuQTtLiFZaChqKetVUjRhi-QlfQC8xCMkjcbgiKt3bhUa7It9O0DhqilWvAegPkRDwnJR0rAqYUP0T0n_ssVhViI0qyQQpTP5iAU4BvgLI9EP_UoILxzQRpS1KYMtS7AAbtkUDOqiWqAnY87lXcbmvBFgSeuCHvBR9oLt9RIA4EU1JfQms4XxMVCxVJTFCd-2LQXsDnTiWz_NAYW5pmKug2gWEUR6T84KUe_kBPSWMBS48yId3txeX8peRLoy44RY4Jwv-olbi7yMcRPwQhFN-T9gSRhw_saIzSfxelbQOANq7czfkM44P7mIANitHRtQPpOrwnCdRs28SEcuv3WJ7oZnogH2OUAMtw7hiW5OvzbCtm5dqmL-gPwzqAWfvY_TSMiVE0qzRH3-hq4XSWnzrtdKgGMFsLDueus3QU2ztjIRC1c8ezH8B3YBHjOMWKjAwbjIitkADyUCjDjz4bDa-G1CNWHfNmS1KKdJIo_1aeDV_9dNPxQ4Jra0Y27W5SdkKJa1G429gNXz9Y00ANfiPwhILgnJ6YPnTCp1SQvopp-2dDaD0ITA0fdkvXE7BA3CId5Wc0o9f3ETFPTKnlH1JWd4HLVKU2MJQuJg-kBUJoR_bRKQTalJiBL5xh0KVyhgwiNzQ61ZJ2CfngrPQtu04s-UZPzg4jAoGmfsSVoN9Cpxkb16WQveFRIdeqSk9UzP9RA70X-PHbE36IxB7zlVtAALyUqGPraaZ9PMrl62Zdp5nPEi0bnyjbnz5Sfq-qh_2qqKkPXdxnWwElW8mYGz-2vKy4KXOzVq9A7DDbke8IJSIszBFGHlcK--_txaVi3_WDwttUkgZpZ27Rmzs3cy02gOtC56hwwl10fmyPJdV124Cn20ozNQnXD3mXW-iSIQZF42nidQCinTdzhN5nw-VOW158aHCVTVVRMB2e0QMEMez3W5hlfnGColuSHwty1p1CG42UgZdzpuddf3Q9bMZSQca3X4YPAlODzm4gkeaJpsxykdvDShdlmCDFM7B2Y39Dja6hcQOuRY0mtMLocYCEOWQhtMLER58mnM-tvFMNcw16DaMUh4KI3ozHzGMs7GFLoNgzHvxyhQzwkJH6n-R7y_r0slwBFBNAlgXuehV1RbXPen6liDrU68epKbwSIoPEHttXkG9WIXy7lpjKXtSZP6oJqXsCmos01EElxrJYiInOUrtZQsykQGEmGCQzPEyBku9zYSS9ZlJSnwwpMebBVJDDJ3rYQFCznuDwtpMe-w9cul8Mlco8XRKKR_EBUnmbDj5fDd_pGGsoWnQtqBdgp6GgWZh_FPXenFuUHO-0GigmZ3XJGnatFvTSvZRzLfvhE_hvKpwwL-WuZN8WIuLsqA_05E2Y1E3R4rLmYTTzJJf6zp-WUuq2Tlf5c_Sbqukvm1QDnrn3LntwwpinSmzdc-5tutxqL451OOCErZjKzC528Pnrj3b-1RDsoPO0IAv2mB40dOUOFv-QadvwpgaAf7MpJ3-9d1enPHmptm2kpm1zjuBfZNLxN9emJTtulqcIRt0eXPzYGIcMvMgyLT92-7YWKSnWiz0Wj9ZEfHjJA8_Bq3p5V67FWWGLtMRpHfxOreEesPD6t2bRoxoGuUgHRgp80KBjlnL3yvDgVagBcB4Fyk68WOLJQ8Sezkvuga1ePQ4z7BZRt2aQxFasGxRuXFtfU1Zf6lvbeSS_OK5gLWZwrarziiS78snM6RK-DIhwjH8ZW3baU7c5d7Re3kEX9xgp4doMghZZr9fEqYWS_GT8ZNXVw18tltpRnHPJ5YdhXqFBI0Ht2sMPXoysV2ISERQL9l5RzT1bAyAOZRsD8KlQRPLnn5QdyVuvvDBybk1ntT4mA4T29q3ONmu80YzO-sdv0ol0NNGfz58y8GOJu_UNkC8JEB-PNRlpemiviX5m7fWY4N2VXeL6xr5pAWoYGtGgdXNm3GzEkg1y3af2Nxlk76rItyruclGbMVZB5wF-lulLC3p1osw1_7SKwe8hp5fPPRaMFIBX3x9pJFqRSpia6bLsOE09lkIhXp0vHKJ4s3pmtNIe86crdkAExjMsFguV8Spx1NQIXHrBWWnmymNRZAVySA5T25XUKIoyYLruvqW7FZBDafeZ0Ks3JYI5om3sJ-eSO35lWzCA1Hp48VCML5H3MQ_VENo0U9OD3hV1QPrf2sqHLrHBUvqKfOTxd5dswKrhpAPyNTOawdhxVwqKzyhk4KtKaBwFkf9Jb78sVgHS3HIXSfrK13OQhICpNuz7EXihhTDPnFZkizcVEDYP1hJHDxzcF92xHghPat8izEwao4vJ98hfG35eCu_YIfpjAO7FvMprmsSNDBhkSLDrrJWxk6dQBRcg2qzKpUg_oVCawZnCojBZLdmAnCaB_Smzxr0XHoohZjFKsJitfK0XDnz0uxPQVxgbena28mJk37XSAacmLywYrjiyoD5zhNJQ8C4IhCllPMBZQM85__8iThKX3JKfyQTisSNGumATXQQ81F-5Ce7MrTOJKVzZYaXQYgtUZ3VLmWfCIZ4ADAIvteoWBXEsSIMSG1Lr2kkH3tlvVX4JaoyuF1iDAR0E5NWiJh25iDMdSoTM1xWE0OGXxC1XMpUJHaMGouJF5DALAv5ohrlbEI8o8WM8_7KGslJsKd5i7awbqLULzrO_Xb78e04GohS1XfgSjcb3_IHwVcvuN71Muy51QM9PK2llfs3B52Oc3v5_SLFreT5Qx3WtOjXsSLc7Fz6Fpn-010ned6hPWb9gTUEw9qyHJqWrjk9VmjdqpjCOH57J9BI-Gl5muOu_rcsJh0IW3l76SG0xd3ugJ81vPK2axE3KYqjuuL-utalrL-WW_7m5DyTaPiKjCLLN5NXHEuHv7KShdTBnrFWME1G9Uj13uSUCdx-5kF-8Eu5slpTFGkZkeGUiPWnJ3hgHwzouSefJ-d3aul-Gcq_E0Hb033I4VTEzSkYUQE-QAzL8IvRo0b_DO0o5_c-oiTYypOu_MSJF28SQ_oSQpzWFN2Yb9yJTNW8ItE7q-_u0pNGED-wpfNY6PvkWFXv8NNPoSmw3bzObpRqN2sQwy9rbg0Ov7parEwWxrA49hdaUvBhh4ZF2iuQYeY7fyrNlvGbws9hwSs5ZNXDjWEzyJip3-HIaXdnqD-u30_r9Aujp7kEqQyK8tZ5kJMU8xJOLICh2HuxAc-vlJkQ5blB_VlAs5S6bIbFRxWj7Kz-Wbn7ki_Q1P4S9-BPl1M9QQfeE0_yO4nNQSEEkLiPNLQ30cp1Ara0tzM4K6MHXeSaM4aO34pZsSujbp01Yt4zdEOvrLMk8SC4LanOjQjOojsLGpU1Cu-bqdyQndbBCbEX3CRDeKwZAV7X0SrctHFCveo2a3x-idPc1qxfVYUiiivWe3JnKgWLhj5fvTbQ_GcLiad1Gv-lS7j2Fxo2Lv-5IjYZi09fqmWUL_dvg9ERO4gZ3nrRmDPvYTVC1ZTe7ZtoT4L1gtKlfRjzgppDqNwJmDVzERvunzhjYPJmVMMndBiAk3edJdaaCvQcVP91EasgTsoDjvj-47d2N4MEHcslbJSV-YWfIc8RtaR5dzpMDXsGGuCObsUKl3JG0lUybFqxnxOGeNSql32NeenrC7Qp7_t4wm4O0YmCyEeRko_6dAQY8LUituUUOcN3L0upp0b2zdBhoIZzDxQYXO46V9cYUsWr6_LXtoLvdPZCCqfRpjk8GY-YDnEoLsuIA8U-tD6aq3yaNi8yDJNdEjG9BUidnLEcu3MCLjVEsOCAQhc86DwfNcEG2kkQezJNF2mtOj9X7DnOLU8AIhbpF93BitAgkDJQF-QuFp4Tax2DaZgCbJroh_bOmP5QVfOC0BLPrAgGMnM8hQumCd74v_VH2hpch8pgVXUfyzlYeZnSrHFfPoGeYVuYKG0T1kfgmSP358jXn6U9giHQlmErhVWfzpZT_8LES4K3CS8h2WtgfnaWbTZmzEExaPEctAW1yxfk8W7QjicFDIAEJvZ4vBJ6lzRXVO5mEnzzYnz-nBc2JNvirckmDMaYoYsITESixFN5m3eEHQWXAJLVhcwfl6qCJ7bEH86J_vWFJlRolZZeyfh-HBZfNRxWhjMBwCYPhVSc7le-BbOsksU06U2vDFfYHJgrj31RdhTK-_9zTaDSbzvBbi0zjMGvsi3HaPOAvu8EQx0irMkZVedkaF9G2tHYE7cD6EDLFUPY7jWd7SwdrF8zWGAfBpaGFtOij2m7bYopd1SuVQcsR0U9FJwYqB2e9pb7FUnhkOZufX0JvIG_5rjygWmTKTuTRsFpyb2erkLy1mpCTPNMtNLMkwgqKCqoFFNEU9FV-0_HVAZ2m-JUsfA9Km-4xZof9XRFATu_Y09gwQO7dKgxekwarzEd2VJpbRxw3XgVgbY7oEr9_B0EB4hkxB7B_ElXcw0VdJ_rljak44fh1zP47GEsPWXUmnGOCsOjeJiJc900xQNehsh9yQdpt9jyHSVVwxjwTGLafzTIYi5WfyNJfs1TH0UjsgKCbNFy47ItWecZthS0Ja4FRzJMCrN0jhH9WjN26sFiNPev9fuuYLLWA_Z8T5HyIUMC26VNgpxS4TeTW_zkRxaz2oQPRQMXG991NU2XzsnmQemFCU3fVBsoOLGQblROXsqznUnbIktJvBR3ME3NMI2GeXOnh1jbkjJcxEOLJU12C_it311U96HwiQPKNa3p1qaEfhonaDXWJvm2g1sYGLGspuYy0E-pHWuw9FOBR7OYJevJUKpSYVq6LatzS6anlxXLc7xfk993LCspOg_psu-K4jxJF4JxZaxmKRGc7X4rMCK-1gkzyf2U7j2V6A9CTxTkAHuw3hPemnZc4nj9UcaMq7RDrLLimn7dGqbOneJ1juCkNGkl74yMnk_UFKMLj_PlpnJX_ODCXKQZMjwf8Ry3mVFR72WVV8Z3WkXLKW0gC2alN9Oc53N2yvgiikWKwJ42Tkh0SRAIbdmZGHLLQeUmPoTS4XDfMY7VQ20eWx08-O4B7m5W4x7ChWNICweLVh964IwoYZeHJJDpmLDFaKqaGrGDdokKIIFlFw4M9QPtTg-vJlTZb0bxaarlDSObBj36lvbNi-RsJeqWfb4tw8dGT4-u504FfKiGZDndPgyg7Yfdc_jVmb2Yekqkt6O5fr-u1drF_dovfv4zrsFvHn45rGXqGKKIASGdY2_w5tpHd3kLITSnyOsagsB_V5eqkcThiAZ2-8aJ4s8YbrsVJyQ5L5NxKByfG0Uicv0Ck6Hwf9kXA6M3CDdtSy-752SXWFkM1AICPtRnmgGfv7bMZg3TG-gN-c33qRXnoiMQp0Yau5HTfPqqIDAQP_PNL-QCNxkq_kVeLwzg4_AwAky3vTz6QPdZPLjDqHUN0Ub9RDxpgS9Ggy1XaBnDhb5uy00hFFeda6_CDIhwBS3XiZhxA5cyp1NrNfsAVvMPJKeGR_iYw029x1cwj4eBD7-BfuCyfhc7N096AVv9bYUSfwyjwXzyZZJRuVtyUJxTSoGA3iJpVvYeddpwkQIvkPuTk_SPr0jbuG0kZagmziF_HwcJYNpJ40r5UqGrD7lHYBhBRYemjGCpGRxBXwNh79uyyyYMAx1pMFms0pRI8qKdDUgXdIMlNoshY1NFnMrXpVrIv5eBMlzt_wGgEWEMGuBWZwrxNA1FxSI8zhriG8sow4fTgF1LUEaNRBQRx84gzcVH37Q7MPIkruO3x6lIm3hIKW7c_PYOlqBu7QgF3KpMrymDYGBP0SveNpjQ8uzHFflWduUXSjDO8YHodpnO9lgTGYtnN7IvF1aTLk16U_5Xwjj7QIC2s_meERxeHPMytkBTGS7_C_53-kK-sU8ZewfBUnwIKCpjejIlwc8q2oIJpFQLDR7PjsJylt3fNlffxEMcISNY6HiOeRhOwr_A2cm-vTsUXQBDRkfTyco1RM1CkTqLEI7zl1FsLZXI0KVMRttIoosPp6QGo5m2Tr0dJXwYptGnKy-ePSydgiNPcOTI4jrS7nCYW_Ubk2HTcynYW6qeDH68ESLPsWgBCq5AnuKTDfcmqJJhq82CcqcYArQ9bE0J0eB0ZtoaVLnod0HrFpcazjN7eK-DIthtHWen-QIrWglVNuiL8Iv8dm1de90VHwzYEehX57J7a_uFZD-QzhYmwzeUcnPb64kZNw_Xvh9XcEFM7X8enTnamLso-ty1KRQ-ngQQ_Oxkovem-09EdiYkkWJqobSmOYlnttGA7i5qahzREJzktCQvNYPdU_UOnSziouk-LYdXUh0BYHtmZz42DKVzHoxRV3B6GjhXJHRAnt-2j_3vG-ZvJRB36wInubaI5CFaP2QCaMy1ZomM-CQ1eCrXdqwrjoQ2ls64GXSP96dO0mjO29mhgJozJvjRpooUqp8_A3mSydspP11UeYvEuYTANbeu9d7v1frphXr0_QEqKEAG5l6VdwxmwDH9q32uajswDd4L1hQSYPxnvH-Z2lNOT0WtpqZ7p5imeSxLFOLXjkQipSL9EKVW6LBMwkNeQIIctkOcGryIAz5JS4R-zKUNUQJ1JVkcsMjSIaYf-ved-dCjfx4hzvF7XKyjevp7soAjfeBz2oKkSvh5l5LyapfUfdQO9Pr2K1orUeJcqx-EKTY1Lf8kw_g9_ezWwTodYc5HnlRqgVE94g-vQ59mAGafT3WMbOyojgSP6v0rRj986MgTUNJTPL9OzhJp3UjRNz2gHcuZxB5e_OgxA9BrIx9q8kV_P68mp_uLumFlnsrDJDLJMz8Ux80DXkx04Ibku38V7GULxIGIhac4IlMCEF4Fxv5B_8kSCTCcXTAiXURDGVeE7iP9nA3UpA89ETGENJWfEYMy_eSNAto4YIi06Hd8fNhb2UBA0SFLRP5OJL_Nr8Bae-9GwoVJM594T-0Vfo6Z01C0pbebZ40QbORnBq05oH0yPVI6-j1eq1iRQ4c_O-rxmnQBHMZiZ5OogPREsr-0yJy1tkDzNsYkgifC3I1pTC3ob9QZRW3MTb493qYMs-YwO6j_xrArj76bPjnryER7nms3ncYkWrlqGFz63qL5oI7E-UoMsmX8dVl3Ye3nwNErh3i8XiXJrjYEcFDcA6GSAY-IVG_rR-XfnwrIq3i_PnA86dbaK_yJUWh2gc53HRfwd11OlWlJd0wXaSpIfF8_qOBIlnZcROrkrY-jniZ0uNlWko2NqNn1BCcjjJEnsGDNKwzf-4NqoftlQNIdY3CP28oJGhyUrOs8ttSXOQsfftCYS8p6L1qpPNeG6JxuzLpFE_ifV__8ALGRv28OqDDfjMyw3VnWVY93-Lr18WDbRXK_kn9Z5VRyMrKAmpA4UBQZ3sL2zJcTYOgIhZSGVFIZmnmkYfArrLb1CQOurFzXL2vIN00Wj2oqqfHb_2oy8PaxBC7avxg2UQslebSWUJd3dlb9v22trcACsHNMkzA9zUoILECoNJR72OH6ipHlixKeuoaxvWSL-gliUl5GTzn-tVlbV98J9q88LW0NgtFcmbqXYow1WYK_PzOSDJkh4RNdMLA6O578NpiWyyVXHKUSZG5JfIYtAMJ9xxuSoYDW7ix90jD_B8kJNmD3qfUh_HUAB7cVS5RDQe1qrwXUk_l7kgeAdESxDB_hMfKtjZlXzc8oO5mPeDGqI1NyymiIZOBTQrGqmAq0AhrRHt08QebiJf1i2cw7BxR7WDSlgsk2Z-75MjgPEC1ODoWiVKyJmWr_9J5V8pWT89WQJCE0h5pnrukgTMSbL8-5mjLsBUCTrSpuzHshI4UO85fF41nIOAqxEjk4Zn99iPCWtrxJxY6fZs7EwCPlW7Xa84_aQpG3IX6VvihP0nbTzHDH_wsUJSMciVDrBpiagXPKJFBC3lQXeB7TGQG7eDYuiAdTIyN01ZfbZiHBBjj_PnTVukSf2JLzCIEnN5Bv5t4EvPNMNcCkbuO-fWXqYbKeyVUnFxeMYsn9LrxMJaYXN627DV7iuXszVHBXmJEBJERTFGJPBPGP-Z8OOMjLRMVfP5pcJaEh6ZGZMGYFtQsT5eVNUE7sciQKNTCm_TtU0EHF579ntzaSgv3--7gqTEX-6iRRvgfmzJIPz2Tvkx-wcO_9MWQVbsgrA_NY6qkiewOiTO3S2Ehn3Z9x-dy5g9tWsdrGYYRZMyDbAJQbnbvKsy62L05ueU7ZmGVYRsDN5NlSsLXbR2WhSuMxbOBTnmUOCgdbeuWXC9oDiUw2Yw-rMKLDN6-cW9vn9SBx5v2OAU9Mm0IhE2ciRezE8z4BnbCHXTNERCgxLvXUEaMT2X285Bcp5WM_kGZNRA4P3BSxNrkamYLWI2u0O29RFgCP9amBTqAd21r1rMy2Q6jjWteh5aV4RvaDyyRUXrz-v9rpVZUmYdXJHkMCovYPPMkMw8cLVipE7QXOyq7SNh3igZhQBH44zfOtYbUx4fjedOGAS3direOs1cd76POEex0eMtWCKgcyAXID_kWEJnKzbezpQ-ueDVtDb-91tYos-y3VytvcymG2skKxo3j31RZQ6vzEbvGgWwss8ZDbz2eM9wJF1T9jj_FGAjjXPdClLqgJ4i-mUOLV4fIbO_fkDAzo0yj1biUCSDnF6P96-UEZ8esU0e3ICYvI3jicpXoALbNcQCXhyTB1zDL3uzstgIrQY8UkdhOejcuLnr88L7XYzfHp1g_VntMumcqaij89lifqafAT0Bx3fgYkCf8F40TVhtq1hhfbIHN-Zc2nLImAPF4dNP0sAU54q6lUQcG4LyhWpAbYnwj__Csmj4CZixlYdZlcSOqrISdnPs3ELpfLmRFj5rDdkA2-3_7zAqwWFzN1gFsNnorg5-UohK8ggP75XW1W0X_4o4ZnsFCxFQmDqaojxRNHLJr63jF_TH2QrHcynKzUf0ZtIhDFDgxnP_Alu8v_MxcqJ_cFOv9PG_3DS5vERlQljgl3MWmqr-o8ukL8wnpjy9enzMPvZPd_zsJL3-VIszHGoq1c50f62B-ZeId_amHopA1i6d8O7aMsRF_MURz4Nm-UO-absu41JQxWlKbHmcNw7yLXztdz3oOgwp6InHPvYFOLk77p9ueAj4nl6904d6xTyXxOGwmmjOvgDU55y0zxIJXankpAMa7YvzbP0LmXNmqL9_uh3IMA2vNmByY1zmwr8zxXhBzKqcoDUtGkm4Z_Ng2R3CAOl5R9_HXusML8-nD5JS6rqx3tV8aoDQR0o_d3jkcB5Ax6iMx0-p469OThQMPJcT8ACh2BxutmzpOp57CJs_91MbjdkUaRUho_U1ax3SqRiCOIwyOp4uJlC5Mu68fu3gHrm178p31ah5HKFbf_h0bm7WD46jcUeqd7-Ty_KJFxS8rC903u8VzQH4oKyV-_SWSHpS3_TdXtANh5cO9DqxNMFAITjTIhrAaHc2ImVcxe_Cd-MdbtX19hwkaPmDcGzsQKswmmbx_RkWKC3JHwzpOLx8MWRnqwjCosYHTNUQYhhyZlW05NNfFPc50q1_DHaXLEC35IRd-CZOhQ9g-mdzb3Qy_GfeWReT4yyqodV80ysfO4nGm3V7zpwKnxyypYegNglC1mlwkI3D-Ijx9x0MsDW6RvbBWKEQubZDlqwlJvCeRsxnEHcFMtF5UF0-PZFjACv-onP1bArdIoM1jdclOFQuLdPLciefrk5ZRoyKpRRADCn5CQBvXXeCnpxHvMXdefhLAVWoQBW_JI1E-d2jIVOl4Q4wYF7MRNJ_8fpZKz0QBlJdDM53ZPwVXmefqLattR7hoOG5nF_7FPmlQVmgtfcjBe6oH0aymC8oGfnh5S5CnRNrSVar3ooIVkh46h-c85PaTueL3JXYVnkL8JQHkFB3PCV1GEkX2Y082PpMnNK47f60lstIPAcvFDF09ZuqVHVclMU9mZlRZVFhtj85NMGsm9oZzY0xH1qv1FulsJzhol9RjlAcP8EPJ0uPArhYuT0VlXYULh9nAVWBLL76JNxfVjP_98VUz29chUO09s08JaDvggsUtozxoLd-188faSUUjmauMNVd13EdGh0v33T5Xw-pyKCGoiTAh-uzKZsIgYbXvErCFUQtr5NVnVzXvJw9xWtih6v5Kr-DoEOfmO1nlGOp9OZWWUPZ9UpTE7Wv95OXZnY5E_0ixgTvcGuP9-ysB4z3mmdWTxZg_Zd3xC1bKPpv6jMfyqUy6hu7Cq9TEqWcv7rBVj8nC9cEn47FqsqnlnKaJTFvTNCQRE7dLOGNInjxUT3M0xOYVqYuFOxy8g-PHGRzZ4WfqXfE0Oub7AQcSweQrQzK3iMJO2UvFuC2GWLjzPRvwwDMXvEaER5UZlUc7AYLUqS1C-XlFBcWv2_WGgUmOh9u3qMWrupT29tfgfyGBwSVzO3EeDl4MZqPQnD-bv5keMkc_svXzNWN-j_ZQmBlD0_awciGC164S_25BsXYl5KEj_yXS-8KYsCN9Jpxho9s_-1m31OqWLldl9A3SzJLgp347T4FXOOlQRapdJfCl_f52xF-HPrSxLGM8crpXNO646uLb9NQ7w-Hx5pXiFuTsU8s9gViysU0K4pYeCr2PuMV1KmpKyPVCJ2gDGwiriBwJWdZC2t4q6gL3647vbDd2WeL27pJHcqeP_YRlhLKEiPpB0asKcpuIPhLKB-P15RBRy5L1WoAj1LVepjWmtIEsxBJcqekuH-01A2kaAqr-YUIkk_2-j3xSJ32oV4ZGVf2KJLp0gAFN3J3Et3K0_dtdRAVPSOassKLvwMK252agVVRF1VPP7GKhVXbjUqBTHBXxoAsolY0ccO4UY-52Eut4MYKbjSk1z-Ef_NgClNLw3jzbC_wxI_BU09lybl-86S8hq6JYtMhqBvfbCaZ1mwoOducEA6omHlVf7ajS09CLvNdSsVo_YoRgtakHxHfcEayav1DZPho7HeiusfpfDgjFor0RTaJ4oZsdkdLsF5nRBVuu3W-M3TnXDJxa_gkdviF9a0KaviHdwBKAC6RrHjhKc8fQGfpkJOCAWbMBFfspTo6gGcjCLwKlXUA9sH2LRrsBoWGyUIpqTzHJ0YHPsBy9f3eQhV9D9o2Jq-zPt07sZ1S1EAmVCCnjVW8rUuCb86mDiOQH4QUPK8JQbxazZrqo7ZoYGXL3k32j60cjQrGZVhB-ECuJzbWwkD3ePKZ5vyZX5Y2lveAChKswI5NIbfmU7MWlz3khj6OWQYtK3gpDBywkEu1j5DrlC6BMQm9mjTgxN-u61r5fz-IxIHa_gkGvXLVBgG-a1K8aaVdn1MBx01ot5iicYHTTq5RnPpV8mTTxHMa9kirp6rxEAXaVjzb3KOD7wfmitEz9Zk2WDrj2qlajh3hsnT83XMrBIN9CIFetM7A4n6iOcKxE5eieWE27gEtQcZcOmuyQ5ZqL4wh8DvG4AlWvA9SKMKv7cv64PlTOlamCesw_wTsMSum4waudx-osguzXE9gemxRSchOLWq2nUaDgmXOfA8TS1eOlhRtbH5UFOdq4IKpep4q_gRh3QSiv7r_z6i5rkFxfX4lHR9B2y5hQzFQGyKFeYHD7pVW0VyDeXTO0S_-XX-wp0_T4yZO6oRc_P_heFqBQdX1r8tVI2M6OMn2HzMv471LCpHCArydHXSMiEubOvtLtc-kaTqNBmGt20WSKVulNqtc57CqfA31bJy_P3WL-jJnUGj8DBTLYq0Uf6QtD_OxKiN59O6LcK9xdXwZHgyVFQomz2bXlQfjIKy_aQquw4TkJNXXLAa0_KMxJNwE9X1UogwYU6H-xAIOtsr04zouL_b96pOaptNs9wEznb6xX_EF18lTLcx8cviNRWod01qAqpV0PR36jWPyi9R7o2LrDidQbNRtlGHo7x2qV9qnnmn8Z2CR1jxanC2CJ0eFaOwFkeAeZVHwJVLM4AbSEfOi9YwULSgP1xYzqaDf4nzhec4NKpIC9j4juGByp2kAzLh9HFkLE31qje8Fy7Jjxb4yh7pYpccTM_ZgLaSt9xNph-jvD_WB5cgzASy_D4PdO1Y2cNnfAUPtxAgCFST8kW_T9N9LaY7DSJ_GDcY56Lf5NAvNtdk03lfE2Xr8fX5CuKWffqlKgQckh4S-MfXuWTnDe-vCaatzEntpdKn8Cfc2OzuriIlqkaWWmhjZsCTORINl5ldMBEAY-K_ByZYs7yKQsUy-j9PWg9SwFg-e-bpdxOPGao232pDYDci_y-8Qt5xf1GRh4dlyrfbvxEowwEAUKCgSdJBulLEeWT5046bWKNBH5QazVQMQYCPMUMYJly5nC8ffVPrVFVBEf1FEWlROYxxdAizhtp6reADWYOnwGrGqGJykuDirFGfnAz-dpgWFcIQrRHNEookKufg0-YtU5nKI5Bcaft-JTILkAFHgqrRRorDNx6okKe0YizTd36vlJMz-Ji4TKhZwsG4ji4msB__D37jPC5Vp2SpOJYNRBpwwKN2ohF_ccL5BOwoIDk4tn8B0c83GPflWF141DYfMPlEQN7TVxHfDi-40YRtYoX2lf63tvya-y0jXk5a15kX6Bw87UAHibrf126Xh7YgmHY3A8vn76jKRLUysewhw-9XuErXW0Fg1SpB1QiqTAp6149paKIQmjPPrLs3IiThhub5RNg7OGSlRhln71Ux-TdoBMHfiANUnXKNC3-Lys_pGTQMMVCSOYKRlt7oy7B2hF0pC1jsdNFpLWijS8Sj2IE6jwK13aM7qw72wU1sJNaIt81CwecXlLWNPHhVwhZyOCQ11Yr0W7-vW5OYrMaGZE-N6tTXUNss7QC3isKLOaL6v3AK-LB6oj_qGErQJ6rMLkNAfruz-Hs0S8wnNbCe02lnvPEUgbm2lU7iBa8A9JBeDNMS3Fy_jnLczas3KrFyZ_VfTxeU67rCjqfEvYh9LMjEw3ZTyGtwc8IyHSRATBg9kvVjVl1gY1iO2RTq7iKeqU-ZQb02cGCEB_C5WJ1VPleGYAPqwQX-5exgPs5WEjY-a5geacZajx5he2I2GbkxFww3e8FaZ8pqfrfWK0XQ0TLYeXi7j1DdRYLlUbTgipykOP4ntrKZ55YKROa3KqlFKT55ea4hgUXcV_VW-BlhFFsbl3I7iv2yupFmWwVGNRr9eYJJaGWmsxI9VOPDgYdF__X1_jt0pnmg8hmtSvceoMP6NC-ZXzW1V8TEjlim5nFpFepoLzTLoPphRlriYxyAWZ_5PFG23e3YAvnu9lNIT_pWPJvF3H8dOBOom6Wxdz-pl-EMp1hCvurkhfNRTlM6OZkUyluvYyf9fO9EHkiqnLP2p7e7CwxYr7t1BORTBl0oamyxerJ0lPTlWtZRt74wT2EWtdfem4J_yMpahPM1hsLyy_qjqWxlqGvpm7z9F3OB9gamulMwsm86QAcHniJHoKaCta81FaKsgK6TCOy7kgO2E09_Y-YYyh33qepismqFw-8IUgaykypg2Z3vtjECAAWNyH-eI29mRZWOoqGCA0dJEuWMDZPGRQwYIUmDJw4_kbfnHAARxc8Qe0PlTv7nQc_aPcqpAVhqPpljxsWxuolOhtzhE1apH19P0MqZRJAmlLHbpWKW1CZoFZ-sruwszz_upvx5U5AIoMNPcGCWTaD8hN7ScjzsXFW3XJH-AQ4r9Jmnd6YfhnR6aF73txxh7_-VyWTYnJ4a4qMwCBbhmxVbUvcGOzbx_jSRl1S1WBIlmro8t3_kNFiY1HTqZ_Q3QqJRBUNDK4h7__mIfo4g3Ctfatc9yUchVuHzYSHmTBnndW8EcOEAJp9RPyS8vYMD5ja_xAVfakWP23Uc-o5krUNM-hhEVO7FAQJ2va4FEjoDV2fZTHdvUUwL2ci3RcRkcFmMYaAKkWQNWreUScRs3rrier5nsyiF_3cpXdAKC1shV3RS-6_Sl5j0TZamLDMEi8n4xl0EVB7Gzn6stIFXBOteE8nDtZMxbdf0TfDcGBAWvt2STUuvY1WFCnN0hZrQ_8DJ97TnnXczxK0m1xdKhmmtOJl3AEju6Ufzg-eIt4gP8Dc1wt8-hIoUM6gto49zAo4N5R4GB91-nonQFYnU8PFm7f7W_AHNZYjcxfpsLhLsFl4pmzzj_zk3OBJMOt-TuLt0rmlPdI7a1i-jJ0qDeiJlfa0rCMICuBVNY2mkIxDswdQ-0PN6PjHX2g30pFixNeVZE0wMO8x-Sl5MarCEwgkLJnYkXaGOZqsUEwBQCE_D-7H0-yZOE9V2tdB3WYsZYwKPSFvjD5jy2-TQm6pn3IirNpszuyzU2fe9pOG42L5VWatuHZy5Gw56cs6GuagsJZlrm-k5mXuNxNseLgF7RjbK0EIul8bHGGlCDPBtRjF02Dpk-DAG7-oTEehSg616_38h44bi_8QKANNF91kpD8ieB60G4NvHlsF9vapuYVYvoiGcWC0n6A8LtMVSR35m7gN4nqc4wV4Mx08xZKeKvpFLgS1OgjtD0wJPiKetPpx3cv5YxaAiXAjgRx6e63X68LzvDeb2alR4jBTaeywuBY-LN6FO3bjcVgeiLDCH9ee3jSh4AMlZunRN__NhRjbzJWu8CnUglwt_Kxr_eNcZCa3K7ZFzw2a3qr8We8LEsY_E2g7xOIve7gTgaH6QiJn7ak1rEEewB5CTnZ_3eJNjw4FT_moCSHP6Wii2yb5WDsDVgDhg1UJvcbbJJhQVRo_kFXn2k8IIukTNiJSTYk3GstC5xWTaPeXootSSCIgojU6Gm9XRC0GlDwcTIzSeGrKvRBXiF2uQstJ3o-rcn4qtPmjJYouX22_PL4wtLenb1voCsvFCaVQZd2FFSgyhSONGYC_x7-COLwLLt918odZik721M7yMngeEe9L28hn-hi5OZM6I2gYWSW-1EGby0I6-m4u83jaoGoR2VQWRXO-ohnViIVTAik4uaKa5nCZtYiU8fCwPlA6sau8jIt5mv4NjzZI1wYj0AQLRWBc270wXPVi4wyTpPHnpSUcPv7wAu1bBmHVAyaVNwlLStJlaSu7YdMUxvQ68nJ7aZviQ32SmtsVrJSQtFMlybnKiLo3vS0W0cHXO9TRXJakCLyKuzaSHyUL4lrBOYis_I3J6vX6LY99u1JWZOwhmT8yux4kcLiTF8NjHmvscLWD-vcUiftZBsmB7Sb_BwHOJuScgnuUF5iTgbqrq6PqoUwc5HpuHbhOTmlsStb-y6fTc-93wMBmqLhqid_bOyC8_RW0VVODfvrDyJb45j0lJzJx95DbaIvl0Kc8IrcKqhgXRxAIX2UTkKH7hnxrUKVPOStCQdD-YKkN3V0rjMVIB9pDBfzycxeCvWbVGM6yNnDJk7hTaYDKL1OjVt29VFBlja2UnTfOsWstFXmYVAYMd6HveSMohSSrIG41ZT4bi1DPlqkjpsFsbthaj7SPcTnbpODS3BsBvQfD095y5kWKbCSnlf8nLso4kJfQybTB8cR8v_yxiZjnwDqwYeB8_GKmo8iTnlrfdHoX9vfcgH9mfDeUUqYJXwzrstYsud4Pri3WTKZn3XNZwDzcBXmB7a8t2pydiIJY0RfC5Q8auCcvc4WeZitr7yHLVm9YrtFRJkngdNB9IHv14uIqhwaWUqBXDWNKZa4SLKnzI77tJelC6Ac6e5P9k5AB5rMIm1m3Y4nlypBhHSItlim8i6EoK7Gc6K-Dh6oZSzPJFm1ctv4rJ0dfDz6OrP7hHqUL6XZFmy6HsgOiPglIDuDF0k_Jue7xVx4CgY7fPf5GpGZnPgCLfDo_I9m_r8fyr0CLIwYX7f7j05dMAyOJRnsd2hnidb2-ANzaJVqu1DWPkhgcpGPfBNn7B5bMvaLIUYNZa6X5z8jrdAYDBj1gfSwe6kgne9X6-XHMBKOPvM5tbr5xvpUK2H4pjYf20Z8EbQDtWPBRNuRMfZ6Vth3iNIPMtPZjJe6oePVdoj-jJ3w1UY_u_yaEKAqKwed_56TfL3Zh9txt8RmBuTOWUFn9r6d1kdZ7dAafuMUMsTDzuONnWztuyx_kcJyBoRN81lCLM4IzUCYiO28WArbVAjf7CaAUa549_s_kXZ7cUwz9qY972R7jo0H72_a0YstlW58Vcr3x0hiKqiEzma28la4ShrAD-mvA-r06UnrXC_tFbUCLizecowvK6fIgD9CtVspoZi_8HFEM6Actu6ZSNmH4lpu2_HRZvfxGzPPfUtppOZS1SpORpvHsZysCqgB87LTs6CIdRAMRfFPLmYJUIFLn9TdsYpwoIfM9YfLT5t7oBxKpbP2x5ftc4OuClQaZlGnl7VBiZdV6ips5CN5xJFzBNBcXLhUvxHdVC1QNTZ87nUfoY7Y1CxaKTpXelvEH6eksJq1N9gBVayFyHSCj_cgBaTSQMjH5Bq0ZCL_IvsTlTm67ZX3OshUxkLEltkVzFowFKltWsPLoAI8pImgdRBn5ZWHXh84sxdowcqjVme8NYlW6OlVWbwzEAf9yudp5weXZ4_qY5YdysGgosn1RCkVgt2cnYyDobKU2GJuBFpnmZH1BsqKdA_VIljYk9G2g41HaLT9JzXONFpoeDZTs82GjgpvnmKdRMxfAdFRbILTRg1jWWx0lcYYv_UGbiSiHxQH7dXxLG-l8iE865D43IdkZudO1CRZyU4GZGoTYVASJ6d15SF0JKtxxl71PEOBpyaYXYkpej08zIixUW7hxDMAwIyw-khnXW0qqB_nSBS4RqJfI3h_N53NqMb0XkdjcnySxfaxtAlJa1w4jeaGtoiEOHPwl5A_hYr8QzPdFB39Y5TABPDT8smuHO2UqNgacjSch_ek7UDhG7Wwc4wfpawq64sMxPCBbBkzLD6F-RprtyNTHFlHF88G0BRFXz3YT31UWLhkxiCDxeWT2X38jky5A26s75YJo_yDlbTFPKRtm5HCE57pJu_E57LoONBZx78VUOZhDsHTiy1RZA3gURtM2QxBirSG4y1FiRVW_pAsTO4Jt6d8BDniosdPovBRze0eTYOIFp3CwbV_6jtPjROIl-kJDkH9lrmaxvujR6yQTgRAfQAE8aFQmemalQLkexaJ1v0SNCHj1eyP6oT0r-3ZIfHpFmF6cqMCJHtbV9Is9cipBYNdcIB3dbCUEnnf5pn_bZVcKd9E09Gf4l3NKrJzxDiu70wjYT3-XJfqDNZLEZq4j5qF1L6um9VXMADqr3YB64KvMOk4bn66tGAQ8_bioqtaqPowib6GeMAkgHQoBkK1JZr5nmMia7hNqyjm9c3r-kRNl3glu7uAPbCQYQsXvHuZsNXdJ0fq2q4_mzhzWdp5ze7eLM9uSRi88DNGCYc0opd1Z61xKbyxf8O-1iRZxwTv0PDku20zgIi3gA2wwwYsGiobLqr0AfwUSw4EOFqd3XuxkK-dspgHHZ5s50qAITRlPlZGeo70jOEbfsaSVZXXel5xFUAzg5GVgisJx7qgtlGqXxZTu4VsWapMRsVKMM9HpG-9htM3mpbkOlJAT9NQ77mGt6JBbQtmeGuuAHC1ey_pXO7KHhR16Gmk4eA8SXRe3U7WK_Knf4rdu0wdiqSJOyTmZKtTqc-DmeMN72X42OVSs_DufrCYUVwQ4tnt8veboAIrjInT-WycZAtTPUNOgY-1UsgzGr4N_b__2N_tk14ZnrfttP7BrCJmB-KF-LdakHOrko1h-sYO3EJU9PglH2qUQE2wt_81LRKj7EfkrOwfI10eZU8mGGIivFkT2aAUVQneIddJCMEsT1jaFdUNvS63IfMe4J0kYbHBfkIMCR0Rta4eJ5W1hAoBIWzb-3DU2kH29z00lwG5jVIoMcKU9UcNzKKpH9VLIa3Xckya3AdZuDvUYdGVYLuvqDgBe1p-L0zP20ocWdNDyLKVyzev8bpFOmY4XDQ8uI8lIeUAxW46IXX9W-fcTkfTrJAohAraSPrZGPfLu5XTkETKo-h5YhcYMuQTrYtWGW5gxDQ--3v7WYsVQKR-XOwXxK2mFgSZijLU1C_7l4HyHtgTHJh7VyMT0hks5qP5TkiO2ToEzuDnBvhnqmhOIqUxAS2x8EHNxw6TWSL0iUmBUwNDXFSexjp1hxcd7w1l8G70hCrwGjN7o174iXxHsaPI1vgcTo2Wt5i4mdxB0QcTJwdijcOI7o42WHgKNq3niHaJUJ1a_qY4C0DtkQAnZZtTmhns3pMpeqW9jHzOgARWrPpwFn1dYl7dAGVsDlv_KxpZyRPbNJgau5xpyJFDFFeOCkayXCBwWTgZO5cvtrdiJ4ToRpBd0GjsSeaPKSKUyc42S7tCWceaDtDHHnk8eehMWMGqfw-KFFFNDYhcOYEL7zb7s_YdFFVthNsL2cjS3sGYJroblxPRoicyjVxrMgtDaGoq8OduCTgtHZQOAE9zAcClUW-z3jX_K-m-xLXEQkXHvNVkYXlhG29xie_UT2xbNtdZNvIx_BosBeOzB6J31cWWNjnscK6WYAh7EWVGjD7gyBitlOPVz3NQgDKR6SXzfUrpYqqnpHyIS3DfuKogFJe9fxfwb1GCgVl6W8gbidN7Wqfg3OEucpFEed7v_YCZ1NFUqqElxlY69n6SsHmwDm60XMqQVO40raiZOk8ICuiqFdB-EnRXXmco_zTlmVQtFsTp9fUb4v7JrZTgGlvbXfR-Y8p5_xHcEf1TVQwrPHq4bhE_4OdDbiil6GE-9T05IJSc0Sw0ejEQC1o-gRMf_BQ9OD5_9VJ-pRHTTbvpWUUPXe6aoS7qmIVWsTmhhOOmasajP1P2QOom7b6JiR2LxeLU-v6hMjvgqbRloXS87dCLM16YNBPD-B43liEyWIL_XnPb9uIGDKErgmEMKFfrQCamHD6CeDu4zAUYCYOvA5p4oQX6cDPt6SA10m23etbJudCciXAOjD9VutpEz1z2KTYxvGmlaIFoWrBYJ201egBX4MoYJXWSUD6EjaQ3udwn7ux3quvvGU3xHrWmxPPi18wp51z2l03I60y77j1rX7DcaUEQedofMLSbDt90tHLBqYRbDWoslcGztjV0_fY1kGCAzty0n9zMrWbCtVk_iBt-vutsxGeynHnCmG2NXAZft8NkqYDRlglHbztcYlnwJqioSWM9YMc_1PxqNflrYiQr0ZVhehVTclqy0-Onrc_rhE_dcmaXO3WtO8DAaisUmxx6dcp9_twZ9BQVTXGCbzxE65DIPNsx2ovcZPNbdAnW_uljrdZH3qX1tjYPSD4x4xU7FEii0iLIyeP24sC5YY9Wn8LHIpyc6X-1i9jc8mE3hFkHX_z15C5Wm18zz3Es85Exs-bW4G2kq1kNO60_y60zeIFtP5Etb_yURl0GUp6q-0LID6nzFyif2HidanhiSEeQPlj6MtRWW0BLWX2b4_Fu2Zz-7vzNnwJKUzf5A4d3JhOAznVRuMpWHq_MJh4_OVv384CfUtpumi1MdvREzDoUVl0YazIqGpaJYVi3Ps_kuGvNVXI8UeQBB63LpXRcoNUpsWx0E5pkJwJLcbZ9xwnNIuoAMJ9euA3wo93iAR85jMhTAQORzaKVCNg0D-cUx0UJoCbzBhWAPZfV0IyAW8Dmbf0No9rQu3Tow7bZ-FGZODC0KYbOQ4NaeBhRTr4QP6_bdVakM6Z-8pYA0gJysleHD0PkeTozNk8nsgqpKE7RboIOGDctpYcz2KVualZUyofTEm1tHEscWS-a--kSsnmsPd6ULTcNa4TEo2tmpfVe4nvbp6xDXj9UT-ecD028V5m3joUoqJtyW8U6uzRG0g0GjwoUZAEm0M6IqNCAZPmo_zsO_gxLGZxzo1fsxUVT4tyEMuGgYtoHp0pXgTEA4kMxEWAySmT9FhwMJpAhQiHslQ40wNqBYxh78202hcH3biPZ6Mn_Cte1RveXvlQJvrdEwDFFT5QXfzEjANm3to2khL0FFq9qIjM4Wnws7OlGe2absh86iC145IdZQFvTNA_hKYHO7B3pAlFv-YtdbYYqp5uFLBEPhyqCevzP4HjBpbck1esV_F1sCOUBBjgXaT_jcaIMSQb3pOsDyFiPXxXARL533VJWaCAs44OxnOzwoLQKPDhWQr0oa67ZhJFC-FEi1iUrdRMlm5JDqfO6zLxVh1JrA4UOZemK7xFjS9EwF_brSOiWdNKs6_aaTd2OkPXlBY9JWfHnt2MUm2zupKWnuparJaNVzvc9HXbJXs9onxv0BtV0aKKd8HvhjHt_kBl4hdteH1X3J0xBTeeK61pCUK16fN2bVPFUMRAalbG2rqsRFxAVbol_NOtMDuBhiHO2KJWTQEDRUo3TVmfWOGv4hoD5BsTCFwMZPTP3SI8j07mX7zoYPgHBvV3D07uCWjqav408GMn_e_n7i1c3jMm5CsMhbp5bqEJwb9MBDVNmtaxNtiO4RF6XlfIxjjiKEUjXi62TW9PB4JBBvzGuZn0pD5M0v1wI6brlUr6TSnzu4wGsMJijauWPq76494ADyRBz0Jm3SZcIrC-J4Ut7rEIlbJpcvEorUgzjG7IF4fl6J4tYlyXBhC5-XhokkXGHuVI1xT7YCuIwcceHG9fqwrb_Kt-ZlaT9tyPyDktIfZIVC3bQC8XJ1Y5zbQr4N6nVP1TrgBhnEgFY_5J1e7pfbqmQBAGMUOUttAspihNefy4zqcnwj0OWOWaMN-2moTj6lCkEOpB1GbKmNpy3_9tGFzBjqS_l4ZR7A8WoJPPY_P4jlo8PYSV7N8-l7YETbkSh2JZeDXZMRKzmAnf3hLrw8sOSgBA7LEcGBnd-JYfLS-K8HD8XuqenljIYITrZNXSQejwaISiW2TlUEbw-KNLPCt9IUriNweJ88QXBAEZbM2mzNM4AlqR4-6DYd3lDinOWkWdE1gotYoTJbp22HxSvLm4yfNMow_CF21AHgVjIbty2Q9lZVWaqPV2hR6-4OhPgiulryW-vZJh-FRCdU_q5QrKrtFyAT_v4Ems8H_0lcvK3DoIC-THSo05F7-qJfEHfsoDr8-O88YibWDmqqb2bBNDwFutJbVg-88u91l4qhoE8q3Z6_bvJPzXkOze-Rs4yKPx8VIeBas87XPvKQ1YKliU3TcknFtSPyJg_hmRJoUFcn4h_0YOOP476RAKcNp12wmqJvp5nmV8LyRhsTR5qyQDYniguJL01XcngyX8lbvq1VAg_zJs1VLzrJpeiQCd-PZ6I0YE4sgh2GC0c9h6rOsGaXvhZatSjxOQ8nLNYjf_IVAmMdOD0O-gFYFMV0KEcEmvFq-pxuPf1H0DdCRp200RylKKwOOkdQsRSgiDiLb_1ay7jO9cF_I59mBoyqEmXIUSmP8kTxPtABc3rXO0GARcezvxm2-qnUKwltAlVq7q7yo4BBEmwNf-dCLW25k0OpMvmiDvDyr6geM5Bttk2RYYog-8y9Efv9QEZUeqC_eqZUkTzSSIdmCzy1Eg_i9bcsblZPaDA94TVu60WihJ3QHGDSGSc44O4TGyjyBh4-H0kxG5EPG1gIZTON9FE7Wqt_hhNOhUxhCq3ngym0TKOecVRWxX8IyI_C4VBSy99UR12RVRyoT7rlh3mLTLmVy6QAbS_xsRKzsdnjlHLTNdhI9aQQcyTSRTv5_ZGI987BPcaFWVAWjjVChizeMX8L4JvGXI6Rrhhnym1i-rYYYE3EN8zaMrAVwWsONKy-YirOl7jpFHHxX87Tzx_bBG8EQVAhH8rA4BWWKw5tso0FWylQbRloTBpJfSZIeSdFoftsRjX0XNv7nFJ7P9LhBuIP2D_LDtY78id-46sdsss32cY0q1OQKsUazDgVagZfsWoSCuAEEsiT1STPHon5Z8O7Ud3p02iHQPrmBnLAo5RelnN3pvEkk8ifM5F6LLfDfXvww4OD1xWRSk-oWsAe1SR1JIP8Y0YaF2PzmnqPd3LE8YjhsmwN1mz90wt62cQpXRg7lfy6EhZeXWevK6HNTtKeZUwPRwa-IgSBfC3Gow53-kJnL2n8QzSnpw85MW1wjetmblZAcndOrGPPtEzsAPsR15FQDDpuzhEEt5aTVhighWsRUO7ewVrsvY7OCbiTKdjZBwNo4phmtgBfsHsh8IiMrMG4N75i3A6u-TAW_RlnVnZABBj1cQWpP-JJqS8yZpBuvzRaNJTHcohkGahoWsA7GA2vwtyic8L2u0GC15oSNbCGQrgvWy6h6DXzw8NhjcqTpZE4w7Mrx4ueMA4JTQEH8weTObQeBT_S_T_5SY-nVIzaorQFKpuIc-N3vJApZE3EsLn5ezdiHdN_N4OzhoklaCxieT1yilDWoX8NSzK9BUuqHA8Eugu0wEVr8_fOXf70IvuA8mzRkz4KJCCkNgynTJ3pz1vrKpwMqJZwtfcZ9X_HqdB3PtiH2SJsteUh6AMM_QNtrLcfLLeV0Kz7o4fAdVfNKfg5jw5nD1PEavrltVv4QzaP-XzsoKLXPtt7lRE17C7mud9HfKJ9Vm-WpoOdIf9hJf_-WKa04gFv9EwJEOrPKh7GPy6NMXn_6ShBIlD4BxLRHh8RrigV9kSqIV_VyskJpMuAuCmQRWlFjX9mlDa1KjgTfSzCNdf17IoKQPX1a8vd5IL73twMgUfF1dlYfAi43A7bQwhH_a4JPjyQy0F_m5vzQDUwI_9XfTVsVDDUtHV1mldIScgrgTp23sBb0kI2VXp-8lkG5CsmUrN5QtQJGa9l5thAFG2nXsvRzU4BVeqwHdauFga-AGAJ6gWuzWwHL68l8CIQVa4g9_jyrhzcuv9yU4Elkm4AKGTUzhvIboMtA6GaNj0McW3RBYge06RraP7P84dkujIl7-g_8W7CIbPBlNV8u2qGneSibt3-AsJ5HqAUBwxchp4wpl0O9sLzyVi5G9RCG94F0HoYFSqc5Pq3oystMSv_e16rADukZUUVk6extxbGuX-DH3dDeMFpBjNLh0O7cUhSSJcv9Ssl8xWVwHjQVWnW8iYrcRl85MU7H6sXZqdHy0TG4AeAPtIqjuv5LYgQhCXtN8tZQ_3-135o7XWARgSX61pyfd_bcwLBaVsf4UUSCnbtVHcsCpyp0KxM9M6By-LrKlYO3n9jqqVaVPANFVmCo66VI8mPCOvuyJ9cM82NkF0ZCU1-28c-XBGsK1dY_attkKaTR-veEUqTyqXQL3-OTAlwmXaUoXMHMWSxPV08zzm-sIY9NwB6sGzUx1LOB_7NoYMGD4ltgC1y-_2uJ9okGa4tIsBe-FMPeo7h97xau1F7M92MrT2nfzx_zzrcu4_Hsg08pOlSNIoHWefGg5B2tW5iz5KJwZDyQNtyMFh0Q0D1DAPe5WuwBQPeqQMF56xDvFxn0UNqTz-4jb9Dq2V479ZuxPpCHuLJO6kboJbJg4R2-X0lg4h5lPgl4tFWZ96taKxkeeC5KXx-J5OWixHiC-q4RrcwCoVc3jzFci4zLOsED48IPQdpgZkuvKcJwI_TGjGCBxpSB2xtJF50X7em2ehJwanfwdmxerbioapYvjKFCitNxnRkmjifEzZMDxIR3JHfIk2A935sVaRAWp-KqJj5nyzHZu5nLBKf6U1j-uI16Sr7RVsPdqLYUlTejRkMNZKSdq4KadYXsMIzxsYtleN5qKD0Lrq01nkxOrir9YLsEoB5RsOecHSI3wNsYYDOhAyDlVIC_E--asB2htpIMOID_P8FTnv5RU60ZknCXS2ZynER0_zwAURGmZbNSGXkXk1QElQqpwrcoWVZ6aYwjZes3Bjo6WDeGFBzV19u2PrCpDcxgbwYNF2Z8wdXzVZLTVveOxWLJJ1Z0OV03CC4IFzT0cubm5j5dH3FvAuj5hT_WUWvxSdS0EPIDqLBzjMGRuzTenAAN9V7J7GUozwzmNeD8BFfS0ajfc3xSOrqCjM_08NSMgRHvFIFpSZhTkp4j_TdZgLjtuxTA88s9WHfVtUCqNxfY5XYe_dH2q_UweJdHMCBA27IuUGpqpUIo3GQ0eQ5wSICwYASg4f55hEUDyg4dXH0KkuLOKkG2h9tChefKGYlPg09F8ebNxcwineUAwSZIY62BwDyOPboNbqN8iFZSzdk73-al8GeO7gJeiUC1kg686s666-KAgLMEUOsuOLQ1Gbm-_eJkpC9AFG7nOhBP5olTMq5NHAGd6FYGVa_8I2NnHTHLTlJxuYxhgllomIhuRkslgTSZ38Va2dkKMaOFuX3RU-bM9nmICRGm7OynCJO3BNVFMFnrNCx_m6R19aXHIOGXRNGg7XfuNiRvtDlhcQdB1kd7ZuOpGhDTe0o1mzrDLZiv34RQfujtUL2TcKrF5VhX9JL9MAXuJy5GmzDvIw0tUSJbGCOjMjviVb91nXfi8G6DeZZBbz9nmSb5MVVlNKxNDJcSunJWbycHjNiQLRzzrnQ9cdkUTABsMQ777H3te8uV8XZX95zIfOH7mmKOwqPzuRupNn3Ff2joxrbMRRJ09Gh2QulBiIMnyBLOsvkG0VNQeARNOP_AcNRN-GHqI4yWW4Zgr7uYFBbhupjwXNr8uZy6SYEOY5C2TWlXRUQoGiN6CgOyUIZFBza-CdrBvrAsbLkxEzuae40vQgF1gyfa1W1KPn7N6bTDWbgwbg0er8BvAuOVDQeXVMDmAnkF_4EAnA4fwhRv4-TEzSVdWp2YsUx9Bs1iPV0eUCvhGrjNZX_X3l0PoTMSwHXxIKpozz-wkBPq0uSvNvAoh4E2D5FdQaUUnahaX7h5X_2qvjei64KQDuXz2icJwu2tnU2kUPuOq2GeJ7Waf7NhNKMYOWiSb6s65IaCNSzLCdsGasxkfGT0eWIVWf_D9k43VWb96YpOhPgn6gr0JvbDayBhhnMWKV4VOwjSE0VsRPZQNAoYfOHc343jcFQxke4GrjRMYRmUgvHkMLutGPdR8VXhklx6r3WuT5fYL_I9nU5tELO_ZOSox9nP23koG9ZD4VjiyauoSxNz6Nuc1ujsMFlCVcCMfn8tuJKylfKKiJn8938SdOyb0G6fNheNG-uErDP4TNhBc05o8mpy7Xgb1g9uoogtp4WnS_F_aAPtfSr4EDO3Zla_1yJkzlYFAOZoIWlX8xucccPmZrDEMafzhceio84mTShIHCv4SMwi1oL2_mVa6vXQpdJU5-K97lHtf6spoYy6lPETnRwu7-ICRJ_bC552e3hUG4VNriR8o8FhLrpr1g6VzXPHOD5iz3PMnFz2u7ZY7Kzg0ypWt3p-BKpus3_h5nH67QWrExdNFEeB19bd_jhD_r6GAg170sq1Ty6qphAGyKm_07SIXvmLRrZpsp9NIbB8UbWg-tWFupoAElD_VWQ_ukz7aevgIhOxhzGPtdXl2chUZfd_BgksIg4ydTZwbWbMBqnQggn9-fI1J9NA1U08tOUiDAz2gYT2L9qTo7wMjXfTNnVLkBhOUdFwSgm2fmqYXCcnXsseF0m0iayeskOFyMmV3OOTvlTge5MQQPTwBw4On14KvCb9mgx6k7oDSqiOZz6gaELb3qO6gpob7ft6wnIwAZRkdufDoA35Wmx8X5x5-TYvd5drTSPwm9DAyLfTDOWlz1J6FUepVeD_ZddUSlwlYGJi5YS3ML1RxccEYm0-JcfKj2smVzAapGW_K1gAmVAbWIbUMV4PJt7H9mVLuE4rfBx33jRctxioyTz8J46sO5WyFBeZAzYgveyt24DLKSNIMjqtFtaO55aqy2u4FXqhM3crSvFlwr3L9oBdtMmRv2FlmyM8IyUNclAunjIIeFc8E6cmEjPcwUyDukE3mIqCvclKgmKkAfHxNA9uqj-BUyKXNcxQhwA-p6xXa7mYoIuxrocRjE6sG61uUZx97R9vrGnL6Vp7Y8ssO6b_AVa_LNR4SH_ivuhd5rGTO_pa2u1RGZJ6Sn2ClD3Q1_CnqcLn9n-VjT3EcyZF2oS97pFtfR9-97zUPCGWwGWFaA2VgQFL73Z3gp5-R_3D0nrseOpCeiHHGxMjtplPqFEZ2MEU1qAnXVnAFKGJ8kS-ybno9n7A3rODs0Ua69vTnbBnWNytA2nqK2_V4_b3CAGs8AWahRq_ZB-hBR_8ME2Q_VOHkNcu5QgBLlrP8z1VaeiRiSXtHaIt4onX7VnknN0r3pmb9fbvQUpy_XcPiDlf_N-LHK5mP-em_mTlCScIE5Wp_K2YW-jsC9esW1ZRzHGbrmhRf6IJeNqQ6ypz_68GGFiKe0YGN8eYQSguLsEbAEf9eSONmShCsAqXNWpER-EQ3F_7L7hm6Qc8R87qq74boSyu0GU9cXW2kCVb3cgv2IsZPDrx8l-1p1VwtWwkzFq8LY1TAdID-4pNmG-3DMDeDKtP3QkZDH2caIET2ME1YVMObjLgK_7I52GhEMGs3c2saS7IdwouL2TesDprwWD1LkJrNCi0CyO5AXSC5zG9QtShwyQXJWwEnGx1D4OD7r7VQaexlEArhiUVFZ0aw3HExOQguecB7e2eA3hSwbWQO3F5sXnBCbs-g5HfV925Zdh57PWOfAk2G3ZALDsHWrp7OGXDI9LwaOFL6LuBmTXL36bie5s2Bbou_gnpm4gHEn6uurgsrhtztDK3hXABa8dV4xWbadDzh7Pm3lrKHL76Smdhhw_qcUE4HqAqKl_TmjttlpaM2pQTMEDMpi6h0cI3wCyCygN77bRgH4GXlTsuSPkS2P36L0QwZD9D1x_xaTLTKyyN7eQD_pR_6o1UWa5Y4PeLrsNE9-Es_CVZ4xRblwFfyRRldQCSJsai-KHA6a5wqy-JNTO2M-PXPABz57VloQ9zs0aF7lOSekncy_pZhvrhEwRQOAkviDgMlKEyctihmNkyST541ueU3zXsGo9dS1tfWIP6dSCI1SsFKoiO3UxegBSE4W4M1mi_UTrNQekoOEdpPHq_-i-jdmbt3ucSj4vNApUdrwASn4YjmOOmW4hA0jkxg8P8Ov6FJoGSN-P9fDzb1u2BTF6_WOynhvJz29YRLypou0nTvxeZdblIcNQCLr1CJSrw0FsxQAImGs2OZfNQNJr3YbCNZjxmF62GEGAHkCB1e7KCqApYzWxgWRqGWQEZKZc0J7VqAn-gtlg7pchGXZ1tGoCIqVJ0UHmAvV9_MruY23zbPclcoOcnuAYs8HMSIYgnzWCkgM2VLjdRNnPtBQgHdyDjPPLOso7i00UEHvGouIhFXii8noUygSKZ1CGv1u09SbZ4RXU_Y723g-2HWymmEg43wtM5i1Ys-dSWqidZfHanxX1Qo5NOHgqv1MvEOqn3gPDopRMWrMc8JKX60ktiQWgaw-v3xVE70B3uElJZ6gCNNzmlSTCeR9hXCYT7RsB38-Cu19SVMjsh8lGTV2p4Un9dyLMRSbQUrJdQvQqu1b7G27gKG8g-6OZD3S_cQs9fdB6azXact-kgB9cUHHj--gGzIiQ1ASuI69kMUu9KkFpy6V-p6HK03291_9epsn4kxGvh51H4PLwYsI9yJ6jNXJKjCvhHVfeOtHKnPP5QOgobL9WHB3TJFUMfSSN7bvVFMh52s4OCPG9L5oI3VgzFaPdPV8eEKPsVYhkr1rHkiM4vKrj1PsxtHz5v14R9AV5tv_9TCvubMJdo4znrNO1ZxN7puNSvNWqk3_HVXC-mFGqfxkELkhBfEU5W-a0rQvXVoPlqZx-3mYoyuxb51NP3E3hibdQKc5-P7YWsCNI77z23MaQd-Bwgs-90TdLDsByURniMeGKcRGeEu4Gl6jnt7TI2E1N7ih5GF99F2RYRjCGmWmo5naHLoW5bhYWlrNABjGzTW1-SEKalarti20apBKGDjB89o1zF0J5ut-UwFHaTGlKyi0FfjQeD8u6NcoB_T3bZYpJlKQWMiDNEhH_9ztP8trE0RVazhLT0r-dtvOxIeJoLUVWx6NHoUyuCNXFFZZG7oGuGSWFBpRXjPSGFDTViYx"
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"company_overview_1\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"分譲マンション施工を中核とする総合建設・住宅関連企業\",\n      \"body_ja\": \"株式会社長谷工コーポレーションは、分譲マンションの企画・設計から施工までを一貫して手掛ける施工特化型の総合建設会社である。独自の土地情報収集力を強みとした「土地持ち込み特命受注」スタイルを軸に、首都圏・近畿圏の分譲マンション施工で高いシェアと強固な請負収益基盤を確立している。さらに、竣工後の大規模修繕・リフォーム、分譲・賃貸管理、仲介・リノベーション等の管理運営事業（旧サービス関連事業）や、不動産開発、シニア事業を展開し、建物のライフサイクル全体から収益を得る複合的なモデルを運用している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 9,\n          \"source_section\": \"２．企業集団の状況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"当社グループはマンション等の企画・設計から施工までを行う総合建設業を核とし、大規模修繕、不動産、分譲・賃貸管理、有料老人ホーム運営等、住宅・暮らしのリーディングカンパニーとして展開。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_1\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年3月期は完成工事高の増加と請負採算の改善により増収増益を達成\",\n      \"body_ja\": \"2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1％増）、営業利益987億円（同16.6％増）、経常利益941億円（同12.8％増）、親会社株主に帰属する当期純利益548億円（同59.2％増）となった。建築請負における完成工事高の増加に加え、受注時採算の改善による完成工事総利益率の上昇、不動産取扱量の増大が寄与し、新中期経営計画の初年度として期初予想（経常利益850億円）を上回る着地となった。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 4,\n          \"source_section\": \"１．経営成績等の概況（１）当期の経営成績の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2026年3月期は売上高1兆2,731億円（前年比8.1％増）、営業利益987億円（同16.6％増）、経常利益941億円（同12.8％増）、当期純利益548億円（同59.2％増）。完成工事総利益率の改善等により連結経常利益は予想の900億円（修正後）および期初予想850億円を超過。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_2\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フローが大幅改善し1,574億円の収入超過へ転換\",\n      \"body_ja\": \"2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過となり、前期（39億円の収入超過）から急回復した。主に棚卸資産の減少に伴う資金増加（542億円の寄与）や、税金等調整前当期純利益895億円の計上が資金創出をもたらした。創出した資金は自己株式の取得（201億円）や投資有価証券の取得（347億円）などの成長投資や株主還元へ充当された。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 6,\n          \"source_section\": \"１．経営成績等の概況（３）当期のキャッシュ・フローの概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"営業CFは前期の39億円から1,574億円の収入超過へ増加。棚卸資産減少に伴う資金増加542億円が寄与。財務CFでは自己株式取得201億円等を実施。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_3\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"新中計の始動に伴い総還元性向目標を50％程度へ引き上げ年間95円へ増配\",\n      \"body_ja\": \"2026年3月期を初年度とする「HASEKO Evolution Plan」において、6期累計の親会社株主に帰属する当期純利益に対する総還元性向目標を「50％程度」へ設定し、計画期間中の累進配当と機動的な自己株式取得を明記した。これに基づき当期の年間配当金を前期比10円増の95円とし、次期（2027年3月期）も年間100円への増配を予想している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"１．経営成績等の概況（４）利益配分に関する基本方針\",\n          \"statement_type\": \"mixed\",\n          \"support_summary_ja\": \"新中計の株主還元方針として6期合計純利益に対して総還元性向50％程度、累進配当の実施、機動的自己株式取得を設定。当期配当は年95円、次期予想は年100円。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_business_driver_1\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"受注時採算｜追い風：建設関連事業で完成工事総利益率が上昇し営業利益21.6％増\",\n      \"body_ja\": \"主力の建設関連事業は売上高9,009億円（前期比7.0％増）、営業利益685億円（同21.6％増）となった。資材費や労務費の高騰傾向が続く中、同社独自の土地情報収集力と商品企画力を活かした受注時採算の改善努力を結実させ、完成工事総利益率が上昇したことが大幅増益の主因となった。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"建設関連事業は受注時採算の改善により完成工事総利益率が上昇。売上高9,009億円（7.0％増）、営業利益685億円（21.6％増）。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_business_driver_2\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"不動産取引｜追い風：分譲引渡し・収益不動産売却・仲介の増加で不動産関連が増益\",\n      \"body_ja\": \"不動産関連事業は売上高2,932億円（前期比16.0％増）、営業利益356億円（同9.2％増）となった。新築分譲マンションの順調な引渡しに加え、保有する収益不動産の売却増加や不動産仲介の取扱件数増加が寄与し、建設関連事業に次ぐ利益の柱として全社業績を底上げした。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"不動産関連事業は分譲マンション新規引渡しや収益不動産売却の増加、不動産仲介取扱件数の増加により、売上高2,932億円（16.0％増）、営業利益356億円（9.2％増）。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_business_driver_3\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"海外事業｜逆風：ハワイ開発案件でのコスト負担継続により営業損失61億円\",\n      \"body_ja\": \"海外事業セグメントは売上高43億円（前期は35億円）に対し、営業損失61億円（前期は営業損失57億円）となった。ハワイ州オアフ島における商業施設運営や戸建分譲開発を進めているものの、現地における開発費・建設コストの上昇や開発進捗の遅れが重荷となり赤字幅が拡大した。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外事業はハワイ州オアフ島で商業施設運営や新規戸建分譲開発を推進。売上高43億円、営業損失61億円（前期は営業損失57億円）。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_outlook_1\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期は連結経常利益1,050億円を見込み中計目標の1年前倒し達成を目指す\",\n      \"body_ja\": \"2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4％増）、営業利益1,100億円（同11.4％増）、経常利益1,050億円（同11.6％増）、親会社株主に帰属する当期純利益660億円（同20.4％増）と連続増益を見込む。請負採算の維持向上と管理・不動産事業の成長を前提に、新中計で掲げた「2028年3月期連結経常利益1,000億円以上」の早期達成を目指す見通しである。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 8,\n          \"source_section\": \"１．経営成績等の概況（５）今後の見通し\",\n          \"statement_type\": \"forecast\",\n          \"support_summary_ja\": \"2027年3月期通期予想は売上高1兆3,800億円（8.4％増）、営業利益1,100億円（11.4％増）、経常利益1,050億円（11.6％増）、親会社株主に帰属する当期純利益660億円（20.4％増）。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 13,\n          \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"経営目標として2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上を提示。\"\n        }\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_risk_1\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"建設資材・労務費の上昇と技能労働者不足による請負利益率の圧迫リスク\",\n      \"body_ja\": \"建設業界においては、資材価格や労務費の高騰が続いており、時間外労働の上限規制適用に伴う働き方改革への対応や、技能労働者の減少・高齢化といった構造的課題が深刻化している。受注時採算の厳格化を進めているものの、想定を超えるコストインフレや工期延伸が発生した場合、完成工事総利益率が再び低下するリスクが存在する。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 8,\n          \"source_section\": \"１．経営成績等の概況（５）今後の見通し\",\n          \"statement_type\": \"risk\",\n          \"support_summary_ja\": \"安定した建設需要の一方、資材・労務費高騰、時間外労働上限規制、技能労働者減少・後継者不足など構造的課題が多いと指摘。\"\n        }\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_risk_2\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"海外不動産開発における事業不振と追加的減損損失の発生不確実性\",\n      \"body_ja\": \"海外事業では2025年3月期にハワイの事業用不動産を中心に161億円の減損損失を計上したほか、2026年3月期も61億円の営業損失を計上した。現地不動産市況の停滞や建設コスト上昇が続いており、開発案件の進捗や収益化が遅れた場合、将来的に追加の減損損失や棚卸資産評価損が発生するリスクを抱えている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2025年3月期特別損失に海外事業用不動産減損損失16,112百万円を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2026年3月期の海外事業営業損失は61億円となり、赤字が継続。\"\n        }\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_context_1\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"前期の海外特別損失を克服し新中計初年度でV字回復を達成した現在地\",\n      \"body_ja\": \"長谷工コーポレーションの2026年3月期決算は、前期（2025年3月期）に見舞われた海外事業用不動産の大型減損損失（161億円）や訴訟損失引当金繰入額（30億円）といった一律の特別損失影響（前期特別損失計230億円）から脱脱し、親会社株主に帰属する当期純利益が548億円（前期比59.2％増）へと急回復した。建築請負の採算改善と不動産売却・管理運営の好調により、連結経常利益は941億円に達し、新中期経営計画「HASEKO Evolution Plan」の始動に相応しい着実な現在地を示している。\\n\\nもっとも、マンション供給市場では価格高騰を背景に首都圏の初月販売率が62.9％へ低下し、販売中戸数が増加するなど需要層の購入姿勢には慎重さが窺える。また、赤字が続く海外事業の再構築は依然として課題である。投資家にとっては、受注時採算の維持可能性、6か年で4,000億円を計画するネット投資の配分効率（国内不動産1,200億円、M&A・新規事業1,000億円等）、ならびに子会社化した細田工務店やウッドフレンズとの木造・戸建シナジー創出が、ROE10％超の安定維持および企業価値拡大を支えられるかどうかが今後の主要な判断軸となる。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2025年3月期に海外事業用不動産減損161.1億円、投資有価証券評価損29.9億円、訴訟損失引当金30.1億円等の特別損失を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 4,\n          \"source_section\": \"１．経営成績等の概況（１）当期の経営成績の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"2026年3月期連結経常利益941億円、当期純利益548億円。首都圏初月販売率は62.9％に低下し分譲中戸数は6,409戸へ増加。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 12,\n          \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"新中計で6か年合計ネット投資額4,000億円（国内不動産1,200億円、海外不動産400億円、建設R&D1,000億円、DX400億円、新規・M&A1,000億円）を計画。\"\n        }\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_perspective_1\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"マンション請負の高粗利期からコストインフレ過渡期を経てストック・不動産複合型へ\",\n      \"body_ja\": \"過去10年間の長谷工コーポレーションの軌跡は、首都圏分譲マンションでの圧倒的シェアと土地持ち込み提案による高い完成工事総利益率を享受した高収益期（FY2017〜FY2019：経常利益888億〜1,005億円）、資材費・労務費高騰やコロナショックによる請負利益率の低下を不動産開発や管理運営（旧サービス関連）の利益成長で補った過渡期（FY2021〜FY2025：経常利益718億〜883億円）、そして受注時採算の再厳格化と事業ポートフォリオ複合化により売上・利益を再拡大させた直近期（FY2026：経常利益941億円）へと整理できる。土地持ち込み特命受注という施工の競争基盤は一貫して維持される一方、資材インフレへの価格転嫁力と海外投資等のリスク管理能力が、高水準なROE（FY2017の27.8％からFY2026の10.0％へ平準化）を維持する上での課題であり続けている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017連結経常利益888億円、ROE 27.8％。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2021連結経常利益718億円、ROE 12.3％。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026連結経常利益941億円、ROE 10.0％。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_1\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"「土地持ち込み特命受注」による施工競争力と圧倒的な分譲マンション市場ポジション\",\n      \"body_ja\": \"初期（FY2017）、中期（FY2021）、直近（FY2026）を通じて継続する同社の競争優位の源泉は、独自の土地情報収集力に基づく事業者への企画提案・特命受注モデルである。首都圏・近畿圏の新築分譲マンション施工において強固な市場地位を堅持しており、資材高や労務費上昇という局面（FY2024〜FY2025）で請負利益率が一時低下しても、施工標準化と受注時採算の厳格化（FY2026）によって迅速に採算を復元できる事業能力が10年間一貫して発揮されている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"土地情報収集力や商品企画力、施工品質により高水準の完成工事総利益率を維持。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"土地情報収集力や商品企画力について事業主から高い評価を堅持。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"土地情報収集力や商品企画力で評価を受け、受注時採算の改善により完成工事総利益率が上昇。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_1\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"請負一命依存からの脱却と「不動産関連」「管理運営」による非建設分野の営業利益拡大\",\n      \"body_ja\": \"FY2017時点の連結営業利益（890億円）のうち建設関連事業が819億円（約92％）を占める請負依存構造であったのに対し、同社は分譲マンションの買取再販・開発（不動産関連）や分譲管理戸数の拡大・リフォーム・シニア事業（管理運営）を戦略的に強化した。過渡期のFY2021には不動産・管理運営の合計営業利益が155億円へ増大し、直近のFY2026には建設関連以外の営業利益が438億円（全社営業利益987億円の約44％）に達した。請負の施工量・採算変動をストックおよび不動産利益で補完する安定構造への転換が達成されている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017営業利益：建設関連819億円、サービス関連97億円。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2021営業利益：建設関連646億円、不動産関連85億円、サービス関連70億円。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026営業利益：建設関連685億円、不動産関連356億円、管理運営82億円。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_2\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"M&Aを通じた戸建・木造住宅領域への事業領域拡大とグループ化推進\",\n      \"body_ja\": \"鉄筋コンクリート造（RC造）分譲マンション請負に特化していた事業モデルから、非RC造や木造領域を取り込むM&Aを推進した。FY2020における細田工務店の完全子会社化（取得原価21.9億円、負ののれん発生益22.3億円を計上）を皮切りに、FY2025〜FY2026にかけてウッドフレンズに対するTOBおよび売渡請求を実施して完全子会社化（取得原価25.1億円、のれん2.88億円一括償却）を完了した。これにより木質化技術や戸建住宅の製造・施工・販売機能を傘下に収め、住宅事業の多様化を推し進めた。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（企業結合等関係）\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"細田工務店を株式公開買付けにより完全子会社化。取得原価21.86億円、負ののれん発生益22.27億円計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 36,\n          \"source_section\": \"５．連結財務諸表及び主な注記（企業結合等関係）\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"ウッドフレンズを買付代金25.08億円で完全子会社化。のれん2.88億円を発生時に一括償却。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_capital_allocation_1\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"有利子負債削減から不動産・M&A投資と株主還元拡充（配当3倍増・累進配当）へシフト\",\n      \"body_ja\": \"10年間の資本配分は、有利子負債のコントロールと財務基盤の圧縮・健全化（自己資本比率はFY2017の37.7％からFY2020に48.5％へ向上、FY2026末は39.7％）を経て、積極的な成長投資と還元拡大へと進化を遂げた。投資面では「NS計画」で5か年2,400億円、「HASEKO Evolution Plan」で6か年4,000億円のネット投資計画を掲げ、国内不動産開発やM&Aを推進。株主還元面では年間配当金をFY2017の30円から配当方針の改定（下限80円設定、総還元性向40％→50％程度への引き上げ、累進配当導入）を経てFY2026には95円へ3倍以上に拡充し、機動的な自己株式取得（FY2026に201億円）を組み合わせている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"１．経営成績等の概況（２）当期の財政状態の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017末自己資本比率37.7％、年間配当30円。\"\n        },\n        {\n          \"source_filename\": \"17_2022-05-12_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"１．経営成績等の概況（４）利益配分に関する基本方針\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"年間配当金の下限を70円から80円に引き上げ。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 6,\n          \"source_section\": \"１．経営成績等の概況（３）当期のキャッシュ・フローの概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026自己株式取得201億円。自己資本比率39.7％。年間配当95円、総還元性向50％程度・累進配当導入。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_capital_value_creation_1\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"高ROEの維持と資本配分による企業価値創出、海外案件リスクの課題\",\n      \"body_ja\": \"短信上にWACCや資本コストの具体的数値開示はないものの、同社のROEはFY2017の27.8％から利益水準と自己資本拡大に伴い平準化しつつも、10年間を通じて10％前後（FY2021：12.3％、FY2023：13.6％、FY2026：10.0％）を堅持しており、想定される株主資本コスト（8％程度）を上回るスプレッドを概ね創出し続けている。建設請負で稼いだキャッシュを管理運営事業の受託増や不動産仲介・買取再販事業、細田工務店・ウッドフレンズ等の国内M&Aへ投じた資本配分は、再投資利益率を高め持続的な利益成長に貢献した。一方、FY2025に計上したハワイ海外事業の減損損失（161億円）や訴訟損失引当金（30億円）は過度のリスクテイクによる資本毀損の反証事例である。総合的に判断すると、国内コア事業を中心とした資本配分は明確に価値を創出したが、新中計における4,000億円のネット投資実行にあたっては、海外案件等のリスク管理の徹底が資本価値創出の持続性を左右する。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2017 ROE 27.8％。\"\n        },\n        {\n          \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2021 ROE 12.3％。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2025海外事業減損161.1億円、訴訟損失引当金30.1億円を計上。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．連結業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026 ROE 10.0％。\"\n        }\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_implication_1\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"請負採算の維持可能性と非建設分野の成長、新中計目標の達成力が投資判断の鍵\",\n      \"body_ja\": \"投資家が今後検証すべき最重要軸は、建設資材費や人件費の高騰が持続する環境下において、土地持ち込み提案を背景とした受注時採算の改善効果（完成工事総利益率の上昇）を維持できるか否かである。また、管理運営事業や不動産関連事業が建設請負の業績波を相殺するバッファーとして機能し続けられるか、そしてハワイ等の海外事業リスクが沈静化し、新中計目標（2028年3月期経常利益1,000億円以上、ROE13％程度）に向けた4,000億円のネット投資が期待通りのリターンを生み出せるかが今後の株式評価を決定づける。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 5,\n          \"source_section\": \"１．経営成績等の概況（１）②セグメントの業績\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"建設関連の採算改善、不動産・管理運営の成長、海外事業の赤字継続を報告。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 12,\n          \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"新中計目標：2028年3月期経常利益1,000億円以上、ROE13％程度、ネット投資4,000億円。\"\n        }\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"management_strategy_1\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"「建設請負」と「不動産・管理運営」の両輪経営を軸とする長期戦略の一貫性\",\n      \"body_ja\": \"経営陣は「NBj計画」（FY2018〜FY2020）、「NS計画」（FY2021〜FY2025）、「HASEKO Evolution Plan」（FY2026〜FY2031）の歴代中期経営計画を通じて、基幹である分譲マンション建設請負の優位性を堅持しつつ、不動産開発や管理運営（旧サービス関連）を成長させる両輪経営を一貫して推進してきた。事業環境の変化に応じて報告セグメントを3つの輪（建設関連、不動産関連、管理運営）へ細分化し、細田工務店やウッドフレンズの買収による木造・戸建領域への進出など、戦略方針に基づく事業構造強化の論理的妥当性は極めて高い。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 10,\n          \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"NBj計画を策定。建設関連とサービス関連の双方に軸足を置く。\"\n        },\n        {\n          \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n          \"pdf_page\": 9,\n          \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"NS計画を策定。5期累計経常利益4,000億円、2025年3月期1,000億円を目指す。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 9,\n          \"source_section\": \"３．経営方針（１）経営の基本方針\",\n          \"statement_type\": \"target\",\n          \"support_summary_ja\": \"HASEKO Evolution Planを策定。建設関連、不動産関連、管理運営の3つの輪で進化。\"\n        }\n      ],\n      \"statement_type\": \"target\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_execution_1\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"中計累計目標の連続達成と国内M&Aの成功、一方で海外事業リスク管理に課題\",\n      \"body_ja\": \"経営陣の施策実行力は高い成果を示している。「NBj計画」の3期累計経常利益目標2,400億円に対して実績2,862億円を達成し、「NS計画」の5期累計経常利益目標4,000億円に対しても実績4,088億円を達成するなど、中計の累計目標を一貫してクリアしてきた。また細田工務店やウッドフレンズの完全子会社化など国内の領域拡大施策も着実に遂行された。一方で、「NS計画」最終年度の単年目標（2025年3月期経常利益1,000億円）の未達（実績834億円）や、FY2025におけるハワイ開発事業での161億円の減損損失発生など、海外投資に対する追跡・リスク管理体制には課題を残した。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n          \"pdf_page\": 4,\n          \"source_section\": \"１．経営成績等の概況（１）当期の経営成績の概況\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"NBj計画目標（3期累計経常2,400億円）を大幅超過達成（実績2,862億円）。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 8,\n          \"source_section\": \"１．経営成績等の概況（５）今後の見通し\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"NS計画目標（5期累計経常4,000億円）を達成（実績4,088億円）。単年1,000億円目標は未達（834億円）。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外事業用不動産減損損失161.1億円を計上。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"management_forecast_discipline_1\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"観察可能な9期連続で期初経常利益予想を達成・上振れさせた極めて堅固な予想規律\",\n      \"body_ja\": \"検証可能なFY2018からFY2026までの9年間の期初予想比較において、連結経常利益の実績は9件すべてで期初予想と同等以上（6件で実績が上振れ、3件で概ね期初予想通り）を記録しており、下振れは1度も存在しない。資材高騰やコロナ禍といった外部ショックが存在する環境下でも、保守的かつ精度の高い予算策定規律と期中での適切な採算コントロール力を証明している。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．業績予想\",\n          \"statement_type\": \"forecast\",\n          \"support_summary_ja\": \"FY2018経常利益予想950億円（実績1,005億円で上振れ）。\"\n        },\n        {\n          \"source_filename\": \"09_2024-05-10_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．業績予想\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2024経常利益予想830億円（実績833億円で達成）。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 1,\n          \"source_section\": \"１．業績予想\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"FY2026経常利益予想850億円（実績941億円で上振れ）。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_accountability_1\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"不振事業の評価損計上における透明な説明責任と適切な株主還元方針の改定\",\n      \"body_ja\": \"経営陣は、FY2025におけるハワイ開発事業の減損損失（161億円）や訴訟損失引当金（30億円）の計上など、最終利益を下振れさせた要因について理由と内訳を適切に開示・説明している。また、配当方針に関しても「下限70円設定」（FY2021）から「下限80円」（FY2022）、「総還元性向50％程度・累進配当導入」（FY2026）へと業績推移や財務基盤の充実に合わせてタイムリーかつ具体的に改定しており、説明責任と透明性は高く維持されている。\",\n      \"sources\": [\n        {\n          \"source_filename\": \"17_2022-05-12_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"１．経営成績等の概況（４）利益配分に関する基本方針\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"配当方針の変更として年間配当金の下限を70円から80円に引き上げ。\"\n        },\n        {\n          \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n          \"pdf_page\": 34,\n          \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"海外事業用不動産減損161.1億円、訴訟損失引当金繰入額30.1億円の計上理由を開示。\"\n        },\n        {\n          \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n          \"pdf_page\": 7,\n          \"source_section\": \"１．経営成績等の概況（４）利益配分に関する基本方針\",\n          \"statement_type\": \"actual\",\n          \"support_summary_ja\": \"総還元性向50％程度、累進配当、機動的自己株式取得の新還元方針を明記。\"\n        }\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"歴代の中期経営計画を通じて「分譲マンション建設請負の強化」と「不動産・管理運営（旧サービス関連）の拡大」を一貫して掲げており、M&Aやセグメント改編を含めて戦略的整合性が極めて高い。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n            \"pdf_page\": 10,\n            \"source_section\": \"３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題\",\n            \"statement_type\": \"target\",\n            \"support_summary_ja\": \"NBj計画にて建設関連とサービス関連の両輪経営を提示。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 9,\n            \"source_section\": \"３．経営方針（１）経営の基本方針\",\n            \"statement_type\": \"target\",\n            \"support_summary_ja\": \"HASEKO Evolution Planにて3つの輪（建設、不動産、管理運営）の連携進化を提示。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"「NBj計画」（3期累計経常目標2,400億円に対し2,862億円）、「NS計画」（5期累計経常目標4,000億円に対し4,088億円）共に累計利益目標を達成し、国内M&Aも完遂した。しかしNS計画最終年の単年目標未達やFY2025におけるハワイ開発事業の大型減損計上など、海外投資のリスク管理・追跡に課題が見られる。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n            \"pdf_page\": 4,\n            \"source_section\": \"１．経営成績等の概況（１）当期の経営成績の概況\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"NBj計画の累計目標達成を確認。\"\n          },\n          {\n            \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n            \"pdf_page\": 8,\n            \"source_section\": \"１．経営成績等の概況（５）今後の見通し\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"NS計画の累計目標達成を確認するも、単年1,000億円目標は未達（834億円）。海外減損161億円計上。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 4,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"観察可能な9期（FY2018〜FY2026）の期初経常利益予想に対し、実績が9年連続で予想と同等以上（上振れ6件、概ね通り3件）を記録しており、一度も下振れていない。予想策定の規律と期中管理力は極めて高い。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n            \"pdf_page\": 1,\n            \"source_section\": \"１．業績予想\",\n            \"statement_type\": \"forecast\",\n            \"support_summary_ja\": \"FY2018経常利益予想950億円（実績1,005億円）。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 1,\n            \"source_section\": \"１．業績予想\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"FY2026経常利益予想850億円（実績941億円）。\"\n          }\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"FY2025の海外減損や訴訟損失引当金の理由を明確に開示している。また株主還元方針に関しても総還元性向や配当下限の変更理由を具体的数値とともに公表しており、透明性が高い。\",\n        \"sources\": [\n          {\n            \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n            \"pdf_page\": 34,\n            \"source_section\": \"５．連結財務諸表及び主な注記（５）特別損失\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"海外事業用不動産減損等の計上理由を注記開示。\"\n          },\n          {\n            \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n            \"pdf_page\": 7,\n            \"source_section\": \"１．経営成績等の概況（４）利益配分に関する基本方針\",\n            \"statement_type\": \"actual\",\n            \"support_summary_ja\": \"総還元性向50％程度・累進配当等の還元方針を明示。\"\n          }\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"長谷工コーポレーションの経営陣は、両輪経営の長期戦略の整合性と、観察可能な9年連続で期初経常利益予想を上振れ・達成させた極めて強固な予想規律を実証している。中計の累計目標達成力も一貫している。一方で、NS計画における単年度目標の未達やハワイ開発事業における大型減損損失の発生など、海外投資等のスク管理・実行フォローに課題が見られるため、全体として『概ね一貫している』（評価3）と結論付ける。\"\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EpXRAQqR0QEBEU0yD77PiJrNHobM2Tw9NS7Wc9MKT0b3cUztzmsivktlJ35cpbWVeFFMxrR_0Daz34EXLyXMSw_XrM9zYrqstF6AzcLdB44ezXozB46_4hP5tRPa875ATQhuDRZOJ4C8cWAkqHP4RkFyF_Kk3W8__3GsiwS1tI_JpaSepyDjIEkp0ZezwapPyMnbZF3XCietXZ3SFBVt3IFxV8zhDptdsJduhozIp4s3j7UNVPAKMbYyQ-1AT_0MnX6DBl1DaUW11G6nQxr5DX8KACC1RMzRovnQUQDLVNA9tWRD12DUQtc6tayfcaCvWoWDMgMfoV6Jd-rEjbwlG3CGwCLSBdQ8jivoJbMfN5Lj33dWdhHqQMmyMDVyTBMtHKQID8lQOVRqb3BlRVb33JidYUxyFaEmkLQcQahgdFM8l2PqQCx2Ms_Cm6rjlEkh0M9DAPuUqFLQtUQoSK91QBnKNX12uhqkIfzKCpnhwXYZwWVditVdJ0nSWstnr9R-PLHQxsFXZ1sXYIa2t7m2k8lzVde2z3iuTYCSpbEuP9O_C-NG6_zLYCUlM9H71ZDjsstePdw6WgpNXHXShc3hrs6i5azBWgxPnOmIndlFAmBzHTK2KQfFdJoHQy98ggHDa1nlOR4POYwgXWqF8ou-huqfrNBCiLMuQJYd-ybq4Ph4XtaxOREfo0qbUEz9yYN7C6SeAI9afI-I5bqLK0LhO2etGTG1UgYmmR_jl1U4bTtAKIDt1cDOEVvdy_ujUe-hceZsl1WriYObBf6ztrcwqWZTNSVzB9NPMCRFCSrB4fK9xlSvifNmbhDGmpBW6zYGgCxcARygUloNrc_P40SnYT48HTsPOVZ039K1XS_cvlL-W2LiTFBzFdfUEwYEX-29PkfScwBi6hU0Xy-Nlov9q6DSx5yZe3WZ1zPM2PFERmw6sII_qbn6JPRqj2OUFnt_pRZfUoymHqBxBxaZluDqo4ncEGK0SkTSSgDe35kOEiqe3R3KwHRdIrkhxILeBRL4JSxAw4wo0j5jysMUjyVUaSeeK4mRYW0hvRzfR52UqGTKaU6oEwwQ-sOqohjFKaetPCw7SWjjalpqUPQH2iSv_FYTGCSWZEKLJ4zXgy7XjE0L7qPREdc3bKHmG5Oeo9UUxrEkgc80iHL1mrlK6WRDJL_1LK9kew9dZBXAQhjR5dv9vyEulf4dcJgrAcIjeJxgXmkh7GAkRmQahgzxa9EZX_h6BaDGHCSAb6ku33fAq9NNptwbKmh9w5tiDGTw1klcZex54A0dDPRzo7ewBu3mkKYEaOA3VdmC-FtWKtOsU9-OEF8AD-pK6R7TDYc164tJZP29m7lSnBFXa6bOiYdd5-rs5iV2fWfCAE2KYyCq1ZUsqUQHKFcT3Bo8Z97Rxv2OOLdWn1aFXqzzLdXxEe7crdu_lzjbGT8aBfTP4SAQMVl8NXA9JmAdQn12ZG1aDk5ojN9TLjuxkAW0cutaeFXwo7gGOMW0n-OBdqlFqDDDTl6Ro9hjMcnt8yTYcilxb4jAa90CEEqbrRQHOYjAASfSxC6d3xW9xtJggWVZKrFTgoLHuWq0xzGuN5G-8TaaTER2So6c1AJZ0-iQZBLLIT4qcOu78XTeO-sEYTC4fBbYxjtg34cvFUnuZCKv5vYMbZHjVb4wO696JMeu3q4iZ5bQM3rMRSm55kiGJSKUn4t0N053HIN5AB3vsdcBakJTAtrFZ82K3xFgabjxdFIit72QdQPUA9-PAC4fKQBEUeMEP-KcuIhc4AfvtbnAFZjDOCzuQxRIa_4_5o43ssT8ddss1Tnj66nNmSrtwkKMQSFs8HC_3oRPLfFXbfrL9MK605M0jbLr0J4BEpKs4F75y1be7LFXHzKvmR5M2dd4aVXtorF64SqxP4es6Sr6n5e_58SocJw3o5_LaTdgBJ7JN3yHZWW5_O-6ZpyBNEWhNtCVczMBD7lXRnJipYCu3JxvbML72-a77fVJ_PvAn5TLWrwt56ePsEXT1xmgmfDJgxBiUDZxJCs1YY97sidtgeztIbfdeiRj30zokuTmY0BlF7cF9pI_huIw86Rw79jnX7964NtXL0C-TMsrRSeJmzt9VEE3Gisgv3U84VBJ-gRgoH72nYnpE6zLLoP4gYKWXhhNToJ4ExnVMSnpZJKIkhkG_vg5mHVmrqZXoZGyT11PN1Y1qkk-m7EmAqWQpw2cpF7YIPL05iDFLVVKdJyaHw7kGK6VpyTNE3nbxyznptLf-pDhmm0be7g9NHOiOZOZ6Dg3R03UPvP7ZQEVCebbqmtnVh-4FT6lPAfnDG5HnmlMlEiUAF2YhGyeAmVEglAQtoN3PNJjq3DC_8_G7eptRDtKStbJTyGIy-x51mZT6yd9QxfJoL1ZKmBugt6ps_R2dBNwCdkXmNkINBVEFgfHkWcku54Q-_oFPBrJN22Z4N9_iRbnkzNZNjy2UMIOPtAZH3E_6hxkgkOip3vYhif1tpzMlU1XLvRe9plu7Wl9yWCgT_QWWcojF48pbbS_8uWtRlQ2DE0AJSFdoiBcEXFfG74pQ4mqcCKQu9XnQbFRp-cUA4aM3Jp40oQsYaFfkL8S4LCw5VAZ5KkXX7pqu0UM7nGPSc_BkYppftYnsu1OPFpYgM2Sqad19tLG_SoB4Q-DSIw4ef7FYc35Br6Hl_yZZkX3am-dkWoXtPJDgjCXleQIlR_a7PDSRdKn-cAHXn17Vxb-na2aNZ_nUMt6NKYg3B6TvXAWdh1OKSZTUHIFnqv1pDnX2KqL8aXj7-7jjtxs1j4aM9IIKE4E-dlMI2nS9RwtguL4YbhuDkby2DSMlLL-ASK0LWlEwYRl5pq_NdEwAOuCESW-NF6Cs0imI5Wt2DQQjdOmQya0VBmp_YAUitZYzAQAGyz6J9dp1hY29yYWbVlSmwEHF_rR3In5wySOremoMH7AJ12HdIb9LQdojya1_ij6JLbS-5p3a7EzKPHH7BslTntopznLNY6V_NACTtLGGxhtyCTzZ6r7THTlb3yHGnY87TQk6hiJejP6Bf-LRm-c-RpgZnFy4TRerAdj5pJGC-IX5SFp9yrw8EWnbkNtS6AQcL6K0OkE3bVS4JLtxZQ0xf23NgxFe7jxXfWq-fcnIttTeaXP2wQKimhte_jI9t23-dtU9_RENfdCVEZygscGUeZJc-CaGFtGcYOzJQA_edsWKSkNGuI5jwMJzNDIylhURo_9TWFaiVZ2jkoL_ZQzwf0B-kDiCcLU-X2Fm8SbEamIrgPbRLCPUf9kxxPuG01omTxHBc71e_WlM3Ngs7zaillOB-KvxXBtanqRnlyhfSeM4k32_KRlvBcIlUqbst4wp9HqyRXpVvaevMfzW_yiF0_Zg4A8s3nHBJUKfKM5RlX5HPuV60K6HRiIsidH8ECeZUzitwQhKiSnURG6SXY7OydiztpE5YlNAG0LIHx6Ln2JLSDogN1f9K-EgTG5OJzwnQ6uVLBQPFKCx5xymyL1odoO4XOh8Vdx2T5fkMPtYtSpLYldGdBvZLaEua4a7yIW2T2DfJRmefeJSZ6c4e_gMnSxMH9dq21R7aIJLu5lFxX1OgrHP3Q9uYUWSJ4U2NeJwtu-2UwQTVbB417E0IPNObhCjeqbF0knbDn0KlIfV8LVGQ326beXXCSozZmnwoS6q-ZuMEOxBnREY1Vf5noKVkatLUFZlrJ8N8LYLgXBYU90sP3vLLP40kHAR4bhuxB2hTrT7Z2w8u-FZccx6gCv9-CmRFS2Nncdk_gK8WwP0N5Folc6wego0JOS1M-M92J03RQXPivoBsTF2KS4ZU_ff7SNPnpzdoM_FbQPwe8wJeBoR3y2nR579mc0EeditOQi9bAtwNinromkratQP84G-byw--LN0k3rWg0c71n8v5-4pKOeLbrC7hcUJQcnpTITRvVhJk2VSeqymylhXd4ptCCLWswUaLPlWthGr7gg0_cmmgE3Ur_ZFzb0EDi-mJoDfUv-QBL1aMrje6FOLk6Dkq3jDrUsNxh9iNmGEHCHgbP0pCwJek8kpagbs8NdRwo5-mg7BQyYOSHeeHTP8q6rWZHouwq_j4OWiUn29qSQo2g3S-Yk0op6duqmwsXnjYS9KalSCc8uQYPP_ux-THaIKMSoIf9z7UuOq8L0Ll_8WDRqLYkd61Juzk_G_FPpIa64HdkrE28riUvbqRZGbZLjcbwvEXuzpj_hbjGhFCcsYhxk-QY4dXMdUci-rijs7IWz-WZfUHkpiDM2d5Tdjw-y7CN__LzXS8f5FCb4PlZNpxLhfRN51XTTteMtI0ghQSssv-oQCN9Be6aT2kF5R2YxcWTcxVk7KAyQTfeKPDAHSR8bvjczRbMX8Vts_L2dfgAZuyl3_1WA6OvOFSQyPRQp_F8Qot6GLItmKV6gGdAAa7e8qtZChJwlvenLhcb3vQ1reBVmN73D7GX-ke3LO89eHqs9FNp1Q8ENwBj1MEifLalIkWsUVarm7RFtWZ-DIKjfP-4P6-oSRi8I2QypqYM8mhZcZJBp5vD6ytS76DJGPE4lhh4XMV0rEU_WYsk_pt4GEqU3truHf3ktOayYT-T-I0cKWwvxrOYC29mwcsGsJIA5TMU_dFcV7TYofMHRCOtdL9hY4HwaFbbJfNbDsPKnDlZeck9aM28cF0Qz9oDuM9C9uC8nt25_g-Vd9CESQ8Px_k4vKqiyglV1DriRdvGSpqlZzXSKwp-wn7an_mJ-1oGtrDxrROKIetiOj11fqhzhhfNtwjXI6tKImMr8I9iKrqJvJ9rkiOa02jSBiSHNCjjLtg7htF1WrUcEs387v6QxzfLllAq3r-z-_p1bMiqyMoIt_nEmHMqJs2eWu3LLH5Iyrg7DYr6GEjhy3Sf4mwio8ozfAhDAcY8JfQjRkLY-TpBEWIgTKqDjHW8w0DlwT5fngTUACuqPRFp2TPrdxujAueF8eAw8FHJm6PXWo7f4YKj_7aeu_eUaCXuo91r_pl9_yo8QdFZJrYm85bouKIqeERpc8XTBGgZUJBUYs42o2O4KC3LJr2nw8d4T-vZXeGFZhFJHYN7m5idPEmkRY_phUthZ6Sx3zTqRB4NPh29eFMlp6nZb0oCLaIYYKSY8DvGTD1uEswq9oN5ZS3QIjFxAUIuMg8aClpJPE1h8WyZ3sriD0n7tenc7dyYk9RRm-OMQucq1RBaA8tHFiHA9GLSbCBg79NS8KMCbfStxctsftng0Acgn9bL42qNchkw64EWref7D-og4-BQe8lH8jzlV97XiOHjlpfoLbXYVbmxOmaKDyGpNnzT6lOAGLt4sOAvK8i0dWE0akPfUwMDSZirYXzqJsqR3iEADX4G4CNVVgIPZ_IaToYb1rgU3SqK29s-7Mv1u4SGJ20NdR4MsUnTc-AHJoKlZNA_kuT52dhT5IXQKwm_ljtDabMKgDsM_PzPWXDOt7cwGXQlGScfJh5v1Zfm50tMEmw2wWx3UdbuRgNGQBWmHhl2uGDRGmG1kApXqpNTUF8rhlqPYercQuzYvbNWqsUVD1t_JfHuNWV8xtRxoKktmme0pxJwSPKIVn8OlYnPCfa0wRuiuqY43w2k3QL8i9mjsLvlMvUZGg6Hi1bUbf4N2rFkHjHAe4NoBMdGWCM0voomAYPDyKbkUSAmPKmA1YqUqESZgmEmk7kB2JrKLjbOFtLYd76yZbHr2GojG8YvpP8JLC3sL8Rxq9DJnjWeTnkpFb8zpWNbl_yXI-g6JoeX7spgMR6k-ajRadNuKxbxGUls9Qi2GwW-_wVoigpglGg4yMhxFz-UlK1ourt0NJRoAf2Xu7ojsZ7D4QzDYe88I0AaDczFKbokyRpLNyEGHsFecvfjmWl0W5wwQle40dn-ckiSLKzK2PgyOoHPqpBelhG7r1AJMnad7Iqo7EgQk2HhOPk3Z1T7iEVQYpWXdDHOwx48UHl_80DqMdzfwa1nfFN4Z5L4kqxcm-py0GEGGRN90f-mF3vPO_c3WR-_XIMplL5CWToaAzrp055NHsHN46KBsEta0xtuM8rSUbxuO7VORed1EjGYWY3MF_eNYFNpG62m5SvsKlRZ6ZZ0ifzpbqaPsK0MmTfNF4iNa7gHFeqhTqBFqw0KaVMGCS6sJKRHeHCwxpPg3iLzjf4sbpAS3x3JQ94ugQgRmAD-4YjLEuynBnCaYP40xCOCMiwS9Er1flKnde4UTjePtqCa9oIezCrEY2FRtbKt2Bv0RySfYZM8Gv7qVJBiDfhJEpHEGpAfD19WRUz6PMPArfuDpqpT7lHlGnSqYYz4Bllml0zyQ1AQ9ksXdq-ciyssIb3p0NLvs34iAmnzTll3E8zKFFqTeKRTHS7FUfZCIl_1yMzqqEIxE-UaqpY6-W16czB-4X-QYzy8VFH3w0MBGi1O8zSNHqXo8FHu9gMG93uTX8nCL3DcvR-EAHH9JvxOHIWjxM0jsgHZwhvQyrA_45danQG0fcd3A_d_exibuu1enh7I8aRyG9dkTeGKRg-C20vrsT2P7JaT5O9RmskUAipYmC88l76NcufT9GZ5UUUcDwnPxtOq5B20gBd0gMP5ML_3aIFjrJCvCIhL1DaulfoHX-Rs7k0dquk_tR3diRCELjGetbCZW8Q0YkZRH8nIQwrnu6aBYhf78FM9En_d05FkxbFHaCYsKiZTDr903SgfmeqD-qSd8ejuttI0FeUUqsyqLIaYLJHX-RdkCyycsLr_7X20k2c8n_Ds88kyiK0ZvUd8-luxoubTuNep7Ic5DefvbVjvbAGNhDQ34D1iYRW45vGf7yFVI9jMKuLoZvbZPgAOP6Noq5zaIWAaCwbjp_8nQf2oQCu80YdXC-ghjeA8IbHPmiQQGkBKZIvN1cPav8zKfkqEBSwYiz7RCf7YhhV_nTYw4ox3oi3wadCv6IdIfRzxmekl2Qyd_ErwIZ3Ed0MuGmJBjvOxhwmUskUbt49ijkUYNw3dD2rjsptGMYltW0lgHQESgaHTlHgLwz-381Gfp4C5Gb65yGnVN8W6bX9eMucjxikkambPGmXPLdPA9118FtI8Zwa2mfTk1N9LKzWmBl7j8C-DMME_PXu_-XuMi_00Q0WIYA8443r1rs4cT-i5aiu7TOzniMLR2l_gbjfoPSx_49__r0fnc3c0cLJNEgrXy5znQ30yZ-4Uh7WoKQqMBbM03OhO_3Z5tpAzBy5axivYGv-EEImYbXtVbZ1A-IKI1rxII3g5BikfQx9uimMfkCUCs-7MFtGvdujhaskb7LFz2a--8rJ6Fxdzwq0Xk9VFrBemxxVQb_AaLsnAsYaqhplS2pnH2hfJiG9xv_9-Uq0pPXL39WJW7NjNzjKLkSF1jluVxQcsWFZ62Kdtnry4ZIAR1DThmw1B6SbQnrHvLwN4W-7vY5FFjbhZTA0qGuWsRYiapMuZ-xfx6iukFW57yxEcf0uFl5chGvv-vdf8zhmT-uLZzU7gKEEexWuMXHzKUh3f7Te1M8Tl37JFR-EOhIEr9IE60hsuyJITNgnMTTn7EFYmTUFixT1wAhRuIRyoIAqXIGukVZR8rZ2zOqwtk_fscRTYZaDQG2QhXf55G-w4P1QXVKmtddq9xK2ks5HYunsSS5Pbn1lc3bTPAWKwQcopVJzv0_jBhuwOyX7CaLCKQLP0KwH-IetjrH36M9kVn4tyaYEgY_R4WHIsFOYkvsLwE2HyzH9NXexwSbts0YAgMC7E8Pe9Bkm_3EsCHVTJmp7YlzcbTvERfZyJdHnLmk9qL87WXYlvRLiWGSj5Rl-Nmkqqmekk0aOHCjAY1pfD6eceje7FmWVmgNAecJX0al-Bkp6dyROerRoAUcaFOEhKMn3PgcOmKCN7kVOr-W1S2averi8l4zKj8Q-h5UbBaoyUKO7nUoSPgXcG8ZMaYkTrhvMX0VawaQwLh_cYYLwVBqVDzHIqiv1G4sWT_OCce9qVSO_VsQI6LjtEnihP-9ynKoQdqs_Ff1CHYiFYBSSSPyxLPFwqdPLEf6qfDFu5KTEERUUdn_nEmCc5AGPxymwNwAtE2JldUpwnsCKeQqa9niDmI2ni_kPiuMbpMtu7GR7RyUHxxNFmfflMRMhAlF508Hi1deZPg0LCZVfY3VaA_Tf682RZA9VvNsM7wZVteyZ40EkDKbpXGNNDSYvhixLdwKc4jNfo0JdOxwavuRUPLjj9qluZjtbJ-VX3eCvbJz6cbCrdB3CMnhUDGq7JO6kL2p_GEUr1KgggGn7zkvsy2kcNeHjrL5Z3hUR8f0eI_Wd6VRSBNLyXR49ozMTXZuVsJACBHKIawAWCwCLTTeVCwEwkG5cRrc4xr329u5OCmQgXskNB-b7DFic7kiwff9zeLDHcpIXJar8Il_WyNKw9H7p7loiZybYPKHe6tYdbtb4pIFOdfLaNTfFexIA0u9I-_OfzWwU5OszASRFZz7DxA5uj3dXkHbbUyTtiD2sK88vCkDTXFMmbxz1MKhHvKdwLVD4WWzvD3M9yz5bbZHGdb9YJI1rZ42RrdqJscOQ6Yo937m-_ITmOEMrPguUlVIeoStyG1cUF75_qQ9hfn9UtRjRPWvowOAmKkms5QiUFuC97AspRVb-PSaZG8DsVc7MmEJOeDUPDKf4qPN1ECEI24ya2sGxD2pUf0x1-vinkNbveTbj5JvWkbUlMw6ss68Dw00XeQOB8uej_diR8Mx8X2hUx4SmB5e0lKww4bAuKgYTZMcGw7fLJIGwvtyazlQZOUznW1alFv1Hxv_y-f4yTl97yi5k84lETgdu3A0fK3XCqJ74_GITw7AfPEAM3_qCbQqu_UTCs_qwk27MQIGxDjeyOrDHnpwqaa1sj2wWNs0_4K4jiGLSoqD_hf985HkGYNb3l9bxdffiEDx-G7pFvqr-5U51XbKfMHPOmrCLDjHAPR1DgFsp33455GYthE1i3RCY92G-hCbfn3k-RsMBzCvepS6gP0Odqvv495Hv97Nr__MtKD_OYW2LxhZakW11emn7e8oEGKDd8fXTbJLRXVp4rMCpmR2PJt92TU-9q8zte9-RT6RaZcYZ-IWQrWA2vBruZxpTxZAaRqJiZbiwRYND3qiyCN9zOguSWKTU5IGMyQX3STfMeGKbsrmi9y5L9N5naqz8k0_G-hIZNMtXEBV1Mt2XIjJ14J0XNdfLY6HrPfdcCh8gclqkE72qqeiJ4Qv2bu-tkv7zDoZJrlcp2_eaChiG6ySMtEtF1CoZ-UdNgwlAX0D7-Z7PTCT66yZAz3lcD8W-_zbRw-o0JpCfktpL5MiXXazeMR5o0JHC84YfnbZ0maM1ml3dwJUJjfQOhPOqnRaD8j96Jc06TKcD5MaLtcBf6eZeHwrrzQYjQJTS1YuqJ2WGfMzMCAq_1QHtZJiGxdC03qh3RbmyhYBwVPojXYjaaEBvgo9iEQcdHryNiOzl3P57_tUglK13rbHdqpWFQmfN7I1FuJorXC80JLj07G5rxfeUNrduGKhSyj0YYFRPay9i-qAmFtAKSl_vTDBVBUakKlcEFSzGYqG1JCwEPrS1ef1sDq069u2xDa8z_49_YIM7yXZF18dutLTVrNP26FZuOzIGDqvRCk7Q81nD42jJbyNeB-NJ-w1yGXlSHC4qGQDFDG2BQyLrwGzDLGinFRFg9RXnkpFR8_7jyEhVz0-JXtNi-miI5xyroodgUCTaOSesE4RXQ68fPIofvTOYr8uKFcOh4IGmlvZEuTEihycBr2JVG92EVl9F5fHaR2MjYP7czEdnBSRVweaRSL3MWyRbfljaXHPZWfqiHem-h9Xf5ecji5AsPSo-6OmXuG4wX4pOD_JIOJ5ZPpaM5AuX0MHMAuTCUP7DbGnERaJuU0UCud99neZXg5Bv1XnoDwpzMkp_ffS5K0nxHeEYmy3gQnExZKmGBDK0xsnlhL_2AEN0UPqhW4gcy7DUCosovZ4iPS32f-IVmTKLXVu1WJ3PXVPIdlpyPy9HLJKpYR1t4g-K9Mhk1Gm8JuJVXSGR-ocVj32HsfbcmUUczFUsPAdGqQQ47sMCuxRQgJAmDIFbzwLr1aR_oA-NcQ7jNswPUHKxnDfOYH5I42K9yHSZ6cnPl-P-WN4MeQ21oaDq7s7Bl0OucOqRfEy8Gkf2iKHYce2fqHG6uKZ8sltK9Ztnd9DoYyba1M4U8_KxzBLGoNep8tsVjKy8Y8Srgpilf7-5GL-z83mCGibRhuVVhUOC-swE3YD5xECp3WPdIWOmbeZN8nldqaG1R4qCETLTxLeFIZCRWKaxTRcL8bKAnt4xgQ3xqcynTWGwwDFhQ16gwoR5l-2c8QdM7mbSE_wNGGS_x79SaEdXpyr7HQoZg88YvDpqbq63qEqQfNUYIkegtgRHlUtqTJjEuqMdv5kq7K-q86pN4rieGVDLJtcIdrbQtE6i34lPLjguUTAby90latJFhIhSrfgfN3XgFmJGVPnYGQZy8YgqwmIwpiTfY7PjmAJZaUDwJl3JhXLuimpSa_ANoMTC-tkIP9G7TBQxuZTxWvBEnXSTXGb9e-jIy-xaTfm5H2JXPbxpSxv5mpi-KuDvMZb8tU2OypS__07PbaMud4Ds07KHg9kJPKFOnuWiF2fWSqXjSn0N4YTXFJZlFVuk1GZ-qQwJfMxH3qJyeq_tJ8N75OhG8JRsQziZ_Hlzk2xFwwzUxGIWfe0jqEfcuZQeS01O5OJwsAMIS6T7hbY15x-8ceUBNkbSiGcrJL7f3Z23fOTKYlUp7HQhrNW-r6DPMtdUM3T_Qcqzz0Wr6ip5-yXFTK7uiybQD8nDCUqcWRql5LUp7pqqcqTv2DFpa2Jcw2iT2Vlv0hrrnnTWVWEb6HQYgTvhD2LIYnqJiSuy31WOR7anWJUwkhDChaXSZO-AqzgSgndnDGdRhD3x3jQlEzbU3nhpggnIHq_djg5rF-WR8qsF70jckhiclUVaNs61f8So9gbg1zMuzH6nndjYpOto_H4M5s0oVYRBidf143NfOb4sVmk-zf9qbv7xxnhkq5MXxT7_oHDo5RuEUDuDX2tuxtlTJfmVgJ5fQSkQD0oAgx_ytxvcEqYuT7ZMOhAOjqUXfMDpZzHJLCO-Wet9bfxkJotJbRow3R_fQPOhZFfLpO6q5oTG6e6a730EKAofuq-WEZ6eoivW0suKprX9kYfwCC_34wHJpilwlmR6IUTg6jUv1f8vb75LARjmLBveDqec_R4Cdgpet0ymo55xdJq9VvgcPUyAakYtyEouuIRGlpM68tgYIQilY0s3NObkAVrRgzJRK2HeYho-nBV-egrsD2KcZAAoZ0hfmslKMx8EH2ycuRAKCkXqlVOQDwYbxNdA56E8RGJzAa2O0W0eH2NQb962TW7Z9eUFPQogsJMtUqQ5dg8bRxjFBEm8VLR_RyKf50T7sOXekJSmlVG8dHlSlo_i28S7a_ca5K5_93FVkBUo_S2uetA-UZU3lVLAs3jaqRcHnOP6NDlljR-OTpWSkvYc4f5C1UkO7dkLqMMymRu-jxUFfyro6UhrjVApvtuZT7VcPRHPX_p-RvevQGNV6M6BiRMxNy8NFzEgEek-5BOzFNlrYl8VRX1nbYuwrr_53eRtdbLs_tbBOJhI6gLWoI5KIxwL8Y9dyxfvOSzdMoBcHKgHPv1M5N-04Q3Pl0mLv8FXs9ILk5EPAG7_C8kjk8dOsNbEEhD2RFgjwCkjhl1yueGYgudAp1BUHjxAvk83GPrKBi9gbfta7_IDXhGXrMx0QPq62RipmGWFoNx5DulZ91gfLtsaI_Pygit8lAXovhh4zW6ahJ7ofSQ7Ywad4FvEsTs0jjrkQtNLYU0qDme4uHzFEWBpk1-axy9XhWSAQ7IzJB2dzTndLsRptWQg3-KUPP82uMrVCuGow2xe9DWRKup-Y4jOKn5i-cWHgxhyw47H8_90C47AGQ2Thox8-nLR37NUwmx0NrYIfSAQaYRTP_NJem3QlUVBK7dwP-wR8ac9sd4IVdg_U63agqktQJDdz1thiJama9EhmmIhQolbEFkGAZ7HcBDVYSNVFx93UJpd0CZzDBJLRwh5TyXrxtgqr3oMoQNWcTnwL5PlPocOlwczVpztATu3pfzvTwIr2C6aqlG-4YZvcTBBHn0vpc4HNhVYW93-vOBgbgjlEA32EcB_GydBss103tYTiDdqXC5ESd7HPnYYneq-ivhhZu9ffIGY_4u1KKr9XxJLk3oBe1vSDikmlCsFuOcSubEa7s_EapgLNuZ0lPxANs6tCd4UN89l4TJnvO5i2GbkDC6rTFwAp5esrBfW4kTYuOBKdWF51wxDUZnsNu1rwQsD4GyyP7yldSBCnzV472vbZ7jabb32r0Lzny6h_LDKmS6XoBtSJtWgcYllAoJCQq6CYq7_YksjYPzPocuL_Mmcv4slHrQcSp1nmyDChhkH34P25Kd3vV6uudRqvHSCILEDx76aMGkg4NYZoVp0zL4hKqvzkfWxYZ1F74AKq57cBJQ2Bd1sFdXWvtVt3Rl1VmdBRXRficleai0hpG9ocTDeUke1n7Y18wdo_wjI13_AIEEIuFpUfgR3IXyMAvpCobjEd6h-8aOkfuOUgproW2h-ClOHHTUcnSmeXlnezOVvZ8xiQg6SagiocaehfVusG7UYZHejNONrc56KzOso7bS8jbIUK0JTDZ1EkNglrTaZ6oI_oqOhgJr77uftlss3Ub1HeYw0JfB9Yha7Ot3_T7bHykfoFLz2rEB2IXIO5aGvoBra-WqMnAKpxKgBhTACdwd6Q6jZBJUilQVT7AMGRfsp-eJUE6z-8zB5mVBkBW1_HczJQkOJ8UdTpeqxM_5H8lRh79sefX-MAL-HhLvGOG2Nu9jlsG255fbve_-jIXFgRTfWWUbgTUCqD9pAOJg-v80YkwhjoSTOdheYLHWQkO5vhqthlJdCsjJazgoSYyzfGaLIXCk1FP1FCv77YoMMdeLQ8EWrdz2bNf52OSF1kCU-eO1f5-y0TPWjpyrI0JCb4Tio5s6uSQ7AnrxHNqT_02SPTX4bLenueuQPNA9n_EPo4FQVqZOVud7hgshE-Va9mp64irMk7JHxC8EZCd0VFwi2NH1qRgHNNdibGmMCW5K3cqSlvllsTbd7wo8nQntat7AJ8xIDGP24DBw_uel1jxdkDJzDyzn6ESb112NoEcVP664ry6LHGnCF8lYPNa9MrtuQEY1kSAoMC1Jpgm3Xy2kkLjvSh5G3zSAABKtjDLKC_dN0VNaXj9KhcWNHebNbmg3ohClKgcdSXWqX4DcsfA4ahz9pt25k6LtZwtB9IUE7Dvwk8UFCFaVdqc1ALWA2O4yqcrIuZZJzRGpWS8j1tqf2syu_bFvJuXmuC7m1nVjQ4EKsCdg0U9Imkjpo5acfjuoBXZk3P77-iJpeODOn9b_IRHYcExvsSutCx6LfMhkD7QtZR9EzHzdHZXAb4Ps6fiHJoexbSdHTmR_i46Ota-aGoaX5ekQTHA_AXtA4pvZAN6JeriZmpKIfkY7sUvVXmmtSPqyft75N-DhIV3U15-n3y_J9mn4H2QS3xHtanD6GVluvw0dC0uNco6NJq8uCrK8zINgzOsJ3Ugz_B2e6WNUJIPzKyTlOaspi2lr7rOghdVhB6YmjV5o-2KIN2PRePamwpUlgh20-70um6FNkcvu8Z3t3ycUHd55HqJkG4206Z-s5NLQmi5KAYDwoiIGB7c2RjT-0RrE5zJsbhlMkaXV1dJW_oRIqDuFiYDxywfj04POqBIM98Tzfhfo2839t1CPGTRb6Rk5yjsq44npWjVCiszNX0UYa1OqGns077U0mrEUZjqY39hZTzT3Ml_5lHJ-jfBtVICFTLesHH20Cn-t8-8ykJmDPpOmDpbC0M0SGYmNA5Al3jr_1QZmDNgw1NbBbNcs0rN4rOClk8T2VHw_2e3-_dMEvKTYRxOTCnFiXJajGTmXrhvswRdbSBuHMhpiEQdb8j4coWWKxmrcr-OAV4maGS04ukTdXhAzHR_WqqQIL2dgGWYcToqT2b1rxoTosi1McXuWyX8DrcLEd7xV_mD71NZC1R5ygCpm6ta3zQHbZonJmiGFmdNoaywEbgzxVQtPlHXFC34zeEV5EHlc-7z9L5ApBMeNST2Mg3JHZMCAHZ0oDfjITnIZQOer_ho3rKXGxHK993OcZsbm58tc4q4eoz6dvXrLviefKv6hp-dvV5MsF-SQVbjX71uk-QxoVNvLzw2Ztl4q8XCibu8d-yzgzBDQVwHABfiNWw_f5RfVeeLTJSdQ7c9Zxc5pVInQql6cydFJd7Xg7U2sxy2uaBev557O39bJlWVD7Z3EmtnEqcXH-rj0gBcKBlujgdVYGv9Cx7fLlAVAQSs2dIYxh32COn7dWG96obdJuOSb2QG1kcQ4HHoEg7W6HPmSkGcPfJ0zGXgilvdueZFojVEqXkOxtmOTY7Eh8HfHpEch9ZEfsNikqZMk1uVpC8JxXiyGidOWwtNO39i9v_OAWLnsusypIZUl7mJaOBwGNLUJ2MS7KqIIAQeIUSZgOi2f7jad3SgL05JEOn2ORR46kUrhYWw9rCQyZwmXd5JXqlQeBB_lBIgu5djxnTH3-wNm7Bna1QidFP5FOt7NqxJYrOinOFtMLir7c9L1SpJazHp6WtRD-OC1Se7WXdlSeCOsRkG6T1A7kV5G6MCbI4ydQWPCgz06R2D77qCSfB3Q2qBUfSlTqNK7HwaxEOjeX0x_6xdfUbWzKs9qBzvWAU39zMpkPlMXoxpDsomlkvT9GXb8lK9LRDigKfPP9E4SXkpuUtZXSU3eOy9Me6i75XcTRItziIGth0RByQl8R2mNvqqIOvmbbOjLau2-pZx5JD_SX0f3e4LcWQqY9HZwyxKCUpai2aAqeVpJvmqNF2MhmqdaQ9nrftA3P0-63o9ZRaFlP9P25rK8DpH6Wdopb1axwWFaRWI7zcwyNNstvwwN2SkcDNldPWs3-HC0J4Sc7YiBu2JnJAHUQB3z-RTgKCx7ALhcjupwRfxO9bXGGL3WziDm9VHoBW7M7ord36ZKYMS9YlpsHIM_6u7bP5mFVLF_m7xUFwAUZBboIFwwPIdqy3vNQZGz1g8LId2VMrWvtiy-YXvONhf_UYMsl1SNi57PdBa9skLB8T0fIacI_kRuBL4xEh1I9ddWmH_ZspZlpxj1dHCOLCOEebr02HVrON3nneHnHoiWtDniv6qzqY9Kjw2c5ubUXKRLh3c336b-UpIYJWcZYg6yd_Due5fZJguGyBAEn3eS2rbUWMHjF6JWnb29RMBJLqIfx2GJmjbWhrPOsbtltYRLGxXqIEh0z2FxhRi9YYbJwGRwBnBJjn4poNNg6uxgEhQDdi8MObYGZDcrzi8uquE54uEjOzBkMxsgWt456ywsDw1oiBx8uEHcKlC56LBuf3PaD-s61cc5IZ1BU6D7EDBiLZj9fYKe644IJaz6qOaU4ed9fSlBp-1HYRcW_NUUZOZ5vjZbKGEBMkXVnns5yeLqvq6Lmq9IaJlhwKzYMXyCF-ENAOq5KrH6zgAEb8g8n32fH_48APtT80ISSft7lRF-9dTBvzmI2UFPPzIL-7FNithWGdO5eKoSigMdh0LA3zhMkK4-xKEOM0hmI7TOHr_sIXtCZ5K4nzI3hzPkKrx9IWDwdNm_n4Y_9T7r5pScwUlb2Ol6Llf4JIn-jtgykcB-H6ke-ZSud9g6Fl_lFXcWepf2MGgg4mWQq8oiHoZTuzmzkYkyRbI4AtvKEnDscd-iT_yhMQLwQKtcNkenTf4BUtjgq59sv8iSycrbqDwRraEE4JtrUvwPzLZAYqpWo6yJw9sAbHn5cthMJHo_Yl2i5URhKS8-OIXGZoF7XMThLQJYRRByAPATznc89PRHVGb7mzKA9ZdgVy0Ko5F1BEW71Qy1aDbFNkJc1lcV-g5ccdYowrKmBFliLTjg7Hw1AwRJ8TzkzYCfsjCmqgSXx_UTvfVz46OyOY6C0dNk3RKMFMwF-kJtwZhjo4sTbthtl5zXwHbj0tWOL1EBQApjaIhYgRCHJuT2MGu_4NNGJEEXr1WTZN8gJbH4EoN1mJXevj-MmpBaDh0oo_UVs6if8GXO201qJBtkCzVCir7ayVJTrFySojtSZjuTRV0BIW-kYFfE94EeVf3GtOCfZJcpvWAsf8KO65XOy8JGGfNC9rZRF-tOH-dED2W_q_6mnUHScevCBwy0vbt8sANdnt7PQ2dA4XTx63fkIoFr6KzjAJYfR0_qyp4v4Oh8HRd6FD-lEvpT19nlmkBTvL2fGeWiB3iW5nls5ALAk_tl9MYvZycmoONHImhQpFq9qTRpre0AiCK2Uw2kmWLpa7tJbXTvmiPeLceNaOnuUAFavIO5uQ6G543asulWVwimch9V3OLzytVCNiOEGCVnCE2LNXhaHIuK4m2h8BNFX_bOELqkJ31E4ztzQktwB7PCTxnYks1yPqBwfWm_3V3-GwQNh6-eXvforajrRW8ho-bZ6UtEFPBFgMxHkR-CqTpxEj3gTWRCd4DUQJiNZXvnKweC5aUGavqeQNPY8OFpzUTe9QGolyRHmPUDzqzDG3Bs_e6FBepla5rZuuwSEXpOdS1A0DexClUlASyiDB_Q6tXdZbTiNxedLUFiXwj-4qsuGY7DZrI2w9vaGBC32jv-GyiF-2h3QHcmPs3gAHdLxf5U0OD5b8Oz7qX9_NKtRRYV7jx02XdoBdS8GPeSL88th0nqxcSfhcsCYnkOivdCH3z8o4slB8icXvO6KWRayYZuacuXp7QI0-FuCoRXGedxqmJvxs-pvwN9gI5A4fX8Aw81aK_2DCG5_-YzKAZ0UBWWYfpQY_6ruTHtEba8SNv6-2jLToqgcqXJrMvxxYvNxPEc5ROMYCBLkA1kE9co0kufQufVqr4JO4yk3hPlPfDB6KPP3oeJZ8UGSwM4_88FqOtAsMXPHCOSkQqsJvNM1IplnVQD620kw2WUlRh9owNbSYVOa0t2YZcVdUPGgnSBYkb45Mux5yHbxfaT0oXyZ05jj5R5S1MJPtWO671tmsHVOV3_aLjwHkB1loGhXP9RDlYQCHVdVj7raBgteM_Ywdqh1atg65cLSShqMvn6QUQR1FWhxs9rx6dPTQ4v8X5wEbmNFE7UGQ4XEHJKWDcUeie_ldQ53dbwXpAp1LxZQXP63MrzGgFGkb7a0TYDspTzwUDNZkX0jRzVnrCXHG2N_YNoJDGV_j0nbT-_iJCF8jiGqtf0RYECwUXDvF6EuI-bYAEgOFif4WFuMV_O9g8zDdVogFFQ5NRHrd2OL5h5uyL_WLT23wFzq_5uFr3L2BmLpeOFV4VhQxBvMl_P6EkYCGFJF5Au8Mn1mM_RsnWE1dVfCsmmI4WqXwhX0zf19dxNOD4A5bxUseqE0D_cklZnAK3yi6-VimKDIKK5889jaFCO2Y_z6l7as8IpkDHnV-AETwPgpssWLyPEG-pD2JUlXGhhTCc4tZU3AV8-89PvWfzofcLgY4wOHh_DX-4HD5OpgIuqGcVSbs11AsqBWo9SL5RS68jx00Y8iqA8ft45NzVAEGTQvfolMxDKto6hteXWUrFTmwlP_uCR8ddGChRD2FunksFXfSgAqU058CW4SFgfNZ6lBnRbQt3OpcQn-Ni1OJef0-bZB_BLisPXoFHzjUsaZ5OMbKoptUNNxVSoQ0NdXHTewRPdi-d4r0X3h_cQP9_borNENZ7ygc42nZZNfUqvduiG7a27cq7vPrYQ2KznrplyQZUcEQ49KcoEHYoGGm5tCZxx1G5yjfMJpybnVeySxmJr1Rtqmz2Yvsif5Um8VBIxPM_pzaEhfjLt-M92o0Zb40bWxK2FoXWDifBmYrbYGPkbL1i3lGEf2etEnwp56FmCkgObyJt1ix_pdPPnNGombETPikGwqIqWZil9qS7QMi1alOqz72uPgHh2K8eNMxJ1P8PwbE_SC1ee15TohN9nhBWVfKrbXvfdZf8nTHkORkhovuSjmr9lTOiiW4baUfRt903pB1fbWvMInrea4w5h4tK3-HLvc7NT03ERM5cQu_tmOl2V3mRhzX_jRZwdjBBSjqrZyUs54HXlJECm211SrmowUip72S1zk1yJZkaDGgzn7kP5hoYZ8wolqlcV07VQmMtPH5JZuyGHaJ0BOjer2Cff3U6qegeitXsaLn7KOG_TYbgUVLWNYwppSFV4bbMjGLuzpeVzaWE4Hp8EZr_SI0xxUnZhjrZTPiRwbHF1lN_oP0Gnt3laXdUB3jwQ04iPIkJSXQnkCR-a0AGJui9Y1cQrym0apbhdZwRnhlekWflXa_mWJYxvVsp8ZPkgG95rfi5MEZwaqH35WGhdh3LRZgS1DbOgEhWioBRBgJ6cd4GV8Zvmu6ku9DG3biWFyYoypd-6H1i1e21WtRL6bOeopIQRl6WRcfg3b80HMyscp4Tk-mwtTgUxSGNVZ5JSt8bXIuXEDdZe9wyx8pdjQzDW4T3EWFLhKQ1k7QQX22m8WCCx0We6QDxHqq4ngJhXg4mTZt9c7eAYKasJu59vUQKatGlk3EtxVTMODZtajoorySApfgMMKhqfhPMU0kwTN3YwrF7rXkK-02aNkS9c9rILBX2dqnyI4Z0v-kXFM8zbssk5jJa-uZw4ke3_bGYSZmrSzotJEVVWcr_KfYdi33MZ8y6Iuw_TOj-CZn-OKR5xF8XlAVok4FnQ9nx-Nnn5G8V6hhldIcs2dGhRHc0qEGXMF5jVbFsvdLNwaZqYo-my1nXR6FRs3pyxHbvjhe5wfsxX8mq42GWF6KH8MQyCPXaf13gx2ja9tnt9aoHp-ggXwsILtVpKm24lCtZ-YBO1U6KioCh4Lk3pocZOkmacZrj6PFMZPoxZvGg9Oh-4AFKov0J91oESjmUQCupworZn9dAvVlBtswvCfLkz_xAJnY2lZWf2WICA8I307ocYOTK3nwjBh69ghnPQyWCZTfpb__XmV1TsLJ0M14DsBo5YnTCQvhDZcQ8GeotHTClE5DJsHDvsi_Pi3OlBp3seQBqWFWRDhz-XyDdg_sW1DStKThdvyqocBFswn2UxqHkY7uBGKDHleuEEUIJTXDXIRrE2Lzuq3k1QwA6R-iQ-3oFRZu4Rk9bkHcEDiGy-SdbJGHglAx9gkXB91StakroxDE3OXGkeEi00PVdDH9Rw0AOS75KASI62keMb3a7UBmdJVc5Spr4_NmZdPXFXZuJmOYBi0-bky8D9NScLhTtcZuUfHZxt3YqkHCnEZ8D03WnRij-Ve-R4ixJpMSPyci0EbgNOBnE-ryVkO4gNucC_RWC-QGHhdkCmkfFo0sLljHpJKGL4UaY3rGQ9QX8I0loecf2vx4HVdfFecCtAANNZeNfbSpYkUT4B0zCFSYP2gwiS5txWy-rz5ccKKd4FKErv_6A-xOgnZhsTqFJAU0sBIRuLmTOa_W3x-Dd3qJYF0sL1REhIeq36rH4kGOldezWQTXc3S5vXChm5d5dtXA1YU2Cgb970_ofFELr1fWqoaqmQxXCB0R3TjaAeJ799Pw23BZhH0SrU9YE1TfV63UXNKn5JEdkrWcd71q_eaBZfbvw5SL0K0ijqduVC0YZNvy57j2Q0BZ6C0DOU3CeuTwRI6OL_RXyWQZOtrtkwF8Il0taE96nCSgSseylx7ke9ULbEQcGJTkICdAPVWXlrRvzK0MwQeonnpLGoQ7zF8-_K0Hhgyyjs6HMGNb2pxUvaz4reo8hOvwkle815KrwmZWocljte0Kf7LsLq-NLn6wYLwdfhJ0lUqxY7bBMh3pKGNxXDpN5LBg9SOzgBYSG5uvA5vcR_nQBMtFcYoz9lHS3lYecipl8c1w1W86a_5S7XJALb_Phk-zf7QUIm7tVTR7Yi-YaG2dXM_DW3fpubLVGZ4YAyglSSMmFjDgA32KDP6xMrzdI1tygbLJgES2FFCWtGvGIvg7ZrsLAUbHNNwJ_KOMmYw88HQX2RKVDm8qrxa82iV7oTiTXdpck78L0cXVpElUfU9aDMITar_6q-t8vLST112i9NwZX5iOr7qpoWQQyS3u8U-ictdMSEEdfhLXrfbTt8h-VPP3RTJZ6c-WtGUUv-XwPKms7jNJ6JBBvQwN4knouTGk7BPKGW4S0CLRHLb_aNfZMHroaZV6lnm_u1E4fxEem_BQioYeVqBZsTrpNro7cpBCz7rz9TWKgxdwAHeY_ZVrgIqvJwoqitU_y-IfcT6Gc26N0yMo55AEUllhi-5ksRMllzW55Am9ILlleu9XvVE_DYaCjRHE50Rbl5rRALFPlovCNzTAdvwzm__x7GYxIDwbEDA5vBQxp4LwaSoZJ7Ibc69QAt4kF6tW8wF1ypGny11QQ-SRNLBrdSzt0xJYbvv32j9T-KssiM9v6kTZhLPYVVF8kJSTsJDQQ3qls77a66EzbEO7kmlG_Rl8xpEyreHBMy4-9b2YVeIP4Di0Kon7JpgQIRDxeswZ_Tz2_QQ_Wz4KtFt-o5lIcECatDIrZUV0A6rZKTIJzRxMvVl-ch8fkWWf-BpBihuAM93ji4uwyd1wcM5xoDgWQ_7jC9MZmAP7zxykhlUd3mrq5r3hEy2RxEYSN2u-zWSA_fpED6_yoXnI4sTNEg59tCCPeZWeZPaiSs6KQv2pzlYZLqTuFNWEL2-tLqVIhJkh8faJdNYKXbxmhfscSqANsVxEGiBZORbkD3Cbkji1uFZV4uO8E-Z15j60fp0Pbj4USsKy3UpNvHFMN32XQkVU36e2YtbthCQVpMdZXk8xrzhGyVSF2td4OhFOzqFegTxbXI7xGw4OWJ3FlaqNJvZCbaACRIzIjbhIf102aWvxnGrChOjcLBpWr7S3AUCbUM1vnUXgleViQUBx3e1X_B995ywbl3kNK2acs7c7LR5ck45BMO2dWBR0gXLJCLAbpH6nNB8LSN9X2TIvhHb42rSKHlKJFSE_59lnmnHkxfWj3OlG09iYUTjvbncJaIpNGhdSpZAJXI_4daCym8OW8r6Xru7-Rbpzs8IcpeicpS_6mKY-Ubpi_s84aHYrNlfbr62SPGXWL5iuP5-5ReFMxareTccVuJjfhTWf-MjlNIkpN_lXqPj0p9isAag0T_3O-CPSGbfTZ_RpDBbPnuYuBlNJzi9O6eOE8qmbgcRmzMX3NyUlvtK-RWGgHSvjwVzp48pTyyNNgfvjdAqrnzU5BVh6A5NDMTjm24rHK0Cr9DjlYSBCp8zPpUHX8qEUfMCa7d93qlvHt9dYF_oLzriE7CubHm2e4nYlUPTvGJ4AqlUvi34yQQyt_Gko8PX0utXjgeVCtbArAirBeRyfh2SSXgh5L5b2jCxJnXkQwIbjfGz6X6Xb8qwh3qyLtp0ZlU6LgxlRRl0eCZDSh5wH7QUJeu5Gi3JuZkBPhA3J09G09fmUPbKLR9oyrCLxD-b0Bi2BqjmuMXi_L1_pRJCZw82hasNtx0WdgcRiKm72bPrmI0VVOTV8NyuU_ttvt0feXPKuxJry5zjvEx5MecXnfv4ICRajm9QMcdRMQ9lpM3TH9B70M8LL8y55TKns2Hnvw5-R5CL_smz4iuELn840ds5EXV2j67yXKemjYeh5c6GPmnNrZXorNg7GXv6vMV0I6Ys2xH3Q1vgkFtjVHRVOXeWJmhxAoMnSUXhaXR9zKjN-0L0wHTrii15On-zWnelT8KEWNtVJHzjxy1E4hdhTgX5eH6QCjbCEmsulkxjd_T4t3l9gRJgUnH-JiB-ZTPbcuNWEBH8S5W7QTUcvUYTNbqwva9DkYnmYNG9O5mKgxW-cTe-X19T7FPnvmWpEPlBqkkDOKTNA3vEnNs48Z6SnAnoVDYz-40KGvKL9SzInOo9ppZUHc8stARk6l4qdG7SfH5Z_AjPpwAGIDusGRXz7m3QPmJn65i58XzcQiJ_aEaJZ0qOci7cQTC5QbknASZB9ozoFdokGS1umdxSQdneW-rspG-ku5L_KHQUWsn1tUdfQwPOCesryF_vYurJVaGdCy2UMsxTeDHqkTn_nCs4aztaHkGZ4WNOXqrEnf3Bw4HYF-9s6WIrVbM2GvnNmnuWYbcu7mo-7hf5FfhK5njcE8rxLqq7o0FF-GSiLpbICVrWC7nCrZBsGl-lpxRPwj_izYfzWPUOxC9P0uHY-qpnUeTMKya_dj4OAv0LWreki3dTD0Bv1n14GPUu-dkB8TOp4MHfANRmvE-eHGyjkMhHSgytV8SSK9x0XnpIxv71kFgMwSdVCWBXCA97PM8o4Qj8kRlLnqLw4JetKTR9K1mVGozIcPd7BbWdA1Y84qnaWcFa6E-kxC673b-F5iSXHYdJUgPmwa7DW60vFdS5a0mzUXil9HL5XS2erGz0n7s0dUU4hnDy8A35Kcl6RF3XWHQuOLW0i09v6tj2MIFKQarmiT-lvkqXU7saeF44uInnLudIOgHd6sy5Ac1RidPHczyyG3NcjbA2Ae5m-fNY-ux9vIOinPUh0ANB2qA4n3qJuD2k4GVpOC8sOjWCGCuIvb_gvsYEPR7pXW2FLe5YyVgzga4ZFM43eLadsg9xyjnrmualetw0OmTqH2ZkRtEIDZ9iXbdMRb8HJlNv7j8MRBFVMq5B8aXI-afMDIFuz_OuxWAGWCxs-KKIJWQu8LLiDXTz_xMxQ5dUHVbmsHe6on3xa3Y8FVOU4CvJyHLsj9rb7_16v9nxKAbbDfZHOa5JAyi4foaHJh-gpQD1iFleLfC6V6_qFEkzohkluMI8OGEUaxdYeR8jv-7heg5eM0RIjflWbgk1qN6_3XpcKWXws15o57freziGI6blPFft5uuNLiaiStbCouDO0aLafh3WXx9gpumToRTuhsLOV7hq3nRntfkd32RP3W_E0Ub5N8xaeHh_IFXy5ZlNUBNy28nEJOLV2zIwejwi-8wMBlShqy6eAMHXKBiEwpi-uGSbS-OcS1cKWEfSpWRujQr2WHnZeY6twgGy5MB9JfY_3lDBY1stjUld0H5HttJWtPjRB2MAYeIBtgsfF-AJB6jCVrcmsXbvQYr-ysAF_70E1l4y7qObXDo8uuhc6crD8eptvf_JSPV8ZXJbZzJ5NuhFYTXMuuHBTnhv_4ZpMkiUXqXD_p8WZr7aLtm8tb94vrzq_3McjCgt1tTUL35c-lhIQsdET9FDnarwhvzSyZuIURDQFaeZ-bFZ432-F27eHJrtts28a3MAg0Quc7-oJUcpjds_ujJAxFHcmpQ83ZwGmsO1UTQv1evcwV6uy0NfIlGEzet1Jsvd_GV3jhFJMOhgpp88MZytbeNlZhgIle8xTeN9DYpog00A7fx6fCaa1BI72kTBGQnd5wKyW9ERoZ8ajzaDQt_Ox4UZ08R1G38giPsqPeiY1JKPEWnrwQrCd0NhUZ-fpXWps2c5O30Lx0f8_NtEzGXOYmvQQH3ua4tTprACGQSHNSZ37NedxdOeONrhCaUFRToujfDXUFaJCmJckpseIsAXsWZr8MLAu7dRDkIUYIs8-2u-kOidRelHonrKJOBjYz78EFZthkYL5Vx34VDgMbySt1kpAQpjUbExErIIU3InV9xy-38JxlpIbKopedgfHgc7M2w6e--kf5PFculo0wORVZSSvRrV0Phpj9Hyhnd6AB8_BHGw2KVCmc1OoAS9fWAdR6XzgUfnkO0ua51xBWDmia_zchIjGa3qDBQRRG3LRbpaIagwfWt5rPgxik5y6gF42usPH98r_IcoQza9XiJg3216MA5ncGq-3cqkucMN5-pVfMzZYNiETd904JnutDvAzWg1TEV-sDqHFSAspfoXpxfxteEz1GeB8Gi4cdVpbdT2vdYDIcNo9l5cxnt8GPF_6F_dk53TFY_vFp8yCecL06j2PzaxYpkjTEEA_pzan-cZK1rd2YGbYfBSvcvXB0m_WKqacHkFTCmLgps5QnHaoQI5mANfbvaVs8osLNAoKAgMn6K6fP_d3IOLq4Tom4f1NDtjcEDz-lGjg1cmuTy1V6A5FvQXV5xS79XD2v1RsgX6xpdgOzMLADGtDgwU0RT-lAqorGWbR6IXDoa01BOyuvQUunQ0DN3DCnuCQHcubZr40zpaEf584IVYtpvYp3UPG-EECo6wTYqCeiSKydJ21TxfutxCkTMMB_sDo5ONabMcQlN31lsUWUbtwzfecIVARTgx_qDdDVXEiehDvjfTLEgH9BVIg4cK5yRpVXArCpP8jdqWPlPh05HL3qzWDxdHbl314jr-hDMizqfy1Sr_ogfNys-cFrTtX2_rXgXtaFdDAi1L98GUFufWf_4adiHvf4QsEclERM5agG9qtvPggTFjW8M7BtkzmQ199PTjiemyY0cvMB4HzqiQm1D6laQkT8QA5C-mljkBOdM7Leg0kk0Z8773Fo3lY2dUYrGjpiupRbQYVBxcAh_W9iu4uqgN6r875SvHIehaX73bFKzoDdrMKNhBrYDSD1aVNhHGg4VSLCN0n-_j2i88PAADQihrh0iTxbEAVHfHYkQ5XgfvBmTPJS3JggL7KQ1pXSPdpOi7RbjiHdsaUKF8_M7OrevEcxtvjFgXWR8JRPAKJcdv78uh2sLWW8xwalMLt4TrXlFYRmm7kX1aXAaspuRe225WTnud0Gk6R84hKo_ye1nAkGxBMrzDsvn8DvcYiQ8nl5lgUziqQlNJ3fkvO30p50jrWiUva5rjRNIx9K3edYUagZSy0xKs9EJ_XVKLvMVa9q1-7edlG2vcOtYVBNZbQpiP_F4hJtD6SQmialhNT-z4_kgo-I6IJA2FyZJBUMwsqN9wZhVXg6bTaaIQzTlPZz6svyRyiuPUbIhepmfAPp_9HBvIXUegDmHBk4P_ty0dR9bXVWwj2Fz0E7tUGQbXcZcLC_T0SWeheMMHdD4YJ8e-46LZbFSoQLUEIYIKZG1FXVpOuuRhhhAcL2tRb0Ukkw0aEuyq9HCa1Y7nC5-NKcyvMMX5M60vrCd7dynrb8AQpiGXCyHD5ZZ8B-0Mckhu1aFE-8A2-4wfhP7DoYJlDyd8LKlKMasU6C7JvSkR_b7QYh8KsggVcQlBZAiNjDhyw5x6RLtECMeYrR9QWThEsBSF_A18gmx2EQsDijK_HfIAnQXeCWOAnIfsH0DWoK8agZvADlwCJ4ZzySh9VeLPC9QGuQTmZ_lXYIrxWTS8_afmNhvYi5sRZsiqIXfUiRuOkZ6b_7CxkL8G-9qf8fcApb8HbauMT6ExnwPTn3rSq3ZP1s4ZnuTU8nBbtOWi3LWuslN2PxM0EA724yBzIVtM8K3Ouoea1CEBG4X72rXTivWRfgtXaYnruQ4BAxji3MP1b--2iy0P9SDz4cV-ylakyB8cT7JKqPmew0yAVcEvNtUhBdGMAgXzPRU4L9OZrxUW9NujEIeM1517-9MhAUfSkU2glhZtEgP1ZxJZ7mEGcE92bmjFU1ckppGkJMfqq_1HmGUpYRmqvDJILNZP35B02ZEUQzFTKAp2tvBlx5lAkWX6xuajhjjfON9jDYakc5_hJk0hgmx1MCuemTbS_n2v0hVjHQqpWrNESJ3c6IlO54rSMrL6UA5iqvkClQoxBl3Uo_eU-iVI2PsTQkCI54RzXo45k0y5lTG0AzEGWmlpqV7wwRfqR4wgTLDpmk3E-aYNdM3WV5VxBIQSqV8mfCOdLsf7tIzsmqFs-mKBCeI4qv9QE4QQu-ec5L8prYFcajDU9isPw2oYmrjWndCFXdM3xhWGpW2zyFCndLid29CaozK0N4M1QlKt5UOxToWsBPdAESNG0dXO3y9htTtA7aV9B-4f76erATbRJ-0rlFXU9Xx_5omL4UfWYfk9xso5nGFxepSE78vUqEOMeykD3CQdEuhV7v3oNSlSwdngnMW588hzxHwE_BCmil8Iz51mOB0Q-mosP41bBGoRtjki4tMNXd-JEroa6aWkC88MKnktuMxAYwesppu_ZOryyTd5qD9Mx7wXFi8DC9lt6h64Hks5CehG6otyn1XjRBOP2Hok3h-ocfPOoMEyOdTv75MQ4riWeOHTDBv73iY9eNUi1K_tyw0jxhAqUpzYGCzC4SlXO9fttwgYfaY7oMR40bJJXDoT74axpxSwf4kWngf1iQiGF-aLMYk3XvKrWzb9TJ-ozA0kY37mHx1uct0akp0izsguGOtsr9GfkTANSofu0QyNbCDVsKrFBA_QHGIdA1ksgWw3aS-uIGWy2gRgBiMkd_gBlss1pA-hbKvESCD4xBEXmmEhl_Pw48-tDr7rm0rLUG-Hjp-b7oIZahSJZlVRCfb2zA0sycobYy5aK120ODaiMHBFc0fq0JmCcZ7Ok8Xj_PXE0OidyoVqpjphf_8Z5fzx8LF-ETvO_n3uXb4fGNyMurIiob50jvj17tM34QZUXIMhyEyAWGmD7_IsXSo4WFCHK8GPTyep0GN-Jnj185y38cMCmzShPulV52GdlMUR1GXSX_vuXWj3WVK6aSOt9Sf8U99SPiD2ox344p45ysPfOh-4tX-QObfvFbRfqAaGfbf33x6RbFp_rva48gnTnjsmQoQXf9x9LlKiIfdDsxVWUK1KlzIt1HCYU-4qOkhpNeHvTAPjPDFIQ6MQ4jZ_TGhszUn0Ib1Sl6pkAgrCN-O4pVuvSowBF6tEN0-Hohwg1MPsYtLMmCYYyRlbjoNpJcg12vVLu-6pBD7umHKZsDIDqIPoY8Znu9Wu3KU2B-0CHkI-n5J7-nkaIDTNCYJ0PKdnjvCc3_qHXNXJBvJruh-lyRV8cHhuoKlqGqWNoNS8uVhkkxvEPWxjhJ2RPpUBGFGeD-47rD4Ptt3D_WPWy8BpFxz1pV9esTCDJKb1_x4IlGB3PGD7f0OhFFLFIO_KMIV-eVxdz6N1b9E218uYff6iLUEevnipI8g8_Kb1a7MtUtuC4eBRG4wRLycrYRhhPWgiBFoCKk0zcpwP0j7X2clJG6loJn1i9zp_M3aVHU2gtnjExxgq6Yg7VXvLc1rEIPMpF-o8DvnRdOTv0dmlf1yVFbd-XNJktM-bMcXR5_cTXRtOS6RhdnRryYhLYzzzScm6gH3E1W7lk0HNzRw-MBrql2AyCS8helfNxpZTSNVZddY5hLzXkg6QhkVfFSJB-9ofIJiBZPpa4eFo0-w7VKDuMTdzz0vDcwg3U0nhjzFXEbXKub9m4et8Eq57wNepYfAYkhffq8IkEVR0oCTrtHWjfigg4bf-5D3c7omQjh9lfkCHqxF0esF6R8c3ko1MPSXBqlnVKwFpWXyMLsWLSOum39R3MaeQbQL_jGQhLfMIi0HFFct0foRA6wUiSKPvsWwZNzJ-i7C0R8hSKYXZUsmuhaTX80AbMpNv5dr9JRDbP0KLaJ3lis-bE3DPBZVC4oQzIs0uyr1NR5JdLOI0Z99D-32DdEOUyFCDsVvolbvE4BshS28o-2ViUK1k5C3UzJr-zQSBRnsfMCRDX8M9rxHVg4jwtVp94cOoWvjdhVgFMsfbZ8AcRzIDXZNKensBM-lKbkU1HNfT0vlsI2TJJSCDOki5jnCkQF5UTeiL3MD-GAaY1ixZfzlZCcNe6rqUnfTBhZvB8Iufr6RBb8Itk5TMSpTsZpuGVwAqIGSxvQrzW31WuGoJIjMrIWVq-NvaoXH3VxMUSPYYaxQA7RmhiFFxkJZ07Wha-4VTTyN8KbUkhZHxVYEsUdIVKUehrlVtNEHJt9pkchDOASnKAVV3MPz5nFkxR55bNVLFDGJfL2GrD5jwq1J-WZZgPQa6hVozz-amROS9P1C6Q7Te_Z7Vwf7-A3qzag1bsc6CtYnEjykfgdxkZC6GOVrRJKW6-Nnh8Yf2HiWieMp7D6YFwxf2VOR2R4N8x3fXMbB1Qg9MBCeO4NxemsiWoIVCYOnUVdQpjIJX5FBY9pd801gylrtNfNO860R1sG7znelEiWVJShdYJdrh6Q85IjO01W5He11gMcUhlkS5NzbfdfUwbvgoi7jWVbQ10LseXtNcutG5X6_Ef9bPTc64kPLFxfuETHBF5Ce-gcAAcWAuggmHm-e8mn7X91sVL7tKMViZTrXuTPbniaSodLFCH3yNx3xpEXMk0J7bKTSgK_8IlXctO7OvXeMgSzQh269JrD_dxNSKimtEyuFOosWdOKrdp5eERTKppp5OO2OHLPFZuRtYM6x8Sq7RRzM9ug1evG1MAiPvUGJR55EojwXjoP8s31HVfBVnACr97505tyq0V7XcCewAOu29H5E4nCWK6tbO6hMTdHdNrw5axGbSyWPgXAU5TKSxFKxV93ZEIjYNvp12sCtTsgpTZ-ICg-cu_pYZm41k2VSh3GqJ8qBaJQGH3cXEp8tasgmRcPNUUtPGdr1RGuhp-m63thjVUseGpNTZpiDVcJdKOxSxA1coWPLS1lK4pK3uRkJvtJFFYC_c56GN4pgO9OOv7E1QT5Sex3ZYKezH13GExHQeMwTCkXp-sd7ChMY4b1PkrE6lm5Xbq1Y7seDEqnPWIyvRmLzZ9fHST-Zg8Whq6oYdGeOYaSoC_CfxBZJkbF6upocZrY1XjmZHu45C-YcnyKqyRys8DQepi5AZ8C5qnhabqvVaJu59V-vr6XyvCohHalH_pLSV2KDIn8p9rSRMuqxQyt0bMHf2-bP3FJQA0c4OCB5mWecIKy8HY2s51nSaT_vlD4ULaihtiddgcR3E_utdo3M8HWbGjIWbZhSJEpn6SCo4mGRHilAB580EOkCL-yRomHdPOd2-DifUo8Kg9ki4eAZcuTxH6Tz1pK5vvi46QZzGVMJlfv3ItyXSQzWwmeQt92-jm4SmMsIyVkaW5PU3XVZ51ayr3i68WfTJnsTLpLUBxbl4F4la7YAglBG4rQ-Pfu0Mfz9crUrjZM8ah9jd5QJlrjjrA4zhY4lmt-LW2LYi-0t3hopmJzonqbJP19AklzgmNfpyosBxyoz4M9rCg5SxwQwzreVRCIRDeAuMnse3ktma8XICO21hfrnw8SOV2AlAJLK48RfEn4msynfq3T3m-S-XRv2M_fTQZ4cNRukMlVqEULGyR0dCSr8vgsBTf1huRzkxPRVHBrBgInNRqSTXwa8gp5t_l1yKtOKclcYPkmDEGjNM4l31IvUO2vRoOuFp4uL_nWwaFuOBPlfLAUr86bN1TqXuJTt3D70TzwrFBMWwDtpnJ2zseA4h0X3fWQ6ViwKXBdbQFynY-pM9LhOh-u9YTgth_fi_qhWpVWmeKbbufPAegKvBLliNqD7pCups1KWW-hD4R6XMKTIJF502kebxoM_4YQcM1rS-YSNhckW5fynJ6bSqX4MOqytDAte9qhwgZSgnyRbY-VYmkyS7SKdC9jY_CT4W2IbGsfOcs0CGDLbABW2Wnhp9b-y_6S5hu35YlYTQMh9yTZ3Za91W7eSjNqTjmfn1HpteRgXQ_iOjeijkZ3G6E6Xsm0UYinukvnCYDJEU6QsrSo8CCmoNNPmvM98VfIEDWdV5aPOuMSEPT_tPa6vBZQPM2RZSXybFZaUChzRXJP6Wuob62GxD99uCB-cd5Pro6TK0kwb1bDuVLi4Aig4odTLM9SqeFjTAYlZztS1WKsl1zJ0k3TjzpCjf96NNBns6MV84HWDYOykBrEEvxE43CFwQLyo0Tio4omMXpHxA2p8Za9FZuiIIefE50nctx-PDkk8CT5CRSLHBQKKQPdNo-nMFpS1w2cMzMUo8uF0Y3SwrclKkbuRSZSbUi52dfj7ATAgCtZrlvN69H8jLrN-_166omeVoczoihVfkRc0HscS1G6EIzhSspcUtTCizqVmhQuXa797WqldDhSTmmdVcTTZ_eV0sd_S4cE04_fYZ6mqAs3CupZDmv1ncXp086mRPzFwS7K3ABpJEBGFip3yhkLQpliIQi0OeF9c9VJzq1cUHM1SCdjm3jrd7YAGWrTBHNGd4vYcAo02KDwFLyv8QmKo2i505cYVfiZPh3pGD1OYq4IFZ_EBsy__ZXCiySiAgzuksjDIFBs9ugDUAeF1aINtFazpMjj6DdEP2iGIJsgaI1br-LjHg898t_dABlaHV3DbKh35sRSxuS-1_Vf8yWQA6Dy480AWQq2GCJ0fkcZRCkfF7FGcSuO-3arjMko5gIpZniXqFEC8ohE-EjDHXrZVCUYk0WNLwjTYYkuS1EhQUkkSVXSxeKvSbACBtBvJZLk8WK7UFUj0oLAPL2tNT0EAuCBKwf_-1Oap2yNmZ8RbJVnAj0sRbm1hOTyxsPlI9zQqJAFcfhHntBTIlbbw3izXRcCRXHFy4WGYg9Hb4zOE9Fi_NT6CmyyiKaKa6YKVnH_jZUmNPClmlwuoAVBLJ8OYzFaj6ustPivwFpOxTgDOY7HFnmPcme7caFIAw4yq7OyG6QXKUOUVpqCZ7GxsMgBRdJ-yTOsqR7Mkez3xJIZwyx_MsfEKfKklEezezCybu0Xeo7uNJA1lKIFil6YQbqqpBeAW45_0Vf9j-Hoj0IWtEXI464Qho9yZpYZz1RkztRhwDtyudVcZOFPzKC5R5h2QstY1f2Ko1G503Xb5Dlcjsme0F_JNCDgu6cNDJzLKUo4neiXfAT5XU4-KVpdM4zuCiWrMsUpE7VR4sQ2_80jXNJum7scT9Ca1RiLBMO-PqDCpLyXCuS3XdCIH7BOBsQz_CBTiYNPeKIvqdR-ywMPgdnuEt_7g3nKWPrNcaUDtFxl4uLtPZHGBLfna-Qsfdy-91e3bjt_RSgcnDd0anXOenX4_z25PI3t1-DFK2RRAZmxwZDPrP65fQV4Xc8sYWHZxhFMAKFd210tptsVyR09jZDQs605hHYgvoOub-I1dlAB_GFlRHFm9OgryAcn0WNyb8IH7dlzMKu3jRLodVoRRS4c0cG5wCK5_1iX-YtShw6qSIKHe-DDzaUgTuqEVv4A9jGiq-NfVuOdILXsCGnDVUkO-iTF7j6RM8W99PRg4qAMo3mFqGuUzRZaN12Rr7oGHO-e6rQ5CNeL5q9-tSPohVuC9PGFCyrICoUTa2NLGOcOvamfLfuLsjOdk_tXXQK7cTbTvifiVw5DRrwKatsntjR2hqS92thNK_q73CMgICZ9yX2t7QXOwCykzyDz2SdSVihNPAeeenbf3JL51Yu3YV7TLlBykZaB-eYLsKjlalQZrXKPs41MDRTPAfLED0wDGbaxBQKukBcAFAFHb6I6DfkIhsJ8BsWNGGVHXRzXmvKUSTAo78cJFd1_XzourhMbyaiBuLBsuc8zdjmn-GGptOQYOLN29lZYENIXdYLPFbWBcXzoJp-1fh_mp9WJwzp_ipQBk9ODQ994EfgfnJS1vYpKnYjtNlgaL8m1ZkyHly_kxxKW0COjsqhsrCPv1AKpG5JSKiVEFkuPh27VlAKXKSeQIDnjtHJyD1XfZAd-a7vf18vswi38mjcLKoOFC4p2n0-j58Y4GBAPP1SQyhEeYJPuK2zOwmmS__kdpqVooSQFp7XRBJqRNZWc_UOI3nvZ4xcVC9QAqsn5f84xytkLCH1RXQpTP5WC-QHD4MqKVdKfk6Z2AYiqLDlx5I0qcDIJfcyD9Ubj38v1BvvmE_br6bh9j6rMjNBthkpZ2nFN3fa__laaK2p3iYITYTxGRbPwtYfBeBHrZrEq9mPAEMsH-sszC3TmamzF1MwqTHh_pjrKR8SbZcbXr8P8gOUw4fg4bG3ciKIksBfzXEwPUeR4Lqsot_LSAbM8WC7UhcUemcnEtyCjloou9GXY5hnubpfTtBpKJ6L1cE-QdkXmBEIvhAyWRIYok2DkDcn93V6ZTQCH1vJ0zLJKI0GKFS39Gvyg2Dg26wRyJBvsOVzYOmnTUjZNH5q3on7XsMfsV8QQ_W24rVDiLMKq37ZwYk89K0u-dAQ1ZoeO4sIlLYkb7zeDq9-4w0WqwAU-e548-_5EJD5kzlp8qY5Gpsy_KuI4LGt-gQCR15SjfY2Lh_nYB7WFqt9oloGVFnsPFjzPZKtbDCXT85Gs2f6UHghy7jkngtjUBQeuJYH-mEUSx36ChXziVbIW5Ri8OYtCtbACcwQ7Zg2SMJoeUuyxuBduK7YVGu49kDXGRrM3RKkMs2ncLMa6F677OOlRDd53BJGqU2oihvl2gSgrHCo_Qt2W7FPGi_HKrRULyvP1FiVsfWMMmnZbiCNVEf_VTLbJsayqKH0rebl49qMZhOJIi71gWRlBPdzJDa2k9YxWqMSqzC7l4boWPhb9SLE5GShPuBKU0E25DRSir9nRfNEUReMRGWLpIn8kHmZNzbTbbhYVszh-o8PnTRLVHapOiX6Ho1rR59DGi1mBpRpbYQd_sIUOS1XUOvU1Lf2l4s7XwKFdpp5iUV0Ky7ZENQTpzbHs2mqGfGsSjdjxTD-4jKRVF5L2bf2cAEdOL3vPVRJZspFIQf0TDJtP5_BNaWDUk8tN0PZ0qMqrU7OejkqCAHDFWnZ6MHMMo7-I_0HvsMco4GvGwPHcmlHxq5X6Xm9M1Ps5zVI8Qr7k0PLTHnqGkDweiwi1Ih5gvTdU_vYH2pC-eYpJv0I7GgZIh0jjleDKh0yvK9n0YBk5tn04wU9pkBmzd-eJMw7VMQfCgZFI0VO6ahTKYdJL7C4Y9ia4vpZnj-I-5Ym5U1BCVUEFh-AIudQQpt6Pu3CgRqIF4mQR_hT3JaRQVOishUGDD4ggdSS6XxuXDCFFOSgwWD2DJIYdHjLerH3_8RDH0smXdlHau1iHfgf8jWq3M2DGt5-Zsyc0VHwvKw3y4As42oJ6zwC5ExLJ4JGlLhTETS7uuVqlecRcNUiXFOgU8Sas5j2vbb0gUTX6rN3WIC6azdsH5Q73bm_N9VbQgncJCaKXNGRk2Ho9idSEjjDtpU39O9437lwkXKQOsGaXGIQjvH--lT3v43upl3AiVKsjaElDRtO-JMYl8IHzVQlbFcfiiEFLzjy5hqczDoFtVWIelMLHNKohravMA4wMB_lo3sUaokps6O62Xebg3p7RXCy3Okq_CgypVLzCHRa36c6M_ULXrLXV0kW2lemDIgY_OrPZ8s1EAxnYz3l-NbqyxidRZkK868Klxzbivzx_hdGkD2ZdHw9jYFrCV7MaDdrsDr2gT8S50L_f9JWAyJrBGj5GwJS6jBVSYr7fwuuvTXbI1Yov-HYuvIFSP-WNq2-MxfDJDvnqEB7va3v08XNH6Vd_KPlUkcE5qBVWRIHNLw507VqwnZ3J2AtQGqgHXUM_qyUDj0Wn4fzpvBt6DNMiLbEelLiuthHxTE7virXOt0d37I5iI2yTXlOoZwynwF99zV64tVpAyYTR-AtFrIUM9-UM3o8pBM6ZT9LLDpY-nzAX12JyJJdl3ZDPolacySSsyMBdOu8SDjh7lGTK6N6MuUzClTdt0NvnGLBMFMQ1gokJDUd9_OkvKzhEiw4jjwlgFUDoQSYfSFoeVuyiFrPC-slV6Qolx6Ib7r-lbFR2B3m4I8Tg4lUn38KzMBUfU70GRUQH_P3Q-P6ZqktZEjurWXxhUxNCrcTBXzS1KLo6Os8spaT1pa-H10VuiH_pnzBJ6Ycmlfciso9smxVrTqZR_2MvuvIMbbuTzyhCGV3xA3j7vYjYnPTWI6eYRxhwVqoI9tzahOO1R8o1eAeJ78zJsaWvQi16bHzJnSvnryUK8twbcnKHl9ia2NpETqk1Zi7OULMh_PHyIHTNBQ0cAMyfruTFebwx4uR3BAYyfdFtpHQuqL-KKH86h6xzv4Cx5oCQO90Vcz_NEgTktKd6gByx1xrhjTl7AINJGgk090OO98RcHHor7zM7aoDZrOSynUNdgV6zVVYdsQDm0aEMi3MKZ_1d-7fc-z-3zqjuJUMMYLx_isv5RjxF044mPcKH32dS2oeiaWVuzo8DeJfuBW18E3upslCAzOPYB-7eRnh6Q2ibc44NfJnM3XaZIUvYehH0iaoEC-KLzcXd8ETROUUDWtucZ2eqfhxPZvT2nk0tHcU8Zdd5-uVlTDdqgcR5sXlM8rw1Rk0S2SueGZIv_v3GNSs42GNRxWt_qCmYKUQmWck6YSCc3aVMTwJxpnMirD6Xnxf5ePwct8Jclv95lgosjqGz25qNLXK1dkj0lhiIpYdR35ufTKx5AXSOqXKOAOmSGzZqmhTCtVQq2hFeNtcRmiX35uN-EmIoPQ8E9iBHw1lk3N-gCIqYseQvvpvXTgHRg3ip3NOJdNG9V1OAc8h2dd_xyP8N4uYlcpEp4MH6CmnrkclCt0chfnURF6K2WOof4Z51cIBDROuLiTHoX-vaOmiagkPxjRpvOIT7fD5Pq4jUg2fyOb67RF2Wb5rvLtSfteyO1CtR9o1vkUAWUL97bp8JkQKI8cCyhOCshy5Diq-dqxdmp66ilEa3bkyZyXR9jDPZ01932UYCFN3AMYDntJCz3a8v-mc4GT1XT2mgxww4l2-TD1DhS5FadMPjUYUClyLp6f1Jd5i41M14Mil4e2230TBYo9eMQveuD6zgQFX8RH-CVxCKB88rTcqX7vnIuvJmpS2cUg0owKiGTCK4XvlgbiHkf8OLT7638xcEs8Lrh5QZzCoIOcA9N9Khf_Tvj7-YubrDB1gdE9lEbxaNS71V4X8v0bnJ_wWA7pphGD-cOdOlN9rAERbK1eCJBt8t2EuQ93eYK4YKV_cBTiJWczzCxrkSwsbd1jcfhzStiA67Q_o7YoP358uWsGo7v2Ue8c1LO73Q8jdL0N8-pzVn0xTJZC6GknD6cGd6t6H5m1Z9WYSSTYQ2YaiKn8YvXcH5gA1fRWgy3LVxrUVY2oGatvcoFMBIhu08yBK_3qE0n7fVIFSbxmzPF-EUApXIDn8o7KCqlHhKyo9uwTSzvzcdJSdGXgwSX4Q_fxBYtA3dGBhsAASc2xLmoVptBeoyV2hV80rLNTD80_8YTMH2JMcy82YUPO7Hi0JCcSSQFK1BUDYORd7BhBJHIbbQuSPju2XS96ZWWjGV_N9fIVVzJasRTWt_2PQ8uvxw3--C31JXqQGXUk5UVpO78RDXymrC5ksEW2Ulo4EqF6fa8el9S1kvRzeO-W_GCfmNKL35LoNwTGax250Kl8kqHtCfGjgJsjYTQ1tCNQjC6PNqVOs0B8ofC3TfO0lycmgRGlJg5dJIcRVPUhfm-ZWAJ5SNDUu5iK4OcWRXsOWSKiAHNsK9P6sZlsNJFYpysuZOzGEwH-WFFRvr8Ufb7DC6EmYFrLdJLZQbWTXKoUU09I42jepaMDoCFwTROm0o21U3S4DAn7U_-UFqW7ThItO_M7jYkb55HFl0tXbd-6LomDNNdel67jpAyXMaUfxDjoZh5ExJz8Wyzq8-71L3v6e51Bma1glUByNgKrJqLScXeykm14ktypv_b9HMoJuAo34yL7zs9vqcM_0s-rLx97bKEebcxSpfMI5cMXb707eBU83zuNLPUB48XEjumdMv8rqbHncpkcabIu71ZP8_Kvn_jMKY_damMGi9wnd8uj_foFaTU24X0ca3AhcyfLzibxJSgkVWgSTBkuY6zJP6qqDF5CfYjiPDEWhXTDOaiEdKrLEI4ZWBuXDWNJ3CWdpPbrYjHxMFELi9Uf9PV4_LUNEg2vcwhMUfGJxz7pUvLDEkTiLsg0Am1Bm9-nDQJPKcH0upFoz1ZsmkXZEGvm-hJ-qjRthRtMXFnnr_ReZKkNEKC9sIehbQ8uqAf4itoRRaweYiAwFGZ1eeLWQezw5nRcit3ehfNpooxRA8ui4ECifnvnMV9LaHGKg9OD7Dm6ZLa1mkndmZsQDAus4IG4mY1V_MrK038l0="
           }
         ],
         "role": "model"
@@ -31,40 +31,40 @@
     }
   ],
   "model_version": "gemini-3.6-flash",
-  "response_id": "yDp9av6dHNeQvr0PrY_U0As",
+  "response_id": "U0h9auXjH5qS1e8PhYXckQw",
   "usage_metadata": {
-    "candidates_token_count": 11193,
-    "prompt_token_count": 293681,
+    "candidates_token_count": 13299,
+    "prompt_token_count": 295675,
     "prompt_tokens_details": [
-      {
-        "modality": "TEXT",
-        "token_count": 22893
-      },
       {
         "modality": "IMAGE",
         "token_count": 270788
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 24887
       }
     ],
-    "thoughts_token_count": 6585,
-    "total_token_count": 311459
+    "thoughts_token_count": 7916,
+    "total_token_count": 316890
   },
   "automatic_function_calling_history": [],
   "parsed": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.0",
     "claims": [
       {
-        "claim_id": "claim_001",
+        "claim_id": "company_overview_1",
         "section": "company.overview",
         "order": 1,
-        "headline_ja": "分譲マンションの特化型特命施工と企画開発から管理運営までの一貫体制",
-        "body_ja": "長谷工コーポレーションは、分譲マンションの企画・設計から施工までを一貫して手掛ける建設関連事業を中核とし、マンションや戸建の分譲・仲介を行う不動産関連事業、賃貸・分譲マンションの建物管理や大規模修繕・シニアサービス等を展開する管理運営事業、ならびに海外での不動産開発等を多角的に展開する総合住宅・生活関連企業集団である。土地情報の独自の収集力と商品企画力を強みとし、土地持ち込み型の特命受注を中心とした生産・事業モデルによって高い施工シェアと収益性を構築している。",
+        "headline_ja": "分譲マンション施工を中核とする総合建設・住宅関連企業",
+        "body_ja": "株式会社長谷工コーポレーションは、分譲マンションの企画・設計から施工までを一貫して手掛ける施工特化型の総合建設会社である。独自の土地情報収集力を強みとした「土地持ち込み特命受注」スタイルを軸に、首都圏・近畿圏の分譲マンション施工で高いシェアと強固な請負収益基盤を確立している。さらに、竣工後の大規模修繕・リフォーム、分譲・賃貸管理、仲介・リノベーション等の管理運営事業（旧サービス関連事業）や、不動産開発、シニア事業を展開し、建物のライフサイクル全体から収益を得る複合的なモデルを運用している。",
         "sources": [
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 7,
-            "source_section": "企業集団の状況",
+            "pdf_page": 9,
+            "source_section": "２．企業集団の状況",
             "statement_type": "actual",
-            "support_summary_ja": "長谷工グループは、建設関連事業、不動産関連事業、管理運営事業、海外事業を展開する総合住宅・生活関連企業集団である。"
+            "support_summary_ja": "当社グループはマンション等の企画・設計から施工までを行う総合建設業を核とし、大規模修繕、不動産、分譲・賃貸管理、有料老人ホーム運営等、住宅・暮らしのリーディングカンパニーとして展開。"
           }
         ],
         "statement_type": "actual",
@@ -72,37 +72,18 @@
         "causal": false
       },
       {
-        "claim_id": "claim_002",
+        "claim_id": "latest_key_takeaway_1",
         "section": "latest.key_takeaway",
         "order": 1,
-        "headline_ja": "2026年3月期は受注採算改善と不動産取扱量増により増収増益を達成",
-        "body_ja": "2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）となった。建設関連事業における受注時採算の改善に伴う完成工事総利益率の上昇や、不動産関連事業の取引拡大が全体を牽引し、期初予想を上回る着地となった。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績等の概況",
-            "statement_type": "actual",
-            "support_summary_ja": "2026年3月期連結業績は売上高1兆2,731億円、営業利益987億円、経常利益941億円、親会社株主に帰属する当期純利益548億円で増収増益。"
-          }
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_003",
-        "section": "latest.key_takeaway",
-        "order": 2,
-        "headline_ja": "棚卸資産の減少等により営業キャッシュ・フローが1,574億円の大幅収入超過へ改善",
-        "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過となり、前期の39億円から大幅に増加した。これは主に棚卸資産の減少に伴う資金増加（542億円）や税金等調整前当期純利益（895億円）の計上によるものである。期末現金及び現金同等物残高は前末比523億円増の2,881億円となり、手元流動性を高めている。",
+        "headline_ja": "2026年3月期は完成工事高の増加と請負採算の改善により増収増益を達成",
+        "body_ja": "2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1％増）、営業利益987億円（同16.6％増）、経常利益941億円（同12.8％増）、親会社株主に帰属する当期純利益548億円（同59.2％増）となった。建築請負における完成工事高の増加に加え、受注時採算の改善による完成工事総利益率の上昇、不動産取扱量の増大が寄与し、新中期経営計画の初年度として期初予想（経常利益850億円）を上回る着地となった。",
         "sources": [
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
             "pdf_page": 4,
-            "source_section": "当期のキャッシュ・フローの概況",
+            "source_section": "１．経営成績等の概況（１）当期の経営成績の概況",
             "statement_type": "actual",
-            "support_summary_ja": "営業CFは前年の39億円から1,574億円の収入超過へ大幅増加。棚卸資産の減少伴う資金増加542億円などが寄与。"
+            "support_summary_ja": "2026年3月期は売上高1兆2,731億円（前年比8.1％増）、営業利益987億円（同16.6％増）、経常利益941億円（同12.8％増）、当期純利益548億円（同59.2％増）。完成工事総利益率の改善等により連結経常利益は予想の900億円（修正後）および期初予想850億円を超過。"
           }
         ],
         "statement_type": "actual",
@@ -110,101 +91,120 @@
         "causal": true
       },
       {
-        "claim_id": "claim_004",
+        "claim_id": "latest_key_takeaway_2",
         "section": "latest.key_takeaway",
-        "order": 3,
-        "headline_ja": "次期は増益予想を掲げ、年間配当は1株当たり100円へ増配予定",
-        "body_ja": "2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、経常利益1,050億円（同11.6%増）を見込む。新中期経営計画「HASEKO Evolution Plan」の株主還元方針に基づき、当期の年間配当金95円（前年の85円から10円増配）に続き、次期は100円への増配を予定している。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 1,
-            "source_section": "業績予想 / 配当の状況",
-            "statement_type": "forecast",
-            "support_summary_ja": "2027年3月期通期予想は経常利益1,050億円。年間配当予想は100円（当期は95円）。"
-          }
-        ],
-        "statement_type": "forecast",
-        "is_inference": false,
-        "causal": false
-      },
-      {
-        "claim_id": "claim_005",
-        "section": "latest.business_driver",
-        "order": 1,
-        "headline_ja": "受注採算｜追い風：建築工事における受注時採算の改善が粗利益率を押し上げ",
-        "body_ja": "建設関連事業では、土地情報収集力と商品企画力を強みに受注時採算の改善を徹底した結果、完成工事総利益率が上昇した。資材・労務費の高騰が継続する環境下においても、販売価格の上昇や効率的生産体制の維持により収益性を高め、セグメント営業利益は685億円（前期比21.6%増）となった。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績（建設関連事業）",
-            "statement_type": "actual",
-            "support_summary_ja": "受注時採算の改善により完成工事総利益率が上昇し、建設関連事業の営業利益は685億円（同21.6%増）となった。"
-          }
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_006",
-        "section": "latest.business_driver",
         "order": 2,
-        "headline_ja": "分譲引渡・仲介｜追い風：新規分譲引渡しや収益不動産売却の増加が不動産事業を牽引",
-        "body_ja": "不動産関連事業では、新築分譲マンションの新規引渡しや収益不動産の売却が順調に進捗したほか、不動産仲介の取扱件数が増加した。これによりセグメント売上高は2,932億円（前期比16.0%増）、営業利益は356億円（同9.2%増）となり、連結業績の押し上げに貢献した。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績（不動産関連事業）",
-            "statement_type": "actual",
-            "support_summary_ja": "分譲マンションの新規引渡しや収益不動産の売却増加、仲介取扱件数の増加で売上高2,932億円、営業利益356億円。"
-          }
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_007",
-        "section": "latest.business_driver",
-        "order": 3,
-        "headline_ja": "海外事業｜逆風：ハワイ州開発事業の低迷等により営業損失61億円を計上",
-        "body_ja": "海外事業においては、米国ハワイ州オアフ島での戸建分譲開発や商業施設運営を推進しているものの、進捗の遅れ等の影響により売上高43億円に対して営業損失61億円（前年は営業損失57億円）を計上した。国内事業の好調がカバーしているものの、早期の収益化が課題となっている。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績（海外事業）",
-            "statement_type": "actual",
-            "support_summary_ja": "海外事業は売上高43億円、営業損失61億円（前期は営業損失57億円）となった。"
-          }
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_008",
-        "section": "latest.outlook",
-        "order": 1,
-        "headline_ja": "2027年3月期は経常利益1,050億円を目指し新中計目標の達成に向け進展",
-        "body_ja": "2027年3月期の通期連結予想は売上高1兆3,800億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円を見込んでいる。首都圏・近畿圏でのマンション価格上昇と堅調な需要に支えられ、受注高単体7,300億円を確保するとともに、新中期経営計画の目標である2028年3月期連結経常利益1,000億円以上という水準の達成を見据えている。",
+        "headline_ja": "営業キャッシュ・フローが大幅改善し1,574億円の収入超過へ転換",
+        "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは1,574億円の収入超過となり、前期（39億円の収入超過）から急回復した。主に棚卸資産の減少に伴う資金増加（542億円の寄与）や、税金等調整前当期純利益895億円の計上が資金創出をもたらした。創出した資金は自己株式の取得（201億円）や投資有価証券の取得（347億円）などの成長投資や株主還元へ充当された。",
         "sources": [
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
             "pdf_page": 6,
-            "source_section": "今後の見通し",
+            "source_section": "１．経営成績等の概況（３）当期のキャッシュ・フローの概況",
+            "statement_type": "actual",
+            "support_summary_ja": "営業CFは前期の39億円から1,574億円の収入超過へ増加。棚卸資産減少に伴う資金増加542億円が寄与。財務CFでは自己株式取得201億円等を実施。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_key_takeaway_3",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "新中計の始動に伴い総還元性向目標を50％程度へ引き上げ年間95円へ増配",
+        "body_ja": "2026年3月期を初年度とする「HASEKO Evolution Plan」において、6期累計の親会社株主に帰属する当期純利益に対する総還元性向目標を「50％程度」へ設定し、計画期間中の累進配当と機動的な自己株式取得を明記した。これに基づき当期の年間配当金を前期比10円増の95円とし、次期（2027年3月期）も年間100円への増配を予想している。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 7,
+            "source_section": "１．経営成績等の概況（４）利益配分に関する基本方針",
+            "statement_type": "mixed",
+            "support_summary_ja": "新中計の株主還元方針として6期合計純利益に対して総還元性向50％程度、累進配当の実施、機動的自己株式取得を設定。当期配当は年95円、次期予想は年100円。"
+          }
+        ],
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "latest_business_driver_1",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "受注時採算｜追い風：建設関連事業で完成工事総利益率が上昇し営業利益21.6％増",
+        "body_ja": "主力の建設関連事業は売上高9,009億円（前期比7.0％増）、営業利益685億円（同21.6％増）となった。資材費や労務費の高騰傾向が続く中、同社独自の土地情報収集力と商品企画力を活かした受注時採算の改善努力を結実させ、完成工事総利益率が上昇したことが大幅増益の主因となった。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "建設関連事業は受注時採算の改善により完成工事総利益率が上昇。売上高9,009億円（7.0％増）、営業利益685億円（21.6％増）。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_business_driver_2",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "不動産取引｜追い風：分譲引渡し・収益不動産売却・仲介の増加で不動産関連が増益",
+        "body_ja": "不動産関連事業は売上高2,932億円（前期比16.0％増）、営業利益356億円（同9.2％増）となった。新築分譲マンションの順調な引渡しに加え、保有する収益不動産の売却増加や不動産仲介の取扱件数増加が寄与し、建設関連事業に次ぐ利益の柱として全社業績を底上げした。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "不動産関連事業は分譲マンション新規引渡しや収益不動産売却の増加、不動産仲介取扱件数の増加により、売上高2,932億円（16.0％増）、営業利益356億円（9.2％増）。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_business_driver_3",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "海外事業｜逆風：ハワイ開発案件でのコスト負担継続により営業損失61億円",
+        "body_ja": "海外事業セグメントは売上高43億円（前期は35億円）に対し、営業損失61億円（前期は営業損失57億円）となった。ハワイ州オアフ島における商業施設運営や戸建分譲開発を進めているものの、現地における開発費・建設コストの上昇や開発進捗の遅れが重荷となり赤字幅が拡大した。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "海外事業はハワイ州オアフ島で商業施設運営や新規戸建分譲開発を推進。売上高43億円、営業損失61億円（前期は営業損失57億円）。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_outlook_1",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "2027年3月期は連結経常利益1,050億円を見込み中計目標の1年前倒し達成を目指す",
+        "body_ja": "2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4％増）、営業利益1,100億円（同11.4％増）、経常利益1,050億円（同11.6％増）、親会社株主に帰属する当期純利益660億円（同20.4％増）と連続増益を見込む。請負採算の維持向上と管理・不動産事業の成長を前提に、新中計で掲げた「2028年3月期連結経常利益1,000億円以上」の早期達成を目指す見通しである。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 8,
+            "source_section": "１．経営成績等の概況（５）今後の見通し",
             "statement_type": "forecast",
-            "support_summary_ja": "2027年3月期通期予想は売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円を見込む。"
+            "support_summary_ja": "2027年3月期通期予想は売上高1兆3,800億円（8.4％増）、営業利益1,100億円（11.4％増）、経常利益1,050億円（11.6％増）、親会社株主に帰属する当期純利益660億円（20.4％増）。"
           },
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 11,
-            "source_section": "経営目標・株主還元方針",
+            "pdf_page": 13,
+            "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
             "statement_type": "target",
-            "support_summary_ja": "2028年3月期連結経常利益1,000億円以上を経営目標に掲げる。"
+            "support_summary_ja": "経営目標として2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上を提示。"
           }
         ],
         "statement_type": "forecast",
@@ -212,18 +212,18 @@
         "causal": false
       },
       {
-        "claim_id": "claim_009",
+        "claim_id": "latest_risk_1",
         "section": "latest.risk",
         "order": 1,
-        "headline_ja": "建築資材・労務費の高騰および時間外労働上限規制による工事原価・工程リスク",
-        "body_ja": "建設業界全体で資材価格の高騰や労務費の上昇が続いており、働き方改革に伴う時間外労働の上限規制の適用や技能労働者不足が施工進捗や工事原価に影響を及ぼす不確実性が存在する。受注時採算の厳格管理やBIM・ICTの活用による工期短縮・効率化が継続的な課題となる。",
+        "headline_ja": "建設資材・労務費の上昇と技能労働者不足による請負利益率の圧迫リスク",
+        "body_ja": "建設業界においては、資材価格や労務費の高騰が続いており、時間外労働の上限規制適用に伴う働き方改革への対応や、技能労働者の減少・高齢化といった構造的課題が深刻化している。受注時採算の厳格化を進めているものの、想定を超えるコストインフレや工期延伸が発生した場合、完成工事総利益率が再び低下するリスクが存在する。",
         "sources": [
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 6,
-            "source_section": "今後の見通し",
+            "pdf_page": 8,
+            "source_section": "１．経営成績等の概況（５）今後の見通し",
             "statement_type": "risk",
-            "support_summary_ja": "資材・労務費高騰、時間外労働上限規制への対応、技能労働者不足など建設業界の課題が指摘されている。"
+            "support_summary_ja": "安定した建設需要の一方、資材・労務費高騰、時間外労働上限規制、技能労働者減少・後継者不足など構造的課題が多いと指摘。"
           }
         ],
         "statement_type": "risk",
@@ -231,124 +231,183 @@
         "causal": true
       },
       {
-        "claim_id": "claim_010",
+        "claim_id": "latest_risk_2",
         "section": "latest.risk",
         "order": 2,
-        "headline_ja": "住宅ローン金利の上昇懸念とマンション販売価格上昇による需要抑制リスク",
-        "body_ja": "首都圏の分譲単価が1,419千円/㎡（前期比15.4%増）、平均価格が9,383万円（同15.3%増）と過去最高値を更新する一方、時間をかけた販売姿勢の強まりから初月販売率は低下している。今後の景気動向や金融政策変更に伴う住宅ローン金利の上昇が、購買マインドに影響を与える懸念がある。",
+        "headline_ja": "海外不動産開発における事業不振と追加的減損損失の発生不確実性",
+        "body_ja": "海外事業では2025年3月期にハワイの事業用不動産を中心に161億円の減損損失を計上したほか、2026年3月期も61億円の営業損失を計上した。現地不動産市況の停滞や建設コスト上昇が続いており、開発案件の進捗や収益化が遅れた場合、将来的に追加の減損損失や棚卸資産評価損が発生するリスクを抱えている。",
         "sources": [
           {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
+            "statement_type": "actual",
+            "support_summary_ja": "2025年3月期特別損失に海外事業用不動産減損損失16,112百万円を計上。"
+          },
+          {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "当連結会計年度の概況",
-            "statement_type": "risk",
-            "support_summary_ja": "マンション価格上昇継続の一方、初月販売率は低下。金融政策や景気の動向を注視する必要がある。"
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "2026年3月期の海外事業営業損失は61億円となり、赤字が継続。"
           }
         ],
         "statement_type": "risk",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_context_1",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "前期の海外特別損失を克服し新中計初年度でV字回復を達成した現在地",
+        "body_ja": "長谷工コーポレーションの2026年3月期決算は、前期（2025年3月期）に見舞われた海外事業用不動産の大型減損損失（161億円）や訴訟損失引当金繰入額（30億円）といった一律の特別損失影響（前期特別損失計230億円）から脱脱し、親会社株主に帰属する当期純利益が548億円（前期比59.2％増）へと急回復した。建築請負の採算改善と不動産売却・管理運営の好調により、連結経常利益は941億円に達し、新中期経営計画「HASEKO Evolution Plan」の始動に相応しい着実な現在地を示している。\n\nもっとも、マンション供給市場では価格高騰を背景に首都圏の初月販売率が62.9％へ低下し、販売中戸数が増加するなど需要層の購入姿勢には慎重さが窺える。また、赤字が続く海外事業の再構築は依然として課題である。投資家にとっては、受注時採算の維持可能性、6か年で4,000億円を計画するネット投資の配分効率（国内不動産1,200億円、M&A・新規事業1,000億円等）、ならびに子会社化した細田工務店やウッドフレンズとの木造・戸建シナジー創出が、ROE10％超の安定維持および企業価値拡大を支えられるかどうかが今後の主要な判断軸となる。",
+        "sources": [
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
+            "statement_type": "actual",
+            "support_summary_ja": "2025年3月期に海外事業用不動産減損161.1億円、投資有価証券評価損29.9億円、訴訟損失引当金30.1億円等の特別損失を計上。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 4,
+            "source_section": "１．経営成績等の概況（１）当期の経営成績の概況",
+            "statement_type": "actual",
+            "support_summary_ja": "2026年3月期連結経常利益941億円、当期純利益548億円。首都圏初月販売率は62.9％に低下し分譲中戸数は6,409戸へ増加。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 12,
+            "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
+            "statement_type": "target",
+            "support_summary_ja": "新中計で6か年合計ネット投資額4,000億円（国内不動産1,200億円、海外不動産400億円、建設R&D1,000億円、DX400億円、新規・M&A1,000億円）を計画。"
+          }
+        ],
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_perspective_1",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "マンション請負の高粗利期からコストインフレ過渡期を経てストック・不動産複合型へ",
+        "body_ja": "過去10年間の長谷工コーポレーションの軌跡は、首都圏分譲マンションでの圧倒的シェアと土地持ち込み提案による高い完成工事総利益率を享受した高収益期（FY2017〜FY2019：経常利益888億〜1,005億円）、資材費・労務費高騰やコロナショックによる請負利益率の低下を不動産開発や管理運営（旧サービス関連）の利益成長で補った過渡期（FY2021〜FY2025：経常利益718億〜883億円）、そして受注時採算の再厳格化と事業ポートフォリオ複合化により売上・利益を再拡大させた直近期（FY2026：経常利益941億円）へと整理できる。土地持ち込み特命受注という施工の競争基盤は一貫して維持される一方、資材インフレへの価格転嫁力と海外投資等のリスク管理能力が、高水準なROE（FY2017の27.8％からFY2026の10.0％へ平準化）を維持する上での課題であり続けている。",
+        "sources": [
+          {
+            "source_filename": "37_2017-05-12_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2017連結経常利益888億円、ROE 27.8％。"
+          },
+          {
+            "source_filename": "21_2021-05-13_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2021連結経常利益718億円、ROE 12.3％。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2026連結経常利益941億円、ROE 10.0％。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_consistent_1",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "「土地持ち込み特命受注」による施工競争力と圧倒的な分譲マンション市場ポジション",
+        "body_ja": "初期（FY2017）、中期（FY2021）、直近（FY2026）を通じて継続する同社の競争優位の源泉は、独自の土地情報収集力に基づく事業者への企画提案・特命受注モデルである。首都圏・近畿圏の新築分譲マンション施工において強固な市場地位を堅持しており、資材高や労務費上昇という局面（FY2024〜FY2025）で請負利益率が一時低下しても、施工標準化と受注時採算の厳格化（FY2026）によって迅速に採算を復元できる事業能力が10年間一貫して発揮されている。",
+        "sources": [
+          {
+            "source_filename": "37_2017-05-12_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "土地情報収集力や商品企画力、施工品質により高水準の完成工事総利益率を維持。"
+          },
+          {
+            "source_filename": "21_2021-05-13_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "土地情報収集力や商品企画力について事業主から高い評価を堅持。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "土地情報収集力や商品企画力で評価を受け、受注時採算の改善により完成工事総利益率が上昇。"
+          }
+        ],
+        "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "claim_011",
-        "section": "latest.context",
+        "claim_id": "trend_change_1",
+        "section": "trend.change",
         "order": 1,
-        "headline_ja": "新中期経営計画の初年度として「3つの輪」体制を始動し高水準の収益性を確保",
-        "body_ja": "2026年3月期は、新たな中期経営計画「HASEKO Evolution Plan」の初年度にあたり、従来の「建設」と「サービス」の2輪から、「建設関連」「不動産関連」「管理運営」の3輪体制へセグメント区分を再編した。資材高騰等の外部環境の厳しさは残るものの、土地情報収集力に裏打ちされた特命受注ノウハウと全セグメントでの増益により、連結経常利益941億円を達成した。Wood Friendsの完全子会社化など木造・木質化領域への成長投資も進め、収益基盤の多様化と資本効率向上を図る現在地にある。",
+        "headline_ja": "請負一命依存からの脱却と「不動産関連」「管理運営」による非建設分野の営業利益拡大",
+        "body_ja": "FY2017時点の連結営業利益（890億円）のうち建設関連事業が819億円（約92％）を占める請負依存構造であったのに対し、同社は分譲マンションの買取再販・開発（不動産関連）や分譲管理戸数の拡大・リフォーム・シニア事業（管理運営）を戦略的に強化した。過渡期のFY2021には不動産・管理運営の合計営業利益が155億円へ増大し、直近のFY2026には建設関連以外の営業利益が438億円（全社営業利益987億円の約44％）に達した。請負の施工量・採算変動をストックおよび不動産利益で補完する安定構造への転換が達成されている。",
         "sources": [
           {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績等の概況",
+            "source_filename": "37_2017-05-12_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）セグメントの業績",
             "statement_type": "actual",
-            "support_summary_ja": "新中計初年度に連結経常利益941億円を達成。完成工事総利益率や不動産取扱量が改善。"
+            "support_summary_ja": "FY2017営業利益：建設関連819億円、サービス関連97億円。"
+          },
+          {
+            "source_filename": "21_2021-05-13_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2021営業利益：建設関連646億円、不動産関連85億円、サービス関連70億円。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2026営業利益：建設関連685億円、不動産関連356億円、管理運営82億円。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_change_2",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "M&Aを通じた戸建・木造住宅領域への事業領域拡大とグループ化推進",
+        "body_ja": "鉄筋コンクリート造（RC造）分譲マンション請負に特化していた事業モデルから、非RC造や木造領域を取り込むM&Aを推進した。FY2020における細田工務店の完全子会社化（取得原価21.9億円、負ののれん発生益22.3億円を計上）を皮切りに、FY2025〜FY2026にかけてウッドフレンズに対するTOBおよび売渡請求を実施して完全子会社化（取得原価25.1億円、のれん2.88億円一括償却）を完了した。これにより木質化技術や戸建住宅の製造・施工・販売機能を傘下に収め、住宅事業の多様化を推し進めた。",
+        "sources": [
+          {
+            "source_filename": "25_2020-05-14_tanshin.pdf",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（企業結合等関係）",
+            "statement_type": "actual",
+            "support_summary_ja": "細田工務店を株式公開買付けにより完全子会社化。取得原価21.86億円、負ののれん発生益22.27億円計上。"
           },
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
             "pdf_page": 36,
-            "source_section": "企業結合等関係",
+            "source_section": "５．連結財務諸表及び主な注記（企業結合等関係）",
             "statement_type": "actual",
-            "support_summary_ja": "Wood FriendsをTOBおよび売渡請求により100%完全子会社化。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_012",
-        "section": "trend.perspective",
-        "order": 1,
-        "headline_ja": "10年間の軌跡：完成工事利益率の波動を不動産・管理運営の拡大と原価管理で克服",
-        "body_ja": "過去10年間の業績推移を見ると、FY2018〜FY2019に連結経常利益1,000億円超の高水準に達した後、コロナ禍や資材・労務費の高騰を受けた完成工事総利益率の低下により、FY2021〜FY2025には経常利益700億〜800億円台へと一時落ち込んだ。しかし、この間も受注残高を高水準で維持するとともに、ストック型ビジネスである管理運営事業の受託戸数拡大や不動産開発利益の積み上げにより下値を支えた。直近のFY2026には受注時採算の改善と不動産取扱量の増加により経常利益941億円までV字回復を果たしており、特命施工モデルの強みと非建設分野の成長を両立させる事業構造への深化が証明されている。",
-        "sources": [
-          {
-            "source_filename": "37_2017-05-12_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績に関する説明",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2017連結経常利益は888億円。"
-          },
-          {
-            "source_filename": "33_2018-05-11_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績に関する説明",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2018連結経常利益は1,005億円で過去最高を記録。"
-          },
-          {
-            "source_filename": "21_2021-05-13_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績に関する説明",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2021連結経常利益はコロナ禍等の影響で718億円へ低下。"
-          },
-          {
-            "source_filename": "05_2025_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績等の概況",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2025連結経常利益は834億円。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績等の概況",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2026連結経常利益は941億円まで回復。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_013",
-        "section": "trend.consistent",
-        "order": 1,
-        "headline_ja": "土地情報収集力を起点とする「持ち込み型特命受注モデル」の持続的強み",
-        "body_ja": "早期（FY2017〜）から直近（FY2026）に至るまで、同社の最大の強みは事業主に対する独自の土地情報提案力と商品企画力に基づいた「持ち込み型特命受注」にある。競争入札を避け、企画から施工・販売・管理までを一貫して受注するモデルを維持することで、分譲マンション建設における高いシェアと相場変動下での案件確保能力を持続させている。",
-        "sources": [
-          {
-            "source_filename": "37_2017-05-12_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "分譲マンション新築工事受注は107件と好調を維持。"
-          },
-          {
-            "source_filename": "21_2021-05-13_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "土地情報収集力や商品企画力が高く評価されている。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "土地情報収集力や商品企画力、施工品質への評価から受注時採算が改善。"
+            "support_summary_ja": "ウッドフレンズを買付代金25.08億円で完全子会社化。のれん2.88億円を発生時に一括償却。"
           }
         ],
         "statement_type": "actual",
@@ -356,171 +415,72 @@
         "causal": true
       },
       {
-        "claim_id": "claim_014",
-        "section": "trend.consistent",
-        "order": 2,
-        "headline_ja": "分譲・賃貸マンション管理戸数の累積的拡大によるストック収益基盤の強化",
-        "body_ja": "管理運営（旧サービス関連）事業における分譲マンション管理戸数は、FY2017末の36.9万戸からFY2021末の41.0万戸、FY2026末の44.8万戸へと着実に拡大を続けた。大規模修繕工事や賃貸管理、社宅代行、シニアサービスを含めたフロー・ストック双方の需要を補捕捉する体制が、建設事業の採算変動に対する緩衝材として機能している。",
-        "sources": [
-          {
-            "source_filename": "37_2017-05-12_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "サービス関連事業で分譲マンション管理や大規模修繕が順調に拡大。"
-          },
-          {
-            "source_filename": "21_2021-05-13_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "分譲マンション管理戸数は410,412戸に増加。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "分譲マンション管理戸数は448,076戸に達する。"
-          }
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_015",
-        "section": "trend.change",
-        "order": 1,
-        "headline_ja": "事業体制の進化：従来の2輪体制から「建設関連・不動産関連・管理運営」の3輪体制へ推進",
-        "body_ja": "早期（FY2017）や中期（FY2021「NS計画」）においては「建設関連」と「サービス関連」の2輪体制で経営が進められていたが、直近のFY2025・FY2026（「HASEKO Evolution Plan」）より、「建設関連」「不動産関連」「管理運営」の3輪体制へとセグメント構造を組み替えた。各事業の役割と責任を細分化・明確化し、不動産開発投資の拡大と管理運営の収益化を加速させる体制へと転換している。",
-        "sources": [
-          {
-            "source_filename": "37_2017-05-12_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "当時は建設関連事業とサービス関連事業等の区分で構成。"
-          },
-          {
-            "source_filename": "21_2021-05-13_tanshin.pdf",
-            "pdf_page": 10,
-            "source_section": "中長期的な経営戦略",
-            "statement_type": "actual",
-            "support_summary_ja": "NS計画では建設関連とサービス関連の両輪体制を基本方針とした。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "新中計策定を機に建設関連・不動産関連・管理運営・海外の4区分に報告セグメントを変更。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_016",
-        "section": "trend.change",
-        "order": 2,
-        "headline_ja": "採算管理の適応：インフレ・資材高騰局面に対する受注時採算厳格化へのシフト",
-        "body_ja": "早期（FY2017〜FY2018）は完成工事総利益率の改善が利益成長を牽引していたが、中期（FY2022〜FY2025）は資材・労務費の高騰により完成工事総利益率が低下傾向に陥った。これに対し直近（FY2026）では、設計・施工のデジタル化や分譲価格上昇を織り込んだ受注時採算の見直しを徹底することで、高コスト環境下においても完成工事総利益率を再上昇させる構造へと適応させた。",
-        "sources": [
-          {
-            "source_filename": "33_2018-05-11_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "完成工事総利益率の改善が営業利益を押し上げた。"
-          },
-          {
-            "source_filename": "09_2024-05-10_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "資材・労務費高騰で完成工事総利益率が低下。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "受注時採算の改善により完成工事総利益率が反転上昇。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_017",
+        "claim_id": "trend_capital_allocation_1",
         "section": "trend.capital_allocation",
         "order": 1,
-        "headline_ja": "株主還元の積極化（累進配当・総還元性向向上）と成長投資（4,000億円）の両立",
-        "body_ja": "早期（FY2017：年間30円）から中期（FY2022：年間80円下限設定）を経て、直近のFY2026では年間95円、FY2027予想では年間100円へと配当水準を大幅に引き上げてきた。新中計では「6期合計総還元性向50%程度」「累進配当」を掲げると同時に、6年間で4,000億円（国内・海外不動産、DX、Wood Friends等のM&A）のネット投資を計画しており、財務健全性を保ちつつ資本効率を高める姿勢を強めている。",
+        "headline_ja": "有利子負債削減から不動産・M&A投資と株主還元拡充（配当3倍増・累進配当）へシフト",
+        "body_ja": "10年間の資本配分は、有利子負債のコントロールと財務基盤の圧縮・健全化（自己資本比率はFY2017の37.7％からFY2020に48.5％へ向上、FY2026末は39.7％）を経て、積極的な成長投資と還元拡大へと進化を遂げた。投資面では「NS計画」で5か年2,400億円、「HASEKO Evolution Plan」で6か年4,000億円のネット投資計画を掲げ、国内不動産開発やM&Aを推進。株主還元面では年間配当金をFY2017の30円から配当方針の改定（下限80円設定、総還元性向40％→50％程度への引き上げ、累進配当導入）を経てFY2026には95円へ3倍以上に拡充し、機動的な自己株式取得（FY2026に201億円）を組み合わせている。",
         "sources": [
           {
             "source_filename": "37_2017-05-12_tanshin.pdf",
-            "pdf_page": 6,
-            "source_section": "配当の状況",
+            "pdf_page": 7,
+            "source_section": "１．経営成績等の概況（２）当期の財政状態の概況",
             "statement_type": "actual",
-            "support_summary_ja": "FY2017の年間配当金は30円。"
+            "support_summary_ja": "FY2017末自己資本比率37.7％、年間配当30円。"
           },
           {
             "source_filename": "17_2022-05-12_tanshin.pdf",
-            "pdf_page": 5,
-            "source_section": "利益配分に関する基本方針",
+            "pdf_page": 7,
+            "source_section": "１．経営成績等の概況（４）利益配分に関する基本方針",
             "statement_type": "actual",
-            "support_summary_ja": "年間配当金の下限を80円に引き上げ。"
+            "support_summary_ja": "年間配当金の下限を70円から80円に引き上げ。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 6,
+            "source_section": "１．経営成績等の概況（３）当期のキャッシュ・フローの概況",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2026自己株式取得201億円。自己資本比率39.7％。年間配当95円、総還元性向50％程度・累進配当導入。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "trend_capital_value_creation_1",
+        "section": "trend.capital_value_creation",
+        "order": 1,
+        "headline_ja": "高ROEの維持と資本配分による企業価値創出、海外案件リスクの課題",
+        "body_ja": "短信上にWACCや資本コストの具体的数値開示はないものの、同社のROEはFY2017の27.8％から利益水準と自己資本拡大に伴い平準化しつつも、10年間を通じて10％前後（FY2021：12.3％、FY2023：13.6％、FY2026：10.0％）を堅持しており、想定される株主資本コスト（8％程度）を上回るスプレッドを概ね創出し続けている。建設請負で稼いだキャッシュを管理運営事業の受託増や不動産仲介・買取再販事業、細田工務店・ウッドフレンズ等の国内M&Aへ投じた資本配分は、再投資利益率を高め持続的な利益成長に貢献した。一方、FY2025に計上したハワイ海外事業の減損損失（161億円）や訴訟損失引当金（30億円）は過度のリスクテイクによる資本毀損の反証事例である。総合的に判断すると、国内コア事業を中心とした資本配分は明確に価値を創出したが、新中計における4,000億円のネット投資実行にあたっては、海外案件等のリスク管理の徹底が資本価値創出の持続性を左右する。",
+        "sources": [
+          {
+            "source_filename": "37_2017-05-12_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2017 ROE 27.8％。"
+          },
+          {
+            "source_filename": "21_2021-05-13_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2021 ROE 12.3％。"
           },
           {
             "source_filename": "05_2025_FY_tanshin.pdf",
-            "pdf_page": 12,
-            "source_section": "経営基盤強化（財務戦略）",
-            "statement_type": "target",
-            "support_summary_ja": "6か年で4,000億円のネット投資計画、総還元性向50%程度、累進配当を設定。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 5,
-            "source_section": "利益配分に関する基本方針",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
             "statement_type": "actual",
-            "support_summary_ja": "FY2026配当は95円、FY2027予想は100円。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": false,
-        "causal": false
-      },
-      {
-        "claim_id": "claim_018",
-        "section": "trend.implication",
-        "order": 1,
-        "headline_ja": "投資家への示唆：建築利益率の復元力と不動産・管理の収益貢献による中計目標の達成確度",
-        "body_ja": "投資家が確認すべき核心は、資材高騰下での建築工事総利益率の改善が持続可能か否か、および不動産売却益への依存度である。同社は高水準の施工繰越高（個別で9,400億円）を背景に受注時採算をコントロールできる立場にあり、ストック事業の拡大と相まって新中計の「経常利益1,000億円超の安定計上」に向けた収益基盤の質的向上が進んでいる。",
-        "sources": [
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "当連結会計年度の概況",
-            "statement_type": "inference",
-            "support_summary_ja": "完成工事総利益率の改善等により連結経常利益は941億円を計上。"
+            "support_summary_ja": "FY2025海外事業減損161.1億円、訴訟損失引当金30.1億円を計上。"
           },
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 11,
-            "source_section": "経営目標・株主還元方針",
-            "statement_type": "target",
-            "support_summary_ja": "安定的に1,000億円以上を計上できる収益基盤の確立を目指す。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 50,
-            "source_section": "個別受注高、売上高及び繰越高の状況",
+            "pdf_page": 1,
+            "source_section": "１．連結業績",
             "statement_type": "actual",
-            "support_summary_ja": "単体での次期繰越工事高は9,400億円を確保。"
+            "support_summary_ja": "FY2026 ROE 10.0％。"
           }
         ],
         "statement_type": "inference",
@@ -528,91 +488,124 @@
         "causal": true
       },
       {
-        "claim_id": "claim_019",
+        "claim_id": "trend_implication_1",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "請負採算の維持可能性と非建設分野の成長、新中計目標の達成力が投資判断の鍵",
+        "body_ja": "投資家が今後検証すべき最重要軸は、建設資材費や人件費の高騰が持続する環境下において、土地持ち込み提案を背景とした受注時採算の改善効果（完成工事総利益率の上昇）を維持できるか否かである。また、管理運営事業や不動産関連事業が建設請負の業績波を相殺するバッファーとして機能し続けられるか、そしてハワイ等の海外事業リスクが沈静化し、新中計目標（2028年3月期経常利益1,000億円以上、ROE13％程度）に向けた4,000億円のネット投資が期待通りのリターンを生み出せるかが今後の株式評価を決定づける。",
+        "sources": [
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 5,
+            "source_section": "１．経営成績等の概況（１）②セグメントの業績",
+            "statement_type": "actual",
+            "support_summary_ja": "建設関連の採算改善、不動産・管理運営の成長、海外事業の赤字継続を報告。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 12,
+            "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
+            "statement_type": "target",
+            "support_summary_ja": "新中計目標：2028年3月期経常利益1,000億円以上、ROE13％程度、ネット投資4,000億円。"
+          }
+        ],
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "management_strategy_1",
         "section": "management.strategy",
         "order": 1,
-        "headline_ja": "「3つの輪」の連携と成長投資による持続的企業価値向上の戦略的整合性",
-        "body_ja": "「HASEKO Evolution Plan」において、従来の強みである建設関連事業に加えて、不動産関連・管理運営事業を独立した成長柱と位置付け、国内主要都市や海外への展開、DX推進、木造・木質化領域（Wood Friends完全子会社化等）の取り込みを図る戦略は整合性が高い。国内分譲マンション着工戸数の長期的頭打ちに備え、ストックビジネスや環境対応技術への資源配分を明示している。",
+        "headline_ja": "「建設請負」と「不動産・管理運営」の両輪経営を軸とする長期戦略の一貫性",
+        "body_ja": "経営陣は「NBj計画」（FY2018〜FY2020）、「NS計画」（FY2021〜FY2025）、「HASEKO Evolution Plan」（FY2026〜FY2031）の歴代中期経営計画を通じて、基幹である分譲マンション建設請負の優位性を堅持しつつ、不動産開発や管理運営（旧サービス関連）を成長させる両輪経営を一貫して推進してきた。事業環境の変化に応じて報告セグメントを3つの輪（建設関連、不動産関連、管理運営）へ細分化し、細田工務店やウッドフレンズの買収による木造・戸建領域への進出など、戦略方針に基づく事業構造強化の論理的妥当性は極めて高い。",
         "sources": [
           {
-            "source_filename": "05_2025_FY_tanshin.pdf",
+            "source_filename": "37_2017-05-12_tanshin.pdf",
             "pdf_page": 10,
-            "source_section": "中長期的な経営戦略",
+            "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
             "statement_type": "target",
-            "support_summary_ja": "基本方針を「建設関連」「不動産関連」「管理運営」の3つの輪に細分化・進化。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 36,
-            "source_section": "企業結合等関係",
-            "statement_type": "actual",
-            "support_summary_ja": "Wood Friendsを完全子会社化し、ハイブリッド木造住宅や木質化技術の導入を加速。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_020",
-        "section": "management.execution",
-        "order": 1,
-        "headline_ja": "国内特命受注と還元拡充の高い実行力の一方、海外事業の損失継続が課題",
-        "body_ja": "国内コア事業においては、土地持ち込み提案による特命受注獲得、管理戸数の着実な積み上げ、配当増額や自己株式取得（FY2026に201億円実施）など、計画された施策を確実に実行している。一方で、FY2025に海外関連事業で特別損失（減損・訴訟損失等）を計上し、FY2026も海外営業損失61億円を計上するなど、海外不動産開発におけるリスク管理と収益化の実行には課題を残している。",
-        "sources": [
-          {
-            "source_filename": "05_2025_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "経営成績等の概況",
-            "statement_type": "actual",
-            "support_summary_ja": "海外関連事業において特別損失（減損損失、評価損、訴訟損失引当金）を計上。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
-            "statement_type": "actual",
-            "support_summary_ja": "海外事業は売上高43億円、営業損失61億円を計上。"
-          },
-          {
-            "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 4,
-            "source_section": "当期のキャッシュ・フローの概況",
-            "statement_type": "actual",
-            "support_summary_ja": "自己株式の取得に伴う資金減少201億円を計上。"
-          }
-        ],
-        "statement_type": "mixed",
-        "is_inference": true,
-        "causal": true
-      },
-      {
-        "claim_id": "claim_021",
-        "section": "management.forecast_discipline",
-        "order": 1,
-        "headline_ja": "通期経常利益予想に対する高い達成度と保守的な期初予想規律",
-        "body_ja": "過去9年間の観察可能な通期連結経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、概ね予想通り（誤差5%未満）であった期が3期であり、予想を下回った期は0期であった。期初には資材高騰や市況不確実性を手堅く織り込み、期中に上振れる傾向が定着しており、経営陣の業績予想規律は極めて堅実かつ保守的であると評価できる。",
-        "sources": [
-          {
-            "source_filename": "33_2018-05-11_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "連結経営成績",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2018経常利益実績1,005億円（予想910億円）。"
+            "support_summary_ja": "NBj計画を策定。建設関連とサービス関連の双方に軸足を置く。"
           },
           {
             "source_filename": "25_2020-05-14_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "連結経営成績",
-            "statement_type": "actual",
-            "support_summary_ja": "FY2020経常利益実績853億円（予想850億円）。"
+            "pdf_page": 9,
+            "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
+            "statement_type": "target",
+            "support_summary_ja": "NS計画を策定。5期累計経常利益4,000億円、2025年3月期1,000億円を目指す。"
           },
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "連結経営成績",
+            "pdf_page": 9,
+            "source_section": "３．経営方針（１）経営の基本方針",
+            "statement_type": "target",
+            "support_summary_ja": "HASEKO Evolution Planを策定。建設関連、不動産関連、管理運営の3つの輪で進化。"
+          }
+        ],
+        "statement_type": "target",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "management_execution_1",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "中計累計目標の連続達成と国内M&Aの成功、一方で海外事業リスク管理に課題",
+        "body_ja": "経営陣の施策実行力は高い成果を示している。「NBj計画」の3期累計経常利益目標2,400億円に対して実績2,862億円を達成し、「NS計画」の5期累計経常利益目標4,000億円に対しても実績4,088億円を達成するなど、中計の累計目標を一貫してクリアしてきた。また細田工務店やウッドフレンズの完全子会社化など国内の領域拡大施策も着実に遂行された。一方で、「NS計画」最終年度の単年目標（2025年3月期経常利益1,000億円）の未達（実績834億円）や、FY2025におけるハワイ開発事業での161億円の減損損失発生など、海外投資に対する追跡・リスク管理体制には課題を残した。",
+        "sources": [
+          {
+            "source_filename": "25_2020-05-14_tanshin.pdf",
+            "pdf_page": 4,
+            "source_section": "１．経営成績等の概況（１）当期の経営成績の概況",
             "statement_type": "actual",
-            "support_summary_ja": "FY2026経常利益実績941億円（予想850億円）。"
+            "support_summary_ja": "NBj計画目標（3期累計経常2,400億円）を大幅超過達成（実績2,862億円）。"
+          },
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 8,
+            "source_section": "１．経営成績等の概況（５）今後の見通し",
+            "statement_type": "actual",
+            "support_summary_ja": "NS計画目標（5期累計経常4,000億円）を達成（実績4,088億円）。単年1,000億円目標は未達（834億円）。"
+          },
+          {
+            "source_filename": "05_2025_FY_tanshin.pdf",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
+            "statement_type": "actual",
+            "support_summary_ja": "海外事業用不動産減損損失161.1億円を計上。"
+          }
+        ],
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "management_forecast_discipline_1",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "観察可能な9期連続で期初経常利益予想を達成・上振れさせた極めて堅固な予想規律",
+        "body_ja": "検証可能なFY2018からFY2026までの9年間の期初予想比較において、連結経常利益の実績は9件すべてで期初予想と同等以上（6件で実績が上振れ、3件で概ね期初予想通り）を記録しており、下振れは1度も存在しない。資材高騰やコロナ禍といった外部ショックが存在する環境下でも、保守的かつ精度の高い予算策定規律と期中での適切な採算コントロール力を証明している。",
+        "sources": [
+          {
+            "source_filename": "37_2017-05-12_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．業績予想",
+            "statement_type": "forecast",
+            "support_summary_ja": "FY2018経常利益予想950億円（実績1,005億円で上振れ）。"
+          },
+          {
+            "source_filename": "09_2024-05-10_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．業績予想",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2024経常利益予想830億円（実績833億円で達成）。"
+          },
+          {
+            "source_filename": "01_2026_FY_tanshin.pdf",
+            "pdf_page": 1,
+            "source_section": "１．業績予想",
+            "statement_type": "actual",
+            "support_summary_ja": "FY2026経常利益予想850億円（実績941億円で上振れ）。"
           }
         ],
         "statement_type": "actual",
@@ -620,32 +613,32 @@
         "causal": false
       },
       {
-        "claim_id": "claim_022",
+        "claim_id": "management_accountability_1",
         "section": "management.accountability",
         "order": 1,
-        "headline_ja": "業績変動要因や特別損失に関する透明性の高い開示と修正説明責任の履行",
-        "body_ja": "FY2025における海外事業の減損損失計上や、子会社の独占禁止法違反疑いに関する立ち入り検査などの不祥事・損失事象が発生した際、決算短信や補足資料において遅滞なく事実関係と財務影響を開示している。また、中計の移行やセグメント再編に際しても組み替え後の前年比較数値を明示するなど、投資家に対する説明責任と透明性は十分に確保されている。",
+        "headline_ja": "不振事業の評価損計上における透明な説明責任と適切な株主還元方針の改定",
+        "body_ja": "経営陣は、FY2025におけるハワイ開発事業の減損損失（161億円）や訴訟損失引当金（30億円）の計上など、最終利益を下振れさせた要因について理由と内訳を適切に開示・説明している。また、配当方針に関しても「下限70円設定」（FY2021）から「下限80円」（FY2022）、「総還元性向50％程度・累進配当導入」（FY2026）へと業績推移や財務基盤の充実に合わせてタイムリーかつ具体的に改定しており、説明責任と透明性は高く維持されている。",
         "sources": [
           {
-            "source_filename": "05_2025_FY_tanshin.pdf",
-            "pdf_page": 2,
-            "source_section": "当連結会計年度の概況",
+            "source_filename": "17_2022-05-12_tanshin.pdf",
+            "pdf_page": 7,
+            "source_section": "１．経営成績等の概況（４）利益配分に関する基本方針",
             "statement_type": "actual",
-            "support_summary_ja": "海外関連事業での特別損失計上要因を説明。"
+            "support_summary_ja": "配当方針の変更として年間配当金の下限を70円から80円に引き上げ。"
           },
           {
             "source_filename": "05_2025_FY_tanshin.pdf",
-            "pdf_page": 8,
-            "source_section": "今後の見通し",
+            "pdf_page": 34,
+            "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
             "statement_type": "actual",
-            "support_summary_ja": "子会社長谷工リフォームへの独占禁止法違反疑いによる公取委立入検査について開示。"
+            "support_summary_ja": "海外事業用不動産減損161.1億円、訴訟損失引当金繰入額30.1億円の計上理由を開示。"
           },
           {
             "source_filename": "01_2026_FY_tanshin.pdf",
-            "pdf_page": 3,
-            "source_section": "セグメントの業績",
+            "pdf_page": 7,
+            "source_section": "１．経営成績等の概況（４）利益配分に関する基本方針",
             "statement_type": "actual",
-            "support_summary_ja": "セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。"
+            "support_summary_ja": "総還元性向50％程度、累進配当、機動的自己株式取得の新還元方針を明記。"
           }
         ],
         "statement_type": "actual",
@@ -659,21 +652,21 @@
           "dimension": "strategic_coherence",
           "rating": 3,
           "evidence_sufficiency": "sufficient",
-          "rationale_ja": "国内マンション事業での「持ち込み特命施工」を軸に、管理運営や不動産事業への拡張を進める戦略は首尾一貫している。新中計での「3つの輪」体制への再編も戦略課題に即している。",
+          "rationale_ja": "歴代の中期経営計画を通じて「分譲マンション建設請負の強化」と「不動産・管理運営（旧サービス関連）の拡大」を一貫して掲げており、M&Aやセグメント改編を含めて戦略的整合性が極めて高い。",
           "sources": [
             {
-              "source_filename": "05_2025_FY_tanshin.pdf",
+              "source_filename": "37_2017-05-12_tanshin.pdf",
               "pdf_page": 10,
-              "source_section": "中長期的な経営戦略",
+              "source_section": "３．経営方針（２）中長期的な経営戦略及び対処すべき経営課題",
               "statement_type": "target",
-              "support_summary_ja": "基本方針を3つの輪に細分化し、持続的成長と資本効率経営を強化。"
+              "support_summary_ja": "NBj計画にて建設関連とサービス関連の両輪経営を提示。"
             },
             {
               "source_filename": "01_2026_FY_tanshin.pdf",
               "pdf_page": 9,
-              "source_section": "経営方針",
-              "statement_type": "actual",
-              "support_summary_ja": "「3つの輪」の連携と切磋琢磨を推進し、完成工事総利益率の上昇を実現。"
+              "source_section": "３．経営方針（１）経営の基本方針",
+              "statement_type": "target",
+              "support_summary_ja": "HASEKO Evolution Planにて3つの輪（建設、不動産、管理運営）の連携進化を提示。"
             }
           ]
         },
@@ -681,43 +674,43 @@
           "dimension": "execution_follow_through",
           "rating": 2,
           "evidence_sufficiency": "sufficient",
-          "rationale_ja": "国内での土地情報収集や管理戸数拡大、株主還元拡充は着実に実行されているが、FY2025〜FY2026における海外事業の減損および営業損失の継続（FY2026に61億円の営業損失）など、海外投資の収益化に課題がある。",
+          "rationale_ja": "「NBj計画」（3期累計経常目標2,400億円に対し2,862億円）、「NS計画」（5期累計経常目標4,000億円に対し4,088億円）共に累計利益目標を達成し、国内M&Aも完遂した。しかしNS計画最終年の単年目標未達やFY2025におけるハワイ開発事業の大型減損計上など、海外投資のリスク管理・追跡に課題が見られる。",
           "sources": [
             {
-              "source_filename": "05_2025_FY_tanshin.pdf",
-              "pdf_page": 2,
-              "source_section": "当連結会計年度の概況",
+              "source_filename": "25_2020-05-14_tanshin.pdf",
+              "pdf_page": 4,
+              "source_section": "１．経営成績等の概況（１）当期の経営成績の概況",
               "statement_type": "actual",
-              "support_summary_ja": "海外関連事業において特別損失を計上。"
+              "support_summary_ja": "NBj計画の累計目標達成を確認。"
             },
             {
-              "source_filename": "01_2026_FY_tanshin.pdf",
-              "pdf_page": 3,
-              "source_section": "セグメントの業績",
+              "source_filename": "05_2025_FY_tanshin.pdf",
+              "pdf_page": 8,
+              "source_section": "１．経営成績等の概況（５）今後の見通し",
               "statement_type": "actual",
-              "support_summary_ja": "海外事業で営業損失61億円を計上。"
+              "support_summary_ja": "NS計画の累計目標達成を確認するも、単年1,000億円目標は未達（834億円）。海外減損161億円計上。"
             }
           ]
         },
         {
           "dimension": "forecast_target_discipline",
-          "rating": 3,
+          "rating": 4,
           "evidence_sufficiency": "sufficient",
-          "rationale_ja": "過去9期の通期連結経常利益予想において、実績が予想を上回る結果が6回、概ね予想通りが3回であり、期初予想を下回った実績はなく、極めて規律ある保守的な予想管理が行われている。",
+          "rationale_ja": "観察可能な9期（FY2018〜FY2026）の期初経常利益予想に対し、実績が9年連続で予想と同等以上（上振れ6件、概ね通り3件）を記録しており、一度も下振れていない。予想策定の規律と期中管理力は極めて高い。",
           "sources": [
             {
-              "source_filename": "33_2018-05-11_tanshin.pdf",
-              "pdf_page": 2,
-              "source_section": "連結経営成績",
-              "statement_type": "actual",
-              "support_summary_ja": "FY2018経常利益実績1,005億円（予想910億円）。"
+              "source_filename": "37_2017-05-12_tanshin.pdf",
+              "pdf_page": 1,
+              "source_section": "１．業績予想",
+              "statement_type": "forecast",
+              "support_summary_ja": "FY2018経常利益予想950億円（実績1,005億円）。"
             },
             {
               "source_filename": "01_2026_FY_tanshin.pdf",
-              "pdf_page": 2,
-              "source_section": "連結経営成績",
+              "pdf_page": 1,
+              "source_section": "１．業績予想",
               "statement_type": "actual",
-              "support_summary_ja": "FY2026経常利益実績941億円（予想850億円）。"
+              "support_summary_ja": "FY2026経常利益予想850億円（実績941億円）。"
             }
           ]
         },
@@ -725,26 +718,26 @@
           "dimension": "accountability_transparency",
           "rating": 3,
           "evidence_sufficiency": "sufficient",
-          "rationale_ja": "セグメント区分の変更に伴う組替後数値の開示や、海外事業での減損損失・訴訟損失引当金の計上要因について速やかかつ詳細に説明しており、説明責任と透明性が高い。",
+          "rationale_ja": "FY2025の海外減損や訴訟損失引当金の理由を明確に開示している。また株主還元方針に関しても総還元性向や配当下限の変更理由を具体的数値とともに公表しており、透明性が高い。",
           "sources": [
             {
               "source_filename": "05_2025_FY_tanshin.pdf",
-              "pdf_page": 2,
-              "source_section": "当連結会計年度の概況",
+              "pdf_page": 34,
+              "source_section": "５．連結財務諸表及び主な注記（５）特別損失",
               "statement_type": "actual",
-              "support_summary_ja": "海外関連事業での特別損失計上要因を開示。"
+              "support_summary_ja": "海外事業用不動産減損等の計上理由を注記開示。"
             },
             {
               "source_filename": "01_2026_FY_tanshin.pdf",
-              "pdf_page": 3,
-              "source_section": "セグメントの業績",
+              "pdf_page": 7,
+              "source_section": "１．経営成績等の概況（４）利益配分に関する基本方針",
               "statement_type": "actual",
-              "support_summary_ja": "セグメント変更に伴い前年の数値を変更後の区分に組み替えて比較表示。"
+              "support_summary_ja": "総還元性向50％程度・累進配当等の還元方針を明示。"
             }
           ]
         }
       ],
-      "overall_rationale_ja": "長谷工コーポレーションは、特命受注ノウハウを核とした高い戦略的一貫性と、期初予想を下回らない堅実な業績予想規律を有している。株主還元の拡充や国内コア事業の執行力は高い一方、海外不動産開発における減損や損失の計上といった実行上の課題も観察されるが、総じて経営の一貫性と透明性は高水準にある。"
+      "overall_rationale_ja": "長谷工コーポレーションの経営陣は、両輪経営の長期戦略の整合性と、観察可能な9年連続で期初経常利益予想を上振れ・達成させた極めて強固な予想規律を実証している。中計の累計目標達成力も一貫している。一方で、NS計画における単年度目標の未達やハワイ開発事業における大型減損損失の発生など、海外投資等のスク管理・実行フォローに課題が見られるため、全体として『概ね一貫している』（評価3）と結論付ける。"
     },
     "model_notes": []
   }

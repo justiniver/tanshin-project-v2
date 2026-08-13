@@ -50,6 +50,10 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertIn("<research_metrics>", synthesis.prompt)
         self.assertIn("attention guide", synthesis.prompt)
         self.assertIn("authoritative", synthesis.prompt)
+        self.assertIn("trend.capital_value_creation", synthesis.prompt)
+        self.assertIn('answer the question "Did capital allocation', synthesis.prompt)
+        self.assertIn("actions, not outcomes by themselves", synthesis.prompt)
+        self.assertNotIn("WACC", synthesis.prompt)
 
     def test_research_schema_is_a_direct_chronological_map(self) -> None:
         schema = build_research_spec(

@@ -164,6 +164,65 @@ class ValidationRenderingTests(unittest.TestCase):
             en,
         )
 
+    def test_capital_allocation_value_creation_has_its_own_section(self) -> None:
+        analysis = self.analysis.model_copy(deep=True)
+        translation = self.translation.model_copy(deep=True)
+        ja_source = next(
+            claim
+            for claim in analysis.claims
+            if claim.section == SectionKey.TREND_CAPITAL_ALLOCATION
+        )
+        en_source = next(
+            claim
+            for claim in translation.claims
+            if claim.section == SectionKey.TREND_CAPITAL_ALLOCATION
+        )
+        analysis.claims.append(
+            ja_source.model_copy(
+                update={
+                    "claim_id": "capital_value_creation",
+                    "section": SectionKey.TREND_CAPITAL_VALUE_CREATION,
+                    "order": 1,
+                    "headline_ja": "投資後の利益成長と減損が併存し、成果は混在",
+                    "body_ja": (
+                        "投資後の利益成長は一部の価値創出を示す一方、減損は"
+                        "一部配分のリターン不足を示しており、総合評価は混在です。"
+                    ),
+                }
+            )
+        )
+        translation.claims.append(
+            en_source.model_copy(
+                update={
+                    "claim_id": "capital_value_creation",
+                    "section": SectionKey.TREND_CAPITAL_VALUE_CREATION,
+                    "order": 1,
+                    "headline_en": "Profit growth and impairment indicate mixed outcomes",
+                    "body_en": (
+                        "Profit growth after investment supports some value "
+                        "creation, while impairment indicates inadequate returns "
+                        "from part of the allocation record."
+                    ),
+                }
+            )
+        )
+
+        ja = render_japanese(analysis)
+        en = render_english(analysis, translation)
+
+        self.assertIn("### 資本配分は価値を創出したか", ja)
+        self.assertIn("成果は混在", ja)
+        self.assertIn("### Did capital allocation create value?", en)
+        self.assertIn("mixed outcomes", en)
+        self.assertLess(
+            ja.index("### 資本配分の変化"),
+            ja.index("### 資本配分は価値を創出したか"),
+        )
+        self.assertLess(
+            en.index("### Capital-allocation developments"),
+            en.index("### Did capital allocation create value?"),
+        )
+
     def test_company_overview_replaces_top_metadata_bullets(self) -> None:
         analysis = self.analysis.model_copy(deep=True)
         translation = self.translation.model_copy(deep=True)

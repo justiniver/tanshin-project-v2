@@ -5,41 +5,41 @@
   "pdf_tokens_per_page": 540,
   "research": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 278460,
+    "estimated_input_tokens": 278595,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.41769,
+    "input_cost_usd": 0.417893,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.66345,
-    "input_cost_jpy": 62.65,
+    "maximum_stage_cost_usd": 0.663652,
+    "input_cost_jpy": 62.68,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 99.52
+    "maximum_stage_cost_jpy": 99.55
   },
   "analysis": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 297500,
+    "estimated_input_tokens": 299260,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.44625,
+    "input_cost_usd": 0.44889,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.69201,
-    "input_cost_jpy": 66.94,
+    "maximum_stage_cost_usd": 0.69465,
+    "input_cost_jpy": 67.33,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 103.8
+    "maximum_stage_cost_jpy": 104.2
   },
   "translation": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 34013,
+    "estimated_input_tokens": 11380,
     "maximum_output_tokens": 24576,
-    "input_cost_usd": 0.05102,
+    "input_cost_usd": 0.01707,
     "maximum_output_cost_usd": 0.18432,
-    "maximum_stage_cost_usd": 0.23534,
-    "input_cost_jpy": 7.65,
+    "maximum_stage_cost_usd": 0.20139,
+    "input_cost_jpy": 2.56,
     "maximum_output_cost_jpy": 27.65,
-    "maximum_stage_cost_jpy": 35.3
+    "maximum_stage_cost_jpy": 30.21
   },
-  "maximum_one_pass_cost_usd": 1.5908,
-  "maximum_configured_cost_usd": 1.5908,
-  "maximum_one_pass_cost_jpy": 238.62,
-  "maximum_configured_cost_jpy": 238.62,
+  "maximum_one_pass_cost_usd": 1.559692,
+  "maximum_configured_cost_usd": 1.559692,
+  "maximum_one_pass_cost_jpy": 233.95,
+  "maximum_configured_cost_jpy": 233.95,
   "maximum_api_attempts_per_stage": 1,
   "assumptions": [
     "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",
@@ -47,7 +47,7 @@
     "The selected PDFs and their document metadata are included in both Japanese requests: research and final analysis.",
     "System instructions, document metadata, prompts, and response schemas use a conservative multilingual character-based estimate.",
     "The materialized analysis prompt already contains its research dossier, so no separate research-output allowance is added.",
-    "Translation planning reserves the configured maximum analysis output because the source analysis is not materialized yet.",
+    "The materialized translation prompt already contains its source analysis, so no separate analysis-output allowance is added.",
     "Maximum cost assumes research, analysis, and translation consume their configured maximum output.",
     "No caching, batch, flex, priority, grounding, or free-tier discount is assumed.",
     "Models with long-context pricing use the higher standard tier when the estimated prompt exceeds the published threshold.",
@@ -56,19 +56,26 @@
   "actual_cost_by_stage_usd": {
     "research": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 273306,
-      "billed_output_and_thinking_tokens": 11199,
-      "cost_usd": 0.493951,
-      "cost_jpy": 74.09
+      "input_tokens": 273401,
+      "billed_output_and_thinking_tokens": 11998,
+      "cost_usd": 0.500086,
+      "cost_jpy": 75.01
     },
     "analysis": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 293681,
-      "billed_output_and_thinking_tokens": 17778,
-      "cost_usd": 0.573856,
-      "cost_jpy": 86.08
+      "input_tokens": 295675,
+      "billed_output_and_thinking_tokens": 21215,
+      "cost_usd": 0.602625,
+      "cost_jpy": 90.39
+    },
+    "translation": {
+      "model": "gemini-3.6-flash",
+      "input_tokens": 11082,
+      "billed_output_and_thinking_tokens": 10036,
+      "cost_usd": 0.091893,
+      "cost_jpy": 13.78
     }
   },
-  "actual_cost_total_usd": 1.067807,
-  "actual_cost_total_jpy": 160.17
+  "actual_cost_total_usd": 1.194604,
+  "actual_cost_total_jpy": 179.18
 }

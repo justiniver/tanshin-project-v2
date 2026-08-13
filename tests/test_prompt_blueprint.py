@@ -115,6 +115,18 @@ class PromptBlueprintTests(unittest.TestCase):
             )
             self.assertIn("management.strategy: exactly 1", spec.prompt)
             self.assertIn("management.forecast_discipline: exactly 1", spec.prompt)
+            self.assertIn(
+                "trend.capital_value_creation: exactly 1",
+                spec.prompt,
+            )
+            self.assertIn('answer the question "Did capital allocation', spec.prompt)
+            self.assertIn("two to four most material allocation", spec.prompt)
+            self.assertIn("scale, persistence, and effect", spec.prompt)
+            self.assertIn("actions, not outcomes by themselves", spec.prompt)
+            self.assertIn("strongest positive outcome", spec.prompt)
+            self.assertIn("do not turn the section into an inventory", spec.prompt)
+            self.assertNotIn("WACC", spec.prompt)
+            self.assertNotIn("cost-of-capital", spec.prompt)
             self.assertNotIn("evidence", spec.response_schema["required"])
             self.assertLess(
                 spec.prompt.index("<document_manifest>"),
@@ -144,6 +156,12 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("約束、後の実行、結果、現在の意味", blueprint.text)
         self.assertIn("既存中核、主力候補、育成対象", blueprint.text)
         self.assertIn("成長投資、買収・売却、財務運営", blueprint.text)
+        self.assertIn("### 資本配分は価値を創出したか", blueprint.text)
+        self.assertIn("重要な資金配分を二～四件", blueprint.text)
+        self.assertIn("規模と持続性", blueprint.text)
+        self.assertIn("全体として価値を創出したかを明確に", blueprint.text)
+        self.assertNotIn("WACC", blueprint.text)
+        self.assertNotIn("資本コスト", blueprint.text)
         self.assertIn("経済的成果が証明されたことを区別", blueprint.text)
 
     def test_critical_rules_are_in_system_prompts(self) -> None:
@@ -152,6 +170,11 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Return only one JSON object", RESEARCH_SYSTEM_PROMPT)
         self.assertIn("# Source boundary", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("outside knowledge", ANALYSIS_SYSTEM_PROMPT)
+        self.assertIn(
+            "distinguish a capital-allocation action",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertNotIn("WACC", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("Return only one JSON object", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("# Non-negotiable invariants", TRANSLATION_SYSTEM_PROMPT)
         self.assertIn("Do not perform new analysis", TRANSLATION_SYSTEM_PROMPT)
@@ -267,6 +290,17 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Core management discussion is not disposable", spec.prompt)
         self.assertIn("annual_financial_anchor", spec.prompt)
         self.assertIn("same consistently available consolidated metric", spec.prompt)
+        self.assertIn("Prioritize material decision -> funding", spec.prompt)
+        self.assertIn(
+            "what an acquisition or disposal was intended to change",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Do not decide whether capital allocation created value",
+            spec.prompt,
+        )
+        self.assertNotIn("WACC", spec.prompt)
+        self.assertNotIn("cost of capital", spec.prompt)
         self.assertIn("Do not select the decade thesis", spec.prompt)
         self.assertIn("not polished report prose", normalized_prompt)
         self.assertIn("Do not decide the final", RESEARCH_SYSTEM_PROMPT)

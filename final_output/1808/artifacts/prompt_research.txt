@@ -38,7 +38,10 @@ For each filing, read and retain the useful substance of:
 - `segments_and_business_drivers`: material segment, product, demand, pricing,
   cost, labor, foreign-exchange, interest-rate, customer, and market conditions;
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
-  buybacks, debt, and cash deployment;
+  buybacks, debt, and cash deployment. Prioritize decision-to-outcome links:
+  retain disclosed ROIC, ROE, ROA, WACC, cost-of-equity or hurdle-rate
+  references, as well as later profit, cash-flow, impairment, disposal,
+  goodwill, debt, or shareholder-return outcomes of material allocations;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -56,6 +59,8 @@ category, physical page, statement type, and Japanese summary directly. Preserve
 important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
+Do not calculate a return on invested capital, cost of capital, or value-creation
+spread that the filing does not disclose.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:

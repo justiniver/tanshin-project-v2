@@ -25,6 +25,7 @@ JA_HEADINGS = {
     SectionKey.TREND_CONSISTENT: "### 変わらなかったこと",
     SectionKey.TREND_CHANGE: "### 変化したこと",
     SectionKey.TREND_CAPITAL_ALLOCATION: "### 資本配分の変化",
+    SectionKey.TREND_CAPITAL_VALUE_CREATION: "### 資本配分は価値を創出したか",
     SectionKey.TREND_IMPLICATION: "### 最新コメントから読み取れる現在地",
 }
 EN_HEADINGS = {
@@ -37,6 +38,7 @@ EN_HEADINGS = {
     SectionKey.TREND_CONSISTENT: "### What remained consistent",
     SectionKey.TREND_CHANGE: "### What materially changed",
     SectionKey.TREND_CAPITAL_ALLOCATION: "### Capital-allocation developments",
+    SectionKey.TREND_CAPITAL_VALUE_CREATION: "### Did capital allocation create value?",
     SectionKey.TREND_IMPLICATION: "### What the latest commentary now implies",
 }
 LATEST_SECTION_ORDER = (
@@ -51,6 +53,7 @@ TREND_SECTION_ORDER = (
     SectionKey.TREND_CONSISTENT,
     SectionKey.TREND_CHANGE,
     SectionKey.TREND_CAPITAL_ALLOCATION,
+    SectionKey.TREND_CAPITAL_VALUE_CREATION,
     SectionKey.TREND_IMPLICATION,
 )
 MANAGEMENT_SECTION_ORDER = (
@@ -181,6 +184,7 @@ def _render_section_ja(
         SectionKey.TREND_CONSISTENT,
         SectionKey.TREND_CHANGE,
         SectionKey.TREND_CAPITAL_ALLOCATION,
+        SectionKey.TREND_CAPITAL_VALUE_CREATION,
         SectionKey.TREND_IMPLICATION,
     }
     for claim in claims:
@@ -308,6 +312,7 @@ def _render_section_en(
         SectionKey.TREND_CONSISTENT,
         SectionKey.TREND_CHANGE,
         SectionKey.TREND_CAPITAL_ALLOCATION,
+        SectionKey.TREND_CAPITAL_VALUE_CREATION,
         SectionKey.TREND_IMPLICATION,
     }
     for claim in claims:

@@ -84,6 +84,8 @@ research map and the original Tanshin PDFs.
   not rendered as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
+- For evaluative conclusions, distinguish a capital-allocation action from the
+  subsequent business or financial outcome of that action.
 - Counts describe only observations in the selected filings. Do not present them
   as a complete revision history unless the dossier explicitly establishes that.
 - Prefer restrained, specific analysis. State uncertainty and contrary evidence.
@@ -223,7 +225,14 @@ For each filing, read and retain the useful substance of:
 - `segments_and_business_drivers`: material segment, product, demand, pricing,
   cost, labor, foreign-exchange, interest-rate, customer, and market conditions;
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
-  buybacks, debt, and cash deployment;
+  buybacks, debt, and cash deployment. Prioritize material decision -> funding
+  or trade-off -> later outcome links: what organic investment was intended to
+  achieve and what later happened to operations, profit, margin, cash generation,
+  capacity, or utilization; what an acquisition or disposal was intended to
+  change and its later contribution, impairment, or sale; how debt, cash, or
+  liquidity changed after material deployment; and whether distributions were
+  supported by the company's cash-generation record. Retain management's own
+  explanation of successful, delayed, changed, or unsuccessful outcomes;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -241,6 +250,8 @@ category, physical page, statement type, and Japanese summary directly. Preserve
 important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
+Do not decide whether capital allocation created value in this research pass.
+Retain the decisions and later outcomes needed for Request 2 to make that judgment.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:
@@ -321,6 +332,8 @@ Coverage targets (grounding overrides counts):
   omit this section's claims rather than inventing a change when the dossier and
   commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
+- trend.capital_value_creation: exactly 1 integrated assessment of whether the
+  decade's material capital-allocation decisions created value
 - trend.implication: target 1 current investor implication
 - management.strategy: exactly 1 detailed explanation
 - management.execution: exactly 1 detailed explanation
@@ -415,17 +428,37 @@ Analysis requirements:
    balance-sheet deployment; and dividends or buybacks. Discuss material shifts
    and trade-offs rather than listing every cash-flow item. Keep this analysis in
    its own section and do not repeat the same facts as separate strategic changes.
-8. Use restrained language when evidence is mixed. Avoid promotional expressions
+8. In trend.capital_value_creation, answer the question "Did capital allocation
+   create value?" directly. Select the two to four most material allocation
+   choices across the decade and follow each from decision and stated purpose to
+   the subsequent outcome shown in later filings. Weight the outcomes by their
+   scale, persistence, and effect on the business:
+   - recurring profit, margin, cash generation, useful capacity, or a stronger
+     core business supports value creation;
+   - persistent losses, impairment, failed expansion, disposal after weak
+     performance, or financial strain weighs against it;
+   - dividends, buybacks, acquisitions, investment spending, cash accumulation,
+     and debt issuance are actions, not outcomes by themselves.
+   Reach one overall judgment: yes, mostly yes, mixed, mostly no, no, or not
+   enough evidence. The headline and opening sentence must give that answer and
+   the main reason. Then explain the strongest positive outcome, the strongest
+   negative or offsetting outcome, and why the balance supports the judgment.
+   When a particular decision has no observable later outcome, say only that its
+   result is not established; do not turn the section into an inventory of
+   unavailable disclosures. Use "not enough evidence" as the overall judgment
+   only when the decade contains no meaningful decision-to-outcome record.
+   Keep this assessment separate from the preceding description of how allocation
+   priorities changed.
+9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
    evidence establishes that conclusion.
-9. Give more space to material themes and less to secondary ones. As advisory
+10. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
-   Integrate forecast behavior, commentary changes, and commitment outcomes by
-   replacing lower-value description; do not add sections or length for their
-   own sake. Never add repetition, generic background, or weak themes merely to
-   reach a length.
+   Integrate forecast behavior, commentary changes, commitment outcomes, and the
+   capital-value assessment by replacing lower-value description; do not add
+   repetition, generic background, or weak themes merely to reach a length.
 
 Management-consistency explanations:
 - Return exactly one rating for each of the four management-consistency
