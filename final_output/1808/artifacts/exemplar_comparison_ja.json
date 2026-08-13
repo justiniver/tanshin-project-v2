@@ -8,13 +8,13 @@
     "tone": 4.4,
     "repetition": 5.0,
     "readability": 4.5,
-    "approximate_length": 5.0
+    "approximate_length": 3.65
   },
-  "overall_score_0_to_5": 4.6,
+  "overall_score_0_to_5": 4.45,
   "generated_metrics": {
-    "main_characters": 5897,
-    "trend_narrative_characters": 3438,
-    "trend_perspective_narrative_characters": 318,
+    "main_characters": 6484,
+    "trend_narrative_characters": 3864,
+    "trend_perspective_narrative_characters": 420,
     "headings": [
       "# 株式会社長谷工コーポレーション（1808）",
       "## 企業概要",
@@ -37,11 +37,9 @@
     "citation_references_per_1000_chars": 0.0,
     "unique_years": [
       2017,
-      2018,
       2019,
       2020,
       2021,
-      2022,
       2023,
       2024,
       2025,
@@ -53,10 +51,10 @@
       2031
     ],
     "year_span": 10,
-    "bold_analytical_themes": 7,
-    "contrast_terms": 10,
-    "sentence_count": 71,
-    "average_sentence_characters": 74.97,
+    "bold_analytical_themes": 8,
+    "contrast_terms": 15,
+    "sentence_count": 80,
+    "average_sentence_characters": 72.47,
     "long_sentence_count": 2,
     "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
@@ -65,14 +63,12 @@
     "key_takeaway_categories": [
       "earnings_profitability",
       "cash_flow_balance_sheet",
-      "operations",
       "outlook_targets",
       "capital_allocation"
     ],
-    "key_takeaway_category_count": 5,
+    "key_takeaway_category_count": 4,
     "middle_period_years": [
       2021,
-      2022,
       2023,
       2024
     ],
@@ -137,12 +133,12 @@
     "trend_theme_average_years": 3.71,
     "trend_themes_with_three_periods": 6
   },
-  "length_ratio_to_exemplar": 1.155,
-  "trend_length_ratio_to_exemplar": 2.082,
-  "perspective_length_ratio_to_exemplar": 0.949,
+  "length_ratio_to_exemplar": 1.27,
+  "trend_length_ratio_to_exemplar": 2.34,
+  "perspective_length_ratio_to_exemplar": 1.254,
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

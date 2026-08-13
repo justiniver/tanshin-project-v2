@@ -119,7 +119,7 @@ def _research_payload_from_analysis(
         "schema_version": "2.3-test",
         "identity": identity,
         "filings": filings,
-        "capital_allocation_decisions": [],
+        "capital_allocation_tracks": [],
         "research_notes": ["Stored offline chronological research map."],
     }
 
@@ -196,10 +196,6 @@ def synthesis_from_analysis_payload(
                     "evidence_sufficiency",
                     "sufficient",
                 ),
-                "rationale_ja": source.get(
-                    "rationale_ja",
-                    "Selected filings support a mixed but assessable result.",
-                ),
             }
         )
 
@@ -209,10 +205,6 @@ def synthesis_from_analysis_payload(
             "claims": claims,
             "management_consistency": {
                 "components": components,
-                "overall_rationale_ja": management.get(
-                    "overall_rationale_ja",
-                    "The selected filings permit a balanced consistency assessment.",
-                ),
             },
             "model_notes": payload.get("model_notes", []),
         }

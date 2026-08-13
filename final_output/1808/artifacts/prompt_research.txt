@@ -41,13 +41,13 @@ For each filing, read and retain the useful substance of:
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
   buybacks, debt, and cash deployment. Identify which business, segment,
   capability, asset, balance-sheet use, or shareholder destination received or
-  released capital. Prioritize material allocation -> destination and funding
-  or trade-off -> later return links: where people, marketing, development,
-  capacity, acquisition, or financial capital was directed; whether its priority
-  rose or fell relative to other uses; and what later happened to recurring
-  profit, margin, cash generation, capacity, utilization, impairment, or disposal.
-  Do not infer investment merely from revenue growth. Retain management's own
-  explanation of successful, delayed, changed, or unsuccessful outcomes;
+  released capital. Begin with changes in segment assets, operating assets,
+  working capital, inventory, investment property, productive capacity, or other
+  capital employed when disclosed. Then retain the people, marketing,
+  development, acquisition, financing, or distribution actions that explain
+  those changes and the later profit, margin, cash, utilization, impairment, or
+  exit record. Do not infer investment or attractive returns from revenue growth
+  alone;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -66,35 +66,34 @@ important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
 Do not decide whether capital allocation created value in this research pass.
-Retain the decisions and later outcomes needed for Request 2 to make that judgment.
+Retain the capital inputs, immediate effects, and later returns needed for
+Request 2 to make that judgment.
 
-After completing the filing memos, create `capital_allocation_decisions` as a
-compact cross-filing allocation-destination-to-outcome map. Normally retain two
-to six material allocation tracks across the selected period, but return fewer
-when the PDFs do not support them. Collectively, the records should show how the
-mix changed among the company's material businesses and other capital uses, not
-only isolated M&A or securities transactions. Include a material organic
-business-investment track when the filings distinguish its capital inputs and
-later operating returns. For each record:
-- identify the allocation action, destination, timing, disclosed amount or
-  scale, stated rationale, and funding or trade-off when available;
-- retain comparative evidence that the destination gained, retained, or lost
-  priority relative to other uses. When precise segment invested capital is not
-  disclosed, describe only the supported directional change using items such as
-  segment assets, capex, acquisition spend, headcount, marketing, development,
-  or explicit management priorities; never manufacture an allocation percentage;
-- follow it into later filings and retain observable operating, profit, margin,
-  cash, capacity, utilization, impairment, disposal, financing, or distribution
-  outcomes;
-- label each outcome `direct` only when separately disclosed, `management_linked`
-  only when management explicitly connects it to the decision, `aggregate_only`
-  when only a wider segment or group result is visible, and `unattributed` when
-  no connection is stated;
-- retain contrary evidence and classify the record as mature, partial, too
-  recent, or not observable without deciding whether value was created.
-Do not create one record for every routine dividend or annual investment amount,
-and do not treat goodwill, negative goodwill, an accounting gain, acquisition
-price, or the stated rationale as a subsequent outcome.
+After completing the filing memos, create `capital_allocation_tracks`. Normally
+retain two to six economically material destinations across the period, returning
+fewer when the PDFs do not support them. A valid track may be a persistent
+multi-year accumulation or release of capital even when management announced no
+discrete transaction. Do not let visible M&A obscure a larger organic business
+or asset-category change.
+
+For each track:
+- identify the destination and period covered;
+- put reported assets, working capital, inventory, capacity, people, development,
+  acquisition spend, financing, or distributions in `capital_inputs`;
+- retain evidence that its priority rose or fell relative to other uses, but
+  never invent an allocation percentage;
+- put purchase prices, proceeds, disposal gains or losses, goodwill, financing
+  flows, and distribution execution only in `immediate_effects`;
+- put only later profit or loss, margin, cash generation, productive use,
+  impairment, or exit evidence in `subsequent_returns`;
+- label return attribution honestly and retain contrary evidence and record
+  maturity.
+
+When both destination-level assets or capital employed and profit or cash
+returns are disclosed, retain both values using their original scope and unit.
+Do not calculate ROIC, join incompatible segment definitions, or treat revenue
+growth, an asset increase, goodwill, negative goodwill, an accounting gain,
+acquisition price, dividend, or buyback as a return.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:

@@ -401,7 +401,9 @@ analysis. It builds a compact chronological map containing:
   annual actual metric with the next original forecast where available;
 - compact cross-filing records for material capital-allocation tracks, identifying
   which business or other use received capital, how its relative priority changed,
-  and what later profit, margin, cash, impairment, or disposal outcomes followed;
+  and what later profit, margin, cash, impairment, or disposal outcomes followed.
+  Capital inputs, immediate transaction/accounting effects, and subsequent
+  economic returns are stored separately;
 - explicit unavailable categories and source limitations rather than silent
   omission.
 
@@ -418,7 +420,9 @@ The information budget is intentionally comparison-first:
   next original annual forecast where available;
 - the response budget is reserved first for the qualitative management
   discussion in each filing, including changes in causes, qualifications,
-  actions, confidence, and outlook;
+  actions, confidence, and outlook. Capital-allocation research is the exception:
+  reported segment assets, operating assets, working capital, inventory, capacity,
+  and other capital employed are primary evidence when disclosed;
 - older filings remain concise but independently useful, while the latest memo
   carries more current operating, balance-sheet, outlook, risk, and business
   context;
@@ -447,7 +451,7 @@ including:
 - outlook, targets, risks, and uncertainty;
 - a multi-period strategic perspective;
 - consistent themes, material changes, capital-allocation developments, and an
-  assessment of whether the decade's allocation decisions created value;
+  assessment of whether the decade's allocation tracks created value;
 - detailed explanations beneath each management-consistency subscore.
 
 The trend section prioritizes qualitative management discussion, including
@@ -462,11 +466,12 @@ balance-sheet choices, and shareholder distributions into their later operating
 and financial outcomes. When segment invested capital is not disclosed, it uses
 directional evidence such as people, marketing, development, capacity,
 acquisition spend, and stated priorities without inventing an allocation ratio.
-Decision-level or management-linked outcomes are distinguished from aggregate
-segment or group performance. Transaction terms, goodwill, negative goodwill,
-accounting gains, and stated rationale are not treated as proof of subsequent
-value creation, while revenue growth alone does not establish an attractive
-return and recent decisions may appropriately remain unproven. Recurring profit,
+Destination-level or management-linked returns are distinguished from aggregate
+segment or group performance. Acquisition prices, proceeds, goodwill, negative
+goodwill, disposal gains, financing flows, dividends, and buybacks are immediate
+actions or effects rather than subsequent returns. Revenue growth alone does not
+establish an attractive return, while recent tracks may appropriately remain
+unproven. Recurring profit,
 margin, cash generation, useful capacity, and a stronger core business count in
 favor; persistent losses, impairments, failed expansion, disposals after weak
 performance, and financial strain count against. The assessment also asks
@@ -677,7 +682,7 @@ Important files under `final_output/{security_code}/artifacts/` include:
 | `schema_research.json` / `schema_analysis.json` / `schema_translation.json` | Native structured-output schemas |
 | `model_response_research.raw.json` | Raw research-provider response |
 | `research.structured.json` | Parsed chronological filing research map |
-| `research_metrics.json` | Filing/category coverage, annual anchors, forecast/actual comparisons, capital-decision lifecycle coverage, and extraction diagnostics |
+| `research_metrics.json` | Filing/category coverage, annual anchors, forecast/actual comparisons, capital-allocation track coverage, and extraction diagnostics |
 | `validation_research.json` | Non-gating research-map diagnostics; warnings never stop synthesis |
 | `model_response_ja.raw.json` / `model_response_en.raw.json` | Raw synthesis and translation responses |
 | `analysis_ja.structured.json` | Parsed model-facing synthesis response |

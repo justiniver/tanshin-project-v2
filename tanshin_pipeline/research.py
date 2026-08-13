@@ -383,6 +383,21 @@ def _capital_allocation_metrics(
         "subsequent_return_records": sum(
             len(item.subsequent_returns) for item in tracks
         ),
+        "by_capital_input_type": _counts(
+            input_item.input_type.value
+            for item in tracks
+            for input_item in item.capital_inputs
+        ),
+        "by_immediate_effect_type": _counts(
+            effect.effect_type.value
+            for item in tracks
+            for effect in item.immediate_effects
+        ),
+        "by_return_type": _counts(
+            outcome.return_type.value
+            for item in tracks
+            for outcome in item.subsequent_returns
+        ),
         "by_track_type": _counts(
             item.track_type.value for item in tracks
         ),

@@ -529,7 +529,8 @@ def compare_reports(
             "Length receives no additional credit inside the broad exemplar-relative "
             "target range; breadth, contrast, historical distribution, tone, and "
             "readability are scored separately.",
-            "Semantic factual correctness is handled by the separate evidence validator.",
+            "Semantic factual correctness requires source review; citation-free "
+            "validation provides only limited structural and numeric diagnostics.",
         ],
     }
 

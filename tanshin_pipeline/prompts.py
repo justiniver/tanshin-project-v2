@@ -14,22 +14,17 @@ STYLE_PROFILE = """\
 Quality profile:
 - Write sober, readable investor research, not promotional corporate copy.
 - Make the latest-filing summary concise and the decade analysis interpretive.
-- Separate actual results, forecasts, management targets, risks, and analyst inference.
-- Use early, middle, and recent filings to distinguish durable capabilities from
-  cyclical outcomes and genuine strategic change. Do not project a product's or
-  segment's current importance backward into earlier filings.
-- Make the qualitative management discussion the primary basis for trend
-  conclusions; use summary tables mainly to corroborate figures.
-- Lead with non-overlapping conclusions, analytical contrast, and why each
-  development matters.
-- Prefer specific, falsifiable observations to generic description or repeated figures.
-- Prefer two to four short sentences per theme and one primary conclusion per headline.
-- Test favorable interpretations against material counterevidence before using
-  labels such as stable, high-margin, diversified, financially strong, or leading.
-- Avoid superlatives and transformation language unless the filings explicitly
-  establish them.
-- State the operating or financial mechanism instead of calling a development
-  "positive for investors," a re-rating catalyst, or a key for the stock price.
+- Separate actual results, forecasts, targets, risks, and analyst inference.
+- Use early, middle, and recent filings to distinguish durable capabilities,
+  cyclical outcomes, and genuine change.
+- For ordinary trend conclusions, prioritize qualitative management discussion.
+  For capital allocation, begin with reported changes in business or asset-level
+  capital employed; use management discussion and transactions to explain them.
+- Lead with non-overlapping conclusions and explain the operating or financial
+  mechanism. Prefer two to four short sentences per theme.
+- Test favorable interpretations against material counterevidence. Avoid
+  promotional superlatives, unsupported transformation language, and phrases
+  such as "positive for investors" or "key for the stock price."
 - Keep the executive summary and trend analysis complementary.
 """
 
@@ -82,8 +77,9 @@ research map and the original Tanshin PDFs.
   information may qualify a conclusion.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
-- For evaluative conclusions, distinguish a capital-allocation action from the
-  subsequent business or financial outcome of that action.
+- For evaluative conclusions, distinguish capital absorbed by a destination,
+  immediate transaction or accounting effects, and subsequent business or
+  financial returns.
 - Do not attribute group or segment performance to a specific investment or
   acquisition unless management explicitly makes that connection or the result
   is separately disclosed.
@@ -229,13 +225,13 @@ For each filing, read and retain the useful substance of:
 - `capital_allocation`: investment, acquisitions, disposals, dividends,
   buybacks, debt, and cash deployment. Identify which business, segment,
   capability, asset, balance-sheet use, or shareholder destination received or
-  released capital. Prioritize material allocation -> destination and funding
-  or trade-off -> later return links: where people, marketing, development,
-  capacity, acquisition, or financial capital was directed; whether its priority
-  rose or fell relative to other uses; and what later happened to recurring
-  profit, margin, cash generation, capacity, utilization, impairment, or disposal.
-  Do not infer investment merely from revenue growth. Retain management's own
-  explanation of successful, delayed, changed, or unsuccessful outcomes;
+  released capital. Begin with changes in segment assets, operating assets,
+  working capital, inventory, investment property, productive capacity, or other
+  capital employed when disclosed. Then retain the people, marketing,
+  development, acquisition, financing, or distribution actions that explain
+  those changes and the later profit, margin, cash, utilization, impairment, or
+  exit record. Do not infer investment or attractive returns from revenue growth
+  alone;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -254,35 +250,34 @@ important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
 Do not decide whether capital allocation created value in this research pass.
-Retain the decisions and later outcomes needed for Request 2 to make that judgment.
+Retain the capital inputs, immediate effects, and later returns needed for
+Request 2 to make that judgment.
 
-After completing the filing memos, create `capital_allocation_decisions` as a
-compact cross-filing allocation-destination-to-outcome map. Normally retain two
-to six material allocation tracks across the selected period, but return fewer
-when the PDFs do not support them. Collectively, the records should show how the
-mix changed among the company's material businesses and other capital uses, not
-only isolated M&A or securities transactions. Include a material organic
-business-investment track when the filings distinguish its capital inputs and
-later operating returns. For each record:
-- identify the allocation action, destination, timing, disclosed amount or
-  scale, stated rationale, and funding or trade-off when available;
-- retain comparative evidence that the destination gained, retained, or lost
-  priority relative to other uses. When precise segment invested capital is not
-  disclosed, describe only the supported directional change using items such as
-  segment assets, capex, acquisition spend, headcount, marketing, development,
-  or explicit management priorities; never manufacture an allocation percentage;
-- follow it into later filings and retain observable operating, profit, margin,
-  cash, capacity, utilization, impairment, disposal, financing, or distribution
-  outcomes;
-- label each outcome `direct` only when separately disclosed, `management_linked`
-  only when management explicitly connects it to the decision, `aggregate_only`
-  when only a wider segment or group result is visible, and `unattributed` when
-  no connection is stated;
-- retain contrary evidence and classify the record as mature, partial, too
-  recent, or not observable without deciding whether value was created.
-Do not create one record for every routine dividend or annual investment amount,
-and do not treat goodwill, negative goodwill, an accounting gain, acquisition
-price, or the stated rationale as a subsequent outcome.
+After completing the filing memos, create `capital_allocation_tracks`. Normally
+retain two to six economically material destinations across the period, returning
+fewer when the PDFs do not support them. A valid track may be a persistent
+multi-year accumulation or release of capital even when management announced no
+discrete transaction. Do not let visible M&A obscure a larger organic business
+or asset-category change.
+
+For each track:
+- identify the destination and period covered;
+- put reported assets, working capital, inventory, capacity, people, development,
+  acquisition spend, financing, or distributions in `capital_inputs`;
+- retain evidence that its priority rose or fell relative to other uses, but
+  never invent an allocation percentage;
+- put purchase prices, proceeds, disposal gains or losses, goodwill, financing
+  flows, and distribution execution only in `immediate_effects`;
+- put only later profit or loss, margin, cash generation, productive use,
+  impairment, or exit evidence in `subsequent_returns`;
+- label return attribution honestly and retain contrary evidence and record
+  maturity.
+
+When both destination-level assets or capital employed and profit or cash
+returns are disclosed, retain both values using their original scope and unit.
+Do not calculate ROIC, join incompatible segment definitions, or treat revenue
+growth, an asset increase, goodwill, negative goodwill, an accounting gain,
+acquisition price, dividend, or buyback as a return.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:
@@ -364,7 +359,7 @@ Coverage targets (grounding overrides counts):
   commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
 - trend.capital_value_creation: exactly 1 integrated assessment of whether the
-  decade's material capital-allocation decisions created value
+  decade's material capital-allocation tracks created value
 - trend.implication: target 1 current investor implication
 - management.strategy: exactly 1 detailed explanation
 - management.execution: exactly 1 detailed explanation
@@ -454,55 +449,25 @@ Analysis requirements:
    reversal, or cyclical downturn when one is present. Explain what it shows
    about durability. Do not convert ambition into implementation or
    implementation into an achieved economic outcome.
-7. Treat capital allocation broadly: organic investment in people, marketing,
-   development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Reconstruct the
-   directional mix of incremental capital across material businesses and other
-   uses. Do not claim a quantified segment invested-capital mix unless the PDFs
-   disclose it. Discuss material shifts and trade-offs rather than listing every
-   cash-flow item, and do not repeat the same facts as strategic changes.
-8. In trend.capital_value_creation, answer both questions directly:
-   "Where did incremental capital go?" and "Did capital increasingly flow toward
-   the businesses producing the strongest subsequent returns?" Use
-   `capital_allocation_decisions` as an index and verify the important facts in
-   the PDFs. Select the two to four most material destinations or allocation
-   tracks, not merely the most visible transactions. For each selected track,
-   distinguish:
-   capital input and destination -> change in relative priority -> later
-   observable return -> strength of attribution -> maturity of the record.
-   Compare destinations using the strongest available evidence:
-   - recurring profit, improving margin, cash generation, productive capacity,
-     or a stronger core business supports an attractive return;
-   - revenue growth without corresponding profit, margin, or cash evidence does
-     not by itself establish an attractive return;
-   - persistent losses, impairment, failed expansion, disposal after weak
-     performance, or continuing financial support weighs against it;
-   - increasing capital after strong evidence and reducing or exiting capital
-     after weak evidence supports allocation discipline; continuing to subsidize
-     a weak destination without improvement weighs against it;
-   - dividends, buybacks, acquisitions, investment spending, cash accumulation,
-     and debt issuance are actions, not outcomes by themselves.
-   Purchase price, goodwill, negative goodwill, bargain-purchase accounting, and
-   disposal gains establish transaction economics or accounting effects, not
-   subsequent operating value by themselves. Do not assign an acquired company
-   credit for aggregate segment or group growth unless management explicitly
-   connects the result or the filing separately discloses its contribution.
-   A favorable but incomplete record may support "likely" or "provisional"
-   value creation; a recent decision or one with only aggregate outcomes should
-   normally remain "not yet established". Do not call a decision proven in one
-   sentence while describing its synergies, contribution, or execution as a
-   future test elsewhere in the same report.
-   Reach one overall judgment: yes, mostly yes, mixed, mostly no, no, or not
-   enough evidence. The headline and opening sentence must state whether the
-   allocation mix favored the higher-return businesses and why. Then explain
-   the strongest productive destination, the largest weak or value-destructive
-   destination, and whether management subsequently reallocated capital in the
-   economically sensible direction. When precise segment capital is unavailable,
-   give a restrained directional judgment from disclosed allocation inputs and
-   outcomes rather than making missing disclosure the thesis. Use "not enough
-   evidence" only when the decade contains no meaningful allocation-to-return
-   record. Keep this assessment separate from the preceding description of how
-   allocation priorities changed.
+7. For capital allocation, use reported capital stocks and operating assets as
+   primary evidence. Before discussing transactions, identify the businesses or
+   asset categories responsible for the largest supported increases and decreases
+   in capital employed. Use `capital_allocation_tracks` and the PDFs to explain
+   those changes. Do not quantify the mix when comparable values are unavailable.
+8. In trend.capital_value_creation, answer: "Where did incremental capital go,
+   and did it flow toward the destinations earning the strongest subsequent
+   returns?" Compare two to four material tracks by:
+   capital absorbed or released -> relative priority -> subsequent profit,
+   margin, cash, productive use, impairment, or exit -> attribution and maturity.
+   When both capital employed and business-level profit or cash are available,
+   their relationship outweighs revenue growth, margin alone, transaction gains,
+   or management's characterization. An asset increase, acquisition, dividend,
+   buyback, goodwill, disposal gain, or financing action is not a return.
+   State the strongest productive destination, the largest weak destination, and
+   whether management later shifted capital in the economically sensible
+   direction. Use a restrained directional judgment when denominators are
+   incomplete; never manufacture ROIC. The headline and opening sentence must
+   answer yes, mostly yes, mixed, mostly no, no, or not enough evidence.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
@@ -530,7 +495,9 @@ Management-consistency explanations:
   a complete annual forecasting record.
 - Use deterministic counts when useful, but never create a complete-history
   claim from incomplete coverage.
-- Mention the strongest supporting observation and material contrary evidence.
+- Mention the strongest supporting observation and material contrary evidence
+  in the management.* claim. The management_consistency object contains only
+  rating and evidence-sufficiency metadata; do not duplicate the prose there.
 - A repeated priority without a later action or outcome is not execution.
 - Do not return citations, source locations, quotations, or evidence records.
   Ground the prose by reviewing the supplied map and PDFs, but spend the response
@@ -587,9 +554,10 @@ The prompt contains the selection manifest, deterministic research metrics, the
 complete chronological JapaneseResearchDossier, and the fact-free report
 blueprint. The selected PDFs are supplied again and remain authoritative.
 Produce only JapaneseSynthesisResponse claims with a small number of internal
-management-consistency ratings and rationales. Do not return citations or PDF
-source references. The research map may be as large as the configured research
-maximum output.
+management-consistency rating fields. Put each rating's explanation only in its
+corresponding management.* report claim. Do not return citations or PDF source
+references. The research map may be as large as the configured research maximum
+output.
 """
 
 

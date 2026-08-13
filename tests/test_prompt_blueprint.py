@@ -121,50 +121,24 @@ class PromptBlueprintTests(unittest.TestCase):
                 spec.prompt,
             )
             self.assertIn(
-                "In trend.capital_value_creation, answer both questions directly",
-                spec.prompt,
-            )
-            self.assertIn(
-                "Where did incremental capital go?",
+                "reported capital stocks and operating assets as primary evidence",
                 normalized_prompt,
             )
             self.assertIn(
-                "businesses producing the strongest subsequent returns",
+                "capital absorbed or released -> relative priority",
                 normalized_prompt,
             )
             self.assertIn(
-                "directional mix of incremental capital",
+                "An asset increase, acquisition, dividend, buyback, goodwill",
                 normalized_prompt,
             )
             self.assertIn(
-                "revenue growth without corresponding profit",
+                "never manufacture ROIC",
                 normalized_prompt,
             )
             self.assertIn(
-                "reallocated capital in the economically sensible direction",
+                "management_consistency object contains only rating",
                 normalized_prompt,
-            )
-            self.assertIn("actions, not outcomes by themselves", spec.prompt)
-            self.assertIn(
-                "strength of attribution",
-                normalized_prompt,
-            )
-            self.assertIn(
-                "aggregate segment or group growth",
-                normalized_prompt,
-            )
-            self.assertIn(
-                "should normally remain \"not yet established\"",
-                normalized_prompt,
-            )
-            self.assertIn(
-                "future test elsewhere in the same report",
-                normalized_prompt,
-            )
-            self.assertIn("strongest productive destination", spec.prompt)
-            self.assertIn(
-                "rather than making missing disclosure the thesis",
-                spec.prompt,
             )
             self.assertNotIn("WACC", spec.prompt)
             self.assertNotIn("cost-of-capital", spec.prompt)
@@ -200,7 +174,8 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("### 資本配分は価値を創出したか", blueprint.text)
         self.assertIn("追加資本がどの事業・用途へ向かい", blueprint.text)
         self.assertIn("高リターン事業へ資本が重点配分されたか", blueprint.text)
-        self.assertIn("売上成長だけで魅力的なリターンとみなさず", blueprint.text)
+        self.assertIn("売上成長だけで", blueprint.text)
+        self.assertIn("魅力的なリターンとみなさず", blueprint.text)
         self.assertNotIn("WACC", blueprint.text)
         self.assertNotIn("資本コスト", blueprint.text)
         self.assertIn("経済的成果が証明されたことを区別", blueprint.text)
@@ -212,7 +187,7 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("# Source boundary", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("outside knowledge", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn(
-            "distinguish a capital-allocation action",
+            "distinguish capital absorbed by a destination",
             ANALYSIS_SYSTEM_PROMPT,
         )
         self.assertNotIn("WACC", ANALYSIS_SYSTEM_PROMPT)
@@ -280,19 +255,28 @@ class PromptBlueprintTests(unittest.TestCase):
             research_schema["$defs"]["ResearchFilingMemo"]["properties"],
         )
         self.assertIn(
-            "capital_allocation_decisions",
+            "capital_allocation_tracks",
             research_schema["properties"],
         )
-        capital_decision = research_schema["$defs"][
-            "ResearchCapitalAllocationDecision"
+        capital_track = research_schema["$defs"][
+            "ResearchCapitalAllocationTrack"
         ]["properties"]
-        self.assertIn("subsequent_outcomes", capital_decision)
-        self.assertIn("record_maturity", capital_decision)
-        capital_outcome = research_schema["$defs"][
-            "ResearchCapitalAllocationOutcome"
+        self.assertIn("capital_inputs", capital_track)
+        self.assertIn("immediate_effects", capital_track)
+        self.assertIn("subsequent_returns", capital_track)
+        self.assertIn("record_maturity", capital_track)
+        capital_return = research_schema["$defs"][
+            "ResearchCapitalReturn"
         ]["properties"]
-        self.assertIn("attribution", capital_outcome)
-        self.assertIn("signal", capital_outcome)
+        self.assertIn("return_type", capital_return)
+        self.assertIn("attribution", capital_return)
+        self.assertIn("signal", capital_return)
+        self.assertIn(
+            "effect_type",
+            research_schema["$defs"]["ResearchCapitalImmediateEffect"][
+                "properties"
+            ],
+        )
         self.assertNotIn("evidence", research_schema["properties"])
         self.assertNotIn("management_consistency", research_schema["properties"])
         self.assertIn(
@@ -316,6 +300,13 @@ class PromptBlueprintTests(unittest.TestCase):
             analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"],
         )
         self.assertNotIn("SynthesisSourceReference", analysis_schema["$defs"])
+        management_component = analysis_schema["$defs"][
+            "SynthesisManagementConsistencyComponent"
+        ]["properties"]
+        self.assertEqual(
+            set(management_component),
+            {"dimension", "rating", "evidence_sufficiency"},
+        )
         self.assertIn(
             "description",
             translation_schema["$defs"]["TranslatedClaimPatch"]["properties"][
@@ -343,23 +334,23 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("exactly one `filings` memo for every selected PDF", spec.prompt)
         self.assertIn("Core management discussion is not disposable", spec.prompt)
         self.assertIn("annual_financial_anchor", spec.prompt)
-        self.assertIn("`capital_allocation_decisions`", spec.prompt)
+        self.assertIn("`capital_allocation_tracks`", spec.prompt)
         self.assertIn(
-            "compact cross-filing allocation-destination-to-outcome map",
-            spec.prompt,
-        )
-        self.assertIn("label each outcome `direct`", spec.prompt)
-        self.assertIn(
-            "goodwill, negative goodwill, an accounting gain",
+            "persistent multi-year accumulation or release of capital",
             normalized_prompt,
         )
+        self.assertIn(
+            "only in `immediate_effects`",
+            normalized_prompt,
+        )
+        self.assertIn("only later profit or loss", normalized_prompt)
         self.assertIn("same consistently available consolidated metric", spec.prompt)
         self.assertIn(
-            "Prioritize material allocation -> destination and funding",
+            "Begin with changes in segment assets, operating assets",
             spec.prompt,
         )
         self.assertIn(
-            "whether its priority rose or fell relative to other uses",
+            "Do not calculate ROIC",
             normalized_prompt,
         )
         self.assertIn(
