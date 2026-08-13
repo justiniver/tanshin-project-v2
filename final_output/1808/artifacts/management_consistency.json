@@ -1,12 +1,11 @@
 {
   "methodology_version": "management-consistency-v6",
-  "score": 0.75,
-  "raw_score": 0.75,
-  "evidence_confidence": 0.6875,
+  "score": 0.81,
+  "raw_score": 0.8125,
+  "evidence_confidence": 0.5834,
   "confidence_label": "moderate",
-  "evidence_coverage": 0.6875,
+  "evidence_coverage": 0.5834,
   "distinct_fiscal_years": [
-    2017,
     2018,
     2019,
     2020,
@@ -17,8 +16,8 @@
     2025,
     2026
   ],
-  "evidence_count": 22,
-  "management_discussion_evidence_share": 0.3182,
+  "evidence_count": 17,
+  "management_discussion_evidence_share": 0.2941,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -26,47 +25,42 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "マンション建設受託の強みを核とし、管理・リフォーム・戸建・海外など事業領域の拡張を一貫した方針のもと推進している。新中期計画でも成長投資4,000億円と還元強化の整合性が保たれている。",
+      "rationale_ja": "中長期計画「HASEKO Evolution Plan」において、2028年3月期経常利益1,000億円以上、2031年3月期1,300億円以上、ROE13%目標などの具体的な定量目標と、6か年で4,000億円のネット投資枠組みを明確に設定している。建築事業の採算改善と戸建・サービス事業等の多角化が戦略的に整合している。",
       "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:r004",
-        "01_2026_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r006"
-      ],
-      "distinct_fiscal_years": [
-        2026
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.5
-    },
-    {
-      "dimension": "execution_follow_through",
-      "rating": 2,
-      "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.5,
-      "weight": 0.25,
-      "rationale_ja": "細田工務店やウッドフレンズの買収、事業譲渡など国内再編は確実に実行されている。一方で、2025年3月期における海外不動産事業等の168.6億円の減損損失計上や、子会社での公取委立入検査など、拡大分野でのリスク管理・執行統制に一部課題が観察される。",
-      "evidence_ids": [
-        "29_2019-05-10_tanshin.pdf:r003",
-        "25_2020-05-14_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004",
-        "05_2025_FY_tanshin.pdf:r005",
+        "01_2026_FY_tanshin.pdf:r006",
         "01_2026_FY_tanshin.pdf:r007"
       ],
       "distinct_fiscal_years": [
-        2019,
-        2020,
-        2025,
         2026
       ],
       "management_discussion_evidence_count": 1,
       "covered_period_buckets": [
-        "early",
         "recent"
       ],
-      "evidence_confidence": 0.7367
+      "evidence_confidence": 0.4
+    },
+    {
+      "dimension": "execution_follow_through",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "資材・労務費高騰に対し受注時採算の厳格化と現場効率化を推進し、2026年3月期に完成工事利益率の改善を実現した。またウッドフレンズの完全子会社化や棚卸資産の圧縮による1,574億円の営業CF創出など、計画された施策を着実に実行している。一方で2025年3月期には海外不動産で168億61百万円の減損損失を出しており、投資案件の評価面で課題が残る。",
+      "evidence_ids": [
+        "01_2026_FY_tanshin.pdf:r003",
+        "01_2026_FY_tanshin.pdf:r004",
+        "01_2026_FY_tanshin.pdf:r008",
+        "05_2025_FY_tanshin.pdf:r004"
+      ],
+      "distinct_fiscal_years": [
+        2025,
+        2026
+      ],
+      "management_discussion_evidence_count": 2,
+      "covered_period_buckets": [
+        "recent"
+      ],
+      "evidence_confidence": 0.5167
     },
     {
       "dimension": "forecast_target_discipline",
@@ -74,22 +68,19 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "観察可能な9期の期初経常利益予想と実績の比較において、実績が期初予想を下回った事例はなく、6期で上回り、3期で概ね予想通りとなった。極めて堅実で信頼性の高い予想設定規律が維持されている。",
+      "rationale_ja": "観察対象となった9期の通期経常利益予想と実績の比較において、実績が期初予想を上回った期が6期、同水準が3期であり、期初予想を未達となった期は0件である。保守的かつ着実な業績予想管理が徹底されている。",
       "evidence_ids": [
-        "37_2017-05-12_tanshin.pdf:r001",
-        "37_2017-05-12_tanshin.pdf:r002",
-        "33_2018-05-11_tanshin.pdf:r001",
-        "29_2019-05-10_tanshin.pdf:r001",
-        "25_2020-05-14_tanshin.pdf:r001",
-        "21_2021-05-13_tanshin.pdf:r001",
-        "17_2022-05-12_tanshin.pdf:r001",
-        "13_2023-05-11_tanshin.pdf:r001",
-        "09_2024-05-10_tanshin.pdf:r001",
+        "01_2026_FY_tanshin.pdf:r001",
         "05_2025_FY_tanshin.pdf:r001",
-        "01_2026_FY_tanshin.pdf:r001"
+        "09_2024-05-10_tanshin.pdf:r001",
+        "13_2023-05-11_tanshin.pdf:r001",
+        "17_2022-05-12_tanshin.pdf:r001",
+        "21_2021-05-13_tanshin.pdf:r001",
+        "25_2020-05-14_tanshin.pdf:r001",
+        "29_2019-05-10_tanshin.pdf:r001",
+        "33_2018-05-11_tanshin.pdf:r001"
       ],
       "distinct_fiscal_years": [
-        2017,
         2018,
         2019,
         2020,
@@ -114,25 +105,23 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "資材・労務費高騰や完成工事利益率の推移について明確に定量的・定性的に開示・説明している。公取委の立入検査や大規模減損損失についても適時に公表しており、透明性は確保されている。",
+      "rationale_ja": "資材・労務費高騰による利益率低下の影響や、海外不動産における巨額の減損損失を隠さず適時に開示している。新中期経営計画での累進配当方針や総還元性向50%目標、詳細な投資内訳の開示など、株主への説明責任を高度に果たしている。",
       "evidence_ids": [
-        "09_2024-05-10_tanshin.pdf:r003",
+        "01_2026_FY_tanshin.pdf:r005",
+        "01_2026_FY_tanshin.pdf:r006",
         "05_2025_FY_tanshin.pdf:r003",
-        "05_2025_FY_tanshin.pdf:r004",
-        "05_2025_FY_tanshin.pdf:r005",
-        "01_2026_FY_tanshin.pdf:r003"
+        "05_2025_FY_tanshin.pdf:r004"
       ],
       "distinct_fiscal_years": [
-        2024,
         2025,
         2026
       ],
-      "management_discussion_evidence_count": 4,
+      "management_discussion_evidence_count": 2,
       "covered_period_buckets": [
         "recent"
       ],
-      "evidence_confidence": 0.6133
+      "evidence_confidence": 0.5167
     }
   ],
-  "overall_rationale_ja": "長谷工コーポレーションの経営陣は、強みであるマンション施工を核とした事業戦略と保守的で信頼性の高い業績予想規律（9期連続で期初予想を達成・上振れ）において優れた一貫性を示している。また、コスト影響や不利益情報（公取委立入検査や減損）に対する開示姿勢も透明性が高い。一方で、海外不動産投資での大幅減損や子会社のコンプライアンス事案に見られるよう、事業領域多角化に伴う執行・リスク管理の面で課題が残るため、総合評価としては概ね堅実（3）と判断される。"
+  "overall_rationale_ja": "長谷工コーポレーションの経営陣は、通期業績予想において全9期で未達を出さない非常に高い業績管理規律（実績上振れ6期・トントン3期）を維持している。資材・労務費高騰に対して受注採算改善で迅速に対応し、2026年3月期には大幅な業績回復と1,574億円の営業CFを創出した。新中期経営計画「HASEKO Evolution Plan」での投資枠組みや累進配当方針の開示も透明性が高く、2025年3月期の海外不動産減損という逆風に対しても説明責任を果たしていることから、総合的に高い経営一貫性を備えていると評価できる。"
 }

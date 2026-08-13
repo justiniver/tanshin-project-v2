@@ -1,42 +1,30 @@
-"""Deterministic summaries of the model-produced filing extraction dossier."""
+"""Deterministic summaries of the model-produced chronological research map."""
 
 from __future__ import annotations
 
 import re
 import unicodedata
-from collections import Counter, defaultdict
+from collections import Counter
 from decimal import Decimal, InvalidOperation
-from difflib import SequenceMatcher
 from typing import Any, Iterable
 
 from .english_financials import extract_japanese_financial_amounts
 from .schemas import (
-    CommentaryIntensity,
     JapaneseResearchDossier,
-    ResearchAnnualFinancialAnchor,
-    ResearchCommentaryObservation,
-    ResearchFilingCoverage,
-    ResearchFinancialObservation,
+    ResearchFilingMemo,
+    ResearchMemoCategory,
+    ResearchMemoFinancialAnchor,
+    ResearchMemoFinancialPoint,
     SelectionManifest,
 )
 
 
 _NUMBER_RE = re.compile(r"[+\-△▲]?\s*\d[\d,]*(?:\.\d+)?")
 _PERCENT_RE = re.compile(r"([+\-△▲]?)\s*(\d[\d,]*(?:\.\d+)?)\s*[％%]")
-_INTENSITY_ORDER = {
-    CommentaryIntensity.LOW: 1,
-    CommentaryIntensity.MODERATE: 2,
-    CommentaryIntensity.HIGH: 3,
-    CommentaryIntensity.NOT_ASSESSABLE: 0,
-}
-_DISCUSSION_SECTION_FIELDS = (
+_CORE_CATEGORIES: tuple[ResearchMemoCategory, ...] = (
     "operating_results",
     "financial_condition",
     "forward_looking_information",
-    "strategy_and_plan_progress",
-    "segment_and_business_conditions",
-    "capital_allocation",
-    "material_footnotes",
 )
 
 
@@ -44,450 +32,207 @@ def _counts(values: Iterable[str]) -> dict[str, int]:
     return dict(sorted(Counter(values).items()))
 
 
-def _duplicates(values: Iterable[str]) -> list[str]:
-    return sorted(value for value, count in Counter(values).items() if count > 1)
+def _compact(value: str) -> str:
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", value))
 
 
-def _normalized(value: str) -> str:
-    value = unicodedata.normalize("NFKC", value)
-    return re.sub(r"\s+", "", value).casefold()
-
-
-def _canonical_text(value: str) -> str:
-    normalized = unicodedata.normalize("NFKC", value)
-    return re.sub(r"[\s、。・,.;:：；（）()「」『』【】\[\]]+", "", normalized)
-
-
-def _discussion_sections(
-    coverage: ResearchFilingCoverage,
-) -> dict[str, Any]:
-    return {
-        field: getattr(coverage, field)
-        for field in _DISCUSSION_SECTION_FIELDS
-    }
-
-
-def _record_references(dossier: JapaneseResearchDossier) -> set[str]:
-    referenced: set[str] = set()
-    for coverage in dossier.filing_coverage:
-        for section in _discussion_sections(coverage).values():
-            referenced.update(section.source_record_ids)
-    for anchor in dossier.annual_financial_anchors:
-        if anchor.actual is not None:
-            referenced.add(anchor.actual.source_record_id)
-        if anchor.next_original_forecast is not None:
-            referenced.add(anchor.next_original_forecast.source_record_id)
-    for observation in dossier.financial_observations:
-        referenced.add(observation.source_record_id)
-    for observation in dossier.commentary_observations:
-        referenced.update(observation.source_record_ids)
-    for disclosure in dossier.disclosures:
-        referenced.update(disclosure.source_record_ids)
-    for commitment in dossier.commitments:
-        referenced.update(commitment.source_record_ids)
-    return referenced
+def _memo_by_filename(
+    dossier: JapaneseResearchDossier,
+) -> dict[str, ResearchFilingMemo]:
+    return {item.source_filename: item for item in dossier.filings}
 
 
 def validate_research_dossier(
     dossier: JapaneseResearchDossier,
     manifest: SelectionManifest | None = None,
 ) -> None:
-    """Validate extraction structure without turning diagnostics into a gate."""
+    """Check the research map without making it a publication gate."""
 
-    identifier_groups = {
-        "source record": [item.record_id for item in dossier.source_records],
-        "filing coverage": [
-            item.source_filename for item in dossier.filing_coverage
-        ],
-        "annual financial anchor": [
-            item.anchor_id for item in dossier.annual_financial_anchors
-        ],
-        "financial observation": [
-            item.observation_id for item in dossier.financial_observations
-        ],
-        "commentary observation": [
-            item.observation_id for item in dossier.commentary_observations
-        ],
-        "disclosure": [item.disclosure_id for item in dossier.disclosures],
-        "commitment": [item.commitment_id for item in dossier.commitments],
-    }
-    duplicate_messages = [
-        f"{label}: {', '.join(duplicates)}"
-        for label, values in identifier_groups.items()
-        if (duplicates := _duplicates(values))
-    ]
-    if duplicate_messages:
-        raise ValueError(
-            "The research dossier contains duplicate identifiers: "
-            + "; ".join(duplicate_messages)
-        )
-
-    records_by_id = {item.record_id: item for item in dossier.source_records}
-    unresolved = sorted(_record_references(dossier) - set(records_by_id))
-    if unresolved:
-        raise ValueError(
-            "The research dossier references source-record IDs absent from its "
-            "provenance records: " + ", ".join(unresolved)
-        )
-
-    financial_by_id = {
-        item.observation_id: item for item in dossier.financial_observations
-    }
-    anchor_by_id = {
-        item.anchor_id: item for item in dossier.annual_financial_anchors
-    }
-    commentary_by_id = {
-        item.observation_id: item for item in dossier.commentary_observations
-    }
-    disclosure_by_id = {
-        item.disclosure_id: item for item in dossier.disclosures
-    }
-    commitment_by_id = {
-        item.commitment_id: item for item in dossier.commitments
-    }
-    covered_ids: dict[str, set[str]] = {
-        "annual financial anchor": set(),
-        "financial": set(),
-        "commentary": set(),
-        "disclosure": set(),
-        "commitment": set(),
-    }
-    coverage_errors: list[str] = []
-    for coverage in dossier.filing_coverage:
-        sections = _discussion_sections(coverage)
-        category_record_ids = {
-            record_id
-            for section in sections.values()
-            for record_id in section.source_record_ids
-        }
-        for label, section in sections.items():
-            if (
-                section.status.value == "extracted"
-                and not section.source_record_ids
-            ):
-                coverage_errors.append(
-                    f"{coverage.source_filename} marks {label} extracted "
-                    "without a source record"
-                )
-            if (
-                section.status.value != "extracted"
-                and section.source_record_ids
-            ):
-                coverage_errors.append(
-                    f"{coverage.source_filename} attaches source records to "
-                    f"{label} while its status is {section.status.value}"
-                )
-        mismatched = sorted(
-            record_id
-            for record_id in category_record_ids
-            if records_by_id[record_id].source_filename
-            != coverage.source_filename
-        )
-        if mismatched:
-            coverage_errors.append(
-                f"{coverage.source_filename} lists source records from another "
-                f"filing: {', '.join(mismatched)}"
-            )
-        assignments = (
-            (
-                "annual financial anchor",
-                coverage.annual_financial_anchor_ids,
-                anchor_by_id,
-            ),
-            (
-                "financial",
-                coverage.financial_observation_ids,
-                financial_by_id,
-            ),
-            (
-                "commentary",
-                coverage.commentary_observation_ids,
-                commentary_by_id,
-            ),
-            ("disclosure", coverage.disclosure_ids, disclosure_by_id),
-            ("commitment", coverage.commitment_ids, commitment_by_id),
-        )
-        for label, identifiers, records in assignments:
-            for identifier in identifiers:
-                item = records.get(identifier)
-                if item is None:
-                    coverage_errors.append(
-                        f"{coverage.source_filename} references unknown {label} "
-                        f"record {identifier}"
-                    )
-                elif item.source_filename != coverage.source_filename:
-                    coverage_errors.append(
-                        f"{identifier} belongs to {item.source_filename}, not "
-                        f"{coverage.source_filename}"
-                    )
-                covered_ids[label].add(identifier)
-    for label, records in (
-        ("annual financial anchor", anchor_by_id),
-        ("financial", financial_by_id),
-        ("commentary", commentary_by_id),
-        ("disclosure", disclosure_by_id),
-        ("commitment", commitment_by_id),
-    ):
-        orphaned = sorted(set(records) - covered_ids[label])
-        if orphaned:
-            coverage_errors.append(
-                f"unassigned {label} records: {', '.join(orphaned)}"
-            )
-    if coverage_errors:
-        raise ValueError(
-            "The filing coverage ledger is inconsistent: "
-            + "; ".join(coverage_errors)
-        )
-
-    selected_names = (
-        {item.filename for item in manifest.selected_files}
-        if manifest is not None
-        else {item.source_filename for item in dossier.filing_coverage}
+    problems: list[str] = []
+    filenames = [item.source_filename for item in dossier.filings]
+    duplicate_filenames = sorted(
+        name for name, count in Counter(filenames).items() if count > 1
     )
-    coverage_names = {
-        item.source_filename for item in dossier.filing_coverage
-    }
-    if coverage_names != selected_names:
-        missing = sorted(selected_names - coverage_names)
-        extra = sorted(coverage_names - selected_names)
-        details: list[str] = []
-        if missing:
-            details.append("missing " + ", ".join(missing))
-        if extra:
-            details.append("unselected " + ", ".join(extra))
-        raise ValueError(
-            "The filing coverage ledger must contain exactly one record for every "
-            "selected filing: " + "; ".join(details)
+    if duplicate_filenames:
+        problems.append(
+            "Research map contains duplicate filing memos: "
+            + ", ".join(duplicate_filenames)
         )
 
-    latest_records = [
-        item for item in dossier.filing_coverage if item.is_latest
-    ]
-    if len(latest_records) != 1:
-        raise ValueError(
-            "The filing coverage ledger must mark exactly one filing as latest."
+    latest = [item.source_filename for item in dossier.filings if item.is_latest]
+    if len(latest) != 1:
+        problems.append(
+            "Research map must identify exactly one latest filing memo."
         )
+
     if manifest is not None:
-        if latest_records[0].source_filename != manifest.latest_filename:
-            raise ValueError(
-                "The filing coverage ledger marks the wrong latest filing."
+        selected = {item.filename: item for item in manifest.selected_files}
+        supplied = set(filenames)
+        missing = sorted(set(selected) - supplied)
+        unexpected = sorted(supplied - set(selected))
+        if missing:
+            problems.append(
+                "Research map is missing selected filings: " + ", ".join(missing)
             )
-        manifest_by_name = {
-            item.filename: item for item in manifest.selected_files
-        }
-        for coverage in dossier.filing_coverage:
-            selected = manifest_by_name[coverage.source_filename]
-            if (
-                coverage.fiscal_year != selected.fiscal_year
-                or coverage.period != selected.period
-            ):
-                raise ValueError(
-                    "The filing coverage period does not match the selection "
-                    f"manifest for {coverage.source_filename}."
+        if unexpected:
+            problems.append(
+                "Research map contains unselected filings: "
+                + ", ".join(unexpected)
+            )
+        for memo in dossier.filings:
+            source = selected.get(memo.source_filename)
+            if source is None:
+                continue
+            if memo.fiscal_year != source.fiscal_year:
+                problems.append(
+                    f"{memo.source_filename} has the wrong fiscal year."
+                )
+            if memo.period != source.period:
+                problems.append(f"{memo.source_filename} has the wrong period.")
+            if memo.pdf_page_count != source.page_count:
+                problems.append(
+                    f"{memo.source_filename} has the wrong PDF page count."
+                )
+            expected_latest = memo.source_filename == manifest.latest_filename
+            if memo.is_latest != expected_latest:
+                problems.append(
+                    f"{memo.source_filename} has the wrong latest-filing flag."
                 )
 
-    invalid_sources = sorted(
-        {
-            item.source_filename
-            for item in [
-                *dossier.source_records,
-                *dossier.annual_financial_anchors,
-                *dossier.financial_observations,
-                *dossier.commentary_observations,
-                *dossier.disclosures,
-                *dossier.commitments,
-            ]
-            if item.source_filename not in selected_names
-        }
-    )
-    if invalid_sources:
-        raise ValueError(
-            "The research dossier uses unselected source files: "
-            + ", ".join(invalid_sources)
-        )
+    for memo in dossier.filings:
+        categories = [item.category for item in memo.items]
+        unavailable = set(memo.unavailable_categories)
+        overlap = sorted(set(categories) & unavailable)
+        if overlap:
+            problems.append(
+                f"{memo.source_filename} marks extracted categories unavailable: "
+                + ", ".join(overlap)
+            )
+        for category in _CORE_CATEGORIES:
+            if category not in categories and category not in unavailable:
+                problems.append(
+                    f"{memo.source_filename} does not cover core category {category}."
+                )
+        if memo.is_latest and "business_overview" not in categories:
+            problems.append(
+                f"{memo.source_filename} lacks a latest-filing business overview."
+            )
+        for item in memo.items:
+            if item.pdf_page > memo.pdf_page_count:
+                problems.append(
+                    f"{memo.source_filename} references invalid page {item.pdf_page}."
+                )
 
-    source_mismatches: list[str] = []
-    value_surface_mismatches: list[str] = []
-    for anchor in dossier.annual_financial_anchors:
-        for point, label in (
-            (anchor.actual, "actual"),
-            (anchor.next_original_forecast, "forecast"),
+        anchor = memo.annual_financial_anchor
+        if anchor is None:
+            continue
+        summaries = [_compact(item.summary_ja) for item in memo.items]
+        for label, point in (
+            ("actual", anchor.actual),
+            ("next_original_forecast", anchor.next_original_forecast),
         ):
             if point is None:
                 continue
-            record = records_by_id[point.source_record_id]
-            if record.source_filename != anchor.source_filename:
-                source_mismatches.append(f"{anchor.anchor_id}:{label}")
-            if _normalized(point.value_surface_ja) not in _normalized(
-                record.summary_ja
-            ):
-                value_surface_mismatches.append(
-                    f"{anchor.anchor_id}:{label}"
+            if point.pdf_page > memo.pdf_page_count:
+                problems.append(
+                    f"{memo.source_filename} {label} anchor references invalid "
+                    f"page {point.pdf_page}."
                 )
-    for observation in dossier.financial_observations:
-        record = records_by_id[observation.source_record_id]
-        if record.source_filename != observation.source_filename:
-            source_mismatches.append(observation.observation_id)
-        if _normalized(observation.value_surface_ja) not in _normalized(
-            record.summary_ja
-        ):
-            value_surface_mismatches.append(observation.observation_id)
-    for observation in dossier.commentary_observations:
-        if any(
-            records_by_id[record_id].source_filename
-            != observation.source_filename
-            for record_id in observation.source_record_ids
-        ):
-            source_mismatches.append(observation.observation_id)
-    for disclosure in dossier.disclosures:
-        if any(
-            records_by_id[record_id].source_filename
-            != disclosure.source_filename
-            for record_id in disclosure.source_record_ids
-        ):
-            source_mismatches.append(disclosure.disclosure_id)
-    if source_mismatches:
-        raise ValueError(
-            "Research records reference a different source filing: "
-            + ", ".join(sorted(source_mismatches))
-        )
-    if value_surface_mismatches:
-        raise ValueError(
-            "Financial observations use value surfaces absent from their "
-            "supporting source summaries: "
-            + ", ".join(sorted(value_surface_mismatches))
-        )
+            surface = _compact(point.value_surface_ja)
+            if surface and not any(surface in summary for summary in summaries):
+                problems.append(
+                    f"{memo.source_filename} {label} anchor value is absent from "
+                    "its filing memo observations."
+                )
 
-
-def _anchor_observation(
-    anchor: ResearchAnnualFinancialAnchor,
-    *,
-    point_name: str,
-) -> ResearchFinancialObservation | None:
-    point = (
-        anchor.actual
-        if point_name == "actual"
-        else anchor.next_original_forecast
-    )
-    if point is None:
-        return None
-    return ResearchFinancialObservation(
-        observation_id=f"{anchor.anchor_id}:{point_name}",
-        source_filename=anchor.source_filename,
-        metric=anchor.metric,
-        metric_label_ja=anchor.metric_label_ja,
-        scope=anchor.scope,
-        scope_label_ja=anchor.scope_label_ja,
-        value_kind=anchor.value_kind,
-        statement_type=point_name,
-        forecast_version=(
-            "not_applicable" if point_name == "actual" else "original"
-        ),
-        target_fiscal_year=point.target_fiscal_year,
-        target_period=point.target_period,
-        value_surface_ja=point.value_surface_ja,
-        source_record_id=point.source_record_id,
-    )
-
-
-def _financial_observations_for_metrics(
-    dossier: JapaneseResearchDossier,
-) -> list[ResearchFinancialObservation]:
-    observations: list[ResearchFinancialObservation] = []
-    for anchor in dossier.annual_financial_anchors:
-        for point_name in ("actual", "forecast"):
-            observation = _anchor_observation(
-                anchor,
-                point_name=point_name,
-            )
-            if observation is not None:
-                observations.append(observation)
-    observations.extend(dossier.financial_observations)
-    return observations
+    if problems:
+        raise ValueError(" ".join(problems))
 
 
 def _numeric_value(
-    observation: ResearchFinancialObservation,
+    point: ResearchMemoFinancialPoint,
+    anchor: ResearchMemoFinancialAnchor,
 ) -> Decimal | None:
-    surface = unicodedata.normalize("NFKC", observation.value_surface_ja)
-    if observation.value_kind.value in {"monetary", "per_share"}:
+    surface = unicodedata.normalize("NFKC", point.value_surface_ja)
+    if anchor.value_kind.value in {"monetary", "per_share"}:
         amounts = extract_japanese_financial_amounts(surface)
         return amounts[0].yen_value if len(amounts) == 1 else None
-    if observation.value_kind.value == "percentage":
+    if anchor.value_kind.value == "percentage":
         match = _PERCENT_RE.search(surface)
         if match is None:
             return None
         value = Decimal(match.group(2).replace(",", ""))
         return -value if match.group(1) in {"-", "△", "▲"} else value
-    if observation.value_kind.value in {"count", "ratio"}:
-        match = _NUMBER_RE.search(surface)
-        if match is None:
-            return None
-        raw = re.sub(r"\s+", "", match.group()).replace(",", "")
-        negative = raw.startswith(("-", "△", "▲"))
-        raw = raw.lstrip("+-△▲")
-        try:
-            value = Decimal(raw)
-        except InvalidOperation:
-            return None
-        return -value if negative else value
-    return None
+    match = _NUMBER_RE.search(surface)
+    if match is None:
+        return None
+    raw = re.sub(r"\s+", "", match.group()).replace(",", "")
+    negative = raw.startswith(("-", "△", "▲"))
+    raw = raw.lstrip("+-△▲")
+    try:
+        value = Decimal(raw)
+    except InvalidOperation:
+        return None
+    return -value if negative else value
 
 
-def _financial_key(
-    observation: ResearchFinancialObservation,
-) -> tuple[str, str, str, int, str, str]:
+def _anchor_key(
+    anchor: ResearchMemoFinancialAnchor,
+    point: ResearchMemoFinancialPoint,
+) -> tuple[str, str, str, str, int, str]:
     scope_label = (
         ""
-        if observation.scope.value in {"consolidated", "company_only"}
-        else _normalized(observation.scope_label_ja)
+        if anchor.scope.value in {"consolidated", "company_only"}
+        else _compact(anchor.scope_label_ja)
     )
     return (
-        observation.metric.value,
-        observation.scope.value,
+        anchor.metric.value,
+        anchor.scope.value,
         scope_label,
-        observation.target_fiscal_year,
-        observation.target_period.value,
-        observation.value_kind.value,
+        anchor.value_kind.value,
+        point.target_fiscal_year,
+        point.target_period.value,
     )
 
 
 def _forecast_metrics(
-    observations: list[ResearchFinancialObservation],
+    dossier: JapaneseResearchDossier,
 ) -> dict[str, Any]:
-    actual_by_key: dict[
-        tuple[str, str, str, int, str, str],
-        list[ResearchFinancialObservation],
-    ] = defaultdict(list)
-    for observation in observations:
-        if observation.statement_type == "actual":
-            actual_by_key[_financial_key(observation)].append(observation)
+    actuals: dict[
+        tuple[str, str, str, str, int, str],
+        list[tuple[ResearchFilingMemo, ResearchMemoFinancialAnchor, ResearchMemoFinancialPoint]],
+    ] = {}
+    forecasts: list[
+        tuple[ResearchFilingMemo, ResearchMemoFinancialAnchor, ResearchMemoFinancialPoint]
+    ] = []
+    for memo in dossier.filings:
+        anchor = memo.annual_financial_anchor
+        if anchor is None:
+            continue
+        if anchor.actual is not None:
+            actuals.setdefault(
+                _anchor_key(anchor, anchor.actual),
+                [],
+            ).append((memo, anchor, anchor.actual))
+        if anchor.next_original_forecast is not None:
+            forecasts.append((memo, anchor, anchor.next_original_forecast))
 
     comparisons: list[dict[str, Any]] = []
-    seen: set[tuple[tuple[str, str, str, int, str, str], str, Decimal]] = set()
-    for forecast in observations:
-        if forecast.statement_type != "forecast":
-            continue
-        forecast_value = _numeric_value(forecast)
-        actuals = actual_by_key.get(_financial_key(forecast), [])
-        actual_values = {
+    for forecast_memo, forecast_anchor, forecast in forecasts:
+        matched = actuals.get(_anchor_key(forecast_anchor, forecast), [])
+        values = {
             value
-            for item in actuals
-            if (value := _numeric_value(item)) is not None
+            for _, anchor, point in matched
+            if (value := _numeric_value(point, anchor)) is not None
         }
-        if forecast_value is None or len(actual_values) != 1:
+        forecast_value = _numeric_value(forecast, forecast_anchor)
+        if forecast_value is None or len(values) != 1:
             continue
-        identity = (
-            _financial_key(forecast),
-            forecast.forecast_version.value,
-            forecast_value,
-        )
-        if identity in seen:
-            continue
-        seen.add(identity)
-        actual_value = next(iter(actual_values))
-        actual = next(
-            item for item in actuals if _numeric_value(item) == actual_value
+        actual_value = next(iter(values))
+        actual_memo, _, actual = next(
+            item
+            for item in matched
+            if _numeric_value(item[2], item[1]) == actual_value
         )
         delta = actual_value - forecast_value
         error_pct = (
@@ -505,11 +250,8 @@ def _forecast_metrics(
             result = "broadly_in_line"
         comparisons.append(
             {
-                "forecast_observation_id": forecast.observation_id,
-                "actual_observation_id": actual.observation_id,
-                "metric": forecast.metric.value,
+                "metric": forecast_anchor.metric.value,
                 "target_fiscal_year": forecast.target_fiscal_year,
-                "forecast_version": forecast.forecast_version.value,
                 "forecast_surface_ja": forecast.value_surface_ja,
                 "actual_surface_ja": actual.value_surface_ja,
                 "percentage_error": (
@@ -518,39 +260,29 @@ def _forecast_metrics(
                     else None
                 ),
                 "result": result,
-                "source_record_ids": [
-                    forecast.source_record_id,
-                    actual.source_record_id,
+                "source_filenames": [
+                    forecast_memo.source_filename,
+                    actual_memo.source_filename,
                 ],
             }
         )
-    originals = [
-        item
-        for item in observations
-        if item.statement_type == "forecast"
-        and item.forecast_version.value == "original"
-    ]
-    original_comparisons = [
-        item
-        for item in comparisons
-        if item["forecast_version"] == "original"
-    ]
-    result_counts = _counts(item["result"] for item in original_comparisons)
+
+    result_counts = _counts(item["result"] for item in comparisons)
     posture = "insufficient_evidence"
-    if len(original_comparisons) >= 3:
+    if len(comparisons) >= 3:
         above = result_counts.get("actual_above_forecast", 0)
         below = result_counts.get("actual_below_forecast", 0)
-        if above / len(original_comparisons) >= 0.67:
+        if above / len(comparisons) >= 0.67:
             posture = "conservative_tendency"
-        elif below / len(original_comparisons) >= 0.67:
+        elif below / len(comparisons) >= 0.67:
             posture = "aggressive_tendency"
         elif above and below:
             posture = "mixed"
         else:
             posture = "broadly_in_line"
     return {
-        "original_forecasts_observed": len(originals),
-        "original_forecasts_matched_to_actuals": len(original_comparisons),
+        "original_forecasts_observed": len(forecasts),
+        "original_forecasts_matched_to_actuals": len(comparisons),
         "observable_comparisons": len(comparisons),
         "original_result_counts": result_counts,
         "posture_signal": posture,
@@ -558,412 +290,86 @@ def _forecast_metrics(
     }
 
 
-def _forecast_revision_metrics(
-    observations: list[ResearchFinancialObservation],
-) -> dict[str, Any]:
-    by_key: dict[
-        tuple[str, str, str, int, str, str],
-        list[ResearchFinancialObservation],
-    ] = defaultdict(list)
-    for observation in observations:
-        if observation.statement_type == "forecast":
-            by_key[_financial_key(observation)].append(observation)
-    revisions: list[dict[str, Any]] = []
-    for values in by_key.values():
-        originals = [
-            item for item in values if item.forecast_version.value == "original"
-        ]
-        revised = [
-            item for item in values if item.forecast_version.value == "revised"
-        ]
-        if len(originals) != 1 or len(revised) != 1:
+def _annual_series(dossier: JapaneseResearchDossier) -> dict[str, Any]:
+    points: list[dict[str, Any]] = []
+    metrics: Counter[str] = Counter()
+    anchor_count = 0
+    value_count = 0
+    for memo in sorted(dossier.filings, key=lambda item: item.fiscal_year):
+        anchor = memo.annual_financial_anchor
+        if anchor is None:
             continue
-        original_value = _numeric_value(originals[0])
-        revised_value = _numeric_value(revised[0])
-        if original_value is None or revised_value is None:
-            continue
-        direction = (
-            "up"
-            if revised_value > original_value
-            else "down"
-            if revised_value < original_value
-            else "unchanged"
-        )
-        revisions.append(
-            {
-                "original_observation_id": originals[0].observation_id,
-                "revised_observation_id": revised[0].observation_id,
-                "metric": originals[0].metric.value,
-                "target_fiscal_year": originals[0].target_fiscal_year,
-                "direction": direction,
-                "source_record_ids": [
-                    originals[0].source_record_id,
-                    revised[0].source_record_id,
-                ],
-            }
-        )
-    return {
-        "comparable_revisions": len(revisions),
-        "direction_counts": _counts(item["direction"] for item in revisions),
-        "revisions": revisions,
-    }
-
-
-def _annual_anchor_series(
-    observations: list[ResearchFinancialObservation],
-    forecast_metrics: dict[str, Any],
-) -> dict[str, Any]:
-    actuals_by_metric: dict[str, list[ResearchFinancialObservation]] = defaultdict(
-        list
-    )
-    for observation in observations:
-        if (
-            observation.statement_type == "actual"
-            and observation.scope.value == "consolidated"
-            and observation.target_period.value == "FY"
+        anchor_count += 1
+        metrics[anchor.metric.value] += 1
+        for kind, point in (
+            ("actual", anchor.actual),
+            ("forecast", anchor.next_original_forecast),
         ):
-            actuals_by_metric[observation.metric.value].append(observation)
-    if not actuals_by_metric:
-        return {
-            "metric": None,
-            "metric_label_ja": None,
-            "actual_years": [],
-            "comparable_forecast_pairs": 0,
-            "series": [],
-        }
-    preference = {
-        "ordinary_profit": 0,
-        "operating_profit": 1,
-        "net_income": 2,
-        "revenue": 3,
-    }
-    pair_counts = Counter(
-        item["metric"]
-        for item in forecast_metrics.get("comparisons", [])
-        if item.get("forecast_version") == "original"
-    )
-    selected_metric = sorted(
-        actuals_by_metric,
-        key=lambda metric: (
-            -pair_counts.get(metric, 0),
-            -len(
+            if point is None:
+                continue
+            value_count += 1
+            points.append(
                 {
-                    item.target_fiscal_year
-                    for item in actuals_by_metric[metric]
-                }
-            ),
-            preference.get(metric, 99),
-            metric,
-        ),
-    )[0]
-    by_year: dict[int, list[ResearchFinancialObservation]] = defaultdict(list)
-    for observation in actuals_by_metric[selected_metric]:
-        by_year[observation.target_fiscal_year].append(observation)
-    series: list[dict[str, Any]] = []
-    for fiscal_year, year_observations in sorted(by_year.items()):
-        values = {
-            value
-            for item in year_observations
-            if (value := _numeric_value(item)) is not None
-        }
-        if len(values) != 1:
-            continue
-        value = next(iter(values))
-        observation = next(
-            item
-            for item in year_observations
-            if _numeric_value(item) == value
-        )
-        series.append(
-            {
-                "target_fiscal_year": fiscal_year,
-                "value_surface_ja": observation.value_surface_ja,
-                "source_record_id": observation.source_record_id,
-            }
-        )
-    return {
-        "metric": selected_metric,
-        "metric_label_ja": actuals_by_metric[selected_metric][0].metric_label_ja,
-        "actual_years": [item["target_fiscal_year"] for item in series],
-        "comparable_forecast_pairs": pair_counts.get(selected_metric, 0),
-        "series": series,
-    }
-
-
-def _commentary_metrics(
-    observations: list[ResearchCommentaryObservation],
-) -> dict[str, Any]:
-    by_tag: dict[str, list[ResearchCommentaryObservation]] = defaultdict(list)
-    for observation in observations:
-        by_tag[observation.canonical_tag].append(observation)
-    changes: list[dict[str, Any]] = []
-    for tag, values in sorted(by_tag.items()):
-        ordered = sorted(
-            values,
-            key=lambda item: (item.fiscal_year, item.source_filename),
-        )
-        for previous, current in zip(ordered, ordered[1:]):
-            previous_text = _canonical_text(previous.summary_ja)
-            current_text = _canonical_text(current.summary_ja)
-            similarity = (
-                SequenceMatcher(None, previous_text, current_text).ratio()
-                if previous_text and current_text
-                else 0.0
-            )
-            previous_intensity = _INTENSITY_ORDER[previous.intensity]
-            current_intensity = _INTENSITY_ORDER[current.intensity]
-            if (
-                previous.intensity != CommentaryIntensity.NOT_ASSESSABLE
-                and current.intensity != CommentaryIntensity.NOT_ASSESSABLE
-                and current_intensity > previous_intensity
-            ):
-                change_type = "intensified"
-            elif (
-                previous.intensity != CommentaryIntensity.NOT_ASSESSABLE
-                and current.intensity != CommentaryIntensity.NOT_ASSESSABLE
-                and current_intensity < previous_intensity
-            ):
-                change_type = "softened"
-            elif previous.tone != current.tone:
-                change_type = "tone_changed"
-            elif similarity >= 0.97:
-                change_type = "substantially_unchanged"
-            elif similarity >= 0.72:
-                change_type = "wording_changed"
-            else:
-                change_type = "reframed"
-            changes.append(
-                {
-                    "canonical_tag": tag,
-                    "label_ja": current.label_ja,
-                    "from_observation_id": previous.observation_id,
-                    "to_observation_id": current.observation_id,
-                    "from_period_ja": previous.period_label_ja,
-                    "to_period_ja": current.period_label_ja,
-                    "from_tone": previous.tone.value,
-                    "to_tone": current.tone.value,
-                    "from_intensity": previous.intensity.value,
-                    "to_intensity": current.intensity.value,
-                    "lexical_similarity": round(similarity, 4),
-                    "change_type": change_type,
-                    "source_record_ids": list(
-                        dict.fromkeys(
-                            [
-                                *previous.source_record_ids,
-                                *current.source_record_ids,
-                            ]
-                        )
-                    ),
+                    "source_filename": memo.source_filename,
+                    "kind": kind,
+                    "metric": anchor.metric.value,
+                    "metric_label_ja": anchor.metric_label_ja,
+                    "target_fiscal_year": point.target_fiscal_year,
+                    "target_period": point.target_period.value,
+                    "value_surface_ja": point.value_surface_ja,
+                    "pdf_page": point.pdf_page,
                 }
             )
-    changes_by_tag: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for change in changes:
-        changes_by_tag[change["canonical_tag"]].append(change)
-    tracks = [
-        {
-            "canonical_tag": tag,
-            "label_ja": sorted(
-                values,
-                key=lambda item: (item.fiscal_year, item.source_filename),
-            )[-1].label_ja,
-            "observation_count": len(values),
-            "fiscal_years": sorted({item.fiscal_year for item in values}),
-            "tone_counts": _counts(item.tone.value for item in values),
-            "intensity_counts": _counts(
-                item.intensity.value for item in values
-            ),
-            "change_counts": _counts(
-                item["change_type"]
-                for item in changes_by_tag.get(tag, [])
-            ),
-        }
-        for tag, values in sorted(by_tag.items())
-    ]
     return {
-        "observations": len(observations),
-        "distinct_tags": len(by_tag),
-        "comparable_tags": len(
-            [items for items in by_tag.values() if len(items) >= 2]
-        ),
-        "multi_period_tags": len(
-            [items for items in by_tag.values() if len(items) >= 3]
-        ),
-        "observations_by_tag": {
-            tag: len(items) for tag, items in sorted(by_tag.items())
-        },
-        "change_counts": _counts(item["change_type"] for item in changes),
-        "tracks": tracks,
-        "changes": changes,
-        "interpretation_guardrail": (
-            "Text and tone changes compare only extracted observations in the "
-            "selected filings. They are review signals, not proof that an "
-            "unrecorded topic disappeared."
-        ),
+        "annual_anchor_count": anchor_count,
+        "annual_anchor_value_count": value_count,
+        "by_metric": dict(sorted(metrics.items())),
+        "series": points,
+        "forecast_accuracy": _forecast_metrics(dossier),
     }
 
 
 def _build_research_metrics_unchecked(
     dossier: JapaneseResearchDossier,
 ) -> dict[str, Any]:
-    commitments = dossier.commitments
-    observable = [
-        item
-        for item in commitments
-        if item.outcome_status.value not in {"pending", "not_observable"}
-    ]
-    achieved = [
-        item
-        for item in observable
-        if item.outcome_status.value in {"achieved", "exceeded"}
-    ]
-    partial = [
-        item
-        for item in observable
-        if item.outcome_status.value in {"partly_achieved", "revised"}
-    ]
-    shortfall = [
-        item
-        for item in observable
-        if item.outcome_status.value in {"missed", "delayed", "withdrawn"}
-    ]
-    revisions = [
-        item
-        for item in commitments
-        if item.revision_direction.value
-        not in {"none_observed", "not_assessable"}
-    ]
-    latest = next(item for item in dossier.filing_coverage if item.is_latest)
-    gaps = [
+    category_counts = Counter(
+        item.category
+        for filing in dossier.filings
+        for item in filing.items
+    )
+    per_filing = [
         {
-            "source_filename": item.source_filename,
-            "gaps": list(item.coverage_gaps),
+            "source_filename": filing.source_filename,
+            "fiscal_year": filing.fiscal_year,
+            "period": filing.period.value,
+            "is_latest": filing.is_latest,
+            "memo_items": len(filing.items),
+            "category_counts": _counts(item.category for item in filing.items),
+            "unavailable_categories": list(filing.unavailable_categories),
+            "has_annual_financial_anchor": (
+                filing.annual_financial_anchor is not None
+            ),
         }
-        for item in dossier.filing_coverage
-        if item.coverage_gaps
+        for filing in sorted(
+            dossier.filings,
+            key=lambda item: (item.fiscal_year, item.source_filename),
+        )
     ]
-    financial_observations = _financial_observations_for_metrics(dossier)
-    forecasts = _forecast_metrics(financial_observations)
-    section_coverage = {
-        field: {
-            "status_counts": _counts(
-                getattr(item, field).status.value
-                for item in dossier.filing_coverage
-            ),
-            "source_records": sum(
-                len(getattr(item, field).source_record_ids)
-                for item in dossier.filing_coverage
-            ),
-        }
-        for field in _DISCUSSION_SECTION_FIELDS
-    }
-    latest_sections = _discussion_sections(latest)
     return {
         "filing_coverage": {
-            "selected_filings": len(dossier.filing_coverage),
-            "status_counts": _counts(
-                item.coverage_status.value for item in dossier.filing_coverage
-            ),
-            "filings_with_explicit_gaps": len(gaps),
-            "coverage_gaps": gaps,
-            "qualitative_sections": section_coverage,
-            "latest_filing": {
-                "source_filename": latest.source_filename,
-                "annual_financial_anchors": len(
-                    latest.annual_financial_anchor_ids
-                ),
-                "financial_observations": len(
-                    latest.financial_observation_ids
-                ),
-                "qualitative_sections": {
-                    field: {
-                        "status": section.status.value,
-                        "source_records": len(section.source_record_ids),
-                    }
-                    for field, section in latest_sections.items()
-                },
-            },
+            "selected_filings": len(dossier.filings),
+            "memo_items": sum(len(item.items) for item in dossier.filings),
+            "category_counts": dict(sorted(category_counts.items())),
+            "per_filing": per_filing,
         },
-        "financial_observations": {
-            "total": len(financial_observations),
-            "annual_anchor_count": len(
-                dossier.annual_financial_anchors
-            ),
-            "annual_anchor_value_count": (
-                len(financial_observations)
-                - len(dossier.financial_observations)
-            ),
-            "supplemental_count": len(dossier.financial_observations),
-            "by_metric": _counts(
-                item.metric.value for item in financial_observations
-            ),
-            "by_statement_type": _counts(
-                item.statement_type
-                for item in financial_observations
-            ),
-            "forecast_version_counts": _counts(
-                item.forecast_version.value
-                for item in financial_observations
-                if item.statement_type == "forecast"
-            ),
-            "annual_anchor_series": _annual_anchor_series(
-                financial_observations,
-                forecasts,
-            ),
-            "forecast_accuracy": forecasts,
-            "forecast_revisions": _forecast_revision_metrics(
-                financial_observations
-            ),
-        },
-        "commentary": _commentary_metrics(
-            dossier.commentary_observations
-        ),
-        "disclosures": {
-            "total": len(dossier.disclosures),
-            "by_category": _counts(
-                item.category.value for item in dossier.disclosures
-            ),
-            "primary_ids": [
-                item.disclosure_id
-                for item in dossier.disclosures
-                if item.importance == "primary"
-            ],
-        },
-        "commitments": {
-            "total": len(commitments),
-            "by_type": _counts(
-                item.commitment_type.value for item in commitments
-            ),
-            "by_outcome": _counts(
-                item.outcome_status.value for item in commitments
-            ),
-            "observable_outcomes": len(observable),
-            "target_follow_through": {
-                "assessed": len(observable),
-                "achieved_or_exceeded": len(achieved),
-                "partly_achieved_or_revised": len(partial),
-                "missed_delayed_or_withdrawn": len(shortfall),
-                "achievement_rate": (
-                    round(len(achieved) / len(observable), 4)
-                    if observable
-                    else None
-                ),
-            },
-            "observed_revision_count": len(revisions),
-            "revision_direction_counts": _counts(
-                item.revision_direction.value for item in revisions
-            ),
-            "missed_or_delayed_ids": [
-                item.commitment_id for item in shortfall
-            ],
-        },
+        "financial_observations": _annual_series(dossier),
         "coverage": {
-            "source_records": len(dossier.source_records),
             "research_notes": list(dossier.research_notes),
         },
         "interpretation_guardrail": (
-            "Counts and comparisons describe only extracted observations from "
-            "the selected latest/year-end Tanshin corpus. Synthesis must not "
-            "treat missing extraction records as proof that a topic was absent."
+            "The research map is an attention guide, not the source boundary. "
+            "The synthesis request receives the selected PDFs and must inspect "
+            "them whenever the memo is incomplete or a conclusion requires context."
         ),
     }
 
@@ -971,59 +377,20 @@ def _build_research_metrics_unchecked(
 def build_research_metrics(
     dossier: JapaneseResearchDossier,
     manifest: SelectionManifest | None = None,
-    *,
-    strict_validation: bool = False,
 ) -> dict[str, Any]:
-    """Produce synthesis metrics without making diagnostics a report gate."""
+    """Build useful local comparisons while retaining non-gating diagnostics."""
 
-    validation_warning: str | None = None
+    warning: str | None = None
     try:
         validate_research_dossier(dossier, manifest)
     except ValueError as exc:
-        if strict_validation:
-            raise
-        validation_warning = str(exc)
-    try:
-        metrics = _build_research_metrics_unchecked(dossier)
-        metrics_complete = True
-        metrics_warning = None
-    except Exception as exc:
-        metrics_complete = False
-        metrics_warning = f"{type(exc).__name__}: {exc}"
-        metrics = {
-            "filing_coverage": {
-                "selected_filings": len(dossier.filing_coverage),
-            },
-            "financial_observations": {
-                "total": len(
-                    _financial_observations_for_metrics(dossier)
-                ),
-                "annual_anchor_count": len(
-                    dossier.annual_financial_anchors
-                ),
-                "supplemental_count": len(
-                    dossier.financial_observations
-                ),
-            },
-            "commentary": {
-                "observations": len(dossier.commentary_observations),
-            },
-            "disclosures": {"total": len(dossier.disclosures)},
-            "commitments": {"total": len(dossier.commitments)},
-            "coverage": {
-                "source_records": len(dossier.source_records),
-                "research_notes": list(dossier.research_notes),
-            },
-            "interpretation_guardrail": (
-                "Local comparison metrics were incomplete. Synthesis must rely "
-                "only on the persisted extraction dossier."
-            ),
-        }
+        warning = str(exc)
+    metrics = _build_research_metrics_unchecked(dossier)
     metrics["diagnostics"] = {
-        "validation_passed": validation_warning is None,
-        "validation_warning": validation_warning,
-        "metrics_complete": metrics_complete,
-        "metrics_warning": metrics_warning,
+        "validation_passed": warning is None,
+        "validation_warning": warning,
+        "metrics_complete": True,
+        "metrics_warning": None,
         "non_gating": True,
     }
     return metrics

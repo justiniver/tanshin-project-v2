@@ -6,14 +6,6 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from .config import (
-    RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS,
-    RESEARCH_MAX_COMMENTARY_OBSERVATIONS,
-    RESEARCH_MAX_COMMITMENTS,
-    RESEARCH_MAX_DISCLOSURES,
-    RESEARCH_MAX_FINANCIAL_OBSERVATIONS,
-    RESEARCH_MAX_SOURCE_RECORDS,
-)
 from .schemas import JapaneseAnalysis, JapaneseResearchDossier, SelectionManifest
 from .translation_contract import build_translation_input
 
@@ -44,9 +36,9 @@ Quality profile:
 
 RESEARCH_SYSTEM_PROMPT = """\
 # Role
-You extract decision-useful information from Japanese 決算短信. Build a compact,
-standardized filing dossier from the supplied PDFs. Do not write or pre-plan
-the final report.
+You are a high-recall research assistant reading Japanese 決算短信. Produce a
+compact chronological memo for every supplied PDF. Do not decide the final
+decade thesis, rank themes, score management, or draft the report.
 
 # Non-negotiable grounding rules
 - Use only the PDFs and document metadata supplied in this request. Do not use
@@ -63,18 +55,10 @@ the final report.
   precision by converting a raw table value.
 - Preserve actual, forecast, target, risk, and mixed statement types. Do not
   turn an outlook into an achieved result.
-- Extract what each filing says. Do not create decade themes, business-driver
-  rankings, management-consistency ratings, or final analytical conclusions.
-
-# Lightweight provenance
-- Attach each useful extracted item to one source_record containing the exact
-  source filename, physical PDF page, source section, statement type, and a
-  concise faithful Japanese summary.
-- The summary is not a citation transcript. Exact quotation boundaries and
-  verbatim copying are unnecessary. Include the original numeric surface when
-  the record supports a financial observation.
-- Reuse source records when several structured observations depend on the same
-  filing passage. Do not create separate quotation or citation ledgers.
+- Keep management's explanations, qualifications, changes in emphasis, stated
+  actions, and unresolved problems even when the wording resembles prior years.
+- Use physical PDF pages only as navigation aids for the next request. Exact
+  quotations and citation-ready evidence records are not required.
 
 # Output contract
 Return only one JSON object conforming to the supplied JSON Schema. Do not return
@@ -85,16 +69,19 @@ Markdown, commentary, or visible reasoning.
 ANALYSIS_SYSTEM_PROMPT = """\
 # Role
 You are a Japanese public-company financial analyst and report editor.
-Write decision-useful investor analysis from the supplied, PDF-grounded research
-dossier.
+Write decision-useful investor analysis from the supplied chronological
+research map and the original Tanshin PDFs.
 
 # Source boundary
-- Use only the supplied research dossier, its deterministic summary, and the
-  fact-free report blueprint.
+- Use only the supplied PDFs, document metadata, research map, deterministic
+  financial summary, and fact-free report blueprint.
 - Do not use outside knowledge and do not invent missing facts.
-- Treat the extraction dossier as the complete source boundary for this pass.
-- Link conclusions only to source_record_ids already present in the dossier.
-  These links are internal provenance and will not appear as report citations.
+- Treat the PDFs as authoritative. The research map is an attention guide, not
+  a complete source boundary. Revisit the PDFs whenever the map omits context,
+  a longitudinal interpretation depends on multiple periods, or contrary
+  information may qualify a conclusion.
+- Return only lightweight PDF source references. They remain internal and are
+  not rendered as report citations.
 - Preserve company identity, source scope, periods, figures, and
   actual/forecast/target distinctions.
 - Counts describe only observations in the selected filings. Do not present them
@@ -217,86 +204,54 @@ trend_period_buckets:
 </document_manifest>
 
 <research_task>
-Build a reusable filing-extraction dossier for security code
+Create a chronological research map for security code
 {manifest.security_code}. The latest filing is {manifest.latest_filename}.
 
-Work filing by filing:
-1. Return exactly one filing_coverage record for every selected PDF. Its
-   section packets and structured-item IDs make the per-filing extraction
-   explicit. A filing with no material item still receives a coverage record;
-   do not manufacture content.
-2. Complete all seven qualitative section packets before allocating space to
-   supplementary figures:
-   - operating_results: 経営成績に関する説明 and management's explanation of
-     operating and earnings drivers
-   - financial_condition: 財政状態に関する説明, cash flow, working capital,
-     debt, liquidity, and balance-sheet developments
-   - forward_looking_information: 業績予想などの将来予測情報に関する説明,
-     forecast assumptions, revisions, risks, and outlook
-   - strategy_and_plan_progress: initiatives, medium-term-plan progress,
-     management responses, and operational follow-through
-   - segment_and_business_conditions: material segment, product, market,
-     customer, or geographic conditions
-   - capital_allocation: dividends, investment, acquisitions, disposals, debt,
-     and cash deployment
-   - material_footnotes: decision-useful mandatory disclosures and footnotes
-   Use extracted with linked records when useful text exists. Use not_material
-   only after inspecting a section that contains no decision-useful information,
-   and not_available only when the section is absent or unreadable. Do not use
-   either status merely to conserve output space.
-3. Qualitative source records take priority over broad numeric coverage. A
-   year-end filing should normally retain the material explanation of results,
-   financial condition, and outlook when those sections exist. Preserve what
-   management says caused the result, what changed, what action it took, what
-   it expects next, and any important qualification. The latest filing may use
-   fuller coverage; older filings should remain concise but individually useful.
-4. Use annual_financial_anchors for the historical financial spine. Prefer one
-   consistently available consolidated metric across the selected year-end
-   filings: ordinary profit, then operating profit, net income, and revenue.
-   Each anchor compactly pairs that filing's current-year actual with its next
-   original annual forecast when available. Return at most
-   {RESEARCH_MAX_ANNUAL_FINANCIAL_ANCHORS} anchors; do not repeat these values
-   in financial_observations.
-5. Use up to {RESEARCH_MAX_FINANCIAL_OBSERVATIONS} financial_observations only
-   for decision-useful values outside the anchor series: latest results and
-   guidance, explicit revisions, cash flow, working capital, debt, dividends,
-   or material segment values. Local code performs arithmetic and matching.
-6. Extract up to {RESEARCH_MAX_COMMENTARY_OBSERVATIONS} filing-specific
-   management-commentary observations. Apply stable canonical tags to genuinely
-   comparable subjects such as demand, volume, pricing, costs, labor,
-   profitability, foreign exchange, interest rates, execution, or strategy.
-   Build this comparison index from the retained qualitative records. Prefer
-   recurring tracks and meaningful changes in wording, tone, or emphasis, but
-   record what each filing says rather than deciding the decade theme. Where
-   supported, prefer a few tracks with observations across early, middle, and
-   recent filings over many isolated one-period tags.
-7. Extract up to {RESEARCH_MAX_DISCLOSURES} material disclosures that affect
-   performance, risk, capital deployment, or follow-through: impairments,
-   unusual gains or losses, regulatory/accounting matters, acquisitions,
-   disposals, or major capital-allocation events. Omit routine notes.
-8. Extract up to {RESEARCH_MAX_COMMITMENTS} material forecasts, medium-term
-   targets, strategic commitments, and capital-allocation promises. Record an
-   achieved, missed, revised, delayed, or withdrawn outcome only when a selected
-   filing explicitly reports it. Do not duplicate ordinary annual forecasts
-   already represented by annual_financial_anchors.
-9. Do not return business-driver rankings, longitudinal themes, consistency
-   ratings, or final-report conclusions. Request 2 performs that analysis.
-10. Use research_notes only for incomplete forecast coverage, ambiguous targets,
-   missing outcomes, unreadable source material, or another material limitation.
+Return exactly one `filings` memo for every selected PDF, ordered from the
+earliest fiscal year to the latest filing. Copy filename, fiscal year, period,
+latest flag, and physical page count from the supplied metadata.
 
-Source-record requirements:
-- Create a source_record only for information retained in a qualitative section,
-  annual anchor, observation, disclosure, or commitment.
-- Use exact authoritative filenames and physical 1-indexed PDF pages.
-- summary_ja should be a concise faithful description, not a polished report
-  sentence. Exact quotation boundaries and verbatim transcription are not
-  required. Preserve the original numeric surface whenever applicable.
-- Reuse a record when multiple observations use the same passage.
-- Use stable unique record IDs such as <source_filename>:rNNNN.
-- Keep at most {RESEARCH_MAX_SOURCE_RECORDS} source records. This and all other
-  counts are ceilings, not quotas; grounding and materiality take priority.
-- List every anchor, observation, disclosure, and commitment ID in exactly one
-  filing_coverage record belonging to its source filing.
+For each filing, read and retain the useful substance of:
+- `operating_results`: 経営成績に関する説明 or 経営成績等の概況, including
+  earnings drivers and management's explanation of changes;
+- `financial_condition`: 財政状態に関する説明, cash flow, working capital,
+  debt, liquidity, and balance-sheet changes;
+- `forward_looking_information`: 業績予想などの将来予測情報に関する説明,
+  forecast assumptions, revisions, risks, and outlook;
+- `strategy_and_execution`: medium-term plans, stated priorities, actions,
+  progress, delays, misses, and management responses;
+- `segments_and_business_drivers`: material segment, product, demand, pricing,
+  cost, labor, foreign-exchange, interest-rate, customer, and market conditions;
+- `capital_allocation`: investment, acquisitions, disposals, dividends,
+  buybacks, debt, and cash deployment;
+- `material_footnote`: mandatory disclosures that change the interpretation of
+  performance, risk, investment outcomes, or management follow-through;
+- `business_overview`: the latest filing's durable explanation of what the
+  company does and how its principal businesses earn revenue.
+
+Core management discussion is not disposable boilerplate. When a section exists,
+retain at least one dense observation that captures its causes, qualifications,
+actions, expectations, and changes in emphasis. Put a category in
+`unavailable_categories` only when the relevant section is absent or unreadable,
+not merely because it appears routine. The latest filing should be the most
+detailed memo; older filings should remain concise but independently useful.
+
+Each item is a faithful research note, not polished report prose. Use its
+category, physical page, statement type, and Japanese summary directly. Preserve
+important original numeric surfaces, dates, periods, qualifiers, organizational
+scope, and actual/forecast/target status. Several closely related statements may
+be combined into one dense item when their page and statement type are compatible.
+
+For each relevant year-end filing, add one `annual_financial_anchor` using the
+same consistently available consolidated metric across the trend window:
+ordinary profit, then operating profit, net income, and revenue. Pair that
+filing's actual with its first disclosed next-year annual forecast when available.
+Do not calculate or restate the values.
+
+Do not select the decade thesis, decide recurring themes, rank drivers, score
+management consistency, or draft conclusions. Request 2 performs those tasks
+with this research map and the original PDFs. Use `research_notes` only for
+source limitations or unresolved ambiguity.
 
 Return only the schema-conforming JapaneseResearchDossier.
 </research_task>
@@ -336,8 +291,11 @@ placeholder relationships, or wording. Do not return Markdown.
 
 <analysis_task>
 Create the final Japanese investor analysis for security code
-{manifest.security_code} from the supplied research dossier. The latest filing
-is {manifest.latest_filename}.
+{manifest.security_code}. The latest filing is {manifest.latest_filename}.
+The chronological research map is an attention guide. The original PDFs
+supplied immediately before this task are authoritative and remain available
+for recovering omitted context, checking competing interpretations, and
+supporting conclusions not fully represented in the memo.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -375,15 +333,10 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. Rank the dossier findings by investor materiality before selecting claims.
-   Do not split one financial result into several takeaways merely to satisfy a
-   claim count. First read the per-filing qualitative section packets in
-   chronological order, then use commentary observations and local metrics as
-   comparison aids. Treat the dossier as the full evidence boundary. Use
-   filing_coverage and its explicit qualitative section statuses to notice
-   source gaps rather than interpreting an absent observation as proof that
-   management did not discuss a topic. Commentary observations are an index,
-   not the only qualitative evidence available for synthesis.
+1. Read the filing memos chronologically, then revisit the PDFs for the passages
+   and periods that matter to the final thesis. Rank findings by investor
+   materiality only after considering the complete time series. Do not treat an
+   omitted memo item as proof that a subject was absent from a filing.
 2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
@@ -395,11 +348,11 @@ Analysis requirements:
    when the filing coverage shows they are available.
 3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
-   cyclical financial outcomes. Use the locally selected annual anchor series to
-   describe the early, middle, and recent financial arc, then connect it to
+   cyclical financial outcomes. Use the locally calculated annual anchor series
+   to describe the early, middle, and recent financial arc, then connect it to
    strategy, management commentary, capital allocation, risk, and the latest
    position. Do not turn the anchor series into a year-by-year recital.
-4. Apply the following tests wherever the dossier supports them:
+4. Apply the following tests wherever the filings support them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -424,20 +377,17 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-   - Use annual_financial_anchors, supplemental financial_observations, and the
-     locally calculated forecast_accuracy and revision comparisons instead of
-     doing fresh arithmetic. State the
-     observed sample size when characterizing forecast behavior. Do not describe
+   - Use the locally calculated annual series and forecast_accuracy comparisons
+     instead of doing fresh arithmetic. State the observed sample size when
+     characterizing forecast behavior. Do not describe
      a persistent over- or under-delivery pattern unless at least three original
      forecast-result pairs support it. Compare the latest annual guidance with
      the nearest medium-term target when scopes and metrics match; distinguish
      reaching a threshold from sustaining it.
-   - Use locally calculated commentary changes as review signals. A high lexical
-     similarity can support continuity; intensified, softened, tone_changed, or
-     reframed signals require interpretation from the linked source records.
-     Give priority to the retained multi-period comparison tracks and identify
-     what management emphasized differently, not merely that wording changed.
-     Never treat a missing observation as proof that commentary was removed.
+   - Compare repeated management wording directly across the PDFs. Identify
+     changes in cause, severity, confidence, qualification, proposed response,
+     or omitted emphasis; do not claim that commentary disappeared merely
+     because the research map did not retain it.
 5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
@@ -447,7 +397,7 @@ Analysis requirements:
      slowdown, reversal, or other counterperiod disclosed in the filings. If this
      evidence is unavailable, omit the theme and record a coverage shortfall.
    - trend.change must explicitly explain before -> transition -> current state and
-     use source records for each stage. The before and current records must come
+     use separated filings for each stage. The before and current sources must come
      from separated periods. A single impairment, disposal, lawsuit, exceptional
      gain, or recent improvement is not a decade change without a durable consequence.
    - The latest filing may update the current state but does not replace a recent
@@ -480,32 +430,32 @@ Analysis requirements:
 Management-consistency explanations:
 - Return exactly one rating for each of the four management-consistency
   dimensions. Use 0 materially inconsistent, 1 weak, 2 mixed, 3 generally
-  consistent, and 4 highly consistent. Use null only when the selected
-  extraction records provide no defensible basis for assessment. Python converts
+  consistent, and 4 highly consistent. Use null only when the selected filings
+  provide no defensible basis for assessment. Python converts
   the ratings to 0-1 subscores and calculates their arithmetic mean.
 - Produce one claim for each management.* section. Explain the corresponding
   rating through concrete examples: targets achieved or missed, observed
   revisions, forecast posture, implementation outcomes, commentary changes,
   and management's treatment of setbacks.
 - For management.forecast_discipline, report the number of comparable original
-  forecasts and observed revisions from research_metrics. If that sample is
-  insufficient, say so and rely on separately evidenced medium-term target
-  outcomes rather than implying a complete annual forecasting record.
-- Use the deterministic research counts when useful, but state that revision
-  counts cover only the selected filings. Never create a complete-history claim
-  from incomplete coverage.
+  forecasts from research_metrics. If that sample is insufficient, say so and
+  rely on separately evidenced medium-term target outcomes rather than implying
+  a complete annual forecasting record.
+- Use deterministic counts when useful, but never create a complete-history
+  claim from incomplete coverage.
 - Mention the strongest supporting observation and material contrary evidence.
 - A repeated priority without a later action or outcome is not execution.
-- Link every component to the most relevant source_record_ids. Do not create
-  source records or quotations in this response.
+- Attach a small number of `sources` to every claim and assessed component.
+  Each source contains an exact selected filename, valid physical page, concise
+  section label, statement type, and faithful support summary. These references
+  are internal diagnostics, not report citations. Reuse the same source details
+  where appropriate and do not create an exhaustive evidence ledger.
 
 {STYLE_PROFILE}
 
 Response details:
-- Use only source_record_ids present in the dossier. These are internal
-  provenance links, not report citations.
-- Do not return source records or figure/date/qualifier mapping arrays; local
-  code supplies or derives them.
+- Source references may come from the research map or from direct PDF review.
+- Do not return figure/date/qualifier mapping arrays; local code derives them.
 
 Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
 that cannot be grounded; grounding takes priority over coverage and length.

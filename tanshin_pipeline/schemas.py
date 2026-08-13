@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from enum import Enum
 from typing import Annotated, Literal
 
@@ -773,20 +774,108 @@ class ResearchThemeRecord(BaseModel):
 
 
 class JapaneseResearchDossier(BaseModel):
-    """PDF-backed extraction output consumed by the synthesis request."""
+    """Compact chronological research map consumed by synthesis."""
 
     model_config = ConfigDict(extra="ignore")
 
     schema_version: NonEmpty
     identity: CompanyIdentity
-    source_records: list[ResearchSourceRecord] = Field(min_length=1)
-    filing_coverage: list[ResearchFilingCoverage] = Field(min_length=1)
-    annual_financial_anchors: list[ResearchAnnualFinancialAnchor]
-    financial_observations: list[ResearchFinancialObservation]
-    commentary_observations: list[ResearchCommentaryObservation]
-    disclosures: list[ResearchDisclosureRecord]
-    commitments: list[ResearchCommitmentRecord] = Field(default_factory=list)
+    filings: list["ResearchFilingMemo"] = Field(
+        min_length=1,
+        description=(
+            "Exactly one chronological research memo for every selected PDF."
+        ),
+    )
     research_notes: list[str] = Field(default_factory=list)
+
+
+ResearchMemoCategory = Literal[
+    "business_overview",
+    "operating_results",
+    "financial_condition",
+    "forward_looking_information",
+    "strategy_and_execution",
+    "segments_and_business_drivers",
+    "capital_allocation",
+    "material_footnote",
+]
+
+
+class ResearchMemoItem(BaseModel):
+    """One dense filing-specific observation used as an attention guide."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    category: ResearchMemoCategory
+    pdf_page: int = Field(
+        ge=1,
+        description="Physical 1-indexed PDF page containing the observation.",
+    )
+    statement_type: StatementType
+    summary_ja: NonEmpty = Field(
+        description=(
+            "Concise, faithful Japanese summary retaining the original figures, "
+            "periods, qualifiers, causes, actions, and forecast status needed for "
+            "later analysis. Exact quotation is not required."
+        )
+    )
+
+
+class ResearchMemoFinancialPoint(BaseModel):
+    """One actual or original-forecast value in a year-end filing."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    target_fiscal_year: int = Field(ge=1900, le=2200)
+    target_period: FilingPeriod
+    value_surface_ja: NonEmpty
+    pdf_page: int = Field(ge=1)
+
+
+class ResearchMemoFinancialAnchor(BaseModel):
+    """One comparable annual actual and the next original annual forecast."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    metric: FinancialMetric
+    metric_label_ja: NonEmpty
+    scope: FinancialScope
+    scope_label_ja: NonEmpty
+    value_kind: FinancialValueKind
+    actual: ResearchMemoFinancialPoint | None
+    next_original_forecast: ResearchMemoFinancialPoint | None
+
+
+class ResearchFilingMemo(BaseModel):
+    """Direct, high-recall summary of one selected filing."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty
+    fiscal_year: int = Field(ge=1900, le=2200)
+    period: FilingPeriod
+    period_label_ja: NonEmpty
+    is_latest: bool
+    pdf_page_count: int = Field(
+        ge=1,
+        description="Physical PDF page count from the supplied document metadata.",
+    )
+    items: list[ResearchMemoItem] = Field(
+        min_length=1,
+        description=(
+            "Decision-useful observations from this filing. Core management "
+            "discussion is retained even when wording is repetitive."
+        ),
+    )
+    annual_financial_anchor: ResearchMemoFinancialAnchor | None = None
+    unavailable_categories: list[ResearchMemoCategory] = Field(
+        default_factory=list,
+        description=(
+            "Categories absent or unreadable in this PDF. Do not use this field "
+            "merely because a section appears routine."
+        ),
+    )
+    notes: list[str] = Field(default_factory=list)
 
 
 class AnalysisClaim(StrictModel):
@@ -860,7 +949,7 @@ class ModelAnalysisClaim(BaseModel):
 
 
 class SynthesisAnalysisClaim(BaseModel):
-    """Analytical claim linked to lightweight extraction records."""
+    """Analytical claim with lightweight, non-rendered PDF provenance."""
 
     model_config = ConfigDict(extra="ignore")
 
@@ -877,11 +966,11 @@ class SynthesisAnalysisClaim(BaseModel):
             "duplicating other claims."
         )
     )
-    source_record_ids: list[NonEmpty] = Field(
+    sources: list["SynthesisSourceReference"] = Field(
         min_length=1,
         description=(
-            "IDs of extracted source records used for this conclusion. These "
-            "links are internal provenance and are not rendered as citations."
+            "Small set of PDF locations supporting the material facts in this "
+            "claim. These references remain internal and are not rendered."
         ),
     )
     statement_type: StatementType
@@ -898,10 +987,27 @@ class SynthesisManagementConsistencyComponent(BaseModel):
     rating: int | None = Field(ge=0, le=4)
     evidence_sufficiency: Literal["sufficient", "insufficient"]
     rationale_ja: NonEmpty
-    source_record_ids: list[NonEmpty] = Field(
+    sources: list["SynthesisSourceReference"] = Field(
         description=(
-            "Extraction records supporting the rating, including contrary "
-            "information where available."
+            "PDF locations supporting the rating, including contrary information "
+            "where available. May be empty only when evidence is insufficient."
+        )
+    )
+
+
+class SynthesisSourceReference(BaseModel):
+    """Compact source support generated by the PDF-backed synthesis call."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    source_filename: NonEmpty
+    pdf_page: int = Field(ge=1)
+    source_section: NonEmpty
+    statement_type: StatementType
+    support_summary_ja: NonEmpty = Field(
+        description=(
+            "Faithful Japanese summary of the supporting passage. Exact quotation "
+            "boundaries are unnecessary; preserve relevant numeric surfaces."
         )
     )
 
@@ -1373,28 +1479,100 @@ def materialize_japanese_synthesis(
     dossier: JapaneseResearchDossier,
     response: JapaneseSynthesisResponse,
 ) -> JapaneseAnalysis:
-    """Combine extracted source records with synthesis prose."""
+    """Combine PDF-backed synthesis prose with locally derived provenance IDs."""
 
-    source_record_ids = {item.record_id for item in dossier.source_records}
-    unresolved = sorted(
+    selected_filenames = {item.source_filename for item in dossier.filings}
+    invalid_sources = sorted(
         {
-            record_id
+            source.source_filename
             for claim in response.claims
-            for record_id in claim.source_record_ids
-            if record_id not in source_record_ids
+            for source in claim.sources
+            if source.source_filename not in selected_filenames
         }
         | {
-            record_id
+            source.source_filename
             for component in response.management_consistency.components
-            for record_id in component.source_record_ids
-            if record_id not in source_record_ids
+            for source in component.sources
+            if source.source_filename not in selected_filenames
         }
     )
-    if unresolved:
+    if invalid_sources:
         raise ValueError(
-            "The synthesis response references source records absent from the research "
-            f"dossier: {', '.join(unresolved)}."
+            "The synthesis response references unselected PDFs: "
+            f"{', '.join(invalid_sources)}."
         )
+
+    page_counts = {
+        item.source_filename: item.pdf_page_count for item in dossier.filings
+    }
+    invalid_pages = sorted(
+        {
+            f"{source.source_filename}:p{source.pdf_page}"
+            for claim in response.claims
+            for source in claim.sources
+            if source.pdf_page > page_counts[source.source_filename]
+        }
+        | {
+            f"{source.source_filename}:p{source.pdf_page}"
+            for component in response.management_consistency.components
+            for source in component.sources
+            if source.pdf_page > page_counts[source.source_filename]
+        }
+    )
+    if invalid_pages:
+        raise ValueError(
+            "The synthesis response references pages beyond the research map: "
+            f"{', '.join(invalid_pages)}."
+        )
+
+    evidence_by_key: dict[
+        tuple[str, int, str, str, str],
+        EvidenceRecord,
+    ] = {}
+
+    def evidence_for(source: SynthesisSourceReference) -> EvidenceRecord:
+        key = (
+            source.source_filename,
+            source.pdf_page,
+            source.source_section,
+            source.statement_type.value,
+            source.support_summary_ja,
+        )
+        existing = evidence_by_key.get(key)
+        if existing is not None:
+            return existing
+        digest = hashlib.sha256(
+            "\x1f".join(str(value) for value in key).encode("utf-8")
+        ).hexdigest()[:10]
+        filing = next(
+            item
+            for item in dossier.filings
+            if item.source_filename == source.source_filename
+        )
+        evidence = EvidenceRecord(
+            evidence_id=(
+                f"{source.source_filename}:p{source.pdf_page:04d}-{digest}"
+            ),
+            source_filename=source.source_filename,
+            pdf_page=source.pdf_page,
+            exact_quote_ja=source.support_summary_ja,
+            period_label_ja=filing.period_label_ja,
+            period_label_en=f"FY{filing.fiscal_year} {filing.period.value}",
+            statement_type=source.statement_type,
+            source_section=source.source_section,
+            tags=["synthesis_provenance"],
+        )
+        evidence_by_key[key] = evidence
+        return evidence
+
+    claim_evidence_ids = [
+        [evidence_for(source).evidence_id for source in claim.sources]
+        for claim in response.claims
+    ]
+    component_evidence_ids = [
+        [evidence_for(source).evidence_id for source in component.sources]
+        for component in response.management_consistency.components
+    ]
     assessment = ManagementConsistencyAssessment(
         methodology_version="management-consistency-v1-pending",
         components=[
@@ -1409,28 +1587,16 @@ def materialize_japanese_synthesis(
                 ),
                 weight=0,
                 rationale_ja=component.rationale_ja,
-                evidence_ids=list(component.source_record_ids),
+                evidence_ids=component_evidence_ids[index],
             )
-            for component in response.management_consistency.components
+            for index, component in enumerate(
+                response.management_consistency.components
+            )
         ],
         overall_rationale_ja=(
             response.management_consistency.overall_rationale_ja
         ),
     )
-    provenance = [
-        EvidenceRecord(
-            evidence_id=item.record_id,
-            source_filename=item.source_filename,
-            pdf_page=item.pdf_page,
-            exact_quote_ja=item.summary_ja,
-            period_label_ja=item.period_label_ja,
-            period_label_en=item.period_label_en,
-            statement_type=item.statement_type,
-            source_section=item.source_section,
-            tags=list(item.tags),
-        )
-        for item in dossier.source_records
-    ]
     return JapaneseAnalysis(
         schema_version=response.schema_version,
         identity=dossier.identity.model_copy(deep=True),
@@ -1441,7 +1607,7 @@ def materialize_japanese_synthesis(
                 order=claim.order,
                 headline_ja=claim.headline_ja,
                 body_ja=claim.body_ja,
-                evidence_ids=list(claim.source_record_ids),
+                evidence_ids=claim_evidence_ids[index],
                 statement_type=claim.statement_type,
                 is_inference=claim.is_inference,
                 causal=claim.causal,
@@ -1449,9 +1615,9 @@ def materialize_japanese_synthesis(
                 dates=[],
                 qualifiers=[],
             )
-            for claim in response.claims
+            for index, claim in enumerate(response.claims)
         ],
-        evidence=provenance,
+        evidence=list(evidence_by_key.values()),
         management_consistency=assessment,
         model_notes=[
             *dossier.research_notes,

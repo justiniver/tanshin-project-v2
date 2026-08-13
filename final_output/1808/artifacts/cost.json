@@ -5,25 +5,25 @@
   "pdf_tokens_per_page": 540,
   "research": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 280701,
+    "estimated_input_tokens": 282229,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.421051,
+    "input_cost_usd": 0.423343,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.666811,
-    "input_cost_jpy": 63.16,
+    "maximum_stage_cost_usd": 0.669103,
+    "input_cost_jpy": 63.5,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 100.02
+    "maximum_stage_cost_jpy": 100.37
   },
   "analysis": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 23167,
+    "estimated_input_tokens": 23792,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.034751,
+    "input_cost_usd": 0.035688,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.28051,
-    "input_cost_jpy": 5.21,
+    "maximum_stage_cost_usd": 0.281448,
+    "input_cost_jpy": 5.35,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 42.08
+    "maximum_stage_cost_jpy": 42.22
   },
   "translation": {
     "model": "gemini-3.6-flash",
@@ -36,10 +36,10 @@
     "maximum_output_cost_jpy": 27.65,
     "maximum_stage_cost_jpy": 35.3
   },
-  "maximum_one_pass_cost_usd": 1.182661,
-  "maximum_configured_cost_usd": 1.182661,
-  "maximum_one_pass_cost_jpy": 177.4,
-  "maximum_configured_cost_jpy": 177.4,
+  "maximum_one_pass_cost_usd": 1.185891,
+  "maximum_configured_cost_usd": 1.185891,
+  "maximum_one_pass_cost_jpy": 177.88,
+  "maximum_configured_cost_jpy": 177.88,
   "maximum_api_attempts_per_stage": 1,
   "assumptions": [
     "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",
@@ -55,19 +55,19 @@
   "actual_cost_by_stage_usd": {
     "research": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 273473,
-      "billed_output_and_thinking_tokens": 17283,
-      "cost_usd": 0.539832,
-      "cost_jpy": 80.97
+      "input_tokens": 273847,
+      "billed_output_and_thinking_tokens": 17234,
+      "cost_usd": 0.540026,
+      "cost_jpy": 81.0
     },
     "analysis": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 27620,
-      "billed_output_and_thinking_tokens": 18327,
-      "cost_usd": 0.178882,
-      "cost_jpy": 26.83
+      "input_tokens": 27786,
+      "billed_output_and_thinking_tokens": 18743,
+      "cost_usd": 0.182251,
+      "cost_jpy": 27.34
     }
   },
-  "actual_cost_total_usd": 0.718714,
-  "actual_cost_total_jpy": 107.8
+  "actual_cost_total_usd": 0.722277,
+  "actual_cost_total_jpy": 108.34
 }

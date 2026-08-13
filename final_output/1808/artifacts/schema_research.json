@@ -112,6 +112,15 @@
       "title": "DisclosureCategory",
       "type": "string"
     },
+    "DiscussionCoverageStatus": {
+      "enum": [
+        "extracted",
+        "not_material",
+        "not_available"
+      ],
+      "title": "DiscussionCoverageStatus",
+      "type": "string"
+    },
     "FilingCoverageStatus": {
       "enum": [
         "complete",
@@ -195,6 +204,108 @@
       ],
       "title": "ForecastVersion",
       "type": "string"
+    },
+    "ResearchAnnualFinancialAnchor": {
+      "description": "One year-end actual paired with the next original annual forecast.",
+      "properties": {
+        "anchor_id": {
+          "minLength": 1,
+          "title": "Anchor Id",
+          "type": "string"
+        },
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "metric": {
+          "$ref": "#/$defs/FinancialMetric"
+        },
+        "metric_label_ja": {
+          "minLength": 1,
+          "title": "Metric Label Ja",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/FinancialScope"
+        },
+        "scope_label_ja": {
+          "minLength": 1,
+          "title": "Scope Label Ja",
+          "type": "string"
+        },
+        "value_kind": {
+          "$ref": "#/$defs/FinancialValueKind"
+        },
+        "actual": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchAnnualFinancialPoint"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Current year-end actual for the selected anchor metric, or null when the filing does not disclose a usable value."
+        },
+        "next_original_forecast": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchAnnualFinancialPoint"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The first disclosed next-year annual forecast for the same metric and scope, or null when unavailable."
+        }
+      },
+      "required": [
+        "anchor_id",
+        "source_filename",
+        "metric",
+        "metric_label_ja",
+        "scope",
+        "scope_label_ja",
+        "value_kind",
+        "actual",
+        "next_original_forecast"
+      ],
+      "title": "ResearchAnnualFinancialAnchor",
+      "type": "object"
+    },
+    "ResearchAnnualFinancialPoint": {
+      "description": "One actual or original-forecast value inside a compact annual anchor.",
+      "properties": {
+        "target_fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Target Fiscal Year",
+          "type": "integer"
+        },
+        "target_period": {
+          "$ref": "#/$defs/FilingPeriod"
+        },
+        "value_surface_ja": {
+          "description": "Exact monetary, percentage, per-share, count, or ratio surface.",
+          "minLength": 1,
+          "title": "Value Surface Ja",
+          "type": "string"
+        },
+        "source_record_id": {
+          "minLength": 1,
+          "title": "Source Record Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "target_fiscal_year",
+        "target_period",
+        "value_surface_ja",
+        "source_record_id"
+      ],
+      "title": "ResearchAnnualFinancialPoint",
+      "type": "object"
     },
     "ResearchCommentaryObservation": {
       "description": "One filing-specific management-commentary observation.",
@@ -416,6 +527,43 @@
       "title": "ResearchDisclosureRecord",
       "type": "object"
     },
+    "ResearchDiscussionSection": {
+      "description": "Explicit inspection result for one qualitative filing section.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/DiscussionCoverageStatus",
+          "description": "Use extracted when useful management discussion was retained, not_material when the section was inspected but contained only routine or immaterial text, and not_available when the filing did not contain the section or it could not be read."
+        },
+        "source_record_ids": {
+          "description": "Source records retained from this section. Keep empty only when status is not_material or not_available.",
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Source Record Ids",
+          "type": "array"
+        },
+        "coverage_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Concise reason for not_material or not_available. Normally null when status is extracted.",
+          "title": "Coverage Note"
+        }
+      },
+      "required": [
+        "status",
+        "source_record_ids"
+      ],
+      "title": "ResearchDiscussionSection",
+      "type": "object"
+    },
     "ResearchFilingCoverage": {
       "description": "Coverage ledger proving that every selected filing was inspected.",
       "properties": {
@@ -446,52 +594,40 @@
         "coverage_status": {
           "$ref": "#/$defs/FilingCoverageStatus"
         },
-        "management_discussion_record_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Management Discussion Record Ids",
-          "type": "array"
+        "operating_results": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of 経営成績に関する説明 and management's explanation of the period's operating and earnings drivers."
         },
-        "outlook_record_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Outlook Record Ids",
-          "type": "array"
+        "financial_condition": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of 財政状態に関する説明, cash flow, working capital, debt, liquidity, and other balance-sheet developments."
         },
-        "segment_record_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Segment Record Ids",
-          "type": "array"
+        "forward_looking_information": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of 業績予想などの将来予測情報に関する説明, assumptions, risks, forecast revisions, and management's outlook."
         },
-        "cash_flow_record_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Cash Flow Record Ids",
-          "type": "array"
+        "strategy_and_plan_progress": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of strategy, medium-term-plan progress, operational initiatives, and management's stated response to results."
         },
-        "capital_allocation_record_ids": {
-          "items": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "title": "Capital Allocation Record Ids",
-          "type": "array"
+        "segment_and_business_conditions": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of segment, product, market, customer, geography, and business-specific conditions discussed by management."
         },
-        "footnote_record_ids": {
+        "capital_allocation": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of dividends, investment, acquisitions, disposals, debt, cash deployment, and other capital-allocation discussion."
+        },
+        "material_footnotes": {
+          "$ref": "#/$defs/ResearchDiscussionSection",
+          "description": "Coverage of decision-useful mandatory disclosures and footnotes, excluding routine notes."
+        },
+        "annual_financial_anchor_ids": {
           "items": {
             "minLength": 1,
             "type": "string"
           },
-          "title": "Footnote Record Ids",
+          "title": "Annual Financial Anchor Ids",
           "type": "array"
         },
         "financial_observation_ids": {
@@ -542,12 +678,14 @@
         "period_label_ja",
         "is_latest",
         "coverage_status",
-        "management_discussion_record_ids",
-        "outlook_record_ids",
-        "segment_record_ids",
-        "cash_flow_record_ids",
-        "capital_allocation_record_ids",
-        "footnote_record_ids",
+        "operating_results",
+        "financial_condition",
+        "forward_looking_information",
+        "strategy_and_plan_progress",
+        "segment_and_business_conditions",
+        "capital_allocation",
+        "material_footnotes",
+        "annual_financial_anchor_ids",
         "financial_observation_ids",
         "commentary_observation_ids",
         "disclosure_ids",
@@ -558,10 +696,10 @@
       "type": "object"
     },
     "ResearchFinancialObservation": {
-      "description": "One exact financial value used for local time-series comparisons.",
+      "description": "A useful financial value outside the compact annual anchor series.",
       "properties": {
         "observation_id": {
-          "description": "Stable unique observation ID. Comparable forecasts and actuals use the same metric, scope, target fiscal year, period, and value kind.",
+          "description": "Stable unique observation ID for a latest-period, revised-guidance, cash-flow, balance-sheet, dividend, segment, or other supplemental value not already represented in annual_financial_anchors.",
           "minLength": 1,
           "title": "Observation Id",
           "type": "string"
@@ -758,6 +896,13 @@
       "title": "Filing Coverage",
       "type": "array"
     },
+    "annual_financial_anchors": {
+      "items": {
+        "$ref": "#/$defs/ResearchAnnualFinancialAnchor"
+      },
+      "title": "Annual Financial Anchors",
+      "type": "array"
+    },
     "financial_observations": {
       "items": {
         "$ref": "#/$defs/ResearchFinancialObservation"
@@ -799,6 +944,7 @@
     "identity",
     "source_records",
     "filing_coverage",
+    "annual_financial_anchors",
     "financial_observations",
     "commentary_observations",
     "disclosures"
