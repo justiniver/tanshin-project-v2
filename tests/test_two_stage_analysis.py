@@ -202,6 +202,58 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertEqual(missed["missed_count"], 1)
         self.assertEqual(missed["success_rate"], 0.0)
 
+        memos[earlier.filename]["annual_financial_anchor"][
+            "next_original_forecast"
+        ]["value_surface_ja"] = "400百万円〜700百万円"
+        memos[later.filename]["annual_financial_anchor"]["actual"][
+            "value_surface_ja"
+        ] = "1,194百万円"
+        above_range = build_research_metrics(
+            JapaneseResearchDossier.model_validate(payload),
+            self.manifest,
+        )["financial_observations"]["forecast_accuracy"]
+        self.assertEqual(
+            above_range["comparisons"][0]["result"],
+            "met_or_exceeded",
+        )
+        self.assertEqual(
+            above_range["comparisons"][0]["forecast_surface_ja"],
+            "400百万円〜700百万円",
+        )
+        self.assertAlmostEqual(
+            above_range["comparisons"][0]["percentage_error"],
+            70.5714,
+        )
+
+        memos[later.filename]["annual_financial_anchor"]["actual"][
+            "value_surface_ja"
+        ] = "600百万円"
+        within_range = build_research_metrics(
+            JapaneseResearchDossier.model_validate(payload),
+            self.manifest,
+        )["financial_observations"]["forecast_accuracy"]
+        self.assertEqual(
+            within_range["comparisons"][0]["result"],
+            "met_or_exceeded",
+        )
+        self.assertEqual(
+            within_range["comparisons"][0]["percentage_error"],
+            0.0,
+        )
+
+        memos[later.filename]["annual_financial_anchor"]["actual"][
+            "value_surface_ja"
+        ] = "399百万円"
+        below_range = build_research_metrics(
+            JapaneseResearchDossier.model_validate(payload),
+            self.manifest,
+        )["financial_observations"]["forecast_accuracy"]
+        self.assertEqual(below_range["comparisons"][0]["result"], "missed")
+        self.assertAlmostEqual(
+            below_range["comparisons"][0]["percentage_error"],
+            -0.25,
+        )
+
     def test_capital_allocation_metrics_preserve_attribution_and_maturity(
         self,
     ) -> None:

@@ -175,31 +175,47 @@ def validate_research_dossier(
         raise ValueError(" ".join(problems))
 
 
+def _numeric_bounds(
+    point: ResearchMemoFinancialPoint,
+    anchor: ResearchMemoFinancialAnchor,
+) -> tuple[Decimal, Decimal] | None:
+    surface = unicodedata.normalize("NFKC", point.value_surface_ja)
+    if anchor.value_kind.value in {"monetary", "per_share"}:
+        amounts = extract_japanese_financial_amounts(surface)
+        values = [amount.yen_value for amount in amounts]
+    elif anchor.value_kind.value == "percentage":
+        values = []
+        for match in _PERCENT_RE.finditer(surface):
+            value = Decimal(match.group(2).replace(",", ""))
+            values.append(
+                -value
+                if match.group(1) in {"-", "△", "▲"}
+                else value
+            )
+    else:
+        values = []
+        for match in _NUMBER_RE.finditer(surface):
+            raw = re.sub(r"\s+", "", match.group()).replace(",", "")
+            negative = raw.startswith(("-", "△", "▲"))
+            raw = raw.lstrip("+-△▲")
+            try:
+                value = Decimal(raw)
+            except InvalidOperation:
+                continue
+            values.append(-value if negative else value)
+    if len(values) not in {1, 2}:
+        return None
+    return min(values), max(values)
+
+
 def _numeric_value(
     point: ResearchMemoFinancialPoint,
     anchor: ResearchMemoFinancialAnchor,
 ) -> Decimal | None:
-    surface = unicodedata.normalize("NFKC", point.value_surface_ja)
-    if anchor.value_kind.value in {"monetary", "per_share"}:
-        amounts = extract_japanese_financial_amounts(surface)
-        return amounts[0].yen_value if len(amounts) == 1 else None
-    if anchor.value_kind.value == "percentage":
-        match = _PERCENT_RE.search(surface)
-        if match is None:
-            return None
-        value = Decimal(match.group(2).replace(",", ""))
-        return -value if match.group(1) in {"-", "△", "▲"} else value
-    match = _NUMBER_RE.search(surface)
-    if match is None:
+    bounds = _numeric_bounds(point, anchor)
+    if bounds is None or bounds[0] != bounds[1]:
         return None
-    raw = re.sub(r"\s+", "", match.group()).replace(",", "")
-    negative = raw.startswith(("-", "△", "▲"))
-    raw = raw.lstrip("+-△▲")
-    try:
-        value = Decimal(raw)
-    except InvalidOperation:
-        return None
-    return -value if negative else value
+    return bounds[0]
 
 
 def _anchor_key(
@@ -251,19 +267,26 @@ def _forecast_metrics(
             for _, anchor, point in matched
             if (value := _numeric_value(point, anchor)) is not None
         }
-        forecast_value = _numeric_value(forecast, forecast_anchor)
-        if forecast_value is None or len(values) != 1:
+        forecast_bounds = _numeric_bounds(forecast, forecast_anchor)
+        if forecast_bounds is None or len(values) != 1:
             continue
+        forecast_lower, forecast_upper = forecast_bounds
         actual_value = next(iter(values))
         actual_memo, _, actual = next(
             item
             for item in matched
             if _numeric_value(item[2], item[1]) == actual_value
         )
-        delta = actual_value - forecast_value
+        if actual_value < forecast_lower:
+            comparison_value = forecast_lower
+        elif actual_value > forecast_upper:
+            comparison_value = forecast_upper
+        else:
+            comparison_value = actual_value
+        delta = actual_value - comparison_value
         error_pct = (
-            delta / abs(forecast_value) * Decimal("100")
-            if forecast_value != 0
+            delta / abs(comparison_value) * Decimal("100")
+            if comparison_value != 0
             else None
         )
         # Forecast discipline is deliberately asymmetric: delivering at least
@@ -272,7 +295,7 @@ def _forecast_metrics(
         # difference remains available for analytical context.
         result = (
             "met_or_exceeded"
-            if actual_value >= forecast_value
+            if actual_value >= forecast_lower
             else "missed"
         )
         comparisons.append(

@@ -549,8 +549,10 @@ map, not values regenerated during Markdown rendering or English translation.
 For forecast discipline, meeting or exceeding the original annual forecast is
 always positive evidence regardless of the size of the upside; falling below
 the original forecast is negative evidence. Later revisions do not erase the
-comparison with original guidance. Medium-term target delivery and the clarity
-of revisions remain separate evidence within the same component.
+comparison with original guidance. When guidance is stated as a range, an
+actual below the lower bound is a miss, an actual within the range is met, and
+an actual above the upper bound is exceeded. Medium-term target delivery and
+the clarity of revisions remain separate evidence within the same component.
 The synthesis pass also writes a concise natural-language explanation beneath
 every subscore, including supporting and contrary information. The full calculation is stored in
 `management_consistency.json`.
