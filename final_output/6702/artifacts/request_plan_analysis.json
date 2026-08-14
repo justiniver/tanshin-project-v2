@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "2.3",
   "stage": "analysis",
   "security_code": "6702",
   "model_profile": "default",
@@ -7,11 +7,11 @@
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
   "request_options": {},
-  "request_id": "d4d864a70e5eacc9",
+  "request_id": "4e777df5f3c3810d",
   "manifest_id": "ad60a72ef33bfabd",
-  "system_prompt_sha256": "b7d8266ece7353e8db488d78139849155c912671290950e64a88b79731448435",
-  "prompt_sha256": "fa6ddd41d1d86c8aff40860aed5f83c40fe69528708bc7453b253764254e299b",
-  "response_schema_sha256": "d3e5fd1802a78010dbb408bf708882a3235ca4d0473d4bcac73c64aa22f0aaae",
+  "system_prompt_sha256": "e4adc3daf9d70cfba9f0e12351062f1d7695b4b56456cda9249dd88a7705d7da",
+  "prompt_sha256": "98ff87d0abb1f5b82aab6345fb5c7e254901966ced90eacd4ddb924ff8438d9a",
+  "response_schema_sha256": "92d6d38034e3038e9eaeddf3d39fb9127a44c0a9568d4cb30ba718211f47ac31",
   "files": [
     {
       "filename": "01_2027_Q1_tanshin.pdf",
@@ -103,7 +103,7 @@
     }
   ],
   "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
-  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
+  "style_blueprint_sha256": "6d4811bee2af8ad3005e889cde1bd50c8ff69c19bf2cb62d3fb8c03d5a9219dc",
   "exemplar_path": null,
   "exemplar_sha256": null,
   "max_output_tokens": 32768,

@@ -4,18 +4,17 @@
     "section_coverage": 5.0,
     "executive_breadth": 5.0,
     "analytical_depth": 3.5,
-    "trend_specificity": 4.0,
-    "evidence_density": 3.05,
-    "tone": 5.0,
+    "trend_specificity": 0.12,
+    "tone": 3.8,
     "repetition": 5.0,
-    "readability": 5.0,
-    "approximate_length": 4.15
+    "readability": 4.75,
+    "approximate_length": 4.76
   },
-  "overall_score_0_to_5": 4.47,
+  "overall_score_0_to_5": 4.1,
   "generated_metrics": {
-    "main_characters": 4974,
-    "trend_narrative_characters": 1845,
-    "trend_perspective_narrative_characters": 295,
+    "main_characters": 6066,
+    "trend_narrative_characters": 3439,
+    "trend_perspective_narrative_characters": 311,
     "headings": [
       "# 株式会社カカクコム（2371）",
       "## 企業概要",
@@ -30,35 +29,27 @@
       "### 変わらなかったこと",
       "### 変化したこと",
       "### 資本配分の変化",
+      "### 資本配分は価値を創出したか",
       "### 最新コメントから読み取れる現在地"
     ],
-    "citation_groups": 17,
-    "citation_references": 46,
-    "citation_references_per_1000_chars": 9.248,
+    "citation_groups": 0,
+    "citation_references": 0,
+    "citation_references_per_1000_chars": 0.0,
     "unique_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
       2026
     ],
     "future_years_excluded_from_trend_score": [
       2027
     ],
-    "year_span": 9,
+    "year_span": 0,
     "bold_analytical_themes": 7,
-    "contrast_terms": 9,
-    "sentence_count": 54,
-    "average_sentence_characters": 69.35,
-    "long_sentence_count": 0,
+    "contrast_terms": 19,
+    "sentence_count": 81,
+    "average_sentence_characters": 66.14,
+    "long_sentence_count": 1,
     "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
-    "promotional_terms": 0,
+    "promotional_terms": 2,
     "first_person_terms": 0,
     "key_takeaway_categories": [
       "earnings_profitability",
@@ -67,12 +58,7 @@
       "capital_allocation"
     ],
     "key_takeaway_category_count": 4,
-    "middle_period_years": [
-      2020,
-      2021,
-      2022,
-      2023
-    ],
+    "middle_period_years": [],
     "trend_theme_average_years": 0.0,
     "trend_themes_with_three_periods": 0
   },
@@ -83,6 +69,6 @@
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

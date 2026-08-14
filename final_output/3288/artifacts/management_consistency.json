@@ -1,115 +1,66 @@
 {
-  "methodology_version": "management-consistency-v5",
-  "score": 0.5,
-  "raw_score": 0.5,
-  "evidence_confidence": 0.6042,
-  "confidence_label": "moderate",
-  "evidence_coverage": 0.6042,
-  "distinct_fiscal_years": [
-    2019,
-    2021,
-    2023,
-    2024,
-    2025,
-    2026
-  ],
-  "evidence_count": 10,
-  "management_discussion_evidence_share": 0.1,
+  "methodology_version": "management-consistency-v6",
+  "score": 0.88,
+  "raw_score": 0.875,
+  "evidence_confidence": null,
+  "confidence_label": null,
+  "evidence_coverage": null,
+  "distinct_fiscal_years": [],
+  "evidence_count": 0,
+  "management_discussion_evidence_share": null,
   "components": [
     {
       "dimension": "strategic_coherence",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 4,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "経営陣は一貫して都市部戸建住宅の実需獲得を核としつつ、実需不動産と投資用不動産のポートフォリオ経営を推進してきました。「行こうぜ1兆！2023」や「3カ年の経営方針（2024年9月期〜2026年9月期）」など連続する中期方針において基本ロジックをブレさせずに提示しています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0003",
-        "02_2025_FY_tanshin.pdf:s0016",
-        "04_2023_FY_tanshin.pdf:s0022"
-      ],
-      "distinct_fiscal_years": [
-        2023,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 1,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.5667
+      "rationale_ja": "経営陣は「行こうぜ1兆！」など明確な長期成長目標を掲げ、都心戸建における狭小地開発・高回転モデルという軸をブレさせずに推進してきた。自社有機成長の限界を予見したタイミングで、マンション事業の強みを持つプレサンスや、デザイン戸建に強いメルディアの買収・完全統合を段階的に断行しており、中核事業の競争力強化と周辺領域への拡張が見事に整合した極めてコヒーレントな戦略を展開している。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "execution_follow_through",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 4,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "ホーク・ワン、プレサンスコーポレーション、三栄建築設計（現メルディア）の買収と段階的子会社化・完全子会社化を実行し、首都圏から近畿・東海などへのエリア拡大とマンション・戸建のラインナップ拡充を有言実行で達成しました。",
-      "evidence_ids": [
-        "03_2024_FY_tanshin.pdf:s0020",
-        "06_2021_FY_tanshin.pdf:s0024",
-        "08_2019_FY_tanshin.pdf:s0026"
-      ],
-      "distinct_fiscal_years": [
-        2019,
-        2021,
-        2024
-      ],
+      "rationale_ja": "2021年9月期〜2023年9月期の中期経営計画「行こうぜ1兆！」において売上高1兆円目標を最終年度（FY2023に1.14兆円）に完全達成した。さらにホーク・ワン、プレサンス、メルディアといった大型買収案件において、段階的株式取得から完全子会社化、さらにはセグメント再編・自社ラインへの完全吸収・集約までを着実にやり遂げており、有言実行のプロセスと結果の両面で高い実行力を示した。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
-      "covered_period_buckets": [
-        "early",
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.9
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "forecast_target_discipline",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "「行こうぜ1兆！2023」の全セグメント増収増益達成など高い達成力を見せた一方、FY2024には市中在庫滞留を受けて戸建関連事業の粗利益率低下と通期営業利益減益（16.3％減）を経験しました。FY2025には在庫調整完了により利益をV字回復させており、目標達成と環境変化による修正が交錯する実績となっています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0014",
-        "02_2025_FY_tanshin.pdf:s0015",
-        "03_2024_FY_tanshin.pdf:s0018",
-        "03_2024_FY_tanshin.pdf:s0019",
-        "04_2023_FY_tanshin.pdf:s0022"
-      ],
-      "distinct_fiscal_years": [
-        2023,
-        2024,
-        2025
-      ],
+      "rationale_ja": "観察された通期経常利益の期初予想と実績の対比（全9比較期）において、8期で実績が予想を上回り（FY2021の39.4%上振れ等）、1期（FY2024）で概ね計画通り（0.2%差）となり、期初予想を下回った期は一度も存在しない。経営陣の業績予想姿勢は一貫して保守的であり、期中での業績上方修正を伴いながら確実に計画を超克する高い規律を有している。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.5333
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "accountability_transparency",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "FY2024における戸建関連事業の在庫調整や利益率低下の要因、およびFY2025における在庫入れ替え完了による利益率顕著な改善の要因について、決算短信の経営成績概況で明確かつ透明性の高い説明を行っています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0015",
-        "03_2024_FY_tanshin.pdf:s0019"
-      ],
-      "distinct_fiscal_years": [
-        2024,
-        2025
-      ],
+      "rationale_ja": "2024年9月期における戸建住宅の在庫調整に伴う営業減益局面に対し、市況変化と自社の仕入抑制・調整プロセスを客観的に開示した。また、プレサンスや永大等の買収に伴う負ののれん益の開示やセグメント再編理由を明瞭に説明するとともに、総還元性向40%以上の資本還元指標を導入して自己株式消却や増配の実施理由を明確化しており、説明責任と透明性は十分に確保されている。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.4167
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     }
   ],
-  "overall_rationale_ja": "オープンハウスグループの経営陣は、約10年間にわたり「都市部実需戸建の製販一体モデル」と「実需・投資不動産ポートフォリオ経営」の基本戦略をブレずに維持し、大型M&Aの成功によって売上高1兆円規模の達成を有言実行してきました。FY2024における在庫調整局面での利益低下という一時的な規律の揺らぎは見られたものの、翌FY2025での速やかなV字回復と総還元性向40％以上の新指標設定など、透明性の高い説明責任と資本配分の機動力を提示しています。"
+  "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
 }

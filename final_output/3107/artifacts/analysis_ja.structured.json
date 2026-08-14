@@ -1,688 +1,270 @@
 {
-  "schema_version": "2026-05-13",
-  "identity": {
-    "security_code": "3107",
-    "company_name_ja": "ダイワボウホールディングス株式会社",
-    "company_name_en": "Daiwabo Holdings Co., Ltd.",
-    "latest_filename": "01_2026_FY_tanshin.pdf",
-    "latest_period_ja": "2026年3月期",
-    "latest_period_en": "FY2026"
-  },
+  "schema_version": "1.0",
   "claims": [
     {
-      "claim_id": "overview-01",
+      "claim_id": "company_overview_1",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "ITインフラ流通事業を中核とし、産業機械事業を展開する純粋持株会社構造",
-      "body_ja": "ダイワボウホールディングスは、ITインフラ流通事業および産業機械事業を展開する持株会社である。主力のITインフラ流通事業では、コンピュータ機器・周辺機器の販売に加え、サブスクリプション管理ポータル「iKAZUCHI（雷）」を通じたクラウド製品等の販売・サービスを提供している。産業機械事業では、生産設備用の工作機械製品（立旋盤等）および自動機械製品の製造販売を行っている。なお、かつて中核事業の一角であった繊維事業については、2024年3月に大和紡績の株式85.0％を譲渡して連結範囲から除外しており、現在はITインフラ流通事業を中心とする事業構成へ集約されている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0027",
-        "03_2024_FY_tanshin.pdf:s0019"
-      ],
+      "headline_ja": "ITインフラ流通を主軸とする事業持株会社構造と収益モデル",
+      "body_ja": "ダイワboホールディングスは、純粋持株会社体制のもとでITインフラ流通事業および産業機械事業を展開する企業グループである。主力のITインフラ流通事業（ダイワボウ情報システム）は、国内外の主要ITベンダーからPC、サーバー、ネットワーク機器、ソフトウェア等を仕入れ、全国の販売パートナーを通じて企業、官公庁、教育機関等へ販売するマルチベンダーディストリビューションを担う。近年はクラウド・サブスクリプション管理ポータル「iKAZUCHI（雷）」を通じた継続課金型ビジネスの拡充を推進している。また、産業機械事業（オーエム製作所等）では工作機械や自動機械の製造販売を行っている。2024年3月期には非コアであった繊維事業を事業分離・譲渡しており、収益基盤をITインフラ流通事業へ集約させた事業構造を有している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest-takeaway-01",
+      "claim_id": "latest_key_takeaway_1",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年3月期連結業績は、ITインフラ流通の牽引により売上高・各段階利益とも大幅な増収増益を達成",
-      "body_ja": "当連結会計年度の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益44,169百万円（同26.6％増）、経常利益44,943百万円（同26.8％増）、親会社株主に帰属する当期純利益32,030百万円（同29.4％増）となった。Windows10 EOSに伴うPC更新需要やGIGAスクール第2期案件の獲得などITインフラ流通事業が大きく業績を牽引した。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0001"
-      ],
+      "headline_ja": "2026年3月期は特需獲得により大幅な増収増益を達成",
+      "body_ja": "2026年3月期の連結業績は、売上高1,350,879百万円（前期比18.8%増）、営業利益44,169百万円（同26.6%増）、経常利益44,943百万円（同26.8%増）、親会社株主に帰属する当期純利益32,030百万円（同29.4%増）となった。2025年10月のWindows10サポート終了（EOS）に向けた法人向けPCの更新需要と、GIGAスクール第2期調達案件の集中獲得が全社業績を牽引した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-takeaway-02",
+      "claim_id": "latest_key_takeaway_2",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "営業キャッシュ・フローは14,569百万円の収入、期末現金残高は43,852百万円を確保",
-      "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは14,569百万円の収入（前期比8,659百万円の増収）となった。売上債権や棚卸資産の増加があったものの、仕入債務の増加や税金等調整前当期純利益44,674百万円の計上等が貢献した。期末の現金及び現金同等物残高は43,852百万円となっている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0002"
-      ],
+      "headline_ja": "運転資本拡大も自己資本比率の上昇と営業CF収入を確保",
+      "body_ja": "当期末の総資産は売掛金や商品の増加により前期末比21,950百万円増の462,072百万円に拡大したものの、利益蓄積により純資産が169,829百万円へ増加し、自己資本比率は36.8%（前期末34.6%）へと向上した。営業活動によるキャッシュ・フローは売上債権・棚卸資産の増加による資金圧迫があったものの、仕入債務の増加や税引前利益の増加により14,569百万円の収入を計上した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-takeaway-03",
+      "claim_id": "latest_key_takeaway_3",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "2027年3月期は特需反動で減収減益予想、年間110円配当と6,000百万円上限の自己株式取得を決議",
-      "body_ja": "2027年3月期の通期連結業績予想は、売上高1,189,000百万円（前期比12.0％減）、営業利益36,500百万円（同17.4％減）と、特需一巡に伴う減収減益を見込む。一方で、年間配当は前期比5円増の110円を予定するほか、2026年5月13日の取締役会にて上限6,000百万円（2,400,000株）の自己株式取得および消却を決議し、株主還元の拡充を図っている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0011",
-        "01_2026_FY_tanshin.pdf:s0012"
-      ],
-      "statement_type": "mixed",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "latest-driver-01",
-      "section": "latest.business_driver",
-      "order": 1,
-      "headline_ja": "Windows10 EOS需要獲得とGIGAスクール第2期案件によりITインフラ流通事業が増収増益",
-      "body_ja": "ITインフラ流通事業は、売上高1,336,479百万円（前年同期比18.9％増）、営業利益43,030百万円（同26.4％増）を記録した。2025年10月のWindows10サポート終了を見据えたPC更新需要の獲得や、GIGAスクール第2期共同調達案件での全国営業活動および販売パートナー・ベンダーとの協業深耕が奏功した。さらに「iKAZUCHI（雷）」を通じたクラウド等のリカーリングビジネスも順調に拡大した。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0005",
-        "01_2026_FY_tanshin.pdf:s0006",
-        "01_2026_FY_tanshin.pdf:s0026"
-      ],
+      "headline_ja": "配当増額・自己株式大量消却と次回取得枠の設定による還元強化",
+      "body_ja": "当期の年間配当は前期の90円から105円（配当金総額9,240百万円）へ増額を実施した。さらに期中に8,454百万円（2,906,700株）の自己株式を取得し、保有自己株式19,253百万円相当（7,877,432株）を消却した。また後発事象として上限6,000百万円（2,400,000株）の追加自己株式取得・消却方針を決議しており、総還元姿勢を一段と強めている。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-driver-02",
-      "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "造船・エネルギー向け受注継続や大型機販売により産業機械事業が増益",
-      "body_ja": "産業機械事業は、売上高14,400百万円（前年同期比11.7％増）、営業利益1,127百万円（同32.3％増）となった。工作機械部門において国内の造船やエネルギー業界からの好調な受注が継続したことに加え、主力である航空機業界の需要回復や金型業界向け大型機の販売が寄与した。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007",
-        "01_2026_FY_tanshin.pdf:s0008"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "latest-outlook-01",
-      "section": "latest.outlook",
-      "order": 1,
-      "headline_ja": "2027年3月期通期は特需一巡により売上高1,189,000百万円、営業利益36,500百万円の減収減益を予想",
-      "body_ja": "会社側は2027年3月期の連結業績予想として、売上高1,189,000百万円（対前期12.0％減）、営業利益36,500百万円（対前期17.4％減）、親会社株主に帰属する当期純利益25,300百万円（対前期21.0％減）を見込んでいる。Windows10 EOS需要やGIGAスクール案件の集中が一段落することに伴う反動減を織り込んでいる。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003"
-      ],
+      "claim_id": "latest_key_takeaway_4",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "2027年3月期は特需一巡に伴う反動減を見込む業績予想",
+      "body_ja": "2027年3月期の通期連結業績予想は、売上高1,189,000百万円（前期比12.0%減）、営業利益36,500百万円（同17.4%減）、親会社株主に帰属する当期純利益25,300百万円（同21.0%減）と減収減益を見込んでいる。Windows10 EOSおよびGIGAスクール案件の集中期が通過することによる一時的需要一巡が主因である。",
       "statement_type": "forecast",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-risk-01",
+      "claim_id": "latest_business_driver_1",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "クライアントPC・文教需要｜追い風",
+      "body_ja": "ITインフラ流通事業において、Windows10のEOS（2025年10月）を見据えた企業向けPC更新需要が年間を通じて堅調に推移し、下期にかけて半導体不足に伴う先行納入対応も寄与して業績を牽引した。加えて文教向けではGIGAスクール第2期の共同調達案件を全国で多数獲得し、セグメント売上高1,336,479百万円（前期比18.9%増）、セグメント利益43,030百万円（同26.4%増）に大きく貢献した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_business_driver_2",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "クラウド複合提案・iKAZUCHI｜追い風",
+      "body_ja": "単なるハードウェア販売にとどまらず、PC、クラウド、ネットワーク、ソフトウェアを組み合わせた複合提案を強化した。またクラウド管理ポータル「iKAZUCHI（雷）」の利用深耕および新規テックベンダーとの連携拡充により、ストック型の高利益率リカーリングビジネスが拡大し、収益性の底上げに繋がった。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_business_driver_3",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "産業機械部門案件獲得｜追い風",
+      "body_ja": "産業機械事業では、工作機械部門において造船・エネルギー業界および航空機業界からの受注回復が持続し、金型向け大型機の売上が貢献した。自動機械部門でも大型案件の計上があり、セグメント売上高14,400百万円（前期比11.7%増）、セグメント利益1,127百万円（同32.3%増）と大幅な伸びを示した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_outlook_1",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "EOS需要通過後の反動減を見込むが過去平均を上回る収益水準を計画",
+      "body_ja": "2027年3月期計画では、売上高1,189,000百万円（前期比12.0%減）、営業利益36,500百万円（同17.4%減）と前期の大型特需からの反動減を織り込む。しかし、繊維事業売却前の過去実績や特需発生前の水準と比較すると高水準の営業利益を維持する計画であり、1株当たり配当金も年間110円（前期105円）へと連続増配を予定している。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "latest_risk_1",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "AI向け半導体需要高まりに伴うPC・サーバーの価格上昇および納期調整リスク",
-      "body_ja": "第4四半期以降、AI関連データセンター向けを中心とする世界的な半導体需要の高まりを受け、PCやサーバーの価格上昇や一部案件での納期調整が発生している。今後の部品確保や価格転嫁の進捗によっては販売動向や利益率に影響を及ぼす可能性がある。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0009"
-      ],
+      "headline_ja": "半導体・メモリ高騰とサプライチェーンによる納期・価格調整リスク",
+      "body_ja": "第4四半期以降、AI関連データセンター需要急増を背景とした世界的半導体メモリ価格の高騰や供給制約が顕現化しており、PCやサーバーの価格上昇や一部案件で納期調整が発生している。今後の部品調達遅延や製品価格上昇による顧客の投資手控えがリスク要因となる。",
       "statement_type": "risk",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-risk-02",
+      "claim_id": "latest_risk_2",
       "section": "latest.risk",
       "order": 2,
-      "headline_ja": "為替変動や資源価格高止まり、米国通商政策に伴う不透明感",
-      "body_ja": "円安の進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国通商政策の影響、およびAI需要急増による半導体メモリ価格の高騰などにより、マクロ経済および顧客企業のIT投資・設備投資の動向に不透明感が続くことが懸念されている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "OS更新・GIGAスクール特需の一巡に伴う需要反動リスク",
+      "body_ja": "2026年3月期に集中したWindows10 EOS更新需要およびGIGAスクール第2期案件の先行納入完了により、2027年3月期以降は反動減が避けられない。複合提案やクラウド・サブスクリプションの積み上げが反動減をどの程度カバーできるかが不確実要素となる。",
       "statement_type": "risk",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest-context-01",
+      "claim_id": "latest_context_1",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "更新特需の最大化による過去最高業績の達成と特需一巡後の減益局面への移行",
-      "body_ja": "2026年3月期は、Windows10 EOSおよびGIGAスクール第2期という二大大型特活が重なり、ITインフラ流通事業の推進によって過去最高の業績を記録した。一方で、2027年3月期は特活の一巡により減収減益予想となっており、会社側は総額6,000百万円を上限とする自己株式取得や配当増額など株主還元を強化しながら、リカーリングビジネスの拡充による特需依存からの脱却を進める足を示している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0011",
-        "01_2026_FY_tanshin.pdf:s0012",
-        "01_2026_FY_tanshin.pdf:s0026"
-      ],
+      "headline_ja": "構造改革完了後のコア事業特需獲得と特需後成長への相渡点",
+      "body_ja": "当社は中期経営計画（2025年3月期～2027年3月期）において非コアの繊維事業を完全分離・譲渡した上で、「事業ポートフォリオ変革による躍進期」に位置づけている。2026年3月期はITインフラ流通事業への資源集中とOS更新・GIGA特需が重なり、売上高1.35兆円・営業利益441億円という過去最高業績を達成した。\n\nしかし、2027年3月期は特需反動減による減収減益予想となっており、今後は一時的なPCリプレース需要依存から脱却し、iKAZUCHI等のクラウド基盤やAI・データセンター向け高付加価値ソリューションへの移行が持続的成長の検証軸となる。",
       "statement_type": "mixed",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend-perspective-01",
+      "claim_id": "trend_perspective_1",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "繊維事業の事業分離とITインフラ流通への経営資源集中による高収益・高成長構造への転換",
-      "body_ja": "過去10年間の軌跡において、同社は従来の「ITインフラ流通」「繊維」「産業機械」の3本柱体制から、資本効率と収益性に課題のあった繊維事業（大和紡績）を2024年3月に事業譲渡・連結除外することで、主力のITインフラ流通事業へ経営資源を集中させる構造改革を断行した。ITインフラ流通事業では、地域密着の拠点網とマルチベンダー提案力を活かし、Windows7/10 EOSやGIGAスクール構想（第1期・第2期）などの市場特需を確実に捉えて業績規模を拡大させた。一方で、これら大規模特需の周期的反動や半導体供給制約といった外部環境変動に左右される業績の波動性を克服するため、「iKAZUCHI（雷）」を中心としたクラウド・サブスクリプション等のリカーリング収益基盤の拡充を推進している。",
-      "evidence_ids": [
-        "10_2017_FY_tanshin.pdf:s0013",
-        "07_2020_FY_tanshin.pdf:s0018",
-        "06_2021_FY_tanshin.pdf:s0014",
-        "03_2024_FY_tanshin.pdf:s0019",
-        "01_2026_FY_tanshin.pdf:s0026",
-        "01_2026_FY_tanshin.pdf:s0027"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
+      "headline_ja": "繊維主導の複合企業から高効率ITディストリビューターへの10年間の変貌",
+      "body_ja": "過去10年間のダイワボウホールディングスは、歴史的な繊維事業とIT流通事業を併せ持つ複合体から、ITインフラ流通事業へ資本を集中させる事業ポートフォリオ変革を成し遂げた。初期（2017～2020年3月期）はWindows7 EOSやGIGAスクール第1期等の特需を取り込みつつ全社売上高1兆円を達成したが、繊維事業の過年度架空取引による会計修正などガバナンス上の課題を抱えていた。中期（2021～2023年3月期）はコロナ禍のテレワーク需要や半導体不足を補う戦略的在庫確保とサブスク基盤「iKAZUCHI」の育成を進めた。直近（2024～2026年3月期）において低収益な繊維事業を大幅な減損・事業譲渡損を伴いながら売却分離し、純粋なITインフラディストリビューターへと脱皮した。これにより全社ROEは19.9%に達し資本効率は劇的に向上したが、業績の周期的なOS・政策特需への依存構造は依然として残されており、特需巡航化後の持続的成長力が今後の課題である。",
+      "statement_type": "mixed",
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend-consistent-01",
+      "claim_id": "trend_consistent_1",
       "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "全国拠点による地域密着営業とマルチベンダー提案を通じたIT需要獲得能力の維持",
-      "body_ja": "初期（FY2017）、中期（FY2021）、直近（FY2026）を通じて、ITインフラ流通事業における全国の営業拠点網を活用した地域密着営業と、PC・周辺機器・クラウド・各種サービスを組み合わせたマルチベンダー提案が継続的な強みとなっている。FY2017における首都圏中心のIT投資回復、FY2021におけるニューノーマル対応やGIGAスクール第1期、FY2026におけるWindows10 EOSおよびGIGAスクール第2期など、時代の需要変化を捉えて受注を獲得する営業メカニズムが維持されている。",
-      "evidence_ids": [
-        "10_2017_FY_tanshin.pdf:s0013",
-        "06_2021_FY_tanshin.pdf:s0014",
-        "01_2026_FY_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "ITインフラ流通事業における全国ディーラー網とマルチベンダー提案力",
+      "body_ja": "初期（2017年3月期売上高536,073百万円）、中期（2021年3月期売上高969,748百万円）、直近（2026年3月期売上高1,336,479百万円）を通じて、全国の営業拠点を生かした地域密着型営業とマルチベンダーとしての独立した調達・提案力は一貫した強みである。PC本体にとどまらず周辺機器やキッティング、ネットワークを組み合わせた複合提案力が、市場環境の波を超えてシェアを拡大する基盤となった。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend-consistent-02",
+      "claim_id": "trend_consistent_2",
       "section": "trend.consistent",
       "order": 2,
-      "headline_ja": "業績成長に応じた配当の継続的引き上げと株主還元の積極化",
-      "body_ja": "初期（FY2017の1株10円）、中期（FY2021の1株300円/株式分割前）、直近（FY2026の1株105円/株式分割後）に至るまで、連結業績の成長や株主還元方針に基づき、配当水準を段階的に引き上げる姿勢を貫いている。2021年4月の1:5株式分割や自己株式取得の実施を交えつつ、株主還元機会の拡充と安定的な利益配分を継続している。",
-      "evidence_ids": [
-        "10_2017_FY_tanshin.pdf:s0015",
-        "06_2021_FY_tanshin.pdf:s0016",
-        "01_2026_FY_tanshin.pdf:s0017"
-      ],
+      "headline_ja": "制度更新および教育ICT国策プロジェクトに対する強力な特需取り込み能力",
+      "body_ja": "2019～2020年3月期のWindows7 EOS・GIGAスクール第1期特需、および2025～2026年3月期のWindows10 EOS・GIGAスクール第2期特需の両局面において、ベンダーおよび全国販売パートナーとの密接な協業と事前キッティング体制により市場需要の集中獲得を果たした。特需発生時における調達・物流・販売オペレーションの実行力は10年間一貫して極めて高い。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend-change-01",
+      "claim_id": "trend_change_1",
       "section": "trend.change",
       "order": 1,
-      "headline_ja": "繊維事業の事業分離による事業ポートフォリオの抜本的見直しとIT主導体制への移行",
-      "body_ja": "【変化前】FY2020以前は「ITインフラ流通」「繊維」「産業機械」を3本柱として展開していたが、繊維事業は原燃料高や販売不振により利益率の低下や期初予想からの乖離が多発していた。【移行期】FY2024において、ベストオーナーの観点から大和紡績の株式85.0％を譲渡することを決定し、固定資産減損損失16,695百万円および事業譲渡損1,039百万円を計上して連結除外とした。【現在】FY2026においては「ITインフラ流通事業」と「産業機械事業」の2セグメント体制へ再編され、資本・経営資源をIT分野へ集中させる体制が完了している。",
-      "evidence_ids": [
-        "07_2020_FY_tanshin.pdf:s0018",
-        "04_2023_FY_tanshin.pdf:s0028",
-        "03_2024_FY_tanshin.pdf:s0019",
-        "03_2024_FY_tanshin.pdf:s0020",
-        "01_2026_FY_tanshin.pdf:s0027"
-      ],
+      "headline_ja": "繊維事業の完全分離による非効率資産の排除と単一主軸体制への変革",
+      "body_ja": "初期において全社売上高の約1割・営業利益の約2割を占めていた繊維事業は、原燃料高や需要低迷で低収益化が進行し、2020年3月期には旧ダイワボウノイの架空循環取引に伴う会計修正が発生した。中期の中計検討を経て、2024年3月期に株式85.0%をファンドへ譲渡。16,723百万円の減損損失と1,039百万円の事業譲渡損を計上して連結除外した。これにより非コア資産が切り離され、全社の利益率と資本効率が劇的に改善した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend-change-02",
+      "claim_id": "trend_change_2",
       "section": "trend.change",
       "order": 2,
-      "headline_ja": "収益認識会計基準の適用に伴う売上高表示の変更と実質成長による売上高1.3兆円超への到達",
-      "body_ja": "【変化前】FY2021以前は従来の会計基準に基づき総額で売上高を計上し、初めて1兆円（1,043,534百万円）に到達した。【移行期】FY2022の期首より「収益認識に関する会計基準」等を適用し、代理人取引の純額表示等への変更により売上高が64,867百万円減少（同期の売上高763,838百万円）した。【現在】新基準適用下においても、ITインフラ流通事業の需要拡大によりFY2026には売上高1,350,879百万円へ達し、収益基準変更の減収要因を乗り越えて実質的な成長を達成した。",
-      "evidence_ids": [
-        "06_2021_FY_tanshin.pdf:s0021",
-        "05_2022_FY_tanshin.pdf:s0022",
-        "01_2026_FY_tanshin.pdf:s0001"
-      ],
+      "headline_ja": "売り切り型からサブスクリプション管理ポータル「iKAZUCHI」中心のストック型へ",
+      "body_ja": "初期のIT流通はハードウェア単体の売切り型中心であったが、中期以降、独自のサブスクリプション管理ポータル「iKAZUCHI（雷）」の機能拡充と提案強化を推進。直近ではSaaSやクラウドインフラの継続課金型（リカーリング）ビジネスが定着し、特需がない期における収益の下支え構造が形成された。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend-capital-allocation-01",
+      "claim_id": "trend_capital_allocation_1",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "不採算・低成長事業の流動化と、株主還元（配当増額・大型自己株式取得）およびIT・成長投資への再配分",
-      "body_ja": "同社はFY2024に繊維事業の株式85.0%を譲渡し、資本効率の改善を図った。同譲渡以降、FY2024の10,000百万円上限、FY2025の9,955百万円（3,669,700株取得）、FY2026の8,453百万円（2,906,700株取得）および19,253百万円（7,877,432株）の消却、さらにFY2027予想における6,000百万円上限の自己株式取得など、自社株買いを連続して実施している。また配当も増額傾向を維持し、成長事業（クラウドポータル「iKAZUCHI」等）への投資と株主還元の拡充を両立させている。",
-      "evidence_ids": [
-        "03_2024_FY_tanshin.pdf:s0019",
-        "03_2024_FY_tanshin.pdf:s0023",
-        "02_2025_FY_tanshin.pdf:s0024",
-        "01_2026_FY_tanshin.pdf:s0025",
-        "01_2026_FY_tanshin.pdf:s0011",
-        "01_2026_FY_tanshin.pdf:s0012"
-      ],
+      "headline_ja": "成長領域への営業資本集中と機動的な株主還元の急速な拡充",
+      "body_ja": "10年間の資本配分は、低収益な繊維事業への固定資産投資を削減・撤退する一方、ITインフラ流通事業の営業資産（商品在庫・売掛金）およびサービス基盤（アルファテック・ソリューションズ買収等4,600百万円）へ優先配分した。また、余剰資金は配当増額（1株当たり2017年10円換算から2026年105円へ拡大）および機動的な自己株式取得・消却（2025年9.95%取得、2026年192.5億円消却）に振り向けられ、株主還元姿勢が大幅に強化された。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend-implication-01",
-      "section": "trend.implication",
+      "claim_id": "trend_capital_value_creation_1",
+      "section": "trend.capital_value_creation",
       "order": 1,
-      "headline_ja": "OS更新・教育政策等の特需一巡に伴う業績波動を吸収するリカーリング基盤の蓄積度の検証",
-      "body_ja": "Windows7/10 EOSやGIGAスクール構想に代表されるITインフラ流通事業の業績は、数年周期で発生する大型特需とその後の反動減という波動を伴う。投資家にとっては、特需期に創出したキャッシュが適切に自己株式取得や増配などの資本効率向上へ回されているかとともに、サブスクリプション管理ポータル「iKAZUCHI（雷）」をはじめとするリカーリングビジネスのストック収益がどの程度底上げされ、反動減の局面で営業利益水準を下支えできるかが今後の重要検証点となる。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0026"
-      ],
+      "headline_ja": "創出した：高リターンなIT流通への資本集中と非コア売却により価値を創出",
+      "body_ja": "過去10年間の資本配分は明確に企業価値を創出した。追加資本は主としてITインフラ流通事業の営業資産・流動資本へ投入され、セグメント資産は2017年3月期の173,497百万円から2026年3月期の389,639百万円へ増加した。これに対しセグメント利益は8,976百万円から43,030百万円へと約4.8倍に成長し、投下資本を上回る利益成長を達成した。\n\n一方、低リターンであった繊維事業に対しては追加投資を抑え、2024年3月期に巨額の特別損失（減損・譲渡損計177億円）を容認して事業売却を断行した。この英断により解放された資本と創出されたキャッシュが株主還元（自己株式取得・大量消却および増配）に充当され、全社ROEは2017年3月期の12.5%から2026年3月期には19.9%へと高められた。小規模M&A（アルファテック社取得等）もIT流通のサービス強化に直結しており、高リターン事業への重点配分が実を結んでいる。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
-    }
-  ],
-  "evidence": [
+    },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当期の連結業績は、売上高1,350,879百万円（前年同期比18.8％増）、営業利益は44,169百万円（前年同期比26.6％増）、経常利益は44,943百万円（前年同期比26.8％増）、親会社株主に帰属する当期純利益は32,030百万円（前年同期比29.4％増）となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
+      "claim_id": "trend_implication_1",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "特需反動期の業績底固めとストック収益の成長速度が投資判断の焦点",
+      "body_ja": "投資家における今後の確認軸は、2027年3月期に予想されるWindows10 EOS特需一巡後の反動減に対し、iKAZUCHI等を通じたストック型クラウド収益やAI・データセンター向け複合提案がどの程度減益幅を抑制できるかである。構造改革完了により資本効率（ROE約20%水準）と株主還元水準は格段に高まったため、特需巡航化後の利益下限値の切り上がり度合いが企業価値評価の決め手となる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "management_strategy_1",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "ベストオーナー視点に基づく事業ポートフォリオ変革の明確な推進",
+      "body_ja": "経営陣の戦略は非常に首尾一貫している。中期経営計画において「ベストオーナーか」「持続的な価値創出が可能か」という評価軸を掲げ、主力のITインフラ流通事業にリソースを集中させる一方、非コアとなった繊維事業をファンドへ譲渡・独立化させた。また『2030 VISION』に向け、IT流通での複合提案やiKAZUCHI等のリカーリングビジネスの強化という具体的な成長戦略を設定しており、戦略的整合性は高い。（評点：4）",
       "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "連結業績",
-        "損益"
-      ]
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "営業活動によるキャッシュ・フローは、税金等調整前当期純利益44,674百万円に対し、売上債権の増加や棚卸資産の増加などの減少要因がありましたが、仕入債務の増加などの増加要因により14,569百万円の収入（前期比8,659百万円の収入増加）となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
+      "claim_id": "management_execution_1",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "繊維事業売却断行と特需案件の確実な獲得に見る高い実行力",
+      "body_ja": "戦略の実行力は極めて高い。繊維事業の譲渡においては巨額の減損 losses（約177億円）を伴う意思決定を遅滞なく実行し、事業ポートフォリオの変革を完了させた。さらに、Windows10 EOSやGIGAスクール第1期・第2期といった大型の外部特需に対し、サプライチェーンやキッティング体制を迅速に構築して案件を全社的に回収・完遂した。（評点：4）",
       "statement_type": "actual",
-      "source_section": "当期のキャッシュ・フローの概況",
-      "tags": [
-        "キャッシュ・フロー"
-      ]
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "2027年３月期の業績につきましては、売上高1,189,000百万円、営業利益36,500百万円、経常利益36,700百万円、親会社株主に帰属する当期純利益25,300百万円を予想しております。",
-      "period_label_ja": "2027年3月期予想",
-      "period_label_en": "FY2027 Forecast",
-      "statement_type": "forecast",
-      "source_section": "今後の見通し",
-      "tags": [
-        "業績予想"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "クライアントＰＣについては、2025年10月のWindows10サポート終了（ＥＯＳ）を見据えた更新需要を多く獲得し、業績を大きく牽引しました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
+      "claim_id": "management_forecast_discipline_1",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "保守的傾向を伴う計画策定と特受注達による上振れ実績",
+      "body_ja": "過去8期の通期経常利益予想と実績の比較において、6期で実績が予想を上回り、1期で同水準、1期で下回った（2022年3月期はGIGA反動・半導体不足により13.8%未達）。全体として初期予想を慎重に設定し、期中の特需獲得や需要上振れで上振れ着地する傾向が見られる。予測精度は概ね良好であり、無謀な計画を避ける規律が保たれている。（評点：3）",
       "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "ITインフラ流通事業",
-        "PC需要"
-      ]
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "文教向けでは、ＧＩＧＡスクール第２期の共同調達案件において、従来から全国で展開してきたきめ細やかな営業活動が奏功し、販売パートナーおよびベンダーとの協業を深化させた結果、多くの案件を獲得し、大幅な増収につなげました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
+      "claim_id": "management_accountability_1",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "不祥事・減損処理における適切な開示と真摯な説明責任の発揮",
+      "body_ja": "2020年3月期に判明した旧ダイワボウノイの架空循環取引において、特別調査委員会を設置して過去6年分の会計修正と影響額（営業損益2,100百万円減少）を迅速かつ詳細に公表した。また、2024年3月期の繊維事業売却に伴う16,723百万円の減損損失計上についても背景と戦略的合理性を明確に開示しており、不都合な事象に対する透明性と説明責任が果たされている。（評点：3）",
       "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "GIGAスクール"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "以上の結果、当事業の売上高は1,336,479百万円（前年同期比18.9％増）、営業利益は43,030百万円（前年同期比26.4％増）となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "セグメント業績"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "工作機械部門では、国内において好調な造船、エネルギー業界からの堅調な受注が継続したほか、主力である航空機業界も需要回復が見られ、前年同期比で受注が増加しました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "産業機械事業"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "以上の結果、当事業の売上高は14,400百万円（前年同期比11.7％増）、営業利益は1,127百万円(前年同期比32.3％増)となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "セグメント業績"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0009",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "なお、第４四半期以降は、主にＡＩ関連のデータセンター向けに世界的な半導体需要が高まり、ＰＣやサーバーの価格上昇や一部案件で納期調整が発生しました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "risk",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "半導体",
-        "リスク"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0010",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "今後の経済見通しについては、引き続き雇用情勢や所得環境の改善を背景に緩やかな景気回復が続くことが期待されますが、円安進行や地政学リスクに伴う資源・エネルギー価格の高止まり、米国の通商政策による影響、ＡＩ需要急増による半導体メモリ価格の高騰など、先行きについては不透明な状況が当面続くことが見込まれます。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "risk",
-      "source_section": "今後の見通し",
-      "tags": [
-        "マクロリスク"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0011",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 18,
-      "exact_quote_ja": "当社は、2026年５月13日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式取得に係る事項について決議いたしました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": [
-        "自己株式取得"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0012",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 18,
-      "exact_quote_ja": "（２）取得し得る株式の総数　2,400,000株（上限）\n（発行済株式総数（自己株式を除く）に対する割合2.76％）\n（３）株式の取得価額の総額　6,000百万円（上限）",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "target",
-      "source_section": "重要な後発事象",
-      "tags": [
-        "自己株式取得"
-      ]
-    },
-    {
-      "evidence_id": "10_2017_FY_tanshin.pdf:s0013",
-      "source_filename": "10_2017_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "法人向け市場では、国内企業のＩＴ投資が緩やかな回復基調で推移するなか、地域密着営業を推し進めた結果、首都圏をはじめ全ての地域で前年を上回る実績となりました。",
-      "period_label_ja": "2017年3月期",
-      "period_label_en": "FY2017",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "地域密着営業"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0014",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "全国拠点による対面とオンラインを組み合わせた地域密着営業を推し進めた結果、ニューノーマルな働き方に対応するためのＩＴニーズを捉え、サブスクリプション（継続課金）型サービス、ノートＰＣや液晶モニタ、ヘッドセットといった商品の受注が増加しました。",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "地域密着営業"
-      ]
-    },
-    {
-      "evidence_id": "10_2017_FY_tanshin.pdf:s0015",
-      "source_filename": "10_2017_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "29年３月期期末配当金の内訳　　普通配当　９円00銭　　　　記念配当　１円00銭（創立75周年記念配当）",
-      "period_label_ja": "2017年3月期",
-      "period_label_en": "FY2017",
-      "statement_type": "actual",
-      "source_section": "配当の状況",
-      "tags": [
-        "配当"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0016",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "上記方針により、当期の期末配当金は、１株当たり300円とすることを予定しております。",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "利益配分に関する基本方針および当期・次期の配当",
-      "tags": [
-        "配当"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0017",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "これにより中間配当金１株当たり50円と合わせて、年間配当金は１株当たり105円を予定しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "利益配分に関する基本方針および当期・次期の配当",
-      "tags": [
-        "配当"
-      ]
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0018",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「繊維事業」及び「産業機械事業」の３つを報告セグメントとしております。",
-      "period_label_ja": "2020年3月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "セグメント情報等",
-      "tags": [
-        "3事業体制"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0019",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2024年３月には、当社及び大和紡績株式会社の企業価値最大化の観点から、繊維事業の独立化を実現するために、大和紡績株式会社の発行済株式の85.0％を株式会社アスパラントグループSPC11号に譲渡いたしました。これに伴い、繊維事業は当連結会計年度末をもって連結の範囲から除外されることになりました。",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "繊維事業譲渡"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0020",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 19,
-      "exact_quote_ja": "（注）上記の事業譲渡損とは別に、本件譲渡を決定したことに伴い、繊維事業の固定資産の帳簿価額を回収可能額まで減額し、当該減少額を減損損失16,695百万円として特別損失に計上しております。",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "事業分離",
-      "tags": [
-        "減損損失"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0021",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "これらの結果、当期の連結業績は、売上高1,043,534百万円（前年同期比10.5％増）、営業利益は35,028百万円（前年同期比6.7％増）",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "売上高1兆円"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0022",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "この結果、当連結会計年度の売上高は64,867百万円減少、売上原価は61,835百万円減少しております。",
-      "period_label_ja": "2022年3月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "会計方針の変更",
-      "tags": [
-        "収益認識基準"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0023",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 21,
-      "exact_quote_ja": "（２）取得し得る株式の総数　5,000,000株（上限）\n（発行済株式総数（自己株式を除く）に対する割合5.34％）\n（３）株式の取得価額の総額　10,000百万円（上限）",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "target",
-      "source_section": "重要な後発事象",
-      "tags": [
-        "自己株式取得"
-      ]
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0024",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 14,
-      "exact_quote_ja": "当社は、2024年５月９日開催の取締役会決議に基づき、自己株式3,669,700株の取得を行いました。この取得等により、当連結会計年度において自己株式が9,955百万円増加し、当連結会計年度末において自己株式が15,088百万円となっております。",
-      "period_label_ja": "2025年3月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "株主資本の金額に著しい変動があった場合の注記",
-      "tags": [
-        "自己株式取得"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0025",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 14,
-      "exact_quote_ja": "当社は、2025年５月14日開催の取締役会決議及び2025年６月19日開催の取締役会決議に基づき、自己株式2,906,700株を8,453百万円で取得しました。また、2025年11月６日開催の取締役会決議に基づき、2025年11月28日付で、自己株式7,877,432株、19,253百万円の消却を実施",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "株主資本の金額に著しい変動があった場合の注記",
-      "tags": [
-        "自己株式消却"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0026",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "また、サブスクリプション管理ポータル「ｉＫＡＺＵＣＨＩ（雷）」で提供するクラウド製品を中心に、リカーリングビジネスの強化に加え、新規テックベンダーおよびオリジナルサービスの市場深耕にも注力し、業績拡大につなげました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "iKAZUCHI",
-        "クラウド"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0027",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "したがって、当社は事業会社を基礎とした製品・サービス別のセグメントから構成されており、「ＩＴインフラ流通事業」、「産業機械事業」の２つを報告セグメントとしております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "セグメント情報等の注記",
-      "tags": [
-        "報告セグメント"
-      ]
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0028",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "繊維事業全体としては、原燃料価格の高止まりや主力製品の販売不振が響き、特に利益面において期初の業績予想から大きく乖離する実績となりました。",
-      "period_label_ja": "2023年3月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": [
-        "繊維事業",
-        "業績乖離"
-      ]
+      "is_inference": false,
+      "causal": true
     }
   ],
   "management_consistency": {
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "繊維事業の事業分離やITインフラ流通への経営資源集中など、中期経営計画に沿った事業ポートフォリオ変革の基本方針を一貫して推進した。低成長・不採算事業の整理と成長分野への集中に関して戦略的一貫性が観察される。",
-        "evidence_ids": [
-          "07_2020_FY_tanshin.pdf:s0018",
-          "03_2024_FY_tanshin.pdf:s0019",
-          "01_2026_FY_tanshin.pdf:s0027"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "サブスクリプションポータル「iKAZUCHI（雷）」の拡大、大和紡績の株式譲渡による繊維事業の切り離し、および連続した大規模な自己株式取得・消却など、公表した施策の実行と完了が確認できる。",
-        "evidence_ids": [
-          "03_2024_FY_tanshin.pdf:s0019",
-          "02_2025_FY_tanshin.pdf:s0024",
-          "01_2026_FY_tanshin.pdf:s0025",
-          "01_2026_FY_tanshin.pdf:s0026"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 2,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "ITインフラ流通事業ではWindows10 EOSやGIGAスクール特需を捉えて概ね好業績を達成した一方で、過去の繊維事業においては原燃料高や需要低迷により2023年3月期等で期初予想からの大きな下振れ乖離が発生した。",
-        "evidence_ids": [
-          "04_2023_FY_tanshin.pdf:s0028",
-          "01_2026_FY_tanshin.pdf:s0001"
-        ]
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "繊維事業の譲渡理由や固定資産減損損失の計上、新会計基準（収益認識基準）適用に伴う売上高減少影響、特需一巡後の減益前提などについて、決算短信等で具体的かつ透明性の高い説明を行っている。",
-        "evidence_ids": [
-          "05_2022_FY_tanshin.pdf:s0022",
-          "03_2024_FY_tanshin.pdf:s0019",
-          "03_2024_FY_tanshin.pdf:s0020",
-          "01_2026_FY_tanshin.pdf:s0003"
-        ]
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "ダイワボウホールディングスは、ITインフラ流通事業を中心とする成長戦略の実行において高い戦略的一貫性と実行力を示した。特に資本効率に課題のあった繊維事業（大和紡績）の株式譲渡による事業分離をやり遂げ、自己株式取得・消却を含む株主還元を大幅に強化した。過去の繊維事業における業績下振れや、IT分野での特需・反動減による業績の波動性は存在するものの、経営陣の説明責任と構造改革へのコミットメントは高く評価できる。"
+    ]
   },
   "model_notes": []
 }

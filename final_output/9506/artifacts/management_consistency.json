@@ -1,22 +1,13 @@
 {
-  "methodology_version": "management-consistency-v5",
-  "score": 0.75,
-  "raw_score": 0.75,
-  "evidence_confidence": 0.7084,
-  "confidence_label": "moderate",
-  "evidence_coverage": 0.7084,
-  "distinct_fiscal_years": [
-    2019,
-    2020,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026,
-    2027
-  ],
-  "evidence_count": 10,
-  "management_discussion_evidence_share": 0.7,
+  "methodology_version": "management-consistency-v6",
+  "score": 0.5,
+  "raw_score": 0.5,
+  "evidence_confidence": null,
+  "confidence_label": null,
+  "evidence_coverage": null,
+  "distinct_fiscal_years": [],
+  "evidence_count": 0,
+  "management_discussion_evidence_share": null,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -24,94 +15,52 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "東北電力グループは中期方針において、送配電部門の法的分離、構造改革による競争力強化、およびエネルギー危機後の財務基盤回復（自己資本比率20%目標）を掲げ、一貫したロジックで戦略を推進している。燃料価格ショックや自然災害等による一時的な戦略的修正を余儀なくされたものの、長期ビジョンの根幹は維持されている。",
-      "evidence_ids": [
-        "09_2019_FY_tanshin.pdf:s0025",
-        "04_2024_FY_tanshin.pdf:s0017",
-        "02_2026_FY_tanshin.pdf:s0021"
-      ],
-      "distinct_fiscal_years": [
-        2019,
-        2024,
-        2026
-      ],
-      "management_discussion_evidence_count": 2,
-      "covered_period_buckets": [
-        "early",
-        "recent"
-      ],
-      "evidence_confidence": 0.7833
+      "rationale_ja": "経営陣は法的分離への対応やユアテック持分法化など、事業環境変化に応じた構造改革を着実に推進してきた。中期計画「よりそうnext+PLUS」では連結経常利益1,900億円、自己資本比率20%程度、ROIC 3.5%程度という明確な定量目標を設定しており、戦略的一貫性は概ね確保されている。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "execution_follow_through",
-      "rating": 3,
+      "rating": 2,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
+      "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "2020年4月の東北電力ネットワーク分社化の完遂、能代3号機や上越火力の運転開始、ユアテックの持分法適用会社化、女川原子力発電所2号機の再稼働など、公表した重要施策の実行フォローが行われている。女川2号機の再稼働時期遅延等は生じたものの、最終的に再稼働を果たすなど成果に結びついている。",
-      "evidence_ids": [
-        "09_2019_FY_tanshin.pdf:s0025",
-        "08_2020_FY_tanshin.pdf:s0026",
-        "03_2025_FY_tanshin.pdf:s0018",
-        "03_2025_FY_tanshin.pdf:s0019"
-      ],
-      "distinct_fiscal_years": [
-        2019,
-        2020,
-        2025
-      ],
-      "management_discussion_evidence_count": 2,
-      "covered_period_buckets": [
-        "early",
-        "recent"
-      ],
-      "evidence_confidence": 0.7667
+      "rationale_ja": "能代火力3号機や上越火力1号機の試運転・通年稼働、女川2号機の再稼働、規制料金改定の実施など、大型プロジェクトや構造改革の実行力は示されている。一方で、2023年3月期の燃料高騰時には過去最大の赤字を免れず、リスク管理や収支耐性の面で課題を残した。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "forecast_target_discipline",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 1,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.25,
       "weight": 0.25,
-      "rationale_ja": "ウクライナ危機や地震被害、燃料価格急騰等の外部ショックが相次いだ局面において、通期業績予想を「未定」とする期が多く見られた（2022・2023・2024・2027年3月期等）。タイムラグ影響のボラティリティの大きさから業績予想の精度や公表の迅速性には課題が認められる。",
-      "evidence_ids": [
-        "05_2023_FY_tanshin.pdf:s0014",
-        "01_2027_Q1_tanshin.pdf:s0007"
-      ],
-      "distinct_fiscal_years": [
-        2023,
-        2027
-      ],
-      "management_discussion_evidence_count": 1,
-      "covered_period_buckets": [
-        "middle"
-      ],
-      "evidence_confidence": 0.4667
+      "rationale_ja": "過去10通期開示のうち、2021年3月期、2022年3月期、2023年3月期、および2027年3月期（最新期）において、新型コロナ、地震、料金審査、地政学リスク等を理由に期首業績予想を「未定」と開示している。予想を開示した年度（観察数5期）においても、燃料タイムラグ影響等により実績との乖離が大きく、予測規律は脆弱である。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "accountability_transparency",
-      "rating": 3,
+      "rating": 2,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
+      "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "燃料費調整制度のタイムラグ差損益の金額やメカニズム、地震被災による復旧費用、自己資本比率悪化に伴う配当見送り理由などについて決算短信内で詳細かつ透明性の高い説明を行っている。また配当方針としてDOE 2%の目安を明確に開示するなど説明責任を果たしている。",
-      "evidence_ids": [
-        "06_2022_FY_tanshin.pdf:s0012",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "02_2026_FY_tanshin.pdf:s0021"
-      ],
-      "distinct_fiscal_years": [
-        2022,
-        2023,
-        2026
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.8167
+      "rationale_ja": "燃料費調整のタイムラグ影響や有形固定資産の減価償却方法変更（定額法化、441億円影響）などの要因について詳細かつ透明な開示を行っており、V字回復時の定量的説明責任は果たされている。しかし、期首予想の「未定」開示の常態化は投資家の予見性を損なっており、説明責任には改善の余地がある。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     }
   ],
-  "overall_rationale_ja": "送配電分社化や構造改革、女川2号機再稼働や財務基盤回復目標の設定など、経営陣の戦略的整合性と実行フォローの姿勢は評価できる。国際燃料市況の激変や大規模地震等により通期業績予想を未定とする期間が多く目標管理の面で課題を残したものの、タイムラグ影響や無配判断の理由説明は誠実になされており、全体として概ね一貫した経営が行われている。"
+  "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
 }

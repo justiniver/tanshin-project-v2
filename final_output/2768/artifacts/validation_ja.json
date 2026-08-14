@@ -4,27 +4,18 @@
   "factual_integrity_passed": true,
   "quality_gate_passed": true,
   "blocking_error_count": 0,
-  "warning_count": 1,
+  "warning_count": 0,
   "language": "ja",
-  "issues": [
-    {
-      "severity": "warning",
-      "category": "diagnostic",
-      "code": "trend_management_discussion_coverage_low",
-      "message": "Less than half of trend evidence references come from management discussion.",
-      "claim_id": null,
-      "evidence_id": null
-    }
-  ],
+  "issues": [],
   "statistics": {
-    "claims": 17,
-    "evidence_records": 41,
-    "citation_references": 94,
-    "trend_management_discussion_share": 0.3871,
-    "management_consistency_score": 0.75,
-    "management_consistency_evidence_confidence": 0.6938,
+    "claims": 23,
+    "citation_mode": "disabled",
+    "evidence_records": 0,
+    "citation_references": 0,
+    "trend_management_discussion_share": 0.0,
+    "management_consistency_score": 0.62,
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "blocking_errors": 0
   }
 }

@@ -20,5 +20,52 @@
     ],
     "thoughts_token_count": 7888,
     "total_token_count": 139955
+  },
+  "research": {
+    "stage": "research",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "model_version": "gemini-3.6-flash",
+    "response_id": "j4l-aqyMN4yA2roPzOeJ6Qc",
+    "attempts": 1,
+    "usage_metadata": {
+      "candidates_token_count": 14041,
+      "prompt_token_count": 117456,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 3608
+        },
+        {
+          "modality": "IMAGE",
+          "token_count": 113848
+        }
+      ],
+      "total_token_count": 131497
+    }
+  },
+  "analysis": {
+    "stage": "analysis",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "model_version": "gemini-3.6-flash",
+    "response_id": "OYp-av67JbDP1e8PjKXv8A8",
+    "attempts": 1,
+    "usage_metadata": {
+      "candidates_token_count": 5246,
+      "prompt_token_count": 140730,
+      "prompt_tokens_details": [
+        {
+          "modality": "IMAGE",
+          "token_count": 113848
+        },
+        {
+          "modality": "TEXT",
+          "token_count": 26882
+        }
+      ],
+      "thoughts_token_count": 6931,
+      "total_token_count": 152907
+    }
   }
 }

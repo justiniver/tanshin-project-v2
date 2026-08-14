@@ -1,19 +1,13 @@
 {
-  "methodology_version": "management-consistency-v5",
-  "score": 0.75,
-  "raw_score": 0.75,
-  "evidence_confidence": 0.6938,
-  "confidence_label": "moderate",
-  "evidence_coverage": 0.6938,
-  "distinct_fiscal_years": [
-    2018,
-    2021,
-    2023,
-    2026,
-    2027
-  ],
-  "evidence_count": 6,
-  "management_discussion_evidence_share": 0.6667,
+  "methodology_version": "management-consistency-v6",
+  "score": 0.62,
+  "raw_score": 0.625,
+  "evidence_confidence": null,
+  "confidence_label": null,
+  "evidence_coverage": null,
+  "distinct_fiscal_years": [],
+  "evidence_count": 0,
+  "management_discussion_evidence_share": null,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -21,68 +15,38 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "双日は「資源市況依存からの脱却」および「非資源・インフラ分野の拡充」という長期戦略方針を一貫して保持している。中計2017から中計2020、中計2023、中計2026に至るまで、2030年の目指す姿に向けて重点領域への成長投資と機能強化の論理を継続的に示しており、戦略的一貫性が高い。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0021",
-        "07_2021_FY_tanshin.pdf:s0019",
-        "05_2023_FY_tanshin.pdf:s0016",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
-      "distinct_fiscal_years": [
-        2018,
-        2021,
-        2023,
-        2027
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "early",
-        "middle"
-      ],
-      "evidence_confidence": 0.7917
+      "rationale_ja": "経営陣は中計2020、2023、2026を通じて、サステナビリティ課題解決（脱炭素、Essentialインフラ、リテール等）に整合する成長分野へのリソース集中を一貫して掲げている。脱炭素方針に基づく一般炭権益の削減や、省エネ・再エネ・リテール分野への事業投資拡大は、示された戦略目標と合致しており、方向性としての戦略的一貫性は確保されている。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "execution_follow_through",
-      "rating": 3,
+      "rating": 2,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
+      "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "中計2023で掲げた3,300億円規模の新規投融資枠に対し、米国省エネ、マリンフーズ取得、JALUX公開買付、豪州インフラなどを順次実行し、資産積み上げを実行した。一方で、豪州中古車事業やベトナム製紙事業などの一部投資案件で減損計上が発生しており、取得後バリューアップの実行力には一部混在した面がある。",
-      "evidence_ids": [
-        "05_2023_FY_tanshin.pdf:s0016",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
-      "distinct_fiscal_years": [
-        2023,
-        2026
-      ],
-      "management_discussion_evidence_count": 2,
-      "covered_period_buckets": [
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.7
+      "rationale_ja": "マリンフーズやJALUXのTOB・子会社化、米国省エネ事業会社や電力小売事業の取得など、中計で掲げた投融資計画をスピード感を持って実行する実行力を示してきた。一方で、2023年3月期の台湾洋上風力発電での損失計上、2026年3月期の豪州原料炭事業および豪州中古車事業での減損計上など、買収後の事業規律やオペレーション管理、市況悪化時の耐性においては課題を残している。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "forecast_target_discipline",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
+      "rating": 2,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "中計2020最終年度（FY2021）ではコロナ禍や市況下落により純利益目標750億円に対し実績270億円と大幅未達となった。一方で中計2023では利益目標650億円に対しFY2022に1,112億円、FY2023に1,007億円を達成し上振れるなど、資源市況に大きく影響される目標達成度の振れ幅が見られる。",
-      "evidence_ids": [
-        "07_2021_FY_tanshin.pdf:s0019",
-        "05_2023_FY_tanshin.pdf:s0015"
-      ],
-      "distinct_fiscal_years": [
-        2021,
-        2023
-      ],
-      "management_discussion_evidence_count": 1,
-      "covered_period_buckets": [
-        "middle"
-      ],
-      "evidence_confidence": 0.4667
+      "rationale_ja": "過去9年間の通期純利益予想と実績の比較（観測数9回）では、上振れ5回、下振れ3回、ほぼインライン1回となっており、予想Postureは混在している。2021年3月期（コロナ禍で予想比-32.5%）、2022年3月期（資源高騰で予想比+55.3%）、2026年3月期（原料炭減損等で予想比-9.9%）のように、外部環境の激変や一過性損益により期初予想からの乖離が大きくなる傾向が見られる。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "accountability_transparency",
@@ -90,24 +54,13 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "中計目標未達時の要因（コロナ禍・資源市況下落）や個別案件での減損損失計上理由（豪州原料炭市況や操業低迷）、さらには配当方針変更（DOE導入および累進配当方針の明記）の背景について、決算短信等で定量的かつ明確な開示・説明を行っている。",
-      "evidence_ids": [
-        "07_2021_FY_tanshin.pdf:s0019",
-        "02_2026_FY_tanshin.pdf:s0012",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
-      "distinct_fiscal_years": [
-        2021,
-        2026,
-        2027
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.8167
+      "rationale_ja": "中計2020での目標未達（純利益270億円 vs 目標750億円）や、台湾風力・豪州原料炭等の損失・減損が発生した際、決算短信や説明資料においてその要因を客観的に開示説明している。また、時代の成長領域に合わせたセグメント区分の見直しを適時行うなど透明性への配慮が見られるが、個別の投資案件ごとの資本効率や回収状況の縦断的トラッキング開示には一層の充実が期待される。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     }
   ],
-  "overall_rationale_ja": "双日は10年間を通じて「非資源・インフラ事業の積み上げによる資源依存からの脱却」という明確な方向性を維持し、戦略的整合性と実行力において高い一貫性を示している。中計2020での目標大幅未達といった市況変動要因による業績目標の振れはあるものの、中計2023以降は年間純利益1,000億円台のベースを構築し、DOE4.5%に基づく累進配当方針の明記など株主還元規律を高めており、透明性・説明責任を含めて経営の一貫性は総じて良好と評価できる。"
+  "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
 }

@@ -1,728 +1,641 @@
 {
-  "change_count": 96,
+  "change_count": 105,
   "changes": [
     {
-      "type": "exact_quote_completed",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0002",
-      "from_page": 10,
-      "to_page": 10,
-      "similarity": 0.8704,
-      "original_quote": "① サービスソリューション Uvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行う「グローバルソリューション」、日本市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(Japan)」、海外市場に向けたサービスビジネスの提供・実装...を行う「リージョンズ(海外)」により構成されています。",
-      "resolved_quote": "1 サービスソリューションUvanceを中心とした、グローバル共通の価値提供サービスの創出・提供を行う「グローバルソリューション」、日本市場に向けたサービスビジネスの提供・実装 (Uvanceのインプリメンテーションも含む)を行う「リージョンズ(Japan)」、海外市場に向けたサービスビジネスの提供・実装 (Uvanceのインプリメンテーションも含む)を行う「リージョンズ(海外)」により構成されています。"
-    },
-    {
-      "type": "japanese_financial_surface_normalized",
-      "claim_id": "claim_latest_key_03",
-      "field": "body_ja",
-      "reason": "exact_million_to_oku_conversion",
-      "from": "3,510,000百万円",
-      "to": "3兆5,100億円"
-    },
-    {
-      "type": "japanese_financial_surface_normalized",
-      "claim_id": "claim_latest_key_03",
-      "field": "body_ja",
-      "reason": "exact_million_to_oku_conversion",
-      "from": "415,000百万円",
-      "to": "4,150億円"
-    },
-    {
-      "type": "japanese_financial_surface_normalized",
-      "claim_id": "claim_latest_key_03",
-      "field": "body_ja",
-      "reason": "exact_million_to_oku_conversion",
-      "from": "425,000百万円",
-      "to": "4,250億円"
-    },
-    {
-      "type": "japanese_financial_surface_normalized",
-      "claim_id": "claim_latest_outlook_01",
-      "field": "body_ja",
-      "reason": "exact_million_to_oku_conversion",
-      "from": "425,000百万円",
-      "to": "4,250億円"
-    },
-    {
-      "type": "japanese_financial_surface_normalized",
-      "claim_id": "claim_latest_outlook_01",
-      "field": "body_ja",
-      "reason": "exact_million_to_oku_conversion",
-      "from": "320,000百万円",
-      "to": "3,200億円"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_overview_01",
-      "kind": "figure",
-      "surface": "3",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "date",
-      "surface": "2027年3月期",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "2027年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "1"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "3.9%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "7,793億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "56.9%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "3.9%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "56.4%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "525億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "76.6%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "56.9%"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_latest_key_01",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:r0001-f1daa335",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "(注)調整後四半期利益は、親会社の所有者に帰属する四半期利益から事業再編、事業構造改革、M&A等に伴う損益ならびに制度変更等による一過性の損益およびこれらに係る税金相当(調整項目)を控除した利益指標です。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "61.5%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004"
+      "surface": "549億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0003"
+      "surface": "56.4%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
       "kind": "figure",
-      "surface": "59.4%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004"
+      "surface": "401億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_02",
+      "kind": "figure",
+      "surface": "76.6%"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "404億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "203億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "1"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "488億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "20年"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "243億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_03",
+      "kind": "figure",
+      "surface": "61.5%"
+    },
+    {
+      "type": "citation_free_qualifier_span_added",
+      "claim_id": "claim_03",
+      "claim_surface": "約"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
+      "kind": "figure",
+      "surface": "55円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "date",
-      "surface": "2027年3月期",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "2027年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "figure",
-      "surface": "0.2%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "3兆5,100億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "figure",
-      "surface": "19.1%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "4,150億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "figure",
-      "surface": "8.8%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "4,250億円"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_latest_key_03",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:r0002-1e488e00",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 2,
-      "quote": "業績予想値算出の前提となる条件等については、本日別途当社ウェブサイト及びTDnetにて開示いたしました「2026年度第1四半期決算概要」(プレゼンテーション資料)をご参照下さい。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:r0002-1e488e00"
+      "surface": "1"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_04",
       "kind": "figure",
-      "surface": "55.00円",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "50円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_key_03",
+      "type": "citation_free_qualifier_span_added",
+      "claim_id": "claim_04",
+      "claim_surface": "予想"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_05",
       "kind": "figure",
-      "surface": "2",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:r0002-1e488e00"
+      "surface": "5,459億円"
     },
     {
-      "type": "qualifier_span_added",
-      "claim_id": "claim_latest_key_03",
-      "claim_surface": "予想",
-      "source_surface": "予想",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_driver_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_05",
       "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0006"
+      "surface": "7.5%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_outlook_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_05",
       "kind": "figure",
-      "surface": "8.8%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "628億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_outlook_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_05",
+      "kind": "figure",
+      "surface": "31.3%"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_06",
+      "kind": "figure",
+      "surface": "1,923億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_06",
+      "kind": "figure",
+      "surface": "37億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_06",
+      "kind": "figure",
+      "surface": "13億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_07",
+      "kind": "figure",
+      "surface": "404億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_07",
+      "kind": "figure",
+      "surface": "20年"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_07",
+      "kind": "figure",
+      "surface": "1"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_08",
+      "kind": "figure",
+      "surface": "4,250億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_08",
       "kind": "date",
-      "surface": "2027年3月期",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005"
+      "surface": "2027年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_latest_risk_01",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:r0002-227842e7",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 2,
-      "quote": "に基づいており、実際の業績等は様々な要因により大きく異なる可能性があります。"
+      "type": "citation_free_span_added",
+      "claim_id": "claim_08",
+      "kind": "figure",
+      "surface": "8.8%"
     },
     {
-      "type": "qualifier_span_added",
-      "claim_id": "claim_latest_risk_01",
-      "claim_surface": "可能性",
-      "source_surface": "可能性",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007"
+      "type": "citation_free_span_added",
+      "claim_id": "claim_08",
+      "kind": "figure",
+      "surface": "1"
     },
     {
-      "type": "statement_type_reconciled",
-      "claim_id": "claim_latest_risk_01",
-      "from": "risk",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "risk"
-      ]
+      "type": "citation_free_span_added",
+      "claim_id": "claim_08",
+      "kind": "figure",
+      "surface": "549億円"
     },
     {
-      "type": "qualifier_span_added",
-      "claim_id": "claim_latest_risk_02",
-      "claim_surface": "可能性",
-      "source_surface": "可能性",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007"
+      "type": "citation_free_span_added",
+      "claim_id": "claim_09",
+      "kind": "figure",
+      "surface": "1"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_context_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_11",
       "kind": "date",
-      "surface": "2027年3月期",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "2027年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_context_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_11",
       "kind": "figure",
-      "surface": "1",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002"
+      "surface": "1"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_context_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_11",
       "kind": "figure",
-      "surface": "86.30%",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008"
+      "surface": "61.5%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_context_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_11",
+      "kind": "figure",
+      "surface": "5,979億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
+      "kind": "figure",
+      "surface": "2017"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
       "kind": "date",
-      "surface": "2025年",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008"
+      "surface": "2020年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_latest_context_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
       "kind": "figure",
-      "surface": "12月",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008"
+      "surface": "294億円"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_persp_01",
-      "evidence_id": "07_2021_FY_tanshin.pdf:r0001-dbd0d040",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "基本的1株当たり当期利益の計算には、2021年4月28日開催の当社取締役会において決議した自己株式の取得の影響は含んでおりません。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_persp_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
       "kind": "figure",
-      "surface": "2021",
-      "evidence_id": "07_2021_FY_tanshin.pdf:r0001-dbd0d040"
+      "surface": "2021"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_persp_01",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0001-2f89a9af",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "2026年3月期 3,399,7452,044,5872,024,91559.61,167.252025年3月期 3,497,8081,902,0671,740,96549.8979.531.2026年3月期の連結業績(2025年4月1日~2026年3月31日)<調整項目><調整後>(注)調整後営業利益は、営業利益から事業再編、事業構造改革、M&A等に伴う損益ならびに制度変更等による一過性の損益(調整項目)を控除した、本業での実質的な利益を示す指標です。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_persp_01",
-      "kind": "figure",
-      "surface": "2024",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0001-2f89a9af"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_persp_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
       "kind": "date",
-      "surface": "2026年度",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0001"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
+      "kind": "figure",
+      "surface": "3,483億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_12",
+      "kind": "figure",
+      "surface": "23.9%"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_13",
       "kind": "date",
-      "surface": "2017年3月期",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0003"
+      "surface": "2017年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_const_01",
-      "evidence_id": "07_2021_FY_tanshin.pdf:r0001-06d5a220",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "通期 3,630,0001.1275,0003.3205,0001.11,030.15基本的1株当たり当期利益の計算には、2021年4月28日開催の当社取締役会において決議した自己株式の取得の影響は含んでおりません。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
-      "kind": "figure",
-      "surface": "11",
-      "evidence_id": "07_2021_FY_tanshin.pdf:r0001-06d5a220"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_13",
       "kind": "date",
-      "surface": "2021年3月期",
-      "evidence_id": "07_2021_FY_tanshin.pdf:s0001"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_13",
       "kind": "figure",
-      "surface": "2021",
-      "evidence_id": "07_2021_FY_tanshin.pdf:r0001-dbd0d040"
+      "surface": "3,614億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0002"
+      "surface": "2017年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_const_01",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0010-d710b561",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 10,
-      "quote": "- 7 -富士通(株)(6702)2026年3月期決算短信"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "figure",
-      "surface": "2026",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0010-d710b561"
+      "surface": "27.6%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "date",
-      "surface": "2017年3月期",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0001"
+      "surface": "2021年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "figure",
-      "surface": "447億円",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0001"
+      "surface": "45.5%"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_const_02",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0004-0ddfe176",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "quote": "※\u00150\u0000\u000020\u0000 \u0015富士通(株)(6702)平成29年3月期決算短信1.経営成績等の概況(1)経営成績の概況※海外ビジネスのデジタル化へのシフト等△340、国内データセンター再編△39、生産拠点再編△6634前回(1月)予想比9688[2](  0.2%)2015年度2016年度前年度比(単位:億円)2015年4月1日~2016年3月31日2016年4月1日~2017年3月31日増減率(%)売上収益47,39245,096 △2,296△4.8[ビジネスモデル変革費用][△415][△447][△31]-営業利益1,2061,288826.8金融損益△72△665-(営業利益率)(  2.5%)(  2.9%) (  0.4%)税引前利益1,3181,351332.5持分法による投資利益18469△115△62.3親会社所有者帰属867884172.0当期利益文中に記載しております為替影響は、米国ドル、ユーロ、英国ポンドを対象に前連結会計年度(以下、前年度)の対円平均レートを当連結会計年度(以下、当年度)の外貨建取引高に適用して試算しております。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
-      "kind": "figure",
-      "surface": "2017",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0004-0ddfe176"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "date",
-      "surface": "2024年3月期",
-      "evidence_id": "04_2024_FY_tanshin.pdf:s0001"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_14",
       "kind": "figure",
-      "surface": "04",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0001-2f89a9af"
+      "surface": "59.6%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
-      "kind": "figure",
-      "surface": "2024",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0001-2f89a9af"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_15",
       "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0001"
+      "surface": "2017年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_const_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_15",
       "kind": "figure",
-      "surface": "2026",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0010-d710b561"
+      "surface": "2025"
     },
     {
-      "type": "statement_type_reconciled",
-      "claim_id": "claim_trend_const_02",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "forecast"
-      ]
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_15",
       "kind": "date",
-      "surface": "2017年3月期",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0004"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_16",
       "kind": "figure",
-      "surface": "5,443億円",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0004"
+      "surface": "2022"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_change_01",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0006-73b4a883",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "quote": "富士通(株)(6702)平成29年3月期決算短信【事業別セグメントの状況】1セグメント情報 (単位:億円)2015年度 2016年度2015年4月1日~2016年3月31日2016年4月1日~2017年3月31日 増減率(%)32,83331,266 △1,567 △4.8国内 20,52121,1306093.0海外 12,31210,136 △2,176 △17.71,8621,907452.45.7%)( 6.1%)( 0.4%)(27,65126,242 △1,408 △5.1国内 16,81917,3074882.9サービス 海 外 10,8328,935 △1,897 △17.51,6391,500 △138 △8.55.9%)( 5.7%)( △0.2%)(5,1815,023 △158 △3.1国内 3,7013,8221203.3海外 1,4791,200 △278 △18.822340718382.54.3%)( 8.1%)( 3.8%)(10,40910,257 △151 △1.5国内 6,7836,9081241.8海外 3,6253,349 △275 △7.6△76287364 -△0.7%)( 2.8%)( (     3.5%)6,0395,443 △595 △9.9国内 2,8972,472 △424 △14.6海外 3,1422,970 △171 △5.530342 △261 △86.05.0%)( 0.8%)( △4.2%)(△1,888 △1,87117 -△883 △949 △65 -47,39245,096 △2,296 △4.8国内 28,45028,6562050.7海外 18,94216,440 △2,501 △13.21,2061,288826.82.5%)( 2.9%)( 0.4%)(40.0% 36.5% △3.5%前年度比テクノロジーソリューション売上収益営業利益(営業利益率)売上収益営業利益(営業利益率)システムプラットフォーム売上収益営業利益(営業利益率)ユビキタスソリューション売上収益営業利益(営業利益率)デバイスソリューション売上収益営業利益(営業利益率)海外売上比率その他/消去又は全社売上収益営業利益連 結売上収益営業利益(営業利益率)\u00150\u0000\u000040\u0000 \u0015富士通(株)(6702)平成29年3月期決算短信【事業別セグメントの状況】1セグメント情報(単位:億円)2015年度2016年度2015年4月1日~2016年3月31日2016年4月1日~2017年3月31日増減率(%)32,83331,266△1,567△4.8国内20,52121,1306093.0海外12,31210,136△2,176△17.71,8621,907452.45.7%)(6.1%)(0.4%)(27,65126,242△1,408△5.1国内16,81917,3074882.9サービス海外10,8328,935△1,897△17.51,6391,500△138△8.55.9%)(5.7%)(△0.2%)(5,1815,023△158△3.1国内3,7013,8221203.3海外1,4791,200△278△18.822340718382.54.3%)(8.1%)(3.8%)(10,40910,257△151△1.5国内6,7836,9081241.8海外3,6253,349△275△7.6△76287364-△0.7%)(2.8%)((     3.5%)6,0395,443△595△9.9国内2,8972,472△424△14.6海外3,1422,970△171△5.530342△261△86.05.0%)(0.8%)(△4.2%)(△1,888△1,87117-△883△949△65-47,39245,096△2,296△4.8国内28,45028,6562050.7海外18,94216,440△2,501△13.21,2061,288826.82.5%)(2.9%)(0.4%)(40.0%36.5%△3.5%前年度比テクノロジーソリューション売上収益営業利益(営業利益率)売上収益営業利益(営業利益率)システムプラットフォーム売上収益営業利益(営業利益率)ユビキタスソリューション売上収益営業利益(営業利益率)デバイスソリューション売上収益営業利益(営業利益率)海外売上比率その他/消去又は全社売上収益営業利益連 結売上収益営業利益(営業利益率)― 4 ―"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
-      "kind": "figure",
-      "surface": "11",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0006-73b4a883"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
-      "kind": "figure",
-      "surface": "2017",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0006-73b4a883"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_16",
       "kind": "date",
-      "surface": "2025年3月期",
-      "evidence_id": "03_2025_FY_tanshin.pdf:s0001"
+      "surface": "2026年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_change_01",
-      "evidence_id": "03_2025_FY_tanshin.pdf:r0001-7156a3cb",
-      "source_filename": "03_2025_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "2025年3月期  決算短信〔IFRS〕(連結)2025年4月24日上場会社名 富士通株式会社 上場取引所         東 名コード番号 6702 URL  https://global.fujitsu/ja-jp/代表者 (役職名)代表取締役社長 (氏名)時田  隆仁問合せ先責任者 (役職名)広報IR室長 (氏名)野本  邦彦 TEL 044-754-5778定時株主総会開催予定日 2025年6月23日 配当支払開始予定日 2025年6月3日有価証券報告書提出予定日 2025年6月20日決算補足説明資料作成の有無:有決算説明会開催の有無      :有(マスコミ・アナリスト向け)(連結業績は百万円未満四捨五入、個別業績は百万円未満切捨て)(1)連結経営成績 (%表示は対前期増減率)売上収益 営業利益 税引前利益 当期利益 親会社の所有者に帰属する当期利益当期包括利益合計額百万円 % 百万円 % 百万円 % 百万円 % 百万円 % 百万円 %2025年3月期 3,550,1162.1265,08977.5273,44565.1232,126 △13.0219,807 △13.6244,950 △26.22024年3月期 3,476,985 - 149,326 - 165,610 - 266,680 - 254,478 - 332,127 -百万円 % 百万円 % 百万円 %2025年3月期 - - △42,176 - △21,164 -2024年3月期 - - △116,038 - 18,676 -百万円 % 百万円 % 百万円 %2025年3月期 3,550,1162.1307,26515.8240,9712.22024年3月期 3,476,985 - 265,364 - 235,802 -基本的1株当たり当期利益希薄化後1株当たり当期利益円 銭 円 銭2025年3月期 120.93120.662024年3月期 135.59135.34<調整後>円 銭 円 銭2025年3月期 132.57132.282024年3月期 125.64125.41親会社所有者帰属持分当期利益率資産合計税引前利益率売上収益営業利益率% % %2025年3月期 12.67.87.52024年3月期 15.24.94.3(参考)持分法による投資損益 2025年3月期 8,248百万円 2024年3月期 11,144百万円1.2025年3月期の連結業績(2024年4月1日~2025年3月31日)<調整項目><調整後>(注)調整後営業利益は、営業利益から事業再編、事業構造改革、M&A等に伴う損益ならびに制度変更等による一過性の損益(調整項目)を控除した、本業での実質的な利益を示す指標です。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_16",
       "kind": "figure",
-      "surface": "03",
-      "evidence_id": "03_2025_FY_tanshin.pdf:r0001-7156a3cb"
+      "surface": "1,500"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_change_01",
-      "evidence_id": "03_2025_FY_tanshin.pdf:r0001-6bce76e1",
-      "source_filename": "03_2025_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "quote": "1.2025年3月期の連結業績(2024年4月1日~2025年3月31日)<調整項目><調整後>(注)調整後営業利益は、営業利益から事業再編、事業構造改革、M&A等に伴う損益ならびに制度変更等による一過性の損益(調整項目)を控除した、本業での実質的な利益を示す指標です。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_16",
       "kind": "figure",
-      "surface": "2025",
-      "evidence_id": "03_2025_FY_tanshin.pdf:r0001-6bce76e1"
+      "surface": "1,800億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
+      "kind": "figure",
+      "surface": "294億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
       "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0002"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
       "kind": "figure",
-      "surface": "2026",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0010-d710b561"
+      "surface": "1,444億円"
     },
     {
-      "type": "statement_type_reconciled",
-      "claim_id": "claim_trend_change_01",
-      "from": "actual",
-      "to": "mixed",
-      "source_types": [
-        "actual",
-        "forecast"
-      ]
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
+      "kind": "figure",
+      "surface": "1,500"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
+      "kind": "figure",
+      "surface": "1,800億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_17",
+      "kind": "figure",
+      "surface": "488億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "date",
-      "surface": "2017年3月期",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0002"
+      "surface": "2025年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "figure",
-      "surface": "294億円",
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0002"
+      "surface": "2,899億円"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_change_02",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0005-83a0a341",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "quote": "9ページにおける2017年度の業績見通しには、このビジネスモデル変革費用による体制見直しの影響を含めております。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
-      "kind": "figure",
-      "surface": "2017",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0005-83a0a341"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0002"
+      "surface": "2026年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_change_02",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0005-e9d85517",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "quote": "富士通(株)(6702)平成29年3月期決算短信1子会社の概要商号 Fujitsu Technology Solutions Fujitsu Services Holdings PLC(Holding) B.V.(以下、FTS) (以下、FS)本店 オランダ 英国代表者 Duncan Tait Duncan Tait事業内容資本金 272,752千ユーロ 1,598,001千スターリング・ポンド2費用の内容3今後の見通しコンサルティング並びにシステムの構築及び運用に関する各種サービスの提供アウトソーシングサービス並びにシステムの構築及びに運用に関する各種サービスの提供〔欧州子会社における、デジタル化へのシフトに向けた費用について〕欧州地域の子会社であるFTS及びFSにおいて、サービスビジネスのデジタルトランスフォーメーションを進めるための費用を、294億円計上いたしました。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "figure",
-      "surface": "02",
-      "evidence_id": "11_2017_FY_tanshin.pdf:r0005-e9d85517"
+      "surface": "3,614億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_change_02",
-      "kind": "figure",
-      "surface": "2026",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0010-d710b561"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "date",
-      "surface": "2019年3月期",
-      "evidence_id": "09_2019_FY_tanshin.pdf:s0001"
+      "surface": "2022年3月期"
     },
     {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_cap_01",
-      "evidence_id": "09_2019_FY_tanshin.pdf:r0006-c603f171",
-      "source_filename": "09_2019_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "quote": "(4)連結キャッシュ・フロー計算書(単位:百万円)注記番号前年度(自 2017年4月 1日至 2018年3月31日)当年度(自 2018年4月 1日至 2019年3月31日)営業活動によるキャッシュ・フロー継続事業からの税引前利益   242,488161,785減価償却費、償却費及び減損損失   169,749158,106引当金の増減額(△は減少)   △22,91238,206退職給付に係る負債の増減額(△は減少)   △1,748   △109,168受取利息及び受取配当金   △5,464   △6,681支払利息   4,1743,231持分法による投資損益(△は益)   △12,191   △22,630子会社株式売却益   △72,635   △22,046売却可能金融資産の売却益   △28,538   -売上債権の増減額(△は増加)   △36,430   △79,082棚卸資産の増減額(△は増加)   △10,593   △20,481仕入債務の増減額(△は減少)   14,221   △10,424その他   △4,34579,110小計   235,776169,926利息の受取額   1,8793,152配当金の受取額   5,1295,430利息の支払額   △4,218   △3,668法人所得税の支払額   △38,151   △75,424営業活動によるキャッシュ・フロー   200,41599,416投資活動によるキャッシュ・フロー有形固定資産及び無形資産の取得による支出   △135,005   △120,637投資有価証券の売却による収入 (5)241,88377,941子会社及び事業の売却による収支(△は支出)   52,23117,130貸付金の回収による収入   22,30326,592その他   △3,9903,116投資活動によるキャッシュ・フロー   △22,5784,142財務活動によるキャッシュ・フロー短期借入金等の純増減額(△は減少)   △7,7577,792長期借入金及び社債の発行による収入   5,819116長期借入金の返済及び社債の償還による支出   △71,966   △87,743リース債務の支払額   △12,680   △13,107自己株式の取得による支出   △106   △22,327親会社の所有者への配当金の支払額   △20,504   △26,660その他   △5,3025,307財務活動によるキャッシュ・フロー   △112,496   △136,622現金及び現金同等物の増減額(△は減少)   65,341   △33,064現金及び現金同等物の期首残高   383,969452,671現金及び現金同等物の為替変動による影響   3,361   △2,865現金及び現金同等物の期末残高   452,671416,742[ÌXë\u001aÿ\bh*ÿ\tÿ\b\u00006\u00007\u00000\u00002ÿ\t\u00002\u00000\u00001\u00009^t\u00003g\bg\u001flz{wíOá\u00150\u0000\u000040\u0000 \u0015(4)連結キャッシュ・フロー計算書(単位:百万円)注記番号前年度(自 2017年4月 1日至 2018年3月31日)当年度(自 2018年4月 1日至 2019年3月31日)営業活動によるキャッシュ・フロー継続事業からの税引前利益242,488161,785減価償却費、償却費及び減損損失169,749158,106引当金の増減額(△は減少)△22,91238,206退職給付に係る負債の増減額(△は減少)△1,748△109,168受取利息及び受取配当金△5,464△6,681支払利息4,1743,231持分法による投資損益(△は益)△12,191△22,630子会社株式売却益△72,635△22,046売却可能金融資産の売却益△28,538-売上債権の増減額(△は増加)△36,430△79,082棚卸資産の増減額(△は増加)△10,593△20,481仕入債務の増減額(△は減少)14,221△10,424その他△4,34579,110小計235,776169,926利息の受取額1,8793,152配当金の受取額5,1295,430利息の支払額△4,218△3,668法人所得税の支払額△38,151△75,424営業活動によるキャッシュ・フロー200,41599,416投資活動によるキャッシュ・フロー有形固定資産及び無形資産の取得による支出△135,005△120,637投資有価証券の売却による収入(5)241,88377,941子会社及び事業の売却による収支(△は支出)52,23117,130貸付金の回収による収入22,30326,592その他△3,9903,116投資活動によるキャッシュ・フロー△22,5784,142財務活動によるキャッシュ・フロー短期借入金等の純増減額(△は減少)△7,7577,792長期借入金及び社債の発行による収入5,819116長期借入金の返済及び社債の償還による支出△71,966△87,743リース債務の支払額△12,680△13,107自己株式の取得による支出△106△22,327親会社の所有者への配当金の支払額△20,504△26,660その他△5,3025,307財務活動によるキャッシュ・フロー△112,496△136,622現金及び現金同等物の増減額(△は減少)65,341△33,064現金及び現金同等物の期首残高383,969452,671現金及び現金同等物の為替変動による影響3,361△2,865現金及び現金同等物の期末残高452,671416,742富士通(株)(6702)2019年3月期決算短信― 4 ―"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "figure",
-      "surface": "09",
-      "evidence_id": "09_2019_FY_tanshin.pdf:r0006-c603f171"
+      "surface": "7,000億円"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
       "kind": "figure",
-      "surface": "2019",
-      "evidence_id": "09_2019_FY_tanshin.pdf:r0006-c603f171"
+      "surface": "12.6%"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
+      "kind": "figure",
+      "surface": "23.9%"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_18",
+      "kind": "figure",
+      "surface": "488億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_19",
+      "kind": "figure",
+      "surface": "1"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_19",
+      "kind": "figure",
+      "surface": "20億円"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_21",
+      "kind": "figure",
+      "surface": "3,200人"
+    },
+    {
+      "type": "citation_free_qualifier_span_added",
+      "claim_id": "claim_21",
+      "claim_surface": "約"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "8期"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "6期"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "2019,"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "2022,"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "2023,"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "2024,"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "figure",
+      "surface": "2025,"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
       "kind": "date",
-      "surface": "2023年3月期",
-      "evidence_id": "05_2023_FY_tanshin.pdf:s0001"
+      "surface": "2026年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
       "kind": "figure",
-      "surface": "1,500億円",
-      "evidence_id": "05_2023_FY_tanshin.pdf:s0001"
+      "surface": "1期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
-      "kind": "figure",
-      "surface": "05",
-      "evidence_id": "09_2019_FY_tanshin.pdf:r0006-c603f171"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_cap_01",
-      "evidence_id": "05_2023_FY_tanshin.pdf:r0008-1e0e140f",
-      "source_filename": "05_2023_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "quote": "2022年度及び2023年度の利益並びにキャッシュ・フローの拡大など財務状況の改善を踏まえ、事業環境なども総合的に勘案し、株主還元の充実と資本効率の向上を図るため実施するものです。"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
-      "kind": "figure",
-      "surface": "2023",
-      "evidence_id": "05_2023_FY_tanshin.pdf:r0008-1e0e140f"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
       "kind": "date",
-      "surface": "2026年3月期",
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0003"
+      "surface": "2020年3月期"
     },
     {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "date",
+      "surface": "2018年3月期"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "date",
+      "surface": "2023年3月期"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_22",
+      "kind": "date",
+      "surface": "2024年3月期"
+    },
+    {
+      "type": "citation_free_qualifier_span_added",
+      "claim_id": "claim_22",
+      "claim_surface": "予想"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_23",
+      "kind": "date",
+      "surface": "2024年3月期"
+    },
+    {
+      "type": "citation_free_span_added",
+      "claim_id": "claim_23",
       "kind": "figure",
-      "surface": "02",
-      "evidence_id": "05_2023_FY_tanshin.pdf:r0008-1e0e140f"
-    },
-    {
-      "type": "derived_evidence_added",
-      "claim_id": "claim_trend_cap_01",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0013-3f9cf3b8",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 13,
-      "quote": "- 10 -富士通(株)(6702)2026年3月期決算短信"
-    },
-    {
-      "type": "supported_span_added",
-      "claim_id": "claim_trend_cap_01",
-      "kind": "figure",
-      "surface": "2026",
-      "evidence_id": "02_2026_FY_tanshin.pdf:r0013-3f9cf3b8"
+      "surface": "1,234億円"
     },
     {
       "type": "management_consistency_calculated",
-      "methodology_version": "management-consistency-v5",
-      "score": 0.67,
-      "raw_score": 0.6667,
-      "evidence_confidence": 0.6958,
-      "confidence_label": "moderate",
-      "evidence_coverage": 0.6958,
-      "distinct_fiscal_years": [
-        2017,
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "evidence_count": 7,
-      "management_discussion_evidence_share": 0.1429,
-      "insufficient_dimensions": [
-        "accountability_transparency"
-      ],
-      "excluded_dimensions": [
-        "accountability_transparency"
-      ],
+      "methodology_version": "management-consistency-v6",
+      "score": 0.69,
+      "raw_score": 0.6875,
+      "evidence_confidence": null,
+      "confidence_label": null,
+      "evidence_coverage": null,
+      "distinct_fiscal_years": [],
+      "evidence_count": 0,
+      "management_discussion_evidence_share": null,
+      "insufficient_dimensions": [],
+      "excluded_dimensions": [],
       "score_calculation_method": "arithmetic_mean_of_available_normalized_components",
-      "available_component_count": 3,
+      "available_component_count": 4,
       "weights": {
         "strategic_coherence": 0.25,
         "execution_follow_through": 0.25,

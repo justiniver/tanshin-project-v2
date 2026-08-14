@@ -280,7 +280,7 @@ are mutually exclusive.
 | --- | --- | --- |
 | default | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY` |
 | `--key2-translation` | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.6-flash` with `GEMINI_API_KEY2` |
-| `--pro-translation` | `gemini-3.6-flash` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
+| `--pro-translation` | `gemini-3.6-flash` with `GEMINI_API_KEY` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 | `--pro` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 | `--sol` | `gpt-5.6-sol` with `OPENAI_API_KEY` | `gemini-3.1-pro-preview` with `GEMINI_API_KEY2` |
 

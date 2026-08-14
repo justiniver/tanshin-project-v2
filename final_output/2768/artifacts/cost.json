@@ -1,13 +1,74 @@
 {
+  "currency": "USD",
+  "display_currency": "JPY",
+  "usd_to_jpy_rate": 150.0,
+  "pdf_tokens_per_page": 540,
+  "research": {
+    "model": "gemini-3.6-flash",
+    "estimated_input_tokens": 156853,
+    "maximum_output_tokens": 32768,
+    "input_cost_usd": 0.235279,
+    "maximum_output_cost_usd": 0.24576,
+    "maximum_stage_cost_usd": 0.481039,
+    "input_cost_jpy": 35.29,
+    "maximum_output_cost_jpy": 36.86,
+    "maximum_stage_cost_jpy": 72.16
+  },
+  "analysis": {
+    "model": "gemini-3.6-flash",
+    "estimated_input_tokens": 183067,
+    "maximum_output_tokens": 32768,
+    "input_cost_usd": 0.274601,
+    "maximum_output_cost_usd": 0.24576,
+    "maximum_stage_cost_usd": 0.520361,
+    "input_cost_jpy": 41.19,
+    "maximum_output_cost_jpy": 36.86,
+    "maximum_stage_cost_jpy": 78.05
+  },
+  "translation": {
+    "model": "gemini-3.6-flash",
+    "estimated_input_tokens": 33986,
+    "maximum_output_tokens": 24576,
+    "input_cost_usd": 0.050979,
+    "maximum_output_cost_usd": 0.18432,
+    "maximum_stage_cost_usd": 0.235299,
+    "input_cost_jpy": 7.65,
+    "maximum_output_cost_jpy": 27.65,
+    "maximum_stage_cost_jpy": 35.29
+  },
+  "maximum_one_pass_cost_usd": 1.236699,
+  "maximum_configured_cost_usd": 1.236699,
+  "maximum_one_pass_cost_jpy": 185.5,
+  "maximum_configured_cost_jpy": 185.5,
+  "maximum_api_attempts_per_stage": 1,
+  "assumptions": [
+    "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",
+    "No separate native-PDF text increment is added beyond the selected per-page planning estimate.",
+    "The selected PDFs and their document metadata are included in both Japanese requests: research and final analysis.",
+    "System instructions, document metadata, prompts, and response schemas use a conservative multilingual character-based estimate.",
+    "The materialized analysis prompt already contains its research dossier, so no separate research-output allowance is added.",
+    "Translation planning reserves the configured maximum analysis output because the source analysis is not materialized yet.",
+    "Maximum cost assumes research, analysis, and translation consume their configured maximum output.",
+    "No caching, batch, flex, priority, grounding, or free-tier discount is assumed.",
+    "Models with long-context pricing use the higher standard tier when the estimated prompt exceeds the published threshold.",
+    "User-facing yen estimates convert USD model prices at the fixed offline planning rate of ¥150 per USD; the final card or account conversion may differ."
+  ],
   "actual_cost_by_stage_usd": {
+    "research": {
+      "model": "gemini-3.6-flash",
+      "input_tokens": 150972,
+      "billed_output_and_thinking_tokens": 18026,
+      "cost_usd": 0.361653,
+      "cost_jpy": 54.25
+    },
     "analysis": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 153704,
-      "billed_output_and_thinking_tokens": 24930,
-      "cost_usd": 0.417531,
-      "cost_jpy": 62.63
+      "input_tokens": 181179,
+      "billed_output_and_thinking_tokens": 13038,
+      "cost_usd": 0.369554,
+      "cost_jpy": 55.43
     }
   },
-  "actual_cost_total_usd": 0.417531,
-  "actual_cost_total_jpy": 62.63
+  "actual_cost_total_usd": 0.731207,
+  "actual_cost_total_jpy": 109.68
 }

@@ -10,101 +10,76 @@
   },
   "claims": [
     {
-      "claim_id": "company_overview_1",
+      "claim_id": "claim_company_overview",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "総合ITサービス大手としての事業モデルと収益構造",
-      "body_ja": "TISI株式会社（旧TIS株式会社）は、金融IT、産業IT、広域ITソリューション、知識集約型サービス（オファリングサービス）、BPMなどのセグメントを通じて、ソフトウェア開発、システム運用・クラウドサービス、コンサルティング等の総合ITサービスを提供する独立系大手ITサービス企業である。主要顧客はクレジットカード会社を含む金融機関や製造・流通・サービス業などの大手・中堅企業であり、受託開発による請負収益に加え、自社データセンターや独自クラウド基盤（EINS WAVE）等を活用した月額・リカーリング型の運用・クラウドサービス収益を組み合わせることで、安定的な収益基盤を構築している。",
+      "headline_ja": "総合ITサービスとしての事業基盤と収益モデル",
+      "body_ja": "TISI株式会社（旧TIS株式会社、ITホールディングス）は、金融、産業、公共など多岐にわたる顧客企業に対し、システムインテグレーション、ITインフラ構築、ソフトウェア開発、ビジネスプロセスアウトソーシング（BPO）などを提供する総合ITサービスグループである。決済プラットフォーム（PAYCIERGE等）をはじめとするオファリングサービスや、業種特化型の金融IT・産業IT、広域ITソリューションを柱とし、受託開発における請負・進捗基準収益および月額・ストック型の運用・クラウドサービス利用料を主たる収益源としている。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": false,
       "figures": [],
       "dates": [],
-      "qualifiers": [
-        {
-          "value_id": "company_overview_1:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
+      "qualifiers": []
     },
     {
-      "claim_id": "latest_key_takeaway_1",
+      "claim_id": "claim_latest_kt_financial",
       "section": "latest.key_takeaway",
-      "order": 1,
-      "headline_ja": "2027年3月期第1四半期は高付加価値化と需要捕捉により増収増益を達成",
-      "body_ja": "2027年3月期第1四半期の連結業績は、売上高150,111百万円（前年同期比7.0%増）、営業利益18,347百万円（同12.2%増）、経常利益18,424百万円（同8.0%増）、親会社株主に帰属する四半期純利益14,409百万円（同15.1%増）となった。顧客のデジタル変革需要への的確な対応に加え、高付加価値ビジネスの提供や生産性向上施策が奏功し、営業利益率は12.2%（前年同期比0.5ポイント改善）へと向上した。",
+      "order": 2,
+      "headline_ja": "2027年3月期第1四半期はデジタル変革需要に対応し増収増益",
+      "body_ja": "2027年3月期第1四半期の連結業績は、売上高150,111百万円（前年同期比7.0%増）、営業利益18,347百万円（同12.2%増）、経常利益18,424百万円（同8.0%増）となり、顧客のDX投資需要の取り込みと高付加価値化推進により着実な成長を示した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_key_takeaway_1:figure:01",
+          "value_id": "claim_latest_kt_financial:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:02",
+          "value_id": "claim_latest_kt_financial:figure:02",
           "claim_surface_ja": "150,111百万円",
           "source_surface_ja": "150,111百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:03",
+          "value_id": "claim_latest_kt_financial:figure:03",
           "claim_surface_ja": "7.0%",
           "source_surface_ja": "7.0%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:04",
+          "value_id": "claim_latest_kt_financial:figure:04",
           "claim_surface_ja": "18,347百万円",
           "source_surface_ja": "18,347百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:05",
+          "value_id": "claim_latest_kt_financial:figure:05",
           "claim_surface_ja": "12.2%",
           "source_surface_ja": "12.2%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:06",
+          "value_id": "claim_latest_kt_financial:figure:06",
           "claim_surface_ja": "18,424百万円",
           "source_surface_ja": "18,424百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_1:figure:07",
+          "value_id": "claim_latest_kt_financial:figure:07",
           "claim_surface_ja": "8.0%",
           "source_surface_ja": "8.0%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_1:figure:08",
-          "claim_surface_ja": "14,409百万円",
-          "source_surface_ja": "14,409百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_1:figure:09",
-          "claim_surface_ja": "15.1%",
-          "source_surface_ja": "15.1%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_1:figure:10",
-          "claim_surface_ja": "0.5ポイント",
-          "source_surface_ja": "0.5ポイント",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "latest_key_takeaway_1:date:01",
+          "value_id": "claim_latest_kt_financial:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
@@ -113,94 +88,63 @@
       "qualifiers": []
     },
     {
-      "claim_id": "latest_key_takeaway_2",
+      "claim_id": "claim_latest_kt_balance_sheet",
       "section": "latest.key_takeaway",
-      "order": 2,
-      "headline_ja": "大型自己株式取得の完了に伴い純資産は縮小も財務健全性を維持",
-      "body_ja": "当第1四半期末の総資産は524,657百万円（前期末比26,849百万円減）、純資産は304,235百万円（同33,491百万円減）となった。2026年3月から5月にかけて実施した約500億円（14,368,400株）の自己株式取得完了および配当金支払（9,291百万円）に伴い純資産が減少したものの、自己資本比率は55.7%と依然として高水準な資本健全性を維持している。",
+      "order": 3,
+      "headline_ja": "大規模自己株式取得により自己資本比率は55.7%へ推移",
+      "body_ja": "当第1四半期末の総資産は524,657百万円（前連結会計年度末比26,849百万円減）となった。約500億円の自己株式取得に伴う純資産減少（33,491百万円減）により、自己資本比率は前末の58.9%から55.7%へと低下したものの、依然として健全な財務基盤を維持している。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_key_takeaway_2:figure:01",
+          "value_id": "claim_latest_kt_balance_sheet:figure:01",
+          "claim_surface_ja": "55.7%",
+          "source_surface_ja": "55.7%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_kt_balance_sheet:figure:02",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_2:figure:02",
+          "value_id": "claim_latest_kt_balance_sheet:figure:03",
           "claim_surface_ja": "524,657百万円",
           "source_surface_ja": "524,657百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_2:figure:03",
+          "value_id": "claim_latest_kt_balance_sheet:figure:04",
           "claim_surface_ja": "26,849百万円",
           "source_surface_ja": "26,849百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_2:figure:04",
-          "claim_surface_ja": "304,235百万円",
-          "source_surface_ja": "304,235百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_2:figure:05",
-          "claim_surface_ja": "33,491百万円",
-          "source_surface_ja": "33,491百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_2:figure:06",
-          "claim_surface_ja": "3月",
-          "source_surface_ja": "3月",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_2:figure:07",
-          "claim_surface_ja": "5月",
-          "source_surface_ja": "5月",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_2:figure:08",
+          "value_id": "claim_latest_kt_balance_sheet:figure:05",
           "claim_surface_ja": "500億円",
           "source_surface_ja": "500億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_2:figure:09",
-          "claim_surface_ja": "14,368,400",
-          "source_surface_ja": "14,368,400",
+          "value_id": "claim_latest_kt_balance_sheet:figure:06",
+          "claim_surface_ja": "33,491百万円",
+          "source_surface_ja": "33,491百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_2:figure:10",
-          "claim_surface_ja": "9,291百万円",
-          "source_surface_ja": "9,291百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_2:figure:11",
-          "claim_surface_ja": "55.7%",
-          "source_surface_ja": "55.7%",
+          "value_id": "claim_latest_kt_balance_sheet:figure:07",
+          "claim_surface_ja": "58.9%",
+          "source_surface_ja": "58.9%",
           "evidence_id": null
         }
       ],
-      "dates": [
-        {
-          "value_id": "latest_key_takeaway_2:date:01",
-          "claim_surface_ja": "2026年",
-          "source_surface_ja": "2026年",
-          "evidence_id": null
-        }
-      ],
+      "dates": [],
       "qualifiers": [
         {
-          "value_id": "latest_key_takeaway_2:qualifier:01",
+          "value_id": "claim_latest_kt_balance_sheet:qualifier:01",
           "claim_surface_ja": "約",
           "source_surface_ja": "約",
           "evidence_id": null
@@ -208,74 +152,96 @@
       ]
     },
     {
-      "claim_id": "latest_key_takeaway_3",
+      "claim_id": "claim_latest_kt_integration",
       "section": "latest.key_takeaway",
-      "order": 3,
-      "headline_ja": "通期業績予想および配当予想を維持し自己株式の消却を決議",
-      "body_ja": "2027年3月期通期の連結業績予想は期初計画（売上高6,200億円、営業利益810億円、親会社株主帰属当期純利益570億円）を据え置いた。また、取得した自己株式のうち500億円相当（13,700,000株、消却前発行済株式総数の6.0%）を2026年8月31日付で消却することを決議し、資本効率向上と株主還元の姿勢を明確に示している。",
+      "order": 4,
+      "headline_ja": "インテックとの吸収合併完了とTISIへの商号変更による体制強化",
+      "body_ja": "2026年7月1日付で完全子会社の株式会社インテックを吸収合併し、商号をTISI株式会社へ変更した。あわせて監査等委員会設置会社へ移行し、AI駆動開発やVertical AIサービスといった次期中期経営計画に向けた重点戦略の推進体制を整えた。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_latest_kt_integration:figure:01",
+          "claim_surface_ja": "7月",
+          "source_surface_ja": "7月",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_kt_integration:figure:02",
+          "claim_surface_ja": "1日",
+          "source_surface_ja": "1日",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_latest_kt_integration:date:01",
+          "claim_surface_ja": "2026年",
+          "source_surface_ja": "2026年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_latest_kt_outlook",
+      "section": "latest.key_takeaway",
+      "order": 5,
+      "headline_ja": "通期業績予想の据え置きと500億円相当の自己株式消却決議",
+      "body_ja": "2027年3月期通期の連結業績予想は期初計画（売上高6,200億円、営業利益810億円）を維持した。資本政策においては、取得した自己株式500億円相当（13,700,000株）の消却を2026年7月30日に決議し、資本効率向上姿勢を明確にしている。",
       "evidence_ids": [],
       "statement_type": "forecast",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "latest_key_takeaway_3:figure:01",
-          "claim_surface_ja": "6,200億円",
-          "source_surface_ja": "6,200億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_3:figure:02",
-          "claim_surface_ja": "810億円",
-          "source_surface_ja": "810億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_3:figure:03",
-          "claim_surface_ja": "570億円",
-          "source_surface_ja": "570億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_3:figure:04",
+          "value_id": "claim_latest_kt_outlook:figure:01",
           "claim_surface_ja": "500億円",
           "source_surface_ja": "500億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_3:figure:05",
+          "value_id": "claim_latest_kt_outlook:figure:02",
+          "claim_surface_ja": "6,200億円",
+          "source_surface_ja": "6,200億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_kt_outlook:figure:03",
+          "claim_surface_ja": "810億円",
+          "source_surface_ja": "810億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_kt_outlook:figure:04",
           "claim_surface_ja": "13,700,000",
           "source_surface_ja": "13,700,000",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_3:figure:06",
-          "claim_surface_ja": "6.0%",
-          "source_surface_ja": "6.0%",
+          "value_id": "claim_latest_kt_outlook:figure:05",
+          "claim_surface_ja": "7月",
+          "source_surface_ja": "7月",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_3:figure:07",
-          "claim_surface_ja": "8月",
-          "source_surface_ja": "8月",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_key_takeaway_3:figure:08",
-          "claim_surface_ja": "31日",
-          "source_surface_ja": "31日",
+          "value_id": "claim_latest_kt_outlook:figure:06",
+          "claim_surface_ja": "30日",
+          "source_surface_ja": "30日",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "latest_key_takeaway_3:date:01",
+          "value_id": "claim_latest_kt_outlook:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
         },
         {
-          "value_id": "latest_key_takeaway_3:date:02",
+          "value_id": "claim_latest_kt_outlook:date:02",
           "claim_surface_ja": "2026年",
           "source_surface_ja": "2026年",
           "evidence_id": null
@@ -283,7 +249,7 @@
       ],
       "qualifiers": [
         {
-          "value_id": "latest_key_takeaway_3:qualifier:01",
+          "value_id": "claim_latest_kt_outlook:qualifier:01",
           "claim_surface_ja": "予想",
           "source_surface_ja": "予想",
           "evidence_id": null
@@ -291,60 +257,54 @@
       ]
     },
     {
-      "claim_id": "latest_business_driver_1",
+      "claim_id": "claim_latest_bd_finance_industry",
       "section": "latest.business_driver",
-      "order": 1,
-      "headline_ja": "金融・産業向けDX需要｜追い風",
-      "body_ja": "主力の金融ITセグメントは売上高25,801百万円（前年同期比9.2%増）、営業利益3,528百万円（同18.4%増）と好調。クレジットカード系の根幹顧客への深耕やモダナイゼーション案件が牽引した。産業ITセグメントも製造業やサービス業向けのIT投資拡大により売上高34,077百万円（同5.3%増）、営業利益6,201百万円（同21.4%増）と大幅増益に貢献した。",
+      "order": 6,
+      "headline_ja": "IT需要｜金融・産業分野のDX投資が牽引",
+      "body_ja": "第1四半期において金融ITセグメントは大型モダナイゼーション案件や顧客深耕により売上高25,801百万円（前年同期比9.2%増）、営業利益3,528百万円（同18.4%増）と大幅増益を達成した。産業ITセグメントも製造・サービス業のIT投資拡大により営業利益6,201百万円（同21.4%増）と全社業績を強力に牽引した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_business_driver_1:figure:01",
+          "value_id": "claim_latest_bd_finance_industry:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_bd_finance_industry:figure:02",
           "claim_surface_ja": "25,801百万円",
           "source_surface_ja": "25,801百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_1:figure:02",
+          "value_id": "claim_latest_bd_finance_industry:figure:03",
           "claim_surface_ja": "9.2%",
           "source_surface_ja": "9.2%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_1:figure:03",
+          "value_id": "claim_latest_bd_finance_industry:figure:04",
           "claim_surface_ja": "3,528百万円",
           "source_surface_ja": "3,528百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_1:figure:04",
+          "value_id": "claim_latest_bd_finance_industry:figure:05",
           "claim_surface_ja": "18.4%",
           "source_surface_ja": "18.4%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_1:figure:05",
-          "claim_surface_ja": "34,077百万円",
-          "source_surface_ja": "34,077百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_business_driver_1:figure:06",
-          "claim_surface_ja": "5.3%",
-          "source_surface_ja": "5.3%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_business_driver_1:figure:07",
+          "value_id": "claim_latest_bd_finance_industry:figure:06",
           "claim_surface_ja": "6,201百万円",
           "source_surface_ja": "6,201百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_1:figure:08",
+          "value_id": "claim_latest_bd_finance_industry:figure:07",
           "claim_surface_ja": "21.4%",
           "source_surface_ja": "21.4%",
           "evidence_id": null
@@ -354,158 +314,144 @@
       "qualifiers": []
     },
     {
-      "claim_id": "latest_business_driver_2",
+      "claim_id": "claim_latest_bd_offering",
       "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "オファリング先行投資｜短期的負担",
-      "body_ja": "知識集約型ITサービスを提供するオファリングサービスセグメントは、基盤系や決済分野でのIT投資需要拡大により売上高39,831百万円（前年同期比9.9%増）と増収を確保した。一方で、決済分野における次世代プラットフォーム等の先行投資増加や海外事業の収益性低下に伴い、営業利益は1,643百万円（同5.0%減）と増収減益となった。",
+      "order": 7,
+      "headline_ja": "先行投資｜オファリングサービスでの先行コスト負担",
+      "body_ja": "オファリングサービスセグメントは売上高39,831百万円（前年同期比9.9%増）と増収を確保したものの、決済分野における次世代プラットフォーム（PAYCIERGE等）構築への先行投資増加や海外事業の収益性低下が重荷となり、営業利益は1,643百万円（同5.0%減）と減益を余儀なくされた。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_business_driver_2:figure:01",
+          "value_id": "claim_latest_bd_offering:figure:01",
           "claim_surface_ja": "39,831百万円",
           "source_surface_ja": "39,831百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_2:figure:02",
+          "value_id": "claim_latest_bd_offering:figure:02",
           "claim_surface_ja": "9.9%",
           "source_surface_ja": "9.9%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_2:figure:03",
+          "value_id": "claim_latest_bd_offering:figure:03",
           "claim_surface_ja": "1,643百万円",
           "source_surface_ja": "1,643百万円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_2:figure:04",
+          "value_id": "claim_latest_bd_offering:figure:04",
           "claim_surface_ja": "5.0%",
           "source_surface_ja": "5.0%",
           "evidence_id": null
         }
       ],
       "dates": [],
-      "qualifiers": [
-        {
-          "value_id": "latest_business_driver_2:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
+      "qualifiers": []
     },
     {
-      "claim_id": "latest_business_driver_3",
+      "claim_id": "claim_latest_bd_productivity",
       "section": "latest.business_driver",
-      "order": 3,
-      "headline_ja": "AI・グループ再編効果｜中長期レバー",
-      "body_ja": "2026年7月1日付で完全子会社インテックを吸収合併し商号を「TISI株式会社」へ変更。新体制のもと、「AI駆動開発による収益の質的転換」「Vertical AIサービスによるストック型収益拡大」「AIブランドIntegriAや次世代決済PAYCIERGEの始動」を軸にバリューチェーン強化と生産性向上を進めている。",
+      "order": 8,
+      "headline_ja": "生産性向上｜高付加価値化と案件管理による不採算抑制",
+      "body_ja": "人件費や成長投資の増加に対し、高付加価値ビジネスの提供、不採算案件の抑制、および品質管理徹底による開発効率の向上が奏功し、連結営業利益率は前年同期の11.7%から12.2%へと0.5ポイント改善した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_business_driver_3:figure:01",
-          "claim_surface_ja": "7月",
-          "source_surface_ja": "7月",
+          "value_id": "claim_latest_bd_productivity:figure:01",
+          "claim_surface_ja": "11.7%",
+          "source_surface_ja": "11.7%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_business_driver_3:figure:02",
-          "claim_surface_ja": "1日",
-          "source_surface_ja": "1日",
+          "value_id": "claim_latest_bd_productivity:figure:02",
+          "claim_surface_ja": "12.2%",
+          "source_surface_ja": "12.2%",
           "evidence_id": null
-        }
-      ],
-      "dates": [
+        },
         {
-          "value_id": "latest_business_driver_3:date:01",
-          "claim_surface_ja": "2026年",
-          "source_surface_ja": "2026年",
+          "value_id": "claim_latest_bd_productivity:figure:03",
+          "claim_surface_ja": "0.5ポイント",
+          "source_surface_ja": "0.5ポイント",
           "evidence_id": null
         }
       ],
+      "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "latest_outlook_1",
+      "claim_id": "claim_latest_outlook",
       "section": "latest.outlook",
-      "order": 1,
-      "headline_ja": "中期経営計画最終年度として過去最高益の更新を目指す通期見通し",
-      "body_ja": "2027年3月期通期計画では、売上高6,200億円（前期比3.9%増）、営業利益810億円（同6.3%増）、経常利益810億円（同5.9%増）、親会社株主に帰属する当期純利益570億円（同22.3%増）を見込む。インテック合併に伴う準備費用約22億円（販管費16億円、営業外6億円）を織り込みつつ、DX需要の確実な獲得と高付加価値化推進により増益を図る。また投資有価証券売却益50億円の特別利益も想定されている。",
+      "order": 9,
+      "headline_ja": "2027年3月期通期は営業利益810億円を見込み増収増益計画を維持",
+      "body_ja": "2027年3月期通期の連結業績予想は、売上高6,200億円（前期比3.9%増）、営業利益810億円（同6.3%増）、経常利益810億円（同5.9%増）、親会社株主に帰属する当期純利益570億円（同22.3%増）を計画。インテック合併に伴う準備費用（販管費約16億円、営業外約6億円）や有価証券売却益約50億円を織り込みつつ、期初目標達成を目指す。",
       "evidence_ids": [],
       "statement_type": "forecast",
       "is_inference": false,
-      "causal": true,
+      "causal": false,
       "figures": [
         {
-          "value_id": "latest_outlook_1:figure:01",
+          "value_id": "claim_latest_outlook:figure:01",
+          "claim_surface_ja": "810億円",
+          "source_surface_ja": "810億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_outlook:figure:02",
           "claim_surface_ja": "6,200億円",
           "source_surface_ja": "6,200億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:02",
+          "value_id": "claim_latest_outlook:figure:03",
           "claim_surface_ja": "3.9%",
           "source_surface_ja": "3.9%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:03",
-          "claim_surface_ja": "810億円",
-          "source_surface_ja": "810億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_outlook_1:figure:04",
+          "value_id": "claim_latest_outlook:figure:04",
           "claim_surface_ja": "6.3%",
           "source_surface_ja": "6.3%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:05",
+          "value_id": "claim_latest_outlook:figure:05",
           "claim_surface_ja": "5.9%",
           "source_surface_ja": "5.9%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:06",
+          "value_id": "claim_latest_outlook:figure:06",
           "claim_surface_ja": "570億円",
           "source_surface_ja": "570億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:07",
+          "value_id": "claim_latest_outlook:figure:07",
           "claim_surface_ja": "22.3%",
           "source_surface_ja": "22.3%",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:08",
-          "claim_surface_ja": "22億円",
-          "source_surface_ja": "22億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_outlook_1:figure:09",
+          "value_id": "claim_latest_outlook:figure:08",
           "claim_surface_ja": "16億円",
           "source_surface_ja": "16億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:10",
+          "value_id": "claim_latest_outlook:figure:09",
           "claim_surface_ja": "6億円",
           "source_surface_ja": "6億円",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:figure:11",
+          "value_id": "claim_latest_outlook:figure:10",
           "claim_surface_ja": "50億円",
           "source_surface_ja": "50億円",
           "evidence_id": null
@@ -513,7 +459,7 @@
       ],
       "dates": [
         {
-          "value_id": "latest_outlook_1:date:01",
+          "value_id": "claim_latest_outlook:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
@@ -521,32 +467,38 @@
       ],
       "qualifiers": [
         {
-          "value_id": "latest_outlook_1:qualifier:01",
-          "claim_surface_ja": "見込む",
-          "source_surface_ja": "見込む",
+          "value_id": "claim_latest_outlook:qualifier:01",
+          "claim_surface_ja": "見込み",
+          "source_surface_ja": "見込み",
           "evidence_id": null
         },
         {
-          "value_id": "latest_outlook_1:qualifier:02",
+          "value_id": "claim_latest_outlook:qualifier:02",
           "claim_surface_ja": "約",
           "source_surface_ja": "約",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_outlook:qualifier:03",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
           "evidence_id": null
         }
       ]
     },
     {
-      "claim_id": "latest_risk_1",
+      "claim_id": "claim_latest_risk_project",
       "section": "latest.risk",
-      "order": 1,
-      "headline_ja": "大型システム開発における品質管理と不採算案件化リスク",
-      "body_ja": "システム受託開発を中核事業とする中で、開発の高度化・複雑化に伴う不採算案件の発生リスクが常存する。2026年3月期には連結子会社インテックにおける旧システム受託開発案件の訴訟和解に伴い7,434百万円の特別損失（訴訟損失引当金繰入）を計上した実績があり、品質管理体制「Trinity」等の運用強化を通じた案件リスク抑制が継続的な課題となる。",
+      "order": 10,
+      "headline_ja": "不採算案件および受託開発損害賠償訴訟のリスク",
+      "body_ja": "システム開発の高度化・大規模化に伴い、案件の工程・品質管理の不備による不採算化のリスクが常存する。2026年3月期にはインテックにおける三菱食品とのシステム受託開発訴訟で7,434百万円の和解金・関連費用（訴訟損失引当金繰入額）を特別損失計上した経緯があり、開発トラブルが業績や社会的信用に及ぼす影響には注視が必要である。",
       "evidence_ids": [],
       "statement_type": "risk",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_risk_1:figure:01",
+          "value_id": "claim_latest_risk_project:figure:01",
           "claim_surface_ja": "7,434百万円",
           "source_surface_ja": "7,434百万円",
           "evidence_id": null
@@ -554,7 +506,7 @@
       ],
       "dates": [
         {
-          "value_id": "latest_risk_1:date:01",
+          "value_id": "claim_latest_risk_project:date:01",
           "claim_surface_ja": "2026年3月期",
           "source_surface_ja": "2026年3月期",
           "evidence_id": null
@@ -563,18 +515,30 @@
       "qualifiers": []
     },
     {
-      "claim_id": "latest_risk_2",
+      "claim_id": "claim_latest_risk_overseas_investment",
       "section": "latest.risk",
-      "order": 2,
-      "headline_ja": "オファリング領域の先行投資回収と海外持分法適用会社の業績変動リスク",
-      "body_ja": "オファリングサービス領域におけるAIや次世代決済プラットフォーム等への先行投資負担が短期的な利益率を圧迫するリスクがある。また、過去2021年3月期に海外持分法適用会社で巨額の投資損失（約60億円）を計上した経緯もあり、ASEANをはじめとする海外事業の収益性安定化および投資回収の進捗状況が全社業績を左右する不確実要素となっている。",
+      "order": 11,
+      "headline_ja": "海外連結・持分法適用会社およびM&A・投資の減損リスク",
+      "body_ja": "ASEANを中心とする海外IT企業への投資やM&Aを展開する中、過去にはSequent社ののれん減損（2020年3月期に22.5億円）やCOVID-19影響による海外持分法適用会社の損失計上（2021年3月期に持分法投資損失60億円）が発生した。海外拠点の業績悪化やM&A後のシナジー未達が投資損失や減損をもたらすリスクが存在する。",
       "evidence_ids": [],
       "statement_type": "risk",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "latest_risk_2:figure:01",
+          "value_id": "claim_latest_risk_overseas_investment:figure:01",
+          "claim_surface_ja": "22.5億円",
+          "source_surface_ja": "22.5億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_risk_overseas_investment:figure:02",
+          "claim_surface_ja": "19",
+          "source_surface_ja": "19",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_risk_overseas_investment:figure:03",
           "claim_surface_ja": "60億円",
           "source_surface_ja": "60億円",
           "evidence_id": null
@@ -582,763 +546,558 @@
       ],
       "dates": [
         {
-          "value_id": "latest_risk_2:date:01",
-          "claim_surface_ja": "2021年3月期",
-          "source_surface_ja": "2021年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": [
-        {
-          "value_id": "latest_risk_2:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
-    },
-    {
-      "claim_id": "latest_context_1",
-      "section": "latest.context",
-      "order": 1,
-      "headline_ja": "構造転換の結実とAI時代に向けた次なる成長フェーズへの移行",
-      "body_ja": "TISIは過去10年間にわたり、従来のSI・ITインフラ受託中心から高付加価値なオファリングサービスや決済プラットフォームへの構造転換を推進してきた。2026年3月期に売上高・営業利益で過去最高を更新し、2027年3月期第1四半期も営業利益率12.2%へと着実に改善するなど、ビジネスモデル転換の経済的成果が確認される。インテックとの完全統合によりグループ一体のガバナンスとリソース最適化が一段と進展している。今後はAI駆動開発やVertical AIサービス等の重点戦略が不採算リスクを抑えつつ持続的な収益性向上に寄与するか、また先行投資が期待通りのリターンを生むかが投資家における主要な検証軸となる。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "latest_context_1:figure:01",
-          "claim_surface_ja": "10年間",
-          "source_surface_ja": "10年間",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_context_1:figure:02",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_context_1:figure:03",
-          "claim_surface_ja": "12.2%",
-          "source_surface_ja": "12.2%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "latest_context_1:date:01",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "latest_context_1:date:02",
-          "claim_surface_ja": "2027年3月期",
-          "source_surface_ja": "2027年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "trend_perspective_1",
-      "section": "trend.perspective",
-      "order": 1,
-      "headline_ja": "受託SI依存からの脱却と高収益ITプラットフォーム企業への飛躍",
-      "body_ja": "過去10年間のTISIの軌跡は、従来の受託SI・インフラ構築型ビジネスから、知識集約型オファリングサービスおよび決済プラットフォームを中心とする高付加価値事業構造への転換の歴史である。初期（2017-2020年）は旧TISとインテックの経営統合深化や決済領域・海外投資を推進しつつ不採算案件の抑制に注力。中期（2021-2023年）はコロナ禍による海外損失等の試練を経ながらも、デジタルトランスフォーメーション（DX）需要の拡大や高付加価値案件の増加により売上総利益率を格段に引き上げた。直近（2024-2026年）では売上高6,000億円規模、営業利益700億円超へと収益基盤が飛躍的に拡大し、ROE 14～16%台を維持。成長投資と積極的な自己株式取得（総還元性向50%目安）を両立させ、資本効率の高い成長モデルを確立している。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_perspective_1:figure:01",
-          "claim_surface_ja": "2017",
-          "source_surface_ja": "2017",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:02",
-          "claim_surface_ja": "2021",
-          "source_surface_ja": "2021",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:03",
-          "claim_surface_ja": "2024",
-          "source_surface_ja": "2024",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:04",
-          "claim_surface_ja": "6,000億円",
-          "source_surface_ja": "6,000億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:05",
-          "claim_surface_ja": "700億円",
-          "source_surface_ja": "700億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:06",
-          "claim_surface_ja": "14",
-          "source_surface_ja": "14",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:07",
-          "claim_surface_ja": "16%",
-          "source_surface_ja": "16%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:figure:08",
-          "claim_surface_ja": "50%",
-          "source_surface_ja": "50%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_perspective_1:date:01",
-          "claim_surface_ja": "2020年",
-          "source_surface_ja": "2020年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:date:02",
-          "claim_surface_ja": "2023年",
-          "source_surface_ja": "2023年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_perspective_1:date:03",
-          "claim_surface_ja": "2026年",
-          "source_surface_ja": "2026年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "trend_consistent_1",
-      "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "強固な顧客基盤に基づく決済・金融IT領域での圧倒的な市場地位",
-      "body_ja": "初期（2017年3月期）から直近（2026年3月期）に至るまで、クレジットカード会社を中心とする金融機関や大手産業顧客との根幹的な取引関係は一貫した強みであり続けた。PAYCIERGEブランドに代表される決済IT基盤や基幹システムモダナイゼーション需要を継続的に捕捉し、金融ITおよび産業ITセグメントは高い利益率（営業利益率12～18%）と安定したキャッシュフローを供給し続けている。大型案件のピークアウトによる一時的な減収局面（2025年3月期金融IT等）は存在したものの、高付加価値ビジネスへのシフトによりセグメント収益性の底堅さは一貫して維持されている。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_consistent_1:figure:01",
-          "claim_surface_ja": "12",
-          "source_surface_ja": "12",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_consistent_1:figure:02",
-          "claim_surface_ja": "18%",
-          "source_surface_ja": "18%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_consistent_1:date:01",
-          "claim_surface_ja": "2017年3月期",
-          "source_surface_ja": "2017年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_consistent_1:date:02",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_consistent_1:date:03",
-          "claim_surface_ja": "2025年3月期",
-          "source_surface_ja": "2025年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "trend_change_1",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "事業構成の変容：受託型から知識集約オファリング・サービス型へのシフト",
-      "body_ja": "初期はITインフラや金融・産業ITの個別受託開発が収益の大半を占めていたが、中期におけるセグメント再編（2023年3月期から「オファリングサービス」「広域ITソリューション」等を新設）を経て、知識集約型サービス（オファリング）の比率が急速に上昇した。日本ICSの子会社化（2024年3月期連結化、初年度営業利益18億円貢献）などを通じて財務・税務パッケージやSaaS型プラットフォームを拡充し、ストック型・オファリング型の売上高は1,600億円規模へと拡大、全社の売上総利益率を22.5%（2019年3月期）から28.2%（2026年3月期）へと押し上げた。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_change_1:figure:01",
-          "claim_surface_ja": "18億円",
-          "source_surface_ja": "18億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:figure:02",
-          "claim_surface_ja": "1,600億円",
-          "source_surface_ja": "1,600億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:figure:03",
-          "claim_surface_ja": "22.5%",
-          "source_surface_ja": "22.5%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:figure:04",
-          "claim_surface_ja": "28.2%",
-          "source_surface_ja": "28.2%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_change_1:date:01",
-          "claim_surface_ja": "2023年3月期",
-          "source_surface_ja": "2023年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:date:02",
-          "claim_surface_ja": "2024年3月期",
-          "source_surface_ja": "2024年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:date:03",
-          "claim_surface_ja": "2019年3月期",
-          "source_surface_ja": "2019年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_1:date:04",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": [
-        {
-          "value_id": "trend_change_1:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
-    },
-    {
-      "claim_id": "trend_change_2",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "ガバナンスと資本政策の変容：純粋持株会社から一体経営・株主還元重視へ",
-      "body_ja": "2017年3月期にITホールディングスからTISへ商号変更し事業持株会社体制へ移行した後、2026年7月には完全子会社インテックを吸収合併して「TISI株式会社」へと完全一体化を達成。資本政策においても、初期の配当中心（年間36～40円、総還元性向20～30%台）から、直近では総還元性向50%を目安とし、1回あたり300億～500億円規模の機動的な自己株式取得・消却を連続実行する積極的な資本構成適正化姿勢へと大きく進化を遂げた。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_change_2:figure:01",
-          "claim_surface_ja": "7月",
-          "source_surface_ja": "7月",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:02",
-          "claim_surface_ja": "36",
-          "source_surface_ja": "36",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:03",
-          "claim_surface_ja": "40円",
-          "source_surface_ja": "40円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:04",
-          "claim_surface_ja": "20",
-          "source_surface_ja": "20",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:05",
-          "claim_surface_ja": "30%",
-          "source_surface_ja": "30%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:06",
-          "claim_surface_ja": "50%",
-          "source_surface_ja": "50%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:07",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:08",
-          "claim_surface_ja": "300",
-          "source_surface_ja": "300",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:figure:09",
-          "claim_surface_ja": "500億円",
-          "source_surface_ja": "500億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_change_2:date:01",
-          "claim_surface_ja": "2017年3月期",
-          "source_surface_ja": "2017年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_change_2:date:02",
-          "claim_surface_ja": "2026年",
-          "source_surface_ja": "2026年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "trend_capital_allocation_1",
-      "section": "trend.capital_allocation",
-      "order": 1,
-      "headline_ja": "成長投資・M&A・自社プラットフォーム構築と大規模株主還元の両立",
-      "body_ja": "過去10年間の資本配分は、事業基盤強化のための固定資産・M&A投資と機動的な株主還元に重点的に向けられた。自社運用データセンターおよび御殿山SHビル不動産信託受益権（720億円、10回分割取得）への投資により長期的な賃借費用削減と事業安定性を確保。M&AではタイMFECの連結子会社化や日本ICSの取得（225億円）を実行した。一方で、政策保有株式の縮減（有価証券売却益を毎期計上）により抽出した資金も活用し、2023年3月期に約300億円、2024年3月期に約286億円、2026年3月期に559億円の自己株式取得を実施。配当も1株当たり36円（2017年3月期）から80円（2026年3月期）へと大幅に連続増配し、高い資金循環効率を実現した。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_capital_allocation_1:figure:01",
-          "claim_surface_ja": "720億円",
-          "source_surface_ja": "720億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:02",
-          "claim_surface_ja": "225億円",
-          "source_surface_ja": "225億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:03",
-          "claim_surface_ja": "300億円",
-          "source_surface_ja": "300億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:04",
-          "claim_surface_ja": "286億円",
-          "source_surface_ja": "286億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:05",
-          "claim_surface_ja": "559億円",
-          "source_surface_ja": "559億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:06",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:07",
-          "claim_surface_ja": "36円",
-          "source_surface_ja": "36円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:figure:08",
-          "claim_surface_ja": "80円",
-          "source_surface_ja": "80円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_capital_allocation_1:date:01",
-          "claim_surface_ja": "2023年3月期",
-          "source_surface_ja": "2023年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:date:02",
-          "claim_surface_ja": "2024年3月期",
-          "source_surface_ja": "2024年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:date:03",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_allocation_1:date:04",
-          "claim_surface_ja": "2017年3月期",
-          "source_surface_ja": "2017年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": [
-        {
-          "value_id": "trend_capital_allocation_1:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
-    },
-    {
-      "claim_id": "trend_capital_value_creation_1",
-      "section": "trend.capital_value_creation",
-      "order": 1,
-      "headline_ja": "投下資本の価値創出評価：概ね創出した（国内M&A・自社基盤投資が収益性を高めROEを向上）",
-      "body_ja": "過去10年間において追加投入された資本は、概ね高い収益性と価値創出を実現したと評価できる。最大規模の事業投資である日本ICSの買収（対価225億円）は、初年度から営業利益18億円（のれん等償却後黒字）を創出しオファリング領域の成長を強力に牽引した。また御殿山SHビルの不動産信託受益権取得（総額720億円分割取得）は賃借料削減による構造的費用抑制に貢献している。海外M&A（タイMFEC子会社化等）においては2021年3月期に持分法投資損失（60億円）等の減損損失を経験したものの、タイ国内での金融IT受託やクロスセル受注の獲得により黒字定着へ転じた。さらに、政策保有株縮減で回収した資本を自社株買い（累計1,000億円超）に再配分したことで、資本ベースの肥大化を抑え、連結ROEを初期の8.8%から14.0～16.0%（2024-2026年3月期）へと構造的に高めることに成功した。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_capital_value_creation_1:figure:01",
-          "claim_surface_ja": "225億円",
-          "source_surface_ja": "225億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:02",
-          "claim_surface_ja": "18億円",
-          "source_surface_ja": "18億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:03",
-          "claim_surface_ja": "720億円",
-          "source_surface_ja": "720億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:04",
-          "claim_surface_ja": "60億円",
-          "source_surface_ja": "60億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:05",
-          "claim_surface_ja": "1,000億円",
-          "source_surface_ja": "1,000億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:06",
-          "claim_surface_ja": "8.8%",
-          "source_surface_ja": "8.8%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:07",
-          "claim_surface_ja": "14.0",
-          "source_surface_ja": "14.0",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:08",
-          "claim_surface_ja": "16.0%",
-          "source_surface_ja": "16.0%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:figure:09",
-          "claim_surface_ja": "2024",
-          "source_surface_ja": "2024",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "trend_capital_value_creation_1:date:01",
-          "claim_surface_ja": "2021年3月期",
-          "source_surface_ja": "2021年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_capital_value_creation_1:date:02",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "trend_implication_1",
-      "section": "trend.implication",
-      "order": 1,
-      "headline_ja": "投資家が確認すべき今後の検証軸：人件費・先行投資増を上回る生産性向上とAI収益化",
-      "body_ja": "過去の構造転換と積極的な自己株式取得によりROE16%水準を達成した同社において、今後の企業価値向上のカギは「AI駆動開発による限界利益率向上」と「オファリング・Vertical AIサービスのスケール化」にある。毎年50億円規模で拡大する処遇改善・人材先行投資コストや、オファリング・海外での先行投資を吸収し、営業利益率13%超を持続的に維持・拡大できるかが焦点となる。また、インテック完全統合に伴う組織融合シナジーの現れと、不採算案件の再発防止徹底が、利益のボラティリティを抑える前提条件として注視される。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "trend_implication_1:figure:01",
-          "claim_surface_ja": "50億円",
-          "source_surface_ja": "50億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "trend_implication_1:figure:02",
-          "claim_surface_ja": "13%",
-          "source_surface_ja": "13%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "management_strategy_1",
-      "section": "management.strategy",
-      "order": 1,
-      "headline_ja": "戦略的一貫性：構造転換に向けた長期ビジョンと戦略ドメインの明確な継続性",
-      "body_ja": "経営陣は中期経営計画（2016-2018、2018-2020、2021-2023、2024-2026）を通じて、「グループビジョン2026」および「グループビジョン2032」を一貫して掲げ、従来の受託SIから「高付加価値なオファリングサービス・決済プラットフォーム」への構造転換をブレなく推進してきた。戦略ドメインの定義や「フロンティア開拓」という基本方針は長期的に整合しており、企業買収や自社基盤投資もこの方針に忠実に沿って実行されている。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "management_strategy_1:figure:01",
-          "claim_surface_ja": "2016",
-          "source_surface_ja": "2016",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:02",
-          "claim_surface_ja": "2018",
-          "source_surface_ja": "2018",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:03",
-          "claim_surface_ja": "2020",
-          "source_surface_ja": "2020",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:04",
-          "claim_surface_ja": "2021",
-          "source_surface_ja": "2021",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:05",
-          "claim_surface_ja": "2023",
-          "source_surface_ja": "2023",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:06",
-          "claim_surface_ja": "2024",
-          "source_surface_ja": "2024",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:07",
-          "claim_surface_ja": "2026",
-          "source_surface_ja": "2026",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_strategy_1:figure:08",
-          "claim_surface_ja": "2032",
-          "source_surface_ja": "2032",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "management_execution_1",
-      "section": "management.execution",
-      "order": 1,
-      "headline_ja": "施策の実行力：中計目標の前倒し達成と機動的な事業再編・資本政策の遂行",
-      "body_ja": "中期経営計画2018-2020の主要数値目標（営業利益、ROE等）を1年前倒しで全達成し、中計2021-2023でも主要指標を1年前倒しでクリアするなど、目標に対する実行力は極めて高い。非コア事業の売却（中央システム、Sequent全株式譲渡）や日本ICS買収、インテックの吸収合併などポートフォリオの入れ替えを迅速に実行。また自己株式取得・消却についても公表通り確実かつスピーディに完了させている。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "management_execution_1:figure:01",
-          "claim_surface_ja": "2018",
-          "source_surface_ja": "2018",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_execution_1:figure:02",
-          "claim_surface_ja": "2020",
-          "source_surface_ja": "2020",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_execution_1:figure:03",
-          "claim_surface_ja": "1年",
-          "source_surface_ja": "1年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_execution_1:figure:04",
-          "claim_surface_ja": "2021",
-          "source_surface_ja": "2021",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_execution_1:figure:05",
-          "claim_surface_ja": "2023",
-          "source_surface_ja": "2023",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "management_forecast_discipline_1",
-      "section": "management.forecast_discipline",
-      "order": 1,
-      "headline_ja": "業績予想の規律：保守的な予想傾向と高い達成確率（9期中8期で経常利益が計画超過）",
-      "body_ja": "観察可能な過年度9期間の通期経常利益予想と実績の比較において、8期間で実績が当初予想を上回り、下回ったのはコロナ禍初期影響を受けた2021年3月期の1期のみであった（平均乖離率約+6%～+14%の計画超過傾向）。期初予想はリスクを織り込んだ保守的な姿勢で策定される傾向が強く、業績予想に対する規律と達成の確実性は高い。中期目標（ROE 16%超、売上高6,200億円、営業利益810億円）に対しても着実な進捗を見せている。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "management_forecast_discipline_1:figure:01",
-          "claim_surface_ja": "9期",
-          "source_surface_ja": "9期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:02",
-          "claim_surface_ja": "8期",
-          "source_surface_ja": "8期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:03",
-          "claim_surface_ja": "1期",
-          "source_surface_ja": "1期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:04",
-          "claim_surface_ja": "6%",
-          "source_surface_ja": "6%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:05",
-          "claim_surface_ja": "14%",
-          "source_surface_ja": "14%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:06",
-          "claim_surface_ja": "16%",
-          "source_surface_ja": "16%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:07",
-          "claim_surface_ja": "6,200億円",
-          "source_surface_ja": "6,200億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_forecast_discipline_1:figure:08",
-          "claim_surface_ja": "810億円",
-          "source_surface_ja": "810億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "management_forecast_discipline_1:date:01",
-          "claim_surface_ja": "2021年3月期",
-          "source_surface_ja": "2021年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "management_accountability_1",
-      "section": "management.accountability",
-      "order": 1,
-      "headline_ja": "説明責任と透明性：挫折・損失の開示と要因分析における誠実な開示姿勢",
-      "body_ja": "海外持分法適用会社における損失計上（2021年3月期）やSequentのれん減損（2020年3月期）、インテック受託案件にかかる訴訟損失引当金（2026年3月期7,434百万円）などのネガティブな事象に対しても、背景や要因、対応策を具体的かつタイムリーに開示している。また不採算案件の発生状況や人件費増のインパクト、政策保有株式の縮減進捗なども詳細に開示しており、株主・投資家に対する透明性と説明責任の果たし方は評価できる。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "management_accountability_1:figure:01",
-          "claim_surface_ja": "7,434百万円",
-          "source_surface_ja": "7,434百万円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "management_accountability_1:date:01",
-          "claim_surface_ja": "2021年3月期",
-          "source_surface_ja": "2021年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "management_accountability_1:date:02",
+          "value_id": "claim_latest_risk_overseas_investment:date:01",
           "claim_surface_ja": "2020年3月期",
           "source_surface_ja": "2020年3月期",
           "evidence_id": null
         },
         {
-          "value_id": "management_accountability_1:date:03",
+          "value_id": "claim_latest_risk_overseas_investment:date:02",
+          "claim_surface_ja": "2021年3月期",
+          "source_surface_ja": "2021年3月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_latest_context",
+      "section": "latest.context",
+      "order": 12,
+      "headline_ja": "インテック統合完了に伴う新体制と資本構造適正化の現在地",
+      "body_ja": "当社はグループ統合の総仕上げとしてインテックとの合併を果たし、TISI株式会社として新たなスタートを切った。強固な経営・事業基盤の確立とガバナンス高度化を進める一方、次期中期経営計画に向けてAI駆動開発やストック型ビジネスの拡大を掲げている。\n財務面では、強固な営業キャッシュフロー創出力を背景に、株主還元500億円（うち資本構成適正化目的および総還元性向に基づく分）の大規模買爆と消却を実行。自己資本比率を約55%水準にコントロールしながらROE16%超およびEPS成長目標の早期達成を狙う構造となっている。",
+      "evidence_ids": [],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_latest_context:figure:01",
+          "claim_surface_ja": "500億円",
+          "source_surface_ja": "500億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_latest_context:figure:02",
+          "claim_surface_ja": "55%",
+          "source_surface_ja": "55%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_perspective",
+      "section": "trend.perspective",
+      "order": 13,
+      "headline_ja": "10年間の軌跡：不採算抑制と高付加価値化による収益性の持続的向上",
+      "body_ja": "過去10年間のTISグループは、持株会社体制から事業持株会社、そしてインテックの完全統合へとガバナンスを段階的に強化しながら、売上高約3.9千億円から6,000億円規模へと着実に事業規模を拡大させた。不採算案件の厳格な管理と案件採算性の向上により営業利益率は6%台から12%超へ改善した。2021年3月期にはコロナ禍による海外持分法適用会社の損失等で一時的な減益を余儀なくされたものの、本業のシステム開発・運用基盤は堅調を維持。回収した資金を決済（PAYCIERGE）や日本ICS買収、Gotenyama SHビル取得、および大規模な自己株式取得へと配分し、資本効率を高めながら高収益体質を構築してきた。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_perspective:figure:01",
+          "claim_surface_ja": "3.9",
+          "source_surface_ja": "3.9",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_perspective:figure:02",
+          "claim_surface_ja": "6,000億円",
+          "source_surface_ja": "6,000億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_perspective:figure:03",
+          "claim_surface_ja": "6%",
+          "source_surface_ja": "6%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_perspective:figure:04",
+          "claim_surface_ja": "12%",
+          "source_surface_ja": "12%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_trend_perspective:date:01",
+          "claim_surface_ja": "2021年3月期",
+          "source_surface_ja": "2021年3月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_consistent_profitability",
+      "section": "trend.consistent",
+      "order": 14,
+      "headline_ja": "不採算案件の抑制と案件採算性管理の継続的徹底",
+      "body_ja": "初期（2017-2020年）から直近に至るまで、全社的な審査・モニタリング体制「生産革新委員会」や独自の品質管理体系「Trinity」の運用を通じ、不採算案件の最小化を継続的に推進している。案件ミックスの改善と価格転嫁・高付加価値化が相まって、売上総利益率は2017年3月期の22%台から直近では28%台へ一貫して上昇した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_consistent_profitability:figure:01",
+          "claim_surface_ja": "2017",
+          "source_surface_ja": "2017",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_profitability:figure:02",
+          "claim_surface_ja": "22%",
+          "source_surface_ja": "22%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_profitability:figure:03",
+          "claim_surface_ja": "28%",
+          "source_surface_ja": "28%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_trend_consistent_profitability:date:01",
+          "claim_surface_ja": "2020年",
+          "source_surface_ja": "2020年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_profitability:date:02",
+          "claim_surface_ja": "2017年3月期",
+          "source_surface_ja": "2017年3月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_consistent_shareholder_return",
+      "section": "trend.consistent",
+      "order": 15,
+      "headline_ja": "株主還元の継続的強化と機動的な資本構成適正化",
+      "body_ja": "中期経営計画の更新ごとに総還元性向目標を35%→40%→45%→50%と引き上げ、10年連続で増配を実現するとともに、大規模な自己株式取得・消却を繰り返してきた。単なる配当にとどまらず、剰余資本の積極的還元により発行済株式数を減らし、1株当たり利益（EPS）とROEの向上を一貫して追求している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_consistent_shareholder_return:figure:01",
+          "claim_surface_ja": "35%",
+          "source_surface_ja": "35%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_shareholder_return:figure:02",
+          "claim_surface_ja": "40%",
+          "source_surface_ja": "40%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_shareholder_return:figure:03",
+          "claim_surface_ja": "45%",
+          "source_surface_ja": "45%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_shareholder_return:figure:04",
+          "claim_surface_ja": "50%",
+          "source_surface_ja": "50%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_consistent_shareholder_return:figure:05",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_change_business_structure",
+      "section": "trend.change",
+      "order": 16,
+      "headline_ja": "請負型SIからオファリング・サービス型ITへの収益構造転換",
+      "body_ja": "変化前は個別受託開発（工数依存型SI）が中心であったが、中期経営計画（2018-2020）以降、「サービス型への構造転換」を掲げて自社投資による決済プラットフォーム（PAYCIERGE）やクラウド・BPOビジネスを拡大。セグメント再編を経て、知識集約型ITサービス（オファリング）の比率を高め、ストック型収益の比重を増す構造へ変化した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_change_business_structure:figure:01",
+          "claim_surface_ja": "2018",
+          "source_surface_ja": "2018",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_change_business_structure:figure:02",
+          "claim_surface_ja": "2020",
+          "source_surface_ja": "2020",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": [
+        {
+          "value_id": "claim_trend_change_business_structure:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_trend_change_governance",
+      "section": "trend.change",
+      "order": 17,
+      "headline_ja": "持株会社体制から中核統合・TISIへのガバナンスの一本化",
+      "body_ja": "初期は純粋持株会社「ITホールディングス」による分権的ガバナンスであったが、2016年にTISを吸収合併して事業持株会社体制へ移行し、さらに2026年にインテックを吸収合併して「TISI株式会社」へと完全一本化した。経営資源の最適配置と迅速な意思決定を可能にする体制へ進化を完了させた。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [],
+      "dates": [
+        {
+          "value_id": "claim_trend_change_governance:date:01",
+          "claim_surface_ja": "2016年",
+          "source_surface_ja": "2016年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_change_governance:date:02",
+          "claim_surface_ja": "2026年",
+          "source_surface_ja": "2026年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_capital_allocation",
+      "section": "trend.capital_allocation",
+      "order": 18,
+      "headline_ja": "事業資産の所有化・戦略M&A・大規模還元の三位一体配分",
+      "body_ja": "過去10年間の資本配分は、①自社クラウド基盤の安定化に向けた『御殿山SHビル』不動産信託受益権の取得（720億円、10回分割）、②士業・会計IT領域の市場獲得を目指した『日本ICS』の買収（225億円）およびMFEC等の海外アライアンス、③総還元性向50%を目安とした数百億円規模の自己株式取得と消却、に重点配置された。非効率な政策保有株式の縮減（純資産比10%以下への削減）で捻出した資金をこれら成長投資と株主還元へ充当する循環が確立している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_capital_allocation:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:02",
+          "claim_surface_ja": "720億円",
+          "source_surface_ja": "720億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:03",
+          "claim_surface_ja": "2",
+          "source_surface_ja": "2",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:04",
+          "claim_surface_ja": "225億円",
+          "source_surface_ja": "225億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:05",
+          "claim_surface_ja": "3",
+          "source_surface_ja": "3",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:06",
+          "claim_surface_ja": "50%",
+          "source_surface_ja": "50%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_allocation:figure:07",
+          "claim_surface_ja": "10%",
+          "source_surface_ja": "10%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_capital_value_creation",
+      "section": "trend.capital_value_creation",
+      "order": 19,
+      "headline_ja": "資本配分評価：概ね創出した",
+      "body_ja": "概ね創出した。過去10年間に投入された追加資本は、主に自社システム運用基盤の安定と賃借料削減を図る事業用資産取得（御殿山SHビル720億円）、士業・中小企業向け会計IT分野を獲得した戦略M&A（日本ICS225億円）、および大規模な自己株式取得・消却に向かった。日本ICSは子会社初年度（2024年3月期）に売上高58億円・営業利益18億円を創出し直接的な増益に寄与しており、御殿山SHビルも費用削減効果と収益基盤の安定に貢献している。海外投資の一部（Sequent社の減損等）で減損や一過性損失が発生したものの、グループ全体として営業利益率は6%台から12%超へ倍増し、ROEも14～16%の高水準を維持・達成したことから、配分された資本は総じて投下資本に見合うリターンを生み、企業価値創造に結実している。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:01",
+          "claim_surface_ja": "720億円",
+          "source_surface_ja": "720億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:02",
+          "claim_surface_ja": "58億円",
+          "source_surface_ja": "58億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:03",
+          "claim_surface_ja": "18億円",
+          "source_surface_ja": "18億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:04",
+          "claim_surface_ja": "6%",
+          "source_surface_ja": "6%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:05",
+          "claim_surface_ja": "12%",
+          "source_surface_ja": "12%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:06",
+          "claim_surface_ja": "14",
+          "source_surface_ja": "14",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_trend_capital_value_creation:figure:07",
+          "claim_surface_ja": "16%",
+          "source_surface_ja": "16%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_trend_capital_value_creation:date:01",
+          "claim_surface_ja": "2024年3月期",
+          "source_surface_ja": "2024年3月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_trend_implication",
+      "section": "trend.implication",
+      "order": 20,
+      "headline_ja": "インテック統合効果の発現とAI駆動型収益モデルへの展開注視",
+      "body_ja": "投資家は今後、インテック統合によるバックオフィス効率化や事業シナジー（開発リソース共有やクロスセル）の定着度合いと、AI駆動開発（IntegriA等）による開発原価率の抑制効果を検証すべきである。また、大規模買爆により自己資本比率が55%程度へ低下する中、財務健全性とROE16%超の持続的両立が維持できるかが焦点となる。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_trend_implication:figure:01",
+          "claim_surface_ja": "55%",
+          "source_surface_ja": "55%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_mgmt_strategy",
+      "section": "management.strategy",
+      "order": 21,
+      "headline_ja": "【戦略の一貫性】構造転換と戦略ドメイン強化の長期軸をブレずに維持",
+      "body_ja": "経営陣は『グループビジョン2026』および『Frontiers 2026』を通じ、一貫して工数依存型SIからサービス型・高付加価値型への構造転換を訴求してきた。決済、BPM、金融・産業モダナイゼーション等の戦略ドメインへの集中投資、政策保有株式の縮減方針（純資産比10%以下目標の達成）、インテックの完全統合といった主要戦略は首尾一貫しており、長期的な方向性に高い論理的整合性が認められる。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_mgmt_strategy:figure:01",
+          "claim_surface_ja": "2026",
+          "source_surface_ja": "2026",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_strategy:figure:02",
+          "claim_surface_ja": "10%",
+          "source_surface_ja": "10%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_mgmt_execution",
+      "section": "management.execution",
+      "order": 22,
+      "headline_ja": "【施策の実行力】中計目標の前倒し達成と大規模M&A・事業再編の完遂",
+      "body_ja": "中期経営計画（2018-2020）および（2021-2023）において、主要経営目標（売上高、営業利益、ROE等）をいずれも1年前倒しで達成した実績を有する。また、日本ICSの買収（225億円）、御殿山SHビルの段階取得契約、中央システムの売却といった事業ポートフォリオ見直しや、インテック吸収合併の完遂など、掲げた施策を確実に実行へ移すフォロースルー能力は極めて高い。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_mgmt_execution:figure:01",
+          "claim_surface_ja": "2018",
+          "source_surface_ja": "2018",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_execution:figure:02",
+          "claim_surface_ja": "2020",
+          "source_surface_ja": "2020",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_execution:figure:03",
+          "claim_surface_ja": "2021",
+          "source_surface_ja": "2021",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_execution:figure:04",
+          "claim_surface_ja": "2023",
+          "source_surface_ja": "2023",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_execution:figure:05",
+          "claim_surface_ja": "1年",
+          "source_surface_ja": "1年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_execution:figure:06",
+          "claim_surface_ja": "225億円",
+          "source_surface_ja": "225億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": [
+        {
+          "value_id": "claim_mgmt_execution:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_mgmt_forecast_discipline",
+      "section": "management.forecast_discipline",
+      "order": 23,
+      "headline_ja": "【予想の規律】保守的な予想姿勢と安定した上振れ実績（観察対象9期中8期上振れ）",
+      "body_ja": "観察可能な過去9期の通期経常利益予想と比較すると、期初予想を上回って着地した期が8期、下回った期が1期（2021年3月期のコロナ禍による海外持分法損失）であり、経営陣の業績予想姿勢には明確な『保守的傾向（conservative_tendency）』が見られる。不採算案件の発生防止や高付加価値化の進展を背景に、期初計画を安定的にクリアする規律が定着している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_mgmt_forecast_discipline:figure:01",
+          "claim_surface_ja": "9期",
+          "source_surface_ja": "9期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_forecast_discipline:figure:02",
+          "claim_surface_ja": "8期",
+          "source_surface_ja": "8期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_forecast_discipline:figure:03",
+          "claim_surface_ja": "1期",
+          "source_surface_ja": "1期",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_mgmt_forecast_discipline:date:01",
+          "claim_surface_ja": "2021年3月期",
+          "source_surface_ja": "2021年3月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "claim_mgmt_forecast_discipline:qualifier:01",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_mgmt_accountability",
+      "section": "management.accountability",
+      "order": 24,
+      "headline_ja": "【説明責任と透明性】不測の損失に対する迅速な引当計上と明確な開示",
+      "body_ja": "2021年3月期の海外持分法適用会社の損失や、Sequent社ののれん減損（22.5億円）、2026年3月期のインテックにおける訴訟損失引当金繰入（74.3億円）など、一過性の特別損失や業績下振れ要因が発生した際にも、遅滞なく引当・減損を処理し決算短信や補足資料で理由を明確に説明している。株主還元目標（総還元性向50%）の計算においても、資本構成適正化目的の買爆額を除外した実質還元率を明示するなど、透明性の高い説明責任を果たしている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_mgmt_accountability:figure:01",
+          "claim_surface_ja": "22.5億円",
+          "source_surface_ja": "22.5億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_accountability:figure:02",
+          "claim_surface_ja": "74.3億円",
+          "source_surface_ja": "74.3億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_accountability:figure:03",
+          "claim_surface_ja": "50%",
+          "source_surface_ja": "50%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_mgmt_accountability:date:01",
+          "claim_surface_ja": "2021年3月期",
+          "source_surface_ja": "2021年3月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_mgmt_accountability:date:02",
           "claim_surface_ja": "2026年3月期",
           "source_surface_ja": "2026年3月期",
           "evidence_id": null
@@ -1350,8 +1109,8 @@
   "evidence": [],
   "management_consistency": {
     "methodology_version": "management-consistency-v6",
-    "score": 0.75,
-    "raw_score": 0.75,
+    "score": 0.88,
+    "raw_score": 0.875,
     "evidence_confidence": null,
     "confidence_label": null,
     "evidence_coverage": null,
@@ -1361,11 +1120,11 @@
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 3,
+        "rating": 4,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.75,
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "経営陣は中期経営計画（2016-2018、2018-2020、2021-2023、2024-2026）を通じて、「グループビジョン2026」および「グループビジョン2032」を一貫して掲げ、従来の受託SIから「高付加価値なオファリングサービス・決済プラットフォーム」への構造転換をブレなく推進してきた。戦略ドメインの定義や「フロンティア開拓」という基本方針は長期的に整合しており、企業買収や自社基盤投資もこの方針に忠実に沿って実行されている。",
+        "rationale_ja": "経営陣は『グループビジョン2026』および『Frontiers 2026』を通じ、一貫して工数依存型SIからサービス型・高付加価値型への構造転換を訴求してきた。決済、BPM、金融・産業モダナイゼーション等の戦略ドメインへの集中投資、政策保有株式の縮減方針（純資産比10%以下目標の達成）、インテックの完全統合といった主要戦略は首尾一貫しており、長期的な方向性に高い論理的整合性が認められる。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1374,11 +1133,11 @@
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
+        "rating": 4,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.75,
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "中期経営計画2018-2020の主要数値目標（営業利益、ROE等）を1年前倒しで全達成し、中計2021-2023でも主要指標を1年前倒しでクリアするなど、目標に対する実行力は極めて高い。非コア事業の売却（中央システム、Sequent全株式譲渡）や日本ICS買収、インテックの吸収合併などポートフォリオの入れ替えを迅速に実行。また自己株式取得・消却についても公表通り確実かつスピーディに完了させている。",
+        "rationale_ja": "中期経営計画（2018-2020）および（2021-2023）において、主要経営目標（売上高、営業利益、ROE等）をいずれも1年前倒しで達成した実績を有する。また、日本ICSの買収（225億円）、御殿山SHビルの段階取得契約、中央システムの売却といった事業ポートフォリオ見直しや、インテック吸収合併の完遂など、掲げた施策を確実に実行へ移すフォロースルー能力は極めて高い。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1391,7 +1150,7 @@
         "evidence_sufficiency": "sufficient",
         "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "観察可能な過年度9期間の通期経常利益予想と実績の比較において、8期間で実績が当初予想を上回り、下回ったのはコロナ禍初期影響を受けた2021年3月期の1期のみであった（平均乖離率約+6%～+14%の計画超過傾向）。期初予想はリスクを織り込んだ保守的な姿勢で策定される傾向が強く、業績予想に対する規律と達成の確実性は高い。中期目標（ROE 16%超、売上高6,200億円、営業利益810億円）に対しても着実な進捗を見せている。",
+        "rationale_ja": "観察可能な過去9期の通期経常利益予想と比較すると、期初予想を上回って着地した期が8期、下回った期が1期（2021年3月期のコロナ禍による海外持分法損失）であり、経営陣の業績予想姿勢には明確な『保守的傾向（conservative_tendency）』が見られる。不採算案件の発生防止や高付加価値化の進展を背景に、期初計画を安定的にクリアする規律が定着している。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1404,7 +1163,7 @@
         "evidence_sufficiency": "sufficient",
         "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "海外持分法適用会社における損失計上（2021年3月期）やSequentのれん減損（2020年3月期）、インテック受託案件にかかる訴訟損失引当金（2026年3月期7,434百万円）などのネガティブな事象に対しても、背景や要因、対応策を具体的かつタイムリーに開示している。また不採算案件の発生状況や人件費増のインパクト、政策保有株式の縮減進捗なども詳細に開示しており、株主・投資家に対する透明性と説明責任の果たし方は評価できる。",
+        "rationale_ja": "2021年3月期の海外持分法適用会社の損失や、Sequent社ののれん減損（22.5億円）、2026年3月期のインテックにおける訴訟損失引当金繰入（74.3億円）など、一過性の特別損失や業績下振れ要因が発生した際にも、遅滞なく引当・減損を処理し決算短信や補足資料で理由を明確に説明している。株主還元目標（総還元性向50%）の計算においても、資本構成適正化目的の買爆額を除外した実質還元率を明示するなど、透明性の高い説明責任を果たしている。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1415,7 +1174,7 @@
     "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
   },
   "model_notes": [
-    "決算短信内に開示された数値をそのまま抽出しており、セグメント再編（2019年3月期および2023年3月期）による過年度数値の組み替え影響に留意が必要。",
-    "2026年3月期に計上された訴訟損失引当金繰入額（7,434百万円）は、連結子会社インテックにおける旧システム受託開発案件の和解成立に伴う特別損失である。"
+    "各決算短信に記載されたセグメント区分は2023年3月期に大きく再編されているため、過年度のセグメント数値比較は公表された組み替え後数値に基づき抽出しています。",
+    "2026年3月期における訴訟損失引当金繰入額（7,434百万円）は、インテックが受託した三菱食品のシステム開発等に関する和解に基づく一過性の特別損失です。"
   ]
 }

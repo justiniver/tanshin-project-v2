@@ -67,7 +67,7 @@
           "type": "string"
         },
         "body_ja": {
-          "description": "Investor-oriented Japanese analysis that explains the conclusion, period contrast, significance, and material uncertainty without duplicating other claims.",
+          "description": "Independent investor-oriented Japanese analysis that explains the conclusion, period contrast, significance, and material uncertainty without duplicating other claims. Distinguish management's assertions from observable outcomes and do not adopt promotional management language as the analyst's conclusion.",
           "minLength": 1,
           "title": "Body Ja",
           "type": "string"
@@ -107,22 +107,16 @@
           "minItems": 4,
           "title": "Components",
           "type": "array"
-        },
-        "overall_rationale_ja": {
-          "minLength": 1,
-          "title": "Overall Rationale Ja",
-          "type": "string"
         }
       },
       "required": [
-        "components",
-        "overall_rationale_ja"
+        "components"
       ],
       "title": "SynthesisManagementConsistency",
       "type": "object"
     },
     "SynthesisManagementConsistencyComponent": {
-      "description": "One synthesis-stage management-consistency assessment.",
+      "description": "Rating metadata; the corresponding management claim contains the rationale.",
       "properties": {
         "dimension": {
           "$ref": "#/$defs/ManagementConsistencyDimension"
@@ -147,18 +141,12 @@
           ],
           "title": "Evidence Sufficiency",
           "type": "string"
-        },
-        "rationale_ja": {
-          "minLength": 1,
-          "title": "Rationale Ja",
-          "type": "string"
         }
       },
       "required": [
         "dimension",
         "rating",
-        "evidence_sufficiency",
-        "rationale_ja"
+        "evidence_sufficiency"
       ],
       "title": "SynthesisManagementConsistencyComponent",
       "type": "object"

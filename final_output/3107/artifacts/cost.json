@@ -3,52 +3,72 @@
   "display_currency": "JPY",
   "usd_to_jpy_rate": 150.0,
   "pdf_tokens_per_page": 540,
+  "research": {
+    "model": "gemini-3.6-flash",
+    "estimated_input_tokens": 122242,
+    "maximum_output_tokens": 32768,
+    "input_cost_usd": 0.183363,
+    "maximum_output_cost_usd": 0.24576,
+    "maximum_stage_cost_usd": 0.429123,
+    "input_cost_jpy": 27.5,
+    "maximum_output_cost_jpy": 36.86,
+    "maximum_stage_cost_jpy": 64.37
+  },
   "analysis": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 124596,
+    "estimated_input_tokens": 142448,
     "maximum_output_tokens": 32768,
-    "input_cost_usd": 0.186894,
+    "input_cost_usd": 0.213672,
     "maximum_output_cost_usd": 0.24576,
-    "maximum_stage_cost_usd": 0.432654,
-    "input_cost_jpy": 28.03,
+    "maximum_stage_cost_usd": 0.459432,
+    "input_cost_jpy": 32.05,
     "maximum_output_cost_jpy": 36.86,
-    "maximum_stage_cost_jpy": 64.9
+    "maximum_stage_cost_jpy": 68.91
   },
   "translation": {
     "model": "gemini-3.6-flash",
-    "estimated_input_tokens": 34004,
+    "estimated_input_tokens": 33986,
     "maximum_output_tokens": 24576,
-    "input_cost_usd": 0.051006,
+    "input_cost_usd": 0.050979,
     "maximum_output_cost_usd": 0.18432,
-    "maximum_stage_cost_usd": 0.235326,
+    "maximum_stage_cost_usd": 0.235299,
     "input_cost_jpy": 7.65,
     "maximum_output_cost_jpy": 27.65,
-    "maximum_stage_cost_jpy": 35.3
+    "maximum_stage_cost_jpy": 35.29
   },
-  "maximum_one_pass_cost_usd": 0.66798,
-  "maximum_configured_cost_usd": 0.66798,
-  "maximum_one_pass_cost_jpy": 100.2,
-  "maximum_configured_cost_jpy": 100.2,
+  "maximum_one_pass_cost_usd": 1.123854,
+  "maximum_configured_cost_usd": 1.123854,
+  "maximum_one_pass_cost_jpy": 168.58,
+  "maximum_configured_cost_jpy": 168.58,
   "maximum_api_attempts_per_stage": 1,
   "assumptions": [
     "Each PDF page is estimated at 540 Gemini visual tokens, rounded above observed production usage.",
     "No separate native-PDF text increment is added beyond the selected per-page planning estimate.",
+    "The selected PDFs and their document metadata are included in both Japanese requests: research and final analysis.",
     "System instructions, document metadata, prompts, and response schemas use a conservative multilingual character-based estimate.",
+    "The materialized analysis prompt already contains its research dossier, so no separate research-output allowance is added.",
     "Translation planning reserves the configured maximum analysis output because the source analysis is not materialized yet.",
-    "Maximum cost assumes both stages consume their configured maximum output.",
+    "Maximum cost assumes research, analysis, and translation consume their configured maximum output.",
     "No caching, batch, flex, priority, grounding, or free-tier discount is assumed.",
     "Models with long-context pricing use the higher standard tier when the estimated prompt exceeds the published threshold.",
     "User-facing yen estimates convert USD model prices at the fixed offline planning rate of ¥150 per USD; the final card or account conversion may differ."
   ],
   "actual_cost_by_stage_usd": {
+    "research": {
+      "model": "gemini-3.6-flash",
+      "input_tokens": 116814,
+      "billed_output_and_thinking_tokens": 13591,
+      "cost_usd": 0.277154,
+      "cost_jpy": 41.57
+    },
     "analysis": {
       "model": "gemini-3.6-flash",
-      "input_tokens": 119546,
-      "billed_output_and_thinking_tokens": 30947,
-      "cost_usd": 0.411421,
-      "cost_jpy": 61.71
+      "input_tokens": 141657,
+      "billed_output_and_thinking_tokens": 7458,
+      "cost_usd": 0.268421,
+      "cost_jpy": 40.26
     }
   },
-  "actual_cost_total_usd": 0.411421,
-  "actual_cost_total_jpy": 61.71
+  "actual_cost_total_usd": 0.545575,
+  "actual_cost_total_jpy": 81.83
 }

@@ -3,19 +3,18 @@
     "structure": 5.0,
     "section_coverage": 5.0,
     "executive_breadth": 5.0,
-    "analytical_depth": 2.76,
-    "trend_specificity": 4.0,
-    "evidence_density": 2.51,
-    "tone": 5.0,
-    "repetition": 3.54,
-    "readability": 3.75,
-    "approximate_length": 4.83
+    "analytical_depth": 3.5,
+    "trend_specificity": 3.67,
+    "tone": 4.4,
+    "repetition": 5.0,
+    "readability": 5.0,
+    "approximate_length": 4.99
   },
-  "overall_score_0_to_5": 4.14,
+  "overall_score_0_to_5": 4.62,
   "generated_metrics": {
-    "main_characters": 6802,
-    "trend_narrative_characters": 2545,
-    "trend_perspective_narrative_characters": 439,
+    "main_characters": 6486,
+    "trend_narrative_characters": 3769,
+    "trend_perspective_narrative_characters": 280,
     "headings": [
       "# サイボウズ株式会社（4776）",
       "## 企業概要",
@@ -30,17 +29,16 @@
       "### 変わらなかったこと",
       "### 変化したこと",
       "### 資本配分の変化",
+      "### 資本配分は価値を創出したか",
       "### 最新コメントから読み取れる現在地"
     ],
-    "citation_groups": 17,
-    "citation_references": 69,
-    "citation_references_per_1000_chars": 10.144,
+    "citation_groups": 0,
+    "citation_references": 0,
+    "citation_references_per_1000_chars": 0.0,
     "unique_years": [
+      2014,
       2016,
-      2017,
       2019,
-      2020,
-      2021,
       2022,
       2023,
       2024,
@@ -50,15 +48,15 @@
     "future_years_excluded_from_trend_score": [
       2028
     ],
-    "year_span": 10,
-    "bold_analytical_themes": 7,
-    "contrast_terms": 5,
-    "sentence_count": 82,
-    "average_sentence_characters": 64.43,
-    "long_sentence_count": 5,
-    "repeated_sentence_count": 6,
+    "year_span": 12,
+    "bold_analytical_themes": 8,
+    "contrast_terms": 10,
+    "sentence_count": 78,
+    "average_sentence_characters": 74.05,
+    "long_sentence_count": 0,
+    "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
-    "promotional_terms": 0,
+    "promotional_terms": 1,
     "first_person_terms": 0,
     "key_takeaway_categories": [
       "earnings_profitability",
@@ -68,8 +66,6 @@
     ],
     "key_takeaway_category_count": 4,
     "middle_period_years": [
-      2020,
-      2021,
       2022,
       2023
     ],
@@ -83,6 +79,6 @@
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

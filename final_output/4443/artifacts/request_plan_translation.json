@@ -1,23 +1,11 @@
 {
-  "schema_version": "2.3",
+  "status": "pending_japanese_analysis",
   "stage": "translation",
-  "security_code": "4443",
   "model_profile": "default",
   "provider": "gemini",
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
-  "request_options": {},
-  "request_id": "239e7bbb14d47406",
-  "manifest_id": "ae9fbea0153cb705",
-  "system_prompt_sha256": "4886775bcec56c8d77bc29a22007987f3debfdfd247ec8e1cde0f68826efbf0a",
-  "prompt_sha256": "0718a3b93186b467ed7ef87953c174233cb348c732c34ee85aaa7f4bb48815b0",
-  "response_schema_sha256": "6486efaa42c69eea7f8de766d64fca168eeb958f825d4930f340474e947ddacc",
-  "files": [],
-  "style_blueprint_path": null,
-  "style_blueprint_sha256": null,
-  "exemplar_path": null,
-  "exemplar_sha256": null,
-  "max_output_tokens": 24576,
-  "makes_network_request": true,
-  "request_count_if_executed": 1
+  "makes_network_request_when_executed": true,
+  "request_count_if_executed": 1,
+  "note": "Complete and persist japanese analysis before preparing the translation request ID."
 }

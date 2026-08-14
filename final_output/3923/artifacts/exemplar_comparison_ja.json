@@ -3,19 +3,18 @@
     "structure": 5.0,
     "section_coverage": 5.0,
     "executive_breadth": 5.0,
-    "analytical_depth": 2.67,
+    "analytical_depth": 2.88,
     "trend_specificity": 4.0,
-    "evidence_density": 2.73,
-    "tone": 4.4,
-    "repetition": 4.64,
-    "readability": 4.0,
-    "approximate_length": 4.17
+    "tone": 5.0,
+    "repetition": 5.0,
+    "readability": 5.0,
+    "approximate_length": 4.47
   },
-  "overall_score_0_to_5": 4.16,
+  "overall_score_0_to_5": 4.59,
   "generated_metrics": {
-    "main_characters": 5010,
-    "trend_narrative_characters": 1756,
-    "trend_perspective_narrative_characters": 306,
+    "main_characters": 5546,
+    "trend_narrative_characters": 3250,
+    "trend_perspective_narrative_characters": 337,
     "headings": [
       "# 株式会社ラクス（3923）",
       "## 企業概要",
@@ -30,14 +29,17 @@
       "### 変わらなかったこと",
       "### 変化したこと",
       "### 資本配分の変化",
+      "### 資本配分は価値を創出したか",
       "### 最新コメントから読み取れる現在地"
     ],
-    "citation_groups": 17,
-    "citation_references": 49,
-    "citation_references_per_1000_chars": 9.78,
+    "citation_groups": 0,
+    "citation_references": 0,
+    "citation_references_per_1000_chars": 0.0,
     "unique_years": [
+      2016,
       2017,
       2018,
+      2019,
       2020,
       2021,
       2022,
@@ -50,15 +52,15 @@
       2027,
       2029
     ],
-    "year_span": 9,
-    "bold_analytical_themes": 7,
-    "contrast_terms": 3,
-    "sentence_count": 56,
-    "average_sentence_characters": 66.93,
-    "long_sentence_count": 4,
-    "repeated_sentence_count": 1,
+    "year_span": 10,
+    "bold_analytical_themes": 8,
+    "contrast_terms": 5,
+    "sentence_count": 71,
+    "average_sentence_characters": 66.86,
+    "long_sentence_count": 0,
+    "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
-    "promotional_terms": 1,
+    "promotional_terms": 0,
     "first_person_terms": 0,
     "key_takeaway_categories": [
       "earnings_profitability",
@@ -83,6 +85,6 @@
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

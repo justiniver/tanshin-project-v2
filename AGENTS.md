@@ -95,10 +95,12 @@ normalization, validation, rendering, retry, and failure tests.
   strategy and execution, segment and business drivers, capital allocation, and
   material footnotes. It must not rank themes, score management, or draft the
   report.
-- It may also organize a small number of material capital decisions into factual
-  cross-filing lifecycle records: action and rationale, later outcome,
-  attribution strength, contrary evidence, and record maturity. It must not make
-  the value-creation verdict.
+- It may also organize a small number of material capital-allocation
+  destinations into factual cross-filing lifecycle records. These may include
+  persistent organic capital accumulation without a discrete announced
+  decision. Keep capital inputs, immediate transaction or accounting effects,
+  subsequent returns, attribution strength, contrary evidence, and record
+  maturity separate. It must not make the value-creation verdict.
 - Keep research extraction compact. Do not recreate source-ID graphs, commentary
   taxonomies, citation-ready quotations, or synthesis conclusions in request 1.
   Combine related same-page statements when that preserves their figures,

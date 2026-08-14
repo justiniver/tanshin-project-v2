@@ -1,533 +1,235 @@
 {
-  "schema_version": "1.0.0",
-  "identity": {
-    "security_code": "2768",
-    "company_name_ja": "双日株式会社",
-    "company_name_en": "Sojitz Corporation",
-    "latest_filename": "01_2027_Q1_tanshin.pdf",
-    "latest_period_ja": "2027年3月期 第1四半期",
-    "latest_period_en": "FY2027 Q1"
-  },
+  "schema_version": "2024-11-01",
   "claims": [
     {
-      "claim_id": "overview_business",
+      "claim_id": "claim_001",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "自動車、インフラ、化学、金属・資源、生活産業など多角的な事業をグローバルに展開する総合商社",
-      "body_ja": "双日は、自動車の完成車トレーディングや販売、航空機・交通・都市インフラ事業、再生可能エネルギーや省エネサービス、石炭・金属・資源リサイクル、各種化学品のトレード・製造販売、食料・アグリビジネス、リテール・消費財流通など幅広い分野で商品・サービスの提供および事業投資を行っている。国内外の子会社や持分法適用会社を通じ、トレーディング機能と事業投資・権益投資を組み合わせることで収益を得るビジネスモデルを構築している。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "自動車、インフラ、資源、化学、リテール等を手掛ける大手総合商社",
+      "body_ja": "双日は、完成車卸売・小売や自動車販売金融を行う自動車、航空機代理店や交通・都市インフラ開発を担う航空・交通インフラ、再生可能エネルギーや省エネサービスを展開するエネルギー・総合インフラ、石炭・鉄鉱石・金属・リサイクルを扱う金属・資源・リサイクル、各種合成樹脂やメタノールを商う化学、食料・肥料・資材を扱う生活産業・アグリビジネス、水産食品加工や業務用食品卸・煙草取引・小売商業施設等を展開するリテール・コンシューマーサービスの7つの報告セグメントを中心に、グローバルなトレーディングおよび事業投資を通じて多角的に収益を獲得する総合商社である。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest_takeaway_earnings",
+      "claim_id": "claim_002",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2027年3月期第1四半期は化学やエネルギー・総合インフラ等の増益により四半期利益302億22百万円（前年同期比43.4%増）を達成",
-      "body_ja": "双日の2027年3月期第1四半期累計業績は、収益が前年同期比39.3%増の8,342億49百万円、親会社の所有者に帰属する四半期利益が前年同期比43.4%増の302億22百万円となった。電力・ガス小売事業の連結子会社化やメタノール価格の上昇、日本エイアンドエルの利益貢献、豪州インフラ開発事業の新規連結などが大幅増益に寄与した。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0002",
-        "01_2027_Q1_tanshin.pdf:s0003",
-        "01_2027_Q1_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "2027年3月期第1四半期は電力小売の新規連結や化学・省エネ取引増加により大幅増収増益",
+      "body_ja": "2027年3月期第1四半期の連結収益は前年同期比39.3%増の8,342億49百万円、売上総利益は同35.4%増の1,113億47百万円、親会社の所有者に帰属する四半期純利益は同43.4%増の302億22百万円となった。電力・ガス小売事業の新規連結や米国省エネ関連事業の取引増加、メタノール市況の上昇、ベトナム食品卸および煙草取引の好調が収益と利益を牽引した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_takeaway_cashflow",
+      "claim_id": "claim_003",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "運転資金増加等により営業活動によるキャッシュ・フローは572億79百万円の支出超過を記録",
-      "body_ja": "当第1四半期累計期間の営業活動によるキャッシュ・フローは、営業収入や配当収入があったものの、運転資金の増加などにより572億79百万円の支出（前年同期は7億26百万円の支出、前年同期比565億53百万円の支出増加）となった。投資活動によるキャッシュ・フローも金融ソリューション事業への出資等で419億17百万円の支出となっている。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "資産規模の拡大に伴いネット有利子負債が増加もネットDERは1.02倍を維持",
+      "body_ja": "2027年3月期第1四半期末の資産合計は、持分法投資の増加等により前期末比823億99百万円増の3兆7,304億22百万円となった。営業活動によるキャッシュ・フローが運転資金増加等により572億79百万円の支出となったことや投資実行に伴い、ネット有利子負債は前期末比1,315億37百万円増の1兆1,711億3百万円へ拡大したものの、ネットDERは1.02倍と財務健全性の目安水準（1.0倍程度）を概ね維持している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_takeaway_outlook_returns",
+      "claim_id": "claim_004",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期純利益予想1,300億円を維持し年間配当予想180円と株主資本DOE4.5%の累進配当方針を提示",
-      "body_ja": "双日は2027年3月期の通期連結業績見通しとして、親会社株主帰属当期純利益1,300億円（前期比25.5%増）を据え置いている。「中期経営計画2026」の下、中計期間3カ年累計の基礎的営業キャッシュ・フローの3割程度を株主還元に充当し、株主資本DOE4.5%を基本とする累進配当方針に基づき1株当たり年間180円の配当を予定している。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0009",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
-      "statement_type": "target",
+      "headline_ja": "通期純利益予想1,300億円と年間配当予想180円を据え置き",
+      "body_ja": "2027年3月期通期の連結業績予想は、親会社の所有者に帰属する当期利益1,300億円（前期比25.5%増、想定為替レート150円/US$）を前回公表値から据え置いた。「中期経営計画2026」で掲げる株主資本DOE4.5%を基本とする累進的配当方針に基づき、年間配当予想も1株当たり180円（中間90円、期末90円）を維持している。",
+      "statement_type": "forecast",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest_driver_chemical_energy",
+      "claim_id": "claim_005",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "化学およびエネルギー・総合インフラセグメントが市況上昇や新規連結により業績を牽引",
-      "body_ja": "化学セグメントは、メタノール価格の上昇、日本エイアンドエルの利益貢献、国内外トレードの堅調推移により、親会社所有者帰属四半期利益が11,053百万円（前年同期比5,221百万円増）と大幅増益となった。エネルギー・総合インフラセグメントも豪州インフラ開発事業の新規連結や米国省エネ関連事業の取引増加により、同6,858百万円（前年同期比2,489百万円増）へと拡大した。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0003",
-        "01_2027_Q1_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "化学・エネルギー｜追い風：市況上昇と新規連結・取引増が大幅増益を牽引",
+      "body_ja": "化学セグメントはメタノール価格上昇や日本エイアンドエルの貢献、堅調なトレードにより四半期純利益が前年同期比52億21百万円増の110億53百万円となった。エネルギー・総合インフラセグメントも電力・ガス小売事業の新規連結や豪州インフラ開発、米国省エネ取引増が寄与し同24億89百万円増の68億58百万円と好調に推移した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_driver_metals_agri_drag",
+      "claim_id": "claim_006",
       "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "豪州原料炭の生産効率低迷と海外肥料の作付遅れが金属・資源および生活産業の減益要因に",
-      "body_ja": "金属・資源・リサイクルセグメントは、主に豪州原料炭事業における生産効率の低迷等により四半期利益が2,130百万円（前年同期比971百万円減）と減益になった。また、生活産業・アグリビジネスセグメントも海外肥料事業での少雨影響による作付遅れに伴う取扱数量の減少により同2,652百万円（前年同期比800百万円減）となった。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0004",
-        "01_2027_Q1_tanshin.pdf:s0006"
-      ],
+      "headline_ja": "リテール・コンシューマー｜追い風：ベトナム食品卸と煙草取引が堅調に拡大",
+      "body_ja": "リテール・コンシューマーサービスセグメントは、ベトナムにおける業務用食品卸売事業の好調な進捗や煙草取引の拡大が寄与し、四半期純利益が前年同期比34億円増の43億7百万円となった。過去数年間に実施した東南アジアを中心とするリテール領域への事業投資が安定的な収益創出に貢献している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_outlook_guidance",
+      "claim_id": "claim_007",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "金属・資源｜逆風：豪州原料炭事業の生産効率低迷により減益",
+      "body_ja": "金属・資源・リサイクルセグメントの四半期純利益は、前年同期比9億71百万円減の21億30百万円となった。主に豪州原料炭事業における生産効率の低迷や市況要因が響いており、前期（2026年3月期）に見られた減損計上や生産悪化の影響が一部残存している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_008",
       "section": "latest.outlook",
       "order": 1,
-      "headline_ja": "為替前提150円/US$の下で通期親会社所有者帰属当期純利益1,300億円を計画",
-      "body_ja": "双日は2027年3月期の通期業績見通しとして、売上総利益4,400億円、税引前利益1,700億円、親会社の所有者に帰属する当期純利益1,300億円を公表している。前提為替レートは1US$=150円に設定されている。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0009"
-      ],
+      "headline_ja": "通期純利益1,300億円に向けて非資源分野の収益積み上げが重要",
+      "body_ja": "2027年3月期通期の親会社所有者帰属当期利益予想1,300億円の達成に向けて、第1四半期純利益（302億円、進捗率約23.2%）は概ね順調な滑り出しを見せている。前提為替レート150円/US$のもと、資源市況の不透明感を背景に、エネルギー・総合インフラや化学、リテール等の非資源分野における新規連結・投資効果の着実な発現が目標達成の鍵となる。",
       "statement_type": "forecast",
-      "is_inference": false,
-      "causal": false
+      "is_inference": true,
+      "causal": true
     },
     {
-      "claim_id": "latest_risk_resource_weather",
+      "claim_id": "claim_009",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "豪州原料炭の操業効率低迷および天候不順に伴う海外肥料取扱量の変動リスク",
-      "body_ja": "当第1四半期において、豪州原料炭事業での生産効率低迷や、少雨等の天候要因による海外肥料事業での作付遅れ・取扱量減少が顕在化した。資源市況の変動や現地の操業・天候トラブルはセグメント業績を下振れさせる不確実性要因となる。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0004",
-        "01_2027_Q1_tanshin.pdf:s0006"
-      ],
+      "headline_ja": "資源市況の下落および鉱山現場の生産効率回復の遅れに関する不確実性",
+      "body_ja": "金属・資源・リサイクルセグメントでは、豪州原料炭事業における生産効率低下や市況下落が業績の下押し要因となっている。今後の資源価格の推移や現場の生産性改善の遅れによっては、セグメント利益のさらなる下振れや資産評価への悪影響が生じるリスクが存在する。",
       "statement_type": "risk",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "latest_risk_debt_working_capital",
+      "claim_id": "claim_010",
       "section": "latest.risk",
       "order": 2,
-      "headline_ja": "運転資金増加による営業キャッシュ・フロー悪化とネット有利子負債の拡大",
-      "body_ja": "当第1四半期末のネット有利子負債は前期末比1,315億37百万円増加の1兆1,711億3百万円となり、ネット有利子負債倍率は1.02倍へ上昇した。運転資金増加等により営業活動によるキャッシュ・フローが572億79百万円の支出超となる中、資金調達負担の増大や金利水準の推移が財務上のリスク経路となる。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "運転資金需要増に伴う有利子負債拡大と海外事業の減損・為替変動リスク",
+      "body_ja": "第1四半期において営業キャッシュ・フローが572億円の支出となりネット有利子負債が1兆1,711億円に拡大した。金利高止まり局面における調達コスト増加に加え、過去に買収した海外子会社や事業資産（自動車販売、インフラ等）における事業環境悪化時の減損損失リスクや為替変動リスクに対する注視が必要である。",
       "statement_type": "risk",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "latest_context_position",
+      "claim_id": "claim_011",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "非資源・インフラ案件の新規連結が成長をけん引する一方、運転資金負荷と有利子負債拡大の管理が求められる現在地",
-      "body_ja": "2027年3月期第1四半期は、電力・ガス小売や豪州インフラ開発の新規連結、省エネ取引増加、化学トレードの好調により、前年同期比43.4%増の純利益302億22百万円と良好なスタートを切った。新中期経営計画2026の初年度として通期1,300億円目標に向け進捗しているが、一方で運転資金増加に伴う営業キャッシュ・フローのマイナスや、ネット有利子負債倍率1.02倍への上昇が見られる。新規取得資産のバリューアップと財務規律の維持が今後の重要な確認点となる。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0002",
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0008",
-        "01_2027_Q1_tanshin.pdf:s0009"
-      ],
-      "statement_type": "actual",
+      "headline_ja": "非資源領域の拡大が業績を牽引も運転資金拡大と資源事業の底入れ確認が課題",
+      "body_ja": "2027年3月期第1四半期は、電力・ガス小売や省エネサービス、ベトナム食品卸など非資源分野での事業投資・新規連結成果が顕著に現れ、前年同期比で大幅な増収増益を達成した。会社予想の通期純利益1,300億円に対する進捗は概ね想定通りである。一方で、運転資金増加に伴う一時的な営業CF赤字と有利子負債の増加、豪州原料炭事業における生産効率改善の遅れという課題も顕在化している。投資家は今後、非資源事業における有機的な利益成長の持続性と、営業CFのプラス回帰、および資源事業の業績底入れを見極める必要がある。",
+      "statement_type": "inference",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_perspective_decade",
+      "claim_id": "claim_012",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "資源市況依存のボラティリティから非資源・インフラ積み上げによる純利益1,000億円台の定着へシフトした10年",
-      "body_ja": "過去10年間の双日は、初期（中計2017・2020）において石炭等の資源価格やコロナ禍の影響を受けて業績が大きく落ち込み、FY2021には純利益270億円（中計目標750億円）と未達を余儀なくされた。これに対し中間（中計2023）以降、省エネ、ヘルスケア、食品・リテール等の非資源分野へ3,300億円規模の成長投資を集中実行した。市況追風を受けたFY2022・FY2023の最高益更新を経て、近年（中計2026）は資源市況下落局面でも年間純利益1,000億円超（FY2024: 1,007億円、FY2025: 1,106億円、FY2026: 1,036億円）を維持できる構造を構築した。ただし豪州原料炭や一部投資案件での減損リスクは残されており、資産の質の検証が引き続き重要である。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0021",
-        "07_2021_FY_tanshin.pdf:s0018",
-        "07_2021_FY_tanshin.pdf:s0019",
-        "06_2022_FY_tanshin.pdf:s0017",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "05_2023_FY_tanshin.pdf:s0016",
-        "04_2024_FY_tanshin.pdf:s0014",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
-      "statement_type": "actual",
+      "headline_ja": "10年間の軌跡：資源高騰期の最高益更新を経て非資源ベース利益1,000億円超へ底上げ",
+      "body_ja": "過去10年間の双日の軌跡は、石炭・金属等の資源市況循環に大きく左右される損益構造から、インフラ・省エネ・化学・リテール等への積極的な資本配分を通じて非資源分野の収益基盤を強化し、全社的な利益水準の底上げを図ってきた過程としてまとめられる。2017年3月期～2021年3月期（中計2017・2020）にかけては、市況下落やコロナ禍（2021年3月期純利益270億円）により業績が大きく落ち込む局面を経験した。しかし「中期経営計画2023」期間中の資源価格高騰（2022年3月期純利益823億円、2023年3月期1,112億円）で創出したキャッシュを非資源成長分野へ再投資した結果、資源市況が再下落した2024年3月期（1,007億円）や2026年3月期（1,036億円、減損計上後）においても連結純利益1,000億円台を維持できる体質へと変化した。",
+      "statement_type": "inference",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_consistent_resource_swings",
+      "claim_id": "claim_013",
       "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "金属・資源セグメントにおける石炭市況連動と業績ボラティリティの継続",
-      "body_ja": "10年間を通じて金属・資源セグメントは双日の主要な収益源であり続けたが、同時に石炭市況のアップダウンにより業績が大きく揺れ動く構造も持続した。初期（FY2018）は豪州石炭価格高騰で純利益218億82百万円（前期比118億52百万円増）となったが、市況低迷期のFY2021には16億73百万円の損失へ落ち込んだ。中間（FY2022・FY2023）は市況急騰によりFY2022に340億68百万円、FY2023に627億4百万円の利益を記録したものの、直近（FY2024・FY2026）は市況下落や操業効率低下、減損計上によりFY2026に48億23百万円へ減益した。強固な権益を持ちつつも市況サイクルに影響される性質は一貫している。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0021",
-        "07_2021_FY_tanshin.pdf:s0018",
-        "06_2022_FY_tanshin.pdf:s0017",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "04_2024_FY_tanshin.pdf:s0014",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
+      "headline_ja": "資源セグメントの市況感受性と業績ボラティリティの継続",
+      "body_ja": "10年間の観察期間を通じて、金属・資源（旧石炭・金属）セグメントは依然として全社業績のボラティリティの主要因であり続けている。2017年3月期の純利益100億円から、石炭市況高騰を背景とした2023年3月期の627億円まで利益が拡大する一方、市況低迷や事業減損に見舞われた2021年3月期（16億円の純損失）や2026年3月期（48億円）のように激しく変動しており、資源市況に対する高い業績感応度は一貫した構造的特徴である。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_consistent_financial_discipline",
+      "claim_id": "claim_014",
       "section": "trend.consistent",
       "order": 2,
-      "headline_ja": "資金調達構造の安定維持とネットDER1.0倍前後での規律あるコントロールの継続",
-      "body_ja": "財務戦略として、双日は10年間にわたり長期調達比率の維持と十分な手元流動性の確保、ネットDERの規律あるコントロールを一貫して実施してきた。初期（FY2018末ネットDER 1.03倍、自己資本比率25.0%）、中間（FY2022末ネットDER 1.06倍、自己資本比率27.4%）、直近（FY2025末ネットDER 0.92倍、自己資本比率31.4%、FY2026末ネットDER 0.95倍、自己資本比率29.9%）と、積極的な新規投融資や株主還元を実行しながらも、ネットDERを1.0倍前後の健全な範囲内に維持し続けている。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0021",
-        "06_2022_FY_tanshin.pdf:s0017",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "03_2025_FY_tanshin.pdf:s0013",
-        "02_2026_FY_tanshin.pdf:s0011"
-      ],
+      "headline_ja": "財務規律（ネットDER 1.0倍前後）の堅持と安定的な株主還元姿勢",
+      "body_ja": "過去10年間、双日は「ネットDER 1.5倍以下（近年は1.0倍程度）」という財務規律を一貫して維持してきた。ネット有利子負債を6,000億円～1兆円程度の範囲に抑えつつ、自己資本の積み上がりに合わせて配当性向の引き上げ（25%→30%→株主資本DOE4.5%導入）や自己株式取得を実行しており、バランスシートの健全性確保と株主還元の両立という経営スタンスは一貫している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "trend_change_portfolio_shift",
+      "claim_id": "claim_015",
       "section": "trend.change",
       "order": 1,
-      "headline_ja": "収益構造の変化：資源依存型の変動体質から非資源・インフラ積み上げによる年間純利益1,000億円超の安定基盤へ移行",
-      "body_ja": "【変化前】初期（FY2017〜FY2021）は純利益が300億〜700億円規模で推移し、FY2021にはコロナ禍とメタノール・資源市況下落により270億1百万円に減少するなど環境変化に脆弱な構造であった。【転換期】中間（中計2023期間）において3,300億円規模の新規投資枠を設定し、米国省エネサービス、マリンフーズ（水産加工）、JALUX、病院PPPや太陽光発電など非資源・インフラ資産を本格取得した。【現在】直近（FY2024〜FY2026）では、資源市況が低下した局面（FY2026金属・資源純利益48億23百万円）でも、エネルギー・ヘルスケアや航空・インフラ、リテール等の非資源分野が利益を下支えし、3期連続で年間純利益1,000億円超（FY2024: 1,007億65百万円、FY2025: 1,106億33百万円、FY2026: 1,036億11百万円）を達成できる体制へ変化した。",
-      "evidence_ids": [
-        "11_2017_FY_tanshin.pdf:s0022",
-        "07_2021_FY_tanshin.pdf:s0018",
-        "07_2021_FY_tanshin.pdf:s0019",
-        "06_2022_FY_tanshin.pdf:s0017",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "05_2023_FY_tanshin.pdf:s0016",
-        "04_2024_FY_tanshin.pdf:s0014",
-        "03_2025_FY_tanshin.pdf:s0013",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
-      "statement_type": "actual",
-      "is_inference": true,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_change_shareholder_return",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "株主還元方針の変化：配当性向30%目安からDOE4.5%基本の累進配当と機動的自社株買いの導入へ進化",
-      "body_ja": "【変化前】初期（中計2017・中計2020）の還元方針は「連結配当性向25%〜30%程度」を基本とし、利益連動性が高く業績悪化時には減配（FY2021の年間配当は併合換算前10円/併合後50円）となる仕組みであった。【転換期】中計2023において、配当性向30%程度に加え「PBR1倍未満の時は時価DOE4%を下限、1倍以上の時は簿価DOE4%を下限」とする下限配当ルールを導入し、さらに基礎的CFの黒字を活用した自己株式取得を開始した。【現在】中計2026（FY2025〜）では「基礎的営業CFの3割程度を還元」とし、「株主資本DOE4.5%を基本とする累進配当方針」を明記。年間配当はFY2023の130円、FY2024の135円、FY2025の150円、FY2026の165円、FY2027予想180円へと連続増配が行われる体系へ変化した。",
-      "evidence_ids": [
-        "11_2017_FY_tanshin.pdf:s0022",
-        "07_2021_FY_tanshin.pdf:s0018",
-        "06_2022_FY_tanshin.pdf:s0017",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "04_2024_FY_tanshin.pdf:s0014",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "非資源領域（インフラ・省エネ・リテール等）への事業投資拡大による収益構造の質的転換",
+      "body_ja": "初期（2017-2020年3月期）においてはトレーディングや資源権益に依存する割合が高かったが、中期（2021-2023年3月期）以降、米国省エネサービス会社、水産加工のマリンフーズ、JALUX、ベトナム食品卸、電力小売事業等の連続的な買収・投資を実行した。これにより、エネルギー・総合インフラやリテール・コンシューマーサービスセグメントが強固な非資源収益源へと成長し、資源市況悪化時でも連結利益を下支えする構造へ変化した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_capital_allocation_evolution",
+      "claim_id": "claim_016",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "株主還元方針の進化：配当性向基本から累進配当および株主資本DOE指標の導入へ",
+      "body_ja": "中計2017での配当性向25%程度から、中計2020・2023での配当性向30%程度（およびPBR1倍未満時の下限配当設定）へ強化され、さらに「中期経営計画2026」では株主資本DOE 4.5%を基本とする累進的配当方針へと進化した。業績連動型の変動配当から、資本ベースの安定性・予見可能性を高めた還元枠組みへの転換が明確となっている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_017",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "基礎的営業キャッシュ・フロー創出力を背景とした成長投資と累進配当・自社株買いの両立構造の確立",
-      "body_ja": "双日の資本配分方針は、10年間で資金循環の仕組みを高度化させた。初期は3カ年投融資3,000億円の範囲内で基礎的CF黒字化を重視した。中間（中計2023）では3,300億円規模の新規投資枠を設定して省エネ、水産、リテール、ヘルスケアへ集中投資した。直近（中計2026）では「基礎的営業CFの3割程度を株主還元に充当」することを明示し、営業CF創出力を背景に非資源分野のM&A・新規連結とDOE4.5%に基づく累進配当・自己株式取得を両立させる配分構造を確立している。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0021",
-        "05_2023_FY_tanshin.pdf:s0015",
-        "05_2023_FY_tanshin.pdf:s0016",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "基礎的営業CFの黒字を活用した非資源・インフラ投資と自己株式取得への資金配分",
+      "body_ja": "過去10年間の資本配分は、資源権益の選択と集中（一般炭権益の売却回収等）を進める一方で、成長投資をEssentialインフラ開発、米国省エネ事業、リテール・フード領域へ集中させてきた。中計2020で約2,600億円、中計2023で2,430億円の新規投資を実行した。また、創出したキャッシュを原資に、2020年3月期（30億円）、2023年3月期（300億円）、2026年3月期（100億円枠）等、機動的な自己株式取得・消却を組み合わせた資本効率重視の配分を実施してきた。",
       "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_018",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "資本配分の成果は混在：非資源分野の収益底上げに成功も一部投資の減損がリターンを抑制",
+      "body_ja": "過去10年間において追加資本が最も多く配分された先は、エネルギー・総合インフラ（旧エネルギー・社会インフラ、セグメント資産：2017年3月期1,372億円→2026年3月期7,585億円）およびリテール・コンシューマーサービス（マリンフーズやJALUX等）である。これらの非資源領域は、純利益水準を過去の200～400億円規模から1,000億円台へと底上げすることに貢献しており、資本蓄積に見合う一定の収益拡大成果を示している。しかし一方で、金属・資源分野での豪州原料炭事業の生産効率悪化に伴う減損（2026年3月期）、台湾洋上風力発電事業での損失計上（2023年3月期）、豪州中古車事業での減損（2026年3月期）など、累積投資に対するリターンの毀損も散見される。総合すると、資本配分は非資源の安定収益基盤化という観点では成果を上げているものの、個別案件のリスク管理と資産効率（ROIC/ROA）の観点では成果が混在した評価となる。",
+      "statement_type": "inference",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_implication_verification",
+      "claim_id": "claim_019",
       "section": "trend.implication",
       "order": 1,
-      "headline_ja": "投資家が今後確認すべき点：新規買収・連結資産のバリューアップと継続的な基礎的営業キャッシュ・フロー創出の実証",
-      "body_ja": "双日は積極的な非資源投資を通じて純利益1,000億円台のベースを築いたが、直近第1四半期にみられるように運転資金増加に伴う営業キャッシュ・フローのマイナスや有利子負債の拡大、豪州原料炭や一部事業の生産効率・減損リスクも併存している。投資家にとっては、新規取得したインフラ・エネルギー・消費関連資産の買収後統合（PMI）とバリューアップが着実に進み、会計上の利益のみならず継続的な基礎的営業キャッシュ・フローの創出と高ROE（10%超）の維持につながるかどうかが今後の主要な検証軸となる。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0004",
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0008",
-        "02_2026_FY_tanshin.pdf:s0011",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
-      "statement_type": "actual",
+      "headline_ja": "新規投資案件の有機的収益化と資源事業の事業再生・リスク管理の両立が焦点",
+      "body_ja": "投資家にとって今後の最大の検証点は、急速に拡大させた非資源事業資産（省エネ、インフラ、リテール等）が一時的な新規連結効果にとどまらず、資本コストを上回る有機的なキャッシュ・フローとROICを継続的に創出できるか否かである。同時に、豪州原料炭や中古車事業等で見られた事業減損の再発を防ぎ、既存投資資産のバリューアップと厳格なアセットマネジメントを実証することが求められる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_020",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "「事業や人材を創造し続ける総合商社」に向けた非資源成長領域への戦略的整合性",
+      "body_ja": "経営陣は中計2020、2023、2026を通じて、サステナビリティ課題解決（脱炭素、Essentialインフラ、リテール等）に整合する成長分野へのリソース集中を一貫して掲げている。脱炭素方針に基づく一般炭権益の削減や、省エネ・再エネ・リテール分野への事業投資拡大は、示された戦略目標と合致しており、方向性としての戦略的一貫性は確保されている。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_021",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "非資源案件の積極買収・連結化を推進する一方、一部大口投資・資源案件での減損・損失管理に課題",
+      "body_ja": "マリンフーズやJALUXのTOB・子会社化、米国省エネ事業会社や電力小売事業の取得など、中計で掲げた投融資計画をスピード感を持って実行する実行力を示してきた。一方で、2023年3月期の台湾洋上風力発電での損失計上、2026年3月期の豪州原料炭事業および豪州中古車事業での減損計上など、買収後の事業規律やオペレーション管理、市況悪化時の耐性においては課題を残している。",
+      "statement_type": "mixed",
       "is_inference": true,
       "causal": true
-    }
-  ],
-  "evidence": [
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "電力・ガス小売事業の連結子会社化及び省エネ関連事業での取引増加によるエネルギー・総合インフラでの増収や、各種化学品の取引増加及び市況上昇による化学での増収などにより、8,342億49百万円と前年同期比39.3％の増収となりました。",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況（1）連結経営成績",
-      "tags": []
     },
     {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "また、親会社の所有者に帰属する四半期利益は、前年同期比91億43百万円増益の302億22百万円となりました。",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況（1）連結経営成績",
-      "tags": []
+      "claim_id": "claim_022",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "資源市況激変期における業績予想の乖離と見通し規律の慎重姿勢",
+      "body_ja": "過去9年間の通期純利益予想と実績の比較（観測数9回）では、上振れ5回、下振れ3回、ほぼインライン1回となっており、予想Postureは混在している。2021年3月期（コロナ禍で予想比-32.5%）、2022年3月期（資源高騰で予想比+55.3%）、2026年3月期（原料炭減損等で予想比-9.9%）のように、外部環境の激変や一過性損益により期初予想からの乖離が大きくなる傾向が見られる。",
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "豪州インフラ開発事業の新規連結及び米国省エネ関連事業の取引増加等により増益",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況 セグメント別業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "主に豪州原料炭事業における生産効率の低迷等により減益",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況 セグメント別業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "メタノール価格の上昇による影響や日本エイアンドエルの利益貢献、国内外トレードの堅調な推移等により大幅増益",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況 セグメント別業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "海外肥料事業での少雨影響による作付遅れに伴う取扱数量の減少により減益",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況 セグメント別業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "有利子負債総額から現金及び現金同等物、及び定期預金を差し引いたネット有利子負債は前期末比1,315億37百万円増加の1兆1,711億3百万円となり、ネット有利子負債倍率は1.02倍となりました。",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況（2）連結財政状態",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "当第1四半期連結累計期間の営業活動による資金は、営業収入や配当収入があったものの、運転資金の増加などにより572億79百万円の支出となりました。",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 当四半期決算の概況（3）連結キャッシュ・フロー",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0009",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "現時点での通期の連結業績見通しは、以下のとおりであります。売上総利益 4,400億円 税引前利益 1,700億円 当期純利益 1,350億円 当期純利益（当社株主帰属） 1,300億円",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "forecast",
-      "source_section": "1. 当四半期決算の概況（4）連結業績予想",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0010",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "「中期経営計画2026」においては、中計期間3カ年累計の基礎的営業キャッシュ・フローの3割程度を株主還元に充当します。また、株主資本DOE4.5％を基本とする累進的な配当方針としております。",
-      "period_label_ja": "2027年3月期第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "target",
-      "source_section": "1. 当四半期決算の概況（5）利益配分に関する基本方針及び当期の配当",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0011",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比70億25百万円減益の、1,036億11百万円となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（1）連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0012",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "豪州原料炭事業における市況下落、生産効率の低迷に加え、減損の計上等により減益",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 セグメント別業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2025_FY_tanshin.pdf:s0013",
-      "source_filename": "03_2025_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比98億68百万円増益の、1,106億33百万円となりました。",
-      "period_label_ja": "2025年3月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2024_FY_tanshin.pdf:s0014",
-      "source_filename": "04_2024_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比104億82百万円減少し、1,007億65百万円となりました。",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2023_FY_tanshin.pdf:s0015",
-      "source_filename": "05_2023_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比289億15百万円増加し、1,112億47百万円となりました。",
-      "period_label_ja": "2023年3月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2023_FY_tanshin.pdf:s0016",
-      "source_filename": "05_2023_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "新規投資については、キャッシュ・フローをマネージした規律を堅持しつつ、メガトレンドを踏まえた成長領域や新たな領域における投資を中期経営計画３ヵ年で合計3,300億円（うち300億円は人や組織改革に向けた非財務投資）程度を実行することにより、企業価値の着実な向上を実現していきます。",
-      "period_label_ja": "2023年3月期",
-      "period_label_en": "FY2023",
-      "statement_type": "target",
-      "source_section": "3. 経営方針（2）今後の見通し及び対処すべき課題",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2022_FY_tanshin.pdf:s0017",
-      "source_filename": "06_2022_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比553億31百万円増加し、823億32百万円となりました。",
-      "period_label_ja": "2022年3月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2021_FY_tanshin.pdf:s0018",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益は前期比338億20百万円減少し、270億1百万円となりました。",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2021_FY_tanshin.pdf:s0019",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "目標値である最終年度当期利益約750億円、ROA3％超、ROE10％超については、最終年度実績は、当期純利益270億円、ROA1.2％、ROE4.5％と未達となりました。",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "3. 経営方針（2）中長期的な会社の経営戦略・目標とする経営指標",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2020_FY_tanshin.pdf:s0020",
-      "source_filename": "08_2020_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益（以下、当期純利益）は前期比95億98百万円減少し、608億21百万円となりました。",
-      "period_label_ja": "2020年3月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "10_2018_FY_tanshin.pdf:s0021",
-      "source_filename": "10_2018_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益（以下、当期純利益）は前期比160億82百万円増加し、568億42百万円となりました。",
-      "period_label_ja": "2018年3月期",
-      "period_label_en": "FY2018",
-      "statement_type": "actual",
-      "source_section": "当社グループの業績",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0022",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "親会社の所有者に帰属する当期純利益 40,760百万円",
-      "period_label_ja": "2017年3月期",
-      "period_label_en": "FY2017",
-      "statement_type": "actual",
-      "source_section": "1. 平成29年3月期の連結業績（1）連結経営成績",
-      "tags": []
+      "claim_id": "claim_023",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "未達・減損要因の迅速な開示とセグメント再編を通じた透明性確保",
+      "body_ja": "中計2020での目標未達（純利益270億円 vs 目標750億円）や、台湾風力・豪州原料炭等の損失・減損が発生した際、決算短信や説明資料においてその要因を客観的に開示説明している。また、時代の成長領域に合わせたセグメント区分の見直しを適時行うなど透明性への配慮が見られるが、個別の投資案件ごとの資本効率や回収状況の縦断的トラッキング開示には一層の充実が期待される。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": false
     }
   ],
   "management_consistency": {
@@ -535,48 +237,24 @@
       {
         "dimension": "strategic_coherence",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "双日は「資源市況依存からの脱却」および「非資源・インフラ分野の拡充」という長期戦略方針を一貫して保持している。中計2017から中計2020、中計2023、中計2026に至るまで、2030年の目指す姿に向けて重点領域への成長投資と機能強化の論理を継続的に示しており、戦略的一貫性が高い。",
-        "evidence_ids": [
-          "10_2018_FY_tanshin.pdf:s0021",
-          "07_2021_FY_tanshin.pdf:s0019",
-          "05_2023_FY_tanshin.pdf:s0016",
-          "01_2027_Q1_tanshin.pdf:s0010"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "中計2023で掲げた3,300億円規模の新規投融資枠に対し、米国省エネ、マリンフーズ取得、JALUX公開買付、豪州インフラなどを順次実行し、資産積み上げを実行した。一方で、豪州中古車事業やベトナム製紙事業などの一部投資案件で減損計上が発生しており、取得後バリューアップの実行力には一部混在した面がある。",
-        "evidence_ids": [
-          "05_2023_FY_tanshin.pdf:s0016",
-          "02_2026_FY_tanshin.pdf:s0012"
-        ]
+        "rating": 2,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
         "rating": 2,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "中計2020最終年度（FY2021）ではコロナ禍や市況下落により純利益目標750億円に対し実績270億円と大幅未達となった。一方で中計2023では利益目標650億円に対しFY2022に1,112億円、FY2023に1,007億円を達成し上振れるなど、資源市況に大きく影響される目標達成度の振れ幅が見られる。",
-        "evidence_ids": [
-          "07_2021_FY_tanshin.pdf:s0019",
-          "05_2023_FY_tanshin.pdf:s0015"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "中計目標未達時の要因（コロナ禍・資源市況下落）や個別案件での減損損失計上理由（豪州原料炭市況や操業低迷）、さらには配当方針変更（DOE導入および累進配当方針の明記）の背景について、決算短信等で定量的かつ明確な開示・説明を行っている。",
-        "evidence_ids": [
-          "07_2021_FY_tanshin.pdf:s0019",
-          "02_2026_FY_tanshin.pdf:s0012",
-          "01_2027_Q1_tanshin.pdf:s0010"
-        ]
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "双日は10年間を通じて「非資源・インフラ事業の積み上げによる資源依存からの脱却」という明確な方向性を維持し、戦略的整合性と実行力において高い一貫性を示している。中計2020での目標大幅未達といった市況変動要因による業績目標の振れはあるものの、中計2023以降は年間純利益1,000億円台のベースを構築し、DOE4.5%に基づく累進配当方針の明記など株主還元規律を高めており、透明性・説明責任を含めて経営の一貫性は総じて良好と評価できる。"
+    ]
   },
   "model_notes": []
 }

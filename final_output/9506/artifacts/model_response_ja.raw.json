@@ -5,12 +5,12 @@
       "content-type": "application/json; charset=UTF-8",
       "vary": "Origin, X-Origin, Referer",
       "content-encoding": "gzip",
-      "date": "Wed, 12 Aug 2026 01:58:05 GMT",
+      "date": "Fri, 14 Aug 2026 03:25:07 GMT",
       "server": "scaffolding on HTTPServer2",
       "x-xss-protection": "0",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "server-timing": "gfet4t7; dur=155844",
+      "server-timing": "gfet4t7; dur=91340",
       "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
       "transfer-encoding": "chunked"
     }
@@ -20,8 +20,8 @@
       "content": {
         "parts": [
           {
-            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"9506\",\n    \"company_name_ja\": \"東北電力株式会社\",\n    \"company_name_en\": \"Tohoku Electric Power Company, Incorporated\",\n    \"latest_filename\": \"01_2027_Q1_tanshin.pdf\",\n    \"latest_period_ja\": \"2027年3月期 第1四半期\",\n    \"latest_period_en\": \"FY2027 Q1\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"overview_01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"東北・新潟地域を基盤に発電・販売と送配電を展開する総合エネルギー企業\",\n      \"body_ja\": \"東北電力株式会社は、東北6県および新潟県を中心とする営業地域において、発電・販売事業および送配電事業を主軸として展開する電力事業者である。発電・販売事業では火力、水力、原子力、再生可能エネルギー等の多角的な電源群を保有し、電力小売および卸売取引を行っている。送配電事業は子会社の東北電力ネットワーク株式会社が担い、中立・公平な送配電ネットワークサービスを提供して託送収益等を得る収益構造となっている。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0008\",\n        \"02_2026_FY_tanshin.pdf:s0020\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_key_01\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期第1四半期は域外取引増加で増収も女川2号機稼働減とタイムラグで減益\",\n      \"body_ja\": \"2027年3月期第1四半期の連結売上高は前年同期比46.7%増の7,853億4百万円となった一方、経常利益は5.4%減の544億83百万円、親会社株主に帰属する四半期純利益は4.2%減の361億27百万円となった。市場や販売環境の変化に伴う収支改善や送配電事業での需給調整費用減少があったものの、女川原子力発電所第2号機の稼働減に伴う収支悪化や燃料費調整制度のタイムラグ影響が利益を押し下げた。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0001\",\n        \"01_2027_Q1_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"間接オークション自己約定の増加が売上高を1,551億円押し上げるも損益は中立\",\n      \"body_ja\": \"当第1四半期の売上高には間接オークションに伴う自己約定分が1,551億円（前年同期比1,473億円増）含まれており、これが主たる増収要因となった。ただし、同額の費用が同時に計上される取引構造であるため、連結経常損益への直接的な影響はない。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0002\",\n        \"01_2027_Q1_tanshin.pdf:s0004\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"純資産の積増しにより自己資本比率は20.0%へ上昇し財務健全性が改善\",\n      \"body_ja\": \"2027年3月期第1四半期末の総資産は前連結会計年度末比501億円減の5兆6,817億円となった一方、四半期純利益の計上等により純資産は257億円増の1兆1,615億円となった。この結果、自己資本比率は前連結会計年度末の19.4%から0.6ポイント上昇して20.0%に達した。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0005\",\n        \"01_2027_Q1_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_04\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 4,\n      \"headline_ja\": \"地政学リスクや託送料金改定申請などの不確定要素により通期業績予想は未定を継続\",\n      \"body_ja\": \"中東地域での戦闘再開による地政学的リスクの高まりや燃料価格の不透明感に加え、東北電力ネットワークによる託送供給等収入の見通し期中調整申請に伴う託送料金改定など複数の不確定要素が存在するため、2027年3月期の通期業績予想は未定とされている。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_driver_01\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"新規顧客獲得により小売販売電力量は8.7%増加\",\n      \"body_ja\": \"発電・販売事業において、春季の気温上昇に伴う暖房需要減少があったものの、新規顧客獲得による需要増等が寄与し、小売販売電力量は前年同期比8.7%増の144億kWhとなった。内訳としては電灯需要が4.2%減少した一方で、電力需要が14.6%増加した。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_driver_02\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"送配電事業は需給調整費用の減少により損失幅が27億円縮小\",\n      \"body_ja\": \"送配電事業では、春季の気温高推移による家庭・業務用の暖房需要減少等からエリア電力需要が1.1%減の167億kWhとなった。売上高は再生可能エネルギー電気卸供給の増加等で15.7%増の2,271億円となり、経常損益は需給調整費用の減少により前年同期の112億円の損失から27億円改善し85億円の損失となった。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0009\",\n        \"01_2027_Q1_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_outlook_01\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"燃料価格動向と託送料金改定の見極め完了まで業績算定を見送り\",\n      \"body_ja\": \"会社側は、地政学的リスクに伴う燃料価格・電力市場価格の変動や、送配電子会社における託送料金改定および需給調整関連収支の動向が合理的に算定可能となった時点において速やかに業績予想を開示する姿勢を示している。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_risk_01\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"中東情勢再悪化に伴う燃料価格および市場価格急騰リスク\",\n      \"body_ja\": \"中東地域での戦闘再開等による地政学的リスクの高まりは、LNGや石炭などの燃料調達価格および卸電力市場価格の不透明感を増幅させており、発電コストや電力先渡取引等の時価評価損益を通じて業績を変動させる直接的なリスク要因となっている。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_risk_02\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"原子力発電所の定期検査・稼働変動に伴う火力代替コストリスク\",\n      \"body_ja\": \"当第1四半期において女川原子力発電所第2号機の定期事業者検査等に伴う稼働減が収支悪化の主要因となったように、原子力発電所の稼働率低下や火力発電所の計画外停止は他社受電や火力焚き増しによる調達コスト増を引き起こすリスクがある。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_context_01\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"制度的増収要素と稼働制約による実質減益が混在する中での自己資本回復局面\",\n      \"body_ja\": \"2027年3月期第1四半期は、間接オークション自己約定という会計上の売上増額要素（1,551億円）により表面上大幅な増収となったが、実質的な業績は女川2号機の稼働減や燃料費調整タイムラグにより減益となった。一方で送配電事業の調整費用減少や利益積増しにより、自己資本比率は20.0%まで回復した。通期予想が地政学リスクや託送料金改定申請を理由に未定とされる中、エネルギー市場変動に対する収支耐性と原子力再稼働の安定性が今後の検証軸となる。\",\n      \"evidence_ids\": [\n        \"01_2027_Q1_tanshin.pdf:s0001\",\n        \"01_2027_Q1_tanshin.pdf:s0003\",\n        \"01_2027_Q1_tanshin.pdf:s0004\",\n        \"01_2027_Q1_tanshin.pdf:s0006\",\n        \"01_2027_Q1_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_perspective_01\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"外部ショックによる業績乱高下と自己資本毀損からの構造的再構築の軌跡\",\n      \"body_ja\": \"過去10年間の東北電力は、電力自由化や法的分離という制度改革に対応しつつ、燃料価格騰貴や自然災害（地震等）という外部ショックによって大幅な赤字と自己資本毀損を経験した。初期（2017〜2020年度）は比較的安定した経常利益を維持していたが、中期（2021〜2023年度）に燃料高騰や燃料費調整制度のタイムラグ差損、地震被害が重なり赤字へ転落、自己資本比率は10.5%まで悪化した。直近（2024〜2026年度）は料金改定やタイムラグ差益、女川2号機再稼働等により利益と自己資本の急速な回復（自己資本比率19.4%）を果たした。持続的な安定成長の証明には外部市況に依存しない電源構成とコスト構造の維持が不可欠である。\",\n      \"evidence_ids\": [\n        \"11_2017_FY_tanshin.pdf:s0022\",\n        \"07_2021_FY_tanshin.pdf:s0011\",\n        \"05_2023_FY_tanshin.pdf:s0014\",\n        \"05_2023_FY_tanshin.pdf:s0015\",\n        \"04_2024_FY_tanshin.pdf:s0016\",\n        \"02_2026_FY_tanshin.pdf:s0020\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_01\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"燃料価格動向と燃料費調整制度のタイムラグが連結損益を大きく左右する不変の構造\",\n      \"body_ja\": \"初期（2018年度）、中期（2022年度）、直近（2024年度）を通じて、燃料価格の変動と燃料費調整制度の適用時期のズレ（タイムラグ影響）が同社の経常損益を急変させる最大のメカニズムであり続けた。2018年度はタイムラグ益が利益を押し上げ、2022年度は燃料高騰に伴う大幅なタイムラグ差損が1,992億円の経常損失の一因となり、2024年度は一転してタイムラグ差益が2,919億円への劇的なV字回復をもたらした。この影響メカニズム自体は一貫しているが、損益のボラティリティを極めて高くする要素となっている。\",\n      \"evidence_ids\": [\n        \"10_2018_FY_tanshin.pdf:s0023\",\n        \"06_2022_FY_tanshin.pdf:s0012\",\n        \"04_2024_FY_tanshin.pdf:s0016\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_02\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"全社的な経営効率化と徹底したコスト削減努力の継続\",\n      \"body_ja\": \"同社は初期（2020年度）、中期（2021年度）、直近（2024年度）のいずれの時期においても、グループ一体となった生産性・効率性向上や経費削減の取り組みを継続的に実施してきた。2020年度はLNGスポット調達拡大や能代3号機運転による燃料費改善、2021年度も効率化努力を明記し、2024年度は高効率の上越火力通年運転による燃料費抑制を結実させた。事業環境の良悪にかかわらずコスト構造の改善が経営課題として掲げられ続けている。\",\n      \"evidence_ids\": [\n        \"08_2020_FY_tanshin.pdf:s0026\",\n        \"07_2021_FY_tanshin.pdf:s0011\",\n        \"04_2024_FY_tanshin.pdf:s0016\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_01\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"電力自由化・法的分離に対応した事業持株会社体制への移行と事業再編\",\n      \"body_ja\": \"変化前（2019年3月期以前）は一体的な電気事業体制であったが、移行期（2019〜2020年）に送配電部門の法的分離を決定し、2020年4月に東北電力ネットワーク株式会社を分社化した。さらに現在（2025年3月期）では、設備工事を担うユアテックの株式一部譲渡により連結子会社から持分法適用会社へ変更するなど、持株会社のもとでのグループ事業ポートフォリオの見直しと自律経営の推進へと変化した。\",\n      \"evidence_ids\": [\n        \"09_2019_FY_tanshin.pdf:s0025\",\n        \"03_2025_FY_tanshin.pdf:s0019\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_02\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"エネルギー危機による財務基盤の激変と自己資本比率20%水準への回復目標設定\",\n      \"body_ja\": \"変化前（2017〜2020年度）は自己資本比率17〜18%台を保っていたが、移行期（2021〜2022年度）に燃料高騰・地震等で2期連続の大幅赤字を計上し、2022年度末には自己資本比率10.5%（東日本大震災直後を下回る水準）まで低下した。現在（2024〜2026年度）は料金改定や業績回復に伴い、中長期ビジョン「よりそうnext+PLUS」において2026年度に自己資本比率20%程度を目指す目標を設定し、2026年3月期末には19.4%まで急速に財務基盤を復元させた。\",\n      \"evidence_ids\": [\n        \"05_2023_FY_tanshin.pdf:s0014\",\n        \"05_2023_FY_tanshin.pdf:s0015\",\n        \"04_2024_FY_tanshin.pdf:s0017\",\n        \"02_2026_FY_tanshin.pdf:s0021\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_capital_01\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"赤字転落時の無配からDOE2%を目安とする財務基盤バランス型還元方針への転換\",\n      \"body_ja\": \"2022年度に大幅な純損失を計上した際、財務基盤回復を最優先として無配への転換を余儀なくされた。しかし、その後業績が急速に回復したことを受け、2025年3月期以降の配当方針として「財務基盤の回復とバランスを図る観点から、当面はDOE（株主資本配当率）2%を目安としながら総合的に判断する」基準を新設した。業績連動の変動を抑えつつ自己資本の積み増しと安定配当を両立させる資本配当マネジメントへ移行している。\",\n      \"evidence_ids\": [\n        \"05_2023_FY_tanshin.pdf:s0015\",\n        \"04_2024_FY_tanshin.pdf:s0016\",\n        \"02_2026_FY_tanshin.pdf:s0021\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_implication_01\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"女川2号機再稼働の安定化と市況変動・託送料金改定下でのDOE2%維持能力の検証\",\n      \"body_ja\": \"投資家が今後確認すべき判断軸は、再稼働を果たした女川原子力発電所第2号機の安定運用による燃料費削減効果と、燃料市況や地政学リスク・託送料金改定による収支下振れ圧力との相殺関係である。過去のタイムラグ差損益による劇的な損益変動を教訓として、同社が掲げる2026年度自己資本比率20%程度の維持達成と、新設されたDOE2%目安に基づく株主還元の持続性を両立できるかが焦点となる。\",\n      \"evidence_ids\": [\n        \"03_2025_FY_tanshin.pdf:s0018\",\n        \"02_2026_FY_tanshin.pdf:s0020\",\n        \"02_2026_FY_tanshin.pdf:s0021\",\n        \"01_2027_Q1_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2027年３月期第１四半期の連結業績（2026年４月１日～2026年６月30日） 売上高 785,304百万円 (46.7％) 営業利益 60,093百万円 (△6.6％) 経常利益 54,483百万円 (△5.4％) 親会社株主に帰属する四半期純利益 36,127百万円 (△4.2％)\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績(累計)\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"売上高は、間接オークションに伴う自己約定を含む域外取引の増加などから、7,853億円となり、前年同四半期に比べ、2,499億円（46.7％）の増収となりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"経常利益は、市場や販売環境の変化に伴う収支改善や、送配電事業における需給調整費用の減少に加え、電力先渡取引等の時価評価影響があったものの、女川原子力発電所第２号機の稼働減に伴う収支悪化及び燃料費調整制度のタイムラグ影響などにより、544億円となり、前年同四半期に比べ、31億円（5.4％）の減益となりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"売上高には、この間接オークションに伴う自己約定分が合計1,551億円（前年同四半期比1,473億円増）含まれておりますが、費用も計上されることから、収支への影響はありません。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"資産は、現金及び預金が減少したことなどから、総資産は501億円（0.9％）減少し、５兆6,817億円となりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"資産、負債及び純資産の状況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"純資産は、親会社株主に帰属する四半期純利益の計上などから、257億円（2.3％）増加し、１兆1,615億円となりました。この結果、自己資本比率は、前連結会計年度末から0.6ポイント上昇し、20.0％となりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"資産、負債及び純資産の状況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"中東地域で戦闘が再開されるなど、地政学的リスクが再び高まっており、燃料価格等の動向が依然として不透明な状況にあるほか、東北電力ネットワーク㈱における「託送供給等に係る収入の見通し」の期中調整申請に伴う託送料金の改定や需給調整関連収支の動向など、業績に影響を及ぼす複数の不確定要素が存在していることから、未定としております。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"連結業績予想\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当社の販売電力量（小売）は、春季の気温が前年を上回ったことによる暖房需要の減少などがあったものの、新規顧客獲得による需要増などから、前年同四半期に比べ、8.7％増の144億kWhとなりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0009\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"［送配電事業］ エリア電力需要は、産業用の生産動向などによる増加があった一方、春季の気温が高く推移したことによる家庭・業務用における暖房需要の減少などから、前年同四半期に比べ、1.1％減の167億kWhとなりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"01_2027_Q1_tanshin.pdf:s0010\",\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"経常損益は、需給調整費用の減少などにより、前年同四半期に比べ、27億円損失幅が縮小し、85億円の損失となりました。\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"period_label_en\": \"FY2027 Q1\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"02_2026_FY_tanshin.pdf:s0020\",\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、市場や販売環境の変化に伴う収支悪化や、送配電事業における需給調整費用の増加および中東情勢悪化に伴う燃料価格・電力市場価格の急騰による電力先渡取引等の時価評価影響などから、前連結会計年度に比べ、1,303億円減（50.8％）の1,264億円となりました。\",\n      \"period_label_ja\": \"2026年3月期 通期\",\n      \"period_label_en\": \"FY2026 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"02_2026_FY_tanshin.pdf:s0021\",\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"また、2025年３月期以降の配当については、これまでの基本的な方針に加え、財務基盤の回復とバランスを図る観点から、当面はＤＯＥ（株主資本配当率）２％を目安としながら、総合的に判断していくこととしております。\",\n      \"period_label_ja\": \"2026年3月期 通期\",\n      \"period_label_en\": \"FY2026 FY\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"今後の見通し\"\n    },\n    {\n      \"evidence_id\": \"03_2025_FY_tanshin.pdf:s0018\",\n      \"source_filename\": \"03_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、燃料費調整制度のタイムラグ影響による差益の減少があったことなどから、前連結会計年度に比べ、352億円減（12.1％）の2,567億円となりました。\",\n      \"period_label_ja\": \"2025年3月期 通期\",\n      \"period_label_en\": \"FY2025 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"03_2025_FY_tanshin.pdf:s0019\",\n      \"source_filename\": \"03_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 14,\n      \"exact_quote_ja\": \"当連結会計年度において、当社が保有する株式会社ユアテック（以下、「ユアテック」といいます。）の株式の一部譲渡に伴い、ユアテックを連結子会社から持分法適用会社へ変更し、ユアテックの子会社16社を連結の範囲から除外しております。\",\n      \"period_label_ja\": \"2025年3月期 通期\",\n      \"period_label_en\": \"FY2025 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結範囲の重要な変更\"\n    },\n    {\n      \"evidence_id\": \"04_2024_FY_tanshin.pdf:s0016\",\n      \"source_filename\": \"04_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常利益は、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことや、電気料金見直しに加え、高効率の上越火力発電所通年運転による燃料費抑制など効率化の取り組みにより、前年度に比べ、4,912 億円増の 2,919 億円となりました。\",\n      \"period_label_ja\": \"2024年3月期 通期\",\n      \"period_label_en\": \"FY2024 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"04_2024_FY_tanshin.pdf:s0017\",\n      \"source_filename\": \"04_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"なお、東北電力グループ中長期ビジョンにおける今後の経営展開「よりそう next+PLUS」において、財務基盤の早期回復及び「利益・投資・成長の好循環」の形成を目指すための定量的な目標として、以下のとおり財務目標を新たに設定しております。 2026年度 利益指標〔連結経常利益〕 1,900 億円 財務健全性指標〔連結自己資本比率〕 20％程度\",\n      \"period_label_ja\": \"2024年3月期 通期\",\n      \"period_label_en\": \"FY2024 FY\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"05_2023_FY_tanshin.pdf:s0014\",\n      \"source_filename\": \"05_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常損益は、燃料価格の高騰や円安の影響に加え、卸電力取引市場の価格の上昇により、電力調達コストが大幅に増加したことなどから、前年度に比べ 1,500 億円減少し、1,992 億円の損失となりました。\",\n      \"period_label_ja\": \"2023年3月期 通期\",\n      \"period_label_en\": \"FY2023 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"05_2023_FY_tanshin.pdf:s0015\",\n      \"source_filename\": \"05_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"自己資本比率については、東日本大震災直後を下回る水準まで悪化いたしました。このような状況の中、財務基盤の回復を最優先に取り組み必要性などを総合的に勘案し、2022年度の期末配当については、見送る予定としております。\",\n      \"period_label_ja\": \"2023年3月期 通期\",\n      \"period_label_en\": \"FY2023 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"今後の見通し\"\n    },\n    {\n      \"evidence_id\": \"06_2022_FY_tanshin.pdf:s0012\",\n      \"source_filename\": \"06_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常損益については、減価償却方法の変更により減価償却費が減少したものの、燃料価格の高騰による燃料費調整制度のタイムラグ影響に加え、卸電力取引市場の価格上昇や、昨年２月及び本年３月に発生した福島県沖を震源とする地震に伴う火力発電所の停止により、電力調達コストが増加したことなどから、前年度に比べ 1,167 億円減少し、 492 億円の損失となりました。\",\n      \"period_label_ja\": \"2022年3月期 通期\",\n      \"period_label_en\": \"FY2022 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"07_2021_FY_tanshin.pdf:s0011\",\n      \"source_filename\": \"07_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常利益については、燃料市況を踏まえたＬＮＧのスポット調達拡大による燃料費低減などの効率化に努めたものの、小売や卸売の販売に伴う収入が減少したことや、令和３年２月福島県沖を震源とする地震（以下、「福島県沖地震」といいます。）による発電所の停止に伴い、燃料費や他社購入電力料が増加したことなどから、675 億円となり、前年度に比べ、 324 億円（32.5％）の減益となりました。\",\n      \"period_label_ja\": \"2021年3月期 通期\",\n      \"period_label_en\": \"FY2021 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"08_2020_FY_tanshin.pdf:s0026\",\n      \"source_filename\": \"08_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"経常利益については、販売電力量（小売）の減少影響などがあったものの、能代火力発電所３号機の運転開始による燃料費改善効果や、企業グループ一体となって生産性・効率性のさらなる向上に努めたことなどに加えて、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことから、999 億円となり、前年度に比べ、342 億円（52.1％）の増益となりました。\",\n      \"period_label_ja\": \"2020年3月期 通期\",\n      \"period_label_en\": \"FY2020 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"09_2019_FY_tanshin.pdf:s0025\",\n      \"source_filename\": \"09_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 21,\n      \"exact_quote_ja\": \"2020 年４月に予定されている送配電部門の法的分離に対応し、東北電力グループのさらなる企業価値向上に向けた組織体制を構築するため、当社は、2020 年４月を目途に、一般送配電事業等を分社化し、発電事業及び小売電気事業等を運営する「事業持株会社（東北電力株式会社）」のもとに、100％子会社である「送配電会社（東北電力ネットワーク株式会社）」を配置する体制へ移行することといたします。\",\n      \"period_label_ja\": \"2019年3月期 通期\",\n      \"period_label_en\": \"FY2019 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\"\n    },\n    {\n      \"evidence_id\": \"10_2018_FY_tanshin.pdf:s0023\",\n      \"source_filename\": \"10_2018_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"一方、費用面では、減価償却費や修繕費などは減少したものの、太陽光の受電量の増加に伴い購入電力料が増加したことや、燃料価格の上昇により燃料費が増加したことなどから、経常費用は前年度に比べ 1,381 億円（7.5％）増の 1 兆 9,893 億円となりました。この結果、経常利益は前年度に比べ 162 億円（15.5％）減の 884 億円となりました。\",\n      \"period_label_ja\": \"2018年3月期 通期\",\n      \"period_label_en\": \"FY2018 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    },\n    {\n      \"evidence_id\": \"11_2017_FY_tanshin.pdf:s0022\",\n      \"source_filename\": \"11_2017_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"この結果、経常利益は前年度に比べ 479 億円（ 31.4％）減の 1,047 億円となりました。また、親会社株主に帰属する当期純利益は前年度に比べ 273 億円（28.1％）減の 699 億円となりました。\",\n      \"period_label_ja\": \"2017年3月期 通期\",\n      \"period_label_en\": \"FY2017 FY\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績等の概況\"\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"東北電力グループは中期方針において、送配電部門の法的分離、構造改革による競争力強化、およびエネルギー危機後の財務基盤回復（自己資本比率20%目標）を掲げ、一貫したロジックで戦略を推進している。燃料価格ショックや自然災害等による一時的な戦略的修正を余儀なくされたものの、長期ビジョンの根幹は維持されている。\",\n        \"evidence_ids\": [\n          \"09_2019_FY_tanshin.pdf:s0025\",\n          \"04_2024_FY_tanshin.pdf:s0017\",\n          \"02_2026_FY_tanshin.pdf:s0021\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"2020年4月の東北電力ネットワーク分社化の完遂、能代3号機や上越火力の運転開始、ユアテックの持分法適用会社化、女川原子力発電所2号機の再稼働など、公表した重要施策の実行フォローが行われている。女川2号機の再稼働時期遅延等は生じたものの、最終的に再稼働を果たすなど成果に結びついている。\",\n        \"evidence_ids\": [\n          \"09_2019_FY_tanshin.pdf:s0025\",\n          \"08_2020_FY_tanshin.pdf:s0026\",\n          \"03_2025_FY_tanshin.pdf:s0018\",\n          \"03_2025_FY_tanshin.pdf:s0019\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"ウクライナ危機や地震被害、燃料価格急騰等の外部ショックが相次いだ局面において、通期業績予想を「未定」とする期が多く見られた（2022・2023・2024・2027年3月期等）。タイムラグ影響のボラティリティの大きさから業績予想の精度や公表の迅速性には課題が認められる。\",\n        \"evidence_ids\": [\n          \"05_2023_FY_tanshin.pdf:s0014\",\n          \"01_2027_Q1_tanshin.pdf:s0007\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"燃料費調整制度のタイムラグ差損益の金額やメカニズム、地震被災による復旧費用、自己資本比率悪化に伴う配当見送り理由などについて決算短信内で詳細かつ透明性の高い説明を行っている。また配当方針としてDOE 2%の目安を明確に開示するなど説明責任を果たしている。\",\n        \"evidence_ids\": [\n          \"06_2022_FY_tanshin.pdf:s0012\",\n          \"05_2023_FY_tanshin.pdf:s0015\",\n          \"02_2026_FY_tanshin.pdf:s0021\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"送配電分社化や構造改革、女川2号機再稼働や財務基盤回復目標の設定など、経営陣の戦略的整合性と実行フォローの姿勢は評価できる。国際燃料市況の激変や大規模地震等により通期業績予想を未定とする期間が多く目標管理の面で課題を残したものの、タイムラグ影響や無配判断の理由説明は誠実になされており、全体として概ね一貫した経営が行われている。\"\n  }\n}",
-            "thought_signature": "EvrBAQr2wQEBEU0yD3j1kkQz9V76SaKQ7RQbJcbjyqVvxQt0j7ArpfsZCIO-_CCKGDsIBPsSxt-p8Ben2VrfU8wLs_RQkvRTwFIQ0U1eZ71c0LNLugr9LcpG0uHKvCFmoiBKNfyua4xSOabUB6AIa5gPpuWTK51xXdmitDxZnGPgOl8G8cPXwjkR9Ni9LYLRDgJKCbNo632K74NjXPfPr0oZ9dJYNYUGms79vaxUFf5RvvV_die6IgvFioyy117qBQ90sfElGz3X2jBCh8D_R606GaVTxVI_cg0S8mbfy7M7BFcOOp6n4igxrbUtEBvwCZpIcJfdi1tOqYi7jRQdnCQmwdzqPYZ6zB5oRHO7ZNJxNpkXlqhuZOk18x-GKuaE3RRNrn-L4A2jwExW_Q82hboGPUzgk7W70JPbK4trMEkt5U0k5y7fOf17ATmO9BALGG3IFT_5lecMep1KeQudqDYkfTWHcR97wageA0FEdFV3O-W7yT6vzCS7erp3EqvWuacDwJq4rM2l-0lsq3tvb2jGold3zEUKd504399kTZw9uT0ufoyshGaZhP-54Kb78W2qjgg5Yg02-MGMId330ZAmezaSmZy7GAUlFE0o5n4f84l-Nc_Rlbc0Bl8EVbgl5COYw2ea5WSJchslaDtMzgpdAKsofEATpuu8y8wrhyW19gCy6mSdVNGkCCkRHtk9n_ZTP6PIBLRKMreMFGsMDnTCO4s7qsrtSlypTTfNQ6lSNxJLtgv01TgjAujRRL_SJPkEPIU2_eooFqabX5AEooldPljK9y7zY8Sp21J943_zm6DWUZ5xKjCCV0fb8wWPJ9t6Cy2QVw0oed_LrCr1atVrKjWjD70BX2mo3fBNNHq5jWJuiyVwhKoLjh1wRmL4KCOSAizinw5quxAKiJ9pwvaCOQqIpBNaFXhaw97NnLkG6uIKUKCckWKnGv7O4YIfOjc7FpEciCvkP_uSrtoaru_sC90ipNTZNq-sAvo-SFKa6QC92JkwQF2eMGMXfwchICuE2_FkCQMrEK5DDqPdKj243-5nO3jY_XLb1yCRI7U8m4nDa7fTB8l3L5BOGac6kQtzIkqicDdHx4-y2cze4-DawZGuE-5DGzpS_nRpDYCuIlll9kVtnr1qNo2Om621wFSMT81LQWEbsihMUlYY3KfY-iVjKxRwXjXeKLfBthrHh7ZKc6As0-_hRJdR9M03V2N2TKh9cjAVfCwnZFiKyAWxGQZwB63oZtzeEjs2SNhlbSVi-dgvyGeYnLmG1W0KDxYsq9JyWsBu9GEZPI6AT8g2WFC5SAoA_Nme4Kug1QHtqy5Jyl1Fs8tAEE9YmtnKzqzrNh22XxNMke9zU1AjFWAD2e1QtzodTlgJjs8U-m6foWfs5VLDfZpnH05__NLRKJBw8ICFOoPXHCK47VUmiFlvaxHCj-UbaeFqQM-Lqi527eT2YKkBEKn5qMq8VoI6r9a5Q3E37waJb6y_Q9GU4TI2noDIj3gsHZXhgTe5Wj_Vh4fBj3-rQNQgMtd41I-i7-T-1bRCwKdxdWhCiPnICQ73cksyY6Shgf-oTEU_EyFECzvDj-EPeub_c3amq1lheZ546E2AK_T9Mq7OjXSqxuwGL7JQfrJfaOg2uA-Q31vpRKMDB45GG1-Mk4LiVX5mkA9gP0IM0SrUNFqQBT0uUe95bhNQck0FAi4_CUCMZcMCPWrjYl2x_9rKsMVbkfOGzigEbLuV9jIBQNSwUhp7BYK-ItI3yBYktpEC-sugoazs-vplPnd-MKSFMxRPygsSlFEWbodFRIm1cfHfa5jvyWpGY7_6sy_RGd-HdLzWWHyGvb30jReQjLuDd1MsIBEQ_sAmHvhjcoceqmVCqhV8wgeRuD735g-NXXh5IWjvWG8lfWaYFf08dlMeddF2otzQht4R5lBqTPfy3vQlLUfc1nhgfrjtA-nCDqmxnyQzEus_RhASL5W-AO92jX02wNdKaTscrKKODvd5Z32pOcSUVSkdPD0aZKlBIRO_vdnoTdR-m_VvTT0ylAZS63q27ei-vy2VVLjDpObwmql60MQsNfRF46R0O-JOBQcGAEk7PBJtyRXSV9bD_xzLJT8VGx32iUHkGHASmmNvo1W0XG9XdLiSPD3RIrye0LrzOABwZ_FfWhFPFw2tzkhO7MZ6L3BlcnQbRymbQotgnRvJWVVX9-SQbFUrt_VMbuJuSgZrfvskT69mVUrgAJgEaLigCQJqW70wP_6_0oCE4UgGWPx0Abvs-6m4ePjbQnb_7pE09Mxv4stfyNdcFsKbO5uKRfP2jmZic3kEb8Qrsd6uKpSaJDWXAfi4X0F2hSNNa06LfspA_IzrZXyBUap5RSgKNCV20TmVr5Fl9PeqZo-qLpRmE84dayAl7Y3wX-RSNNS_QXo7sdXjIrCUoxigpQm6hONgW4o4woqn7WVeVi1VpGAeOLps6TZX_Z29sU_haVwKTuMaudrOeQRk0lXq0JdVr67fTm3_M2QsdkKTJxRVmSbVeNTdoZhi2vxBm083Ote1-KHUDS6M1msvqwx9mki_o072uUyHoB66qvKtwZf5651Kk33RnRqqTBgAD5FZYQorBIp9eBHeUouh9hMRxGNxttU2JN29qdv4Hrr8b4gTYkDc2PuDUoGvbvzg_Z8r6I2Z8fKEbqm9Hk9W7Bx3DuFgM-HdvgAh3HEjztjaq_G5irIuTw4GKiYrTVuvB6KvpgkNZK-t2Ct5IThOfAXHFCMxEUjOaHfR8dwT53zIY65drVfs1ADymjeE4laznN0HfB7_B0I9Mbt9lPsTJdyAM1dN12SPeuVeVc1usH4Orojwlqu6Bfno0kZvoi8cO3L83eNuWcJmxdF_2fDZq_imrCeP7GT9r0pFniZCQ6YLh4nb4dq2dZAXdVYZF4tQxXe0EJHRiT8Hj5ONfffw3HCvDQCENpadQpKc3qS67Oqx1xmhDvRhfBhR3JOa5XJh2OViLioAUMCtO4Kn61PZ3FqdJ7rFx_G2yMuwG8J_U6iHXqCaKve-WsFfsNSPmsDkmhH3dmv2h_QaJTKsaj5_lPDWjLhc_xJZ5gDoOwEfzDScxe3LB14tFqUVXT55IsWvNAdqoGhIWPAfVSjKzA1r9rWrQCg8Nx814n8d2-ujKjkCTlIqJ6rF8YEm5m0Wei_Ti77kdiOpamsl0yF-0DQpsX0XHN2afhvpTPOiDxle6k2bgAAqEHhUlfKXemtEafJjk5maErxb5wOjyR1jo6Laj_L3Jk6VDJKR0f2OvtirTRRX-ezeoiqFjOjuCgAXGevOh4ng9ecNVCWHiPOE6sdXswwp3K4THXQRn8nrxMV9Ug2N8XjDck6m46seFh7EeOBMJxogWqKrY4vm-CvctFOB_ppRIZqzNBSmqpyqeC5pSPpiLxp9AuPOpLSWD--DPdcgRrn4NA7XZ8Z-YJsLTNUAU7VP0Ny2kXAextmBQETdeK-ZX_DcjWOX7DN4gqUm-Pjxx3zwN72vacXZ9pUswbIv1yFwlg4j6r6-ljNEJzxJPw_rzk0bKsimV4BKJsXyKqxNZb7Z2gEx1yHktVUCkFuQEDaTVdBCryHlVBGjSWZ3ePsvqGrW8QzJDJOyQN4TnDkmlC6ZgfkvmSZCHzExvTxbKdq-H0DGZWSTimyaky5eH22uZAxhEhQponNqAAF6ATQjiKV8PLnCZSHcreDNJrG1VXRZZW8wqZsJ0TLOQ0zqUtKNdGNf4WP360L0c8grbb0sX6NS-Jkj2pyrmQWyz5z_1bac9nTrZZjLsfqgCpigb2EKe5x3_CV3wIryEovY24Ak03Svh-no62fhirmmomFTg9X9BXV1OPslc7n8lBs0VepEI0AkPlMWsV-aIxI9Nvi0If0T0PQMI1rqe_jtdfHPeYrv_6hRk1ltGnEJ6T8MC2MrmERazkRrkzF044pvCiKSluExpTADLBRAxGZFL_GpF7iA9ZwLYrrGxlxjYCQ1otEEhlYmoPVn4qO609MZuUFrAjqCZlwUA_pasiIeBdzk8-ZZey2aX6f1Sh1ea82QKP0PM_Zf1zYOdgxC-bBass6uwHzTq4OEEK7YtpzJoub2qzQ2Si9M4ARlf-GKq3ozuB8l8DF2WGFhzjYH8aef7g17kfRppZKPwDrVmmRLt1N3LPrdBr9cJGjHcgFlqpP2-o9Q0X_ZRmsxjFHge2WDQMCNbqJ1aEFApSSTQDENare7A-dSybZu3cpZ3VxgiyjP1Y_6BOYnD8yF3OZA5lSocyynX8H7_AFDV-Z0ih6CJdboWugthlbEsjdSQS0ZzUlL9QszTR2fFYjHI0IjpP0iknwY87_UymZLV4Sc_ZK_COrjK_OywjOpCc2gP22H-4UKTtNcTOd_M-mBGoBxCKcq9Ki3VXUBIxpzEko_F5ZJNjPlwWwoysrqfcP7CRlAehR91wbTFNrNjW3f-BAJiIraJsC1dCYPvIXBNb0ggWJ8hpdhsU8KtR4LhND35CljrfmmKQ2pa-psKgl5w4F4RyAQTBn6WWCDPmVxjpsMInGrJ_EqZnYgejGCnBwKYZfbJdjml2Cvb3dWEXf2Ew_v8j8PfGz2xxNN8cKrAtQ5nUxM9Xh8wi4vhm9wKrArHbY2MUsi0skAS3pFp3CiHqdSLCwrnCMIzf-DQbUcr8pYdsV6kSRbW1NlDAQYUX1Mc6S_88tzfp8m0jsYALu8aJZILnjTp1szXXvhPwdwRW-RJUuhWR7x6MVm7lEQVeOypfu_cRB9bi-z0YyhcZ3iRFR_ptKqYV5oqCtuFXiDC5PuGdRHc8uUVkvSTjzL9vAjY4I26xZVX_t_1Tib_ro0V1o3ibT1PX0rB-vHqqrD8cFpba6g5ZFJpIdXweJZ6zt5GU0GLzn-h-8d4zpSOGR49kvbMt1PQLfWNo54YI01v4Qel9x8RuShXLK8lDKEFkITe1ihUfDifmFa2pHSgjWu1V2m01SAhofq99KnC_hjh_oDonIy6ksH_c8_MKZMWWIRDAYQn7wnWVTfD1fskGXvgKEqSDZAt6iYRMLI0Fhy63nbRg0cuQnWmiLITU5d6ISRF5JTmx35EyKeBrx4UQBRzg8loiXhI3XO5o0uZrl75D248_bZP5RcB5EzOhpel6fMD56G8kOR6FIQctey6Ox3ReVM9E3_o5vEFYwMr0M3n8RZz16ooDVXZNvtCj9IlPIOBi9qgk0lYs4HOQRsqCqvzhNQw2JOJhsVb-GZrCaF4AFqjGK5PAt_29KcBczcx74BD4NHnlKSfUyKQwN3iJIaBjEiS5LlcwsgUzS8ETiDmUZwQ73-HS522hTEtc9wjttuZbvV_7fXKBFRFwUDSppSzvwofavugWzipUpmY3gtlDMMme88p5C6zc7YQu89K0PoM8LAGd1nuDyUNhKNHn0Ij0dQv7fVn7ubKclZPuSYIR9x_355sR_pZs4u3LyLMwMw1-80aYNzkdL0kIQhSaL9UX5HjyqqFwERJwmkPQgut6ymwUo3UcDdsrxpr_0Ycfjthj_dzXhdiumWpQQdxW5smzCEY-7VY5ttOlRzouyGNgqm5gBpSpaRNuXbrc0LJqgudvjtqnbfoBWFs76whP8hm4jqiJRcz-y4cLWy9iH-ud2v1hs2BSJScbHsU75eCSAPc-fQJPtJTcNDCPxXMBzzYiOGv2XXf7kUMm4Um2Rqsdrtnl7BGRdngvHgIurDHFTTCfArE8luX4wQw7nIkUfTmBSFxdLPr1LuRH8m1vVbKG74uiDxyrEzw3Ugwf-k3dQCTF2LxrkO_y1hjnbIcFLANJSGW-l3SkJSvKwXKnSxtn8vsT2jwVxxhW9zKmSbfE8xMPVu9IYekjkeXTWH1P3C7vJdyGI1EbsnnN27SwXeUnU8AZGWFqeBMQtN0Waw96B0RwOfbyqrlrL4veiMbjiw-k5p-AYGVH4uWsW4lJJSq6xJk0hsGClwlB8Jg3HiflWfuJWmGW_S3M6n6x8mUg2Uo25jS0RlITOK9IgGAjfruRv6qB8weY4psGM0hRILq0dIP5WzcvIB0uko_4Vzb2jWkNXSeumysnOe8XdPFCRe8pMTTUWW5FAFGfe10sra5mt-H_DNWXtK4sDAAHnUXqBZXtkXpZCggAewiumIt33CQQMwXp--4vaV3hUi0ct5tVznKy-usK-ItajPEUr_KpVkKNCaRdMiolo0Vk7G-7v4fFAI2-izdg9Tfu4JtUbOp4UqDOsMSMTpAK4L9OXcpq_SctUtq1noJDqJZdLn3Zl5jiGTqytVZZRN3hKLqZpu_CWPTTGiIfY_9ZuAvwxhwknuRN2sZVG8r0aDGV0uEZPtBkZ_tZ81_WpaNlRdjHAitlLlvq3f3K3l0fqETZyKyU6XzBZ0_Iw_GE8ubcdb7cdUOvxUhjYty2tBC4xX3e0PB8SSYhau6kZYZQvBokq7G5DIcARw1A5PXpQ0McNCTOAAa6sCoNCObtr7NgUgjwDPvmNZsUmyo01nHGPYossiHoX-qUmvCv2uTS-fSMSnAcYFQEcQ_ExWy9MQrFOMqRYwZXpL4vGgtkC9Q4JM3Sg4q5-1GZ7uvY0vy7zf1EL3S_zij31BHoUvsf3Nk8HcpNl0AKb_8-4lE6TRNoMQ6uWyaBN_gCqw15Ts0rWdvnW-0-V--HcIc8VAUH7ZTM1nlEWOQ9KsjxwQNyYggmnnFiWJD3K5dva96e2usYHAHraHDljgOMtjvasiFxf91yS1TErHOwxxFgzWO4S-kHHoz9xNvxxk1VRwH-FqPaE9H8oJ2bCSw86im_3xszo78RSxvY20oGQ7lgHj78SgvhwYzpcg6P8DXGcKr-AeVmWnQgpkWwZ5kp1vgmUhu1xq2q1ieA8gvc4KcO1Kq2wv0ud4RXBugL1sC36ui0AeF3hXko_QKJ-auM9AqX0XMTzQBuXyI4WweYFiBqU3O1D3iaR-3r1Aimtix89dznvoc8OXMbVRIKrQkkg-lw18eiA0xj5YfwHOUIJ1Vys8GWF_n_2Ri76MRFXpJfsLzparnIwmm-kWxSyWUxGOB50Si6xgZ1Y55QwHPyyl7vbgi4IQOLlTO_l3q4dKajE4qsI6PmVZ5xSqtdDuFtJRRCfJujQWxrNOCWfV9Z1hvWI-YaAihShCtmwuRSRdfivPd0S5zEq7QEcywxFfsSbg7nEFRZI2jmd2iICuLii8HHSO4jj1tO3E6s2-eF-kiRT0EwG6BSQH4D9Uvuw5_d3nV3Om04kWNAihVzyQaoXu8aYL6n5bZvqhisripOCK4j5bpzwQ0h2IqoWwsA6jLCqZefnlndbIpvXLHcy66S75sEaP09V6aTS9etVJI23SB_jc6j-MdVCoQyD0ykzB4A4HY3vgLN0500xRO4FXeWGfxLCP7F0WjM7R2MWJ--BVbKIFwfqAQ90f-zAEHieZeAte5EiQb-hvQgFHKt7dd4PDn5jAz3dn29RGiNuOgYY2PlZRVtmZcQiERs6He4SdeGY3iSP1JGJpkqVdluTgiCN2KtfxLwDh4xwNhBAwA7JfyIPGsAIMlpA32GhBj4zoKTAfmUc1fi9ZORiOgvgIhEk1Tocgc3ZxlStHJoha02hgOZWq--b2-QyvE22aEjLMh5FQ1NkhHtLR9Q9Y79E3gqJX1QU1FKzGFA2yL0g0aVaUqf92KhhVYhlTZm3pSDQ8Gr8DOJfhboRhHxM_0ajxyJzgPw_M2vpjtb6mALfbpDYL9jRzqyOVkZftuo29dGASe7fkMfMctUv1-k8fufZ_opRwwgeKJ1D9DhKcsZWCCy6V8CbH0EZrOp6UlA6WVg0GSaDMH2fcH8iI5yhECnSg0fghFczmgI1Oyjo1tIf2azyEY8DJXESBTKGrAXQLh0jAzozLHxW4Gg6LXMXBoWxgTgZ79cuprFv_VN3PnQqBwodm7F_1DiMHdKex7L-nxTQYVS61Cj2HTZFAy5affW6aD9ma_Hd_RZS4NdBwDT8o85dON0wytfsPhRpX_4lE7HrUAJ1N8XJfER2pBHRwmaT2Tr0BHCVt2S5pnNS-AE2qU2LGGXmKMnJRsCiKGToAG1aVg-cu6fNQ1Hk0T4tcToIb2kdT_gP-ejlRRrTTfqTKb7tFjBbMAcbxjkBiZgFVGOXrIKa8uctrMigifQ5GNUTbt0GPlePJl2MwZIgcI9unH7RnYU4FaDC5OihJtOu32_ka_WrISMRPCn6qRY13l_9TyJJt6urhWQsIwtNbAsGac-BD6Qdeeo7JOYXivzDm4aqH-L8Mrps9vskei5Uiw79iaDCZ1vZHBJoYXMkDl4z9Fc2zjrnyu5Hw-VbJBZcRHLXz0rAPHG8-HrnkjRx1d1uPm4CS_jv6H20ku3I1BslV4TqPpgZ-uYf5CMPXB9zRlwY1pfEE_Uhw5H2WFBK_8vBTHlSMFseBWWfuBvNmNhx4RIUnfrid0jV64VF_R7LXWKMe7cZ2C8wusOly5MdHq1q-Re_CLPMcQzy41k0Im_w-3GeUL1-MP2ijubaY_YVKZX-hqspuSAZEhNOqwQQsPYVrIv_ukfw_2OW1rW-isn2m1Ajje-SRlBwjcs8BqxS2AZP_MhU5wi9wloNZQvRIHM-Toh8GueQPizneboYhvpF3v1bwR6PPUsrjvmd9rNe2Lg49L3Nm2S4Xt0Ap92mJGp01fpQXEkaQXGH3Qw0_Gc1MeEj6JiwvDPT6hZR8D50Ur8IPBZqIuaBAj0WPWLA2anwppsc8wqMYX6cjlNVu_MsLYG9xa7qDtXBILciGuxuTufoQLZ7f9TyFoHDdWuK8PTLPhUmSWbsfWotwAsvr1sNZreNanPVjPOyyKjwsn07F5KNMqfeBtFn-HAUVTYHg_HT6Tq1Xfu7ZH928mM_loG_LhbIi5qlLRPp9T4CTk2wcz2l2IJLq3L-b5PJ_2o5EmUVJwp_QlFr7K4puNmouUkVcMQQJfKuxguZZvB7NxD2inkaXAPkMCheYub549Ec5H_-pTtcwMyrGf4z7dEtqQSLLx28yFUAlAf83QXvw-EmputPUSbpIPZmUapo1Zuiimo-m_b1oFAwzegpooKXZT4mYXczZveQj-l2GIn1GcbCIzcYl7Yb2Uba3zNAENvIyIEdcFs-GjT86cp4W_HlI3yjHUO21yDbHNPtsi8tDy_B4rfhbVuJL12ocEy8_sk1Es5EIQsKpU_sL7FGiLwQPTGJMQQDgtMlG8sW0Oc9ZhfE7rO_uoeXlVadprb02GN1Nwt3p_Gm9JSS2enPu_LbhHvsTy58xoIlb5A5x61S-Dxb-iZ_b9JhxsO2dwQBEgCWCdREVTRYt3_wQDIH3WV8LXJFgBYs5a7G0ozML5HInGNd43tncGBPenmE69u2nMOLeQf96vxBHpegYxdBtsqDMV1Mf6XoWJac-2PkDzHwjS9DQQTbq_VLjoiCl0X2r-SfPhmgZTUqlcLampSJjMpgqqjSKo_rQQ4_3QFkvSQAIGvMIQpyA4b5B7zVsQJtNkBdu2k_3E6JLAvFb-GoxJgCk4qKUvEH9OHSRU5YgZ4W82m8lpo_-e1CC8j6VDzJTvlxTtXSwugrF02TtZTBEpBDRqRRwhndkq-oCjV9LYC4Odq4poxevfeQO9agDL8PO_6_9P8zxOJ7S-ij1fk9OPY2508A0fpnwK7E0vTZNcbR2wgOdV16LkoP_Z6LxHCfHM5DHXfDGzTCCU4Svc8ATnLkk0kDZAsp1wSAFFbusA_CGToUaVY4huXOcoJDR4U6nE9g6RC8qvsXxVgKtdi0uO5qELLV6Nr5kafwn2IRI8qzbOWKlXIFcvkQkyqYo-bshD_-hcv9jD2E7KigjFRSEKL_RAYbRrKvYez1blotUwXyhVCYSS2ohcUFd4YSpISUKJ4WE3kwWsVfTf3khlchVjxAQi9XpBvbQGCCS0BGb_cSxBDCWYjUEdIo1sa-KNV18ar6zAJoBEvVEL7O_5kzuJNNQsPblJl7U7Za6elf5Rd5O1KqRbWX_h_NWmwdwJB4-IF3MI71yhqQX20rQ4HoVUzADmbS6xcXb4iP2ORLowwkAnMVnXKvlb-v8iis3ejYYrbBWjM6uvFEUa8oiDol5hEBrCbRd8kgGuO-N8T-0VCJeQCjgT74M7HNlJI1EHr3YaMuXAfrDd93XGfUtj_KiTtMZbI8qa9G04l4aUpTrB52q8LRmSjYk-v509LGGpCNhifdXL_Lq5Mzs0AnYQ4j6ZFvmCjXm-Nv7ttj1DdLGp-cEqlOa-OzMMxqqJ3Cfg5dU8GVkkqiHLRNCKSxkNwoyo4dEJn1N3lhh94TF_3i_-IoY5J_U8GnGyD9ia9tgo62efCWYDURx2TnFnGb2tlKdQrRrE8A9xALujgfeZ24W7BYbgTLUnZONB_hfESzJ2NCmgNaEPkosUciY28fCn0gz1mHXsIGZ7RhnVRUcZLK90N-sHqJLF4d4Z17-hdpptFh-Ih8Dn7pUAg4W0ph5YG41b0O2y0ifdKIVvRnv0Ow0llkpsw4bZSF1DqsYouQey5fyEZW3TEvkX7BKzdGW0Fu5_my_yhR760TrIbNZv2BJtMt2qouS0tCl5ebEEX6yxKcqk1ySAegs5EKg1mGSER9bH4B8uF9cWo4Xe7Vo2xk1r4A6vamFOZk17qN9u94MsaqrTQEEVBN7FvP4TLfmWSFWCym-3gwfkPHgZZEKFmLOzVQgIS4Uo6kw9FUr-wCD5C9j7EofEl72OuArN4NFA5vAkNU2kGzNVoPGVP7ad4rl6RH6AyRyg_NEoDXFTC9N4nTz0Qgmpcg3QqOP49r49Bz_ssEBFvdyxV2bs_iq0QIFx1QPmwFTDPuH_k1ldb53br0yJysFbFyeA66ov8dS1bDNJ6CM0rQEswCchjDQH3rPAJkjGQSk6o-yneOWVgFBhnhlXZhNTERBTFAi25orpcWbpWuxrVfmoMfbj-z1J7LQDntrLI_4T2RnacKfxXH1K-StZNn7CciSunvUIT-Y8mzL24Mb6O0AnnTEo0HM7oEkJcxdv5LIlet97B5UtKrkGAJae4ro69GDPEeCiGvAJT26zwFOWpZ7h9bTWnh8HYNuzZrsRK6Lr71dXnRp2s6_wcPqCexQrgHh7wEDbUpzNBjSfQy9gkdin5vCYxWDKm4VbtN2ZMjjIBXWSemnh6d00B_V2MERmdRdu226ExEcrtARY3kTgJOcls2sv5AVzfu3oGXE8if3WwWwYUzEJ8JYvy_CTBHcDkHFQWFtJvXeaUaXfLePvvVAKYYYxXjkarb_XD2nv13byeI7BgIt9RcYvzZxzmaJNy0AvG2T3Z1lNtMugWzdzT63vKB_i3MyGdjD3lK24QU3ZRcyJ5T77vLZmB3uDgdL5ywEIN8Cb0ra-4vmTnF-Sqzeerv3WrB6GDYMk6t9Rca3qDQkwn-C4KC6wAfJVKbS5xrjH_BkE8iBLp6AdTKtctqfpWJEvNnpS8ILdXRQK4AOggTTggCbFYzPwaBHihy0UscDQ7LnMlb6HrieFHY5vHx8YzDWAQ7jogwIX62RRFx5M2UFegV5RbicbKbl8tqnjhIWm4BpotpDxltPqC-vs3OI6Lig1Hc1JcaUDGFl_IGyRsy3T1KS2kR3ViIYzFgkQxUwOyQA9ePjIMGD9vEzP0tCfHRadxyq_w7K61ADkQfKnvzJPbqvvgKgJSl0cjxwQhfu9IFiISFVteQMFYWH5o7TSaTeuQRcBZvAf8i4z2NA9Lx3A6yD8ftkHeSFpwmSTHMd3TfJu5okPHrUOyRiv_43-Whv8as46UoAoZXoScZmwzR2lFVzIJs84fnfXd_zjHw1xYRnn6Cl8y-EFhnyipeuPPrTuACMvQ-7zrLOqNy_SZbhHdm-Wk8PATFOYgTPwmf3gJWsjoXCcRwk_M6pl4RKwjKb90riyOkO_FsCCbpmiUzetMYqy1HAxC51XDuC1R224Gv8isBMvQ6bzu0HOBJm7MI_5C36AhrwCoLSbrFEn-albtQ0uCIM-M9NxGFiRSq24jQK7QVZ9GOXNlVDfUGYOelhrMLX8QXBzuBv1uSmapE86orDxqyC270Lc23tkXop-5GsYJJpKz7X_s5QOSzBnGa9ZBcnJuOHh8E0uUCNcHt-pZqU48FdOo8yxNIj-4oJH3aesslHKvFvrSoo20DkBEmezGIoNuMVXSIp8jWrCx-O9_deRDozHT7gpmI8_T5pdJPXiilNoOZ_KF81NNjeoAOBDqJn4YOjPJBK0xJZduYVFR6LbK8AFqkEAALsq6bv9DxhsEtGvwYsPNXd5okjZ7hCr_WX1_XIzh5KjSDFSpYTLpUvQb6bVVkGgGkyZtZvra2KHDOAiUpxlK5DFK2LsWZ4hhdgKoz_ME7imgHZmlqjUwuPOCa472GZ-k_GPbVtO46H3BOMS9qg6Gell7DyeY5ZT0qWrjEoIUV30uJx28BUWskpeiGqgrUHJDKw-OXPbBCX7pEIcXClyvwiFBospRhRpiqsjXDgdjO_WCOTjpp6Ht2QZXQSXZrvVPiCp5pOh43XTvmhxcpgxT8xBZCS4QPRfQdYH2MEFHY5lbexPThU2_ac4mefYbIfmTS185-2ZmQxNMCWlVJPnWLzEkmvhCqfzLcggirzt_TCu9EIjpeIg4HN16L1kuVpq-k6zIrvf4q-to-4CEIkSOrRo0chWAGiahDhXzUa_sFmwgu9x9d6GdGmUe6HtVJtmcCdV7XjZl8o9dBzE2AA4nIrGUkut9xPFNhFWoUtgew9e0YxjRJ_ioDX2XLRiBCiCLuQQjS416m9Gfrt1Q4UCzX8WXldHV84B7GP9ZE8Ac0BmNFzlynQD_O-pSrDyxrrBfKgckoqma8UYQHjm_vn_kQTn5rXxTIR7tmSKlZdJmeds3fCBqOt_gJdBSVqsZBKDopWrk4QQ9w5Pd2vP07kezLZrdtqcLvH4lb-8KxIjxZWK9i7kES-6Yx-tA7ofVGE3qGqaluBkaIN2ckBGN67kQhJihHeuGVGNT2APKnqE5HLaIlYfOB1KMVjIwIUcciCBymgFYuVgiNloODpI4MeAuHh4zZ7zk6CXxauLEBnSkuwNey_smZfemw_hEjanvWj0YwlNwDRRtcJwWul6Vitz48HeEnOAab0hyAw2hott9CmqcHvH6wplC4DPmGvdHvIiI6Vl59uh31FxSVwrP1IuBCo_iRK6l_GaqMUbrvVepd8q7vFLvGrNo4K0GqAjJG0NYfriD3FTE12tNEoLgNgP4iaMRzZAoz-UpHmvN9RYJY6gZ5Fz78_Ch8NEkUcu2U-3Goh8B0Q1NQlOHabKPljfU0cFK12CttOexOVa7zl-gvkiR1ViHdsL9VMs85odT3fnwkd5OTNYaHZSnYT8RXHpAuaw7U8qbZ0kf6_VAVx-63goI15G30HfxpNS1CsP3366AP_W1erSnKqYQj2EHK9ozIGdI2FBMH_GRb3M9ZgtYjilMTthITYDTEmuFimSBYyFDaL93IlZirWjzEIrX04yUzea71ThsEYf3yCLZzQ645YfpXwjV1TbxiXwcTUCCko4900w0PJ8omspH7C6cwMB4JeGQCxM2R1dSfftcd_wvGKb57WZ7cN8klHfBdWhNTUBS7p1QfoVNGqqRoD_z6PnCRQXHUnMC9CYNEVjmrong96V8VO9YcbgbUCAt-YlJtQFd1Ht_oAckn17vqz-iN2_O4FnRPaRzW8VKLiHymearVVdBUoc8NynjewQYLmwFFfjEj6pzBEEVPM2ta17uy80cPMMlCQLxa0t3d4_lD6rd_50tM3rtWKP06Of5qtu1A6nNVPdnBYeNK-s5_r-_W44B6Ao4ykO12RnXbTrcYxtKxnfoNfQKO4FxcRkuvy64cGx4bSmKhe0QKRyr7C-mrMGSqsVo4lT1vV1f1vJi1B1y3gdjhky7709ws0pSOrOJ8M3SMDffmKAAfvjTfFeZFsDBh52cgy9QMgeR1y-wuBMqviyJzgaRwp2bHDFyeUZHfogLN3k-lUrmaZKQbWY4t1jFt5XQO7ycbvYRJClHug10G6lI4VDqxY9SY9rF-JaZ58OwqDOIJlNc0bF-K9yvnK7nQKWZD-RMhkQZ9NBF9ONXrr84A33YoB7Ps_XFB4NDXimRihKFuwA-LgwJKTCjpPSqmhba1NeYJm8iSIl0P8WiGZkFIsmHSsjzeot3wefPqmR8tBswsSxNocM4tpkc6uLMH6duxIlBoKuLgLtvJMoJKgZUq242NYfiBdO-CeLD1z61BLgBGUL0LOT3I6Q-cucvW6pWeufv16eDkFeT9Xoo4WL6XeCIXX_7fy8IV14NFA3_ypSKUFgxEtAuCFN-z2Ie9aY1RYHbMVlwwYC9o7E6ocJiLa98ZSlJWm1DynMQRGXZtZXbeDDUAkoffVCZd-m2cEY77Y_1_GqzHsOiKWMoW4zsSzJjYurnmi8iHMMT3Lt_yCxRq81OKaOKpR3ntorE8wszLVmpJLEsqWjoDOqSE7BC_EYlYaRrsAJlugRKdFZSb7n_w5ieOuiUrFWG0VV3_wI9QToTDmMA063N0yVn_DRG3iI6RaNPhv4iodL-lsNCPhR9zUZOCxdFK52Gjc-aiELfiEAn2f9281iQ2JvYuxSdyD-4-vt52Jnp1Ue9Xd9Lmq9OzgSxFWuY98zEAbJ_fjVFyKRuhpLT-436ZybuBK3U1bbxsGT8e5V38FOFvHY1DQiy4TRVq9SiPlWSmnbYR3DrNc44MiazxDjRXag26-QYgQegmDA_w2o0U-pGCWJ8ZhOcuJ3IFDPKcGQfBEzMV9jh02h0JIRG5cR5Rq6CzSadLSPAtNW04pYtm1TOH4qnzIfmTjiO6UZkF0bMmJQGsvfcUZljPz7mj5L0uItfbLW_rJOLkSm1DEurCvJ83POdmt-1OeXzNwba43XUFCYeBAhJgguG1pCc7oTEBOwSEGjdHN01kWEmItYoVlHQn6eblipFv5i0JGdsV3eFCSUGnpL8xIn7xL7bRKZPR0EUjLEeGor8e6Npkb-YtftOueI0ys_fOiJA0swZFBUSqWtEtwXgSmoVJlvnU9rZrbsWillLOgge1-NzHJTm4BfiOxKnkjjKbwaqTEVSM0XYiOnlkKfvvfQAGOqXHh9JmCG9g4aOrKg6P5ItDNgfQ_oM7m2_drG8dE8uNr8pxfDOM-iRUdsHPfmaPbVN5vffs6jyeUHWbW6uIlMDYgswDOuPbDyKGsR87EJ-yp8MFbiNDnQaObt9062suT3A2ghvutAicOS9Q0wVvtsYf-URFABQMaoKVPq2H_VQfaqQ8Tne8dgHBSI7xNbn6KKq_cKtSu7Ld70m3hk4s6Z3JztwsWw2HaVt1BNnrhjrBLjcNLnhWKx--zG8iELE9Ux4wHRIOqk1Uo9gqs83dZiV4GWPQfzZHxyCJjiHYGiHBRq4vgXcwdxHq9F8bh6hN7hwlkJ4GpPAB_Lg2jhVgo33qSVQ_1kHTxNBqLHXwonQy0EYmqOM55gcvU2JrchuaX5ZKCVflw7ZIAdZiKcjzm2Hb-WYUExZpWv8sU7_dbPr-R6_PC1MHdT41hDU36j7vm3M9_Jkcma_R6LkH06SSAbtvRfDSLSABn9vOMcVGGy-TfhxNu_BP7CQ5OgkXgRZRyXJWP0cElWKFOEdwJo9ZD4DjtrVUv1sisCey7bm9w4YqFRyftCapS3lYDp7eO-x5WbnMvQKPyvsp4ySkJ_53o-JV4quW9DBMvMKrNtN9ZeLDQYCVbYYfGJfvH74RbnMz8pehkCLTWJzzDhbGI3mfVWlvOi09io389ublsTCmm2lLJtgbuuLdWCrPYIDdCgGbq3KrhXQYIdeBwB9WNzvMmhPaZRcDMNKmzrH5LRUjkftC0RTHweOKCP6bfe2LQMRYIFPL0wawFbHI_D5inApSSbYmZ6NdPCcEwIrrsJ4mhiz8T6TKWLxzGl9uOLWnm1X3l5ankBdc9NKhT6qc9ggpjdxxkzZB3sM5mzWJu1SZOKoYMsp_a1EDvZ9z-vZmmVf5vO0qMhRZRjK5p8YrQT0B4jeoORAfXCM6S6Si4Zvo8QFpfwXvAs6kiE0zdJz2OCI43UrGzHvRrDjcpXv1fD28bpi1pNFfFp7AGocuUtmlNMIUOQYxZpspz4AK7qWKceqIh9c_l0Wux11LdErcj_MlbHP1zZ6GjbYMzq94cumplDMhGRunxkfjwlISDRMycOteH2lG8Ftgq9q_YVuDHl0mSYWPuEfqiSM2ysQpUk1E1IIpumo_vuMSTA_BwddwIdgP1U3O89fUS2o2xtA2F6tKgiV9FJ-AHIPC0akWpUx8R8XZer6Zmd9nA-50S0tzVQelK0B83fpRM4qRJkm-iH7pruDYYRSalMNd5vyW5Hxaz0n9lvGzYwURuoQQRKp0yTU6V8C5OFlfUTMqHPSQQpeSaTjSoFZI6QvVIvAGN_bwoZqsGNoFndtwt90iZXfhmciToD-fcv3EeVQLkP_ar6Z-CIZwKrwOPCz2qKgUiFvmOCVMPEBzsyhmg9crr27eRjsOSGTzBgB6bAQU1u0a3LWyUzkla_LgZF_jYzgByIlqrE3wDc9OekJoO2uyAVw_EAt5l1N8fmlpXasE2l_H1pdFuvZ0AbTAJ3K0qla-58fGdbl6xPkTZCyoBVBgddnCd_5Xoi0uM34jvoYrQ9q1yUbhwnpl01de9atPSqDTVC1pTpXZ1h8NRSob68SrGfYHUqF9JWWlhUtx83XiefWMUMy19ftIUFjfp21a1PwwWSryz_VMjR542vlAhoV5ZqE7zxl8hBBRv9Qqq-0m7Sfkuq8FsdOt0_jGQe5OOIx-sRx8k10L1COrZVyg-BZSr2aIwnz_2WfqcxTwsPcviGbHzFnAGkm0_eb86zsyKLZuS2_WNec1AifG-8qSIBfOgWSI0vrra48zfIvVJTT8DD48McpMv5TX-UDUGNPMoGk-R6DvKr5SH7z3R2litjEoYfQAeVmo1byCixWMSxrJODU0Rqy8OAn4aDJA8lXXjmeHeR3vQaRthIcVLZWAgLcOl1F_9F-hpe3oE62cHV-0L6xsdkACbsI2PPi9N-6i2iYePleYYHwrQzBzcTI7xcNTpfoDnl1xkjdCqwY-S4ff_LNDOGawmQBJccNNwZTMFpUZknlk0_sNsGTt7jSIFAhkN-m56y0ubLRWqKn9YKgRGPN5yRI7slOPmgEvGvKqkLEPrK3eLyWxVU_2Nv8uTxA5--3I-T9p2mm3xsxprDnQnjdazot_nmcVfGUAB814l1Fgv9KSK9AJWOmA64hvujBhAWpuYckYsTIqciLtbrJ81JH9MHqOm1np2jP0V3ooj5YQ5YzBOLKdYxufYJnMv1mnOkAr5P01tTLeEGKpEoEXVmsfeqna-t6Ngp_461ZViSc2qnVUBZ1gL1FC3ZVNCkiRMpZbNnuTchKRFqMz038UXrFb6TlOmIlXmGOcRF7PlJEfK1t_vls841nahFjD17z0u-0OND4L5l8R6XVRPOi0SOyjRcvjXL5hJKXOHLBGNmdFeGb6J6vZPGIxHhnyjsDXHxkh6i11ZZI-p9UOvaJ_ayCaAR2hQiD-J34jDK9xPgodCWxiqVmWf4oiXKDjgg-nKtEaGLC_nF_yQjYv0sNeTdyUyEVsYIMYTWSVX84yMYWIxluF88oDqafkven6YarqqQVdWd7TevFH8VsX8luZI7KXFMCWPuiJaluew4YBIPgxETg772xKrnBtJHyZYPK1HJaLJ7oaIiFWAKNMFk6e86altRlYE0t1RjDQt2MsLQzkxaHbycfoTF0X3EZTAWp_3RIBs07J08Z7MHkxpMnAJaioyH-erY2A2KFgBrDJnGk2jK_NnXkm6oZifJkEgXpw12WCEkm9sC4Q2J5v6dXyLjqHJvun26tv7pnCOTATdzz7VvIbAYngzMiBTdjRSUEbQBgcDgPYHLTNpXsuRqJFtX52HY5q-lhak2ZLyqYb1wwweuoVmcvNxQESSP0alteqjQVoEbmh6SzZzIs9KlzgnBUsmVGF8bNxoo7Zos8DDMLNzM7NiWqqsOANrIu8LSjc_8B5aiwj1xliBXmjCByvLoHbSM3GSEC6XpdH66rSiQl_JJzVcfe5qSjBWimwmCrMaEipcvhPvHztgowasOShuOmknHb0Bco8msg4Bva7gL3EkDCnhkeV6aqK6XS_WLZE0MW8xAyi8N5c-ZM3iV7Spi8zdXcFY2Ghb3Fg0GmclwP_V0xCoIuJcjcBhSna4uR-aYNWg9zfBU8-cYMwLAX5O_Y6bjzQEwtCCIL_MesURFKtIeYht2wazyvUfPGaQ10ltF4qU3XzVPPdqxyUWtVCnguxQekndcDXj-uxUHM7SCsl6wa4q18KRxMg-Z3WG2U7_qptdbYleNi63sMgLUqOGrD0teizty5cC6sOEPLG-QH62FuNY0aDBOnxRo9bcLG42V5H6PEqgFhJpotojOX6psfnH4t2xJ2VlNTc4EgRtJiWMZKQFWsa3WYS1CB9EPSGGeG__mMIz-T2udaPeV1ZCjQia_smlfYarZGNUjRRbSRbguKYKpZCautfpI9psMA36oCN4Ljd3h_8CurAH7eBwwfL0fH6_OL7GQnHGdYLC7t0xRMmlz-xWVTnwK2BjihFj-4A6EtwJL3H61pR6JnxqWxucR5D9cWGmPOLNtefE-CabPHRP3rrPA5lmYQCJaAh_VyZS0K5e4pFogso9kTLWdmBa9S4J5IUkYYM_OU4s5jyhdKTqpPMq_zTdwI5zXHewkIIAa2l-VElMidcB5UOev2cdLaHgvlwzwI-kVJuvgGDIWP6rqFx3dn429L02IcEmUcPLLDHbFVkqjirkBUwnDam2WN0YCxHOAIzYM_9aB5U2Y_PGfvZH3hiWelpQlynZPogImTn4wsQkZpwr3LFxLEdMC2rfxh4dei91ZZzSqiHcyWycNiuSfhRI8SSrgyYZrNvXtAHKNGRBbUImQeTek6xUsNCQevMOXIaV1U38aaqSocDzJhoEJo6eOmllTG-u27K7iDg4z_SUC0nzifFXBhp3RMG9UXtmggEZYBU2YpBka0VqKeIPL_9ivZoQtKiQto3TpdTQpZ6rxseaKfB8qC67J_YXOGgifuvtn066upkfZHGUm3LooHz8jUUOnTXUYhfQJ-4gC4DhHGw-9mpu-T1o_-0qUjT0yacuFiT5AjjjNx10Pruo-a-Rgv8W7mFB542HqeRxMP2IB839WHwdkkCHPMjbP5yjhuMhd5sV1uLiK0fdd3LQmxAx3ZW9QRRWx8s8yDzFtYhv3oSOAoCUR67-048Lo3rpqlKL79fZ5pJB5FsRVsbLa5z3RELr-SYvfznumFjjiWtkuQkr6CmCxLDUboJgImAjdqANcTgJSK8DGtlovou6IEkA3a3x9FbT2nd5Ux27w7N7M94-OcbyJhVb8-aSEaGycBJA42bIjMz69YoS1GSuXvRqfydINGmxo4scKA9iW7M--FvQKhKaqA3jCa-ZwhsLeOLrULggg_-TNdmz_wQDcdXyriI1Mx-snxFTTZgpyY2lQy2zTFPxj_i8X9eHLdEKWqESwxT_wk7haIDjuJ6QM7YEz1XTkRqJtirnbqGvUN9vqElkpecmNNh-jSUqMLyRZ5lWpY5HFojw6x1g1-JGEqQJgblGpd-hnmxq0IKEzb7aTGrQCY0GkIrZNblv6WWNwhA2pwFyjPPpOqTvU0-fxvBhk-k3jvA-T8TP_v3R2XwRYNtLn4L-gQ8-KJ95msKC1n3ky02ICtMs50MESZVO1QzIhpL0ysmsxwMtCeIXyPy63v7qJDBwXoeJxGJ4gOkZGZM4Rq9ecppxeks8iTvYQQEk_l1LUwaftpsxhJujScj_83AyO0hloBXq6NQcG8z-Y9uLehxYBJt1fcEKQjakA26JsfgFbkJFS31YibLFykeVHNWD6YsUdmmBIvesCMjkHDFvNKSTAoQIndHvQW_SVT0q1bhK-6Ey0e1h2rtmL7f9-McgBZ0ZGdd3p_0Mslu0E6K4o7iplFgLBWxQdye_i9DA2sBhuESdKXXEeVHgKUd-fOFlnBWYWkL1u6z9PgEuSCzDyZTol_DLVkKQvJYW485-DxGQkvh4iNqQqHBKJfgdg-oXeqR5NIBqALpN4G3_RO_urV5kLBSVALxhx779rV1huYbn5gY7mgYH7g-DNlIHs0Muhu4SjIJcFsbsVHeP3qT_St6lZsxwF0Ebb5MpbE_OEy1EG6T84VemnD_H8PnfqK91wF06VBufzgF1oGvfyAwAuvUXc8KdD_95tOvxuP5NogzGXERKuDoCSU1EFrH7uKOksLqVOi2JzqTf48higu9PIoK-ZaUn0Dh43cEvz5wi4P86qiCylilP_-7P4eh-Vck8Fqfe3b0fc6hC1gHDxS20V7679jH3kprFWndiEJYYmRy2irS-qL5h0trG2N__GYhFPv6qvlbV41sHuHkJuoeud63r3qIrrz99a2hnNFD58CE32y1U2vq8S9WS0IgSEfMaGyPPk0VFjnGJYSFXmrpsBkpAHgIWGHMyWCTuEqYK-LJxfjt2hT8_TLNcFcvA-EX9Q4mMTh4vPYJDQco28OLC0SbM40GFmwHJFQh3czz9W-cVUQnSWkp5Sxu6wgmEiwbWkG8pjpL0RETtKJheJeiXomHlH5Gz3SZAMYv3CNqN--_ZIy-2RsamR12iz685ab552xO_gMIf95malG7cI2OPyiyzhaZc1yrZzL1WOAS09CJGSIdnd1eA7HVMm-Pdi6N3ByaB9xa0Aw_Ntd5IvmwHen4qB_PBMZNe3f2lPOO42auqqSAqqCu4su4I7Yp9bP3aApXO2x_JhRmB4Kz8UY_0MrcjD8Er3Ujwm3FyAKVIl1J7ZjhyC4reHK_vRL7xFIFJglkYJA-hyupHsFQYbcXm2mY3g0G5dTNBQqtHT26-UwZT6m9GygLeJ7jPb3Wk3zLVLQcmPFV-1nPJ5HNyyQ_lG1CulLEdkl4lAnDVH_qaRiof8pd0gyWSQ4YWVwiWW8uzLuiejUb8Uyz6FUrFHB7eEPlyks-hPjnyCh-A3pUZtiO7sufnilqepiXE_oGMbWh-aoXk0T2nIxqv2_6n2hT3NBT1K0o5PZAGHV-jvAsX2jKYtJbwnu4W4dm35kAZmrBoVicJDsxqfiN2c2I8HNZ09nBiVg0K10ozRoICY5iE4dcnMIS18j0_nkD4yncr6J6ZNtwUTUtTEmvXXP9OifWNDtZ1L0-LfL0g-oc2QuD8G28gNb8G83TFEJmEt328dN2wOUSTFGQyHzoj9vfBCAH0iw_aezgdSt63SvgUp4AN25DNNuhK8Tod44k5q9pCPlb82qFGa-vD4p18T6iiSwn1o7gVhKpMUP7AaZ96tyYqwzAx-3UinUUmjGD1NDzE5Hm3FAMc3PwWPNq2L7qrKMg3k0HwVnai5hYTFub5aMjQ-LvTqNg5gFow52XUwWRZv01zlu4c5ynL1797siKFEq68CdzSlipNzRhmKJ0tmcuBvXdIOfVoxaGeKIqDAlWg-e6vdMIiy4YiiVx2X9yjLkNYPPDUHa4jP6-9hRRc1PfGwa_jN2Ammk4Bck2T3gR2UHLyBdC4SkfD5KBS_1mJ2ZgWdM9q9_01RpgD-Xf5HFjO4SgAG4YfQGvnqehuwPEeHHl6fOUTKRQ9SDlz_2R-qexojkolLJdbgHeHSiNzN2Z52JXFseMOD8EKcFzVy3YJUdDlCjAvh4tOXYluMXaZwovla_11iIJUGddqV5PMQyRX3Ad4X-prWrrsfofvC6pjZfBsK_jFjI_E1HX0mbrtKNrVrx2L_nV0g3b2xFUMSqePlSpdv6xuTOP1IKVsq5xqnHohO6mSeLlbCkKNlSQuXyryO0tlulRwH5iVnN7CbJ8oHcuaujvh3L3-_TFt6KLEKgUqmPadKZeDaGwrgLHhn1QHUiZRgwcW8RsZXxMfWWsXbBhTGbJO6wEtJhbnWf4_IblMfdtWLHy_vTzSBQZJKaqlnbtZ_WK-asghdWBS5i2hb1whIkXB8fqnF_EB6cvbtsTOjsivbVoggeHAy9hkGsPbPDqtYM3cpqFH0QpyoZJVTg3hIQYulKpc_VS74tQiI1XZZ752hgiK1uWkte0Ed9JhcSxFpSxLjKzvCf-QR_HkBXY3ykHVDJVxUVx8OGK85EJ9QYKUyxl_GYDDa2jOzfUf5JzPizIHU84FWc31g0Pi1TjhD8EJr8tXy7ih00Z9LxoKrbDO0Lf25Q4lLFhmr1HnuZgbuPgVcsSP4tPsyQ6HcqQhVhyC8u6p_lgHTOm6Q4IvY3Z5irk6R2V_qP_t6elGcMb0qcztvNcUKInIK8PTWFheJwweT9KANeVUeE5LMr2AyIwDdSnpuRAUubC8SO_kpzMA0JK-2s7A8Ai6pF443Dfoz6uCxwxwf1MaHGOmp6V3_zKfGkmRZQWvSUQWWqlMAAaA7EMSJ8L-zzryLyoxGRagJ_O38hr8VJwKmobrzeY_PZWYdcGx4UC-q5hSe0_b-He585Cam807IUoSn0CVvPwmiOEqL4TKGtncQZzhGT7_r6WQgsWO5EMdj4OBxg0GOmIQUK-NYoMur_N23LHC9dtvB8ftxtxPxIRt-F-yheN7x7JJA4G_-oeZaLRNTLi9wRxJAuZBgju830vRxfGrwRKRedcSsN_N3SC3guvBU0WQvEkqZVTec9zyoDgDNzV4RSoJ3xOkyyORShp3JiydFOyc7oooKOT5FFGUK7ik2lyRv4cml9ViGGHI_lFCPfnVxVGLPA_wWxyIIzZRG2QfhI_K_pL146HlZuZfot7KsxGPDX3DbCdzDiCo6fuBBAI7BWcrVa0RmtBsZ6I6E68hENk3fi6T7N7m53g0_ikUmuD8BlosFYiTawqgv2d3mgaAdxSro0O9OX5LARGgBIVR8ZIxs5T1rVw6pf_g-N02lsX2YxaP3nlek7M7TwZvdujDVgSlx1AwRCx45is-s710gMLstDXd928jQLg3mbsM6E6Szrep2ji8MGecdxUsrg7VeDUBjql_1Rr2NNfKAhA6XJLCzaT-9ZcWUr0UuOMYlwuHPlYLeII9A4mEsOT8dLceBm9vLq70yh8b74Kqhgwhh9t9CMcDXvvzEio6cmZnX9lVRb7O_1ZUe-Jlhpx7S9JyfcqMBgzsZ_vIMsKgRMcDG7w9W5zA6WNoFZ4rJqH5QeySvjnmp0G0PxclP3GFgzgfxwROasfKEU4epbOQC74ltYoOUl_ZLgBs_54WEUvKlnBOaJ2LzopIgISu4KVjs1mXlpmf1ooz-9dw_OjU9-YFqWJy9LMAcuydLm_0reGDvxhXqWOxSiFwlvSVUI97nUXts1fficC5Bt_q4rR2hNfvBlE7RKZN9HYLEmw5TkoYIRZPKSCVI1zYrkR1LVP0whNlqQaMqbaRMfYVd5NjVB_LwNKF7RPAIXXMr9c6bvuIeZx9ODcjdv3gPDMliwU6eivD0B2dztX5Wr85IJ8V-xaSoIx3ehkLm7Cxp84cxblBpZ9bX5rP2wb7X-k2DfF_GjplzH3JFHfTierg6iCz5qSRLsgYdZkd7n0LShHsy9XQlVWPR4Tm5vWAdgXhQNBN4Y77Wto2coJC40pkGyHAP0vQw8buvGopWEs3HRrG6oZhkWrVgYUSAH12VqkLxGIfVkDxzPymfogVQcGGt3ahfAFgTmmFsF3M49NxzFEROx5AcOe3aLWxMpZOSCjm4iYbBDHWDJRYyoxVV7efXcVJYipyGFzI-hQs3KfXPQUkivL64GgTy0EdkOu3a75IFq2B2mKrqsALkwN85eSrU7P4mcJZrlql6HGl7j6GLL2DwQb2RuNt-v-0je0qIoxPCsSV7qHYckvM5MyFIGWDi7w0Gb7TtQuO_XYNxEbGQ5ILu3HMdbXAxta32MUJSUyLf7LHa6DCbTOVeX4ZdJ_qcFWZ2IT-yrPmnahqXF-1J0jshvJ8pV_uHJMqkbh_W_BHicpKiU1kRAxthRyWSfqMGBKmQ6oZVWkcoOjtWiAZ8ytvLgrIKv8OLwqpJGqo_5Ttr-q1Ojfv3Fmz8WZ5yizmTmv75IGYK40D3dXQeFaIaelTJTcBk2_Mu-HfpOJJo_u8rc3MwOD2rCvtnrIeFTWMuCT71itmdyc-CUaR2372Kn1xv2PmPhJnXr6U1cVYq5tIVZkcHqVy8bw3jQ_FJu5EFRbmbAtsC64Io9ZbCpOUMLQXunlzIpLfr5MQPYxRaDvyvL2DiQ-VHh-YL6ToBosyUG1aJQR1WbPBQ_zZvo1OxSVDU6Sc8qLe3rjDkuo9wQjRE5PKe05NnowZjJntwi0isX2FiFQ9UWZ2ufsCLoxVVK3yKt7lIIVpIpSEI9uz6z2oE5FulP0KifBY5mcvrgzwfrw3l1DCTzPKw3zbROCFJSkr4mzlbP90PMfp7R4X6jZiLlSuufUeQVjW_ZimsRVw-jcP0A90CKMHa5ITpmdOpqU9Fx4t32uZ6jBJdaQ5eNI6HpegAB8PgeUSVDyCKrNZZP3k7lVNcs42E_VcbDT_a7ZbQo5X_9fgdnCfLYA_ZMQRA-KbAeM5rWyRgJuPBV6UvExSruu7-0cDwAgGcfVzDT-SSW_DiGvD2dmMuleoAcB1En8SYUOmnwwLsiVhP_FSDecfSJWNJPsrXYMAkVwOHkgU1VsyjC5LJs-VR8ru6dDT4Kv8yaKq7gMWksJYcIcyDK4VDo05Cdlw717uavJBtVRtSwAviFQnHGIXkTRkihESbgNfUmrwSNhNUoiUXsHx_5nUrE3zqh7ZqycS6la4WQL33VT8wGu-HlHvUCvtHK8dc5ph8UDGRpOuFaGEdBwqq2j7Hq5gd5E30k1UgO9zTiLSNj6ghQgVIXxmPderzVOJd7g3N42rUhPjP4PL6sTNbKM7ucHWHY9oDRZy-BLbn4epzMELYhyuCGqMRRNtC1I7V468LQKXIx_ipqFiKgsXuqYvSjEdbWVZUa8n9bBG6Xv6aqibo0hu7w1E4hvbXvqxoJXif5beJqcCQJdSlKwcNIEWuCcjJTqZbKZWa6HJEC-q5h70wRkLHcoLBqRTxuhqFQE8jLUbbTTrE3IsIOUy5X_4LDDwMKRwwm5MvLcT2W2pfLwpMuYJTZDQivSEFQ1Hcojn2f1eQLkMAB_TxQHDDRlrTH6xR5R9lkqVm1OBKE6TqTFRxN7qjo94NuqZdkSd3NqHhnG2lpZ5F6NA5guaDkJraRcdCgAmeQEEu7S8I-yZu3OWEi2UayNi6oSlfDLyQkTdu9EcWxdMcoae9gv4SpoEW7v8AM2jQeQxu-2Mj_E3BLy4D22fOIxA47UggAY8VD5CH3tP1W3oKxxuG2p1ViOiNlCasmTG-qsE8H8nZxExLZNpTQLsSjlyzUXcgaKMliwQ8YCHGIq1qecI7YInyRBKRXYAumglg9OJdErG6QWcUePbNkfPiUILBi1KfO3hYwi1txFVT3pbhvUtF9nFAzZWH_TY7IN2_5rrWps1MHGAA0naXOlZUTYeRdNiza8Ad2EaBEPTa8zJdPGNLL59QbgK_E-WZgbNwJM3fY1MnjBY3yrAnWPxgLVTOv4kM8J9IhMUSMNQPclNt35af1FFGMMSu_JZHG9B9xnjQ_vOL0PT2iKoSYWC9-GKR3Re6DgmGz55nNj1NxvEB-sJBjqfc7MyZ1MTJfY1gUsdxkkKHxh7qiMqO-hwBHdqO4499Adok4pS730aywkGAhwsEnfJQNipHONQm5STbGKKjV2NK3qqB04h2tCSw4AelGGxNnHenFVzhsQby_G4QzxDFCdFuwTYaY8JmILEI-GS72-j2khoEopsJFy7kcvVxs2IcohcwGRBuK2Ulb4fK8hObl6_rguycx5u1ayiLOCkdsHpEFc6nps4rsjZyho4ULo5wUM4zI1gQxceJHkgtA6xH1Iufe6z2Kybd3iMB1C467BAppHFUMSWgLCrDNDj1nrsRRdYe8BkhbvKzsSOvRXJK6AQ4v9y9NkAZB2QdxJg-hJsNtogf_IhYI0UjpwZXuFZmfNs4zhjuCt4qJTd3VDEeDTOvDVKlClYm-LdsionCiSUTaZ3CoIeVuKKPlMlrxE9e-uq4n00Ww44DuWqCARaXfsL6-fBZE81D6u5KMiC2tOamBl3hyJXhHk9KehqtnMFSWoLDRNjvEdxItpjltCPiHs08Uo9luy2lySNjAxqhxvMw7G2IcTSgkJgYaF8RhGnxkZdDX-384bGyzOiDjI2L_nOF80HJ05VBY83aUcEt3gZPtIzjzOloURv8aLtbFbSZkUktzuiTUDTuU-r-f3ijk2R7yGlZuEau6Xwh2WfCVlSzt83MYNnpDRvxT-mRRvhXgCaRzKThxGaQxxnS1wZn-vvOTA8tPbm80IJTEqLylMXkzs9J7pRibfSH7o1AbJrFMOBqiUdCI6OrsBTSlXVQXxcbNzWgkY8QAbPBZ8Hrvr0KxMLtHip8pPXD4WtCP1h52GSnpY1Fzz7BPvCz3HdpYSOBdH0t8zeKMhSFyE4pVJVF-24I2TBIHLCzORUDtYaJVdKY9QdZPrt9EhNcESIR3-pEqfLqzGW2qU66vCYyIfhkSUmVEOR2dsXwsYw_MklrGt_xHTSo26eyZKptCwEK_cxRkkFfghPne06r-n9MybjYOwo7WMYnSbjY3rsgUOEr0-_0RR8O7hN0jAWBTLkMI3x5H-iPBKgcG2SOBwEnxg9g2W_Y-r4cO8Y9taprVtstIn0NlKGrIGIfpNULCL70_N2PQvWPzZKjvaJT5FH5phujW6wOhIM4AK6EucXrbnLbnWL1D49eVQjNUwuuC-yHxU8tvz4xM4JjPl40PdXSiwY-WG1G6NvjV4QEXCZ1_mnVRhl-x4gZ8huH61-HAuv_uQsZntDzhUXzN6v0aKGLCdB9-oT9W2918zNJj5V0ZSmEyo9yg9TkVcbNgnhdzmnHoQd_JyRteG2jSoUn9wxUl4B31hukS7W3tzWyVDW1_H4_uVNoGRdzK95vP05Fr27YkQILVNk-vfxpKM92ObLBDuMVEVFG3BsfRe4Ch0qkc88SXzSuhP6N0qVFn7-w0rbrFMNp_fMo-ntafPGmhUsTDVHPACb6SaHYt9J01HDc9pbfliC4mkRL3I59qasJi5prbZKwlzzGrlY_x9FntqtifYsXwEXWbPawUr15oE-swjiAUNEoS5DlCcdeZPGMJj9rvtzXf7kjfZRlMeYXY-AYBFWaPkpOxQI-winexODtUIq72_hVBeyxniYQoNkDsh1DgROCTfyAW8ddINGqiS0oi_SAyxTFALwf38h4k5RWTKpf9kybZtw9eaQVPiI7dWlzTjy_9k7s_TE3zPoFO7I2sprBx4Jw0LE1GxMnuPDhOR-MTXefKLA4a33MTqjGfKwY7oB14TsQ6Ag0eCuXMV4KoPxhIe0zfJou42BYCXU2J9pOmIxHiYSPyJiLbW40yx47hVpM0Jfzs2DbDNkcH6ZyfX1LS_wQ5iree5Ops2fXaAwRUmpB1oO1hmJ2WZ_PxyvjjumcoEM0UYf8gUx-Q2_-fpqcZERyIERvgcYZo1LLySUmlr72waUBKAYV9ru7Bd6fpf0sZWYDIgeYzasirb504-QypDwAHDBa4Yql3wRHpy-avh8HNEXt5CPszbEy4o1aloKVpbxM3-x8l8bsBb_mYFtNFzup8HoRxZykFBpLXlb6rknk7hocbC6KsNoH91XjAejh-ZKadc1poGOcZS7E0DBDQYeqog8sY2u6aKz-RBpu7OiSlcIS6viDkNoNfUMBQ68Bl1aLqwZBgtXyfbGn52nkOdGaSs3w3J6uP02xMAa6idYJVReywuOye2lzKWVqX96nAVMHXd9yepgcv91yoMQbyM5KG4jA2-7ByVRpZ1CLsP8bDrzWIjZL4J57rvKucSKlWlBSfkbeY0s9PrGTpjaV7_IE5EI6MMTW-wSbOSExVPROefvnsKTIldWbUDqcJFkmT4Kbawo9mO0G6tyzvVFbx-BfrtlZAWLoPTqC4KvBiVN4K8T9A4CzIXRIYxBSm-BX545cH5Jk-HSm9j-G8mrWTyrf64XqF92XyoDCCJmFUZOKlm0S6MjXovZmoO0t6yVL_81rTCuopEyuvASpIwrZx5znaMhHh0I-MbYfkMw2IFkGME0bxY0mFcVJ7bvv1TP2yQ24hnSFJbcYiPnSZ8m35eihR-Ri_mMDRZfG1xQ8WvZ8UUoKJeOc0QJUnqYbOgY4_iwvVsgWsvvNcZoQXfp_bWSWZ7TUFm9AYL0zidGFZspNg1UZqZOd2LFKp5TKKJWoJ2pKr4QvwugPmQdu14mHDxQbkwfLjA3EE4E9zEQ1SNyfbTywOGdbH6KPxdefDYLjpFRl1QPNFJkF0-CL8sdP4hq4iQtoIdV5v6Ahta6x8IqXNavgNuc3_V-zdaTQsgv1WEQSH9MLq6Z9I3NdAC0fFDiwFxH1EVlIT7muHFY0GUrS4MiaGMi3XSE2U2gbK5ovRX8iK105AYHiEuWTnAsD0UDKm_DCCWmGqp22fTG2OsjjPnLxmqYDWBT4VUJkL2Menx0LR1-cINOVxp258-dIBUOHPmo2tjqqhGgxl0eyXt1vI7GFKX3Oh3Z1dpwlSOKT2pCjVicFXhZBd6BktlNvVCbjQqnlYz_VMlX0f2qfK4P7J1nqmL1LVf3rGd3h7KmCUqx_1lBT4NpsC3w2Lkfr14zUYpTliKlFzHeVHPvU4cMqI9DfP3JryscFrflItkP3SQlrkepmkXWQV1rDZeGwdtJDHfqj-hoDiySMQvrCJnHPrr4UVQobtOLwBPcp9dDrmOP1lPwpn6ecnUMbSGkmVT1zDorUAUwrsQW4FZjBA_T3lfRchcqyZ39ZUGaJDpi1VD4R15SefiGC6UDSykNW6KQBWZulHdlkK_jdnipbwbKtsRl0k9EOXcU9fuTSEojeYHknuvgCu6TeuGfAoA7PA76MGUH6qxOcTAKzprfd1GsEDgmRn309sJo933T_DsmoWC7MjWPHCTy243q9eZcdtU9FDB0ge3-80RGYNu6zgtI69zUDDdoC9SX9KLpSKKM_p77UxJk7kXJQf45_5EwyYuWZpNK6_np7RpnirhMyUISqE0BMdpMZOzu3JRYGjn6t-nG85n_33dRaU7l7G7HK99GexfUMmtO2hP7AXWLCUB1hSd3CTqVwTGuBVHMYb2Ys7GU31i5PenDeIAbVr1AbGkIWvosaSmliVqeKCLRfuba0dlJY3uGiox5taOBMhXO2OvkxCw5cKeyh_KEsbAFD-hYFdTVOk6rbVenmddMZP2D4j8uJLJ8RJAjC556FAbUM6rmxO1LLgym3NTA-t7_kMwWAQn_rDysyDwRK2qDLA-FTrpRbA9WET5ODmSuZurwYBcjlKmC_s4u5UtS_WAxS6ign3zNEKTmBABqKYANM5fQABhPLx1vzDFXV3C4MFYV7sKBmnfvatv3rAoWRupnj2Zw9eblqHCkKva_1HedckgjRy7nD5a_kuU2ZCgKiTRfoJO_hEvzv4vnAbLBWp2T9pL4BduLVk7Sli4l04QhvZUG6AqzJEcyqwPVYT-uV38VAd42Y4NNbUR4RVp3hLsIhK7EGden5jLi00XgnYu6vPCfySbjQSAsNztDK4PBtc5qR1PVyWDCvcI9qGmz9nwuW-7GY03iX6Os34ogio4wnfsjqtvfpAl86iasD5EQ2Jo5PKJWNqeMDJtIA0ZfsznKfjQLLTFikCmDarTMLD0xeEjDJlj8rtfGxmmmTlkTomQhCDAXinkGBo8i9T-Afjndkbt_j1yDt791-IIqcj2qYzO1eMCHQOoya_Bo0LctnSgM868Mb8l2Hye4yFNf9Uz8hLgQBUxgArknEn-OpKYQ2qN4d2tNFSQ0FN_BL9crSToUGERB-zdHB-vmuOacfKu3D19mvson3U9EzoVj62ON2lcX2EBRIxfTgaIrdrVa8F6MXHVpTlpPCKDdMtUdJF1iTjKoT1-La1L4DCDCyVQHg5knNoXWz0tq2KsGB_dUbOkxXwvS5VLJig6tP1UQps31u1McUU63fyTvhCTrNqGk0n7G3lfc599sAe2LQRBDKS5h8w1XGtb8zhzLL39zflpWozoYh4eKUapNXtjrNuZCH-P8LgEc7LSxKjG1W72a19b4OYx3WIuJfl3KrpPb2SphqYBdNrdU2NHhGBl7p8Gwe7m6wa7cMAN5EliDHZC-_lygdxhJd7n5q--Fb6VG9d7mCs7WcZ8OaokGaRvTJAyzIiIchwtGoF2LkvmTcUmGIsNGsVhy_iPcwovHwfqLm_0xCD2eSH3JflJ6QcG4EypvFMfMNHAXoiI-qEb7lo5CU8hAU0yjki4jny4bPmkMtrne-U2W-qtYqiMURDRiA9rLVkyYB47iX__m8Bjh_PHUVPOmXWCr0dFokBi8zxk-byIuX0Bxe--uZSzYXYl2uy-mDbIfsTVl-nPdPUwZytPUczO6APtcGnP5zU0Z9XdtCsYkDkVC9C4ga0_FsIi7lyVeGSnWZ9CNq6MHgbySval3kANvcXV1ZYc9QAThtyvqwjCe3SETJu3OR6YbxSOhxseNwaxZ0uEj850UwMF7z7o1XXbdERcU9Ie5v1GWGS0W9aPK9x2EqzzvHLMFcgrn9HEcGCG-P9kUponpcvXxODrk37CwuK9ZaEkVp2-HQ-YsX2iF352t84Yz8-1rY0_4XeryZo0bfqzOeSrxpUknPR41kBurLv8ElDl_OA2l8jtC4hAtUAWsQairQBkzr2IZ4FIjlG2bYNquVxb_12xFXUMufknbYdwEknuY807OBD5rc5kFFHpQrMFZYUyMi2ICweCs4sYyU_mzAH82Vo64Q5Tpzvn6D5ig1kqo5MnnaYL5KaVU5Rn4iCjRVF_bH6E7s37owi1XdLjQkbpBObx11thbDRUv4fuPONyeH47mg4fRqSqWrObS2k2KMIZzBnPt90oP9xY664x9Mp4N9Zv9TK2ZA2pDeXOjtBqDMoBcXcXx1ao7yTgWtRmRucOGDO1PQHsRdGooH4dc_AaFyOzETeoZuHhsK623SeX5skb0okgRwFhFQcGvOw_pmGluLlWxY9vR5d6acmuT64jpu9HcGA0TGKoeL0Wc3f8CnvzAOBETtRuB1BCZEXOVeb3yVx2XRSzgAdNpp52JgJezYicVZjO8NHtwJw50pzcR49P-7CVgffG9MnqOQs_OvMhqONV2Ojz1qpKzx991t5EYYwBApw8IIA26kSifxhPW83KFpPLYACMQIbjyycqayI4rE-SylvoWAmaNosE6rskQmYa4ZLGk16-t9qkvMZbQ28KFzqoYvQRJWYmGAKF1elSknBLBMenf0H2iE9ZeiFcIXWc2eQAwcxBwFkq1KEoG0BGU_VROaIYl3cTvcmibcKINu0USRSX1xJmV69vsMcPPqYyApOMxH9q-n3qytXGUEaWYDd99LTOy_e4d9r04F7ESbUlTow_41kxuQcvDVF93MKZEXL7MANhqOhqqYDQH1DYFCAQdq5fRyVxyBPRXtghu06MJOUkPxKTQ4Gf-iUxntRMyj8_o_AB6qcSJC8vb_iFJdnyoDAEHJlMMTbntSU3lEK11rzSCO0DtLNLJ1SKW8xAG58SCDKGaPtXOiL8DHUFqXc8SfLDg2gEbJMH1hp14cFrz3h3Bz5gShl1sxOyazfiwhtbaqhs2SDwaOySqXMIga5TeHGnpILAXl4o4ljW71yXwRMNwyyIjMyDEBYvoWCL45Oh7sc-OvxxIyNSSHHuQNp2y4zUtX1C-0ivWmINCzeieRPrTu0mhbFP9BQsiUsxCgkgYJJVMKYA6aV-8zL3yysHErCk3RZvFUDQySssyMvst4HpeVTVOzxZ30Kiiezg9E_cLf9t4UoElZFoTDiGuVeVH0kfSLaS5NhMY85Oj8ZYQBOc135tYkrCun0N1NQmztuis3sev-MroTnvIF5n4Ww858kC8YrR8FUbjjDnCRZkhEDxWUSmmjgBXQZ92j7cZnWqZIO_iEttJpNnV8sEN3BAnH5AlXbbVNt-9dJcyi_CS-HEPthyH4xNZD4G-CQl2Fkf_dtKdg9m3ihenr9uBuiC_tSb8vbYNAKVPKXyAUdyi46vj95WmX4JgYP_Fq7dI6HtaefRw7H00sAx5_k_i5-q-7FA2uPlNB1D9FVfI9kPYLHwIg2FTL4qi4HMWizE0T_wAF29cWC7atTcsk82FYoBLx35XPiodEhC8fZASq1LUnYmNydTyWOn_5ICMfQamjQP3nIChOhjk3p0EQsidkP55Bh-fmKyvFWVzhI-25-CKI3nsyzw9Lot0Z9NwXZi_6rp1r9WJzSA6JZf9C-akJyPUy2hkov1FKtg6L350T3Po_tlQ1urt2m0fxSw4FTJiTVwH8wZA3nAI12d7FuvzXCAB5wIGHdecGvUpfUY4sivy-RnrekVIowiirzCWkU688f_mV3q5_LiObWYJYV21Xtl2W7acPFB9KkpOABsnCz7hcnKJXdB9f96JoEyGALWofMB7qv9RKZs4ttsNSG07k2KASrrizpw881NWr8KRBmyVi_79PnpYsmCGrWEvT2MApYlect0wzbR_ahfGc4mtkUDpF15JtVekhRPXnwtSBeAV3MTV85wMJDjlEKm0Vqynr4lEpC5FfoVYWmtYyy0GqsLPTHMb0i5O2AwrkzFE69DYN_SMTi8uoRtqtfUGZyppJDXESlDiwYNgAvHzZqlo0MCL6L-QEDEhyevZRZys_I2C5nkp-RdP5_d7pHLzzFV493mMmUzpW7L0mbZqch5sjSjlcn25cVdSid73F2zGfR4iQSuGvLb8UKs2OIuFxUf-eyUVzlQoGT5mJM5xnPfgoiZox2LZuOXpB6g6xQ7DxEIkjLkZV1lD7mpaops53xbpqxd8w9HYTDlizAac2Won5tt7UZVMWzN1xgJYswAf5dGe9w2n9ny68v-eYRkmMGuLCdSNTuLmH6LEMUBwwipr8Lg9CgU3G5PpEx7ZZ2yZT3TK0gRZRPoK-7LoduJDFGDfz8_DznHQju5k1HXnB3TVOFT9XgM-Cu4RdgLBRczEgwsaT7hGbQdRKjk4zwXjXYSMlZvrpE2qnVPawJV9UKv_nZOc3-vTHJLpnIUfuVCyJ51w5BCMSkAUm2meM3UHilhZ-RAkxlARH8LLkaYbdTf5VdnEgIFXY0E="
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"company_overview_1\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"電力安定供給を軸とする東北・新潟地域の総合エネルギー事業者\",\n      \"body_ja\": \"東北電力は、東北6県および新潟県を主たる事業地域とし、火力・原子力・再生可能エネルギー等による発電・販売事業と、100%子会社の東北電力ネットワークを通じた一般送配電事業を中核として展開する電力会社である。電力小売自由化や送配電部門の法的分離を経て、域外取引や市場卸売を含めた電力供給を行っており、規制料金・自由料金の電灯・電力料および託送収益を主要な収益源としている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_1\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期第1四半期は増収減益、女川2号機の稼働減やタイムラグ影響が圧迫\",\n      \"body_ja\": \"2027年3月期第1四半期の連結売上高は前年同期比46.7%増の7,853億円と大幅増収となったものの、経常利益は同5.4%減の544億円、親会社株主に帰属する四半期純利益は同4.2%減の361億円となった。間接オークション自己約定を含む域外取引の増加が売上を押し上げた一方、女川原子力発電所2号機の定期事業者検査等に伴う稼働減や燃料費調整制度のタイムラグ差益縮小が利益の減少要因となった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_2\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"自己資本比率は20.0%に達し、V字回復後の財務基盤復元が進展\",\n      \"body_ja\": \"財政状態においては、総資産が前連結会計年度末比501億円減の5兆6,817億円となった一方、四半期純利益の計上等により純資産は257億円増の1兆1,615億円となった。これにより自己資本比率は20.0%（前期末比0.6ポイント上昇）となり、2023年3月期末に10.5%まで悪化した財務基盤の復元目標（2026年度目標20%程度）へ着実に到達している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_key_takeaway_3\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"地政学リスクと託送料金改定に伴い通期業績予想は未定を継続、年間40円配当予想を維持\",\n      \"body_ja\": \"2027年3月期の通期連結業績予想は、中東地域における地政学的リスクの高まりによる燃料価格動向の不透明感や、東北電力ネットワークにおける託送料金改定申請・需給調整収支の変動要因が存在するため「未定」を継続している。一方、配当予想については株主の予見性確保のためDOE 2%水準を勘案した年間40円（中間20円、期末20円）を維持している。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_business_driver_1\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"販売電力量｜追い風：産業用電力需要の回復で小売販売量が8.7%増加\",\n      \"body_ja\": \"発電・販売事業における小売販売電力量は、春季の気温高による暖房需要減（電灯需要4.2%減）があったものの、産業用の稼動回復や新規顧客獲得により電力需要が14.6%増となり、全体で前年同期比8.7%増の144億kWhへ拡大した。これが販売収入の基盤を支えた。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_business_driver_2\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"電源稼働率｜逆風：女川2号機の定期検査稼働減が発電・販売セグメントを圧迫\",\n      \"body_ja\": \"発電・販売事業の経常利益は前年同期比21.9%減の623億円となった。市場・販売環境の変化に伴う収支改善や電力先渡取引の時価評価影響があったものの、女川原子力発電所2号機の定期事業者検査や火力発電所の計画外停止に伴う稼働減、および燃料費調整制度のタイムラグ差益縮小が大きな減益要因となった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_business_driver_3\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"需給調整費用｜追い風：送配電事業の需給調整費用減少により損失幅が縮小\",\n      \"body_ja\": \"送配電事業の売上高は前年同期比15.7%増の2,271億円、セグメント経常損益は85億円の損失（前年同期は112億円の損失）となり27億円の改善を示した。再生可能エネルギー電気卸供給の増加に加え、前期に圧迫要因となっていた需給調整費用の減少が収支改善に寄与した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_outlook_1\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"燃料・市場不透明感により通期予想は未定も、女川2号機の安定稼働が中期の収支改善軸\",\n      \"body_ja\": \"2027年3月期の通期業績予想は地政学的リスクや託送料金改定等の不確定要素により「未定」とされているが、中長期的には女川原子力発電所2号機の再稼働効果の本格化や高効率上越火力1号機の通年運用が収支改善の主軸となる。燃料価格のタイムラグ差損益に依存しない構造的利益の創出が今後の業績安定化の鍵を握る。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_risk_1\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"地政学リスクによる燃料価格急騰と電力先渡取引の時価評価変動リスク\",\n      \"body_ja\": \"中東情勢の緊迫化に伴う原油・LNG・石炭価格の高騰は、燃料費の直接的増加や卸電力市場価格の急騰を引き起こすリスクがある。前年度（2026年3月期）には燃料急騰に伴う電力先渡取引等の時価評価損計上（翌年度振戻し益）が発生しており、会計上の四半期損益を大幅に揺さぶる不確実性として存在する。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_risk_2\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"託送料金改定申請と需給調整関連収支の不確実性\",\n      \"body_ja\": \"子会社の東北電力ネットワークにおける「託送供給等に係る収入の見通し」の期中調整申請に伴う託送料金改定や、再生可能エネルギー導入拡大に伴う需給調整費用の変動は、送配電事業の収支を直接揺さぶる構造的リスクである。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_context_1\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"大赤字からの脱却と財務復元が進む一方、外部環境依存度の高さが残る過渡期\",\n      \"body_ja\": \"東北電力は、2023年3月期に燃料価格高騰と円安の直撃を受けて過去最大の経常赤字（1,992億円）を計上し、自己資本比率が10.5%まで低下する深刻な財務危機に直面した。その後、規制料金の値上げ、上越火力の通年稼働、女川2号機の再稼働、全社的な効率化等により2024年3月期以降は業績がV字回復し、自己資本比率は20.0%まで復元した。\\n\\nしかし、最新の2027年3月期第1四半期においても、期首業績予想の「未定」開示が示すごとく、燃料価格調整のタイムラグ影響や地政学リスク、市場価格変動に対する感応度が依然として高い。財務基盤の早期回復と、外部環境変動に左右されにくい安定的なROIC 3.5%程度の達成に向けた構造改革が引き続き問われている。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_perspective_1\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"燃料危機と震災・地震の多重ショックを乗り越え、構造改革と安全対策投資で再建へ\",\n      \"body_ja\": \"過去10年間の東北電力の軌跡は、燃料価格激動と自然災害による財務毀損、およびそこからの構造復元と安全対策投資による再建の歴史である。初期（2017～2020年3月期）は電力自由化下での競争激化に対し卸売拡大や全社効率化で経常利益600億～1,000億円規模を維持していた。中期（2021～2023年3月期）は福島県沖地震被害やウクライナ情勢に伴う歴史的燃料高騰・大幅円安により2023年3月期に過去最大の1,992億円の経常赤字へ転落し、無配と自己資本比率10.5%への悪化を余儀なくされた。直近（2024～2026年3月期）は規制料金改定、高効率火力・女川2号機再稼働、ユアテック持分法化等の事業再編を通じてV字回復を果たし、自己資本比率19%台・復配を実現した。長期的には規制と外部燃料市況への依存構造が持続する中、資本効率を重視した経営へ舵を切りつつある。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_consistent_1\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"電源安定供給と送配電網維持に向けた莫大な安全対策・設備投資の継続\",\n      \"body_ja\": \"初期から直近に至る10年間一貫して、女川原子力発電所の安全対策工事や上越火力発電所1号機新設、送配電設備の更新・維持など、電気事業固定資産および建設仮勘定への継続的な巨額資本投入が行われてきた。電力供給の公益的使命と規制要求に基づく設備維持能力は一貫しているが、その投資回収は規制料金改定や原子力再稼働のタイミングに左右され、利益の安定性とは乖離する局面が頻発した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_change_1\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"法的分離に伴う組織構造の変化とユアテック持分法化による事業ポートフォリオ再編\",\n      \"body_ja\": \"2020年4月に一般送配電事業を東北電力ネットワークへ法的分離（会社分割）し、当社を事業持株会社とする体制へ移行した。さらに2025年3月期にはユアテック株式の一部譲渡により同社を持分法適用会社へ変更し、報告セグメントを「発電・販売事業」「送配電事業」の2区分へ再編した。単なる規模拡大から、中核事業への集中と機動的なマネジメント体制への転換が進んでいる。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_change_2\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"財務規律・資本効率重視への転換とDOEを指標とする株主還元方針の導入\",\n      \"body_ja\": \"2023年3月期の大赤字による財務基盤毀損を経て、同社は「よりそうnext+PLUS」においてROIC（2026年度3.5%程度、2030年度3.5%以上）および自己資本比率（2026年度20%程度）を財務目標として明確化した。配当についても従来の安定配当から、財務復元を図りつつ予見性を高める当面「DOE 2%」を目安とする方針へと転換した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_capital_allocation_1\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"有機的設備投資への最優先配分と財務危機時の無配・復配を通じた還元調整\",\n      \"body_ja\": \"10年間の資本配分は、女川2号機安全対策や高効率火力新設といった電気事業固定資産（固定資産＋建設仮勘定は2.7兆円から3.5兆円超へ拡大）への投資が最優先された。2023年3月期の純資産大幅減少時には無配により資金流出を抑制し、財務基盤の復元に合わせて復配（2024年3月期15円、2026年3月期40円）を実施するなど、設備投資優先と財務健全性維持のトレードオフ下で分配調整が行われた。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"trend_capital_value_creation_1\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"成果は混在：安全対策等の巨額資本蓄積は安定供給に寄与も、資本効率改善は途上\",\n      \"body_ja\": \"過去10年間に追加投入された資本の過半は、女川原子力発電所の安全対策工事や上越火力・能代火力の新設など電気事業固定資産に向かった。これらの投資は上越火力の通年稼働による燃料費抑制や女川2号機再稼働による収支改善という直接的リターンを生み出し、2024年3月期以降の利益V字回復に寄与した。しかし、莫大な資本蓄積に対して外部環境激変（2023年3月期の大赤字）による毀損が大きく、過去10年を通じた平均的な資本リターンは低位にとどまる。ROIC 3.5%・ROE 8%以上という目標に対し、投下資本に見合う安定的な高リターン創出が完全に定着したとは言い難く、価値創出の成果は混在している。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_implication_1\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"今後確認すべきは、原発再稼働効果の定着とタイムラグ剥落後の構造的ROIC創出量\",\n      \"body_ja\": \"投資家が今後確認すべき最重要ポイントは、女川2号機の安定稼働に伴う構造的な燃料費削減効果が定着し、タイムラグ差益などの一律的な環境要因を除いたベースでROIC 3.5%程度および自己資本比率20%超を維持できるか否かである。中東リスク等による燃料価格再急騰に対する価格転嫁力と耐性の検証が求められる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_strategy_1\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"法的分離・再編と「よりそうnext+PLUS」に基づく明確な構造改革ビジョン\",\n      \"body_ja\": \"経営陣は法的分離への対応やユアテック持分法化など、事業環境変化に応じた構造改革を着実に推進してきた。中期計画「よりそうnext+PLUS」では連結経常利益1,900億円、自己資本比率20%程度、ROIC 3.5%程度という明確な定量目標を設定しており、戦略的一貫性は概ね確保されている。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_execution_1\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"能代3号機・上越1号機新設や女川2号機再稼働を果たしたが、外部ショックへの脆さが露出\",\n      \"body_ja\": \"能代火力3号機や上越火力1号機の試運転・通年稼働、女川2号機の再稼働、規制料金改定の実施など、大型プロジェクトや構造改革の実行力は示されている。一方で、2023年3月期の燃料高騰時には過去最大の赤字を免れず、リスク管理や収支耐性の面で課題を残した。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_forecast_discipline_1\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"外部環境不確実性を理由とする期首予想「未定」の常態化と予測規律の限界\",\n      \"body_ja\": \"過去10通期開示のうち、2021年3月期、2022年3月期、2023年3月期、および2027年3月期（最新期）において、新型コロナ、地震、料金審査、地政学リスク等を理由に期首業績予想を「未定」と開示している。予想を開示した年度（観察数5期）においても、燃料タイムラグ影響等により実績との乖離が大きく、予測規律は脆弱である。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"management_accountability_1\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"タイムラグ影響や会計方針変更の透明な開示の一方、初期予想見送りの常態化が課題\",\n      \"body_ja\": \"燃料費調整のタイムラグ影響や有形固定資産の減価償却方法変更（定額法化、441億円影響）などの要因について詳細かつ透明な開示を行っており、V字回復時の定量的説明責任は果たされている。しかし、期首予想の「未定」開示の常態化は投資家の予見性を損なっており、説明責任には改善の余地がある。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 1,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      }\n    ]\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "Eq3HAQqpxwEBEU0yDzB2q59SzQCJ-5U_Q21sIKsTNvkVPGoyC7Blk_bsHKiukJeZGd_anuxtZfvgzno6o_Ib-NcJ3Uw17k_hPzhpaMfavapyy0pOvBXspE-FurTOaP_MXAVyFB1jDs79mJLd6eO8i7jjZlmxzz4JtCsLTEf16oOLPGVNex3D2FaUSSsqVjV4VcJetWNutwvS1QNHoiUbdbNr7V386kV8XoJRD9CR7rjBlfNdDSnNigEEye9mOImfdnp532dXHqoXSqjt8sTDkUuFEiPDd58JAfZcOd5LhBtVnCjiq2D6o4qNeKc9bozA8EUi5hfKw-4bKKFP-vawjhvTwxUFn5eQggZ2EJfuKFwSSX26EIZXv2SKk8ZlEbHbVdX_uTwuQDxzT5JFp_LOYf7YCi7xt1VV9nq0pFOJ5XIEBkL-jIw4M43Po12qExwbddU4L1SMwgJ2L3yEZekUxgDWUPFDR5j8wyslvzvoQdXEsbULrHfuHl2eRIJu5Nuzi0xxOwNF563dxMpZU5nu4XWmIQ3cX7ihUuSmiD2yEFQYU1xphZrVR25MhKMNIh2dr992gDsVWjD0wNnXsY0rTZxwt1z2vz6TfsOtmyKM6IPlxIbU1RTPbWrZtn1FEJ7EDH-H9-eNoR944MHVA3gRlEmsjGTNGDLvf_fNdeC-9j20GBmbVCB1izUvA1CAH0Vcpb50Wtz1m7Qem0N5vWM2nUUi21CvTifjURZ21lLtma98j_I7T6rEedheEeK4cXMJCLc-ypaHrEAnZ4QFl8RHIIIkC21fWIRScD9pQzA5RLLvbphECvH7AViH1t_4EF8aJ8U3zQDJgDxfqTqt00-JuI0SxiCKkZm1PwRKRDAvy5ykqOcZxpszlVo3979bN7LG8qnDUiTJaY9jILv36RlOrMQV-43kp3nDzh1CKHa1UwS2cuma5gVLdJH7IKngRMhR9fMaQKxArL7u8-3QLBSZM7J4_G0sHFOpz9i5beySSDjCyu_EmWjGrxYamHy_6JQPOlTN9CUO8mH_MYRMnjCTnYoxKGRS-u61-QHSUkR1GNnolpLjqCcgz6xsLNkPzGERuASF9HdhjtYhKSmm2KwOXYSg64FfHXpXOza2qS9B74CU5RfD4yuMvEBuLDKf21MYgDKNDnJqKQH4-izm12xY7iHowUFblZtggdCPVKMrqfARylcICSgFAuVLyFY9UvPco7vxcO3jW_HKeYDv3Gfyt3166MrpurlfxhhM8UHRVk2QwYPxda7BA_fdIbwR1fPSKgAFsscjiZWEupsu_vI-M0piedKkcb3iOcKgIcW-YlG7NG_TYQmwRbwyKlagkcVCD4opYoL2rQ4VY9uNhDLRg924Mm3qPHMicSD7sPiksLWgbcSoflNVcc7l215MFMyQX4JGgnz13kKvJl1y9DEZ5hveA7cX00GyIeKzSadqysxUXTSEm_GBIl-KUDOaZDWiErDNZ1x3TK-gaQ8ETeoZr0l2VXg84wEIKwMkTn4VF74NVHk51br6irf0tcSFh2e1r1nY7QEqPvI8Iun2xPez_sHhjfgsnbXXiMswR1JLoc5QGRLHSz393zmHF0yE-PZGRH9HgfhIyzuHSWpsgvj1Wxp0AHA9Cz4HDJltjVAX_55HLVCAzqi8loUxxxwtiOIaeYOXBoQHfVgP-H-SxQw0-Kq716eg2RHr73N3Xn6SXBV2EXIiEl69vqNX4lt5sqWGdXHNyZ-DwfcA7NuO7Xu8LQbsB_YDD1E8DtHSHdfFm8vK9-vMIWFiIJPpYQ7ftbmk4bzVqVGy7b3_PC_ut27A4nnyYmLQHXVGNWg84-hV4Z2TVwe-hTy1oiqTpFv54lPl38SqHA9a-kv6Qfpaxh_5Rs5I70UXvRD35AiEXGWt-N8u8QuVNF7D84EydUW0i6vB2cUZE1hgPwiRzHgeQZSCdx5_AmWIu6dHvAPpddyuPbvccXXQibl_e1EpPQLBuYqDs6NbK9w1BotfW7ERmNBnn1t0qH4gq58rx0CZ2kjEaiboS630xsLrkpCOzwBr93-FsRsYVlKO0QTjixFytQm7pxpRVa8f72pfXq2tMY0yRGSngtqKfEuRhh4oLeX3KjVMx4i1ugXohCvLdJYD1znd7Atz4GLF1vKYVHPEdtTs7VQ0xxhBKp4oTKlVaGwqf8lidfK2LRmTBwhUB1RZq2s1gJt2CfV0bGT1vbOdGyvMbANhWeJGjyMFU3VkafTZ3ck-lTj2alPuAhX-ihkHiBb8g9iGVBfKalCFotMB8BEaqtO0diFWmqGbbuZyiyVsn1bRhCuvNciiI-gafdYhhdkpbwPlc9hlxgijy11qroeGQQANtFlriZ6mVrTk9CCN1zQw2bJytBTQJuLtX4AgPpxLuyfAG7OfKnj8tuo8s2cPCKjxiaZmv8co3fii3RXVcbSeqAflCeWG4qiAxUG-71hLFrTRrcRK1hcEamp4AbvI8FEDQpT-zgUALPtOgP15_xZ_Hfs54vS6seMEjCnscJ18VRQxJ4b9g1kMUBeFDUL8ad_3TP_pPxD99BIRR00Hwf3STAUAkQAwy4dghsoHPtMw0CoMAV40FYb2a9speX6m5wQ-ztV77wN4uor36NwK-_vkOC9-abTiJRgS0agzcfjAfHH14Ia3DLlQz67HjglnfoOr7iN2m-DQdpFC6zPiOwQttwJOBz-HORJVOd-BnpRomyd_aNfQMHoa1Md6MweAuQHGO1CWPPldUI27QSKaJPzyDPYoIZEGFNotASn6Hp2wJ62h7PvKErxrsO2tY0rvs0CX4qyu0KA81hKqknXrUv9l36FMOAaBQDgMNVWw5dsOUTAAVds7CzjVigPjeeIYEvaCDWm0DY_31qQIn4r5w3EfeQvyS_vmTZM9IhtuFS8wLq5yBplY42JlVjEv_lmTV4IUi_EGmj-P8UcRWQLWyRNEePAi1t00BY8gEy6Hzws7s4po44Jg4UGFxl8WjoI4msDb2nTkUUlkkEPzifESCSVmCHa6JF3btj5zNJlv8ijQa0hlNQ1vUBksR2Oy5TPTw4QhlIIEPpqHSqgPBuFYTfasIVLjF-rLqIAnietT3AEJ6ZzsVJgfuiNAvK7bwCfNS6iF8etNHDjkLYeLYSjj4uHepWpUAePHNI5UqEaQb-k-kZIzu3OetuCnTIevOBVReVTXp654HsGN5vUXo_skKTnkCh3QDyDeka6Wv4WVSnzGS8RUCtXhwqsof9HTuC9tQDVTi6VEG1bckIxkVkb_-an5wvYnkluu3fG-_8SIXzAM4FnuIA7ijKNOM-qrKk8IPr2Gad1wYT-Amz8NVK3f_BmewfobTnabOyvcaeyExtiLL7nfwy7n604PmFr2kLsN4bxQDIzvclFusGkkL1zHyf-QMnSUnctAZUEXg3ReBc-Evu3DUMI3I_kwHUQPXVlzn5C7L2RL-jwxOCDT5OwWejsTF9B3fi53gbIC_wZVoFeunm4eD0oTCrlK7qos_2vVUh1wUaiBh0SJYiQk4DL6joT_AXRFBWDcPfPlfrKuY-wNB1RWbspVSB9U6CNnJfOekkKMznaqygnnzlbIzw4niunzD8D1WWcVUAuL_tEFcog4S7YEkdMRlj6h8XEUn_XhR0dwBr2_q2JRYIG4MssM5F_bPS2nuHCM30E-I8HJ7bR97MvIOXf4DMyxVBGgqsT1LVpLFLmKkYyxBU7OooIGBiC68F0o7-F0SaWTshI4KAnHeNx5QESvVNspzOOizjCnJVWd2UJL3Fi1oV0YIHWNkkNRsTiUNtgcnUU2O64DKWQiW3MBllJ-bVFfRf1MhnAoklX9jtNEKDFWuduvS3kNw3-PAxuJgMhZwjrVzdEWRR3x9d9BNhXO3ZeoHfnKWW-saQZZAL_AD23DzrqewT-Sxp6tEfFWZFjjJARilxLOExmbFB7xzvnuZqlxQrGfk6wiQ2ann2lppwYswqbAp4C0lTvQmViszoothoRvINtXARGEwFrKfxDsTM3PWrsIvlf3VzsFJnA3bIDJDySLfR1erIxE16enduMhzTBMD4dzrUgE7_DNojNZl-ELoEC1-WN-T8PI55JSF7b8VLL88fzN_FnrOw_vC7XWnAqseZY3thlVlXY_1J6Ns_FpYkb66wk8ydB1JpmfNqGZ2KuwbXVgHNFJY0-6-SUPmxEIbbdjBc22R8kdn6EPyULjksdf7rlmAo6NYBk_LpTS6VDcKc6n4GSIvh4lG6jBVstzxSno46RWeXbvbn6ufBMM14WTBCGFJaX1DrcqOc-Ua5vZpNxIKe8bKroAqexE_eDQg6VFtDovX1d8hw9ycHaI1kEl8xLp6HNsYhuqfPKFNTBn3gvhWKD1g_rV1v1lHGqP2lgZYr2h33MChr4VOYLjWeyZbhZDz7v721oFdnPdw4x8tL6kFz7Jh7Xyqpqmu21uByGQKe_t1ULP4g87FpOEDsgDRRO-MO_jjvBVEkwV3KoLK_3Wqx4wxVbiHlsEtshOwJMgfMgCfdCTjGnlLbOoKvtZof1hwYNpp062bIr-nHuCtIZYYUUt6G8IwhlK82rUjiNBacZ-2a6BmHkIY_cKjgvbzNariWmLLkjKPe9hROI8uWL_ZiV3KkNYRt3Xl22nNpMGZZQ6GwH18D-aG2BK-d9thbAG86cR0HQW9s8wD-dq6nFQmlnJ9UAKzGip3WLJY3yuxN03hTRXu2BXopE6Ibf0SbJbefrHf7_T8nIKxY3QiCo3p9xicADhoOZUFvBo5rpqPu8IpY8NvMvKR-J6-ZHXVCAZ-luYWJvxi4_hXNXvWdlnqmy5C6NmVMgAC3WX2KIUhAoGEOzMnhtvM_4FXu5NSJgYvUFnJX2nQKbp-hHadyh-65IIJ4t1CZ-uqbkS9wLpvEHtZUWRcal5yYDO0XjZdTYVmJeSXJLa1-sSsDb4kwumnCjKZFSwtsybv5ia5ugZVVIVcG7uBfF5gP2ATiL47xcdKk1qRnYAaYV121vPVtzgmR2cS_K-U01D02mzYtzES__kHoIYzHIC6yw2HJvMgc0HAuxUEKGHdzXmbOxrdQ6UoM8kRsgWkCjYbko9_UOXd1Q0wwhehCa4hAxoi1lbY4ogCeyB7eQg1LdtkFQM3m9g27VXuMNEspqpTI6n0zmIkC-c-gtnONNnwdJlqZmLhbv2QW9XpbLpk0RIWgy4ppC85jh7exypWo6HwHFSJaua9zGrUQF7m_c31BMrTf8zwl5082Jw4EjfIfJizu3VZ30ntym5ONDHPxUAYb-A7hlxruMkqKflvJwbyey4F7BC92uMtfHovms4f_EIxQ1Xqj13HGV0puo_adlAHteTzhQc0ke38kb1YBXC5yGd9XtVsi431qYUUu7Oa05hai50-VeUnCFCemH4A0Aq7XMSaP30snxDhWtdlBCKyFtVn8FRj6UQ7BD5PUDxG6tuY_PikyM23OJv18tUaXpT54GInzUMXg6zhw7TMtcRDpMMvuDHyoNCah6tqDLNZ7Icy0znGFG5H9ZI1bCS1YxNGv38K8dtgvfY3bKcXziKNNhFzbfRNLOLnOxyLRtJUV_ciXugisqfa2rBjdcEf1kNlDW170Xfpo0goMQky7e7vKUXE7VrAq0Ol87K_F_kK6d1DIKj_wDz5O9FWTPbSlV-c1pcNcBk-YNiMqrpdnseN8cRdqbWdnukYDeGcEM5Z_GGBRr3cjML_8hudQlX4N8_Lk8U8yD42Uq4ov1t71cPsCfvyjwjmse6rYF5Qv1KkzpKZ4rZvaWNcJ-cUY7rDEu9hAfbZPd_KZAgWpQh3Pa6Kx7kBBJ9cjESb9378KaxqLo8TcFNG2lLm1eKN6TCTxZWFzT_mCA8xYZ-hzHlhPYQyQsgxPCnrP2UBcVOXcU-kuRCMYt3x68ziqeBQKnLnmTQAwmAaPFFyCu9X1wUi_Li9kPqsQYUU2xaqkYfGD_pajEr42FDnSa0zThmnYfLlMxmdmmrx85gNocIeuMQmMKGFq2LqxZ3GsRBo6rv5KzAuXvePFP2zeB0k1lhwbUGZ554qCKKottwMUlgr731wLHno_y6KzoUiNWoJs69v2_-oV760usbBSz7D7ujDjd7bMUElAKhb0FPBkFudVz2tDnzML5zFnVlJUkzRqIJTDvJym9eioZavngElo1LtcSi57cm_7qaqF0CEsfX4AQaX1c7W9zInaeqvojIYLEIKdMuJRJrPLaEgLeE8LWRlWCRslDhUfZyA-vhouXvK-Z40IRVU0brXllRcH8S41Iif3BG_H8jhjeLjCXCnjolXdjTegMgu6eayzKe_piH5vnvM8jHKteJou-W57aGlLQ2jQ4-mcexO3mt2S4kmzQYMgu9ygsBx_v_Lnj2xjGnV8bgzrxJDhb8UEamLOlM4t0Obl0tyjZ-iCj3yNT2-dJ3qnd9UCxNqfPqFtWs9afr-bSctoU_HtLpVPAK_iLpcACzBIdasPmblyPk95o0vT4xjlBnBSzvBQnwFcd-KWwHBxwFdy38bztGvLZ-9WorU8TDhvL-8_SuAmP91iaovnt5DfoqmwR4aWSWl82DdIC8Z6YUEId-rFfo7eg85p-TkjpbUDp9Trsi0Vcun0g7V4UTsy6f6RerzcgmYiHujbdFWAHEqmIHNEpun7MHDy-DqYZb0Ktq9bgPYVk1HWzWw1I9dkgv6r1IIlceDYfjWuRd_det4HABpxNSTJgqlrn7GRdGNrzMWEfqN2hO6SerYPo9GCbRjy91PSRMUswlle3yA5dtQ_sdstGISYiymKIUmemNE_17FXp7vv5rNzO7r-8nq5igvnutHJw6_YFSRFqEeJuWX1nvy6YV2FUM7S35fqS0kETkJ7fUOImdJEzTdlPVmgPshX7AIk-KLnTh5kbVdYi8KhiNL3LbWW4aGsgJ5bRi4n04sJiktLe8WTBR__dkhXPvEwv9zzkTJRJkwLa4WaJLR1P3jGwT-mRpZBcQcAxO1rclmEi8T2Y2iIaKv3HWBPV63wYXQtUwgIk68pRaXspJn9nBXfkpuwriSUEE5x0u9Bu24IAiC_0t3s2UZtNgf3I9h_p-Czu0ve5AhSBy5LQluIXCveLqHnkSLv0DHdLDysLouSQ0N0RFObgzhUkgWnw8G2zBTAIk6-yJSr8wnX31jl0qDwBgAnPdo0TFA7449sDz5JfRteltU9xRjq5tZduI8hyMqVEgy8dGVP9T_SBJmsp5TPAfnmX5CvpND-vdxZqeE7_FpRHVwCdXLOH54hqiAW8YYi9MMjdMKxF8Lp9V0l_TyFkjCO7_-Zz_IRZGN2sk-HWUlVHNvPh6q9aCQyHL9PDVHqrzVYyKV8i41giFyzGrLgDo8qhlqxnqBzhwaYJ7aTNQnkUlUzBXkYe3HvS3Ls049HcxtKc41hvmMaEYSfhYnfB5uKc6qRa-xh2oGTFCQA0NqYYpDHnJcAY9rWZRjPrlROkTYUUP644narTJHsqoV4HZ6X1QzH6y_LDy4-VZzG_RyCk5XbQkE5DxR-pTuVxYz9m5kbReOOx75m9DShSMWhVZyGtBqVylwdwoy55HGhUoY6VozsxObZAX8OA4nPhzgI-lhZxHevxQML30Q3IagItqN8uMbaNGqq-MZoW97HpoS6VvpRAeu0tTJ8W2_oNM3V8xZsa_aNZ8Q4FX1MF57aPY0rOyNRFd8AmW8mIXnxUwpN7SEXG5xl1FVIkG6ZHk_SDRQeeq9dfChPmxXYxUNCBk-5kG5WCx4ZoMtb-JTwV_OIx9oAIN7te1O0bGvAII7AvaxU5fTIGfJjReUuDAAvY8xfiMyFq9XL8J0GVi8KPLUGbGrtHYCHMzerQbeNwY17IR1e2jI4H_wH1dpwCuOofDixnWjp7NF2JE-hZGqbCfAkRkbBWZS6PqLDrr2VDJun1lVPySzpboGtOiRPNrG-jXQv01IS6hpunTSDgtSQY9qtxvmWrr5hlYZUDoctnbE6bR7MuwGQatfGHqSVAvF9E32n3r-BTVMmUGwGtgjJZvA2BArCcG0725YVrJWlDax1A2FCmQlbvjzT_Rmc_YpNTICLdLcpVSp_xz6lMyvTQOtC8OpfkHoTK1_yxT7MP8_Fq0kO5Kpp-v-OH1hZfSegjfdbRpgyy_agSp4Yg5eA6YWN4LqbDGh5xxrER8P0wpg9-vf0Su2GJQEpugy8CAU83oDqShejGyUvkdRjBhBpwnlUfAEqRo4TisqR8nEUne4R2FnzCbvYosNX0cUfdIdsUzKZ58qtmsN8tU_ctsre2LEZ858EoD3Xnelm-JaFmjJgaZEV7moNEPN3WVXlzRKJEimvMCAmBNtP6SVcKFS0bFzkSBFgRtsxLwNqCLDAbNsqKeMZNoKEnWCzySNE4FrSGnhE4gHaMXzXfd42ZciNt3ojTscP5G8xHN2wIF0HRN6th4qlY8RHR22-Exd6MgdwnDejFZZAnbXEx5t4QMEkdwDw2IwhoBJlRz8258wxXDIlSLnHU2iDb2XhuaBJmnGmgGvzhmb7PGoZ5NK_Yc5tdcOTk_LD--vos88RZGZhcZ8WpeP6y3EEGtRX1f3Ai0hljfjmDjXDtvGrvepLlmzgryp9CZz6Q4yBGYDzhnWFpZBG4kD8Vx3j8Q3h3CXr0WNIWutTkzd87LIR11eYB02LuW2UAtf-lJAKfqQCKtbIOJjflbI-6n8Il839DnXYrdQg23kF_rOiw_8R6ee-wlZuVR-SUDThfrIAsjPudQCGcBiv1kU4A21QZOEWlizRlgnz1w3UOD50GuutgRCdXlLbBQ-25jAYPKtddpFHfjbEBV0y5uhrxdtnJburL0DPsbQN_N5wRcxN6nVHTA0xPSG1vf-6CPXJlm_DW4Z4IkFx0YyRUeGpo_TYQRhnlXogaeGK3s3LlTOBEnDU-jOH3252oTMyuZ-MjdfB3oJsKRv5EbvmH4wwAQVNSbulBS8LHuQYj6HP6b5pfZG-HiB5ilrwWqL3wfkCFYvyzgVFb8qDgdbawynrtsxPVo3wqB0Kf7sJ2wMqGrHL1kK2_pHYslnGYduRPiuaBSXCrb2IfP3hGvmRlO89pNopC6yb7x9lSPLa_7f086z-9XKWKEHMhsdoEdtzA8965M3aAQmyAIl11ocOXcymKvGhzq3ywlWjBrEZJS7PTuaumwZBWjQricr9jMtYi8Tz0yY7znL5V1RT3DefzPyFbRjb36Ap1Q9333u9OCdBzEigPcvprJ564ahtbHpW-xt0caDK74gZlMvuja2rZqQuTH1Fba_jZNyI40Q2wyl4i_sst79O8gTCvKnrs60fU18l1so50JEOpzG2xQCXLwR_wVASwCedelTctDnKyuZorCDfKXljJBUKEOZBV-Avrcv_zOP_EdVUxt9VGNCCJWIelje8jTAuu458WRH84SmQUjc2ADmBroeNxnPbLivcwiJe5N_o2UDf716ptkTkSAOkTxK6nMmerEbnatmPKNo_X3SY3M96EMw6LRIxhyh4y3plvTlWW04mtCRLOT-9pHF7GhL4cGh8s8vkk23wgZQgh0UZR5ZyoiYsWnFOsRwLN6ZWlsd53dtt3Ydk5K0FemOl5w1s1wE9axge7HdVoWlOUOGcXzKJ28WCR-hbNm3YfRlxDwqW6aUwInHyIQ9jl68RusoKPLX4iJVGNPpnWo7KHWi-Kpb4mOZQGekzLCNFuOy1WNrzmz9AM7zMApwzSgR_USgelvviojJkXZIuorni8ui4TFyurGB7IxBt2byhn_MAMvV8XlJDseAi-E1doeyNtZ-uFgoshTOcPBuR7LG9JyXxCwdda1iJK1liFng7HRoVh5SVDX3XUiJYF0MeIWgAi2TF4yaVv1iVXduYCT_dllIohKsT8Dta1xrKNLTEE7vBhT8Fhb0T4WXFOxBILNk9uJ8KMzxiDLfABN6rmlH6CodX0A-eKNTo1baSEHFM6nHpRNmOb80DXrjzV5FBJj4ev1zRrakXPaFJRtOprj7HSWteCTC4XFTdk8di3RFXNdKOqOSQ1-H24gQZEyWqoPI8fg3iPPjRE-oiQUootfpASR_j2fF0ANr69qsZAt4zJPjZ_C3uoykXwG9SHiJ14Y-mQuz-_G48dT5YyX0yFVnFf_t0BaKWmdhUjnWqrvrfin9-ucb0M6IM927-oNvj_ENcVd9Pb_8ojE6xqhsWX5WopUkzzxvJLdOhfPwwRgtwE8IvIAr1c6jQZ56djoFSns5n380_D0ub0o3ip0qIFC2GoNMIAtw47BtZDLP-qJL3RY_sFE840sMtCVS4lAMJvJyRlJR67-YS2tzVItqr2hbcwlksWMTu8_lkWsdnAzKUXrJ2LO8ztmqqVXQBiCA9DJ2NuqU55HUDM5iJtZrZQ6vpn9vrBxPeVEkj-4q4RQnfJRFk83gvDpngZH9BUQT5KyvDkAhU2TxLK6bFQfQgL7DYWLKdJORlSdcN2Bv-jpdOO0ye6QVaX64fuGaROz4g05EMZ3w67XmbCw1WBh75_m6tpWgl7rslYBsGAyBI7x2GkIKbfWH4GpRkjR2c2bM-Kqe0WPfkQWTR1awCjP72DfKvIVw7vXZ8QSZY3E_gJt2svgeRfpa5_asojBiFhHLs-c9F97BGOKacVg9RMMqNH44XpkgomrUlS6JPmwFZyY8NMkPJ_vq6PVwwqqgtqiQ1pms0FFMd-YH8_YOO2pqAflISbKeI11kdUgaT4YziclpS4Ktt0MbbxeItdIVHb9otLh7MNTfSKH8r-WXrK6cOwGJmMM4g_QlWdcIVM2O09dmaSvDfywDZPEtUh70f9gjszvVvOMr3hzPf9bk99ZE4xTJmAtyIpj_1RvtgpQp2B_cOHh2iMhEZXVw98HPvYGq7S6DibJDXeoCb8o1-xCFuRaVl1BImHJuXIIZgvjMDZHgBJcOO197Drfaj-fYzzqGzkPaUqkw51dpgebQURy-Cq4a0NoWvVI3-1sgoPh-91WjYhIF8cDPuZyl1-ngUTmUtExicdGL62Pxt5tUdYl7gWwDEsimozvSDekZROj3P7mE5vkMkzBYRrY6gp-Qct4x6wKlQuiaAL85oBHeJZjvximpVXEF4GDm8f725GjcHEgcukCoIVYB6HOYIlCFnt2rgGkB0ndimW_zzS_qFAUpIUxjNgl04Ec87Ad3G8W5d3tqdC8cYmqsCcziSH_wDHPujfG46GotvgMgombCibJKlWzD4QM1aDKQ65nY_lm0Bcr_ttgwbWcFn3Y_hlChQmWWoOFTgMXnGpBA2CooO7R0iN46UWzEaz7U1rWDrfRYUqHE2wk5bWvh65n1knkfopyiuZmdYTZlpIYux9iwtNFX5GlFbssgYCv4pCGsSXcB5-tLdXYpeVo7AdOKBskZ9VTNsCjP4Yl2z2UuH-zLJ73u6qgSLxF6qV1AZrUkNNlrc72ZXPvTvfuiNFE9r48ZNppdnQoL67M-4zoDdO_2ZNY_MLxgdQS_8OyYLuW_WBHKCWo1il48MCSte-eMK1ZNekEUkpVi9jZ-Ns-wPNpLTOJWZAMKa8yCyurEzqr3U6z7C5kvdvmEJMW1wlABwColsw27ks3cS9m1PsAGoF-BmFPkoemKUxbOYQnryvztg0p5Vjcu5H-vmY6vkvKrAVHslHkGvFbFnLwoJOhiuWwh-zMAnBlsSVdVWHXVvGniw1cyAJf8z6JaO58CcfXK8fcVNRFFkbH5urfF9V8Nt2FZ2yUzVpDbeKqyb7nrT6m70fTadZSkHMD2xgU7Rl2fHo-5UQqf5r5qZqB5oze33xFpM-Vbr5Sih8xedfQIKkHApI_SKtoZbytErnN_gVMp47vPx2PYuKsReVg9QlBVsOUgAySsJVFprGZfwiUFe72uUkb4CJoiOa0Kychwkul3Xeh36eMsY0lE0ijcXvZ3B7Xb_Et0n1HHIiaIJHZXNow-5ceajeV9vXfOXCtWyXQ-rW3Zn1NNmp0t8iGSzg_ovNXNYXkAe3nuazk1GGGm81cld9e9C5PjxGL180mf6MCdwGZ4y-u_BI9RrVGnDsfMH1a2Df40yUDlZNb8M4QrBqsBfFq5AeYKsRYWOG1dBrljIlO5s97hjx4qL__JZfz58ypl0zSga4VDgANVqOzVX67s_8x75A5eczNcfooSaunEe2MrLXZydETbcizVO2qwh5fho2TcblR7f3JZ_P7TRIMtRFWqPAuEqC09LbL_nfJ7KnjHXLYjzJhhroQ2UprR4tekscXqGLdG16tUFxHrXFk7vpvguJZqCxjguXOb6cuJuRZfXmB5UQxuObj9pH-tOjQXNlSbGp5XgeS8jCLJQ_7A8HBa4dGXPNsdOOI__D2CvP18aaWSbMyH3vUUS3Bg8v-dwBPocmNDVCiIp5gzSdGnC60rMfFxjHZUFGqoMo5gVGZlbyQpWmALRpTBMOpbCF8EYWmitiONxCdDqHBpTU689MI9kwQFQlw7dAyAZHWODrSbD-f4jUZ5kIZrWV793zX9mLTocmwVJ4RhKh4XylFwTwAXUedY587Nnnajuq4sYeANPa1wiCPMKn6D3yxSEO1J5gKlJf4Fx3Mo6Ar6PV5ypw7Cz4BT7V20Da20pK5BViWwCmOGkBsReTSVca1lzAVBdVwthC6sYKPHrx7Mds4NPVvXT9jDWofVEmiO39JPaDHvVYCM0xbkDJmzw9VbvQTJhvM_FtfT2jFb5wzbMMyS_y1pNyER0itBRZA3kOJu1aox1nPEzbrALohPHKATzU1wF3BovhzgmXbwRHmZVrB5UOFLVHhRyi1kFMsLL3Krh8bVNyeATw4soHKDK74RlYoAbrxqyso88R1pjpl1rmphSGo5NL5g2ViCPq9OhtfPXkllqv-k8KEk3tcb9IuBzOQLzRVXCapcrnqDd3l4CXJNxZKzfrL7a2z9XRFW7r1x_hE6BE9dee-eYX54CBdNNRdQgLn-Go2Q5OM9e1kgSGqQ7p3DYO5FbuVA2KWOJcfF0fMzdAZYzXafU-f0alFjCEkkUd7zse9a-rNmRTi9mmTlWMZA_lafGQ2yWy6invUA9NLDd0T0dEr4nbmExuqGUHyt_B9KnBTAMm4SkK8YHHUylJeqVnQdq7YaVBkaA1VPfX1BP_xRgUwtT3Vq4H1tDi5eTX_aOttcr6EN8-neME5UXhX4mVku7ygPi2vacav_NVetX1myMBYTUi93eNp2krq9ac3m0ZyEHvGT8dUBmOaANVWjVX5nZvocFY7a9OhcEk--SUsEm26aAIXfCg5eMFVt3pIx1nCGx8QZySm5JGuE4Ja9Rbg1BzpwQgNP8GNnrr17ctW6DO3GBUc3VRd7n8M2hxq4rzrQBK31r2yqBYzGTXwvoAUxBhAxzdbv2ALVyiw5HwZpCXsOJ_TlNGa3bjEcxw_n99kK7BC_ubqbHj4kg2pq_cyf78A_JAvwgEYDlF9wsOujKyovwQt6PBu3uac_t3wdqg5X_Ydxq55y_XM518LyUkbRxBiQ0U2_7MDjRHScdvw4BW4y3DUmcoxLefLJtnGH0oK2RQAssM_toFq4P5opCOaXTlMjxNRitKteyX7lX-6lD9J9ijEPc0JoFyT0OkctDkHBnABetMxOYb4yeymwI2PoUjvCATtGC2VU43sQuEqAhH1Lu3KiV0A7brT5xVedpLpNfl4F4-eIqG3m0z0vYFs33dooSkf_AG-FnAlm7CWbBpa6O9EUq3vtLU-fzQhb_NQYJ8o0F29CnF22UcpMy5y3Chs0P3aP8POU945SNcRlyZoPuDXGDhPXdTKWPg4g_wqHC6j9cqWsr_ENrSfWEyaIRHC7a-VF3mPM0znRy_OsKUWOyW7y_lxIfqHmGNvuNmeAqDoHxYnGj8VwoZU3xA2lCnD5fLgXWCt7_IK47n4nyJasACFSc3CKw62IVM0qJZZJtnG4xEv8qrGJaEocJq_nbvOF_TI7oRfFp-6Z7jDuwIT0oI_rOHyjzai61C8guCY9dr9FMWASfA4GocqXRaKBVaO_0J4foukaRQBu5n1_H9mGQmQrzlDRmd9gRxH50ecegMuOLaVSIaJrLdrWiymIJPQojJTNsXYtLphS93NagFntQwrDMCKjeYGs1pPLg8kBV4-0yFkkNewlYRXodVp58RVkB8uwG4y9iqbQf4nYtmwpc_tb8pH0l0E5EadkMSb_ar9AWDc-agNpEGGa_b_cIU-Cj84jFDqB4b0CYQGlpHD7PuJCaQFI6gfVefJsaEaq5z-RKYzKvkmkyL2ERBrkqOYzWDUckYKGClb-A9-1MVdk3y1Ap2fZhsFdWPuuL1N6zQQD-4OFmRRMCu4g-FADeOJypR0r1sxaUtpSQUFGXYQ5x0D_8Y5x7EikdS14b8dUXalBSweOBMuolHy6ky_F_0tp-9c6edrtHMVrRhtY7m9I2LjAC5cPLyVBCKC5ky54tlnCPf9X608amG201lkSCrk05aSc51_FHzFenGJ6Lf2OGTBhV36U9NmwtPSPsqBlv0R3a3aByEMy6L1Fwp1xTtL-3v9h2jWkVnit77KrCXVcYrQtE_G7auKmyYtmyCR3B5aSB0jSM46lMdZKE3Q43IofvElF28E9G9YdLJ-OpSh0g3v1UJFKN-dlS8glQoKqqCpd-w6dXHCjoeshRk3WSH-_f3dh56InA6HrS_XlpFx9-XIpEE0YbiOtKbd5s_7NrwwbOVaRqXcmLKzff6yygVn9go2N8XKkqO12Coy4qQkTLBYKSOE3gWl4_Gq35CqvVN5Jhns9XU4H82X5fu3_q8qnykjfAMEOGrWPVmSszFXHN9Zzq8_qmUFQqTp_-E0mNGcO6SD5FnYozAq8mWZ4zlq7HUG-ElPDK2jxFOgOxTyU2Nb8OINGxSFRAhLxBSjYsIlz36DtI-S1QRSwPK-INzy1GroS2DxILE6U055ODCmJ5RqCtmN_PuizO7O7lK5NMu1iGlzXA0Y_ZIe4Cj1PCd9A558wHHpG-oOuR8OUTY-EGzl5qYYq0yB8lXRQszeXDoMoPLWBaKPLCjzGwK5n71vPjGFXpw67kmq_8zAm2_W2cdr2ioK3R93YXqFcbqGwuy4p17N1MNRI3YqKlDCH5jnrRvkaS8bw7v8EgEF1-wFd-We9XCa6n99OLdvwIv_5Fr8jzUCp5bFd0T7NvkHO2wkJDKwInD4WUJMfWAjMA4dl-2W64moFFNmYzmiYKC0pdkwoUkDAuDfQ5SxiArXAEDCm1sOTexr2TXAIT6xGbvFU52iek4987AaERwwv2p4r4LOyV7LDNdqkbxD833uohitBQpmgQ9COQ85oQlfKbSzgHWd1HfJ0Q3y55plmTRpQcut6txh0Yx-iSel70GV0fwzfRR2pjFdwPz4oseLI6uWQ02X9zy9o9mdGKyeVk3fQt66GdaOR97sdzGI6ray6JyOx58c88Bow1Hcwj8JplR2ZO3a7opBinRormoAVwyVR6dEL0PEVjbEe2WWu_NukJc_IeAart3Yq_dWUwNDV86svCEac4fCDL8_zp68hwYxopXbzN0OdNp3vP0Chsl5KSC4Oe763aSPkAlEyDb0YZ9SX8WyHQA5e81001H5zCeLxtiX9oCUY26dleblEROyd1pEFa4f-q3QI2ef1bGsCX3-on3Ya86NJgdKVmEZBYYwiRPQbgA-Ly0yhoYYTz08BvgqEXq3IwoRG0W7r574Z7BNX2BEH4_jyZOVp9AM96LT7hRTzfjrCsd8qCuyVZMxFLm0WQtPSESVd_c01ja5dlRsFwjfxgvvtZAty14f0-QgbqiitypGJqgSBbx1xxoKWXpYHD8v4RpePwkjRGRXQGbo1z2JpJrndJSNLDgPiM-TgolqiBcLKYRabax_VCB8EPSU8ipfA4LEnHM16HkstpQV78xilS6Q0mTAMh2mWKNjNZpGpYtqBn_KjKTN4gJOTNYManC8ecogqJNZd9Cr-Jv7cSyNITBsS4MzIfsolD0-Q5hLoeRCIV00vn78IdwSJ9o5_aSqZ_9eRRWok154FhHxA4ExXoDIBNtTMmOu89f0TEq1qtRKwIP9AG7wxHYdCcyIt93Kiz09qiqe1Xc6trpoIrnHpTei9kLtsLcMiEWVzIXhCqoJH_az35a4Kv5r_IhoitlIIWGQdDKrc49mR1XyupaO5axQAJ3F-pi4cvb4FxOGAaRXMbwiVlT0DUxXhWW74nsIvip5zeLhAiUcMtLnuz8dZ_Bvgc3XCgOO4UF0u36y-MGbBUxt_04sWBPYWlE7esr6rWjHS0cfWqxWf9ZBg0cIbtsE5vNZXW00uAiOVjULEilZrF4RZAyYwF3r_CYvwJyIL_YIk3m4gqN-pYJXBzR61DEQSHUpOL7wVvPMw2FytmTbTc2AMaj3uBpMNx47iny21hhliOk7heDEgzoqf7bRfWLK17Nxj9JH--qkrWJIfGhiauR8bf_-gi78D8a5LmeSAgCwHZDIeRyxl-0Iy9W3sxMV7syQXqALIH7oZqNpESm2uuLnZDXnKuYfLL8saunRDp0G-6gl9TvC2HUdTlpG6FfoBTKmkdgLvaWHVHr0xgq4WJctxslRgjrjISFjEgQJ8VOrbSCOU-9xo_6FWOQOpH9P69esxLmM9Lg5dFrPV388Utxq3z3P-GNuYlCJU9MtyDDvTCqt0_VuAJW7AKYvHvv-2Axu_2v_6RNevURAIsTiQXEnp1exGQDvzTdvAkkN2s3VUnxxU6rEBwglDTECgDv-Lj_QyEgCvOQbPOjOX_oWQWb4XqXXASJB5xYzYUFzwEUsyUomjP9xwdzXZLzctvibX8oDfMvlQ0V3RIl2E5sZjrpgMvLKFEj1k0D7XSomaq72NTq5fCmaDDrx9oXEfAFb5iO89IgcsuWbw_eG_5SnYTL2hy6aBWAN1fpQFDbZX6IGdjgMPWEjBQduBayAZQ4tDzvJPoN_8SN803X3EJ9h5sInw2n9FN1xrTdpJLFXAeyIo-rv0YotKNAHUG231Bg-ZcAL6GGhLbVxMs8kOCt-6zuXL44UPXheKXDzWLjE_fsnbeBbW6TDx16r4wPqK7tzTaDOX6BmhySnXkKy-OG80Va_KGWTOxBllwCH4HDPUD0dSFh8nAiZyclj4vQskajCP9jDtuMrxILGMqT8frNBEwwF0Tqgs_OCfZ4VrkTZzKtvSyAgdZ4zPa70TwW7Jbt0ARygNTpSVakQ832FNWGxwPk3bDWc9DsCvB08DS9GSan-RPNm3ifpZomb1jZZT1Ca_F21oMq0H0c319CyW7RqX25UNwLXYVWFQHwv_YwXgnVXqL9ay7AiwGN-bKhsTjEF4Yhl83GNL9aNSNd2NBnwloSW0jDqNIzdeD6GqNqeUC3l0NinN4HGl37z3VlC43GOk44WetaHnjtCh3L_S8KYf7tJlDI85VFpB48onri-zeQMiVRQCvXhxVzYtGDMnwBLu1Rfi8fZvSrZaQXsZFwF3POsi4al1GinQgIpJkP1rrzp086aRWQALNF-6AJ3EWmlN3f07nDI769i5PbcddsIFoaY90pKhEGfIKGsW25a5MNOn0BH3I47gsM8R-8nxCgykUz89eJdrGQKU13xmWucKdp5h6a66760dfpI4U44eQm6FJSWqe53lh1VYN7WwhPYaKbZszk4LRLlMTr6oblNJCfsevEWwtvXQCdk26At0l0f0D0B0RC29EITf2MvxACNvhM2SG5j_BsjCzzndM8Q1we97FX2PaSDA1RmXbJ_kkGjz0SYSqxTtokQBW-pgfoBG7eD0HGThLYKI7UjamREMVqzAH-1fBRXBd9ispfVOWqcyEtLs40ck0O7RglqX7p1smYMzXkWBPrX856VJCRIKCpZOKO7stKDOw_EKWqArK5VsdQvzLb6Kh12ZbNHqYCFWUF6OYGo4a0dItWgKhTEZ3_IFznrAP6vkvud4Hbf0mm1TH9O2d9eC4Arh1qkYrwQcJI0WFU4I2DF_8U1E3k4QU9sGOrgg6jPM4PpgN61wFYcR643W1ST1Wwkubq7ii4NnVODWSLw31670kgyM7XDiqyxS-Lq4U9eMexfJXvxIceaQ9se9W05foFwWuvdu6g7CF4efHLELqy9DsIiOWzJVUQztCQgtMUFxgrpwsL9Cv4JaeMpoVAu7DXh-SYSbBs5ogyvyrJMRhTuVV5AK3LnqXSGTGHSqEwefQ772--u2rhjqFkubmBJTBnQ6_TLxrevo73VvkLcXMhRKauqSGYdMp5ujPH9DA1WEKUqZjC4c2ongcNAlV_EeW4mi8OEMUk-k0KP8HDiyVkDbqPhdAMjOOf8ARPjRXA6DjW3ePFbpUfk0s8Vmzi6pWxhKk48AQot_aHzxtcpCifNBHLO5_DH9ERdXWI7isoZTIR1Vow1Ab7QYTKou_3-ndnf7CNBDK6550oGc22iGWKPqS6yeSzX-si_RyhuoIjRvJPqyT5tjOWvgMBu7v1Xxm27fJFHCDkQi83Yj4qlKrK2SfEklKi-pkCQIvGEFWfe-rEr6QMonveJ3qLk9RAvAYISPpinM_kbtKfSxPEQpyHDjQW-5mCyl3S4ixheelPYysB7DFjy3I4kcXy1hJBMm9A8a4ouPLGFHM0lSXdI5Uho9UZhOsBuNU6TuOxAkiqwFm4G3vQO30byIeBiRYLuuwi0bPTgDD_97Mc6wkygrSliA9T7cfTBgoJqghKZmPBEw5CTXtwkaQw3AcNfgbyJitg30qicVJozGASy1-VI-EudZcv8FyuZXMcC9GXe0855Ojx9CBVLf4xOhXr7B8rv3tZ5M5yWGjUKWLGjtB-tGju3cT3jt9WSqhoOcH5jwHrIKmRStQ0MwFu4wnST8DiQg5urzD2mPUGjzLRWeqTkoGtLpKGeFo4RflI4lEEs7591P5quWDjDhVvbgxvOnL1gg_WyIEdyZ7DIdHxc4pB9Up9_wIhTjTTV_8U6VoSNW7UGi1gD2Ys_n6EGKOpuGhO1rvVDgluhjI-HTcvA9yAKKc8GKHrKUnihEapQd8NUGZX2mUYbu5imaVuoKltGeFtoe38H_snbYP36klON-l0JJkbl3xOMv4CmK8IPylP3Iwdd3OXMg7KFSlS7bhzKORuZCaJOapGg1rUlH6bYB7L52B25mgXW6XrAKjNtNF7z9p4EBvCaEWBLhStlPTW5nPHLIyoK_JmD8q9ysT-GueDufNDqvkVtEzMWLk6TtjvIIuGsqCE_n_szI19FcDzSgWzOniLO2B7k7gcyZZpX_sf4ah44C9IUPgCPyS4ocKBt-QbV-G2l_lK-kmsZBDpXNL77MLI77m2FcCwZbARhKbdWhJZ_ZtV8a5DKVPV2foc8S1BN8EfRTlifWcL-W0SkCc-9n_AOd9-s3myadBySecO8IpwWL7RcP45N57gw1h1BnuBrFUkGW0MZaECcqZZ_eqeauDVS9M9tPIt16ajM7jyPakJwknopcVUgsBFPs-41jN2peZLvSw2kNu_qwvqWnnHlBclusZkyBZfkZzdEopdA13xcGvSf8QDdR7KBaKfBSKcz-z5ONQOr_G8LpFJ6229F3HT1GlOsDH2HkaiJYWJoIzrBLuHT0UdOjWxFFaX_n8hU6VNPgTZpkGo9rSTTsHqMJabcet-PIk0ZbQgC3wLeXkYbaK0Wq6WrVYbRi6eA1FhJah3Kz5QhsvMQhcFAoANWLpeSCYNOyuE6y59K_0C9OxyxFKqWlGTWMgx6ZwxICE4t8WMveiCpwl5UriscyicPvEUKYwWWLwtt7mKukF1qM2oA7G5PU1rV9PNYbr_fqoNgxbgGSRuxdh54M4E4QCCkPE2j-g-KkYMYz9HsXrmtkr3gwcMbOO9aWAMwmLPCoul1SbiLmDoiG6Br9CSH_Hp3JWUkiZ4ZwpjxtXo4Q6iHTaILBAINtBWRf5QDlWlgC5YZYha_VDioCqTB0sn3jQs7e2mId38F3lsJa_k7Hqg2x4NP6P-iEQAXUK8LJkpL7JNmhCpnQTRzmJFmsgBbLpkP7U6gnfCWtjOFLc0Mu2lrYwwsW_oKP2VdBPiYimpa6KQioSpYPoK04v48UzJ8yWIC954IpXLjMCUssnSPUX_IMlMJ60bJZ8YZFhe3Q3D7TaWQs3C_Z9_GKqNnBo0q1XxQX_WTVOkKxG8BFHeWVkvnbNtPPpgqciB3I8vGxFNlqUg-PCBKD0utrPVDEpQ4kOS8kA4iOoXZD2yWu_D_2iWcKDRvy6BuvtOGw7tOLImt0qB3Rrs5mXXvvXohVh1QP3jcr0hKG52MhIkGadIOayVeteow0yDXPKSPPcxjNewqwC4SlRd3q_7jFOnBqyyDtnRWwhwOm7Kwp47P3cWsGHihwlV0Ju4e2AvTHlfMdspik8rNsfiHMbckLb96htmFPQXQ7NEcIIstrWtcX-5XOjgtlVPEJ-jxnXU7TU-coh_G2ZyO6PmB1RjNiJB3tkTKHuG9TCiiFj5R3-VujrP_bUaXm8rbRe_mN7xjtQtyHQcJTc4XWSJkEWQMielUaZ5J5CDh9yXv9XJH-VpX_ghFY75zI1sAautrE3itJSIh3b0vDlz1bGUOxAYw5a5m1smY2jDT432TTXXGbxuahGQt3in0a6V7YG9MqMjyY21P2DN5HtDJChYQqe9gRQpJ7_BX-7Ft9Ew5Q3kZEbaN5kc4oyju_3Z0yrjrz_2etVqIy-3rN8xaI1fCJz1jBVKVbCRElmi8St2WX_bBmnBMazmRtlc75OScTloDK9xdt9ikCJFQh_7ljvsuWZhmvMlR0ji1u8clW1CGF22Yb756bY9C2DxUflq4rJ1-Un9f157rQc1x6RMX_deRvSOxtDLRMP5UtVIqbiSGF2LM7ZrN6SUp3qpSsz6aomTB-bWtSjqmHSNIz2pHZJ78x3F6Ko010S-2ya6ga9bx9HJhdwtGl6jvVWjEsirXnxLWgrdb5UjV1QrickGfSvQIr3i2tcuL-Zki7Moa2bikyT0jnvtaaLiTwkKTQlFg0x0PufKyxTYXy79GRsqEsxqiXjHCk_c5k8p0O4Y9eyvwve5dCjCXG6rvuvEVR_PKvH1yfQetYduz-INEUaWfxV9ZieCTRi2R4U3OeTEUvYA9iWYWp9Xi7hSzBQZkCGnwAJ5XXp7QN9WDUFznbGfNe8dLv6ITxXIdIiPMxkSyrhhcjE3XNF31i2Xsf7xlqcI5-iiWpbphmU76SqnG9-BOznfkyG2cJip0AP2-0_NkVkeQfO2nZzsxVfxoZZQVyZvFwmiWgBSddI7IEKjjTnvI32U62fGA2DlypfSktmPo3hcnSLYTn4AKNJm_m87FoxfXKJCD06E0VU-7AYKt8rIP12xzrfEkz6Pw7JdOFmxeSbWBLmwLtew4TZrunXTlesyH70abjtj3YBZePMyXbJwSoxig0nizsdSmbjeUWtZ0OMoReIexoWzrc_V8kuVADwtf673Eqjw30Z0IfrLp4SJH6IPiCgGEz6rC_UQfwxa-1N-3muMi7LiQ0GyihK2qe2Z2aXCH7ENJNeGNeZsQfyuX96gQGRy5rVfgxI7PKIM83nwDlV5f7JmtVMJfOQ4StxthjTBCSTyKwDzhqZBVw8nQDdy7YFBq1ISHWXpUg7GEyGWVUwW9uIrFDUwhO9XZz49I0sD53CJFzdmzTdU-5DwDzyhBXERSjC4WI_4q6JY-K8dTlBmOs9JYDNdDobuy501IVHyTvm_dIPZQ_wn7orRoxqZRrOBO6q8YIHbzO1FAnjzQ0ewhtcQKe1sIluw9UmB592FOHYKbcPKU6SLGRoKOS4aM-Yv-JDhT_dm7k6p_YM4Wevg6OU9-tOVh-jd-e3B9d3utcoKzcr4oqaxd7JYm1PORc7YMJftcG3_esNFZ4WE7MLksQ4HdmafCksE9Ariah6i0AnzUK3qPPEr8QQYZ4V0XgrazvcNLxB439KIknHkdFsH0Rv2X7qiD-txNNpQBRC_2q6aFt9KpMFcmJfKQXoWR9_AIRkU_9m674qs0SovWRw83ZemeLS_FOT3V3_foTdDiLLWrGro9kncolM68Ndr4FlIR7M2_k1WMRNGw2H4Q_AUAXLYa0zunmQx5hAHpn7OUEEWFhm0P7EjE1opRz1Vwka4CxbaHLiiRxG4CcaZTKzNvdozG2N2KI8QpKqt2dJle6OdGBI242LHKRyaUVGiPfmeM72R2vmUP3G_VBHVHoZkOvL2ogU7esGFurGIOGC5XZHXvrCdRb4vrIKDZR9wc7X3bohlouqMSik3DRzh4JXjc38-6mLeAg1loCHZFQcFoYuLU0VP42zQcH1-8NTvLWMBmmTpJMhn-hooYva15AFVeXzkl1dp85x8VbkC7mVBR5rN56gt2xpU_qONYL7Tl-blsCVR61-PMXmhnKY5p15YkpuU43Eb3n1-SITpQSqCrVKZqIZgEDF2EeqRazd3Xeiqh9bPb9X5U4VMhe10M_pgv3VCbe73--jtIbO6ZzPVtHCMCnL3wWImjppOrLXZSCES2WONaa4gaA_40n999Z3CckP0QeFhtfLBU40_Rbg3ueQD30niLLrb-RuEHz8PolKslvOM9PzGkkRmTuuXSRD3LwkOMyyPxG5-h6w2MfTKff3NpFsjPD6ygcwsOM3F4qtkOl1WJfPSpHe1IsKffX6K5puYcHFK9B-hLiHQeOGmuP7JA25KAzhwrRFbjjbTjvzPziavtCmTjht2cPw3VU9KUrRFBm4yuXZ-NtF4hS8QyiG72YSHhQf70ZTMQs4NRGZ37ppr2BWuOMHQ9kxO0nNhQPuPXZWAaq1PM52hPtBg3ti9Hledc3GJuiPnf1nVUu6glUkzkeGlzz-Om2XEOLtCyaph4Chb82CsBe1XP0mE5OufBZg5Mnm-Hnh6NkD0OVVTKFxWw7xR8N9V2PszYIM0HPXCe5ezfgxyfR4kFcCvgF6DC05OzGY5b3syIhp0n48kuEVRyqRhp1AKpU6yj4Xt8lKKbwZ3inoNLK8y4nvVnsbbIiBGCmgv15OMDG35UY5ZbiUJtew7UMzXcZbo1yh5bMMGUygbOM_eKn93NRxo3ZbKbtAzMi-8bm4x3vCAJgAR5qzHIz5qlhoEeK5QwzMAO0XT9pTqMWN3cu-vdf4Auo20dxdy8wHtbA1M6e7xZIrigQX0wf6oWf9ogrfvm-E0Yp-p8IaDi9LOtleBXctxLyAIXRezwaeSb1Kq7TIeB9HDUJN7Z37jlU6chGQTVwyq5CQYzP7TcMIkOjCrLjxW-OtyuAZ9yxpHGr11m8lRs6yWoKU3ko_TS-X9X_ZZemCBljTlBT87JdktJEETakg27dEE5I8yiiM1WW4VmoYO73KpQtoTEunNHzDgJm_krgXOGZhGki3UDDrQqgSOACwhdq1ShA4kPMoFDyS_ch-rYlgLvi9iyLA4EdtI2jtCRFxkp3wpw3M0Mto7-0VdDsZYO6ekz9VkY7xq4pgtmipcbDWibLVPF7AUda4ohtqZVYXK960FQ0aoQ7cjbKS4avSLDqlKvDP5izqDYm2ZdvXJX7sSHgWjwMZVfIvNQjDbOoJt5aG38-9Z8ejmXqbZvmutWR0qSHm5m-xTmnsQLAeGpbEHaQCLGjrERr5edxM0Lt83r67we5xA_hm0ac0BgwrHBB2cTYYHa6cX1BTXBctw2bJqgvIGXrkrv9CB07O7XHjopIqZgJkx5BRsT_pBtigfn1C8gG15o5mvxVjnCBNCLYxokx_FwjkjFD12l9ei1OMF4iIqljaKIZSGOhgy3_KDtb0JEWl983qcxqFGCM_SJ4X-5tQXC0abhYEDNLSHrNCbDFNG8VSXAMjothV7mO-RvI44XqR_XX_xisk5ppUBtYY7lTk0Zhb5CFteTJdVu1bqRuxx944tzWnj0kZ261jYR8JKbq51ec19V-EcI2_oOTaxWc6x1bSxgU-i4EZ-MLvA68RHLtDq2K2BejXLu8KpC7gb7W95qAEfCtEpYHWEih0YZhd2TRvYrmqGuU9eiksWd_HZy3apT8rH31EaBlI8OJu3mdNBzv2OhY-a8BH8jn9MJDrEDgo_ALjOxFdpNyexb6vmcrmTvLFXSmnjx4ilINlV7WqLnrBKLBhumyEC9MwdPyQy2qPI3k3ELlEgxoKIg9GlpYjP7IBnsqCW0tOStM8cXWLmp5t4PlE0tfkxvXTCcXTkadgVha0W7z4WTSaUEcLZfw_5Uqnx2kdcC0HQfeBaxtkWIWsg9memP0ETMH9yZF-PcIFKdwlYFq5V0pIhmkNidhSCyCpgaQy-zyLmbzQyIb-yV7-HiQi_Wlb9L360pZWARilVINmorDWlvhcgyd6H3-anuiQULx7p_A3jNi4Mi_0PU3mxEFtNSfeUUZi8QM3gpUWmvjZbex3CuK-HdHrW37Mn0giCLCL0PjKLt7M_UU8yc51tS_8qoENGK2fByKV199lENGlIEo1UvXGx3d6AeWdcDe_iQos9fHoR3wN8a1y6NykaVUH9BlBtAdOwg310ZxBye9vsdd1fuXftQCZVi5KAjQuUyRT55Ov8Icb5_utMIURsq2QR2ziB69-gviFfuUjafFZY2yMSWrsDUTSCQ1lfhJnyTDGy_MFRG6ZWk85ktAO8fjPTkCQTCnTEfZUGy5CwEhgS4eCFjQ0l20Y040axKwqYMGdEdWptdoZNOzSfKOlgZAIXoYc_fwsmw4fD4YzeIrlXYeMEzl8euhHQhCFXO9esMjPQkHdatLoqlh374xjXLwHmJ31ZR6Or26lJl8JyG4MlsHd5V1ixyDme_l1RVx1yJxzNBjkHiQDK7HSocob_FarqhylXxuiu8d-YjFwseQnPItglS3HIBZ6BzPmFtPEN8l2w3jvct9cGjXWk5pkzg-P28mGFtKA-pAR1rN3RJ9XrvVwWIOK7Gq-EzaTB2npGjMzMlvhwb2Krlu8LlISlxEh-uIjuVvQTRPxBxH6T8XU0lmWGYs1WX5VbXML4Hq5Fj_y_ccy02gSSV0qOE2yCXMmCo-Iyc1ST03OhI5GCpBk6V_II5h3-s6OPfyYVHohNuNp1l8ERqs1wKzzBz1_T8LI562nxCX4LWjrypWqTvC2ho7cakBQWPlFW_OhY6xZRv7YMOh_j-Ovoe7UKFHPcIyJgIFGJs6Ha0G9UKMd3gojOkCzmcxEw1K3fKhMj3GBItwgooBwxvCHuYjFYP4nAhzQRGU4TXYRxRfLkBcQp9eS4YO5BtJ5VVytzLika-kkEItBNjG2ZCC9t0WIfwNZP-Wpi6sLZ4iL_yVzDY6DDmm35RwbfiHrsJjs9BdT8dyvk1jh68GyqvFKyLT4qh-brXHv5eyF48zPA21kaFrl4XaBkj0LnIKtSPnLKOQC-a6TouzgrB2Q8QxduyYN7bx6nnMTXx56zpqDkW-5RXDzkbsp8LqeJwPG8YAlyvUXkl2lJcT1DWnpFe0BslXG8uvtIIHzhQwfXYcyxhd__obzJ261Pie9HgCyGtzAQPkZpjU3sGeBGL46qo3JoXHO6vChdQuR-7OQR-OkhpAP_HOtjqqgG7-HN-U1NVsorMva4_t0Bx7Bs_7yD-0LmS3DPmwnnmWIV2NCigwIMZHAryJhB-QA4t85vNkKjd4mwD5rt4OudUW5vuQpWiSsenMxDDPkRw8nLLDt8Xzc2gG5t_l7llRw0YyAx-cHD3pI_SAhbnZqDdHxV6Bc5gkL9cex87cG69N2s7da-_nZGCrk3JUZS_2a31kITKpU-m-Ct5ErXVxUC_1Glrm5FosxY_fT3HoLgFVzK5CDKHYkABwlFDjr-WZuO4j-zjfVm1Ing7zs6op2po4mX3zIzqQw1XYlApXAoYDW2w6i175nw_UE95prwX56npr7Ii0LYv1LmUnxSPSJsdlg9YQ06E-PesPQ_BwX1lKJgP_C8vP1rhiqCWbnIoD_6m44G3lh0BHCa4BunPZLivBCuouBiIlwmbybAo-aSVH575jvij51TmBbYmzmNeYII5gkJ0nZfid9bF1K7mpDOweLkeJ4wJ5cG1xf237tdwVvy5WIqFbREp7YbCPEtwHRSNWbts2bX-TtAPd62CL8jssyCG-XanM7TQBOUqI--c1bWPyc96JdbJsGDjaid_QvhmpAFcoOdihdQrcnJ0forVen5SNF6JNrLx1G51hg7Hx1RwcUzSI5MEi36Pu7Gma48cxUbJ0eUs0xOyHyu7FRZsMFYgQHbuH_aj1IE2VrxjIsaYeua-MCYHR7ijgWvBefq7MJgttKMYk2ab5QILEwRT_xLtNUUwoC08XGKUeR9FyTHGuB4j4MxLQ0p2RPHgOYQpCi9U1jWDUuz4vFWGWo9FyCG98NbygBjdYo5XR9cX7hFhAR3FBHYDjBSm9BX287n7R13HWUzT1gpr9BEnHlmb9VPfO_H5K3QV3HiD1hgmT88jKPd1bV-MfHmf_CJfyLT0DZI6rgO9fUn99kj7UYofYxD4SbdmBZ6XwS0Sw-mlXgvdVa3vf56EmMECaTdaZsE1FoXNJEZLo_jg3LU_Y-_wlKHXp0IrHIJV2xoFwwM0zW6lMJQTYGprFvP-IMOwBxi9R8lfJgiBlnksNmY8k9TZZ5L-KUs3H2yGi9Nf_cFy2LTrlsiMNpWGEuT6U0jVuVMXMRxZl7Nxu-b3kILHfpwHcZKXtxPWh5lyySpKvnJ6fltCUpW0Gz-bSE1-wYazFsCsL8KH5_t09rKo6QaJrtmpz2bP_VfbSjSxzI2ffFPTtSZCBcojZ6uJq2nynIIQN1nJWH3C5qdjFw7LSo24AFXXumVluJ5Sj4DXKUNAsLHI5KZxxjiyELsXzJ9t6zH7aEJYgZN0hk8uFDCDuCgCO4mByk8Z_Xn4sAn_8WJrYrB4kO75EzRnlbfidEzd-bEy2_y7Smulche7SZQrkVaTL5Ii4_RMg4JI5SB1itdkME2_KSrx6SzcxtGJG8TG0u9FTzpgfm0pYIiZyC5GvuGmlrBemB7c1n93cfOHySBCK_QYAEcxYILNbHtL5JL6avlLxa3iE2EuJojOOYsUWlU4ZqdO5U9jDDIMc4kiaI9kfnLeQdBue6g6pYfvomfS_xsGdXcIu_wNa5pJQxfFldHnQH9fEccg2DpHTtVWNOj_i3EQsxlRm9UgQym1OyguFxiNSHtj3kDml11VFmMmX7G_nyHMNbr9uebUaLn28r_Qbp-4iLXNTZAeu-XBsfW86vwu7LQ90CvxBq7D8kSQwIQdpVgHPP_Jfw7DLGwdz6TZbL0NkuqgzgiaKntK8svT1y9lpvFCgBPX_Yzlk5-KTC-E0WiZa05ij7gMAxODnsLcUxKEQCPg3cZaN683Ck0CQ2v2hKpb5tmDjfgSqeSiszUpX1oVclg-mQUbPxqXll7JLu3u_5fGLKY4y6BSe0Tkklz08Sc7H9dnC96NYf7FdOyuAJlidgadShvSyis9BIjBfGCZ0uWnUoTO-XLiHCMaRWdzU-t-9rQt99x22S3GDbFYet7FcuHfr455W7R7qcRZ-2vevGb4bVsKdgs7U1OLIXJ_7Qe4xIrataLmo7rbXoA0-IzjbpENKS_VbjUvMzpD1gGJYX9RVDymLTCOO2rLLyBHo7HrHXy6kJEkwKoYKcg7EXZORB3bkqRzOFE6Q1JylTKXvD8JxaqmNeGgvsBLKEJrNNyhu_c7bnloSlDNTFVImaS6hz5gzplcSDMzqLsMAjFaPS4SJZU3nrktt6OdB8cvJVkk6INZeLcJp14kENtPLZb_oI48JQ7zDeTRSfeyZFIwOM_s_zK-YiL3wcOuz1ngO5Hw01XVDCQiI0loWRe3ysp1cmbdXPR5w2LBMNXVeK2ER5LiO2anmKKTABIzKDAGYtQ15lNitpWl1DefZRfElO_-iQYeUkA8LvnCp-Wc1bFt4danTveiNtjmX6PZz5_CGxElwFrgS7fHgcCy8fQi6iwvPEYg7BP5E6eVTZmdvYGXOF_Azi_PV7CZmMyXG7WofVl_sSTAVZtw5kZ886Rtan7je1rQWWPgUq0qx7RCUW5WYzh_q8I-Q1IZHoDxbGEQcekL3AceY4a8GMJSZphVyYKiNaFDEHXvqlWY3C6VqZRrCFjhXP21i3YmjCYvTZFk1TWRqLhHlSa_IKlByb06fE2TIlD_Cq6BNzNDyidrnD5-TXF3ykQVKovMDVqx2ng40NOa_53uuwRiPxSag3D3RddpXR9081dKg6iZ3196NAL6FCjOYMjwXhPRlMrJ5U8PPG9ee6IReovpO66lpdp9qIlf2ikHA5hH0HTdpclzMZFFpVL9iFzeLAs2mrqWURgc7ortnWpeP36GtBQ1v0Jat3tXEyaMIJjLNFW07YkFPSkldape1UI8msBv7Wxz4oLLbwHS5silmF3QjeuS-TcPJ24I8BhCEJwXFdhqUcL19z6_pQzgyHQ3xP6A2JW2gBkwuYp00TP5edQeFAh_tZyn-3eHTqGpgusrfD2VCHZV0QOMXbPWSa_Npo80zZuD2NKndReE_Fvr3uAuUYPtL9FTFsPiiAY0HtXgkeeJZsIeSJggYgdfm3gh91-C-81QFsiIZTt13xrPI_KyG3mqcrxUx1S_v3J5Gx9ANZKX4TngK0Yww-ky4SEUQ9-zVZAzxyllf00Sr2sQqTgUXAzGHnUQatziIJw_PiHALFKKD8qZdMvHPbVNzi0huh2h6o-2nZQVII_UpS-d9aI4Ykk_HZCCpchlAYtxuYESSAYHRXVmlWhG61dZitNbrwotfpNoaplvAPq0N3H1ewKTd3u6jACa7qnixOlYVH4m_o9uWCWi89gkYDEd18Rtirbaz2jVNwDpQG7PYAg99YVhOoeRraoZemz20dLUJQQgwnnnBKSARrv2OxqnBb7R_bgM8LvoFD2AAidZE5RKT5drtAt_RDqzzBCymEte7npyxlvMUcZxQV1Z2SoOW0DxoJxf3FvOuJ4AOTQGCvvbsptv70Htvudhe-vESvavp7DLFOjiDV9fE1DwQVn5V1QGlUWSxjb9kxuLCSGERZMwOshNp0qAqU5e3_Yo1EZ7tBCN8oRmJ6z_xcoaWf3ktzpUV-uVwiJes1KQj5Xy0St6dlYqBSe300tPgQGsuKbvwJCL4Vv5OfPfVX7uk0mBsyv9GAm-DJjzdgCR7_DFHldvR35Yp5qdHHbwxFGrGrdE-tIgFmj25Iw6JUKJPB-eiBW6_aPlTytWo6xrYVlOTNeDehaEgHXJTHo_YLKhkcZLfzQT-dPOhygVywotDT3Nkzl0pOZSBlIwIYR4BB3DA3POgsQ1Uld5wasd5e4pZAhaOU6jbgxHSJeL2_vOt_Rhxi1nugdhJDZ8GlIlK-Z-ijZONsjKu4N4xUzKSwnIJyg8ZQ6h1XgnTtuIj05HkfMOTNZ-Y9tRslBZ9FT4SgU3z4_E5KYIUq6wBLhkkYYvZVQe2mzmq6o8o1Y7ypCqpKZoKCtxdLUAYmU-7BY5K1hKoPVYp5vAAZrCTT0w0uJPeYUts1NEOeoNudPM6sHtjPdo1m-jBYDeojLymDqmjADkbpPEXEmXTthf-IEF_9x0m0kgJGsgt9d4_AEYV1CRQWMfBLu6H4ItC33KWuTG8LD3D9_OpfokwIbMBeEk7XuOQvHBzEer0dwhIxK0X8Cca9YugJs-ZeIKH0k-yA9beYGDhOjNl2f-NEDb3xUsN5u1D-G5lFk0PUC63nDPPJoqtWFEvf_EIaae2LJSycQmmMIksKgIjRrNBhnd32Y47gnyS0uVOtAFDnln6j9_kpOwjpvYjw-rP4yWEhArORi_FQF9TI-CqP4Fqshlw0GDBNkZGhGCvuqj4vCx9BCaJDEQsjd6n6Hrb8At1low3WGxxYfe8QVX8WZ3Z4bVH6Z3TPwns1V7cmoSZgfRmdjdH8NvrsMQN7cb4ntIpvgqOOpgroUFkOANT3B_ClvihWRoIGH3FgVkSla1br6hAGTAPI40KJfPztAIpj7uK2cbQO6NZ9oQPxEkMpyCG_EaPblKJ4eT-Ed33Vqw-LGxexRLXCM45P_rLKonmqWyZ932OU-iYPgZY8CpkJKEDi0vz-ayScX50ATNwS_3mIRF18tOHoXu82jRqBcT4NlbSg0rU6qSMjxk01Yxbf8k6Gbwca3M7S0H2p4OTwW0qqhHdE40CHh6x0LfTp_F2bXPVXWHJ02zoi40pUcrvJg7yq7mpZeKV4NNizZsckX8ucNWZ0VWVlujk4HZKKgWqZhcndXq7meZFu4S9qxesd2KAxNd3WKd-WQX2XXYRnp0lEGre-Jtn9Bqz0OZpYiTjQnove-ia_I69l-75ao9o2f1XYjWXeggG86h3vDTzoPdMLrVuJ2mImxhcV5pUZZ4mGUo6gj5oiQ4G7LoDEqSgU2YqRM8eCrWB6nV8-0nzeMC6N_GjofF71g1NO4VMjuZhVjsHtrGNSiZfEnlTOWK7VuatZMW-hMjrweC5vJi-YCnJlMxuqJ7Jr0S9VBR6F-BEGP6G3rLRSzCEjIiieUr1_nO6naSyNQHhSu213VFPEc6ggDMbFXr-wCbnFrsgwPEt5k2VTWJY9-nnlrZpZOmgyHxmfFU0RiSTpcsDIL_TsMR1GGrB2bf-_EphEN3yitYu2B8-hl2Y6D8eDrtJCx-CJ3-5NyzteYrrg4xp7XTh_bDN1d34hXH7TGBEJSbsYYziVuznDBcR4h6di78F6A7ux-9TjHZ6xAaLh4vne8RaQExC2NCC8PlWB_1W6ZrpEdT5LvWYUbMmqYrlTenGWnivhpb-yZVlKIa1Ja-qC1jqOEjfLBGDrI1DLFyb6tS-UMb3-y8H7QkLBvCsWXyOtjBOVl6aVYUqv-9DjVwcSREmMS948HYHXzuhHs-SnPTzrYF84P1MTVr4RqMv-KOCOcp6O0hsvVzRa02dX9MZXn0XH3OFT_r9Y07XcnienkoYxFBQkEHrFSGl-UpUuAILY3bVcKOyICUUELR4Kq5W4qZFs50lC2k-1YnZ8lg06hTlFV8rsSZTWeEgqDf6kqdFRIeJfetnWogVnrbDih8mPHBcwTrgHtyJmHX44QzpPxKRbzHWA5x03bkdBV-hWjURTQqw_uECHYMBPnyWbJvh81bPb1iCwfrAGxAr5B0bQOqTa-Zsmq-AUtRRkU0kMXO6EwVeNadtwO9A2G2TXIaQ1D0TFCqqqtg-l4wSywklECtLlqD_XyjKGLacSjV8xOFtTsClzratPrjUCbNnPfhKw-scYliSjcd6eIc26SU_Q_OllJXFtrLTVoJFeifzJBmas5aPHML0nl7yLuDfZ7QA4IRyZBgzut7Df0gw7gFjHIjCbz3iM273bB3iA49ZGTXKxy-gQzkF6xKYq2YrXZtJbScERTw9aCzR6erhpcA2uIq6CjekBUak3tPp5YxnqGo8ITZwXkNrrf8asgO67hWsHtTAHmV4tP1u3ZClbDCYUCxdq8e1_A6_ZVmDWYStrM0qI1xrtfsMCfPMTP3F7HwgCJ5cbk4WrlOhoVc4eUJAXF-rEHkshEB5rh-cn__16DIEJY5-yxtKRXfP1afb0jYZpfGpaEn_2VWOVWDZSSPbWjGD7gdrJZJRSyIqZ8uBxrsVXPR8EbaiTR_dSbx37ydY4H5yJkGQO1ZIUuZ5WNgG16kPSzCK1OGq_JhJujm2AUvkP_u7qWBK7b3eiVVUNEvVkXSZfapNqj-N-9rlbD1SViYtXvcsXd0Ry9jF8mXl365WQdu-vbIPAvkJl5uLtknYjH6fmMgaJsuPiDp38Zrzpe67CkxYY1v27ueRVFPEPyDlMhblX8-q__nav_va7tVdmIWfk-eoYNtGHtHzZo2Pv3io1AC8EaZC5fAzSYTZ6OMtJ6g_9ddLms2HZJ4G5dgprbB8PpOD4LLJECjpY9ZT4tysr2YcyBEKW6NAiYSSnsalB3kUB7dmeAZutKZG1AMmK04N6f5yUGAX-nZ5Gy1W6IHrZ1tXHh0IINkKImTka7Bnt-fra8cTNFC1qXnpHdZDR6ZLpyhXNspC4eI75fDKZXoquczgf3TztxyOKgs6RqeMjmxxKW6FEMI8CFvXk8qS4Yw9tBA2cWPs8NYo_yTZssdPAVS1wTPeMk57FJmrA-0G_U-jDuVBcQVDx-axSqoYo495ILAwS7Hd5Lj-gyEk4Ym379-5joSe0UdlXzBDCN-6g5a-ZPsv0nkbC0FR-_VV-s02abFiv2XibT4fFi45GrX8EoNb8ltk_hbln_Gp8Ysw8zz7EokeuTKKa0HeK17VgboyodP-KkdhJoXWrd4ct2lq180H7kWqwkW3JfqsNire44BHtMft-6YM_l-ETwCAsfjJ6wVn-1F68FGGpFgXtJN_k8ToaB8mPXPWzZbjrurA9AasqkwC0BMNpoIiNwpniqo2JujvweqYKlYHvdVcqCGXbk2DyJ2kB_O-peiZEUSpLCjI642l9vMHBJUMtcyOx2bR4kRyZ0_Z8hi5t25XPqrCimDWBZ2kX_b45wKQfOS8k8HnmE6f6EsdzNNAsjYHp-TaWxxG7vsXkaWBzbvymqfWF8yIjPtWwtQxwXHRo0IahSOXCxAAgFhjPDxxRNvAscl1ppAcUJjv8HFApoezsFF_b7sdblhwxbunuKHiWZqY-1lSO2sPADefB81aDLGYB8f9MqKtZnmDY746DcmV8NFYwmn4o1_--2zXz3_3MrnwMm2XN4Y2r0IZh_y02tFNr93iOBlN0Mi5VXJIqmancQW5OiBlJDWkiRwldp9WYF8xjRHQBZqi5qZDPz4iW7wLoSdk1MjbCg68nsFW6KOsLjjJrDSsG11llp4mDCfYdOPJVJm08tzBgRmDQpJ7QwmB_UQDW-l99xO61cEU20x5bn5cHAZVNDbSAghvp5j1fjWsck1-pJ63fg0vKNU4MYS79oNkcTbORZURy6WA45O8WKwDwSjs6HLOcDNQBktbPjW_g4lrkaAeesPAga8q2HuUY8SRtKMKBkVCOKCP1fkoECE4EGVpWKdUUprwAM0Ew9z5eKumGbOnh6j3F-1wpbn6ozMc2ezj2c5eh8fRjYHvHxjZtxyCgG-LHrtmuTBdMvWpWdNpWbVtwYqUCoAUWEt_ZK5GANxEwCPWqRN7TFnPP_nJBLdPQJ8whHd3N51oG7p1u3Dvfu7AZrcZeGOsQ7AdUVpFpopbH83kQ9S-x71BOI1WvkyYC__TxihMAWRINQsT-jPWBsIesz8WxY1ZHy1HuTAe4YM6qKc5FeroOZtvrc3EJpV1fWMCQ7xfwwq1yATsgE-h5LYI9cCICycJ4Dyo0FntiEBICmQXhcqLJEPUTQ5uRjOhvEx8GduSe8TBCAbyfclZiNtkgOelC9ObrV-aA_jt1tcwizSOovytaoLvgidtJH77yGtLfwdSvesBFqO1IOedjvpd2jByyBGJDtWgktFfsDb0J3BEXzLbKXjUKyiPGi3-HylKCwmb5cUHOOMV1sokNGDsz0OPl5wYLKRV16Llhs5JpGqxOYOWsQAgLPgBmfPQsowxMDNkBLmH5YOewf4iOXtGUmObB3_qjAwGkrxDVInvz8qQ4bVqJAUhqgV_TFsLqqi9NO7taZaCdj6FbvdpvXqholGGthJN5oOok5p4amzihGr4DJBEWxkUiFfK_nlKbWi6c3-P_5IZUKdXRe_jIhqKI0CKqMwJgzYFNJAivcc5dBlPQqnliSXY9iCukzdUV3i5liiJCkYRAqawsq5p37F9dkfaI-FWMe9-mI-XjqubnL0Rxhz-0cocZ6KYWDKNriFv-jY3A1624gut1cYx4j6glOIS9VGgz1n-J9wbSRXx0gup1qc7Ys86R6SGWvuEaMd4vBp5qL3J2UQw5pKfdsZYkM20XppurInhwIkmN-QcOTTDsxTSHCZrEtvLd1q2rhUtqHMFJXZT0apY11iIS6hymo6jvPmPJT7jFrkf_qQrX6jg1vN0yabS7lg8a996J11qdspmWj-gJMoLfpXmfqOtSjilN2G86GSqpRWYrC-qEwARArUQTt-Ts3087NbFNlbjYwoPGieHP0gTeg_uJgclsn0K3cSfkkUlwa6Z_76tNK7bGBpOwKyT_lSZCkomKJXBPNMO_k2ACkkAX3MncEOmbpvi9QJYaEGSFQu6v5aM5SrNvsgHDISLsPFCALbCwmjceeOYjyjZen6OwQKJthA9BzJs1LKSHUUxE_oBJkhdKr1l1jU"
           }
         ],
         "role": "model"
@@ -31,10 +31,10 @@
     }
   ],
   "model_version": "gemini-3.6-flash",
-  "response_id": "kdJ7ap7XO-Ozvr0PivbGmA8",
+  "response_id": "OYp-av67JbDP1e8PjKXv8A8",
   "usage_metadata": {
-    "candidates_token_count": 11879,
-    "prompt_token_count": 120188,
+    "candidates_token_count": 5246,
+    "prompt_token_count": 140730,
     "prompt_tokens_details": [
       {
         "modality": "IMAGE",
@@ -42,526 +42,235 @@
       },
       {
         "modality": "TEXT",
-        "token_count": 6340
+        "token_count": 26882
       }
     ],
-    "thoughts_token_count": 7888,
-    "total_token_count": 139955
+    "thoughts_token_count": 6931,
+    "total_token_count": 152907
   },
   "automatic_function_calling_history": [],
   "parsed": {
     "schema_version": "1.0",
-    "identity": {
-      "security_code": "9506",
-      "company_name_ja": "東北電力株式会社",
-      "company_name_en": "Tohoku Electric Power Company, Incorporated",
-      "latest_filename": "01_2027_Q1_tanshin.pdf",
-      "latest_period_ja": "2027年3月期 第1四半期",
-      "latest_period_en": "FY2027 Q1"
-    },
     "claims": [
       {
-        "claim_id": "overview_01",
+        "claim_id": "company_overview_1",
         "section": "company.overview",
         "order": 1,
-        "headline_ja": "東北・新潟地域を基盤に発電・販売と送配電を展開する総合エネルギー企業",
-        "body_ja": "東北電力株式会社は、東北6県および新潟県を中心とする営業地域において、発電・販売事業および送配電事業を主軸として展開する電力事業者である。発電・販売事業では火力、水力、原子力、再生可能エネルギー等の多角的な電源群を保有し、電力小売および卸売取引を行っている。送配電事業は子会社の東北電力ネットワーク株式会社が担い、中立・公平な送配電ネットワークサービスを提供して託送収益等を得る収益構造となっている。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0008",
-          "02_2026_FY_tanshin.pdf:s0020"
-        ],
+        "headline_ja": "電力安定供給を軸とする東北・新潟地域の総合エネルギー事業者",
+        "body_ja": "東北電力は、東北6県および新潟県を主たる事業地域とし、火力・原子力・再生可能エネルギー等による発電・販売事業と、100%子会社の東北電力ネットワークを通じた一般送配電事業を中核として展開する電力会社である。電力小売自由化や送配電部門の法的分離を経て、域外取引や市場卸売を含めた電力供給を行っており、規制料金・自由料金の電灯・電力料および託送収益を主要な収益源としている。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": false
       },
       {
-        "claim_id": "latest_key_01",
+        "claim_id": "latest_key_takeaway_1",
         "section": "latest.key_takeaway",
         "order": 1,
-        "headline_ja": "2027年3月期第1四半期は域外取引増加で増収も女川2号機稼働減とタイムラグで減益",
-        "body_ja": "2027年3月期第1四半期の連結売上高は前年同期比46.7%増の7,853億4百万円となった一方、経常利益は5.4%減の544億83百万円、親会社株主に帰属する四半期純利益は4.2%減の361億27百万円となった。市場や販売環境の変化に伴う収支改善や送配電事業での需給調整費用減少があったものの、女川原子力発電所第2号機の稼働減に伴う収支悪化や燃料費調整制度のタイムラグ影響が利益を押し下げた。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0001",
-          "01_2027_Q1_tanshin.pdf:s0003"
-        ],
+        "headline_ja": "2027年3月期第1四半期は増収減益、女川2号機の稼働減やタイムラグ影響が圧迫",
+        "body_ja": "2027年3月期第1四半期の連結売上高は前年同期比46.7%増の7,853億円と大幅増収となったものの、経常利益は同5.4%減の544億円、親会社株主に帰属する四半期純利益は同4.2%減の361億円となった。間接オークション自己約定を含む域外取引の増加が売上を押し上げた一方、女川原子力発電所2号機の定期事業者検査等に伴う稼働減や燃料費調整制度のタイムラグ差益縮小が利益の減少要因となった。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "latest_key_02",
+        "claim_id": "latest_key_takeaway_2",
         "section": "latest.key_takeaway",
         "order": 2,
-        "headline_ja": "間接オークション自己約定の増加が売上高を1,551億円押し上げるも損益は中立",
-        "body_ja": "当第1四半期の売上高には間接オークションに伴う自己約定分が1,551億円（前年同期比1,473億円増）含まれており、これが主たる増収要因となった。ただし、同額の費用が同時に計上される取引構造であるため、連結経常損益への直接的な影響はない。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0002",
-          "01_2027_Q1_tanshin.pdf:s0004"
-        ],
+        "headline_ja": "自己資本比率は20.0%に達し、V字回復後の財務基盤復元が進展",
+        "body_ja": "財政状態においては、総資産が前連結会計年度末比501億円減の5兆6,817億円となった一方、四半期純利益の計上等により純資産は257億円増の1兆1,615億円となった。これにより自己資本比率は20.0%（前期末比0.6ポイント上昇）となり、2023年3月期末に10.5%まで悪化した財務基盤の復元目標（2026年度目標20%程度）へ着実に到達している。",
         "statement_type": "actual",
         "is_inference": false,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "latest_key_03",
+        "claim_id": "latest_key_takeaway_3",
         "section": "latest.key_takeaway",
         "order": 3,
-        "headline_ja": "純資産の積増しにより自己資本比率は20.0%へ上昇し財務健全性が改善",
-        "body_ja": "2027年3月期第1四半期末の総資産は前連結会計年度末比501億円減の5兆6,817億円となった一方、四半期純利益の計上等により純資産は257億円増の1兆1,615億円となった。この結果、自己資本比率は前連結会計年度末の19.4%から0.6ポイント上昇して20.0%に達した。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0005",
-          "01_2027_Q1_tanshin.pdf:s0006"
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "latest_key_04",
-        "section": "latest.key_takeaway",
-        "order": 4,
-        "headline_ja": "地政学リスクや託送料金改定申請などの不確定要素により通期業績予想は未定を継続",
-        "body_ja": "中東地域での戦闘再開による地政学的リスクの高まりや燃料価格の不透明感に加え、東北電力ネットワークによる託送供給等収入の見通し期中調整申請に伴う託送料金改定など複数の不確定要素が存在するため、2027年3月期の通期業績予想は未定とされている。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0007"
-        ],
-        "statement_type": "forecast",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "latest_driver_01",
-        "section": "latest.business_driver",
-        "order": 1,
-        "headline_ja": "新規顧客獲得により小売販売電力量は8.7%増加",
-        "body_ja": "発電・販売事業において、春季の気温上昇に伴う暖房需要減少があったものの、新規顧客獲得による需要増等が寄与し、小売販売電力量は前年同期比8.7%増の144億kWhとなった。内訳としては電灯需要が4.2%減少した一方で、電力需要が14.6%増加した。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0008"
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "latest_driver_02",
-        "section": "latest.business_driver",
-        "order": 2,
-        "headline_ja": "送配電事業は需給調整費用の減少により損失幅が27億円縮小",
-        "body_ja": "送配電事業では、春季の気温高推移による家庭・業務用の暖房需要減少等からエリア電力需要が1.1%減の167億kWhとなった。売上高は再生可能エネルギー電気卸供給の増加等で15.7%増の2,271億円となり、経常損益は需給調整費用の減少により前年同期の112億円の損失から27億円改善し85億円の損失となった。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0009",
-          "01_2027_Q1_tanshin.pdf:s0010"
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "latest_outlook_01",
-        "section": "latest.outlook",
-        "order": 1,
-        "headline_ja": "燃料価格動向と託送料金改定の見極め完了まで業績算定を見送り",
-        "body_ja": "会社側は、地政学的リスクに伴う燃料価格・電力市場価格の変動や、送配電子会社における託送料金改定および需給調整関連収支の動向が合理的に算定可能となった時点において速やかに業績予想を開示する姿勢を示している。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0007"
-        ],
-        "statement_type": "forecast",
+        "headline_ja": "地政学リスクと託送料金改定に伴い通期業績予想は未定を継続、年間40円配当予想を維持",
+        "body_ja": "2027年3月期の通期連結業績予想は、中東地域における地政学的リスクの高まりによる燃料価格動向の不透明感や、東北電力ネットワークにおける託送料金改定申請・需給調整収支の変動要因が存在するため「未定」を継続している。一方、配当予想については株主の予見性確保のためDOE 2%水準を勘案した年間40円（中間20円、期末20円）を維持している。",
+        "statement_type": "mixed",
         "is_inference": false,
         "causal": false
       },
       {
-        "claim_id": "latest_risk_01",
+        "claim_id": "latest_business_driver_1",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "販売電力量｜追い風：産業用電力需要の回復で小売販売量が8.7%増加",
+        "body_ja": "発電・販売事業における小売販売電力量は、春季の気温高による暖房需要減（電灯需要4.2%減）があったものの、産業用の稼動回復や新規顧客獲得により電力需要が14.6%増となり、全体で前年同期比8.7%増の144億kWhへ拡大した。これが販売収入の基盤を支えた。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_business_driver_2",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "電源稼働率｜逆風：女川2号機の定期検査稼働減が発電・販売セグメントを圧迫",
+        "body_ja": "発電・販売事業の経常利益は前年同期比21.9%減の623億円となった。市場・販売環境の変化に伴う収支改善や電力先渡取引の時価評価影響があったものの、女川原子力発電所2号機の定期事業者検査や火力発電所の計画外停止に伴う稼働減、および燃料費調整制度のタイムラグ差益縮小が大きな減益要因となった。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_business_driver_3",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "需給調整費用｜追い風：送配電事業の需給調整費用減少により損失幅が縮小",
+        "body_ja": "送配電事業の売上高は前年同期比15.7%増の2,271億円、セグメント経常損益は85億円の損失（前年同期は112億円の損失）となり27億円の改善を示した。再生可能エネルギー電気卸供給の増加に加え、前期に圧迫要因となっていた需給調整費用の減少が収支改善に寄与した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "latest_outlook_1",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "燃料・市場不透明感により通期予想は未定も、女川2号機の安定稼働が中期の収支改善軸",
+        "body_ja": "2027年3月期の通期業績予想は地政学的リスクや託送料金改定等の不確定要素により「未定」とされているが、中長期的には女川原子力発電所2号機の再稼働効果の本格化や高効率上越火力1号機の通年運用が収支改善の主軸となる。燃料価格のタイムラグ差損益に依存しない構造的利益の創出が今後の業績安定化の鍵を握る。",
+        "statement_type": "forecast",
+        "is_inference": true,
+        "causal": false
+      },
+      {
+        "claim_id": "latest_risk_1",
         "section": "latest.risk",
         "order": 1,
-        "headline_ja": "中東情勢再悪化に伴う燃料価格および市場価格急騰リスク",
-        "body_ja": "中東地域での戦闘再開等による地政学的リスクの高まりは、LNGや石炭などの燃料調達価格および卸電力市場価格の不透明感を増幅させており、発電コストや電力先渡取引等の時価評価損益を通じて業績を変動させる直接的なリスク要因となっている。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "地政学リスクによる燃料価格急騰と電力先渡取引の時価評価変動リスク",
+        "body_ja": "中東情勢の緊迫化に伴う原油・LNG・石炭価格の高騰は、燃料費の直接的増加や卸電力市場価格の急騰を引き起こすリスクがある。前年度（2026年3月期）には燃料急騰に伴う電力先渡取引等の時価評価損計上（翌年度振戻し益）が発生しており、会計上の四半期損益を大幅に揺さぶる不確実性として存在する。",
         "statement_type": "risk",
-        "is_inference": false,
+        "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "latest_risk_02",
+        "claim_id": "latest_risk_2",
         "section": "latest.risk",
         "order": 2,
-        "headline_ja": "原子力発電所の定期検査・稼働変動に伴う火力代替コストリスク",
-        "body_ja": "当第1四半期において女川原子力発電所第2号機の定期事業者検査等に伴う稼働減が収支悪化の主要因となったように、原子力発電所の稼働率低下や火力発電所の計画外停止は他社受電や火力焚き増しによる調達コスト増を引き起こすリスクがある。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0003"
-        ],
+        "headline_ja": "託送料金改定申請と需給調整関連収支の不確実性",
+        "body_ja": "子会社の東北電力ネットワークにおける「託送供給等に係る収入の見通し」の期中調整申請に伴う託送料金改定や、再生可能エネルギー導入拡大に伴う需給調整費用の変動は、送配電事業の収支を直接揺さぶる構造的リスクである。",
         "statement_type": "risk",
-        "is_inference": false,
+        "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "latest_context_01",
+        "claim_id": "latest_context_1",
         "section": "latest.context",
         "order": 1,
-        "headline_ja": "制度的増収要素と稼働制約による実質減益が混在する中での自己資本回復局面",
-        "body_ja": "2027年3月期第1四半期は、間接オークション自己約定という会計上の売上増額要素（1,551億円）により表面上大幅な増収となったが、実質的な業績は女川2号機の稼働減や燃料費調整タイムラグにより減益となった。一方で送配電事業の調整費用減少や利益積増しにより、自己資本比率は20.0%まで回復した。通期予想が地政学リスクや託送料金改定申請を理由に未定とされる中、エネルギー市場変動に対する収支耐性と原子力再稼働の安定性が今後の検証軸となる。",
-        "evidence_ids": [
-          "01_2027_Q1_tanshin.pdf:s0001",
-          "01_2027_Q1_tanshin.pdf:s0003",
-          "01_2027_Q1_tanshin.pdf:s0004",
-          "01_2027_Q1_tanshin.pdf:s0006",
-          "01_2027_Q1_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "大赤字からの脱却と財務復元が進む一方、外部環境依存度の高さが残る過渡期",
+        "body_ja": "東北電力は、2023年3月期に燃料価格高騰と円安の直撃を受けて過去最大の経常赤字（1,992億円）を計上し、自己資本比率が10.5%まで低下する深刻な財務危機に直面した。その後、規制料金の値上げ、上越火力の通年稼働、女川2号機の再稼働、全社的な効率化等により2024年3月期以降は業績がV字回復し、自己資本比率は20.0%まで復元した。\n\nしかし、最新の2027年3月期第1四半期においても、期首業績予想の「未定」開示が示すごとく、燃料価格調整のタイムラグ影響や地政学リスク、市場価格変動に対する感応度が依然として高い。財務基盤の早期回復と、外部環境変動に左右されにくい安定的なROIC 3.5%程度の達成に向けた構造改革が引き続き問われている。",
         "statement_type": "mixed",
         "is_inference": true,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "trend_perspective_01",
+        "claim_id": "trend_perspective_1",
         "section": "trend.perspective",
         "order": 1,
-        "headline_ja": "外部ショックによる業績乱高下と自己資本毀損からの構造的再構築の軌跡",
-        "body_ja": "過去10年間の東北電力は、電力自由化や法的分離という制度改革に対応しつつ、燃料価格騰貴や自然災害（地震等）という外部ショックによって大幅な赤字と自己資本毀損を経験した。初期（2017〜2020年度）は比較的安定した経常利益を維持していたが、中期（2021〜2023年度）に燃料高騰や燃料費調整制度のタイムラグ差損、地震被害が重なり赤字へ転落、自己資本比率は10.5%まで悪化した。直近（2024〜2026年度）は料金改定やタイムラグ差益、女川2号機再稼働等により利益と自己資本の急速な回復（自己資本比率19.4%）を果たした。持続的な安定成長の証明には外部市況に依存しない電源構成とコスト構造の維持が不可欠である。",
-        "evidence_ids": [
-          "11_2017_FY_tanshin.pdf:s0022",
-          "07_2021_FY_tanshin.pdf:s0011",
-          "05_2023_FY_tanshin.pdf:s0014",
-          "05_2023_FY_tanshin.pdf:s0015",
-          "04_2024_FY_tanshin.pdf:s0016",
-          "02_2026_FY_tanshin.pdf:s0020"
-        ],
+        "headline_ja": "燃料危機と震災・地震の多重ショックを乗り越え、構造改革と安全対策投資で再建へ",
+        "body_ja": "過去10年間の東北電力の軌跡は、燃料価格激動と自然災害による財務毀損、およびそこからの構造復元と安全対策投資による再建の歴史である。初期（2017～2020年3月期）は電力自由化下での競争激化に対し卸売拡大や全社効率化で経常利益600億～1,000億円規模を維持していた。中期（2021～2023年3月期）は福島県沖地震被害やウクライナ情勢に伴う歴史的燃料高騰・大幅円安により2023年3月期に過去最大の1,992億円の経常赤字へ転落し、無配と自己資本比率10.5%への悪化を余儀なくされた。直近（2024～2026年3月期）は規制料金改定、高効率火力・女川2号機再稼働、ユアテック持分法化等の事業再編を通じてV字回復を果たし、自己資本比率19%台・復配を実現した。長期的には規制と外部燃料市況への依存構造が持続する中、資本効率を重視した経営へ舵を切りつつある。",
         "statement_type": "mixed",
         "is_inference": true,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "trend_consistent_01",
+        "claim_id": "trend_consistent_1",
         "section": "trend.consistent",
         "order": 1,
-        "headline_ja": "燃料価格動向と燃料費調整制度のタイムラグが連結損益を大きく左右する不変の構造",
-        "body_ja": "初期（2018年度）、中期（2022年度）、直近（2024年度）を通じて、燃料価格の変動と燃料費調整制度の適用時期のズレ（タイムラグ影響）が同社の経常損益を急変させる最大のメカニズムであり続けた。2018年度はタイムラグ益が利益を押し上げ、2022年度は燃料高騰に伴う大幅なタイムラグ差損が1,992億円の経常損失の一因となり、2024年度は一転してタイムラグ差益が2,919億円への劇的なV字回復をもたらした。この影響メカニズム自体は一貫しているが、損益のボラティリティを極めて高くする要素となっている。",
-        "evidence_ids": [
-          "10_2018_FY_tanshin.pdf:s0023",
-          "06_2022_FY_tanshin.pdf:s0012",
-          "04_2024_FY_tanshin.pdf:s0016"
-        ],
+        "headline_ja": "電源安定供給と送配電網維持に向けた莫大な安全対策・設備投資の継続",
+        "body_ja": "初期から直近に至る10年間一貫して、女川原子力発電所の安全対策工事や上越火力発電所1号機新設、送配電設備の更新・維持など、電気事業固定資産および建設仮勘定への継続的な巨額資本投入が行われてきた。電力供給の公益的使命と規制要求に基づく設備維持能力は一貫しているが、その投資回収は規制料金改定や原子力再稼働のタイミングに左右され、利益の安定性とは乖離する局面が頻発した。",
         "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
+        "is_inference": true,
+        "causal": false
       },
       {
-        "claim_id": "trend_consistent_02",
-        "section": "trend.consistent",
-        "order": 2,
-        "headline_ja": "全社的な経営効率化と徹底したコスト削減努力の継続",
-        "body_ja": "同社は初期（2020年度）、中期（2021年度）、直近（2024年度）のいずれの時期においても、グループ一体となった生産性・効率性向上や経費削減の取り組みを継続的に実施してきた。2020年度はLNGスポット調達拡大や能代3号機運転による燃料費改善、2021年度も効率化努力を明記し、2024年度は高効率の上越火力通年運転による燃料費抑制を結実させた。事業環境の良悪にかかわらずコスト構造の改善が経営課題として掲げられ続けている。",
-        "evidence_ids": [
-          "08_2020_FY_tanshin.pdf:s0026",
-          "07_2021_FY_tanshin.pdf:s0011",
-          "04_2024_FY_tanshin.pdf:s0016"
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "trend_change_01",
+        "claim_id": "trend_change_1",
         "section": "trend.change",
         "order": 1,
-        "headline_ja": "電力自由化・法的分離に対応した事業持株会社体制への移行と事業再編",
-        "body_ja": "変化前（2019年3月期以前）は一体的な電気事業体制であったが、移行期（2019〜2020年）に送配電部門の法的分離を決定し、2020年4月に東北電力ネットワーク株式会社を分社化した。さらに現在（2025年3月期）では、設備工事を担うユアテックの株式一部譲渡により連結子会社から持分法適用会社へ変更するなど、持株会社のもとでのグループ事業ポートフォリオの見直しと自律経営の推進へと変化した。",
-        "evidence_ids": [
-          "09_2019_FY_tanshin.pdf:s0025",
-          "03_2025_FY_tanshin.pdf:s0019"
-        ],
+        "headline_ja": "法的分離に伴う組織構造の変化とユアテック持分法化による事業ポートフォリオ再編",
+        "body_ja": "2020年4月に一般送配電事業を東北電力ネットワークへ法的分離（会社分割）し、当社を事業持株会社とする体制へ移行した。さらに2025年3月期にはユアテック株式の一部譲渡により同社を持分法適用会社へ変更し、報告セグメントを「発電・販売事業」「送配電事業」の2区分へ再編した。単なる規模拡大から、中核事業への集中と機動的なマネジメント体制への転換が進んでいる。",
         "statement_type": "actual",
         "is_inference": false,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "trend_change_02",
+        "claim_id": "trend_change_2",
         "section": "trend.change",
         "order": 2,
-        "headline_ja": "エネルギー危機による財務基盤の激変と自己資本比率20%水準への回復目標設定",
-        "body_ja": "変化前（2017〜2020年度）は自己資本比率17〜18%台を保っていたが、移行期（2021〜2022年度）に燃料高騰・地震等で2期連続の大幅赤字を計上し、2022年度末には自己資本比率10.5%（東日本大震災直後を下回る水準）まで低下した。現在（2024〜2026年度）は料金改定や業績回復に伴い、中長期ビジョン「よりそうnext+PLUS」において2026年度に自己資本比率20%程度を目指す目標を設定し、2026年3月期末には19.4%まで急速に財務基盤を復元させた。",
-        "evidence_ids": [
-          "05_2023_FY_tanshin.pdf:s0014",
-          "05_2023_FY_tanshin.pdf:s0015",
-          "04_2024_FY_tanshin.pdf:s0017",
-          "02_2026_FY_tanshin.pdf:s0021"
-        ],
-        "statement_type": "mixed",
+        "headline_ja": "財務規律・資本効率重視への転換とDOEを指標とする株主還元方針の導入",
+        "body_ja": "2023年3月期の大赤字による財務基盤毀損を経て、同社は「よりそうnext+PLUS」においてROIC（2026年度3.5%程度、2030年度3.5%以上）および自己資本比率（2026年度20%程度）を財務目標として明確化した。配当についても従来の安定配当から、財務復元を図りつつ予見性を高める当面「DOE 2%」を目安とする方針へと転換した。",
+        "statement_type": "actual",
         "is_inference": false,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "trend_capital_01",
+        "claim_id": "trend_capital_allocation_1",
         "section": "trend.capital_allocation",
         "order": 1,
-        "headline_ja": "赤字転落時の無配からDOE2%を目安とする財務基盤バランス型還元方針への転換",
-        "body_ja": "2022年度に大幅な純損失を計上した際、財務基盤回復を最優先として無配への転換を余儀なくされた。しかし、その後業績が急速に回復したことを受け、2025年3月期以降の配当方針として「財務基盤の回復とバランスを図る観点から、当面はDOE（株主資本配当率）2%を目安としながら総合的に判断する」基準を新設した。業績連動の変動を抑えつつ自己資本の積み増しと安定配当を両立させる資本配当マネジメントへ移行している。",
-        "evidence_ids": [
-          "05_2023_FY_tanshin.pdf:s0015",
-          "04_2024_FY_tanshin.pdf:s0016",
-          "02_2026_FY_tanshin.pdf:s0021"
-        ],
+        "headline_ja": "有機的設備投資への最優先配分と財務危機時の無配・復配を通じた還元調整",
+        "body_ja": "10年間の資本配分は、女川2号機安全対策や高効率火力新設といった電気事業固定資産（固定資産＋建設仮勘定は2.7兆円から3.5兆円超へ拡大）への投資が最優先された。2023年3月期の純資産大幅減少時には無配により資金流出を抑制し、財務基盤の復元に合わせて復配（2024年3月期15円、2026年3月期40円）を実施するなど、設備投資優先と財務健全性維持のトレードオフ下で分配調整が行われた。",
         "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
+        "is_inference": true,
+        "causal": false
       },
       {
-        "claim_id": "trend_implication_01",
-        "section": "trend.implication",
+        "claim_id": "trend_capital_value_creation_1",
+        "section": "trend.capital_value_creation",
         "order": 1,
-        "headline_ja": "女川2号機再稼働の安定化と市況変動・託送料金改定下でのDOE2%維持能力の検証",
-        "body_ja": "投資家が今後確認すべき判断軸は、再稼働を果たした女川原子力発電所第2号機の安定運用による燃料費削減効果と、燃料市況や地政学リスク・託送料金改定による収支下振れ圧力との相殺関係である。過去のタイムラグ差損益による劇的な損益変動を教訓として、同社が掲げる2026年度自己資本比率20%程度の維持達成と、新設されたDOE2%目安に基づく株主還元の持続性を両立できるかが焦点となる。",
-        "evidence_ids": [
-          "03_2025_FY_tanshin.pdf:s0018",
-          "02_2026_FY_tanshin.pdf:s0020",
-          "02_2026_FY_tanshin.pdf:s0021",
-          "01_2027_Q1_tanshin.pdf:s0003"
-        ],
+        "headline_ja": "成果は混在：安全対策等の巨額資本蓄積は安定供給に寄与も、資本効率改善は途上",
+        "body_ja": "過去10年間に追加投入された資本の過半は、女川原子力発電所の安全対策工事や上越火力・能代火力の新設など電気事業固定資産に向かった。これらの投資は上越火力の通年稼働による燃料費抑制や女川2号機再稼働による収支改善という直接的リターンを生み出し、2024年3月期以降の利益V字回復に寄与した。しかし、莫大な資本蓄積に対して外部環境激変（2023年3月期の大赤字）による毀損が大きく、過去10年を通じた平均的な資本リターンは低位にとどまる。ROIC 3.5%・ROE 8%以上という目標に対し、投下資本に見合う安定的な高リターン創出が完全に定着したとは言い難く、価値創出の成果は混在している。",
         "statement_type": "inference",
         "is_inference": true,
         "causal": true
-      }
-    ],
-    "evidence": [
-      {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 1,
-        "exact_quote_ja": "2027年３月期第１四半期の連結業績（2026年４月１日～2026年６月30日） 売上高 785,304百万円 (46.7％) 営業利益 60,093百万円 (△6.6％) 経常利益 54,483百万円 (△5.4％) 親会社株主に帰属する四半期純利益 36,127百万円 (△4.2％)",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "連結経営成績(累計)"
       },
       {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "売上高は、間接オークションに伴う自己約定を含む域外取引の増加などから、7,853億円となり、前年同四半期に比べ、2,499億円（46.7％）の増収となりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
+        "claim_id": "trend_implication_1",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "今後確認すべきは、原発再稼働効果の定着とタイムラグ剥落後の構造的ROIC創出量",
+        "body_ja": "投資家が今後確認すべき最重要ポイントは、女川2号機の安定稼働に伴う構造的な燃料費削減効果が定着し、タイムラグ差益などの一律的な環境要因を除いたベースでROIC 3.5%程度および自己資本比率20%超を維持できるか否かである。中東リスク等による燃料価格再急騰に対する価格転嫁力と耐性の検証が求められる。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": false
       },
       {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "経常利益は、市場や販売環境の変化に伴う収支改善や、送配電事業における需給調整費用の減少に加え、電力先渡取引等の時価評価影響があったものの、女川原子力発電所第２号機の稼働減に伴う収支悪化及び燃料費調整制度のタイムラグ影響などにより、544億円となり、前年同四半期に比べ、31億円（5.4％）の減益となりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
+        "claim_id": "management_strategy_1",
+        "section": "management.strategy",
+        "order": 1,
+        "headline_ja": "法的分離・再編と「よりそうnext+PLUS」に基づく明確な構造改革ビジョン",
+        "body_ja": "経営陣は法的分離への対応やユアテック持分法化など、事業環境変化に応じた構造改革を着実に推進してきた。中期計画「よりそうnext+PLUS」では連結経常利益1,900億円、自己資本比率20%程度、ROIC 3.5%程度という明確な定量目標を設定しており、戦略的一貫性は概ね確保されている。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
       },
       {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "売上高には、この間接オークションに伴う自己約定分が合計1,551億円（前年同四半期比1,473億円増）含まれておりますが、費用も計上されることから、収支への影響はありません。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
+        "claim_id": "management_execution_1",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "能代3号機・上越1号機新設や女川2号機再稼働を果たしたが、外部ショックへの脆さが露出",
+        "body_ja": "能代火力3号機や上越火力1号機の試運転・通年稼働、女川2号機の再稼働、規制料金改定の実施など、大型プロジェクトや構造改革の実行力は示されている。一方で、2023年3月期の燃料高騰時には過去最大の赤字を免れず、リスク管理や収支耐性の面で課題を残した。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
       },
       {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "資産は、現金及び預金が減少したことなどから、総資産は501億円（0.9％）減少し、５兆6,817億円となりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "資産、負債及び純資産の状況"
+        "claim_id": "management_forecast_discipline_1",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "外部環境不確実性を理由とする期首予想「未定」の常態化と予測規律の限界",
+        "body_ja": "過去10通期開示のうち、2021年3月期、2022年3月期、2023年3月期、および2027年3月期（最新期）において、新型コロナ、地震、料金審査、地政学リスク等を理由に期首業績予想を「未定」と開示している。予想を開示した年度（観察数5期）においても、燃料タイムラグ影響等により実績との乖離が大きく、予測規律は脆弱である。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
       },
       {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "純資産は、親会社株主に帰属する四半期純利益の計上などから、257億円（2.3％）増加し、１兆1,615億円となりました。この結果、自己資本比率は、前連結会計年度末から0.6ポイント上昇し、20.0％となりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "資産、負債及び純資産の状況"
-      },
-      {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 1,
-        "exact_quote_ja": "中東地域で戦闘が再開されるなど、地政学的リスクが再び高まっており、燃料価格等の動向が依然として不透明な状況にあるほか、東北電力ネットワーク㈱における「託送供給等に係る収入の見通し」の期中調整申請に伴う託送料金の改定や需給調整関連収支の動向など、業績に影響を及ぼす複数の不確定要素が存在していることから、未定としております。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "forecast",
-        "source_section": "連結業績予想"
-      },
-      {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "当社の販売電力量（小売）は、春季の気温が前年を上回ったことによる暖房需要の減少などがあったものの、新規顧客獲得による需要増などから、前年同四半期に比べ、8.7％増の144億kWhとなりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0009",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "［送配電事業］ エリア電力需要は、産業用の生産動向などによる増加があった一方、春季の気温が高く推移したことによる家庭・業務用における暖房需要の減少などから、前年同四半期に比べ、1.1％減の167億kWhとなりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "01_2027_Q1_tanshin.pdf:s0010",
-        "source_filename": "01_2027_Q1_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "経常損益は、需給調整費用の減少などにより、前年同四半期に比べ、27億円損失幅が縮小し、85億円の損失となりました。",
-        "period_label_ja": "2027年3月期 第1四半期",
-        "period_label_en": "FY2027 Q1",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "02_2026_FY_tanshin.pdf:s0020",
-        "source_filename": "02_2026_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、市場や販売環境の変化に伴う収支悪化や、送配電事業における需給調整費用の増加および中東情勢悪化に伴う燃料価格・電力市場価格の急騰による電力先渡取引等の時価評価影響などから、前連結会計年度に比べ、1,303億円減（50.8％）の1,264億円となりました。",
-        "period_label_ja": "2026年3月期 通期",
-        "period_label_en": "FY2026 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "02_2026_FY_tanshin.pdf:s0021",
-        "source_filename": "02_2026_FY_tanshin.pdf",
-        "pdf_page": 8,
-        "exact_quote_ja": "また、2025年３月期以降の配当については、これまでの基本的な方針に加え、財務基盤の回復とバランスを図る観点から、当面はＤＯＥ（株主資本配当率）２％を目安としながら、総合的に判断していくこととしております。",
-        "period_label_ja": "2026年3月期 通期",
-        "period_label_en": "FY2026 FY",
-        "statement_type": "target",
-        "source_section": "今後の見通し"
-      },
-      {
-        "evidence_id": "03_2025_FY_tanshin.pdf:s0018",
-        "source_filename": "03_2025_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常利益は、女川原子力発電所第２号機の再稼働による収支改善があったものの、燃料費調整制度のタイムラグ影響による差益の減少があったことなどから、前連結会計年度に比べ、352億円減（12.1％）の2,567億円となりました。",
-        "period_label_ja": "2025年3月期 通期",
-        "period_label_en": "FY2025 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "03_2025_FY_tanshin.pdf:s0019",
-        "source_filename": "03_2025_FY_tanshin.pdf",
-        "pdf_page": 14,
-        "exact_quote_ja": "当連結会計年度において、当社が保有する株式会社ユアテック（以下、「ユアテック」といいます。）の株式の一部譲渡に伴い、ユアテックを連結子会社から持分法適用会社へ変更し、ユアテックの子会社16社を連結の範囲から除外しております。",
-        "period_label_ja": "2025年3月期 通期",
-        "period_label_en": "FY2025 FY",
-        "statement_type": "actual",
-        "source_section": "連結範囲の重要な変更"
-      },
-      {
-        "evidence_id": "04_2024_FY_tanshin.pdf:s0016",
-        "source_filename": "04_2024_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常利益は、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことや、電気料金見直しに加え、高効率の上越火力発電所通年運転による燃料費抑制など効率化の取り組みにより、前年度に比べ、4,912 億円増の 2,919 億円となりました。",
-        "period_label_ja": "2024年3月期 通期",
-        "period_label_en": "FY2024 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "04_2024_FY_tanshin.pdf:s0017",
-        "source_filename": "04_2024_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "なお、東北電力グループ中長期ビジョンにおける今後の経営展開「よりそう next+PLUS」において、財務基盤の早期回復及び「利益・投資・成長の好循環」の形成を目指すための定量的な目標として、以下のとおり財務目標を新たに設定しております。 2026年度 利益指標〔連結経常利益〕 1,900 億円 財務健全性指標〔連結自己資本比率〕 20％程度",
-        "period_label_ja": "2024年3月期 通期",
-        "period_label_en": "FY2024 FY",
-        "statement_type": "target",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "05_2023_FY_tanshin.pdf:s0014",
-        "source_filename": "05_2023_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常損益は、燃料価格の高騰や円安の影響に加え、卸電力取引市場の価格の上昇により、電力調達コストが大幅に増加したことなどから、前年度に比べ 1,500 億円減少し、1,992 億円の損失となりました。",
-        "period_label_ja": "2023年3月期 通期",
-        "period_label_en": "FY2023 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "05_2023_FY_tanshin.pdf:s0015",
-        "source_filename": "05_2023_FY_tanshin.pdf",
-        "pdf_page": 8,
-        "exact_quote_ja": "自己資本比率については、東日本大震災直後を下回る水準まで悪化いたしました。このような状況の中、財務基盤の回復を最優先に取り組み必要性などを総合的に勘案し、2022年度の期末配当については、見送る予定としております。",
-        "period_label_ja": "2023年3月期 通期",
-        "period_label_en": "FY2023 FY",
-        "statement_type": "actual",
-        "source_section": "今後の見通し"
-      },
-      {
-        "evidence_id": "06_2022_FY_tanshin.pdf:s0012",
-        "source_filename": "06_2022_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常損益については、減価償却方法の変更により減価償却費が減少したものの、燃料価格の高騰による燃料費調整制度のタイムラグ影響に加え、卸電力取引市場の価格上昇や、昨年２月及び本年３月に発生した福島県沖を震源とする地震に伴う火力発電所の停止により、電力調達コストが増加したことなどから、前年度に比べ 1,167 億円減少し、 492 億円の損失となりました。",
-        "period_label_ja": "2022年3月期 通期",
-        "period_label_en": "FY2022 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "07_2021_FY_tanshin.pdf:s0011",
-        "source_filename": "07_2021_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常利益については、燃料市況を踏まえたＬＮＧのスポット調達拡大による燃料費低減などの効率化に努めたものの、小売や卸売の販売に伴う収入が減少したことや、令和３年２月福島県沖を震源とする地震（以下、「福島県沖地震」といいます。）による発電所の停止に伴い、燃料費や他社購入電力料が増加したことなどから、675 億円となり、前年度に比べ、 324 億円（32.5％）の減益となりました。",
-        "period_label_ja": "2021年3月期 通期",
-        "period_label_en": "FY2021 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "08_2020_FY_tanshin.pdf:s0026",
-        "source_filename": "08_2020_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "経常利益については、販売電力量（小売）の減少影響などがあったものの、能代火力発電所３号機の運転開始による燃料費改善効果や、企業グループ一体となって生産性・効率性のさらなる向上に努めたことなどに加えて、燃料費調整制度のタイムラグ影響が利益を大きく押し上げたことから、999 億円となり、前年度に比べ、342 億円（52.1％）の増益となりました。",
-        "period_label_ja": "2020年3月期 通期",
-        "period_label_en": "FY2020 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "09_2019_FY_tanshin.pdf:s0025",
-        "source_filename": "09_2019_FY_tanshin.pdf",
-        "pdf_page": 21,
-        "exact_quote_ja": "2020 年４月に予定されている送配電部門の法的分離に対応し、東北電力グループのさらなる企業価値向上に向けた組織体制を構築するため、当社は、2020 年４月を目途に、一般送配電事業等を分社化し、発電事業及び小売電気事業等を運営する「事業持株会社（東北電力株式会社）」のもとに、100％子会社である「送配電会社（東北電力ネットワーク株式会社）」を配置する体制へ移行することといたします。",
-        "period_label_ja": "2019年3月期 通期",
-        "period_label_en": "FY2019 FY",
-        "statement_type": "actual",
-        "source_section": "重要な後発事象"
-      },
-      {
-        "evidence_id": "10_2018_FY_tanshin.pdf:s0023",
-        "source_filename": "10_2018_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "一方、費用面では、減価償却費や修繕費などは減少したものの、太陽光の受電量の増加に伴い購入電力料が増加したことや、燃料価格の上昇により燃料費が増加したことなどから、経常費用は前年度に比べ 1,381 億円（7.5％）増の 1 兆 9,893 億円となりました。この結果、経常利益は前年度に比べ 162 億円（15.5％）減の 884 億円となりました。",
-        "period_label_ja": "2018年3月期 通期",
-        "period_label_en": "FY2018 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
-      },
-      {
-        "evidence_id": "11_2017_FY_tanshin.pdf:s0022",
-        "source_filename": "11_2017_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "この結果、経常利益は前年度に比べ 479 億円（ 31.4％）減の 1,047 億円となりました。また、親会社株主に帰属する当期純利益は前年度に比べ 273 億円（28.1％）減の 699 億円となりました。",
-        "period_label_ja": "2017年3月期 通期",
-        "period_label_en": "FY2017 FY",
-        "statement_type": "actual",
-        "source_section": "経営成績等の概況"
+        "claim_id": "management_accountability_1",
+        "section": "management.accountability",
+        "order": 1,
+        "headline_ja": "タイムラグ影響や会計方針変更の透明な開示の一方、初期予想見送りの常態化が課題",
+        "body_ja": "燃料費調整のタイムラグ影響や有形固定資産の減価償却方法変更（定額法化、441億円影響）などの要因について詳細かつ透明な開示を行っており、V字回復時の定量的説明責任は果たされている。しかし、期首予想の「未定」開示の常態化は投資家の予見性を損なっており、説明責任には改善の余地がある。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
       }
     ],
     "management_consistency": {
@@ -569,49 +278,25 @@
         {
           "dimension": "strategic_coherence",
           "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "東北電力グループは中期方針において、送配電部門の法的分離、構造改革による競争力強化、およびエネルギー危機後の財務基盤回復（自己資本比率20%目標）を掲げ、一貫したロジックで戦略を推進している。燃料価格ショックや自然災害等による一時的な戦略的修正を余儀なくされたものの、長期ビジョンの根幹は維持されている。",
-          "evidence_ids": [
-            "09_2019_FY_tanshin.pdf:s0025",
-            "04_2024_FY_tanshin.pdf:s0017",
-            "02_2026_FY_tanshin.pdf:s0021"
-          ]
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "execution_follow_through",
-          "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "2020年4月の東北電力ネットワーク分社化の完遂、能代3号機や上越火力の運転開始、ユアテックの持分法適用会社化、女川原子力発電所2号機の再稼働など、公表した重要施策の実行フォローが行われている。女川2号機の再稼働時期遅延等は生じたものの、最終的に再稼働を果たすなど成果に結びついている。",
-          "evidence_ids": [
-            "09_2019_FY_tanshin.pdf:s0025",
-            "08_2020_FY_tanshin.pdf:s0026",
-            "03_2025_FY_tanshin.pdf:s0018",
-            "03_2025_FY_tanshin.pdf:s0019"
-          ]
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "forecast_target_discipline",
-          "rating": 2,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "ウクライナ危機や地震被害、燃料価格急騰等の外部ショックが相次いだ局面において、通期業績予想を「未定」とする期が多く見られた（2022・2023・2024・2027年3月期等）。タイムラグ影響のボラティリティの大きさから業績予想の精度や公表の迅速性には課題が認められる。",
-          "evidence_ids": [
-            "05_2023_FY_tanshin.pdf:s0014",
-            "01_2027_Q1_tanshin.pdf:s0007"
-          ]
+          "rating": 1,
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "accountability_transparency",
-          "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "燃料費調整制度のタイムラグ差損益の金額やメカニズム、地震被災による復旧費用、自己資本比率悪化に伴う配当見送り理由などについて決算短信内で詳細かつ透明性の高い説明を行っている。また配当方針としてDOE 2%の目安を明確に開示するなど説明責任を果たしている。",
-          "evidence_ids": [
-            "06_2022_FY_tanshin.pdf:s0012",
-            "05_2023_FY_tanshin.pdf:s0015",
-            "02_2026_FY_tanshin.pdf:s0021"
-          ]
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
         }
-      ],
-      "overall_rationale_ja": "送配電分社化や構造改革、女川2号機再稼働や財務基盤回復目標の設定など、経営陣の戦略的整合性と実行フォローの姿勢は評価できる。国際燃料市況の激変や大規模地震等により通期業績予想を未定とする期間が多く目標管理の面で課題を残したものの、タイムラグ影響や無配判断の理由説明は誠実になされており、全体として概ね一貫した経営が行われている。"
-    }
+      ]
+    },
+    "model_notes": []
   }
 }
