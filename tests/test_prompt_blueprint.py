@@ -125,7 +125,16 @@ class PromptBlueprintTests(unittest.TestCase):
                 normalized_prompt,
             )
             self.assertIn(
-                "capital absorbed or released -> relative priority",
+                "do not begin from the list of named transactions",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "when assets or recurring investment grew materially faster",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "Rank importance by the scale of capital or recurring investment "
+                "committed",
                 normalized_prompt,
             )
             self.assertIn(
@@ -284,6 +293,10 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("attribution", capital_return)
         self.assertIn("signal", capital_return)
         self.assertIn(
+            "return_on_capital_or_assets",
+            research_schema["$defs"]["CapitalReturnType"]["enum"],
+        )
+        self.assertIn(
             "not independent verification",
             capital_return["attribution"]["description"],
         )
@@ -358,7 +371,8 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("annual_financial_anchor", spec.prompt)
         self.assertIn("`capital_allocation_tracks`", spec.prompt)
         self.assertIn(
-            "persistent multi-year accumulation or release of capital",
+            "A business or asset category qualifies even when management "
+            "announced no discrete investment",
             normalized_prompt,
         )
         self.assertIn(
@@ -372,7 +386,29 @@ class PromptBlueprintTests(unittest.TestCase):
             spec.prompt,
         )
         self.assertIn(
-            "Do not calculate ROIC",
+            "perform a capital-base screen across the year-end filings",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Represent the largest supported organic accumulations, releases, "
+            "or recurring growth investments before smaller named transactions",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "both the earliest and latest compatible reported assets",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "When economically important investment is expensed rather than "
+            "capitalized",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Retain reported ROIC, ROA",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Never manufacture an undisclosed ROIC or ROA",
             normalized_prompt,
         )
         self.assertIn(
@@ -413,6 +449,32 @@ class PromptBlueprintTests(unittest.TestCase):
         )
         self.assertIn(
             "aggregate-only or unattributed evidence cannot establish it",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "Prioritize disclosed ROIC, ROA, return on operating assets",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "make a directional comparison from compatible business-level "
+            "assets, capital employed, or recurring investment inputs and "
+            "profit or cash",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "the track list is not a complete candidate list",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "name the one or two largest supported business-investment destinations",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "For an asset-light business whose reinvestment is mainly expensed",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "an economically smaller transaction must not receive equal weight",
             normalized_analysis,
         )
 

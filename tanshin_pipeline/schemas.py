@@ -256,6 +256,7 @@ class CapitalReturnType(str, Enum):
     PROFIT_OR_LOSS = "profit_or_loss"
     MARGIN = "margin"
     CASH_GENERATION = "cash_generation"
+    RETURN_ON_CAPITAL_OR_ASSETS = "return_on_capital_or_assets"
     PRODUCTIVE_CAPACITY_OR_UTILIZATION = "productive_capacity_or_utilization"
     IMPAIRMENT_OR_WRITE_DOWN = "impairment_or_write_down"
     EXIT_AFTER_WEAK_PERFORMANCE = "exit_after_weak_performance"
@@ -896,8 +897,9 @@ class ResearchCapitalReturn(BaseModel):
     return_type: CapitalReturnType
     return_ja: NonEmpty = Field(
         description=(
-            "Later recurring profit or loss, margin, cash generation, productive "
-            "use, impairment, or exit evidence relevant to the capital absorbed. "
+            "Later recurring profit or loss, margin, cash generation, a disclosed "
+            "return-on-capital or return-on-assets measure, productive use, "
+            "impairment, or exit evidence relevant to the capital absorbed. "
             "Management's favorable characterization, an asset increase, or a "
             "wider group result without a stated attribution is not a return for "
             "the destination."

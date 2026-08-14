@@ -359,6 +359,31 @@ def _capital_allocation_metrics(
     dossier: JapaneseResearchDossier,
 ) -> dict[str, Any]:
     tracks = dossier.capital_allocation_tracks
+    capital_base_input_types = {
+        "segment_or_operating_assets",
+        "working_capital_or_inventory",
+        "capacity_or_fixed_assets",
+        "acquisition_or_investment_spend",
+    }
+    capital_return_types = {
+        "profit_or_loss",
+        "cash_generation",
+        "return_on_capital_or_assets",
+    }
+
+    def _has_capital_base(track: Any) -> bool:
+        return any(
+            item.input_type.value in capital_base_input_types
+            for item in track.capital_inputs
+        )
+
+    def _has_direct_capital_return(track: Any) -> bool:
+        return any(
+            outcome.attribution.value == "direct"
+            and outcome.return_type.value in capital_return_types
+            for outcome in track.subsequent_returns
+        )
+
     attribution_counts = Counter(
         outcome.attribution.value
         for track in tracks
@@ -379,6 +404,22 @@ def _capital_allocation_metrics(
                 outcome.attribution.value == "direct"
                 for outcome in item.subsequent_returns
             )
+            for item in tracks
+        ),
+        "reported_return_on_capital_or_assets_records": sum(
+            outcome.return_type.value == "return_on_capital_or_assets"
+            for item in tracks
+            for outcome in item.subsequent_returns
+        ),
+        "tracks_with_reported_return_on_capital_or_assets": sum(
+            any(
+                outcome.return_type.value == "return_on_capital_or_assets"
+                for outcome in item.subsequent_returns
+            )
+            for item in tracks
+        ),
+        "tracks_with_capital_base_and_direct_return_evidence": sum(
+            _has_capital_base(item) and _has_direct_capital_return(item)
             for item in tracks
         ),
         "tracks_with_only_management_or_aggregate_returns": sum(
@@ -452,6 +493,15 @@ def _capital_allocation_metrics(
                     outcome.attribution.value == "direct"
                     for outcome in item.subsequent_returns
                 ),
+                "has_reported_return_on_capital_or_assets": any(
+                    outcome.return_type.value == "return_on_capital_or_assets"
+                    for outcome in item.subsequent_returns
+                ),
+                "has_capital_base_observation": _has_capital_base(item),
+                "has_capital_base_and_direct_return_evidence": (
+                    _has_capital_base(item)
+                    and _has_direct_capital_return(item)
+                ),
                 "return_attribution_counts": _counts(
                     outcome.attribution.value
                     for outcome in item.subsequent_returns
@@ -468,7 +518,9 @@ def _capital_allocation_metrics(
             "attribution but do not independently verify it. Aggregate-only or "
             "unattributed returns, group-wide ROE/EPS/BVPS, and the execution of "
             "a shareholder distribution cannot establish that a specific "
-            "destination created value."
+            "destination created value. Prefer disclosed ROIC/ROA or compatible "
+            "destination-level capital and profit/cash observations; never "
+            "manufacture an undisclosed ratio."
         ),
     }
 

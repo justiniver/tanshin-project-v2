@@ -63,7 +63,8 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "did it flow toward the destinations earning the strongest",
             " ".join(synthesis.prompt.split()),
         )
-        self.assertIn("never manufacture ROIC", synthesis.prompt)
+        self.assertIn("disclosed ROIC, ROA", synthesis.prompt)
+        self.assertIn("never manufacture ROIC or ROA", synthesis.prompt)
         self.assertNotIn("WACC", synthesis.prompt)
 
     def test_research_schema_is_a_direct_chronological_map(self) -> None:
@@ -358,6 +359,15 @@ class TwoStageAnalysisTests(unittest.TestCase):
                         "return_ja": "同事業のセグメント利益が増加した。",
                         "attribution": "direct",
                         "signal": "positive",
+                    },
+                    {
+                        "source_filename": recent.filename,
+                        "fiscal_year": recent.fiscal_year,
+                        "period_label_ja": f"FY{recent.fiscal_year}",
+                        "return_type": "return_on_capital_or_assets",
+                        "return_ja": "同事業の事業資産利益率は8.0%と開示された。",
+                        "attribution": "direct",
+                        "signal": "positive",
                     }
                 ],
                 "adverse_evidence_ja": [],
@@ -415,16 +425,42 @@ class TwoStageAnalysisTests(unittest.TestCase):
             capital["by_immediate_effect_type"],
             {"distribution_execution": 1},
         )
-        self.assertEqual(capital["by_return_type"], {"profit_or_loss": 1})
+        self.assertEqual(
+            capital["by_return_type"],
+            {
+                "profit_or_loss": 1,
+                "return_on_capital_or_assets": 1,
+            },
+        )
         self.assertEqual(capital["tracks_with_direct_return_evidence"], 1)
+        self.assertEqual(
+            capital["reported_return_on_capital_or_assets_records"],
+            1,
+        )
+        self.assertEqual(
+            capital["tracks_with_reported_return_on_capital_or_assets"],
+            1,
+        )
+        self.assertEqual(
+            capital["tracks_with_capital_base_and_direct_return_evidence"],
+            1,
+        )
         self.assertEqual(
             capital["tracks_with_only_management_or_aggregate_returns"],
             0,
         )
         domestic, distribution = capital["records"]
         self.assertTrue(domestic["has_destination_level_return_evidence"])
-        self.assertEqual(domestic["direct_return_count"], 1)
+        self.assertEqual(domestic["direct_return_count"], 2)
+        self.assertTrue(domestic["has_reported_return_on_capital_or_assets"])
+        self.assertTrue(domestic["has_capital_base_observation"])
+        self.assertTrue(
+            domestic["has_capital_base_and_direct_return_evidence"]
+        )
         self.assertFalse(distribution["has_destination_level_return_evidence"])
+        self.assertFalse(
+            distribution["has_reported_return_on_capital_or_assets"]
+        )
         self.assertEqual(distribution["subsequent_return_count"], 0)
         self.assertIn(
             "shareholder distribution cannot establish",
@@ -503,6 +539,10 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertEqual(record["management_linked_return_count"], 1)
         self.assertEqual(record["non_attributable_return_count"], 1)
         self.assertFalse(record["has_destination_level_return_evidence"])
+        self.assertTrue(record["has_capital_base_observation"])
+        self.assertFalse(
+            record["has_capital_base_and_direct_return_evidence"]
+        )
 
     def test_transaction_accounting_effect_cannot_be_a_return_type(self) -> None:
         payload = self.dossier.model_dump(mode="json")

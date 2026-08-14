@@ -403,7 +403,9 @@ analysis. It builds a compact chronological map containing:
   which business or other use received capital, how its relative priority changed,
   and what later profit, margin, cash, impairment, or disposal outcomes followed.
   Capital inputs, immediate transaction/accounting effects, and subsequent
-  economic returns are stored separately;
+  economic returns are stored separately. Reported ROIC, ROA, return on
+  operating assets, and equivalent capital-efficiency measures are retained
+  when disclosed;
 - explicit unavailable categories and source limitations rather than silent
   omission.
 
@@ -476,10 +478,14 @@ segment or group performance. Acquisition prices, proceeds, goodwill, negative
 goodwill, disposal gains, financing flows, dividends, and buybacks are immediate
 actions or effects rather than subsequent returns. Revenue growth alone does not
 establish an attractive return, while recent tracks may appropriately remain
-unproven. Recurring profit,
-margin, cash generation, useful capacity, and a stronger core business count in
-favor; persistent losses, impairments, failed expansion, disposals after weak
-performance, and financial strain count against. The assessment also asks
+unproven. The assessment prioritizes disclosed ROIC, ROA, return on operating
+assets, or equivalent measures. When those ratios are unavailable, it compares
+same-scope business assets or capital employed with subsequent profit or cash
+generation and makes only a directional capital-efficiency judgment. It never
+manufactures an undisclosed ratio or combines incompatible scopes or periods.
+Recurring profit, margin, cash generation, useful capacity, and a stronger core
+business count in favor; persistent losses, impairments, failed expansion,
+disposals after weak performance, and financial strain count against. It also asks
 whether management added capital after strong results and reduced or exited
 weak uses, rather than making missing disclosure or the mere act of spending and
 distributing capital its thesis.

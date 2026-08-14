@@ -1,104 +1,11 @@
 {
-  "schema_version": "1.6",
+  "status": "pending_research_map",
   "stage": "analysis",
-  "security_code": "2371",
   "model_profile": "default",
   "provider": "gemini",
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
-  "request_options": {},
-  "request_id": "8cebf13259b7d0e4",
-  "manifest_id": "67ad1c01ef9c4b12",
-  "system_prompt_sha256": "b7d8266ece7353e8db488d78139849155c912671290950e64a88b79731448435",
-  "prompt_sha256": "2566bc4ec55f79ab4c6a5c5e32d80c31f037061f266b47a7daa74b00ba8b6bda",
-  "response_schema_sha256": "d3e5fd1802a78010dbb408bf708882a3235ca4d0473d4bcac73c64aa22f0aaae",
-  "files": [
-    {
-      "filename": "01_2026_FY_tanshin.pdf",
-      "relative_path": "data/2371/01_2026_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 22,
-      "byte_size": 348540,
-      "sha256": "378117dfa885eb868a98e2f23206e78c0b9ba215749822a7421de34a698bb342"
-    },
-    {
-      "filename": "02_2025_FY_tanshin.pdf",
-      "relative_path": "data/2371/02_2025_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 21,
-      "byte_size": 329026,
-      "sha256": "118bcdd73131aab7a7276e7f684347280a3e37131a5f60166392bec78bbdfb67"
-    },
-    {
-      "filename": "03_2024_FY_tanshin.pdf",
-      "relative_path": "data/2371/03_2024_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 20,
-      "byte_size": 311588,
-      "sha256": "7416cbaa899d02a46b618fab2205bfea7f15a5c71f8852349f25c4aad3b43aae"
-    },
-    {
-      "filename": "04_2023_FY_tanshin.pdf",
-      "relative_path": "data/2371/04_2023_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 21,
-      "byte_size": 317400,
-      "sha256": "d1a23ef2f2ad09a211e02b2f457866bf928611b49a970606a17ccf2fb905694c"
-    },
-    {
-      "filename": "05_2022_FY_tanshin.pdf",
-      "relative_path": "data/2371/05_2022_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 20,
-      "byte_size": 301700,
-      "sha256": "17cbdc549f28ba2a7db7d22aab11f39f165852d7902fd843508c76186844a668"
-    },
-    {
-      "filename": "06_2021_FY_tanshin.pdf",
-      "relative_path": "data/2371/06_2021_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 21,
-      "byte_size": 340159,
-      "sha256": "7ab4a10e3266e1689e0e0fb0ee54225c640ddf2a5dacdd3e9be7ec7d94a143bd"
-    },
-    {
-      "filename": "07_2020_FY_tanshin.pdf",
-      "relative_path": "data/2371/07_2020_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 21,
-      "byte_size": 347593,
-      "sha256": "ad5d473ab2b69b7c4312bd693a102df33d9b626266d2e385f9430cc9c84ee600"
-    },
-    {
-      "filename": "08_2019_FY_tanshin.pdf",
-      "relative_path": "data/2371/08_2019_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 19,
-      "byte_size": 332542,
-      "sha256": "b0289f4ac8101531d9644cdca3da9f451e503aa3b2b92483e4bb78a813f29317"
-    },
-    {
-      "filename": "09_2018_FY_tanshin.pdf",
-      "relative_path": "data/2371/09_2018_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 27,
-      "byte_size": 377399,
-      "sha256": "dfa6a787865eb130e664248e870d3d97fb5da6982f339a5120251a94c8ec29c4"
-    },
-    {
-      "filename": "10_2017_FY_tanshin.pdf",
-      "relative_path": "data/2371/10_2017_FY_tanshin.pdf",
-      "mime_type": "application/pdf",
-      "page_count": 21,
-      "byte_size": 358910,
-      "sha256": "f5b550a2b59c1c04846606a7fcb593740ddbba54fa1e8c1f10fb4e64b1d5fbfe"
-    }
-  ],
-  "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
-  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
-  "exemplar_path": null,
-  "exemplar_sha256": null,
-  "max_output_tokens": 32768,
-  "makes_network_request": true,
-  "request_count_if_executed": 1
+  "makes_network_request_when_executed": true,
+  "request_count_if_executed": 1,
+  "note": "Complete and persist research map before preparing the analysis request ID."
 }

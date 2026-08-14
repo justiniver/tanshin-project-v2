@@ -21,8 +21,10 @@ Quality profile:
   changes in emphasis, then test them against reported results, cash flow,
   balance-sheet changes, footnotes, and later filings. Management's favorable
   characterization is not an analyst conclusion.
-- For capital allocation, begin with reported changes in business or asset-level
-  capital employed; use management discussion only to explain, not validate, them.
+- For capital allocation, rank destinations by capital absorbed or released, not
+  by how prominently a transaction is named. Compare profit or cash with the
+  corresponding asset base or disclosed recurring investment input before calling
+  a destination productive; growth alone is not enough when investment grew faster.
 - Lead with non-overlapping conclusions and explain the operating or financial
   mechanism. Prefer two to four short sentences per theme.
 - Test favorable interpretations against material counterevidence. Avoid
@@ -99,6 +101,11 @@ research map and the original Tanshin PDFs.
   profit cannot establish that a specific destination created value.
 - Transaction terms, purchase accounting, and stated strategic rationale are
   inputs to an assessment, not evidence that value was created.
+- Do not let named acquisitions, disposals, dividends, or buybacks displace a
+  larger organic accumulation of business assets, working capital, capacity, or
+  recurring growth investment. Absolute profit, market share, or profit growth
+  is not a high-return conclusion when the corresponding investment grew
+  materially faster.
 - Counts describe only observations in the selected filings. Do not present them
   as a complete revision history unless the dossier explicitly establishes that.
 - Prefer restrained, specific analysis. State uncertainty and contrary evidence.
@@ -243,9 +250,9 @@ For each filing, read and retain the useful substance of:
   working capital, inventory, investment property, productive capacity, or other
   capital employed when disclosed. Then retain the people, marketing,
   development, acquisition, financing, or distribution actions that explain
-  those changes and the later profit, margin, cash, utilization, impairment, or
-  exit record. Do not infer investment or attractive returns from revenue growth
-  alone;
+  those changes and the later return on capital, return on assets, profit,
+  margin, cash, utilization, impairment, or exit record. Do not infer investment
+  or attractive returns from revenue growth alone;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -271,35 +278,67 @@ Do not decide whether capital allocation created value in this research pass.
 Retain the capital inputs, immediate effects, and later returns needed for
 Request 2 to make that judgment.
 
-After completing the filing memos, create `capital_allocation_tracks`. Normally
-retain two to six economically material destinations across the period, returning
-fewer when the PDFs do not support them. A valid track may be a persistent
-multi-year accumulation or release of capital even when management announced no
-discrete transaction. Do not let visible M&A obscure a larger organic business
-or asset-category change.
+After completing the filing memos, create `capital_allocation_tracks`. First
+perform a capital-base screen across the year-end filings:
+1. Find the earliest and latest compatible segment, business, or asset-category
+   balances available in the selected window. When economically important
+   investment is expensed rather than capitalized, use compatible disclosed R&D,
+   software or product development, sales and marketing, people or headcount,
+   customer acquisition, or similar recurring inputs instead.
+2. Identify the largest supported increases and decreases in capital employed or
+   recurring investment effort.
+3. For those same destinations, retain compatible beginning and ending profit,
+   loss, margin, or cash observations when disclosed.
+4. Only then consider named acquisitions, disposals, financing actions, and
+   shareholder distributions as separate tracks.
+
+Normally retain two to six economically material destinations, returning fewer
+when the PDFs do not support them. Represent the largest supported organic
+accumulations, releases, or recurring growth investments before smaller named
+transactions. A business or asset category qualifies even when management
+announced no discrete investment. A named acquisition or disposal qualifies as
+a separate track only when its scale or later outcome is material to the
+capital-allocation judgment; otherwise use it only to help explain the broader
+destination. Do not combine several small transactions into an apparently major
+theme, and do not let visible M&A obscure a much larger change in operating
+assets, inventory, capacity, development effort, or other capital commitment.
 
 For each track:
 - identify the destination and period covered;
-- put reported assets, working capital, inventory, capacity, people, development,
-  acquisition spend, financing, or distributions in `capital_inputs`;
+- for an operating destination, put both the earliest and latest compatible
+  reported assets, working capital, inventory, capacity, or other capital base
+  in `capital_inputs` when available; use one observation only when the other
+  endpoint is genuinely unavailable;
+- when an asset balance does not capture the relevant investment, put compatible
+  disclosed people, development, marketing, customer-acquisition, or capacity
+  inputs in `capital_inputs` as the primary scale evidence;
+- put acquisition spend, financing, or distributions in `capital_inputs` only
+  after the operating or recurring-investment observations they explain;
 - retain evidence that its priority rose or fell relative to other uses, but
   never invent an allocation percentage;
 - put purchase prices, proceeds, disposal gains or losses, goodwill, financing
   flows, and distribution execution only in `immediate_effects`;
-- put only later profit or loss, margin, cash generation, productive use,
-  impairment, or exit evidence in `subsequent_returns`;
+- put only later profit or loss, margin, cash generation, disclosed return on
+  capital or assets, productive use, impairment, or exit evidence in
+  `subsequent_returns`;
 - label a return `management_linked` when management supplies the causal link,
   even if the reported result itself is factual; this is weaker than a separately
   disclosed destination-level `direct` return;
 - label wider segment or group results `aggregate_only`, never as direct; retain
   contrary evidence and record maturity.
 
-When both destination-level assets or capital employed and profit or cash
-returns are disclosed, retain both values using their original scope and unit.
-Do not calculate ROIC, join incompatible segment definitions, or treat revenue
-growth, an asset increase, goodwill, negative goodwill, an accounting gain,
-acquisition price, dividend, or buyback as a return. Do not use company-wide ROE,
-EPS, BVPS, or aggregate profit as a return for one destination.
+Retain reported ROIC, ROA, return on invested capital, return on operating
+assets, or equivalent capital-efficiency measures in `subsequent_returns` with
+type `return_on_capital_or_assets`. When no ratio is disclosed but
+destination-level assets or capital employed and profit or cash returns are
+available on a compatible scope, retain the beginning and ending original values
+so Request 2 can judge whether returns kept pace with the capital base. Preserve
+material intermediate reversals when they change that interpretation. Never
+manufacture an undisclosed ROIC or ROA, divide incompatible periods or segment
+definitions, or treat revenue growth, an asset increase, goodwill, negative
+goodwill, an accounting gain, acquisition price, dividend, or buyback as a
+return. Do not use company-wide ROE, EPS, BVPS, or aggregate profit as a return
+for one destination.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:
@@ -478,19 +517,48 @@ Analysis requirements:
    about durability. Do not convert ambition into implementation or
    implementation into an achieved economic outcome.
 7. For capital allocation, use reported capital stocks and operating assets as
-   primary evidence. Before discussing transactions, identify the businesses or
-   asset categories responsible for the largest supported increases and decreases
-   in capital employed. Use `capital_allocation_tracks` and the PDFs to explain
-   those changes. Do not quantify the mix when comparable values are unavailable.
+   primary evidence; do not begin from the list of named transactions. First
+   perform a beginning-to-end capital-base reconciliation from the PDFs:
+   identify the businesses or asset categories responsible for the largest
+   supported increases and decreases in segment assets, operating assets,
+   inventory, working capital, investment property, capacity, or other capital
+   employed. For an asset-light business whose reinvestment is mainly expensed,
+   use compatible disclosed R&D, software or product development, sales and
+   marketing, people or headcount, customer acquisition, or similar recurring
+   inputs instead; do not force an asset-base comparison that does not represent
+   its economics. Rank importance by the scale of capital or recurring investment
+   committed. Use `capital_allocation_tracks` afterward to explain those
+   movements; the track list is not a complete candidate list. When definitions
+   changed, use the longest compatible subperiod and state the limitation rather
+   than combining incompatible scopes.
 8. In trend.capital_value_creation, answer: "Where did incremental capital go,
    and did it flow toward the destinations earning the strongest subsequent
-   returns?" Compare two to four material tracks by:
-   capital absorbed or released -> relative priority -> subsequent profit,
-   margin, cash, productive use, impairment, or exit -> attribution and maturity.
-   When both capital employed and business-level profit or cash are available,
-   their relationship outweighs revenue growth, margin alone, transaction gains,
-   or management's characterization. An asset increase, acquisition, dividend,
-   buyback, goodwill, disposal gain, or financing action is not a return.
+   returns?" Use this reasoning order:
+   a. name the one or two largest supported business-investment destinations;
+   b. compare each destination's beginning and ending capital base or recurring
+      investment input with compatible profit, cash, or operating outcomes;
+   c. decide whether returns improved, held, or deteriorated relative to the
+      capital absorbed;
+   d. only then use acquisitions, disposals, financing, and shareholder returns
+      to explain management's actions and any later reallocation.
+   Prioritize disclosed ROIC, ROA, return on operating assets, or equivalent
+   measures. When they are absent, make a directional comparison from compatible
+   business-level assets, capital employed, or recurring investment inputs and
+   profit or cash. A rise in profit is not proof of attractive returns: when
+   assets or recurring investment grew materially faster than profit, cash, or
+   relevant operating output, do not call the destination high-return or
+   value-creating without stronger evidence. Likewise, market share, revenue
+   growth, a high absolute profit, or margin alone does not establish capital
+   efficiency.
+   Do not calculate an undisclosed ratio or imply precision that the filings do
+   not support.
+   Keep the section's center of gravity on the largest business-investment
+   destinations. Discuss a named acquisition separately only when it is material
+   relative to the broader capital movement or recurring growth investment, or
+   has a separately observable return; an economically smaller transaction must
+   not receive equal weight merely because its purchase price and accounting are
+   easy to identify. An asset increase, acquisition, dividend, buyback, goodwill,
+   disposal gain, or financing action is not a return.
    Do not say "most" or "the majority" of capital went somewhere without
    comparable amounts or an unambiguous directional record. Do not credit a
    destination with group-wide ROE, EPS, BVPS, or aggregate profit. A shareholder
@@ -501,7 +569,7 @@ Analysis requirements:
    State the strongest productive destination, the largest weak destination, and
    whether management later shifted capital in the economically sensible
    direction. Use a restrained directional judgment when denominators are
-   incomplete; never manufacture ROIC. The headline and opening sentence must
+   incomplete; never manufacture ROIC or ROA. The headline and opening sentence must
    answer yes, mostly yes, mixed, mostly no, no, or not enough evidence.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"

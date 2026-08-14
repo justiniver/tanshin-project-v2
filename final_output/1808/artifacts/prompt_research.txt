@@ -45,9 +45,9 @@ For each filing, read and retain the useful substance of:
   working capital, inventory, investment property, productive capacity, or other
   capital employed when disclosed. Then retain the people, marketing,
   development, acquisition, financing, or distribution actions that explain
-  those changes and the later profit, margin, cash, utilization, impairment, or
-  exit record. Do not infer investment or attractive returns from revenue growth
-  alone;
+  those changes and the later return on capital, return on assets, profit,
+  margin, cash, utilization, impairment, or exit record. Do not infer investment
+  or attractive returns from revenue growth alone;
 - `material_footnote`: mandatory disclosures that change the interpretation of
   performance, risk, investment outcomes, or management follow-through;
 - `business_overview`: the latest filing's durable explanation of what the
@@ -65,35 +65,67 @@ category, physical page, statement type, and Japanese summary directly. Preserve
 important original numeric surfaces, dates, periods, qualifiers, organizational
 scope, and actual/forecast/target status. Several closely related statements may
 be combined into one dense item when their page and statement type are compatible.
+Attribute management's explanations explicitly and keep them separate from
+observable results. Do not rewrite "management says this initiative is working"
+as "the initiative worked." Retain later results, footnotes, impairments, misses,
+or changed explanations that corroborate or challenge the earlier statement.
 Do not decide whether capital allocation created value in this research pass.
 Retain the capital inputs, immediate effects, and later returns needed for
 Request 2 to make that judgment.
 
-After completing the filing memos, create `capital_allocation_tracks`. Normally
-retain two to six economically material destinations across the period, returning
-fewer when the PDFs do not support them. A valid track may be a persistent
-multi-year accumulation or release of capital even when management announced no
-discrete transaction. Do not let visible M&A obscure a larger organic business
-or asset-category change.
+After completing the filing memos, create `capital_allocation_tracks`. First
+perform a capital-base screen across the year-end filings:
+1. Find the earliest and latest compatible segment, business, or asset-category
+   balances available in the selected window.
+2. Identify the largest supported increases and decreases in capital employed.
+3. For those same destinations, retain compatible beginning and ending profit,
+   loss, margin, or cash observations when disclosed.
+4. Only then consider named acquisitions, disposals, financing actions, and
+   shareholder distributions as separate tracks.
+
+Normally retain two to six economically material destinations, returning fewer
+when the PDFs do not support them. Represent the largest supported organic
+accumulations or releases before smaller named transactions. A business or asset
+category qualifies even when management announced no discrete investment. A
+named acquisition or disposal qualifies as a separate track only when its scale
+or later outcome is material to the capital-allocation judgment; otherwise use
+it only to help explain the broader destination. Do not combine several small
+transactions into an apparently major theme, and do not let visible M&A obscure
+a much larger change in operating assets, inventory, or other capital employed.
 
 For each track:
 - identify the destination and period covered;
-- put reported assets, working capital, inventory, capacity, people, development,
-  acquisition spend, financing, or distributions in `capital_inputs`;
+- for an operating destination, put both the earliest and latest compatible
+  reported assets, working capital, inventory, capacity, or other capital base
+  in `capital_inputs` when available; use one observation only when the other
+  endpoint is genuinely unavailable;
+- put people, development, acquisition spend, financing, or distributions in
+  `capital_inputs` only after the capital-base observations they explain;
 - retain evidence that its priority rose or fell relative to other uses, but
   never invent an allocation percentage;
 - put purchase prices, proceeds, disposal gains or losses, goodwill, financing
   flows, and distribution execution only in `immediate_effects`;
-- put only later profit or loss, margin, cash generation, productive use,
-  impairment, or exit evidence in `subsequent_returns`;
-- label return attribution honestly and retain contrary evidence and record
-  maturity.
+- put only later profit or loss, margin, cash generation, disclosed return on
+  capital or assets, productive use, impairment, or exit evidence in
+  `subsequent_returns`;
+- label a return `management_linked` when management supplies the causal link,
+  even if the reported result itself is factual; this is weaker than a separately
+  disclosed destination-level `direct` return;
+- label wider segment or group results `aggregate_only`, never as direct; retain
+  contrary evidence and record maturity.
 
-When both destination-level assets or capital employed and profit or cash
-returns are disclosed, retain both values using their original scope and unit.
-Do not calculate ROIC, join incompatible segment definitions, or treat revenue
-growth, an asset increase, goodwill, negative goodwill, an accounting gain,
-acquisition price, dividend, or buyback as a return.
+Retain reported ROIC, ROA, return on invested capital, return on operating
+assets, or equivalent capital-efficiency measures in `subsequent_returns` with
+type `return_on_capital_or_assets`. When no ratio is disclosed but
+destination-level assets or capital employed and profit or cash returns are
+available on a compatible scope, retain the beginning and ending original values
+so Request 2 can judge whether returns kept pace with the capital base. Preserve
+material intermediate reversals when they change that interpretation. Never
+manufacture an undisclosed ROIC or ROA, divide incompatible periods or segment
+definitions, or treat revenue growth, an asset increase, goodwill, negative
+goodwill, an accounting gain, acquisition price, dividend, or buyback as a
+return. Do not use company-wide ROE, EPS, BVPS, or aggregate profit as a return
+for one destination.
 
 For each relevant year-end filing, add one `annual_financial_anchor` using the
 same consistently available consolidated metric across the trend window:
