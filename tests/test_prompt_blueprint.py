@@ -149,6 +149,19 @@ class PromptBlueprintTests(unittest.TestCase):
                 "management_consistency object contains only rating",
                 normalized_prompt,
             )
+            self.assertIn(
+                "Every actual result that meets or exceeds the original forecast "
+                "is positive evidence",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "never penalize a large upside beat",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "Every actual result below the original forecast is negative evidence",
+                normalized_prompt,
+            )
             self.assertNotIn("WACC", spec.prompt)
             self.assertNotIn("cost-of-capital", spec.prompt)
             self.assertNotIn("evidence", spec.response_schema["required"])

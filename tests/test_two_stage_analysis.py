@@ -167,7 +167,7 @@ class TwoStageAnalysisTests(unittest.TestCase):
             "actual": {
                 "target_fiscal_year": later.fiscal_year,
                 "target_period": "FY",
-                "value_surface_ja": "941 億円",
+                "value_surface_ja": "1,800 億円",
                 "pdf_page": 1,
             },
             "next_original_forecast": None,
@@ -179,8 +179,28 @@ class TwoStageAnalysisTests(unittest.TestCase):
         self.assertEqual(forecast["observable_comparisons"], 1)
         self.assertEqual(
             forecast["comparisons"][0]["result"],
-            "actual_above_forecast",
+            "met_or_exceeded",
         )
+        self.assertEqual(forecast["met_or_exceeded_count"], 1)
+        self.assertEqual(forecast["missed_count"], 0)
+        self.assertEqual(forecast["success_rate"], 1.0)
+        comparison = forecast["comparisons"][0]
+        self.assertEqual(comparison["metric_label_ja"], "経常利益")
+        self.assertEqual(comparison["scope"], "consolidated")
+        self.assertEqual(comparison["value_kind"], "monetary")
+
+        memos[later.filename]["annual_financial_anchor"]["actual"][
+            "value_surface_ja"
+        ] = "899.9 億円"
+        missed_dossier = JapaneseResearchDossier.model_validate(payload)
+        missed = build_research_metrics(
+            missed_dossier,
+            self.manifest,
+        )["financial_observations"]["forecast_accuracy"]
+        self.assertEqual(missed["comparisons"][0]["result"], "missed")
+        self.assertEqual(missed["met_or_exceeded_count"], 0)
+        self.assertEqual(missed["missed_count"], 1)
+        self.assertEqual(missed["success_rate"], 0.0)
 
     def test_capital_allocation_metrics_preserve_attribution_and_maturity(
         self,

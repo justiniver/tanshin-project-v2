@@ -76,8 +76,12 @@ Request 2 to make that judgment.
 After completing the filing memos, create `capital_allocation_tracks`. First
 perform a capital-base screen across the year-end filings:
 1. Find the earliest and latest compatible segment, business, or asset-category
-   balances available in the selected window.
-2. Identify the largest supported increases and decreases in capital employed.
+   balances available in the selected window. When economically important
+   investment is expensed rather than capitalized, use compatible disclosed R&D,
+   software or product development, sales and marketing, people or headcount,
+   customer acquisition, or similar recurring inputs instead.
+2. Identify the largest supported increases and decreases in capital employed or
+   recurring investment effort.
 3. For those same destinations, retain compatible beginning and ending profit,
    loss, margin, or cash observations when disclosed.
 4. Only then consider named acquisitions, disposals, financing actions, and
@@ -85,13 +89,14 @@ perform a capital-base screen across the year-end filings:
 
 Normally retain two to six economically material destinations, returning fewer
 when the PDFs do not support them. Represent the largest supported organic
-accumulations or releases before smaller named transactions. A business or asset
-category qualifies even when management announced no discrete investment. A
-named acquisition or disposal qualifies as a separate track only when its scale
-or later outcome is material to the capital-allocation judgment; otherwise use
-it only to help explain the broader destination. Do not combine several small
-transactions into an apparently major theme, and do not let visible M&A obscure
-a much larger change in operating assets, inventory, or other capital employed.
+accumulations, releases, or recurring growth investments before smaller named
+transactions. A business or asset category qualifies even when management
+announced no discrete investment. A named acquisition or disposal qualifies as
+a separate track only when its scale or later outcome is material to the
+capital-allocation judgment; otherwise use it only to help explain the broader
+destination. Do not combine several small transactions into an apparently major
+theme, and do not let visible M&A obscure a much larger change in operating
+assets, inventory, capacity, development effort, or other capital commitment.
 
 For each track:
 - identify the destination and period covered;
@@ -99,8 +104,11 @@ For each track:
   reported assets, working capital, inventory, capacity, or other capital base
   in `capital_inputs` when available; use one observation only when the other
   endpoint is genuinely unavailable;
-- put people, development, acquisition spend, financing, or distributions in
-  `capital_inputs` only after the capital-base observations they explain;
+- when an asset balance does not capture the relevant investment, put compatible
+  disclosed people, development, marketing, customer-acquisition, or capacity
+  inputs in `capital_inputs` as the primary scale evidence;
+- put acquisition spend, financing, or distributions in `capital_inputs` only
+  after the operating or recurring-investment observations they explain;
 - retain evidence that its priority rose or fell relative to other uses, but
   never invent an allocation percentage;
 - put purchase prices, proceeds, disposal gains or losses, goodwill, financing

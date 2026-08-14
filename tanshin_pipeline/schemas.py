@@ -378,6 +378,23 @@ class ManagementConsistencyComponent(StrictModel):
     evidence_confidence: float = Field(default=0, ge=0, le=1)
 
 
+class ManagementForecastComparison(StrictModel):
+    """Locally matched original annual forecast and subsequent actual."""
+
+    metric: FinancialMetric
+    metric_label_ja: NonEmpty
+    scope: FinancialScope
+    scope_label_ja: NonEmpty
+    value_kind: FinancialValueKind
+    target_fiscal_year: int = Field(ge=1900, le=2200)
+    target_period: FilingPeriod
+    forecast_surface_ja: NonEmpty
+    actual_surface_ja: NonEmpty
+    percentage_error: float | None = None
+    result: Literal["met_or_exceeded", "missed"]
+    source_filenames: list[NonEmpty] = Field(min_length=2, max_length=2)
+
+
 class ManagementConsistencyAssessment(StrictModel):
     methodology_version: NonEmpty
     score: float | None = Field(
@@ -406,6 +423,13 @@ class ManagementConsistencyAssessment(StrictModel):
         default=None,
         ge=0,
         le=1,
+    )
+    forecast_comparisons: list[ManagementForecastComparison] = Field(
+        default_factory=list,
+        description=(
+            "Original annual forecasts deterministically matched to subsequent "
+            "actuals and displayed beneath the score."
+        ),
     )
     components: list[ManagementConsistencyComponent]
     overall_rationale_ja: NonEmpty

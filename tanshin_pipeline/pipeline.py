@@ -824,8 +824,20 @@ def _process_japanese_response(
 ) -> tuple[JapaneseAnalysis, ValidationResult]:
     paths = prepared.paths
     _invalidate_dependent_english_report(prepared, mode=mode)
+    forecast_comparisons: list[dict[str, Any]] = []
+    if prepared.research_source is not None:
+        research_metrics = build_research_metrics(
+            prepared.research_source,
+            prepared.manifest,
+        )
+        forecast_comparisons = research_metrics["financial_observations"][
+            "forecast_accuracy"
+        ]["comparisons"]
     normalized = normalize_japanese_analysis(
-        analysis, prepared.manifest, repository_root.resolve()
+        analysis,
+        prepared.manifest,
+        repository_root.resolve(),
+        forecast_comparisons=forecast_comparisons,
     )
     write_json(paths.analysis_normalized, normalized.analysis)
     write_json(

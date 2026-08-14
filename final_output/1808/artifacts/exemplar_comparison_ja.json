@@ -7,14 +7,14 @@
     "trend_specificity": 4.0,
     "tone": 5.0,
     "repetition": 5.0,
-    "readability": 4.5,
-    "approximate_length": 2.7
+    "readability": 4.0,
+    "approximate_length": 4.91
   },
-  "overall_score_0_to_5": 4.41,
+  "overall_score_0_to_5": 4.6,
   "generated_metrics": {
-    "main_characters": 7449,
-    "trend_narrative_characters": 4480,
-    "trend_perspective_narrative_characters": 419,
+    "main_characters": 6666,
+    "trend_narrative_characters": 3899,
+    "trend_perspective_narrative_characters": 310,
     "headings": [
       "# 株式会社長谷工コーポレーション（1808）",
       "## 企業概要",
@@ -48,15 +48,13 @@
       2026,
       2027
     ],
-    "future_years_excluded_from_trend_score": [
-      2031
-    ],
+    "future_years_excluded_from_trend_score": [],
     "year_span": 10,
     "bold_analytical_themes": 8,
-    "contrast_terms": 18,
-    "sentence_count": 92,
-    "average_sentence_characters": 72.41,
-    "long_sentence_count": 2,
+    "contrast_terms": 12,
+    "sentence_count": 74,
+    "average_sentence_characters": 78.78,
+    "long_sentence_count": 4,
     "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
     "promotional_terms": 0,
@@ -66,9 +64,10 @@
       "cash_flow_balance_sheet",
       "operations",
       "outlook_targets",
-      "capital_allocation"
+      "capital_allocation",
+      "risk_uncertainty"
     ],
-    "key_takeaway_category_count": 5,
+    "key_takeaway_category_count": 6,
     "middle_period_years": [
       2021,
       2022,
@@ -78,67 +77,10 @@
     "trend_theme_average_years": 0.0,
     "trend_themes_with_three_periods": 0
   },
-  "exemplar_metrics": {
-    "main_characters": 5105,
-    "trend_narrative_characters": 1651,
-    "trend_perspective_narrative_characters": 335,
-    "headings": [
-      "# 決算短信 経営者コメント分析： 株式会社長谷工コーポレーション",
-      "## 1. エグゼクティブサマリー",
-      "### 経営者コメントの要点",
-      "### 主要な事業ドライバー",
-      "### 見通し",
-      "### リスクと不確実性",
-      "### 最新資料の位置づけ",
-      "## 2. トレンド分析",
-      "### 10年間を通じた見方",
-      "### 変わらなかったこと",
-      "### 変化したこと",
-      "### 最新コメントから読み取れる現在地"
-    ],
-    "citation_groups": 21,
-    "citation_references": 56,
-    "citation_references_per_1000_chars": 10.97,
-    "unique_years": [
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2024,
-      2025,
-      2026
-    ],
-    "future_years_excluded_from_trend_score": [],
-    "year_span": 9,
-    "bold_analytical_themes": 7,
-    "contrast_terms": 11,
-    "sentence_count": 60,
-    "average_sentence_characters": 59.18,
-    "long_sentence_count": 2,
-    "repeated_sentence_count": 0,
-    "semantic_overlap_pairs": 0,
-    "promotional_terms": 0,
-    "first_person_terms": 0,
-    "key_takeaway_categories": [
-      "earnings_profitability",
-      "cash_flow_balance_sheet",
-      "operations",
-      "outlook_targets",
-      "capital_allocation"
-    ],
-    "key_takeaway_category_count": 5,
-    "middle_period_years": [
-      2021,
-      2022,
-      2024
-    ],
-    "trend_theme_average_years": 3.71,
-    "trend_themes_with_three_periods": 6
-  },
-  "length_ratio_to_exemplar": 1.459,
-  "trend_length_ratio_to_exemplar": 2.714,
-  "perspective_length_ratio_to_exemplar": 1.251,
+  "exemplar_metrics": null,
+  "length_ratio_to_exemplar": null,
+  "trend_length_ratio_to_exemplar": null,
+  "perspective_length_ratio_to_exemplar": null,
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",

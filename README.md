@@ -542,6 +542,15 @@ map and the selected PDFs. Python converts the four ratings to 0–1 subscores a
 uses their arithmetic mean. A subscore remains blank only in the exceptional
 case where the synthesis pass cannot make a defensible assessment. If no
 component can be assessed, the overall fallback is `0.50`.
+Directly beneath the score, the report shows every original annual forecast that
+Python could match to a subsequent actual, including the metric, forecast,
+actual, and outcome. These are deterministic comparisons from the research
+map, not values regenerated during Markdown rendering or English translation.
+For forecast discipline, meeting or exceeding the original annual forecast is
+always positive evidence regardless of the size of the upside; falling below
+the original forecast is negative evidence. Later revisions do not erase the
+comparison with original guidance. Medium-term target delivery and the clarity
+of revisions remain separate evidence within the same component.
 The synthesis pass also writes a concise natural-language explanation beneath
 every subscore, including supporting and contrary information. The full calculation is stored in
 `management_consistency.json`.

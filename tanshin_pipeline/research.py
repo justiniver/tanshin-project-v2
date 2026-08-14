@@ -266,18 +266,24 @@ def _forecast_metrics(
             if forecast_value != 0
             else None
         )
-        if error_pct is None:
-            result = "not_comparable"
-        elif error_pct > Decimal("3"):
-            result = "actual_above_forecast"
-        elif error_pct < Decimal("-3"):
-            result = "actual_below_forecast"
-        else:
-            result = "broadly_in_line"
+        # Forecast discipline is deliberately asymmetric: delivering at least
+        # the originally forecast value is positive regardless of the size of
+        # the upside, while any shortfall is negative. The raw percentage
+        # difference remains available for analytical context.
+        result = (
+            "met_or_exceeded"
+            if actual_value >= forecast_value
+            else "missed"
+        )
         comparisons.append(
             {
                 "metric": forecast_anchor.metric.value,
+                "metric_label_ja": forecast_anchor.metric_label_ja,
+                "scope": forecast_anchor.scope.value,
+                "scope_label_ja": forecast_anchor.scope_label_ja,
+                "value_kind": forecast_anchor.value_kind.value,
                 "target_fiscal_year": forecast.target_fiscal_year,
+                "target_period": forecast.target_period.value,
                 "forecast_surface_ja": forecast.value_surface_ja,
                 "actual_surface_ja": actual.value_surface_ja,
                 "percentage_error": (
@@ -296,21 +302,30 @@ def _forecast_metrics(
     result_counts = _counts(item["result"] for item in comparisons)
     posture = "insufficient_evidence"
     if len(comparisons) >= 3:
-        above = result_counts.get("actual_above_forecast", 0)
-        below = result_counts.get("actual_below_forecast", 0)
-        if above / len(comparisons) >= 0.67:
-            posture = "conservative_tendency"
-        elif below / len(comparisons) >= 0.67:
-            posture = "aggressive_tendency"
-        elif above and below:
+        met = result_counts.get("met_or_exceeded", 0)
+        missed = result_counts.get("missed", 0)
+        if met / len(comparisons) >= 0.67:
+            posture = "met_or_exceeded_tendency"
+        elif missed / len(comparisons) >= 0.67:
+            posture = "miss_tendency"
+        elif met and missed:
             posture = "mixed"
-        else:
-            posture = "broadly_in_line"
     return {
         "original_forecasts_observed": len(forecasts),
         "original_forecasts_matched_to_actuals": len(comparisons),
         "observable_comparisons": len(comparisons),
         "original_result_counts": result_counts,
+        "met_or_exceeded_count": result_counts.get("met_or_exceeded", 0),
+        "missed_count": result_counts.get("missed", 0),
+        "success_rate": (
+            round(
+                result_counts.get("met_or_exceeded", 0)
+                / len(comparisons),
+                4,
+            )
+            if comparisons
+            else None
+        ),
         "posture_signal": posture,
         "comparisons": comparisons,
     }

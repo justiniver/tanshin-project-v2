@@ -596,6 +596,14 @@ Management-consistency explanations:
   forecasts from research_metrics. If that sample is insufficient, say so and
   rely on separately evidenced medium-term target outcomes rather than implying
   a complete annual forecasting record.
+- Score original annual forecast outcomes asymmetrically. Every actual result
+  that meets or exceeds the original forecast is positive evidence, regardless
+  of how far it exceeds the forecast; never penalize a large upside beat as
+  imprecision or excessive conservatism. Every actual result below the original
+  forecast is negative evidence, with repeated or material misses carrying more
+  weight. Judge the result against the original forecast: a later revision does
+  not erase whether the original forecast was met. Continue to assess
+  medium-term target delivery and the clarity of revisions separately.
 - Use deterministic counts when useful, but never create a complete-history
   claim from incomplete coverage.
 - Mention the strongest supporting observation and material contrary evidence

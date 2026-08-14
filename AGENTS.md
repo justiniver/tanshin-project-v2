@@ -109,6 +109,11 @@ normalization, validation, rendering, retry, and failure tests.
   filing, pairing the current actual and next original forecast where available.
   Use the remaining response budget for concise qualitative management
   discussion from every filing.
+- Display locally matched original annual forecasts and subsequent actuals
+  beneath the management-consistency score. Meeting or exceeding the original
+  forecast is positive evidence regardless of the upside magnitude; any
+  shortfall is negative evidence, and a later revision does not erase the
+  original comparison.
 - The second request receives the chronological map, local annual comparisons,
   fact-free blueprint, and all selected PDFs. Treat the map as an attention
   guide, not a source boundary; revisit the filings for missing context,

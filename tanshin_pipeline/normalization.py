@@ -20,6 +20,7 @@ from .schemas import (
     EvidenceRecord,
     JapaneseAnalysis,
     JapaneseModelResponse,
+    ManagementForecastComparison,
     SectionKey,
     SelectionManifest,
     StatementType,
@@ -818,9 +819,25 @@ def normalize_japanese_analysis(
     analysis: JapaneseModelResponse | JapaneseAnalysis,
     manifest: SelectionManifest,
     repository_root: Path,
+    *,
+    forecast_comparisons: list[dict[str, Any]] | None = None,
 ) -> NormalizationResult:
     normalized = materialize_japanese_analysis(analysis)
     changes: list[dict[str, Any]] = []
+    if (
+        normalized.management_consistency is not None
+        and forecast_comparisons is not None
+    ):
+        normalized.management_consistency.forecast_comparisons = [
+            ManagementForecastComparison.model_validate(item)
+            for item in forecast_comparisons
+        ]
+        changes.append(
+            {
+                "type": "forecast_comparisons_attached",
+                "comparison_count": len(forecast_comparisons),
+            }
+        )
     index = (
         PdfTextIndex(repository_root, manifest)
         if normalized.evidence

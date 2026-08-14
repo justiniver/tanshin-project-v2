@@ -10,11 +10,11 @@
   },
   "claims": [
     {
-      "claim_id": "c_overview_1",
+      "claim_id": "claim_01",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "分譲マンション施工を軸とする総合建設・不動産・管理運営グループ",
-      "body_ja": "長谷工コーポレーションは、分譲マンションの企画・設計・施工を中核事業とする総合建設会社である。土地情報の収集力と商品企画力を強みに、事業主（デベロッパー）に対してマンション建築工事の請負提案を行う建設関連事業が収益の柱となっている。併せて、新築マンションの販売受託、分譲マンションおよび賃貸マンションの管理運営、修繕・リフォーム工事、不動産分譲・開発、さらにはシニア事業や海外不動産開発まで、「住まいと暮らし」に関連する事業を幅広く展開している。収益モデルは、建築請負における完成工事進行基準に基づく工事利益と、不動産の売却益・仲介手数料、管理運営に伴うストック型の月額管理料収入などから構成されている。",
+      "headline_ja": "分譲マンション特化の設計施工一貫体制と不動産・管理運営の複合ビジネスモデル",
+      "body_ja": "株式会社長谷工コーポレーションは、新築分譲マンションの企画・設計から施工までを一括で請け負う建設事業を中核とし、分譲・賃貸開発を行う不動産関連事業、マンション管理・大規模修繕・高齢者住宅運営を担う管理運営事業を展開する総合建設・不動産グループである。独自の土地持ち込み提案力と特建施工体制を強みとし、施工後の建物管理やアフターサービスまでグループ内で一貫して提供することで、フローの請負・開発収益とストックの管理運営収益を組み合わせた事業構造を構築している。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
@@ -24,66 +24,66 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_key_1",
+      "claim_id": "claim_02",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2027年3月期第1四半期は完成工事利益率の改善により営業利益46.0%増",
-      "body_ja": "2027年3月期第1四半期の連結業績は、売上高3,121億円（前年同期比9.2%増）、営業利益299億円（同46.0%増）、経常利益305億円（同58.9%増）、親会社株主に帰属する四半期純利益213億円（同68.5%増）となった。主力の建設関連事業において、受注時採算の厳選や施工効率化により完成工事総利益率が上昇したことが大幅な増益を牽引した。",
+      "headline_ja": "完成工事総利益率の改善により第1四半期連結業績は大幅な増収増益を達成",
+      "body_ja": "2027年3月期第1四半期の連結業績は、売上高3,121.48億円（前年同期比9.2%増）、営業利益298.57億円（同46.0%増）、経常利益304.55億円（同58.9%増）、親会社株主に帰属する四半期純利益212.87億円（同68.5%増）となった。資材や労務費の高騰傾向が続くなか、受注時採算の厳格管理と工程効率化により建設関連事業の完成工事総利益率が上昇したことが大幅増益の主因である。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_key_1:figure:01",
+          "value_id": "claim_02:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:02",
-          "claim_surface_ja": "46.0%",
-          "source_surface_ja": "46.0%",
+          "value_id": "claim_02:figure:02",
+          "claim_surface_ja": "3,121.48億円",
+          "source_surface_ja": "3,121.48億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:03",
-          "claim_surface_ja": "3,121億円",
-          "source_surface_ja": "3,121億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_1:figure:04",
+          "value_id": "claim_02:figure:03",
           "claim_surface_ja": "9.2%",
           "source_surface_ja": "9.2%",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:05",
-          "claim_surface_ja": "299億円",
-          "source_surface_ja": "299億円",
+          "value_id": "claim_02:figure:04",
+          "claim_surface_ja": "298.57億円",
+          "source_surface_ja": "298.57億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:06",
-          "claim_surface_ja": "305億円",
-          "source_surface_ja": "305億円",
+          "value_id": "claim_02:figure:05",
+          "claim_surface_ja": "46.0%",
+          "source_surface_ja": "46.0%",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:07",
+          "value_id": "claim_02:figure:06",
+          "claim_surface_ja": "304.55億円",
+          "source_surface_ja": "304.55億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_02:figure:07",
           "claim_surface_ja": "58.9%",
           "source_surface_ja": "58.9%",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:08",
-          "claim_surface_ja": "213億円",
-          "source_surface_ja": "213億円",
+          "value_id": "claim_02:figure:08",
+          "claim_surface_ja": "212.87億円",
+          "source_surface_ja": "212.87億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_1:figure:09",
+          "value_id": "claim_02:figure:09",
           "claim_surface_ja": "68.5%",
           "source_surface_ja": "68.5%",
           "evidence_id": null
@@ -91,7 +91,7 @@
       ],
       "dates": [
         {
-          "value_id": "c_key_1:date:01",
+          "value_id": "claim_02:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
@@ -100,151 +100,127 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_key_2",
+      "claim_id": "claim_03",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "預り金減少により総資産および負債が圧縮され自己資本比率は42.1%に上昇",
-      "body_ja": "2027年3月期第1四半期末の連結総資産は1兆3,531億円となり、前期末比で647億円減少した。流動負債の預り金が684億円から462億円へ減少したことに伴い、現金預金が2,799億円から2,302億円へと減少したことが主因である。負債合計が719億円減少した結果、純資産は四半期純利益の積み上げにより5,706億円に増加し、自己資本比率は前期末の39.7%から42.1%へ改善した。",
+      "headline_ja": "預り金精算に伴い現金預金が減少も純資産蓄積により自己資本比率は42.1%へ上昇",
+      "body_ja": "当第1四半期末の連結総資産は1兆3,530.50億円となり、前連結会計年度末比646.74億円減少した。預り金の減少に伴い現金預金が2,302.93億円へ減少したものの、四半期純利益の計上により純資産合計は5,706.43億円へ増加し、自己資本比率は前末の39.7%から42.1%へ上昇した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true,
+      "causal": false,
       "figures": [
         {
-          "value_id": "c_key_2:figure:01",
+          "value_id": "claim_03:figure:01",
           "claim_surface_ja": "42.1%",
           "source_surface_ja": "42.1%",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:02",
+          "value_id": "claim_03:figure:02",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:03",
-          "claim_surface_ja": "1兆3,531億円",
-          "source_surface_ja": "1兆3,531億円",
+          "value_id": "claim_03:figure:03",
+          "claim_surface_ja": "1兆3,530.50億円",
+          "source_surface_ja": "1兆3,530.50億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:04",
-          "claim_surface_ja": "647億円",
-          "source_surface_ja": "647億円",
+          "value_id": "claim_03:figure:04",
+          "claim_surface_ja": "646.74億円",
+          "source_surface_ja": "646.74億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:05",
-          "claim_surface_ja": "684億円",
-          "source_surface_ja": "684億円",
+          "value_id": "claim_03:figure:05",
+          "claim_surface_ja": "2,302.93億円",
+          "source_surface_ja": "2,302.93億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:06",
-          "claim_surface_ja": "462億円",
-          "source_surface_ja": "462億円",
+          "value_id": "claim_03:figure:06",
+          "claim_surface_ja": "5,706.43億円",
+          "source_surface_ja": "5,706.43億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_2:figure:07",
-          "claim_surface_ja": "2,799億円",
-          "source_surface_ja": "2,799億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_2:figure:08",
-          "claim_surface_ja": "2,302億円",
-          "source_surface_ja": "2,302億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_2:figure:09",
-          "claim_surface_ja": "719億円",
-          "source_surface_ja": "719億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_2:figure:10",
-          "claim_surface_ja": "5,706億円",
-          "source_surface_ja": "5,706億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_2:figure:11",
+          "value_id": "claim_03:figure:07",
           "claim_surface_ja": "39.7%",
           "source_surface_ja": "39.7%",
           "evidence_id": null
         }
       ],
-      "dates": [
-        {
-          "value_id": "c_key_2:date:01",
-          "claim_surface_ja": "2027年3月期",
-          "source_surface_ja": "2027年3月期",
-          "evidence_id": null
-        }
-      ],
+      "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "c_key_3",
+      "claim_id": "claim_04",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期連結業績予想を維持し個別純利益予想のみ組織再編影響見直しで下方修正",
-      "body_ja": "通期の連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）は期初公表値を据え置いた。一方、個別の通期業績予想については、期初に見込んでいたグループ内組織再編に伴う特別利益の計上を取りやめたため、個別当期純利益予想を760億円から690億円（対前期比37.3%増）へ下方修正した。連結損益への影響はない。",
+      "headline_ja": "通期連結業績予想を据え置く一方で組織再編の見直しに伴い個別純利益予想を下方修正",
+      "body_ja": "2027年3月期通期の連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更はない。一方で、グループ内組織再編に伴う特別利益計上の見直しにより、個別の中間純利益予想（465億円へ70億円減）および通期純利益予想（690億円へ70億円減）が修正されたが、連結業績への影響はない。",
       "evidence_ids": [],
-      "statement_type": "mixed",
+      "statement_type": "forecast",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_key_3:figure:01",
+          "value_id": "claim_04:figure:01",
           "claim_surface_ja": "1兆3,800億円",
           "source_surface_ja": "1兆3,800億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_3:figure:02",
+          "value_id": "claim_04:figure:02",
           "claim_surface_ja": "1,100億円",
           "source_surface_ja": "1,100億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_3:figure:03",
+          "value_id": "claim_04:figure:03",
           "claim_surface_ja": "1,050億円",
           "source_surface_ja": "1,050億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_3:figure:04",
+          "value_id": "claim_04:figure:04",
           "claim_surface_ja": "660億円",
           "source_surface_ja": "660億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_3:figure:05",
-          "claim_surface_ja": "760億円",
-          "source_surface_ja": "760億円",
+          "value_id": "claim_04:figure:05",
+          "claim_surface_ja": "465億円",
+          "source_surface_ja": "465億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_3:figure:06",
+          "value_id": "claim_04:figure:06",
+          "claim_surface_ja": "70億円",
+          "source_surface_ja": "70億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_04:figure:07",
           "claim_surface_ja": "690億円",
           "source_surface_ja": "690億円",
           "evidence_id": null
-        },
+        }
+      ],
+      "dates": [
         {
-          "value_id": "c_key_3:figure:07",
-          "claim_surface_ja": "37.3%",
-          "source_surface_ja": "37.3%",
+          "value_id": "claim_04:date:01",
+          "claim_surface_ja": "2027年3月期",
+          "source_surface_ja": "2027年3月期",
           "evidence_id": null
         }
       ],
-      "dates": [],
       "qualifiers": [
         {
-          "value_id": "c_key_3:qualifier:01",
+          "value_id": "claim_04:qualifier:01",
           "claim_surface_ja": "予想",
           "source_surface_ja": "予想",
           "evidence_id": null
@@ -252,66 +228,54 @@
       ]
     },
     {
-      "claim_id": "c_key_4",
+      "claim_id": "claim_05",
       "section": "latest.key_takeaway",
       "order": 4,
-      "headline_ja": "インセンティブ制度の継続に伴い110.41億円規模の自己株式第三者割当処分を決議",
-      "body_ja": "当社は2026年8月6日の取締役会において、株式給付信託（BBT）および株式給付型ESOPへの追加拠出に伴い、第三者割当による自己株式の処分（処分普通株式415万1,500株、1株2,659.5円、処分総額110.41億円、期日2026年8月21日）を決議した。発行済株式総数に対する希薄化規模は1.42%であり、役員・幹部社員のインセンティブ強化と株式価値向上への動機付けを図る措置である。",
+      "headline_ja": "株式報酬制度の継続に伴う自己株式処分により中長期のインセンティブ体制を維持",
+      "body_ja": "同社は2026年8月6日開催の取締役会において、株式給付信託（BBT）およびESOP制度の継続を目的とし、再信託受託者への第三者割当による自己株式処分（処分株式数415万1,500株、処分価額2,659.5円/株、処分総額110.41億円）を決議した。発行済株式総数に対する希薄化規模は1.42%であり、役員・幹部社員への適切なインセンティブ付与を通じた経営規律の維持を図っている。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "c_key_4:figure:01",
-          "claim_surface_ja": "110.41億円",
-          "source_surface_ja": "110.41億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_4:figure:02",
+          "value_id": "claim_05:figure:01",
           "claim_surface_ja": "8月",
           "source_surface_ja": "8月",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:03",
+          "value_id": "claim_05:figure:02",
           "claim_surface_ja": "6日",
           "source_surface_ja": "6日",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:04",
+          "value_id": "claim_05:figure:03",
           "claim_surface_ja": "415",
           "source_surface_ja": "415",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:05",
+          "value_id": "claim_05:figure:04",
           "claim_surface_ja": "1,500",
           "source_surface_ja": "1,500",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:06",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_key_4:figure:07",
+          "value_id": "claim_05:figure:05",
           "claim_surface_ja": "2,659.5円",
           "source_surface_ja": "2,659.5円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:08",
-          "claim_surface_ja": "21日",
-          "source_surface_ja": "21日",
+          "value_id": "claim_05:figure:06",
+          "claim_surface_ja": "110.41億円",
+          "source_surface_ja": "110.41億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_key_4:figure:09",
+          "value_id": "claim_05:figure:07",
           "claim_surface_ja": "1.42%",
           "source_surface_ja": "1.42%",
           "evidence_id": null
@@ -319,7 +283,7 @@
       ],
       "dates": [
         {
-          "value_id": "c_key_4:date:01",
+          "value_id": "claim_05:date:01",
           "claim_surface_ja": "2026年",
           "source_surface_ja": "2026年",
           "evidence_id": null
@@ -328,68 +292,44 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_driver_1",
+      "claim_id": "claim_06",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "建設関連事業｜追い風：受注時採算の改善と大規模物件の着実な施工進捗",
-      "body_ja": "建設関連事業の第1四半期売上高は2,350億円（前年同期比3.7%増）、営業利益は232億円（同50.6%増）と大幅な増益を達成した。資材・労務費の上昇圧力が存在するものの、土地情報収集力を活かした受注時採算の改善や物件の大型化、効率的な施工体制による完成工事総利益率の上昇が利益を押し上げた。分譲マンション新築工事の受注も首都圏で200戸以上の大規模物件6件を含む13件、近畿・東海で6件の計19件と堅調に推移している。",
+      "headline_ja": "「完成工事総利益率｜向上」受注時採算の改善と効率施工が建設関連事業の利益を牽引",
+      "body_ja": "建設関連事業の当第1四半期業績は売上高2,350億円（前年同期比3.7%増）、セグメント利益232億円（同50.6%増）となった。土地持ち込み提案力を活かした適切な請負価格の確保と効率的な生産体制の維持により、完成工事総利益率が上昇したことがセグメントの大幅増益をもたらした。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_driver_1:figure:01",
+          "value_id": "claim_06:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_1:figure:02",
+          "value_id": "claim_06:figure:02",
           "claim_surface_ja": "2,350億円",
           "source_surface_ja": "2,350億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_1:figure:03",
+          "value_id": "claim_06:figure:03",
           "claim_surface_ja": "3.7%",
           "source_surface_ja": "3.7%",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_1:figure:04",
+          "value_id": "claim_06:figure:04",
           "claim_surface_ja": "232億円",
           "source_surface_ja": "232億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_1:figure:05",
+          "value_id": "claim_06:figure:05",
           "claim_surface_ja": "50.6%",
           "source_surface_ja": "50.6%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_1:figure:06",
-          "claim_surface_ja": "200戸",
-          "source_surface_ja": "200戸",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_1:figure:07",
-          "claim_surface_ja": "6件",
-          "source_surface_ja": "6件",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_1:figure:08",
-          "claim_surface_ja": "13件",
-          "source_surface_ja": "13件",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_1:figure:09",
-          "claim_surface_ja": "19件",
-          "source_surface_ja": "19件",
           "evidence_id": null
         }
       ],
@@ -397,44 +337,44 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_driver_2",
+      "claim_id": "claim_07",
       "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "不動産関連事業｜追い風：分譲マンションの新規引渡し戸数の増加",
-      "body_ja": "不動産関連事業の売上高は598億円（前年同期比18.6%増）、営業利益は69億円（同12.2%増）の増収増益となった。開発分譲を行っている分譲マンションにおいて、第1四半期における新規完成物件の引渡しが前年同期に比べて順調に進捗したことがセグメント業績を牽引した。",
+      "headline_ja": "「分譲マンション引渡し｜増加」新規物件の引渡し増加が不動産関連事業の増収増益に寄与",
+      "body_ja": "不動産関連事業の当第1四半期業績は売上高598億円（前年同期比18.6%増）、セグメント利益69億円（同12.2%増）となった。開発を進めてきた新築分譲マンションの新規引渡し戸数が増加したことが増収増益の主な要因となった。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_driver_2:figure:01",
+          "value_id": "claim_07:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_07:figure:02",
           "claim_surface_ja": "598億円",
           "source_surface_ja": "598億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_2:figure:02",
+          "value_id": "claim_07:figure:03",
           "claim_surface_ja": "18.6%",
           "source_surface_ja": "18.6%",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_2:figure:03",
+          "value_id": "claim_07:figure:04",
           "claim_surface_ja": "69億円",
           "source_surface_ja": "69億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_2:figure:04",
+          "value_id": "claim_07:figure:05",
           "claim_surface_ja": "12.2%",
           "source_surface_ja": "12.2%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_2:figure:05",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
           "evidence_id": null
         }
       ],
@@ -442,60 +382,42 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_driver_3",
+      "claim_id": "claim_08",
       "section": "latest.business_driver",
       "order": 3,
-      "headline_ja": "管理運営事業・海外事業｜逆風：開発売却案件の減少と海外初期投資負担",
-      "body_ja": "管理運営事業は売上高375億円（前年同期比0.4%減）、営業利益17億円（同3.9%減）と微減益となった。賃貸管理の受託を目的とするマンションの開発・売却案件が減少したことが影響した。また、海外事業は売上高12億円（前年同期14億円）、営業損失4億円（前年同期は損失1億円）となり、ハワイ州オアフ島での商業施設運営や戸建分譲開発における先行投資費用が重荷となっている。",
+      "headline_ja": "「海外開発事業｜赤字継続」ハワイでの商業施設・分譲開発の費用先行が営業損失を及ぼす",
+      "body_ja": "海外事業の当第1四半期業績は売上高12億円、セグメント営業損失4億円（前年同期は売上高14億円、営業損失1億円）となった。ハワイ州オアフ島において商業施設の運営および戸建分譲開発を進めているものの、開発・運営コストが先行し、セグメントの赤字幅が拡大した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_driver_3:figure:01",
-          "claim_surface_ja": "375億円",
-          "source_surface_ja": "375億円",
+          "value_id": "claim_08:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_3:figure:02",
-          "claim_surface_ja": "0.4%",
-          "source_surface_ja": "0.4%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_3:figure:03",
-          "claim_surface_ja": "17億円",
-          "source_surface_ja": "17億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_3:figure:04",
-          "claim_surface_ja": "3.9%",
-          "source_surface_ja": "3.9%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_3:figure:05",
+          "value_id": "claim_08:figure:02",
           "claim_surface_ja": "12億円",
           "source_surface_ja": "12億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_3:figure:06",
-          "claim_surface_ja": "14億円",
-          "source_surface_ja": "14億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_driver_3:figure:07",
+          "value_id": "claim_08:figure:03",
           "claim_surface_ja": "4億円",
           "source_surface_ja": "4億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_driver_3:figure:08",
+          "value_id": "claim_08:figure:04",
+          "claim_surface_ja": "14億円",
+          "source_surface_ja": "14億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_08:figure:05",
           "claim_surface_ja": "1億円",
           "source_surface_ja": "1億円",
           "evidence_id": null
@@ -505,98 +427,74 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_outlook_1",
+      "claim_id": "claim_09",
       "section": "latest.outlook",
       "order": 1,
-      "headline_ja": "新中計初年度の業績目標達成に向けて通期連結経常利益1,050億円を目指す",
-      "body_ja": "当社は2026年3月期から2031年3月期までの新中期経営計画「HASEKO Evolution Plan」を推進している。2027年3月期通期の連結業績予想は売上高1兆3,800億円（前期比8.4%増）、営業利益1,100億円（同11.4%増）、経常利益1,050億円（同11.6%増）、親会社株主に帰属する当期純利益660億円（同20.4%増）を掲げる。第1四半期の進捗率は経常利益ベースで29.0%に達しており、中間期予想（470億円）に対しても順調な滑り出しを見せている。",
+      "headline_ja": "新中期計画「HASEKO Evolution Plan」初年度の好発進を受け通期経常利益1,050億円を目指す",
+      "body_ja": "2027年3月期通期の連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、営業利益1,100億円（同11.4%増）、経常利益1,050億円（同11.6%増）、純利益660億円（同20.4%増）を見込む。新中期経営計画の初年度として完成工事総利益率の改善と不動産取扱量の維持を進め、連結経常利益1,000億円台の定着を掲げている。",
       "evidence_ids": [],
       "statement_type": "forecast",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "c_outlook_1:figure:01",
+          "value_id": "claim_09:figure:01",
           "claim_surface_ja": "1,050億円",
           "source_surface_ja": "1,050億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:02",
+          "value_id": "claim_09:figure:02",
           "claim_surface_ja": "1兆3,800億円",
           "source_surface_ja": "1兆3,800億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:03",
+          "value_id": "claim_09:figure:03",
           "claim_surface_ja": "8.4%",
           "source_surface_ja": "8.4%",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:04",
+          "value_id": "claim_09:figure:04",
           "claim_surface_ja": "1,100億円",
           "source_surface_ja": "1,100億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:05",
+          "value_id": "claim_09:figure:05",
           "claim_surface_ja": "11.4%",
           "source_surface_ja": "11.4%",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:06",
+          "value_id": "claim_09:figure:06",
           "claim_surface_ja": "11.6%",
           "source_surface_ja": "11.6%",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:07",
+          "value_id": "claim_09:figure:07",
           "claim_surface_ja": "660億円",
           "source_surface_ja": "660億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:08",
+          "value_id": "claim_09:figure:08",
           "claim_surface_ja": "20.4%",
           "source_surface_ja": "20.4%",
           "evidence_id": null
         },
         {
-          "value_id": "c_outlook_1:figure:09",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_outlook_1:figure:10",
-          "claim_surface_ja": "29.0%",
-          "source_surface_ja": "29.0%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_outlook_1:figure:11",
-          "claim_surface_ja": "470億円",
-          "source_surface_ja": "470億円",
+          "value_id": "claim_09:figure:09",
+          "claim_surface_ja": "1,000億円",
+          "source_surface_ja": "1,000億円",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "c_outlook_1:date:01",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_outlook_1:date:02",
-          "claim_surface_ja": "2031年3月期",
-          "source_surface_ja": "2031年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_outlook_1:date:03",
+          "value_id": "claim_09:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
@@ -604,7 +502,13 @@
       ],
       "qualifiers": [
         {
-          "value_id": "c_outlook_1:qualifier:01",
+          "value_id": "claim_09:qualifier:01",
+          "claim_surface_ja": "見込む",
+          "source_surface_ja": "見込む",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_09:qualifier:02",
           "claim_surface_ja": "予想",
           "source_surface_ja": "予想",
           "evidence_id": null
@@ -612,39 +516,11 @@
       ]
     },
     {
-      "claim_id": "c_risk_1",
+      "claim_id": "claim_10",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "建築資材・労務コストの高騰および労働時間上限規制による採算圧迫リスク",
-      "body_ja": "建設業界全体で資材価格の高騰や人件費・労務費の上昇が続いており、働き方改革に伴う時間外労働の上限規制（2024年4月適用）への対応や技能労働者不足が長期化している。受注時採算の改善が進んでいるものの、施工期間中の想定以上のコスト増加が発生した場合、主力の建設関連事業における完成工事総利益率の低下を引き起こす不確実性が存在する。",
-      "evidence_ids": [],
-      "statement_type": "risk",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_risk_1:figure:01",
-          "claim_surface_ja": "4月",
-          "source_surface_ja": "4月",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_risk_1:date:01",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_risk_2",
-      "section": "latest.risk",
-      "order": 2,
-      "headline_ja": "金利上昇・住宅価格高騰によるマンション購買マインドの鈍化と販売減速リスク",
-      "body_ja": "首都圏および近畿圏での新築分譲マンション価格は高水準で推移しており、日銀の金融政策変更に伴う住宅ローン金利の上昇や実質賃金の伸び悩みにより、一次取得層を中心に購入マインドが冷え込むリスクがある。初月販売率の低下や分譲中戸数の増加が長期化した場合、開発不動産資産の滞留や評価減リスクに繋がる懸念がある。",
+      "headline_ja": "建設資材・労務費の高騰および人手不足に伴う施工コスト上昇と利益率悪化リスク",
+      "body_ja": "建設業界全体での資材価格の上昇、技能労働者や後継者の不足、働き方改革に伴う時間外労働の上限規制の適用は、請負工事の原価上昇圧力を高める。同社は適正価格での受注とBIM等による生産性向上で対応しているが、原価高騰が想定を超えた場合、主力の建設関連事業の利益率が圧迫される不確実性がある。",
       "evidence_ids": [],
       "statement_type": "risk",
       "is_inference": true,
@@ -654,44 +530,71 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_context_1",
+      "claim_id": "claim_11",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "海外事業（ハワイ不動産開発）における資産固定化と追加損失の発生リスク",
+      "body_ja": "海外事業セグメントでは1,500億円を超える資産を保有しているが、FY2022の資産費用化（43億円）、FY2025の減損損失（161.12億円）、FY2026の営業損失（60.81億円）と不振が継続している。米国の金利動向や現地不動産市況の低迷が長期化した場合、投資回収の遅延やさらなる減損処理が発生するリスクが存在する。",
+      "evidence_ids": [],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_11:figure:01",
+          "claim_surface_ja": "1,500億円",
+          "source_surface_ja": "1,500億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_11:figure:02",
+          "claim_surface_ja": "43億円",
+          "source_surface_ja": "43億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_11:figure:03",
+          "claim_surface_ja": "161.12億円",
+          "source_surface_ja": "161.12億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_11:figure:04",
+          "claim_surface_ja": "60.81億円",
+          "source_surface_ja": "60.81億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_12",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "第1四半期は本業の建設採算回復で好発進も、中計投資とコスト管理の両立が課題",
-      "body_ja": "2027年3月期第1四半期は、主力の建設請負における総利益率改善と不動産売上増により、前年同期比で大幅な営業・経常増益を達成した。個別予想で特別利益の見直しによる純利益下方修正があったものの、連結通期目標（経常利益1,050億円）に対する進捗は良好であり、事業基盤の堅調さを示している。\n\n一方で、新中期経営計画「HASEKO Evolution Plan」で掲げる6か年4,000億円の戦略投資（国内・海外不動産、建設R&D、M&A等）を進めるにあたり、資本効率と有利子負債のコントロールが問われる。資材・人件費高騰や金利動向といった外部環境の不透明感が強まる中、受注採算の維持と投資先からの十分なリターン創出が投資家の確認点となる。",
+      "headline_ja": "請負利益率の改善で順調な出だしを維持も、海外資産の効率化とグループ再編の手続き管理が課題",
+      "body_ja": "2027年3月期第1四半期は、主力の建設関連事業において受注時採算の改善と完成工事総利益率の上昇が確認され、前年同期比で大幅な営業増益を達成した。新中期経営計画「HASEKO Evolution Plan」が目標とする連結経常利益1,000億円超の安定計上に向け、コアとなる国内特建請負の収益力が強固に機能していることが実証されている。一方、海外事業ではセグメント営業赤字が続いており、膨らんだ海外固定資産の流動化や収益性改善の進捗が投資家の評価を左右する。さらに、個別業績予想における組織再編特別利益の見直しに見られるように、グループ内事業再編の手続きと開示の透明性を保ちつつ、資本効率を高める経営管理の徹底が求められる。",
       "evidence_ids": [],
       "statement_type": "mixed",
       "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_context_1:figure:01",
+          "value_id": "claim_12:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_context_1:figure:02",
-          "claim_surface_ja": "1,050億円",
-          "source_surface_ja": "1,050億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_context_1:figure:03",
-          "claim_surface_ja": "6",
-          "source_surface_ja": "6",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_context_1:figure:04",
-          "claim_surface_ja": "4,000億円",
-          "source_surface_ja": "4,000億円",
+          "value_id": "claim_12:figure:02",
+          "claim_surface_ja": "1,000億円",
+          "source_surface_ja": "1,000億円",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "c_context_1:date:01",
+          "value_id": "claim_12:date:01",
           "claim_surface_ja": "2027年3月期",
           "source_surface_ja": "2027年3月期",
           "evidence_id": null
@@ -700,428 +603,362 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_trend_persp_1",
+      "claim_id": "claim_13",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "分譲マンション施工の圧倒的地位を基盤に高収益を維持、資本配分と海外リスクが課題",
-      "body_ja": "過去10年間の長谷工コーポレーションの軌跡を振り返ると、特化型ゼネコンとして首都圏・近畿圏の分譲マンション施工において高い市場シェアと土地情報収集力を維持し、完成工事総利益率のコントロールによって年間800億〜1,000億円規模の経常利益を安定的に創出してきた。初期の「NBj計画」（2018〜2020年3月期）、中期の「NS計画」（2021〜2025年3月期）、直近の「Evolution Plan」（2026年3月期〜）を通じて、単なる建設請負依存脱却を掲げ、管理運営や不動産開発、海外事業への多角化を図ってきた。しかし、収益の主要源泉は依然として国内建設請負であり、海外事業（ハワイ等）では減損損失を計上するなど非請負領域のリターン創出にはばらつきが見られる。近年は配当拡充や機動的な自社株買いにより株主還元を強化する一方、販売用不動産や投資有価証券の拡大に伴うバランスシート膨張と資本効率（ROE）の維持が長期的な課題となっている。",
+      "headline_ja": "首都圏分譲請負の強固な収益力とストック事業の拡大、海外投資損失による資本効率抑制の対比",
+      "body_ja": "過去10年間の長谷工コーポレーションは、首都圏分譲マンションにおける高い施工シェアと独自の土地持ち込み提案力を背景に、連結経常利益700億〜1,000億円規模の安定した業績を創出してきた。管理運営事業の細分化・拡大によりストック型の安定収益基盤も強化され、累進配当や総還元性向50%程度への還元方針引き上げを実現した。一方で、成長投資として膨らませた海外事業（ハワイでの商業施設・住宅開発等）は減損損失（FY2025に161億円）や営業赤字を排出し、資本効率を阻害する主要因となった。国内の強固な現金創出力が海外投資の負の影響を吸収する構造となっており、今後は不採算資産の整理と資本配分の厳格化が企業価値向上の鍵となる。",
       "evidence_ids": [],
-      "statement_type": "mixed",
+      "statement_type": "inference",
       "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_trend_persp_1:figure:01",
-          "claim_surface_ja": "800",
-          "source_surface_ja": "800",
+          "value_id": "claim_13:figure:01",
+          "claim_surface_ja": "700",
+          "source_surface_ja": "700",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_persp_1:figure:02",
+          "value_id": "claim_13:figure:02",
           "claim_surface_ja": "1,000億円",
           "source_surface_ja": "1,000億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_persp_1:figure:03",
-          "claim_surface_ja": "2018",
-          "source_surface_ja": "2018",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_persp_1:figure:04",
-          "claim_surface_ja": "2021",
-          "source_surface_ja": "2021",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_persp_1:date:01",
-          "claim_surface_ja": "2020年3月期",
-          "source_surface_ja": "2020年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_persp_1:date:02",
-          "claim_surface_ja": "2025年3月期",
-          "source_surface_ja": "2025年3月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_persp_1:date:03",
-          "claim_surface_ja": "2026年3月期",
-          "source_surface_ja": "2026年3月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_cons_1",
-      "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "分譲マンション特化型の施工能力と土地提案力を通じた高い完成工事利益率の維持",
-      "body_ja": "初期（FY2017〜2020）、中期（FY2021〜2023）、直近（FY2024〜2026）を通じて一貫しているのは、分譲マンション建築請負における独自の競争優位性である。デベロッパーに対する持ち込み方式（土地情報と建築企画のセット提案）により高水準の受注残高を確保し、施工ラインの標準化と原価低減努力によって高い完成工事利益率を維持してきた。資材高騰期（FY2021やFY2024〜2025）には一時的な利益率の押し下げが見られたものの、受注時採算の厳選と価格転嫁により、追って完成工事総利益率を回復させるサイクルを継続して機能させている。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_cons_1:figure:01",
-          "claim_surface_ja": "2020",
-          "source_surface_ja": "2020",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_1:figure:02",
-          "claim_surface_ja": "2023",
-          "source_surface_ja": "2023",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_1:figure:03",
-          "claim_surface_ja": "2026",
-          "source_surface_ja": "2026",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_1:figure:04",
-          "claim_surface_ja": "2025",
-          "source_surface_ja": "2025",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_cons_2",
-      "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "管理戸数の着実な積み上げによるストック型管理運営事業の安定的利益貢献",
-      "body_ja": "当社グループは10年間にわたり、分譲マンション施工物件の引渡しに伴う管理受託の自然増や、地方エリアへの営業強化、M&A（長谷工コミュニティ等）を通じて管理戸数を堅調に拡大させてきた（分譲マンション管理戸数はFY2022の41.9万戸からFY2026には44.8万戸へ拡大）。賃貸管理や修繕リフォームを含む管理運営（旧サービス関連）事業は、建築請負の景気循環的変動に左右されない安定的な営業利益（年間130億〜190億円規模）を創出し、全社業績の下支え基盤として一貫して機能している。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_cons_2:figure:01",
-          "claim_surface_ja": "41.9",
-          "source_surface_ja": "41.9",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_2:figure:02",
-          "claim_surface_ja": "44.8",
-          "source_surface_ja": "44.8",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_2:figure:03",
-          "claim_surface_ja": "130",
-          "source_surface_ja": "130",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cons_2:figure:04",
-          "claim_surface_ja": "190億円",
-          "source_surface_ja": "190億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_change_1",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "株主還元方針の質的転換：配当性向20%水準から総還元性向50%程度・累進配当へ",
-      "body_ja": "初期のNBj計画期（FY2018〜2020）における株主還元方針は「1株当たり20円の安定配当、連結配当性向20%」を基本としていた。中期NS計画（FY2021〜2025）では「配当下限70円（後に80円）、総還元性向40%程度」へ引き上げられ、新中計Evolution Plan（FY2026〜）では「総還元性向50%程度、累進配当の実施、機動的自社株買い」へと大きく強化された。実際にFY2026には年間配当95円に加えて200.55億円の自己株式取得を実施し、株主資本の蓄積から還元重視への明確な戦略転換が確認できる。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_change_1:figure:01",
-          "claim_surface_ja": "20%",
-          "source_surface_ja": "20%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:figure:02",
+          "value_id": "claim_13:figure:03",
           "claim_surface_ja": "50%",
           "source_surface_ja": "50%",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:03",
-          "claim_surface_ja": "2020",
-          "source_surface_ja": "2020",
+          "value_id": "claim_13:figure:04",
+          "claim_surface_ja": "161億円",
+          "source_surface_ja": "161億円",
           "evidence_id": null
-        },
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_14",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "首都圏分譲マンション特化の特建生産体制と土地持ち込み受注による高い収益性の継続",
+      "body_ja": "FY2017からFY2027第1四半期に至る全期間を通じて、同社の中核的強みは分譲マンション施工の効率的な特建生産体制と、事業主に対する土地情報供給力にある。資材高騰やコロナ禍（FY2021等）による一時的な施工量低下の局面においても、施工中物件の原価低減と適正価格での受注管理により、建設関連事業は一貫して500億〜900億円規模のセグメント利益を創出し続けた。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
         {
-          "value_id": "c_trend_change_1:figure:04",
+          "value_id": "claim_14:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:05",
-          "claim_surface_ja": "20円",
-          "source_surface_ja": "20円",
+          "value_id": "claim_14:figure:02",
+          "claim_surface_ja": "500",
+          "source_surface_ja": "500",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:06",
-          "claim_surface_ja": "2025",
-          "source_surface_ja": "2025",
+          "value_id": "claim_14:figure:03",
+          "claim_surface_ja": "900億円",
+          "source_surface_ja": "900億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_15",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "「サービス関連事業」から「管理運営事業」への再編とストック収益基盤の質的進化",
+      "body_ja": "初期（FY2017-FY2020）において「サービス関連事業」に括られていた非請負領域は、中期（FY2021-FY2025）を経て、直近（FY2026以降）では「管理運営事業」として細分化・再編された。分譲マンション管理戸数が37.6万戸（FY2018末）から44.8万戸（FY2026末）へ順調に拡大したことで、フローの請負建築依存度を下げ、景気変動に耐えうる安定収益源へと進化した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_15:figure:01",
+          "claim_surface_ja": "37.6",
+          "source_surface_ja": "37.6",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:07",
-          "claim_surface_ja": "70円",
-          "source_surface_ja": "70円",
+          "value_id": "claim_15:figure:02",
+          "claim_surface_ja": "44.8",
+          "source_surface_ja": "44.8",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_16",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "株主還元方針の段階的拡充と総還元性向50%程度・累進配当導入への転換",
+      "body_ja": "初期のNBs・NBj計画では配当性向20%程度や1株30〜80円の配当水準であったが、NS計画での配当下限設定（70円〜80円）や総還元性向40%程度への拡充を経て、現行のHASEKO Evolution Planでは「総還元性向50%程度・累進配当の実施・年間配当100円予想」へと還元姿勢が大幅に強化された。自己株式取得（FY2021に215億円、FY2026に201億円）も機動的に組み合わせている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_16:figure:01",
+          "claim_surface_ja": "50%",
+          "source_surface_ja": "50%",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:08",
+          "value_id": "claim_16:figure:02",
+          "claim_surface_ja": "20%",
+          "source_surface_ja": "20%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:figure:03",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:figure:04",
+          "claim_surface_ja": "30",
+          "source_surface_ja": "30",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:figure:05",
           "claim_surface_ja": "80円",
           "source_surface_ja": "80円",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:09",
+          "value_id": "claim_16:figure:06",
+          "claim_surface_ja": "70円",
+          "source_surface_ja": "70円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:figure:07",
           "claim_surface_ja": "40%",
           "source_surface_ja": "40%",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:10",
-          "claim_surface_ja": "95円",
-          "source_surface_ja": "95円",
+          "value_id": "claim_16:figure:08",
+          "claim_surface_ja": "100円",
+          "source_surface_ja": "100円",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_change_1:figure:11",
-          "claim_surface_ja": "200.55億円",
-          "source_surface_ja": "200.55億円",
+          "value_id": "claim_16:figure:09",
+          "claim_surface_ja": "215億円",
+          "source_surface_ja": "215億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:figure:10",
+          "claim_surface_ja": "201億円",
+          "source_surface_ja": "201億円",
           "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": [
         {
-          "value_id": "c_trend_change_1:qualifier:01",
+          "value_id": "claim_16:qualifier:01",
           "claim_surface_ja": "程度",
           "source_surface_ja": "程度",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_16:qualifier:02",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
           "evidence_id": null
         }
       ]
     },
     {
-      "claim_id": "c_trend_change_2",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "事業ポートフォリオの再編：ノンコア資産の売却と戸建・木造領域M&Aの展開",
-      "body_ja": "過年度において当社は、高圧一括受電等のスマートマンション事業（長谷工アネシス）を関電子会社のNext Powerへ売却し、特別利益213.49億円（FY2019）を計上するなど非中核事業の整理を進めた。一方で、戸建分譲住宅事業の強化に向けて細田工務店（FY2020、取得原価21.86億円・負ののれん22.27億円）やウッドフレンズ（FY2025、取得原価25.08億円）を相次いで買収・完全子会社化した。分譲マンション請負に偏重した収益構造から、戸建分譲・木造化技術を取り込んだ住宅総合企業への再編を図っている。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_change_2:figure:01",
-          "claim_surface_ja": "213.49億円",
-          "source_surface_ja": "213.49億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_2:figure:02",
-          "claim_surface_ja": "21.86億円",
-          "source_surface_ja": "21.86億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_2:figure:03",
-          "claim_surface_ja": "22.27億円",
-          "source_surface_ja": "22.27億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_2:figure:04",
-          "claim_surface_ja": "25.08億円",
-          "source_surface_ja": "25.08億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_cap_1",
+      "claim_id": "claim_17",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "営業キャッシュ・フローを源泉とした不動産開発投資の拡大と株主還元の本格化",
-      "body_ja": "過去10年間の資金流出入を検証すると、本業の建設・不動産事業で獲得した営業キャッシュ・フローを主たる資金源とし、不動産事業支出金や販売用不動産の取得といった開発投資に優先配分してきた。投資活動キャッシュ・フローは有形・無形固定資産の取得や有価証券取得により年300億〜500億円規模の純流出が定着している。また、財務活動においては有利子負債（社債・長期借入金）を活用しつつ、FY2021に自己株買い215.24億円、FY2026に200.55億円を実施するなど、成長投資と株主還元を同時に拡充する配分構造に移行している。",
+      "headline_ja": "国内不動産開発・株主還元への資本配分増加と海外事業での資産固定化",
+      "body_ja": "10年間の資金配分において、同社は営業キャッシュ・フローで獲得した資本を主として国内不動産関連事業への資産投下（棚卸資産はFY2017の2,783億円からFY2026の6,339億円へ急増）および株主還元へ充当した。また、スマートマンション事業の売却（FY2019に213億円の譲渡益）やウッドフレンズの買収（FY2026に25億円）による事業再編を行った。一方で、海外事業セグメント資産は352億円から1,585億円へ拡大したものの、利益創出に至らず資産の固定化が進んだ。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_trend_cap_1:figure:01",
-          "claim_surface_ja": "300",
-          "source_surface_ja": "300",
+          "value_id": "claim_17:figure:01",
+          "claim_surface_ja": "2,783億円",
+          "source_surface_ja": "2,783億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_cap_1:figure:02",
-          "claim_surface_ja": "500億円",
-          "source_surface_ja": "500億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cap_1:figure:03",
-          "claim_surface_ja": "215.24億円",
-          "source_surface_ja": "215.24億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_cap_1:figure:04",
-          "claim_surface_ja": "200.55億円",
-          "source_surface_ja": "200.55億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_val_1",
-      "section": "trend.capital_value_creation",
-      "order": 1,
-      "headline_ja": "概ね創出した：本業の資本効率は高い一方、不動産開発・海外・M&Aのリターンには斑模様",
-      "body_ja": "過去10年間において投下された追加資本の創出価値を評価すると、「概ね創出した」と結論付けられる。最も多くの資本が配分された中核の建設請負事業は、土地持込提案力を背景に高い資産回転率と完成工事利益率を維持し、極めて高い資本効率で安定した利益とキャッシュを生み出し続けている。また、管理運営事業への資本蓄積も安定的なストック収益の拡大に貢献している。\n\n一方で、不動産開発事業では販売用不動産や不動産事業支出金の増加によりセグメント資産がFY2021の2,333億円からFY2026には6,339億円へと大幅に膨張したが、利益成長は資産増加のペースを下回っており、事業資産利益率は低下傾向にある。さらに海外事業ではハワイ開発物件等で特別損失・減損損失（FY2025に減損や有価証券評価損等）を計上する等、リターンの足引っ張りとなった。買収した細田工務店やウッドフレンズの戸建事業も全体業績に与えるインパクトは限定的である。総じて、本業請負の極めて高い創出価値が他分野の投下資本効率低下を補う構造となっている。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_val_1:figure:01",
-          "claim_surface_ja": "2,333億円",
-          "source_surface_ja": "2,333億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_val_1:figure:02",
+          "value_id": "claim_17:figure:02",
           "claim_surface_ja": "6,339億円",
           "source_surface_ja": "6,339億円",
           "evidence_id": null
+        },
+        {
+          "value_id": "claim_17:figure:03",
+          "claim_surface_ja": "213億円",
+          "source_surface_ja": "213億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_17:figure:04",
+          "claim_surface_ja": "25億円",
+          "source_surface_ja": "25億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_17:figure:05",
+          "claim_surface_ja": "352億円",
+          "source_surface_ja": "352億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_17:figure:06",
+          "claim_surface_ja": "1,585億円",
+          "source_surface_ja": "1,585億円",
+          "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "c_trend_imp_1",
+      "claim_id": "claim_18",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "成果は混在：国内不動産開発と株主還元は寄与するも海外投資の巨額減損が全体効率を著しく抑制",
+      "body_ja": "過去10年間の主要な資本配分先の評価は「成果は混在」である。資本投下の最大の受け皿となった国内不動産関連事業（セグメント資産約2.3倍増）は、分譲マンション開発や収益不動産の売却によりセグメント利益を97.2億円（FY2017）から355.8億円（FY2026）へと大きく伸びさせ、投下資本に見合う利益拡大を達成した。また、総還元性向の拡大に基づく配当と自己株式取得は資本効率の維持に直接貢献した。しかし、第二の成長柱として投資を加速した海外事業セグメント（ハワイ等）では、資産が352億円から1,585億円へと4.5倍に膨らんだものの、FY2022の資産費用化（43億円損失）、FY2025における161.12億円の減損損失計上、および営業赤字の継続に陥っており、投下資本に対する経済的リターンは著しく負の領域にある。強固な国内請負・開発利益が海外での資本毀損を相殺する格好となっており、全社的な資本創出価値は混在にとどまる。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_18:figure:01",
+          "claim_surface_ja": "2.3倍",
+          "source_surface_ja": "2.3倍",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:02",
+          "claim_surface_ja": "97.2億円",
+          "source_surface_ja": "97.2億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:03",
+          "claim_surface_ja": "355.8億円",
+          "source_surface_ja": "355.8億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:04",
+          "claim_surface_ja": "352億円",
+          "source_surface_ja": "352億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:05",
+          "claim_surface_ja": "1,585億円",
+          "source_surface_ja": "1,585億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:06",
+          "claim_surface_ja": "4.5倍",
+          "source_surface_ja": "4.5倍",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:07",
+          "claim_surface_ja": "43億円",
+          "source_surface_ja": "43億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_18:figure:08",
+          "claim_surface_ja": "161.12億円",
+          "source_surface_ja": "161.12億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_19",
       "section": "trend.implication",
       "order": 1,
-      "headline_ja": "投資家は建設受注時採算の持続性と膨張する不動産開発資産の回転率を注視すべき",
-      "body_ja": "投資家が今後確認すべき最重要項目は、主力の建設請負における完成工事総利益率の改善がどこまで維持できるかと、6か年4,000億円の投資計画に伴い拡大する不動産開発資産（棚卸資産および固定資産）の回収スピードである。FY2026およびFY2027第1四半期で見られた工事利益率の上昇は受注時採算の管理成果を示しているが、資材・人件費の先高感の中で持続性が試される。また、総還元性向50%程度の還元方針は株価の下支え要因となるが、不動産資産の滞留や海外事業の再減損が生じた場合、ROE目標（2031年3月期13%程度）の達成に黄信号が灯るため、棚卸資産回転率とセグメント別ROAの動向を継続して検証する必要がある。",
+      "headline_ja": "高い受注残による請負利益の確保と海外固定資産の流動化・不採算整理が今後の観察軸",
+      "body_ja": "投資家にとっての今後の観察軸は、高水準な個別受注残高（9,400億円超）に基づく請負利益の着実な計上と、新中期計画下での累進配当の持続性にある。同時に、1,500億円規模に達する海外固定資産の減損リスク遮断および不採算プロジェクトの流動化・再編に向けた経営陣の意思決定スピードを検証することが極めて重要である。",
       "evidence_ids": [],
       "statement_type": "inference",
       "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_trend_imp_1:figure:01",
-          "claim_surface_ja": "6",
-          "source_surface_ja": "6",
+          "value_id": "claim_19:figure:01",
+          "claim_surface_ja": "9,400億円",
+          "source_surface_ja": "9,400億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_trend_imp_1:figure:02",
-          "claim_surface_ja": "4,000億円",
-          "source_surface_ja": "4,000億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_imp_1:figure:03",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_imp_1:figure:04",
-          "claim_surface_ja": "50%",
-          "source_surface_ja": "50%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_imp_1:figure:05",
-          "claim_surface_ja": "13%",
-          "source_surface_ja": "13%",
+          "value_id": "claim_19:figure:02",
+          "claim_surface_ja": "1,500億円",
+          "source_surface_ja": "1,500億円",
           "evidence_id": null
         }
       ],
-      "dates": [
-        {
-          "value_id": "c_trend_imp_1:date:01",
-          "claim_surface_ja": "2031年3月期",
-          "source_surface_ja": "2031年3月期",
-          "evidence_id": null
-        }
-      ],
+      "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "c_mgmt_strat_1",
+      "claim_id": "claim_20",
       "section": "management.strategy",
       "order": 1,
-      "headline_ja": "【戦略の一貫性：評価3】請負主導から住まい・暮らしの総合企業への進化と一貫した基本路線",
-      "body_ja": "経営陣が掲げる長期ビジョンおよび中期経営計画（NBj計画→NS計画→Evolution Plan）は、分譲マンション施工の強みを強固にしつつ、管理運営・リフォーム・不動産分譲・戸建・海外へと「住まいと暮らし」の領域を広げる戦略において一貫した論理性を保っている。各計画ともコア事業の強化と非請負分野の成長投資を両立させる姿勢を明示しており、戦略テーマの連続性は高い。一方で、海外事業や新規投資領域において減損損失や目標未達が生じるなど、一部の投資戦略において見通しの甘さや修正を余儀なくされた側面もあり、戦略的一貫性は概ね高いものの評価3にとどまる。",
+      "headline_ja": "コア事業の深化とストック領域拡大の整合性の一方で海外戦略のリスク管理に課題",
+      "body_ja": "経営陣はNBs計画から現行のHASEKO Evolution Planに至るまで、「特建請負の競争力強化」と「管理運営・不動産開発の拡大」を両輪とする戦略を一貫して推進してきた。国内市場における分譲マンション施工シェアと管理戸数拡大のシナジーは論理的に極めて整合しており、高い営業利益率の維持に貢献している。一方で、将来の国内市場縮小に備えた海外事業拡大戦略は、ハワイでの過度な開発投資と巨額減損を招いており、海外リスク管理の観点において戦略の一貫性に一部課題を残した。",
       "evidence_ids": [],
       "statement_type": "inference",
       "is_inference": true,
       "causal": true,
-      "figures": [
-        {
-          "value_id": "c_mgmt_strat_1:figure:01",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": null
-        }
-      ],
+      "figures": [],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "c_mgmt_exec_1",
+      "claim_id": "claim_21",
       "section": "management.execution",
       "order": 1,
-      "headline_ja": "【施策の実行力：評価3】本業の施工高・管理戸数は着実に拡大も海外・M&Aの収益化に課題",
-      "body_ja": "経営施策のフォローアップにおいて、主力のマンション建築工事では年間施工量の維持と受注時採算のコントロールを着実に実行し、竣工案件の引き渡しを計画通り遂行してきた。管理運営事業においても受託戸数の積み上げやM&Aによる事業基盤の拡充を実行している。しかし、ハワイ等での海外不動産開発においては進捗の遅れや収益性の低下から特別損失（FY2025の減損損失168.6億円等）を計上したほか、買収した戸建子会社のシナジー発現による利益貢献はまだ途上である。本業請負の実行力は極めて高いが、投資先の収益化実行力には課題を残す。",
+      "headline_ja": "国内請負・管理事業での優れた現場実行力と海外プロジェクトでの不振の対比",
+      "body_ja": "国内のマンション建設請負および管理事業における現場実行力は非常に高い。資材費高騰やコロナ禍の試練に直面しながらも、施工効率化と適切な請負価格設定により利益を確保し、スマートマンション事業売却（FY2019）やウッドフレンズ買収（FY2026）などの構造改革も完遂した。しかし、ハワイ等での海外開発事業においては市況変化への対応が遅れ、FY2025に161億円の減損損失を計上するなど、海外投資の実行・撤退管理に課題を示した。",
       "evidence_ids": [],
       "statement_type": "inference",
       "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_mgmt_exec_1:figure:01",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_mgmt_exec_1:figure:02",
-          "claim_surface_ja": "168.6億円",
-          "source_surface_ja": "168.6億円",
+          "value_id": "claim_21:figure:01",
+          "claim_surface_ja": "161億円",
+          "source_surface_ja": "161億円",
           "evidence_id": null
         }
       ],
@@ -1129,89 +966,270 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_mgmt_disc_1",
+      "claim_id": "claim_22",
       "section": "management.forecast_discipline",
       "order": 1,
-      "headline_ja": "【予想・目標の規律：評価3】通期経常利益予想の達成度は極めて高く保守的かつ堅実な計画運用",
-      "body_ja": "過去10年間の業績予想精度を検証すると、観測された9期の通期連結経常利益予想のうち6期で実績が予想を上回り、3期で概ね計画通りの着地となった（大幅な下振れ未達成はない）。期初予想は慎重に設定され、期中に受注採算や不動産売却益の上ぶれを織り込んで上方修正・達成するパターンが定着している。中計目標に関しても、NS計画（5期累計経常利益4,000億円目標）をほぼ計画通り達成した。ただし、親会社株主に帰属する当期純利益においては特別損失（減損等）の計上により計画を下振れる年度（FY2025等）があり、経常益ベースの規律高さと純益ベースの変動性に乖離が存在する。",
+      "headline_ja": "9期連続で通期連結経常利益予想を全達成した極めて堅固な業績予想規律",
+      "body_ja": "観察可能な9年間（FY2018〜FY2026）の通期連結経常利益予想において、同社は9期すべてで期初予想を達成または超過達成した（達成率100%）。期初予想を現実的かつ堅実に設定し、手持ち工事の消化と不動産売却の期中コントロールを通じて確実に達成する経営規律は極めて堅固である。また中期計画の累計利益目標（NBj計画の2,400億円、NS計画の4,000億円）も予定通り完遂している。",
       "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
+      "statement_type": "actual",
+      "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_mgmt_disc_1:figure:01",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_mgmt_disc_1:figure:02",
+          "value_id": "claim_22:figure:01",
           "claim_surface_ja": "9期",
           "source_surface_ja": "9期",
           "evidence_id": null
         },
         {
-          "value_id": "c_mgmt_disc_1:figure:03",
-          "claim_surface_ja": "6期",
-          "source_surface_ja": "6期",
+          "value_id": "claim_22:figure:02",
+          "claim_surface_ja": "9年間",
+          "source_surface_ja": "9年間",
           "evidence_id": null
         },
         {
-          "value_id": "c_mgmt_disc_1:figure:04",
-          "claim_surface_ja": "3期",
-          "source_surface_ja": "3期",
+          "value_id": "claim_22:figure:03",
+          "claim_surface_ja": "100%",
+          "source_surface_ja": "100%",
           "evidence_id": null
         },
         {
-          "value_id": "c_mgmt_disc_1:figure:05",
-          "claim_surface_ja": "5期",
-          "source_surface_ja": "5期",
+          "value_id": "claim_22:figure:04",
+          "claim_surface_ja": "2,400億円",
+          "source_surface_ja": "2,400億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_mgmt_disc_1:figure:06",
+          "value_id": "claim_22:figure:05",
           "claim_surface_ja": "4,000億円",
           "source_surface_ja": "4,000億円",
           "evidence_id": null
         }
       ],
       "dates": [],
-      "qualifiers": []
+      "qualifiers": [
+        {
+          "value_id": "claim_22:qualifier:01",
+          "claim_surface_ja": "予定",
+          "source_surface_ja": "予定",
+          "evidence_id": null
+        }
+      ]
     },
     {
-      "claim_id": "c_mgmt_acct_1",
+      "claim_id": "claim_23",
       "section": "management.accountability",
       "order": 1,
-      "headline_ja": "【説明責任と透明性：評価2】標準的開示を維持するも投資先リターンや減損要因の定量的説明に限界",
-      "body_ja": "決算短信における経営成績の qualitative な説明やセグメント情報の開示、受注高・繰越高の内訳数値開示は適切に行われており、一定の透明性は保たれている。しかし、海外事業での減損損失計上や投資有価証券評価損の発生に際し、その根本要因や今後の構造的改善策に関する開示は定型的な説明にとどまっている。また、セグメント別投下資本やROIC等の具体的な資本効率指標が直接開示されておらず、不動産開発資産やM&A投資に対する個別の定量的なリターン実績が外部から検証しにくい点に開示上の制限がある。",
+      "headline_ja": "海外減損や個別予想修正の迅速な開示と明確な株主還元目標による高い透明性",
+      "body_ja": "FY2025における海外開発不動産の巨額減損損失（161.12億円）や、FY2027第1四半期でのグループ内組織再編に伴う個別純利益予想の下方修正について、同社は発生要因と連結業績への影響（連結への影響なし）を明確に開示した。さらにセグメント再編の経緯や、新中期計画におけるネット投資額（4,000億円）および総還元性向50%・累進配当の明記など、説明責任と透明性は高く保たれている。",
       "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
       "figures": [
         {
-          "value_id": "c_mgmt_acct_1:figure:01",
-          "claim_surface_ja": "2",
-          "source_surface_ja": "2",
+          "value_id": "claim_23:figure:01",
+          "claim_surface_ja": "161.12億円",
+          "source_surface_ja": "161.12億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_23:figure:02",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_23:figure:03",
+          "claim_surface_ja": "4,000億円",
+          "source_surface_ja": "4,000億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_23:figure:04",
+          "claim_surface_ja": "50%",
+          "source_surface_ja": "50%",
           "evidence_id": null
         }
       ],
       "dates": [],
-      "qualifiers": []
+      "qualifiers": [
+        {
+          "value_id": "claim_23:qualifier:01",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
     }
   ],
   "evidence": [],
   "management_consistency": {
-    "methodology_version": "management-consistency-v6",
-    "score": 0.69,
-    "raw_score": 0.6875,
+    "methodology_version": "management-consistency-v7",
+    "score": 0.75,
+    "raw_score": 0.75,
     "evidence_confidence": null,
     "confidence_label": null,
     "evidence_coverage": null,
     "distinct_fiscal_years": [],
     "evidence_count": 0,
     "management_discussion_evidence_share": null,
+    "forecast_comparisons": [
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "forecast_surface_ja": "91,000百万円",
+        "actual_surface_ja": "100,497百万円",
+        "percentage_error": 10.4363,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "38_2017-05-12_tanshin.pdf",
+          "34_2018-05-11_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "forecast_surface_ja": "95,000百万円",
+        "actual_surface_ja": "100,369百万円",
+        "percentage_error": 5.6516,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "34_2018-05-11_tanshin.pdf",
+          "30_2019-05-10_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "forecast_surface_ja": "85,000百万円",
+        "actual_surface_ja": "85,253百万円",
+        "percentage_error": 0.2976,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "30_2019-05-10_tanshin.pdf",
+          "26_2020-05-14_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "forecast_surface_ja": "70,000百万円",
+        "actual_surface_ja": "71,832百万円",
+        "percentage_error": 2.6171,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "26_2020-05-14_tanshin.pdf",
+          "22_2021-05-13_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "forecast_surface_ja": "75,000百万円",
+        "actual_surface_ja": "81,871百万円",
+        "percentage_error": 9.1613,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "22_2021-05-13_tanshin.pdf",
+          "18_2022-05-12_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "forecast_surface_ja": "85,000百万円",
+        "actual_surface_ja": "88,265百万円",
+        "percentage_error": 3.8412,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "18_2022-05-12_tanshin.pdf",
+          "14_2023-05-11_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "forecast_surface_ja": "83,000百万円",
+        "actual_surface_ja": "83,334百万円",
+        "percentage_error": 0.4024,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "14_2023-05-11_tanshin.pdf",
+          "10_2024-05-10_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "forecast_surface_ja": "80,000百万円",
+        "actual_surface_ja": "83,408百万円",
+        "percentage_error": 4.26,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "10_2024-05-10_tanshin.pdf",
+          "06_2025_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "forecast_surface_ja": "85,000百万円",
+        "actual_surface_ja": "94,051百万円",
+        "percentage_error": 10.6482,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "06_2025_FY_tanshin.pdf",
+          "02_2026_FY_tanshin.pdf"
+        ]
+      }
+    ],
     "components": [
       {
         "dimension": "strategic_coherence",
@@ -1219,7 +1237,7 @@
         "evidence_sufficiency": "sufficient",
         "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "経営陣が掲げる長期ビジョンおよび中期経営計画（NBj計画→NS計画→Evolution Plan）は、分譲マンション施工の強みを強固にしつつ、管理運営・リフォーム・不動産分譲・戸建・海外へと「住まいと暮らし」の領域を広げる戦略において一貫した論理性を保っている。各計画ともコア事業の強化と非請負分野の成長投資を両立させる姿勢を明示しており、戦略テーマの連続性は高い。一方で、海外事業や新規投資領域において減損損失や目標未達が生じるなど、一部の投資戦略において見通しの甘さや修正を余儀なくされた側面もあり、戦略的一貫性は概ね高いものの評価3にとどまる。",
+        "rationale_ja": "経営陣はNBs計画から現行のHASEKO Evolution Planに至るまで、「特建請負の競争力強化」と「管理運営・不動産開発の拡大」を両輪とする戦略を一貫して推進してきた。国内市場における分譲マンション施工シェアと管理戸数拡大のシナジーは論理的に極めて整合しており、高い営業利益率の維持に貢献している。一方で、将来の国内市場縮小に備えた海外事業拡大戦略は、ハワイでの過度な開発投資と巨額減損を招いており、海外リスク管理の観点において戦略の一貫性に一部課題を残した。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1228,11 +1246,11 @@
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
+        "rating": 2,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.75,
+        "normalized_score": 0.5,
         "weight": 0.25,
-        "rationale_ja": "経営施策のフォローアップにおいて、主力のマンション建築工事では年間施工量の維持と受注時採算のコントロールを着実に実行し、竣工案件の引き渡しを計画通り遂行してきた。管理運営事業においても受託戸数の積み上げやM&Aによる事業基盤の拡充を実行している。しかし、ハワイ等での海外不動産開発においては進捗の遅れや収益性の低下から特別損失（FY2025の減損損失168.6億円等）を計上したほか、買収した戸建子会社のシナジー発現による利益貢献はまだ途上である。本業請負の実行力は極めて高いが、投資先の収益化実行力には課題を残す。",
+        "rationale_ja": "国内のマンション建設請負および管理事業における現場実行力は非常に高い。資材費高騰やコロナ禍の試練に直面しながらも、施工効率化と適切な請負価格設定により利益を確保し、スマートマンション事業売却（FY2019）やウッドフレンズ買収（FY2026）などの構造改革も完遂した。しかし、ハワイ等での海外開発事業においては市況変化への対応が遅れ、FY2025に161億円の減損損失を計上するなど、海外投資の実行・撤退管理に課題を示した。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1241,11 +1259,11 @@
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 3,
+        "rating": 4,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.75,
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "過去10年間の業績予想精度を検証すると、観測された9期の通期連結経常利益予想のうち6期で実績が予想を上回り、3期で概ね計画通りの着地となった（大幅な下振れ未達成はない）。期初予想は慎重に設定され、期中に受注採算や不動産売却益の上ぶれを織り込んで上方修正・達成するパターンが定着している。中計目標に関しても、NS計画（5期累計経常利益4,000億円目標）をほぼ計画通り達成した。ただし、親会社株主に帰属する当期純利益においては特別損失（減損等）の計上により計画を下振れる年度（FY2025等）があり、経常益ベースの規律高さと純益ベースの変動性に乖離が存在する。",
+        "rationale_ja": "観察可能な9年間（FY2018〜FY2026）の通期連結経常利益予想において、同社は9期すべてで期初予想を達成または超過達成した（達成率100%）。期初予想を現実的かつ堅実に設定し、手持ち工事の消化と不動産売却の期中コントロールを通じて確実に達成する経営規律は極めて堅固である。また中期計画の累計利益目標（NBj計画の2,400億円、NS計画の4,000億円）も予定通り完遂している。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1254,11 +1272,11 @@
       },
       {
         "dimension": "accountability_transparency",
-        "rating": 2,
+        "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.5,
+        "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "決算短信における経営成績の qualitative な説明やセグメント情報の開示、受注高・繰越高の内訳数値開示は適切に行われており、一定の透明性は保たれている。しかし、海外事業での減損損失計上や投資有価証券評価損の発生に際し、その根本要因や今後の構造的改善策に関する開示は定型的な説明にとどまっている。また、セグメント別投下資本やROIC等の具体的な資本効率指標が直接開示されておらず、不動産開発資産やM&A投資に対する個別の定量的なリターン実績が外部から検証しにくい点に開示上の制限がある。",
+        "rationale_ja": "FY2025における海外開発不動産の巨額減損損失（161.12億円）や、FY2027第1四半期でのグループ内組織再編に伴う個別純利益予想の下方修正について、同社は発生要因と連結業績への影響（連結への影響なし）を明確に開示した。さらにセグメント再編の経緯や、新中期計画におけるネット投資額（4,000億円）および総還元性向50%・累進配当の明記など、説明責任と透明性は高く保たれている。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1269,6 +1287,6 @@
     "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
   },
   "model_notes": [
-    "開示資料に記載された事実・定量的数値に基づき、忠実に情報を抽出して作成。"
+    "各決算短信における数値・注記は原文の開示表面の通り抽出しており、セグメント名称の変更（サービス関連事業→管理運営事業・海外事業への細分化等）は各期の開示内容に準拠しています。"
   ]
 }

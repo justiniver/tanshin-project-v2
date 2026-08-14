@@ -5,12 +5,12 @@
       "content-type": "application/json; charset=UTF-8",
       "vary": "Origin, X-Origin, Referer",
       "content-encoding": "gzip",
-      "date": "Fri, 14 Aug 2026 01:21:26 GMT",
+      "date": "Fri, 14 Aug 2026 07:46:49 GMT",
       "server": "scaffolding on HTTPServer2",
       "x-xss-protection": "0",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "server-timing": "gfet4t7; dur=90256",
+      "server-timing": "gfet4t7; dur=134293",
       "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
       "transfer-encoding": "chunked"
     }
@@ -20,8 +20,8 @@
       "content": {
         "parts": [
           {
-            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"1808\",\n    \"company_name_ja\": \"株式会社長谷工コーポレーション\",\n    \"company_name_en\": \"HASEKO Corporation\",\n    \"latest_filename\": \"01_2027_Q1_tanshin.pdf\",\n    \"latest_period_ja\": \"2027年3月期 第1四半期\",\n    \"latest_period_en\": \"FY2027 Q1\"\n  },\n  \"filings\": [\n    {\n      \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n      \"fiscal_year\": 2017,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2017年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 49,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2017年3月期の連結業績は、売上高7,723億円（前期比1.9%減）、営業利益890億円（同29.5%増）、経常利益888億円（同31.9%増）、親会社株主に帰属する当期純利益588億円（同14.7%増）。マンション建築工事の完成工事総利益率の改善により利益が増加した。\"\n        },\n        {\n          \"category\": \"segments_and_business_drivers\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"建設関連事業の売上高は5,687億円（前期比4.6%減）、営業利益は819億円（同14.8%増）。物件の大型化等により受注時採算と完成工事総利益率が改善した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 20,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"当期において配当金45.09億円を支払った。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2017,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"88,827百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2018,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"95,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"34_2018-05-11_tanshin.pdf\",\n      \"fiscal_year\": 2018,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2018年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 51,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2018年3月期の連結業績は、売上高8,133億円（前期比5.3%増）、営業利益1,008億円（同13.2%増）、経常利益1,005億円（同13.1%増）、親会社株主に帰属する当期純利益723億円（同23.0%増）。マンション建築工事の施工量増大と完成工事総利益率の改善が寄与。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 10,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"中期経営計画「NBj計画」（2018年3月期～2020年3月期）を策定。3期合計連結経常利益2,400億円を目指す。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"自己株式の取得により44.98億円を支出し、配当金120.24億円を支払った。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2018,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"100,497百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2019,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"95,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"30_2019-05-10_tanshin.pdf\",\n      \"fiscal_year\": 2019,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2019年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 49,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2019年3月期の連結業績は、売上高8,910億円（前期比9.6%増）、営業利益984億円（同2.4%減）、経常利益1,004億円（同0.1%減）、親会社株主に帰属する当期純利益874億円（同20.9%増）。事業譲渡益の計上により純利益が増加した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 33,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"子会社（長谷工アネシス）のスマートマンション事業を譲渡し、事業譲渡益213.49億円を特別利益に計上した。配当金支出は150.30億円。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2019,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"100,369百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2020,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"26_2020-05-14_tanshin.pdf\",\n      \"fiscal_year\": 2020,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2020年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 51,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2020年3月期の連結業績は、売上高8,460億円（前期比5.0%減）、営業利益859億円（同12.7%減）、経常利益853億円（同15.1%減）、親会社株主に帰属する当期純利益599億円（同31.5%減）。完成工事総利益率の低下や前期の事業譲渡益反動が影響した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 34,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"株式会社細田工務店を株式公開買付け等により買収（取得原価21.86億円、発生した負ののれん22.27億円）。自己株式取得54.48億円、配当金支払270.53億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2020,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,253百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2021,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"70,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"22_2021-05-13_tanshin.pdf\",\n      \"fiscal_year\": 2021,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2021年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2021年3月期の連結業績は、売上高8,094億円（前期比4.3%減）、営業利益729億円（同15.1%減）、経常利益718億円（同15.7%減）、親会社株主に帰属する当期純利益483億円（同19.4%減）。新型コロナ感染症の影響による施工量減少及び完成工事総利益率低下が影響。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 10,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"中期経営計画「HASEKO Next Stage Plan（NS計画）」（2021年3月期～2025年3月期）を推進。5期合計連結経常利益4,000億円を目指す。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"自己株式取得215.24億円、配当金支払249.62億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2021,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"71,832百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2022,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"75,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"18_2022-05-12_tanshin.pdf\",\n      \"fiscal_year\": 2022,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2022年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 52,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2022年3月期の連結業績は、売上高9,097億円（前期比12.4%増）、営業利益827億円（同13.4%増）、経常利益819億円（同14.0%増）、親会社株主に帰属する当期純利益545億円（同12.9%増）。不動産売上高の伸長が利益を牽引した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"自己株式取得30.87億円、配当金支払195.03億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2022,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"81,871百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2023,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"14_2023-05-11_tanshin.pdf\",\n      \"fiscal_year\": 2023,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2023年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2023年3月期の連結業績は、売上高1兆273億円（前期比12.9%増）、営業利益902億円（同9.0%増）、経常利益883億円（同7.8%増）、親会社株主に帰属する当期純利益593億円（同8.9%増）。売上高は過去最高を記録。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"自己株式取得35.32億円、配当金支払235.97億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2023,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"88,265百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2024,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"10_2024-05-10_tanshin.pdf\",\n      \"fiscal_year\": 2024,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2024年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2024年3月期の連結業績は、売上高1兆944億円（前期比6.5%増）、営業利益857億円（同4.9%減）、経常利益833億円（同5.6%減）、親会社株主に帰属する当期純利益560億円（同5.5%減）。完成工事総利益率の低下が影響。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"配当金支払222.09億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2024,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,334百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2025,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"80,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"06_2025_FY_tanshin.pdf\",\n      \"fiscal_year\": 2025,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2025年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 54,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2025年3月期の連結業績は、売上高1兆1,774億円（前期比7.6%増）、営業利益847億円（同1.2%減）、経常利益834億円（同0.1%増）、親会社株主に帰属する当期純利益345億円（同38.5%減）。海外関連事業における減損損失や投資有価証券評価損等の特別損失計上が純利益の押し下げ要因となった。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 10,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"新中期経営計画「HASEKO Evolution Plan」（2026年3月期～2031年3月期）を策定。2028年3月期に連結経常利益1,000億円以上、2031年3月期に1,300億円以上を目指す。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 41,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"株式会社ウッドフレンズに対する公開買付けの実施を決議（買付代金約25.08億円、完全子会社化を目指す）。配当金支払235.83億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2025,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,408百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2026,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"fiscal_year\": 2026,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2026年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 53,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）。完成工事高増加および完成工事総利益率の改善が寄与。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 21,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"自己株式取得200.55億円、配当金支払247.10億円を実施。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2026,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"94,051百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2027,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"105,000百万円\",\n          \"pdf_page\": 1\n        }\n      }\n    },\n    {\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"fiscal_year\": 2027,\n      \"period\": \"Q1\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"is_latest\": true,\n      \"pdf_page_count\": 14,\n      \"items\": [\n        {\n          \"category\": \"business_overview\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"長谷工コーポレーションは分譲マンションを中心とした施工・設計・企画を行う建設関連事業、不動産分譲・開発を行う不動産関連事業、マンション管理・賃貸運営代行等の管理運営事業、海外事業を展開する。\"\n        },\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2027年3月期第1四半期の連結累計実績は、売上高3,121億円（前年同期比9.2%増）、営業利益299億円（同46.0%増）、経常利益305億円（同58.9%増）、親会社株主に帰属する四半期純利益213億円（同68.5%増）。完成工事総利益率の上昇が増益に寄与。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"当第1四半期末の連結総資産は1兆3,531億円（前連結会計年度末比647億円減）。預り金の減少に伴い現金預金が減少したこと等による。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"グループ内組織再編に伴う特別利益計上の見込みを精査した結果、特別利益を不計上としたため、2027年3月期通期の個別当期純利益予想を760億円から690億円（対前期比37.3%増）へ下片修正。なお連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更はない。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 13,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2026年8月6日の取締役会において、株式給付信託（BBT）及び株式給付型ESOPへの追加拠出に伴い、第三者割当による自己株式の処分（処分株式数：普通株式4,151,500株、処分価額：1株につき2,659.5円、処分総額：110.41億円、処分期日：2026年8月21日）を行うことを決議した。\"\n        }\n      ],\n      \"annual_financial_anchor\": null\n    }\n  ],\n  \"capital_allocation_tracks\": [\n    {\n      \"track_label_ja\": \"株主還元（配当・自己株式取得）\",\n      \"track_type\": \"shareholder_return\",\n      \"capital_destination_ja\": \"株主還元\",\n      \"start_fiscal_year\": 2017,\n      \"end_fiscal_year\": 2026,\n      \"stated_rationale_ja\": \"強固な財務基盤を維持しつつ、安定的な配当の継続実施および機動的な自己株式取得を通じて株主還元を拡充する。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2017,\n          \"period_label_ja\": \"2017年3月期 通期\",\n          \"input_type\": \"shareholder_distribution\",\n          \"amount_or_scale_ja\": \"4,509百万円\",\n          \"input_ja\": \"年間配当金の支払いを実施。\",\n          \"relative_priority_ja\": null\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期 通期\",\n          \"input_type\": \"shareholder_distribution\",\n          \"amount_or_scale_ja\": \"44,765百万円\",\n          \"input_ja\": \"配当金支払24,710百万円および自己株式取得20,055百万円を実施。\",\n          \"relative_priority_ja\": \"総還元性向50%程度を目安とした還元強化方針に基づく分配。\"\n        }\n      ],\n      \"immediate_effects\": [\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期 通期\",\n          \"effect_type\": \"distribution_execution\",\n          \"effect_ja\": \"配当支払いおよび自己株式取得による現金流出の実行。\"\n        }\n      ],\n      \"subsequent_returns\": [],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    },\n    {\n      \"track_label_ja\": \"株式会社細田工務店の買収・子会社化\",\n      \"track_type\": \"acquisition\",\n      \"capital_destination_ja\": \"戸建分譲住宅事業の強化（細田工務店）\",\n      \"start_fiscal_year\": 2020,\n      \"end_fiscal_year\": 2020,\n      \"stated_rationale_ja\": \"木造戸建分譲住宅の設計・施工・販売の強みをグループに取り込み、「住まいと暮らし」に関する事業拡大を図るため。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"26_2020-05-14_tanshin.pdf\",\n          \"fiscal_year\": 2020,\n          \"period_label_ja\": \"2020年3月期 通期\",\n          \"input_type\": \"acquisition_or_investment_spend\",\n          \"amount_or_scale_ja\": \"2,186百万円\",\n          \"input_ja\": \"株式公開買付け等により細田工務店株式を取得。\",\n          \"relative_priority_ja\": null\n        }\n      ],\n      \"immediate_effects\": [\n        {\n          \"source_filename\": \"26_2020-05-14_tanshin.pdf\",\n          \"fiscal_year\": 2020,\n          \"period_label_ja\": \"2020年3月期 通期\",\n          \"effect_type\": \"goodwill_or_negative_goodwill\",\n          \"effect_ja\": \"負ののれん発生益2,227百万円を特別利益に計上。\"\n        }\n      ],\n      \"subsequent_returns\": [],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    }\n  ],\n  \"research_notes\": [\n    \"開示資料に記載された事実・定量的数値に基づき、忠実に情報を抽出して作成。\"\n  ]\n}",
-            "thought_signature": "EmcKZQERTTIPt0HZxPYFg7vJvVno_xELFhQYds7tF4VP2iGqGlpb7UHyl5lmjVod7PjoPMwnzSKkzZ3fja2QYUBWBtnln6KBY5iYNiieRVJfQcGHNCsCX7wTGKGYHj6BGTGIsvlr6x8Q"
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"1808\",\n    \"company_name_ja\": \"株式会社長谷工コーポレーション\",\n    \"company_name_en\": \"HASEKO Corporation\",\n    \"latest_filename\": \"01_2027_Q1_tanshin.pdf\",\n    \"latest_period_ja\": \"2027年3月期 第1四半期\",\n    \"latest_period_en\": \"FY2027 Q1\"\n  },\n  \"filings\": [\n    {\n      \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n      \"fiscal_year\": 2017,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2017年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 49,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2017年3月期通期の連結業績は、売上高7,723億円（前期比1.9%減）、営業利益890億円（同29.5%増）、経常利益888億円（同31.9%増）、親会社株主に帰属する当期純利益588億円（同14.7%増）となった。マンション建築工事の完成工事総利益率の改善が利益を押し上げた。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2017年3月期末の連結総資産は6,309億円（前年度末比409億円増）。有利子負債残高は1,419億円（同329億円減）、純資産は2,385億円（同531億円増）。自己資本比率は37.7%となり前年度末（31.3%）から上昇した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"営業キャッシュ・フローは1,095億円の収入超過、投資キャッシュ・フローは198億円の支出超過（有形・無形固定資産取得241億円等）、財務キャッシュ・フローは402億円の支出超過（長期借入金返済627億円等）。期末現金及び現金同等物は2,015億円。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 10,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"中期経営計画「NBs計画」（2015年3月期〜2017年3月期）が終了し、2018年3月期より新3ヶ年中期経営計画「NBj計画」（2018年3月期〜2020年3月期）をスタート。3期合計連結経常利益2,400億円、2020年3月期連結子会社経常利益200億円以上を目指す。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 7,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2018年3月期の通期連結業績予想は、売上高8,000億円（前期比3.6%増）、営業利益920億円（同3.3%増）、経常利益910億円（同2.4%増）、親会社株主に帰属する当期純利益630億円（同7.2%増）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2017,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"88,827百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2018,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"91,000百万円\",\n          \"pdf_page\": 7\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"34_2018-05-11_tanshin.pdf\",\n      \"fiscal_year\": 2018,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2018年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 51,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2018年3月期通期の連結業績は、売上高8,133億円（前期比5.3%増）、営業利益1,008億円（同13.2%増）、経常利益1,005億円（同13.1%増）、親会社株主に帰属する当期純利益723億円（同23.0%増）となり増収増益。施工量の増大と完成工事総利益率の改善が寄与した。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2018年3月期末の連結総資産は6,883億円（前年度末比574億円増）。有利子負債残高は1,254億円（同164億円減）、純資産は2,968億円（同584億円増）。自己資本比率は43.0%に上昇。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"営業キャッシュ・フローは565億円の収入超過。投資キャッシュ・フローは164億円の支出超過（有形・無形固定資産取得286億円等）。財務キャッシュ・フローは347億円の支出超過（長期借入金返済305億円、配当金支払120億円、自己株式取得45億円等）。\"\n        },\n        {\n          \"category\": \"material_footnote\",\n          \"pdf_page\": 26,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"業績連動型株式報酬制度として「株式給付信託（BBT）」及び「株式給付型ESOP」を導入し、信託が保有する自社株式を純資産の部に自己株式として計上（期末でBBT7.96億円、ESOP36.93億円）。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 7,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2019年3月期の通期連結業績予想は、売上高8,800億円（前期比8.2%増）、営業利益965億円（同4.3%減）、経常利益950億円（同5.5%減）、親会社株主に帰属する当期純利益750億円（同3.7%増）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2018,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"100,497百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2019,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"95,000百万円\",\n          \"pdf_page\": 7\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"30_2019-05-10_tanshin.pdf\",\n      \"fiscal_year\": 2019,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2019年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 49,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2019年3月期通期の連結業績は、売上高8,910億円（前期比9.6%増）、営業利益984億円（同2.4%減）、経常利益1,004億円（同0.1%減）、親会社株主に帰属する当期純利益874億円（同20.9%増）。売上増の一方で完成工事総利益率低下により営業利益は微減、特別利益（事業譲渡益）により純利益は増加した。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 33,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2018年7月1日付で連結子会社・長谷工アネシスのスマートマンション事業（高圧一括受電等）を関西電力子会社のNext Power(株)へ吸収分割により譲渡。事業譲渡益213.49億円を特別利益に計上。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2019年3月期末の連結総資産は7,732億円（前年度末比855億円増）。有利子負債残高は1,209億円（同45億円減）、純資産は3,681億円（同712億円増）。自己資本比率は47.5%に上昇。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2020年3月期の通期連結業績予想は、売上高8,600億円（前期比3.5%減）、営業利益860億円（同12.6%減）、経常利益850億円（同15.3%減）、親会社株主に帰属する当期純利益600億円（同31.3%減）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2019,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"100,369百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2020,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"26_2020-05-14_tanshin.pdf\",\n      \"fiscal_year\": 2020,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2020年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 51,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2020年3月期通期の連結業績は、売上高8,460億円（前期比5.0%減）、営業利益859億円（同12.7%減）、経常利益853億円（同15.1%減）、親会社株主に帰属する当期純利益599億円（同31.5%減）。不動産取扱量の減少及び完成工事総利益率低下が響いた。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 34,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2020年2月に木造戸建住宅事業を手掛ける(株)細田工務店を株式公開買付け等により完全子会社化（取得原価21.86億円）。負ののれん発生益22.27億円を特別利益に計上。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 9,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"2021年3月期より5ヶ年中期経営計画「HASEKO Next Stage Plan（NS計画）」（2021年3月期〜2025年3月期）を開始。最終年度の2025年3月期連結経常利益1,000億円、5期合計連結経常利益4,000億円、総還元性向40%程度を目指す。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"新型コロナウイルス感染症の影響に伴うモデルルーム来客減や修繕工事遅延等を前提とし、2021年3月期の連結業績予想は売上高8,000億円（前期比5.4%減）、営業利益725億円（同15.6%減）、経常利益700億円（同17.9%減）、親会社株主に帰属する当期純利益490億円（同18.1%減）と試算。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2020,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,253百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2021,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"70,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"22_2021-05-13_tanshin.pdf\",\n      \"fiscal_year\": 2021,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2021年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2021年3月期通期の連結業績は、売上高8,094億円（前期比4.3%減）、営業利益729億円（同15.1%減）、経常利益718億円（同15.7%減）、親会社株主に帰属する当期純利益483億円（同19.4%減）。新型コロナ影響による工事施工量減少や完成工事総利益率低下が要因。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2021年3月期末の連結総資産は9,537億円（前年度末比1,543億円増）。不動産取得等により販売用不動産や不動産事業支出金が増加。有利子負債残高は2,683億円（同1,156億円増）。自己資本比率は41.4%。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"営業キャッシュ・フローは319億円の収入超過。投資キャッシュ・フローは358億円の支出超過（固定資産取得298億円等）。財務キャッシュ・フローは668億円の収入超過（社債発行・借入調達が返済を上回る。自己株式取得215億円、配当250億円等）。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 7,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2022年3月期の通期連結業績予想は、売上高8,500億円（前期比5.0%増）、営業利益780億円（同7.0%増）、経常利益750億円（同4.4%増）、親会社株主に帰属する当期純利益510億円（同5.7%増）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2021,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"71,832百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2022,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"75,000百万円\",\n          \"pdf_page\": 7\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"18_2022-05-12_tanshin.pdf\",\n      \"fiscal_year\": 2022,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2022年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 52,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2022年3月期通期の連結業績は、売上高9,097億円（前期比12.4%増）、営業利益827億円（同13.4%増）、経常利益819億円（同14.0%増）、親会社株主に帰属する当期純利益545億円（同12.9%増）。分譲マンションの引渡し順調等による不動産利益の増加が牽引。\"\n        },\n        {\n          \"category\": \"material_footnote\",\n          \"pdf_page\": 27,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"当期首より「収益認識に関する会計基準」等を適用。累積的影響額として期首利益剰余金を118.81億円減額修正した。\"\n        },\n        {\n          \"category\": \"segments_and_business_drivers\",\n          \"pdf_page\": 3,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"海外関連事業（ハワイでの戸建分譲・商業施設開発）において、資産の使用可能性の見直しに伴い一部資産を一括費用処理した結果、営業損失43億円（前期は営業損失11億円）を計上。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2023年3月期の通期連結業績予想は、売上高9,600億円（前期比5.5%増）、営業利益870億円（同5.2%増）、経常利益850億円（同3.8%増）、親会社株主に帰属する当期純利益570億円（同4.6%増）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2022,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"81,871百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2023,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"14_2023-05-11_tanshin.pdf\",\n      \"fiscal_year\": 2023,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2023年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2023年3月期通期の連結業績は、売上高1兆273億円（前期比12.9%増）、営業利益902億円（同9.0%増）、経常利益883億円（同7.8%増）、親会社株主に帰属する当期純利益593億円（同8.9%増）となり過去最高の売上高を記録。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2023年3月期末の連結総資産は1兆1,981億円（前年度末比1,162億円増）。仕入拡大等で販売用不動産及び不動産事業支出金が増加。有利子負債残高は3,918億円（同796億円増）。営業キャッシュ・フローは519億円の支出超過。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"年間配当金を1株当たり80円（前年と同額）とし、自己株式取得35億円を実施。財務キャッシュ・フローは借入金・社債の調達等により508億円の収入超過。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2024年3月期の通期連結業績予想は、売上高1兆800億円（前期比5.1%増）、営業利益880億円（同2.4%減）、経常利益830億円（同6.0%減）、親会社株主に帰属する当期純利益555億円（同6.4%減）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2023,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"88,265百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2024,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"10_2024-05-10_tanshin.pdf\",\n      \"fiscal_year\": 2024,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2024年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 50,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2024年3月期通期の連結業績は、売上高1兆944億円（前期比6.5%増）、営業利益857億円（同4.9%減）、経常利益833億円（同5.6%減）、親会社株主に帰属する当期純利益560億円（同5.5%減）。資材・労務費高騰による完成工事総利益率の低下が減益要因。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2024年3月期末の連結総資産は1兆3,512億円（前年度末比1,531億円増）。棚卸資産の売却・回収等により営業キャッシュ・フローは1,150億円の収入超過に転じた。有利子負債残高は4,153億円。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 5,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"年間配当金を1株当たり85円（前年比5円増配）に拡充。「NS計画」4年目として成長戦略投資を実施。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2025年3月期（NS計画最終年）の通期連結業績予想は、売上高1兆1,800億円（前期比7.8%増）、営業利益820億円（同4.4%減）、経常利益800億円（同4.0%減）、親会社株主に帰属する当期純利益530億円（同5.4%減）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2024,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,334百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2025,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"80,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"06_2025_FY_tanshin.pdf\",\n      \"fiscal_year\": 2025,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2025年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 54,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2025年3月期通期の連結業績は、売上高1兆1,774億円（前期比7.6%増）、営業利益847億円（同1.2%減）、経常利益834億円（同0.1%増）、親会社株主に帰属する当期純利益345億円（同38.5%減）。売上高・経常利益は期初予想を上回ったものの、海外事業での減損損失（168.61億円）や投資有価証券評価損（29.90億円）、訴訟損失引当金繰入（30.06億円）の特別損失計上により大幅減益。\"\n        },\n        {\n          \"category\": \"segments_and_business_drivers\",\n          \"pdf_page\": 3,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"海外関連事業にて売上高35億円、営業損失57億円を計上。さらにハワイ等の不動産等に関し減損損失161.12億円を特別損失として計上した。\"\n        },\n        {\n          \"category\": \"strategy_and_execution\",\n          \"pdf_page\": 10,\n          \"statement_type\": \"target\",\n          \"summary_ja\": \"新中期経営計画「HASEKO Evolution Plan」（2026年3月期〜2031年3月期）を策定。2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上、ROE10%超（2031年3月期までに13%程度）、6期合計ネット投資額4,000億円、総還元性向50%程度・累進配当を掲げる。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 41,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"重要な後発事象として、2025年4月10日取締役会にて(株)ウッドフレンズの普通株式に対する公開買付け（TOB）の実施を決願。完全子会社化を目指し、買付代金25.08億円を自己資金で充当予定。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2026年3月期の通期連結業績予想は、売上高1兆2,300億円（前期比4.5%増）、営業利益920億円（同8.6%増）、経常利益850億円（同1.9%増）、親会社株主に帰属する当期純利益550億円（同59.7%増）を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2025,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"83,408百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2026,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"85,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n      \"fiscal_year\": 2026,\n      \"period\": \"FY\",\n      \"period_label_ja\": \"2026年3月期 通期\",\n      \"is_latest\": false,\n      \"pdf_page_count\": 53,\n      \"items\": [\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2026年3月期通期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）となり大きく増収増益。「HASEKO Evolution Plan」初年度として、完成工事総利益率の改善や不動産取扱量増加が寄与。\"\n        },\n        {\n          \"category\": \"segments_and_business_drivers\",\n          \"pdf_page\": 3,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"建設関連事業は売上高9,009億円（前期比7.0%増）、営業利益685億円（同21.6%増）。不動産関連事業は売上高2,932億円（同16.0%増）、営業利益356億円（同9.2%増）。管理運営事業は売上高1,654億円（同8.8%増）、営業利益82億円（同26.6%増）。海外事業は売上高43億円、営業損失61億円（前年は損失57億円）。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 36,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"(株)ウッドフレンズを公開買付け及び売渡請求により100%完全子会社化（取得原価25.08億円）。木造・木質化住宅事業の強化を図る。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2026年3月期末の連結総資産は1兆4,177億円（前年度末比525億円増）。棚卸資産の減少等により営業キャッシュ・フローは1,574億円の大幅な収入超過。投資キャッシュ・フローは投資有価証券取得347億円等により532億円の支出超過、財務キャッシュ・フローは自己株式取得201億円等により534億円の支出超過。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 6,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、営業利益1,100億円（同11.4%増）、経常利益1,050億円（同11.6%増）、親会社株主に帰属する当期純利益660億円（同20.4%増）と増収増益を見込む。\"\n        }\n      ],\n      \"annual_financial_anchor\": {\n        \"metric\": \"ordinary_profit\",\n        \"metric_label_ja\": \"経常利益\",\n        \"scope\": \"consolidated\",\n        \"scope_label_ja\": \"連結\",\n        \"value_kind\": \"monetary\",\n        \"actual\": {\n          \"target_fiscal_year\": 2026,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"94,051百万円\",\n          \"pdf_page\": 1\n        },\n        \"next_original_forecast\": {\n          \"target_fiscal_year\": 2027,\n          \"target_period\": \"FY\",\n          \"value_surface_ja\": \"105,000百万円\",\n          \"pdf_page\": 6\n        }\n      },\n      \"unavailable_categories\": []\n    },\n    {\n      \"source_filename\": \"01_2027_Q1_tanshin.pdf\",\n      \"fiscal_year\": 2027,\n      \"period\": \"Q1\",\n      \"period_label_ja\": \"2027年3月期 第1四半期\",\n      \"is_latest\": true,\n      \"pdf_page_count\": 14,\n      \"items\": [\n        {\n          \"category\": \"business_overview\",\n          \"pdf_page\": 4,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"当社グループはマンション請負建築を中心とする建設関連事業、分譲・賃貸不動産の開発・販売を行う不動産関連事業、建物・賃貸管理や有料老人ホーム等の管理運営事業、ハワイ等での海外事業を展開する総合建設・不動産グループ。\"\n        },\n        {\n          \"category\": \"operating_results\",\n          \"pdf_page\": 1,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2027年3月期第1四半期の連結業績は、売上高3,121.48億円（前年同期比9.2%増）、営業利益298.57億円（同46.0%増）、経常利益304.55億円（同58.9%増）、親会社株主に帰属する四半期純利益212.87億円（同68.5%増）の大幅増収増益。完成工事総利益率の上昇が主因。\"\n        },\n        {\n          \"category\": \"segments_and_business_drivers\",\n          \"pdf_page\": 2,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"建設関連事業は売上高2,350億円（前年同期比3.7%増）、営業利益232億円（同50.6%増）。新築分譲マンション受注は首都圏13件・近畿東海6件の計19件。不動産関連事業は売上高598億円（同18.6%増）、営業利益69億円（同12.2%増）。管理運営事業は売上高375億円（同0.4%減）、営業利益17億円（同3.9%減）。海外事業は売上高12億円、営業損失4億円。\"\n        },\n        {\n          \"category\": \"financial_condition\",\n          \"pdf_page\": 3,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2027年3月期第1四半期末の連結総資産は1兆3,530.50億円（前連結会計年度末比646.74億円減）。預り金減少に伴い現金預金が2,302.93億円に減少。負債合計は7,824.07億円（同718.67億円減）、純資産合計は5,706.43億円（同71.92億円増）。自己資本比率は42.1%へ上昇。\"\n        },\n        {\n          \"category\": \"forward_looking_information\",\n          \"pdf_page\": 3,\n          \"statement_type\": \"forecast\",\n          \"summary_ja\": \"2027年3月期通期の連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更なし。なお個別業績予想はグループ内組織再編に伴う特別利益の見直しにより中間純利益465億円（従来比70億円減）、通期純利益690億円（同70億円減）に下方修正。\"\n        },\n        {\n          \"category\": \"capital_allocation\",\n          \"pdf_page\": 11,\n          \"statement_type\": \"actual\",\n          \"summary_ja\": \"2026年8月6日取締役会決議により、BBT及びESOP制度継続のため、みずほ信託銀行及びりそな銀行の再信託受託者（日本カストディ銀行）に対し第三者割当による自己株式処分（処分株数4,151,500株、処分価額2,659.5円/株、処分総額110.41億円、処分期日2026年8月21日）を実施することを決定。\"\n        }\n      ],\n      \"annual_financial_anchor\": null,\n      \"unavailable_categories\": []\n    }\n  ],\n  \"capital_allocation_tracks\": [\n    {\n      \"track_label_ja\": \"不動産関連事業への資産投下と収益不動産・分譲開発\",\n      \"track_type\": \"organic_accumulation\",\n      \"capital_destination_ja\": \"不動産関連事業（棚卸資産：販売用不動産・不動産事業支出金・開発用不動産等）\",\n      \"start_fiscal_year\": 2017,\n      \"end_fiscal_year\": 2026,\n      \"stated_rationale_ja\": \"「NS計画」および「HASEKO Evolution Plan」において、安定収益源の確立や不動産分譲・賃貸開発の事業エリア拡大を目的として成長戦略投資を推進。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2017,\n          \"period_label_ja\": \"2017年3月期\",\n          \"input_type\": \"segment_or_operating_assets\",\n          \"amount_or_scale_ja\": \"不動産関連事業セグメント資産：2,783.09億円（販売用不動産516.84億円、不動産事業支出金531.88億円、開発用不動産等240.32億円）\",\n          \"input_ja\": \"不動産関連事業のセグメント資産及び棚卸資産残高\",\n          \"relative_priority_ja\": null\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"input_type\": \"segment_or_operating_assets\",\n          \"amount_or_scale_ja\": \"不動産関連事業セグメント資産：6,339.33億円（販売用不動産2,548.20億円、不動産事業支出金2,964.45億円、開発用不動産等354.52億円）\",\n          \"input_ja\": \"積極的な用地仕入や不動産開発投資の継続によりセグメント資産が大幅増加\",\n          \"relative_priority_ja\": \"成長戦略投資として最優先領域の一つに位置付け\"\n        }\n      ],\n      \"immediate_effects\": [],\n      \"subsequent_returns\": [\n        {\n          \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2017,\n          \"period_label_ja\": \"2017年3月期\",\n          \"return_type\": \"profit_or_loss\",\n          \"return_ja\": \"不動産関連事業セグメント利益：97.20億円（売上高2,083億円）\",\n          \"attribution\": \"direct\",\n          \"signal\": \"positive\"\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"return_type\": \"profit_or_loss\",\n          \"return_ja\": \"不動産関連事業セグメント利益：355.79億円（売上高2,932億円）\",\n          \"attribution\": \"direct\",\n          \"signal\": \"positive\"\n        }\n      ],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    },\n    {\n      \"track_label_ja\": \"海外事業（米国ハワイ等での開発投資）\",\n      \"track_type\": \"organic_accumulation\",\n      \"capital_destination_ja\": \"海外事業セグメント（ハワイ州オアフ島等での商業施設運営・戸建分譲・不動産開発）\",\n      \"start_fiscal_year\": 2017,\n      \"end_fiscal_year\": 2026,\n      \"stated_rationale_ja\": \"将来の国内マーケット縮小に備え、収益の柱の一つに育てるため海外不動産開発へ投資。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2017,\n          \"period_label_ja\": \"2017年3月期\",\n          \"input_type\": \"segment_or_operating_assets\",\n          \"amount_or_scale_ja\": \"海外関連事業セグメント資産：351.95億円\",\n          \"input_ja\": \"海外不動産開発プロジェクト等への資本投入\",\n          \"relative_priority_ja\": null\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"input_type\": \"segment_or_operating_assets\",\n          \"amount_or_scale_ja\": \"海外事業セグメント資産：1,584.80億円\",\n          \"input_ja\": \"海外における開発物件・商業施設等の資産蓄積\",\n          \"relative_priority_ja\": \"新規領域への積極投資対象\"\n        }\n      ],\n      \"immediate_effects\": [],\n      \"subsequent_returns\": [\n        {\n          \"source_filename\": \"18_2022-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2022,\n          \"period_label_ja\": \"2022年3月期\",\n          \"return_type\": \"profit_or_loss\",\n          \"return_ja\": \"海外関連事業営業損失43億円（資産使用可能性の見直しに伴う一括費用処理等の影響）\",\n          \"attribution\": \"direct\",\n          \"signal\": \"negative\"\n        },\n        {\n          \"source_filename\": \"06_2025_FY_tanshin.pdf\",\n          \"fiscal_year\": 2025,\n          \"period_label_ja\": \"2025年3月期\",\n          \"return_type\": \"impairment_or_write_down\",\n          \"return_ja\": \"海外関連事業用不動産（ハワイ等）において減損損失161.12億円を特別損失計上、セグメント営業損失57億円\",\n          \"attribution\": \"direct\",\n          \"signal\": \"negative\"\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"return_type\": \"profit_or_loss\",\n          \"return_ja\": \"海外事業セグメント損失60.81億円（売上高43億円）\",\n          \"attribution\": \"direct\",\n          \"signal\": \"negative\"\n        }\n      ],\n      \"adverse_evidence_ja\": [\n        \"2022年3月期での資産一括費用化（営業損失43億円）\",\n        \"2025年3月期における大規模な減損損失（161.12億円）の計上\",\n        \"継続的なセグメント営業赤字の計上\"\n      ],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    },\n    {\n      \"track_label_ja\": \"スマートマンション事業の売却・事業再編\",\n      \"track_type\": \"divestiture\",\n      \"capital_destination_ja\": \"(株)長谷工アネシスのスマートマンション事業（高圧一括受電サービス・電力小売り）\",\n      \"start_fiscal_year\": 2019,\n      \"end_fiscal_year\": 2019,\n      \"stated_rationale_ja\": \"契約者への将来的な利便性向上及びエネルギー分野のリーディングカンパニー（関西電力グループ・Next Power(株)）への事業承継による選択と集中。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"30_2019-05-10_tanshin.pdf\",\n          \"fiscal_year\": 2019,\n          \"period_label_ja\": \"2019年3月期\",\n          \"input_type\": \"capacity_or_fixed_assets\",\n          \"amount_or_scale_ja\": \"移転資産合計79.08億円（流動資産8.04億円、固定資産71.04億円）\",\n          \"input_ja\": \"高圧一括受電設備等の事業資産の切り出し及び移転\",\n          \"relative_priority_ja\": \"ノンコア・周辺事業の整理・資産流動化\"\n        }\n      ],\n      \"immediate_effects\": [\n        {\n          \"source_filename\": \"30_2019-05-10_tanshin.pdf\",\n          \"fiscal_year\": 2019,\n          \"period_label_ja\": \"2019年3月期\",\n          \"effect_type\": \"disposal_gain_or_loss\",\n          \"effect_ja\": \"事業譲渡価額213.49億円、事業譲渡益213.49億円を特別利益に計上（差引現金収入204.01億円）\"\n        }\n      ],\n      \"subsequent_returns\": [],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    },\n    {\n      \"track_label_ja\": \"(株)ウッドフレンズの買収による木造・木質化住宅事業の強化\",\n      \"track_type\": \"acquisition\",\n      \"capital_destination_ja\": \"(株)ウッドフレンズ（木造戸建住宅・木質資源カスケード事業）\",\n      \"start_fiscal_year\": 2025,\n      \"end_fiscal_year\": 2026,\n      \"stated_rationale_ja\": \"CO2削減や居住者の健康・幸福感に寄与する「木造化及び木質化」の推進、マンション木造共用棟やハイブリッド木造住宅の展開加速。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"06_2025_FY_tanshin.pdf\",\n          \"fiscal_year\": 2025,\n          \"period_label_ja\": \"2025年3月期\",\n          \"input_type\": \"acquisition_or_investment_spend\",\n          \"amount_or_scale_ja\": \"株式公開買付け予定対価約25.08億円（自己資金）\",\n          \"input_ja\": \"TOBによる買収の決定\",\n          \"relative_priority_ja\": \"建築メニュー・木質化商材の拡充に向けたM&A\"\n        }\n      ],\n      \"immediate_effects\": [\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"effect_type\": \"purchase_price_or_proceeds\",\n          \"effect_ja\": \"取得原価25.08億円（TOB及び株式売渡請求により100%取得）、発生のれん2.88億円（即時一括償却）\"\n        }\n      ],\n      \"subsequent_returns\": [\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"return_type\": \"other_operating_or_financial_return\",\n          \"return_ja\": \"連結子会社化に伴い「建設関連事業」セグメント資産が179.45億円、「管理運営事業」セグメント資産が26.35億円増加\",\n          \"attribution\": \"direct\",\n          \"signal\": \"neutral\"\n        }\n      ],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"too_recent\",\n      \"disclosure_limit_ja\": \"連結直後のため事業単体の継続的収益・利益貢献の定量的開示は限定的。\"\n    },\n    {\n      \"track_label_ja\": \"株主還元（配当拡充及び機動的自己株式取得）\",\n      \"track_type\": \"shareholder_return\",\n      \"capital_destination_ja\": \"株主還元（剰余金配当及び自己株式取得）\",\n      \"start_fiscal_year\": 2017,\n      \"end_fiscal_year\": 2026,\n      \"stated_rationale_ja\": \"「NBs計画」「NS計画」「HASEKO Evolution Plan」において、総還元性向（40%〜50%程度）や配当下限の設定、累進配当の導入による株主還元の拡充を表明。\",\n      \"capital_inputs\": [\n        {\n          \"source_filename\": \"38_2017-05-12_tanshin.pdf\",\n          \"fiscal_year\": 2017,\n          \"period_label_ja\": \"2017年3月期\",\n          \"input_type\": \"shareholder_distribution\",\n          \"amount_or_scale_ja\": \"年間配当金1株当たり30円（総額90.18億円）\",\n          \"input_ja\": \"剰余金配当の実施\",\n          \"relative_priority_ja\": null\n        },\n        {\n          \"source_filename\": \"22_2021-05-13_tanshin.pdf\",\n          \"fiscal_year\": 2021,\n          \"period_label_ja\": \"2021年3月期\",\n          \"input_type\": \"shareholder_distribution\",\n          \"amount_or_scale_ja\": \"自己株式取得215.24億円、配当金総額199.45億円（1株70円）\",\n          \"input_ja\": \"大規模な自己株式取得と配当の継続\",\n          \"relative_priority_ja\": \"資本効率向上と株主還元向上\"\n        },\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"input_type\": \"shareholder_distribution\",\n          \"amount_or_scale_ja\": \"年間配当金1株当たり95円（総額256.80億円）、自己株式取得200.55億円\",\n          \"input_ja\": \"新中期計画の方針に基づく増配と自己株式取得\",\n          \"relative_priority_ja\": \"総還元性向50%程度を目指す還元強化\"\n        }\n      ],\n      \"immediate_effects\": [\n        {\n          \"source_filename\": \"02_2026_FY_tanshin.pdf\",\n          \"fiscal_year\": 2026,\n          \"period_label_ja\": \"2026年3月期\",\n          \"effect_type\": \"distribution_execution\",\n          \"effect_ja\": \"2026年3月期における配当支払い247.10億円及び自己株式取得200.55億円を実行\"\n        }\n      ],\n      \"subsequent_returns\": [],\n      \"adverse_evidence_ja\": [],\n      \"record_maturity\": \"mature_record\",\n      \"disclosure_limit_ja\": null\n    }\n  ],\n  \"research_notes\": [\n    \"各決算短信における数値・注記は原文の開示表面の通り抽出しており、セグメント名称の変更（サービス関連事業→管理運営事業・海外事業への細分化等）は各期の開示内容に準拠しています。\"\n  ]\n}",
+            "thought_signature": "EmcKZQERTTIPTFHLQHk0h3iF8owkeBk5RgYG8pYNnWFiANBslv47kZ_6Ibo6s_0h7fGd74xxzNbE7CHmtYmTmhXqNAazJIYtrZYiGtpeia8wg6M-tZp932ou_WpPGDZF2iSwPVXCSpx7"
           }
         ],
         "role": "model"
@@ -31,21 +31,21 @@
     }
   ],
   "model_version": "gemini-3.6-flash",
-  "response_id": "PW1-as7hBoCmvr0P98OGmQs",
+  "response_id": "Y8d-aumAKJii2roPktGWqQs",
   "usage_metadata": {
-    "candidates_token_count": 7680,
-    "prompt_token_count": 281833,
+    "candidates_token_count": 14153,
+    "prompt_token_count": 281940,
     "prompt_tokens_details": [
       {
         "modality": "TEXT",
-        "token_count": 3597
+        "token_count": 3704
       },
       {
         "modality": "IMAGE",
         "token_count": 278236
       }
     ],
-    "total_token_count": 289513
+    "total_token_count": 296093
   },
   "automatic_function_calling_history": [],
   "parsed": {
@@ -69,21 +69,33 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2017年3月期の連結業績は、売上高7,723億円（前期比1.9%減）、営業利益890億円（同29.5%増）、経常利益888億円（同31.9%増）、親会社株主に帰属する当期純利益588億円（同14.7%増）。マンション建築工事の完成工事総利益率の改善により利益が増加した。"
+            "summary_ja": "2017年3月期通期の連結業績は、売上高7,723億円（前期比1.9%減）、営業利益890億円（同29.5%増）、経常利益888億円（同31.9%増）、親会社株主に帰属する当期純利益588億円（同14.7%増）となった。マンション建築工事の完成工事総利益率の改善が利益を押し上げた。"
           },
           {
-            "category": "segments_and_business_drivers",
+            "category": "financial_condition",
             "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "建設関連事業の売上高は5,687億円（前期比4.6%減）、営業利益は819億円（同14.8%増）。物件の大型化等により受注時採算と完成工事総利益率が改善した。"
+            "summary_ja": "2017年3月期末の連結総資産は6,309億円（前年度末比409億円増）。有利子負債残高は1,419億円（同329億円減）、純資産は2,385億円（同531億円増）。自己資本比率は37.7%となり前年度末（31.3%）から上昇した。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 20,
+            "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "当期において配当金45.09億円を支払った。"
+            "summary_ja": "営業キャッシュ・フローは1,095億円の収入超過、投資キャッシュ・フローは198億円の支出超過（有形・無形固定資産取得241億円等）、財務キャッシュ・フローは402億円の支出超過（長期借入金返済627億円等）。期末現金及び現金同等物は2,015億円。"
+          },
+          {
+            "category": "strategy_and_execution",
+            "pdf_page": 10,
+            "statement_type": "target",
+            "summary_ja": "中期経営計画「NBs計画」（2015年3月期〜2017年3月期）が終了し、2018年3月期より新3ヶ年中期経営計画「NBj計画」（2018年3月期〜2020年3月期）をスタート。3期合計連結経常利益2,400億円、2020年3月期連結子会社経常利益200億円以上を目指す。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 7,
+            "statement_type": "forecast",
+            "summary_ja": "2018年3月期の通期連結業績予想は、売上高8,000億円（前期比3.6%増）、営業利益920億円（同3.3%増）、経常利益910億円（同2.4%増）、親会社株主に帰属する当期純利益630億円（同7.2%増）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -101,10 +113,11 @@
           "next_original_forecast": {
             "target_fiscal_year": 2018,
             "target_period": "FY",
-            "value_surface_ja": "95,000百万円",
-            "pdf_page": 1
+            "value_surface_ja": "91,000百万円",
+            "pdf_page": 7
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "34_2018-05-11_tanshin.pdf",
@@ -116,21 +129,33 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2018年3月期の連結業績は、売上高8,133億円（前期比5.3%増）、営業利益1,008億円（同13.2%増）、経常利益1,005億円（同13.1%増）、親会社株主に帰属する当期純利益723億円（同23.0%増）。マンション建築工事の施工量増大と完成工事総利益率の改善が寄与。"
+            "summary_ja": "2018年3月期通期の連結業績は、売上高8,133億円（前期比5.3%増）、営業利益1,008億円（同13.2%増）、経常利益1,005億円（同13.1%増）、親会社株主に帰属する当期純利益723億円（同23.0%増）となり増収増益。施工量の増大と完成工事総利益率の改善が寄与した。"
           },
           {
-            "category": "strategy_and_execution",
-            "pdf_page": 10,
-            "statement_type": "target",
-            "summary_ja": "中期経営計画「NBj計画」（2018年3月期～2020年3月期）を策定。3期合計連結経常利益2,400億円を目指す。"
+            "category": "financial_condition",
+            "pdf_page": 5,
+            "statement_type": "actual",
+            "summary_ja": "2018年3月期末の連結総資産は6,883億円（前年度末比574億円増）。有利子負債残高は1,254億円（同164億円減）、純資産は2,968億円（同584億円増）。自己資本比率は43.0%に上昇。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 21,
+            "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "自己株式の取得により44.98億円を支出し、配当金120.24億円を支払った。"
+            "summary_ja": "営業キャッシュ・フローは565億円の収入超過。投資キャッシュ・フローは164億円の支出超過（有形・無形固定資産取得286億円等）。財務キャッシュ・フローは347億円の支出超過（長期借入金返済305億円、配当金支払120億円、自己株式取得45億円等）。"
+          },
+          {
+            "category": "material_footnote",
+            "pdf_page": 26,
+            "statement_type": "actual",
+            "summary_ja": "業績連動型株式報酬制度として「株式給付信託（BBT）」及び「株式給付型ESOP」を導入し、信託が保有する自社株式を純資産の部に自己株式として計上（期末でBBT7.96億円、ESOP36.93億円）。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 7,
+            "statement_type": "forecast",
+            "summary_ja": "2019年3月期の通期連結業績予想は、売上高8,800億円（前期比8.2%増）、営業利益965億円（同4.3%減）、経常利益950億円（同5.5%減）、親会社株主に帰属する当期純利益750億円（同3.7%増）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -149,9 +174,10 @@
             "target_fiscal_year": 2019,
             "target_period": "FY",
             "value_surface_ja": "95,000百万円",
-            "pdf_page": 1
+            "pdf_page": 7
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "30_2019-05-10_tanshin.pdf",
@@ -163,15 +189,27 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2019年3月期の連結業績は、売上高8,910億円（前期比9.6%増）、営業利益984億円（同2.4%減）、経常利益1,004億円（同0.1%減）、親会社株主に帰属する当期純利益874億円（同20.9%増）。事業譲渡益の計上により純利益が増加した。"
+            "summary_ja": "2019年3月期通期の連結業績は、売上高8,910億円（前期比9.6%増）、営業利益984億円（同2.4%減）、経常利益1,004億円（同0.1%減）、親会社株主に帰属する当期純利益874億円（同20.9%増）。売上増の一方で完成工事総利益率低下により営業利益は微減、特別利益（事業譲渡益）により純利益は増加した。"
           },
           {
             "category": "capital_allocation",
             "pdf_page": 33,
             "statement_type": "actual",
-            "summary_ja": "子会社（長谷工アネシス）のスマートマンション事業を譲渡し、事業譲渡益213.49億円を特別利益に計上した。配当金支出は150.30億円。"
+            "summary_ja": "2018年7月1日付で連結子会社・長谷工アネシスのスマートマンション事業（高圧一括受電等）を関西電力子会社のNext Power(株)へ吸収分割により譲渡。事業譲渡益213.49億円を特別利益に計上。"
+          },
+          {
+            "category": "financial_condition",
+            "pdf_page": 4,
+            "statement_type": "actual",
+            "summary_ja": "2019年3月期末の連結総資産は7,732億円（前年度末比855億円増）。有利子負債残高は1,209億円（同45億円減）、純資産は3,681億円（同712億円増）。自己資本比率は47.5%に上昇。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2020年3月期の通期連結業績予想は、売上高8,600億円（前期比3.5%減）、営業利益860億円（同12.6%減）、経常利益850億円（同15.3%減）、親会社株主に帰属する当期純利益600億円（同31.3%減）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -190,9 +228,10 @@
             "target_fiscal_year": 2020,
             "target_period": "FY",
             "value_surface_ja": "85,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "26_2020-05-14_tanshin.pdf",
@@ -204,15 +243,27 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2020年3月期の連結業績は、売上高8,460億円（前期比5.0%減）、営業利益859億円（同12.7%減）、経常利益853億円（同15.1%減）、親会社株主に帰属する当期純利益599億円（同31.5%減）。完成工事総利益率の低下や前期の事業譲渡益反動が影響した。"
+            "summary_ja": "2020年3月期通期の連結業績は、売上高8,460億円（前期比5.0%減）、営業利益859億円（同12.7%減）、経常利益853億円（同15.1%減）、親会社株主に帰属する当期純利益599億円（同31.5%減）。不動産取扱量の減少及び完成工事総利益率低下が響いた。"
           },
           {
             "category": "capital_allocation",
             "pdf_page": 34,
             "statement_type": "actual",
-            "summary_ja": "株式会社細田工務店を株式公開買付け等により買収（取得原価21.86億円、発生した負ののれん22.27億円）。自己株式取得54.48億円、配当金支払270.53億円を実施。"
+            "summary_ja": "2020年2月に木造戸建住宅事業を手掛ける(株)細田工務店を株式公開買付け等により完全子会社化（取得原価21.86億円）。負ののれん発生益22.27億円を特別利益に計上。"
+          },
+          {
+            "category": "strategy_and_execution",
+            "pdf_page": 9,
+            "statement_type": "target",
+            "summary_ja": "2021年3月期より5ヶ年中期経営計画「HASEKO Next Stage Plan（NS計画）」（2021年3月期〜2025年3月期）を開始。最終年度の2025年3月期連結経常利益1,000億円、5期合計連結経常利益4,000億円、総還元性向40%程度を目指す。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "新型コロナウイルス感染症の影響に伴うモデルルーム来客減や修繕工事遅延等を前提とし、2021年3月期の連結業績予想は売上高8,000億円（前期比5.4%減）、営業利益725億円（同15.6%減）、経常利益700億円（同17.9%減）、親会社株主に帰属する当期純利益490億円（同18.1%減）と試算。"
           }
         ],
         "annual_financial_anchor": {
@@ -231,9 +282,10 @@
             "target_fiscal_year": 2021,
             "target_period": "FY",
             "value_surface_ja": "70,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "22_2021-05-13_tanshin.pdf",
@@ -245,21 +297,27 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2021年3月期の連結業績は、売上高8,094億円（前期比4.3%減）、営業利益729億円（同15.1%減）、経常利益718億円（同15.7%減）、親会社株主に帰属する当期純利益483億円（同19.4%減）。新型コロナ感染症の影響による施工量減少及び完成工事総利益率低下が影響。"
+            "summary_ja": "2021年3月期通期の連結業績は、売上高8,094億円（前期比4.3%減）、営業利益729億円（同15.1%減）、経常利益718億円（同15.7%減）、親会社株主に帰属する当期純利益483億円（同19.4%減）。新型コロナ影響による工事施工量減少や完成工事総利益率低下が要因。"
           },
           {
-            "category": "strategy_and_execution",
-            "pdf_page": 10,
-            "statement_type": "target",
-            "summary_ja": "中期経営計画「HASEKO Next Stage Plan（NS計画）」（2021年3月期～2025年3月期）を推進。5期合計連結経常利益4,000億円を目指す。"
+            "category": "financial_condition",
+            "pdf_page": 5,
+            "statement_type": "actual",
+            "summary_ja": "2021年3月期末の連結総資産は9,537億円（前年度末比1,543億円増）。不動産取得等により販売用不動産や不動産事業支出金が増加。有利子負債残高は2,683億円（同1,156億円増）。自己資本比率は41.4%。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 21,
+            "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "自己株式取得215.24億円、配当金支払249.62億円を実施。"
+            "summary_ja": "営業キャッシュ・フローは319億円の収入超過。投資キャッシュ・フローは358億円の支出超過（固定資産取得298億円等）。財務キャッシュ・フローは668億円の収入超過（社債発行・借入調達が返済を上回る。自己株式取得215億円、配当250億円等）。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 7,
+            "statement_type": "forecast",
+            "summary_ja": "2022年3月期の通期連結業績予想は、売上高8,500億円（前期比5.0%増）、営業利益780億円（同7.0%増）、経常利益750億円（同4.4%増）、親会社株主に帰属する当期純利益510億円（同5.7%増）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -278,9 +336,10 @@
             "target_fiscal_year": 2022,
             "target_period": "FY",
             "value_surface_ja": "75,000百万円",
-            "pdf_page": 1
+            "pdf_page": 7
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "18_2022-05-12_tanshin.pdf",
@@ -292,15 +351,27 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2022年3月期の連結業績は、売上高9,097億円（前期比12.4%増）、営業利益827億円（同13.4%増）、経常利益819億円（同14.0%増）、親会社株主に帰属する当期純利益545億円（同12.9%増）。不動産売上高の伸長が利益を牽引した。"
+            "summary_ja": "2022年3月期通期の連結業績は、売上高9,097億円（前期比12.4%増）、営業利益827億円（同13.4%増）、経常利益819億円（同14.0%増）、親会社株主に帰属する当期純利益545億円（同12.9%増）。分譲マンションの引渡し順調等による不動産利益の増加が牽引。"
           },
           {
-            "category": "capital_allocation",
-            "pdf_page": 21,
+            "category": "material_footnote",
+            "pdf_page": 27,
             "statement_type": "actual",
-            "summary_ja": "自己株式取得30.87億円、配当金支払195.03億円を実施。"
+            "summary_ja": "当期首より「収益認識に関する会計基準」等を適用。累積的影響額として期首利益剰余金を118.81億円減額修正した。"
+          },
+          {
+            "category": "segments_and_business_drivers",
+            "pdf_page": 3,
+            "statement_type": "actual",
+            "summary_ja": "海外関連事業（ハワイでの戸建分譲・商業施設開発）において、資産の使用可能性の見直しに伴い一部資産を一括費用処理した結果、営業損失43億円（前期は営業損失11億円）を計上。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2023年3月期の通期連結業績予想は、売上高9,600億円（前期比5.5%増）、営業利益870億円（同5.2%増）、経常利益850億円（同3.8%増）、親会社株主に帰属する当期純利益570億円（同4.6%増）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -319,9 +390,10 @@
             "target_fiscal_year": 2023,
             "target_period": "FY",
             "value_surface_ja": "85,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "14_2023-05-11_tanshin.pdf",
@@ -333,15 +405,27 @@
         "items": [
           {
             "category": "operating_results",
+            "pdf_page": 2,
+            "statement_type": "actual",
+            "summary_ja": "2023年3月期通期の連結業績は、売上高1兆273億円（前期比12.9%増）、営業利益902億円（同9.0%増）、経常利益883億円（同7.8%増）、親会社株主に帰属する当期純利益593億円（同8.9%増）となり過去最高の売上高を記録。"
+          },
+          {
+            "category": "financial_condition",
             "pdf_page": 4,
             "statement_type": "actual",
-            "summary_ja": "2023年3月期の連結業績は、売上高1兆273億円（前期比12.9%増）、営業利益902億円（同9.0%増）、経常利益883億円（同7.8%増）、親会社株主に帰属する当期純利益593億円（同8.9%増）。売上高は過去最高を記録。"
+            "summary_ja": "2023年3月期末の連結総資産は1兆1,981億円（前年度末比1,162億円増）。仕入拡大等で販売用不動産及び不動産事業支出金が増加。有利子負債残高は3,918億円（同796億円増）。営業キャッシュ・フローは519億円の支出超過。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 21,
+            "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "自己株式取得35.32億円、配当金支払235.97億円を実施。"
+            "summary_ja": "年間配当金を1株当たり80円（前年と同額）とし、自己株式取得35億円を実施。財務キャッシュ・フローは借入金・社債の調達等により508億円の収入超過。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2024年3月期の通期連結業績予想は、売上高1兆800億円（前期比5.1%増）、営業利益880億円（同2.4%減）、経常利益830億円（同6.0%減）、親会社株主に帰属する当期純利益555億円（同6.4%減）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -360,9 +444,10 @@
             "target_fiscal_year": 2024,
             "target_period": "FY",
             "value_surface_ja": "83,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "10_2024-05-10_tanshin.pdf",
@@ -374,15 +459,27 @@
         "items": [
           {
             "category": "operating_results",
+            "pdf_page": 2,
+            "statement_type": "actual",
+            "summary_ja": "2024年3月期通期の連結業績は、売上高1兆944億円（前期比6.5%増）、営業利益857億円（同4.9%減）、経常利益833億円（同5.6%減）、親会社株主に帰属する当期純利益560億円（同5.5%減）。資材・労務費高騰による完成工事総利益率の低下が減益要因。"
+          },
+          {
+            "category": "financial_condition",
             "pdf_page": 4,
             "statement_type": "actual",
-            "summary_ja": "2024年3月期の連結業績は、売上高1兆944億円（前期比6.5%増）、営業利益857億円（同4.9%減）、経常利益833億円（同5.6%減）、親会社株主に帰属する当期純利益560億円（同5.5%減）。完成工事総利益率の低下が影響。"
+            "summary_ja": "2024年3月期末の連結総資産は1兆3,512億円（前年度末比1,531億円増）。棚卸資産の売却・回収等により営業キャッシュ・フローは1,150億円の収入超過に転じた。有利子負債残高は4,153億円。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 21,
+            "pdf_page": 5,
             "statement_type": "actual",
-            "summary_ja": "配当金支払222.09億円を実施。"
+            "summary_ja": "年間配当金を1株当たり85円（前年比5円増配）に拡充。「NS計画」4年目として成長戦略投資を実施。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2025年3月期（NS計画最終年）の通期連結業績予想は、売上高1兆1,800億円（前期比7.8%増）、営業利益820億円（同4.4%減）、経常利益800億円（同4.0%減）、親会社株主に帰属する当期純利益530億円（同5.4%減）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -401,9 +498,10 @@
             "target_fiscal_year": 2025,
             "target_period": "FY",
             "value_surface_ja": "80,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "06_2025_FY_tanshin.pdf",
@@ -415,21 +513,33 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2025年3月期の連結業績は、売上高1兆1,774億円（前期比7.6%増）、営業利益847億円（同1.2%減）、経常利益834億円（同0.1%増）、親会社株主に帰属する当期純利益345億円（同38.5%減）。海外関連事業における減損損失や投資有価証券評価損等の特別損失計上が純利益の押し下げ要因となった。"
+            "summary_ja": "2025年3月期通期の連結業績は、売上高1兆1,774億円（前期比7.6%増）、営業利益847億円（同1.2%減）、経常利益834億円（同0.1%増）、親会社株主に帰属する当期純利益345億円（同38.5%減）。売上高・経常利益は期初予想を上回ったものの、海外事業での減損損失（168.61億円）や投資有価証券評価損（29.90億円）、訴訟損失引当金繰入（30.06億円）の特別損失計上により大幅減益。"
+          },
+          {
+            "category": "segments_and_business_drivers",
+            "pdf_page": 3,
+            "statement_type": "actual",
+            "summary_ja": "海外関連事業にて売上高35億円、営業損失57億円を計上。さらにハワイ等の不動産等に関し減損損失161.12億円を特別損失として計上した。"
           },
           {
             "category": "strategy_and_execution",
             "pdf_page": 10,
             "statement_type": "target",
-            "summary_ja": "新中期経営計画「HASEKO Evolution Plan」（2026年3月期～2031年3月期）を策定。2028年3月期に連結経常利益1,000億円以上、2031年3月期に1,300億円以上を目指す。"
+            "summary_ja": "新中期経営計画「HASEKO Evolution Plan」（2026年3月期〜2031年3月期）を策定。2028年3月期連結経常利益1,000億円以上、2031年3月期1,300億円以上、ROE10%超（2031年3月期までに13%程度）、6期合計ネット投資額4,000億円、総還元性向50%程度・累進配当を掲げる。"
           },
           {
             "category": "capital_allocation",
             "pdf_page": 41,
-            "statement_type": "actual",
-            "summary_ja": "株式会社ウッドフレンズに対する公開買付けの実施を決議（買付代金約25.08億円、完全子会社化を目指す）。配当金支払235.83億円を実施。"
+            "statement_type": "forecast",
+            "summary_ja": "重要な後発事象として、2025年4月10日取締役会にて(株)ウッドフレンズの普通株式に対する公開買付け（TOB）の実施を決願。完全子会社化を目指し、買付代金25.08億円を自己資金で充当予定。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2026年3月期の通期連結業績予想は、売上高1兆2,300億円（前期比4.5%増）、営業利益920億円（同8.6%増）、経常利益850億円（同1.9%増）、親会社株主に帰属する当期純利益550億円（同59.7%増）を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -448,9 +558,10 @@
             "target_fiscal_year": 2026,
             "target_period": "FY",
             "value_surface_ja": "85,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "02_2026_FY_tanshin.pdf",
@@ -462,15 +573,33 @@
         "items": [
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 2,
             "statement_type": "actual",
-            "summary_ja": "2026年3月期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）。完成工事高増加および完成工事総利益率の改善が寄与。"
+            "summary_ja": "2026年3月期通期の連結業績は、売上高1兆2,731億円（前期比8.1%増）、営業利益987億円（同16.6%増）、経常利益941億円（同12.8%増）、親会社株主に帰属する当期純利益548億円（同59.2%増）となり大きく増収増益。「HASEKO Evolution Plan」初年度として、完成工事総利益率の改善や不動産取扱量増加が寄与。"
+          },
+          {
+            "category": "segments_and_business_drivers",
+            "pdf_page": 3,
+            "statement_type": "actual",
+            "summary_ja": "建設関連事業は売上高9,009億円（前期比7.0%増）、営業利益685億円（同21.6%増）。不動産関連事業は売上高2,932億円（同16.0%増）、営業利益356億円（同9.2%増）。管理運営事業は売上高1,654億円（同8.8%増）、営業利益82億円（同26.6%増）。海外事業は売上高43億円、営業損失61億円（前年は損失57億円）。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 21,
+            "pdf_page": 36,
             "statement_type": "actual",
-            "summary_ja": "自己株式取得200.55億円、配当金支払247.10億円を実施。"
+            "summary_ja": "(株)ウッドフレンズを公開買付け及び売渡請求により100%完全子会社化（取得原価25.08億円）。木造・木質化住宅事業の強化を図る。"
+          },
+          {
+            "category": "financial_condition",
+            "pdf_page": 4,
+            "statement_type": "actual",
+            "summary_ja": "2026年3月期末の連結総資産は1兆4,177億円（前年度末比525億円増）。棚卸資産の減少等により営業キャッシュ・フローは1,574億円の大幅な収入超過。投資キャッシュ・フローは投資有価証券取得347億円等により532億円の支出超過、財務キャッシュ・フローは自己株式取得201億円等により534億円の支出超過。"
+          },
+          {
+            "category": "forward_looking_information",
+            "pdf_page": 6,
+            "statement_type": "forecast",
+            "summary_ja": "2027年3月期の通期連結業績予想は、売上高1兆3,800億円（前期比8.4%増）、営業利益1,100億円（同11.4%増）、経常利益1,050億円（同11.6%増）、親会社株主に帰属する当期純利益660億円（同20.4%増）と増収増益を見込む。"
           }
         ],
         "annual_financial_anchor": {
@@ -489,9 +618,10 @@
             "target_fiscal_year": 2027,
             "target_period": "FY",
             "value_surface_ja": "105,000百万円",
-            "pdf_page": 1
+            "pdf_page": 6
           }
-        }
+        },
+        "unavailable_categories": []
       },
       {
         "source_filename": "01_2027_Q1_tanshin.pdf",
@@ -505,71 +635,186 @@
             "category": "business_overview",
             "pdf_page": 4,
             "statement_type": "actual",
-            "summary_ja": "長谷工コーポレーションは分譲マンションを中心とした施工・設計・企画を行う建設関連事業、不動産分譲・開発を行う不動産関連事業、マンション管理・賃貸運営代行等の管理運営事業、海外事業を展開する。"
+            "summary_ja": "当社グループはマンション請負建築を中心とする建設関連事業、分譲・賃貸不動産の開発・販売を行う不動産関連事業、建物・賃貸管理や有料老人ホーム等の管理運営事業、ハワイ等での海外事業を展開する総合建設・不動産グループ。"
           },
           {
             "category": "operating_results",
-            "pdf_page": 4,
+            "pdf_page": 1,
             "statement_type": "actual",
-            "summary_ja": "2027年3月期第1四半期の連結累計実績は、売上高3,121億円（前年同期比9.2%増）、営業利益299億円（同46.0%増）、経常利益305億円（同58.9%増）、親会社株主に帰属する四半期純利益213億円（同68.5%増）。完成工事総利益率の上昇が増益に寄与。"
+            "summary_ja": "2027年3月期第1四半期の連結業績は、売上高3,121.48億円（前年同期比9.2%増）、営業利益298.57億円（同46.0%増）、経常利益304.55億円（同58.9%増）、親会社株主に帰属する四半期純利益212.87億円（同68.5%増）の大幅増収増益。完成工事総利益率の上昇が主因。"
+          },
+          {
+            "category": "segments_and_business_drivers",
+            "pdf_page": 2,
+            "statement_type": "actual",
+            "summary_ja": "建設関連事業は売上高2,350億円（前年同期比3.7%増）、営業利益232億円（同50.6%増）。新築分譲マンション受注は首都圏13件・近畿東海6件の計19件。不動産関連事業は売上高598億円（同18.6%増）、営業利益69億円（同12.2%増）。管理運営事業は売上高375億円（同0.4%減）、営業利益17億円（同3.9%減）。海外事業は売上高12億円、営業損失4億円。"
           },
           {
             "category": "financial_condition",
-            "pdf_page": 5,
+            "pdf_page": 3,
             "statement_type": "actual",
-            "summary_ja": "当第1四半期末の連結総資産は1兆3,531億円（前連結会計年度末比647億円減）。預り金の減少に伴い現金預金が減少したこと等による。"
+            "summary_ja": "2027年3月期第1四半期末の連結総資産は1兆3,530.50億円（前連結会計年度末比646.74億円減）。預り金減少に伴い現金預金が2,302.93億円に減少。負債合計は7,824.07億円（同718.67億円減）、純資産合計は5,706.43億円（同71.92億円増）。自己資本比率は42.1%へ上昇。"
           },
           {
             "category": "forward_looking_information",
-            "pdf_page": 5,
+            "pdf_page": 3,
             "statement_type": "forecast",
-            "summary_ja": "グループ内組織再編に伴う特別利益計上の見込みを精査した結果、特別利益を不計上としたため、2027年3月期通期の個別当期純利益予想を760億円から690億円（対前期比37.3%増）へ下片修正。なお連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更はない。"
+            "summary_ja": "2027年3月期通期の連結業績予想（売上高1兆3,800億円、営業利益1,100億円、経常利益1,050億円、親会社株主に帰属する当期純利益660億円）に変更なし。なお個別業績予想はグループ内組織再編に伴う特別利益の見直しにより中間純利益465億円（従来比70億円減）、通期純利益690億円（同70億円減）に下方修正。"
           },
           {
             "category": "capital_allocation",
-            "pdf_page": 13,
+            "pdf_page": 11,
             "statement_type": "actual",
-            "summary_ja": "2026年8月6日の取締役会において、株式給付信託（BBT）及び株式給付型ESOPへの追加拠出に伴い、第三者割当による自己株式の処分（処分株式数：普通株式4,151,500株、処分価額：1株につき2,659.5円、処分総額：110.41億円、処分期日：2026年8月21日）を行うことを決議した。"
+            "summary_ja": "2026年8月6日取締役会決議により、BBT及びESOP制度継続のため、みずほ信託銀行及びりそな銀行の再信託受託者（日本カストディ銀行）に対し第三者割当による自己株式処分（処分株数4,151,500株、処分価額2,659.5円/株、処分総額110.41億円、処分期日2026年8月21日）を実施することを決定。"
           }
         ],
-        "annual_financial_anchor": null
+        "annual_financial_anchor": null,
+        "unavailable_categories": []
       }
     ],
     "capital_allocation_tracks": [
       {
-        "track_label_ja": "株主還元（配当・自己株式取得）",
-        "track_type": "shareholder_return",
-        "capital_destination_ja": "株主還元",
+        "track_label_ja": "不動産関連事業への資産投下と収益不動産・分譲開発",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "不動産関連事業（棚卸資産：販売用不動産・不動産事業支出金・開発用不動産等）",
         "start_fiscal_year": 2017,
         "end_fiscal_year": 2026,
-        "stated_rationale_ja": "強固な財務基盤を維持しつつ、安定的な配当の継続実施および機動的な自己株式取得を通じて株主還元を拡充する。",
+        "stated_rationale_ja": "「NS計画」および「HASEKO Evolution Plan」において、安定収益源の確立や不動産分譲・賃貸開発の事業エリア拡大を目的として成長戦略投資を推進。",
         "capital_inputs": [
           {
             "source_filename": "38_2017-05-12_tanshin.pdf",
             "fiscal_year": 2017,
-            "period_label_ja": "2017年3月期 通期",
-            "input_type": "shareholder_distribution",
-            "amount_or_scale_ja": "4,509百万円",
-            "input_ja": "年間配当金の支払いを実施。",
+            "period_label_ja": "2017年3月期",
+            "input_type": "segment_or_operating_assets",
+            "amount_or_scale_ja": "不動産関連事業セグメント資産：2,783.09億円（販売用不動産516.84億円、不動産事業支出金531.88億円、開発用不動産等240.32億円）",
+            "input_ja": "不動産関連事業のセグメント資産及び棚卸資産残高",
             "relative_priority_ja": null
           },
           {
             "source_filename": "02_2026_FY_tanshin.pdf",
             "fiscal_year": 2026,
-            "period_label_ja": "2026年3月期 通期",
-            "input_type": "shareholder_distribution",
-            "amount_or_scale_ja": "44,765百万円",
-            "input_ja": "配当金支払24,710百万円および自己株式取得20,055百万円を実施。",
-            "relative_priority_ja": "総還元性向50%程度を目安とした還元強化方針に基づく分配。"
+            "period_label_ja": "2026年3月期",
+            "input_type": "segment_or_operating_assets",
+            "amount_or_scale_ja": "不動産関連事業セグメント資産：6,339.33億円（販売用不動産2,548.20億円、不動産事業支出金2,964.45億円、開発用不動産等354.52億円）",
+            "input_ja": "積極的な用地仕入や不動産開発投資の継続によりセグメント資産が大幅増加",
+            "relative_priority_ja": "成長戦略投資として最優先領域の一つに位置付け"
+          }
+        ],
+        "immediate_effects": [],
+        "subsequent_returns": [
+          {
+            "source_filename": "38_2017-05-12_tanshin.pdf",
+            "fiscal_year": 2017,
+            "period_label_ja": "2017年3月期",
+            "return_type": "profit_or_loss",
+            "return_ja": "不動産関連事業セグメント利益：97.20億円（売上高2,083億円）",
+            "attribution": "direct",
+            "signal": "positive"
+          },
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "return_type": "profit_or_loss",
+            "return_ja": "不動産関連事業セグメント利益：355.79億円（売上高2,932億円）",
+            "attribution": "direct",
+            "signal": "positive"
+          }
+        ],
+        "adverse_evidence_ja": [],
+        "record_maturity": "mature_record",
+        "disclosure_limit_ja": null
+      },
+      {
+        "track_label_ja": "海外事業（米国ハワイ等での開発投資）",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "海外事業セグメント（ハワイ州オアフ島等での商業施設運営・戸建分譲・不動産開発）",
+        "start_fiscal_year": 2017,
+        "end_fiscal_year": 2026,
+        "stated_rationale_ja": "将来の国内マーケット縮小に備え、収益の柱の一つに育てるため海外不動産開発へ投資。",
+        "capital_inputs": [
+          {
+            "source_filename": "38_2017-05-12_tanshin.pdf",
+            "fiscal_year": 2017,
+            "period_label_ja": "2017年3月期",
+            "input_type": "segment_or_operating_assets",
+            "amount_or_scale_ja": "海外関連事業セグメント資産：351.95億円",
+            "input_ja": "海外不動産開発プロジェクト等への資本投入",
+            "relative_priority_ja": null
+          },
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "input_type": "segment_or_operating_assets",
+            "amount_or_scale_ja": "海外事業セグメント資産：1,584.80億円",
+            "input_ja": "海外における開発物件・商業施設等の資産蓄積",
+            "relative_priority_ja": "新規領域への積極投資対象"
+          }
+        ],
+        "immediate_effects": [],
+        "subsequent_returns": [
+          {
+            "source_filename": "18_2022-05-12_tanshin.pdf",
+            "fiscal_year": 2022,
+            "period_label_ja": "2022年3月期",
+            "return_type": "profit_or_loss",
+            "return_ja": "海外関連事業営業損失43億円（資産使用可能性の見直しに伴う一括費用処理等の影響）",
+            "attribution": "direct",
+            "signal": "negative"
+          },
+          {
+            "source_filename": "06_2025_FY_tanshin.pdf",
+            "fiscal_year": 2025,
+            "period_label_ja": "2025年3月期",
+            "return_type": "impairment_or_write_down",
+            "return_ja": "海外関連事業用不動産（ハワイ等）において減損損失161.12億円を特別損失計上、セグメント営業損失57億円",
+            "attribution": "direct",
+            "signal": "negative"
+          },
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "return_type": "profit_or_loss",
+            "return_ja": "海外事業セグメント損失60.81億円（売上高43億円）",
+            "attribution": "direct",
+            "signal": "negative"
+          }
+        ],
+        "adverse_evidence_ja": [
+          "2022年3月期での資産一括費用化（営業損失43億円）",
+          "2025年3月期における大規模な減損損失（161.12億円）の計上",
+          "継続的なセグメント営業赤字の計上"
+        ],
+        "record_maturity": "mature_record",
+        "disclosure_limit_ja": null
+      },
+      {
+        "track_label_ja": "スマートマンション事業の売却・事業再編",
+        "track_type": "divestiture",
+        "capital_destination_ja": "(株)長谷工アネシスのスマートマンション事業（高圧一括受電サービス・電力小売り）",
+        "start_fiscal_year": 2019,
+        "end_fiscal_year": 2019,
+        "stated_rationale_ja": "契約者への将来的な利便性向上及びエネルギー分野のリーディングカンパニー（関西電力グループ・Next Power(株)）への事業承継による選択と集中。",
+        "capital_inputs": [
+          {
+            "source_filename": "30_2019-05-10_tanshin.pdf",
+            "fiscal_year": 2019,
+            "period_label_ja": "2019年3月期",
+            "input_type": "capacity_or_fixed_assets",
+            "amount_or_scale_ja": "移転資産合計79.08億円（流動資産8.04億円、固定資産71.04億円）",
+            "input_ja": "高圧一括受電設備等の事業資産の切り出し及び移転",
+            "relative_priority_ja": "ノンコア・周辺事業の整理・資産流動化"
           }
         ],
         "immediate_effects": [
           {
-            "source_filename": "02_2026_FY_tanshin.pdf",
-            "fiscal_year": 2026,
-            "period_label_ja": "2026年3月期 通期",
-            "effect_type": "distribution_execution",
-            "effect_ja": "配当支払いおよび自己株式取得による現金流出の実行。"
+            "source_filename": "30_2019-05-10_tanshin.pdf",
+            "fiscal_year": 2019,
+            "period_label_ja": "2019年3月期",
+            "effect_type": "disposal_gain_or_loss",
+            "effect_ja": "事業譲渡価額213.49億円、事業譲渡益213.49億円を特別利益に計上（差引現金収入204.01億円）"
           }
         ],
         "subsequent_returns": [],
@@ -578,30 +823,90 @@
         "disclosure_limit_ja": null
       },
       {
-        "track_label_ja": "株式会社細田工務店の買収・子会社化",
+        "track_label_ja": "(株)ウッドフレンズの買収による木造・木質化住宅事業の強化",
         "track_type": "acquisition",
-        "capital_destination_ja": "戸建分譲住宅事業の強化（細田工務店）",
-        "start_fiscal_year": 2020,
-        "end_fiscal_year": 2020,
-        "stated_rationale_ja": "木造戸建分譲住宅の設計・施工・販売の強みをグループに取り込み、「住まいと暮らし」に関する事業拡大を図るため。",
+        "capital_destination_ja": "(株)ウッドフレンズ（木造戸建住宅・木質資源カスケード事業）",
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2026,
+        "stated_rationale_ja": "CO2削減や居住者の健康・幸福感に寄与する「木造化及び木質化」の推進、マンション木造共用棟やハイブリッド木造住宅の展開加速。",
         "capital_inputs": [
           {
-            "source_filename": "26_2020-05-14_tanshin.pdf",
-            "fiscal_year": 2020,
-            "period_label_ja": "2020年3月期 通期",
+            "source_filename": "06_2025_FY_tanshin.pdf",
+            "fiscal_year": 2025,
+            "period_label_ja": "2025年3月期",
             "input_type": "acquisition_or_investment_spend",
-            "amount_or_scale_ja": "2,186百万円",
-            "input_ja": "株式公開買付け等により細田工務店株式を取得。",
-            "relative_priority_ja": null
+            "amount_or_scale_ja": "株式公開買付け予定対価約25.08億円（自己資金）",
+            "input_ja": "TOBによる買収の決定",
+            "relative_priority_ja": "建築メニュー・木質化商材の拡充に向けたM&A"
           }
         ],
         "immediate_effects": [
           {
-            "source_filename": "26_2020-05-14_tanshin.pdf",
-            "fiscal_year": 2020,
-            "period_label_ja": "2020年3月期 通期",
-            "effect_type": "goodwill_or_negative_goodwill",
-            "effect_ja": "負ののれん発生益2,227百万円を特別利益に計上。"
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "effect_type": "purchase_price_or_proceeds",
+            "effect_ja": "取得原価25.08億円（TOB及び株式売渡請求により100%取得）、発生のれん2.88億円（即時一括償却）"
+          }
+        ],
+        "subsequent_returns": [
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "return_type": "other_operating_or_financial_return",
+            "return_ja": "連結子会社化に伴い「建設関連事業」セグメント資産が179.45億円、「管理運営事業」セグメント資産が26.35億円増加",
+            "attribution": "direct",
+            "signal": "neutral"
+          }
+        ],
+        "adverse_evidence_ja": [],
+        "record_maturity": "too_recent",
+        "disclosure_limit_ja": "連結直後のため事業単体の継続的収益・利益貢献の定量的開示は限定的。"
+      },
+      {
+        "track_label_ja": "株主還元（配当拡充及び機動的自己株式取得）",
+        "track_type": "shareholder_return",
+        "capital_destination_ja": "株主還元（剰余金配当及び自己株式取得）",
+        "start_fiscal_year": 2017,
+        "end_fiscal_year": 2026,
+        "stated_rationale_ja": "「NBs計画」「NS計画」「HASEKO Evolution Plan」において、総還元性向（40%〜50%程度）や配当下限の設定、累進配当の導入による株主還元の拡充を表明。",
+        "capital_inputs": [
+          {
+            "source_filename": "38_2017-05-12_tanshin.pdf",
+            "fiscal_year": 2017,
+            "period_label_ja": "2017年3月期",
+            "input_type": "shareholder_distribution",
+            "amount_or_scale_ja": "年間配当金1株当たり30円（総額90.18億円）",
+            "input_ja": "剰余金配当の実施",
+            "relative_priority_ja": null
+          },
+          {
+            "source_filename": "22_2021-05-13_tanshin.pdf",
+            "fiscal_year": 2021,
+            "period_label_ja": "2021年3月期",
+            "input_type": "shareholder_distribution",
+            "amount_or_scale_ja": "自己株式取得215.24億円、配当金総額199.45億円（1株70円）",
+            "input_ja": "大規模な自己株式取得と配当の継続",
+            "relative_priority_ja": "資本効率向上と株主還元向上"
+          },
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "input_type": "shareholder_distribution",
+            "amount_or_scale_ja": "年間配当金1株当たり95円（総額256.80億円）、自己株式取得200.55億円",
+            "input_ja": "新中期計画の方針に基づく増配と自己株式取得",
+            "relative_priority_ja": "総還元性向50%程度を目指す還元強化"
+          }
+        ],
+        "immediate_effects": [
+          {
+            "source_filename": "02_2026_FY_tanshin.pdf",
+            "fiscal_year": 2026,
+            "period_label_ja": "2026年3月期",
+            "effect_type": "distribution_execution",
+            "effect_ja": "2026年3月期における配当支払い247.10億円及び自己株式取得200.55億円を実行"
           }
         ],
         "subsequent_returns": [],
@@ -611,7 +916,7 @@
       }
     ],
     "research_notes": [
-      "開示資料に記載された事実・定量的数値に基づき、忠実に情報を抽出して作成。"
+      "各決算短信における数値・注記は原文の開示表面の通り抽出しており、セグメント名称の変更（サービス関連事業→管理運営事業・海外事業への細分化等）は各期の開示内容に準拠しています。"
     ]
   }
 }

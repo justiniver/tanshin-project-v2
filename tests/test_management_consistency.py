@@ -12,10 +12,15 @@ from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.render import render_english, render_japanese
 from tanshin_pipeline.schemas import (
     EnglishTranslation,
+    FilingPeriod,
+    FinancialMetric,
+    FinancialScope,
+    FinancialValueKind,
     JapaneseAnalysis,
     ManagementConsistencyAssessment,
     ManagementConsistencyComponent,
     ManagementConsistencyDimension,
+    ManagementForecastComparison,
     EvidenceRecord,
     StatementType,
 )
@@ -180,15 +185,46 @@ class ManagementConsistencyTests(unittest.TestCase):
         translation = EnglishTranslation.model_validate(
             read_json(FIXTURES / "fake_translation_en.json")
         )
-        assessment, _ = calculate_management_consistency(
-            _pending_assessment(
-                [
-                    "38_2017-05-12_tanshin.pdf:s0001",
-                    "22_2021-05-13_tanshin.pdf:s0001",
-                    "02_2026_FY_tanshin.pdf:s0001",
-                    "06_2025_FY_tanshin.pdf:s0001",
-                ]
+        pending = _pending_assessment(
+            [
+                "38_2017-05-12_tanshin.pdf:s0001",
+                "22_2021-05-13_tanshin.pdf:s0001",
+                "02_2026_FY_tanshin.pdf:s0001",
+                "06_2025_FY_tanshin.pdf:s0001",
+            ]
+        )
+        pending.forecast_comparisons = [
+            ManagementForecastComparison(
+                metric=FinancialMetric.ORDINARY_PROFIT,
+                metric_label_ja="経常利益",
+                scope=FinancialScope.CONSOLIDATED,
+                scope_label_ja="連結",
+                value_kind=FinancialValueKind.MONETARY,
+                target_fiscal_year=2025,
+                target_period=FilingPeriod.FY,
+                forecast_surface_ja="900億円",
+                actual_surface_ja="1,050億円",
+                percentage_error=16.6667,
+                result="met_or_exceeded",
+                source_filenames=["forecast.pdf", "actual.pdf"],
             ),
+            ManagementForecastComparison(
+                metric=FinancialMetric.DIVIDEND_PER_SHARE,
+                metric_label_ja="1株当たり配当金",
+                scope=FinancialScope.COMPANY_ONLY,
+                scope_label_ja="個別",
+                value_kind=FinancialValueKind.PER_SHARE,
+                target_fiscal_year=2026,
+                target_period=FilingPeriod.FY,
+                forecast_surface_ja="100円",
+                actual_surface_ja="95円",
+                percentage_error=-5.0,
+                result="missed",
+                source_filenames=["forecast-2.pdf", "actual-2.pdf"],
+            ),
+        ]
+        assessment, _ = calculate_management_consistency(
+            pending,
             self.real_analysis.evidence,
             self.manifest,
         )
@@ -255,6 +291,34 @@ class ManagementConsistencyTests(unittest.TestCase):
         )
         self.assertIn(
             "not necessarily a better strategy, stronger business, or more attractive investment",
+            en,
+        )
+        self.assertIn("**当初予想と実績の比較**", ja)
+        self.assertIn(
+            "| 2025年度 | 経常利益 | 900億円 | 1,050億円 | 達成・上振れ |",
+            ja,
+        )
+        self.assertIn(
+            "| 2026年度 | 1株当たり配当金（個別） | 100円 | 95円 | 未達 |",
+            ja,
+        )
+        self.assertIn("**Original forecast versus actual**", en)
+        self.assertIn(
+            "| FY2025 | Ordinary profit | ¥90.0 billion | "
+            "¥105.0 billion | Met or exceeded |",
+            en,
+        )
+        self.assertIn(
+            "| FY2026 | Dividend per share (Company-only) | "
+            "¥100 per share | ¥95 per share | Missed |",
+            en,
+        )
+        self.assertIn(
+            "実績が予想以上なら上振れ幅の大小を問わず肯定的に扱い",
+            ja,
+        )
+        self.assertIn(
+            "at or above forecast is treated positively regardless of the size",
             en,
         )
 

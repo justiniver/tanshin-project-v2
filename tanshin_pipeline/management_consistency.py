@@ -14,7 +14,7 @@ from .schemas import (
 )
 
 
-METHODOLOGY_VERSION = "management-consistency-v6"
+METHODOLOGY_VERSION = "management-consistency-v7"
 COMPONENT_WEIGHTS = {
     ManagementConsistencyDimension.STRATEGIC_COHERENCE: 0.25,
     ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH: 0.25,
@@ -236,6 +236,10 @@ def calculate_management_consistency(
         management_discussion_evidence_share=(
             None if citation_free else round(discussion_share, 4)
         ),
+        forecast_comparisons=[
+            comparison.model_copy(deep=True)
+            for comparison in assessment.forecast_comparisons
+        ],
         components=completed_components,
         overall_rationale_ja=assessment.overall_rationale_ja,
     )

@@ -3,13 +3,20 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from decimal import Decimal
 from typing import Iterable
+import unicodedata
 
+from .english_financials import extract_japanese_financial_amounts
 from .schemas import (
     EnglishTranslation,
+    FinancialMetric,
+    FinancialScope,
+    FinancialValueKind,
     JapaneseAnalysis,
     ManagementConsistencyAssessment,
     ManagementConsistencyDimension,
+    ManagementForecastComparison,
     SectionKey,
     ValidationResult,
 )
@@ -86,7 +93,9 @@ _JA_CONSISTENCY_NOTE = (
     "見ます。<br>算定では、選定した複数年の決算短信、とくに経営成績・財政状態・"
     "業績予想に関する説明を読み、過去の発言を後の行動や結果と結び付け、整合する材料と"
     "反する材料の両方を確認します。各項目を0～1で評価し、評価可能な項目を単純平均"
-    "します。証拠の年代や量に偏りがある場合も、その偏りを踏まえて最も妥当な評価を"
+    "します。当初の通期予想と実績の比較では、実績が予想以上なら上振れ幅の大小を問わず"
+    "肯定的に扱い、予想未達は否定的に扱います。証拠の年代や量に偏りがある場合も、"
+    "その偏りを踏まえて最も妥当な評価を"
     "行い、信頼度は別途記録します。選定資料からどうしても評価できない項目だけを空欄"
     "として計算から除外し、全項目を評価できない場合に限り総合スコアを中立値0.50と"
     "します。高いスコアは説明と実行の一貫性が"
@@ -107,7 +116,10 @@ _EN_CONSISTENCY_NOTE = (
     "the discussions of operating results, financial condition, and outlook—then "
     "connects earlier commitments with later actions and outcomes. Both supporting "
     "and contradictory evidence are considered. Each assessable component receives "
-    "a 0–1 score, and the overall score is their simple average. Uneven timing or "
+    "a 0–1 score, and the overall score is their simple average. For original annual "
+    "guidance, an actual result at or above forecast is treated positively regardless "
+    "of the size of the upside, while an actual result below forecast is treated "
+    "negatively. Uneven timing or "
     "quantity of evidence lowers the separately recorded confidence rather than "
     "automatically erasing a score. A component remains blank only when the selected "
     "filings provide no defensible basis for assessment; 0.50 is used for the overall "
@@ -127,6 +139,29 @@ _EN_CONSISTENCY_LABELS = {
     ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH: "execution",
     ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE: "forecast discipline",
     ManagementConsistencyDimension.ACCOUNTABILITY_TRANSPARENCY: "accountability",
+}
+_EN_FINANCIAL_METRIC_LABELS = {
+    FinancialMetric.REVENUE: "Revenue",
+    FinancialMetric.OPERATING_PROFIT: "Operating profit",
+    FinancialMetric.ORDINARY_PROFIT: "Ordinary profit",
+    FinancialMetric.PRETAX_PROFIT: "Pretax profit",
+    FinancialMetric.NET_INCOME: "Net income",
+    FinancialMetric.OPERATING_CASH_FLOW: "Operating cash flow",
+    FinancialMetric.INVESTING_CASH_FLOW: "Investing cash flow",
+    FinancialMetric.FREE_CASH_FLOW: "Free cash flow",
+    FinancialMetric.TOTAL_ASSETS: "Total assets",
+    FinancialMetric.NET_ASSETS: "Net assets",
+    FinancialMetric.INTEREST_BEARING_DEBT: "Interest-bearing debt",
+    FinancialMetric.DIVIDEND_PER_SHARE: "Dividend per share",
+    FinancialMetric.SEGMENT_REVENUE: "Segment revenue",
+    FinancialMetric.SEGMENT_PROFIT: "Segment profit",
+    FinancialMetric.OTHER: "Other",
+}
+_EN_FINANCIAL_SCOPE_LABELS = {
+    FinancialScope.CONSOLIDATED: "Consolidated",
+    FinancialScope.COMPANY_ONLY: "Company-only",
+    FinancialScope.SEGMENT: "Segment",
+    FinancialScope.OTHER: "Other",
 }
 
 
@@ -167,6 +202,128 @@ def _consistency_breakdown(
         else f" ({assessed_count} of 4 dimensions assessed)"
     )
     return prefix + "｜".join(values) + coverage
+
+
+def _table_cell(value: str) -> str:
+    return value.replace("|", r"\|").replace("\r", " ").replace("\n", " ")
+
+
+def _comparison_metric_ja(comparison: ManagementForecastComparison) -> str:
+    if comparison.scope == FinancialScope.CONSOLIDATED:
+        return comparison.metric_label_ja
+    return f"{comparison.metric_label_ja}（{comparison.scope_label_ja}）"
+
+
+def _comparison_metric_en(comparison: ManagementForecastComparison) -> str:
+    metric = _EN_FINANCIAL_METRIC_LABELS[comparison.metric]
+    if comparison.scope == FinancialScope.CONSOLIDATED:
+        return metric
+    scope = (
+        comparison.scope_label_ja
+        if comparison.scope in {FinancialScope.SEGMENT, FinancialScope.OTHER}
+        else _EN_FINANCIAL_SCOPE_LABELS[comparison.scope]
+    )
+    return f"{metric} ({scope})"
+
+
+def _plain_decimal(value: Decimal) -> str:
+    rendered = f"{value:,.4f}".rstrip("0").rstrip(".")
+    return "0" if rendered == "-0" else rendered
+
+
+def _english_forecast_value(comparison: ManagementForecastComparison, value: str) -> str:
+    normalized = unicodedata.normalize("NFKC", value).strip()
+    amounts = extract_japanese_financial_amounts(normalized)
+    if len(amounts) == 1:
+        yen_value = amounts[0].yen_value
+        sign = "-" if yen_value < 0 else ""
+        magnitude = abs(yen_value)
+        if comparison.value_kind == FinancialValueKind.PER_SHARE:
+            return f"{sign}¥{_plain_decimal(magnitude)} per share"
+        if comparison.value_kind == FinancialValueKind.MONETARY:
+            if magnitude >= Decimal("1e9"):
+                return f"{sign}¥{magnitude / Decimal('1e9'):,.1f} billion"
+            if magnitude >= Decimal("1e6"):
+                return (
+                    f"{sign}¥{_plain_decimal(magnitude / Decimal('1e6'))} "
+                    "million"
+                )
+            return f"{sign}¥{_plain_decimal(magnitude)}"
+    if comparison.value_kind == FinancialValueKind.PERCENTAGE:
+        return normalized.replace("％", "%")
+    if comparison.value_kind == FinancialValueKind.RATIO:
+        return normalized.replace("倍", "x")
+    return normalized
+
+
+def _render_forecast_comparisons_ja(
+    assessment: ManagementConsistencyAssessment,
+) -> list[str]:
+    if not assessment.forecast_comparisons:
+        return []
+    lines = [
+        "**当初予想と実績の比較**",
+        "",
+        "| 対象期 | 指標 | 当初予想 | 実績 | 判定 |",
+        "|---|---|---:|---:|---|",
+    ]
+    for comparison in sorted(
+        assessment.forecast_comparisons,
+        key=lambda item: (
+            item.target_fiscal_year,
+            item.target_period.value,
+            item.metric.value,
+        ),
+    ):
+        result = (
+            "達成・上振れ"
+            if comparison.result == "met_or_exceeded"
+            else "未達"
+        )
+        lines.append(
+            "| "
+            f"{comparison.target_fiscal_year}年度 | "
+            f"{_table_cell(_comparison_metric_ja(comparison))} | "
+            f"{_table_cell(comparison.forecast_surface_ja)} | "
+            f"{_table_cell(comparison.actual_surface_ja)} | "
+            f"{result} |"
+        )
+    return [*lines, ""]
+
+
+def _render_forecast_comparisons_en(
+    assessment: ManagementConsistencyAssessment,
+) -> list[str]:
+    if not assessment.forecast_comparisons:
+        return []
+    lines = [
+        "**Original forecast versus actual**",
+        "",
+        "| Fiscal year | Metric | Original forecast | Actual | Result |",
+        "|---|---|---:|---:|---|",
+    ]
+    for comparison in sorted(
+        assessment.forecast_comparisons,
+        key=lambda item: (
+            item.target_fiscal_year,
+            item.target_period.value,
+            item.metric.value,
+        ),
+    ):
+        result = (
+            "Met or exceeded"
+            if comparison.result == "met_or_exceeded"
+            else "Missed"
+        )
+        lines.append(
+            "| "
+            f"FY{comparison.target_fiscal_year} | "
+            f"{_table_cell(_comparison_metric_en(comparison))} | "
+            f"{_table_cell(_english_forecast_value(comparison, comparison.forecast_surface_ja))} | "
+            f"{_table_cell(_english_forecast_value(comparison, comparison.actual_surface_ja))} | "
+            f"{result} |"
+        )
+    return [*lines, ""]
 
 
 def _render_section_ja(
@@ -278,6 +435,11 @@ def render_japanese(analysis: JapaneseAnalysis) -> str:
                 ),
                 "",
             ]
+        )
+        lines.extend(
+            _render_forecast_comparisons_ja(
+                analysis.management_consistency,
+            )
         )
         lines.extend(
             _render_management_details_ja(
@@ -407,6 +569,11 @@ def render_english(
                 ),
                 "",
             ]
+        )
+        lines.extend(
+            _render_forecast_comparisons_en(
+                analysis.management_consistency,
+            )
         )
         lines.extend(
             _render_management_details_en(
