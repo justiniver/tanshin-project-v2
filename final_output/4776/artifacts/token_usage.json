@@ -26,22 +26,22 @@
     "provider": "gemini",
     "model": "gemini-3.6-flash",
     "model_version": "gemini-3.6-flash",
-    "response_id": "foV-arHvPLHh1e8PosS6kAo",
+    "response_id": "0st-av_WAYGd1e8P9bKrmQs",
     "attempts": 1,
     "usage_metadata": {
-      "candidates_token_count": 15256,
+      "candidates_token_count": 14259,
       "prompt_token_count": 99900,
       "prompt_tokens_details": [
         {
-          "modality": "IMAGE",
-          "token_count": 96292
-        },
-        {
           "modality": "TEXT",
           "token_count": 3608
+        },
+        {
+          "modality": "IMAGE",
+          "token_count": 96292
         }
       ],
-      "total_token_count": 115156
+      "total_token_count": 114159
     }
   },
   "analysis": {
@@ -49,23 +49,49 @@
     "provider": "gemini",
     "model": "gemini-3.6-flash",
     "model_version": "gemini-3.6-flash",
-    "response_id": "K4Z-au3HEKi3vr0PtOb00Qs",
+    "response_id": "dcx-aveUIZT_2roP08ismQY",
     "attempts": 1,
     "usage_metadata": {
-      "candidates_token_count": 5928,
-      "prompt_token_count": 126521,
+      "candidates_token_count": 5602,
+      "prompt_token_count": 125992,
       "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 29700
+        },
         {
           "modality": "IMAGE",
           "token_count": 96292
-        },
-        {
-          "modality": "TEXT",
-          "token_count": 30229
         }
       ],
-      "thoughts_token_count": 7280,
-      "total_token_count": 139729
+      "thoughts_token_count": 1948,
+      "total_token_count": 133542
+    }
+  },
+  "translation": {
+    "stage": "translation",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "model_version": "gemini-3.6-flash",
+    "response_id": "6c1-asrION2hvr0PuuKx2As",
+    "attempts": 1,
+    "usage_metadata": {
+      "cache_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 7565
+        }
+      ],
+      "cached_content_token_count": 7565,
+      "candidates_token_count": 10812,
+      "prompt_token_count": 12364,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 12364
+        }
+      ],
+      "total_token_count": 23176
     }
   }
 }

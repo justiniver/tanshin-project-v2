@@ -1,5 +1,5 @@
 {
-  "methodology_version": "management-consistency-v6",
+  "methodology_version": "management-consistency-v7",
   "score": 0.81,
   "raw_score": 0.8125,
   "evidence_confidence": null,
@@ -8,14 +8,118 @@
   "distinct_fiscal_years": [],
   "evidence_count": 0,
   "management_discussion_evidence_share": null,
+  "forecast_comparisons": [
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2017,
+      "target_period": "FY",
+      "forecast_surface_ja": "339百万円",
+      "actual_surface_ja": "821百万円",
+      "percentage_error": 142.1829,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "11_2016_FY_tanshin.pdf",
+        "10_2017_FY_tanshin.pdf"
+      ]
+    },
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2021,
+      "target_period": "FY",
+      "forecast_surface_ja": "1,090百万円",
+      "actual_surface_ja": "1,468百万円",
+      "percentage_error": 34.6789,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "07_2020_FY_tanshin.pdf",
+        "06_2021_FY_tanshin.pdf"
+      ]
+    },
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2022,
+      "target_period": "FY",
+      "forecast_surface_ja": "401百万円",
+      "actual_surface_ja": "987百万円",
+      "percentage_error": 146.1347,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "06_2021_FY_tanshin.pdf",
+        "05_2022_FY_tanshin.pdf"
+      ]
+    },
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2023,
+      "target_period": "FY",
+      "forecast_surface_ja": "2,450百万円",
+      "actual_surface_ja": "3,579百万円",
+      "percentage_error": 46.0816,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "05_2022_FY_tanshin.pdf",
+        "04_2023_FY_tanshin.pdf"
+      ]
+    },
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2024,
+      "target_period": "FY",
+      "forecast_surface_ja": "3,142百万円",
+      "actual_surface_ja": "5,335百万円",
+      "percentage_error": 69.7963,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "04_2023_FY_tanshin.pdf",
+        "03_2024_FY_tanshin.pdf"
+      ]
+    },
+    {
+      "metric": "ordinary_profit",
+      "metric_label_ja": "経常利益",
+      "scope": "consolidated",
+      "scope_label_ja": "連結",
+      "value_kind": "monetary",
+      "target_fiscal_year": 2025,
+      "target_period": "FY",
+      "forecast_surface_ja": "8,494百万円",
+      "actual_surface_ja": "10,325百万円",
+      "percentage_error": 21.5564,
+      "result": "met_or_exceeded",
+      "source_filenames": [
+        "03_2024_FY_tanshin.pdf",
+        "02_2025_FY_tanshin.pdf"
+      ]
+    }
+  ],
   "components": [
     {
       "dimension": "strategic_coherence",
-      "rating": 4,
+      "rating": 3,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 1.0,
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "経営陣は2014年以降、「チームワークあふれる社会を創る」パーパスのもと、クラウド事業の売上最大化を一貫して戦略の中心に据えてきた。パッケージからクラウドへのシフト、地域・パートナーエコシステムの構築、自治体DXやエンタープライズ市場への進出など、掲げた方針を長期にわたりブレずに愚直に実行している。上海子会社の開発廃止による体制最適化など不採算領域の構造改革も迅速であり、戦略的整合性は極めて高い。（評価：4）",
+      "rationale_ja": "経営陣は早期から「cybozu.com」への集中投資を掲げ、単なる自社直接販売にとどまらず、パートナー企業（Cybozu Partner Network）や地方銀行との協業によるエコシステム構築を一貫して推進した。また、自社クラウド基盤「NECO」やISMAP・SOC2等の信頼性投資を継続する戦略は論理的であり、クラウド売上比率9割超という強固な事業構造を確立した。",
       "evidence_ids": [],
       "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
@@ -28,7 +132,7 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "クラウド契約社数70,000社・ユーザー数380万人突破や「kintone」の売上高200億円超への成長、2024年の価格体系改定の断行など、主要な戦略施策の遂行能力と結果へのコミットメントは極めて高い。一方で、TVCM等の広告費投下量を急増・急減させたことで営業利益率が2.8%から27.0%まで乱高下した点や、2025年に子会社化したプロバスケットチーム運営（愛媛オレンジバイキングス）の短期的費用負担など、費用平準化と利益の安定制御には一部課題を残す。（評価：3）",
+      "rationale_ja": "2021年〜2022年のTVCM大量投下による利益率低下に対し、2023年に広告費を適切に抑制して利益を急速に挽回させた実行力は高い。さらに2024年の価格改定を円滑に浸透させ、2025年通期で営業利益100億円目標を達成した。一方で、米国等グローバル事業の拡大や地域スポーツ子会社等の新規取り組みにおける収益寄与は途上であり、成果創出に向けたフォローが求められる。",
       "evidence_ids": [],
       "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
@@ -37,11 +141,11 @@
     },
     {
       "dimension": "forecast_target_discipline",
-      "rating": 2,
+      "rating": 4,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.5,
+      "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "観察可能な6期間の通期経常利益予想と実績の比較において、全6期で実績が当初予想を上回った（上振れ率は21.6%〜146.1%）。経営陣は「クラウド事業の環境変化に対して機動的に対応し都度最適な投資判断を実施するため予測値は変動する」と説明し、期初に最大規模の投資枠を織り込んだ保守的な予想を開示する傾向が強い。予測の絶対精度は低いものの、下振れリスクを排除する慎重な運用手法として徹底されている。（評価：2）",
+      "rationale_ja": "評価対象となる過年度6期（2017年、2021年、2022年、2023年、2024年、2025年）の通期連結経常利益において、期首の当初予想に対する実績達成率は100%（6期すべてで期首予想を超致・超過達成）となった。ストック収益の積み上がりや投資実行過程での費用調整を織り込み、極めて堅実な予想規律を維持している。",
       "evidence_ids": [],
       "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,
@@ -50,11 +154,11 @@
     },
     {
       "dimension": "accountability_transparency",
-      "rating": 4,
+      "rating": 3,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 1.0,
+      "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "経営陣は自ら「一時的に利益率を低下させてでも投資を優先する」方針をあらかじめ明言し、投資期の利益圧迫について市場へ透明性の高い説明を継続してきた。また、上海子会社の開発事業廃止に伴う特別損失（事業構造改善費用150百万円）の開示やリコーとの資本提携目的、愛媛オレンジバイキングス子会社化の定性・定量理由などについても決算短信等で詳細に説明しており、説明責任と透明性は極めて良好である。（評価：4）",
+      "rationale_ja": "2021年〜2022年の減益局面において、米国等への投資やTVCM等の広告宣伝投資を要因として明確に説明し、株主・投資家に対して過度な情報格差が生じないよう即時開示方針を堅持した。また、中国子会社の開発事業廃止（2024年に事業構造改善費用150百万円計上）など非効率事業の整理についても迅速かつ透明性の高い開示を行っている。",
       "evidence_ids": [],
       "distinct_fiscal_years": [],
       "management_discussion_evidence_count": 0,

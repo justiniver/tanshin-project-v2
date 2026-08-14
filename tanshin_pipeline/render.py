@@ -274,6 +274,7 @@ def _render_forecast_comparisons_ja(
             item.target_period.value,
             item.metric.value,
         ),
+        reverse=True,
     ):
         result = (
             "達成・上振れ"
@@ -309,6 +310,7 @@ def _render_forecast_comparisons_en(
             item.target_period.value,
             item.metric.value,
         ),
+        reverse=True,
     ):
         result = (
             "Met or exceeded"
@@ -437,14 +439,14 @@ def render_japanese(analysis: JapaneseAnalysis) -> str:
             ]
         )
         lines.extend(
-            _render_forecast_comparisons_ja(
-                analysis.management_consistency,
-            )
-        )
-        lines.extend(
             _render_management_details_ja(
                 analysis.management_consistency,
                 grouped,
+            )
+        )
+        lines.extend(
+            _render_forecast_comparisons_ja(
+                analysis.management_consistency,
             )
         )
     if analysis.management_consistency is not None:
@@ -571,14 +573,14 @@ def render_english(
             ]
         )
         lines.extend(
-            _render_forecast_comparisons_en(
-                analysis.management_consistency,
-            )
-        )
-        lines.extend(
             _render_management_details_en(
                 analysis.management_consistency,
                 grouped,
+            )
+        )
+        lines.extend(
+            _render_forecast_comparisons_en(
+                analysis.management_consistency,
             )
         )
     if analysis.management_consistency is not None:

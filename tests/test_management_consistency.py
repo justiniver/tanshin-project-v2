@@ -22,6 +22,7 @@ from tanshin_pipeline.schemas import (
     ManagementConsistencyDimension,
     ManagementForecastComparison,
     EvidenceRecord,
+    SectionKey,
     StatementType,
 )
 from tanshin_pipeline.selection import select_filings
@@ -185,6 +186,18 @@ class ManagementConsistencyTests(unittest.TestCase):
         translation = EnglishTranslation.model_validate(
             read_json(FIXTURES / "fake_translation_en.json")
         )
+        translation.claims.append(
+            translation.claims[0].model_copy(
+                update={
+                    "claim_id": "management-accountability-order-test",
+                    "section": SectionKey.MANAGEMENT_ACCOUNTABILITY,
+                    "order": 1,
+                    "headline_en": "Accountability",
+                    "body_en": "Management explained outcomes and setbacks.",
+                },
+                deep=True,
+            )
+        )
         pending = _pending_assessment(
             [
                 "38_2017-05-12_tanshin.pdf:s0001",
@@ -313,6 +326,8 @@ class ManagementConsistencyTests(unittest.TestCase):
             "¥100 per share | ¥95 per share | Missed |",
             en,
         )
+        self.assertLess(ja.index("| 2026年度 |"), ja.index("| 2025年度 |"))
+        self.assertLess(en.index("| FY2026 |"), en.index("| FY2025 |"))
         self.assertIn(
             "実績が予想以上なら上振れ幅の大小を問わず肯定的に扱い",
             ja,
@@ -320,6 +335,14 @@ class ManagementConsistencyTests(unittest.TestCase):
         self.assertIn(
             "at or above forecast is treated positively regardless of the size",
             en,
+        )
+        self.assertLess(
+            ja.index("- **説明責任 0.75：**"),
+            ja.index("**当初予想と実績の比較**"),
+        )
+        self.assertLess(
+            en.index("- **Accountability 0.75:**"),
+            en.index("**Original forecast versus actual**"),
         )
 
     def test_thin_but_resolved_components_render_all_four_scores(self) -> None:

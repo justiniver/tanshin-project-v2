@@ -10,27 +10,20 @@
   },
   "claims": [
     {
-      "claim_id": "c_overview_1",
+      "claim_id": "claim_001",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "クラウド型グループウェアおよび業務アプリ構築プラットフォームの開発・提供",
-      "body_ja": "サイボウズは、「kintone」「サイボウズ Office」「Garoon」などのクラウド型グループウェアおよびノーコード・ローコード業務アプリケーション構築プラットフォームの開発・販売を展開する。民間企業や官公庁・自治体、教育機関など多岐にわたる組織を顧客とし、契約に基づくストック型の利用料収入を主たる収益源としている。\n\n自社直販体制に加え、地方銀行やSIパートナーからなる堅固なエコシステム（代理店網）を経由した間接販売が国内売上高の6割以上を占める点に事業モデル上の大きな特徴がある。",
+      "headline_ja": "クラウド型サブスクリプションを主力とする業務ソフトウェア開発・販売構造",
+      "body_ja": "サイボウズは、「kintone」、「サイボウズ Office」、「Garoon」、「メールワイズ」などのグループウェアおよび業務アプリ構築クラウドサービスの開発・販売を展開する。顧客層は中小企業から大企業、地方自治体・官公庁まで多岐にわたり、クラウド基盤を通じたストック型の月額・年額サブスクリプション利用料を主要な収益源としている。自社データセンターの運用およびパートナー企業とのエコシステム構築を軸に、高い解約率抑制と継続的な契約ライセンス数の積み上げによって安定した事業基盤を維持している。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": false,
-      "figures": [
-        {
-          "value_id": "c_overview_1:figure:01",
-          "claim_surface_ja": "6",
-          "source_surface_ja": "6",
-          "evidence_id": null
-        }
-      ],
+      "figures": [],
       "dates": [],
       "qualifiers": [
         {
-          "value_id": "c_overview_1:qualifier:01",
+          "value_id": "claim_001:qualifier:01",
           "claim_surface_ja": "約",
           "source_surface_ja": "約",
           "evidence_id": null
@@ -38,66 +31,78 @@
       ]
     },
     {
-      "claim_id": "c_latest_takeaway_1",
+      "claim_id": "claim_002",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年12月期第1四半期はストック収益の積み上がりにより増収増益を達成",
-      "body_ja": "当第1四半期連結累計期間の売上高は10,246百万円（前年同期比17.0%増）、営業利益は3,014百万円（同15.3%増）、経常利益は3,084百万円（同22.1%増）となった。子会社化したプロバスケットボールチーム「愛媛オレンジバイキングス」の運営費発生に伴う売上原価増や、人員増加・昇給による人件費増、TVCM等の広告宣伝費増、R&D費用増があったものの、クラウド関連事業売上高（9,393百万円、同17.1%増）の着実な積み上がりがこれを吸収した。",
+      "headline_ja": "2026年12月期第1四半期はクラウド売上伸長により17.0%増収・15.3%営業増益を達成",
+      "body_ja": "2026年12月期第1四半期の連結累計業績は、売上高10,246百万円（前年同期比17.0%増）、営業利益3,014百万円（同15.3%増）、経常利益3,084百万円（同22.1%増）、親会社株主に帰属する四半期純利益2,191百万円（同21.6%増）となった。人件費や広告宣伝費、研究開発費、子会社運営費等の費用増加をクラウド関連事業の売上積み上がり（9,393百万円、同17.1%増）によって吸収し、増収増益を確保した。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_latest_takeaway_1:figure:01",
+          "value_id": "claim_002:figure:01",
           "claim_surface_ja": "1",
           "source_surface_ja": "1",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:02",
-          "claim_surface_ja": "10,246百万円",
-          "source_surface_ja": "10,246百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_takeaway_1:figure:03",
+          "value_id": "claim_002:figure:02",
           "claim_surface_ja": "17.0%",
           "source_surface_ja": "17.0%",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:04",
-          "claim_surface_ja": "3,014百万円",
-          "source_surface_ja": "3,014百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_takeaway_1:figure:05",
+          "value_id": "claim_002:figure:03",
           "claim_surface_ja": "15.3%",
           "source_surface_ja": "15.3%",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:06",
+          "value_id": "claim_002:figure:04",
+          "claim_surface_ja": "10,246百万円",
+          "source_surface_ja": "10,246百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_002:figure:05",
+          "claim_surface_ja": "3,014百万円",
+          "source_surface_ja": "3,014百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_002:figure:06",
           "claim_surface_ja": "3,084百万円",
           "source_surface_ja": "3,084百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:07",
+          "value_id": "claim_002:figure:07",
           "claim_surface_ja": "22.1%",
           "source_surface_ja": "22.1%",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:08",
+          "value_id": "claim_002:figure:08",
+          "claim_surface_ja": "2,191百万円",
+          "source_surface_ja": "2,191百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_002:figure:09",
+          "claim_surface_ja": "21.6%",
+          "source_surface_ja": "21.6%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_002:figure:10",
           "claim_surface_ja": "9,393百万円",
           "source_surface_ja": "9,393百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_1:figure:09",
+          "value_id": "claim_002:figure:11",
           "claim_surface_ja": "17.1%",
           "source_surface_ja": "17.1%",
           "evidence_id": null
@@ -105,7 +110,7 @@
       ],
       "dates": [
         {
-          "value_id": "c_latest_takeaway_1:date:01",
+          "value_id": "claim_002:date:01",
           "claim_surface_ja": "2026年12月期",
           "source_surface_ja": "2026年12月期",
           "evidence_id": null
@@ -114,143 +119,162 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_latest_takeaway_2",
+      "claim_id": "claim_003",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "配当実施や株価下落で総資産・純資産は減少も、自己資本比率は64.9%へ上昇",
-      "body_ja": "当第1四半期連結会計期間末の総資産は前連結会計年度末比3,116百万円減の27,023百万円、純資産は同228百万円減の17,586百万円となった。剰余金配当1,849百万円の実施や上場株式の株価下落によるその他有価証券評価差額金の減少、未払法人税等や未払費用の支払いによる負債減少（同2,887百万円減）に対し、四半期純利益2,191百万円の計上で利益剰余金が増加した結果、自己資本比率は前期末の59.1%から64.9%へと高水準に向上した。",
+      "headline_ja": "自己資本比率64.9%へ上昇も株価下落に伴う評価差額金減少で純資産は微減",
+      "body_ja": "2026年3月末時点の総資産は27,023百万円となり、前連結会計年度末から3,116百万円減少した。上場株式の株価下落による投資有価証券の減少や未払費用・未払法人税等の減少（負債合計2,887百万円減の9,436百万円）が進んだ結果、自己資本比率は前会計年度末の59.1%から64.9%へ上昇した。純資産合計は1,849百万円の配当実施と評価差額金の減少により228百万円減の17,586百万円となった。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_latest_takeaway_2:figure:01",
+          "value_id": "claim_003:figure:01",
           "claim_surface_ja": "64.9%",
           "source_surface_ja": "64.9%",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:02",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
+          "value_id": "claim_003:figure:02",
+          "claim_surface_ja": "3月",
+          "source_surface_ja": "3月",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:03",
-          "claim_surface_ja": "3,116百万円",
-          "source_surface_ja": "3,116百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_takeaway_2:figure:04",
+          "value_id": "claim_003:figure:03",
           "claim_surface_ja": "27,023百万円",
           "source_surface_ja": "27,023百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:05",
-          "claim_surface_ja": "228百万円",
-          "source_surface_ja": "228百万円",
+          "value_id": "claim_003:figure:04",
+          "claim_surface_ja": "3,116百万円",
+          "source_surface_ja": "3,116百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:06",
-          "claim_surface_ja": "17,586百万円",
-          "source_surface_ja": "17,586百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_takeaway_2:figure:07",
-          "claim_surface_ja": "1,849百万円",
-          "source_surface_ja": "1,849百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_takeaway_2:figure:08",
+          "value_id": "claim_003:figure:05",
           "claim_surface_ja": "2,887百万円",
           "source_surface_ja": "2,887百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:09",
-          "claim_surface_ja": "2,191百万円",
-          "source_surface_ja": "2,191百万円",
+          "value_id": "claim_003:figure:06",
+          "claim_surface_ja": "9,436百万円",
+          "source_surface_ja": "9,436百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_2:figure:10",
+          "value_id": "claim_003:figure:07",
           "claim_surface_ja": "59.1%",
           "source_surface_ja": "59.1%",
           "evidence_id": null
+        },
+        {
+          "value_id": "claim_003:figure:08",
+          "claim_surface_ja": "1,849百万円",
+          "source_surface_ja": "1,849百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_003:figure:09",
+          "claim_surface_ja": "228百万円",
+          "source_surface_ja": "228百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_003:figure:10",
+          "claim_surface_ja": "17,586百万円",
+          "source_surface_ja": "17,586百万円",
+          "evidence_id": null
         }
       ],
-      "dates": [],
+      "dates": [
+        {
+          "value_id": "claim_003:date:01",
+          "claim_surface_ja": "2026年",
+          "source_surface_ja": "2026年",
+          "evidence_id": null
+        }
+      ],
       "qualifiers": []
     },
     {
-      "claim_id": "c_latest_takeaway_3",
+      "claim_id": "claim_004",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期業績予想を据え置く一方、上限30億円の機動的な自己株式取得枠を設定",
-      "body_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）は公表値から変更されていない。一方で、2026年5月14日開催の取締役会において、保有資産を活用した資本構成の再構築を図るため、発行済株式総数（自己株式除く）の6.5%に相当する300万株・総額30億円を上限とする自己株式取得を決議し、機動的な株主還元姿勢を鮮明にした。",
+      "headline_ja": "通期業績予想・年間50円配当方針を据え置き上限30億円の自社株買いを決議",
+      "body_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）および年間配当予想1株当たり50円は据え置かれた。また、2026年5月14日の取締役会において、資本構成再構築と機動的な資本政策を目的として、取得上限300万株（発行済株式総数の6.5%）・総額30億円の自己株式取得を決議した。",
       "evidence_ids": [],
       "statement_type": "mixed",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "c_latest_takeaway_3:figure:01",
+          "value_id": "claim_004:figure:01",
+          "claim_surface_ja": "50円",
+          "source_surface_ja": "50円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_004:figure:02",
           "claim_surface_ja": "30億円",
           "source_surface_ja": "30億円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:02",
+          "value_id": "claim_004:figure:03",
           "claim_surface_ja": "42,168百万円",
           "source_surface_ja": "42,168百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:03",
+          "value_id": "claim_004:figure:04",
           "claim_surface_ja": "10,514百万円",
           "source_surface_ja": "10,514百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:04",
+          "value_id": "claim_004:figure:05",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_004:figure:06",
           "claim_surface_ja": "5月",
           "source_surface_ja": "5月",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:05",
+          "value_id": "claim_004:figure:07",
           "claim_surface_ja": "14日",
           "source_surface_ja": "14日",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:06",
-          "claim_surface_ja": "6.5%",
-          "source_surface_ja": "6.5%",
+          "value_id": "claim_004:figure:08",
+          "claim_surface_ja": "300",
+          "source_surface_ja": "300",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:figure:07",
-          "claim_surface_ja": "300",
-          "source_surface_ja": "300",
+          "value_id": "claim_004:figure:09",
+          "claim_surface_ja": "6.5%",
+          "source_surface_ja": "6.5%",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "c_latest_takeaway_3:date:01",
+          "value_id": "claim_004:date:01",
           "claim_surface_ja": "2026年12月期",
           "source_surface_ja": "2026年12月期",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_takeaway_3:date:02",
+          "value_id": "claim_004:date:02",
           "claim_surface_ja": "2026年",
           "source_surface_ja": "2026年",
           "evidence_id": null
@@ -258,7 +282,7 @@
       ],
       "qualifiers": [
         {
-          "value_id": "c_latest_takeaway_3:qualifier:01",
+          "value_id": "claim_004:qualifier:01",
           "claim_surface_ja": "予想",
           "source_surface_ja": "予想",
           "evidence_id": null
@@ -266,58 +290,51 @@
       ]
     },
     {
-      "claim_id": "c_latest_driver_1",
+      "claim_id": "claim_005",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "クラウド需要｜追い風：kintone等の契約拡大と価格体系改定効果の継続",
-      "body_ja": "主力「kintone」を中心にクラウドサービスの有料契約社数が70,000社、契約ユーザーライセンス数が380万人を突破した。2024年11月に実施した主要サービスの価格体系および最小契約ユーザー数の改定効果に伴い顧客平均売上単価の上昇傾向が続いており、一定期間にわたり移転されるストック収益が10,020百万円（前年同期比17.3%増）へ拡大して全体の成長を牽引した。",
+      "headline_ja": "クラウド需要｜追い風：利用契約社数7万社増に伴うストック収益の拡大",
+      "body_ja": "主力の「kintone」をはじめとするクラウドサービスの契約社数が70,000社、契約ユーザーライセンス数が380万人を突破した。価格体系改定効果の浸透と既存顧客への全社展開・アップセル提案が寄与し、クラウド関連事業売上高は9,393百万円（前年同期比17.1%増）へと順調に積み上がった。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_latest_driver_1:figure:01",
+          "value_id": "claim_005:figure:01",
+          "claim_surface_ja": "7",
+          "source_surface_ja": "7",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_005:figure:02",
           "claim_surface_ja": "70,000社",
           "source_surface_ja": "70,000社",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_driver_1:figure:02",
+          "value_id": "claim_005:figure:03",
           "claim_surface_ja": "380",
           "source_surface_ja": "380",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_driver_1:figure:03",
-          "claim_surface_ja": "11月",
-          "source_surface_ja": "11月",
+          "value_id": "claim_005:figure:04",
+          "claim_surface_ja": "9,393百万円",
+          "source_surface_ja": "9,393百万円",
           "evidence_id": null
         },
         {
-          "value_id": "c_latest_driver_1:figure:04",
-          "claim_surface_ja": "10,020百万円",
-          "source_surface_ja": "10,020百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_1:figure:05",
-          "claim_surface_ja": "17.3%",
-          "source_surface_ja": "17.3%",
+          "value_id": "claim_005:figure:05",
+          "claim_surface_ja": "17.1%",
+          "source_surface_ja": "17.1%",
           "evidence_id": null
         }
       ],
-      "dates": [
-        {
-          "value_id": "c_latest_driver_1:date:01",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        }
-      ],
+      "dates": [],
       "qualifiers": [
         {
-          "value_id": "c_latest_driver_1:qualifier:01",
+          "value_id": "claim_005:qualifier:01",
           "claim_surface_ja": "約",
           "source_surface_ja": "約",
           "evidence_id": null
@@ -325,101 +342,742 @@
       ]
     },
     {
-      "claim_id": "c_latest_driver_2",
+      "claim_id": "claim_006",
       "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "成長投資費｜逆風：人員増に伴う人件費、プロモーション費用およびR&D費用の増加",
-      "body_ja": "従業員数の増加や昇給による人件費（2,620百万円、前年同期比8.8%増）や、認知獲得に向けた積極的な広告宣伝費（1,613百万円、同28.4%増）、グローバル新規事業創出に向けた研究開発費（399百万円、同33.9%増）が増加した。これにより販管費合計は6,313百万円（同16.8%増）となり、売上総利益の伸び（同16.3%増）に対し一定の利益圧迫要因となった。",
+      "headline_ja": "人件費・販促費｜逆風：成長投資の継続による販売管理費の押し上げ",
+      "body_ja": "従業員数の増加や昇給に伴う人件費の増加に加え、認知獲得・維持に向けた広告宣伝投資の継続、グローバル新規事業を見据えた研究開発費の拡大が営業費用を押し上げた。売上高の大幅な伸びによって利益成長は維持されているものの、固定費負担は高水準で推移している。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
-      "figures": [
-        {
-          "value_id": "c_latest_driver_2:figure:01",
-          "claim_surface_ja": "2,620百万円",
-          "source_surface_ja": "2,620百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:02",
-          "claim_surface_ja": "8.8%",
-          "source_surface_ja": "8.8%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:03",
-          "claim_surface_ja": "1,613百万円",
-          "source_surface_ja": "1,613百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:04",
-          "claim_surface_ja": "28.4%",
-          "source_surface_ja": "28.4%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:05",
-          "claim_surface_ja": "399百万円",
-          "source_surface_ja": "399百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:06",
-          "claim_surface_ja": "33.9%",
-          "source_surface_ja": "33.9%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:07",
-          "claim_surface_ja": "6,313百万円",
-          "source_surface_ja": "6,313百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:08",
-          "claim_surface_ja": "16.8%",
-          "source_surface_ja": "16.8%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_2:figure:09",
-          "claim_surface_ja": "16.3%",
-          "source_surface_ja": "16.3%",
-          "evidence_id": null
-        }
-      ],
+      "figures": [],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "c_latest_driver_3",
+      "claim_id": "claim_007",
       "section": "latest.business_driver",
       "order": 3,
-      "headline_ja": "連結範囲変動｜影響混在：プロバスケットボールチーム運営費の原価計上",
-      "body_ja": "2025年12月期中に子会社化した株式会社エヒメスポーツエンターテイメント（「愛媛オレンジバイキングス」運営）の事業費用が連結化されたことにより、売上原価が918百万円（前年同期比23.9%増）へ増加した。地域DXやまちづくり貢献という定性目的の一方で、短期的には連結売上原価率を引き上げる要因となっている。",
+      "headline_ja": "子会社運営費｜影響混在：地域DX推進に伴う連結原価の増加要因",
+      "body_ja": "2025年6月に子会社化したプロバスケットボールチーム「愛媛オレンジバイキングス」の運営費用等が売上原価の増加要因として計上されている。創業の地での地域DXやまちづくり貢献を掲げる一方で、単期的な収益性に対してはコスト先行の負担となっている。",
       "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_latest_driver_3:figure:01",
-          "claim_surface_ja": "918百万円",
-          "source_surface_ja": "918百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_driver_3:figure:02",
-          "claim_surface_ja": "23.9%",
-          "source_surface_ja": "23.9%",
+          "value_id": "claim_007:figure:01",
+          "claim_surface_ja": "6月",
+          "source_surface_ja": "6月",
           "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "c_latest_driver_3:date:01",
+          "value_id": "claim_007:date:01",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_008",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "2026年通期で売上高12.7%増・営業利益4.1%増の増収微益計画を維持",
+      "body_ja": "2026年12月期の連結通期予想は、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）と当初公表値を維持している。人件費増加やデータセンター運用費、国内外での広告宣伝投資を織り込み、増収速度に対して利益成長率は緩やかな見通しとなっている。",
+      "evidence_ids": [],
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_008:figure:01",
+          "claim_surface_ja": "12.7%",
+          "source_surface_ja": "12.7%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:02",
+          "claim_surface_ja": "4.1%",
+          "source_surface_ja": "4.1%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:03",
+          "claim_surface_ja": "42,168百万円",
+          "source_surface_ja": "42,168百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:04",
+          "claim_surface_ja": "10,514百万円",
+          "source_surface_ja": "10,514百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:05",
+          "claim_surface_ja": "10,732百万円",
+          "source_surface_ja": "10,732百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:06",
+          "claim_surface_ja": "3.9%",
+          "source_surface_ja": "3.9%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:07",
+          "claim_surface_ja": "7,445百万円",
+          "source_surface_ja": "7,445百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:figure:08",
+          "claim_surface_ja": "5.1%",
+          "source_surface_ja": "5.1%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_008:date:01",
+          "claim_surface_ja": "2026年",
+          "source_surface_ja": "2026年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_008:date:02",
+          "claim_surface_ja": "2026年12月期",
+          "source_surface_ja": "2026年12月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "claim_008:qualifier:01",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_009",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "先行投資拡大に伴う固定費高止まりと利益率の変動リスク",
+      "body_ja": "同社は将来の収益力強化に向けて人員採用、研究開発、広告宣伝へ積極的に資本を投じる方針をとっている。クラウド売上高の成長が鈍化した場合や投資効果の顕現化が遅れた場合、高水準の固定費が利益圧迫要因となり、過去に生じたような営業利益率の急低下を招く懸念がある。",
+      "evidence_ids": [],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_010",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "海外事業投資の回収長期化および非中核投資の原価負担",
+      "body_ja": "米国をはじめとするグローバル市場での「kintone」認知度向上・販売体制強化に向けた投資を継続しているものの、国内事業と比較して海外の収益寄与はなお途上段階にある。また、愛媛オレンジバイキングスなど地域DX目的の事業における費用増加が営業原価を押し上げており、投資対効果の早期検証が課題となる。",
+      "evidence_ids": [],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_011",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "高収益化と株主還元強化の一方で積極投資による費用増を織り込む局面",
+      "body_ja": "サイボウズは2024年〜2025年における価格体系改定の浸透により、2025年12月期に営業利益100億円を達成し収益水準を大幅に引き上げた。2026年12月期第1四半期も17.0%増収・15.3%営業増益と順調なスタートを切っており、自己資本比率64.9%という優良な財政状態を背景に年間50円配当や30億円規模の自社株買いを打ち出している。\n一方で、通期計画では人員増やサーバー運用費、グローバル新規事業やAI開発、地域DX等の費用増を見込んでおり、営業利益の伸びは4.1%増にとどまる増収微益を予想している。投資家は、クラウド売上ストックの持続的成長速度と、積極的な先行投資の投資効率のバランスを注視する必要がある。",
+      "evidence_ids": [],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_011:figure:01",
+          "claim_surface_ja": "100億円",
+          "source_surface_ja": "100億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:02",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:03",
+          "claim_surface_ja": "17.0%",
+          "source_surface_ja": "17.0%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:04",
+          "claim_surface_ja": "15.3%",
+          "source_surface_ja": "15.3%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:05",
+          "claim_surface_ja": "64.9%",
+          "source_surface_ja": "64.9%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:06",
+          "claim_surface_ja": "50円",
+          "source_surface_ja": "50円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:07",
+          "claim_surface_ja": "30億円",
+          "source_surface_ja": "30億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:figure:08",
+          "claim_surface_ja": "4.1%",
+          "source_surface_ja": "4.1%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_011:date:01",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:date:02",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:date:03",
+          "claim_surface_ja": "2025年12月期",
+          "source_surface_ja": "2025年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_011:date:04",
+          "claim_surface_ja": "2026年12月期",
+          "source_surface_ja": "2026年12月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_012",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "クラウド移行によるストック基盤形成と投資サイクルに伴う損益変動の10年史",
+      "body_ja": "過去10年間のサイボウズは、パッケージ販売中心から「cybozu.com」を軸とするクラウドサブスクリプションモデルへ事業構造を完全に転換させた。経常利益は2016年12月期の587百万円から、2020年12月期の2,272百万円、2025年12月期の10,325百万円へと拡大した。しかし、その過程は一本調子ではなく、2021年〜2022年における認知向上目的の大規模TVCM・人員採用投資によって営業利益率が大幅に下落した。その後、2023年の広告費抑制と2024年以降の価格改定浸透により劇的な利益回復を果たしており、収益基盤の拡大と経営陣の投資コントロール能力が長期業績を左右する構造となっている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_012:figure:01",
+          "claim_surface_ja": "587百万円",
+          "source_surface_ja": "587百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:figure:02",
+          "claim_surface_ja": "2,272百万円",
+          "source_surface_ja": "2,272百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:figure:03",
+          "claim_surface_ja": "10,325百万円",
+          "source_surface_ja": "10,325百万円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_012:date:01",
+          "claim_surface_ja": "2016年12月期",
+          "source_surface_ja": "2016年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:02",
+          "claim_surface_ja": "2020年12月期",
+          "source_surface_ja": "2020年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:03",
+          "claim_surface_ja": "2025年12月期",
+          "source_surface_ja": "2025年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:04",
+          "claim_surface_ja": "2021年",
+          "source_surface_ja": "2021年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:05",
+          "claim_surface_ja": "2022年",
+          "source_surface_ja": "2022年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:06",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_012:date:07",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_013",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "「kintone」を中心としたクラウドストック収益の高成長と高い顧客定着性",
+      "body_ja": "2016年12月期から2025年12月期に至るまで、クラウド関連事業売上高は一貫して拡大を続けた。主力「kintone」の国内契約社数は11,000社（2018年）から39,000社（2025年）へ伸長し、低解約率を維持しながらストック収益を積み上げるビジネスモデルは堅固に機能している。パートナーエコシステム（Cybozu Partner Network）経由の売上割合も60%超へと高まり、安定した顧客獲得基盤となっている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_013:figure:01",
+          "claim_surface_ja": "11,000社",
+          "source_surface_ja": "11,000社",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_013:figure:02",
+          "claim_surface_ja": "39,000社",
+          "source_surface_ja": "39,000社",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_013:figure:03",
+          "claim_surface_ja": "60%",
+          "source_surface_ja": "60%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_013:date:01",
+          "claim_surface_ja": "2016年12月期",
+          "source_surface_ja": "2016年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_013:date:02",
+          "claim_surface_ja": "2025年12月期",
+          "source_surface_ja": "2025年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_013:date:03",
+          "claim_surface_ja": "2018年",
+          "source_surface_ja": "2018年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_013:date:04",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "claim_013:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_014",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "自社クラウド基盤（NECO等）およびデータセンターへの優先的設備投資",
+      "body_ja": "クラウドサービスの拡大に対応するため、同社は一貫してサーバー機材（有形固定資産の工具、器具及び備品等）の増設や新クラウド基盤「NECO」への移行投資を継続してきた。固定資産の継続的拡充とセキュリティ（ISMAP・SOC2・HIPAA対応）強化が、サービス品質の信頼性と顧客基盤の維持を支えるインフラとなっている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_015",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "プロモーション戦略の転換：大量広告投資フェーズから効率化と価格改定による収益回収へ",
+      "body_ja": "2021年〜2022年期には「kintone」の認知向上を狙って大規模なTVCM等の広告宣伝費（2022年に6,452百万円）を投じ、営業利益率は2%台まで低下した。しかし、2023年期には認知度獲得が一定水準に達したとして広告費を4,313百万円へ抑制・制御し、利益率が劇的に回復した。さらに2024年11月の価格体系・最小契約数改定により、2025年期には営業利益率27.0%・営業利益10,101百万円という最高益フェーズへ移行した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_015:figure:01",
+          "claim_surface_ja": "6,452百万円",
+          "source_surface_ja": "6,452百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:figure:02",
+          "claim_surface_ja": "2%",
+          "source_surface_ja": "2%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:figure:03",
+          "claim_surface_ja": "4,313百万円",
+          "source_surface_ja": "4,313百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:figure:04",
+          "claim_surface_ja": "11月",
+          "source_surface_ja": "11月",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:figure:05",
+          "claim_surface_ja": "27.0%",
+          "source_surface_ja": "27.0%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:figure:06",
+          "claim_surface_ja": "10,101百万円",
+          "source_surface_ja": "10,101百万円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_015:date:01",
+          "claim_surface_ja": "2021年",
+          "source_surface_ja": "2021年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:date:02",
+          "claim_surface_ja": "2022年",
+          "source_surface_ja": "2022年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:date:03",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:date:04",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_015:date:05",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "claim_015:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_016",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "資本提携・自社株買い・配当拡充による株主還元政策の積極化",
+      "body_ja": "初期には売上総額の10%を目安とした利益還元方針を掲げていたが、2023年1月にリコーへの第三者割当（自己株式処分4,499百万円）により戦略的提携資金を確保した。その後、高収益化に伴い1株配当を13〜14円水準から2024年12月期に30円、2025年12月期に40円、2026年12月期予想で50円へと連続増配した。さらに2024年期に2,929百万円、2026年期第1四半期にも30億円上限の自社株買いを決議するなど資本効率を意識した還元強化へ舵を切っている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_016:figure:01",
+          "claim_surface_ja": "10%",
+          "source_surface_ja": "10%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:02",
+          "claim_surface_ja": "1月",
+          "source_surface_ja": "1月",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:03",
+          "claim_surface_ja": "4,499百万円",
+          "source_surface_ja": "4,499百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:04",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:05",
+          "claim_surface_ja": "13",
+          "source_surface_ja": "13",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:06",
+          "claim_surface_ja": "14円",
+          "source_surface_ja": "14円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:07",
+          "claim_surface_ja": "30円",
+          "source_surface_ja": "30円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:08",
+          "claim_surface_ja": "40円",
+          "source_surface_ja": "40円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:09",
+          "claim_surface_ja": "50円",
+          "source_surface_ja": "50円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:10",
+          "claim_surface_ja": "2,929百万円",
+          "source_surface_ja": "2,929百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:figure:11",
+          "claim_surface_ja": "30億円",
+          "source_surface_ja": "30億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_016:date:01",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:date:02",
+          "claim_surface_ja": "2024年12月期",
+          "source_surface_ja": "2024年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:date:03",
+          "claim_surface_ja": "2025年12月期",
+          "source_surface_ja": "2025年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:date:04",
+          "claim_surface_ja": "2026年12月期",
+          "source_surface_ja": "2026年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:date:05",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_016:date:06",
+          "claim_surface_ja": "2026年",
+          "source_surface_ja": "2026年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "claim_016:qualifier:01",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_017",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "クラウド基盤設備投資への集中配置とリコーとの資本提携を通じた資金調達",
+      "body_ja": "過去10年間の資金配分において、最優先された destination は自社クラウド基盤・データセンター構築（サーバー・備品取得に毎年2,000〜30億円規模の投資）である。2023年1月にはリコーに対する自己株式処分により4,499百万円を調達し、サーバー機材購入および米国事業強化へ配分した。高収益化達成後は自社株買いや増配を通じて株主還元への資本配分比率を高めている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_017:figure:01",
+          "claim_surface_ja": "2,000",
+          "source_surface_ja": "2,000",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_017:figure:02",
+          "claim_surface_ja": "30億円",
+          "source_surface_ja": "30億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_017:figure:03",
+          "claim_surface_ja": "1月",
+          "source_surface_ja": "1月",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_017:figure:04",
+          "claim_surface_ja": "4,499百万円",
+          "source_surface_ja": "4,499百万円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_017:date:01",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_018",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "創出した：自社クラウド基盤とR&D・マーケティングへの継続投資が高いリターンを結実",
+      "body_ja": "過去10年間で追加投入された資本の大部分は、クラウド事業基盤（サーバー機材等の有形固定資産残高は2016年の608百万円から2025年に4,276百万円へ拡大）およびソフトウェア開発・人件費・広告宣伝費などの継続的費用投入に向けられた。この投資により、クラウド関連事業売上高は2016年12月期の4,050百万円から2025年12月期の34,485百万円へ約8.5倍に拡大し、営業利益も10,101百万円に達した。投入資本および費用を大幅に上回る収益成長と利益率向上（2025年期ROE 48.1%）を達成しており、主要投資配分先は極めて高い価値を創出した。一方、地域DX目的の愛媛オレンジバイキングス買収（取得価額165百万円）などは規模が小水準にとどまり、全体のリターン構造に与える影響は限定的である。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_018:figure:01",
+          "claim_surface_ja": "608百万円",
+          "source_surface_ja": "608百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:02",
+          "claim_surface_ja": "4,276百万円",
+          "source_surface_ja": "4,276百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:03",
+          "claim_surface_ja": "4,050百万円",
+          "source_surface_ja": "4,050百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:04",
+          "claim_surface_ja": "34,485百万円",
+          "source_surface_ja": "34,485百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:05",
+          "claim_surface_ja": "8.5倍",
+          "source_surface_ja": "8.5倍",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:06",
+          "claim_surface_ja": "10,101百万円",
+          "source_surface_ja": "10,101百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:07",
+          "claim_surface_ja": "48.1%",
+          "source_surface_ja": "48.1%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:figure:08",
+          "claim_surface_ja": "165百万円",
+          "source_surface_ja": "165百万円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_018:date:01",
+          "claim_surface_ja": "2016年",
+          "source_surface_ja": "2016年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:date:02",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:date:03",
+          "claim_surface_ja": "2016年12月期",
+          "source_surface_ja": "2016年12月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_018:date:04",
           "claim_surface_ja": "2025年12月期",
           "source_surface_ja": "2025年12月期",
           "evidence_id": null
@@ -428,66 +1086,18 @@
       "qualifiers": []
     },
     {
-      "claim_id": "c_latest_outlook_1",
-      "section": "latest.outlook",
+      "claim_id": "claim_019",
+      "section": "trend.implication",
       "order": 1,
-      "headline_ja": "価格改定効果が一巡するなか、投資増額を織り込み通期で緩やかな増益を計画",
-      "body_ja": "2026年12月期の通期業績予想は、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）を見込む。前期に達成した営業利益100億円超の高水準を維持しつつ、人員採用・昇給、国内外での広告宣伝、データセンター運用・保守等の費用増額を計画している。",
+      "headline_ja": "高収益化後の価格体系維持力と投資再加速時の利益率コントロールが今後の検証軸",
+      "body_ja": "投資家が今後確認すべき最重要な関係は、2024年〜2025年の価格改定によって引き上げられた高い収益水準（営業利益100億円水準）を維持・拡大しながら、人員増やグローバル展開、AI機能搭載などの投資費用をいかにコントロールできるかである。過去のように広告費等の先行投資増によって一時的に利益率が低下するリスクを想定しつつ、ストック収益の二桁成長の持続性と資本配分（自社株買い・配当）の実効性を注視する必要がある。",
       "evidence_ids": [],
-      "statement_type": "forecast",
-      "is_inference": false,
+      "statement_type": "inference",
+      "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "c_latest_outlook_1:figure:01",
-          "claim_surface_ja": "42,168百万円",
-          "source_surface_ja": "42,168百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:02",
-          "claim_surface_ja": "12.7%",
-          "source_surface_ja": "12.7%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:03",
-          "claim_surface_ja": "10,514百万円",
-          "source_surface_ja": "10,514百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:04",
-          "claim_surface_ja": "4.1%",
-          "source_surface_ja": "4.1%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:05",
-          "claim_surface_ja": "10,732百万円",
-          "source_surface_ja": "10,732百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:06",
-          "claim_surface_ja": "3.9%",
-          "source_surface_ja": "3.9%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:07",
-          "claim_surface_ja": "7,445百万円",
-          "source_surface_ja": "7,445百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:08",
-          "claim_surface_ja": "5.1%",
-          "source_surface_ja": "5.1%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:figure:09",
+          "value_id": "claim_019:figure:01",
           "claim_surface_ja": "100億円",
           "source_surface_ja": "100億円",
           "evidence_id": null
@@ -495,21 +1105,158 @@
       ],
       "dates": [
         {
-          "value_id": "c_latest_outlook_1:date:01",
-          "claim_surface_ja": "2026年12月期",
-          "source_surface_ja": "2026年12月期",
+          "value_id": "claim_019:date:01",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_019:date:02",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_020",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "クラウドシフトと「kintone」エコシステム構築における優れた戦略的一貫性",
+      "body_ja": "経営陣は早期から「cybozu.com」への集中投資を掲げ、単なる自社直接販売にとどまらず、パートナー企業（Cybozu Partner Network）や地方銀行との協業によるエコシステム構築を一貫して推進した。また、自社クラウド基盤「NECO」やISMAP・SOC2等の信頼性投資を継続する戦略は論理的であり、クラウド売上比率9割超という強固な事業構造を確立した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_020:figure:01",
+          "claim_surface_ja": "9",
+          "source_surface_ja": "9",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_021",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "価格改定と広告費コントロールの機動的実行力、海外事業はなお発展途上",
+      "body_ja": "2021年〜2022年のTVCM大量投下による利益率低下に対し、2023年に広告費を適切に抑制して利益を急速に挽回させた実行力は高い。さらに2024年の価格改定を円滑に浸透させ、2025年通期で営業利益100億円目標を達成した。一方で、米国等グローバル事業の拡大や地域スポーツ子会社等の新規取り組みにおける収益寄与は途上であり、成果創出に向けたフォローが求められる。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "claim_021:figure:01",
+          "claim_surface_ja": "100億円",
+          "source_surface_ja": "100億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_021:date:01",
+          "claim_surface_ja": "2021年",
+          "source_surface_ja": "2021年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_021:date:02",
+          "claim_surface_ja": "2022年",
+          "source_surface_ja": "2022年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_021:date:03",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_021:date:04",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_021:date:05",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "claim_022",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "保守的な期首予想の設定と全観察対象期における業績上振れ達成の記録",
+      "body_ja": "評価対象となる過年度6期（2017年、2021年、2022年、2023年、2024年、2025年）の通期連結経常利益において、期首の当初予想に対する実績達成率は100%（6期すべてで期首予想を超致・超過達成）となった。ストック収益の積み上がりや投資実行過程での費用調整を織り込み、極めて堅実な予想規律を維持している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "claim_022:figure:01",
+          "claim_surface_ja": "6期",
+          "source_surface_ja": "6期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:figure:02",
+          "claim_surface_ja": "100%",
+          "source_surface_ja": "100%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_022:date:01",
+          "claim_surface_ja": "2017年",
+          "source_surface_ja": "2017年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:date:02",
+          "claim_surface_ja": "2021年",
+          "source_surface_ja": "2021年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:date:03",
+          "claim_surface_ja": "2022年",
+          "source_surface_ja": "2022年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:date:04",
+          "claim_surface_ja": "2023年",
+          "source_surface_ja": "2023年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:date:05",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_022:date:06",
+          "claim_surface_ja": "2025年",
+          "source_surface_ja": "2025年",
           "evidence_id": null
         }
       ],
       "qualifiers": [
         {
-          "value_id": "c_latest_outlook_1:qualifier:01",
-          "claim_surface_ja": "見込む",
-          "source_surface_ja": "見込む",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_outlook_1:qualifier:02",
+          "value_id": "claim_022:qualifier:01",
           "claim_surface_ja": "予想",
           "source_surface_ja": "予想",
           "evidence_id": null
@@ -517,750 +1264,49 @@
       ]
     },
     {
-      "claim_id": "c_latest_risk_1",
-      "section": "latest.risk",
-      "order": 1,
-      "headline_ja": "プロモーション投資および人員拡大に伴う固定費先行による利益圧迫リスク",
-      "body_ja": "サイボウズは過去にも広告宣伝費の投下量に応じて営業利益率が乱高下した経緯がある。2026年12月期もTVCMを含めたプロモーションの継続や人員増強による固定費増加を予定しており、クラウド売上高の積み上がり速度が投資スピードを下回った場合、営業利益率が予想以上に圧迫される不確実性がある。",
-      "evidence_ids": [],
-      "statement_type": "risk",
-      "is_inference": true,
-      "causal": true,
-      "figures": [],
-      "dates": [
-        {
-          "value_id": "c_latest_risk_1:date:01",
-          "claim_surface_ja": "2026年12月期",
-          "source_surface_ja": "2026年12月期",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_latest_risk_2",
-      "section": "latest.risk",
-      "order": 2,
-      "headline_ja": "グローバル市場での認知拡大投資先行と収益化遅延のリスク",
-      "body_ja": "米国、中華圏、APACなど海外展開において現地体制強化やマーケティング投資を継続しているが、海外導入社数（米国910社、中華圏1,430社、APAC760社）は国内（kintone単体39,000社）に比べ発展途上にある。競合が激しい海外市場での投資拡大に対し、ストック収益の立ち上がりが遅れた場合、連結収益性の低下につながるリスクが存在する。",
-      "evidence_ids": [],
-      "statement_type": "risk",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_latest_risk_2:figure:01",
-          "claim_surface_ja": "910社",
-          "source_surface_ja": "910社",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_risk_2:figure:02",
-          "claim_surface_ja": "1,430社",
-          "source_surface_ja": "1,430社",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_risk_2:figure:03",
-          "claim_surface_ja": "39,000社",
-          "source_surface_ja": "39,000社",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_latest_context_1",
-      "section": "latest.context",
-      "order": 1,
-      "headline_ja": "価格改定による収益基盤拡大と積極投資・資本構成再構築の同時推進",
-      "body_ja": "2026年12月期第1四半期において、サイボウズは2024年末に果たした主要サービスの価格改定と顧客基盤の積み上がりにより、売上高10,246百万円、営業利益3,014百万円と順調な業績を確保した。人件費や広告宣伝費、研究開発費の先行投資を吸収し、ストックビジネス特有の高粗利構造を証明している。\n\n一方で通期計画では営業利益増益率が4.1%増にとどまり、再び成長再加速に向けた投資拡大局面に入っている。高水準の利益・キャッシュ創出力を背景に上限30億円の自己株式取得枠を設定したことは、資本効率向上への明確な意図を示しており、投資家は成長投資の果実と還元効果のバランスを見極める必要がある。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_latest_context_1:figure:01",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_context_1:figure:02",
-          "claim_surface_ja": "10,246百万円",
-          "source_surface_ja": "10,246百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_context_1:figure:03",
-          "claim_surface_ja": "3,014百万円",
-          "source_surface_ja": "3,014百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_context_1:figure:04",
-          "claim_surface_ja": "4.1%",
-          "source_surface_ja": "4.1%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_context_1:figure:05",
-          "claim_surface_ja": "30億円",
-          "source_surface_ja": "30億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_latest_context_1:date:01",
-          "claim_surface_ja": "2026年12月期",
-          "source_surface_ja": "2026年12月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_latest_context_1:date:02",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_perspective_1",
-      "section": "trend.perspective",
-      "order": 1,
-      "headline_ja": "クラウド転換によるストック収益化の確立と積極投資サイクルによる利益振動の10年",
-      "body_ja": "過去10年間（2016年〜2025年）のサイボウズは、パッケージ販売中心からクラウド型ストックビジネスへの構造転換を遂げ、連結売上高を80億円規模から374億円規模へと大きく成長させた。「kintone」の普及とパートナーエコシステムの拡大が主動因となった。しかし、経営陣が「利益率を低下させてでも投資を優先する」方針を採り、広告宣伝費やデータセンター設備、人材獲得へ資金を傾注したため、営業利益は数億円規模から100億円超まで激しく振動した。成長投資の強淡が短期損益を左右しつつも、2024年末の価格改定を経て収益力を一段上のフェーズへ引き上げた軌跡である。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_perspective_1:figure:01",
-          "claim_surface_ja": "80億円",
-          "source_surface_ja": "80億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_perspective_1:figure:02",
-          "claim_surface_ja": "374億円",
-          "source_surface_ja": "374億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_perspective_1:figure:03",
-          "claim_surface_ja": "100億円",
-          "source_surface_ja": "100億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_perspective_1:date:01",
-          "claim_surface_ja": "2016年",
-          "source_surface_ja": "2016年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_perspective_1:date:02",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_perspective_1:date:03",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_consistent_1",
-      "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "クラウド型ストック収益への一貫した特化と代理店エコシステムの継続強化",
-      "body_ja": "2016年時点で過半に達したクラウド売上比率は、2025年には連結売上の91.6%に達した。初期（2016〜2019年）から一貫して自社クラウド基盤「cybozu.com」と「kintone」を成長の核に据え、地方銀行やSIパートナーとの提携網（Cybozu Partner Network）を通じた間接販売比率を6割超へ高めてきた。高い継続利用率を伴うストック収益基盤の積み上がりは、10年間を通じた揺るぎないビジネスモデル上の強みである。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_consistent_1:figure:01",
-          "claim_surface_ja": "91.6%",
-          "source_surface_ja": "91.6%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_1:figure:02",
-          "claim_surface_ja": "2016",
-          "source_surface_ja": "2016",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_1:figure:03",
-          "claim_surface_ja": "6",
-          "source_surface_ja": "6",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_consistent_1:date:01",
-          "claim_surface_ja": "2016年",
-          "source_surface_ja": "2016年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_1:date:02",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_1:date:03",
-          "claim_surface_ja": "2019年",
-          "source_surface_ja": "2019年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_consistent_2",
-      "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "短期的な利益水準の犠牲を容認する成長投資優先の経営スタンス",
-      "body_ja": "2014年12月期より一貫して「一時的に利益率を低下させてでもクラウド事業への投資を優先する」方針を掲げてきた。2016〜2022年の期間、TVCM等の大規模プロモーション、米国市場開拓、データセンター設備投資を積極的に実施し、2022年には営業利益率が2.8%まで低下した。短期の利益ブレを恐れず、中長期のユーザー数・売上シェア最大化を追求する投下スタンスは全期を通じて貫かれている。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_consistent_2:figure:01",
-          "claim_surface_ja": "2016",
-          "source_surface_ja": "2016",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_2:figure:02",
-          "claim_surface_ja": "2.8%",
-          "source_surface_ja": "2.8%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_consistent_2:date:01",
-          "claim_surface_ja": "2014年12月期",
-          "source_surface_ja": "2014年12月期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_consistent_2:date:02",
-          "claim_surface_ja": "2022年",
-          "source_surface_ja": "2022年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_change_1",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "広告費投下手法の見直しと製品価格改定による収益性の非連続的跳躍",
-      "body_ja": "初期から2022年までは重厚な広告宣伝費投資により売上拡大を追った結果、利益率が抑圧されていた。しかし2023年に広告投資を「認知度維持レベル」へ抑制して営業利益3,394百万円へV字回復させ、さらに2024年11月に主要製品の価格改定および最小契約ユーザー数引き上げを果敢に断行した。これにより2025年の営業利益は10,101百万円（営業利益率27.0%）へ急増し、価格最適化を通じた利益創出構造へと構造的変化を遂げた。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_change_1:figure:01",
-          "claim_surface_ja": "3,394百万円",
-          "source_surface_ja": "3,394百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:figure:02",
-          "claim_surface_ja": "11月",
-          "source_surface_ja": "11月",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:figure:03",
-          "claim_surface_ja": "10,101百万円",
-          "source_surface_ja": "10,101百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:figure:04",
-          "claim_surface_ja": "27.0%",
-          "source_surface_ja": "27.0%",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_change_1:date:01",
-          "claim_surface_ja": "2022年",
-          "source_surface_ja": "2022年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:date:02",
-          "claim_surface_ja": "2023年",
-          "source_surface_ja": "2023年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:date:03",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_1:date:04",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": [
-        {
-          "value_id": "c_trend_change_1:qualifier:01",
-          "claim_surface_ja": "約",
-          "source_surface_ja": "約",
-          "evidence_id": null
-        }
-      ]
-    },
-    {
-      "claim_id": "c_trend_change_2",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "自社クラウドインフラ基盤の刷新と外部資本パートナー（リコー）の導入",
-      "body_ja": "初期の単なるサーバー機材買い増しから、中期以降は新クラウド基盤「NECO」への移行やISMAP・SOC2等の国際セキュリティ基準適合投資へとインフラの高度化が進んだ。さらに2022年末〜2023年初にかけて、株式会社リコーに対する第三者割当（処分価額総額4,499百万円）を実施し、北米等での共同拡販とインフラ資金調達を組み合わせたアライアンス型成長モデルへと資本政策を進化させた。",
-      "evidence_ids": [],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_change_2:figure:01",
-          "claim_surface_ja": "4,499百万円",
-          "source_surface_ja": "4,499百万円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_change_2:date:01",
-          "claim_surface_ja": "2022年",
-          "source_surface_ja": "2022年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_change_2:date:02",
-          "claim_surface_ja": "2023年",
-          "source_surface_ja": "2023年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_capital_allocation_1",
-      "section": "trend.capital_allocation",
-      "order": 1,
-      "headline_ja": "固定資産・インフラ投資から、高水準キャッシュ・フローを背景とした株主還元拡大へシフト",
-      "body_ja": "過去10年間の資金配分は、クラウド用サーバー・設備投資（有形固定資産取得に年間12億〜31億円）および費用処理されるR&D・人材獲得が最優先されてきた。2023年のリコー向け自己株式処分による資金補強を経て財務基盤が著しく強化されると、2024年に2,929百万円の自己株式取得を実施し、1株当たり配当金を13円（2022）→14円（2023）→30円（2024）→40円（2025）と急増させた。さらに2026年には上限30億円の自己株式取得枠を設定し、成長投資と株主還元を両立させるステージへ移行した。",
-      "evidence_ids": [],
-      "statement_type": "mixed",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:01",
-          "claim_surface_ja": "12",
-          "source_surface_ja": "12",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:02",
-          "claim_surface_ja": "31億円",
-          "source_surface_ja": "31億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:03",
-          "claim_surface_ja": "2,929百万円",
-          "source_surface_ja": "2,929百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:04",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:05",
-          "claim_surface_ja": "13円",
-          "source_surface_ja": "13円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:06",
-          "claim_surface_ja": "2022",
-          "source_surface_ja": "2022",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:07",
-          "claim_surface_ja": "14円",
-          "source_surface_ja": "14円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:08",
-          "claim_surface_ja": "2023",
-          "source_surface_ja": "2023",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:09",
-          "claim_surface_ja": "30円",
-          "source_surface_ja": "30円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:10",
-          "claim_surface_ja": "2024",
-          "source_surface_ja": "2024",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:11",
-          "claim_surface_ja": "40円",
-          "source_surface_ja": "40円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:12",
-          "claim_surface_ja": "2025",
-          "source_surface_ja": "2025",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:figure:13",
-          "claim_surface_ja": "30億円",
-          "source_surface_ja": "30億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_capital_allocation_1:date:01",
-          "claim_surface_ja": "2023年",
-          "source_surface_ja": "2023年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:date:02",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_allocation_1:date:03",
-          "claim_surface_ja": "2026年",
-          "source_surface_ja": "2026年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_capital_value_creation_1",
-      "section": "trend.capital_value_creation",
-      "order": 1,
-      "headline_ja": "概ね創出した：クラウドインフラおよびストック顧客基盤への継続投資が大きな利益結実をもたらす",
-      "body_ja": "過去10年間においてサイボウズが投じた追加資本は、主として「cybozu.com」および新基盤「NECO」等のクラウドインフラ設備（工具、器具及び備品純額は2016年の647百万円から2025年の4,276百万円へと大幅拡大）と、費用処理された開発・プロモーション資源へ集中した。初期から中期にかけては設備および費用の膨張に対し営業利益が伸び悩み、資本効率の低下が懸念されたが、累積された契約社数（kintone国内39,000社等）と2024年末の価格改定により、2025年の営業利益は10,101百万円、営業CFは10,676百万円へと跳躍した。投資されたインフラ資産は極めて限界利益率の高いストック収益を生み出しており、投入資本は中長期的に高い価値を創出したと評価できる。なお、リコーとの提携（処分額4,499百万円）や愛媛オレンジバイキングス買収（取得対価165百万円）などの個別取引は補完的であり、価値創出の主源泉は一貫した有機的クラウド基盤投資にある。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:01",
-          "claim_surface_ja": "647百万円",
-          "source_surface_ja": "647百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:02",
-          "claim_surface_ja": "4,276百万円",
-          "source_surface_ja": "4,276百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:03",
-          "claim_surface_ja": "39,000社",
-          "source_surface_ja": "39,000社",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:04",
-          "claim_surface_ja": "10,101百万円",
-          "source_surface_ja": "10,101百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:05",
-          "claim_surface_ja": "10,676百万円",
-          "source_surface_ja": "10,676百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:06",
-          "claim_surface_ja": "4,499百万円",
-          "source_surface_ja": "4,499百万円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:figure:07",
-          "claim_surface_ja": "165百万円",
-          "source_surface_ja": "165百万円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_capital_value_creation_1:date:01",
-          "claim_surface_ja": "2016年",
-          "source_surface_ja": "2016年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:date:02",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_capital_value_creation_1:date:03",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_trend_implication_1",
-      "section": "trend.implication",
-      "order": 1,
-      "headline_ja": "価格改定後の顧客維持率と成長再加速に向けた投資効率の検証が焦点",
-      "body_ja": "サイボウズの現在地は、価格改定効果による利益跳躍期を経て、再び人員増や広告宣伝、R&D投資を加速するフェーズにある。投資家が今後確認すべきは、価格引き上げ後も新規獲得ペースや解約率が安定して推移し、増額される成長投資が中期ターゲットである2028年売上高509億円への道筋を裏付けるかである。上限30億円の自己株式取得は資本効率改善へ寄与するが、持続的な企業価値向上には成長投資の還元効率が鍵となる。",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_trend_implication_1:figure:01",
-          "claim_surface_ja": "509億円",
-          "source_surface_ja": "509億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_trend_implication_1:figure:02",
-          "claim_surface_ja": "30億円",
-          "source_surface_ja": "30億円",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_trend_implication_1:date:01",
-          "claim_surface_ja": "2028年",
-          "source_surface_ja": "2028年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_management_strategy_1",
-      "section": "management.strategy",
-      "order": 1,
-      "headline_ja": "クラウド特化とエコシステム重視の戦略的方向性は極めて高い一貫性を堅持",
-      "body_ja": "経営陣は2014年以降、「チームワークあふれる社会を創る」パーパスのもと、クラウド事業の売上最大化を一貫して戦略の中心に据えてきた。パッケージからクラウドへのシフト、地域・パートナーエコシステムの構築、自治体DXやエンタープライズ市場への進出など、掲げた方針を長期にわたりブレずに愚直に実行している。上海子会社の開発廃止による体制最適化など不採算領域の構造改革も迅速であり、戦略的整合性は極めて高い。（評価：4）",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_management_strategy_1:figure:01",
-          "claim_surface_ja": "4",
-          "source_surface_ja": "4",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_management_strategy_1:date:01",
-          "claim_surface_ja": "2014年",
-          "source_surface_ja": "2014年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_management_execution_1",
-      "section": "management.execution",
-      "order": 1,
-      "headline_ja": "クラウドビジネスの確実な拡大と収益化を完遂も、投資振動による利益制御に課題",
-      "body_ja": "クラウド契約社数70,000社・ユーザー数380万人突破や「kintone」の売上高200億円超への成長、2024年の価格体系改定の断行など、主要な戦略施策の遂行能力と結果へのコミットメントは極めて高い。一方で、TVCM等の広告費投下量を急増・急減させたことで営業利益率が2.8%から27.0%まで乱高下した点や、2025年に子会社化したプロバスケットチーム運営（愛媛オレンジバイキングス）の短期的費用負担など、費用平準化と利益の安定制御には一部課題を残す。（評価：3）",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_management_execution_1:figure:01",
-          "claim_surface_ja": "70,000社",
-          "source_surface_ja": "70,000社",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:figure:02",
-          "claim_surface_ja": "380",
-          "source_surface_ja": "380",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:figure:03",
-          "claim_surface_ja": "200億円",
-          "source_surface_ja": "200億円",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:figure:04",
-          "claim_surface_ja": "2.8%",
-          "source_surface_ja": "2.8%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:figure:05",
-          "claim_surface_ja": "27.0%",
-          "source_surface_ja": "27.0%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:figure:06",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": null
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "c_management_execution_1:date:01",
-          "claim_surface_ja": "2024年",
-          "source_surface_ja": "2024年",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_execution_1:date:02",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": null
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_management_forecast_discipline_1",
-      "section": "management.forecast_discipline",
-      "order": 1,
-      "headline_ja": "通期業績予想において一貫して強い保守的傾向が定着",
-      "body_ja": "観察可能な6期間の通期経常利益予想と実績の比較において、全6期で実績が当初予想を上回った（上振れ率は21.6%〜146.1%）。経営陣は「クラウド事業の環境変化に対して機動的に対応し都度最適な投資判断を実施するため予測値は変動する」と説明し、期初に最大規模の投資枠を織り込んだ保守的な予想を開示する傾向が強い。予測の絶対精度は低いものの、下振れリスクを排除する慎重な運用手法として徹底されている。（評価：2）",
-      "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "c_management_forecast_discipline_1:figure:01",
-          "claim_surface_ja": "6期",
-          "source_surface_ja": "6期",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_forecast_discipline_1:figure:02",
-          "claim_surface_ja": "21.6%",
-          "source_surface_ja": "21.6%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_forecast_discipline_1:figure:03",
-          "claim_surface_ja": "146.1%",
-          "source_surface_ja": "146.1%",
-          "evidence_id": null
-        },
-        {
-          "value_id": "c_management_forecast_discipline_1:figure:04",
-          "claim_surface_ja": "2",
-          "source_surface_ja": "2",
-          "evidence_id": null
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "c_management_accountability_1",
+      "claim_id": "claim_023",
       "section": "management.accountability",
       "order": 1,
-      "headline_ja": "投資優先方針や利益低下理由、構造改革について高い透明性と説明責任を発揮",
-      "body_ja": "経営陣は自ら「一時的に利益率を低下させてでも投資を優先する」方針をあらかじめ明言し、投資期の利益圧迫について市場へ透明性の高い説明を継続してきた。また、上海子会社の開発事業廃止に伴う特別損失（事業構造改善費用150百万円）の開示やリコーとの資本提携目的、愛媛オレンジバイキングス子会社化の定性・定量理由などについても決算短信等で詳細に説明しており、説明責任と透明性は極めて良好である。（評価：4）",
+      "headline_ja": "投資局面における利益下落理由の積極開示と情報格差解消への姿勢",
+      "body_ja": "2021年〜2022年の減益局面において、米国等への投資やTVCM等の広告宣伝投資を要因として明確に説明し、株主・投資家に対して過度な情報格差が生じないよう即時開示方針を堅持した。また、中国子会社の開発事業廃止（2024年に事業構造改善費用150百万円計上）など非効率事業の整理についても迅速かつ透明性の高い開示を行っている。",
       "evidence_ids": [],
-      "statement_type": "inference",
-      "is_inference": true,
-      "causal": true,
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
       "figures": [
         {
-          "value_id": "c_management_accountability_1:figure:01",
+          "value_id": "claim_023:figure:01",
           "claim_surface_ja": "150百万円",
           "source_surface_ja": "150百万円",
           "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "claim_023:date:01",
+          "claim_surface_ja": "2021年",
+          "source_surface_ja": "2021年",
+          "evidence_id": null
         },
         {
-          "value_id": "c_management_accountability_1:figure:02",
-          "claim_surface_ja": "4",
-          "source_surface_ja": "4",
+          "value_id": "claim_023:date:02",
+          "claim_surface_ja": "2022年",
+          "source_surface_ja": "2022年",
+          "evidence_id": null
+        },
+        {
+          "value_id": "claim_023:date:03",
+          "claim_surface_ja": "2024年",
+          "source_surface_ja": "2024年",
           "evidence_id": null
         }
       ],
-      "dates": [],
       "qualifiers": []
     }
   ],
   "evidence": [],
   "management_consistency": {
-    "methodology_version": "management-consistency-v6",
+    "methodology_version": "management-consistency-v7",
     "score": 0.81,
     "raw_score": 0.8125,
     "evidence_confidence": null,
@@ -1269,14 +1315,118 @@
     "distinct_fiscal_years": [],
     "evidence_count": 0,
     "management_discussion_evidence_share": null,
+    "forecast_comparisons": [
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "forecast_surface_ja": "339百万円",
+        "actual_surface_ja": "821百万円",
+        "percentage_error": 142.1829,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "11_2016_FY_tanshin.pdf",
+          "10_2017_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "forecast_surface_ja": "1,090百万円",
+        "actual_surface_ja": "1,468百万円",
+        "percentage_error": 34.6789,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "07_2020_FY_tanshin.pdf",
+          "06_2021_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "forecast_surface_ja": "401百万円",
+        "actual_surface_ja": "987百万円",
+        "percentage_error": 146.1347,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "06_2021_FY_tanshin.pdf",
+          "05_2022_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "forecast_surface_ja": "2,450百万円",
+        "actual_surface_ja": "3,579百万円",
+        "percentage_error": 46.0816,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "05_2022_FY_tanshin.pdf",
+          "04_2023_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "forecast_surface_ja": "3,142百万円",
+        "actual_surface_ja": "5,335百万円",
+        "percentage_error": 69.7963,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "04_2023_FY_tanshin.pdf",
+          "03_2024_FY_tanshin.pdf"
+        ]
+      },
+      {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "forecast_surface_ja": "8,494百万円",
+        "actual_surface_ja": "10,325百万円",
+        "percentage_error": 21.5564,
+        "result": "met_or_exceeded",
+        "source_filenames": [
+          "03_2024_FY_tanshin.pdf",
+          "02_2025_FY_tanshin.pdf"
+        ]
+      }
+    ],
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 4,
+        "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 1.0,
+        "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "経営陣は2014年以降、「チームワークあふれる社会を創る」パーパスのもと、クラウド事業の売上最大化を一貫して戦略の中心に据えてきた。パッケージからクラウドへのシフト、地域・パートナーエコシステムの構築、自治体DXやエンタープライズ市場への進出など、掲げた方針を長期にわたりブレずに愚直に実行している。上海子会社の開発廃止による体制最適化など不採算領域の構造改革も迅速であり、戦略的整合性は極めて高い。（評価：4）",
+        "rationale_ja": "経営陣は早期から「cybozu.com」への集中投資を掲げ、単なる自社直接販売にとどまらず、パートナー企業（Cybozu Partner Network）や地方銀行との協業によるエコシステム構築を一貫して推進した。また、自社クラウド基盤「NECO」やISMAP・SOC2等の信頼性投資を継続する戦略は論理的であり、クラウド売上比率9割超という強固な事業構造を確立した。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1289,7 +1439,7 @@
         "evidence_sufficiency": "sufficient",
         "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "クラウド契約社数70,000社・ユーザー数380万人突破や「kintone」の売上高200億円超への成長、2024年の価格体系改定の断行など、主要な戦略施策の遂行能力と結果へのコミットメントは極めて高い。一方で、TVCM等の広告費投下量を急増・急減させたことで営業利益率が2.8%から27.0%まで乱高下した点や、2025年に子会社化したプロバスケットチーム運営（愛媛オレンジバイキングス）の短期的費用負担など、費用平準化と利益の安定制御には一部課題を残す。（評価：3）",
+        "rationale_ja": "2021年〜2022年のTVCM大量投下による利益率低下に対し、2023年に広告費を適切に抑制して利益を急速に挽回させた実行力は高い。さらに2024年の価格改定を円滑に浸透させ、2025年通期で営業利益100億円目標を達成した。一方で、米国等グローバル事業の拡大や地域スポーツ子会社等の新規取り組みにおける収益寄与は途上であり、成果創出に向けたフォローが求められる。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1298,11 +1448,11 @@
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 2,
+        "rating": 4,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 0.5,
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "観察可能な6期間の通期経常利益予想と実績の比較において、全6期で実績が当初予想を上回った（上振れ率は21.6%〜146.1%）。経営陣は「クラウド事業の環境変化に対して機動的に対応し都度最適な投資判断を実施するため予測値は変動する」と説明し、期初に最大規模の投資枠を織り込んだ保守的な予想を開示する傾向が強い。予測の絶対精度は低いものの、下振れリスクを排除する慎重な運用手法として徹底されている。（評価：2）",
+        "rationale_ja": "評価対象となる過年度6期（2017年、2021年、2022年、2023年、2024年、2025年）の通期連結経常利益において、期首の当初予想に対する実績達成率は100%（6期すべてで期首予想を超致・超過達成）となった。ストック収益の積み上がりや投資実行過程での費用調整を織り込み、極めて堅実な予想規律を維持している。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1311,11 +1461,11 @@
       },
       {
         "dimension": "accountability_transparency",
-        "rating": 4,
+        "rating": 3,
         "evidence_sufficiency": "sufficient",
-        "normalized_score": 1.0,
+        "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "経営陣は自ら「一時的に利益率を低下させてでも投資を優先する」方針をあらかじめ明言し、投資期の利益圧迫について市場へ透明性の高い説明を継続してきた。また、上海子会社の開発事業廃止に伴う特別損失（事業構造改善費用150百万円）の開示やリコーとの資本提携目的、愛媛オレンジバイキングス子会社化の定性・定量理由などについても決算短信等で詳細に説明しており、説明責任と透明性は極めて良好である。（評価：4）",
+        "rationale_ja": "2021年〜2022年の減益局面において、米国等への投資やTVCM等の広告宣伝投資を要因として明確に説明し、株主・投資家に対して過度な情報格差が生じないよう即時開示方針を堅持した。また、中国子会社の開発事業廃止（2024年に事業構造改善費用150百万円計上）など非効率事業の整理についても迅速かつ透明性の高い開示を行っている。",
         "evidence_ids": [],
         "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
@@ -1326,7 +1476,7 @@
     "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
   },
   "model_notes": [
-    "単一報告セグメント（ソフトウェアの開発・販売）のため、事業・製品別の資産・損益数値は「経営成績に関する説明」および「収益認識関係」注記に記載された売上高および製品別導入社数に基づく。",
-    "2022年12月期より「収益認識に関する会計基準」等を適用しているため、2021年以前と2022年以降の貸借対照表（契約負債等）の数値比較には表示方法の変更が含まれる。"
+    "2022年12月期より「収益認識に関する会計基準」等を適用したため、過年度の純資産・売上高等に累積的影響額が反映されている。",
+    "2024年12月期において、中国子会社才望子信息技術（上海）有限公司の開発事業を廃止し、事業構造改善費用150百万円を計上した。"
   ]
 }
