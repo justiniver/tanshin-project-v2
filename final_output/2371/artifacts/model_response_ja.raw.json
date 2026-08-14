@@ -1,0 +1,302 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Fri, 14 Aug 2026 02:35:17 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=106691",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"c01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"購買支援・飲食・求人領域を中心とするメディアプラットフォームの運営と収益構造\",\n      \"body_ja\": \"株式会社カカクコムは、購買支援サイト『価格.com』、レストラン検索・予約サイト『食べログ』、求人情報一括検索サイト『求人ボックス』などを運営するITサービス企業である。一般ユーザーに対して無料または有料で便利な比較・予約・検索機能を提供し、顧客企業（飲食店、販売店、求人企業、広告主）から広告掲載料、送客・予約手数料、求人クリック課金等を得るビジネスモデルを構築している。持たざる経営を基本とし、強固なサイトトラフィックと知名度をテコに高収益なメディア事業を展開している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年3月期は増収減益、求人ボックス事業への成長投資拡大が利益を圧迫\",\n      \"body_ja\": \"2026年3月期の連結売上収益は前期比20.0％増の94,127百万円となった一方、営業利益は同7.0％減の27,243百万円となった。『食べログ』のネット予約拡大や『LiPLUS』の新規連結化が増収に寄与したものの、『求人ボックス事業』でのプロモーションおよび営業体制強化への積極投資によりセグメント損益が赤字化（△1,486百万円）したことが主因である。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フロー25,354百万円を創出、投資・配当に伴い現金残高は減少\",\n      \"body_ja\": \"2026年3月期の営業活動によるキャッシュ・フローは25,354百万円の入金を確保した（前期は27,404百万円）。税引前利益27,347百万円がベースとなった。一方で定期預金預入（10,000百万円）や子会社株式取得（3,715百万円）などの投資CF（△11,415百万円）、および配当金支払（15,820百万円）を中心とする財務CF（△18,374百万円）の支出により、期末現金及び現金同等物は前期末比4,391百万円減の46,468百万円となった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c04\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"2027年3月期は増収増益予想、エンゲージ子会社化と調整後EBITDA導入でHR二ブランド体制へ\",\n      \"body_ja\": \"2027年3月期の通期業績予想は、売上収益114,500百万円（前期比21.6％増）、営業利益30,800百万円（同13.1％増）を見込む。後発事象として株式会社エンゲージ（株式取得対価4,454百万円、議決権85.1%）を子会社化し、「求人ボックス」とのHR事業2ブランド体制を本格化させる。また管理指標として調整後EBITDA（通期予想36,000百万円）を導入する。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c05\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"食べログ事業｜追い風\",\n      \"body_ja\": \"飲食店におけるネット予約の定着とインバウンドを含む外食需要の回復に伴い、飲食店予約売上が前期比29.9％増の20,063百万円と急拡大した。年間ネット予約人数は20,063万人に達し、有料プラン契約店舗数の拡大とあわせてセグメント売上高40,239百万円（同20.2％増）、セグメント利益22,196百万円（同22.8％増）を達成し全社業績を牽引した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c06\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"求人ボックス事業｜先行投資による短期逆風\",\n      \"body_ja\": \"月間利用者数の増加と営業代理店連携強化により売上収益は20,205百万円（前期比51.2％増）と高成長を維持した。しかし、ブランド認知度向上に向けた大規模プロモーション費用や営業体制強化に伴う人件費等の先行投資が嵩み、セグメント損益は前期の4,263百万円の黒字から1,486百万円の赤字へ転落し、全社営業利益の押し下げ要因となった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c07\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"価格.com事業｜特需による下支えと一部伸び悩み\",\n      \"body_ja\": \"Windows 10サポート終了に伴うパソコン買い替え需要の高まりを受け、ショッピング領域（売上高8,009百万円、前期比4.6％増）が好調に推移した。一方で金利上昇等の外部環境変化により住宅ローンなどの金融領域が減収（同10.3％減）となったため、事業全体の売上収益は23,611百万円（前期比0.1％減）と横ばいにとどまったが、効率的運営によりセグメント利益は12,548百万円（同6.9％増）を確保した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c08\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期はHR事業の再拡大と新指標調整後EBITDA36,000百万円を目指す\",\n      \"body_ja\": \"2027年3月期は、売上収益114,500百万円（前期比21.6％増）、営業利益30,800百万円（同13.1％増）を見込む。新たに連結化する「エンゲージ」と「求人ボックス」のシナジー創出を図り、HR事業全体の成長を加速させる計画である。また現金支出を伴わない費用やM&A関連費用等を排除した「調整後EBITDA」を新経営指標として導入し、本源的な現金創出力の評価と開示を強化する。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c09\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"HR領域におけるプロモーション投資の長期化と統合シナジーの不確実性\",\n      \"body_ja\": \"「求人ボックス」における顧客獲得競合の激化に伴い販促投資が長期化した場合、収益性回復が大幅に遅れるリスクがある。また、2026年4月に取得した「エンゲージ」との2ブランド体制構築において、システム統合や営業連携が計画通りに進まない場合、M&A対価（4,454百万円）に見合うシナジー創出が得られない懸念が存在する。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c10\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"外部環境依存と買収子会社におけるのれん減損リスク\",\n      \"body_ja\": \"グループの収益基盤である「価格.com」および「食べログ」は、消費マインド、金利動向、飲食店人手不足などの外部要因に大きく左右される。また、LiPLUS（のれん3,696百万円）や過去の買収子会社（Patheeでの減損588百万円の実績あり）において事業計画が未達となった場合、追加の減損損失が発生し最終利益を圧迫するリスクがある。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c11\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"収益ピラーの移行期における投資先行と資本配分の現在地\",\n      \"body_ja\": \"カカクコムは、「価格.com」「食べログ」という既存の強力な現金創出源を有しつつ、第三の柱として「求人ボックス（HR事業）」の急速なスケールを図る過渡期にある。2026年3月期はトップラインが941億円に達したものの、HR領域への集中投資によってセグメント赤字化が生じ、グループ営業利益は減益を余儀なくされた。一方で、年間250億円を超える営業キャッシュ・フロー創出力は健在であり、高水準の株主還元とLiPLUSやエンゲージといったM&A投資を両立させている。投資家にとっては、HR事業での投資が一巡し利益回収フェーズへ移行できるか、ならびにM&A資産の資本効率が維持されるかが今後の最大の検証軸となる。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c12\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"既存メディアの現金創出力に支えられた新成長領域への連続的再投資の軌跡\",\n      \"body_ja\": \"過去10年間のカカクコムは、『価格.com』の安定した収益基盤とコロナ禍からの復調を果たした『食べログ』のネット予約拡大を原資として、自社育成の『求人ボックス』やM&Aへ成長資本を再投資してきた。初期（FY17-20）は売上高450億円から600億円超へ着実に拡大し営業利益270億円台を達成したが、中期（FY21-23）のコロナ直撃により一時営業利益180億円台へ沈んだ。直近（FY24-26）は外食需要回復と求人ボックスの急成長で売上940億円へ達したものの、HR領域での販促・営業投資先行によりFY26営業利益は272億円と伸び悩んだ。高い現金創出力を持続しながらも、投資先の収益化時期のズレが業績の変動要因となっている。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c13\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"既存中核メディアの強固なトラフィック基盤と高い現金創出力の維持\",\n      \"body_ja\": \"FY17からFY26に至る全期間を通じ、同社は『価格.com』および『食べログ』における圧倒的な月間利用者数と知名度を背景に、営業利益率30％前後の極めて高い収益性と年間160億〜270億円規模の営業キャッシュ・フローを創出し続けている。コロナ禍（FY21-22）で外食需要が激減した期においても黒字と160億円以上の営業CFを維持しており、プラットフォームとしての基本構造と現金創出能力は一貫して強固である。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c14\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"収益構造の変化：価格.com依存から食べログ・HR事業主導への多角化\",\n      \"body_ja\": \"FY17時点では売上高の約半数を『価格.com』（212.8億円）が占め、収益の絶対的中心であった。しかし中期（FY21-23）にかけて半導体不足等で価格.comが低迷する一方、食べログのネット予約課金移行と『求人ボックス』の急成長が進んだ。直近FY26には『食べログ』が売上402億円、『求人ボックス』が売上202億円へと拡大し、価格.com（売上236億円）を超える第二・第三の柱へと変化した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c15\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"資本配分方針の変化：自社有機的成長中心から規律ある新領域M&Aの併用へ\",\n      \"body_ja\": \"初期（FY17-20）は、創出した営業キャッシュ・フローの大部分を自己株式取得と配当による株主還元に充て、事業投資は自社開発中心であった。しかし中期以降（FY23のPathee子会社化、FY25のLiPLUS買収、FY26のエンゲージ買収決議）は、生活領域やHR領域の事業ポートフォリオ拡大を目的とした数億円〜数十億円規模のM&Aを積極的に活用する方針へとシフトしている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c16\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"莫大な営業CFに基づく株主還元優先から成長領域（HR・M&A）への配分拡大へ\",\n      \"body_ja\": \"過去10年間で累積1,500億円を超える営業キャッシュ・フローを創出し、その大半を自己株式取得と配当に充当してきた。FY18には約108億円、FY20に約80億円、FY23-24に計約140億円の自社株買いを実施し、配当金もFY17の年28円からFY25に創立記念特配含め年80円（配当性向78.9%）、FY26も年50円と高還元を継続。一方で近年は『求人ボックス』への大規模プロモーション投資やLiPLUS（3,943百万円）、エンゲージ（4,454百万円）の買収など、成長投資への資本割当比率を引き上げている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c17\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"概ね創出した：求人ボックスのスケールが実証される一方、M&A資産の減損も混在\",\n      \"body_ja\": \"過去10年間の追加資本投下において、最大の自社投資先である『求人ボックス』は売上高200億円超の事業へと急拡大し、FY25時点でセグメント利益42.6億円を生み出すなど、費用処理型の先行投資に見合う事業価値を大きく創出した。一方で、M&A投資においてはLiPLUS買収（対価3,943百万円）がFY26に174百万円の当期利益に寄与したものの、Patheeの買収では計画未達に伴い588百万円の全額減損損失（FY25）を計上するなど成果には混在がみられる。全体の資本効率（親会社所有者帰属持分当期利益率29.7%）は高水準を維持しており、自社投資を中心とした成長領域への資本配分は概ね企業価値向上に寄与したと評価できる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c18\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"今後検証すべき関係：HR事業での先行投資収穫期入りと調整後EBITDAによる現金創出評価\",\n      \"body_ja\": \"投資家が今後確認すべき最重要ポイントは、『求人ボックス』の広告宣伝費投入が一巡しセグメント赤字から再び黒字転換を果たす時期と、後発で連結化する『エンゲージ』との統合効果である。FY27より導入される新指標「調整後EBITDA（予想36,000百万円）」を通じて、M&Aに伴う無形資産償却費等の会計上の費用と本源的な現金創出力を分離して評価し、再投資された資本が持続的なキャッシュ利益率の向上に結実するかを検証する必要がある。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c19\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"中期計画で売上・利益の年平均二桁成長を掲げ、HR事業の2ブランド体制構築を推進\",\n      \"body_ja\": \"経営陣はFY26-FY30の中期経営計画において、売上収益および営業利益の年平均二桁成長（CAGR）を目指す戦略方針を明確に示している。「価格.com」「食べログ」の強固な基盤強化に加え、「求人ボックス」への集中投資および「エンゲージ」買収（対価4,454百万円）によるHR領域の2ブランド体制確立を最重要施策と位置付けている。既存事業の現金創出力と成長領域への投資のバランスを取る戦略は論理的整合性を有している。\",\n      \"statement_type\": \"target\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c20\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"食べログの復調や求人ボックスの売上スケールを実行した一方、一部買収先の減損も発生\",\n      \"body_ja\": \"施策の実行力としては、『食べログ』の料金プラン変更やネット予約人数（年間2億人突破）の拡大を達成し、自社開発の『求人ボックス』を売上200億円規模まで拡大させた点は評価できる。一方で、M&A施策においてはFY25に連結子会社Patheeの事業計画未達による減損損失（588百万円）を計上したほか、FY26には求人ボックス事業での投資先行によりセグメント赤字（△1,486百万円）となるなど、成長投資の短期的な利益回収コントロールにおいて一部に課題を残した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"c21\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"通期業績予想は概ね期初計画に沿う展開が多いが、コロナ禍等の外部ショック期には下振れも経験\",\n      \"body_ja\": \"観察可能な8期の通期営業利益予想と実績の比較において、5期で概ね計画通り（対予想誤差±5％以内）、3期で予想を下回る結果であった。特にFY21はコロナ影響により予想未定とし、FY22（対予想△18.9％）やFY23（同△7.5％）では行動制限延長等の影響で計画に達しなかった。しかし直近のFY25（対予想+2.8％）およびFY26（対予想△2.7％）では概ね計画範囲に着地しており、平常時における業績予想の規律と精度は相応に維持されている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"c22\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"減損損失の開示やセグメント区分の見直しを行い、透明性を確保\",\n      \"body_ja\": \"FY25におけるPatheeの減損損失（588百万円）やFY26の求人ボックス事業の赤字理由について、決算短信や補足資料で明確な要因分析を開示している。また、事業拡大に合わせて報告セグメントを4区分（価格.com、食べログ、求人ボックス、インキュベーション）へ細分化し、さらにFY27からは調整後EBITDAを導入するなど、投資家に対する説明責任と業績開示の透明性を高める姿勢が認められる。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      }\n    ]\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EqHOAQqdzgEBEU0yD9yz1dHgi41tGNhNqH0rlxFFMmQ4-W28e8YfDBbAn_5VMTrn9IJhFfLLLY3ZeycmZmYxeYStMW59ps3M_gRXbhwq-3czDraWwQ-L2mWmDAkHBUNEjz91WZaNWqc5zo102freb1ijkjCx38j6QlA_g1osGSEtNiM7DTt-slmDdIHuEtOCqg4pO9JhK7pXFrbyqG00E5ehPqiaLFQlgaWLoh0nPJetb1_2_ZLb1FM9mxR5JWILGCVfNSxt67hSYBFaZBwFyiEGX3cOb0XX32PyqMT_R0N_56rR1sxz_WYZYrcXtdR3IcY3XNYrpBjsxsyNKrRVEVcATIngfSZmF66N5B_e2Ss3pD76qeDXOf-xuo9GV2zc2C2402WvL82u_4xf6sspiqnsO58P6eaEfulhDyn88ssQ5j3Kz-rNBr4g36q6U44SZfOLSiZAk8dlMDgpS7xVGoIQC_LFxRUVbgEmSPeoB_In7dhd1Lf72rcgLBjUo-dMawL3Jt6xsKyy3JKO-sOPXcP8qlMpUMSgaxon6sOYzW84APSLD-qwRz23LUgntjiQZKlYKmVufANAAyFSEVYPQ4HwcSSXAJ3-1_48NSO6X15LBWhAiChS3picDtb6OnjlHm4_UdmMMu3gMFClHCRCFmjkzeF5u3Dm6GGFzpn31wd40NRoqgVmJnDmxOfsbEe7MVNwUQ5CDyagYd8nkAxLe7mPiRW3XgS5l8eEAjbSB8q0ocdlOW78g8e0OI9zHnlGSY_kWjm8jySuKj10q2czRlbbxHkZmJH6Msy9So1q3smN0dxD6fim9keDnl7OYhL0QnezCi2mH4HyQkd6TnqozMxVIBpu_Yjgt3s08gBOM3KIy7frG9RyejZvFX8Y9oFyPXDn6OXowjT2R9nunOuPH0m1R3-PQyaRbUrmwEfntVwTFyLW_j0y_ytbgPeEA7Gy6QVHdilkIuticjVQ5RPlVQEm6A8bI9TsUj2OUF5quvkCOPfOtKDIX8lgycfcp4fzXmSjyfce6UNShfQuaff0sK4dby8jrrRdfcHYBRO0Xn3Myxjj8DhmM9WAdCa9OdeeeyKGqx0sQA6cmTrkH2oiqTG7jDNahKPbH7ebYO2ZOazH8kH17aFJfuwxhJwDyNWetYppIfQ6rKxQajgGCAR8b__OUReNNqYD4k8xvwddsV03DDzb3NeMmEB5bTZ7YdutchzPLL5E86R4sEzVI_U45VfOhucwjTgcFY5ajfStJqOLSi62pYz5wmULQYDlRr80OCnvNMc2_9u59A_rE_SfWv6Oi7Bf5gUwJccmMXjm69HXu7Yg-KDtPnHrHGAOvIyhTy8telylYJi8Dt5oAlVGwM2bdzr4m8z7aNGORQGtEP0nJJ4JTlVjUBmOwvJCCMmjVGj6hgG27os_LCMaDVgFb4Jk0K1CMDP9u-jclNXFPOyDcMrSw_YzS1lEOT6amGmUiPAr2hbV3NrMtc4i7nQ9MRY39Lh2prK4heskUAPblF8umM3ThsQH8s4jqrVVaQMRchYroSfK9NRBMJ_xpOFEvRvnsO4hedA33a3GdYb6kj9VulPBzFQWa8O35-Td2fahJq0zQ7yQyg0B0r1QDECU4jOyuf3Hsf_dG56vHg6SNwOooLkQ3LOOSMQUMeVBVQQhckSseaccmEVtL8jAjpvlzBwUH-URc2LBPnDT3_5-f6_Oh3e7Wev43L2rvay27Vn04ezOf2pqXXyLHm4LG4JFGSu5U6CgwxvM0xG_ZjKpD2cuPz5dKSepi49QjC2XYcLDxmH5KD7Rvlq55w3LzIqzIlf4d7h7kGoF8P5uCeRvtiH79f2pcvpLTOIgGS3tw7d_AYpwT3A34xE1Dswg-s-R_eBG7l89-c-TMfcMhDAw3j8DeDsl1K3V1ZAlZT_m5vLc6N5OXBZSwgDJq2mUW3Nol8ZbTbSAOnS2Wxg1tkrNOeGHHPP1LON7pQDRIoJU-xcZtXxou-v9RHEA4gVLUGoXtRGGU-xJyl1j2x_IcWhle6tEfkdEQJ8iybizUmfdNB9DN0Va1EiDPsXJrigouDb7NZatT-BYCZPKzSa1HyYBCJk0PGtnfnnTn-mGS4Tai8W3CSWc88hxmrkDgHrmAuk98GJmK_QtsPb-BelxpCooZqCmZh8O2-RrF3wTKsm8qrKCKyUtSGsp7O-kuM4X-x0u3LpKqIkPqX70KIyYCGf2lgb8CJHKDHPgnuDviK5DxbzLgBLgAs57doHKQsNrXzoAmkvUWJ69og70EVmlVpvfpnhqWk3Il0r4XtHoGcflVfhRLT7RbOMgqXOuuBjvWCNLlUDCL4BUTDw5SrNjKctHnBJx0dg62oJNOQWOee_hxUrIPV9Y7F8VGTdzs6vN2trEvL_tAFGpmuNwsiTzzWIOCbxw8-k_3YXjFyn6c12efX1mchbamTzS30TIbKISecW9OExRpoyJw7dQtRzSUJVm9YhudSl42I8gcr7pZfMea0w8SRG6fzjpQWRr6pWjmikk5qirWYVl7Vau32crtwHQtI_xNW2t1oirQkSF_NWiGjOdZqWeemSsvdr32DAz1M6mzs3TZaDxYrLbj98JXKiZc7uCih3zdisMvA8xo3lyulsMth8D0ncpqbNtP3C3eqCsN9UDcTdoq3XLwVmGUPTjF_Zh64gBF3MgUarTEt9LOTVqS6DhYJGnX8x_bZXCMU6EcnHYrFRkhWeRjSt08cV2yhXx_wE4bfkLL6amd7PBY0m7BLXxb8msAJFri3XciWieL26x-vezU0ZEmZsxc5DmZQjT5TsGRLkWMmNaa_Bw5zpfxLaBH7puoEbdnIh6U2O-Pt7yICo3uGe7XI3vhFyZbtCdsDwLYykrmHgKqAma04Tn7yeWd9aZ4kN8joImaflJJVd4KCW1Yd7nh7-fjUm9eVdwXmvHyWu9lwPkFcxTF94c7lyPHFJXY8kpQfCoFYLlbfQeCwEYbRLBmvC7N74-G4fTCqt-_pB8kuTTekqEQIG0X6HYlBZvhq94dyoAaWpI_LdCGHUaTCtfDFQypd-HpmoolwTI_2iSaphw_5jvPWbE6-JAR2_nZNR_eQ4OcHBKnZ40jMoKM9c1RMXnDwnS-Fu6FMTpUNu6i74McfjXLCN1Tnl-A6CxvCcpdaqrIWFVV-uD5Lsqaut5JoHrinsbutP-oLbm_-HdesGLBqfZSb1tf0UFkZQHuqdbFOBi1FTMSEW-vvN6Tr10ffFm5-IrvK7MCFdIgeJEvhJ6mslTj9JlcAXNONAvuaB5Sj06k2T9c1T0kps-kKKL0FCst3ZdoNe7Wq6q9Rgekk8YOvuflVM_zc98iJzGelfpSge68GrrH4WEU0T9UVKKWmpF71bfpFxkTx0qo9TCoF2krWaphgpEOHASocdub_Qap4y5XXoPgoPy8IXnEcG38SeARzmdt98R-wOW3CYimBUrdQG67DhCuebTbz7abE4RZLkJVaO4TtElqt2S820tv2MC-5I_7P3p-8RLAZyLYeo-Zn-YY2C2tPpc5FRdj757_YlE5cfDxl_T3k7DSgU1nbMiljELh2mL8nBa2pS_kDaZ0NPcl70V2P2rh_1hNSqq-Tc2bQVwRRqgrx69qd2rNHW4j3GwTQUjORX_CxhlO6axx4LDDlKEShnR1yLwvgxx0RtBBQNBJpLIx986JjZR7edI6GTMpJZt-k7u5DqRDqaPh0qB4W_C2t1jXwIQBFx8_aJMGUuetfrNntBvP0GaXI9KIkQ2d27UqB83LuL9cyW8UQ3XDoGNm6j0ECUAbiYPyxWJ4BvUIRwjUJ_71U3CZyV-vnEZa2X9DkB7eZnch84PYXGlGuXAK27APXsusLV_fh-UCm0lpLKFjSN44aoronlMsyRjijPcrcBxSA_ZfO4TZz_4010eSF_aywSpA1ZlDFm6DDtORyTAodI2nON5By1lxamPf8_P-XcZY76oMSiWmR00tWcoirMPG3UdfcLqlZTOQPtNsvsoIHHY8t87QJOE7dVa10ogd8fZjH1m8pdPQ41dOBXv0AhhTp2a5Gh54hIXPdbaHnaFM07dAW6ZRv2IXcFymZarnLsuJlOILMBx8gmjaXW0qZyAFwaQEGJVzzhgANMnTaIJXG6exS27NlGMMVvwMpzJaPoFONMRWycGdK3LOMhT5NnsK1hVhCRZS-I3hQFUjqBM8qmLx5kfYE-lD89AgsMozkUkEPxu4YwWPI41MmjqOL4_GJXh5-s0PP9IwL1135sGqXi4BsXIVl9HUsaBSuKxa9Ifo1qM4wNmUU_bR0LzGVTYx5YDfJhiETkYQ9lxltME9igJX33CRGYtI-NRqO3VUyoJNTy9E4zC5AfxRxc9bPeZdF_2KbpdCJf6uQ8H_UvaQBRcEGzY0xfM5okU3f0xLKLyVh0H97F5yqL7iHdVwON748cZTi4rnDGCGnDXJqtxA9ccPWk3QITkiz2SEuQ6gMe-5DrsdAXXI7PNfR-QCVh7PhsmH0hqu1ZyLmwLMv0OiaTRoCdla0vYNYCC50QEb8x6OrcNuqafkaZkj8ZTRuamsBeapj5c_NTo9TYRnjBDyqn08LEf4WRUlwcMJd8lhHwG-howYjWtnYk56ylBpWSGvdjBE7Q10oTCd7ccwqmKUK3vknI-X4D_a0a4yI5wWjlYjW_iz8t05jfuGdD6SU4-IIIuR9Tbm5a4BodZ8EJ17RN3jjEp8vlZ95FxcxQ7I9XiPyVIwwfycLjgDb6J2MND74fqal3_6s3XrnlDQVD717ts07-HvxGe4m87HVjQvdkbUYf9V9t6U6ibpke6rSjD-6920OX2kGcfmHTBhbSUIZIEFekQ5ggQGyvUdtV42krX3lRkKwjSct7nm5Wn3oGkHo1obj5ynSvbWrCVPei0zTlt1lIowF6NgDRa1l_L9J6IRuliyGaorZ_qmB_nsm3N6BSAFoC4KYNwtVUTh6FEkaAducaed72iEgkC-c0IWwad_rWQUVmSCw7snneeIzEeDjyaKts5X9hp9i9yUsNpOPE-sTXBTLz02morM20X44VJ95Mb01_jYLB4M6d7H0BlONXFFbdufJQjKwW-F0j96LHDYNxxV8loPkxrGKs-yrDr3cZdWj0s9_UNvW0UOBl4T4fuJ1DfykUior9RT9vuSyD0qWQS7wlOoxDT1TxrW10B9eTHqV8_y9m8RA2coHu8bNAcDKf1NJGtX263_64vi3e-ckHiT5e7ywrU6F3EDwHWoG8ER9lbJgDcDYsQoV_KWXxLYsBc2rU5mI7knLxx-Tgwbnhj5X7PdqHBUlrEaC42Gudb8rL-qivwAAru1Uo8rBC1Ia-Kr8ou7vG0jexbz6zyGsXK-KjzWbdzyZ7bLcdU3tRuNUCReabd_baTYM_Vj1gdq3N0ug6auamBGglslz0siAgTJFIbzpC6pSJXvbYAuepGHlXdO6TwufVQdPZB1K-WThBLlIr7MJ78wBIoJe6em6fbcligKfGbqshmLtRdy8W80hQXRZGdvvhKstSN92ITJgnb4_Z4FjUCzMGxxOqZmE8ObSTFAyp2Ta21dEjHLkCMLQMW9mD4IpPEWVubU9G5_8uLXMLxC1xi9m7MBdzYvdeknzjxkrTc8xHeaavq_gjSjyVMZABm0Ifk5tUWOEnIzxq1bPeCY5BIXfEHaBIMTCkeL-7swzx8u3c1sjmpRfBezcJJvMK5gZ7XxMp_aEz6WVuyUn4oarkD7rjkHJqaxU5iTREnRHqgp3q4wsQOzMj5AOMJ5in_tkHoaQXW3v-tddYNuvlk4vLF-WEfjAdw15R8XUnFvHmZ7PjbpsZriQIKO0z5UCsdqvDKrDNK0FPXjr1TkeLYhTL-MjRaAH9v9KTp0NsWLrQnQ9MAAThi4Ou0ox13AcxrY8tOSZ-VRR1UjT-2lOfoalAwwtQgZ48BzxI3z52yuan7B_RBQn9oFwPrK7YQzthnjTwcjVvfAsjXXQRerfhLCDoQCGCvSOvAOyrzr8GB7vhaO9dfSeqfHXwoDlqkHhuXH9Chd-YKLrKnSOlX7ZDaLQBLA86x-ElsiicTJWKUxR2kA0Bl-Wegm3Lo-2UG0kRlVaVuUqm2FUnAsj-bOPzNHGZX_64aYvEtoHlsKSys66JKQmX14TmTbeTG1Cyhzi3BinGsjehIGECfDsfqbeLVJx-Iky3I80R48xiCwpR-Rfx8_rC08U1iqjPT3e4D_vNaYxc5ds_4cpe__KJRmkYxIdIJPAfKu6-KROhTzjCkKVh9rjwAb9wICxrvTWV3U7hvg7AMfTifUQ676X653_Ge_R193S_LcnSdJKSp6EFuvAddwkrWwOCnXHkJk_EG85ugrNA-1HQz3A2pUERUZo5bOBHCTYVSz1lGsX1lAge-IuvvglPCK0QPdV3-LLp9Xu4OIggFSFhfXYnIgFZFqwpLy6ulte5eGler4ymBY479ueKiozTxdIdmru0HgAvQ_ul4fBWF7-6-kpxH_6Ab7pvYyt0FjYO0D-nonxxtE3GXCIhP-13nVfJex_T6RGg7DAUUYaZkFh_75PwFudEp30bRA9BU7iqHLK_TsWk821-b2WGwzCuWgO0q51E74paxtnBXTHuG6pwUocJLksHTZsCuIFqx16pm6bAVP13d2ze-ryYDtnypNbGqxfafkYSe6QjXV9UW92DpJKxTFTu3AEqrYZtCrY7UOTTaWhPDjODunYGmPVyfB2l_lMiVb6fy1R94cjrK43ISC9JIT8fJ-WwmEi9UF_ZBEQRVd6KgS09NR_Bwqf000tGUqnF0I75UlcyJ1chdvcc5IJiGZTS8qmRaCTbewwEAXIiY-O6XqPmxLSNsRxQUxBZsROiMejTKL7RMFkO5_6CjqQkp5x6AumSmCE4ErhYcEOoRu7_3ZeLVvbF6lpTOw190y2b_Lr3iXfv-KaGj5o5WLBk5I7P0dm4g3BinytNqxderZ4hRWzsqfkAYrPHbgcGdc8a1h5clAJ36zf17r-Zvm3iVBElCA8VO5T92oAYzI3wLJc3T5jqOwxZDvc__vIaB6jVPBSCawLVcRwlJLhUrkWnNzzrh4dGgvyN1n4FMyKwuaIMfVm-VI0Ya2PImluUVZ7-97t7aJNDox7kepStL_tqwKhPcHucvun9jvuMAFeeY2xIRNsKhGz5yGby-2MRYn0debPvgueKxrulv7QB3laM1rmj0aOyDrTLoGwdOEcUdf2EFP_r2kZ8Ij4m4Zt82MkEVhxKfB1sAzpJsb_1DaUP89m8dy9wJtYV__x7f5GMo2YE9_396bhUgrdADtqQO3cLx_ofUQ3yd-yLc8LNY341Jn1qZcRWq4tBf-p_teOrb3cDIst9M2lI0yAftjaOapuw8z6nxhJJMBLoz5o9YTZovLi8cFM1nyJVREM44I0YkMFdTl49zXPgx5r7ky7C1McwTD55bvEUuh00I6XQI2chESx5DHPSFppp6PVhTe8KefgsYjXZOSdNCa_ZxEm0MPqV5t00JgdMYOluEpArW05KtJ4I1jj1imgwj0UJU-GLedSeU7oFRj4T8rxAx4IZdxzDrDNnRJctD5d9TeX4YJmgeao0U_XMgu68fkPMwdIPzx5pEyJg2qE4ar5iMtiDY8iBn-jX1_js6Tkhn2mHLZnjJIOIEyx4h7uKE5lxmIFdV9ehgAGU75YlpcbZjHbAF2Sg_4-Wge_CT9LIMejbX6rVTNpDL0VdfrjcRWBOwqUm1aMZNprgGdRvgXWIJqPxq1eeL7yVEsu1Y0VV0hewibDw3ZszH03Ps1jOmn7l57xJlg2h-00p_hF0KiWygEzgXV2XrGnQLKk7cy2xWSbPh7DByhTe0REyij6yKf3tvAEBtTSJ9KrToo5e63BPR2ND_wf7KjRHmeLEPhzLcqzKg19KN0SB2WXyx0VnH7RI3ZELgqf-4YgbSgLMXRqa1D4RitJEquxmoY9b0ERF-2FHchMXCQ2hTfV2NeByyKnVwdqiemvrNStm6xxMMQKhCD5fL42td7X6i-6A78Wm9Qjy5Kc4bNo_j9QaMWWR7pcoe-H5zVk2iGQVPNJfNcL2pkMq8Ru-l-nC2V7156JC2Kx1o9y9y2bV9cNQcix-LRJtSUKQu-rpdRqHG0oyHKjz9_IlFawbvonfuvWVF2XYmpjHgpyWvLw3hFQbDcYXvF2REhS-krU8NJ-BMduHRTX1g41r5wO_GSFszPI65yUBQunbFXH3tr4y69cl6jd_SPqhgUfSjJkFuGzWrAg9JJHluUS_RuWTLYdqVD209PWl0MooGmmBU4z86PkgLBksky34XH3YQs_3Cpgz_XN6PU6xRawcTqj4yTHoHB2HRIeqsVoqx7gWXEUpBmg8gIWw5XCkmkZzhcl0zmdT4xUqXJtyG7FkfCNgO_audyJ6nv5Zfnyjrk8Zlxw7rm0NnAzF4GAyum7Sxbh28GgUeXbowAz1ggc4yOUXKISxgARHtTrhRGMzEJiAkXt6Ia-K0XQ4hyO9Ykq9Ok8nWer1kV-aleOCB07c_dgqoPfDGZ2jlQJk_HndEsyhDpmGsliDoGSnt3byHZhL0aapHEe0WP8eQqtV0Trp6UOvbbb9C8J9jGjRCRjTA3xxwysjPjdM2qE8mG_jYkQntwhgoyXJg9O3LyeMnZ3CF3SwIFic2swqcPZN88Tv2-QHZY6j9yiCC3j2S4ff3qT_3I3V79MuYUIOorQNqH6tG8CyLR-FAswYxoB-xhV7HecLX466M08LSPjLyF6V1ZWPuW9yT2EK3FODxrQcess2ReYArwz75JecslJFYtz47QReLZum2zoPZOcc8Z3099LrflumIuV-Bm1wZQXSveiDd2d8KYAEx3kEEpO7PNLG26EiIgRM5kAYUrX-NVuR3LjjKmnPswQkwLJbkUfYJXwoghKJHcToAzEyC3GO6ExEo5KQqDxCtG908bllMsSQPbcfJJawl1c0OAkWzBmfgzsnYDsRxpuiG9_rR2g-TZl9E4VNXivwaGfz9gcIFaP1GNKwexqVTVbG4M8eXnd-chycIki5rHoiv0dY5MipVkTFW_mUvm_7tydtHmI7JHgXu4tvrRoBxxkA5eaJdP0Lan72CT4PP0ez0P5cc_UknRSdRbTisiGzb4PisodkV7psiY4ETARGVQAVG52xwMO9aXTTBjk7KnlZjOqvWw-dcxzxJ9fJrMPHcgaRqK84VY-hMYYuppTDwIz0ieyFucVZ9JvX0vOqbjJQflgu1Yq8ZZLQqhqhRznMPgZI_2Om2LOVzMHnwlJA6GuX_NhgKsv8vqEo6V5Ft6AGWnVfaGRJvc_CwLZ7xPNFZIj9G9ldDsU8RINDOlaiAIDvVjYyw-mUOd9QRU-p7CuL5I8QLcUqPuud3Cum5xs5qNDJ-_ZARWwYx3wR8mU5e4HZZ35shlfygY6CpHmpOxCN-DAB1LyzYbTztr9dMRV6hkQHb7KxAy9h8kZo2VrEY5iuGx3Z-87b_gHPBybRj5rzDA5YV46ZHo_Uq5I26y0CxHOEnrtEWHJELLENxikJq670DCwMmzKCxQtfbIajS3z3mC0oFVO8_NZg2cJNGdU9sPY-ceGcqE2XKk58KFG3qiUYKbc_sxqw-h1-lZOPy1F5hxaTz7QQXlWZUydrmRNhxFyE9XWTMfeSI7_VawrLL6qGDaq27ima_D6SGGu_vacr5fHTtlKYbknnkB5lUOOcbUZkUjic6Z1L-ueqwqCSvEPPx60Uf1hwWrK3QmknQbMxZL36eaFRksIShQ1p3-u5evCFFYS16E3eFRRWtzlMpz97Ti4Dc5gwyBWeELNy_Q5RaeN01pkjD3FAxP9y9QxFruAgewLiHPcSkMBxoi5Y_kKF7nogBjgmt6wa6dfVgUpVEwhPZgDLaIceUxeHn7E_201Wg9UrN08_9o3IIa8cNTu9aXCv7I5dE-_PSwbg2U0z-jsVYEFdaVcq3WeCm3Bqu4htdIF4JgU4UaMEZNJFl_fZ3J7Fcl2z1Yd139-dwavzUebWc__-aqAFnkptFiWjghotst4FKHxDc46y3F_jrJLp-9FyXy2hRMaQ81OTZRAHSQagVQBdBMs8Arp7V7VhXnhAyX9tceA1gECNyrAqNv2mHiM8QZrVeLlM2zto1pULniI11IB81XHcqwu7R6R1zg5Kv5xAW2sdd0lO1qvp7Pk09fVCyE3DYUSMLKUHiD2CZbG72gU3FFRzzN4ciBPMB6DmJzsV_8pof-2ZlhClhVOXQdf3V0097Gt687MXLKxv8TpOHDp_xKYeDSOqzvhsCbtcizk9XZUr_52GG4I1He4fNKcJsQpZB13LVFTBc2NlXHjeTBeP2dpVUBWvrSnKCgsYsPlx_s1KjieBwH2VIMf1deTesNW03M8O_M7rf73EalaUfVPYVMU4-1LCJSNWV4DBxDUp45irT9ZdaOUVkP6bLg_hrPC_vtC0LPLZJERJhwk1eVhZycwhxdGArzHhSGgTEe-9lqZDmlz2fX11yS1qLSBxK3bcmMi1trqdy-eBdLAnyiOnLMsptd4_wEs75nbXfV2MXhN0lm5H6G09qjTLXHnmnCTkAiI_ND1pQXoASq2miQKyjOayA_hTbglZgcZYi0l_bb6Uqs6b9bqujFVgjXqGmzG5h1OCXuvLth-hQ05t7g8Pvzsz2Q-mDPCld6AuyOAS-SSAoDbjRl2S9FxRlnB-qmqAcg-JpHrIfXvKMrNkZip7tgu8hn7FPXCwWScsGQDe2KSHnDX_Prm51xWE8qL8tA2qVEd1UbgbCdeJa9pJp2I5zjAheLhcMNcuDwasoYdXr6PtMYug10y6MHZKomt_uC-jNQMbge4YbBfopz8t4nEwvSc7G6sIEBsKvZHpM2c9Yt0-5kPkGo-qcfl5ACUbVITxxxIbgaW78rmCttv6TTcZATKINZr5BXaQizInfq66-M98SdxzRUEtg9W_jDlLAzFOJ8sK8T1gpeeoU9YIaZGld7z_S9J_3VEIZ-RZXJ_vAhCBYOtCSDlfE8XWyIUcKoHJzCcuNkzFmDYbHqgWwQ_9xz_wc4IfHVseLJ4DWbUrhPDjb2Xb8RGiQfPQOZbBYluz09m7CWZ70YUwlLrXgzgxEN7ykNbTnVBuVVTGEXv7ojf0s70VOiP_aBA7o2LuGgZmTx65AnkWmuORMbmKVTERGWx8b46BwR78PYA2309tNrIBp9BdwuEKVVx9uLnZDQWBJtZ1IoCLV5KYNLFdYftlyFJNOaUduXnz-A0ktOwBJS71rf4fFO5pt6AF3oG0XaKnt8C7Okd3NVG0wcDH_1feLS_lpSNn4oA84gIjHB1gUifsEtlFP8321WZihOcqCpM9lv8rHCVtPu8_MjMBNHwAHj5DHaDAz9be1dM7Rki3FTcAf2IeNOKP5DHV9LAMGY5iv8WzlJXqn0cxW0XlZ7aXH9zB-wqNOhpKHlgvysJyJeBQtwBv12mfUFdJ8mdAZwhFYrR_szgjfhZdp9hktFm5idrBEmpYjF8ssShZrRx-raWreeuNITJ3NtFDB19SNlI7roz6rAxeXB4-fRl2mKHuh3NKMTbCVDq604QWc47RhxOsJhqXIR2C-Zry9QLlWyNiJ4BIc6hBR2Zx9NDmbFfbnSNSJh-KciDyMQpb8OJasoK1teVcdvJi4IXeS7hvOmJAuhnDpJg36K3_6RzeZwzALdNKx11jRfjPpQks_LF7-WQ3sx_f01iuyvl3tVHDyhRS0h5cFygZwNHhScxhaavGqxv1GBmMYN-e6IXinF-Z9F-NdMd4R1HPvwqlEgOUDh6FWHI0rcCaoVX6en6ej73wBfPtwmHdTgmQuNvrqmIyi4XbHI9UTXxBPf8Rz8fpHMNNfH68sNfpR59Hq1GZk9rpb47_KSoNQLIswfK-3FIKm9KZNUBQisj7UYEaxWrNyAf04aGYdghdY5SiA0JJ9gFHTgO38bnw-Yz1YIGUTZ4ykgtVz-6-03SJOPjhpcMmeY8tCycQBnCF4ur8i5YxRfYtl50J_KlxZ9aGnn_o6yvBAUsBysdS7xJvqzlKaABsVP3SBW2NA57E7lm6ZofWf8HnZen72WjMPG0v26z4_7zs3n2PPMfNQxYMe9yWqGcbFBk4gkI8DU9h2yl4pPmDYTekgu3tSEbR6JVFXmM-jnY_8IeWIEvaxfa4IX9MtGWGEOkQdKPFcGnmf19Q_u6L0-ZcPONHzLDZtxF_kRbJ8-z2NZuGZaMJC_RFPDRVpv7hgMlDPtE1W81FAr8X_5TWldmX1R6_Bfqucs1SYEa1ZpncHJM4mya2_iI1Ue5W4OZdAh8umiDPNpzdcZV7qmA-3N6THskAB4M51yWW8ywuaXKIETECbAuEQnITz2SvdkOJbSFXG_x9kalKz1waD6w0B4VA1kcMowPtMFyMKlrVmFOjHXLdcu_tMUFRulU7xFIveHbK1-is8SSwW6toczoLfsS9RLD1yqkjSbBghTRXc80GPN1nu5KzyoACE-Rgr6k6JAqQ0pMAFW66hlrDaZ2MbSkVCCoPfoTDQxZ-VH6ogNd0F-8wSbTC0OZtYvXErmslgDyZvRq8hcPk90r1rEDOCXUebW7IgnE-4DXhW7RSydxDgGlo64R9_AnpVfYok5K7QUxzfpwOjx0dhAlP98o9DB9bjk1ZTyFLBDp668CloZh_qqTGbv617jmJAKxV_wIol1Ah22iBKPVYmwTahaOAT6dMreeFeDbTSrBlRQjSmOfcEtY8-BKGLAjIZeltxecxGCD06aQeBVnNYoIcCvoRFnpvpBuRLcbsgt6pDl6ZXwOAnJ1pC-KyY_Ca93ECBiBojdAaHqx1yHB_ncUEr_PFCPnacXuxLoExQg5gSF9PWVmnx7PownHcDUc_SCfUj_vOuzOfjO42jkrwZM65b9FMvvpKHLO9y9ne66Dh2nIVOlewuiiBkRMxeScd0tZ8xsVztK0IrEJ52eHME4izTL1wlg4RLpDmpV2ENF3YgEGiMgxFhEZSextlSH-_oRtnyJcHrRsPXwFOAqAr43zSnIEchqpLKt_TW9UW9n7AhS7-itWy0AoFObXLbKT-trVhKoIHcQ-F5KhXJFIzyZYFmpXu7Iygn74Px6kFsF0p6F0xagI6WZGLBBWFhccwOl7WBZssN81Tajjm2yRm8StecEt_jL1F_UAwYQbHa9FI6KRSFr-IXAOrvbayUkF1J7ryocTC_pKTYFygyw1NepL0_JKSvP96zbobjyll3e3gEkgKVGU3h4OOgxGVEjynf3dYySoUjDD_G0QZXESrQuhhRa0RsP9aC0JdMqKiwl-4xjXaRdfPWdbSsUqeAV9D8Jo1gGOJRIUpJkHmslJsMD1shy5it9Ibg8AtxzZZOzHEWFjFtIUNhxkiqXFpeGWGe_xZiAiB27Q611Bp6fwdpLsgexV31SuWRSKhUtR_N91C4dd-Pl23fY59z1Oa3SwoMjA0Rk9qqoyQJzf8E41-wjzKnBUEA6vx_QsCKmwxK9dLreVc9OMfkZGZzZPk4FQyYibhm5mlHLVfBRxlxCHDgXMT6tjpCN3aRW_lzc73_N-AinuTwz8sOd2RhpZRKKJR2sov9-WsE6EWaG4rmJh7o3vrZOGkdBW9sIpTycouq8r4fqajfAU-aiGNiRBeD6_2x-rFSLLFyN-tdGbedsGfntHLUIqf7-bVOWrPN-GyyqGJ29x5fEfnjCWLbymu3smGYYhUA75L8TBrkJ6d2AEJSCUWzVLUTOWTu1Uuu59oTFJ1MUvj_B2MfzPTSzdLgkiDOMsXqQCbH3E9zyfw_D1Bcn-PhNOY3x391yynFKlqzVaneQr4WtPdCmZZPgJAJdbdPaPKLVEofFCyvmetJMZsu2bORUa_Zw2TLI7GYcHFJf__0Iv0ubcyoLo5FTTzHXVwcJsmyUcKVNc2Jep7530VX-qhXjCmkmOUOwrmS74g8YyLWe8bMRx02eRKK8YBTAeGgg3muxA71UW-xjND87g5nTRNbhgtmxzvrHOe_kIAAYO9L3lUJ1tNDGUild-zx1X6KT3ZalkkGeGQVdTFXNS7V_k2MftbpNG3LGUbzpFGxuZK44OvPOR8TIn-KzITTtQi0aVTek0KSEGaUx2yCOxJkW0REPb1sCeUgfsIp4UMDp_PilgYg7uaRKIjF2FusKUD-1lOul310goEmnk-o4_Tba8C1j6YjKjVc2KDUyrhakW8TzSV9XWgGvovr2j9JLTHkNRjsXalxp9Je4BZ8guE8p5n_19R3COAhKtExrwDN8w9sX-tEG0mhKqFZHzIg1TbSvEP1qh_3YeGhWBQ-J0_hb5056ZWuNOUbX87V8k0aPtvwuQcnTHujr5lYG9rQ0x0pShz85cZQBrLLivx7x78lf-e_LIF8lWuQgn9LTRjD7D9GUEPBG0RA48DwNEOg_wTOcgJXeaNNtdDQ9JDctOUn43l8cDAh21Qy1rPsU5zLHQdnZ4FmxR7WygRNMfpPN8Fx5VO1rsiKd9eCMhLYXO9upSHR1q6M9Vn5HjuZuk_kGIo2AZJR4bl7LqVbx_GRIVTM7FdUFDt2l515p8nIqEneF_HT7ralmmUvzJbtCv2v0PCbz0gK83W_wDZXIu3ddAwKnq1fJJaje13ccvJ6ZSlVgkcCobbC2wHCsnU-ucVSHOrVVgZBEpPjvjfufEYoSh7pXQnRTOe4Y8ZXl3GAn7D-l5-C4eKpsqZInpd1Gan-wJVdAe86bGDEjANWr2sbgvxGS_JQNPLMzcAPLKL-cHIE1mObpyf9I-P1rSM5wC4_XELflYqchdTyDIcygT35g_14xYqhqWQ9i2gqmYJWV61QCrS4hDk602nkBJWjH8J6FbBP5bz2uI9oC5RHXwGNKkOVUSLA24q99I345m4geOSdg1R7Tu6gtHGG9lTUVbIUxAFr_IqoHbVnQghfSHBsXRAS75RX9rF7XLuM9cBQspDBSTD0jI3zaccL15gMHerAgtEQne_DDSo5IOq4oJIkKvyFZhosJY7nK79dGuzI5hyzNeJ4S02AkSWLztIt8UuxgCJjv-f8hH1RNT283uxjMG_DKucvjW8ESaRcFH2g46skhmx57naVGYidvX3UtKrFMtTXyevEtvMyMSOjGPZuLW7HSSNx75-mjevedjOGNOkoXXRzZJObxhi_k-dJe3EjpNokQ5MgGbd3I_GzE39JSPsJfjz0XHJAM6rss4YBwf8GVsOaKyIj9MFq3VwqtfiuCTQkP2cGbCb78c7WNEP5hYYZgOMDSAQjcQFRYuU5QjevLfCjG79P8arwTjqSm2XJ08O1TjSwc2Y6FrTIesNtDc3gYXFhco13vwCAqPa3QhGVNdAoZchO1sJbCw11v0JNyNzIBHEr0iEvab_93CHoGpWwy418yu8DCC7SR2BY9LwX2aNx3yJ0Li9F9gse1RhfZpR0xwv1FnSyUuybvd-F-6xodZ5IYcIDpVbIXOXLirwD2Pss3_t56FwpaUieRaFAhSgJWsoHkhp5FS5qmGlG8cpzZAGGQNGjGvQ2toXoLn4rfuAMtmNNsuS9UH7vw6M3XdJWdew_r0bLyyD76N2s5gMWOCw6jT8Z9vrvYLZ9tAGW_8cdCYJZGdFxoTFkSIN3HiyBWJX5FTGTyh_STtiInw13kDmfbmViRgFkXvjoxhwOK_QR8W6QqYrOsSiYOfB5GOg86pISQcZNiSuLh6e4BhKW8nV95k-okisFwNB7aHe9lCyq5GjKZY7fxdr6eNfQCKoiLFeK84U_MnOpJ2msTSH43HJA35SlHEA89TzAXZxM8UK1-gDk7XFZxzysfbwdVqGovX9tfznW2SltvkQZqNqslZBo4gF5brJrAhv3R0KHAhwN7o1p3QwLpbnB-krEZmnPBOb_s2JZmxdsaG_yLGVk2KT5cpphK-qBaVOq7P0VE5kKO3LqoImiXYPAN1aiRxTsRYj1HygyaBOQ0DAHBF9VLEQasoOHsob6a1aiiWoFWiKdk6wpeDbt4kRKbhXRfnwmRN-fRkmXODY7MvcRSLWYlAksjGRH95C6Gp2hOA6yWP_g-K3W1H0P9-_Po6Bg2OVPkfJV3v2H6Q9KFML0j3xSkHxyBzIaeY9CHq_Q2fWTBT0Iq7P17el0jBs8PBGVasjsNOKjQGnHITR13P_TGW9n2PUgVKy4jzdSfq1kW8HE99VyB0mRsiHn18zo1C4XwxmiPZ7LWF4PDdumahDn4JJGA0F6YS2yiYq58f7VjO80PqAhy1k9hdNTQUqJ_titleMKaj_cXza4CsJxY3nD9kbWKpqeMxUlpok1DOEObBQqExRZeLldxuQUBB8EZ_mgXitqSvLDforOv-dnXTdHlUCcBmKhS7TC_d31SMzMnckCX5JUcluCT27OYxLjQVrAP63u_xfVfJSIukIWcu-rq_1XIpE2SvpK5lPkPv8vnk58yx68Kbol4IZlliXFJWC7O5AybNjclNCE6Tu4DS6O_fUOmoNplb8RQmnxuvn6z3Td201HLTBX7BcRqhKi0qfooYNLaM9HPG8526EmZuVUBnHm89AFgQKb5n7mI-w6i9YO5a9wx0DYO_qRDutgBQgyNtPUo2lQVToW73VXf1mvUIm-gAmbwofLVqCO5aPU3ksT-iJETX4CBBWN09T5oSSfiKIdSavxJ5lpP3xIhUtcPE61cMlK4GVInduA1absnNlwq6RmwqCut2nOSdzUZLY-Uy2apm5ZIKcmCfpwtY-TjtaEo1UYgP-BJ1cZZt01Srs_FXciPRI92yYIZL6KXIXaSmBdtT9MPrIsOcWizM98CSeiZovkbGzKO2KtNPoY7MvtemtxIwVn-kPrJE-iD1XQbIuXaXCHYGLZ9VaeIK9AqNIdlVwI6_nDbkuQViOMKeA7ovh6doL6oy6_x1jpU5At0ymjBJNISqBdKm0rf3UzUcW_dzHt6PDpnLNuEthGq4MUJ_olVGF97oMHa9ZaqDETymRZylSZaGB16Fc5d6qhg4fqn0Ts9oxPua4RXUU381jY0Lsd8d-dBKcM4U1MjwBHfxdf03Lpzu8tDGZT7uni2LXowKT31u25wV7d4pUUFI_-NfV6KW_Ktp4tUL6yZOh77tG2DfNS0ONgoZBKfGPfSh9eEVlJJM1s3zSKe1N4M-clmxPAbEhv9mKGIq1vuWjxS5Ip6yG8VT8EqnP-IQKtx-ks2o37zQGGZFLZMl-1RWQBy3v9bh0ZG8aP9c9j7GJhPcttjlqXJUOQIC9MkEA8oWIGnsZwS0s4SBn6ogAF0JJ-tP9qG8Fqn4pi4nUv_1YknACnZw3jnGg-JyX3f2sMI-KEf0llEgOHzJ2MP38xZpyiZkjA-f7AnVDDq-JpajGTtM1gSJOkohQBQxArpaWWIa378osY8qFmUZXK7opNSNkPM7omIAVwSaBkhyXMOvdLtoCtkrSaTUFK6TV9XMJU861VGxaSreL805jMu_1C0Ne3jHDqeAoNfe6qRGJkWBoONgSuyiRJ5DjlQa-cO4wSMEvYFHnHT1_5CUlo1MF6DZrgZYmwWutfd7BdgXAJMGsx1m14nPx646YgVyjB0-OKMjIKpL9bItSXIpAdujyXEIMHVR8-QYTStlWnvdXWbj2TO7Y2RrgJIp_vWy8rM277FUPPxYXSSxgpxP0DIBy6j-PMz4c5K9F0vB7t27w3DGwFqmg2IRV85ZzA_BAKZkc8Ltf2GiE1FKeyIRxiPDxQ1MZ-f0FxYm42BNNlXeFjrjCuvAsLZa7KCfKzkd8QoNyC8DglKe1cshaH3unrNR_uj9V19ElAHSszmqU0t-t6ygdlNzB-16N5OQ6aspfby2fW9j56xFI93cpG5K_Mb96W3LXQ3jrGOr8DR1Ic0vIO1Z_hwf_pwRt9LAa6xLJT9dI8nqS4Y92i88Z2XAqMxVpRfvywGSJ0Y4FSi7LeFsCHZHWeG5niI6ZqMq8Ul-NGkR-ltVg1xkcrwXpM0chqZg2J3sRjFQkAzkj3T5K9PPwLKek5CNvP2Mx4Dgx1KXgnZBfvCa4te7FK6b32HpxizP813CcWG5VskMdac3Od4pBfKatPJMf1okHR7wG9wnYge7kNdE8kMnsL82ppnF59HiL-BgDot4ddS34Wt35lhYvhRppRUUi3m7yJiBdHxgIN6bqXoZKSYka8RWWgwXNYXL-jZ385VLHnWqMK3ug8pE-l0c_GIvwsvjPqLczbnI1_4FgHz598l3E5BXk9W83PZxcsBLluTCG0Y_KLgk4_yqeE35MayJilolgvGro8RrZMy5Sdes1-p4uljwXXQb6VOGW_Dc7iEWSVLYWItDLJ8GmHxspiZ1A_BqeGitoaurpzTY9jw-ccMS-Ha-cboqr2OuUt7nxrAcvrxxrnE_81sIFMgAP5q3qwmqFNPg7e3aDl05TpNcrfd0l5-fNtSOjhtXLOhHI4TaV95QPNomeiTz_tSddduV_rBleID3cU6rS8C7IqdXBzEDd26gsqX7I-h6eXMkAMMTUASqPQz6xKf1JUQC6o9UePfEsOLMm-AZEc28coOMjAopxeybzrmLACcXf20__IddzQ2MMC1nKmEIIDxU4h3-HE-D2F1xoDx_zpauDo5mOryBSSqmRqpeKf_Xywvxe1QrQsj0_vhcYdlE82t4Wq7It11P27CC2f-mxvx_b0Gh64ycInSLXXvsUsPD0wEF-AG8z4LjEk_WQ00vkePjagWrOPhncsRDv3xRAF12k18mZ3vSugSj3smombMjH1voZDljSAkToMpGxLuBOG4iJw9qgqZ1P9g_Wx_un7IVKgVFBISbNE2zv0HqttuJ1yPU36c2pB6DFg_5HypJPPsPh6j5PGdLmtg9YLITfRdx9vte_ertqPaYxuHliXw0d2-1yJjFGMkAaeJdgz-oVC7K06QvJND6tZ14g6KC58zLs2Cwjq8dfis_dDIAsARGfxxv8LpJNvdTrK-I26-sCyVFKk9dJ-D_nj6_Tflk4y-AOMoItFgALxvCiUBUjOong8FJ38H6qPi2a2okjo1I5SQ5uRqhcqqbUjLhIqbHqA0RWa8-hZ-bs8RLT_PCHc_F83h3HzK1TwSKDn2-iZedU0AT3rcwiYmzvz5Hia69zHP3n-THDmTlsVypU-jeph1RDZUrNpxewNTzcpdlcPQ8d9i6yWLPegLUnPkhoiiGjjgha8IcLRWRmDfa3xw1f1PgxR8QBQiDSwIR2jiS8rtnT1Pfar5Ho6Yc0BS8GmdlXOjikywD3B0g6lfCZzEm8Oc_F1ABH90m6PGyGvTU7P7rHf07dH1feHcZqY96PYNsB-B0vNHwlAv_k2TTF3W-I2EZC7joU-611rmCshhDt0K2U0my2hkvBVyx9rT3yEjhZuQKhZmrVBuWXm3foZXuZgYGyzczKy0pfkyvF8g4ODZI8jAHE5tnhrUsdiZk46cvAa9Wv02PtxZkItyDIyYT5qDJ7CNi374h4oaNRkljW5FIqCHHXJuTjEs1IAis64VuuxkSZPtfIAxirrZlXUvPGaRAEg1e-gkMF5Sm8dFuPSgzp4eWew2SQwtGXAGptaZ3UuoAwXCLrJJ1e-9Vx6HSq2B2Ex2zlWA__fzkdoTIj_tX9_hZloX9TUfNP8fZWhRPAaADBpZZ6oQmYUFp11DU1i1GpJGNJylqJuVecNKakTU_utR-zbfNgfcKAzw01edvS73Lpq1GjqAgUmLflZKBEVVcqFk2HLYeojS8HIcU5RYfJxci0LDaukdiSPqlZaMoDz8BMbYUaFQLzgSFh5fUZ0uVByBPkW8PfnR6Ahsw2RGQDiO_c_HLhVeOi9lIMcbAeBybtXf8V-GOcVFCQTlJmhZ0lfVN0ExoR3y6t3tuCngF0GMsTe6tqnYSTRNEaaPlSGiCLKOvVd3Xh9U5UzfxGVCV5Xpgegne3eVWYJZCheYFqswdKaHZLaX97Td7s17XdknG15gYUgNvd1B82tSsybD3x4R5DOqv6jsq0R2Id3g46RYhhSLK05rsRWdXBfQrdkcfgb2Mm7MedcnuX1K3r_9Zk2edoo55idt0Y8AnOpQeU1XkujZP2WFxEwcHYjoZ6o1h38h96q2pTOOpSX-6PxXubSDdFI-h4lP953GnI31_0mMb6d0C4r2QImsLa-n_Mfcp_0WxsBkM1qdyd4vHgWOsuPQPkFU7NC7yVdIbqun7Q_q5V9JkjaAsYYlLgSNXq3ifrel13gA8dYrHAMyKC0h7hO3UHlBI5q6eBrjQXz4iUKP1J63gPpMtFV9CLU_FrljG85u4P2RXeJGcQuP9BIzD1D3GjZvzPrqcVW3R-s2-bN1HCPs8T2s1hjPws9j0x3_IqJ1O8prA_Fe1FyPseZQuTOOSNG6tCIkmGGketyZN6IoFB--VdNRa5EtSiYsJvqU7MoMYz4F1IaiCF2eQe5ILQTny3j8ixZu_R_fMMzqoZVYBThsxxUrzpHlg5FTqNH0XZaX45wzX9VG0eSlXG37mAX_6Qgqp65KTEBMF-AyO6NeTROOC4dFjXwPjMIPKm5H2LFFRh-8MmIBIU3-Pi97jV4SHby3yCpG9yi3l1PfydtXRVGViJVTal64X3Rj90iBdFGzKmT6JhE8GnBF-W2CCfMqhIM71Vvn3KDATSDE-JtMh9CRKw2CN39qCO-vfzGR5QrPAqNUKQSqtn7J8s1sg-2bXzJNA_AF6vSLh1R3LSRcSgxhLL9bHd6XW0R-zsiP16iIMVeKFpsBkIlnH7qrJR8i5l_vX34X8Qb5uzfRI9iuY-UzMbDB4Lj7NJNNKTC-VdQh7rYIMg8X015ENwP5qjOPsOvEy46WugpJyeFiEbsiGrTGv04mN5ZTUEY1hPpgYw8Sa5o3TKaRUgQrgU22IGXc2Kp4Fp7cduUC5lJuV1ExuNrJxT-oYGLKaoI2WGn94QAFgWWT_lvoACSlrV-CweCKzDUyWDxQJ-Pxj0drQwhNsuyrkXH9iZfv4u9EMW-57aLhaRuXmO5haBnDyLwRglTPxyETmsuNs5IfRcOPfIgbdVdJ5Gd_HtRYisxmKcn1p9PkEbIUuVNgmGG-NViJs1zbNnSDzf0Jwsa2wPNloVSIRS-ovlPfjgeA-QqgzA9BvMxdd4FTpDlfiHnBpWpXtLQsOZs7OFVjCD-j1ozunmLZolsxqzgDX7F58YtXobMohnTtrvwazNl45e_yg3k5RKtbSueTJRStm-mgslDTWTy7MBnmRbtHkcZxNXCvxbCJx9ehGbSy1SX8hNTVTJth3vGetIHYHNsWnd5DAPjkC2I2TPgEf7rx1rad3ADhE-bP5_GwDdIIwnk7MxjsD1cQAbfG5NtZ7Q4w7IsvUl190lKVjHjqOK0aZncGxLUttELgcT_YuyK1eAUIv9CKYLUdO-duz7hWZNXKa4h6bPEHTMZfGkjO6xHbNpetuDYvP8-Os5nRzsKLcOcb5o7aV7v7DCL6bFgSObJWzAxibVJ6fVQM88lr2gQ17HbVTQKkSNn45BpgVzaHpluI2sBAWr29mbcpT9gGa16kX87eXNC_nRnKGyuMs75IxN0yWnSTcToErPjHKQG7ZGvTA4202RY9SsRFkfmtsqoeScoq5J317AN0jgpOqdQNhHwDWhq35THlUi65cBAQyoj0QeQn1Vnx9eY5Sev_QYqdiJ-xGk1VDGXNajlXhCX0TK6Wp4EThHFV1hAQUf_P2t2g9ZjVG_xprKN8aIFWqJSoNn8_qyy5ZPWjNVkP8DjVrxcLcONatEKy6ywiP1L1jE_ueDrrVi5Gcy7Kua_m4wp6_Se0r8M5IUEYqlkuDJnE-_hMNConQwt0BUWp4Z9m8UPwmIn02QY52l_90lTp3u1HmzPNxRLnk6Tmr2oD_AQeIVErNfc4oApd86pB-h9GrDkWY4MiBqAhHpJthbTv-ymx8LMicTEK25Z9K7g_-YOiA3-zlj0e_KLD4VCNFsrnk9SwjZfw4amiKtuVo0sdlygnYFIVTlGUREdWd5uL7Rt1nlN2MYyR5l8DRsZ4CILnV3d22wzznCaEBDxVzjoHzGuLX8jeyf7LvLbt-D7tQz9wfLEFxYokiAPb5areCFIAs93uEOIr5wubZuvZnVVShEE4rtmQSk_Ykh5D4x0JGrVeDvEq_skTzREIf1Hjh8zLRCbkl_9bUIsVBaLrpOD3cG2J5RJt2SiOT_XyxhluyJ4TlDPou-1_70zVFcJ0twYbFvOhDgbdTkaYFsy4Sg9ZCywOaYsBdS7X36KtiuZANOdkyLCuzAG74ZS23Zj3bPgu5Aq9CwYa6acnfEfhvvQvH02To3Bm9Y4CqeBvKD9y9OrzUVRsDR8E1wy0dwfunKGqO3Dz7WNyiteDpIIl7Tpar968-FyqiFg_PST-I5v_xSbViW4OAv7925A5a0FzG35OWGHKByRwp2jfYTsJw-2h0G-azsY9hCcZj_BSFoBZ9VlX9AAglxo_E04Q0KMveYCj6GUliirBRuz8NT20xskqK24Sw8axrexFv3-RMjshnGbOnAl-5kxPyRGUfqRUp4wrqIEYXrwcqzHtjJVp4EuypqjFQ3SkQ9qwB48v0yp4iLOmI6s2T__c9nMd-yWB4IX134EFcQOUj_Sq0I2l84klNyJ2y7mu8gy1EMUO_iZPrBZkGejDA-89-Ki1ASz1X0ASuno7ALN4uKBOENwrug1YNdwlBBr1-ZFS0YO1IAal3PwRJ0twpmwWMIykFt5kGcwEZnTs0i1FoVsSrlzvn95QgPdL8dzAkjscwDD6arB79TVgO5hJIf5bre4CghfLxKp7S_KehAUQhZC21cfA3xBYevtJNzELv8NruTViFOnZSUbEdwPtL4kwZjTcJG8mweLJPwgHu02DWmDNNUESLHiKxxaquxauLFkbO0nLu8-7ZVsyROWbGw3A-q7Dp36D4XQ6r2k3IZDBU0nbto1gKrH2gxkNHkcKTu6h62XAOjptmY8REzHDiw9Dh7Jkw0ejFEUkEZ2YpX8kgnzWVZvCLdR79aFCC9DR2K9w0QelfyYaJ9-Btd-j4ErSL6draeAd9-3c16aveXDpRmhN4zNsArGej9O-OjPRXasq05T1CIK6gtLNF7tgl6vOcUbN-T6UGbXdpb1ospuL20PaF4-cx8koPi4nVapoM9DmEDfs8sXtRxSSrA3arHehlwMaRsLEXiCfBzNZdKdjUQdKT9AEVcO3w9j3DcCoeIQTYSkyXDTn4WfFEMaTqYbdRR2SIRwjlkjed697edKfWpEfmmiDMI939gv57NHyJpOiRLI385VZ7UrYqDB0K9abH0jHkOPPqOe6Rjcx5_DsxbMQzZyWrKs3EuIQPpV8oBBk5uh1FqqF_LJfy1B0uGIoW_-a-k7B5JdExfTlPXrSWve8Rhu5RoLxZj09tvdXPFpUpWVVj3Vd0SB0yZmzr1b4ZpNZUUdwGcVys4JpE3EuF6WPOXHOrHSUYx19YpOI70dZ0f0K0Jcytb2jA2HIuKoMBrYBi09AtWVFd6mDFWD_2ozJXdwRHg-vz9Ddf4tXBu0Qdhqjvn21CaX6Rqkfr1vLkTEPGlS3JGYW63-zuVuA-Oh7VIvRPobdZvXPhAvwsRPG_Mhk7bkGdpkc-63ZRIy2jgFunpnjKLub44iV3sA5zzlgRpQM2RXbdpvHGe1ET4YXkr-AQFKVif3wxz6v-I2UocTuKtzl3drRxORVOxOulOZiZ2bw0f1bRszM59tY4AlwIVt5NlOPMyJR0t7XB2Uy3BMDEPtIakb9EPq2rWpZvuNpgs4chId7vJZTXNzkMogZio6CkqE81iI2CKeixYHo6DRWWXN5fPsHeKHBYEjsEa4T1jhbMYdbtq6QUQDRDtPGrGGIk4q_vBCzpQLHztKgrI4DUUG9rEd5th1drztsO24DIcZQ_TVSAyuWgiTqM4uRMfnPntYKJXFdUUPUnkuHVg0fJ6hGvtoiLxHUy0ggoFMqCZytWhXBm8I9391SwB_QLGIL0ElBY2qiPm8frCjHVp-qj3w0udIiv7sg7a76-f371zWB1pfy72lyiBRNnQ3CLHA5bOE1xSPFyMX6M_woPTQY6I7OEcJUw1ECetKwyusS3Vj0dCIg0B5-S_iIxfaTmUnl8tSuq8_ol9Yt7WJYLM0BWk6Tlm8Fvca0-jb1PJwrow3Kuv_ou9S8BSs-RTvHkHYbuiQaiTcv18etiND2nyIXZ1p9-cvaX3cBfxuqpZuog3C_kc-NO9XL9ry-dx2rR5Q3_X3ZKKTFTEEkCxtVyvqzk844r3nnEPZbjyzR6y5ljPkcRCKotSGO6UZ3W2BbWSxUNUzQKYMrU5y6cZiTDLEsxCV_lUqK57QYJPwkwfvsnQQpkybuS0pl42Xqak6-Q-6w9TX9NqZU5uOQlq2SgPPurmyH0gzspIOa8oayWHdcpVlJGnMuXAzQzbwFyLH1nF7aPyCh6g5kSwOdr_eIu5FovaBH9hZ9v3mO4bm0hsSNromT8RNCAFjkudKnT2QI-moIWZQkDs8S4DOuf6fihGEw82Bom8lB9no5NIHLXf5wafyaadVbNnqGbrz4Aw6pnKtEsXzyx7NJpsqh3NiVoFrKmZvPk4zK6KDP8goZA6YlUJbPcWB34vgHNIpB-EPRYfyT4-9aZzeUxHqzyiLTwFK5hjsKAEWor24xA3NkDSSGCMv7NuipgGPZLeaDVjbBiYCLriIVILARYryt-gEPK1RiH4oDqzd7VR3_7HfeXo0c6YK8SY_o5eau3hUsR0xcspzyRV2KUY0Oa2Y8Vk87U3iHBKixpUdfnvMLnJXYmWwD8SL9Xo-UlxbxSxyHkXze3edeeRpcFOjLuZyadI2NJEpA_j_Uh9qgu33inlT4gcKfIoe4eeZ1k-WFmSLoqVAmFLMpuMeCV5YfWpr1HzkjAGJuYq5ejswD8Xg4_XOLzJOJMaSa11wyyJ6F9kHQfUDvK38IRxwUOIPMxOuKyi5iCQHwAK-yQsKFo70_pZAMiqGt_m5m5UIw2WU_mBV4chN6876Ft3HaoVUG-WLxq7zXbQdG2DjHk-pOnK1Y2j8Zwo9EveHRv8gpsHrJI90Y6scr-nwXvkU9DiPY8TP-fdG-59fQNECacHON2JYQaUXtF7jGHRdsn4mHrJvMZ2uRL9z7SPtMYGxOscIZNKA5foYDxgQwlSW6-yqTkGJvry0ReyatUCIiI_3hhUx3BfPP7LloJcDdaUtLbDsI7-ZfoXNyvV2GYaZZ-C1c-8SEOKpx4_8fR7SDCwTiaXQb7cm3ljtWdwqLf712QT1zMHyO-7HoMM6M5ey676h8fA_l6VEg-Ru8kKE1hdIGRIw_QqpTHvrK__PjlqctW3zLECVnG2ZDaKCzZxiSZhauKmQ4C-vgielleOjZVrSYYbqoOgHMIqFFxpDRHBHb5bwEuEREpgkd8TIxqU8IQdGF4JmiFeFZughmHsRq4fgzjuxfQljpaHqbldbR_zLDQN7rINDsuTGLKA4emkmb3P54Wk74kA17JSia45F_Y2umH0VTIvLe2W0VS028pTGr7nQPp6jeFrSrnpL5xmb0BCkySbI_GHRLgZWso3ciIOWPfWaE4-nD8EIrhZXeqzKMx0qjmR9de3yF7Xg8geugKTejf5Nqz205XmilOqbaFj07T36zopKw_yCCzKITHoGczdT4ThwXt9hhECLlaQO0hGcuCj6F1aBFTGz8ykm3QimsHzf-yrwlEhCqjg_0D6a-y7UbWwBVg9MLoEe-70eRSKBZHaqAaU9VGa7Yq4WLFRkV9Dzd8wJ7ZtRAM2CtUCY1H8R-FovxqAFXHuMyo0-0JluC2JGu8kEMTX9mOHzoIWkayppC4dzk3h2sILCOpPHSv92ajlKUnuODsaBfYteYHWQXGJxXn8nAWDWExZQqhNeCd48Y8OcdGkX3v2bvkSLaVCM691Q71cne15AcXeGTTthwst19ek19SofsTVa59DU-1MO15wTGwBBFJil9arfTuSm9NLf9HDuvXwyRN4EdS-M_QK1nkkw27-apR-1Ee-qZpUHXxYaZVOwyPndMJ_isFMDoFE5EsE_8gAWAbCY4ZvfAwtoylfHmoVvoGMXtFLYUKIoX5xavg9VRjCBwkYVaDaHer6vCdcH5ekAaXGiIn67fP4a_gPSWuOTYQrYwHuvF_0R2b5IQAFNh3ZBQXmeL6EQSHY_21Z5lA1ObJt2VH1gGj6ROIEcLJioLN9nzDuy989ft9z2R3TyEGrc5gU4KU_mi71sj8bBwEg1ZGa-4u6LQVGguO2p0ZRJN98xsweyo98OEcbd8YyXgCNcb71sSk3sGePmvBcW8pq6Lc2swXU2XwoCeEdjhT7j8ENwHFYweTS-cOtqA915-GYJLskYG6JA_aWa58Vbq3CdtLYZxNaOUuvc_Yc1MsW0j5gvtxEjliXd0xRzQ86I2B4ngWi6lIbNiD_zfghRTr7cKsf-DRuremkTjoZ9vqT0F88_4BdB4ENW2MYrCXUmhk7O8N6sAt40X9XWNYLMNyfbruisVIc0yv68SeD5bZTOsCXSRYs4j_aR4ruOi1IN8JrJZFYh4KaKkjHsRJz1bHnOZBPaJkRHKJr3nrJhaL2vdHFVEjrOtnR5GpXcgTUCEPFjChssytBKxUbVGTuVaIn16FzEgdeUTyyoOkWERNSetfLO3GGdYC6fL63CcqEiqKLReGZcb91ZyZttFWoJnrtcQr3uWc6-zcjR6-FkBfwXPPb5RX_YRfHTnOEpQ1SupAmWMYS9ebqTL_ukMEWuhzqU00pHEbYASSwxVg06K9rO-TVEFCQUjQfgNnSQtJDk3J2Y-HxVCQ4xfdGN6MRtVYJQ132s6Pz9BXE0itDTriVkNV1RUZeb_Sm0E8rpyLKcJem_h9ILGxPxwPNANrw4jaBus7lATDRCtcTttdCxIShjNWNOO5F3EpRWQAbK7UCkDV5BpgpRRlX_soVHpCcu62_PVKPyMUb-5AiAxe9BcGFZLojcu1h9VCNo2ys65cglm4K1mi_eLIqlr2FG6_V5b5f-35E2rI1lKvPTUt2ytFdyuZxjT7fdJ5JYFisYSyG3kyTwFWHxCy1fmUnZxI6E_OjmrrSLEnUzwVbC9EixWshw3E171jP0hX4rEVDQWCufBmx4iPPDRPGglQM1a43xJ5hEzqYTe36Ej4AjrU1m7HRH2smgU6asycOLagL6-Eq2BueRhRucmoZO5MeRGmJ0EZw17B027JSJ67E0DjeDmsqQHNWzFp7KwHCGTPFQ8WP3PHgTaF5D3mtwzutNAqMM6pK8pMScpfjtk20Uw217X1Elw-ubuAOkU1cLLidgBNEXkx1xLKfQ4EgOknjsXrSu7SboFmUULFgbrcbCI53oK7ujlf_O5RErNy8m3yQrRGVnhQPwJjxWDzg0u1lBCoQo1yNmtVYiT32GSdIjgXzd-SBjKYiMyBtr-YtT07T00XsJiJ2EDO8wUbSsIRTxobV1eZSQFbk7nStmlJB7ksZxeFCEk2xnNcxWVBoUeItzIdUz6bQGyxMlVADbWnYvqo-4jMlFHKaDV6xBx4JeuSLCbxIUOrUVIMGJmokqDsfLjCEMwqCXbgADaZcDRn65NCZdy1BYYzKeRFrpk3DaM_F9IIOcMuQT17p5QrWuo6fTxOYELpP6ntbrrSoZQO4lzCdqWGv8O872S7cc7M1_HOWgZB0dMgQRjrtEk6viHRcM93MmJ_fxRptv2Z7oXGqA8uOu9XGljJSMhUtn4CClNmVluBkwarW-A2gRwzaQq-0BRm71PTLSp7vqXf34Qke3mIipTED-CZ0yHf-BxAkLJ9Lc_hqrsOkqicCDaGYJdaXhYaAd8fQ8AaOtGo8OH4TNhb2ko1q15rnjMOBNwVH4ogkO4YundGwIWYpXwPRN_wIOQmkxUj0AIZ-ei3jYw_LBd-SXDIiV3SZErItMqrGkxMq87rZiqHFBGO23onqSOUeD3KeE1g5ALSCNd7t95C4l0LuRni9KLIxKt8CyTHVKSbFu4TbHIaM7t8I8z6S1MzQeViEtxBaWIhjLp_2S0SDszW86G4CJIEuIWnW8oe0rYsE035mRUmFNfQrzvhcgBXAsXkoNhz-P4_6uBssMVwgcvGnByrkOKvB9Jk7X_kNxAyrnjCXdRXjCk7ld9NrCBOWsB0gJJHhul2htBKZOLdDCKfWoUIxoqCZxeWkL4F5etfStYbdZBJ5QU1ODyTVfXGfJyWKt0e10f6Fl_KuF1e1UdRQG57gqdMTDr9n0JZiyT6brl81zbT5RHE45RL-Ja-CoDg3Ty6eV0_i37SE7QWJ-7nGyG1L9SdUjM3cK0ftRR2-h1ir40GfvOrSS9YU8MNQbJ7IbpdIqhrdWsCdG_steY7ZhBQ4A22TA6XdcsIzKqEkGKYWlwxmvQ_aExxLprzil-FZA5BpfzvUigPeGwbw91vcZmU6bVGDhnzsuD3ctagZ1bx1jbiS-RR3c6-J15vIaALp53ftLEmBz1D6lLULZGk7jOZEYrkVM5xXF_Mbl35MX-l32CoR35UWb9qNN0Rs7OuTdV1ToVNWRRTuH4A2Cp1-E1scFiyeiv3bjeGrlSNIl0vRJI1m8AWr-mCDw-NgKNILlCmABPmQNSJjCCSoQaIzpyINGL14S5ffF-0vvTqUuW4k18sZBSA04zETbEqsdDq_tL1jOAKS3jNs5eYiUO9UTBzw9UAiR4n2GAQyBZXotL1PmxqfEAx0DDj_EsiqycfzhadelEz0K8NsDeFF5iQQaRzkkf2lT9P0UlCJ0OSBym4vqvgYlzMFpuVHI90Sbz0lMaFiwTXRA4LrsPh38OoOz53vM2AqNS7bCE00mv5DKGGi0jKVibipzaJgjvKK7tS1L0JXOgvHEqkcL1Ays7pyodcrRdQQeW-xQUtuqwpSEfz_kV-TO4DlMlKbn_-1emQzaJi8q9VZERQfGN4m9YiZe08dr9uRIXjZZ3dh9IPBBobXv-yj2i1tNGBbySTHYXLAcr22hXXHXSBMoJUMVI6i-VwW0nYv6nTn_8fFC1a17dSbEyOkhOTLE4balmqlRCtJ43q-cSRUUDojsRMbIJbIe9Hh3EykTo7UjyPsgJDKqcndX9WD_olu4nzHXrMpXMs295CclIeKv0V-mmYD3UVNUCrfQUlb1nQHTNlt6eQbmAzFtgMmZKNL0B_3UmH3uViHcRGFL8l9zHSr0gQulNQaIgFq4NsPG8sWzkGwF0BJIDHE6VROs3-DT2zsqmBP6alqw5-4imyctnxX0jvHbXmBPLlZF4TmSh-zqJC8uCypJan1R3IsCkN_US4op9bS_NxsWGK9bFznHC6qI73qYgasrCf6nQ0lZK6eQpSzJstzZrSEnTCY4Pmgd_F68F85wZKaVIEO-wmK20wj8mmMpzAwmTCbaWS7GY6A7c8j6TYOHQdipyQjXC1hdZyCYu0nHG9Gi153bCHiY_cBKdOMyw0-XPg8Avcyt3sUzjDcTjNnI1YpWgtUHI8zHBhJaI95cVFZRXblmN8exdchWIeRyXEY7v4NIejzFp9KCoXq347TNULaOEbQvZbRlQ50w_GgH4yOT7FhFrW9RNGdzGlb0nPuED2Tp-JNlR4dgqfV-8Paupmuqwvs351tbHPys1VrvCfnTx0Nu-_fX5dpbp6yYCwbrNwlVW9TgGdDq8CKfcc-ibxH5AsO6LfY9UObE6U_vmHAG1FKwGs_IqQQLklx9vEYJkLuA8GAbm2rIZXwgGkbpjI-SIDlD09fA-xL1_vjp9fNF6i-opzdOSCf9MmODOF0v3_oeNbpm2sGc5BZZmiKIYnode9P1t5mNVc959ODLybvjBQUKcJaLb3phEhejbYhk0uPi5hSYM266xREYcOHcNUgHquwSO39a8M1USqIE6VO_HCf633xIK15iT2KsQB36tC9831r9ZAQWA2pUKsUfhpeln7cxZeTn8Ux2SVrm86bN3oPeog1t20cPWG9tgM1itqWteHGuaqGa8IznNP52ADOq05CWBbxsUKPoCjahA2vDr7PhYxzZuB-CxwGMw4u_DFwqFup5w8T0et3nLtQ9QU58-V8Md325QvLSGa7bmGbRBX7ZjeqCtCxe2MUUFPkljzOwEKRa-QxZynJGQ_Uc3K6tXy3hWNImflhqteGWP7kPlUMZLpjPoBqugl5_ClGOCmNkbKMou8LnBKSpicwvDj82_2JRq4kKszrYxmsO6OFloKsmWwGdpXOxkv5SIqfd_6uOW3YJSxIOuAjPWkYCN0-GQaFRaJzlvmLA0Go_oQoNIuwW-urAuoyLgtmSj-BO7l0WFzz7Am-nBYpyZRFdx_5MfamL8IhXirAUMPzTTrFDYMNxHe5NHT2jJcMmh_qZ-f8uBvSvbO4xhm2dk5ThcaiQzJlajxeshh8IAMmuGS0qam673kac75yNamcaG1zp-3SbdIjqlhB51GW68dk-c0Mo-jocJRikEEvyWNTKDK41a5FPrv8rQD8X4I2ceSWPJVH2aon8CuA5auF3lsZdaq6sf_oJT0pqHNNiES35pEiSpkFwnm-jYsRHoZA9lwSbMrKiSw1lkuzkMVY2pyjpIyxt9PIoHGd4A5wD73nTXw5Mpttl7_nfAk5JlF4X84O_3ydE6mT_VFOd0FcJlh1m6SivwKfmWf0rzEKp8VRshzJJoA_6ZFuF7dJnZEy4tXuhJpcuQT3knw7ACBwugaZyzPnbF61EMCTf8rQWqP_4nyp8INW21kKK6hEXWfjYSbdNaHLRES99yy3LxBmHadWC6IfUuFLgetJ_YQVZqQsoJBPryup1tt5e9KMthJdJo3QALl2GRqJ3U7INwHfjffXkBLYWXaYh8HiVRs2qZzOpl5YhHdjnfmQWyrZ89VdiHBZDC_3nzEdj9PhNDH0ug6tKrcV0OFejyivu17uBW4_we3PUO5AzF5Vs33fA4POksEui-pnl9y0HA5oD1mpyGbzAFfIsm_xtz0k10WhbKC4vD2hJN_mITruuzivS6ZlVtqq4TiSuq5JUT1CEPYoh8OO3vBKa3uqkv_oCoJULzAzaUpW6LFTOlmt8JVhxmK1c5g7r6QrZSEXlHywQYEiBS3nv29AOzmTaj2NkaUXyOT58fwWE3U3vHjXC4PJhEt-U2LKMCX1SStQqM9kMsYM0u2gYo4ug-zdYJOQuwH9J3Flr_vBh62VDxgXfJvJduJgewBhm9Cb4XINdqoftugfXurVPGaTm4Q4LoOkHO1ACztketBJF5C5JWON9jJcVLc3IXjIQWWUZwTk83Yt91hNuk8eYzK8E1oYxpPWMI1VnaLhscWISkIyvjucklT5YFcnCskzIB0FzzougJxy8fata8VL9-sunTLbEP150IaA0YZDvp1PCi9BkRUDv8lOhkOGlSjvV0_O3t3g7to0AQCuxD4MDDiW6oMeQCf0oZMwSr-dJBVk3xaYkKOk3Fu-q4jxG8-9Omfs1uSgKo0BHWS1IItOACMAaWYoXoRLuXjy9en8oOFfqDtOZbOZLkHi7dnPQkR44nmyijOupuYcFzYFz2nNTvWpM0oTYMQRhiyAW1oVl8_L6_9SQEIenfEXmgbwAnkWSbzwgVvYrb1reFDop8gXNyXsHSH6omvmMkCZHKCJxiFib_wXzcUdbJvFlvYitLmrulqxT6bJ849Kuaz_1bWNj_sp7zyi9XYFvba2PyKEnxHz5yslkcQXl8m1v1MWDO1YOB94fY-ITad504BJ6s3HYfXjJuEg7gJb7YW5O2pedrTOb7RvDkbJHfSK9notzVbPH1hFkaAE7CJDFWNe7B6y4QyqSxum-JxbpVdATRS6WaMw-rwG_uf_PoLB0au6ToNLvjooZM5QImkX8LZDt1WACD9Tx0eLvdTWFG4OrLEahTM-qlXwajTVOLffZ3qIMM7k1bmuZD_33Lz6z-fhQrvgZCP2fBm69-iJFYP3zGCHtxabYELqkYS_KFGV5ZnP4o4jNAp-qPZ-gBqDXwlPCo7yu_h9U9MFe_aZqZ4RNur1H94bRbcOpWHBubVuembpq31ftPD2fiGWaqqWqW35r6HVSmMMfkU2tnR_RKHhm3_kVerjrNoaMeIsJNYGy5lkU2IHNFas387mLIyRYn2D-sPxuc9GyD2PCCTcgTGF3qpAUj6DIzeqgpIPBHUPvCnx_mXDemCS7EOvZ-swDHwbJms5PT4Eji-Y4704atYmnxeBN5EZBXoisVTHkDFhy6NoGfPqiffSiVFJth6SfOQyW_5VKvs96j6BnPL-5w1ntPXkazlh0X5-ZON_O7aAubeovUyS9wWNrCDC7wfPSDkrSvS-mhu3LIEGN5hfZvEj99-ocCWMeVyPJ8l7M94CwsI3L-5jWpKeMSqiNkzYqwaainK_N450PPIoWCbnaBm-yE5QxfUHD2n4zmAd68Xyia0gQ2fCKSma7mh10SAf9chZ98Bf7SZQpSGE0MSjiZ5QnTzpG-UG9jKf4Rz1cagxDrCaYsKtkIxyZeW-n5-xzuLJ4RmiU79Q3svP9jJN3jn4vIVf80dtYR2UnVSlmc-SS2KkP-xQjoaaCsAbEYAonqJYYcTUAvjB_rkBOvXVs0eMzUdwVZkWk89E0cuk__E3EG1eU721RAdca8sndjPg4vYLttqRG3kVqyjLGMasfCDRIBCgZ_g_3od9yeqmyem7RR4aKO5sXjLBO3-7wLQ5zx0DuvHDLTpCZTTJiUe4hN-cPUJPDUFd7TYhAoXdxF4DQskSdgLPAnGceIxm6QBwGwsa_cEfnPnVGEGXbMhdHz2H-kkEsVyzv5RAcDmlE4nm_y4MMhtnOFwxSgz-XAMgs0ThPQpoUK9vJh6pi0seeJ-RtVJFiZsVcxbTglAkUDCk7uXSyJZQw0TCVn_cXdnJ2WnwK_XOR7hB8zNFdnoZTFqkZ5MMxHLjSyk--L26kgaOTvtzUayQQYVrw8MsOuPUXtAoSzBTY3pwL03j4Xk0bJkCCP7JfP4ksi6UBZqW_c5FGypP3cph_TRKSqT5VGCau43NYZItMpfGDMveM4JGPYgzhhTP9jk7j-ImHP6QteH_B8hXSbpWpUpbeNaQqEozWIuIWGfc_eVVIdW8gmgE9zsNlAB-636DQVdC6FrFhQhuEV7GywaxeXvcdHmfQQtc_QqxGQ-iHxW3xT305enfu5MQNxQNzWL8K8DGXGdXTXH7X3tguUx_lyqUKCxrQrY26pL0xiZ_iKbGaZRhilj_v6H4vfWp5Uixql1cjhXhvKvGSxz0bkzhdDqtZ0YGbM1coExqAdHQz9NaIL552GS7pS_KCFFitCk4-E1ufpYG6xxo3xrHdaMy-tJ5ICqmUF50AmpftuPeOFovMzWKmvo3dj248ulAmy-8T4X-0DvJT6-lYsnaz74_vak10xBstMAy2WTpt5j35cxK1xA8aDC_5K4t-_qHCMJaLY86jaEv1LXmTpeGCwQn0390rvCMO_5HpXD8w6n35NRwL_XXe1k0f3pRQu1wZ4604v8QQmqMqKocFPvcEhZaqGWV0dL4ct6csVZFr1JxibN7WFDu-9JC8r7mJCjaDgMsHbDkCPi7vwPbZiUFpVKYGHeqtv5jsztiLNyRMham6hxxU9MpgakDYVyHZvedoJmN_3wdfklIewMNX3pkxWK7l_MbxoTn4GXAz-bOlFSYiCFfR9PY16zL4w6Q9AAmyeNKWrBZbnutqUKyuD4lm8lL96XRBHgmgahg-L54PAajsblYyodXZe1pwW9G5GdlzJh5g1jQcwqRW14Q5i4qPEm9Ga1fUTYYw39uh2WUp2RA73VW4XAMLpqFMsnQMN676H7TIxkDFap5Q3b6Ur2u6Htjv6AkrdCwuhYV_cUgaAoLx3L0IMQiXe3tWes0EPGZmUDHBJiCFzk97VDygQDJ0qWIG4BR2eILCoBRq9WDIwL2Weta8UGd88Bl1NqxFUncUgHuXN7ktkSwQz2h0QiOBX25kfZjXDaRunZPUf6GHQCVTkI9VLg75qVGRaJJ13E701hqCPcyniBvvI1jx7kcfjPOkicW0UNspvhedF3MSKrB9Sn3wMN5pDJa6wKC-uML3XClYjSMjtqv4gXr2mkNvPHaN_AduSGAIu8K11MdKhFUtz6ZM78IUhpZIOG3yMGgRZZPvbvC1EwRv1r7UbnVjv0NE8t9q_q8tQ61Em_WgmlMhxYsPiyioXN8vfswp22yNQ2UHEFe-ARESa-Ag7Zw5wBwgmR8IuM3tY9j6pJxs_z6qTLlvQenllNTS4K6sC1e2-RBn1kjXqFHyWgli8f3uupWDzVb08VtCc-4Ypx7XvNH6XIWQM0aE7g51TNutY1KzcJ_wpiZUumgHt7779SdYVa_KEzHYeq68iuMYrPCTvxnYJTUggnohE-ylKIvLeLSSmfles13lS5uXwvm-9wxCz2921Rxbj_udhZwZHeL79Yo-gYPbLOLKDwAR70KFSxl1cmeVhujfmihkAqPJkzm3umEr9Rn2umUChDxo7xm92Hqzbsej-te1wGSeO2lBhk91tnOKh5w9fmorINgPGavy3ptBcuZFw9iKZL-a4c4ycWC6Oq8_mnlWp35GJEpvPodkcSpIOU3S1_S-3x2whHFNZDA3M_4rSsyCPMXnro8mq_lI6LAtdlVZI1hq4ZyFP-8ge7bs7yWF4WZ5e-dSO4v6SWaCOak_pDTkMJUy2LfkqTVMiM91q47OA9NUVGNFXIESnlO8oqz422295e77hZkWYYb5jDC1fr25kE3uZOnjfyelBL3L59LFa_Ye-D-s6_Mr3crq5j_nnst2IHhq4X9pswBQa1DnkV6haMfDtq0Z7GJtD1ME8TLZjr2zYkTV9u9tA9ppKIIw9SJr64uXh87fClI8U3NDHPF-u9YXSmoYNKZ0l4XEUiqicHlIlF_EVY0Qh06uazLV3EoCXSJDM0chjvq85rRloPYqnK4PN1D99BSXxYt0rW-ecoDOJl0lq6ApCsSlhJr4LNPh7OTqg3v9TmgGm3AdIls0lChBvkRxQfP_OjEY10t0XGZ0piG9NYun03NzEc20agoFV-oMXpvjbw3Eui52jXWEQ8VuSxokImCj2AQLWi7MToCHVUK8Kt8gYv8FZh8rKbgwxc_E-X5xmeL_JJdfOMDqE_Ua2zkcGZgiTZp9kmYxGU_GzpN2EKIwcY7PGSGEJoKPqyYKpHNX-iMrLTfbuFkFKwbwKCNCkrVsm112R7sjRXBx9mnYFb9ABqHfPUfVhyySCG3O2W9GsuB3vkH8R4ZzOH68kuAj4QZW50g8zhF9ZLotlGpACYRJkwfIjXfb6tQPFBabBguUHvPkeyimm1DtLOODjdQwxxHXDS8sFDCuSr_kvKU3DsZc-VMm-Pe4kMQ="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "e35-atGCF9vgvr0PuaGy0Qs",
+  "usage_metadata": {
+    "candidates_token_count": 5528,
+    "prompt_token_count": 138522,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 25206
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 113316
+      }
+    ],
+    "thoughts_token_count": 7517,
+    "total_token_count": 151567
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "1.0",
+    "claims": [
+      {
+        "claim_id": "c01",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "購買支援・飲食・求人領域を中心とするメディアプラットフォームの運営と収益構造",
+        "body_ja": "株式会社カカクコムは、購買支援サイト『価格.com』、レストラン検索・予約サイト『食べログ』、求人情報一括検索サイト『求人ボックス』などを運営するITサービス企業である。一般ユーザーに対して無料または有料で便利な比較・予約・検索機能を提供し、顧客企業（飲食店、販売店、求人企業、広告主）から広告掲載料、送客・予約手数料、求人クリック課金等を得るビジネスモデルを構築している。持たざる経営を基本とし、強固なサイトトラフィックと知名度をテコに高収益なメディア事業を展開している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c02",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2026年3月期は増収減益、求人ボックス事業への成長投資拡大が利益を圧迫",
+        "body_ja": "2026年3月期の連結売上収益は前期比20.0％増の94,127百万円となった一方、営業利益は同7.0％減の27,243百万円となった。『食べログ』のネット予約拡大や『LiPLUS』の新規連結化が増収に寄与したものの、『求人ボックス事業』でのプロモーションおよび営業体制強化への積極投資によりセグメント損益が赤字化（△1,486百万円）したことが主因である。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c03",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "営業キャッシュ・フロー25,354百万円を創出、投資・配当に伴い現金残高は減少",
+        "body_ja": "2026年3月期の営業活動によるキャッシュ・フローは25,354百万円の入金を確保した（前期は27,404百万円）。税引前利益27,347百万円がベースとなった。一方で定期預金預入（10,000百万円）や子会社株式取得（3,715百万円）などの投資CF（△11,415百万円）、および配当金支払（15,820百万円）を中心とする財務CF（△18,374百万円）の支出により、期末現金及び現金同等物は前期末比4,391百万円減の46,468百万円となった。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c04",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "2027年3月期は増収増益予想、エンゲージ子会社化と調整後EBITDA導入でHR二ブランド体制へ",
+        "body_ja": "2027年3月期の通期業績予想は、売上収益114,500百万円（前期比21.6％増）、営業利益30,800百万円（同13.1％増）を見込む。後発事象として株式会社エンゲージ（株式取得対価4,454百万円、議決権85.1%）を子会社化し、「求人ボックス」とのHR事業2ブランド体制を本格化させる。また管理指標として調整後EBITDA（通期予想36,000百万円）を導入する。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c05",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "食べログ事業｜追い風",
+        "body_ja": "飲食店におけるネット予約の定着とインバウンドを含む外食需要の回復に伴い、飲食店予約売上が前期比29.9％増の20,063百万円と急拡大した。年間ネット予約人数は20,063万人に達し、有料プラン契約店舗数の拡大とあわせてセグメント売上高40,239百万円（同20.2％増）、セグメント利益22,196百万円（同22.8％増）を達成し全社業績を牽引した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c06",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "求人ボックス事業｜先行投資による短期逆風",
+        "body_ja": "月間利用者数の増加と営業代理店連携強化により売上収益は20,205百万円（前期比51.2％増）と高成長を維持した。しかし、ブランド認知度向上に向けた大規模プロモーション費用や営業体制強化に伴う人件費等の先行投資が嵩み、セグメント損益は前期の4,263百万円の黒字から1,486百万円の赤字へ転落し、全社営業利益の押し下げ要因となった。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c07",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "価格.com事業｜特需による下支えと一部伸び悩み",
+        "body_ja": "Windows 10サポート終了に伴うパソコン買い替え需要の高まりを受け、ショッピング領域（売上高8,009百万円、前期比4.6％増）が好調に推移した。一方で金利上昇等の外部環境変化により住宅ローンなどの金融領域が減収（同10.3％減）となったため、事業全体の売上収益は23,611百万円（前期比0.1％減）と横ばいにとどまったが、効率的運営によりセグメント利益は12,548百万円（同6.9％増）を確保した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c08",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "2027年3月期はHR事業の再拡大と新指標調整後EBITDA36,000百万円を目指す",
+        "body_ja": "2027年3月期は、売上収益114,500百万円（前期比21.6％増）、営業利益30,800百万円（同13.1％増）を見込む。新たに連結化する「エンゲージ」と「求人ボックス」のシナジー創出を図り、HR事業全体の成長を加速させる計画である。また現金支出を伴わない費用やM&A関連費用等を排除した「調整後EBITDA」を新経営指標として導入し、本源的な現金創出力の評価と開示を強化する。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c09",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "HR領域におけるプロモーション投資の長期化と統合シナジーの不確実性",
+        "body_ja": "「求人ボックス」における顧客獲得競合の激化に伴い販促投資が長期化した場合、収益性回復が大幅に遅れるリスクがある。また、2026年4月に取得した「エンゲージ」との2ブランド体制構築において、システム統合や営業連携が計画通りに進まない場合、M&A対価（4,454百万円）に見合うシナジー創出が得られない懸念が存在する。",
+        "statement_type": "risk",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c10",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "外部環境依存と買収子会社におけるのれん減損リスク",
+        "body_ja": "グループの収益基盤である「価格.com」および「食べログ」は、消費マインド、金利動向、飲食店人手不足などの外部要因に大きく左右される。また、LiPLUS（のれん3,696百万円）や過去の買収子会社（Patheeでの減損588百万円の実績あり）において事業計画が未達となった場合、追加の減損損失が発生し最終利益を圧迫するリスクがある。",
+        "statement_type": "risk",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c11",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "収益ピラーの移行期における投資先行と資本配分の現在地",
+        "body_ja": "カカクコムは、「価格.com」「食べログ」という既存の強力な現金創出源を有しつつ、第三の柱として「求人ボックス（HR事業）」の急速なスケールを図る過渡期にある。2026年3月期はトップラインが941億円に達したものの、HR領域への集中投資によってセグメント赤字化が生じ、グループ営業利益は減益を余儀なくされた。一方で、年間250億円を超える営業キャッシュ・フロー創出力は健在であり、高水準の株主還元とLiPLUSやエンゲージといったM&A投資を両立させている。投資家にとっては、HR事業での投資が一巡し利益回収フェーズへ移行できるか、ならびにM&A資産の資本効率が維持されるかが今後の最大の検証軸となる。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c12",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "既存メディアの現金創出力に支えられた新成長領域への連続的再投資の軌跡",
+        "body_ja": "過去10年間のカカクコムは、『価格.com』の安定した収益基盤とコロナ禍からの復調を果たした『食べログ』のネット予約拡大を原資として、自社育成の『求人ボックス』やM&Aへ成長資本を再投資してきた。初期（FY17-20）は売上高450億円から600億円超へ着実に拡大し営業利益270億円台を達成したが、中期（FY21-23）のコロナ直撃により一時営業利益180億円台へ沈んだ。直近（FY24-26）は外食需要回復と求人ボックスの急成長で売上940億円へ達したものの、HR領域での販促・営業投資先行によりFY26営業利益は272億円と伸び悩んだ。高い現金創出力を持続しながらも、投資先の収益化時期のズレが業績の変動要因となっている。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c13",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "既存中核メディアの強固なトラフィック基盤と高い現金創出力の維持",
+        "body_ja": "FY17からFY26に至る全期間を通じ、同社は『価格.com』および『食べログ』における圧倒的な月間利用者数と知名度を背景に、営業利益率30％前後の極めて高い収益性と年間160億〜270億円規模の営業キャッシュ・フローを創出し続けている。コロナ禍（FY21-22）で外食需要が激減した期においても黒字と160億円以上の営業CFを維持しており、プラットフォームとしての基本構造と現金創出能力は一貫して強固である。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c14",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "収益構造の変化：価格.com依存から食べログ・HR事業主導への多角化",
+        "body_ja": "FY17時点では売上高の約半数を『価格.com』（212.8億円）が占め、収益の絶対的中心であった。しかし中期（FY21-23）にかけて半導体不足等で価格.comが低迷する一方、食べログのネット予約課金移行と『求人ボックス』の急成長が進んだ。直近FY26には『食べログ』が売上402億円、『求人ボックス』が売上202億円へと拡大し、価格.com（売上236億円）を超える第二・第三の柱へと変化した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c15",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "資本配分方針の変化：自社有機的成長中心から規律ある新領域M&Aの併用へ",
+        "body_ja": "初期（FY17-20）は、創出した営業キャッシュ・フローの大部分を自己株式取得と配当による株主還元に充て、事業投資は自社開発中心であった。しかし中期以降（FY23のPathee子会社化、FY25のLiPLUS買収、FY26のエンゲージ買収決議）は、生活領域やHR領域の事業ポートフォリオ拡大を目的とした数億円〜数十億円規模のM&Aを積極的に活用する方針へとシフトしている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "c16",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "莫大な営業CFに基づく株主還元優先から成長領域（HR・M&A）への配分拡大へ",
+        "body_ja": "過去10年間で累積1,500億円を超える営業キャッシュ・フローを創出し、その大半を自己株式取得と配当に充当してきた。FY18には約108億円、FY20に約80億円、FY23-24に計約140億円の自社株買いを実施し、配当金もFY17の年28円からFY25に創立記念特配含め年80円（配当性向78.9%）、FY26も年50円と高還元を継続。一方で近年は『求人ボックス』への大規模プロモーション投資やLiPLUS（3,943百万円）、エンゲージ（4,454百万円）の買収など、成長投資への資本割当比率を引き上げている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c17",
+        "section": "trend.capital_value_creation",
+        "order": 1,
+        "headline_ja": "概ね創出した：求人ボックスのスケールが実証される一方、M&A資産の減損も混在",
+        "body_ja": "過去10年間の追加資本投下において、最大の自社投資先である『求人ボックス』は売上高200億円超の事業へと急拡大し、FY25時点でセグメント利益42.6億円を生み出すなど、費用処理型の先行投資に見合う事業価値を大きく創出した。一方で、M&A投資においてはLiPLUS買収（対価3,943百万円）がFY26に174百万円の当期利益に寄与したものの、Patheeの買収では計画未達に伴い588百万円の全額減損損失（FY25）を計上するなど成果には混在がみられる。全体の資本効率（親会社所有者帰属持分当期利益率29.7%）は高水準を維持しており、自社投資を中心とした成長領域への資本配分は概ね企業価値向上に寄与したと評価できる。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c18",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "今後検証すべき関係：HR事業での先行投資収穫期入りと調整後EBITDAによる現金創出評価",
+        "body_ja": "投資家が今後確認すべき最重要ポイントは、『求人ボックス』の広告宣伝費投入が一巡しセグメント赤字から再び黒字転換を果たす時期と、後発で連結化する『エンゲージ』との統合効果である。FY27より導入される新指標「調整後EBITDA（予想36,000百万円）」を通じて、M&Aに伴う無形資産償却費等の会計上の費用と本源的な現金創出力を分離して評価し、再投資された資本が持続的なキャッシュ利益率の向上に結実するかを検証する必要がある。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c19",
+        "section": "management.strategy",
+        "order": 1,
+        "headline_ja": "中期計画で売上・利益の年平均二桁成長を掲げ、HR事業の2ブランド体制構築を推進",
+        "body_ja": "経営陣はFY26-FY30の中期経営計画において、売上収益および営業利益の年平均二桁成長（CAGR）を目指す戦略方針を明確に示している。「価格.com」「食べログ」の強固な基盤強化に加え、「求人ボックス」への集中投資および「エンゲージ」買収（対価4,454百万円）によるHR領域の2ブランド体制確立を最重要施策と位置付けている。既存事業の現金創出力と成長領域への投資のバランスを取る戦略は論理的整合性を有している。",
+        "statement_type": "target",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c20",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "食べログの復調や求人ボックスの売上スケールを実行した一方、一部買収先の減損も発生",
+        "body_ja": "施策の実行力としては、『食べログ』の料金プラン変更やネット予約人数（年間2億人突破）の拡大を達成し、自社開発の『求人ボックス』を売上200億円規模まで拡大させた点は評価できる。一方で、M&A施策においてはFY25に連結子会社Patheeの事業計画未達による減損損失（588百万円）を計上したほか、FY26には求人ボックス事業での投資先行によりセグメント赤字（△1,486百万円）となるなど、成長投資の短期的な利益回収コントロールにおいて一部に課題を残した。",
+        "statement_type": "actual",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "c21",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "通期業績予想は概ね期初計画に沿う展開が多いが、コロナ禍等の外部ショック期には下振れも経験",
+        "body_ja": "観察可能な8期の通期営業利益予想と実績の比較において、5期で概ね計画通り（対予想誤差±5％以内）、3期で予想を下回る結果であった。特にFY21はコロナ影響により予想未定とし、FY22（対予想△18.9％）やFY23（同△7.5％）では行動制限延長等の影響で計画に達しなかった。しかし直近のFY25（対予想+2.8％）およびFY26（対予想△2.7％）では概ね計画範囲に着地しており、平常時における業績予想の規律と精度は相応に維持されている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "c22",
+        "section": "management.accountability",
+        "order": 1,
+        "headline_ja": "減損損失の開示やセグメント区分の見直しを行い、透明性を確保",
+        "body_ja": "FY25におけるPatheeの減損損失（588百万円）やFY26の求人ボックス事業の赤字理由について、決算短信や補足資料で明確な要因分析を開示している。また、事業拡大に合わせて報告セグメントを4区分（価格.com、食べログ、求人ボックス、インキュベーション）へ細分化し、さらにFY27からは調整後EBITDAを導入するなど、投資家に対する説明責任と業績開示の透明性を高める姿勢が認められる。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        }
+      ]
+    },
+    "model_notes": []
+  }
+}

@@ -1,0 +1,724 @@
+{
+  "$defs": {
+    "CapitalAllocationOutcomeAttribution": {
+      "enum": [
+        "direct",
+        "management_linked",
+        "aggregate_only",
+        "unattributed"
+      ],
+      "title": "CapitalAllocationOutcomeAttribution",
+      "type": "string"
+    },
+    "CapitalAllocationOutcomeSignal": {
+      "enum": [
+        "positive",
+        "negative",
+        "mixed",
+        "neutral"
+      ],
+      "title": "CapitalAllocationOutcomeSignal",
+      "type": "string"
+    },
+    "CapitalAllocationRecordMaturity": {
+      "enum": [
+        "mature_record",
+        "partial_record",
+        "too_recent",
+        "not_observable"
+      ],
+      "title": "CapitalAllocationRecordMaturity",
+      "type": "string"
+    },
+    "CapitalAllocationTrackType": {
+      "enum": [
+        "organic_accumulation",
+        "acquisition",
+        "divestiture",
+        "financial_investment",
+        "shareholder_return",
+        "debt_or_liquidity",
+        "other"
+      ],
+      "title": "CapitalAllocationTrackType",
+      "type": "string"
+    },
+    "CapitalImmediateEffectType": {
+      "enum": [
+        "purchase_price_or_proceeds",
+        "disposal_gain_or_loss",
+        "goodwill_or_negative_goodwill",
+        "financing_proceeds_or_repayment",
+        "distribution_execution",
+        "other"
+      ],
+      "title": "CapitalImmediateEffectType",
+      "type": "string"
+    },
+    "CapitalInputType": {
+      "enum": [
+        "segment_or_operating_assets",
+        "working_capital_or_inventory",
+        "people_marketing_or_development",
+        "capacity_or_fixed_assets",
+        "acquisition_or_investment_spend",
+        "debt_or_liquidity",
+        "shareholder_distribution",
+        "other"
+      ],
+      "title": "CapitalInputType",
+      "type": "string"
+    },
+    "CapitalReturnType": {
+      "enum": [
+        "profit_or_loss",
+        "margin",
+        "cash_generation",
+        "return_on_capital_or_assets",
+        "productive_capacity_or_utilization",
+        "impairment_or_write_down",
+        "exit_after_weak_performance",
+        "other_operating_or_financial_return"
+      ],
+      "title": "CapitalReturnType",
+      "type": "string"
+    },
+    "CompanyIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "security_code": {
+          "description": "Exact requested security code; do not infer a different issuer.",
+          "minLength": 1,
+          "title": "Security Code",
+          "type": "string"
+        },
+        "company_name_ja": {
+          "description": "Japanese company name stated in the latest supplied filing.",
+          "minLength": 1,
+          "title": "Company Name Ja",
+          "type": "string"
+        },
+        "company_name_en": {
+          "description": "English company name stated in the supplied filings, or a faithful romanization when no English name is shown.",
+          "minLength": 1,
+          "title": "Company Name En",
+          "type": "string"
+        },
+        "latest_filename": {
+          "description": "Exact authoritative filename of the filing identified as latest.",
+          "minLength": 1,
+          "title": "Latest Filename",
+          "type": "string"
+        },
+        "latest_period_ja": {
+          "description": "Concise Japanese reporting-period label for the latest filing.",
+          "minLength": 1,
+          "title": "Latest Period Ja",
+          "type": "string"
+        },
+        "latest_period_en": {
+          "description": "Concise English equivalent of latest_period_ja.",
+          "minLength": 1,
+          "title": "Latest Period En",
+          "type": "string"
+        }
+      },
+      "required": [
+        "security_code",
+        "company_name_ja",
+        "company_name_en",
+        "latest_filename",
+        "latest_period_ja",
+        "latest_period_en"
+      ],
+      "title": "CompanyIdentity",
+      "type": "object"
+    },
+    "FilingPeriod": {
+      "enum": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "FY",
+        "UNKNOWN"
+      ],
+      "title": "FilingPeriod",
+      "type": "string"
+    },
+    "FinancialMetric": {
+      "enum": [
+        "revenue",
+        "operating_profit",
+        "ordinary_profit",
+        "pretax_profit",
+        "net_income",
+        "operating_cash_flow",
+        "investing_cash_flow",
+        "free_cash_flow",
+        "total_assets",
+        "net_assets",
+        "interest_bearing_debt",
+        "dividend_per_share",
+        "segment_revenue",
+        "segment_profit",
+        "other"
+      ],
+      "title": "FinancialMetric",
+      "type": "string"
+    },
+    "FinancialScope": {
+      "enum": [
+        "consolidated",
+        "company_only",
+        "segment",
+        "other"
+      ],
+      "title": "FinancialScope",
+      "type": "string"
+    },
+    "FinancialValueKind": {
+      "enum": [
+        "monetary",
+        "percentage",
+        "per_share",
+        "count",
+        "ratio",
+        "other"
+      ],
+      "title": "FinancialValueKind",
+      "type": "string"
+    },
+    "ResearchCapitalAllocationTrack": {
+      "description": "Capital destination followed from input through later economic returns.",
+      "properties": {
+        "track_label_ja": {
+          "description": "Short label for a business, asset category, investment program, distribution program, or other capital destination.",
+          "minLength": 1,
+          "title": "Track Label Ja",
+          "type": "string"
+        },
+        "track_type": {
+          "$ref": "#/$defs/CapitalAllocationTrackType"
+        },
+        "capital_destination_ja": {
+          "minLength": 1,
+          "title": "Capital Destination Ja",
+          "type": "string"
+        },
+        "start_fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Start Fiscal Year",
+          "type": "integer"
+        },
+        "end_fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "End Fiscal Year",
+          "type": "integer"
+        },
+        "stated_rationale_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Management's stated purpose when disclosed, or null for a capital accumulation pattern inferred directly from reported balances.",
+          "title": "Stated Rationale Ja"
+        },
+        "capital_inputs": {
+          "description": "Disclosed observations showing capital directed to or released from this destination. A track may be a persistent multi-year accumulation without a discrete announced decision.",
+          "items": {
+            "$ref": "#/$defs/ResearchCapitalInput"
+          },
+          "minItems": 1,
+          "title": "Capital Inputs",
+          "type": "array"
+        },
+        "immediate_effects": {
+          "description": "Transaction and accounting effects kept structurally separate from subsequent economic returns.",
+          "items": {
+            "$ref": "#/$defs/ResearchCapitalImmediateEffect"
+          },
+          "title": "Immediate Effects",
+          "type": "array"
+        },
+        "subsequent_returns": {
+          "description": "Later operating or financial returns relevant to the capital absorbed. Revenue growth alone is not sufficient unless profit, margin, cash, productive use, impairment, or exit evidence is also retained.",
+          "items": {
+            "$ref": "#/$defs/ResearchCapitalReturn"
+          },
+          "title": "Subsequent Returns",
+          "type": "array"
+        },
+        "adverse_evidence_ja": {
+          "description": "Concise contrary signals such as persistent losses, impairment, delayed utilization, disposal after weak performance, or financial strain.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Adverse Evidence Ja",
+          "type": "array"
+        },
+        "record_maturity": {
+          "$ref": "#/$defs/CapitalAllocationRecordMaturity",
+          "description": "Whether the selected filing window contains a mature, partial, too recent, or otherwise unobservable return record. This is not a value-creation verdict."
+        },
+        "disclosure_limit_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Material attribution or disclosure limitation, or null when the record is sufficiently specific.",
+          "title": "Disclosure Limit Ja"
+        }
+      },
+      "required": [
+        "track_label_ja",
+        "track_type",
+        "capital_destination_ja",
+        "start_fiscal_year",
+        "end_fiscal_year",
+        "capital_inputs",
+        "record_maturity"
+      ],
+      "title": "ResearchCapitalAllocationTrack",
+      "type": "object"
+    },
+    "ResearchCapitalImmediateEffect": {
+      "description": "Transaction or accounting effect that is not a subsequent return.",
+      "properties": {
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
+          "type": "string"
+        },
+        "effect_type": {
+          "$ref": "#/$defs/CapitalImmediateEffectType"
+        },
+        "effect_ja": {
+          "description": "Purchase price, proceeds, disposal gain or loss, goodwill, financing flow, distribution execution, or another immediate effect. This field must not characterize the effect as proof of an economic return.",
+          "minLength": 1,
+          "title": "Effect Ja",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_filename",
+        "fiscal_year",
+        "period_label_ja",
+        "effect_type",
+        "effect_ja"
+      ],
+      "title": "ResearchCapitalImmediateEffect",
+      "type": "object"
+    },
+    "ResearchCapitalInput": {
+      "description": "One disclosed indication that capital was directed to a destination.",
+      "properties": {
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
+          "type": "string"
+        },
+        "input_type": {
+          "$ref": "#/$defs/CapitalInputType"
+        },
+        "amount_or_scale_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Exact disclosed capital amount, asset balance, spending amount, headcount, capacity, or other scale, or null when only direction is disclosed.",
+          "title": "Amount Or Scale Ja"
+        },
+        "input_ja": {
+          "description": "What capital was absorbed, released, financed, or distributed and which destination it affected.",
+          "minLength": 1,
+          "title": "Input Ja",
+          "type": "string"
+        },
+        "relative_priority_ja": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Supported evidence that this destination gained, retained, or lost priority relative to other capital uses, or null when no comparative statement is defensible.",
+          "title": "Relative Priority Ja"
+        }
+      },
+      "required": [
+        "source_filename",
+        "fiscal_year",
+        "period_label_ja",
+        "input_type",
+        "input_ja"
+      ],
+      "title": "ResearchCapitalInput",
+      "type": "object"
+    },
+    "ResearchCapitalReturn": {
+      "description": "A later operating or financial return connected to an allocation track.",
+      "properties": {
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
+          "type": "string"
+        },
+        "return_type": {
+          "$ref": "#/$defs/CapitalReturnType"
+        },
+        "return_ja": {
+          "description": "Later recurring profit or loss, margin, cash generation, a disclosed return-on-capital or return-on-assets measure, productive use, impairment, or exit evidence relevant to the capital absorbed. Management's favorable characterization, an asset increase, or a wider group result without a stated attribution is not a return for the destination.",
+          "minLength": 1,
+          "title": "Return Ja",
+          "type": "string"
+        },
+        "attribution": {
+          "$ref": "#/$defs/CapitalAllocationOutcomeAttribution",
+          "description": "Use direct for separately disclosed destination-level returns, management_linked when management explicitly connects a wider result to the destination (a management claim, not independent verification), aggregate_only when only a segment or group result is visible, and unattributed when no connection is stated."
+        },
+        "signal": {
+          "$ref": "#/$defs/CapitalAllocationOutcomeSignal",
+          "description": "Direction of the return evidence, not the final track verdict."
+        }
+      },
+      "required": [
+        "source_filename",
+        "fiscal_year",
+        "period_label_ja",
+        "return_type",
+        "return_ja",
+        "attribution",
+        "signal"
+      ],
+      "title": "ResearchCapitalReturn",
+      "type": "object"
+    },
+    "ResearchFilingMemo": {
+      "description": "Direct, high-recall summary of one selected filing.",
+      "properties": {
+        "source_filename": {
+          "minLength": 1,
+          "title": "Source Filename",
+          "type": "string"
+        },
+        "fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Fiscal Year",
+          "type": "integer"
+        },
+        "period": {
+          "$ref": "#/$defs/FilingPeriod"
+        },
+        "period_label_ja": {
+          "minLength": 1,
+          "title": "Period Label Ja",
+          "type": "string"
+        },
+        "is_latest": {
+          "title": "Is Latest",
+          "type": "boolean"
+        },
+        "pdf_page_count": {
+          "description": "Physical PDF page count from the supplied document metadata.",
+          "minimum": 1,
+          "title": "Pdf Page Count",
+          "type": "integer"
+        },
+        "items": {
+          "description": "Decision-useful observations from this filing. Core management discussion is retained even when wording is repetitive.",
+          "items": {
+            "$ref": "#/$defs/ResearchMemoItem"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        },
+        "annual_financial_anchor": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchMemoFinancialAnchor"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unavailable_categories": {
+          "description": "Categories absent or unreadable in this PDF. Do not use this field merely because a section appears routine.",
+          "items": {
+            "enum": [
+              "business_overview",
+              "operating_results",
+              "financial_condition",
+              "forward_looking_information",
+              "strategy_and_execution",
+              "segments_and_business_drivers",
+              "capital_allocation",
+              "material_footnote"
+            ],
+            "type": "string"
+          },
+          "title": "Unavailable Categories",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_filename",
+        "fiscal_year",
+        "period",
+        "period_label_ja",
+        "is_latest",
+        "pdf_page_count",
+        "items"
+      ],
+      "title": "ResearchFilingMemo",
+      "type": "object"
+    },
+    "ResearchMemoFinancialAnchor": {
+      "description": "One comparable annual actual and the next original annual forecast.",
+      "properties": {
+        "metric": {
+          "$ref": "#/$defs/FinancialMetric"
+        },
+        "metric_label_ja": {
+          "minLength": 1,
+          "title": "Metric Label Ja",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/FinancialScope"
+        },
+        "scope_label_ja": {
+          "minLength": 1,
+          "title": "Scope Label Ja",
+          "type": "string"
+        },
+        "value_kind": {
+          "$ref": "#/$defs/FinancialValueKind"
+        },
+        "actual": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchMemoFinancialPoint"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "next_original_forecast": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchMemoFinancialPoint"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "metric",
+        "metric_label_ja",
+        "scope",
+        "scope_label_ja",
+        "value_kind",
+        "actual",
+        "next_original_forecast"
+      ],
+      "title": "ResearchMemoFinancialAnchor",
+      "type": "object"
+    },
+    "ResearchMemoFinancialPoint": {
+      "description": "One actual or original-forecast value in a year-end filing.",
+      "properties": {
+        "target_fiscal_year": {
+          "maximum": 2200,
+          "minimum": 1900,
+          "title": "Target Fiscal Year",
+          "type": "integer"
+        },
+        "target_period": {
+          "$ref": "#/$defs/FilingPeriod"
+        },
+        "value_surface_ja": {
+          "minLength": 1,
+          "title": "Value Surface Ja",
+          "type": "string"
+        },
+        "pdf_page": {
+          "minimum": 1,
+          "title": "Pdf Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "target_fiscal_year",
+        "target_period",
+        "value_surface_ja",
+        "pdf_page"
+      ],
+      "title": "ResearchMemoFinancialPoint",
+      "type": "object"
+    },
+    "ResearchMemoItem": {
+      "description": "One dense filing-specific observation used as an attention guide.",
+      "properties": {
+        "category": {
+          "enum": [
+            "business_overview",
+            "operating_results",
+            "financial_condition",
+            "forward_looking_information",
+            "strategy_and_execution",
+            "segments_and_business_drivers",
+            "capital_allocation",
+            "material_footnote"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "pdf_page": {
+          "description": "Physical 1-indexed PDF page containing the observation.",
+          "minimum": 1,
+          "title": "Pdf Page",
+          "type": "integer"
+        },
+        "statement_type": {
+          "$ref": "#/$defs/StatementType"
+        },
+        "summary_ja": {
+          "description": "Concise, faithful Japanese summary retaining the original figures, periods, qualifiers, causes, actions, and forecast status needed for later analysis. Attribute management explanations explicitly and do not rewrite them as independently established outcomes. For capital allocation, prioritize the material decision, its stated purpose, funding or trade-off, and any later operating, profit, margin, cash, capacity, impairment, disposal, debt, liquidity, or distribution outcome. Exact quotation is not required.",
+          "minLength": 1,
+          "title": "Summary Ja",
+          "type": "string"
+        }
+      },
+      "required": [
+        "category",
+        "pdf_page",
+        "statement_type",
+        "summary_ja"
+      ],
+      "title": "ResearchMemoItem",
+      "type": "object"
+    },
+    "StatementType": {
+      "enum": [
+        "actual",
+        "forecast",
+        "target",
+        "risk",
+        "inference",
+        "mixed"
+      ],
+      "title": "StatementType",
+      "type": "string"
+    }
+  },
+  "description": "Compact chronological research map consumed by synthesis.",
+  "properties": {
+    "schema_version": {
+      "minLength": 1,
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "identity": {
+      "$ref": "#/$defs/CompanyIdentity"
+    },
+    "filings": {
+      "description": "Exactly one chronological research memo for every selected PDF.",
+      "items": {
+        "$ref": "#/$defs/ResearchFilingMemo"
+      },
+      "minItems": 1,
+      "title": "Filings",
+      "type": "array"
+    },
+    "capital_allocation_tracks": {
+      "description": "Compact cross-filing capital-destination records for the most material accumulations, releases, and distributions in the selected period. Capital inputs, immediate effects, and subsequent returns remain separate. These records organize facts for synthesis but do not decide whether value was created. Return an empty list when the selected filings contain no defensible material record.",
+      "items": {
+        "$ref": "#/$defs/ResearchCapitalAllocationTrack"
+      },
+      "title": "Capital Allocation Tracks",
+      "type": "array"
+    },
+    "research_notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Research Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "identity",
+    "filings",
+    "capital_allocation_tracks"
+  ],
+  "title": "JapaneseResearchDossier",
+  "type": "object"
+}

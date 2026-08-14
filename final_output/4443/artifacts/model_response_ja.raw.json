@@ -5,12 +5,12 @@
       "content-type": "application/json; charset=UTF-8",
       "vary": "Origin, X-Origin, Referer",
       "content-encoding": "gzip",
-      "date": "Mon, 10 Aug 2026 07:14:42 GMT",
+      "date": "Fri, 14 Aug 2026 03:03:24 GMT",
       "server": "scaffolding on HTTPServer2",
       "x-xss-protection": "0",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "server-timing": "gfet4t7; dur=168091",
+      "server-timing": "gfet4t7; dur=112300",
       "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
       "transfer-encoding": "chunked"
     }
@@ -20,8 +20,8 @@
       "content": {
         "parts": [
           {
-            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"4443\",\n    \"company_name_ja\": \"Sansan株式会社\",\n    \"company_name_en\": \"Sansan, Inc.\",\n    \"latest_filename\": \"01_2026_FY_tanshin.pdf\",\n    \"latest_period_ja\": \"2026年5月期\",\n    \"latest_period_en\": \"FY2026\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"overview_business_model\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"営業AXサービス「Sansan」や経理AXサービス「Bill One」等を展開するクラウドソリューション企業\",\n      \"body_ja\": \"当社グループは、「出会いからイノベーションを生み出す」というミッションのもと、名刺、請求書、契約書などの非定型かつアナログな情報をデータ化し、業務プロセスの効率化やデータ活用を可能とするAX（AIトランスフォーメーション）サービスを提供している。主力の「Sansan／Bill One事業」において営業AXサービス「Sansan」、経理AXサービス「Bill One」、取引管理サービス「Contract One」等を展開するほか、「Eight事業」において名刺アプリ「Eight」を基盤としたサービスを提供し、主に月額固定料金（ストック売上）を中心とした収益モデルを構築している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0009\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"latest_key_earnings\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年5月期は売上高24.4%増、調整後営業利益137.0%増と大幅な増収増益を達成\",\n      \"body_ja\": \"2026年5月期の連結業績は、売上高が前年同期比24.4%増の53,761百万円、調整後営業利益が同137.0%増の8,427百万円、営業利益が同192.3%増の8,185百万円、経常利益が同197.8%増の8,170百万円、親会社株主に帰属する当期純利益が6,778百万円となった。「Sansan」の堅調な拡大と「Bill One」の高速成長に加え、売上高広告宣伝費率や人件費率の低下が大幅な利益率改善に寄与した。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_cashflow\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"営業キャッシュ・フローは9,641百万円を創出し高水準の現金創出力を維持\",\n      \"body_ja\": \"2026年5月期の営業活動によるキャッシュ・フローは9,641百万円の収入となり、税金等調整前当期純利益9,375百万円や前受金の増加額4,044百万円が寄与した。期末の現金及び現金同等物残高は前期末比5,676百万円増の36,849百万円となり、十分な手元流動性を確保している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0002\",\n        \"01_2026_FY_tanshin.pdf:s0010\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_key_returns_policy\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"構造的利益成長への移行に伴い配当（初配）の実施および自社株買いを決定\",\n      \"body_ja\": \"当社は構造的に利益成長が加速するフェーズにあることを背景に、株主還元として期末配当2.50円/株（初配）および自社株買い（取得総額1,258百万円、811,600株）を実施した。また、2027年5月期から2029年5月期にかけての新中期財務方針を策定し、年平均16%〜20%の売上高成長と2029年5月期における調整後営業利益率25%〜30%を目指している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0007\",\n        \"01_2026_FY_tanshin.pdf:s0011\"\n      ],\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"driver_bill_one_growth\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"「Bill One」の有料契約件数が31.9%増と伸び牽引役として高成長を維持\",\n      \"body_ja\": \"経理AXサービス「Bill One」の売上高は前年同期比39.7%増の13,679百万円、月次固定収入（MRR）は同34.9%増の1,231百万円に達した。営業体制強化等により有料契約件数は前年同期比31.9%増の5,188件へと順調に増加しており、直近12か月平均月次解約率も0.34%と低水準を維持している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0004\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"driver_sansan_expansion\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"「Sansan」は中小規模顧客獲得の伸長により契約件数が14.0%増\",\n      \"body_ja\": \"営業AXサービス「Sansan」の売上高は前年同期比16.2%増の31,089百万円、ストック売上高は同15.9%増の29,141百万円となった。営業体制の強化により主に中小規模の新規契約獲得が進捗し、契約件数は前年同期比14.0%増の12,199件となった。直近12か月平均月次解約率は0.55%と1%未満を維持している。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"outlook_fy2027_guidance\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年5月期は売上高18.5%〜21.5%増、調整後営業利益51.2%〜74.4%増を見込む\",\n      \"body_ja\": \"2027年5月期の通期連結業績予想において、売上高は前年同期比18.5%〜21.5%増の63,706〜65,319百万円、調整後営業利益は同51.2%〜74.4%増の12,741〜14,696百万円を見込んでいる。「Sansan」の堅調な成長（10.0%〜12.0%増）や「Bill One」の高成長（28.0%〜32.0%増）を見込み、人件費約12%増、広告宣伝費約8%増に投資を抑えることで調整後営業利益率20.0%〜22.5%への上昇を目指す。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0007\",\n        \"01_2026_FY_tanshin.pdf:s0008\"\n      ],\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"risk_ai_competition\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"AI機能開発投資の継続に伴う開発遅延および競合激化リスク\",\n      \"body_ja\": \"当社は「Sansan」や「Bill One」等においてAIを活用した機能開発を急速に強化している。しかし、AI関連投資が世界的に拡大し競合環境が変化する中、開発の遅延や投資成果の不足、あるいは競合サービスの台頭により差別化が希薄化した場合、契約獲得や解約率に影響を及ぼす不確実性が存在する。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"risk_fixed_cost_seasonality\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"固定費用増加に伴う下期偏重の利益構造と業績変動不確実性\",\n      \"body_ja\": \"2027年5月期は人件費が前年同期比約12%増、広告宣伝費が同約8%増となる見込みである。当社売上高はストック収益が中心であり四半期経過に伴い徐々に積み上がる性質があるため、調整後営業利益の計上は下期偏重となる。上期において受注成長が想定を下回った場合、先行する固定費負担により利益率が押し下げられるリスクがある。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"latest_context_integration\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"主力事業のスケールメリット発現と収益化・株主還元フェーズへの完全移行\",\n      \"body_ja\": \"2026年5月期は、「Sansan」の堅調な顧客基盤拡大と「Bill One」の急速な収益成長が相乗効果を発揮し、売上高拡大と利益率の爆発的な改善が同時に達成された。Eight事業の黒字定着や非主力子会社（ログミー）の譲渡も進み、事業ポートフォリオ全体の収益性が高まっている。今後は新中期財務方針（売上高CAGR 16%〜20%、調整後営業利益率 25%〜30%）の初年度となる2027年5月期において、ストック売上の積上と固定費効率化が計画通り進展するかどうかが投資判断の焦点となる。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0006\",\n        \"01_2026_FY_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_perspective_decade\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"投資先行による赤字・低利益率構造からストック収益蓄積に伴う高収益・還元フェーズへの進化\",\n      \"body_ja\": \"過去10年近くの軌跡において、当社は初期（2019〜2021年期）の人材採用・広告宣伝への積極的な先行投資による赤字・低利益率フェーズから、中期（2022〜2024年期）における「Bill One」の立ち上げとマルチプロダクト構造への移行、そして直近（2025〜2026年期）の調整後営業利益率の上昇（2026年5月期15.7%）と初配実施へと進化してきた。解約率1%未満を維持する「Sansan」の顧客基盤を土台に、「Bill One」が第二の柱として急成長したことで、固定費の吸収が進み限界利益率の高さが全社利益の拡大へ直結する構造転換を遂げている。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0001\",\n        \"07_2020_FY_tanshin.pdf:s0001\",\n        \"06_2021_FY_tanshin.pdf:s0003\",\n        \"05_2022_FY_tanshin.pdf:s0001\",\n        \"05_2022_FY_tanshin.pdf:s0004\",\n        \"03_2024_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_low_churn\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"「Sansan」における1%未満の低解約率維持と高精度なストック積上能力の継続\",\n      \"body_ja\": \"当社は初期（2019年5月期解約率0.66%、2020年5月期0.60%）、中期（2022年5月期0.62%、2023年5月期0.44%）、直近（2025年5月期0.49%、2026年5月期0.55%）を通じ、一貫して月次平均解約率を1%未満の極めて低い水準に維持し続けている。コロナ禍等の外部環境変動期においても強力な顧客基盤を背景にチャーンを防ぎ、ストック売上を高精度で積み上げるビジネスモデルの強みが継続している。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0002\",\n        \"07_2020_FY_tanshin.pdf:s0002\",\n        \"06_2021_FY_tanshin.pdf:s0002\",\n        \"05_2022_FY_tanshin.pdf:s0002\",\n        \"04_2023_FY_tanshin.pdf:s0002\",\n        \"03_2024_FY_tanshin.pdf:s0001\",\n        \"02_2025_FY_tanshin.pdf:s0002\",\n        \"01_2026_FY_tanshin.pdf:s0005\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_consistent_growth_investment\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"中長期的な売上高成長の最大化を最優先とした機動的投資スタンスの一貫性\",\n      \"body_ja\": \"当社は初期（2019年5月期・2021年5月期）より「利益最大化ではなく中長期的な売上高成長を重視」と明確に掲げ、中期（2022年5月期・2023年5月期）においても人員採用やTVCM等の広告宣伝を機動的に投入してきた。直近（2025年5月期・2026年5月期）では収益化が進んだものの、投資を緩めることなく売上高拡大のための営業体制強化やAI機能開発投資を継続する姿勢が一貫している。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0001\",\n        \"06_2021_FY_tanshin.pdf:s0003\",\n        \"05_2022_FY_tanshin.pdf:s0004\",\n        \"04_2023_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_bill_one\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"単一プロダクト依存から「Bill One」を第二の成長柱とするマルチプロダクト構造への変化\",\n      \"body_ja\": \"変化前（2019年5月期）は「Sansan」と「Eight」の2事業体制でありBill Oneは存在していなかった。移行期（2021年5月期にBill Oneサービス開始、2022年5月期に売上高826百万円、セグメント名を「Sansan／Bill One事業」へ変更）を経て、現在（2026年5月期）にはBill One単体の売上高が13,679百万円（全社売上高の約25%）、有料契約件数5,188件へと急速に拡大した。単一のクラウド名刺管理サービス依存から脱却し、複合型SaaSプラットフォームへと質的転換を果たした。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0004\",\n        \"06_2021_FY_tanshin.pdf:s0001\",\n        \"05_2022_FY_tanshin.pdf:s0001\",\n        \"05_2022_FY_tanshin.pdf:s0005\",\n        \"01_2026_FY_tanshin.pdf:s0004\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_change_eight_profitability\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"Eight事業における先行投資・赤字構造から収益化・黒字定着構造への転換\",\n      \"body_ja\": \"変化前（2019年5月期セグメント損失1,212百万円、2020年5月期894百万円）は個人向け名刺アプリ基盤のユーザー拡大を優先した先行投資により大幅な赤字が続いていた。移行期（2022年5月期損失386百万円、2023年5月期損失170百万円）にBtoBイベントや企業向けマネタイズへ重点をシフトし、現在（2024年5月期314百万円の黒字化達成、2026年5月期237百万円の調整後営業利益）は安定した黒字構造を確立している。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0001\",\n        \"07_2020_FY_tanshin.pdf:s0003\",\n        \"05_2022_FY_tanshin.pdf:s0003\",\n        \"04_2023_FY_tanshin.pdf:s0003\",\n        \"03_2024_FY_tanshin.pdf:s0002\",\n        \"01_2026_FY_tanshin.pdf:s0006\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_capital_allocation_shift\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"成長投資優先の無配・資金調達スタンスから構造的利益成長に伴う初配・自社株買いへの転換\",\n      \"body_ja\": \"初期から中期（2019年5月期の上場・増資、2020年5月期の有価証券取得・借入活用、無配継続）にかけては、獲得資金の全額を事業拡大やM&A・出資に投じる配当無配の成長投資優先スタンスをとっていた。しかし、直近（2026年5月期）では収益性が高まり利益成長が構造的フェーズに達したと判断し、1株当たり2.50円の初配および1,258百万円の自己株式取得を実施し、成長投資と株主還元を両立させる資本配分へと大きく舵を切った。\",\n      \"evidence_ids\": [\n        \"08_2019_FY_tanshin.pdf:s0003\",\n        \"05_2022_FY_tanshin.pdf:s0001\",\n        \"03_2024_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0003\",\n        \"01_2026_FY_tanshin.pdf:s0011\"\n      ],\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"trend_implication_future_check\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"新中期財務方針（利益率25%〜30%）の達成精度とストック積上の持続性検証\",\n      \"body_ja\": \"当社が掲げる新中期財務方針（2027年5月期〜2029年5月期）では、売上高年平均16%〜20%成長と2029年5月期の調整後営業利益率25%〜30%の達成を掲げている。「Sansan」および「Bill One」の低解約率を維持しつつ顧客当たりのストック売上を積み上げること、ならびに人件費や広告宣伝費の投資効率を維持して限界利益率を下振れさせないことが、利益率目標達成と株主還元の持続性を見極める主要な投資判断軸となる。\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0005\",\n        \"01_2026_FY_tanshin.pdf:s0007\"\n      ],\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"売上高 53,761 24.4 調整後営業利益 8,427 137.0 営業利益 8,185 192.3 経常利益 8,170 197.8 親会社株主に帰属する当期純利益 6,778 －\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結経営成績\"\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"営業活動によるキャッシュ・フロー 9,641 現金及び現金同等物期末残高 36,849\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"連結キャッシュ・フローの状況\"\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当社は構造的に利益成長が加速するフェーズにあることを背景に、株主の皆さまに対する利益還元として、自己株式の取得及び当連結会計年度末における配当（初配）の実施を決定しました。\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"「Bill One」 売上高 13,679 ＋39.7％ MRR 1,231 ＋34.9％ 有料契約件数 5,188件 ＋31.9％ 有料契約当たり月次ストック売上高 237千円 ＋2.2％ 直近12か月平均月次解約率 0.34％ ＋0.01pt\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"セグメント別の業績\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0005\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"「Sansan」 売上高 31,089 ＋16.2％ 「Sansan」ストック 29,141 ＋15.9％ 契約件数 12,199件 ＋14.0％ 直近12か月平均月次解約率 0.55％ ＋0.06pt\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"セグメント別の業績\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0006\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"Eight事業 売上高 6,720 ＋33.0％ 調整後営業利益 237 ＋273.2％\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Eight事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0007\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 10,\n      \"exact_quote_ja\": \"2027年5月期から2029年5月期にかけての中期財務方針を新たに策定し、売上高と調整後営業利益の成長の両立を掲げています。最も重要な経営指標である売上高については、3事業年度の年平均成長率の方針を16％～20％としています。また、調整後営業利益については、各事業の売上高成長に向けた投資を行いながらも成長を継続させ、2029年5月期における利益率の方針は25％～30％としています。\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0008\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 2,\n      \"exact_quote_ja\": \"2027年5月期の連結業績予想 売上高 63,706～65,319 18.5～21.5 調整後営業利益 12,741～14,696 51.2～74.4\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"連結業績予想\"\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0009\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 20,\n      \"exact_quote_ja\": \"したがって、当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan／Bill One事業」「Eight事業」の2つを報告セグメントとしています。\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"報告セグメントの概要\"\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0010\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 9,\n      \"exact_quote_ja\": \"営業活動の結果得られた資金は9,641百万円(前連結会計年度は9,651百万円の収入)となりました。主な資金増加要因は、税金等調整前当期純利益の計上9,375百万円、前受金の増加額4,044百万円\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"キャッシュ・フローの概況\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0011\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 26,\n      \"exact_quote_ja\": \"取得した株式の総数 811,600株 株式の取得価額の総額 1,258百万円 取得期間 2026年6月1日から2026年6月18日まで\",\n      \"period_label_ja\": \"2026年5月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"重要な後発事象\"\n    },\n    {\n      \"evidence_id\": \"08_2019_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"08_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における売上高は10,206,014千円（前年同期比39.3％増）...一方、営業損益以下の段階損益においては、現在は成長の実現に向けた先行的な投資を行っているフェーズであることからそれぞれ損失を計上しており\",\n      \"period_label_ja\": \"2019年5月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"08_2019_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"08_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"直近12か月平均の月次解約率は0.66％（前年同期比0.1ポイント減）となりました。\",\n      \"period_label_ja\": \"2019年5月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"08_2019_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"08_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 1,\n      \"exact_quote_ja\": \"2019年5月期 期末 0.00円 合計 0.00円\",\n      \"period_label_ja\": \"2019年5月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"配当の状況\"\n    },\n    {\n      \"evidence_id\": \"08_2019_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"08_2019_FY_tanshin.pdf\",\n      \"pdf_page\": 15,\n      \"exact_quote_ja\": \"当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan事業」、「Eight事業」の2つを報告セグメントとしています。\",\n      \"period_label_ja\": \"2019年5月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"報告セグメントの概要\"\n    },\n    {\n      \"evidence_id\": \"07_2020_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"07_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"現在は中長期的な株主価値及び企業価値の最大化に向けて、積極的な投資を実行しているフェーズではあるものの、売上高の順調な成長を受け、営業利益は757,266千円（前年同期は営業損失△849,739千円）となり、黒字化しました。\",\n      \"period_label_ja\": \"2020年5月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"07_2020_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"07_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"直近12か月平均の月次解約率は前年同期比0.08ポイント減の0.60％に改善しました。\",\n      \"period_label_ja\": \"2020年5月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"07_2020_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"07_2020_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"セグメント損益については、現在は将来の収益化に向けた先行的な投資を行っているフェーズであることから、セグメント損失894,281千円（前年同期はセグメント損失1,212,980千円）を計上しました。\",\n      \"period_label_ja\": \"2020年5月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Eight事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"「Bill One」の成長実現に向け、営業体制の強化やテレビCMを中心とした広告宣伝活動等を行った結果、当連結会計年度末における契約件数は239件となり\",\n      \"period_label_ja\": \"2021年5月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"直近12か月平均の月次解約率は...0.63％（前年同期比0.03ポイント増）となり、コロナ禍においても1％以下の低水準を維持しました。\",\n      \"period_label_ja\": \"2021年5月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"06_2021_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"06_2021_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"当社グループが手掛けるサービスの多くは、新しい市場を創りながら急成長をしているものが多く、現時点においては利益の最大化ではなく、中長期的な売上高の成長を重視しています。\",\n      \"period_label_ja\": \"2021年5月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"「Bill One」売上高は前年同期比878.1％増となりました。また、2022年5月におけるMRRは前年同期比479.7％増、ARRは1,407百万円となり、目標としていたARR10億円を大幅に上回りました。\",\n      \"period_label_ja\": \"2022年5月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Bill One\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"直近12か月平均の月次解約率は...前年同期比0.01ポイント減の0.62％となり、低水準を維持しました。\",\n      \"period_label_ja\": \"2022年5月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"Eight事業の売上高は前年同期比39.9％増、セグメント損失は前年同期と比較して367百万円縮小しました。\",\n      \"period_label_ja\": \"2022年5月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Eight事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"各事業の売上高成長に向けた必要な投資を行いながらも、毎決算期における調整後営業利益率の向上を目指します。\",\n      \"period_label_ja\": \"2022年5月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2022_FY_tanshin.pdf:s0005\",\n      \"source_filename\": \"05_2022_FY_tanshin.pdf\",\n      \"pdf_page\": 20,\n      \"exact_quote_ja\": \"従来の「Sansan事業」について、「Sansan」及び「Bill One」を含む複数プロダクトを含めた事業として「Sansan／Bill One事業」に変更しています。\",\n      \"period_label_ja\": \"2022年5月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"報告セグメントの変更等に関する事項\"\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"従来、営業利益を表示していましたが、第1四半期連結会計期間より経営上重視する業績評価指標を当社の株価水準に応じて大きく変動する可能性のある株式報酬関連費用や企業結合に伴い生じる費用を控除した恒常的な企業の収益力を表す指標に変更しました。\",\n      \"period_label_ja\": \"2023年5月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"直近12か月平均月次解約率は、0.44％（前年同期比0.18ポイント減）となり、1％未満の低水準を維持しました。\",\n      \"period_label_ja\": \"2023年5月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"Eight事業の売上高は前年同期比29.5％増、調整後営業損失は前年同期と比較して185百万円縮小しました。\",\n      \"period_label_ja\": \"2023年5月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Eight事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"04_2023_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"04_2023_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"調整後営業利益は、成長に向けた投資の実行によって販売費及び一般管理費が増加する見込みではあるものの、売上高の堅調な成長により前年同期比31.7％増から96.6％増\",\n      \"period_label_ja\": \"2023年5月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"forecast\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"直近12か月平均月次解約率は0.42％（前年同期比0.02ポイント減）となり、1％未満の低水準を維持しました。\",\n      \"period_label_ja\": \"2024年5月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"調整後営業利益は、売上高の増加に加え、収益性を重視した事業運営に注力した結果、314百万円（前年同期は170百万円の損失）となり、通期での黒字化を実現しました。\",\n      \"period_label_ja\": \"2024年5月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Eight事業\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"2025年5月期から2027年5月期にかけては、新たに中期財務方針を掲げ、売上高の堅調な成長継続と調整後営業利益の成長加速を目指します。\",\n      \"period_label_ja\": \"2024年5月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"今後の見通し\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"03_2024_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"03_2024_FY_tanshin.pdf\",\n      \"pdf_page\": 25,\n      \"exact_quote_ja\": \"2024年7月11日開催の取締役会において...自己株式取得に係る事項を決議いたしました。...株式の取得価額の総額 300百万円（上限）\",\n      \"period_label_ja\": \"2024年5月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"自己株式の取得\"\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"親会社株主に帰属する当期純利益は...株式売却契約損失引当金繰入額2,301百万円を特別損失に計上したことにより、前年同期比55.5％減となりました。\",\n      \"period_label_ja\": \"2025年5月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"経営成績に関する説明\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"直近12か月平均月次解約率は0.49％（前年同期比0.07ポイント増）となり、1％未満の低水準を維持しました。\",\n      \"period_label_ja\": \"2025年5月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Sansan\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 6,\n      \"exact_quote_ja\": \"「Bill One」の2025年5月におけるARRは10,962百万円となり、売上高は前年同期比58.7％増となりました。\",\n      \"period_label_ja\": \"2025年5月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"Bill One\",\n      \"tags\": [\n        \"management_discussion\"\n      ]\n    },\n    {\n      \"evidence_id\": \"02_2025_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"02_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 21,\n      \"exact_quote_ja\": \"各報告セグメントのより適正な業績評価のため、当連結会計年度より、全社費用を各報告セグメントに合理的な基準に基づき配分しています。\",\n      \"period_label_ja\": \"2025年5月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"報告セグメントの変更等に関する事項\"\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"「Sansan」での強固なストック基盤の構築から「Bill One」の立ち上げによるマルチプロダクト化、そして各事業のマネタイズ強化まで、一貫した戦略ロジックのもとで事業を展開している。中長期的な売上成長の最大化から構造的利益成長への移行方針も一貫している。\",\n        \"evidence_ids\": [\n          \"08_2019_FY_tanshin.pdf:s0001\",\n          \"06_2021_FY_tanshin.pdf:s0003\",\n          \"05_2022_FY_tanshin.pdf:s0004\",\n          \"01_2026_FY_tanshin.pdf:s0003\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"新規プロダクト「Bill One」を数年でARR100億円超（2025年5月期）の第二の柱へ育成させたほか、赤字が続いていたEight事業を通期黒字化（2024年5月期）させ黒字を定着させるなど、公表した取り組みを有言実行している。\",\n        \"evidence_ids\": [\n          \"06_2021_FY_tanshin.pdf:s0001\",\n          \"05_2022_FY_tanshin.pdf:s0001\",\n          \"03_2024_FY_tanshin.pdf:s0002\",\n          \"01_2026_FY_tanshin.pdf:s0006\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"通期売上高予想（レンジ形式）は概ね達成されてきたものの、先行投資のタイミングや投資有価証券関連の特別損失・引当金計上（2025年5月期のUnipos株関連で2,301百万円の引当金繰入等）により当期純利益が乱高下する期があり、段階損益のコントロールには一部ボラティリティが見られる。\",\n        \"evidence_ids\": [\n          \"08_2019_FY_tanshin.pdf:s0001\",\n          \"05_2022_FY_tanshin.pdf:s0004\",\n          \"02_2025_FY_tanshin.pdf:s0001\",\n          \"01_2026_FY_tanshin.pdf:s0001\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"株式報酬費用の影響を除いた「調整後営業利益」への業績評価指標変更や、全社費用のセグメント配賦変更、MRR計算方法の見直し等の経緯をわかりやすく開示している。また、オフィス解約費用や特別損失が発生した際も要因を明確に説明している。\",\n        \"evidence_ids\": [\n          \"04_2023_FY_tanshin.pdf:s0001\",\n          \"02_2025_FY_tanshin.pdf:s0004\",\n          \"01_2026_FY_tanshin.pdf:s0003\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"当社は中長期的な売上成長の最大化を目指す基本方針を一貫して維持し、「Bill One」の垂直立ち上げやEight事業の黒字化など主要な戦略目標を着実に実行してきた。調整後営業利益等の管理指標の明確化や配賦・算出方法の変更開示など透明性も高い。一方、成長投資の集中的実施や持分法・投資有価証券関連の特損計上等により当期純利益のボラティリティが大きくなる局面があり、通期最終損益の安定性においては一部課題を残している。\"\n  }\n}",
-            "thought_signature": "EpS2AgqQtgIBEU0yDxcNasbfIfNzbnbHuLjr7aq18byZGA--dL3P1JI-dloUZA7NPCChTpLbg_zsHEWeve_EYbax8tIo3EXz_92Z0IH8GfmHuHCFI9FcofEpWNWWsPjAzSbT6EfQz1UiUdZNL6XBcNjUZN-p0vfB9jpG3eg5-9hmYl5kLWH3QdKVOq1AOpfOdyRmhK77ZLh8F9GlWinlbkyq_UwAX8fKs3WHEGNN9n1vDays9JT9c43e9SxzFMvfdKpCP7TN3X6N0lLdbFCAuWfh9cmcwU8HPcRCluQBZiSlx9RIjxWUf8OK7nb6RYzIOkUAJVGpnviPfeANPF_140wwiCBnjg5IKqvEyusZ4AHBDaDl1jXvpNMHQXvI4lqasUm4QmTLD7bSgCXGx6TPQ04joBvzse71pYDe8w_OvcFoupx54d_XYj_HA8Ju134QYlnha2i74Zecj8nUPtZVZ97khT_dgWIaA61l1LlffsGcHtpfmFELmt7ck-w593at4O3L77R6enl6MaNOmvfiiNf2a0xKfXnU62NgdAA5XTVNAZnCgxz-nOBc20pGoX8OHghJq_SRapm-XagFWbI0ccu4V2d-euP8oPvmVI9VtwhZhQJfkxlrpsQV61cheB_0hxmNNOJc3D4fBYxNblsCYt-KelENCgiYq5PpVIvX3-FR1W915GoYMIPEoYE3yrxgs9GKk1ssra0AMuZFa8EhI_JjFZvC4UnVW5_Mjhix1vbTY215IV6vPzn729Y05fNR51dAKpkz_pVCRwj7n36Gqxcun6xiEFV8G_zU2k9tGHzrkVwgxk5HONdSGAQ9Ck_WhLj8RbRbQHfqaL-oa9GSdq8hts5kYJchTRH73D5dQp2Ao36mXS0N7GVta7qL97TiBYZjPd2NweSuqB_BDXzDPUITOR9Qnh9qIxirT5rzVdGcNFZSooiS7V5pPP_DjXLPI3jHQw9bjQQ8kTpOz1e0DJQQ45Q253iWaye0jaxfZoG4HQQ5Qctg12GcLbWSquhe6UbtIBHy7tWlzBRcK5KxRkZTAoU31bH91w0FaNo4WTj2Y4PP6VPCfbeFMOKffaINmcs18sbcW0e6DIuzdY90mSArib6499hubQPF7jKbxXTRQJLynO1oGib3uERZF9B_xyuMh-mV4nHvYbK672f6X5Xq43Sm2uQeDU8u4FzLEsgYUOhWI8E-YN2Zx2yIVkt8DGYM89jvt5NyA2h8CCBAq62tAeiBEpgI-8P6IZs2kacoGjwtcIRjEYA8Luuh8k_p-ypOWRmTfbJUv1JDcwJYSrxUr7QMmPDohBt2yYhDVNCprC7UZiUxyhp1f4NRVlcKiOBp3syVFusjcdU_LjlIiE96SN-s6qUXV8_EUKiRbrwCb5TC7kxmSxy_HG5HkeyqqfOvAuAJiBcP2HnSNXNzPBuCYr0kCAXnedhx3LCqSii58-FzmlZfmYsFZLWPL1Rerjtbkbr2FMuYH-RAlvVOROp1TB50pIWpQ9edBUnEslVE8J0j-I_R3KezSf0O-AALjoD2hBjpQpElkfg2OjYMRjTbQBgqT_yECeYrak6SFtuOpmO_Ppnf_k8ky7OGzZYwFAYDqsofPL1JTLiqVFqXi8qbi0hvD3lV-yykFtbwVya7p5o1IsIadMBe0Ppmg8RqLWukwyYOnvXIw3jHwO5o9hBIYvfDGccFBILY5ZAj3Qn-BBFO8D5TX4nEfML6hzMYlHGV-KuSLvi2zcJQu10lJNzfVsTGDPtoh7195OU2uVh3E8AK016MJDZSodog1vID0uKYqTu7cbXVXMFM0eUaEVAxt4kPO71uW1relCtqly4KuIxivaJ_6A2uQEb7CNmNiFPMtq05LRhc_00Izb-4Ysar01oVDMi6GM_ZCsoHSW3bPhjVeRHt6FWNXiKreNz32JkpA5oj0BRg-aFwgWx2AzroRyNAPqPvbI8ZH382qsGBrHRcrn_0-jITtPwveXyQ_Wj-tG5GCa8LEpldQEL_p2uIoscYD7gBk8BBXQqO5Ato3T08kuxLDGFU-H2b83ZPZ2VBbyTEljuw6AQC3kYdfb2kMfa5GdB4vgtNDbAOaardUfAmYLghlYubnSvmBxCm5ukGQOP12Y9v0Ed3P3cHs6NHkSuiA8BfAAgtk3N9M-msiVOJwLbJ2NipU_EO0cDDiAYZXEA8DHsZWVwbzG9OU7J82k0KyXkx4bfFjzeRsuc44nKzGMnUSabpAWdGL8M6HxwKdd927rY7ziZ-urZMU8wzXWpUu-vdfpSh6jMcCS8Rrx6r4f0oJ_00o3mGMcgB2GJRS4eegow9VwpyHFg9HwQI0PRp7MQAoHQGeCrHrKs28h6ZhPQxvyGPjywhY-c3R7LafYj9k0gbxHligYym2lI-0ACtBbXy88PMce8mycHL5GLfS1nU4nIfmub0Ahe_ntOUKYiUm95zYhADse2obP1Vl12tJvuAiB8iqXSrENuznJqgaVFjex-TlCR6_NhRh54kkgNDXI5fqbl0LHEQ0l5syFeXk4XZoddxCTMBQkshLe6Nn8eT_6NaknJt5o52M2WjD9_rwuA2sO43DYeNDPaIobs9u2silfp_DcaRbHqVKotvUyHzz-dXx7qBtg1rkGno3qlqzdjr-jJjCLLORQb7lOIclmLwAj3ZLMVkYrqEz9SXaNpUy9kTY7A8aDa070EWVKXeykDH4hWM4QdreKkbG4toOm4HS0jE4O3IVnBkEXXpnTCak8sKJMSbSnc_44C1-vASLYbzanOa7Gw2R9uItQT_HrvHFBgnC1hY6rABRRkdXWWdHyI4-6hkks_Z32S2l5iBW0tdDg0C0NABKuj3KR-rKh6JHCEwn-OuLby_1I-ARapFQnjSVKKYw4tmdU23l1ObaEUXF2B1ZkX3AFUWaDwJiqldwUBAixe2t9mUJwhqxW0h9yyaaoIZj4A5bMrUbngrdTuJzvSKUOuiAl0Kk1xjaV0JsYpUFFpU1F-xzhAhnHqadRrXbPyvwOu99Ag_-1BjBYmI4ICzxcUHjgxhl66WqtlktFCpIyq2GTEL8bBNbBqIyVf66OIwRk6Kx0Te5lK1Gv5BZY7ARLM0r0Q3DWghYl52A-_PPxuwPMjbvxylLtvlLNo3jeHQdMpl02eHzyYnT2gFiG9ze374bOFKvY1ifC9JGLFNhol_Z31Ic-51asOyvQRBtXo9Kk4K3iiDhLwwxBvu5UfLWFaFeQaT1HbP-bZkDHdVKQ53M-XWsxN44Xo93K36LxdTNOlm3CXQOiKtqgtIXiixzE9mc2e1lS56VJ5CjIc-I29tAONB9B619yEDnNT7wqfQBWWGTwxULD10h30vZPXW_-lKqFKxerul_6GQ5CACPCEd-vYy7UVckYa56lF9IpipA1aX0hmbNaIdfn6C4VPT0latjFM6FtSWmq401kgN9j0AXwVhBp8AZyYZ3O9uAMbYXc-iZL7gWZ1JqagWhd081kEFdUJklPdWJ7uXZ0nkmtecH_FOuCPh48Bd723ZGpyC07I54n-2_slycsJz0kEOATlAELb7VQNANIQ3VGgkorNs7kOBBH-53ai2JXNBPcugVmLzvuJm6rERx4sqfL4jBcDgf-rGeHd0vCFwX0sfIdyVhJ44K1eqw0ei0euQPQNXA7eK-S-HkgxJryMUQ7UsINm7iexxDOaA4IO6ZT5GzOANXvuifY-2gP_nu1rel1bup8PPUCnKcfREzRZKq5-pmxVSKZnYSyYASVioyTVyOJ7Fh9BWF0ffv1I4RCpkwhb4jDdbD_vK4uGDSTJlmuN8nhckPXBAkGPfBXjAIpni_VQz3pHPSW-Lqdei0On49oePmv1ZXYtjG325hVBEHEgHUhbK2AXdeP6Y65-p7H82rbp-B1uBJtJswXP1p48LOxp-1HDTiTV-dghXfI04KrXP7g9Zp22iI6oRB70MdFMBmk7MZDTyMzvn14KO6Rro_auoCGh7DXorgy1cKpRjfvCDNMpThMVTw7A9kZ9ylHsFo2MUWMbX87Fo-ND2dOLYEP4XGraA6p7obqHcila-0KP5CWVnOBLlF3K0_-hS-cSGIJ1rBIRuUFRmFkO6QQxpHhfdAr0ZQ12Ldky9LMP2_2KgKqWiRtiwAMgqU_zWxQ3tQXyUfhRPy0X1iigHBMymNebEWIiXQSJP0Q_fd_-vbYfc5s104e5enGly23Jdpjmhc2PorZwmZT_DzNuClNSb8zSWZHH0Kkl-6icS9xsXA0uVJfSozL_s8xo6B_p4rCHO6PFKyG3mxg79awPvr_3cLUBULjpthkKolURrgL_s6dSYTBlihJ3WjdbazQ3DH8rSzQGUBYT3JEaY-FflpybUnDYsHOcgYFWCVF2lzQtwAZ1we6RhTth83zXqJ-88TRcjSfcKdx9-4xVnb64QEjCmjksRUAdIH1R62pTUs_EvcPY3M7xlc59l5ti2zOoyJcDeRihrqq5M8RWgTNMuRVexOecO-P9lp2f040Vgh-ORN0CYAHZp6xr7W2Wm6y9mWMAFxj9K9OeQSD85UATdIPx0FGtjQ_1-jRpBy3I9uwq5nI8HrGetNGSoTyhYv5ex_aprhBmIj_BBbB8rlv0V9QZsZa3L4UrZqC2pBUDvLPTDe8fHUlpdKGmqyiTdKC4Yh1IP3F8L1myMBpPhsdmr0nSZQ8cnrEWNpCyu-Ef8MRVPozUDUFEE0iKM5HmupcOY1vEO_ExrUo7H_sIPEMr1PcllpBSqJVIyOuFkxjRbRVpcm29S7g6owcptRgPl-Lc9igF53-QU9Y7wI-zlobq3pTRlqhvailwq6vtebL9NMc7XL8sQwvSoBydqsJ1XpEd4IAhbz86fXEld7qLpU0HINkfuDHehjjAb3T7pnol_ATE4RbjSoiwF5jcIT8_CcdgHspgCdyaHUSCsmQ-LXzgN1ckwF0X8AYslthOlm7m4yn37CSelqV1rhJgAEuCxO1kj8-CElsufeAh1ecwimT0k1T0GtDjWwp6QqppCep-sBxLDp_x2MnDNpNy4vCBSXDt_TSbYNL6JqujNirWMBhr8n3nhOEnS_XI6EWDCLeRLeMknF8NRXcBZKCCQV9gjZoxDycjN_A3ataRCmsfaItsbRZV2NxIcshBBRuMSyNSbERHKH6aa8RKo9jGmCjQxJWGiaSEjuiaGaniv9DPoCylS-RPD0Eh2xdoFl-kncjqR1T7lf4qNk23bT2AwYEyW--1AqC1CyFpuulsmw-RgPtkGff5yc8uRCSKQ9TmwGxGGfCpswRADdHbB5rlQpHZnzFwl-94-V6rnkL64ReU0uuJJ3wwIMwQBv0pMzw8fPMQBvO_-NZx36achWtp112539luc6B6pGi-DbGSg0_TdhvC5iiXyfy52_DNT_NCmiLIhasd-YLEHEAsvSTMV7mebk0u7AIiuisSR1NTUdbjazHfcxwstX-88DX5OvTT663rEPI1ULchg_kALMhxtEaJeZt_Q8CgSC4PNBXcPjsIU6yUDz_9TuQLg7fmF_Y6sHhol_LGcHx_YCL78CnNrwBZ6Cp1jBw4npavSkeanGoYbgY_tb2HPsuepiscwxR_KRhpQUaRIB1smJAzUgZZ4es4uhgSxqTQV9ZB-O83_vknyYBWkG2_SP2uIRpmjPiG04j790d1QF2j2vXz-R8iyquKGNs-idnfX2ssvjbcx3AoaGY0a0DYGI_C_1UckuONINpK7ctd8_V6as5EXtPhAe94RTOr828ZSP7mgFwQEkbhIwEpQoI37hltJSvpdcAVkBFxor1dHOXD6rCyLE8aylUek4tyWDYTyodsFNOhPcM9MjY80XVcs9-U78d7iwB89MsEOMRUbLrDKYw5z9FiDEdGsLGqR7XCXguj_RdG552yj2mleJ2qnIIWyPzWmwRjrxGXYSU-5yeZkZcYtfIN0Ubcwssj_ZOVk-issBf9IzimO9GWQ4Kxa4xijXsHtRjGcYMRkD1N33w59YY9yE6tYP6LL0jrb0h89RSlQw47At8cDbXHm8HmqaxSjWpTsUeov6JMwlkl76PhVoHdNXlhuuBXLRjp4iBlFHSRz-BJU4ysge0keO3gC84QD_JrtlJQTQsQNkSeWLg9PMa2H1ssD5k2uj76Qrq9zoFVVWoGebDM0gpGE7oO9QjmNI5wotFz3p2offmBdgqMVwCaS6L4b2iKCT1wIcTG46h0g-tUCboABoIXmYajzpOyAVcRM2FyrSpzCe4VeH5uMfkw-bfO5aJNP4BUXybFWBlAaZbFUw1G2kL95Veu84KfNyUXTyVSbS-rwK6XkKte7E2sMG231ZFo_1y98P_pFOpn3PBxE16mrPiFmNigc2CitayrsQ736FqohCeadPJVMQzf53eqq18da7_KSN0u-muCgMUEhb3I2aK8nGr570r47sH5tSkLlToflFKcW-BORQYSuRDcjoLRIDR-Pnc5i7p2YW4OkcE_XQJ8rexIbiwx83NUeYaqbFWay-u6dxuss2r39_A8X4pCj47mAr0qzBJaZcEBltMWyTCJXwoHx-MEYDk5ggb-wCVB1iNPxprfFIJFM20gUzepnGpf_c-LIvmxzXtM1Z1qhdFzLgSqJ8P3-Xjw-eAQLXltJ6WQ8qQlW6h2iQ5X-vlOZQqwZ-pBV8O1QBl9HN3sSrlCp5tQUClpqJbCvWfrIssFjilvtO1RN3687lx4IZGeeCZR0ysY2zHzopySKaJUjg_ETe9ODW9zgjNuOdns8Iq7Dk80zWcwUBPG5SMaPcYqOu17lbGPolKjqv0nhHiwMEWqxQALgyucZd6LXLob9qbPrhQOa3Te3mVHYhojEcPenYLyTWhQxYj6RMcutNY_sf5Y08H2DadtllhFftTQBm2uwtP0gfiIQCorgovIrP3F-Jwr4-1XouProlWcOB2djWlrZwGgdmw2KsFDsIwAqcAvjkXIv787QncCUAMmmIQdTpR2EzCe_eBIBV9U3pIso4bGx0re2-sN3VKBtgM0gYtfsVCIRYl_66DcVb2P-Rf1ottyQndh8A1iXNDbuDHrvUDjNko1Z2vXxW5WjtFgP9A4Una0Jghsn8hE2g6rI7fH6zHDcVeD69AcEMf-Dr7KuYMIGam5b2s-GXElJDScIjaA1hMnY94q5VsaPgtun4vEB3SfipaxZrz5u77x76bkUiGpbZe33dXTL68OOjlqSVLIHUvXcRI39mg4FgnQ1V2lJ3NH-XGNjkRsHrTt_g6_o87bYZAFZ43eeqvi0dGaJCMz2cRxOEfDfeBvyTqs2TxZJihDGXZk8sLY1jY6AnOjVsqQgnJvUkaXEo1dHOiAzpOZ531etXwaUr87Ua3nBE4v3XpGPb8e1F3s5ylT0pQzHIE-q59odd9XkzkPePnrzBE0lasNseViRBgJ03BM1MZEninAe9QZkXcZDKaVu-3RtRcy-qUzzdpUGAbmkROdEHeoa2p7HS91qlVBy378T01b2xEVqRnUZCzgrjbXeig_yrvjv_Qh4piK_jz3KJHft11SrE5V0JeEW9p9xCFA_6ak8X16lcvY6-Bjxbw16ZOG1X3phjN1AQM5ubbU-O0P0QjSyU1SHb6HUStw4ARUd078AHUezQnbRRyYOu1qrZp_QoUsQj_uAunYTHgOvl1cx51yGOFp6dtNRAJ4dOwkRX2MVL1gJY9EXhaI7ROXTaN7s71-R_6RgrhJG3p7MmRIM61mo3XUkuRF5_Gs6HxHBVBWJatyswGohmNVSAIgJh3O5Y7La3wJ5-X5Wiibj4F9nKk31LSvhOUc5LqhnsB8Y6_I6s-vYFbCLX8la8ocknqfZbYQ7D6WPmbj6n-MdfZHU3b_b69LArL8DbV3W7PmMMhZrVfADJWcTrgfeuzgl1hZqcgTAtyfHExDFYFakN-U--YigL30UMwlPAIOkSGxZuZA2DwJ5Kg1hs0MWFFPwY7IfbppnxqCtA8p2Gn5ZCQs9SJ1cMQgVfIpe4HGy8y8m8cf5fY4HbAS5vjQUGJS4_AmsWNBMwPYd9Y_FUZzBAs0WBJPT2H0hJdDmLDfwIXYKEOUW4V25Li3kICTKZinuc9tuEE4XBOhG32OtNMmIO1HZvy3A4dueGg2ihg07Gk2dcRFDfDSQpJQL_rdush7CCYiVXsyl5orOECAE_buNheFXQvJEQ2eYEznvHFWnLV5VuewXlDo6afHn0eCncE6oIICRdQwRms6gCdixzu6M28afdiL8SiGJ1ZeWAurWrfJR24VtZCxiaNVbZEYRGFYIafqOMFPRxoLfA_YXVXjb5o0-kjqUZt6OBLIgbQUqpkf-399CKLJeFDKNfhgofJsEV6yIG4t390meqBNe45lUbXs9WZ_4nFylMsz80e6-Tr_dr_W6Z_hOxjd5-WjTdPq8Ey4FqNN9LOdY5zr4UD1vy2AT5hOp6bC_g5FQoqe4YqMuY7-REbdr_B9elE6jw98dX8IFjBWF5ehe8MOtfy8f6UfXOvxskzWZRX3hCKAAB0S1eLsOqayjEaLXBrIdu8sA-IQxwMlnT_jUbB6Z9Q0xBBWG_e-JzaNUBVQA-x2AHs485GBHfcsmPpKpzjP0OytciLEDW6nTMYWSV1VMwN2kMsI-pMFlDFNJDmF9gw8G-xaxAyqOW6bLitbn9Ca8evRh-I3gum99bX5Bw-O9a15qQ09Z93lZMvwG5SxOs2pVKMdJNjA1Tq9acWW6-Ek45gOBCXnUldLd-Qs_v8M2R-pJS1VpKHZBzBFVkTm1RWejNKj73UiLgb1z4YGMFsYaUw6hLeOc1LBezCwgw9iPUXSyVFNdDL4UcjMoS-XaYDGrDWlCvrxX38cR6Jt32JGxYkqGQY1qUV74JsaZh1huq7TrQ1aKMIk4C_2UAoalufHEPTUfN630Twdhb1drCxZQ4HPiWxXu-p_7wplqZH76GxH7khoXqaXIoij9CxRTvnBTx4MBduk8HiV17hTtt_T6o8wH6BIBwCvLy_TjD2MokO7WAyKIrK6t5gIl40qIMraqLCAaC2g-zjdCHjPMTNBO9nnU6qS8L3Abaa0EH0Rp_fn4l85ccfFREGoJ93D2QYgR2rf3c3WiIBbt6HWsvXhlSFxgsseJrRM8wuK8p1EABcTdlE1WvZNton76TF09vRzuK3qzsT6945fAEvuAYCwIqqeKoaTOT8UHvMHzSiNc4LB9eB6tFKhxChlAw-a8HkaisXcT6DdWp2Ussj392Tye91Wf0jrBA-iyQR0kxNH1Q516etVU61A627aynH58JNk-55BTUCMRdYNa70RquYbrk9K2AvaGoV7v2GSoAqLmuLlOyAw7LQ0TsS2xpy6pn0-ZK9kAwLG0idY9CoMBKHIC5eMcWLe_-f3vTfyvAhLDp_8EUXDxowkRSgyJwtTo9noKYnLkxPoIuNyTW2My1PlO9MQrzoW6rV56r9zYVpAtxaEu1VfchQmln6sOcxnIC_BY5SwQ0x-7eLegQowRRZMKhvFqfVGXkg8KG2-fz7I4KwDVEo5lCe1KQ6dKQEc3IQnlJj88_zy8_eIoXil93M6Duc-QO3d8LxxQ21yFrXqMri-5lzXZG91oeWoWyAFj684yRSRuPLfhFvUmAiOwVMQPKXFqEsIbhx77IK_aAZRL2SEUKlA8uj-JrOdqkwy3T6Q7i0JphkWRjcG7WCz8udeOqSry5AgKLFQBEgj8i9-A-nqLEFw_PxfGco7DK2WQPGK7mhdZfwUzG9ehJgA15-kc2xzDkYKrLfORXYuadHhIVV4eo32rWHTBpMXhGmjOEzaZ4tSGz_ngoUrxI3pZLJmFsVzZh90nakuSmpZbAhl4ZSSfY9H47WRezOX0pmRLHYMhPgjDUXOftX5lGSVdA8Jl2JgihNLFzi7CvIBTeTA5EQAtepPq5YWTvokbE8RrbIR0eHviIIdlryVO40683xDCHeidvwiko9HvfenWitqhKd_lZLBTNgFAXTCsmaJt_iaLfWmMTMelFnso2UH4KxM6Ki3tCx5Sza5a0aTVeXEMGFavcO8hmKm3oxZtxmap8d8RjRuONLqsLaSf7OWZ8oPgYnb_v9hVH8kFxiX7FABpuxHk82Dv1w-6DimZxMbbc1M3QNSXUudzekTBJb3P5m4Mh2p-5ESfWX7F6bhpSGsVtRpKyjiz0p1Mp8CyU5f18kM3kc8B2xwjd4KS4OlHx2BthLDkkxTmkwaw3rOV87KVLh6jCkqPlpI59G6RRlrtxVR0w2XpqeWMZW6s8JZOnYBI7HwF3WqA68ZrD46zLwD1uzqTbcr8FBLD-TU1FTLu8ROpRWMBQg6XV_VFSpFbDrOIct-IwTc4NqiI5Shi1u-UMVzO3dd8HMiWckwwXEjPf0XvVVIVNYuDvqmk51j5SGiuvDMZH2zWAlZfrRRZonE09qEA4XcnGaFhhXkxSPaqS0u1Xi3t3WNCPvAvVP9gIE9M2kH8oO1YmkuEs5DZfVTgvaQcKSSk9ubvIQiI11YIQXITK615tpAcmai2jteTA3wKrd3N-lqnJo-3-3QGoYB5sfdK3omVt1J1Q6t0HwoQ6sFTgm7BIDciJ1OSM_w-iGPHIdW6mP70qed0RDjGVTKl_26CDNSBO0oeHBfUAhp3H-Yyb5brDtHuSTCXxXXOkCa7tOmu6M379Iwii4K1PrFRVSN3jJO--YFfpW-AUxOb0Vz4sM0rYozyibMSexr9GUFmDtXnDZZ4v-7l1VybJMWoviaa_JG2v_1IOHA8Yf8KFYZ6uIiLPvXjNkCJkLNQYOLXXqRz1CEx9q-0OnmkO0DkzqC6qyZMwOzJw8lqTnOrQjPKCtu2uf1sStKr9mXVP_Eh27JNfnP3WVt_c1nqADAfNFDaJmmBQizUpi2bIL1A2LbEgJgu92OwnRVEx4aUuQ_km4cUkdUC9CFae4MhFDjfQxN62vH52kJjKdd2s8uGpxPgdHT6cQg09kdY3xII92WO7SToJg3QuUxfgTi29E6EkAiVdrobHbnRUriXSSgUrW3SNNhgK8Jr8Fm6iEGl5tZNDBTBX0rQGJeJWIq11zCsgfjA1RMWoh1K5Q57BwwhNx6sYRWn8pUYMua-dCBgrN4RR2_9Hh1UdRlXi10jcXm2HeifwLxtwx2L4f4JuWf-dsjQHtLfM_gHEGoTKupijDouJo-V6fsV-UJYv3EpgvL6RT-Q9R_2Ck7AsI2fkra021k_16xPNzfQb5FpiGSsBlys4-jc7y3wCJOKyHy0EXXKZSvawldUjOiJve6NEOHLBQLt4z1FALhzhu4alu-r4FBUzkvI932B6VMQfexTH2gawOcVThgCcljeCXh6hRIwG_wfmvkypKGJHTp11hHu9q29h7yhZ726SMCs6BU5tUzqeKFQkDVs-E25TYiYaV4We43qLruYDpXn41r6OyttBR7LajV_HqO9C5OvtlE8lj94wOSDI7fe3ftK2np67zZ89AHSdOmYRMQwFZxHycmxqiT94oeICwKli59hdy5IBK31z6SLTi9WyJHnm83Xw76xcdS36KhSxMpBKWb3qNsYi8lJ3jeHISj3o15HRB9R-Eil8ZsdEfvlKnKG6_vsLfJMJIp0KG5TPSWKtMu8-AfnN-KqQFTvs0Ek6CGpuumaixv62jw3uYf012jWnGFfeFpyBWUYOfw9802oXbceMcY6FIVsoFbal2QDaFmFANzaQnJkcJY7ZzbbTPzBpH8_CIn0uvgzDEerWhWIxnO-z268c4o3zeNsdtXf3Z1rwhw9SxaEvvFE4HnGx9fO8kqYfAhclmd_cAR0b-ZqGQ6fC41l5bLLW0aa6YslFz5CYAmUVIOi-KdNDUGZuLpokBOw40yEpwuLCwPJxuQ0Tvy6nr6vJ3EamYTeiCU11IzMcTc2KGG9_gUoeO5ornFBhZobINaHc_IBUqmBui5v0nBWPqrSLAPqIozP_PRR1WbavJkTvfZl8nLKMLgO-FjiM-YjdS8NrmuJiAwdsoYc-5ZawiiAvgQHCsOd8TpcHqyoXYgAamddiF339K_A1LcxDuhzMgaGVQJz5afYr3MAqJ_4Tg0vwUhM_OcR0WJujDKLm0pTl_1YXrGzWRiwFldToCfP2SBRE2_hp8TrYdllOnbPfCWeg0id9U8hnd7QRjHEo2T87Yajaqk5Naz3RROkf_lS5pzJbUyCqJugpzuCGZ_5LrlWTE-77wovaWhig88EyAHRIhlKtzpabQ14WX7HoJH-_-hsBRxnw109zUz0Dk3wcNbZ96-B4KbzzY8llWKxtqjf95iFnGOmyv0ZBiHxIgwdyRvjVy4fr5jjGAZlD2xoTtG6_77bOawUXMTCtGe9ZrlJzd05pxYNWK-ILxTt7EotVxbsncirvqGOtag3yMH93AieFB_OkIkvuRJV0yaBE_wryxzHa3KEYRii_ReuhtpnNAvTSB85VrPmg3FBJ9CzD3EX0e_C0M3ARIgq78qBSws3lnaQa4HYmfdgUL83pkx6LButD1pDBEEPtvrupP3iOPDJdY2Ugi9vFpbbwWUFB0d9D6QlKhLi9Qe-xhAhzLJNmzni4QZKSLGx-zbSdv2-SFXipA_4Xy3a9jm8KOI-d2pPjuh54ss3KlWuyGa2CV-2MHrgK9MTaKw-H27tKYYX20IT_IdkwwFXvPvv0yYi8wE88BJiZ2Uw3FxDn5_qxIjNHjUKAAxngak-ptHO3cLFJ4Xy4dduwtf7eSzcvt4x_VSP2RFzAvJeQvUpecx_1fzPaAEQdI6UKRpfqKNjRiJfGqX2Q29_yXQGRepWCLVibD-iVSFcxdxc3DWD2wa7Xme8Uf3CqpktraUxKLCj12PA0M9CPMeKVu0ThrdEhKIJ1r9X4ITJyRy11xF6pvbjUlI34rdMhoT1K2uMD8BDFnhSi62vWNHhWR3GiDZvunnEMoUj8Iccu5A5fhfKVd_cViT-Knqc1dpydBqdvDG5AcWoq_UDisko1e2YrqSp5Fk_uhtTwMs2IqH1XLeVxja7w4kEdGp35uqHw0nZzXAekiEXd9vhOIOtHAqh7oiIy5zAjgVtiEfCvWLpehJT8SQSb6fFxzvc4cOQTQadfQlbmK1ndPs5ySJqpPmmRivAvncw27193xWpQSS1oFKFCPA8F-1rktMtu_F0bX1HrIIJ6TexsWLwPsi6uiYnqWd9e7pxqdglubT3lqrLpjEnJEsuobQ4rR2uHMPifnXgWL4h3KfFlVO6tM3Sife4zE1TKr6XuoFhaXhEIi382DmMnnGAgiba8Pj12Fs0tQdMaBjyGOLlpCBavUIgtt4KpM7DkyzuL_VI_n4N15vHU8SQZecRnlinpAwrGFDT7X0BwMhUW7XRlWUaO4rbTo-WGKq7vJFd5HlnqKcaWmLB9DHLNQAmxbTtW3_g6xkmHAVW2tJKoUHbibLmqStdI6V2CzFq9MPTR_yJZWFfcSz7gdFXvDoXqdWKOPfeVDUsR0cJGLU5aWp7r_cNK8OxeerZz9WLcXimZD6RQCNisxirXwXdnWFCkWmxZzNiA_1PfLDL68CQ5IE6_i_kKFy73pa203_IwxU-IRdtMjyqprIvIu_f5syS2Nhw6nxd9PPCk-QpOpKpCSefGlBxShhbDhPbBwgu-STCbrXj5YQt_vTuOvQlFh5vLg5bzt4Xpmc4_exUzbnW5-ZO88-n_YlAI5XMSFn-6AsWL6pb4FYhaIjazDVBnAddpvHn3AZdtkgVPv6UmDmF3wiubOVtSugBntk0IaX2H6Nn4DtTFxBf2G9pECKafVZGeI1jeKCEnWvHIvw6tD8WWxPxaUO-SnDaSks9D2MnpujMLMI1O4ncEvWv-AydCyP3nqAIfEVxUd0oM7EyBY_Ft8YWc4zegXRKUZ-8d7y6bvqK1LndicQZkSmwwUvLNjkQawhDcrLHstg1ZJ48I02nk1StLLiFi34-i0SYcp_SneU_wBVFGxHZZpKkQKVznOJWQ9uQnTSD1t8WY_kBPi8JOs4B4hC7BF1p1tYegZGQuvKhghxrItUyWJTlgN5neWj61_mNT5QHzkvscy5_AD_v3QoC3DJmz_SJLj2jYZQf_EVQRKMct6rcFWIOtdLH-KwkpMyarzUABrFYcqurFxmHnPt_lITkG8ouoU7ixga53_LTeWVUJ8gF3k4LcRlA9CSxD4drRDBJPiknBIUBLU_pKe08I2V19R4vLeYzlPtBBCaBz8--igUksNSCjctw9kRhHvKmXq1Sw4gRyh5pBu9oY-y_9-nz6wOrNioEhlUQYvrHJDVT0Mtxasae248w28oQJN3wxJioOjlofZizzojqo9b2SO0mNBe1tSotMBOtRXwlzzWh1kHNjnjOrY9LwzJyeNj-qY0-hpSG3etBX2szw5z-nbltSH_XEBAB4va2pZ5Ol75v1tWJabZ7OHquuvpw1zQ2QkWycQQ7IC3Pz1CAdMfAFpNAgsA28wIacVLy6m7uUQzYhdqxDUW9OX2mFwfDwVPEfBX44QETZDzLx6ckE2DfmG_KwaVKn-dpIpxRESBoE-ezd-U5uFYrGjUrkHREDxRitSpMk3jJ2KCZ2CfKbdOkBbrlwoFNDWZcwmxS57bJFniboiUDLCA5wQdJAfSRqzVdqouWVshQqNQvWW8r3Vtrxi5iK6tXIzEdJh7A3SrqRL9eR7vlkOrcMcTkDo26Xo6XhRepvFppFI7_44lyBel6bObmIm4mgBc5yVBkopu4FwenNfL2kQP72L38BD6bhj0O3qlM6reZITL4oTLF0bWtfjOLsP1ISY1IXaLn48xa0LP259swTGePjNayWOGTzWZlEPfiTkJaXrcDQF63cZpaoVlH3qsNRcsQm7Z0-M8E2mGc_oeCXhAstoGhKuxU26SS3NgdzvX4rfWADEe-I4aCFIjmmTNq3_KrBFYSG_YXzHHt3l102d50OzF9FqjpXXlUdgCjX0IIff7E_q_P28ASvhWZb7LHk-YN6UTN0I1m_XNPwSyycf40bT6HLxEnLD758L0AwJTRdHr89-K_jjjLCpHW8CB7v2hW4pyAJK6AHbnnzJn2RQceKKtLtQqQ4YqSprcRlVRAa_IuQsJdkZF0HOGBZvV4CFEhXVRIBIEGWBPnyU42w2AOQZf6jjpVpkV9rqPieQl8nty7DRXSIjvsSxJZDIkhaiDLaN5CQqBefVM9blgZDQadl4bsAq-cIKVDsEFm83R10gdUVvVI-N9QG41Y-nHdA8BzvRU8iOIIaS9bC9BSryCLSv1xHhfpJ4yXM2ZYxilFlv8DGB98VxF7NTyCyAGAquiPuFY0j6-9vK8LD0HP6r0A5hfMpS8bTBcsbnp15LZeLYgNI6V5toY1FioL3Of-YpobTGGJcQZvCSCZJqInHFGkItekZTOXjwnlI_5VO8bfE_rV369FuAzoKbMQloj4epNRZAr2eEn8J2v6mJbrm-gbTyNw_tibwAeKh4_VvxoldU-n62ykExA92hV8MLj9DVWQfMq5KjjkCTAPR62FRo3HAXpO8y4sANvByV68XSao4dgWpokZyfCSNBwPmGUfIZ19UPO8Gg5gNFU-eYGzh0IUDMHm9_FnBuexGYDtmaAb95J8fTNiVt5MKTyImSaxKQyheQ01fg1isJU_JSBCvtp8sVih8HFJpAbTWItP_vz_Tqx3OM0eHu4_4v8-7rbLS7Uy4-aqZYBZUYxKGMNVDsXLQCdTzVlr1UtbIAluNwTbEoPUpy5kN48voGbnhR4zyNRHsi2pLkkkFEgvR2R-m7fzMCB1lb5Ijl1BtkA_29h39c1layzutCqSsJRAeQ4vzxVhJArys_m4AyvXCVHac5-78GruH4so4FEvMlKbcOWN6Bya-l2DgKAXIyu4BiAghoSYZ8nodc8BI-IxbucgSlGGU43GRdeIIju-YSpdnPWmJClGpEw8dh7nPKd5-jnwBUTb28UAaF2IzSHdyksIzWJzEZN6pVZwsx8gqAv0xCj0ACecyHBskd0gDyv9V7vKf0cOE_X5O5zOLEfJD4aaAQMaMtUxXp0yoBQsmgbedbSONwqAYYJGXB5QmIUc3IaB01lWhWAYB3IysGApygWNg7s85HSrsM3TtXnxtbJsH8YZ7wSbazTB49cQlCj-8oX4OvL7peJNjXgeiFc40c1Q3hEITGJFruDmx531TVJIzYkLyJHFnsgYZxd9lex3vx9-zJagUbJzVNuXqimLl1jSwSrqRxxemhEdYHmJUUd2f_amFUjqEfTbtp131NcKTl5BzocAMU763uzmkhMy3EMDWQ-J7GLvl9WjgXtAdTv1VdmeJnW_JnuK217vdc_Rn89VMkRuXMpGIw1DdyC3RUbTEVUqxt2SU2xh8XD7PSYZj1IZvP-nRs7eCDwnAYXvJgafAKKx9IXPhNgx-lXeIlklWcqhhgkIBvvX1FaK9AfnXy8IWdzyU_a_362TKHtfXfOQlkhP8UVhak9l8T99kHqOVf2gL6ag2Ks0xD9kHwCpfspMqsz-rQr2WDTvfFc-GLLGCk8oDmo1-zAwmFsHDiJ6oUEoW5212VUNqwLOvfqwxDSKWgBgk8vVWCTPGlxNeKDB1FD5oQxOEyTfDKbJ18gA0Iyr_4gUy-2Gp2aJXNohxSArOgXkq1zN8LAWE0R8I8gzwokd-gBo4kDVbV9WfSC3x50zUGBdb0ffy-bj8vvyXjI00HoXYxXgcnNF4Jr4kSQnnKgU3WBQWn_caQfxsE3Js_VkA6Gw3iO3kj4yN_UxRvPpYXH6EmvMMcCPsNhEjRZjzc5VXkrvbUQxrQ9YTSbuIzl8IU8ZTJv-rVpgwpPwsK51WfZPPrw86wn-6mlp_9oKvHvLcMidNa6m_9InBSPYC2OpiSmAcyns1Z3Ca7FR8WSBCHqleH_yliAvGVOmE6t2_Uryv1f6WrT8xebxvoYkhPJzeELU-z9DLt0cY1JX4n3OWcet6y8suARslcV1GbenTVX-_OarEbPbvkLcdLQsGn6i1fNA7Pv7HJgfoL70KC3H2dVC_3aAJs1Wmo7x1ur-145Cn3ThMGuj3lQoza5A4OrqDoZ8i5qu87O7xHnTTdXSnLb1c-32LgDstSLB0cOA2x2uGSXBRN7k7utGzaImgErS0LgPOFeeYLuxWejkKNZDaxU1iS9HF-C9NudyoALp_hLaOStZLMyAgVLbIUE89j-pj0yoeGspT7lGaF50K1EIcG02Xn97oVwpggR6MwlDVkAY-WcD0-VxBuOqRM9iznhRVaFFLWDCLmOlz1_04oeAJ-FZ2WuuzUsOxQow9BmyOdFVshMzAFCsTeJt_8evNBgt44HbULVBBQpetJQixnBxzeel_xvsX1mbXtCtz-q83_hl0URDCWCBNb99rK8Hu3RcGlF1wExD3CDQ76sUdD4MiC8VByiq57GSSJV-gvDTGTSta4LKss9WVPBUC63etDqkHMw4miuMljsVkfi8hJ9UyKI7ghLLv3nF9NBuIvvrVk9JMadF__RQwMH5D5Uwi8gEYQRe1hDeaifoziOUpkYkDbtcZEB9dZ-ioe5GcDZ5K_hbgPURwUyOTOiE8T8NGluidUqRkC0fzmxApnQuWe7TAiG4dhVfI59AyAGufvC1jvCN61jjbBjoGe9LLaY1gpP7V8WBg0mAKs4jL4ngU5uxwYcg7fdttNWq4Ukrrv-4VZIIIp8T4sDfpW4_X_BlF3-0u-U9RhoYD83Pz47UMlFFqCjd16fNA1tEg_czXqNmFtz1CeqEQKRXkJBFPryWGBkBW_A2qhjH0wA6X6FIaNXAOHdcPa9_3-wOXgmvodmVI2Wh-rCP-LlVqrROALT09clA9lrWZ_R7lRBRsIqofGAEAp2832nlxs3WAx_wyTc6H7Ik-o3qgWktY6TDCz96qgwyEuekUhybttMQUqUT7ljJknWtrE-V4YfypM1c-9MJrAqNlSruX9jOM8AgIwvKO0alCZIaIz50n07nQb1mFXJsdRRhyLvvNUhhBV0ZAvBaU6Yj8YDTHaZZEjqnJWpLE30VGCON-Rm9VKrnM5Nk0nMlf3uzhpH6kebXEAOzgSCk8B140xRBjjSU0GcC8MKdNR1SYjDz8yFGxDB0o_4gg74jBdd0JFXFOtjssKuiQnUYBhWr_JoVCRdBvuo1GvJsdCHr07d8Q9URNjHkf9G0jfPpwhMHRdj2rUBFwx0an0Sk-33QVCWvXwxh3jIlVzsn-TfvC0VDVgQdIGpj8-rzmcxqNrue7N_fVD-Yk4_P3j78HxTY8ZmQrSworFd7tq3P3lm5GSa99RHUZHKADgfu7dp3PpvnYElHGtN-CU4A33vM-jrz41A8oGyEoxfNlKxpBwF66b371tH7Bh9LWoWPV5EJdMl3WVwzhe9_7rPjIoz0EEp20rrx71B7GTDkqIK2eBQ4bUgnc0WaK0ijpH3oH_cnNCdzKll9qYRD9tHXaBMRVL1UjVNQ_XmqZ4tBGoDEuVDmnclKeZZlEP0OXUV4LdDdfQHIhEsmvizzS6UcOaw5-B26ek6RW2P7mfQzxWDnp5SeaYbPFDL2skT0g31DVmAG72JqbydvAbX4q5pce_Hp3r0Ok8Msf6dv8CTgUz4gkvuxrtArqX71bAGNixVqFIVfNHvGFQpRbMAkdf63KREs4NzqGlO-jKXafTtTxqFm_MJtodA4JUEwQu3mJF6Fw2P9g76EVISkDCIrL5giTvp550sRPI0ZBzrkauLPBOK_7jbC9NqkYQBYf3gxV6kSJo7J7MH6ZDCMN1sy45GyBdEUU9EI-w0a8ST80mD25y-ZTk8nDzzfd1RMMuPcCUxS4j1EIq6SbWKvsYsW3nKdmypVGVpGmbFMVAWfbLPxzC6n1MuSjWqW7S2oLeFIvrm2nW0XRptZDLe_Fqn4pkML1Vc0RVO3YeG8UdnaW4lZ62inFhkfYC0qfGVtuz8P4EV6yT1gJyLZpSO97RznZUwR2Vm-DGM2qHcrlknWed9nz2lISqi4Yx4AsDFInVXlJ83vo8ap8MY-4LS5y_WDrWg1L2-6t6eOaYNS0vNQrJdlYHJZR-5gIjJHpBzsHuIZFBAA0JVjB3vGooAPlx3FuKzNa8xTFNzcXr3TrC3PSNJ2Vua6VHM19Za99Qtn-vHdlE_SybjwPBpcxhJAhtKKvsg1GxmjvimxgRKoih-IxtDFgISZW0mQB34HmjL4Ef9JPDOSGcHls6ccWQRp1lSrppdgl7FUZLNpsl-TtMpe8eU50ocNW2Uxij4SI7oowT90Pd6MPHh8xxiCczcZ4Wc7LuwOxaeAN8i99IWX4scdp9Mx3MSZBVSfObF60LZ3KemH5riHhKCVHFwov8m3HEhST51KQ2zsRDNlAXMpUBLAy3FU1AkGizshErz49Z2YLqWGS6HlRyB2NzsryWGrt5pvkqJAMSar4zgwsT6O2Qfqw6D84H2jMC6Ppz9phVdR0p6h3uvJEO0Kr3sXoACJUEk6fV1kMlyxDShRsY84bPoPxCXNZymd74Bde6ZDzy4Ig1BKW7Dj57kLYkI2WFbgdcFam9ACcnDem1u6eAiMGXaKMVO3TlCCyhpcJagoyy0Dv-5DVgWXRmh5ZHjMsDR0mbPkeEzKFGYrIB0YYgCVrBx9GSa4ZUChK_g16rSmcd1DIuoXtU_7yCboXRgVAACywgIwTXB0Eu4N6YVazZqJxElWW5z61vkwB9Dl7KkIZPmB4ZCGE_piGtSf6m_4DFJmhk-_HvOM83DmcvsAdKPwNndarnhm_xMKvzmevOjZuMEn4ffCqOKS2NXLoEJNDJaBufd6kheNEo9IS4_CQvls1DV5dtjtWDBatPv94d9_aJ3ODog6veDA1DDvr2C0Fei1Rwe93kGBWrdlEA1x_4lPZGfEr-AL1_Q_yPJItTXHWSGahj_ArAYbAH-XASt0KW_h55E8u6_gM357YXhcy5DO5BemzX1Fg-mE9FvNcFRXNqRBgJmwUh-NfV0J0ERmsZxRdSATMvo_-CoqMqeQoVpFlc3HbP7yx4_HxZY9bEsDIVmjpEGx6syGWucB-HP-wJqlPBrvN-8l8U9yPqV7C8b6pEq1HoxIZcK7Jw75Gg00Z0UF084qutDhxo68DL9SgknUMiQsRQ4I1Xaz1MzAoGEbAGMuLYAuKzKNxHg1UbNLShWFTqYtwNZTOIyH7kERBveCOBUQvozXRtKjSwBjqDih54RNp7AJyDqyK5yyDCXx683PM_WGGuyRWJ3MmxPfrhHvdXtUJh_WkGw_AtfHgwuLE__KVE_qphEL7oKFg2Lx5zyq959hyZIjb9MVGYB0DQ625wlmAtVEArYs4HQesrhj4cog1lbTziifMVoLW9WChrGKdZuL5qGngs7yfNlDTUnR9oF-Z_VAZlO6G2Q4b22mYt5q82iHApH0iSxZBvvqv6o8nLSGuDAlB_xh673GyaDyt2gc-Wx3doNCCZTHY-Gx5LTImIWFyoZrGjGePuaIj6BFvjNDCh1fTxTWOgIyeEcOnKGN_KFxiQLNMUZCDH_MelKyxZqEzDrxadr00MqyHcqYK2_bQ38UfHmcITRavOYTpWAcJFxlfrMD6W_yPakIlmS46VkbxTI4ep8J4DOeAfc_K6SucDrn6qoiWMVuV5xQJ_HSnaRUR9fEGRyiTfWmMueJodgFDL0Zy8qUzsIAeRZpYrnQmw23Xa-xiGsZ5DdhzVQPtIAznuBAkZ-ghT0ZoyJJrHYUVcKk6cobTJdFzDunMPR0Lenacf5a7xcZrTfpAUrtEu--BZmUGI62rdVonAkIdy-9pbXCbEa6gvr9Nxz1D-E6Bf3SgXgtmRg_n9sfFx7es_-A8uFn8WPQgtgfgZdiovpKrc2YX5d1TRVApXsWeIUphPLExpIMrXiwLHF699UHn7zg1RwYSnnLPbTvoWEWplRLIPCQF3x8a5B9OsUHXl5-gYNOK0SCNTc9Id63cFtm7RVWkkEXl7dyHBggnHPHKSjQA1sRuLCjA1chwMwCOVSKxMOXG6IxuzM879J3FfqVlUXPUM13CfJBbmPq0JgXut6ftt-nCiF3-us6meJY_DnxPQC3oOfTDH-D3XTLXH5hI5P20uFXqPs3j0MOiR151BESGirOnalmgt6BeV-6aYzsXXTmngQERXfoRNoyskjbfRLi4dEpKMaJExZ5f0AFzYYgJXo2rC06-vE8C7TNkaWpdGj0WZiG_AripoOQLGiHOrMrL-as_78JyXWsA7mdUpG3VWHoQgTM-aetkZ4W3_9XJwN73hn4oySDDEs8PRQ_D2DKe6cJ5o9X_HxVXH7sy1m-iFQpdwE5QCQ6OLIJ_SL7X3WePz2ckrCGAp8FSQCBL8XCJXVU9yixVr3RY_CXmAb7lwWhKmSkYNQq9FpEP0jf489m2SvoXSraVh4VWkrRyQC0g8m-w73wMZpKXMOT14S_hLhqZakzuuEo4OZrTZLMW8spYoZfakscpdmSUnVrC48iaxgc12Zfbbuj_Pc6oDsy8Rvxwo6DFIQppsqKxWuhNvS3zymsHV8ak7TYGrBXLmSZ-_qdAkRwcEItJ6W2J40DGzbRhAWOLeGLRyRrOZbhNmR8BfPZryPLb_64qF7OuMEwdHV_BlksnGKHtTXB_8yKCFFgebJypiCFq_APZ__6YOYSdFzgQ85C9Z4e85t3nUKMt9j357-wxERA0zdUp_lXpyqypksDxMG_rpx8lvqtabOFhOM_eNmE4YrRtwgE-Jthbcx6YaK37wIOgMQzsyz3GcQahg6yx0a-QluaE7xeOef9abvRvHE7jiwt_Qh677QcfS66RO0bKNasuuDnLR_bRrAHBj-Cqggg-eGUpRL8b3mKeXggL2UAGQSQ5HZ2Xi4GzTsVUVbJA0z6Jj1xUke6CKcDvyIQ_XuO4_wRMAnowQvgQVpuPytEFCLMTNFUlvTXA8xIB24zdqQ-YrfWuvLCcRkJrYCL6iE8GH-ep4ZNWC8DL_kuF6xKr_ecT-jqBOw2ZhsCn-lM9So7GZzQryngHSh63pg1uKpOTTN8LrtUEe5aShZjBJOOD8XnUxPF9gY-NT3D1tDcVCd0cjCxyDVXXcfdBt24v4CagU4OixfsLrFgbcE4lYtRZORTWfdSvnO97OT35pAK-EIJ17C1UJO_x0ExRWn26XHLu2nz9dR3o8Y4feL-L0ZG6kHU8ZN_fhr2x58O8RTJINHcxb2VuoTyfeUK_6Vr3wmH0elhF0fyoYVaOQKIEEVbN3s52bFG4m2i2lMn3T8Fmfqn1GNpxwijgwSfeRjJuHqwDohz5_SCVv3Qh2NrbQdX3g_-MX0BvQ5_rY_vc4vGB-_kTIzm-cWzOIT569AY7LxJjUDqnGbDoP2oQ3SeUWcdwNqw3ZiENC1z4BomHQNPhu7lYC7d2O1Oc46YDvoLqgs_fi-Uhq0kdszpgqSWgRuFJMXLlooZAzluM9riotXCTCrjZbssIAkUHpnNOyEFCsK08mvlhrS2tBEr_YWDwuqdtjxPsKrEIGgiM-Z8zCcsgeP4cgikD2q1FBpOfcCPqV65e0OAWEJOuJLKt4_OCGeUTSn8of3XnDbCs1KKC5ILZRHtqShVChLJZ3QCCb66tE7vzDpONOWSdTW_MSHeZXaXlnIJ_uj9YRMXd_ELRp7Hhw6w2RDlHPSH-ZPFX2ujcEq1WGEdxhmOpN2raqfUl5evrZINlfXBMQyzC1b9IGqfycU8NtEg6qBg6URezFlFb4GmoPSxhph-zjT8a1rQBFitijxKpYws2i__8yGUL0KPBIl1Csc8-vgxIcJ69lSnPs-LmG9OqY7-B5qHcWeoUijfzcKGJnMn4WDAnp0FQJw9fQ6z5ILySfbaHwSlAN5M-tHCh03ayFmFDWgOOh53SihutIXrpwKo2QTO_pmp1z13bXHfJvqKie0zytnUhzflhCwrhOwHCPZXokh5LM9PObT5GQRfKHaIdSULNg3RUvoOO6cwro5yCgMin0C__97smM9xUUtJffBFnLKg22UC7wp-6gL-U6e--PrDvZlbzW3a2MANTuODTMEKd9cBfe758NHT3VZTEd5mUbT8qFhCtcpbX0syJMAVzPlkVbIYMXxZyRZpqVO3SLkEenRn9kJoBTcLfJlFhfKPpm7WhMcQ3fdQCJQ6K-Nu6RdGJPXkpgYy8dj4Ow5BZ6S4XtUo-gt2sfISV_b5-UqYt1qTZqBODp17MX_Vd8TQpFu7rMNpzMmmrKOm7JaCi9H1JW8EybyFQh-Wr2GGpBEO2k37cSUXIeMbM_UHdnJwtlpZWnfC5UwoXiPx4rId2cVGwjWwUaBvv7q-1moZfx7LOJEGrEr7LsUM4sIV31Y3xxCb_-58OjST3PcujYR-aPWyu3mQxQnorWsyXHkQBLS8bKqJy75OKaB2BVktTyYiQnDSEKRSDaZ3qWBlFMoGcAiblQVLLMgCwZCHA2A4yM6UuWucaDwSbGNEJ4MM7Iq5CnLOBn0tuXvixacNFDZUcOseo_gS0x8PEpotOVwlUqwMzaZAJ-na-7A4I1k_WBd0o-xUtCDIrfB0LlafcD5ba8AkfQycrnpDFoMqVN9SaA6Pf_4-AsvB1L1iINw9lLfneB-Lu-4elLikZoUBukZWd3l4Hl1mPbGMY5VRviiHHcTkDBY3e4zBOV-o9Nyu1z2SHVqs9rwfVXtzs75xOEb-MwOu6hg3RnWAtflIMNny2SIIGdXeIdULD-wrezO_Tm6xL-2ZLxGdFNQinPvi_TfwsW8UBSLm1bsYkJhvL_VDEtbyzmkoUc7a2a9jLpu5DN2oMXgxLW_y0OEe5Ihv64HPIkHJsdY_vKaYu79sOnKOJs0E3WP7pL9W7gxvFQ5Qp-0k7uMY8JNeDBs_UsQD2jcAfYHZFDtJDGxhLW-mm4V3altnQgHlsVeX65LzYVCCCyx3pV6LCk8_hhANKbFPszWXXxLa-kqHBaaa_c-gB94A1P3EsDVdzE9aGZLlwRhfUD7Ec3kVa6sUT3ztvg4SDX0OMs_ODvnx4p3hKEl1CR5C93bRwRFqySlK9_I40leq7HXFnwMW3PRYwJKY2oIwTHumy25vH4SCZef6KBKVSzJxJfxtuOw2hDi4ErU_y1iKrvO0uRJRU1ELiWXd3MP-2t1NDjjUW0l0AB3-YHNQQQxjtn8bPbZGcFVjpln9ZfSPKP_sFvUHmvaMhGnjCFDB5oUPbJYSOH0Kj1vnzP4sLL1c1ISTrtqyZWuelON1UL21NE4y06uJGCbimVhrQbLycJjvtk6N0Lol6ZQTmAgGtXvfqDi4rw1jJowEg9WNN5av4jey9f67Ui6AW_VD_QxuwlhCPJrW6U4yWUt63oYbA5VF-9AfkdLaNV8JVbAfL3ag3eiAIz2SErwcwMN7Gq5rn2_GlUPmys485aKUSPduy_ug5sTj31votGiBAsY5XAun6ChJpqYyMKAfqzqq3cJi2nHKuuKfE2sZHcMdtcnMTM8XwOLqkgIj-lCJPh6ifihO_mni8x3a8-WeyVEH25BFyzt185y8c7kDcH9JrAxlhSp4p_8o5qzL4hUb7IWodOFXZxISifgdx-TRXxeO1h8vV74WFMge47wR9tpHH6LjGkihtaRQ07kTTjKtRiTTCpp_iQW5vNaJ8KyEjvQc7Dyv6q5g3oMpmpVTM56h_7DHBvJXRGwV1IfutOhCDjRi4F3uY4KJMi8yw5oopiNBYGQtXozJCmLwo7P7Iiq5iKZei5L5NwS3dEcByAKRF05AaJGd95fWl9G7oAQG2N5AwOdlWqC9NoS0zroco5b-y3QfWSD3naDHHcdLS04gcuxBJBGzR5PCp5TtWqqOa5aY_tJ4tLDlMF-3IpmAJ_uMxvuCCh_jFxmLIbCAISwUalvPyJiw9d1zP1_fgS6pnwp9dJCZxy54wUpjlezRtOPQSzigiPHfivp-h546Ltn2MHaCd-AcKvstt_xuDQLXl4jH9qxW6n20kJd0wiT_w2V3uZz10XJ7fkDUiobF0xA2-kgcQN8laj_trUjaKkPUwevHZvO1BWFwolb_OzDPwj98N-Fq1e3sjk2PyxfvVIeZq_WONkSadtYd2TzxXy3JoTjiNjbSQ0-BBjW6M8q7NOut3EuTLEU6QXpmVm-xGojHxrJz7usbbYKfkP0XBVMHnf7OI6YvdOCJdAWWsVBnsFpZT1yt2TBpDfYWep8G5bb3koAj1Wht8ZY4kaIfTAh9PFo9Y2zhNHjE9huCBNwM0-PtTi9loAgrR2zXzvabSFCUL8WT3YEbhREWg7bdCiFn_9GduV9HKpFOSY5hE6Z-Ti0ufwyGrYYldcfO5-sHOLoAavmxt7RHYsj_0hQRtQmpa3CusMYr2-a_f32Us36EVR4t1vNfDldhPL1O34Uf06p1Lrp1IxUqQhQfBl3XkRQLMxn3I67ssRlbVVm1eJPU4T1gRz78iZ97-SmcxUTma4jgXH5SmedKskb0bnRT2z8j7x_HJvRdmi08fmeHxI7BUlXPw0djPPL6ZD1QZtvkgRXPoF1S_Z5y1DC32dujZqsuAJOUB_GZ5XK1MMtJPNy8W7jluEBnZkS6HbfGN1mx5ic8EwWloKLZfManoSjpGmmapBBw5qb1XHT5CctG9fChh0i65xXLGDGe3b6kgFvtDz39Qt1A6QyiCmrQj0lkkseyOC8xx3eOxXvnPzHdQn3At46t8ZOZ4uCqVFmHmjMYKufVcPycvggULO4AxZucwljDULOFwKpWn0vYUTAO2KGKjeGashszIkD7UH4hiBt3z05KSBMZykTyhx6Myjj2KPD5uWbFMnZ94N93QffLrIU9cGlwslC65DmwjQ4wvxsjBEOUOynlFHNMhyUyEy1U_4MF2EC2CVtXUAadEsDCcFnP4MZCV7DyhJ3wRwxeGfUBhefzRLZ4Tf3ybf8sl7zV14UM33_U7mF4uLS0-8B_LoDMHw477ifC0xKt0Ye713j6uZgMPUluQaDEiMcFyclSrcAAgtbpwImtZHZgtdvfIoSvMDdzX_-KKFGFLV84LzHiOx9w4p4myyugI5ccpc7pYBRibxphHOx-BItAckmyfOJVvUlnhCFZnm7Or8-ooMCFWjXgrukE0U_WdFCTdq9kpqgcVKXu6XgJNOfO_3djTGdtHFmfdEE7Rrz1K892t3Vp6qRauk_r78wBJHdTlYTijjfQC03KDLwIiUzOfFFMJvCa1eUQ3455xvlMwRA6tP6TnB2wrdeTuKKMRLjMBqdsZOYH9ZxZZEMemoLdnlD_3ShTSSWv0PcQk8toL4z-VvnPtoo_RoSTtNMYwRCqK4Jw6cCbRWD6qZWM0vmpKVH9GVchfJ8kC0WhgAborebFN3YWEY50RQHjdlxCGFO-tegYdxbApnd5D49boTbM4pb0KSCcVA3YwjYE3xIhq_3EnYYaJ2kBQ_RL88F1f0JHrIGeFj13dehI7faA6iGtqSZK4WuofEMyy_X-mj6rf20pG6LTHiXab19X5WYIwLLh3Ky3k0Q246aaokp3m6jZ4jBcpGCb3e0hzPlTPTiD_GgSBAvsRNvz1lH4X7Sxqu_eGOmX11hDxba1yCNrktFuoBoMMsBKfmJ2mOYdvstf0UYy6-SplLHWV5u5f4tEDdrRG5CZTvCUr8CYeCpdmxCrio7ITtwmPlfUzK6WxGehGbgLIU8w8KuyQHEsXWz7wKLW2vq85yg2feC9OCaJVG9qu8B5XrQ2q0n9evdmgT9vCuezkVXz93lEpQDE4dIcE5G96RBUUaFJxYrftjqNba0gNmJJXsyU_Na3W8ROD9yVzo4L9WTZ5yRCk56CqIpdAZSnqRSsfl785FDDwHuL43Kfl0DyI1dMpOTZDEy8Qv_ygfqtjtsj55sGKl43XGcgC4QEzhXU3Ou0OOwEqlm4iKKkaicLoBRH2VuLvgJMOn4OAik4pENlz1ljJ4bPx_XNyr1FPT1dQM5m8F5nYn3Z7SWGwwR_rKSv36NTfgZ-SOEvmzE0XdM3kWH8jeXphPGjT1p0FGmps_O66RMcSIcoBIv7cz3Z3mp5HRMhm9jIXuXOVdocrNH0KxDJ8fwBt0RfnUC1yca-5jxOvCFEAQ_D3GNF3OBALWI0OBkdNF6YhXQKxIh2kFLOO9zsSx0bM1iaMLz6wvzSzkYQK7tMt1EOAtlRFmEVXbMg7bek02MniSSXR4cQQMVKgthoG_mB6x92T77Sue1QUN5_KEJ-XSoS_NTupcIIcwpNDa44wMXgGrbB5_MuudYE5ThWDELlZdyJ7lfKbXpjculC35byew_sdx0fNt8w2K5-ewr1wnsfgTQ-nLnpgBPAUgozSfzgc9BCab6-AcB-nMQBoe1Jhr-TOT-gMG8rT95i175YDF4mr_vKc01QcCf0p4DE9GGBSSjxNPNtOqhxzxmO8KRXPiaWALep4qaKzMChq9RJ71zujeBW-J2ZoicW8DIpUUM6DRbKXcE09GAgnzaqLO4ByWrwBM7cuv3r1R4YngqENMxEEnEykw8jNRrZCH32tfJ-xGcDcp-XXHJtwW8-vK2E4HpRn9wa_F9JkXzm-_-4Gcq12tPUfrzGqN11XvDcv333W42V-71oZV48QaF6qy4tWzRB_Z-h5Z0WQ5oDdni8DXrIW9CDR_l3dJosjzeZWXSZlISekg86Vrli5mrAjftn2rH6mGU3YiFNbLOG1JYesNdni1zmT6UxtO69PxVMQDn1KlHVHVD6fzAFdXyKugSvh3mFEsunAyXJ4MmvHeIgBfRGMMh63Cp2EqFJ48FxFpoI_VLdJbeMQScuiE2kRzqVreL4wA_aKlbQ9-Z_JFIGheZ6kewaS9adl5_n64iE1omc8ncXoGJErIH_rU648vS6AAAjaus7BROBAGyNVLVQYpU5wXgKfrTb4AfAZ-Dzaqs9j4pGDBQ2l8wUq6Wg8z3wuemU9lXR0EdF605fuAduOvFkxryrrBrI3em-3d9UR5RWrlDb_OQan-yVlh9PwYFh2QesCPis_9HGUVNZC7mfUQ5P7POsmeoVu4sURxx-2WME0RsuqSDNycWqbnRfbrNIbYXNwiH8hn_y13dEAqZlKzA5micXbk8nfmEkQnMBoBeLMAYymukgJQgq0fqRUj6T8m0eD2AZ61FdiuoRjQFU8YZFamVMIIv1AAO0Vyw46IJcyEy5fWObwx0hq71SKzA0xwogZAYak0on_gM5mctR6DUSkVLE7zLx3IvW-unI1op4GHfRIA-HOhXMCyTf4c0Wh_bWCOHzKkZjvjZgGynOkRvBmDhyrY1OPRm1e7PkoSgH2uz7OGRvJpLvpx1WKOV9S9WVPoNuWSc-gSrsYxf0e-U0oBg_EpE_CPx0bozSv6FvIby-5fzr3hKqcT2ZOYuoUip71lVaK29-JFpEz0nLlivwxvrLTySRZci6gjaMo3s3eAP6ez4DskUY-ZTdpMK7xUpO342ADXoNsIj31dv8MXbTWt32DSLdGnhiqxo8vKmAaey0Xs5ZhBJW_EapIicG3j2Zoy3dSldwgGPWYK8EY_-EZmuPvUpvOELf5wN4RkJpjzNfHsx1vzDxAjLdH0sUk3rAOGPvYNNKJHdEkD4znNXOBJYocKZHlyzMLO1e7eodpqtp9E13PTQPSUgP2y-RmZiPkPagjlJLmEY4NP3a_pw-N3AHk47v8paZhznSEUaabmpvOYtZ1cK9QKBnMwaqTulQWUkoKUO0wRu90xOP2lDQuw2QSqXDsIHjFET1i5bhXqU2fRABPN9UHhQh5Uc_uEDRjneeXZ16jiu11mlj2HhR6PQmk2aLjJ1fOq7GiE-5ZeGLNSiBcCLpD8beN6ZTVBUAqxx-R9Jv5QtDPbPDNrAEWFlKxSMQxFxjkOnk5lp7hlaVw9WsQ3ZPjlzOsqnh1dbUkNKPdINXDJ1hYBvY_a9T2vj6QrsitJlZUujFdbRthV65Ml_2sHtC8cuwT0gzGlUV_439zfLFRs-4C1w0Bz4WjTBMOohZONklFYpKDVcRr82YPnd8FQQbBqJB28MHNivbb7RMKAoYt6LB8wjYGG0WKNYwsKY_uiJ6hFUN1KnwzclsEEjW9V8C-UmCrvpzTA_mNHbYX6AvX_k_qIcfgyxBp_56HD3DinxUAeblXyfvBh2RuhQog6ZkN7AOeegM-GgY7X6igYYKsmA3YhM2ZxBJN71K5K2xNJsKIoSLLEr6aNQRYL-sU1RpeUCstyuyqASdUQpcgDPDp3J8MfifcZInFywPv48pwBdG-Ni94TJ3ELbVo-_6s57yTc38AS7D3GXstr9JGq_ctNFWUVK7aBVdLi21VsLQkjHxGhl7ZF6UB8FO_oXPxY0NSkyTy00Ahz7Y6zPbAVE4zCFwJi5bbedEkxfmIC8fpouSltRwqC7ZsR9ktlAOgCVftkL3fS1GBuoOmYdS2KQYGRtnZ9gQNwhFx_4Onv4shHRkgbOYV3lGyWyU8ceZ-nxqJQL22Mv_0iFJvJiNSV7llEeeBJ8PWI6NfwMLEYf64x07I0ff-49Dw12H5muflVoHT1hoeviqS3QiS6F2Z76n2696NKA8K7Kp893ccscd_ZTZ9z1RPZzcqNRWd5CXDNgtBNH4AgREK2x3OwCwc9dg6PjAFCKkACtRmHo6t1D4zmmybyDrvro5z-vzngzA6Id40tblNvwId4ohVw2wGhsEZIrw2qXcW8RTpBu5esPbE2cBWAmuc6jSZM-i00DQT1Zy1HTo7UwYk4Y_hUH4_PFtFp_c-Xv60RTEC16FeQ9rMcNoL3jLt7S_o2WbfxwRFiaE06XKwPxE8dse_2wzwraAn9ejvkRwML7XjS7OXIJyGNXEnmNZJakfBRfZCbZtYpebdK0po2srzvQSueHc7RPfCuEKM8ocuku7LZrRRtN0P4tiZic2ApDltR4Uf6cm56LXUxuirZSKLUvUkNjm3J932j8NAOgbewvHnqKRxdqiE389bW9oky8ijrFHMRgTXIYyETMw_8nkPZ8TKkwsQpgWG6fsNucjuXCH4P7wtTzpp9A13QsNjYucsnWfmJri_n1EkP1K4WhFrwqjLG15sBQ5sJtcgh3fF3RGd4nWbc36xByrbfnmwawuK-c4T6czlIKiBFtd6RD6YMjzpavDFAJEhQ4acXB50MrzX7yOJG1aitcfTAIN2_nZSnDBTay0lq3Puq09ZtwQdUk8hmh6aGLxN0_oR9D6OvKD8TcXTa9GU5UTg4AxOFolbV3RGstM808fIznbhGqDE2VWpgDorgfTlJT09YRnn_bHrnCaJrqzszoVjVgefJBbbzH2tQJGeMp0G6iWeuIfrDq2PdlyO7d7RWBwZNGS8dX-RrK1DOGr8g1IY9eqE5GcdwjmRnF5uzU6CR_yt-JM9jQAyt5vXoMQpPNNLl8Iq2LBRSY0KKYnGCcSZP36zSl2UelyEVF_of_BA91OQfGRgNStg_Eq7HKwBqDEsyeQ4BlDrjmHTvCrqVTerKwK_frkKs2v64jwfxQlRixqMFcsHANGC_aRiar1Nq6waHKGq1OJOWp63Fu5iBN-8MlQQRkS1R8kwlS2avjfG7b03heIsg06wyKJt_EoEx8eyv_4qP2-KeJvcPNvj1TrcvgIt7TVz7n63eZbjyXXW9ZN909MkNyeNe78-5ODHiIZA8jznFq42Mai_dgW-LtJfOAomy9VBHW4fK6o4PNrVXm4cxDIuBQiYulxGAnTIkNn_GaS-hMY0SCCmdl8PGtA6LRFJDxJbLtJM9GVXMhEOrI6UL0MpBvKLTINvOeZPtKRC8PWWGwKYrl_gNyVnaewSQuy58bzr0i506HOZQ8fN_cq7XdaBcVUyXhb5os1KUo_keDC_PE6Ai1M9aCW6U17PIGXu5WaiWLfbXGFqQm_3KmyVGsifWQIOHp8FfddV18THfXadsY2q6NlMUlWjwG6xZ5gD8sof26w9OcD0tvzVJCmCkqjLyMuAp0dQ427skbGeDiOKOOzv01Jil4jakLr6cO3PVgBuajCsvtI7NwOOfoDlgEj2XF_aMoRrUGQGI9VbpCoBlPR8kyIQPzFLL_GHpQJwVsvfPoa6HpCWqUCz_TVUz2MBtjS7PZ5LqFsAWYx66YVbaW04bMnitPY3hfDujAEWx4OlUkNBpOqIX3YbWkBbdtqNR_lTiFaxHut9HxrCQxi-SViK8CjvSLb6c1E8_C2q00aYTINLjYd_9vYnYNTa1O_KLSyrFqGS3YruTeHozt-zYeHRpKDExUBJrJnpV71OAT7uvQOdv2VDtMWbPyZMKR9Jj8YM3xK2dVT55olxVX8JbkdysTGyBrQQNEokwXoBFI9iHArIHRcsyVRAJ7mqPfo_kDy6rCHhoq_IktogkOwbFn0CVR7ErVpY_7465o5zOChDZ9uCgnWyC4Y9ISm9rTS4WLmivN1L39a7ESbHgENZKZnziOLtwMRWjGtG8sQ156dmLBiYGjUbi3P9Zgo_syes-c21Qy2CMi5-EjaHKbNkVxtAVoBgwpeR5bAtDrQCsrBWQzpLT9Eu1_uamOQz6GRltN7Sakz3URvBaJdVQ3Q9gK47RuSX0hkh9ux9rO17jT63QzYkzXjWzXHOhtcrNunlWhdDpFW5E8YMXEfTAYieqhZD40_DOGHw6qxIsheWalZxwrtBHZWhkDx7TZ8Q2OPX5sxTUX89exe070RXC1AeARF3A5oviB59cbA_ZoluNrTjhITfb_SYgXaJ5f4R0-qLqS54x_dr573K95VBH0txTqsBLjKubqLiGh8xl-c-6mQVLYgJjgV_5AWX1cUM2q6121QDU97L7THmZgejlCwaf83rqxwuqH_WyhK4pLnScZC9kqkB8qoDoeXsMVpfGpJKus5C0h73y_ZWGKaP1Vr0AsEMd7cdgS1VmgZlIpyMAK-PnMprdA3WtXmbKCebyPCCkHmFUY4_P6g-Du-x00kVrVgfOHw661D-0Dz9S1UkXwkTJ1L6Zt8WpShl3YWrMqzzpAxY_6N1QXEcpwFI-lfRqoCz5f1Waa4yg58YFZW0yVQEJlBCDoHPXe5WsYJOqgidftEg2ziLWm7XIf2CJKdY5kvtJrTgug_pg2Y77OlUmGCpX8BXIHTGfgG2g8gKnQSrX54iYrNrMs9d_68FTlaX80JF8Mz-HH6-06wE3kdCVR-QK_TMWW6KrMKRZNcHyBEaKGgwPoRMrps3VftoN9ahwt_nprIRl4IwhvTjyo7hx52Jru0RFspP3XzIU9blSM81REgh9lOf8Ojjght_1GtYle4H21chX03uMDR1d2J7wIRs6XtuhSsm7y_zAK4V9-6032eg-Jlbq36ZgZpU8FSaU4-tUSOc4gmFfkfMC8c3WwP-WXPEKBf9XGoZe0WXKEjWXEKpS4uSRYDudM8x-WxhOcvOfKazPkxH1Zj0GqXHBEbDybPF9vw4qL78mCMpyn-EHX2ZK0ojLtr_LG39nzLCt0vKsc93FbjEOFbectXBAiZtS7ASlvlvO_BAPrPQmzZfVH_yKXrFb3Zui3RfriRwwmalCg-8CHYlzjR8qH9Z60nHjVHTquvMMDxgI43t2E8zZ05Hd2EMqf8JPeoZu-cIdx53ny5h1QN_3H21qqhvKnHoj8-BCRmJ-JIgwKAxi4E0HH956KulmQdTLiOK9U5l6CFwi9R-wZGIJorD2Z9mKsqAlL6hQpuDFYyBCrppwLHJfcVDIYx78hedEKeQJz32c7eiUqBu93iN6X27rjUVSsiszUc9MoTa1g4Kml0_ur0dpX4W6v7dix5Yxo2lFX9M_hCQxENyqvcrrDC-GmiH2c95y_LL-Utc87WNy5VDW9Pt4XlwANJeoL5rC2sGYpCeuvED8A9mA5I6-kFhewHpbrgxmT48QH9dqtYp8oGkMdqylaTJgNerSO24Rdkpw-HMreyqPb99F9Z4wrDspMlD-t6Zqjm2FvhQDG4CFtJyNoR6wd6ObGCO7glpjZWXOcKyGjGpMXlr7l3ZeV84GcJxtnIHr-4SY4-oWMLbKmw-2KQQ6wBjuLV4e0O7R94scLTKb2uTz9JS2YHJQIdu770drXwZiyyVQ73Z4xJpSu51VLkBXaMTYFC1DeqadZfCmRSPsdnQy65VDV2zTYLs9-z-s6YOFxaCupfM9xt61Abk76C7yNQ-uC94CXlzC_quUxtdBqNQuwrVBjL-9Hp9Y672gBS4lvyvY6K_uNzQ2Hd-SDJJmcUwox2ShV5a9tZg1fUmiuKiRTfCrx6wLi64S9KjkxaG6bEyGqY95D7XuhxqmMGfFN9sY9RG2UEK5h0Jo63HntrKuP5frsObMQFNIv5ztuHEUE9-ffR_7f8G6qZejtIaDpOS9eUli2piBRFm5Oiu4E1Ku5RtS63olYzQnRe3YvypYbNn04DVpXMBZ2-ABeAoyVBJ8ImRReypXhZXWOqF5yyltsyOof8l-h07Al8ikUnVA8GQ7okUnIIX_CJRvoMUB78jEu5JYTwzHa7glOsKyxUNPJcvdcmXrEShpFCkphZclIv1cOZRJAaDMaJIQMQjufG9AL8vNfiGVov_nxZlGh10_TjX0ijnZX8kG0MMvtBpq2meiodGYEqckYIaBYFaPI1RlOP_VZ8arwzfVMQ-dj7ywtFnTYyEMdGNBuobtPN1QSlBabzc6aQCNDo2Dfw8_4GXH3Cx22Rz_4fD3EtVA_IUYebVmT5ap_a1kIHzcY1r8Y5kiOxYTNcJnemxfLk3cK5Yrwd446MridtYFBo1HI4nLj7bH_f7s6J4UNCglqBAKqNQR8DRVK3PxwpGIzc7TL46gdyi5tkUzAwrrzzwllpQCe7rJQXzc6pszUt8219CwN_Bre0uJ54WQPXqykjDm3rgLzt4nfCTZ9EiKmQpDe4ycu9BNEV1NlZucjRFpHsS56rtm5i3Os5A8W11nwWRft05bk0cfFItc6g4oDqcv1AZtmGhN0PpcmrmmcLBXaFcp8seOYUda8GQdM20634aDFauXKz3oarX_9lc3_pGqq3LreG4dfshG4QzTudqCnNizg0SlDxSB7mElXtIQeAdj4N7yyCQgNq1dvn86YYbq3jeeZYOnonJzmW2N9oM8JtS8Tbt5p2dtF6PGWB9dn_tg9fQmPpi2nvQciu8lYZmSeGfbsvO8T8d3q6imDRHb3b1ROPhr3wz39MhG8B9pEDCflKpVnk9ELj2AVPFriAHoHZPmJzFYNru6OFVxihyScPy_qmCtu6eoD9L72zvOFh4DgTJ7zcdLAdV5jyzXi8p2YZfS1_zHMLbJf3fI-X9nyFI699cg2M-fx6qw916c376oI0GEXN5xEuP69oP9q6r_iYHC4CmWP0gf4Ubk0mgd0SmGWwMlNZPPMzjaMXvL7ZxUnfImz4BGFTfy0xGqeF6uSQ1P1OSUQPSszsLyTKjL7hCacAZL6G7ILYk35NR3UQPo0MWwWAQcb9f61gUX9eAzqfuSaCYdg7gGotC3MgXRXjk8xJNWCLdN9xawgpLhOlfX-LaFYdMyPDUnQVH4LtzDZp_EU1AkGAADlXWEFr1VW3NLyc4fXNhGJ3lb46qix9j2uyPIQHH8XRAPehxYYnlSeCZNQNlwmU1FitJyYPlMu2xQIpu0rWj-BMrly_7W4q497QkDBADrA9euh6q0mIVSA9oyjFsgaThYtaTk-0sxs-wesGNoQEYbqksATlNN4ZWSU1F9vccCMwEZJhQmF_oMAaj16A5_bkxb7bG8mMsSii0ncGvMsVVPKAbHsa05UktpEGXAgI0KCKUrAm3H_TLX2SbMF2yf9qCXIo44zBToFYgb8rpjxS9vMLvHyDGHhMZcmgfDdYqCHQ2aHRPw89Bv6Vw_TpmVMP67g8N4XxeMIaxOggh2plxmdTlhERqTv0Td3ypqkvKxfyIB3NXWl9_sIaaV3BLH4lXjxCRk9l5jnbQEG-UgI3hOH9G5Jv4ZaVDqz4MEADdHSaKJtdL-Fbjubki6KfmfLhhLIi2KlkmQOCj4MDKKX9bdRSXKN24Gt52-zqlD-X-OqAnwQsG-20RkbeM-XiX3O91bx1UWTUvI-W-S_6wtnroreWTFiqy3_6ccNhhXSWbds19WLIp0mY3oi6n-mg3orOJ2WaJdfLghmsiCLpl1DxojhQsESYLBTaT-X_lbmVORMT3eAhW_rRl6emUMCBeH37FqRaas0Nd3C9Qf19_gudfVIKK6Tf84c3PVtptgBOvaDZS6PUymSrkYXygyVuf7ZiMgIJgrceU5cyceKqbUWAvqvU1bYq-0sYe95pqK4rXTYeSwya50gBfYyhAKpObRrk5J6BZ-aIGlq0dUoDRt-tatBYZacy7W8Xg05XNoqnIZL85KaZN2OWrcxGXJyPhs92oSaaOnbpoTW436kQYK_WzNE8M7NQp68JxQN3FYEiVE--n4M9WxGz4R-lv1DX5evuTAGGxqLqW5c5Cj4iX_ZvWj23HvwATJPi7Q4FXOvbib_kwvTrmbUALxF0OYymBUyqUERPybfwuzgmqwh-luNCW6xnUonjUWraYs4tTj6eG-0iRnX6Os8cMfjBvzZH2sot1cVwKnsZwCtacnjywwEZM2LbBqfu0AmyddSaFwEYixMripjAg2pOVm1A89tef1YV8M9bGnpJvek9G6C_3Yo7D7yjWqJnmfbjWXahpS4J3068BO90av76HahxKVJNWm9QQTlVv-PqF_xgx9bdc2zSkwubAf0ihZ1UjImfXShUrFj97ISqnKM3u32DjC33yER7JG24wv2vCNHWDXeCluPRHfjAN-dQW3wW1bjLZIV44xddF2MsBX16a1CjBng9ovh1OjOA6pJX7B16CpeQ8nH0CxQme4YqVMOGjO7TCkQ4cuZZx9YYsKYKNdPxEjCI2mrcO-jLkdxLSGo8ZqJ8R8GZfDftUrwOM17Akag0hRchS_7kVYsKBL_j-sCgLX5JQqXAsK43mP711PNDk5vOJ6u4_7xF0NhsJnLhB4eb-v2MzQcpkbeq4ar4Pzp-L7-65jEwGQQdOUx7SyAUKU1rW3vjwqxhM0nVDtRBdBmoNrncjl1DFYdPEdGs_YvQssbEsg4CdMGzU-mKeaTdc5ehn0b4l88R2kvui9qNefJzRnsmnRJYLe2op6eTZ_6ga_sKjveb9ADdk5f204CKDynbizz5zGtsRPKQ6EZlopJtr4vnToZ-MWdHbfpjI-WUt35Zws4DZRBQ1E43ZHbSyxttxtMiVMwnw8jb3ajYVebjPHGJaFHg1i52CU40HkGJQAP1rpbm66mFrcqKOQJIUiJ5UkXWhy5H43cFwFOicBi5Juit2WK-OZFixvmZg3RsfXh4BHS58Daz8yQDZSgkCykhC6nIGvJJtM7tjOCaZEKRdpAOWMD40JJPWd-jcpIMELwDuca6NXGc81LNLrxtSe8KEI1VSYtHXrL0rT0UsHw0huVdY3ddyOYa7RWW5tdifiz0l0rE-RYQvl3A53YQUcXvZL0JP38f3f7etSPPs51lKL-3VaCk7Q6TLbAD8EIbvFzUbXYMghLhpzRCvoWDNEIoIj_xkSyxuCeUiwKnDmme-lV4Zz3-KdGmx7axkul0lIX-R-GreCtbxmEgkXlv9Ghj3EDMhMgbrSWvhUc6AEupKXMDZhspMDCRoQn6SQEX8vriTHXUpoi0iztaiFECdg3_uQZw_IesA0PX5xOJGjPiarKPXdDE5oyRQbZ41ceThXxoujqAhPIDRxCNrj7HgHcWSXttjITBfRa1v4h7ZjWPRsRqJrfKtCtbrYvaR6dqO2viIcHBcGOL9iiqSo6sL_zPrsA1PDEgxQlIqFgJP0uzlcaEYw87LH8Wv4OSqFKN3BVv4ELfWAGrXOAk5xXFgsgDN4c6mHJsRCaOvX25AD8SdmUtaw62HcByfTxRViJ7Kfl1FLi4UEeRD7oSsgoMcAbmQ_qGcA31upvGtqY6Dxd1OphwVXSZmSNlqbuYE89eKvGF7NK2S7a8XlRyL1exAZ6U42R8XzKrvAH2ZJRGZfVvqkTINR0MpghrXuLBvTLFHzOTSg1_DngwfaDEdq6-Hwntr8eaP-aOAzqbAtjTl6WxHxmT_HpeQ0mag8BZoZyBGnfZA3hgrgm8FTuhE_8gnPWfiPAQucQlrHrLNO_o6CbCJ_OjQ6UsjIDtjxgocFskN83vlvehpwImnBDEq_cVNVgOdKZDpzkBFPaCpuy8Ei53CllG2t1bNliomI6_OJyxTC9ItpZczkSUE-82Yy4bfhoyxAAwiLIIJLNxzwHL4NCuleD8sE8QKEpHO8hKLpQJkVQ7PNrgS5OqZRG9NRqOGIwXxQwF7_DSNL7stsznh3Oh_NVzz44nUWEPoyXRwPoo8cOsWTcO3_A4zAiS8ax_RFfgExc2Diq2EUU5B4t3vCOaK5U2W95ryGkfwuPexeAPTiggA5HQnFxE8RAt_VcgK1vJljFuRA40bputi6dKPEFHa3tk6yhJY5-KKKaO0Hppi8JeUekfIucEv92NN8MwLY-NAOiHtMHEI9wU6rjqUuLvwcYZv6nlKAKXCBX9WC1y5S8cydlYCGdKDxO1vhQ7SIvN04dfIai6hzI0P39NPzbjA8P-jbPbQIaYCJxYyxoFGbppEibwYrEnzPvvKnsLhPn_rnuM1cQB3BgZLvcf1z9mkq6gjqJC2GVq1zOL-4G2VOapmm9_qIZTe50NTBppkSLu4cLsHDZEzLG8U8HR1wCmQT9ofYCsmXy9uygVfHuP5mqyUFslWrhTnIjBU-tQ1AWj9luqQw_dNag3UB6PW-Wux1yRQMfKoXESRlUWNJkwf_uwmFt5zwt1rmQG9-xxatZN1wn75gUSNGtC4rTtNBAqMgDjmnO_Dh6Ho3elC3qhCWUGhluFLXkbGQMKtPnzvs-ughKeYxG0yRJqAtFJoyOCfbdeggjlHwz2tNhwcWhVzeezYByxlhEmNW9fhhiA_TOSpncT39pW05_tVST4RGP0akM180NWmrPykk9BDx6FZevSLYx0VhU_iMh_c1ghY_G3174I_dtw2ilXUI1y3niKki1dxmQ4iy1q-oMILGbCKaJzg0yYmFHisb0lAFZNtXhvTe5caf4xrQvPOJ4TAcxaOh1Oa_GF_8IJjMDgFrNziZZXWtJWDaCezKAWquAUpw7nexHL-iYBPjBElVWOYCwPkxi1U1oMWdlksHRiZYuIuvad5OhyaNbwfui7wvjHDMLkC10Rw-PJVxEgZz7jaStgpK9wQH5zZa56kyTWLQ52AECd1-aKSxyYWPVWHmNtlCXMomwayBekwd-y27rh9H-FcopOZIAcFptWKxDMI7SMLEvSJrsUcScQkiprYFlM4Bq9I4Pzdd7Q4444xbhvrrS3kKN1dDDuUNZlTN56a8IWJqG_OJgQmohHkCvyuakW45Oc7TPoSziI4tpF8w6pfIuf6nqQoSqgqKwDr8bLJNss9PyYx9oc_BQAuUDGaU_Q1l53jVoXMb3vdZiwxO5Miq_TVb2anQXlyiB1YXOBsFLCuMGxQXDr6qKxHf0zYmDrey5iqAFLCz71U3etg5JKjZhSk7KbzypKRB6Qt2QXbZS9-A2SEkE1htbmmPrPHimdRT-Od2LQkA7zj0BZZ9E3TQfsoKyS90YidMxUHqKd0PCKdoDFBw6RuXxhnHSkf_8zrqPy7l-7iewaHSSVwhGyX309k6zgLwuanXF_Zlank8pM0RRWLDLiUy4sYgsrG7HErOVkLZqY0ACREsqQ-e3zOJ1_SyFxFir-UnsGUtCk8ZtgfHo9RMaAdaUyjQgd3BDZ_zoiiuIEIDyo1CjVWkPST977z10Hm3FafFaEw56mfqGB2t3_26ad3tvQ2bCNJTABJFWwTHoJOTirr6XetRN4eSABJXgG-MTRwt2LJhpNrleqG4JPQlJoZPk9mW2wmH_nvRdlK3qhxLrlU5JYY5v0jEtUlX2GCa2PwHumHHFD19JFbkgP10RBaTCOwiNPMmm481GfUprzUVfvbba0sbBbyNWG0SSv7-_8CQEpgAKzHHxA1VW-pSG7BgFR0wRHQ7Y4ZZzqFtTFo8ffediv6lfMhE0gB2WlZlPYuAB6p5OLuH7H4Z7KzbzTsgiU1glId6rRpQmwYIqTqwhXJdzyaM9cB9MmiGQlK_F4FoEqNtWOKv-_SQTbechj7-gIRDPNcI0BRCCdpGYa1fbhUywl0ltHALiky0VkvXVj16FFQxDpOlM4urmSYQ5OFtGLLzlp2MkuEYElQLdo8Rjy5PfG8wzmCNrXROjmie4T2xyswSshSY2Dx5tGSYh2NFIk-swDZar1urY68Ida2dlRG45h-KeaHCsppZW6eO3JxZP0Ol5vq91J1rxjVRpoCqGSjdXhK1EDuQrWLDgbKGckAURIJsl_gHwaMD5Mn6o8cAcDWijiu5oBM2BOTNHAKU-SR-nfnwt95KVGTJSz83wFlaJnP4wyTH_LWuWmgYj5hCYIhCU2Kvd8CMGvv1mbRM9EkyZQRKjEhE2s64A-yxISRYV46GqL7NEHhLLMhNJEZfPJb1V67GDpWYzuuMaLf8EgftlDUTYLqBC8fSDmwnKFQNngPcYrjnfKX2b5pTMXSV1s8rxG6LgOBIZEN-w-P0PEXwu4BMSOd6Gyg_B5jhdnLu0ct74r9P9hg3AyLOAVpVqA1nqPx-3HduNpjkv9m4E4UtAGnxmAj8-IxTPZXsVOVe5-ntexKEwMG6ebe8jjoe6e7YzXFe0zkT4zmdKXPw0SF1R1h4Tbhw12o-p7zg_epYTfQpPC_VmDBFCUpftUpovJRC3ZQ-dnvpy23dOyEVS6M766CBJh_58ABzffyDkgPqwyR0I1mDxmcXq3rV7AyHjTYaH6WklL09maKAd1m4t_OFqUV1rkjaPflk_i1Yt408VW_xZxdikbQOTmrhRfQPSwmToOre35_em5I4r1lC3zH9LI_FX5Khl3s0Y9hDMQ1kYprEyUmJL7SSkyV4cqQuZvcSh3svG5gO0fzgdv6-3ToahyHDVyu4RycZwiLTzk1K6XwXErCYbTfZD5OjN7ulS7wN_OD4Ln1wk2QPhvV8r90qs2n_v7lU0FkLR1TMvod4mFyNpJKz1zmt8JzDjApmqbEScdkx0V7_srtK2X8e2yYkhYIUc78-FhSdBvDrkprvDlOeiCFJKFRoZ5n013ObolV1K0FOm4yqiRc0hqn1lDfV1WQrOrm0xAO_yQUkPVymXAzlzOIt6qtKXmXIWx4DL2HXAsPAgsevrHVMoBiNjJxzZmVy2GUS63PoJnoH47Ieg5MtcULP69ykYQyME-B6ZoZmHfu33g0f2KW_B38CfIAMhEqAGirwwf8GjrgDHXDks4_mLq7LdttnzRWYHxa3Nt7j9hb3L-rQVBJLRadUqG7zJ5AWUdPDArb_zPBTRTxm0MiiIO5gK2s85ZAUux2iVOCX7ecCTo--_K7bJwqerYqQTmlJ3y_L4RR4kr7TpNB7m1DeD4tjgDEXKOH9Jx5MAg7u62blfk_bb6GErIwS6v_R0xYVeB3e0lgC5mHfQL7bjxTe0HDxU3PG7bidnVGaq2Ml2xe5EC-_HNczJlW2sBshCzzMFELoYPp9MLxt-GuEXXJ7k4WZle-6uYwXQ0245g4UlgvFNhujDmcCRa-5auW8rfUO3p0Q0BsX_uS4HjhBCqwX1rseDplFgh1xA6neMe5g-rW6sVtHGEPSSJwNuRh5kNhia6qBpULkduOpQ7ar5yKQcJ7G3WBNS6jVogfyQ4SkVdLDz9tOItY9qBm5pvAc8CkEMmJRDHcoHl7ODAmlg9g1eAF4Nz4bn8sj9Qdza5-4ucW0XF9sTqh2PtIxrzwbB9zlF3RjhMHvbITfBLo0EDfe4Q6zwOpWP6-aO49hheAGZ8STHvJ7YKVH-AU-qMISR42wS7cSOysfftqqrw1h_D906AbLhQRVd0aCnUK1wEaXTt9ez2J8MM8BDCSVJdSdd4kxawqaAbrZd8O7RRRuZJu_2UCFm1wqvBHvWOid7yGOqEPjYTbO5dzG-KSNRAGiSXgUWnIMIOLbJBc8Bht-SJaSs9GppOxM2SH0D1E3boaW-gdol7z3Y2V4VO0enbY8iqa0vddPJjy9Vbr_zHas7nuFpBlHXiJibTA4bFPRhB9k6sAmKUUAXTdL7aQ7CmeZo2TdU9MGBL3PGAg1YrHz1VrgBs8ZIj17f4uctg43m1fmDmO-HNfKuHU5feMcPTGe9Zu6_lGrWaWSkfAL6I2wBVrcrIaib2CpqQb1HUHVR_LKd1lj_9KSCWm77l3W6Et50arNhHw13Zpwu6JWTP-ona5WaU4qMEmZYwVy0peM5FbbMXsca6iBHqldJLfeJI9Z5uKo9b7M6WAGwBx7xigP_U7ElEwLaHotFVTXfM_cjGaIJ43I6qqP8SR8vp6BEQl1FwhrhPVRfMZkg7Ic0Y8uaqLWvYtvlFWAgSjj7p6WQMZAil066tesxK5iCq0Hg4WymRQRB91PRpMWINxtXb_PG2PfDojnb6HCIyiH4tsJGdwhdvnWsxrn3QaZljS1-I0EnCl0cmdCbzg9lq_48BaXMlw75MGSM5Uw0fCoFx0QEZdCG2HPTGaVOwWfHkj6FXB_kbWfjHhSNqcgxJW8a2mPXMQJxSp-Rh1XuSK8mv6ymbunCvqnRorquhjetrN4nxssTJ0P3krbRDZmw-Pn9wuEr_VWgK5ZUJXZOiRU4VjjNCCpb7lR-b1xKVL6O-uhBiOSQLmuX0EhhLyPPl4Nc66uOS4D7nkZWs-8OqrnlNFuw6fn28kPDanGXviw-RApmPqMZh7yuQsuop3sFu_bNJck_7-b4sKoW2UT1T5-S3dfmBJEvQKPZlNQv9pMVedXoHnY1PYBwf6Uq48QInU4--DEVp9yGVEI8UIeupB_O7SDysMyUfS1E7yGkwN-vzHHvfZCc9GCIhEiDwe_E9hYDOKYwX3QNxeud9L8OhsFQQ50Agzq1t2EfGSgq6g7EKjmAlEVAk_J8_KIdDxNlDLLGUqZ7nkujpeo0n5OD-Xr-QRrajUE9v1WAKb3lYd6vNn54MrH6IgmWET-FvGTU_14KP89FbnCtguU_-vi-IAzISNnJOSkDYePmPm_d2gVLQ_y2qqd58iNlft9x6IsVNHLkB3P1YiHbBlSFAUFwSFU9b3da5XF9QrErtWr5T-wEKxaoeS3tprPvTzI-bYawMQMqAqu-Cr_QapX7XyGW-Zsrg1uwymJQTMtAYpsBWxGhMSDWVYQ1YOGB3db6SDdiLU4AFf7bVv8hr68lQhuOQxmzAQjLljoEklhtNIVLzAJc5eZQ0BFDEL7V_1jS5sc5lwkvGHa0dFUKV71Bc3fo6dzp-qnN911suZXp_NuVVDNQLTbR2BZjeciDCwwDXHiJnW0B8_NB6bjo24HMnDBzOpKY1hW7jQHnC8Mt4-bnb0uge8zQGpyJZn0g54ryw_jzin5furqM03zrxCgt-e_vBtMVKH8Y3gL90uIEoAor-u0W8qigtqjaw_7z042dMkTgszh7M5MZC3A1o4E-H9MmDdjB2l7Y3iTWjUwmshZ71Dm0J4LUlhM2YTICcwkrFhBuQ6Y2LMQjNgG45UW7e1aY_flws4LsXnpfTUBs2pbYUJLGkWEYA1OF8mrW7cQqihooFpJ-klZq_CAULbgPpn71FF1r7YLSv7WoMndEph07j5r7WeVXrkbBUyY_s_2dKYRYN0rhDNcpWChbgdOER8Du-m5JzvH2z5p2u9pYZnf8eIk8LLBdsQPlp4bm-7IIdsOY2jK6ixnF8CW4Ucg5jVt8-vXRbdQ1NuRWuzIeZrRIXYhTkr5AoPM2N2J4zyoSxJ6KAPPIdaVw7gDFktW8-_ZZh29f6vyCDzRpO3CJrDKgbiUaMbXlPum38LLH3DCD5sySMf2fDSTKjisQHP_2JuAwBvNd0hu8px6OLFXK3HdaB7dSsHxIO8hNuGEEvW5b_U77iehMhK4y3AdD0GtAo58USmuNBwBmFGVXUjrPU6v3Ma55Kvgf1ZyRlymkklwK6MyxR2E9l5cBKECpqZOwwVthlQ7t1j14aT2l-b2GY7Aac83TJZ_8SNOketINfKgawIZb5msdoVcdFkPTzbSrIH8FAuSBGqy8GM8P1o2rcCbiULdqFd3J7Vum2e-Jqph4lgqY3w_1MuNLKVN0Wcq20VOwH5g78ZfM7VWuf7UrkwrWnaumCLmly8hrdBUdIS57eWb1DJnm66lCeOGtteEpJOiawyBZDnaYSN21mi6qKS4HECSZcqrXLbPxZQMkl_SfOERIM4B5NygmyR_OGYriT3NU8OaqyPLQUJwGOMo4oav3DPPbgW0EXa8vPaXnXc-V4XlnKYvw_sNfTTsL2ftDLWDxp3FWfztkqwZokGcyqONmu_lG3I3yKOmW8Ui1gf4OCk_Apwy2h4KBVSNnOeSQTy-DGw80W4IKMVMlDQ6nT89cBcQSwUCWsp4pzRCIGoWVfi43B6aJrC3Vk2b4nDbMefwkQrD91GpISumIcSzrNvmdFP1TE1DtoMEEo0gdVavCPCvTKNXq_V5ifWsQ5CXu-tVmClC7s6O9Lz6mKYc9NkWz5OkBxqu9bxT5jao_mjOVs7_DENwqa8uNT8WMqjcu3E5VBztFTv2OfcAL9v7XJAwfeAIfqmDdIK_8BR3WO2t4Lr_Vzf5NFIlVu4rhdWFD7LdN6_sf_GnYXKy03k-_Brs_WDY84Qg0HIxjJv39mZ2MOEISPgJnsyQKlm7p3C8pREDH9oy4dHsUR3b9swfDM3pfI51fCLfMsgdtzvV3CZHC3xTk_Ku16_Q-MFPUwvyeM3YA8Pi10dQGCE05cBag-pYS2dmptQLKpVgCCQ9accYlCoqEKZx9yv_ADaf4jwGeJOt6K5hSx5yEcPoRj2hcvsnPr5EyYR5HjuFBIxZO0Baair-zcOr2aw6aC27hwE7_CDcQFNTLEp-v19mqLCAdYlVUC-U2ns3tTdHxoAGOMCqt7AehwS-abK9s1b-MtUa1LBxcLUTHaRYYgHcwyamBOtHCdMESIY4QftiIijMg82SJy25SRovo8LCiAqBHPDwnTedsa4vayoskkpjbZaqsoRBqmcDa2eVkQBn0wABojXxNDq7bJbBxGVix1YkUhzo5bWiESFvHHR9ZirPGFYf48uRztIBOtc8Ib4LQPFVWU9x0U66Tzpd9Yv4GU19whpDC9rthb8sMnMLc_pv8bDRso2ps5eHqRZY86C22D1MsDH8GEbkX9emO5gwlnaJP_uzBRA6C2Efh_wKeeIXxEq8Ruc46QHrCPhHR5EQycbu5JyhHDilip9d3ueUST10XS7deNanzzx_01xQyT-dUWE6KUa2lSKrK7gIe0I44etrA_DedNV_YVvjXguWuzKtN2n-C-l6e5BtQjVeo38J0xXzQ_3kEzCN9VZkhNyYgTW3QuunrUcrmVLXQwbGI6jFOog0BreYGUEmQ0FV3K63edv4-BTZK6xWUfg1Qi8B4F23H8ye-tjqKr6jKKcWKLsWSL-s_e9VHtPg-cjitjtshv2YFXWGij09dPOnPOf1z5qHpWwzBglPaJrIcgE8TvjkNpAnhRAXTmeGJC3Gywcud56GK2kGgHzeeC4WV4F89MCEC479lJBiVtF9xFzrXQgAQC9_D44FfbwjA7B9CzmAWnvUa1XeBMvLf3oxuLgJeiDHgddcxi2tw1bSoTTM9bYT_77Mjdwx6SHIZosqcEdA7WeVuWnfPFzSfUJjYR8ckbvBG-zkGf8I0L263vqKdo2t7fDEq3mUPD1qEQQ_pL9BhJdOYViE9l3xbzdtltEZ2lfMv2LVsRDdysyeWpqCKa5Km_lgzi_CfT62DHsTfiByYO0do01miDswDA72pDP31e1mMfVxqLqzlqgriSK5SIXAhOwnI4rFAK1mg_aGSxhojAIseDZTmg3y4HniAGxqaOGga7DFqZEJL-UO-4gJoGY4Q1Vq0iOm71ePdV5Pirn3uRCoKRjbTxCdfs4e5Ap_rWbh5HldsDSyZKX1uIwy03ZP6bGk5iJmhtjwr9eHWRlYVs1eFybp-Wky8ifeWb-0HPyI4Gfw3W-bHz01fMtiBaRIsKvc7QD_J9_Kk7W26kpdQmuGBL5VKI4xAkTd0oaO69Q06TUG7GMMgvY4YmVuFy6XVtlNnP6Ln8VKH77luWjfbfoIJHA2kDiZFhePGW2JzPubTRF_oc9yr7P0hpHHMFNHXie73iP8nF5Jv_-NYogBwWE7eibxej-CqazINND9_RQ7dnQav7HeMbA-A16jhTECM6ZqsfQy79jYFtsCkN78SxKfPVJrgT3bnnAXvl_Pcdb288YNbbJl1a_qmRAE1sB5it2vw5BcvaqRWEPMbAB3G6YTXj5Ciw-UX8wjzEWRrze_khdRn0td3ISwhxsO5u2sY_hrw6bLWavsxsKYk_HNgnN-LKT3DJq_5kK5CJGOWtvGuA7f9mwKsEwhm54yIIwEhufoDscLtXjL_Yy1rzlOll55kQXuVfsn58hLM44EiGccfiQ-mxa61GCulVCO623ZMkrAbxGXI1XK_RqkKkyx_4FgHM1aGbkGIlHadLnFuFhjBO-ZhP72Sw9TN0z73Nnk6ddc_4gcfixjcF9zMReieKTEBrAvGoHRL0Gl3ukZy1HhPVId7ASwFY6E_SbdI9WVtLkYumBzLESJDi94lRCRreb1KglW3kYcETjT-OmpEVjVDtMX6j0oi0rf4CzfjIf0Bi2dHQTzI5BI0aENZm1jvq3zTaKCwcGtXQba8dMP4rhZA82EF0-EBoZ9pICbyT-VM2i0CS-J8OaeVXjfTB1MT62485aE4VLuOXydjlBT4Y3e7emGPpn4sLRP4E_tXjLGGO2vteYCL79GIOobr1vmvdZG_q4rDMasNKG6KlBjS6eV7ChAb1SY19P8uKZNc0NBA6_hFoKvDfAsGVlaOsCrOwf5Q7Su7G-zs950URwHNUMeCd5F7N-rCTFCKooy8wIQMe4JHMj3koig8XCDrE7L-3-iyjZSbK9cZ2kStOs1Ew8N1qPssWrcaFeXeKqv66N5x0VsEHkaMR4q1nek8Z5glKxtQA4Jw3j5JZJwmB3Bw6HsIlBEIITArG1tl-b7G4Ovr2ktezBY2prYInZFaabin-jxtU8zy1yzDRQgjFnlifOHBKUUb8ICsrt4Y07OSi3LfpNs8PZnvbycz9V4dLE_qVw83aqEgHTNmxqrc-Qwpkh6PFG0HmSivl61ESAc_q72pMnkSbZs1C7mS3nvnwpaPv3M5d09vWOt5jwfGwYArXUc_yJtIqb0FW07X4CcuWkIJEgRAl08GTlQQ3OTcbo5Vd5CNiFFe4oxCmnFK2r8dLIud-UWs4hhdukrAT13gAlZw9zWp0QodBRQ18Vs5kayDFhT_jphkysLObG96Kot8UfWKH8xelofGbgan00vOO7xdbB3n7UKBQFd8hI8M8GXdc9SaP5v1OzK5SGOZ0R49j0RLnbwsDrqfhOkPy3ACm5KH8vepAE5SphxVie0Pdu9C_44A6rWuMXL0Gl1HihYnrJGUGeZJipgmWsZyKeA5QuGgcxzRxQMr4PohBrvoz8GbE87O-P_2PADImsWuNMoUb-nZlj_vMNkmXiOM5TXjzp-0-9CMswpmIM5y4e0du01orsq2b7S7s1vEbxijZumJvx3kU2wYHlsjZtcJPqaiNQjEJm27K410NxIaalTAR1yMlhvzGjJEanTCaSbzth9TV5KwvCJfNGnwv7wV_nanKzKfR9YQtd7vNRStndiQysNmKLx2Qg2dagGodVVae3j2A_seS0to4ROi21uiAVcy1URbYwUisaiftQkspIOQnKrJMaCxM3N-61dOED-RLSnAyuIOAxmwsuOxB5YFSaLr-RL5aXhi1LVudrrheiJIs_O36E2RfBbaH3hu4GLwNblbYCnZfnDpJvTXwIOg2aXHLzgzSkJNC_oB8nbyH4hYccRgJBkR1e2RC8Z790gdpm7f7EDepod6sE3N_A0wg1dtMeBgb6ocfbd-Q-ObWl9QqOXuZLFDgAxOztUGO_8V9g8EQQAzT3ES0ZPRrxQlHJWC23kNmJqsNGmHRt4GQKG83O68lQWr9QmmGRL9vBTAQYQu6cQLdQfFE02cPZyoL8heFLaOLwybQ-Kfflod8YaOYVCTCYrMXzs3njcIwTGCgx1NAfOwq93qDK0IIoAjY9qHXfti-rhs9ItEO6NmHcYueL6w-KXHCYV3MfjecRWkCxmhD8_lQBR6Mb9FIQbq9WPRrygfJqjBl6murHtnbfhlWMxvIoPFdaLXUOCIxOnlmN4XVCToQ3lcHuMwxJ2SvBvVfvSznKjq0MH3fNt8_-x6yxmeSv0D2089D3n8ftlW0Sa0DDWaxcqf6TzZFqv13_A3fRQF3qXaKj74c3ybrJIAKzbWJqEfVcsz_p0gVzJfnA4jWwlL1GUfbIgDqSlrzh4jAx90lQu3uEIMmQgSz7HEX9jYQ-0Upt6fLXL1zl4A4EfTh7JmAx8Tjt6VyFUjN1B7fZSu-gt9x-lWEx1ykFc08GHhS7WKYlCtsKyj8NC6SyWrofHBYTlaq2IPPHVT2XKqog052t7tFfR1rmzpGLXf7pHm_Zo3oni7MdJrqhDtWVKOfT2qo5k9mOzjW3bHFXr7gxr7KnV8UGALIjqxYjQTU2hrDD7YH4Qe6PiBVdUUf_Zs5w6buNYMnf5CN03gx8qKU-PuwdZKKEF_Mnb3d7qNBiFFc5FfEayxSAwELIvurJsUgv_--qMNoIIfKhj0hDeeKAWCf5MuEqe-04xaz6douXpvXuGJie8oNAD7mvPCNG8h06Rr33Cdz58fd7SNkWMJ9VuIiLy8F6oYtXKAlh1IpOgsOJsxaZmxP58JLTNMWPkMJZAmC3t1TUxv5ebrsaJq8bH2qUPX14dSnipPyIgO8iLYSsfvhU-QFKchSptVy4sIzxPtRyKzCXsx0kTJ7YY2R23d-xQZb8w9_Pn8ZHoaPJKapSMBMwi4gpdOIBEv9LvPRolSPfrr_LnobiFWWJzCNTYDoipkM39LIOcf9dMpe6T4bPE_3BLYPvUNYTpZbJIvjb4sLsKaBlordrf33qUCR18ib0pz9I1wrfTxlqlcwLI87MtnfG0BTai7rwxPkxx4wfTrTOGOCK5fK7MV4rQu2lRleHR8B5jf88GZwTaN4CK6eGcXPy8FsQAzbhuhh4ZxfAZBm3eIENoOwfFBKrqgYzGht3GbSOhNPShlQRdSbbit3tc029eKQ-91UjMRYlEMJhMgGrN4iMxtuW-8btYUL1D3HCitRCtFc8Bn9GkDvr1btZpoF7VZI1IAj93GMp9uIWhLGMxS5iYSl63cP5ZbFHdbFU3MzHwjV7HO2XYafklyTB82JFcie97SKHeV_IhT1ZFJnVzR6TsBM9D4CgGQ31w-8kaaZ9E49O_cH_OumBUiya1hH9cuFz3PDI8GKtl0MHPZ3TgxcAeRkjOiROkyakkA8y-uVx_aihnGzbHFQyT3rx4UCoMmQW-Qfwn7okzz8kQaLATt7CVEQdRmMvaQMNKdEZFcLB5M_ue1IBpGLNSP3xuo4vo44IxW29QEqNCM3x0SWUFj_mmcbPBA1BYQocjOhx5MkCd9Gzg0xxstmC_UTxIzeBwxRomdB0l_zVL2BGdPez8jPrp72k0u7775YI0D1-CJkU7R_9_ZnK5DW5-Trp2DhBDczo5bO2HupwNNBxfYUnkpXGxU5phJ1qtDG8RBKrYOTOxTcLVmPgVRLt5ZvnBCk88soB4miii94EBE_EyARD8Y5Pn4ez1jSrt58UmPYlJYiO7efEbDfg-61955ZHtpgMVcMcRzvm5iM3omWHYuJeu5LmZl4on6gQf1KQdgZCkQZTv-9kg-_aLFYVScBjHCm_i91kCgoTmIw4_Xxhe07FQq3D8h1YJPc9VTlUjsOWnLJrEmjllW0beSJuc-Ka3cZyN1uV6SmGYQ7gWABc878uJoBslROYJdOKun0Ra2aRjELzY-eF6YXDlfPbrHOEWM7eZU2LZH2RklsQmlTI5ruq-tdX1JGa5V4_ZttfebJtR8l6jQSq-FcPxQcDvv-7Zn1KaFYP6iuhsvKRdoILl2t0DzTOQg255Q1DrwPus9ajAVZA9NUm8HobOUOt6Bt3LNkTmKRfxOcCOfxU8lpgpHMVBDBpf3krjYJVt1UaWcZzO-qxDnaJZ3jESz_Zg_0ZI5lR5DK9vi5jiN1gaFaH7DLm4Fos3jt19z5QHeoTvMTZ210vh7uPQ2e9mo-nUFgtXQRwZ2PMoJRnk6qpSnkgxStnHVzjuGjDHw-1PDbnP4Sj22NvFDz_YIfAVotYkFQqwxCpBDpYEbV9xGd-59H38jG_iNzhoUCDFrJkq4vmtxFsJQhuzMly4Q6fElLbrVlM_mfAJq2zifuSbInm1cfGNY3NBJpO_R72wwN5gFE9Fr8u0edJFgahcE_lAm2WY7XtlWTf7MbrmcOuCWrT1ma_QeZvS5blHcODp-aGhzFGo4uriSVmcn9DXu3r3kD4Vuuv81EnH_qzd7jry5817GBwRyT6tOZSD4RbTROXWTVm8R3U1XObDqOazIwhNbYndTZvoyvHBa4nag4ipFIUVHiUDfAXKkIDjBmNbdl9IY2NEwzO7ok8r7cRZ6p48AK0JP9QUqoPGLhPDD05huYeqmRcBvNQWejF52I55UYeBE4cRpGthdz0JC6fCUXauf7DZyIKULvktAR3ICKOLgIe1Y0LhpoWRagQEu0KgMcSV_9v4eGh5ppGkI13OA-H45w5w_68GMiej0-YTsJ0DY89ajOEdbfFQ7PAA39wxHr8I8TNuMgUFhVjcjJlupjsfMgDzx5tZYXmv_oZ27Du8rpzglYcPdunEf1WGypw_CnKQ4FxwPfx4WQmTJ4PX_bglJBv0icXuprfKihVSCKRrl3Fer2-7nPkc3vnM5EAh4HsWQwiheR9Yyfy4qUKJQMIM-FUWcas3Lode2kbWnSG_Aw4xPxvFyuwqg8pYI9goBLgc8e0Z64Kv6qAywfYgqCknEpZ-slC0-8kSLb-Y8XHF4O2sYSZFAz6v2L8XH-ts1KHLn8AbicSmtBJpPI4NZp-v46n-IwjAvP2JklXLUgV-SAwbOYW_CaoHNZ4imiCTvrfGsemm6jL7veAoxbZGhD3STgqXb6mI68NzF7OTKxsvYFnPpidrVRMBqEuf1LMoCy6eE9DBrgEsatq76gKB58uO2SsA-GEAqV28JzIggu9Yq3Ylz25-Mcsr_crxXROc_U25YIdPp5J0yVNLhokMqdZ0-_Lq3laiAAD-8uNY5iguq1nz61QZUjYFNodpwO_kz1lkDCWxRlIgnxf_sfW-CIVA5J3RuYZIGCGg74aL0jQFa8v1980Mg3OUeTieUGf0tHGu9fQ3y-UPV2NcdLb4t8DcwP2-eQaUVnkUL_gj8NaCfk9loJOffJ8gyKYJ09DlvQ2bSs8_eBbzVMTiBnDRQB99y46dGuQqbZ7K2cpc7W2ZLXTSXq_FNNjlsnp1BR9ZiHdXSOvTX3PAxnijVHaKtLm3lAs41Al6x6kFxKHNQ0TcqDhW-8H3ADb90GrsNbc0aoLo5BQTP1coX26w7HUFmHmVagrR4MArYceIWzyU9y1a62EtZZqXRzXP8Wav3wEQ65mnDdD3tlxSuGIvHFTUjWTiJBB264d4cpTWdE2Oa-OyyuSsUVjfMqTkVqmVQjlWQI3-tQZq5pUgu5XLtWKK6TM4EaKB8LGDJ59MSdVbSUh5_jp7sgy-9VLFiYi1_hgmJZzBUmaca2V4bQpQsc3HzxfDwsGx6Uhc_4Fl86hpbB8apo7Ccl1o3xSXgYWKUuvEFPmFjKWOrPfegaIF7PAMGrcwJIF_hfUqGJe6vWxEWUACjVAO_ZayFfkkqc1IIJQfaLYEx-xwaENmpJo6xqkVOWbrB1pJbRTUNI5yVIvIzK1REDjl4SYWTvcog-Z1rfdrWYTSjHT64apI1toHDi7sD3D_Qy9uGjNKee7eWtLX8JUVTZjDJfsCXd2w-N29fdodF7OgvGZuLYXiAlgUotKKFfAx4hxk0x9oqsFNF9ae6vea93PkVsNWzhLwawgBxbd2KjTPqC4Ow5BHXll8XWNwRW1kieEGD0KMF7ysfkfHg1PUDFgsiKo6TzE7gOcM2Y1apu8Xum-fV6DwWTgj9DPMLC7pSJ7Sxelb_SN-ED7xOLhfTEDHoPpMRP1G0G741SmNLvWSUbHPsaIY56M2xAmpD58K2ap6HzVm_8RldzWHgO80SzpyWxxens84mlf2mJM5iwscqnatk5OduBzj1azLKisQzPO-fTkEIiuvsCeUKsJ1lcyNWjoNdfhcJJ-Aqy-ExQ5j9OHTdTijwwOZT9oq-5BZv-ZL3FdCR09m4DmGjc0DFJ8LTz8kUBqm50I9yixE3-BRuojxPTY-Iwtt0ww5BY2WiJk_vUbGb7yMQQceXujvt4LQNAykmvO7iIHiqVETeMO3iHt1624nTgyMaJYwIfRS8-IkZYvTyFuRF1Be192qYXCC2UX6sACuDFP8FWa4_EM_8J88Pg0xFgIhz4uTiSbVTZHi5C2-JetrJ85lAUTwQeq8hV4lbJNWIPqI020PFvtG95Bg2z1qlZTGjPzP7SCow67JnTa7rf5FM2meVOhWzYqP38yONJnAv441nWb6MDtAgJjvTjkYJsfuzXxtYwlBD7rAto5h6Asy-BImDuaV7dvSl4zCL7Iz8iSTWX1hXC723PzOqmnCWPBLmV12_mV2Hwe6Pqc0_bUAC4peiqKdYkR1lXWtOJrRiFC57cntic7sJ9M1vF-5rnfvvvEnJVlvdzAdTUZ_ASKq46t7tbAjtXxb5mqQahCf6vmh7RkRyf_VjfsreYNrLU-4HOpLzAwlyq08BLIGjvvG3IG-EH1pMt0_v0aIy2XofdasDg-PcLZP-LtW6kN5u2GrJfdg5e3P8FlyLbY-4ooKDW6jgg4hKJ1B-44eYD60yZpNXoR4P36IwNInLw3xf_fXvuoHJB3oO-F3klLGlxL8imyNvKRwWOyu-agdtl_DTwSk2xaikmfFakfC6PvZbKmXl7m7a9TKHsvtEl4cLcdyhJbxr4e1HZLnd1T5ZpPR4HTYyk-MxWLEDpDvCfxJedUUQ1wkfDo3Wdu3jDKU8yST8gAkpCVCSCMRJRd21SRnG43Ml1ZAa2p5kabRb-dcw9gQtSDH1xMDG_jr3By53mecOgrBtoO_lhCQxVK9HXvS92Rgeebl1owvhEyFm9ceVUjw_yj1YnTC71Bpvg9jgs1amsl7pf1aI5Ur7LvMfa7Ech4z06LMn96yC8vCPzfnKq5hByCjhbtbUCAb8uPRlOHi61opTpYyoQQksmlAhyYNbQw9sowCcWirRTsIqLE0qrdvhn4k_wq6uwCo6Gvu3PHYkiaJWII1-OaryCVVGsvnb9VZOK2NSTIqOkodQl9I_cwZAoG4yoHbd9hT8LwgGMRnX4aDHCJyK4d2nvBnp0ykMspeT0Z8RnvhvlUIZF2iaw4MEOZHfjPpd2V4H3Q2Hyk5lA4Rn_Rc_0i02tnjfrXc6p9OsM91-SmDN9b5eTVzDuqTJVL_GHRAZBwGG6t9gIFOhAy7ei_vk0wVYKTYQVE5HGilKCuncP1EYXRhUBuWP7gO2VNp3CmxwI_n3r32KWt5uJNmPN1_4G0A8REME71hloYQNmgqruhyOvOc47JU7UK3SHJTKJmOvTbvPUEmW1mg5ie2CAmdLoLcdhk0MzW9493JaNNOt421ES9S0Yv7irXyB4fN1XABbdanbDU3cDNDDy-DNbKkvsxG8sVCnVsV0I5XGWZm3Dl8i95yYf3Y2XWLkz4RiuF-lkwVZIyiytZ60cHXmScoVDl07zhQ3yUi3JDd9hFDrZ4G4pb_6Vrf0Y0mTNGdoWyQ_3cgaqyMzfKdqEB_s29ASE64yXESU8c2LIqqXMhsHBEPE3HSrb7Gc8xdo-m3aETZb1A-j7tzJFyDD3U5KIMqMgPzjw8gyeDkmmR1zUolREfD-DpHBAu_wBjSZwYduClSboVvLej7PcuC0HmN1jmQBcrjaKWBqbx8-KoofQQO1lK6NI0ga3whxSmYPHqU4q6VyJ4SD2FR_0iqQDZAeqDUXeYIDsiH8vV3P6LQl0my8L3fHnmOx4jSuT3_HeFV2y6NsMEKqbaeKyQ-WB_OU="
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_01\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"会社概要：名刺管理基盤とAI/データ化オペレーションを活用したAXサービスの提供\",\n      \"body_ja\": \"Sansan株式会社は、クラウドソフトウエアと人力オペレーションおよびテクノロジーを組み合わせ、名刺や請求書などの非定型・アナログ情報を高精度にデータ化するAX（AIトランスフォーメーション）サービスを提供する企業である。主要サービスとして、法人向け名刺管理市場で85.8%のシェア（2026年5月期時点）を有する「Sansan」、クラウド請求書受領サービスでシェアNo.1の「Bill One」、および個人向け名刺アプリを基盤とする「Eight」を展開している。顧客企業からの月額固定のストック収益を中心とするSaaSビジネスモデルを構築しており、企業の営業強化や経理業務効率化を支援することで継続的な収益を得る構造となっている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_02\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2026年5月期業績：売上高24.4％増、調整後営業利益137.0％増と収益成長が急加速\",\n      \"body_ja\": \"2026年5月期連結業績は、売上高が前年同期比24.4％増の53,761百万円、調整後営業利益が137.0％増の8,427百万円、営業利益が192.3％増の8,185百万円、経常利益が197.8％増の8,170百万円、親会社株主に帰属する当期純利益は6,778百万円と大幅な増収増益を達成した。「Bill One」の高成長と「Sansan」の堅調な拡大に加え、粗利益率の向上や人件費率・広告宣伝費率の低下により利益率が急速に改善した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_03\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"キャッシュ・フローと財政状態：営業CF 9,641百万円の創出と前受金拡大による財務基盤の強化\",\n      \"body_ja\": \"当連結会計年度の営業活動によるキャッシュ・フローは9,641百万円の資金超となり、現金及び現金同等物の期末残高は前期末比5,676百万円増の36,849百万円へと拡大した。SaaSビジネスの契約拡大に伴い、流動負債の前受金が前期末比4,019百万円増の21,489百万円に達したことが営業キャッシュ・フローを強力に下支えしており、自己資本比率も36.4％へと改善した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_04\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"資本配分と株主還元：初配の実施と約20億円の自己株式取得による還元姿勢の明確化\",\n      \"body_ja\": \"構造的利益成長フェーズへの移行を踏まえ、当期末において1株当たり2.50円（配当金総額315百万円）の初配を実施した。また、総額1,999百万円（1,331,600株）の自己株式買付を完了し、成長投資の継続と並行して資本効率の意識向上と株主還元を本格化させている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_05\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 4,\n      \"headline_ja\": \"業績予想と新中期財務方針：売上高16％～20％成長と調整後営業利益率25％～30％を目指す\",\n      \"body_ja\": \"2027年5月期から2029年5月期までの中期財務方針を新策定し、3事業年度平均売上高成長率16％～20％、2029年5月期調整後営業利益率25％～30％を目標に掲げた。2027年5月期通期予想としては売上高63,706百万円～65,319百万円（18.5％～21.5％増）、調整後営業利益12,741百万円～14,696百万円（51.2％～74.4％増）を見込み、利益重視の成長継続を目指している。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_06\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"経理AX需要｜追い風：Bill Oneの売上高39.7％増とARR急拡大が全社増益を牽引\",\n      \"body_ja\": \"法制度対応需要を一巡した後も経理業務DX・AXの根本的なニーズは強く、「Bill One」の売上高は前年同期比39.7％増の13,679百万円、有料契約件数は31.9％増の5,188件、MRRは34.9％増の1,231百万円（年間換算ARR約147.7億円）へ成長した。解約率も0.34％と極めて低水準を維持しており、Sansan/Bill One事業セグメント全体の調整後営業利益8,340百万円（前年同期比132.9％増）を大きく押し上げた。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_07\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"営業AX需要｜追い風：主力のSansan事業におけるストック収益の着実な積み上がり\",\n      \"body_ja\": \"「Sansan」売上高は前年同期比16.2％増の31,089百万円となり、うちストック売上高は15.9％増の29,141百万円と安定的基盤を維持している。中小規模を中心とする営業体制強化により契約件数は14.0％増の12,199件へ拡大し、直近12か月平均月次解約率は0.55％と1％未満の低い水準で推移した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_08\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"人件費・販促費比率｜追い風：成長投資を継続しつつ売上高比率の低下により営業レバレッジが伸長\",\n      \"body_ja\": \"中期的な成長に向けたテレビCMや人件費投入を継続する一方で、売上高の急拡大に伴い売上高人件費率および売上高広告宣伝費率が低下した。売上総利益率が87.9％と前期比1.3pt改善したことと相まって強力な営業レバレッジが働き、全社の調整後営業利益率が15.7％（前期比7.5pt改善）へ跳ね上がった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_09\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年5月期見通し：Bill One高成長と売上高営業利益率20％超への到達計画\",\n      \"body_ja\": \"2027年5月期の連結業績予想において、売上高は前年同期比18.5％～21.5％増、調整後営業利益は51.2％～74.4％増（12,741百万円～14,696百万円）、調整後営業利益率は20.0％～22.5％（前期比4.3pt～6.8pt増）を見込む。「Bill One」が前年同期比28.0％～32.0％増、「Sansan」が10.0％～12.0％増、「Eight事業」が23.0％～27.0％増と全事業で増収を計画し、人件費（約12％増）や広告宣伝費（約8％増）の抑制的コントロールによりさらなる利益率向上を図る。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_10\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"提携・投資先関連リスク：特別損失計上リスクと子会社株式の売却・編成に伴う非継続的影響\",\n      \"body_ja\": \"過去の資本業務提携や子会社買収において、事業環境変化に伴う評価損や特別損失の発生が相次いでいる。2025年5月期にはUnipos社との提携解消・株式譲渡に伴い株式売却契約損失引当金繰入額2,301百万円を特別損失に計上した。2026年5月期にはログミー社の売却（関係会社株式売却益1,436百万円計上）やナインアウト社の完全子会社化（1,412百万円）が行われており、ポートフォリオ再編に伴う一時的損益の発生や減損リスクは投資家が注視すべき要因である。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_11\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"解約率・ARPU変動リスク：Sansanにおける小規模顧客増加による単価微減と競合環境\",\n      \"body_ja\": \"2026年5月期において「Sansan」の契約件数は14.0％増加したものの、主に中小規模顧客の獲得が進んだ結果、契約当たり月次ストック売上高は前年同期比1.0％減の208千円とわずかに低下した。月次解約率は0.55％と低水準を維持しているものの、顧客層の拡大に伴いARPUの伸び悩みや競合製品との価格・機能競争が起きるリスクが潜在している。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_12\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"最新決算の位置づけ：先行投資型SaaSから高い現金創出力を伴う収益刈り取りフェーズへの転換\",\n      \"body_ja\": \"2026年5月期決算は、長年続いてきた広告宣伝や人員採用への先行投資期を経て、ストック収益の拡大に伴い営業利益率とキャッシュ創出力が構造的に飛躍する転換点を示している。調整後営業利益率は8.2％から15.7％へ急上昇し、営業キャッシュ・フローも96億円規模を創出しており、初配の実施および20億円規模の自社株買いにより株主還元が開始された。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_13\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"10年間を通じた見方：Sansanによる基盤構築、Bill Oneの急成長、Eightの黒字化による高収益化モデルの完成\",\n      \"body_ja\": \"2019年5月期から2026年5月期に至る7年間の軌跡は、赤字を伴う先行投資期からSaaS事業の複層化と構造的黒字化への移行を表している。初期（2019-2021期）は主力の「Sansan」における名刺管理データベース基盤の拡大と上場による資本補強を進めたものの、Eight等の赤字や販促費投入により利益水準は低位に止まっていた。中期（2022-2024期）には「Bill One」を立ち上げて新たな成長柱に育て上げ、Eightの構造改革（2024年5月期通期黒字化）と調整後営業利益指標の導入により収益管理を強化した。直近（2025-2026期）では「Bill One」のARR100億円突破（2025年5月期末109.6億円、2026年5月期末147.7億円規模）と全社的な営業レバレッジの発現により、調整後営業利益が17億円から84億円超へと劇的に拡大した。事業ポートフォリオの多角化とストック収益の蓄積が、持続的なキャッシュ創出と資本還元能力を実証している。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_14\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"変わらなかったこと：名刺・証憑データ化のコア技術とストック型SaaSモデルによる顧客基盤の積み上げ\",\n      \"body_ja\": \"初期から直近に至るまで貫かれた強みは、クラウドソフトウエアと人力・AI技術を組み合わせたアナログ情報の高精度データ化技術と、月額課金（ストック）による顧客基盤の積み上げである。「Sansan」の解約率は一貫して1％未満（0.44％～0.66％程度）の極めて低い水準を維持しており、顧客離脱を防ぎながら契約件数を5,823件（2019年5月期）から12,199件（2026年5月期）へと着実に拡大させた。この強靭なストック収益基盤が、新規事業投資や市場変動に対する緩衝材として機能し続けている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_15\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"変化したこと（事業構造）：単一プロダクト依存から「Bill One」を第二の柱とする複層的収益構造への発展\",\n      \"body_ja\": \"2019年5月期時点では全社売上高の94％以上を「Sansan事業」に依存していたが、2020年5月期以降に「Bill One」を育成・展開した結果、同事業の売上高は826百万円（2022年5月期）から13,679百万円（2026年5月期）へと爆発的に増加した。単一の名刺管理サービス企業から、営業DX・経理DXを網羅する総合的なBtoB SaaS企業へと事業構造の完全な転換を果たした。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_16\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"変化したこと（経営規律と収益管理）：売上高成長最優先から調整後営業利益率重視と資本還元へのシフト\",\n      \"body_ja\": \"上場直後は利益を犠牲にした売上高年率30％超の拡大とTVCM等の積極投資に注力していたが、2023年5月期に「調整後営業利益」を主要指標として導入して以降、売上高成長と利益率向上の両立へ舵を切った。Eight事業の収益化徹底や人件費・広告宣伝費の売上高比率の抑制管理により利益率を急速に向上させ、2026年5月期には初配と自己株式取得に踏み切るなど資本配分の優先順位が変化した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_17\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"資本配分の変化：無配・成長投資集中から事業成果の刈り取りと株主還元の両立への移行\",\n      \"body_ja\": \"創業期から中期にかけては調達資金および営業キャッシュ・フローのほぼ全てを「Sansan」「Bill One」の人員採用・開発・TVCM等のマーケティング投資や、ウイングアーク１ｓｔ株式取得等の外部投資に配分していた。しかし、「Bill One」の自立的キャッシュ創出とEightの黒字定着に伴い、2026年5月期からは配当（315百万円）と自己株式取得（約20億円）を開始し、手元現金368億円を確保しつつ成長投資と株主還元を調和させるステージへ移行した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_18\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"資本配分は価値を創出したか：概ね創出した。Bill OneおよびSansanへの有機的投資が高い収益性を結実\",\n      \"body_ja\": \"概ね創出した。過去7年間における追加資本および費用投下の大部分は、主力の「Sansan事業」の機能強化と新規育成事業「Bill One」の人員・マーケティングに集中配分された。「Bill One」は数年間で売上高136億円超、ARR147億円超の事業へと急成長し、Sansan/Bill One事業セグメントの調整後営業利益を8,340百万円まで押し上げる原動力となった。また長期にわたり赤字が続いた「Eight事業」についてもBtoBマネタイズの強化とコスト効率化により2024年5月期に黒字化を達成した。一方で、Unipos（旧Fringe81）との資本業務提携においては株式売却契約損失引当金繰入額2,301百万円（2025年5月期）の特別損失を計上するなど非事業核心の出資・提携で一部資本の毀損が見られたものの、全社として主要投資先（Bill One・Sansan）への集中配分が飛躍的な営業キャッシュ・フロー（2026年5月期9,641百万円）と高い利益率をもたらしており、全体として資本配分は企業価値創出に大きく貢献したと評価できる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_19\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"今後確認すべき最重要な関係：売上高成長率20％前後の維持と調整後営業利益率30％目標に向けた規律の継続\",\n      \"body_ja\": \"投資家が今後確認すべき判断軸は、「Bill One」の成長ペース鈍化（法制度需要一巡後）を新機能追加やARPU向上でどこまでカバーできるか、および人件費・広告宣伝費の統制を維持しながら新中期財務方針の目標（2029年5月期調整後営業利益率25％～30％）へ着実に近づけるかである。M&Aや子会社再編における減損リスクを抑えつつ、創出された営業キャッシュ・フローが更なる成長投資と株主還元増額の双方へ持続的に循環するかを見極める必要がある。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_20\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"戦略の論理的整合性：名刺基盤から経理DXへの拡張と調整後営業利益重視への移行による高い戦略的一貫性\",\n      \"body_ja\": \"名刺データベースを核とする「Sansan」の固い基盤の上に、請求書受領という隣接領域の「Bill One」を構築してシナジーを発揮させた戦略は極めて合理的である。また、初期の売上高成長最優先から中期目標として「売上高成長と利益成長の両立」および「調整後営業利益」を明確に提示し、実際に利益率を向上させていく戦略的展開は論理的整合性に優れている。（評価：4/4 - Highly Consistent）\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_21\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"施策の実行とフォロー：Bill Oneの急拡大とEight黒字化の実現に見る高い実行能力\",\n      \"body_ja\": \"2021年5月期末に契約件数239件であった「Bill One」を、目標通り大幅に拡大させ2022年5月期末ARR14億円超、2026年5月期末売上高136億円超のNo.1プロダクトへと育て上げた実行力は極めて高い。さらに長期赤字であった「Eight事業」についても収益性重視方針への転換後、公約通り2024年5月期に通期黒字化を達成し黒字を維持している。（評価：4/4 - Highly Consistent）\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_22\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"業績予想の規律：レンジ開示の採用と中期目標の達成状況、過去の未達実績の検証\",\n      \"body_ja\": \"観測された2020年5月期通期予想（当初経常利益670百万円に対し実績435百万円、オフィス解約損等の影響により約35％下振れ）では未達がみられた。その後、不確実性を考慮してレンジ開示を採用し、2025年5月期および2026年5月期においては掲げた調整後営業利益目標や売上高目標をレンジ内で着実に達成している。中長期計画に対するコミットメントとレンジ運用の規律は概ね維持されている。（評価：3/4 - Generally Consistent）\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_23\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"説明責任と透明性：調整後指標導入の合理性と特別損失・提携解消時における開示の適切性\",\n      \"body_ja\": \"2023年5月期からの「調整後営業利益」の導入に際し、信託型ストックオプション費用等の非恒常的・株価連動要因の影響を明確にし、過去数値も遡及修正して説明責任を果たした。また、Unipos社との提携解消・特別損失計上（2,301百万円）やログミー社の譲渡に関しても理由と財務的影響をタイムリーに開示しており、結果に対する透明性は十分に確保されている。（評価：3/4 - Generally Consistent）\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 4,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 4,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      }\n    ]\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EozUAQqI1AEBEU0yD4UBHNpAK1jOmCzH21qIIw6FOa9fuL2fguWcVCFSJjVA_70hD6vXkCLq5buu2bg872E0POicqFJC171U8KB3kX8F5D4ChN78zMOzr_wJpxI55cHSHmu0xaTk2KbNE9iY5W5af-BzauYyUyTtGfIx4AoTAqqc3FFwB3rKG2gfofLYqVwr12IqFfIpD4MLRCKdw1h_GjRA-yG3o-1UGXa7gwUv679YFWiZ0PuXH0COHDH66SniFakKJ3T0YXqW9BchVhLFNFJn79IXaAtNwINldUEnwmlHVMDFZ3KThs6DMf11887ll6F9Vr-iIzMNlFkjCn1AMUNCzjFjdmK5ANPSy9DO5NC9wuNZu-EyAlDiHMy1kXEFlek5_3luhUE5Kq-aGwDT2R-tYN1xqtKZpqsn4sQzbA7ZX-849nEgMKB0LJiWHq443kEHaXOGObJPIEkuYRAnkNOvggi5GXy3UWKT1XstJHO-Hk2KLfBKZp3mgDgqwg2Tk__z8lM3Xz8wpqiZxBNrqY6crCG4fVIrQD0kkqqqSdxooRVDdPrJEVpq1IE8tVdrp9zPwio7q7O4xOde_nwackik8TuLI83UWIjZBi_twYmjUc2U8rVvZUr4XEqY7ptl58gsTq0nSzBzu07HHA600wc31PQVwNeMMQAHPqbHNRWQtkATz6A7WrR1BWDJxXKjPReVcQPkm0JIvMsrkVxcmdaHWsC_F20HiA4pXPkcQUmisd-ZFw6npBzxlhzNWXlAHTf7P86xSROHa0tj803DuCYmo_uU5hAIc77V1QBGjJUBifi2i7eVGsPkE_w6OabPr5g0moJraNUkbpbWcZMGq6liiXcXHIOg1LXA_u3NOvDZpAZEvUoDrnpLZLzf2EmqWhb-Sy7YtOloq7ihTRnX8oZsc8ebggXFRVn57R7uIaFi7DE8W7347lKl-n7ac69FlfpoaOY12S7d1_jzrmwLIppy3JWGI9q7gBcpvsYRc4ZXF5y0yttIJfxYU6Lv1h6g6R4rLvKBMfltk91o1CQp70XQaH_DAFUoQJTH_bv7OFvMndBprtbwtkCNKW3K2ehcylzZJlysbX1a50ulJoo-H_F6pZK2Nx5UBsKELthHLhS-WmFz7E0g3MNsz8LyC8MkUSsBchNR8z2tIz75PRS9k0S_OyzfXhMwGr6Da5I6z8Aq07ok8IwSXZPrtqnQ9pqha7eaE-UiU3YTS5_QNUj9eMRroOFVy7fKcWbHoTvNMcjzUWzuSLu9fENca4GtvT8ojRjK6Yj4szZ9HkwlGOIE8JBgtfvuDyTiX5ZegTaJ0NYrn37wbneRB_Ge-ctj7IUo1BaCU25399y2RVC_Zk5x6K_ZcgXoC71aYI0gqJucElDM4z6134F1-BNYkhhDfPjaUE3wBbyYWRYPuxc0KraBsZScZbwZI7D-D0zEzw8U8Vpc0C31Ks-QWz8VecchQLr0HBwptddSCSt1DBTwBpayd9FrYJKosgX_Bksn12o9PEAzY3l3lGjmdB_Z_2xx9fiw6oKEOELNWgb7cyU4GqIaSAX_TMKzeR-dvFnTIOt4lYa491beS9S_N0kCKyv9GR57fyf-RDsxpEUGZTQ9bXKh_mwVgPdpSd9o7FAftdL4CEUXZZcg8Y3Jo3kH6NAdTkul3MiofDJApXDQHgnWdmP6SyJKN7LN5DhH8O1Np5K-8bl2KNl0Gp7tnVSaS4lLGgb4EeaHGEIUkUQID_Yl933lMbft_8C_jOnNSfKGf8C42rbBN_7cjiZLPHJrCIiwjkj3KPhguTDruKl6eCpOVehfE6iSxKdSF1b1l3ed6qSwGodKi9hCMjb4BKd8BVTLzMcbHpZ30rLdxSh5n6axBMddUzEmuQE_tgame7JP5khcgGZl79XIhF8MjNkkA0sTPHjP-8-dZQbQetAD-mBVEj1h7fMChEiGsXCokJHAUfsARHGN6lddxmkIDiz-vs_IcTvz5OBHW9B5kRrWQU7jVjCD7AuLtbT4XagOmDrrL6y7-p2iQcV2T6yP5Q4Rlot6XAiicNdANsAwNjdm_H2aSPjFWNHbjm-M69G_EsLZp7iubIodc2Yhgsv20W7FpPGCUBazn63lD8XS80YyNou-SIkt2HQVmmiTmMGzZhkFLpB38wjJPSfHQDPYCeaS86x07838SbVj9nVGw9C158-uiIxm-aQ0RkDy-GDejgCef7oS0Wy4MPdpK9iquySdEMk2Ruc5kDpcPmQb5K6Jt-5F5dInmehDxP9Q2PFc7QvZUPfD34RPDcot1FTYGKbgMbJl3pQ0edCCP5OSbXivnSLEyou7vcUlOSkqhW6y0APGWW5iavtYnephIOhmjQmNzTwSNkVDAMhEuPTNWaAYtD5vjX0z7Tw520D41SgggLP2u3zcvv_JHXVOTcjVPyLt29FZF0fhk5z-jWIxB6opdZxKER1MzjHh2hrFj-XfH2QCQiEC8iprNjXWUQCA7V4RHNDgvoogdkP5tnt4LRSLmaU7K0TrHpqizJGGvoE13UKnRxXeJxk1Ps_Me8IsjUOJkWJ3AP8Ge2ewxAvTJ7fCbXxGbjHVbow1-QvJKMhAxcwgVtHD9PTFuKOLDMOv5bivIU09F8ME4_TunxL9JpyzTjWHgBrwKJHfjQRXQCDxtrspDuL6GK4bOFRSwRsD6fbbtG3qc_ILFgVFHYtM4VQq_o_QOlUInN_6LVR7cB-0hyZxvRkJf5dhI4NdokILz6cTuzY3A-Um406-XRlTPgkfvnKhKAlNgM-uw4EEdTb7OZAPW_dCW30DLhni1W06tZ47Ud5D9EHCuu9F2wvswC_pcI2haTIW1YMPhMhlZ0GHc11lIFdezi6CGEI9SKwPyV1mUkpeu3zCo8_MFg3q1ienkuxNCqS-M1j8ka8FSmVpRrOk6tDlhpyl_LonOWZbfsOLtKPUxPm4ec8xWtBAU7do7gUTEwB4O2XAhln3MzK7JlZa8u4qyJDt5lc91Lqegtu04cNvjGFo4Ev9NNyj_S1vcZZLeiOMsluTkp5cJgH-tYSNdRY30sDub9G6wtJ64fefZQnt2AFh6H7-b1AKz1SC--Smqp6OQ0dAvzZ_rQwAu8A0ekYiNgOA_0fk0ABc-H6baloFFX8IdDJanojIC6lUwVTwFr38ZI0r4lvVj1CdfIAb3WelXs2oNJ5rfcvMysgHDKkuMAH6b3wytvDmFr9mS_V72xZV3SVtAu4rYyq_C1-EKDbo1NH43EEsM_rGJmDtWTiP2AXdjVvuYKx8B0yl2IGRQmpMVVAnUF2DYHLtGtku7uPBLPbOaonkOZ8m36r6xcgbtmDoQZYyLsHL5HY6By9Ii4pogsa1fQLnaprcbLnLK3fubYDR0PmtgJjtZHOZxpBZNnBmhWDFqr163yB_ItJHV8mJll4gKRKdsAKzMgWAda-kuvOhu_CMVzpNrwx_qRNW8Q6CtFQQ_aEaPxzwlLO6UvZrZqxKfMLmYyLKEWmfJs-28N2ZkjOoBmLxifw7_Mv6rPa9TYu5eo_MW-4PyFqB6Xsd3fRzMXOazKIrs1rvkePHFJkWxMAbGpCsFNBKyRr9fQgVTSwOFUYll_Lp_CLDUt2t-eUxaE70mZhZhelRdPn57GWUM7xEnjm9amvtyHrkIxSdSAs5U3DcNakefkb6dIwmJoQMeYufF7b2Cl0mKWSqT4rgjP3hBCmzFiXMwscppOa0z2GCFphxfkiyTSNazZTF_blGdFs4TSvio_UjpWFqdGbgja82gQWcvbIqkPg3QapNLGnMXwaeyKrYmBVHlkrX5D3_wJH-MLmD-tGou7BGryCKH0d2M-D_NoIxnLyjMmnnVsgZJiqnZz8nh7i4fq9yeM738vFkmHHizzlRy7yyXPn1qIv5zKir6408VUPaJ5fVLWSZd-swq8p_dirEPhj6Zf6OgiETgiYYcpWYtvowRg254O7k3KiaXejU2iAOGT7H0mMjLGK7mdF46DyS7S2qY9_NYXSZvGiBR20uqOb5b1dT_BB9GEzixW1t1ksA7Qh-KEGl_wnKnW2WsXcLJQdQOCnUd5UTKHcUXOWfDRUK33UNvd8a6QzbeIBCj1BAQM09tleC8QGiXAXzk6NktmYBSeGBtHUQMkugjnqqOGR0SP9lFP1VvmQVsJ1sYOEnp_WUcYwi_8mx4HhIUPB87USTJvJHh_6hwoEPsakM6MgqkPPI5zuT2y87hYD2-YTRzo_cC-ghw18zqisggFQCpRIrh63ilHLUbyZreuB9_iKm_q0AapRdn4KNQ1wjUmdqHhd0xWVZguIevXwXpJNykyw-hBtg8SaMNewfJ0MjKx5yB3fSknwWe__U4TYdllDYjR2YB4jSGRXO98aNz9YLzoXBgG8CzGtHGip8XPLRRJX_RU0hygDolOgrossyk1BmnMAQx1xFol8pkonZf4YNA87U8WaYHsCGm2RWXfQ4UtIAP0E-alw-c9D-6sdbnIjn30HP7WNgvbm-RseSvGyvArkDpepNrdUCcFjs_Z2mLuTcIE5LosavpX1JXmePuOicVh_5jYX4UCbQx5jkLNlhUufPYAeQVTcEdnWsHge3lmVwSu2g5igkhe3Kh-tyUoH6Nv1Wq6ioSPSJLutG_sGEEzGxin0RFlvVfGZsxz3yfUKV4hVFAjGSAvoGZIMIke6o-FCCaseYOr-AIJlUPANaFhXnZC7ndvtY6L1Ety-ymGpAGw4RdGWb8xH4ogFqJ9t2-a9h_DRSnGR9Ip6P4MhcMyEl2AFBww8tK5ZNyYBbTUHoHAZBaHgtW45JZ3b_YUXxUWAublCe98xkZ3cqyfdw4mt22ngOZbSXy9TMOSYLFIniklMVY78UnZGbAoc4iQBBgWnVorSanJSSUtsbDVuMtLsSMKA-kJ4OAtBbrEJvhiFQbxO_Jsc6fOyjjPuWUQQ0og7gAzQQ4RQ4_oorIh72wb1bk9pnakhvyYdc5xSYIDG-WIb9XbVZmw4DKdVVBqeFouVIf40ZIp4IcBpyBveb4SPybJxtFsckl4NQGTG6GQ_Io4FO6lUFj4d08xklV7eIjHkDQdjdFvflSG621sUQOrpVnWlV8lh__1lgk0CivXWSsoRLJcyq5iuqxCSgo-iVVgeY01Dq1M9CSb3u-uPiSmgoq_DLrktXuNH2eO9S0KrxR_sTbQ-TiBcmUkteLbBRAKQdIa0vSKwZigozIqeIRifOGjidz0EIbtZKFoHQHeffREesJ-y0-e1C0Y5p4n7AEo8KTx_fNTLXBE7ef5XEf_rdSwigGMWSKmv0Q3wkiVrRxgB9JhjIpw8TAR95Z21h8SF44xp0Ife9MdmQnpwp-cQWPSR5fSVvIWJ4f-zD7LLRJG2vQH7xyTZ2b-4Kd8kdPsf1an4-EPAicGaTBS7BlgyWD2r6jybRfkYEpVjjreGEUdifsXoxvKtN-_xbuCBjyMeMcUEaqH3jpDefghk7ptOboQOjC1Bm6tVzkHPpWrp3kiDKLNelISy2v-JUdK0DfNEvNA78k6mf8EgQmi5vVIH_uso8ribpau5UxJsSDfrkoyTbIGOFlbdm7e3KIaEjP-NigcU35heLjU3BTdWj-Q_e11LQFcCFcsDt_NS9LGL_b1KqgorzS_XXUPcF41ZxFupiZRTSja41HlRbxTC-RxtHSfN9avCGThYEHyIrfqQiYpk21IcGNyxvPdS4MDi_AoG0VgKEQKt0689CxUlgt_1CBtLRIHksvKo1LtzZQwDQPVOtIjt-8dPLRvHX1eWBXV-t8ElU7qokonh1hAUQW2y3dlNfTCBLaZYyRPFsNwmEKvztEYKlXT7zXTZ-lu4whSSYMCpQTrgta7Z3bj7Z9Wyk-cDrCgD3G23xsPoHdTuleDgp2CZoj-kqEiGlqJyQEkn0YT0BE2PAQCu7YIqrARqSN4mJ0zZLcWk0wC3aPfLqe8hI44yVotOl4ATcsCDmeTQQA_TWpjd-C_HuBZq8McKuBBz5FBfKpso_nfkwzVseG-2XN07i_m9sLiAaKuSr0Zkw0IZJyU76BOQpHRVH37ggD4fkTxhdLOrTvWFs7g6VEaiolVtdndb9enen9kam9p1xD_edpceWsEFrBJ-BwrCiQHsE5FI_4g500iRQidRPbBs7V6GWp9idpn858Pn5mrIgkGHDvNExdjqvCO6Wd342cBBRjnVzeFFHK5UaBobMAGH8qDpXOleBRT1Fj7I_wd3b67ade2nCsW49fhy4hStaeanvvrDv9r_a054wPo4HonuLDmHN4QGV36n56XsX2xFEZYUtRQKHQLS-C37LJY5OBBd6vDgRuuaKr0igZK6BDJJxIUrgUnvy-uCwjTvVEX2ADfZDXax_2omb0-cI4704EaTgenYC_OzqDUhtS2DUFzsmQP2-Amme5qYo8MdkmQeQrYyQ3JltTEYnxi1LyJhPFpxwcmHIzIN9r9yTDI6S605ye8VNd0MB07jizeRqxZs4lMovkHpSu7i3KcBgAycE7ztk8WNWpuFk6cE2sN-jCsCSnA2AXR5xPqJH2c0ixbbup3dLbrPfME3PzhVUGFFiN-fkv2_UPo2XV8xIlyGS8i5gFb7EBJbr_3bIvTjgl13QyNpk8lwqdsXf-fBkojegtNjfDoGFckFFxgfTfVlwHQWJH_Iq6GZtYxqTKk9nfulumf3KqST5pxlqavl1Eto2Ib3AaTldh3AGdq1vxxr59ltFmgOczXLt374e0nuixNpbEY5teBLDmS6ZCdS4EmnAbTc5YUyrnzvd5SmvtMPHZqLRX9RK6mkYF0vCETuq0mmW2443tyghMkquUaBTmDUq89dOvDFaH27GB9jP5vhmKAPAEpHleBHPeYWZdcauchvM49HOPUSaOML5KVeNKPjAxAXWrCQK2hf2pTalRtPs5vbUkwSKwvYFmp-gboiTpV5VcuAbYy9kjqCVp_DVNK8NZRsindt3T9GdqrlwLfm8rcbbR7PElcFYtf6ZJjQJBMjbUuNSumlyxPWzTNfCpefsBwZUD5SwPvqVHiSy5AeRSDiiAgTpgy_Jl8vvH3Pa6dsXVXEHhJD7qEsC1jc4MEmM4vKvY-nmHlq_pVhV5qC_IAyiRXazS54RoqdSJnJK76hdhE_tkkM1mt2UY5FhdXk4R_DzoWqeeivYLZZFHQtA30AKsqrvCsZMhoOnMvAiabkGy5sbv6ftgQx6aQdZVDSQXyQtsraHjy-4XmrfJ6Hu4sMVIAHwijpANxw7RatronBCvynt4rBbkFG8wb2EbPbQwEBcAyyFDBqEimEHP0cVJEBp4HIbkBGemrPNamtSOMkT8Oi3yNdikjtZsEG7FbqOmoAbaEK8sDq5PkxzfvQuJDWCayEVh8IM4tYbCAWjuiYDDBmTwetqtZDdeCvMI5ajTXoo-Px0iTGDn8kVGDtQru61c7sH-OM-Ux0eaD3nW5D1xjwXpYEzZRnyxEVjRDWHmOdyDB2QaiwF4_zfXcYNZCj1_pjV5Xshi5sw9zTZgZLmieLjujLEEExXPcweW-TakWVeKM17oHfZoER2WHOh7lFbQX_sxQqG3NQ3f8DkOsQ_fZH3u8ebfQM1Vgi82-8ZBgk4h9AlXaB7wcfiUhXp3HK5hBboDxc1romR7a81pKRrzm3VjdDDoXWLx31QAAwp3q7Vja7FmW2DFXc0_Q3_QKsoJXuU3WpbMcMd-aGRws_bFXhH75T-vCPJqEoocUdA4AJXGtwBIu56EbqEh54lL1GocU0Wul_00-MDxYBGGsya37W_NCUwleMjM4zXt3XcWAf8Uqk1nbTci220_yOEqI0p-bhyzI3TwrHnc7X-VD77XoR6I1oAqELftBBlQ6RDqpKWpijNCrABgEZp3bmfBr0es_yp0ezNlOiM_biMOBZgxm2Xs6fLZM8FZ_sJcHXuT2GcAwbF0co5ADm21Qm6SZ8T9qKnuVQ_gpwlbe6qBcocaHtmUAxyrp1H20hESOLpBG7jrU_Z8znpNYCZfV1dZ2LCDiZLGI0SJxBYbcqXGA6hZ93cfNdRQM44psToXYVXHHXmEcjuBCF6n-qVz6MLFHHBjhe7iZJqxQGnaWxCUYocTsthSJ9cezf4ZNuVAvQsDUedriA6hK2RT50shPVDJcLoCpMkuf4g0PAVnxH-4DPqRJ55naTKRmYZY70A0jaFmOoV2kDc46U1LB3Ap0ausehiBLmEWfrIeAePaxvwR4kkW_0Vr6dMr3Vo1eSHTiqQDij1cYm8Op39dpkvtwZApeQs471zTD0M7yYbjcCQ56NarnTGfkDEnAfHba9r4SW5b1dxBRCp60EWixMbw4yp3midQot24i2ny8YEB3AReEtKE877TpfklkYOsNVs1pu53ZnIa0R3Uey2GKB8ZeIIOn4A4wHx_ioRp5Map3drsRSnwfUePJjozWzTO6D1nVPMtr5teKuBHRimZJTXDObg_Nah_7XAoMklIahzCyCWkE3TFE4L2wgkTUHOamqvX1dQQ8XdikniVmZZ4SCG7SZZgFauwUuRgr0kXaVhfaLqk1IdMRWmrXljofZrgs3mhjsn6TpcBR9kn4zDhO8JbAxtl4pOG_nu0ELMsT0PsTw8Np-1HmVwDeURlc_-GUbEE-ID9kyjxxrA8mu-xi64sE4Ql-YSL9fKAavFTRjKn5S-a1ebrY3od_27_UBwj6RgrC4JVWKeowtK7Mnl3K6zoFssk9wH8bKL-0MIktJFbwuT0PmzVl5YA6t_kh4jOxOtIkiEvQcpP3rYCz_nmfy8XwrboRuPvSOznDFVVqsrObKIQmdm8hWP6oI5lrxwQnfxltf8bjax4HuXT1kSRq-tWBHL1cbMmFO6SPlHXwn7qDCfO4I_brUkXvyhFTKUWqt1iB4IZbGT8i2_doA1BBm_DBbkOp8E4ic80dpfcIOeZ-5t-jntEJJqKO1JlSGBcYtF7a1yG9NNNpTqeTQ7VbKqeHjrwmsmTyzEqYa3KBshU46-WkIOyyF8GZF6MB9cfr6xkX9lFmefjzbb7sEUzm370IFyv_8ZnT85QiLHENGG8gzzrzKeMFHaKJmUo5Xwkj9O_OesUooMe-y3dafLpZC68xEaevLyf9nTpkpmWKsMaKkgOyPPbZKVYF_4LuOzDobha7FlOvNb8_Jo8pnqHx7aMHGQcxqwLFeDZjLylrIy1w-Fhn6OWWh2dU03N1FqT19vnP6N9shjiv9HbmdzvNIoIkxXssCkwo9AGr9Gbczx14rJ7E1nNhW7rp1F15-PlTjVi6wDGRnMOYkf9aof8fsWWlzyEYtd5-OngI4KEN-GioM3R9INaI8alw4D-YCWZBCa5AgE9lE7_QnIry19FYvFXSWwTpTlnR_qS3cr2LGV2q_tZOmAJl0WWGfB__Gn4bdzh0gZ26DEPuHqYF2oO6qGP_F8wGgvSwHh_yQdW4LyaYqm6ODyZlBRYI-Zz1xehry6nZRwwMSSWEw7xxVnVTB_Ycax-XywgAm4O2gV98ky1H7agLIdyVF6rS7GIKD6xA0G9LncpOsaWkJIUKibnmPx74XHJjNJbF6ErILqBcymbjVr6AyotQEO4lL6hkNlCRwK__ZGE3QPyMYwODHmbWThvz8mQl2MI5o4UxX4KxwkficR_XIhHDu-3BNhqQYkm_0dBXpgeDyHqirx-6TryLP_og2vP-UpNiAzSAHsWRvWxMPPv6Bk5Xy6RfRXMjwspUa1HWjXqZoLGQVlwJGkA94tsUTG4UM39AasMKOEdm8H1IhcXKRargKRqzhkP6KWUXdkn59qT6QA2x2zfZqdhbd2lcMvXVo55_baVH5i9CDBrdA_FxZVC0TT1EQUE6OhpFaEZmDj1cRC9audH5_04rFZZthXoilMgXFlYWwc2xq7jFXjVX_1aNII0Ea1xBS3iZai78jcIborJ0RyrLDntAoMU_gExYXFwys4o7qvYsLnMYLtFwVml8vdexASMlLGmgn7jFjwo3rPFjqPukRbV8M0HmPkQcHOTRfQksVhIWGV47AyWzcNzXkIeanm_m8jUi6NKuESoDPjTmX-t9yJKFRpNucWIEj7QgFdJLh1EjV4WxE0SAnrGONHx6ATMv67-ixxmEZmgYMtpC8qvxE6slILObBk167abcGgUbGqVTLxS8jUPQR2tQ9YYBSMqtQQyS8LsDSNIJY7JFLC2u1KEVJXtoE8VVRsEueXzqsHELvYt-vCY927ldkvKUVOXUCIxNJ9i9lVOrOCe3A3gj4mFx-eEPiGVUUpvmkfpVm9mYLcKxP4jFVH6K5__gb0qvQarOkfgOeZ6ecJztzCc3qISAeAj75H23rD5CI8OfrSxp5A2DKnn-WzE4e09mDosSS2_ADwO1yxTCf96Ekc37TQ8C2beXVJl2ukw0iNYrcenYNt1Rcm-JIR-N-H-18EjNhJ3FNwHYks7I39trXf9WfZp6Z6Go7Dpsn86hAc-Vz_oSyQda2xA2QYeZvx_W18e87j7p5Fvsp9yx9go_4zOmLrmIa2mK9GCXDCT7yt_5iyc4yT8Bf0J4zDBdTtnXWJONm7sy69YSOBVcSAicXq64i1l8ZsyaCrSL9-oyZCZdnVaCJcOosUpJNAqSl0M7ES-Q6pJ5lcPYuwV0XW9SEoNOfsVDTpZjzCNfDoGAchTzyKPbdgBHHFZVAKRHl9p3pVJ1fBg5Un5X5AqWCgoBk2i30L0nhYOURl3wsTqt-iSggsDuea0OJSXrFYxhT3y4BEirbLJlMVHpBoitRrh9n2s-ZUJbSYRaqNN8MY09z4OWPJWGpuex_oFJz9pHDEbgLNZdX606mxXUDvSE3Eov6Q-BYhOhA4fGnuoo55gQmlo_1CG0-HlWLM2rnNNwGmWKVMliuhnw9gGxZRYuAd7bFMS9nkT7AEMmhg9XN7sjmMmfXcKkmLLzSyYgDFW1dq3RTMRYfhy1lAE6BtTV4LMkPhX8QeU7-Zo0vYCMLiO456OvJEet0do2Mn4L1duidACqPkQ2Axf0KDRz3OTGsWENvLc04BvObXzmG_Eh_ptL48rxLMgCZvYdvZJmSvjz4UkR4EMnPvqZOg2oLDbHc6q3liIylf87JM77wlrtTt53-uYhA1oDr1lcGRxtZ2tCNDOfKsVDqSD7K1PKs4Nni4t4nYKczafD_UJMuyu9N0nPqw3yBdncA4dDJOr-2ds-4TbX3e7DdvsgpPi1LG5L8VtoAKyXhkU2wZd1RBd88yY6BjkNGtfU0khyYU7m3sZH88sPQAkFgckF_D7y4wtCy10Y0EgKhRsjJoEaqqKV7ZdbA4FGMiw7Oji2J0uGHcSEWqkWfc3_VHqLGtpFb68SQisuvO9plNErAtRu3qzG8w4M1kaMomX2XzS3oLEynkthXpzm0QJ6yQ4MORjWKkvdV5e5Ztoo1krZ-wqlc7X3IkaFlUoMPS6KD-wQLNnCAwmAMTh_e1hQcvft-wcDJD3TKMyY3P8zBO1G_fi9dF6bbWyhQaT8lOpKPVgD_AJJSsyDYvOzv0CzQW5BP7rqSoOx5_eO9llfOfxA176AVlydoTaKTbxPVMwuSQjOpg9Nejcg7XrVDwlemp86e0UJBinLUc6TDmDBJPWQWcybcMR2lC64BO0layBZ90EsxD5ZEW4p2u_FxaRtNk5WOhlF0xRbLKi2XeYFGqYKIEOuj1INI6sv1nBNirYgFxgQdEDqKhGbcPrp8MKiHgviw_-oFeR8rfVZWSZcGdhJVCOvIOB0ELtthtfUBMAN-lnyte-VNGDjK3knySZoQX3iUnfZZK2zT1s0dUjBcRNatoOqihBkO1BMuo82Au8oJ_07j-tBTJbeSBP6W5vPxZ_uU4u_E-dZ0dxjAsrcEV8XJbZVBoCYLHf8Cl0JYvvy2XGQi0deFVDQkrjceKZqyPlsyQ5BXtfaW_yAOXg4_3K4QBvsvmOJRuOoxGoUNicgGNWMgcnQnLKn0Z0ebPjwCyUrYIFsGiSNIVan8rgmwduzcNrr7KcKhG_27aOFo7fZKQ7kOr0HXPC_E_HK977-zOCl6cNSKP6vpnXpm4aYII0HIMd-krHMdQdf2JkN2LFiBQFei5V4EZmtIbcFFC8JtIHPE1ecZzrv_9-4lpAo0C7I-Dp4eaO0YOM_MRtEXhZ4WCLlaFUH_-B_QKICOuHRqP-sk7PANs8OlNXTL495tByCxGJOQ0l5b1aiNHglVCIz2mfU5F8bsbwNB1q-ZdxTUjsPZujrFPvKWoZMPtvdpq4wZV-Aj9ufOOZORKCGezycPNHRJMq4T13oxzH5lL42VknY0xU2wOu98HDkxQY7EhVyA0KaQFPY1kANXgcWSe3WFQU_DGDlbn4UZ0_uDqI-u8uE4ppbOfikv4BMRYL4G2aphci62gF60iJJIlqVW8YrTkoHWgCbeHLYEZJptKE5dtSbmHAJawhGZ-XD-MVfKL_quJ-6bOBQwfsfhWG80WLc_feeUpIuG3iplt1cDpQ2IgDwa2YmQLsx-fiebhk4yAPq54OjslAM_lrBRrteZ2ol198YOrUevkKNxrkmTKielW5yiSVtaRsSg5LacVRy_jMkf8CJfbbo3aJeRFFSIhERfjTgjymQj_Rg009sRjz6p3bAGaxSjNCxc-EEpYN0EmJpQ_zLaFRasITc2bPvDRLMYItLuBiiaDnVCvWvhWHrKkAKeeyvEvkOmA1kQ-bBiNwQDdVWkxiJKwQ9tVq1juaeBtoDthxdFQnOv2mew8VxbtG6N7bMmM3p5sKtmuwwKplWR5J1C9jXg3CGX5jrdJPxw4W8E6KTeu88093v5b6w19hZImkbvJQGvqNmJa126Tvb4ioxh7rCUG0pcj6hY7TpQFdfaMAx1N-DjRaGhZTbxzJY71Qu77c3SH7Vku99n_IG87G_WHNnfeYhCdKFKADUW7a4N5z4l94f_EWna4ZRe4JhwqP-1n7--AeU1jB4yyynGa_X7LcfQQ1lHvGVp8Njw75he8p8bh09cqQc2-MyMx24l4Z9GIMIMg4Id-BMyyaaPMpluFF0i68vLNajQlpO1DFcZoQuZyYiSdiMRBxWfYIL2vOfUap8aPYTOgm43AoHwtW8O1-MBNh8PSVGHGx9A6CSlGkwZxaCyJxTGi0P_l9vPHaYkm83k6dmuV1FaY1IR75mPCXitGBEFCazwxvqvvTzT0w-8eYHRmqIdV6U0GYbNriYuULI9xdSgiYzU8K4SJ9eZeDI73z-mDDGIYXPWMuwRJwnypwBL504dX0S4FTLnMeWvwf-svXL23FPfGrZeXWOBll5aH-lS52zouIUQeT9kUEYQEtzoxHpf-_ZVSF_rAh-vY85OZMPIPlHPiSVLNWTyPKLYsrqm88M1UrUvuRDf466MybuTHkE3f1pQrfJjgGXePiLEaDj3U41gy-0Rnluqa_jXQRQrSuHX7lYYDVpd71aJPOMCPKGBkRI3EXHxWWwWb1dFI6m-fHO6i7KHXlR_hO7_etxZ6j0ZYm79WPkfoQ0trz9o4tiA7FvBMmYr3qIea0Ee06smiN3XIdFpJnXBGO0dpR4l6SS6effdxYDu-e_TXxiAleSaGvlneDS19lg664zKJuXCRxyRQdoN8_gl1lxwK7F9gUkUmabKbE5Ih7uJy7RelPD_gws-CFSrl8Ztcux8VQW1qYI2k9GvDWciN5L_szihU8T4vWhp0TeeelIq4-YClHqoKqvZ-31vCuWiZ8btq_iZOlHZpYIp6rMp45_z9561-jWntVKm_M2RUGH9QYoxoq1wQihvmMH2tpG-Nm6TF6muXHkxdz5IsLgR03bHggO0xc28hSbn1StEH0hXgsKNYP8YumUVHZaap0DWYO_PF7hRTUR_7RiqmKe-6flRDkM_0jbjR94NTY21J9QP-MnFTWODaGYIa12GdDE3Th__omvnoRmtmz3-XfMcE9BSGyQiNhjrozW71ruM5i1F56d7taes5kVI2GiqDWiwrrUbhfMoDdeZge83iSw4sbGM8dNN7T8ShczJ2gODOdj6abQCZUkw6LMtJGkE1dLjAOrILS_DIPTrTiOhOsctqRmMGzbLMwycLMt3ALORD4-Za1YUui-xAxUrJMxZSPDTUEohLoIiK5kdAwwH6K5RPnfq5bXOcV09QCw-Y5Bx9cKUuInpnCpehXu4rcYwo84lX_uYuj57e7yl_g-kE4ff5ym1uARvFHOOzYPhok8e3vweHd5zVhQHK9ebSm8AE0-yJq3wJub59L1H3Xt3rtfpdXVWLzF8NlekaM0cXq19snY7yiUgMosANr3sIovDAo17siHpLQ3bkEnad846UiCE06C0e7ia-h0Zj27bOOpZSThQET3BtjSH4CBRmkCnVtHCMoJ8FE4h3Tg9cR2rJIhkmk54JY3IBbfkJs2a_VRfNLT-5Xd9sp4QcyPZ1bsVUncjfFNHhNWo4Y12B-Dhn-Yqx-e6KFRap5_ivpaLb0akicnPFNUaRNFzcVcNbVQcciWnd4Z91u-ODvkAJDp6ggDoNKfGaMZgsYW9iEeVbuko2Emz_j_W7BxTNRvUfW-lViE0vs3G4yCHmHtg-eeUAHUnpHS1rjEyNYkPSe1zVdIe6kEZPWZIvggEqzwsvgvNscAhXoy6OgeSoMHPPH9zVuq_ir_Iy7bWBzVlkee3odIydlxoPNVu94N_ry0iws0TRJ78ZaqqXCl3ofisFtXGhKlALhveP-bO_beBWlZYbRadZ5ZIXM_t3kJVUkgdMKyoD78o7lSmLrbSKX36SEYWcL7kcEb-GUwl2E9SlUU6uJtOrZEzMigMjbRD34DxvmmqVUnkGx3OkS1F4zWAsikh17QAHByVGb-w98cqZK6J9FwRUq0qxsE6QFasP1YpGzAEFmmiLl8TJrboeRXz_8eIKQzBVQBdBjbbUt2hw_i-tP1dFF7023J5jFxsW5EpTqrgF2Y98qdJ1nUA9sVBUqlXBlVgKYXvjaTZEw4aMPOvQO_i3zOIxqu0S7BJwqm8oP9tE6d-awZ2wzlC48W35korGSOKWj2_ZC4H9JCpgRZ1eH_9vm1h9q8dOHW3QcxEyOi6cC9w-ZdLaU9Iq8sSB4uhnrUDHCQ606Nh7hHYL6IzPSW-bnTZ-eED-83_LLOrWy-EK4P_YHpXCDgKICcvAZ3FojYLX7mqdB5wlnGdeFl5J1pylp4Z_hbJmOCzGJgG-IolAXygYx9KihTuO7-bLdknceALVQFapz-gcU67cThmzAkIQlvak4JD8A1EAXwZg-7ohsstpbVO9At55BwzFNNwXn8gdLqclFdLOrvzBK_IWVNJiC4qywEYTM3t9coCo7jPR_WklACmfUPy5DiG4Uk2KVH268s1CFkbvlTpOLBBI7swkoJG3-UmcbJT0q4rd8NqtVZKBooCwWW2zijXSEBFLpx3TlXN5XIYuatOSBEoo89k4oTSIiXPxKuYW0BBE4ZuuPBgTU1qeHhinxj9r1FIFFe_YQ0fMVY1okAAiV7KoPGR-BPgB8PDqD0m0piGyKwh9RieE4uTz6VLm1uWjv2Dd9tRY2d4mAZj2yDQQ85vJk7ORFpDynfh_iSfCENxW7jGhb_00uwEqiy0MeJMYMHKzp73WHCQRylOOtLxpXSGrY-xpKgHVsGAZPHDgrGOsRdMkPSJ6Z8BgNe7rZuvFBhjGlll-Qbz7k3FPdpB2a4EEMsf9DWRDO0DyuZ4E81oxU_OPS2Fo8F3TmdL3IHGBlfrcWGqhU5sXJCqSPeCzuM8oT3-Nlw4etNrL38vepYpa7Vs9pXu1ksMMpeQ3TPjFW2nRpI5Wb7g6mYupe9dBG0IYKOAMOqJLNBOvmo3QyJAz7MffLUeP2uvwFU2LmEX5-Cmc0NU6c3WdI2KCWlK_IH95S4juW1xd292HyHeLrSY9PK6JT9ZSaUY8WS1k1hlguz6flcIS8nT_fk1IAz_UlqBxkH2e7vUq4vuR-3rjGjtCxgc1Rn5wUUgqxLb128MiDXtfXOv2-7BBMpe5596sLHm31UDgwx1gQpwXdO1KR6JKSUsCWH2dqnjIiEApOaArbeVKwPfU7x2Mh2VxS4DBI9MUwJcvdDixL3Fu0giIlsf5M9Vde8NdFoOxzdetciZzKxclTWXsMJWbVg_XzWAvzJlTMOyZuCbMgbcrxneRUnP8-sjHLNq6AbY5Ksq74Ms5XYFY_zflWjLrKxljZEI0Q4xGdfcspfbk_0QHfhlMiqgS_ESUG4gioqVTVp138eUmQcxIUYuRf8Nq8V0ztRtToO6J5NJPayzpzMx1MfwDgP_s43WREwPmcHLSKjcTx1JL8V7LMRTmbZKAAI5DcwfB5h7gsF97NpmM0YbETzPkpvqlC7vp8-PWqq9cvLYSkw2_vNsVsxXCU4c-B3P9cnv9_Ozo1ojdE-eaT0YtswSeqYsvp8b_e5-eCs3qCxZu6CeXDNAijpvBe9Zqdxo_pd1vLMRH7K8qdSQj0JyzUVTTVMzPm0Kar-9c0-9tpB7Jvsrf0Wk08gUg9gERVO3eud8zjhpowMCGR5T3Fb1pg20m1PI1-tvltK0HFIFAvwHmwA3lABYA1L6bhpxa-BZQUEnXylTSX7UX0Zaes3jjS0yz9z6K_viK_yPvCf1-e-zQlMxCf7VSfz8tfqXGIGinwJ5eC9sHq7RtApPbSDp-7jKfCYXrXILsUzJd11qTs5t4-wYN5m4Fk1sd8w68XINa0J8XwwLy95nue0gD3RWCBfqYJglv7leZ4_R0POLyo3XkbFAyYbrtHjt9b0kmOiDW3Y5ixZD3CxeRVsr_Zv9XfVW_Uk0JE-qyBox_grDnLbbvOQ3bgROoFvADcj-X0A7qtZHg8X6hXF4Sx3hRIp8Gsnh5iZBookxMuSih7VPcy28x6Pn3HQxozam9llk_E9pryLHYhVPso5GtuhnrB0T5PBK7Rd9KRavjLifXmCc8p1WQmWU0IhSh4AWVttt3sMJWAqfHFdHRvW6ahAeIRkI9fSsUkEoAlfs0l7Yhi56bQ6pa6v4_HFtbQjOXvBQnmLAfVYV4j09dbCmFnPN5S90qprvyCZ5zRjtd4CRNH8dBtzMJj_War0ImB0kWQQMoGgmoMIEtiWFXtLVbFHOySrad4gbZRZ-wK030SxUCahPbdCR-RB15N4VasK3o-arXYWmYmimJbntLQnFLQwummj7_usmNUDT-Pq6Yx2E6nsXJfWcbuxHOHvbjyBe8xEjmDLVzpiRqczSQLoG-1AZH-24AluT4YN2-YlfLrXBBD3B9t6ky1_5eUfPPLs3tfIc0seKZhCHAilWKMFKJ_Sw7zD6-bhrZvkwfhlUZ5TdoQ8XS16WLUI8ln3O_P01hYW30E2zinLasbzPZzI3IHKLcVWxiBnd53x6TCCCBvu87XmY4NZIqG6gFq4tNxKN6lN0s6d6mzexcKSUREwUcebsZ0PeqMaOtizTWkz9kXzNR38IUuSFKL-T_sIh_PFIKfnlbhKn97V4me_YgcVgrjmr9HTIwkkD4JVJuXqSCnYI4A5DmFoepO2SQtvn0ouBtEz-zNiS-sOdXOQORUkox89snLr9PvdQPQ-ySk9qbRjcXzJT5BhvAFwro6cizvToSZmi6ef0c7ouf1TjocbAJzqQQ1vART_OTlka-QadqnI6WaBRKcdqLtu0g7_p5rexKEFvnydatOrdcBwPnS_oI_TDnvfO6gtJW93IHKvBVjSZ3ZUHI3RZYfe-HOF42jJw-95Za9AT6BERH7S4-XQmApkSu6CbzvwdPnHrbafklk4NXIrSrLsIjXhf4oOt7JekbyZ0f3Gk-91VNQoVblhyqfNiQeS1rHnBG4-t0QJfu3urU4ac6e0B1uER9LAiwRfVurViIm8VePt9n7Wcqk_hc2x1_rPTT57UuGZ7xCwU0TuQerrWY8N2hjj6roPbEYIj8o0-zVjqEITVK2di-PpjIY62FU-AHyF26kyOeG03xhXlSdajn5d6ndqCgcF73LlZkyboeGM16g5ADV1wyvvUM_DvrBJEDgq9ij7672lL08GN15vutx0jFu7PzysR2Kds_x0yCs6UnbPScAi35donXjkw55E0RDOWebHsOP9u7c_7LX_zL51qSrDgPMR8EFPPPkgq4wComRdPiGRunLTjlF6FN0EubZ1Hg0dIQiuNHMzQG7qn6clHB6EZSiG5K9oCb_Zma_1BeZ7bBCItSeZOOLVhYsNMJUpPPWLhkFlF2A2HHDkYCe7pooXq6ETezCTSViZN4HBifuzy5JA7jnBlHQ5ZAkeaknebyMzh2E8buK_TZMbBpUD0X0-IlUHdgDD1ztGr_7wzIJhUlg7_ckXyWnN_seLGKmF60_Inj3ibv7ELK3N6aDpS5JgLI3m6E_2J5Tr3vB-fv4NAj_nQMo3Xj5uBjqCs9bOnrDKUK7NZ2N_BpR7xFgPeV6OUowEw1fzfaJYfmep-uzmWHHe39Cx8hqAGClfmFoj4qeJOGWEg28JrDMl_fsffMV4yO_lQlfLioNnkBDe3l89qyCs8R3eW7exy4NUsT19-2tbrXEUgXpI43o_VyPUDjXU3HBQsuaWZ5sq-2mOKTjr4NpRmnadNwLeeALM1svq0h7Pgg3V4hXk0WiINQkFxUg6HncLVnRa06r5WoGyViLEKn7GGNVpzRkecvqlOZDA_Q1SsEIQ7z0aPrMt9V3qHN_XY55U56vRrLtVgS9La80QVOPTNHn6dpLWa7kWw14bjcoiLQnvjyNF2QE-20RxZSdFgNN5FSIXNwzNL1ngBxB8NnzoVhqH8hIR-nxGJP62r8LTzVea8ywFZ24G8ck9ltBU1nMo_-juyLVRSNrHpJXEeMFJ7M2YjFlu8lAT49jZcRWj9MrXXARkqXuwl3HoAh-eARjf9bMuTSibxDCGnQz-qtcEF2YQy3OyGvLz5W8RTwCzAA6U6VC0ywP1_Cw5uNmPk_D6CAXw5ezHfFFtTDhzNqZnudDFDypvtnbDphszNIHAksIC2SYl_RPlpWpdItnTyfcGZbsmIPoH83CFFjSiqXVuiZ4wBH5eFWi9v61u6hpO6V53lgJ0TS_MM3oCyzoEun_YPhREacrWEJblEmYM5TrHXYm-YPZhZyqEFNueJPpWbmXvwTtQpMh_wSbi0X0J1drsLtPbA0f9we_wlY9NC3GjP_8JlBZSvkG1htL7VXFWIn-sSH2GENoqR6q70vyAkNv-7ZvSqaNicUbOoGdWxc4u93UaWUYEUdunwXsooi7OjSFjWFHl4XIUkC0lRjBFNZsheg1jreXd-8hpf15zilPaQRvDX6QcYnzTU464VcdQN8ElTVWXpncD5iOMGf_sIcnIEU_8zijGjnOk4Yw-r9jxWDlh8zHVxaFTYReexm_QjxnqmFqSEQqzNQMJy44bPX3ssR_0r6nmojoaiZbVVFmTTxrHrmNyIOJP3VbSOlOOpBt3AITdUQAINnSDrr-0xZDdVXhp2kxDPDHwu8UtmDoe0gkH5YViPheNH7CFxJABXI0nnHWyUkt07uytrkKLK74r02P9w74qVspi2jZnG8PwsCsm2ToLUZn0jkz2wx4nHUiKhvPPzNXAFAVGOfFAVayvt1GFshelk1UsWa_OmRvwvlVlvrnv6R7cQDgOP3RwwQDL28myHT8kRMVG9rnBu_acQD1pRFqrG04uXFtY7pG1WvNesDkPVSXc-0BXUOgBEySeHJNHCwzu1GiMAAgqGWYzZFy02Z8rB--0yrESrgj3HrCsrVTGy9CxAGRDIDNBTx6s5nIHdOQ4qJVIYkjcyu5tcM0MkHeb-m0LKIicHXE3-7EF1SjIyMrzK0Al3nOGXd_cXdBPxJB3KEvF1kUcCVjpQpm7llizd2kRfi6Y6I4uDbDfMocKLKpbAM2pKG6Y1jPCE9XiT6VnwM5aexC5tk9_cvx-uS-Fqa6aVwtP5IwrkIImWiAmeTY3d8cErnX2VA7t6r9S_6Xghv2yj5mVZgjcypJdJ45_kk9twv_HSBVsBqQ9QIT8wmhkF0xfobPFGJr4CmwjF6UdS9N8FYKFmpu2kRdTBizQ4ftlWmsLkXVqfMFJXVxHl75cfxAt6t7uhYaxKoWvk3v_dSAXaBH9MUxtSYPkd1bfhbPIlOXuJ3-ziPbWvQyZknqq5-scL0TBnYfIv_vf5y6qgeMXXwrHQ7LQfW4wLutYuSumsBQFR1gUDZV6xW6ylg-D47RSJnubqeArCAY7kp1Y5egFiFb91ukkv6JvF8GL75sl-SpFE9dqCYxTKZh3gjlSefiRwjjmFH6z820aLvYKSJWqPsNNnydQW8XrVWI5uw0tLC5kKh27oeR7rxfAAvIXXuoDqu3vnkPXBbXNVGXX8nAtmeSino-z-eRnwHjgF8BkOHb_M0_at9AP5DiG8VeZ0WvDtMp_ppD_v5EgL0MP0qcEZZoHLHGxdCy8A2R9_iD_CYzdqeKfF-jBsDxRltvmz53KsEWsmaxqtMLG1_hZy3NUj9EX36mGvZv40N3j8P0bFUvaqUjLjKabCjRqIvFcXlvhUBcn3rSephrzVpokf_emD8r1HJnnnXmt7ULxdeLuUd-EIm4Bv7S-YIr2VWySk0iTBGOJGXvUfByZVUOgV-CkfnN6GL5_5kPdBHoQHMZikfHtjnrnOx61xoEjpnasEw1HovuavcTw2orlcSAUHuggGEVy0rilA6ln3KUiOknyT16AT-vkGUgIST1DkQH6ovviRwSNnnTusnB8tQhCq3DS29H4ziwA8Q4zKso0QATQg7yjbpZiT_L70wYJtSJ_iqMXGhS7gszMXScDiVXs7bM3gGfXwW5aF8OhgaEY8Gg2qyd86rZEmBUxR01-p29FouPtk5SszsHHBEE0CbB8eR7WjnnP4v__i4FONDPk4lzBst4h8Gin5NYiaL4IHoQzsYdKqXr8CetJ6H5VOj6hxPKHw3iDsEVYdqgmrV8vX0gZV_vEqC5DHuoDz92x1DjnzdeZEPvro3Csax7T-x18LEGrfJQ1tzklhf8BuCSapwXIWsv2Ce5U0UjYcbN4b5TXZyK_2Y5vB7a_Fg183Rwp-tXoHptSODJp9iQI-ajmmNcYJxHhCtDyUr9pUIY8XzpjG9u8En6Pbbo3-PbdPuRZGTjS34Gl8YjXScBv5csOj8qZI6vfEU7V_RIh1jrX4Zbw2WkjAKn4cwxKI9QJAc_8iFJvEVXSNZw50BpoPtpRMDcCOJ8tfeyrzXWrRKCZ0MyUxQYH-taXD9NySImguuHirKeJKABskuQnAZv7n84A2VEQyAqIyZw-THOOt8KzLTwku8UHicREAF_e6m3QPhxkHEnUoV1B_dSq9Mnd7DvfrmNZs0fzxFy3PE1V2AAO6ipDgYzVkNaMO0j8pD9aPCSL_nz_UV5g2KO8sZg3_C3ONBkaV_Vxlp8AGJIvMYp9AyAsl2AumYpVOVp3pGDboshEso90p5_3Cal0qJsd7hZMXy5BvSXAondOl4PvfXrHgSJkIw4LTW2eO_Nv1ouwuIKmQMmapaEYOIQTFL_yHjiLaT30G0hNZ0aWe1jnHgOVmknTQjkf8hqmp9oe9DZ8hzCrIwsehZxGZO2PNgruGJM1S1fY5jBWzy7tvKu_l3bsUqLnqT_BYxwmwR7yofXbrAMOKx11dX0sB26mzC2XWS_6XoUozEDazLKKhJS-wiCXCgZVSqS4VFb12Q_UW1ua2jKdJUMyqFzMWG3Xq2L547iUl6_I6-ES_xL-mQ2Dpt3P-n9zMzeVnBDsfGRNAP9ZobXHIHijgw7Gn5LICFHsqJGg3diPAg5BmUBZonq3E4S1UBoaD3QYoe8h4yPWUikjnrTU6I7T1do_pZlMq-L_y1Qd3O_CxuRCXl6japT-RYbONU6gOSubDizN8OeREd7BzfOifa03SZuflhm2vwKIGVZLLrgZ07TPIIlxc7jG1kq4kVzofKpoyDIPXVojQd-T1m8yWMe2uvPplzI5uTgOAVWwD4MVn-yE_TZnDDcqNz2afzMDD0OKRGgwvXmkgXzadRDvPSKY5C85KB3WMa-rTEOtGfwg5QI9_AFam8XOeFdPeLBnYdQIf3n7oR-P0Ho_7mroqfgwqY_38GJTXjSZNQzfrnTTOxSMnOBFm0IKvDhmLlAmjRSq-cCRZEzr8S5nAKPyCBSI9K5yyAK_S7v5_0sJouF91UtrizARB79ipZ27EAnUcaXEur31zWCgSdRG3fV_nJuUOtTrSv3SAp-ZZ5oyr2Gc-QegxKGuPXCZrckUaKFFCg0_GBIawbWlM4quxArSs5UfY9ora-raF7R1fSsZHnd6xdlK-3RS4DQd3zy2mBmlU9oUr1ej4oURLK4T4pF2o5qWMewpAq8LgqXxu4PAla1hgLVSYc41DjDtK_xYayd6ZPDo6jXqF-pfGlbzDTOEfQ9IEJttpkgzaEsG4b8_1-fzg3a_aAHHz28pkfCImK_y7uvrbJSCNMv4Pe0Q_i16QtlKoWYGlea3eHTtXpQpbiW_HvRMfBTbqKIbkwFFdO_vKspb4EnE6ULuzN_iOfQrnH34wbb2pNKNwtsFiOF8QgxFwB7V4mPK6VrQvmfGbxxmGGhb69O-DMli4cb36r7iBROre-ZntjJoNnMMQW4ihmhHhXYc1p8m-_Kr0i8HCw4ZscXSX0MjrlnZd-Zww-lvA3nvd3qBXk_JLzUeWxr1ODksMI7U4EenzI3P-TTrZ6XP1-oH5DPCs7N9j5m9EQdy8FlJByy9usv5XpEQQHRngEtE_hRz6NENHmfu5vz0kBZmM9-KNVFtP-MBaZckv8Z2V1LFjRTMlS7d-4BKJPta-IYaJwg6TEWE6PPd_VvWwImX3E1ILU_j7Qda2uMHivHbxVKJmHUj6715fYBSGww1VBXG5cXHGJoYrBTnztompDZNftDaQVxzHt6S531oxzLg5iHzypjZGPmYoD3Hv4uqWznZPL6B8hKQGMPjFe_kt57dHRHbfUpe4jBXSmrAaE_cVykGB5jMhGWpdFfDE-EP1sZPR-uW2hRfDuRMw5Is74ymfDRRiZkEN-0DCSMlYNh0mCC7EEhSyCC1P0hETsELhigcnmVNB0fjHiPHxOgdilTnBl007e0A1AVOVvPrIfzecKJwhdd8azrPNqA9E3t8bF96RS32uVMRyNCb9F5uSAx_sVHKYHpQllew0YaoSizOmUhNLW9Wtps6TPrpOUGdylAHiy0X6NSnhoGuI6A6l5az5pF0sapK7iaJavq3aSrzsaiKwttWTSyMro60ysz3tRZcdkfbs9xFapSu-CnAVh1ijVpBnsSpGipxlH2QoMd2_UKmDKRjIiZJR9Jp9w4TCO1-4aO8TagSIgll3uP5A13fFoLcsVhUnNJ46GYlfog2Z1vMiLJlOgTG85NZiyJzR3wjalySu8mj4Kjpmr7Z5SAO9dFcGqMjNrgoqtG4n86dUojlXmlhGDLcE-8WAHt-lwcALZe4jbouqvXFrARekv_aKZetEEnS6uDlobS2yxOI__kkhCIQKmyUFPcr6iStdcUChPi2I6173v7tYDn7BX7BotqdVIu0_kRPSHyvqsknp2R2Lw3LSO77sMdW6UtTv39dU_crEDl1B2xBEkD4PX9dsJO87L631WxKFdw6worgGK3zyssALRgE4sI4dGeMVo6_Ouj5k8eiq8lzixEVdZs4RhsfL1SahEz50zuWk522srRyWBUAnn9K_1u-2xQMvRX-AirAToKODGseiPFiyGRyxqSBZ6ctpMg1O4f7ly_Me8LHqrfIO9lXQf8R7esX6Z7jmsOXb4j7boO7aPBfX8MfdVqafhonzo6pH7xXqBAFaPOSjnmcZnA_hkoao__tJYLKKIgi-NCDI5jNLWTau_bPFPHepgVAs4PsK2Sj6bH8mT5byJ4yFKlzZZo3nquUcUSWLvuVfQI5wcvXiKAktCGXXHmy1zae9lLPbASfIo9nrrdDZMizkDSOB4bqX-TEusFGIS9u3N1nhpLAksE2I-EMbpWTEyJgS-IxYugfHfnDqliJ5uYn78qc5LW_2ZbhMAC59wSrckjuNfRmyB8Y6QyUQlXVjfF-09H8OCe3nJLvuOWW5meygUmz-taKOrtgEnEN0OaOT4457G54SmFqFYwKkDCNX4lOaGbxFX6tkfiivTJnKxw085vCW0d0jibIWLtTGcmp7OtE8v06l5gRqO2IOCKEJnIj1Mgrrwif7P9qWhKmZFnhtxFTdhu8-Z2Gb0GuT4CXzvM5n-y_PhU09GkhqpzEPMizoOJ8OBiskTA_AOUvD3YnXf9JWWLyRaAl0QUdtkGfO5-6hunYp2ZRyYfEz2OMCjk0NGcJRsxDUWe3HKSnu5DKSWA1Y_L39714sTAHrJsUmdLkhtTNXPBr5qEo6R6251zHG0W4Rd0TTJ5Bki27VWjmwU1joYTB-17jethuqUm0Js5yBG8UE4vwisDooifuTTZez19aqi8pBpsmlqNUXm1TTxtvvWVLvBldX-f4J3jBVEZRqwbtIiaSIwh2e6zaCi-Fay8_0x3vEwgnmVabbIoMvNPc67uW0VRy8eNVwcybLz-ndsDCiSOy5NyMIbmkYqJI2gZwrqmlR5WvIs2ZofqF6pQ1PmeaJKGoBYcrSddfKZe015-c3ku9esmve5qFdManLBlsqP89lcNuRwpUI49ZrEKqEAsZmSZ1tupaE0eIkmiq91CVju8RRm1TcLH8--y8VSMR21ProXxzpAPZP2xN8nubbYPeap-MAFdVdsQKH8ojC5HFG3m4qLwBZSfGT9ey9ElRK219JUC1s69YKyYOgnIIlqkNeyAZodRdWFrVtooiPE2xROJW-hyXtDpxQVNQXLhrDbiImepKSZfw6pcFCrzRfq_dl6v5mPpDCZ5q4gZ11yRK0WVa1mQgw5nCtLJHq0Vdz7aIAJVlAc_kFyh2yJS9UN-xMYlnT0LoIigpnDOHhmitMMzhDdxxU5Dgoxq9jNwEnAOAMA3k9VrbRtbcsr-Zb7HGtCt_vjdkfIU8RBMpEYvnuKaUalvYcU15iSyQ_3oBRcAqNfjLT6cAlBmXI4L334bXxiz76flutTsX6pYzowTxcZWuQlub3_QkLar_VHM7D3GFg0L2XGtWI7-OKGnTh9tknvtmb5C6ziq-jv1U0iCBiY_q67ejAS-RFia8FjvwPGYcBdxv-0DPPfWvVw9sFDWPTcmaWO1jNje8dRxWpXtduL1lzyjZadZkUPceAZd4J4SPdW2GvxsoP8tvwFtg7b7RlfzcSrSnmLZ397g7RzCnQTAurH5am-wCuTROoR8Hb3OHoNc7W6eRnpJYrpxOUc0bsPofUgN67Np3tH3Kgm_DzHxXTXU7gnvDE5ZamP7BwrhHcWvOmbBEmY_rjLVrEdJx6KdxTitAXmMOmyR7kNBH-lIJIipH86h9mJ0FeM86-duhCJ03mHncCNh1xaC5l1n1d-ld_nQGAYjBTGJAwr-bXQjiQRetx3-NdPqO-jAEwc2JriYhgU1OQRRyJA_7y_XMR-C8JndcDjowvYQuQ_2QIrmDkMQPlhHmmUxAW9dU_DLIFV-YgTk12tgm0uOBxX9kftHZXisdlTAf-33kwVWVD3HSh304tlDy-DMKXy_NhpSIFWUA0kHGj17zPQlNQt7WxmoEReF_WEIMAMSsJVdXZ3K6wWfAhoWk59sYRhKiibwwdtcpQWACf8zFDeZygFGsn34NtkhBSxRtFPR4i94dDgsF4F4OsmO4m7Ql1hbS_dsUZ5htWp5vzx86h8urg7K7xkoOR2dJDUw_zNC0yrt180ZLqh0unkQgXfMemv53bl6vAjOWsK10IQhgAJmcy1CtSnasBuiwwlXJ1YKfLcEJagDRXAYI9bcrfLJ0O6FTdwHFIWxHbA3Ek6FMLZiKa4nvL70J9yOSDkgjbLGpg2bxOjJKkq49NDluMkOYJ4bGtdmJssqaQNPjpZKCa_vSxCDz9Ioq6rJhX9DTbVTdBwD6p4YmBkX7MuszapFQG9YDcj_ugF27HZPsCb3xyXgGza712Rri-JQSuJYv97Rymdip3NCqQ_bLYuexQXbXzo0_84pQGlvVLhwh24lvYnGclPxaCrR4Pv_428u-y-mqDAFW-Ul2idHlveP7hLf519bwWjrwaxH8rsx8wadgVPJ_I0VhB823YPVVgFYAjMBFeNWarNAgwkTjSRK5IAcHBg3KAe_-el2f3k8HgUPosHtiJWNdEZ2ytUuU95T8S34cDNTzMUwrYZWS70Pk-QFcdqwka1JTe3gmam5bLtY_sfWw4lD2tKNoyaSKW0olzA2BKwpbqgHJihHbsTCk80s3Pnoz7UZfmk8JtBS8Pwnptk4Bb0c8X9VYxoCKbApnvtM77knELte62J1VeXw7bV889OzFjNJqVWs7yG3ux2MG89pn_0G2DLNRW4JZs4aLRJRrCDNg6hCqbDtk3oEVgO8zPar8-xYENqP3cbCcbIqq4MaaKpfCebFhP7al85LEXYUNC25a-g_IqTsQIgYobjjiQnspWVd8PF0KzKcvLAQiTYmGcEfX9yI4Hla5DQFQ8rsOr7A1-1BxeOQ0bnv-NfMkrfoD8QUuEb_BPJ0H5SviMH3b-y--dwUm4EkRkALUq1VPjBoIK6NmlopXgCNz8HQXgOGMxpBMWc6N_uMJl_dYs6kF8vmtMk-GjWiIG3NEwm0rJlf4C3Xp_tmm1b7U_bWN4HCEUnLj5HYDOqMpBN9c7ufa1hrk1nB7hyX3ed4uAa0OsdBG-cDD0BsQX8cE2Pz_qmx1p3e_JCkMZICa1fAxdBQ-2riq20mROaOM216Y2xKQGVmrQIWITLR_iWSaWKvFRRBNctO2bdeP_MyB5bkZ8ICxyg21bWsSAlgJRzB7LN_xBa2fceFXzRfpCNr1_n4sbY5WJ6CZaXWM9FBoazCg_L1vkgCCImoRLvPXwEJdKmOQHY0i-skTsRFC5Az3JvN5otztG-miAss_07TCR0gilmvplVd7LrUMTOLw_1bIxcVlBdJDO6_Wo0TDYFj6FvFYFTlPJJgac0PUv4CaO5rhxim-mL2glxuO8TOWT1QGoaZpR-4b1M2LCkeNNJW4-iuJQlJgs4kOhu6VLODa_xnH132Lyai_eek0G2FqUXOk43sPU_UyxNzzuZLcRvNpis1ny1-ZQW7U7hp0yb5vjZf43Yg8rB6hAW5rJcJSBquUn5kQNI3WhfqHY1QQNPMOIeDA0tawKrCoKYyZEfaw2Qm_6ivE3d6lGgyJ9W9frC9FvQVfBZlDGMNACAusE9Ks4TYYEV-o-ZwWidmAzHS_aGXMRNbPsb1LBFKrACPxrSB-gTBNGEi6QyC7c_elELN3fpPZVjIupeDP6Ylsi4mNvP8F_8JmVeZgAZNrlCBB-fwJOZEgsZg26myV8pSGCsL-bwfmt-n_tby245NQdTwSzMFNUZnrRGh_ciKjkz2zVoMFJ0aySx-H1qgZV900Br-tpyPftPMpfSts3R8itPOBVw4yG-2LJQXxgiIHB0Qrnlc-NULa1CJIaMxSXEqohl0XrtawQVG1KoSZGl1mfaL-9SwV1xo4SgBPIIqnrDeA7_o9AsehUBIcn5_hQztrIfqdjxFiJBZltOfgcIbtF9Qs03k-dv1lSqsfJN4BDYma9Bh0FbkKI1nlsIBCopdXiWkPxt7kg-UOf8x-AYvMNzP7NjSswMatI5DL-Sb7DwFx7-RjGahh1Ef-wnNt5KOZeWphZeX2eC_hRKnAcLOu40p80fczTcwUer-YYAD4dUqMKVRF2g-4ZF-nmeGkTROBGaeT30ZTMI0PY87Gw5j3ee7PqqYjnVY_Vtz23kMLJXSG4Hwpx9I5h-_chukzebc-WUpezTuFaHtSez3a-uHU0BQLaNytIjwFULNWIFSCNGPT0Mohd3f7WtKpv5Vx95ejwFBscxkw0v_cOCzqmYfeVHIUTMt3W1_Ueh7Bk1EYL_5IhaOTk0W8KGU1G47sqdRhHdshQjOIFNXtJGB9BpN7TqVcYuXv_E-0YKsWrLImOT3FEYWeZ3ie7_C9KEeFXwzTvH73ff3ffCmEAQ9U2_rkQHV5UQq15hazbygKzAbRl8Lbsx7rQ4VZiLePtLAamGP_whEd2EZPcEyWK1zPq168WZ1l7v8jA4bo2KRLLhyggaBnsTX4tklk4FB4_zcCyiKIPgQbyfbuz-91YF0YCizQsIaTt-4QMvyEZQl-yHRC3pWOS9Gu4xTmekoO5XvsGW3hsEtmrcP3miBxw_LK0_cubpcPfgxsnFqU8ZeDdEAHyaO8fYzk_tArrIr8Lhos62M7cSYEqBBZypbMNGAk5fPgzY33h8d-3WxyMU8YHLgpBdYcSnUi0phIAZwKdDdrK40W2aMG7cma01otBX10mSzKlX1OclA1rE0HupsTR_LkWpJpS2qxO6c9WCXZkTDwftOuV1xFMsXOdCt5Ry6lgK0bgrQbAwOA6KycySMX467yDB1pl0Rx8YfZ3lHwDpKrBd4NLNxyZJYRRoe4idHLGJcyxO_DPkMaeXD1Kn_3NUjcUI04fUoVqvwP9Q5ylslEQzxlfv7R68ZqBlEVFjf9dUMSRaQZcdFrRBNccQwO9u6Vxhl_AutR1A3qdRTCNc3cUpbXO_rvsf-oRKyHq_aRCxweSl1KwLOcDAdpmGGtmxF0LEOK29WpHbwdqGcrw-YpavAAB2gPBAjTmZLsDAdML4reWXmat7cxcW8RFiFLh3xs-3QpHX3OJ5xucRxU39VgcMg2xixj6PAt02ZQkcx5GlO3zyNkCTPYHW9apz881OdjQPkKgmFs9d6JDBxzaw-chuYGWwj5ME04dUWZjoVB2GidWNNo5YnIyahHHYlxKsfYy5EO43t36TBux2d7LeS17DB3htcm3sHZ3M9x-O5zajs2Wz-jIMG_ETqgmlUgk2jvPkDkzMoGMJLo2IGGHkOdn3uMRsuermaZBNcCoRjDtWS1eoMNZjWp3Uc72YpetwnQsGjAKLNGja5UP9Re3VxH3S8dd3HlPbSdvETujgKJ0iS75aeRuSa59m8KAxpQyzH9Rmt-_uaVJGYoxD7qSyDsT5q05F1ISgQHRIPLDp6-nsNTPNXS4aqbeoz8FmkmsJwYdjDreX8dE3TmWH_kN-csRZQOJTLxmGxEDKwC_q23yspRseowOrc8lSH1neksC8_uFt85zhvEVKwY9e6RDNycBV7JNm54zNPXm1U38HAf_8Q9JXUn8j5JONERYjmRDgKBWehqabKVzYcdAkH6C44zfwoujUHdKZs_gRXurKXovu8_nFyib1cNfmYkqwb9zW9lfDaxBmria9lEdhU62VOp2gN-XSd6k99AWxBJbh2PR7tKQ56O9nyhZVqjrL2zv3l2u9fPe3Ug_VkFjbIfZINnkndBJWyojuVW3KUjv4qhnnC4LySthd7OeoB3KKeoVQi0OuATfPSK5l9p8jCBSOO8vMhVctUVTPv6y8r02rN3XouHI8X0q9n0m0gcqjaKYgmK5Q6s8YMK7jUQjEr1E_6hryZVMNhXDLR051tiIpS9ZGLqq_-jrM7dsMzxsdFo7OjSsXyvUgClsWwWjUXLLI_xynLSh7_OgiexZqGafDmXwmmZJ--4-Uud8MZfgE2BSlAO_2UvGhyp912ZPvAgGPRI13skeaqcdkbndI-2qc0mvLzivSZ80EFTPUg5yw9QDfAuFw5ifK4Xn98WBvRkD9bwJ68AT2WovdP6KPc5UFKrmtkKxG_uOVjl_7w8lGckSHo1J3iG_YRU68W7Ef4YJv-Rb3Q001vOHUivB1OEfQBp3j_-aQuU_lVUqsZCti7CvqTmJDBeqNQDl_2wKkBWExgSTc9Kx7RB1AOYjYj3N0GTQZA0KfjvxcjNbWW-KLaGJW4WsJ3r8Nd6IKVSFsFCqjjfcqH06sPnhFI0UH_wIVQN4tvLlj8JFAqbuDYyDTbRdXo2Z3VdeGRZ4UzSmpJBUzMM5-siQFz3NAdq73fCCsQ2y6_i1mZNe5dujx0RbxYCJzCKxmwQOjGet_-rOHIjyoogsDnnkFqhyzPdd4KAgsu0TZMNUyaSJ6ezKOLZGjmhMKrM071BPYhuq9ApJ0VkiwTszP-hWV-ugsTsk5bMy81qTP6Sneci-orV_OEHK6fJMxo3p2az2PwornePvwq_r-S0e6YJdO7YIb_--X08nvjc_pwKv4EnA3e02vNppicxogRQYC7cUKDmBj3LLfB1fYe9bOqJIqAWVjbNHvHka7xyxpsy5Plb6GOjEvJ3Fh8_MIGF-a-GQegwvifptEQZ0ZGtrAWyWKhz7c_0eqZFdOaaTBd8VDDxeyPqc7Lt9XFkpRg9aroDAQWgsmuQMPU1qvoAAKCsjfVtGI6aGMfepGMLMOFpm4NwWsr6o-9SAxkwzVxq_xtH6Gj-lw2rGUhdI3ZR_HL6TYCq9GcBgbMNVPkFn_56c4Wtc_BzyGKPWGvoKuzBsB1gk7_yQaCUYLCx2bpHp5Dpkm2k6v18zO-dSKLcypc8Bf6Nc2iwtmT-SZDO65NEi5YMJpaau6CzipgaE8KooEqhxtaC_YTg6nVwULJOg0jSXIVnh6wls4eMUR1MVYRsY1oo-5F9IE08rH0v-8XOvI6UgPTBZIp6aqXq0TBkCSk6we7v5iVk1JHSfztOpG8UPE3yYtpNlG-tdtvuvGEi40J8kIShwXEDkvRvE-4008u109HkWvVEeO7nGahKRs8Ds79ZfmVQXZW4PzaP4QqW8MoXJe7kHlLKgMVs9jkj79gp3oQMCQ9FrWC7q5ZhfEP5Aoq9Ji5svKOKnndoNBWwFV0yEYVzltXMt16i8_1LD3bGIkaJPMjlJJsXQJT17__6pQuWNXHZ-so52rPBDnjoDqSWzRBW_cCBpTq4BLKWisgJkQWVGlHI-RnQQpPNUEpM3KT11xG30ZN6dExX0RXzXl_0iwBHcXSmQAEPtZLDDjHVn7FbpUmpgzCHb7UiyDpFI69rsj5oO12GZ3oQuzPtnuYzDT3grmDWxopGwZJTwt8NAnr-jULuGtU0bAXEALhHmFIEL7oHpMaS_0Hub1-BlQpIngSzTOECVJQN0NC-0dcZLO8AnzxTa46jXthhCmsyLZeKrBLoG02qVrQUEeVqCY418pXf7xVi_dSigidV3ILp0_4nYKOAT3Mx1C4jdX2vBYWQkpEJr4HmV6EitMNRimWq6-YTWRI_4HLj280kePIGHmHCvcuWNJvwbo_3nwmxCYrNMndbsMzO9ASL-czWlbeoVk6KdbW1hcgG4yemJAN_GwtKNA5ETNEurCbngQHpzSO8vKMUrXkI5KUA8p5YYjz-DtBpNfRFS6kHjVQcR8_c96ELe-K9pJotSrHN43jN6Nj_J087QOCYJpw7L-8aFyK9NSllygxLMic1mXEpayQU_ts3PzKkpW9wCzuRhV16G6ZMgKlLZoX3q3aaNQN8Y9OBK5Ld3Lkhub6YoA0NKPQF4sZQj95WJ1e-1qR0aWlHT-cBVxgjRvwxmwHYHWLwkzzwp2MFdZz_Oqz990Qr1_mKc3Gzr0pqgEbDqrY4n2hoNVjIz6sX99-v9yUXIw4iaGAo_wKCRrHsFDD0cmtt5xCabJofhXnghwlm3YCSPn8XdhQSvhA6jFReKpE344NraH6rDWuIZeeDwDKDvTqyOtrBfhKBouYvEIenv5sP7Dx-bGVnx3iiQxJroYYa4TCJh_kzCzDTh6qKK1oEeVkoAHCIU_5uCN1bk66A6fOOwyYU5L__2ywDa7s_my394c9CQaYPY5g1dgzvW8UaRW--Z6j9HBtGYCwA5VBoRh7Qf8w0uyg7wxCRFdpXgqqY3dFCWl0RoQHTj2wAIZyu_jnompf-o6vdeRN6JiUdoPuSDodsAgFLgw2lrHYdsBYWMyw3QGLqS_etmhsa725Tm7lTqtkORSSqyWkliEh1SdMOutrXaY_6J_0U7YkNnjjZI6VbEmpGpnD9feyS86qAposFf7YuX0cIM0o7JV1Gi-wTydZjZYHWKlt-_14qJQAB8RfJecGq6FSeH77YZ1h1FuJQSZGMXn269a264Y19W-krpsRob6XFSyxT0ruFDQsfoL-L9u7sbrekaaT7pTUGeUjnQY6Iiui_K9TzE-l15ic0g8LZvFCzyV4hKdlR6o5e_faMtF85XHjxjHWpv_TEIO5yzVJJQfy0keNPluPAUBbw1btdN7pH_eNXkfYg89JQ_A6dCEjl3BLpAkzgptrQcI1RJZWSOsjODwUL1bxBZdh43HD9EqphRmOTu6Q0AHAYlZ9YTyhBGtrKHPPd8MtKLaVar6hfNa9ajIZzV65juxDb9EjXJ5Y-7VjzNUNi6nA30QKH1Z2ZlVEp406BhkJrI-XNXJzh9AOp2yFH71SQ5KdL6Ls08WRsrWeWgtd2gG77qsMUkthS9BfcD9yJ51yJPDt796G6uXlzH-bSL7xPMdt-CksI7zJ-Uy2G1kEMHqsJVFQkAuQ3CdBhNFH2Jfn5DEVzb1ypk-nEv-bodsp1C0TQHlEj1D68PK9k6jcW5YkhOireGkgiGAET6H9SPWKl5I0BN_0IdZNdcowDhaKygXnJwvW1W1C0i1p9wR2zW_uq92i4K_ul6WQgT79E5o5LbSQC4O_d86Jp5w30uOISamenGzw---5D1_0G7M5A8WkDk6wqYlbS4buEeeO9sXexhVAnPN5XQXCQ6MfDx2eyekDL9kCFoYeA2ucDHZg24eK5sG57Zzh1bQuvuLHubLtBZlis1aQ5EjBDWofSFmJcTq6UXEMIEAE-t_xT_0-87pv5SiqDDZXY-byCzn1tDdYizDtJP5y92SokJogO3Y_BfIS-KCVlxpRKmk3BGkad5-ttgdiP3PDhq-qEis1d3dfJ10lLN4rES_jDq4QwMVad8yZDajP6dhjhhiiBD8majUjXR00tMVHT8bNJlFS_e-_UrknV6fcjjlMqPg8JyUATD7QTMw57PxqXwQUoviN5mRr1jzAQ-KMp2yrGp3Nbl_vWMwUFrFxRSgA3VPQtS18cRB5Ex7zrJg7BDLIwHSlXWr2kwaAd6QGN8TotEh0YgjwYDxBrrviAitTNOyVlfmIqmm0dDUtWap8iComD2-B5aK7EJThici-GtG1mGFsmb9kIKd-pzoESJZYi38XgwKPDeZHIV9EWc494smUPnqOVbI7voq_WM-_uIkxCy5ZAy4byxtih1-j5PTGa0TgYWyqSNrwrJw8pm2n_u-fnTqOITN4zwgUviaSp1G3fSu5pN7XcPoVcnlskw_GIs-RWdVQ85hT2VqqHd4TGn-krs5wLBJiVidXYcZu7etKJ954BJzmv8b3uPKMpSs_xJO_-k_5fxBwwtsSte-ksVpslrbgsyq9JmNDldxiQArwV2EaQDXn3Bz3Gmme1JDlrSIU3geiNaHO63TBot-wnzWoFiWSCG2ptu_6a_y7XH0qEXhgfD5otTuvV-VcBsxrVxr0w5YHMgEkoZX2DqxCVkrIYxsdSa0k3ikCg0_fQNgTfTRt0AB2f65Rtl_mlu0rve8vbd6qU7zEzI5xzTzjOF_UYSzemjd56ELq-59nw-ipATlwqRZhegzz_cKKJrhiZpxhJelc0_DuJgfTFaYZfGLHuOAdlID1vF1ml-JrmPLEmcbmidf36MjATSleMcloXS1Pm7Bxws_7Lyhmji_JQ1zqWG5QBt6ILpd-t1zTl8CxN3C-c_ZHkQFpTObk4GNU9_DZs_NpNAPoX6zdE2KuciJ8E1d5ozQ7GdpJOslhEmooPbQfU-3qZoxadKC2Td9da4kZLifGrR0pQxiqr4ZzsBokhabUS6Ikh8g2UARS9ys5z-PWoHtGtwtEDTE6HA_DNJfWrqJNg3FU36cERAV3owyVD2MjmHZqmniWXbEf6EfSudXhoVpLpfTnnil32Y86wnRF_eFaW1dbKvoCp11Em72towNyPIa4f6RZ4sgwjkooKHKoU1LWf8S1ejFYjoQ-iV6BEVXjIGdC7tfwFOfXE5NZCc7vtjdVYrluuJ5Pe1dP9rk7bhQLtaim93F51rYj7LhEVYEP3X9Zy_Kar2qAajTO5CkvGdgfpVGxwJEe_-i0KMtB7ccbhNWid4v9rYt8XVKcofOpopE3dZD8nVOKkhMqamiZtvD-SURqsPqNjQALJ0RfUeII-j2ISD1yDzo1eXa2u1iFslctOCcshnud9PO-Cp9Iv9TVru0lEDgiFk0JIZZPq6_1DC3LpOze1omv1ePXeoX2JWsNxjmsNnTPGayVNf1mrOdsmQKbdIQl5soa0xE4GCvoyP4Xq_WwImSQe_kGrkdvsohng876Xln7kzSyLFk4WoN_z2ty-YnjlKCVpjb8Pk8ZmyZE9BP-5SzBz4uDImKfN3nygZw_gUvHoq9FcWjVHYUiuQIpKAnIRdBZAEYF6mnEp82EMvhU7HIP203UtTWjL27KimBWJ0FvW6MgaA2e05BEwIjvAIHTaQ9kt4oSKSx0v30WBl1HLeb65j8P8gWhc4eVhUuX6qTJfdfpSoAC2no6P0zblAjlrAc1zppfRhebRLfg4AACpo2T6q9dkS53tMx4AF4lzKNxmNt2kC5Ya95GUVrFd08TrFAke0Km1sSrSrGdyGE4sFQOqHCRwNKm4jX8YmLIJullOknxprxxjR8np183aKOVpZ5arvFUkhJeAhRtY3aHmNutMPK3WDFAsBLb_xgwqG3WUqyjcwV_h56tQXPlrk7hsVKMJa1GjAZAWVUC7MyUgB44C616k1KxYA_XLcxVPQVY2Zr7zOsAKo5yG1tjH5NpSXnRbqclfhyoXdEHTNuIeZ7vJOUt0b4psVgIDSb8YkKJgaqgzDABQnar9Fu6i4c0gS-CV9yYr8A_nW1OaODyIGTGQSgiIAIBlvQZl_IydfL6b2_Yc34ZwPx6C6KG7SKJvq7T5klJmnziuDWv1OhK5-53sbevJ-p03_ILSdw0sMK3dQ7_FOsMUkywDDYXFzvSQ5Pj8jtlUTYH_ozZ15eVMIfe4I_Ku_SDKTIyz3DVjQzamgWNQmas-V98ycLcLV6GQd-S-GnLWIiU3kFHLp11FA5Oi2pOpieCZb0EfP-yed0KqOtv7CvRpMH_Hk_QXaxrtm2r3mZCgIhjdeqt8tCjOW6dxhaDhZMTgwfP6auDwGLkM3fb6EjJ76tzu_YVsrFdY91RJp9TZS-hbuYTyU5ipdEclBv8RAko5J6JJMsntijd41tcnlWj2XL_zWabsjWYWnlQkM3Tbl950xvAVWiLzhEqQgmkgSSL013S0PLs8hY8yVuEpyPjCfXS4bdZZGtfn3MrDDYz1KM2ram4JTB80m_-WWcM5br0kWR9GtuiVskpT_OK9OsRO-ObrjkMdd2hdiqIKYHwoKkiztNz04zz2vnovDRVTSB8rV8mckQgjukpX2_SuWb_X2ddJJDOJ5YKOoY96dYLJoCNbc-Jrq_bnbPquTlJtdZoTdjQbxX79skpef4knC9cfp8067n5e1KnHGPTA9ZsEmxr1rFYm95dyY2Kw6ZphLrejD6tUnNtVCwIzVcBSmOScK12J2Jaqh11140QIkjqw36a6Xa5BWrCL6KsNCT-cHPVDYFAA0bXe3gI7o2AvAVynSPs0oSIkBNHiHM-bJW_e_M2T3--z9ri6xZ67WQFWe-cOxx6cZKgEL-jLXVsDIRgdTEzBoUn1XFV2QktCV_W0umEvv3jBnHxL1DagbSgK2sOuwC-br1FUSF_fhYKFYmk6wG4CaerI2q8sFs0TruPqLo1vaX1Nz-VReyc3iAfr99MCYCJIqysYB6QDBHL_6u2aAqnPG9zBm4wXJJFpZo7OHATCcxx3NRv0CWnV4aV628hROGAfXhYcFUpMifPYD1-Ie_3XudEMOJbJQnD03nIsssXMkm3fvxCIDZ_FowKsd0DWbCdEL9-7hjwFjo7aa0sOISIWD7ghS1mPvu3BrQsOPKKPkbQ1nzN8N-pvhwIqZrQoZOjXY8hLhrdKgZgUtcr25IlCd2ecrRcjiW5lrw3rJ-PdiNY9p54jpXGZbexTT_i1ozGKVMb0CMXl6-1rTr_DOrz7Lapb832GwpIgRpXw_uesPLXnqSePJjUjZ40wuSqa54g7T_lE1l-Ftie5iH8eRjlScOnReAGDtx-zSta9dC__SM81lzqJ-zk7YvC23V5FBSjQqDt9c-0Lb5WvRZBmiCKoqfLM7O2V-u9F5G-UoYwQjB7FHgCYouQQxX0LgZWlART-Lim5jQLTeeDuA10Ty7xI4_rCPuz2EQ51z-AWyYGRzGFjMSLBQBxk47-mbk0QKySzYeahNm4QEi4sBaw6dusrPdyz47wB2ZW27VrWB5jnmgOFQGVPgPwwcHtzH90NnhJAF_c_M="
           }
         ],
         "role": "model"
@@ -31,824 +31,282 @@
     }
   ],
   "model_version": "gemini-3.6-flash",
-  "response_id": "u3l5aruBLI-C2roPgMu2sQE",
+  "response_id": "DIV-av79MKCw0-kP_eWkgAg",
   "usage_metadata": {
-    "candidates_token_count": 14878,
-    "prompt_token_count": 103320,
+    "candidates_token_count": 6225,
+    "prompt_token_count": 121325,
     "prompt_tokens_details": [
       {
         "modality": "TEXT",
-        "token_count": 5964
+        "token_count": 23969
       },
       {
         "modality": "IMAGE",
         "token_count": 97356
       }
     ],
-    "thoughts_token_count": 13775,
-    "total_token_count": 131973
+    "thoughts_token_count": 8530,
+    "total_token_count": 136080
   },
   "automatic_function_calling_history": [],
   "parsed": {
     "schema_version": "1.0",
-    "identity": {
-      "security_code": "4443",
-      "company_name_ja": "Sansan株式会社",
-      "company_name_en": "Sansan, Inc.",
-      "latest_filename": "01_2026_FY_tanshin.pdf",
-      "latest_period_ja": "2026年5月期",
-      "latest_period_en": "FY2026"
-    },
     "claims": [
       {
-        "claim_id": "overview_business_model",
+        "claim_id": "claim_01",
         "section": "company.overview",
         "order": 1,
-        "headline_ja": "営業AXサービス「Sansan」や経理AXサービス「Bill One」等を展開するクラウドソリューション企業",
-        "body_ja": "当社グループは、「出会いからイノベーションを生み出す」というミッションのもと、名刺、請求書、契約書などの非定型かつアナログな情報をデータ化し、業務プロセスの効率化やデータ活用を可能とするAX（AIトランスフォーメーション）サービスを提供している。主力の「Sansan／Bill One事業」において営業AXサービス「Sansan」、経理AXサービス「Bill One」、取引管理サービス「Contract One」等を展開するほか、「Eight事業」において名刺アプリ「Eight」を基盤としたサービスを提供し、主に月額固定料金（ストック売上）を中心とした収益モデルを構築している。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0009"
-        ],
+        "headline_ja": "会社概要：名刺管理基盤とAI/データ化オペレーションを活用したAXサービスの提供",
+        "body_ja": "Sansan株式会社は、クラウドソフトウエアと人力オペレーションおよびテクノロジーを組み合わせ、名刺や請求書などの非定型・アナログ情報を高精度にデータ化するAX（AIトランスフォーメーション）サービスを提供する企業である。主要サービスとして、法人向け名刺管理市場で85.8%のシェア（2026年5月期時点）を有する「Sansan」、クラウド請求書受領サービスでシェアNo.1の「Bill One」、および個人向け名刺アプリを基盤とする「Eight」を展開している。顧客企業からの月額固定のストック収益を中心とするSaaSビジネスモデルを構築しており、企業の営業強化や経理業務効率化を支援することで継続的な収益を得る構造となっている。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": false
       },
       {
-        "claim_id": "latest_key_earnings",
+        "claim_id": "claim_02",
         "section": "latest.key_takeaway",
         "order": 1,
-        "headline_ja": "2026年5月期は売上高24.4%増、調整後営業利益137.0%増と大幅な増収増益を達成",
-        "body_ja": "2026年5月期の連結業績は、売上高が前年同期比24.4%増の53,761百万円、調整後営業利益が同137.0%増の8,427百万円、営業利益が同192.3%増の8,185百万円、経常利益が同197.8%増の8,170百万円、親会社株主に帰属する当期純利益が6,778百万円となった。「Sansan」の堅調な拡大と「Bill One」の高速成長に加え、売上高広告宣伝費率や人件費率の低下が大幅な利益率改善に寄与した。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0003"
-        ],
+        "headline_ja": "2026年5月期業績：売上高24.4％増、調整後営業利益137.0％増と収益成長が急加速",
+        "body_ja": "2026年5月期連結業績は、売上高が前年同期比24.4％増の53,761百万円、調整後営業利益が137.0％増の8,427百万円、営業利益が192.3％増の8,185百万円、経常利益が197.8％増の8,170百万円、親会社株主に帰属する当期純利益は6,778百万円と大幅な増収増益を達成した。「Bill One」の高成長と「Sansan」の堅調な拡大に加え、粗利益率の向上や人件費率・広告宣伝費率の低下により利益率が急速に改善した。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "latest_key_cashflow",
+        "claim_id": "claim_03",
         "section": "latest.key_takeaway",
         "order": 2,
-        "headline_ja": "営業キャッシュ・フローは9,641百万円を創出し高水準の現金創出力を維持",
-        "body_ja": "2026年5月期の営業活動によるキャッシュ・フローは9,641百万円の収入となり、税金等調整前当期純利益9,375百万円や前受金の増加額4,044百万円が寄与した。期末の現金及び現金同等物残高は前期末比5,676百万円増の36,849百万円となり、十分な手元流動性を確保している。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0002",
-          "01_2026_FY_tanshin.pdf:s0010"
-        ],
+        "headline_ja": "キャッシュ・フローと財政状態：営業CF 9,641百万円の創出と前受金拡大による財務基盤の強化",
+        "body_ja": "当連結会計年度の営業活動によるキャッシュ・フローは9,641百万円の資金超となり、現金及び現金同等物の期末残高は前期末比5,676百万円増の36,849百万円へと拡大した。SaaSビジネスの契約拡大に伴い、流動負債の前受金が前期末比4,019百万円増の21,489百万円に達したことが営業キャッシュ・フローを強力に下支えしており、自己資本比率も36.4％へと改善した。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "latest_key_returns_policy",
+        "claim_id": "claim_04",
         "section": "latest.key_takeaway",
         "order": 3,
-        "headline_ja": "構造的利益成長への移行に伴い配当（初配）の実施および自社株買いを決定",
-        "body_ja": "当社は構造的に利益成長が加速するフェーズにあることを背景に、株主還元として期末配当2.50円/株（初配）および自社株買い（取得総額1,258百万円、811,600株）を実施した。また、2027年5月期から2029年5月期にかけての新中期財務方針を策定し、年平均16%〜20%の売上高成長と2029年5月期における調整後営業利益率25%〜30%を目指している。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0007",
-          "01_2026_FY_tanshin.pdf:s0011"
-        ],
-        "statement_type": "mixed",
+        "headline_ja": "資本配分と株主還元：初配の実施と約20億円の自己株式取得による還元姿勢の明確化",
+        "body_ja": "構造的利益成長フェーズへの移行を踏まえ、当期末において1株当たり2.50円（配当金総額315百万円）の初配を実施した。また、総額1,999百万円（1,331,600株）の自己株式買付を完了し、成長投資の継続と並行して資本効率の意識向上と株主還元を本格化させている。",
+        "statement_type": "actual",
         "is_inference": false,
-        "causal": true
+        "causal": false
       },
       {
-        "claim_id": "driver_bill_one_growth",
+        "claim_id": "claim_05",
+        "section": "latest.key_takeaway",
+        "order": 4,
+        "headline_ja": "業績予想と新中期財務方針：売上高16％～20％成長と調整後営業利益率25％～30％を目指す",
+        "body_ja": "2027年5月期から2029年5月期までの中期財務方針を新策定し、3事業年度平均売上高成長率16％～20％、2029年5月期調整後営業利益率25％～30％を目標に掲げた。2027年5月期通期予想としては売上高63,706百万円～65,319百万円（18.5％～21.5％増）、調整後営業利益12,741百万円～14,696百万円（51.2％～74.4％増）を見込み、利益重視の成長継続を目指している。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_06",
         "section": "latest.business_driver",
         "order": 1,
-        "headline_ja": "「Bill One」の有料契約件数が31.9%増と伸び牽引役として高成長を維持",
-        "body_ja": "経理AXサービス「Bill One」の売上高は前年同期比39.7%増の13,679百万円、月次固定収入（MRR）は同34.9%増の1,231百万円に達した。営業体制強化等により有料契約件数は前年同期比31.9%増の5,188件へと順調に増加しており、直近12か月平均月次解約率も0.34%と低水準を維持している。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0004"
-        ],
+        "headline_ja": "経理AX需要｜追い風：Bill Oneの売上高39.7％増とARR急拡大が全社増益を牽引",
+        "body_ja": "法制度対応需要を一巡した後も経理業務DX・AXの根本的なニーズは強く、「Bill One」の売上高は前年同期比39.7％増の13,679百万円、有料契約件数は31.9％増の5,188件、MRRは34.9％増の1,231百万円（年間換算ARR約147.7億円）へ成長した。解約率も0.34％と極めて低水準を維持しており、Sansan/Bill One事業セグメント全体の調整後営業利益8,340百万円（前年同期比132.9％増）を大きく押し上げた。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "driver_sansan_expansion",
+        "claim_id": "claim_07",
         "section": "latest.business_driver",
         "order": 2,
-        "headline_ja": "「Sansan」は中小規模顧客獲得の伸長により契約件数が14.0%増",
-        "body_ja": "営業AXサービス「Sansan」の売上高は前年同期比16.2%増の31,089百万円、ストック売上高は同15.9%増の29,141百万円となった。営業体制の強化により主に中小規模の新規契約獲得が進捗し、契約件数は前年同期比14.0%増の12,199件となった。直近12か月平均月次解約率は0.55%と1%未満を維持している。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0005"
-        ],
+        "headline_ja": "営業AX需要｜追い風：主力のSansan事業におけるストック収益の着実な積み上がり",
+        "body_ja": "「Sansan」売上高は前年同期比16.2％増の31,089百万円となり、うちストック売上高は15.9％増の29,141百万円と安定的基盤を維持している。中小規模を中心とする営業体制強化により契約件数は14.0％増の12,199件へ拡大し、直近12か月平均月次解約率は0.55％と1％未満の低い水準で推移した。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "outlook_fy2027_guidance",
+        "claim_id": "claim_08",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "人件費・販促費比率｜追い風：成長投資を継続しつつ売上高比率の低下により営業レバレッジが伸長",
+        "body_ja": "中期的な成長に向けたテレビCMや人件費投入を継続する一方で、売上高の急拡大に伴い売上高人件費率および売上高広告宣伝費率が低下した。売上総利益率が87.9％と前期比1.3pt改善したことと相まって強力な営業レバレッジが働き、全社の調整後営業利益率が15.7％（前期比7.5pt改善）へ跳ね上がった。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_09",
         "section": "latest.outlook",
         "order": 1,
-        "headline_ja": "2027年5月期は売上高18.5%〜21.5%増、調整後営業利益51.2%〜74.4%増を見込む",
-        "body_ja": "2027年5月期の通期連結業績予想において、売上高は前年同期比18.5%〜21.5%増の63,706〜65,319百万円、調整後営業利益は同51.2%〜74.4%増の12,741〜14,696百万円を見込んでいる。「Sansan」の堅調な成長（10.0%〜12.0%増）や「Bill One」の高成長（28.0%〜32.0%増）を見込み、人件費約12%増、広告宣伝費約8%増に投資を抑えることで調整後営業利益率20.0%〜22.5%への上昇を目指す。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0007",
-          "01_2026_FY_tanshin.pdf:s0008"
-        ],
+        "headline_ja": "2027年5月期見通し：Bill One高成長と売上高営業利益率20％超への到達計画",
+        "body_ja": "2027年5月期の連結業績予想において、売上高は前年同期比18.5％～21.5％増、調整後営業利益は51.2％～74.4％増（12,741百万円～14,696百万円）、調整後営業利益率は20.0％～22.5％（前期比4.3pt～6.8pt増）を見込む。「Bill One」が前年同期比28.0％～32.0％増、「Sansan」が10.0％～12.0％増、「Eight事業」が23.0％～27.0％増と全事業で増収を計画し、人件費（約12％増）や広告宣伝費（約8％増）の抑制的コントロールによりさらなる利益率向上を図る。",
         "statement_type": "forecast",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "risk_ai_competition",
+        "claim_id": "claim_10",
         "section": "latest.risk",
         "order": 1,
-        "headline_ja": "AI機能開発投資の継続に伴う開発遅延および競合激化リスク",
-        "body_ja": "当社は「Sansan」や「Bill One」等においてAIを活用した機能開発を急速に強化している。しかし、AI関連投資が世界的に拡大し競合環境が変化する中、開発の遅延や投資成果の不足、あるいは競合サービスの台頭により差別化が希薄化した場合、契約獲得や解約率に影響を及ぼす不確実性が存在する。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0005"
-        ],
+        "headline_ja": "提携・投資先関連リスク：特別損失計上リスクと子会社株式の売却・編成に伴う非継続的影響",
+        "body_ja": "過去の資本業務提携や子会社買収において、事業環境変化に伴う評価損や特別損失の発生が相次いでいる。2025年5月期にはUnipos社との提携解消・株式譲渡に伴い株式売却契約損失引当金繰入額2,301百万円を特別損失に計上した。2026年5月期にはログミー社の売却（関係会社株式売却益1,436百万円計上）やナインアウト社の完全子会社化（1,412百万円）が行われており、ポートフォリオ再編に伴う一時的損益の発生や減損リスクは投資家が注視すべき要因である。",
         "statement_type": "risk",
-        "is_inference": false,
+        "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "risk_fixed_cost_seasonality",
+        "claim_id": "claim_11",
         "section": "latest.risk",
         "order": 2,
-        "headline_ja": "固定費用増加に伴う下期偏重の利益構造と業績変動不確実性",
-        "body_ja": "2027年5月期は人件費が前年同期比約12%増、広告宣伝費が同約8%増となる見込みである。当社売上高はストック収益が中心であり四半期経過に伴い徐々に積み上がる性質があるため、調整後営業利益の計上は下期偏重となる。上期において受注成長が想定を下回った場合、先行する固定費負担により利益率が押し下げられるリスクがある。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "解約率・ARPU変動リスク：Sansanにおける小規模顧客増加による単価微減と競合環境",
+        "body_ja": "2026年5月期において「Sansan」の契約件数は14.0％増加したものの、主に中小規模顧客の獲得が進んだ結果、契約当たり月次ストック売上高は前年同期比1.0％減の208千円とわずかに低下した。月次解約率は0.55％と低水準を維持しているものの、顧客層の拡大に伴いARPUの伸び悩みや競合製品との価格・機能競争が起きるリスクが潜在している。",
         "statement_type": "risk",
-        "is_inference": false,
+        "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "latest_context_integration",
+        "claim_id": "claim_12",
         "section": "latest.context",
         "order": 1,
-        "headline_ja": "主力事業のスケールメリット発現と収益化・株主還元フェーズへの完全移行",
-        "body_ja": "2026年5月期は、「Sansan」の堅調な顧客基盤拡大と「Bill One」の急速な収益成長が相乗効果を発揮し、売上高拡大と利益率の爆発的な改善が同時に達成された。Eight事業の黒字定着や非主力子会社（ログミー）の譲渡も進み、事業ポートフォリオ全体の収益性が高まっている。今後は新中期財務方針（売上高CAGR 16%〜20%、調整後営業利益率 25%〜30%）の初年度となる2027年5月期において、ストック売上の積上と固定費効率化が計画通り進展するかどうかが投資判断の焦点となる。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0006",
-          "01_2026_FY_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "最新決算の位置づけ：先行投資型SaaSから高い現金創出力を伴う収益刈り取りフェーズへの転換",
+        "body_ja": "2026年5月期決算は、長年続いてきた広告宣伝や人員採用への先行投資期を経て、ストック収益の拡大に伴い営業利益率とキャッシュ創出力が構造的に飛躍する転換点を示している。調整後営業利益率は8.2％から15.7％へ急上昇し、営業キャッシュ・フローも96億円規模を創出しており、初配の実施および20億円規模の自社株買いにより株主還元が開始された。",
         "statement_type": "inference",
         "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "trend_perspective_decade",
+        "claim_id": "claim_13",
         "section": "trend.perspective",
         "order": 1,
-        "headline_ja": "投資先行による赤字・低利益率構造からストック収益蓄積に伴う高収益・還元フェーズへの進化",
-        "body_ja": "過去10年近くの軌跡において、当社は初期（2019〜2021年期）の人材採用・広告宣伝への積極的な先行投資による赤字・低利益率フェーズから、中期（2022〜2024年期）における「Bill One」の立ち上げとマルチプロダクト構造への移行、そして直近（2025〜2026年期）の調整後営業利益率の上昇（2026年5月期15.7%）と初配実施へと進化してきた。解約率1%未満を維持する「Sansan」の顧客基盤を土台に、「Bill One」が第二の柱として急成長したことで、固定費の吸収が進み限界利益率の高さが全社利益の拡大へ直結する構造転換を遂げている。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0001",
-          "07_2020_FY_tanshin.pdf:s0001",
-          "06_2021_FY_tanshin.pdf:s0003",
-          "05_2022_FY_tanshin.pdf:s0001",
-          "05_2022_FY_tanshin.pdf:s0004",
-          "03_2024_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "10年間を通じた見方：Sansanによる基盤構築、Bill Oneの急成長、Eightの黒字化による高収益化モデルの完成",
+        "body_ja": "2019年5月期から2026年5月期に至る7年間の軌跡は、赤字を伴う先行投資期からSaaS事業の複層化と構造的黒字化への移行を表している。初期（2019-2021期）は主力の「Sansan」における名刺管理データベース基盤の拡大と上場による資本補強を進めたものの、Eight等の赤字や販促費投入により利益水準は低位に止まっていた。中期（2022-2024期）には「Bill One」を立ち上げて新たな成長柱に育て上げ、Eightの構造改革（2024年5月期通期黒字化）と調整後営業利益指標の導入により収益管理を強化した。直近（2025-2026期）では「Bill One」のARR100億円突破（2025年5月期末109.6億円、2026年5月期末147.7億円規模）と全社的な営業レバレッジの発現により、調整後営業利益が17億円から84億円超へと劇的に拡大した。事業ポートフォリオの多角化とストック収益の蓄積が、持続的なキャッシュ創出と資本還元能力を実証している。",
         "statement_type": "inference",
         "is_inference": true,
         "causal": true
       },
       {
-        "claim_id": "trend_consistent_low_churn",
+        "claim_id": "claim_14",
         "section": "trend.consistent",
         "order": 1,
-        "headline_ja": "「Sansan」における1%未満の低解約率維持と高精度なストック積上能力の継続",
-        "body_ja": "当社は初期（2019年5月期解約率0.66%、2020年5月期0.60%）、中期（2022年5月期0.62%、2023年5月期0.44%）、直近（2025年5月期0.49%、2026年5月期0.55%）を通じ、一貫して月次平均解約率を1%未満の極めて低い水準に維持し続けている。コロナ禍等の外部環境変動期においても強力な顧客基盤を背景にチャーンを防ぎ、ストック売上を高精度で積み上げるビジネスモデルの強みが継続している。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0002",
-          "07_2020_FY_tanshin.pdf:s0002",
-          "06_2021_FY_tanshin.pdf:s0002",
-          "05_2022_FY_tanshin.pdf:s0002",
-          "04_2023_FY_tanshin.pdf:s0002",
-          "03_2024_FY_tanshin.pdf:s0001",
-          "02_2025_FY_tanshin.pdf:s0002",
-          "01_2026_FY_tanshin.pdf:s0005"
-        ],
+        "headline_ja": "変わらなかったこと：名刺・証憑データ化のコア技術とストック型SaaSモデルによる顧客基盤の積み上げ",
+        "body_ja": "初期から直近に至るまで貫かれた強みは、クラウドソフトウエアと人力・AI技術を組み合わせたアナログ情報の高精度データ化技術と、月額課金（ストック）による顧客基盤の積み上げである。「Sansan」の解約率は一貫して1％未満（0.44％～0.66％程度）の極めて低い水準を維持しており、顧客離脱を防ぎながら契約件数を5,823件（2019年5月期）から12,199件（2026年5月期）へと着実に拡大させた。この強靭なストック収益基盤が、新規事業投資や市場変動に対する緩衝材として機能し続けている。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "trend_consistent_growth_investment",
-        "section": "trend.consistent",
-        "order": 2,
-        "headline_ja": "中長期的な売上高成長の最大化を最優先とした機動的投資スタンスの一貫性",
-        "body_ja": "当社は初期（2019年5月期・2021年5月期）より「利益最大化ではなく中長期的な売上高成長を重視」と明確に掲げ、中期（2022年5月期・2023年5月期）においても人員採用やTVCM等の広告宣伝を機動的に投入してきた。直近（2025年5月期・2026年5月期）では収益化が進んだものの、投資を緩めることなく売上高拡大のための営業体制強化やAI機能開発投資を継続する姿勢が一貫している。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0001",
-          "06_2021_FY_tanshin.pdf:s0003",
-          "05_2022_FY_tanshin.pdf:s0004",
-          "04_2023_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0007"
-        ],
-        "statement_type": "actual",
-        "is_inference": false,
-        "causal": true
-      },
-      {
-        "claim_id": "trend_change_bill_one",
+        "claim_id": "claim_15",
         "section": "trend.change",
         "order": 1,
-        "headline_ja": "単一プロダクト依存から「Bill One」を第二の成長柱とするマルチプロダクト構造への変化",
-        "body_ja": "変化前（2019年5月期）は「Sansan」と「Eight」の2事業体制でありBill Oneは存在していなかった。移行期（2021年5月期にBill Oneサービス開始、2022年5月期に売上高826百万円、セグメント名を「Sansan／Bill One事業」へ変更）を経て、現在（2026年5月期）にはBill One単体の売上高が13,679百万円（全社売上高の約25%）、有料契約件数5,188件へと急速に拡大した。単一のクラウド名刺管理サービス依存から脱却し、複合型SaaSプラットフォームへと質的転換を果たした。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0004",
-          "06_2021_FY_tanshin.pdf:s0001",
-          "05_2022_FY_tanshin.pdf:s0001",
-          "05_2022_FY_tanshin.pdf:s0005",
-          "01_2026_FY_tanshin.pdf:s0004"
-        ],
+        "headline_ja": "変化したこと（事業構造）：単一プロダクト依存から「Bill One」を第二の柱とする複層的収益構造への発展",
+        "body_ja": "2019年5月期時点では全社売上高の94％以上を「Sansan事業」に依存していたが、2020年5月期以降に「Bill One」を育成・展開した結果、同事業の売上高は826百万円（2022年5月期）から13,679百万円（2026年5月期）へと爆発的に増加した。単一の名刺管理サービス企業から、営業DX・経理DXを網羅する総合的なBtoB SaaS企業へと事業構造の完全な転換を果たした。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "trend_change_eight_profitability",
+        "claim_id": "claim_16",
         "section": "trend.change",
         "order": 2,
-        "headline_ja": "Eight事業における先行投資・赤字構造から収益化・黒字定着構造への転換",
-        "body_ja": "変化前（2019年5月期セグメント損失1,212百万円、2020年5月期894百万円）は個人向け名刺アプリ基盤のユーザー拡大を優先した先行投資により大幅な赤字が続いていた。移行期（2022年5月期損失386百万円、2023年5月期損失170百万円）にBtoBイベントや企業向けマネタイズへ重点をシフトし、現在（2024年5月期314百万円の黒字化達成、2026年5月期237百万円の調整後営業利益）は安定した黒字構造を確立している。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0001",
-          "07_2020_FY_tanshin.pdf:s0003",
-          "05_2022_FY_tanshin.pdf:s0003",
-          "04_2023_FY_tanshin.pdf:s0003",
-          "03_2024_FY_tanshin.pdf:s0002",
-          "01_2026_FY_tanshin.pdf:s0006"
-        ],
+        "headline_ja": "変化したこと（経営規律と収益管理）：売上高成長最優先から調整後営業利益率重視と資本還元へのシフト",
+        "body_ja": "上場直後は利益を犠牲にした売上高年率30％超の拡大とTVCM等の積極投資に注力していたが、2023年5月期に「調整後営業利益」を主要指標として導入して以降、売上高成長と利益率向上の両立へ舵を切った。Eight事業の収益化徹底や人件費・広告宣伝費の売上高比率の抑制管理により利益率を急速に向上させ、2026年5月期には初配と自己株式取得に踏み切るなど資本配分の優先順位が変化した。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "trend_capital_allocation_shift",
+        "claim_id": "claim_17",
         "section": "trend.capital_allocation",
         "order": 1,
-        "headline_ja": "成長投資優先の無配・資金調達スタンスから構造的利益成長に伴う初配・自社株買いへの転換",
-        "body_ja": "初期から中期（2019年5月期の上場・増資、2020年5月期の有価証券取得・借入活用、無配継続）にかけては、獲得資金の全額を事業拡大やM&A・出資に投じる配当無配の成長投資優先スタンスをとっていた。しかし、直近（2026年5月期）では収益性が高まり利益成長が構造的フェーズに達したと判断し、1株当たり2.50円の初配および1,258百万円の自己株式取得を実施し、成長投資と株主還元を両立させる資本配分へと大きく舵を切った。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0003",
-          "05_2022_FY_tanshin.pdf:s0001",
-          "03_2024_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0003",
-          "01_2026_FY_tanshin.pdf:s0011"
-        ],
+        "headline_ja": "資本配分の変化：無配・成長投資集中から事業成果の刈り取りと株主還元の両立への移行",
+        "body_ja": "創業期から中期にかけては調達資金および営業キャッシュ・フローのほぼ全てを「Sansan」「Bill One」の人員採用・開発・TVCM等のマーケティング投資や、ウイングアーク１ｓｔ株式取得等の外部投資に配分していた。しかし、「Bill One」の自立的キャッシュ創出とEightの黒字定着に伴い、2026年5月期からは配当（315百万円）と自己株式取得（約20億円）を開始し、手元現金368億円を確保しつつ成長投資と株主還元を調和させるステージへ移行した。",
         "statement_type": "actual",
         "is_inference": false,
         "causal": true
       },
       {
-        "claim_id": "trend_implication_future_check",
-        "section": "trend.implication",
+        "claim_id": "claim_18",
+        "section": "trend.capital_value_creation",
         "order": 1,
-        "headline_ja": "新中期財務方針（利益率25%〜30%）の達成精度とストック積上の持続性検証",
-        "body_ja": "当社が掲げる新中期財務方針（2027年5月期〜2029年5月期）では、売上高年平均16%〜20%成長と2029年5月期の調整後営業利益率25%〜30%の達成を掲げている。「Sansan」および「Bill One」の低解約率を維持しつつ顧客当たりのストック売上を積み上げること、ならびに人件費や広告宣伝費の投資効率を維持して限界利益率を下振れさせないことが、利益率目標達成と株主還元の持続性を見極める主要な投資判断軸となる。",
-        "evidence_ids": [
-          "01_2026_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0005",
-          "01_2026_FY_tanshin.pdf:s0007"
-        ],
+        "headline_ja": "資本配分は価値を創出したか：概ね創出した。Bill OneおよびSansanへの有機的投資が高い収益性を結実",
+        "body_ja": "概ね創出した。過去7年間における追加資本および費用投下の大部分は、主力の「Sansan事業」の機能強化と新規育成事業「Bill One」の人員・マーケティングに集中配分された。「Bill One」は数年間で売上高136億円超、ARR147億円超の事業へと急成長し、Sansan/Bill One事業セグメントの調整後営業利益を8,340百万円まで押し上げる原動力となった。また長期にわたり赤字が続いた「Eight事業」についてもBtoBマネタイズの強化とコスト効率化により2024年5月期に黒字化を達成した。一方で、Unipos（旧Fringe81）との資本業務提携においては株式売却契約損失引当金繰入額2,301百万円（2025年5月期）の特別損失を計上するなど非事業核心の出資・提携で一部資本の毀損が見られたものの、全社として主要投資先（Bill One・Sansan）への集中配分が飛躍的な営業キャッシュ・フロー（2026年5月期9,641百万円）と高い利益率をもたらしており、全体として資本配分は企業価値創出に大きく貢献したと評価できる。",
         "statement_type": "inference",
         "is_inference": true,
         "causal": true
-      }
-    ],
-    "evidence": [
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 1,
-        "exact_quote_ja": "売上高 53,761 24.4 調整後営業利益 8,427 137.0 営業利益 8,185 192.3 経常利益 8,170 197.8 親会社株主に帰属する当期純利益 6,778 －",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "連結経営成績"
       },
       {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 1,
-        "exact_quote_ja": "営業活動によるキャッシュ・フロー 9,641 現金及び現金同等物期末残高 36,849",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "連結キャッシュ・フローの状況"
+        "claim_id": "claim_19",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "今後確認すべき最重要な関係：売上高成長率20％前後の維持と調整後営業利益率30％目標に向けた規律の継続",
+        "body_ja": "投資家が今後確認すべき判断軸は、「Bill One」の成長ペース鈍化（法制度需要一巡後）を新機能追加やARPU向上でどこまでカバーできるか、および人件費・広告宣伝費の統制を維持しながら新中期財務方針の目標（2029年5月期調整後営業利益率25％～30％）へ着実に近づけるかである。M&Aや子会社再編における減損リスクを抑えつつ、創出された営業キャッシュ・フローが更なる成長投資と株主還元増額の双方へ持続的に循環するかを見極める必要がある。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
       },
       {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "当社は構造的に利益成長が加速するフェーズにあることを背景に、株主の皆さまに対する利益還元として、自己株式の取得及び当連結会計年度末における配当（初配）の実施を決定しました。",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "経営成績に関する説明",
-        "tags": [
-          "management_discussion"
-        ]
+        "claim_id": "claim_20",
+        "section": "management.strategy",
+        "order": 1,
+        "headline_ja": "戦略の論理的整合性：名刺基盤から経理DXへの拡張と調整後営業利益重視への移行による高い戦略的一貫性",
+        "body_ja": "名刺データベースを核とする「Sansan」の固い基盤の上に、請求書受領という隣接領域の「Bill One」を構築してシナジーを発揮させた戦略は極めて合理的である。また、初期の売上高成長最優先から中期目標として「売上高成長と利益成長の両立」および「調整後営業利益」を明確に提示し、実際に利益率を向上させていく戦略的展開は論理的整合性に優れている。（評価：4/4 - Highly Consistent）",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
       },
       {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "「Bill One」 売上高 13,679 ＋39.7％ MRR 1,231 ＋34.9％ 有料契約件数 5,188件 ＋31.9％ 有料契約当たり月次ストック売上高 237千円 ＋2.2％ 直近12か月平均月次解約率 0.34％ ＋0.01pt",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "セグメント別の業績",
-        "tags": [
-          "management_discussion"
-        ]
+        "claim_id": "claim_21",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "施策の実行とフォロー：Bill Oneの急拡大とEight黒字化の実現に見る高い実行能力",
+        "body_ja": "2021年5月期末に契約件数239件であった「Bill One」を、目標通り大幅に拡大させ2022年5月期末ARR14億円超、2026年5月期末売上高136億円超のNo.1プロダクトへと育て上げた実行力は極めて高い。さらに長期赤字であった「Eight事業」についても収益性重視方針への転換後、公約通り2024年5月期に通期黒字化を達成し黒字を維持している。（評価：4/4 - Highly Consistent）",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
       },
       {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "「Sansan」 売上高 31,089 ＋16.2％ 「Sansan」ストック 29,141 ＋15.9％ 契約件数 12,199件 ＋14.0％ 直近12か月平均月次解約率 0.55％ ＋0.06pt",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "セグメント別の業績",
-        "tags": [
-          "management_discussion"
-        ]
+        "claim_id": "claim_22",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "業績予想の規律：レンジ開示の採用と中期目標の達成状況、過去の未達実績の検証",
+        "body_ja": "観測された2020年5月期通期予想（当初経常利益670百万円に対し実績435百万円、オフィス解約損等の影響により約35％下振れ）では未達がみられた。その後、不確実性を考慮してレンジ開示を採用し、2025年5月期および2026年5月期においては掲げた調整後営業利益目標や売上高目標をレンジ内で着実に達成している。中長期計画に対するコミットメントとレンジ運用の規律は概ね維持されている。（評価：3/4 - Generally Consistent）",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
       },
       {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "Eight事業 売上高 6,720 ＋33.0％ 調整後営業利益 237 ＋273.2％",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "Eight事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 10,
-        "exact_quote_ja": "2027年5月期から2029年5月期にかけての中期財務方針を新たに策定し、売上高と調整後営業利益の成長の両立を掲げています。最も重要な経営指標である売上高については、3事業年度の年平均成長率の方針を16％～20％としています。また、調整後営業利益については、各事業の売上高成長に向けた投資を行いながらも成長を継続させ、2029年5月期における利益率の方針は25％～30％としています。",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "target",
-        "source_section": "今後の見通し",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 2,
-        "exact_quote_ja": "2027年5月期の連結業績予想 売上高 63,706～65,319 18.5～21.5 調整後営業利益 12,741～14,696 51.2～74.4",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "forecast",
-        "source_section": "連結業績予想"
-      },
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0009",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 20,
-        "exact_quote_ja": "したがって、当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan／Bill One事業」「Eight事業」の2つを報告セグメントとしています。",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "報告セグメントの概要"
-      },
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0010",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 9,
-        "exact_quote_ja": "営業活動の結果得られた資金は9,641百万円(前連結会計年度は9,651百万円の収入)となりました。主な資金増加要因は、税金等調整前当期純利益の計上9,375百万円、前受金の増加額4,044百万円",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "キャッシュ・フローの概況",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "01_2026_FY_tanshin.pdf:s0011",
-        "source_filename": "01_2026_FY_tanshin.pdf",
-        "pdf_page": 26,
-        "exact_quote_ja": "取得した株式の総数 811,600株 株式の取得価額の総額 1,258百万円 取得期間 2026年6月1日から2026年6月18日まで",
-        "period_label_ja": "2026年5月期",
-        "period_label_en": "FY2026",
-        "statement_type": "actual",
-        "source_section": "重要な後発事象"
-      },
-      {
-        "evidence_id": "08_2019_FY_tanshin.pdf:s0001",
-        "source_filename": "08_2019_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "当連結会計年度における売上高は10,206,014千円（前年同期比39.3％増）...一方、営業損益以下の段階損益においては、現在は成長の実現に向けた先行的な投資を行っているフェーズであることからそれぞれ損失を計上しており",
-        "period_label_ja": "2019年5月期",
-        "period_label_en": "FY2019",
-        "statement_type": "actual",
-        "source_section": "当期の経営成績の概況",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "08_2019_FY_tanshin.pdf:s0002",
-        "source_filename": "08_2019_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "直近12か月平均の月次解約率は0.66％（前年同期比0.1ポイント減）となりました。",
-        "period_label_ja": "2019年5月期",
-        "period_label_en": "FY2019",
-        "statement_type": "actual",
-        "source_section": "Sansan事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "08_2019_FY_tanshin.pdf:s0003",
-        "source_filename": "08_2019_FY_tanshin.pdf",
-        "pdf_page": 1,
-        "exact_quote_ja": "2019年5月期 期末 0.00円 合計 0.00円",
-        "period_label_ja": "2019年5月期",
-        "period_label_en": "FY2019",
-        "statement_type": "actual",
-        "source_section": "配当の状況"
-      },
-      {
-        "evidence_id": "08_2019_FY_tanshin.pdf:s0004",
-        "source_filename": "08_2019_FY_tanshin.pdf",
-        "pdf_page": 15,
-        "exact_quote_ja": "当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan事業」、「Eight事業」の2つを報告セグメントとしています。",
-        "period_label_ja": "2019年5月期",
-        "period_label_en": "FY2019",
-        "statement_type": "actual",
-        "source_section": "報告セグメントの概要"
-      },
-      {
-        "evidence_id": "07_2020_FY_tanshin.pdf:s0001",
-        "source_filename": "07_2020_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "現在は中長期的な株主価値及び企業価値の最大化に向けて、積極的な投資を実行しているフェーズではあるものの、売上高の順調な成長を受け、営業利益は757,266千円（前年同期は営業損失△849,739千円）となり、黒字化しました。",
-        "period_label_ja": "2020年5月期",
-        "period_label_en": "FY2020",
-        "statement_type": "actual",
-        "source_section": "経営成績の概況",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "07_2020_FY_tanshin.pdf:s0002",
-        "source_filename": "07_2020_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "直近12か月平均の月次解約率は前年同期比0.08ポイント減の0.60％に改善しました。",
-        "period_label_ja": "2020年5月期",
-        "period_label_en": "FY2020",
-        "statement_type": "actual",
-        "source_section": "Sansan事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "07_2020_FY_tanshin.pdf:s0003",
-        "source_filename": "07_2020_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "セグメント損益については、現在は将来の収益化に向けた先行的な投資を行っているフェーズであることから、セグメント損失894,281千円（前年同期はセグメント損失1,212,980千円）を計上しました。",
-        "period_label_ja": "2020年5月期",
-        "period_label_en": "FY2020",
-        "statement_type": "actual",
-        "source_section": "Eight事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "06_2021_FY_tanshin.pdf:s0001",
-        "source_filename": "06_2021_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "「Bill One」の成長実現に向け、営業体制の強化やテレビCMを中心とした広告宣伝活動等を行った結果、当連結会計年度末における契約件数は239件となり",
-        "period_label_ja": "2021年5月期",
-        "period_label_en": "FY2021",
-        "statement_type": "actual",
-        "source_section": "経営成績に関する説明",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "06_2021_FY_tanshin.pdf:s0002",
-        "source_filename": "06_2021_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "直近12か月平均の月次解約率は...0.63％（前年同期比0.03ポイント増）となり、コロナ禍においても1％以下の低水準を維持しました。",
-        "period_label_ja": "2021年5月期",
-        "period_label_en": "FY2021",
-        "statement_type": "actual",
-        "source_section": "Sansan事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "06_2021_FY_tanshin.pdf:s0003",
-        "source_filename": "06_2021_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "当社グループが手掛けるサービスの多くは、新しい市場を創りながら急成長をしているものが多く、現時点においては利益の最大化ではなく、中長期的な売上高の成長を重視しています。",
-        "period_label_ja": "2021年5月期",
-        "period_label_en": "FY2021",
-        "statement_type": "target",
-        "source_section": "今後の見通し",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "05_2022_FY_tanshin.pdf:s0001",
-        "source_filename": "05_2022_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "「Bill One」売上高は前年同期比878.1％増となりました。また、2022年5月におけるMRRは前年同期比479.7％増、ARRは1,407百万円となり、目標としていたARR10億円を大幅に上回りました。",
-        "period_label_ja": "2022年5月期",
-        "period_label_en": "FY2022",
-        "statement_type": "actual",
-        "source_section": "Bill One",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "05_2022_FY_tanshin.pdf:s0002",
-        "source_filename": "05_2022_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "直近12か月平均の月次解約率は...前年同期比0.01ポイント減の0.62％となり、低水準を維持しました。",
-        "period_label_ja": "2022年5月期",
-        "period_label_en": "FY2022",
-        "statement_type": "actual",
-        "source_section": "Sansan",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "05_2022_FY_tanshin.pdf:s0003",
-        "source_filename": "05_2022_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "Eight事業の売上高は前年同期比39.9％増、セグメント損失は前年同期と比較して367百万円縮小しました。",
-        "period_label_ja": "2022年5月期",
-        "period_label_en": "FY2022",
-        "statement_type": "actual",
-        "source_section": "Eight事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "05_2022_FY_tanshin.pdf:s0004",
-        "source_filename": "05_2022_FY_tanshin.pdf",
-        "pdf_page": 8,
-        "exact_quote_ja": "各事業の売上高成長に向けた必要な投資を行いながらも、毎決算期における調整後営業利益率の向上を目指します。",
-        "period_label_ja": "2022年5月期",
-        "period_label_en": "FY2022",
-        "statement_type": "target",
-        "source_section": "今後の見通し",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "05_2022_FY_tanshin.pdf:s0005",
-        "source_filename": "05_2022_FY_tanshin.pdf",
-        "pdf_page": 20,
-        "exact_quote_ja": "従来の「Sansan事業」について、「Sansan」及び「Bill One」を含む複数プロダクトを含めた事業として「Sansan／Bill One事業」に変更しています。",
-        "period_label_ja": "2022年5月期",
-        "period_label_en": "FY2022",
-        "statement_type": "actual",
-        "source_section": "報告セグメントの変更等に関する事項"
-      },
-      {
-        "evidence_id": "04_2023_FY_tanshin.pdf:s0001",
-        "source_filename": "04_2023_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "従来、営業利益を表示していましたが、第1四半期連結会計期間より経営上重視する業績評価指標を当社の株価水準に応じて大きく変動する可能性のある株式報酬関連費用や企業結合に伴い生じる費用を控除した恒常的な企業の収益力を表す指標に変更しました。",
-        "period_label_ja": "2023年5月期",
-        "period_label_en": "FY2023",
-        "statement_type": "actual",
-        "source_section": "経営成績に関する説明",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "04_2023_FY_tanshin.pdf:s0002",
-        "source_filename": "04_2023_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "直近12か月平均月次解約率は、0.44％（前年同期比0.18ポイント減）となり、1％未満の低水準を維持しました。",
-        "period_label_ja": "2023年5月期",
-        "period_label_en": "FY2023",
-        "statement_type": "actual",
-        "source_section": "Sansan",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "04_2023_FY_tanshin.pdf:s0003",
-        "source_filename": "04_2023_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "Eight事業の売上高は前年同期比29.5％増、調整後営業損失は前年同期と比較して185百万円縮小しました。",
-        "period_label_ja": "2023年5月期",
-        "period_label_en": "FY2023",
-        "statement_type": "actual",
-        "source_section": "Eight事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "04_2023_FY_tanshin.pdf:s0004",
-        "source_filename": "04_2023_FY_tanshin.pdf",
-        "pdf_page": 8,
-        "exact_quote_ja": "調整後営業利益は、成長に向けた投資の実行によって販売費及び一般管理費が増加する見込みではあるものの、売上高の堅調な成長により前年同期比31.7％増から96.6％増",
-        "period_label_ja": "2023年5月期",
-        "period_label_en": "FY2023",
-        "statement_type": "forecast",
-        "source_section": "今後の見通し",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "03_2024_FY_tanshin.pdf:s0001",
-        "source_filename": "03_2024_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "直近12か月平均月次解約率は0.42％（前年同期比0.02ポイント減）となり、1％未満の低水準を維持しました。",
-        "period_label_ja": "2024年5月期",
-        "period_label_en": "FY2024",
-        "statement_type": "actual",
-        "source_section": "Sansan",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "03_2024_FY_tanshin.pdf:s0002",
-        "source_filename": "03_2024_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "調整後営業利益は、売上高の増加に加え、収益性を重視した事業運営に注力した結果、314百万円（前年同期は170百万円の損失）となり、通期での黒字化を実現しました。",
-        "period_label_ja": "2024年5月期",
-        "period_label_en": "FY2024",
-        "statement_type": "actual",
-        "source_section": "Eight事業",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "03_2024_FY_tanshin.pdf:s0003",
-        "source_filename": "03_2024_FY_tanshin.pdf",
-        "pdf_page": 8,
-        "exact_quote_ja": "2025年5月期から2027年5月期にかけては、新たに中期財務方針を掲げ、売上高の堅調な成長継続と調整後営業利益の成長加速を目指します。",
-        "period_label_ja": "2024年5月期",
-        "period_label_en": "FY2024",
-        "statement_type": "target",
-        "source_section": "今後の見通し",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "03_2024_FY_tanshin.pdf:s0004",
-        "source_filename": "03_2024_FY_tanshin.pdf",
-        "pdf_page": 25,
-        "exact_quote_ja": "2024年7月11日開催の取締役会において...自己株式取得に係る事項を決議いたしました。...株式の取得価額の総額 300百万円（上限）",
-        "period_label_ja": "2024年5月期",
-        "period_label_en": "FY2024",
-        "statement_type": "actual",
-        "source_section": "自己株式の取得"
-      },
-      {
-        "evidence_id": "02_2025_FY_tanshin.pdf:s0001",
-        "source_filename": "02_2025_FY_tanshin.pdf",
-        "pdf_page": 4,
-        "exact_quote_ja": "親会社株主に帰属する当期純利益は...株式売却契約損失引当金繰入額2,301百万円を特別損失に計上したことにより、前年同期比55.5％減となりました。",
-        "period_label_ja": "2025年5月期",
-        "period_label_en": "FY2025",
-        "statement_type": "actual",
-        "source_section": "経営成績に関する説明",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "02_2025_FY_tanshin.pdf:s0002",
-        "source_filename": "02_2025_FY_tanshin.pdf",
-        "pdf_page": 5,
-        "exact_quote_ja": "直近12か月平均月次解約率は0.49％（前年同期比0.07ポイント増）となり、1％未満の低水準を維持しました。",
-        "period_label_ja": "2025年5月期",
-        "period_label_en": "FY2025",
-        "statement_type": "actual",
-        "source_section": "Sansan",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "02_2025_FY_tanshin.pdf:s0003",
-        "source_filename": "02_2025_FY_tanshin.pdf",
-        "pdf_page": 6,
-        "exact_quote_ja": "「Bill One」の2025年5月におけるARRは10,962百万円となり、売上高は前年同期比58.7％増となりました。",
-        "period_label_ja": "2025年5月期",
-        "period_label_en": "FY2025",
-        "statement_type": "actual",
-        "source_section": "Bill One",
-        "tags": [
-          "management_discussion"
-        ]
-      },
-      {
-        "evidence_id": "02_2025_FY_tanshin.pdf:s0004",
-        "source_filename": "02_2025_FY_tanshin.pdf",
-        "pdf_page": 21,
-        "exact_quote_ja": "各報告セグメントのより適正な業績評価のため、当連結会計年度より、全社費用を各報告セグメントに合理的な基準に基づき配分しています。",
-        "period_label_ja": "2025年5月期",
-        "period_label_en": "FY2025",
-        "statement_type": "actual",
-        "source_section": "報告セグメントの変更等に関する事項"
+        "claim_id": "claim_23",
+        "section": "management.accountability",
+        "order": 1,
+        "headline_ja": "説明責任と透明性：調整後指標導入の合理性と特別損失・提携解消時における開示の適切性",
+        "body_ja": "2023年5月期からの「調整後営業利益」の導入に際し、信託型ストックオプション費用等の非恒常的・株価連動要因の影響を明確にし、過去数値も遡及修正して説明責任を果たした。また、Unipos社との提携解消・特別損失計上（2,301百万円）やログミー社の譲渡に関しても理由と財務的影響をタイムリーに開示しており、結果に対する透明性は十分に確保されている。（評価：3/4 - Generally Consistent）",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
       }
     ],
     "management_consistency": {
       "components": [
         {
           "dimension": "strategic_coherence",
-          "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "「Sansan」での強固なストック基盤の構築から「Bill One」の立ち上げによるマルチプロダクト化、そして各事業のマネタイズ強化まで、一貫した戦略ロジックのもとで事業を展開している。中長期的な売上成長の最大化から構造的利益成長への移行方針も一貫している。",
-          "evidence_ids": [
-            "08_2019_FY_tanshin.pdf:s0001",
-            "06_2021_FY_tanshin.pdf:s0003",
-            "05_2022_FY_tanshin.pdf:s0004",
-            "01_2026_FY_tanshin.pdf:s0003"
-          ]
+          "rating": 4,
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "execution_follow_through",
-          "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "新規プロダクト「Bill One」を数年でARR100億円超（2025年5月期）の第二の柱へ育成させたほか、赤字が続いていたEight事業を通期黒字化（2024年5月期）させ黒字を定着させるなど、公表した取り組みを有言実行している。",
-          "evidence_ids": [
-            "06_2021_FY_tanshin.pdf:s0001",
-            "05_2022_FY_tanshin.pdf:s0001",
-            "03_2024_FY_tanshin.pdf:s0002",
-            "01_2026_FY_tanshin.pdf:s0006"
-          ]
+          "rating": 4,
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "forecast_target_discipline",
-          "rating": 2,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "通期売上高予想（レンジ形式）は概ね達成されてきたものの、先行投資のタイミングや投資有価証券関連の特別損失・引当金計上（2025年5月期のUnipos株関連で2,301百万円の引当金繰入等）により当期純利益が乱高下する期があり、段階損益のコントロールには一部ボラティリティが見られる。",
-          "evidence_ids": [
-            "08_2019_FY_tanshin.pdf:s0001",
-            "05_2022_FY_tanshin.pdf:s0004",
-            "02_2025_FY_tanshin.pdf:s0001",
-            "01_2026_FY_tanshin.pdf:s0001"
-          ]
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
         },
         {
           "dimension": "accountability_transparency",
           "rating": 3,
-          "evidence_sufficiency": "sufficient",
-          "rationale_ja": "株式報酬費用の影響を除いた「調整後営業利益」への業績評価指標変更や、全社費用のセグメント配賦変更、MRR計算方法の見直し等の経緯をわかりやすく開示している。また、オフィス解約費用や特別損失が発生した際も要因を明確に説明している。",
-          "evidence_ids": [
-            "04_2023_FY_tanshin.pdf:s0001",
-            "02_2025_FY_tanshin.pdf:s0004",
-            "01_2026_FY_tanshin.pdf:s0003"
-          ]
+          "evidence_sufficiency": "sufficient"
         }
-      ],
-      "overall_rationale_ja": "当社は中長期的な売上成長の最大化を目指す基本方針を一貫して維持し、「Bill One」の垂直立ち上げやEight事業の黒字化など主要な戦略目標を着実に実行してきた。調整後営業利益等の管理指標の明確化や配賦・算出方法の変更開示など透明性も高い。一方、成長投資の集中的実施や持分法・投資有価証券関連の特損計上等により当期純利益のボラティリティが大きくなる局面があり、通期最終損益の安定性においては一部課題を残している。"
-    }
+      ]
+    },
+    "model_notes": []
   }
 }

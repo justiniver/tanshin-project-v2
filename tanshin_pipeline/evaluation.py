@@ -313,9 +313,9 @@ def essential_quality_issues(
     )
     issues: list[tuple[str, str]] = []
     required = (
-        ("Executive summary", "Trend analysis", "Evidence ledger")
+        ("Executive summary", "Trend analysis")
         if language == "en"
-        else ("エグゼクティブサマリー", "トレンド分析", "根拠一覧")
+        else ("エグゼクティブサマリー", "トレンド分析")
     )
     for fragment in required:
         if fragment not in generated:
@@ -392,7 +392,7 @@ def essential_quality_issues(
         )
     if "UNRESOLVED " in generated:
         issues.append(
-            ("report_contains_unresolved_reference", "Report contains unresolved evidence.")
+            ("report_contains_unresolved_reference", "Report contains an unresolved reference.")
         )
     return issues
 
@@ -414,7 +414,6 @@ def compare_reports(
     required_fragments = (
         ("Executive summary", "エグゼクティブサマリー"),
         ("Trend analysis", "トレンド分析"),
-        ("Evidence ledger", "根拠一覧"),
     )
     structure_hits = sum(
         any(fragment in generated for fragment in alternatives)
@@ -447,11 +446,6 @@ def compare_reports(
         ),
     )
     if exemplar_metrics:
-        density_ratio = (
-            generated_metrics["citation_references_per_1000_chars"]
-            / max(exemplar_metrics["citation_references_per_1000_chars"], 0.001)
-        )
-        evidence_score = 5 - abs(1 - density_ratio) * 3
         length_ratio = generated_metrics["main_characters"] / max(
             exemplar_metrics["main_characters"], 1
         )
@@ -469,8 +463,6 @@ def compare_reports(
         else:
             length_score = 5 - min(abs(length_ratio - 1), 1) * 5
     else:
-        density = generated_metrics["citation_references_per_1000_chars"]
-        evidence_score = 5 - abs(6.0 - density) * 0.6
         length = generated_metrics["main_characters"]
         length_score = 5 - abs(6500 - length) / 1800
         length_ratio = None
@@ -510,7 +502,6 @@ def compare_reports(
         "executive_breadth": _clamp(executive_breadth_score),
         "analytical_depth": _clamp(depth_score),
         "trend_specificity": _clamp(trend_score),
-        "evidence_density": _clamp(evidence_score),
         "tone": _clamp(tone_score),
         "repetition": _clamp(repetition_score),
         "readability": _clamp(readability_score),
@@ -538,7 +529,8 @@ def compare_reports(
             "Length receives no additional credit inside the broad exemplar-relative "
             "target range; breadth, contrast, historical distribution, tone, and "
             "readability are scored separately.",
-            "Semantic factual correctness is handled by the separate evidence validator.",
+            "Semantic factual correctness requires source review; citation-free "
+            "validation provides only limited structural and numeric diagnostics.",
         ],
     }
 

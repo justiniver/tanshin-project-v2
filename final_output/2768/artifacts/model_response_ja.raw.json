@@ -1,0 +1,312 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Fri, 14 Aug 2026 02:40:23 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=115537",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"2024-11-01\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_001\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"自動車、インフラ、資源、化学、リテール等を手掛ける大手総合商社\",\n      \"body_ja\": \"双日は、完成車卸売・小売や自動車販売金融を行う自動車、航空機代理店や交通・都市インフラ開発を担う航空・交通インフラ、再生可能エネルギーや省エネサービスを展開するエネルギー・総合インフラ、石炭・鉄鉱石・金属・リサイクルを扱う金属・資源・リサイクル、各種合成樹脂やメタノールを商う化学、食料・肥料・資材を扱う生活産業・アグリビジネス、水産食品加工や業務用食品卸・煙草取引・小売商業施設等を展開するリテール・コンシューマーサービスの7つの報告セグメントを中心に、グローバルなトレーディングおよび事業投資を通じて多角的に収益を獲得する総合商社である。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_002\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期第1四半期は電力小売の新規連結や化学・省エネ取引増加により大幅増収増益\",\n      \"body_ja\": \"2027年3月期第1四半期の連結収益は前年同期比39.3%増の8,342億49百万円、売上総利益は同35.4%増の1,113億47百万円、親会社の所有者に帰属する四半期純利益は同43.4%増の302億22百万円となった。電力・ガス小売事業の新規連結や米国省エネ関連事業の取引増加、メタノール市況の上昇、ベトナム食品卸および煙草取引の好調が収益と利益を牽引した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_003\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"資産規模の拡大に伴いネット有利子負債が増加もネットDERは1.02倍を維持\",\n      \"body_ja\": \"2027年3月期第1四半期末の資産合計は、持分法投資の増加等により前期末比823億99百万円増の3兆7,304億22百万円となった。営業活動によるキャッシュ・フローが運転資金増加等により572億79百万円の支出となったことや投資実行に伴い、ネット有利子負債は前期末比1,315億37百万円増の1兆1,711億3百万円へ拡大したものの、ネットDERは1.02倍と財務健全性の目安水準（1.0倍程度）を概ね維持している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_004\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"通期純利益予想1,300億円と年間配当予想180円を据え置き\",\n      \"body_ja\": \"2027年3月期通期の連結業績予想は、親会社の所有者に帰属する当期利益1,300億円（前期比25.5%増、想定為替レート150円/US$）を前回公表値から据え置いた。「中期経営計画2026」で掲げる株主資本DOE4.5%を基本とする累進的配当方針に基づき、年間配当予想も1株当たり180円（中間90円、期末90円）を維持している。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_005\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"化学・エネルギー｜追い風：市況上昇と新規連結・取引増が大幅増益を牽引\",\n      \"body_ja\": \"化学セグメントはメタノール価格上昇や日本エイアンドエルの貢献、堅調なトレードにより四半期純利益が前年同期比52億21百万円増の110億53百万円となった。エネルギー・総合インフラセグメントも電力・ガス小売事業の新規連結や豪州インフラ開発、米国省エネ取引増が寄与し同24億89百万円増の68億58百万円と好調に推移した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_006\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"リテール・コンシューマー｜追い風：ベトナム食品卸と煙草取引が堅調に拡大\",\n      \"body_ja\": \"リテール・コンシューマーサービスセグメントは、ベトナムにおける業務用食品卸売事業の好調な進捗や煙草取引の拡大が寄与し、四半期純利益が前年同期比34億円増の43億7百万円となった。過去数年間に実施した東南アジアを中心とするリテール領域への事業投資が安定的な収益創出に貢献している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_007\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"金属・資源｜逆風：豪州原料炭事業の生産効率低迷により減益\",\n      \"body_ja\": \"金属・資源・リサイクルセグメントの四半期純利益は、前年同期比9億71百万円減の21億30百万円となった。主に豪州原料炭事業における生産効率の低迷や市況要因が響いており、前期（2026年3月期）に見られた減損計上や生産悪化の影響が一部残存している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_008\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"通期純利益1,300億円に向けて非資源分野の収益積み上げが重要\",\n      \"body_ja\": \"2027年3月期通期の親会社所有者帰属当期利益予想1,300億円の達成に向けて、第1四半期純利益（302億円、進捗率約23.2%）は概ね順調な滑り出しを見せている。前提為替レート150円/US$のもと、資源市況の不透明感を背景に、エネルギー・総合インフラや化学、リテール等の非資源分野における新規連結・投資効果の着実な発現が目標達成の鍵となる。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_009\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"資源市況の下落および鉱山現場の生産効率回復の遅れに関する不確実性\",\n      \"body_ja\": \"金属・資源・リサイクルセグメントでは、豪州原料炭事業における生産効率低下や市況下落が業績の下押し要因となっている。今後の資源価格の推移や現場の生産性改善の遅れによっては、セグメント利益のさらなる下振れや資産評価への悪影響が生じるリスクが存在する。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_010\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"運転資金需要増に伴う有利子負債拡大と海外事業の減損・為替変動リスク\",\n      \"body_ja\": \"第1四半期において営業キャッシュ・フローが572億円の支出となりネット有利子負債が1兆1,711億円に拡大した。金利高止まり局面における調達コスト増加に加え、過去に買収した海外子会社や事業資産（自動車販売、インフラ等）における事業環境悪化時の減損損失リスクや為替変動リスクに対する注視が必要である。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_011\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"非資源領域の拡大が業績を牽引も運転資金拡大と資源事業の底入れ確認が課題\",\n      \"body_ja\": \"2027年3月期第1四半期は、電力・ガス小売や省エネサービス、ベトナム食品卸など非資源分野での事業投資・新規連結成果が顕著に現れ、前年同期比で大幅な増収増益を達成した。会社予想の通期純利益1,300億円に対する進捗は概ね想定通りである。一方で、運転資金増加に伴う一時的な営業CF赤字と有利子負債の増加、豪州原料炭事業における生産効率改善の遅れという課題も顕在化している。投資家は今後、非資源事業における有機的な利益成長の持続性と、営業CFのプラス回帰、および資源事業の業績底入れを見極める必要がある。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_012\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"10年間の軌跡：資源高騰期の最高益更新を経て非資源ベース利益1,000億円超へ底上げ\",\n      \"body_ja\": \"過去10年間の双日の軌跡は、石炭・金属等の資源市況循環に大きく左右される損益構造から、インフラ・省エネ・化学・リテール等への積極的な資本配分を通じて非資源分野の収益基盤を強化し、全社的な利益水準の底上げを図ってきた過程としてまとめられる。2017年3月期～2021年3月期（中計2017・2020）にかけては、市況下落やコロナ禍（2021年3月期純利益270億円）により業績が大きく落ち込む局面を経験した。しかし「中期経営計画2023」期間中の資源価格高騰（2022年3月期純利益823億円、2023年3月期1,112億円）で創出したキャッシュを非資源成長分野へ再投資した結果、資源市況が再下落した2024年3月期（1,007億円）や2026年3月期（1,036億円、減損計上後）においても連結純利益1,000億円台を維持できる体質へと変化した。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_013\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"資源セグメントの市況感受性と業績ボラティリティの継続\",\n      \"body_ja\": \"10年間の観察期間を通じて、金属・資源（旧石炭・金属）セグメントは依然として全社業績のボラティリティの主要因であり続けている。2017年3月期の純利益100億円から、石炭市況高騰を背景とした2023年3月期の627億円まで利益が拡大する一方、市況低迷や事業減損に見舞われた2021年3月期（16億円の純損失）や2026年3月期（48億円）のように激しく変動しており、資源市況に対する高い業績感応度は一貫した構造的特徴である。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_014\",\n      \"section\": \"trend.consistent\",\n      \"order\": 2,\n      \"headline_ja\": \"財務規律（ネットDER 1.0倍前後）の堅持と安定的な株主還元姿勢\",\n      \"body_ja\": \"過去10年間、双日は「ネットDER 1.5倍以下（近年は1.0倍程度）」という財務規律を一貫して維持してきた。ネット有利子負債を6,000億円～1兆円程度の範囲に抑えつつ、自己資本の積み上がりに合わせて配当性向の引き上げ（25%→30%→株主資本DOE4.5%導入）や自己株式取得を実行しており、バランスシートの健全性確保と株主還元の両立という経営スタンスは一貫している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_015\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"非資源領域（インフラ・省エネ・リテール等）への事業投資拡大による収益構造の質的転換\",\n      \"body_ja\": \"初期（2017-2020年3月期）においてはトレーディングや資源権益に依存する割合が高かったが、中期（2021-2023年3月期）以降、米国省エネサービス会社、水産加工のマリンフーズ、JALUX、ベトナム食品卸、電力小売事業等の連続的な買収・投資を実行した。これにより、エネルギー・総合インフラやリテール・コンシューマーサービスセグメントが強固な非資源収益源へと成長し、資源市況悪化時でも連結利益を下支えする構造へ変化した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_016\",\n      \"section\": \"trend.change\",\n      \"order\": 2,\n      \"headline_ja\": \"株主還元方針の進化：配当性向基本から累進配当および株主資本DOE指標の導入へ\",\n      \"body_ja\": \"中計2017での配当性向25%程度から、中計2020・2023での配当性向30%程度（およびPBR1倍未満時の下限配当設定）へ強化され、さらに「中期経営計画2026」では株主資本DOE 4.5%を基本とする累進的配当方針へと進化した。業績連動型の変動配当から、資本ベースの安定性・予見可能性を高めた還元枠組みへの転換が明確となっている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_017\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"基礎的営業CFの黒字を活用した非資源・インフラ投資と自己株式取得への資金配分\",\n      \"body_ja\": \"過去10年間の資本配分は、資源権益の選択と集中（一般炭権益の売却回収等）を進める一方で、成長投資をEssentialインフラ開発、米国省エネ事業、リテール・フード領域へ集中させてきた。中計2020で約2,600億円、中計2023で2,430億円の新規投資を実行した。また、創出したキャッシュを原資に、2020年3月期（30億円）、2023年3月期（300億円）、2026年3月期（100億円枠）等、機動的な自己株式取得・消却を組み合わせた資本効率重視の配分を実施してきた。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_018\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"資本配分の成果は混在：非資源分野の収益底上げに成功も一部投資の減損がリターンを抑制\",\n      \"body_ja\": \"過去10年間において追加資本が最も多く配分された先は、エネルギー・総合インフラ（旧エネルギー・社会インフラ、セグメント資産：2017年3月期1,372億円→2026年3月期7,585億円）およびリテール・コンシューマーサービス（マリンフーズやJALUX等）である。これらの非資源領域は、純利益水準を過去の200～400億円規模から1,000億円台へと底上げすることに貢献しており、資本蓄積に見合う一定の収益拡大成果を示している。しかし一方で、金属・資源分野での豪州原料炭事業の生産効率悪化に伴う減損（2026年3月期）、台湾洋上風力発電事業での損失計上（2023年3月期）、豪州中古車事業での減損（2026年3月期）など、累積投資に対するリターンの毀損も散見される。総合すると、資本配分は非資源の安定収益基盤化という観点では成果を上げているものの、個別案件のリスク管理と資産効率（ROIC/ROA）の観点では成果が混在した評価となる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_019\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"新規投資案件の有機的収益化と資源事業の事業再生・リスク管理の両立が焦点\",\n      \"body_ja\": \"投資家にとって今後の最大の検証点は、急速に拡大させた非資源事業資産（省エネ、インフラ、リテール等）が一時的な新規連結効果にとどまらず、資本コストを上回る有機的なキャッシュ・フローとROICを継続的に創出できるか否かである。同時に、豪州原料炭や中古車事業等で見られた事業減損の再発を防ぎ、既存投資資産のバリューアップと厳格なアセットマネジメントを実証することが求められる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_020\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"「事業や人材を創造し続ける総合商社」に向けた非資源成長領域への戦略的整合性\",\n      \"body_ja\": \"経営陣は中計2020、2023、2026を通じて、サステナビリティ課題解決（脱炭素、Essentialインフラ、リテール等）に整合する成長分野へのリソース集中を一貫して掲げている。脱炭素方針に基づく一般炭権益の削減や、省エネ・再エネ・リテール分野への事業投資拡大は、示された戦略目標と合致しており、方向性としての戦略的一貫性は確保されている。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_021\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"非資源案件の積極買収・連結化を推進する一方、一部大口投資・資源案件での減損・損失管理に課題\",\n      \"body_ja\": \"マリンフーズやJALUXのTOB・子会社化、米国省エネ事業会社や電力小売事業の取得など、中計で掲げた投融資計画をスピード感を持って実行する実行力を示してきた。一方で、2023年3月期の台湾洋上風力発電での損失計上、2026年3月期の豪州原料炭事業および豪州中古車事業での減損計上など、買収後の事業規律やオペレーション管理、市況悪化時の耐性においては課題を残している。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_022\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"資源市況激変期における業績予想の乖離と見通し規律の慎重姿勢\",\n      \"body_ja\": \"過去9年間の通期純利益予想と実績の比較（観測数9回）では、上振れ5回、下振れ3回、ほぼインライン1回となっており、予想Postureは混在している。2021年3月期（コロナ禍で予想比-32.5%）、2022年3月期（資源高騰で予想比+55.3%）、2026年3月期（原料炭減損等で予想比-9.9%）のように、外部環境の激変や一過性損益により期初予想からの乖離が大きくなる傾向が見られる。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_023\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"未達・減損要因の迅速な開示とセグメント再編を通じた透明性確保\",\n      \"body_ja\": \"中計2020での目標未達（純利益270億円 vs 目標750億円）や、台湾風力・豪州原料炭等の損失・減損が発生した際、決算短信や説明資料においてその要因を客観的に開示説明している。また、時代の成長領域に合わせたセグメント区分の見直しを適時行うなど透明性への配慮が見られるが、個別の投資案件ごとの資本効率や回収状況の縦断的トラッキング開示には一層の充実が期待される。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": true,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      }\n    ]\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EqzUAQqo1AEBEU0yD4xykRsWKzn_sBmxP7QxX_jR4L18XMC724zD15PWg8DmK5_RMw1SVTvwweEHld_PYHVp4l_Uki4EOWLC7AH4r9_NDw1zdXpag5C-GQL7fE8CJlXF0zVdtODEqdJJMVWWuCioPIGLeilm8bTduML17WZ6dA4-Oc6LtjrkR0FZUFKI2g60kwI2wG-BWkW4RhEsAejQhNFFQHcDWFWuq1lHdQff34-1b0v_wtQAWUldbOvFinBDHIrek5s0sB3p4povyPjXLcKyhrXQZrgx7uSEqwCnKa0N_pq8jnDtahyLirtT3Mxxt5mJjAvlQLW2OnCq2bQt3zntc7VTfTtaOHdJPu85YW_T1Eacerm5EAKqGXDo1ruUEH7XKl-_Uvc3OznkLQnl1ln6H-wtf8pZneLrb_692D_UWHRaWpFtO7XffaAuOP5OaLUeHaHSyATEFpWKftz1r1sB4r0bL_g6GJWlB2_W6WGnoxyobJQ00j8t6ULiNVpiEUS3fAYREytWsH0QCdZmhyhUuJ4P_HYwydyW-e48bZTgaNAOMYNzuFbL0qsxL3WggknIdhJdcNI8ralLMlz4r9djRQf_WGBA1jQNVti1UAzct88uO7-thVXSfoRJXk-Te_ryC2m1AGZbr0Q5cKdg_KIFCBv4a8bkzIzy_iMIy8pviA0Z1NL7CsOxRSbHBguT0fJwDJCPe3W-bRkJVLGsyMslU6VP6VSq49_vLH3jnj8mxJpICyI__g1sy2kuOcjvy8DM5l4-3_xKBqza9BfdMrAd056ojB3vAlulwlNJ1X_HUHwpptdRRxrlIETn73UZckTjSMAIiCWKl6VAH5e4wp1qthJkGqPoOT1RMavBAefnmD3BscH2eL8CmfIWSALrVMzMLFtfsRRo9a0-jsvd-NYmWbWiu_44LwZIcRTlHBchN0vh6TGDY5wp1-VH897Y6nnycBZvWG6oNMAVaN51xDn3aqeukc3LoQbS2FL1rbxyDU0LjiLxg1Xd5QkZMorvcdcC4Xk9b0mW7FGWdT0MOdkV6nIOrB3OF4N412n3dAcJ-9wQHQ4aRCHruhManwlcH23AVCUItKhK5QG67FZTHQspMcy4Za8a23WQ4qamxEOtezxRzH8OG2H_hpMwxHal2Y9DnxkJGXYL3oPcRy9OAMXYOMWqjOi-VNsOE8w5y58BoNbLwnvo5PDJunuasOa9ThyB7QS0ErhuPi7MPu3DLJ7o239hSZeXaAIXE5g0Q5li1LxnIUJm4YrEI0obWdQQakUeE2LpEUIAGrahzEWtIG6Gx8yWWX9rqj0-TEsMsipZoJFCvs79CYISP5U3siKen-YbFCVU1x39dSIFebWXEsxYg9gGZk9uEXiEbzMvkKoBU79gcyP9y19uKA6nwbC-clTU-OTRvW91n7N2_QUaT6RYv5hwAl3oSjOX0pJO_IgTSKPMXU7PLuIl_Bmw9C3T9fRXSdIVd8aKTZF1Oc7zbK5ZUwWRqPy6Sm0g5Ua7voBE0PosgRbrsavBP5EAffUNuYwnqEFolxUgy6gWR3M0EscYZi6m25pLmb4BmtgMH7NtJe4gJQd3Q9UdKwVv-flwGgy684duXwa0swJ7XYA_BKXsd_8rsF6BAcfCk-pp6kosk7yQ8qyvtAehKLq-cDP2KhBnJuiSFatfYyNvGMmMkN2vBqRKSnMNRs_vnKsaEN0u2V75EloLnKu0L8d8E8k_iPujzmdQRJIvN-0_C9Dk69_-Iwcn92C6M49fhrmQfgVdeLbEczUn0jrJBHBchFOn8bZpUltjd43oZmImz9QutJYWXYNaWVDDsdK7IZdqeeEhkfMF39KAfStM5rUaKs_BxBqN0YU0IdVc0RK0O91PpQI8hGYpF7pbhFu87MqBaZiqeDUWOAa7NpgBB9-VPmCiO07JqLxPMSGUCZWsJkuTOQOpOiB--MhipQX0_GadM3BKXc0YVT1wes0p7Hyk46ouxaPcsaTh3jBUIuAml_Px02VW6i8Dx_YviMfthJv6bp0H4dU2GhR3LYSR2_tutAWyyD95G6ByJ1H79-vQFVas_DsWlBGYoLvi0CnTS-re4MFQohHtuPa2D6L_s3xcfnydXi8ZNKdHXTUQljXxfm4aqovDWUVi_iHL-6_j_N_dnrnaWnu819gd1CtnM-VA12ODJQnSwpJNrT5DBiyNofN7jZHoEbYU_GvWQ5yow6aY6_PLISjUyzH0Tx8i4X99Q8kuu9qsBkhz985IuJfO7lRiD3nrOAAxmOkNDehhGcMw1AasK74qVyTSc3f_UTNDc-AWHAioZv4_1bgdmpbrHqqXCfDkGQgScS2fZYKCzPvqdtxkKWeCHN13fI4Cr5AtjvLPNdrZjzk_K6CY8rBswhaBFdpv9qWstE3tWLXeInyL_IvScWs6tQ1qUsPv53gNKe7dDciHhkCXvGCI_mpUdwTHYJLZoNVKdP14e37LUFPtVNhyAXfrj2u_qDFimL7E8u9OvEGJ_k7-GBdAr2ufFokKsg3DDe50FtInoSIoBg6aRtrZUk41VVHnr9lQVP_-PClKZQv9JxTLr6jfBrpuMu7iPvrCoJUvscAFPn0kSl5qnuNG_Hc87J1btb2RgdQc8Ir-V9x9oWMOYScdEC4D4c-El73b1tXuLGg4aGQtvXKMXS_5KmV2xtzCBiZRwUpj1DcRv51RL69xC6wVrINOJrwaXwLCKyEE8tyQMTeZOd4k9RKPt3FmriicZRcJAsgW4NxjOI-b9ea9T0_RIzvNbwRtFhUeoGgJDhf5BqwBw7WqBjPrM6PaxgN71pQN-9vv0YkBxtBrjHR2_5q9mMCza5GefQuFgBdndDMJRQSE5CNEuYUHCc3A29W83Uc3h1YfIMPOnakX7vZOhrU8uSGlz4fYIZ_-ou0qse8U5jJP3559p1VJG29OkMcce5WrYZXwp_UiCelbB9D2NAViHotX34er7iDP0iUhPczbI7wacG5-7dStAjA-Wq7trr9hqWSozfn4UR1PD4r5LCs3VSXIijUf_1NNMe8Pi48IaTmID4yGc0wT-_zv2z1vU7zZvkYQ5Uhm_tAqW3l-MqkItwqHrXgFkFYsHCQWXz_IMArm_BcsJFN4yCo_AgxVKFjoH5WSmxL7gYfGStFHpcUtlpmRZIoYb-Qp_5jlc3EKUvxUVZaeQDf8-Dh_cIGW9llLIdhft147LhXxJahkMpK8NJYtubwZjYMcCcV9qT0pjQLycIerR1zAXrEvR8r8oYr36OWgYubuIe98vtwHcL7edBJjbLQCwECxAVOQnVkk85uewJ-eZDrG0LDO2dKFnDvpvnD03KZJbTwGVEtiysfroNz8NS8VvxZXNkf0aQJvLR-02sojoQOwM7qtQR3ieUFj9X-IvWeT5TzWB_RVj2Y8dPZ2ChkXe3Yj9B9qixvpzfxP_gEdeZCvajcbwXSFpVzDIUOoefqQ5glW8bLiSW-CK45UVh2WCdfohIt39ND0hFo1Rt-0CG29QaVgcTRB-OJ2Z-U_qqjxgmOG9lhwVdAR2lA_fRZ8flLCW-QXxKY0z34Xf6Y9yS8gum0G8oMSJ_J5rsNNqQU8OEvFfKuyGES6VOhECiMj964ea51-QCRNFtWIswRbLoHascD94pczdPWFEUem7vy0NYRfapu6zDefBMKTQpp-9KhIOy_vsWNCn9wfvYTB74Z-IrlpP-kEDEjq6ZtmYE_6tx2GaudDGMQjjupxGtS1U13t2vc8uLbff5IymAmJf7-4C3RCRqWOkBb7Ofr1tcBhsq-AZzvGFQabP9pwduOcIppzibBYdjeWo9kwYeOsLvOHmvGkjqu8K2Fb2ZXBexIGIhvl_HNoe1m0jkE7EKYwvNvOQphkJO_-xRhrnS6P0dFkQ1cqazTLwAFzQFfOhsU1T_5dxWffZbZL_AsrYRIxp26IBKrEf-J4Z2fNkf2oI_TGkfjsx0Xc_LpqY_GDEG-47kYBO5PT5deZoHt_aSjmn67dn6ogWiRM5ooZpIJd3OZzB1y4Fcz_PevndsdVizDgpMHfSph__58OorM63BntqqY4YB0_bz2sqXe9iOI6qmw3tb1ve2xLAAOxgURjy-79oDOrwKmT9NogntP5Xw167frB4y_JButhaCWd62J3_pdvHhgSwvxuqZpCyxPpsi_masLt4MLP-2CRzh96ZJJRm1-nmE-6q6JUJuXR4XdHeWr_CAJ6xXp12LLV-tz5ySWdEEPVvQR2JSh-v7ShGo5vzXBXm4i-qwb3A_mZW4JV1jVE-hbY25tZraUpD9oIpupf6L8dkyRvk-Cgb1qRixY7nRj66DtZfMGr0peEeCTL5MSPKTNnqtQPmQJoqilQZ-1vgGL_jUUa6cQFgzxIdLTI-9c0fzeYhK7kObRiRHzyVd8Zdsgm5D6mNHYT6oSJTH5lmyHHzoDkdOhcu7gXYM8r4j1jrOXJEWfEMe3zci4rO68l3Eqbw8RPsShnWS8Gs2PyNvXQ6kIK7gycTP-9pPxG2XOb9L06RvdBVIlnXzcWuQBGK1HuZKHXeeQeWRraT1f65hkOqgkcdk8c9Hl3UJUsd5TrLyTb45IjqXY1jVko93X0kDM3hSsO7Qjrh0mjIcYBw2GLF-mjq7tasotMrZzIvtXTYPmMLTYh4e3pVIHWrOc-tsrd6KOYlLvsQXABe6pXxBMeEr_akcKM7usVR08nFVtW80r7lvvaUiywqIcWp2Cugu8uozriRZNC3X-3cdpsNygu45mK20a0s_Xlh1E_HHzmzcKWc9IrPQhYs0r5dxYWbVqK1W-D-Wm4gendU1NyFO6ZrGlvPOavIHDG_IyBhqdVnJNRLsvI25c745CxX04A5gTuyPoELFANziYCV4ug5T2p7Z4XzuPxFT7pbez3Kbsq8iIfKW1DTEp0SQQCk0_QFA3izoSothDD2ghrCxbTdzJUW44q6LnFphPA7_CU-icD4KWZoeZE3byFqwKwXagN8EA4hbQ4BHl_ZYLMnEHjEVHx9F9VO3GnsVe1WnQM8i6HQ2wpI32Jzl_Z50frdbw961twFXOORxv6wAYnaDgW3HrgDpjthXZ0NnZdbB-jLwGJ-VjwT9MLoXa4qFo1szZuB9M9tNTn2N5GSofDWCQQhUjtdKxWrxCBHqrWU33biMyESWK9orXAu5Oo5VdAcqm9j8fWaI_4phBlAfMhM4suaRqfzQwspS6P9bz0laCumP3x0MqwElj0K3aZJ7HwD9YWKfD24594vIDJMm0RUsT6sfj1RYbPrz_YFSQsjVK4VuGDbnUJ65LxUNFDVZShxqg7Gm91iEqVQrOODaRKxzzNpdfu9riUXeGU7sojayPv2Y_GNGTiscE3Dcj7LpaJ1CUlurrvUo7x1HR8LeahfWa6HR5Gz1-3EAAy7K6s_7e8xRkp08lv6R88hxBWH4Pg3LeYqcvoQiNrSia7k1hf58tc1SNJf46fCXUiYBNctJjwLvvf2P9mqvHfRqFKygCY_IlLLu1Izfhqym8lMGxYOBaS9ht5Qswm4mqYcHSUmcbS7Z25uq_0W9GdiJmTlnrgymbNuMGgotYsAxV57Qz2EuMwjhwrl01CqRDsQm85GqNykIKEQBz-yYmWEfBSyg41KqyltZfYC_0rIUJdzzB2yJyyEADYxe4odLWPlo5DZjdPyH1i2P5xTVJMFK2Z8XlPvKwOAkElUwA-tR6Ecp4qFyaVmZN_PNhaTYNeAqrYgFyYPeGYFetYIOYRxMCtHIKgluFJT6kP-W8pfJ1n4qpB9_VQRePRZ4zTTBWAxV74G2AbF83LkAUENILdw6sOL0fE1pFS1ornj6xTMQrm6u45z4vmpvS6fQNYLfzDXqnxaQXvlsh3L3fZTkvmjzZx6clIszBmeWXppwwXQn4zIAvd26iGtXqX2dg569Ty05wS5tqu0KThn17fILsf2MolG0O03LTQ183iQ2NFD0YlyYbbR_-J9YgrlQyBBCE32BxQDgPYB8ThPRSWDXxFmu7px2yvbrtFIaaelT1A1IeCdv4BCkM50cny6z6kSdtum1Gz0mwdFD6HJUnSuM9YMGNrDQ0PSfDUFFqdbDxgAXHKM9Wsj7pVwbI5Khp5srnT2MqOL0QyVwaMnPk0fxdNqeqRqgYMKjZdt9J1hNhzRzC_gxr4kkJjZ2JrRg6xT9-jh1EGaD3a2CezpIqaXiuNX_pcCIAt8UCpFVF2mYL-ei7BmliEC_8KSFE_pC9ZhouBrL-3_MvjnIvRAPwP7W9_22pHeoJQgJIYEwBywVLk0UbBg_Ijn92WJWNImG6vBs5trMk4wrBHIhNKxHCHWpRXyvnr6UuUzuczolJ_eoyZQOGCP-kHSUW9YfqS96Eg9znQ12Cz_YKJk5pd8wIuqL3hk5Gzu32JrH8kj7xH2Rzs_yEDavtxqCtjcbbcOhXSn26xOnUk441e4z-ZaRfGCz7kt-itkOJ0oR5M6FEEeKjWQbl4kao0-kmm8iZy5nceVBIrOIdHfrbpyjfEzqrVg2gnoo2VBrWO02JCqaCS7Tm-hsQO-DvsXZJnZ2OjwqxLQczaqYU_nZyVAkOCoV0KCL4ZmGqekV24NL5ifnbcEJs9KR3_2R-I4Y7G5GXFQ2nWFE6m4KgV_Yj_FntLRA_8mlHZKI735s5dOyWFzRNz7uGNDxzs2pMuFaaQ0Up1a8VO10XnmlkhTX9dQV1tUIg9Z0XEJOIbiKkXXKlQIitp17BmngMl6u072lCzTi1Ta-YUkzDQmZAIZNkehV-g4XkTjQthX9eDTo65PH0LakgpQBbUWy_U1u2pzw0pdkoiZcODMedjzPH-X7zpamE83GW2ABYujNT-KvUDgR9Ac6llgawX2f3ncfq2lZ_gkvtzEYYVi6etepuWKvT8PCu_5ZdxrYBLXWd1-9WoUibZKv4kaU8rQBhGRC7i2IGLIR8Y3de8hOXNYq0JfkBO0nlODrRNausxgLVKrwB02B0bZyrq6IaHR_xjel8Vjz7V8lccpNQjXjqxp3Me1OAJH3tTa28YdAE4r5tlvr9_6w6E8TwJNSXli4dc_RSssTZ_Jlui82s9pPZGI92GEOJ_P1E2LAP0w1mnsyrGWKTaQ5gIABFYiL9_Ae2uwe5ueeNDSkzGBVHEvbUzNaahqwVb2v8m7daru3hXtGqTxgGNXy9OumhtFkyMVzVuv-6NzaD2q6R1TLoUJQQRU6UOIiYdIk1AkUZXxL9ooznCBP2cpFvlwZhG32bAmgYzFeiSkxKLDYIGHNzdC-1SJoWGJUqXBvc2tvoDTrckYd7LFFeHofER-KoWMnalcQtTiqkFrqGLkDvUdOv5lXTIl8mb-oEO-Wl8Z1FRV2V-y-Nrtv-dCLqAtGSDzDob3j6Lz6vVg-gI4kiGua7YTpxPdB7Ex1HSYP4f_T7Y1sgh0YM-2TNxidbAmzEdBW3_FLPN6a9vOsPLqlqW8sXnFS8wNIiqiDLk-CZ6k9dFRno-7mNatL15x6azvGaqvb8ge87JZlEIKm1W--08dUpTZ-5u66h1_JYTW_l5neiWtYpG_qAzwzZRRL7SFLILowKlSLoGyeBZQuBz8Tu2h5B58yzU3DstnYUVMHSVPAf5wPinvP6zgrw9q7BiDjrH5mTAHMLFo6u3IoleaUkiII8g7Z57wLRWYa1TZ5HjsI1uEsM3g_hUIn80ZT5SpnAidEX3-Dj9ZQln-HMr8TlH30sJQly93_JOaLk-eon29AUM5tBFJAfQRXgimBnBOcptOjCUEYQ24wrUUiiI0K-bgAEzHWW_w1154oWjCYqDlyRZM30H7So2vK6BErKXA76MVa8FHkay8KRUhQHm6amqeAssvK5xYPfcI-yDlm3VDAU6U5anuHw75E4bGteGV4TN64-gCw0nAqpSl_gHlOMib2sLfA7HNqxfXWouRZL7mdLfSx8q_exmkTXPsPhRAw_85U8RO-2kQpf4-rUn1zhy17QmOpDkdiiBR012FjgL2yFB8lzuaY1O6THooFkYExa4E_YDG5ilbFEF85ZA6XzcDd5CIGKTdiUeUC-sQF8CwBMCHgqSvzWI1Zmmvg4qKdi1-uYzgkzRnargi8w0KQgyPIxqEKREjcn6Cedcxv5Otvh9-0VKkmEb0PlKAbDNG3hrYsmBTZ0-85qHIDBRKCti_lrTmgUqROlzklqUrK---htned57WzxPvnst8TZXjFvFq7HhN6D8cvhPkIUbAGRv4zHlT_oDR44C_GAuGrvAUK-29NH8xA3vnI_jfzMfo8g3078togvPwdRAyehRWLYr2kd7mFuzhQoMZEMDd3RSbOQNE33eByc-Nt1C-iACVgS--aV_m9Ap1ucZPtWU49FbdolieD-FHSsotUuiCyRha7ZYfUVgptWGHDm94CLBICigoCP4p1qOVPg4LV_B7VAXfbbloB3vQxVRfSEH4h6MG04CtYPHuskM8HtmFtWy1ItI8AjZr_DccV4SHZCh_cNNAqiFEyHAeqFM78NssrnIowtQUJ2n1QDGGZIsAeywUkXygSTLF7qJUvf-CPU0QmzYOcxgoPSSVZ4IvmpcLZSqwkqNo9AByJuuDMML0cSUnGL-ARBPb6o74kq66yexWulD4cJvuy2ZlYhuYu05oas0rDFbKGSbR0dUAszeSttda3Yuv8cR7bMcfItSIb2yNoI2qPnXF2lSbyhrBOzMR37m5EGmrla2m97OUBjMCU4xQxb0xJ9JfmT3hgT0COM-AUS-gH70TDWUkZvkEnrrCBAsA8wT0t07rat2gB9xdpZoNNofXa2iPVRJvksfzel2WG1bvNnYkE8ej8c0sQiVlEoH1j0L0ozyRhpDSSucrg1zEC6Z2-0IOE9g8KBlPzd6LkmOsVTwzdKAhK0iuAmqgLj3kE4-NQ5px8PzvdXIE-QQEJ01Hid7fsYIB7HZ3eVsN9vSCNNepgDjndcGs1cTmPjHZ2Qwr4VR7KjH8lfBVHoezQbNdqRbfJXFTwa7ox1LOO7YyT9QYHVxbO724-zKsccHwlxw6yOmm3cEOmHoe7pyQWkG5fTkZ0rtz6-hDl68MluztjAMTblTI-agSxpgDhv-nY0fJ0ka5Vs6rX1us0rhaTdWR8jWOSisHGI1yvih_sY0OTLgJK_ucAWMWsqsBaJU0ivErgr5iQvhBEGKAQ4-t_NgxmwJg0QoBS9G5vqw6wif6ctxKzl9MyCbrCHVQPTP7akbK_VrvyvTUmXbCUB5TBsVKSqnJHh441LyV5sv18bb5cEPnBLXJz7t36JDn3_UNsrpLyLyNlaOWDA2d4ReVSpJrk3RTUjPCr2hdXixgbdvropAnRq48R1FPePkvFt_2z0HQRSaPlQXsT9M-Vs4fvdLJAspCeJGJ9nKNz352Vmsl1KY2JsYTK3vPHmLKDgfhANw5kUMLPgnTsCzSIRNqYg6Iwaq1TGkKtoALyk2zFZtOq6ntN0AUZO35Ag7oS2MudczbQyTOoTErz9rG6oF_dYK3zN_jM0_P_lTbyz3uJJydqXs41JS1vDFdzAyO8L_aTsSXgnzaXIYieFOSXQNvzSODK_m-E4MdZnvrsF5LcBAEFnnz7KTzRvElyOFK7Mrr6MxKvyJXgWLJ6eYY-vwg5-rLZ5YGu7W4HMDIyyOBc6WPr1GC8PXL7Ok2u7jDhOTIQibJPq9ePtelgorB1r7MMNgRDvAdhjnRQnZw-7LMmjtCSO0tz__OQ8p6Yefq6uZkY31O7sH0pLrYjCqCzYmZIlV1_8yupj5Gq5oV3kFp7E3mnGkUNiYxrD45fcJ4x0CYQOIqcRuPw60Y6Y53oZCRphXB0eDAQo_7CwT2_4mjhT0bS5jGNOYfbUVG0oZDFKwX9kHNUHnW-MFS8xyOzO8N2lmGaVyEVHIxU9UdBW_t5RiYxY18frolfiRWk_GXJ4DxL696xhqFws9Y0uvmQN0NzO5CL150XYqnPhCXNSsQeygsXI2gr-W6gyV5D4ofCng7c_7f4bOib9MTbKgY4PqdIAy-58dUkgFq_gwigor93P89Ueh7axCKuXcmZpOadq4Q35f7-su5Li7Y4aJiJebB9CZiyU-5vAY9WiafdJmG7Y1aSrFG8LtIb5yYBHlafG5-gqbYvPa_jHbzGIKz_03rQFFj75xmrtaY2VVtM-xNzSDxjrh93Zxl-uMwLLV_s0q8vhXGmpc1Lve9icCa21_jh-lA_CNa2_NWRhaT0lw3dP_F-G59DQ-wQmjs_ZE-vq6n1EMzQ5UuGJntdHCZZaTm1H0okTxWutYV2OAM4yMmUmWWs7irehPxSDtKdLgnpjvlFHwyfyPYLMvcFCZ57lIuDy9CFD-vC-kfAoYKOrjPkpc7vOAsl6WFMCUgEYrPZ3R8MPRNO2O0hTmFaLPlP_1_iPmDVBgHO2oa55diHm0nD6Awe9w8GXGRtLtobnD-NG7xueS0qvPzcvW4E1AifKYqJdsLrPUqS-FiucZlnNDnk7CBJkbGHpHAgNw9axyZCJ0ZoTMAgY1kNPlvopp7h1WlsXWDgO_5TXuDY3oPMkq0kEibLKJxh3pyjL8s6UvPGc4Ki5fyTTUPOgxhphvJPXoc5dmMz5b2vURtfOigq0mZ9xU89FbjVf4OLILGBW2ccjcePktgnb2sOqtyZUYa3ge1x4QlquSbljGK2-Ej7d2ASK848ePb-TKf-ulV55EkxLgon0cGYKSAos-t5b-2IdXXM4wekZGfPyUn9wrsdC1GsEPPHbHGEdHQRGcGDv2dpj6v83Pm7-y4pqSSUtjISKUkkUWsZfsKlDkR2I4uYGRBGynuJ9YSBVYHpauK1sxQ1KzKESFryzaTxFEhx2YjXjkh3wpbX6V0ue4VOeAJHGF1NHrCJ-ySaAHTKUNfijinyKkyRFersdLHGbZdo8HLYdCMlhNFO0JloKpALhmL90to2HGRoNYSLjhn9R7Yc_QhkKU-fJXoqgTrRGxm4xpvSUioS4JCV8aZaz2ns5XAwuHmcg3Fn0erNbZ1uxIqvq6TSkewcv07kwNKl96N4-2jZcGgzSyqak0bm757LpWPoj3mlQidOTV7_0qANfs0ai3SrqI2POO_ApY-XVYRQHZbWobO4sFxeqtitW0ZuqEVs8_YQhM1VhuWgK-UmxqVdc87J0-IUV_6frGvJ-Rd3GIx3T6_ibPz7dmFjIueCxjmOT7dkadTxBx4vTk8pqFoJKBz51X2jPZFKjZ8txoKEQf8agjMnN2pv_s9D3cOqdKg2TQETPiw_0JmrEEdfHOHpFp3Ndug5LvRRGqd40Z4WL2IARCVnXDI5gbxjC2_sChPkughqN8CTkLGzm5vgMH69knWqYoN4DR_sphHNZKo7ZsVAlMtsHUCuP0XJUQYKhOjp2hFckf1iShMFUx5kMAmMJfBTjsYUHoq676sBQK-ivTQN3SpPIids0KvFnOzHGCc3hHOiY3qUXR10uAV30PycpDX9R58-zxz-gAWtyxbfJMT_2yo2huasR5HrS6ZGuVF94phP9gtV7ZscK2omuTpoPn-levmzgVAYcvC5xhtzWyC4JW6E9PXigH8j64XpqPieX8LuJNG9ZF4eNcK5k0pDjJ-x2wAK1M3eXttxL6EJcHVSn6TWdLIP5gQe0SkcnLpZicsKQZo4M4Su5HU6gns1J0nsbDGoLghyLh3EvbGkBMQrTGWh5qiCbVdI20Ap8C4b_CME-7WYTXu25oZxqGOAPlsl81qXTlv_Y-cr4lHgu5HL9vuRIIG5Dvvuej76LPGe8NT46EqEZChEAkg4rc2QYR3mS-7R7nBEY_WSYqCVxG1fkE0xeJdqcEmnnprNx8dlPOCNSTduXw9lRNB8gtgjVy2gOVPpV3ID9BdKXSEJtVkWCdTHtIioz2dd2NiBQkH8M14WKDQShrlbCbd1nQ8lFxeXN805o-jENKqQR2akq48rdqiBolqS5-5_2t_OfEpz7zdupzsfBm9zbnuKw-21epn_w-R43nWI0NCv1EaW0Il4qgMSuqa35dXfNMEM8zwvEfS-jw2wvl1MZ644QZkS8IKXqHTqGuixfto8_JyKCNmP7EXvGOGZuRoH_LHUND35qmI2OdE4lA3a0nOgpvXmAzjTLV7BzsUJQqa_MejwYt5L_y0GkOwmqSw0jO_WCNjlQLZaSR4FPo2mrrLMcS1noacNucohhawVYavyIhWk7slLbAh7wOTbyRLV4eXBUEpI1pqmb_lMKkTHUJPs1NIwLQy8rWcP3eIxjcOg2OEfy2z0Zv221fLbDX1NN3M-GM1xixwEuLMAJpgPxGJFFOIC9k3Z178In92PMHDHvs48UIG6-jgIpslk3YI-ciuMwfTmq_nCRt7Yb0IYYn_Ycy2HYIZgJpsNOLf-8X-DH9lSYIBJyFZUuT6FA2q0l4pGNG5H4FyIlS8iYlQGQ3vONNPtdqta3XdHQUBMfdAKcFIY04laXNAAF3Onl7_szjm26i2atx5HsZ3YaXieVpDqf4wERO_EG7Rkgc0U6OtzkeRyq6JZAtEKy1EiMLFgOFCxnBJW0HCw_BSXxJ50-ba5HOptlE102MeLEnxFr_kNQlo9t4B8axqchLve31PlRfljGPvJ-I04DBbQZBoOTNO3PHEqfew-vgpLwhXn6wLuJvgoQSk5Y_dMlIBUgYYD3bujblY9Q9K3U32B07RM7nSq8BTfO3ZT2qtkgBR28Vaf1vfG215XNlyv6WM8viUCohP0s_Aa-kUBu4TOo0YivDeQ3HnMJ-AshPFobVl0WlHfz-nFM2gdWZQbsBQNYOjvv0wse3_RTsGnQLeFjTrXgmC13LcNlmzdxmxKWZEsnMcPSJNjlb8m2vX6DyjrXDuTKaKGJJn3cHJ53aGm3yeoWKMhIao7uwu5kezMiaDsU3j5va92JFujETUtrhrs1BM7_Y0s_flAL1yzGUHV_k1jBr44UmiiTS62uQFKmFenAW0XTgW_e_IlQ08lPOEt6o2JBzIYLi4MoHHOJfx3KzqokwC4uAHCgPjogMBRS7_2ZpdRLOJhyz6TFQ8Qeb-8u9wsx0aqo_OlFwr4BR0RezL05C6LqsAO_IfRgX9KZRmsnITLHUEuGzE5NBOHnnedl42GgI87lDJdel5-Tu9kWoaDstOA-qamMzmoYC9_G6blRdvwoQMubX6TpVA_JuqQZNzkTvqgi8JyCsUlC-YSJN-yl5jrmxHNtNT9mU9fDWjlcnxEerKU8wshMb2WZ2KSFjBtBwG3RuE3t30V1Fp_aM8Q-gPROp283EADQX-ihppTqi4RXVmz5HoTMkmu3H4tfAauIe37ofqvk61S3U15TL0jkorf4gxTiCxe4XOmCAlfdwPBqDQhSv96v1gx73IpPHZbI7FCZbTRytpuIB0oNs3s3vErxLsVaN1cxmGtB26NZqB4nVq77SBKpq1vgdv6_0HfGKLQ8q1z4dFtQEBbDavzZGwPYI0zlFH66giTW_SR6RrbxqthGiBCXdF0uuxe6UE7-Q0JvfOTXMuBBxWr8Fitn-cm0R921MCyN3H0BIsS3DWoEqKZfGFV1wwQReqYqGdspnklxlOjmRbMiYxuvuxnf3CD8ggcqD7eaFGITwdGATrWcGTj_bvQ8iywF_Buz04RkdCxzaEK5ccl2VGEHEHCJ3n_eFA4797mUrQTVQMNO21XNddfmzMV9IcLcQgrCySmRFaMaonQqD8Ug2-b6Dq9kCl_kaDSh57T21iaHxiQWr95svVyBUgYdTTl4t-rk3NS6S8O8Zuafb0JLJ8w5_gwO5C5eDZ6Ei8kPgNizoNa5-5Dw4yl6Kfw9uokvwqJD5ZU1uz-6dPG1wzxM8lIfKNDHwbp3fubE3Zr4e1ETCffr-5AUEHVOAUWbN5Ha7VhtyDIXqfh2_eURirqmaFngQoaHOdqk7bX-_KNh_2jljmIrdhI4abtxszplynDvm0stZ130GmfvPZpzeBDoxU1ryxDqKndwowzvRiABXpBWfHlSXXaWR6uzVvMH1g5U-gn_AIB2kOKRCtSPCD5GSDi6k6WqMrBwAa-nVWgG-WdIJe9sKt6tA2kxosmhMYuLENqt1kfRcv8uQswHFotERMJj7mQkZHBVRCyzo9Zg51Z6StORnCszMvbfrK_D2kMgMXL0LhBz2UHxSiEgbqSrnha3V-VPjpaxPJQnmXHEoPe_26CGbi6A8K9xQh1BqVMs4cgG58CEnTh6H1m2iYqpmtTOYBEisr24698ypCuEAhLzHpm-KIcyFG1Fl2AC64uEVXML0AVcpB3BVOcE6I9D0igHvh9ED0yhFwNYRIJj06jTUGrN7NIC7FykP_8PFK41afRhVp0ENVY6VAbZdJweK4dvQ0uTePUJo-nLNeWXSDreaqOF1F0-ci5F9u920JiLSTrPNtI3dIpishL0kX7rZdA82VBxkAsJz_1FsPFcCmviPuD2C642hMWgRqtasTRg29iao3YM7rMtWeqKVdwuiGaxRaomixteOn7vX1LnQtbjajk2LlNzIYz6XqIN6CUtsL7cAdE4Ti1mgleiRCk1t8aYURGyyBIs4HHL1pBR9AWC6XiVCJwQQ1hI0ap1b5a9ikK9fNXLhVW84LMe1_oQG45MWRK6AINSlmCVjF5XAkSo8nrCve5IormWS4W0FbA7V43PCM1QtDKx8H1mupy1ZV0MdlXb106uz-avDRuX_TTeF3h-acv1ns3R8coeP3Pf87MOCga5iDa2JzyirCYZXd2_gbVsFIYUp_XGAWtzKOMTRqxS_JLl3IVrjsogfI3Ye6N0xznG5jbhLC8RipapO1LBfvG8-qL0FT7HNvOsGRqatHMtEfP-mpFspw251C1JSRLhAuc8jcDM7-UYuWogkiaMVlgcVWCPfhcSOn7epldiw5bEAPR1lDrLLIpkOmE01inhiay4EAuZTuNiP3QKjeGQc9H9HdBFZoMT-ZIuLtE2CRnWeWbjiJx10DR81RVrbWMHAuR-L5VSPVHR_CyGx6SlNEMvopmZOnUq7MVWKF1c2v7sBvHW03WlGbR2YgpOYACMO3FJ03YAItCCKB_JZapzk6cx5USXTRIl2wkeS2Oyq_oV53TpOwKgEA7XUWl9vsXC-mVz1X_jzODUuhkmcYqqWtpdmiHmcz8dV6dfTj89RG7ADYXoZ-kp2M7nhiKA3Vk6WOjDy4YyErqgSnlqyHnp1-S0gqN0GmTnnvMezfsRgm4GT1wmZBeKMHeGn-QsqqMpg2-Obg02vhjfXopGk8KGdzG-2aRsqcZxV2LMQoW_SWpv4Lehk4Vvsb3-BSn8Hlj4EMd_spzx-tAhKJZFp2_Jx_eMHPR3Xp4fcke6JgpZVvg0qTPS4V5edjRcm9kGL6J02Amkxgc-YwTi28RbFe5ejMrS2TbhVPB2EDZwErnRj5YzsqjIN3gSRWoecJ8Y40mP2G-tiD4jQo6s-UrDE0daNIKqcVCAAWCV0wZe7jnnT5PDTwSofrUpzbvv745KnnUGw5mWdRnbe4WSiIs7qhgMCNUSvT3qIsUsFSgQRKEbX9Bf7857EFJXNw6Cmm_JKSStNuwtM3RBVmppTTsbJ_aSkK7HUSkBy22Q2SnCcsbwyT-z_nCtglsqHzFSESdpcwFelnMuPjq_EBw0YEFZxQnRmDWwr433u8NjrWlPGdf3lFoEFTYE0oxIz7qYlEYS5UEw7GHq73mdr6q-LM1xok0G0A1LzjkCXXvwh4iJq2_MB7SJtki2JHOsTWALHQmQjoJH0JzS9Jr_iGincQHP4pPWY37r1KIloiDGU7NSKBAqSoD_YaGYAP-zC58tVuosgKAR1a7yQ0TGIYMa26P45QxoWQSj656kvbSMFZbStOil3TQ0YtAfWC0YE3S9vM7A7wCAPVH2ZjmRBKOb2KB0GOkyP0DezIPIR6eCCin6RAzuAgo6wXSCydHUUf7tnDYTUrSBKyDaUo4R6OiBIzUs7ksGmPBCnf48APCr6RbKjuD8h2oYpdgEgVOWqPy8C27xaOo70OND7alkML3UXNgBwlVd7yJ4ytKZqLWg48o_6xdNL8t63OID8pM8gSVCsf3oCjuGz5CDiy6prEpow8etw3pT6sAOUKQuoob4d8VsRw5NDKhEZksHgqct6HDDYd0FxFcK1ntXpUmN6AUhEQvdmOp3NAFTE6GTAP_FJeiQskiKmOWNIrcbrVyeEqGg53fSdCd-AgKsAxZFX5e3xS98_c8YZK34_LyghDtP0ONizWH1MAcuKgqdtck6wJ5bV_B9eZTxfyfOJWFGwJKGj65G0TylK3GuSVXdL44w0JminvkKXi0QhepKrj-Jn9qijyjiFh4GMy-CLQspbbFtakr-IlWGtZYwmkp7jL9_02cpkcBt_TxWrIrDk0mmUULviyNGb1PcSdd4PyTqYplm2EwwCD50X-8O-XUe5fjZ3D2GNARgVB_MUihnd2uuEcKr3QtfqNn5F4wLYZhuAE2KFtcUadg-Nhv9z_D8wYjwagQgNvsr3VB_wMqocGXHsoFRmT1tabFb40oTPm7bym-Ij5O1wMaK1mZIcCIATqRfqkQ7Nr4o0w9Hz3pYLjfaRqgZxSqI0ycnk9tQ7_I1gY1qsfpxEQ0G5Ib2JKJU6th5OvPdoes2_jDqpPTG8fZBcH3VX2BT5T6Pxak1G_RmoAm81AZiXRXj5wuB28xllYQH5p3QSolJZgSBzV3VVwiZTcYsDk-OUoWWounEKrVptjgYwpX0dJJw2TEvThZyz8OZnQSvmcCUcureFZ8vr51LLkyAKieqSjSm10igEmmyEQ5UxaqpU3aIgUNGvhbCUGx_8-rLhwLu5vzxwAh5e1Te2l4z98erT6bZ0gPjBBdZUFVvPZ_9ebnYBSacmOFz1P7vjktKkzPpejfZqC7OEcdC7CSplCU0hvmz4T9tkZ2PYqhRMxz7bEjV_culX0jb5930eooP9i-HKk3gRo61rHNePcJHKT9nrv-7SUzdF6EYhKPDlawNMW5emlhOO98QcED470ggKeeZrZhiSOi8JfLHS32lgcaX8OSjG01EEaGlHZHCFtQfthTkt45iqrasNWLXj7lh-WJsQzvONuVxvt9WfIyk1IlVYfeaYYdW9KCHGqtO0Qsmojd7cXcncXmlxkf-ubUk87l2yRkk-QE9c1EFTqcX1o0W-OaVQLQTsz5NVoLIDBqPebRgDw8rR2rOZUF_A4a-P9tYecKOvpFei9gsR67F_Gglmo3iyuYgU0Ce48ri2XLH6NVok0hFJY-9ABwVawNCKmeBKryvlb5FtyEEuwiuonJnZdLy4kJ09_6phkzmPp7C6gFNMzfHskM3rCEAjppddImU1xuazTzdIO8ctikVXCrG3dMeJUUtSMcMCyThZmhVA9v3JYWb5XUtjIS5sa71pYCwET4D9sb-JfoMRQnhIoDunuBUHPWZoBnsF4wa_Sw9mtordh5ZVwv1rAW3Nj1KSAMzDawn3C03DCl4gCMghSCwqJHqsrAhBt2Ttn8VCFYfApsn44x684v8cwoNtrzX1TO8D9BeyhYJpfkIrD_l9-nEvk3489p0bgd03U5RlRS251FVN4Atulq3f0dPFtaGvyaF6SAazxDcUkPKGa_2FnrBRPnHIxhFGVYNso71DdF0CfXvm0kRPYfj9WaLSucTG1sERuNW45Hb5i0UcQHYNBKHcJkr5-OgooQB_4qCQmypjCwyYWe8tIwAX19Jgcl5shigC1M2WLxwv-4qDJJJCjjdrKVrpu2cZZVoVA02l-3JMYISZyK-bOAi-eN85Kvrr0zIlE223vC8ex4sIo1drNVduJ1SNFF4n9bpDhuFxF95OczMoVhHMQM7hBw8iS-QNIamILwWQbfFsrbejo2A_dJZlaYLt1J6jmND21Rj09h1zPeggsjMPD1V85cxnORvdjctNReun6fRMzg5AWH1fgyp9tkQICJiHfEEik3gSdcr-xw6Rpy_dn5DCPgLL3YZpLY0ROq7oRfV86ArUHigydyKkEk6p8VZQhMw0_srSEhpPt3sGXg7h0GyRVe0MlUlA7Niypa6zBHRP3KUy15IeoZmVSsa9gEsJSFIWHyRC2Uhd1KyRBaZaY2X0y9QRSLtSbiinahevNwVUrn7R6fUva78uSplcdb-a12mTpdKbeTR38XWKBEw3cRRBK_9_Kj9bTlfZiBbHR8Yix2dzdAll2wnLiapxD8BN1t6HNofPFbLY4cr2dB46qmm96L81lma0DEetPAkHfuxzFLorvyYtIgHIF5QR7pMyUSYydFvetax4YQfVGMjO67_gpPOEO8bBwoc6x_Gk3fGZleeZ1hD-1L0h8ELiSO0l0pd3Q7t5pc5LxvfHexwBVi90grc1mSeWn0rB-SypgmznI2kqeWgWaIttHGbgF4H2cw9bcKOehnbaoo7EEq3nrKuCXv1RY4WgsOaXtTaKKYbn3duf-ywowyCEk5HeTDEVNIG2ogtZtwFBGMlxqmOq0Q9hrhJJd7GQB8zmkFL_iY-cUt5tD_fu-lzrixfbjgQ6ff5hHXWAqA7pQw5ZZJzVmv8Yl38g-SDpfG6hU-7c0BbiAYtaiglOTPMc_VsPCBgqtjIxoQqPaIy0jwnoiBIiXRHXIu9yNem_02YzND5w4b3RloPfhI5mH6dSTVbT05O9glaSaNFv0rYARMLnOkShp43EaKFFmxdeMDRLnQehUWBY85spY0LnigBGzVyiy35xC5prNbZIpZxDmpquYbZMA1m8fa6x_jgGBd6Sa-aPohxDEP8HiwkTMXn7Ni62A50ypD0rP7TQOQ0H4SGM-xFpbqa38DPGcnmFbWtH0FezPnQLm_YIgLMDudyJAikARdWWXOgx1jrweBx0yCIleTsq50SbiDbd5hUrPnfUq94M3_fj5th8F2Gi95q27tCeN1lqGa7wO4JQaQCpkpbVGWWwe_DsrOmtRjyhNunGDBzHgvdsahTIugq2eeOn2eWd50mIIlc0Wskeiw4W_99s0ohhPQwr8AlEODZVQsgvA_3ksGXELCiNcwMnEkkqfZHqeFEItiErhPqoFwH1xtKgEwPdduC7GZd1prXHNnv55KbpjXxTIsGyGlkMKVPL2K0-b2B-t7mvvlh2oKfg6bnNO88OjE_cJJYK56iE5ySXulaBF93wRnd_8V8vgrpsLZdcf4eceh8kJJEUcO2boPx-LlgwOeDjNXu-3btJC5EmPNiDH_aidfVlKnCJk_rSRrXfqCbiXi1Ur9noGxhhaVTPTb2tXnTe_j96dcqKHTYHsVNMHnDzYbZ4xz1ANDoZkX6ICNg9TUrBx7AivPMpDjzFNniopnrXdZCn-Y66g0rC9465pn73ONo2rP3wsPVCwxN-GK9dYmi7_H8bN35bM2MMTYKwo85MM_Y_AppECS0QnzZZTwqfX49Q0yMI53ICgmD9IlSca2jHQsu50-qxwi0YFQyTQd8ESksvqiaWMlaLxDRbGG8vyJp3lgCCrHLJgfve9EAvBrGcdvArdD_IB0EYr4Ak1mcZ-a4IPMYWUtRetqips1tU2sjsqrX5JCtsV3ulXjjeLXTvBaqPs3Wl5qAswJYooyPZl3qi_rWngLZEeLhGt64hMTFqJFe40wS8GwATfcd3iAhZetzX3HKwRivpP8Z2ej7biVcbaEg-rcsK1RQu9COqOfTb5oArFi8kf-rDNld7uIwYuAFFF5AzTPw5U4lXBzkpLlx1p03Pk_RSUAjos_p2zZ5zkTFOljKPdfY7v7NvQfkfhn__OGnxhYnKowRr3ECD4O0-39FzgWd5niid0feMWBGPeH84YR27J_svek3x3dE9Lfje4Ty0mpyCDzGas9mgLZ5b4VGc6bPxBeNRb1NzBuAskqW0V6YYaK37ts2VFUo-oadjKILIUC2vZh330gZSt6yUJ2dOgSltbGBPvRt4aNM_kjPFgoPYugXMFEzju5DepsE7CtN_f7ZGpxRilQwHkB6TxdBi2QeY6X_uBLqO_6ju6vV3CYRh1sCxXt24IXSfP_kxeoChGXjCN39TNTgzNrb_8MGc8NMg3NZlYFXK6YVWD6myG60waoFrhJylRP_IqXvPrsavaXiMoKEj8ZyMT3jqgXIDs1LXDMx9jAHEZ1HwqtWhvSA7H7IhavqYTfRx9NdMbXBBqHqb8E6xwnlmemXs8nV7Mila1tBMHt11nidyCfSb34QzL6LjYMxuCOI8B1q-y-igVgm2TNE1I4og6DrS2TBkuaslwKeyIT52Ks3AfHB09qToP2AuZWm_GnsXEugfkzVKT_Vk2XCBQggl06XU5oJBrjz-nmI9xgfBZ3sn-GJpvkiWXPaBVf2YBCZdWOJDftM9bACv1M2mbpdPcPP9VUaKWV5OLkpaa2TjktWdH4uniQEsqleIzPiUshnAaFw1Lz2ELxbbJdyey-C8dSSvJ52pdwDkEX-2ErgkbjhU_QYq7JZUcaLIVv9Ev-rOASAlPivOAhU5o1oCIimAnKLxObYtCTv-ucWbesvTt5cfI1R4kdBWKZtSAfAPYSCzSQ2PWy1spsJFofnHo1vi3ng0eurUkVpYof1qAougEogG3HvWE5n4UmWVoDsOYhKAJMOjXRlkitOl4YlS9MRSEmpfqk24Od67kWsuys3FAVbZ3m3BX3YM4fAh0AB_vUbhaAIqO4ASGs_sX9sYoPJVOAn_EaT9zZljqDJeWIPKU4ZTUMMkQlETfrhToc0kMK-dtTgxFvGxNbYtrmQecS3h1fN3_qU8CCqltUem0JSeQGsbwS5evtkD39DMYxztKMG1JbUh2G_MbBFSK62knKfvLRYMhnoQzjaxGcGladaLBbNaeOx4U34E_tLMxc0KrTWDBIG3CyolJ0wd3QRohw7PuEFepZ5tisD1MucFS18MCYCkv11AfxjnEIfGw5wUQVBsLHMw5-lgRO9saBZr5MCrl2fOyhn4JHXLKvlUYo6VyiS7baAFs3Bee1xWU5auekHBFiq7U2ZaYLBs_F6AYcwuBThx0nBfAUTqf4jeSas9grIm_61wtXGO50dtoeFsIsR00aMO_ySWeqor6BmsEEsxmCMhIDObUlhB3Vhku9gDLDLs0xHx1GG_W4ctQg4BApM2-dJqOQ5W2NlHYLp3McDn1Bbs277ijIoAkWGLXlBFjUVVMgHNGhtVxgOevHWI_kTUtQ2UxGotAABJ9QrhNdjPW4IDBFJhJoG2G8O4dkxP0rW_NSKnSNKrr7DdSCYefDw3gp7a3KYRQbiZbhZCFZxxvNQW_45ClF8PX8SQmdndz1JfwD8irUnER9HMX-ee08riFjXKh0vbKKoTU4-FPvr_IxJ1usmB5nWGcsw3FwKtN4zTRkxFXZLWlf2woSg-82lhSy2RZMJh6V8ctvrcUPzFxG4rambWrBYeZp-SgCeaeaELfeaE3J5y6PxsI_wGUY4O0EnyF-dPgvlYGWI40XQtTlZkBmOq8fakuCnOkAWMdtxIY5WTmAlo7nrVgd87VRjl7WmGEldq_0Icjii69tIEuYXMyCAEReg616cZKHBz0xc2-9pcWmDpQP8whTYlDf0jQpiAcIEKvhQ2rpf6pahXoCI_6qJX_5j9C8B-0JKzZxPSnsF9eRG2uj45weeyBTu00lvzIHDqO_qTnbMg6KutYRl4qtlx0RHhYZ39JG9rfu34NRDbgb-dEZsUnMmktSRMLZJZAxqyZXRcwNlvvOmaHDVnKN8osJHEsXPT2octJdc5w5evEoG7Lx6O8K74QB4vPON85UT9Ylrn-qtNSfXrKkt4HiAkFmFR9svZts6CDfId7BNwXb67iBjjWUm_A9VAOg5bApHOAF7tnF8DA3TiiJdFJ_2geFo4xbvcJqNgkByzydFFJD61icxtjpqNABplT_REUoYL1oqqS3xR4_fkOyLlZIFJIBsR3Hl4zpq4laythkeh-TKZmeoPyYnICoVPsK9wi8-SiruTiOGIgojEevgU2lk2nXDoNkVwJXZQG0NZ7onZMgSMhrj-PmQLt_6SnWtEGugi1h9rXVoqXPF3oKmEPU1FARwOFHRvZr4piH4PWZj0yVdU7SHP2Uj4c_nR9t7uVnPhkX75uW1H-3WxnI3wN5zNr29Ex2FRo4BNDk0WJ3aPNfr7FT_bMagNScv1CeHFaW6sY_QGbGEHmCCH3aPfgBvxZR6N0mLAGy3buBSpL_lVOp8DD1aNtevBmzd66diBVih__J9hbzre-F6fpiaYuAKKSPLRYJXoFKFdalB3A2dZkjZY3tZvT3o2ZsRD3bH70wXO_EzI3mLvG2AS9D1-XevwyydjlUXYmHWT82bclFRk2Hgvc7ydZ40jf6QJHp1nW1sQ3QRwLQGgZ1kXCPzHFvZgg0eDtgQzudLFoQIifm8FSo2Zf1QhKq5jcM1VUiqy_ReLkMXJy3cuV5dKyWzD8JV7ngbeQGQKxZQs2UIWXisIgqGXBmmO55DM2HQDedeasf-n6TS32sSEeDTsMazQUamQycj8y_CBfXcg0R3735dbNL3tsAIATVCegCsn1RPPaf4-vZMNyURBaipb1DFkXEq0mCxFOEaQp3mMDJ6wlAcm6LqJvayWRfbjPdg8rb8P1KLDmMPtOz9tdPsKclqlIXoLB9ustw4V7wBb1lEoPy6Hllzao5kLMmgDbis0rd5_yr_1CZhykE2vg88FOFOLUGic8YuzmppenMb-b__I0J8zvnTne-V2J0sGpjDz6iY1Se4ZgEaDgKPpDSTLksN2MrbsB8LSSO89Vf0O5_dOdIiKJiHFUx3xgrICwQbnlb6PyFy1jm-AyvFpUtnpq6Gvbk-H35E0dXzT1xnQlrqn_akCkC9VHUnfPxCBHgbSGhdv0N5vodLijLAyNLHtdNBVMtIB4jQ2Rs3UsHHEGX56sN26l4b5DnyTlXTf_LNKcow8iU5ZktFtgFzoFyRT_Gq6mf74c4ASlRPnVba_K2fTpxAi4h-iLv4n30FRMjGgRoBlE0_P-iDZACqLoLmgoi5UzQAhozuQAes2gjDV5gnJ993Hg4Qj9P6rJItNwkSxNQxpk4hxGYAcKdnWV15PSKFMJpde-48Y7yM18rcktzqzxVkQ4HkDZStqdKGaccBPQhMWqPSw84SCJd5oHXssZtBs4N9YMHGt7iAzgAgG1pQvJsmOmr5r2qpAaAONtZBRYR_EGCL-lafuJsyVc1Ko740XkSi_CUma2B18EMiITGXmBb47pOiuP6On9s2mLLINgWUFPzk8YnrNZxJnnmFzFJ7P4MY3RJ_kX8OAkvRGshNKBvha22d2ecmj6TnOpLIzD_UrBXsaU43GKoMozznRzOEaSese8qtUyzAIUGTQ-qAE7WZcyaWwN_w45TOLZdlEW-kfo5RX3poOlRG9j5i73SnPPaeYuG-ee0c1lrjYXAX15yyQ0hHPMiOgrkVaT_yAZVYnSABDZVnHKk8uVArYmZiZT4SkjPx3GUICJGcFT7TKGrPL__DPN_oxx9H9xPGmeyL4elIqzd_MXM2XOOnD-FaCW7quUlaI6ctTiql88J0f0RmdRQZ9FleLvYjCg_Bwtp4WOkdwmKrGeGZUIukPMyO88x7VROeWkjv4vPTgRXFMcfxbNFk8r3HvryBZcLLONfHZ6r3qqgrKTUACb3Sctlo9EirzgsgvSLhxQA4PAWQ0UPQI9Uem-jwn9DjKQuDU8rtXU6kvNl5Nunb8PMXgLYYEVLCjkaF-fAZwdHzs_mOb3ixgtHMZMlSeyQK0WnzEIBaVGIUlUNlXLeSBEZDDB8zaJRYT5PTMWYdZq8LzRP-exigS5BC1lkkIF3DM3zXaOI7w_DZHxEWyuG2XF65jmgHcdObd0RqH93eAhmYE3iKJFDC0ghyt3dkha5Z_hwMGNIxchKX8XEogJXAYfLsRUWywDXrA52nWNjVSvL77QhJqjVEzHp8CGVI23uU0i_In8NJuCNtmZqPMeoQVoZgTU7Xs9wPf7uzGw4TsNUDekVEdNAxpbBFJnQKj8oXMBebkuGdR3MPSiRK7-9dILS4CFIGPtx2GIDtHTI5BqSmUEG2HWOjfVK0tJuZEWRXTRGkm_8DAFZltSmIxiYp9-1Z3RUpNhlGjhaZLwc2jY1zDgEQgrBD26gHbFHmk8DOzEL99AUJak1Qmls6c8lFlyIJcKgIfAhWGjfbDw3arDiHHG3EYWDw5MbaMQRFIbBcLmTKo6_mFdBmlT_qGFj1ylIalIml8z8WJV2NY2RDWE1QBn0YVrY2fUwUzAimrWnJmAwGgvjRBIIuV4nepZ10XeHPDBM0WPnek-jeuFJvsCcoaHzF2mPvH_ot4FxBBMD_eyeiyKiY0m2qBgNylb7Y0J189HUHo8iQGNsLjQVzE0tVP3wIfUujhJYL9oWQvrTlVU0KewIHLMFnlknMb_FV-iX9zo5E3HZqxIIyY6AlriRczSlcA3iHplkOfU5fqdfWO9fwuSaBVm59MaJn2omkX0WTVp7oCyXLH2r9hjrAJj9KPMVS1rUJchMI5N5pGZ58v0_NKtnA8Q8CBe_b1_YiDUszv9aAEIHw4dx8h4VAIqq5lfK6PQRYgCDHPlg_NyFsb_xhrp1Rd871ORzoqFlZEWNInBYz83C9Q7nUc-6EiE4f4XmQNYL7efx_Jwjkbe_jRZmWt4RVLBgEj4q3KF3_sHzwJRfBDAAVZ0Q9dat5okp-B-1FLPthh7xziqRBmlgy_W1Z-6ubvGSlJi3WbKr_s8dNr3m-iZQz1ANLYUc9-t-_Vv1kFH9vd9Hvt9JumZJPETMn3W_b8mjUvp3uX9_9is96nSvNYzbutkC21ZtJesCvCi3-Kra6L1LZ8TjBp-PnZes80Fdxe-KWgTmtBeJRVvneb39uj3Vr896rZz-k-XHsr1RGxR99LjhIXrWi7lu9BjlmjcTl4py4oCaUcO-rS2-lU_3CAI_cKa5lJD4Nk_Y4N62z5XBKHx0mZ3MRCBi4R9C04Nk7oDYKo_K-gVBDnMoha5FfhBNXjpg9FhHksHdGslhjtco0-o7dSS_KbmunQFeKhV-VQyER51Dd5l2otsXKhqR0djhvMhIkKZQx72_dwoQXunT9vv-SP9WMnEQIxUucxwKLaFuwLCT6bkF9Fv468vjQydd7MCBZDzM8Kt1nIzWLhjOAzwi2479AQ5kOaxANJeY8RsgDnmODY0xsbZfdpAK5WK3pyNhTfzWZoDj_f5wi9er94sEp-IYScVGzWZdN4T09GB2OE4OmpYjhocRO_hz73p-QMiybRmxZZiNhr4ALrcAUsdp0s-iWEKJDLjqGcWo8rymwS64Clj-RYnsnw0UQNouP6bstv66gKlyxzq18duoEo92dhA56iTKKgRRefeiEwADUHT494nv2YOD3jk3XmUOtgE1uiMZoGuLhGg5FtBLHSRppF3GplityefnnXeTfh5RPfN72WKXxnWu3YsBMrAJNX9TbpIDjmvQnemsr7v3ZZjz4n1H6vgbH5BC3c-VIkZll8waE8qL1kpCEq4HYsr-xs13RIM7rX03tfTt01xvFShHLdbBAvaOOpd6pIOoej2jJW68GIJCrHqkB4Uk4_z0nnvWU0AoBfZqNCTvgjwi4vDVnpe15zhztqcKiN_pABJMEFAFjcBTDoZ8cByBA_jkERYpM-8HAvkFiaCzbAo3mEMfG2uJy5jYXJ7eFCV---kcEdselb4NECddS3Dzzt-iLQ_IzPU1gZ6gOUPYQ5mMRcZdgiOr90rsZObKCjYMxmfjV0sjjM9JPMzMwYd-yRZrx-5LOelUh2OKevFp0hc2IwL9R_bZXswTEJk6G8x5S8L01JZQL3_z6b-I0B7Cb3NBBLbE8QyVdRS-_MMI8r0W8VPB0lZgsPmf83MiOjBeYvyaFgpGfnfHaNC9lxojpeFidF8xAe9FtHdUo2OH5vnYnldKLfmt5Vp1r12GBdNrWCTopKZfzl7eu4Cen9pfGHEezdhM2W0Q4n4cwdag3bCJ6cY5xp7V6zff-cvyKV-3tDOv9IDs0nctVSyBiegdUGY1KDY7FjX59ffKklfCqXqjB02G63LAzzUyS9JSgxL1A8JelEtPRKHFDt55LxthnbqXMaXC0YKqmymWyv_KnTTrZC7dhDfO1xnhBFUVbC9Lcjbttj-Ewgt1zzIasDCg2gdj-iuVi39B_T02shcl_ivhZUhP0CCoEYIPmPASNG6_oiCs6it3hFjL82wJC4ASUQDGxLgzyq0YLs1XOVlL5HFZoVC9QnGAzCQWTQMl_y8WThdvv2ya9fsbMevgxo-7n90EXGMhIxAvb3ta4KXDiSZ8CJTqColA2532WWNGUOohU7PtI-WMd7Ge5nIx2L_3o53KMFA1KMURfgHd5qy5pWx_WQ9S0IExWhN9ZmR56BqnlnZKwct0bHelkN3OX-BaJQAdB2JK-PfC-ToxSTtJ-YRMZ5s3mQgGFQJQ8Hf_V4AFEX7wIJqM538bye9FEi4TnhyjlwgZi5lGmdD-FiYMYTwOrP_j0jT-KQExZbgZeZeil6CCFwkYmDTCl_YwAzhHLy43T5kO3A2MfEFT6eFP8konlkxNdwx4QDHIMvKyCdV8FmeVtcpFpGuMud-L8afMxpBHhClP_qG_C1hsZGoiIZd5XPM7hBdadjBvWe448-anU8qqKpk5DXej3VVZiJbJAhotXSlOjK13-togr7dSAOkSBJk-FKZRl_OW90FxdWyz0wMFcCbN4wrixwBktGdSF0tPl1ABKC6-C-WB073eOadM_hbG92LRqtOr5C-QKh4JSsXTcfq3YLErn7IVRK1JGFYEGaI_9SKJj985KXF8i9CKJhCVPpRZt528b4rGxeFkrPT3b2sP6AJp9UL8JBZ9m6R_WNpaucMQELutS8BtlPz4gjUUKPI-VBanYM946TXZZUSIfXYVAzoHIFKs0zMFfx_OFEIIzwjkGRhI_3cu1IDMjPzkNWmAp-UqRcBEmpN2L2LKszYc_blXLt4R1mRuKHL-iNXwCtrVRZnaWPbiRQA9SdXx1U7cdCkA9tDs2QTfLIbU38u4RDff-8jPViB8x-JhAKi_ArFz5UOiUiyzIsaJJjY9P5rPkmlfvkuKK6P4_5CfogK__k0onXCDug0DxMDEbIuTitDpqtjoic8Wj7D15RuKb-4unUv-ngsFY9THgBhXwjbr1AshKpkfnS5TX5jGr09gQ_hIl4T5UvSKxYtrxPHaYAce1ksIwz9TXnzT2W95f4QP24ZcbXX__BfEScII6NXdYAWvqe8G98Jj36AkYva2Y8gp8jbR8K9lIwXrll-ocyLh9iKtI5ka-YsBE1G5kT4PVGswP-30q_7jXBzCxt9-4cDh5VJyCj-OhOAuV0jw976DYV2XMHLZB70wv9f1fqw5Vj5b-KLz327rWRpd8fXrFKwgFWbTv2Sv2F2_-lE0JNOZFMnypkuGuSu7ulYXwL66GYHXrPE6wvJ1tp_Q90-s1JdVB5rFIiG-OuhiZBDviEhUXxlHjKhxap2PzmH3GciNuJaMqLdBWAOV6Up9sQ4VigIcY4UwhLLMtV02ZetZGw9jqrcWD3E-3-yR2Pxguiy9r9oy4mHtCzJQpxG4T6t6BHYSCnjkULHjROqMxo3hYhgJicPp-wKXnYEbFLfCG8CLkdZarSn7Q3f024AEcVJzbhXfcqzyF-Ev37vjTrdrta8LNra3pwgnEXOG1UA1EvfYWCmcXg6xxOqR0QDTifkNCDZJt-Pq6rmd2bI0t5y89PI8VKvgcvCCdmq4AIeF1JdsIUi7AG50rCVQvgDEqtAc0_V_H-fCbNQ9sPtHaBx7USGbm5CJmtLZcBDabSf9SqWNj22oKMU5BoK9HhQsQQRm-UXheD-AYgp7Qi01DJxAnYzu8m0WodJMlIITp982361H_z07BHc5lVwfs_le5uUKvnHK6GVkBrPZTmMzJN2tKQFE2rWY7Z0NCwrlEBQp0_oHpo9bDUw5LB1K3n2v4AjkZuecrmRvfsmtx23sOdULAFzYotMlR3InACLpzCJ_qMshm5xj-KkW4-B2vTMqmHQC1ZTnQiquokpTX19eTQj9iSWGF7ZYHLPZ9OSI_Oyy0IXJaHyfgFZpxLDELgFIUvlpDvl6YvlUFdfu_8hWukYimmYQyczMizGaqNGPOeJT9DxxkpxWKNj2obydDf16cj8N6rZCRNLOO3EJn1W4vcTFck2rJr9prDTIlV2J5mz-oBRjZWno3qgf51AqWouufEindWSqVLQ79Adglibdwf1p_Kc8KNLDlq2WACs3kKqLe-vrNOX4nD-iWw0FaeYM0pHChUIU_9TF1BGlSS0FKM0cgpL320Y6T2_0m9QSj552lywlZL66YYIDZ4qDe5HTmxlccwUtCDrCt8AKLsxEX7XEQNFBkiZbGnen3W_lTL_Mx3WpJMGJ1zfIopmMNdPIW7MXJU2XzAhmlEFP34skHdrRBMpOT9I_RXVQrp88KcfblW4YZETuKTC5FXAdQ9E7dqnh0cO300uT4ua_JGmo4rmDECTQhu_5ZH8A-OjUk9eA20LwCWGYwSJNpRSKtzbsiar8QBV9tP67AbeU2RZuz6-SSLZ-d5_5Y0NvlqYXsYU0dGOSiyAZn8M_rbOsHAAdoA5emm9OIIZL3WX2DBtKhatZmlHmSj-8o65n2ghF3geiK5F9NukKgQN2Sel-Oj6qTFsUcI_5NJqlLdpskaChBhlv8JkUSVNQAsW2oCPJJJa1lfNnwWP_5R9db2sCvzspViily6XMO76XyGvI6ubf_ZLXsVxtaX-mWjm7gzJTW-istnQNzDjABQUjTT16moeakj5nS6ZqIWfrwrukRrLyoyxK6LNK2eBDf29-tFpuYONh4PFyKFm0EoOArABwG7enVj897zDbFK-AY9IMv34fktNInqMOQQzaTAIl3FQEBd8uwyd1WhM07LC3V5r2GWzaHGZyn14KrT6OiOeaCDv4LFuwu101TxeDqR9AzESxxM-BQcThEm3XJHfvu0ZhopSXv0y5hKg9iv86nbRFWNFg9oHx9CsOh44eBFDCUCYl7TppQzw3vEE4rZqMrfyDMi-RRBkSzurAxIh7TfmpavTzd_iI6xzs20mOVebtNDlyB5xJnDeKmZOpQpPaXUpPJiDVawfKFa2_9bQqvlVEjZWJGL9wJPkJ2jpncM9Kni36lftiCWgj-jeD6UO2HSVphaEkqeHUajWC_ZDrbgqenXle6Eiu00hfH6Xj_UKE40274mw71YK_T8kTqOOw8Jv6FOnJL1RmqOctIXIk2kZH04saLdw1wyIBc7gx5uowayoQ0s6RYnvg33E7VkAHH0XJXBEoT6Fux0BzeiYJ4-pjSW3t7xvlwcORt-etfxy6_1if4l0I3-Pdv76cpTEbDadiEBdvL6kUCZ1BSbyW4PGLxTWGkiz-H88Cmq0NihO_pBJPvKfrzFUeZy-ih4XbvyIokyT_cEvX5Hs5Ps3FPbooQ40aEOJbG1y4UoU_xb2d2njJAyB1pFtEc8GXt4H8TumORXgbikI_k-5GkW1GZ0KmrO-zesfuoKRAQC0czqiF1R7pCyi7ES4NAGw2q6tfHGyjUtWMmY0Lmkgb0YrNXkbo_FuqdxQn-iOnDIJ1vvF_dy3WoLc6cjML75e8fS3iFr4HzP3g4dyM2U6FEi0qAvL2LCelB69m5XO6W-M1gRLjwXwqZ6ErULhNnz1IFFuTdyJlExUvTsk8oFf7WEjTcwbrPLf5WygkrQ2ZPAMGJ0y-cLVpox-fBF5hPVbmKzJkaoxE-CgPc-eHcts3LnL3hxuKKIwI0o0C_suNe5vIHPVSdqRsZvgLqo0QQ0V0D6g_3YWLphOI_YXUu3GLUCMWiqyS0Oa_235mN-epB-kBKkw3hcVwuxTZMYbUQjS9pZDgBPRz8lvntTj-YX2TUMsXrZnrfzzdGeTA_8Xarnf7AR0IeuuvY83EVYswUccMdHPsZSzJem_Ip0xaCl-U4LKIk9XzpJW6faXk2eRWc2StERLWXMm9MG-raZMexU3OFtFYYbwQmXQ2vOb4BOuyRH6gsdwoFR3PrL3K5ypqiS7hm7weAGCz_cgt4NAq0urI44GKXLNcTBucdEUsHQThm41b7zr3MM5cqsDsl2YnGusVyMO-9t4MozbmvkfhUTKRutfJurDp4Lyi3Xsc412Nzb_PyeOJybyRG_9UU9RpHnITgA8VVmm1a9jqCbHBDaeh0MoPypdzRkvy-8dksFPDSPJ3olcFNV_LtmFEskZDoHmg1UBCxcn1LB2VzqqubZAB8LpPN0-pO-Dolg5PgeXd-wTQl-_NNXwHo50ogibtFtLcsABfWMAljExeNh_Sx0avN8REEu-6fSAEZBB81eifIYOOFrqpMvLeiXBLrF5GKwon2silkMgJPQsmeC82MEpJtC8vPVIUifOtB4ehL_xsApaCIXOo_eGOraAlk-sRZQxX0z-igOnWPqzKIKT4C4o-Tpx6c1F7FuuUemZw_3WRvNuoqSnELdxgKYcHsJoMWgTDY4sJ4rFF1CsDI_EK4jEw9STN-_8VS8H2i3hKRwOcVZY2nInU8WSMzYqK4F-GqMtQ7sPyqinN1db6hjpqKGOfKR4PewqNUhnYAFRrTnTI4LK6cafnjcOdGc3GrFOde0eCOHWx85ngDHdVYYUYbllbJ7jpPNnrtudNol0PMLFmVcZoAU3x5wWLhhcwL9vRGaAempK0vWz_LsjxD0sZx2rOCQxYzz7NZ61lsJmD_cWNV6YNqVakaYukGJ-amHH5uI3HS-hc6DHsRT2iWUCbG3rPMI0Uw8IorCtdBQVDSAx34SxjDdhETpN3mry0iXTpV0AP6DIn9JMbUjcQzzPm4WipIDSBiGD_ZLI-Fm1Q4P_1y7vxx-R3uSufZoMbCuXDAiPxBHhu-vXaNULCzS664vTdd5fygLCYY86FhjgzJHFFLwjEUs_YahnFqC8rLtvnxCyqQRXiFLBM6y_mO4QT4tsm9ExLpVju0AFINSujk55vaLSX9vC2nzHh86mdPN-ST_MY5u0g37iE-MYxeSIkDSnsHSnw0kbmvMMNocOlRxIqp1H0DJK2KkdXUXtYPW78-SFWDQY5AgHi_L7KSTAAucUhNNNPoD5OwbtdPtnkVzvMl9Cpm1rBys6mu_YbyR9YRqgMFPdqw5ZwpwTPRCUVUFyEgdwVQDhByPFW3AmXhv8NdMAYKCfiggtDdJKqy60a1B2kWMgIBr-f9GezvPmrRVKzOokCcseAEK3NeidwvFwlAtYox3spWG3JSlzSUooTBDx7YxvTHQ28q_GQFRJQpx9PYyhlO4r5c699MS-5fnBNsmEyS4mB3m2M7RV_rFCGaRk2L43oOuiubvC8_N0vB3hN-iJ6O7RSiyXvV4m9C4l5V00fGqzQ5xoE7e_YObUlgGQTbd8x5GBXrCZenOEsz0ZhIENp6lyqK7iNh5lrf69syh3j0us8dDAeEr14fWGbql8mcpB7n2zn69gQ2F-af6cQIctgICPkMafZs900InfL_whiZQXSMxGLgO7wNGpnADWRXNiLXOC4R3emQ_hVl4xIkrtrkDlNo7aBFjlYYu4qKtOmwIJW68x-UGPcyoUf4Ha7s-LLCdFVqtKPz2UibBh-w3YDduY0TcvOkI_9_3J4-FXL5OUIzfJaHD7j76mz3cT6v2f4suUqvoelmVATJxI5yJUhI1MwNqlrZHk2g5vu17h-KvcN57c1NoA1TdMsAB4U7b3tcYCj8l25hFdxJmjxV4c8_iMaJcI0bEKCWtkR3kvaOKVRowCEOpHn_ePU3FwXbwE6wNt0NAWsZbNNIBjm9z_kJ20jXSYhu-TNyer5PLvwpZSLUHnYfPHUvQmBbsnKPABKATR8BuKrAeHmQrxfXw2gzoFnTUbkbZHyCjICcPPmeaf6ojZF_AuqKcG403PPrcgcY4_PArLVN6ju24if9XznTgKAo6E8Q4Zw-71vBfnnRE2e-wnGzuJ9cCsp42W_X86W46bzc-WDV9u0rB44Lzs8AbtFhyESXPIeScu3uEwcx7tAdBiz6ebxuQuaJDxlHZGWX_9emDCdwWLr1dmgjBowh4yBPSgd0BE7oqHC5ShjBzq_0N537ZICGVqBQ1fcaFFAe7AGHz7moanY0zzB7B2V12mbzjnfTunKZfEfGj3Mf_edDZa7iZQZrzu6it6W-7eVu0_hxmgPo0E5DZxuvWjbwq7uT_O8OnHBK0y4kwdIUdMKXfIhVmiiuzb80uMjcxAWSQxMLpISlU2EetvAMZn2ULh1GnoYSOsF_ykE9MFZG8iwhH80bLsFwEzMaXVzTKhe83WeO_RKg3V7SHx-632mQ4UvNwcaOTSTJRDU03aIfuIq6HKXtzJbGvGFjNW_ec3_nUhVxTRyHbqnn8kSmna_Nod9x7_eUNb1-5zvMRwNWaQj0Gm1VaERf4xSULV_eJ4N1-yIM8p46pnHra3hNvHogXPZ6EXczrUSYRirFKmiquea_8p4o3JJRGagDUEvEbnX3CPwDUvArztYaVZsi3usmMiopXAL65RnriLrS_CJ8qXnlhTXyR3emUD8cTOf9ELbIv8MboIUWye3Mu1LGetazkEEbeaJyptEAC07swVsB6VY8EPpPHw_Te4GK-z__l_ezrWLtha3pQLFvhDKAuAzFWYv4-Bud8soGBIHt1G7i5Ri5Zstuep6k8JVi9ZJrDXzb2Lwm1N87FieMMGHosaH-BW3poAQHpFLPaXnaLs693GA6vCMr7SbF3smzPlq9MidzTPmveIsxHuB2TzTR0fzOYamsz5-EAua7gGHIVqSQffCCqvtw6JDYw2i2kRePsHzPL-C3F3I9Sko9Bf6646EfpWiZNUjx3P_3d4hkvt4VD4ME87SNpWPYu4vun9ulAgC9fth7Cf5ouTt7dcFCRgKZLxR3KCzF5ygvtvd7qgfZxIz6OIIBjugQ6yY6oPilBquv7W-XvvjqCYlw98WxSvassWHActU8QeV9YTl3IKJ9laVxb8RgeeII6x2y35vy4u4H5KkBAfUOHy4jjYVbURBmFBD0U7Rhnf10u9mVBILsZGOq0whizvwt33h9nF3iRIdjw0jItTfsHn2YLDQdlGDSUEYXioS1sigprn03xNdpFHTtKAJpqT6ZkZApbdV2P95sbrvbi6Z0T3BJpmybtpFnjWCqrrdfpKlhGDDo136QAxtO0FhuNokehbOb49TRZQYjPe4DEV86-8MtxGZUkoEkFR0_bhGzDEjNPYl1QI8onztkTG-GuUKlh-l-PrDw3g59iHkkDPj2mxK_SDKsqLzEMJjCZIzBbX9iW3LXH27agP-SGUbWFyA_9573zXrTq80QvGvz_zrtYe69tBHEms6rEhCbmjIHRj6Fm1_sFpkiRWeSZfm2AlQceAZAwABalTlt_o4gjVxNzDZvD_qLJxXH2842RZb-5HtazOq5DwlfnouzXO2fbahoDi4KMtWZlBeC6ZgEKoolNpPwob4rAczb0oEQufwPTEpoaL964GE3crCv7SYkQWyjyQjd6-AM4bBOpBufAq6oKVPaURkaRkBA6yW4ulrC5lDmsgTcN2Q-LNYu3tcby0miYg5eINISQH7aFuk-SXDoiHOou7avz88kuiSd0Ijp62SZWJgfKmqW5tCFgiNJnWw0jFKHlCevJkGIqO9E321k8kB40k3ou85G1_TodDXCwJcUFKk9A2iZ4oXLFq7EAtnaFjiZy-6zz-qPY5-DOG7diCx_HXItVqS7qFQBobBFjFD7UwdzCBIR1pGfBv787qET3f9Ea-eKMJOb25joVvkqQAOE-llwyVeclZI7sBmWu8OgKu8ky_V8swAHF9Zk8btyNcbYXZSzo0GYgx9Dlh5vm6l7bSe2wdMTFrXdduozHdA4dEpV9h0pYSmJb36MUbLlPtz0tGQZZzn3HT7TO9SVIVnuaaetrpoiySWA8Xm_sEKeyLmi3E2JqkspYMJwIDqSk_300PawLVeMuHTmwUmr7CJUyMauLpIjndELQFMP7SvnsAaGmuR0469w5CMszxOB6uM8DWz_IXgsIxK6X5xJLqzSK469F8YDyEMxsUouPyGPJKWPU3OaeXE3eyn8z5QxyRl3izAImyFsEkffuVw8h8MYgXP9JtTEn6ptXfJBGC2-rxl2jDT7PdElL82_QcJhHqbFp_fRfj4A-YOdFuPyB_uowUrzW8v4kPfowcxZ5RREIapOvi0HZWCnM6Y4fyOxITNIHHJmOPALEJ6dE1uEJBd7z8xK7XsqEl2TpVnbfMak3WFM0as338IeDOx2g0pI3quZZ7tCGnA5CvbFOXsBjhL2riFyROQXwh6xzzAeD_Z62y8kq4slM0me24AYlBiS-UVag30vvNscragm9Bb7L8ahYU0jzveSRvqsTDFN7MDBsxeambq7FljTGZvAFVag9JvAsG-W8aIyP0O1TBYlIDn_5JJs9ICNCsZY1J3t6TueTNBUp3fac72eUCHe9jvIrsqn2_211bgBsHLy7HG0uqzTqibzF887M18n4P7UKoxi0RBzWk4yygsB8D4EJ159OHsmfUIW1l5bIG7zhSQNEa1xS87KU01hiSkY2Eg2xrxOHGb_yx4z8VFsorIlxvS8skX8PKCWQeZ6C0xg2G7RY6EvakidnF9o30asA-Sl4e3UnoyfkPSwEEfYiqCyWC39F2BVxlIT1URuRYUjCpRs97oKr1bmjn0QvvhdaleQ_6RMu3dsFwcQ-VY2Ek9fiR4KgLVh-pQIVVd46jjQsAQD2DihHKH9-neC153H2lh9Yl76OGXRv2H8Bidxg-fS4aSFQHjnam3QQNLi0By8JM0XmTqOax4APLn4eduKm5-3K-QKWdPdm9Ng9g0yDZvCKhI1XGG9LyqImt_XOZUBEszKTothEODXdnqfFUCLOVMIz4z0GoE8cQAwL_bgh8GrONUZI0Fb09H-qPE0LckNMy8iGGazIwMXPIkCYynXUqWyUmyvlzoQff8hc9Xi-YqiBcTKe3K2PfaJLffGckmwnuuCi171TtxzCO27BemJWpUtkhQbwUa_bSUpO0RgHlIkHEYiBUt4IiJFKeeuAQnMOWo-RZpOz0IYRk3XazJOZoU-lxZP7qPzv1z9Iy1E-LK1SjgZtAl9977p6OqxlGzyHAq49K3H2KC68rfqfVSFGp5KTuCLYrya7CH1ZqQMVIu0zMKUY4lAomYGd-xCffMV_okcDj0r934sGwXomYfgCVW6Tx5p4J6RFJYApDdVOJk4i3X7z5VshWOAQ1vvcaQoKVaDNwuz3Nv5d34jCFGjGblS9aE_potCJZ6c6UajB2qFFiyyKBcGS7ag9mOpRIsnCMUHsPar6GFfXKUTfzuASnhQFi_GsaDvCHKIp_-TCAQGVAEMp7SWTBwRl3mXWhWNmgr2IpIJnOsFF2562FDxuiWe-FBcDs0qoo4k5Y6qLm2JbWWdTDceXTxNqTMBrAuCyyriP4Qa_YO4RN6eFkY0ZwGAwsY7pP1MH8bJDqlkZ4KdQG2Qnr1O5j-RrmNG80oaN9KJwdrxTvJdrtjobu1GXWeA3FfYCZ5_2Cg2TGoNdsjwiOs4NpGWmSQP6AyGSKw2qCyjRZ0eFdgCdEhUCMhIQT6L3vou8Tn3dJAFdMYr94Gr9cgfXs9qYXUSsE1jgK5jByGzhGU7pYrjLb3OUZmY4nbk2L2avIqNzYva7Y9Zth9Qw1twuUlXQSLNONVNE_N_WWWE8vG2I9Xi5YqfKkA_EOFO9J6FRYfVohC_s2ZtXqu_0R838JO05m_x_9xwmtaRRTokiXIIUtX1jQSp8qcTaPnPnSUaMyBfoS9PBhW324JnxvzhusOUBctesdFYzVLkfDbK4GcHfwWP0u_TvBE16TH3kNcKUqlyYMK1y1N6O41B0_Nl_7JhMbhH8JqIW2c9bJ6meTatwrCOP4Zz4NofPla1LLgqvww4oLwtc8oAepJ74S-S0UtIlhXnY3217MIoxVWLsjUgJgR7QSgdeRnCDi0k5JxRZUs89CgaWNi3eQw3tgPFVKFfJgYvLf8tePweCsWv_HXoGUG7_KMJ_6rUJ_Peh2yh_CGTuvRrKCTZxECqU6b4Vr9f7p9ot9ZnM_9MBqQqzNH6M82oTG_NkikbsgITNkGikUfbR1QzZGuOR6_8NJ6alTxfOpsjSuyCKandu_ckd8N1wirn8z8LuAGA-IQFUb7fxljw72FDchvT7ao9s-2VSKKaSF7PbURdLYs4-EF2I_17dTaGgr42Vgr69Auu9w1uICsiEw5g4rWk2BfMvzmHJt9rANtc7eT11bYdUvfffJUWGTYNFp9SILIVf_VTu-II0y2XrCjwTVqG0nkjO1beHhYf6QkTMRSeVdvWax3NVsnXcMImpPAyRti4mRnuEXif2JGABAL36kBLPatLR5JM7Ckn5erV531_i7UnSmA=="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "pX9-aoy4F6C22roP6fPukAc",
+  "usage_metadata": {
+    "candidates_token_count": 5774,
+    "prompt_token_count": 181179,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 33815
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 147364
+      }
+    ],
+    "thoughts_token_count": 7264,
+    "total_token_count": 194217
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "2024-11-01",
+    "claims": [
+      {
+        "claim_id": "claim_001",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "自動車、インフラ、資源、化学、リテール等を手掛ける大手総合商社",
+        "body_ja": "双日は、完成車卸売・小売や自動車販売金融を行う自動車、航空機代理店や交通・都市インフラ開発を担う航空・交通インフラ、再生可能エネルギーや省エネサービスを展開するエネルギー・総合インフラ、石炭・鉄鉱石・金属・リサイクルを扱う金属・資源・リサイクル、各種合成樹脂やメタノールを商う化学、食料・肥料・資材を扱う生活産業・アグリビジネス、水産食品加工や業務用食品卸・煙草取引・小売商業施設等を展開するリテール・コンシューマーサービスの7つの報告セグメントを中心に、グローバルなトレーディングおよび事業投資を通じて多角的に収益を獲得する総合商社である。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_002",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2027年3月期第1四半期は電力小売の新規連結や化学・省エネ取引増加により大幅増収増益",
+        "body_ja": "2027年3月期第1四半期の連結収益は前年同期比39.3%増の8,342億49百万円、売上総利益は同35.4%増の1,113億47百万円、親会社の所有者に帰属する四半期純利益は同43.4%増の302億22百万円となった。電力・ガス小売事業の新規連結や米国省エネ関連事業の取引増加、メタノール市況の上昇、ベトナム食品卸および煙草取引の好調が収益と利益を牽引した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_003",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "資産規模の拡大に伴いネット有利子負債が増加もネットDERは1.02倍を維持",
+        "body_ja": "2027年3月期第1四半期末の資産合計は、持分法投資の増加等により前期末比823億99百万円増の3兆7,304億22百万円となった。営業活動によるキャッシュ・フローが運転資金増加等により572億79百万円の支出となったことや投資実行に伴い、ネット有利子負債は前期末比1,315億37百万円増の1兆1,711億3百万円へ拡大したものの、ネットDERは1.02倍と財務健全性の目安水準（1.0倍程度）を概ね維持している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_004",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "通期純利益予想1,300億円と年間配当予想180円を据え置き",
+        "body_ja": "2027年3月期通期の連結業績予想は、親会社の所有者に帰属する当期利益1,300億円（前期比25.5%増、想定為替レート150円/US$）を前回公表値から据え置いた。「中期経営計画2026」で掲げる株主資本DOE4.5%を基本とする累進的配当方針に基づき、年間配当予想も1株当たり180円（中間90円、期末90円）を維持している。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_005",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "化学・エネルギー｜追い風：市況上昇と新規連結・取引増が大幅増益を牽引",
+        "body_ja": "化学セグメントはメタノール価格上昇や日本エイアンドエルの貢献、堅調なトレードにより四半期純利益が前年同期比52億21百万円増の110億53百万円となった。エネルギー・総合インフラセグメントも電力・ガス小売事業の新規連結や豪州インフラ開発、米国省エネ取引増が寄与し同24億89百万円増の68億58百万円と好調に推移した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_006",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "リテール・コンシューマー｜追い風：ベトナム食品卸と煙草取引が堅調に拡大",
+        "body_ja": "リテール・コンシューマーサービスセグメントは、ベトナムにおける業務用食品卸売事業の好調な進捗や煙草取引の拡大が寄与し、四半期純利益が前年同期比34億円増の43億7百万円となった。過去数年間に実施した東南アジアを中心とするリテール領域への事業投資が安定的な収益創出に貢献している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_007",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "金属・資源｜逆風：豪州原料炭事業の生産効率低迷により減益",
+        "body_ja": "金属・資源・リサイクルセグメントの四半期純利益は、前年同期比9億71百万円減の21億30百万円となった。主に豪州原料炭事業における生産効率の低迷や市況要因が響いており、前期（2026年3月期）に見られた減損計上や生産悪化の影響が一部残存している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_008",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "通期純利益1,300億円に向けて非資源分野の収益積み上げが重要",
+        "body_ja": "2027年3月期通期の親会社所有者帰属当期利益予想1,300億円の達成に向けて、第1四半期純利益（302億円、進捗率約23.2%）は概ね順調な滑り出しを見せている。前提為替レート150円/US$のもと、資源市況の不透明感を背景に、エネルギー・総合インフラや化学、リテール等の非資源分野における新規連結・投資効果の着実な発現が目標達成の鍵となる。",
+        "statement_type": "forecast",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_009",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "資源市況の下落および鉱山現場の生産効率回復の遅れに関する不確実性",
+        "body_ja": "金属・資源・リサイクルセグメントでは、豪州原料炭事業における生産効率低下や市況下落が業績の下押し要因となっている。今後の資源価格の推移や現場の生産性改善の遅れによっては、セグメント利益のさらなる下振れや資産評価への悪影響が生じるリスクが存在する。",
+        "statement_type": "risk",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_010",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "運転資金需要増に伴う有利子負債拡大と海外事業の減損・為替変動リスク",
+        "body_ja": "第1四半期において営業キャッシュ・フローが572億円の支出となりネット有利子負債が1兆1,711億円に拡大した。金利高止まり局面における調達コスト増加に加え、過去に買収した海外子会社や事業資産（自動車販売、インフラ等）における事業環境悪化時の減損損失リスクや為替変動リスクに対する注視が必要である。",
+        "statement_type": "risk",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_011",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "非資源領域の拡大が業績を牽引も運転資金拡大と資源事業の底入れ確認が課題",
+        "body_ja": "2027年3月期第1四半期は、電力・ガス小売や省エネサービス、ベトナム食品卸など非資源分野での事業投資・新規連結成果が顕著に現れ、前年同期比で大幅な増収増益を達成した。会社予想の通期純利益1,300億円に対する進捗は概ね想定通りである。一方で、運転資金増加に伴う一時的な営業CF赤字と有利子負債の増加、豪州原料炭事業における生産効率改善の遅れという課題も顕在化している。投資家は今後、非資源事業における有機的な利益成長の持続性と、営業CFのプラス回帰、および資源事業の業績底入れを見極める必要がある。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_012",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "10年間の軌跡：資源高騰期の最高益更新を経て非資源ベース利益1,000億円超へ底上げ",
+        "body_ja": "過去10年間の双日の軌跡は、石炭・金属等の資源市況循環に大きく左右される損益構造から、インフラ・省エネ・化学・リテール等への積極的な資本配分を通じて非資源分野の収益基盤を強化し、全社的な利益水準の底上げを図ってきた過程としてまとめられる。2017年3月期～2021年3月期（中計2017・2020）にかけては、市況下落やコロナ禍（2021年3月期純利益270億円）により業績が大きく落ち込む局面を経験した。しかし「中期経営計画2023」期間中の資源価格高騰（2022年3月期純利益823億円、2023年3月期1,112億円）で創出したキャッシュを非資源成長分野へ再投資した結果、資源市況が再下落した2024年3月期（1,007億円）や2026年3月期（1,036億円、減損計上後）においても連結純利益1,000億円台を維持できる体質へと変化した。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_013",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "資源セグメントの市況感受性と業績ボラティリティの継続",
+        "body_ja": "10年間の観察期間を通じて、金属・資源（旧石炭・金属）セグメントは依然として全社業績のボラティリティの主要因であり続けている。2017年3月期の純利益100億円から、石炭市況高騰を背景とした2023年3月期の627億円まで利益が拡大する一方、市況低迷や事業減損に見舞われた2021年3月期（16億円の純損失）や2026年3月期（48億円）のように激しく変動しており、資源市況に対する高い業績感応度は一貫した構造的特徴である。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_014",
+        "section": "trend.consistent",
+        "order": 2,
+        "headline_ja": "財務規律（ネットDER 1.0倍前後）の堅持と安定的な株主還元姿勢",
+        "body_ja": "過去10年間、双日は「ネットDER 1.5倍以下（近年は1.0倍程度）」という財務規律を一貫して維持してきた。ネット有利子負債を6,000億円～1兆円程度の範囲に抑えつつ、自己資本の積み上がりに合わせて配当性向の引き上げ（25%→30%→株主資本DOE4.5%導入）や自己株式取得を実行しており、バランスシートの健全性確保と株主還元の両立という経営スタンスは一貫している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_015",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "非資源領域（インフラ・省エネ・リテール等）への事業投資拡大による収益構造の質的転換",
+        "body_ja": "初期（2017-2020年3月期）においてはトレーディングや資源権益に依存する割合が高かったが、中期（2021-2023年3月期）以降、米国省エネサービス会社、水産加工のマリンフーズ、JALUX、ベトナム食品卸、電力小売事業等の連続的な買収・投資を実行した。これにより、エネルギー・総合インフラやリテール・コンシューマーサービスセグメントが強固な非資源収益源へと成長し、資源市況悪化時でも連結利益を下支えする構造へ変化した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_016",
+        "section": "trend.change",
+        "order": 2,
+        "headline_ja": "株主還元方針の進化：配当性向基本から累進配当および株主資本DOE指標の導入へ",
+        "body_ja": "中計2017での配当性向25%程度から、中計2020・2023での配当性向30%程度（およびPBR1倍未満時の下限配当設定）へ強化され、さらに「中期経営計画2026」では株主資本DOE 4.5%を基本とする累進的配当方針へと進化した。業績連動型の変動配当から、資本ベースの安定性・予見可能性を高めた還元枠組みへの転換が明確となっている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_017",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "基礎的営業CFの黒字を活用した非資源・インフラ投資と自己株式取得への資金配分",
+        "body_ja": "過去10年間の資本配分は、資源権益の選択と集中（一般炭権益の売却回収等）を進める一方で、成長投資をEssentialインフラ開発、米国省エネ事業、リテール・フード領域へ集中させてきた。中計2020で約2,600億円、中計2023で2,430億円の新規投資を実行した。また、創出したキャッシュを原資に、2020年3月期（30億円）、2023年3月期（300億円）、2026年3月期（100億円枠）等、機動的な自己株式取得・消却を組み合わせた資本効率重視の配分を実施してきた。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_018",
+        "section": "trend.capital_value_creation",
+        "order": 1,
+        "headline_ja": "資本配分の成果は混在：非資源分野の収益底上げに成功も一部投資の減損がリターンを抑制",
+        "body_ja": "過去10年間において追加資本が最も多く配分された先は、エネルギー・総合インフラ（旧エネルギー・社会インフラ、セグメント資産：2017年3月期1,372億円→2026年3月期7,585億円）およびリテール・コンシューマーサービス（マリンフーズやJALUX等）である。これらの非資源領域は、純利益水準を過去の200～400億円規模から1,000億円台へと底上げすることに貢献しており、資本蓄積に見合う一定の収益拡大成果を示している。しかし一方で、金属・資源分野での豪州原料炭事業の生産効率悪化に伴う減損（2026年3月期）、台湾洋上風力発電事業での損失計上（2023年3月期）、豪州中古車事業での減損（2026年3月期）など、累積投資に対するリターンの毀損も散見される。総合すると、資本配分は非資源の安定収益基盤化という観点では成果を上げているものの、個別案件のリスク管理と資産効率（ROIC/ROA）の観点では成果が混在した評価となる。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_019",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "新規投資案件の有機的収益化と資源事業の事業再生・リスク管理の両立が焦点",
+        "body_ja": "投資家にとって今後の最大の検証点は、急速に拡大させた非資源事業資産（省エネ、インフラ、リテール等）が一時的な新規連結効果にとどまらず、資本コストを上回る有機的なキャッシュ・フローとROICを継続的に創出できるか否かである。同時に、豪州原料炭や中古車事業等で見られた事業減損の再発を防ぎ、既存投資資産のバリューアップと厳格なアセットマネジメントを実証することが求められる。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_020",
+        "section": "management.strategy",
+        "order": 1,
+        "headline_ja": "「事業や人材を創造し続ける総合商社」に向けた非資源成長領域への戦略的整合性",
+        "body_ja": "経営陣は中計2020、2023、2026を通じて、サステナビリティ課題解決（脱炭素、Essentialインフラ、リテール等）に整合する成長分野へのリソース集中を一貫して掲げている。脱炭素方針に基づく一般炭権益の削減や、省エネ・再エネ・リテール分野への事業投資拡大は、示された戦略目標と合致しており、方向性としての戦略的一貫性は確保されている。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_021",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "非資源案件の積極買収・連結化を推進する一方、一部大口投資・資源案件での減損・損失管理に課題",
+        "body_ja": "マリンフーズやJALUXのTOB・子会社化、米国省エネ事業会社や電力小売事業の取得など、中計で掲げた投融資計画をスピード感を持って実行する実行力を示してきた。一方で、2023年3月期の台湾洋上風力発電での損失計上、2026年3月期の豪州原料炭事業および豪州中古車事業での減損計上など、買収後の事業規律やオペレーション管理、市況悪化時の耐性においては課題を残している。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_022",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "資源市況激変期における業績予想の乖離と見通し規律の慎重姿勢",
+        "body_ja": "過去9年間の通期純利益予想と実績の比較（観測数9回）では、上振れ5回、下振れ3回、ほぼインライン1回となっており、予想Postureは混在している。2021年3月期（コロナ禍で予想比-32.5%）、2022年3月期（資源高騰で予想比+55.3%）、2026年3月期（原料炭減損等で予想比-9.9%）のように、外部環境の激変や一過性損益により期初予想からの乖離が大きくなる傾向が見られる。",
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_023",
+        "section": "management.accountability",
+        "order": 1,
+        "headline_ja": "未達・減損要因の迅速な開示とセグメント再編を通じた透明性確保",
+        "body_ja": "中計2020での目標未達（純利益270億円 vs 目標750億円）や、台湾風力・豪州原料炭等の損失・減損が発生した際、決算短信や説明資料においてその要因を客観的に開示説明している。また、時代の成長領域に合わせたセグメント区分の見直しを適時行うなど透明性への配慮が見られるが、個別の投資案件ごとの資本効率や回収状況の縦断的トラッキング開示には一層の充実が期待される。",
+        "statement_type": "mixed",
+        "is_inference": true,
+        "causal": false
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        }
+      ]
+    },
+    "model_notes": []
+  }
+}

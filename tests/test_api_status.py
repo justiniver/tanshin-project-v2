@@ -5,17 +5,26 @@ from pathlib import Path
 from unittest.mock import patch
 
 from tanshin_pipeline.gemini_runtime import ExecutionResult, GeminiResponseError
+from tanshin_pipeline.config import output_paths
 from tanshin_pipeline.persistence import read_json, write_text
 from tanshin_pipeline.pipeline import (
     execute_analysis,
+    execute_research,
     prepare_analysis,
+    prepare_research,
 )
 from tanshin_pipeline.schemas import (
+    JapaneseResearchDossier,
     ValidationIssue,
     ValidationResult,
     parse_japanese_analysis_payload,
 )
-from tests.helpers import workspace_temp_directory
+from tests.helpers import (
+    fake_synthesis_response,
+    fake_research_dossier,
+    persist_fake_research,
+    workspace_temp_directory,
+)
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -27,10 +36,123 @@ FIXTURE = (
 
 
 class ApiStatusTests(unittest.TestCase):
+    def test_successful_research_persists_dossier_metrics_and_status(self) -> None:
+        dossier = fake_research_dossier(REPOSITORY_ROOT)
+        result = ExecutionResult(
+            structured=dossier,
+            raw_response={"response_id": "research-response-123"},
+            usage={
+                "prompt_token_count": 200,
+                "candidates_token_count": 50,
+                "thoughts_token_count": 25,
+            },
+            model_version="fake-version",
+            response_id="research-response-123",
+            finish_reason="STOP",
+            attempts=1,
+        )
+        with workspace_temp_directory(REPOSITORY_ROOT) as temp:
+            output_root = temp / "output"
+            prepared = prepare_research(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+            )
+            with patch(
+                "tanshin_pipeline.gemini_runtime.execute_request",
+                return_value=result,
+            ):
+                execute_research(
+                    REPOSITORY_ROOT,
+                    "1808",
+                    confirmed_request_id=prepared.plan.request_id,
+                    output_root=output_root,
+                )
+            self.assertEqual(
+                read_json(prepared.paths.research_structured),
+                dossier.model_dump(mode="json"),
+            )
+            self.assertEqual(
+                read_json(prepared.paths.research_metrics)[
+                    "filing_coverage"
+                ]["memo_items"],
+                sum(len(item.items) for item in dossier.filings),
+            )
+            status = read_json(prepared.paths.research_api_status)
+            self.assertEqual(status["state"], "SUCCESS")
+            self.assertEqual(status["response_id"], "research-response-123")
+
+    def test_research_diagnostic_warning_does_not_stop_markdown_generation(
+        self,
+    ) -> None:
+        payload = fake_research_dossier(REPOSITORY_ROOT).model_dump(mode="json")
+        payload["filings"][0]["items"][0]["pdf_page"] = (
+            payload["filings"][0]["pdf_page_count"] + 1
+        )
+        dossier = JapaneseResearchDossier.model_validate(payload)
+        research_result = ExecutionResult(
+            structured=dossier,
+            raw_response={"response_id": "warning-research-response"},
+            usage={},
+            model_version="fake-version",
+            response_id="warning-research-response",
+            finish_reason="STOP",
+            attempts=1,
+        )
+        synthesis_result = ExecutionResult(
+            structured=fake_synthesis_response(REPOSITORY_ROOT),
+            raw_response={"response_id": "warning-analysis-response"},
+            usage={},
+            model_version="fake-version",
+            response_id="warning-analysis-response",
+            finish_reason="STOP",
+            attempts=1,
+        )
+        with workspace_temp_directory(REPOSITORY_ROOT) as temp:
+            output_root = temp / "output"
+            research = prepare_research(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+            )
+            with patch(
+                "tanshin_pipeline.gemini_runtime.execute_request",
+                return_value=research_result,
+            ):
+                execute_research(
+                    REPOSITORY_ROOT,
+                    "1808",
+                    confirmed_request_id=research.plan.request_id,
+                    output_root=output_root,
+                )
+            research_validation = read_json(
+                research.paths.research_validation
+            )
+            self.assertFalse(research_validation["valid"])
+            self.assertTrue(research_validation["non_gating"])
+
+            analysis = prepare_analysis(
+                REPOSITORY_ROOT,
+                "1808",
+                output_root=output_root,
+            )
+            with patch(
+                "tanshin_pipeline.gemini_runtime.execute_request",
+                return_value=synthesis_result,
+            ):
+                execute_analysis(
+                    REPOSITORY_ROOT,
+                    "1808",
+                    confirmed_request_id=analysis.plan.request_id,
+                    output_root=output_root,
+                )
+            self.assertTrue(analysis.paths.report_ja.is_file())
+
     def test_successful_gemini_response_is_not_blocked_by_validation_diagnostics(self) -> None:
         analysis = parse_japanese_analysis_payload(read_json(FIXTURE))
+        synthesis = fake_synthesis_response(REPOSITORY_ROOT)
         result = ExecutionResult(
-            structured=analysis,
+            structured=synthesis,
             raw_response={
                 "response_id": "response-123",
                 "candidates": [{"finish_reason": "STOP"}],
@@ -65,6 +187,10 @@ class ApiStatusTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            persist_fake_research(
+                REPOSITORY_ROOT,
+                output_paths(output_root, "1808"),
+            )
             prepared = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",
@@ -102,6 +228,10 @@ class ApiStatusTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            persist_fake_research(
+                REPOSITORY_ROOT,
+                output_paths(output_root, "1808"),
+            )
             prepared = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",
@@ -134,6 +264,10 @@ class ApiStatusTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            persist_fake_research(
+                REPOSITORY_ROOT,
+                output_paths(output_root, "1808"),
+            )
             prepared = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",
@@ -200,6 +334,10 @@ class ApiStatusTests(unittest.TestCase):
         )
         with workspace_temp_directory(REPOSITORY_ROOT) as temp:
             output_root = temp / "output"
+            persist_fake_research(
+                REPOSITORY_ROOT,
+                output_paths(output_root, "1808"),
+            )
             prepared = prepare_analysis(
                 REPOSITORY_ROOT,
                 "1808",

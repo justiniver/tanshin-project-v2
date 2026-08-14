@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "2.3",
   "stage": "analysis",
   "security_code": "4443",
   "model_profile": "default",
@@ -7,19 +7,19 @@
   "provider_profile": "default",
   "model": "gemini-3.6-flash",
   "request_options": {},
-  "request_id": "472fc82c6a2c141c",
-  "manifest_id": "b20d1ab8dbf79bf4",
-  "system_prompt_sha256": "b7d8266ece7353e8db488d78139849155c912671290950e64a88b79731448435",
-  "prompt_sha256": "c6bbd31a1590860a9f0a0dc39860b48e3bc46553ea35c30038e1ec2af4f5874d",
-  "response_schema_sha256": "d3e5fd1802a78010dbb408bf708882a3235ca4d0473d4bcac73c64aa22f0aaae",
+  "request_id": "b9ffae013b5cf2b4",
+  "manifest_id": "ae9fbea0153cb705",
+  "system_prompt_sha256": "e4adc3daf9d70cfba9f0e12351062f1d7695b4b56456cda9249dd88a7705d7da",
+  "prompt_sha256": "7b27436c5e466f3a345b8308b9401388cf03fd3f62fa7718853ca0ab202ae20a",
+  "response_schema_sha256": "92d6d38034e3038e9eaeddf3d39fb9127a44c0a9568d4cb30ba718211f47ac31",
   "files": [
     {
       "filename": "01_2026_FY_tanshin.pdf",
       "relative_path": "data/4443/01_2026_FY_tanshin.pdf",
       "mime_type": "application/pdf",
       "page_count": 27,
-      "byte_size": 829486,
-      "sha256": "52860b3e6fd2ef362ba5762dc3264e8a12e90d7479777c376c3dc8780f8b237d"
+      "byte_size": 840062,
+      "sha256": "bea167069cc2d1189f8b0b08bb92b36ae6070af87f741c80370c3c00d037b9fd"
     },
     {
       "filename": "02_2025_FY_tanshin.pdf",
@@ -79,7 +79,7 @@
     }
   ],
   "style_blueprint_path": "prompt_assets/generic_report_blueprint_ja.md",
-  "style_blueprint_sha256": "22091580e8f0412ce80e4c68103d70dfc2036792d81919d86d694882fdcb5725",
+  "style_blueprint_sha256": "6d4811bee2af8ad3005e889cde1bd50c8ff69c19bf2cb62d3fb8c03d5a9219dc",
   "exemplar_path": null,
   "exemplar_sha256": null,
   "max_output_tokens": 32768,

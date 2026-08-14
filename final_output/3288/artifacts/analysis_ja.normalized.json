@@ -1,5 +1,5 @@
 {
-  "schema_version": "2026.1",
+  "schema_version": "1.0",
   "identity": {
     "security_code": "3288",
     "company_name_ja": "株式会社オープンハウスグループ",
@@ -10,17 +10,13 @@
   },
   "claims": [
     {
-      "claim_id": "claim_overview_01",
+      "claim_id": "C01",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "都市部実需住宅と投資用不動産を展開する総合不動産グループ",
-      "body_ja": "株式会社オープンハウスグループは、東京圏、名古屋圏、関西圏、福岡圏などの都市部において、戸建住宅の仕入・造成・企画・設計・施工・販売を自社一貫体制で手掛ける戸建関連事業を主軸としています。また、新築分譲マンション事業、事業法人や富裕層を顧客とする賃貸マンション・オフィスビル等の収益不動産事業、子会社のプレサンスを通じた投資用・ファミリーマンション事業、アメリカ不動産事業など、多角的な不動産ポートフォリオを展開しています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0004",
-        "01_2026_Q2_tanshin.pdf:s0008",
-        "02_2025_FY_tanshin.pdf:s0016"
-      ],
-      "statement_type": "mixed",
+      "headline_ja": "都心・主要都市圏における戸建分譲・仲介およびマンション開発を展開する総合不動産企業",
+      "body_ja": "株式会社オープンハウスグループは、都心部を中心とした一戸建て住宅および宅地の分譲・仲介・建築請負を行う「戸建関連事業」を中核とし、新築分譲マンションを展開する「マンション事業」、事業法人や富裕層向けに賃貸マンション・オフィスビルを開発・販売する「収益不動産事業」、国内富裕層向けのアメリカ不動産販売、並びに近畿・東海圏を地盤とする「プレサンス事業」等を展開する総合不動産グループである。用地仕入から企画・施工・販売・仲介までを自社グループ内で完結させる製販一体体制を強みとし、高い不動産回転率と営業力によって収益を獲得するビジネスモデルを構築している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
       "is_inference": false,
       "causal": false,
       "figures": [],
@@ -28,1364 +24,1069 @@
       "qualifiers": []
     },
     {
-      "claim_id": "claim_key_01",
+      "claim_id": "C02",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年9月期中間期は売上高7.1％増・営業利益14.4％増と順調に拡大",
-      "body_ja": "2026年9月期中間期の連結業績は、売上高が前年同期比7.1％増の6,891億76百万円、営業利益が同14.4％増の843億98百万円、親会社株主に帰属する中間純利益が同22.4％増の570億17百万円となりました。都市部での戸建住宅需要や投資用不動産需要が好調に推移したことが業績拡大を牽引しました。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0001",
-        "01_2026_Q2_tanshin.pdf:s0004",
-        "01_2026_Q2_tanshin.pdf:s0008",
-        "01_2026_Q2_tanshin.pdf:r0004-1ba92d47",
-        "01_2026_Q2_tanshin.pdf:r0004-1cdf5c8d"
-      ],
+      "headline_ja": "2026年9月期第2四半期累計は都心戸建や収益不動産の好調により二桁の営業増益を達成",
+      "body_ja": "2026年9月期第2四半期累計（中間期）の連結業績は、売上高689,176百万円（前年同期比7.1%増）、営業利益84,398百万円（同14.4%増）、経常利益81,459百万円（同13.8%増）、親会社株主に帰属する中間純利益57,017百万円（同22.4%増）となった。都市部戸建住宅に対する旺盛な実需に加え、事業法人・富裕層向けの収益不動産販売が好調に推移したことが主因である。",
+      "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_key_01:figure:01",
+          "value_id": "C02:figure:01",
+          "claim_surface_ja": "2",
+          "source_surface_ja": "2",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C02:figure:02",
+          "claim_surface_ja": "689,176百万円",
+          "source_surface_ja": "689,176百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C02:figure:03",
           "claim_surface_ja": "7.1%",
           "source_surface_ja": "7.1%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_01:figure:02",
+          "value_id": "C02:figure:04",
+          "claim_surface_ja": "84,398百万円",
+          "source_surface_ja": "84,398百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C02:figure:05",
           "claim_surface_ja": "14.4%",
           "source_surface_ja": "14.4%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_01:figure:03",
-          "claim_surface_ja": "6,891",
-          "source_surface_ja": "6,891",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
+          "value_id": "C02:figure:06",
+          "claim_surface_ja": "81,459百万円",
+          "source_surface_ja": "81,459百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_01:figure:04",
-          "claim_surface_ja": "76百万円",
-          "source_surface_ja": "76百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
+          "value_id": "C02:figure:07",
+          "claim_surface_ja": "13.8%",
+          "source_surface_ja": "13.8%",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_01:figure:05",
-          "claim_surface_ja": "843",
-          "source_surface_ja": "843",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
+          "value_id": "C02:figure:08",
+          "claim_surface_ja": "57,017百万円",
+          "source_surface_ja": "57,017百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_01:figure:06",
-          "claim_surface_ja": "98百万円",
-          "source_surface_ja": "98百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
-        },
-        {
-          "value_id": "claim_key_01:figure:07",
+          "value_id": "C02:figure:09",
           "claim_surface_ja": "22.4%",
           "source_surface_ja": "22.4%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
-        },
-        {
-          "value_id": "claim_key_01:figure:08",
-          "claim_surface_ja": "570",
-          "source_surface_ja": "570",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47"
-        },
-        {
-          "value_id": "claim_key_01:figure:09",
-          "claim_surface_ja": "17百万円",
-          "source_surface_ja": "17百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1cdf5c8d"
+          "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "claim_key_01:date:01",
+          "value_id": "C02:date:01",
           "claim_surface_ja": "2026年9月期",
           "source_surface_ja": "2026年9月期",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0001"
+          "evidence_id": null
         }
       ],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_key_02",
+      "claim_id": "C03",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "棚卸資産の積極積増により営業キャッシュ・フローは371億円のマイナス",
-      "body_ja": "中間期末の総資産は前期末比976億63百万円増の1兆5,096億65百万円となりました。仕掛販売用不動産等の棚卸資産が879億26百万円増加したこと等により、営業活動によるキャッシュ・フローは371億55百万円の資金超え（前年同期は52億89百万円の資金超え）となりました。これに伴い短期・長期借入金が633億27百万円増加し、負債合計は9,265億38百万円に拡大しています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0010",
-        "01_2026_Q2_tanshin.pdf:s0011",
-        "01_2026_Q2_tanshin.pdf:s0012",
-        "01_2026_Q2_tanshin.pdf:s0013",
-        "01_2026_Q2_tanshin.pdf:r0005-436445e6",
-        "01_2026_Q2_tanshin.pdf:r0005-e6224092",
-        "01_2026_Q2_tanshin.pdf:r0010-11d92ad4",
-        "01_2026_Q2_tanshin.pdf:r0005-5804c431",
-        "01_2026_Q2_tanshin.pdf:r0005-736c9aff"
-      ],
-      "statement_type": "mixed",
+      "headline_ja": "棚卸資産の積増に伴い営業活動キャッシュ・フローは371億円の使用へ一時的悪化",
+      "body_ja": "当中間連結会計期間末の総資産は1,509,665百万円（前期末比97,663百万円増）と1.5兆円を突破した。販売用不動産および仕掛販売用不動産が計93,191百万円増加した結果、営業活動によるキャッシュ・フローは37,155百万円の使用（前年同期は5,289百万円の使用）となり、有利子負債の純増（借入金計63,327百万円増）により運転資金を調達する構造となっている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_key_02:figure:01",
-          "claim_surface_ja": "976",
-          "source_surface_ja": "976",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-436445e6"
+          "value_id": "C03:figure:01",
+          "claim_surface_ja": "371億円",
+          "source_surface_ja": "371億円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:02",
-          "claim_surface_ja": "63百万円",
-          "source_surface_ja": "63百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-436445e6"
+          "value_id": "C03:figure:02",
+          "claim_surface_ja": "1,509,665百万円",
+          "source_surface_ja": "1,509,665百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:03",
-          "claim_surface_ja": "1",
-          "source_surface_ja": "1",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
+          "value_id": "C03:figure:03",
+          "claim_surface_ja": "97,663百万円",
+          "source_surface_ja": "97,663百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:04",
-          "claim_surface_ja": "5,096",
-          "source_surface_ja": "5,096",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-436445e6"
+          "value_id": "C03:figure:04",
+          "claim_surface_ja": "1.5兆円",
+          "source_surface_ja": "1.5兆円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:05",
-          "claim_surface_ja": "65百万円",
-          "source_surface_ja": "65百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-436445e6"
+          "value_id": "C03:figure:05",
+          "claim_surface_ja": "93,191百万円",
+          "source_surface_ja": "93,191百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:06",
-          "claim_surface_ja": "879",
-          "source_surface_ja": "879",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0010-11d92ad4"
+          "value_id": "C03:figure:06",
+          "claim_surface_ja": "37,155百万円",
+          "source_surface_ja": "37,155百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:07",
-          "claim_surface_ja": "26百万円",
-          "source_surface_ja": "26百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-5804c431"
+          "value_id": "C03:figure:07",
+          "claim_surface_ja": "5,289百万円",
+          "source_surface_ja": "5,289百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_key_02:figure:08",
-          "claim_surface_ja": "371",
-          "source_surface_ja": "371",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
-        },
-        {
-          "value_id": "claim_key_02:figure:09",
-          "claim_surface_ja": "52",
-          "source_surface_ja": "52",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0010-11d92ad4"
-        },
-        {
-          "value_id": "claim_key_02:figure:10",
-          "claim_surface_ja": "633",
-          "source_surface_ja": "633",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-736c9aff"
-        },
-        {
-          "value_id": "claim_key_02:figure:11",
-          "claim_surface_ja": "27百万円",
-          "source_surface_ja": "27百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-736c9aff"
-        },
-        {
-          "value_id": "claim_key_02:figure:12",
-          "claim_surface_ja": "9,265",
-          "source_surface_ja": "9,265",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
-        },
-        {
-          "value_id": "claim_key_02:figure:13",
-          "claim_surface_ja": "38百万円",
-          "source_surface_ja": "38百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
+          "value_id": "C03:figure:08",
+          "claim_surface_ja": "63,327百万円",
+          "source_surface_ja": "63,327百万円",
+          "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_key_03",
+      "claim_id": "C04",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期連結業績予想を上方修正し営業利益1,765億円〜1,800億円へ",
-      "body_ja": "最近の業績動向を踏まえ、2026年9月期通期の連結業績予想の上方修正が発表されました。修正後の通期売上高は1兆4,850億円〜1兆5,000億円（対前期比11.1％〜12.2％増）、営業利益は1,765億円〜1,800億円（同20.9％〜23.3％増）となり、3カ年の経営方針（2024年9月期〜2026年9月期）の最終年度として高い成長目標の達成を目指しています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0002",
-        "01_2026_Q2_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "通期業績予想の上方修正および自己株式消却・取得による株主還元の強化を実行",
+      "body_ja": "進捗状況を踏まえ、2026年9月期通期の連結業績予想を上方修正し、売上高1,485,000〜1兆5,000億円（前期比11.1〜12.2%増）、営業利益176,500〜1,800億円（同20.9〜23.3%増）を見込む。あわせて総還元性向40%以上の基本方針のもと、21,980百万円の自己株式消却と9,929百万円の自己株式取得を中間期中に実行した。",
+      "evidence_ids": [],
       "statement_type": "mixed",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "claim_key_03:figure:01",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
+          "value_id": "C04:figure:01",
+          "claim_surface_ja": "1,485,000",
+          "source_surface_ja": "1,485,000",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:02",
+          "claim_surface_ja": "1兆5,000億円",
+          "source_surface_ja": "1兆5,000億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:03",
+          "claim_surface_ja": "11.1",
+          "source_surface_ja": "11.1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:04",
+          "claim_surface_ja": "12.2%",
+          "source_surface_ja": "12.2%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:05",
+          "claim_surface_ja": "176,500",
+          "source_surface_ja": "176,500",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:06",
+          "claim_surface_ja": "1,800億円",
+          "source_surface_ja": "1,800億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:07",
+          "claim_surface_ja": "20.9",
+          "source_surface_ja": "20.9",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:08",
+          "claim_surface_ja": "23.3%",
+          "source_surface_ja": "23.3%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:09",
+          "claim_surface_ja": "40%",
+          "source_surface_ja": "40%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:10",
+          "claim_surface_ja": "21,980百万円",
+          "source_surface_ja": "21,980百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:figure:11",
+          "claim_surface_ja": "9,929百万円",
+          "source_surface_ja": "9,929百万円",
+          "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "claim_key_03:date:01",
+          "value_id": "C04:date:01",
           "claim_surface_ja": "2026年9月期",
-          "source_surface_ja": "2026年9月期 通期予想",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0002"
-        },
-        {
-          "value_id": "claim_key_03:date:02",
-          "claim_surface_ja": "2024年9月期",
-          "source_surface_ja": "2024年9月期",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
+          "source_surface_ja": "2026年9月期",
+          "evidence_id": null
         }
       ],
-      "qualifiers": []
+      "qualifiers": [
+        {
+          "value_id": "C04:qualifier:01",
+          "claim_surface_ja": "見込む",
+          "source_surface_ja": "見込む",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C04:qualifier:02",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
     },
     {
-      "claim_id": "claim_driver_01",
+      "claim_id": "C05",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "戸建関連事業は都市部の堅調な実需と好調な販売契約に支えられ安定成長",
-      "body_ja": "主力セグメントである戸建関連事業の売上高は前年同期比5.5％増の3,809億30百万円、営業利益は同5.3％増の431億18百万円となりました。同社グループが展開する都市部において戸建住宅に対する根強い需要が継続し、今後の引渡しに繋がる販売契約も順調に推移したことが安定した業績に寄与しました。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0004",
-        "01_2026_Q2_tanshin.pdf:s0005",
-        "01_2026_Q2_tanshin.pdf:r0004-60ba427a"
-      ],
+      "headline_ja": "都心戸建需要｜追い風：都市部における一戸建て需要の継続が戸建関連事業の増収増益を牽引",
+      "body_ja": "都心部における実需層の戸建住宅に対する強い需要を背景に、引き渡しにつながる販売契約が好調に推移した。戸建関連事業の売上高は380,930百万円（前年同期比5.5%増）、営業利益は43,118百万円（同5.3%増）となり、資材高騰下でも価格転嫁と回転率の維持により安定した利益を創出した。",
+      "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_driver_01:figure:01",
+          "value_id": "C05:figure:01",
+          "claim_surface_ja": "380,930百万円",
+          "source_surface_ja": "380,930百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C05:figure:02",
           "claim_surface_ja": "5.5%",
           "source_surface_ja": "5.5%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0005"
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_01:figure:02",
-          "claim_surface_ja": "3,809",
-          "source_surface_ja": "3,809",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-60ba427a"
+          "value_id": "C05:figure:03",
+          "claim_surface_ja": "43,118百万円",
+          "source_surface_ja": "43,118百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_01:figure:03",
-          "claim_surface_ja": "30百万円",
-          "source_surface_ja": "30百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-60ba427a"
-        },
-        {
-          "value_id": "claim_driver_01:figure:04",
+          "value_id": "C05:figure:04",
           "claim_surface_ja": "5.3%",
           "source_surface_ja": "5.3%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0005"
-        },
-        {
-          "value_id": "claim_driver_01:figure:05",
-          "claim_surface_ja": "431",
-          "source_surface_ja": "431",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-60ba427a"
-        },
-        {
-          "value_id": "claim_driver_01:figure:06",
-          "claim_surface_ja": "18百万円",
-          "source_surface_ja": "18百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-60ba427a"
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_driver_02",
-      "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "マンション事業は引渡しの第4四半期偏重のなかで黒字転換を果たし契約も良好",
-      "body_ja": "マンション事業の売上高は前年同期比331.4％増の260億48百万円、営業利益は44億51百万円（前年同期は18億08百万円の営業損失）となり前年同期から大幅に黒字転換しました。物件引渡しが第4四半期に集中する季節特性があるものの、販売契約自体は期を通じて順調に進捗しています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0006",
-        "01_2026_Q2_tanshin.pdf:s0007",
-        "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "claim_driver_02:figure:01",
-          "claim_surface_ja": "4",
-          "source_surface_ja": "4",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0006"
-        },
-        {
-          "value_id": "claim_driver_02:figure:02",
-          "claim_surface_ja": "331.4%",
-          "source_surface_ja": "331.4%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0007"
-        },
-        {
-          "value_id": "claim_driver_02:figure:03",
-          "claim_surface_ja": "260",
-          "source_surface_ja": "260",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-        },
-        {
-          "value_id": "claim_driver_02:figure:04",
-          "claim_surface_ja": "48百万円",
-          "source_surface_ja": "48百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-        },
-        {
-          "value_id": "claim_driver_02:figure:05",
-          "claim_surface_ja": "44",
-          "source_surface_ja": "44",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-        },
-        {
-          "value_id": "claim_driver_02:figure:06",
-          "claim_surface_ja": "51百万円",
-          "source_surface_ja": "51百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-        },
-        {
-          "value_id": "claim_driver_02:figure:07",
-          "claim_surface_ja": "18",
-          "source_surface_ja": "18",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
-        },
-        {
-          "value_id": "claim_driver_02:figure:08",
-          "claim_surface_ja": "08百万円",
-          "source_surface_ja": "08百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8"
+          "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": [
         {
-          "value_id": "claim_driver_02:qualifier:01",
+          "value_id": "C05:qualifier:01",
           "claim_surface_ja": "約",
           "source_surface_ja": "約",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0006"
+          "evidence_id": null
         }
       ]
     },
     {
-      "claim_id": "claim_driver_03",
+      "claim_id": "C06",
       "section": "latest.business_driver",
-      "order": 3,
-      "headline_ja": "収益不動産事業は事業法人・富裕層の旺盛な投資需要を背景に20％超の増益",
-      "body_ja": "収益不動産事業の売上高は前年同期比18.2％増の1,133億58百万円、営業利益は同21.1％増の132億51百万円となりました。顧客層である事業法人や富裕層による賃貸マンションやオフィスビルへの強い投資需要に支えられ、セグメント業績が大きく伸びました。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0008",
-        "01_2026_Q2_tanshin.pdf:s0009",
-        "01_2026_Q2_tanshin.pdf:r0004-d85fa0db"
-      ],
+      "order": 2,
+      "headline_ja": "マンション引渡時期｜季節変動：第4四半期への集中構造のなか中間期は前年同期の営業損失から黒字転換",
+      "body_ja": "マンション事業は引渡しが第4四半期に集中する季節特性を持つが、当中間期は引渡物件の進捗により売上高26,048百万円（前年同期比331.4%増）、営業利益4,451百万円（前年同期は1,808百万円の営業損失）となり前年同期比で大幅な損益改善を示した。",
+      "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": false,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_driver_03:figure:01",
-          "claim_surface_ja": "18.2%",
-          "source_surface_ja": "18.2%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0009"
+          "value_id": "C06:figure:01",
+          "claim_surface_ja": "4",
+          "source_surface_ja": "4",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_03:figure:02",
-          "claim_surface_ja": "1,133",
-          "source_surface_ja": "1,133",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-d85fa0db"
+          "value_id": "C06:figure:02",
+          "claim_surface_ja": "26,048百万円",
+          "source_surface_ja": "26,048百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_03:figure:03",
-          "claim_surface_ja": "58百万円",
-          "source_surface_ja": "58百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-d85fa0db"
+          "value_id": "C06:figure:03",
+          "claim_surface_ja": "331.4%",
+          "source_surface_ja": "331.4%",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_03:figure:04",
-          "claim_surface_ja": "21.1%",
-          "source_surface_ja": "21.1%",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0009"
+          "value_id": "C06:figure:04",
+          "claim_surface_ja": "4,451百万円",
+          "source_surface_ja": "4,451百万円",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_driver_03:figure:05",
-          "claim_surface_ja": "132",
-          "source_surface_ja": "132",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-d85fa0db"
-        },
-        {
-          "value_id": "claim_driver_03:figure:06",
-          "claim_surface_ja": "51百万円",
-          "source_surface_ja": "51百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-d85fa0db"
+          "value_id": "C06:figure:05",
+          "claim_surface_ja": "1,808百万円",
+          "source_surface_ja": "1,808百万円",
+          "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_outlook_01",
+      "claim_id": "C07",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "投資用不動産需要｜追い風：事業法人・富裕層の旺盛な購入意欲により収益不動産事業が二桁増益",
+      "body_ja": "緩和的な金融環境と都市部不動産の上昇基調を受け、顧客層である事業法人や富裕層による賃貸マンション・オフィスビル等への投資需要が高水準を維持した。収益不動産事業の売上高は113,358百万円（前年同期比18.2%増）、営業利益は13,251百万円（同21.1%増）と大幅伸長した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "C07:figure:01",
+          "claim_surface_ja": "113,358百万円",
+          "source_surface_ja": "113,358百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C07:figure:02",
+          "claim_surface_ja": "18.2%",
+          "source_surface_ja": "18.2%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C07:figure:03",
+          "claim_surface_ja": "13,251百万円",
+          "source_surface_ja": "13,251百万円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C07:figure:04",
+          "claim_surface_ja": "21.1%",
+          "source_surface_ja": "21.1%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C08",
       "section": "latest.outlook",
       "order": 1,
-      "headline_ja": "通期営業利益予想を最大1,800億円へ増額し3カ年計画の目標達成へ前進",
-      "body_ja": "2023年11月に策定された「3カ年の経営方針（2024年9月期〜2026年9月期）」の最終年度において、2026年9月期の通期連結売上高を1兆4,850億円〜1兆5,000億円（前期比11.1％〜12.2％増）、営業利益を1,765億円〜1,800億円（同20.9％〜23.3％増）へと上方修正しました。実需および投資用不動産の双方で需要を獲得し、目標達成に向けた取り組みが進められています。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0002",
-        "01_2026_Q2_tanshin.pdf:s0003"
-      ],
-      "statement_type": "mixed",
+      "headline_ja": "通期営業利益1,765億〜1,800億円へ上方修正し最高益更新を見込む見通し",
+      "body_ja": "2026年9月期通期計画について、従来の最高益予想をさらに引き上げ、営業利益176,500〜1,800億円（前期比20.9〜23.3%増）、親会社株主に帰属する当期純利益116,500〜1,185億円（同15.7〜17.7%増）を予想する。実需向け戸建・マンションおよび投資向け収益不動産・アメリカ不動産のポートフォリオ運営が寄与する計画である。",
+      "evidence_ids": [],
+      "statement_type": "forecast",
       "is_inference": false,
       "causal": false,
       "figures": [
         {
-          "value_id": "claim_outlook_01:figure:01",
-          "claim_surface_ja": "3",
-          "source_surface_ja": "3",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
+          "value_id": "C08:figure:01",
+          "claim_surface_ja": "1,765",
+          "source_surface_ja": "1,765",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_outlook_01:figure:02",
-          "claim_surface_ja": "11月",
-          "source_surface_ja": "11月",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
+          "value_id": "C08:figure:02",
+          "claim_surface_ja": "1,800億円",
+          "source_surface_ja": "1,800億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:03",
+          "claim_surface_ja": "176,500",
+          "source_surface_ja": "176,500",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:04",
+          "claim_surface_ja": "20.9",
+          "source_surface_ja": "20.9",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:05",
+          "claim_surface_ja": "23.3%",
+          "source_surface_ja": "23.3%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:06",
+          "claim_surface_ja": "116,500",
+          "source_surface_ja": "116,500",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:07",
+          "claim_surface_ja": "1,185億円",
+          "source_surface_ja": "1,185億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:08",
+          "claim_surface_ja": "15.7",
+          "source_surface_ja": "15.7",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:figure:09",
+          "claim_surface_ja": "17.7%",
+          "source_surface_ja": "17.7%",
+          "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "claim_outlook_01:date:01",
-          "claim_surface_ja": "2023年",
-          "source_surface_ja": "2023年",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
-        },
-        {
-          "value_id": "claim_outlook_01:date:02",
-          "claim_surface_ja": "2024年9月期",
-          "source_surface_ja": "2024年9月期",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0003"
-        },
-        {
-          "value_id": "claim_outlook_01:date:03",
-          "claim_surface_ja": "2026年9月期",
-          "source_surface_ja": "2026年9月期 通期予想",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0002"
-        }
-      ],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_risk_01",
-      "section": "latest.risk",
-      "order": 1,
-      "headline_ja": "仕掛不動産の急増に伴う営業キャッシュ流出と棚卸資産回転率低下のリスク",
-      "body_ja": "当中間期において仕掛販売用不動産を含む棚卸資産が879億26百万円増加した結果、営業キャッシュ・フローはマイナス371億55百万円となりました。今後の販売進捗や第4四半期の引渡しが計画通り進まない場合、棚卸資産の長期滞留や資金回収の遅れが財務リスクとなる懸念があります。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0010",
-        "01_2026_Q2_tanshin.pdf:s0012",
-        "01_2026_Q2_tanshin.pdf:s0013",
-        "01_2026_Q2_tanshin.pdf:r0010-11d92ad4",
-        "01_2026_Q2_tanshin.pdf:r0005-5804c431",
-        "01_2026_Q2_tanshin.pdf:r0005-84ffb3b4"
-      ],
-      "statement_type": "risk",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "claim_risk_01:figure:01",
-          "claim_surface_ja": "879",
-          "source_surface_ja": "879",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0010-11d92ad4"
-        },
-        {
-          "value_id": "claim_risk_01:figure:02",
-          "claim_surface_ja": "26百万円",
-          "source_surface_ja": "26百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-5804c431"
-        },
-        {
-          "value_id": "claim_risk_01:figure:03",
-          "claim_surface_ja": "4",
-          "source_surface_ja": "4",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-84ffb3b4"
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_risk_02",
-      "section": "latest.risk",
-      "order": 2,
-      "headline_ja": "有利子負債の拡大に伴う金利上昇時の支払利息増加リスク",
-      "body_ja": "中間期末時点で短期借入金および長期借入金（1年内返済予定含む）が前連結会計年度末比で633億27百万円増加し、負債合計は9,265億38百万円に達しています。将来的な金融環境の変化や金利上昇局面において、資金調達コストの上昇が利益圧迫要因となる不確実性が存在します。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0011",
-        "01_2026_Q2_tanshin.pdf:r0005-736c9aff",
-        "01_2026_Q2_tanshin.pdf:r0005-e6224092"
-      ],
-      "statement_type": "risk",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "claim_risk_02:figure:01",
-          "claim_surface_ja": "633",
-          "source_surface_ja": "633",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-736c9aff"
-        },
-        {
-          "value_id": "claim_risk_02:figure:02",
-          "claim_surface_ja": "27百万円",
-          "source_surface_ja": "27百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-736c9aff"
-        },
-        {
-          "value_id": "claim_risk_02:figure:03",
-          "claim_surface_ja": "9,265",
-          "source_surface_ja": "9,265",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
-        },
-        {
-          "value_id": "claim_risk_02:figure:04",
-          "claim_surface_ja": "38百万円",
-          "source_surface_ja": "38百万円",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092"
-        }
-      ],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_context_01",
-      "section": "latest.context",
-      "order": 1,
-      "headline_ja": "業績好調で通期予想を上方修正も、第4四半期集中型の引渡しと在庫・負債管理の検証が鍵",
-      "body_ja": "オープンハウスグループの2026年9月期中間期は、主力の戸建関連事業の底堅い需要と収益不動産・マンション事業の伸長に支えられ、増収増益を達成するとともに通期業績予想を上方修正しました。3カ年経営方針の最終年度において売上高1兆5,000億円規模を目指す進捗は極めて順調です。\n一方、事業拡大に伴う用地取得と建設の進捗により棚卸資産が増加し、営業キャッシュ・フローは大幅なマイナスを記録、借入金依存度が高まっています。マンション事業を中心に引渡時期が第4四半期に集中する構造を持つため、投資家にとっては下期の引渡し確実性と棚卸資産の現金化、有利子負債のコントロール状況を見極めることが今後の重要な判断材料となります。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0001",
-        "01_2026_Q2_tanshin.pdf:s0002",
-        "01_2026_Q2_tanshin.pdf:s0006",
-        "01_2026_Q2_tanshin.pdf:s0010",
-        "01_2026_Q2_tanshin.pdf:s0011",
-        "01_2026_Q2_tanshin.pdf:s0012"
-      ],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true,
-      "figures": [
-        {
-          "value_id": "claim_context_01:figure:01",
-          "claim_surface_ja": "4",
-          "source_surface_ja": "4",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0006"
-        }
-      ],
-      "dates": [
-        {
-          "value_id": "claim_context_01:date:01",
+          "value_id": "C08:date:01",
           "claim_surface_ja": "2026年9月期",
           "source_surface_ja": "2026年9月期",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0001"
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "C08:qualifier:01",
+          "claim_surface_ja": "見込む",
+          "source_surface_ja": "見込む",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C08:qualifier:02",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "C09",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "棚卸資産の急増に伴う営業キャッシュ・フロー圧迫と借入金依存度上昇のリスク",
+      "body_ja": "土地仕入および仕掛不動産の積極的な蓄積により、当中間期末の棚卸資産は8,631億円超へと拡大した。これにより営業キャッシュ・フローは371億円のマイナスとなり、短期・長期借入金残高が計8,588億円に達するなど、市況変動時の在庫滞留や金利上昇に伴う利息負担増が財務上の不確実性要因となっている。",
+      "evidence_ids": [],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "C09:figure:01",
+          "claim_surface_ja": "8,631億円",
+          "source_surface_ja": "8,631億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C09:figure:02",
+          "claim_surface_ja": "371億円",
+          "source_surface_ja": "371億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C09:figure:03",
+          "claim_surface_ja": "8,588億円",
+          "source_surface_ja": "8,588億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C10",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "建築資材・人件費の高騰および住宅ローン金利上昇による需要抑制リスク",
+      "body_ja": "建築資材価格や労務費の上昇による原価高騰が継続しており、戸建分譲・マンション事業における利益率圧迫要因となる可能性がある。また、国内金融政策の変更に伴う住宅ローン金利の上昇や投資用不動産向け融資姿勢の変化は、実需層の購買力低下や投資家の購入意欲減退を通じて販売ペースに悪影響を及ぼす不確実性を抱えている。",
+      "evidence_ids": [],
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true,
+      "figures": [],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C11",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "2026年9月期中間期は在庫調整完了後の収益回復と将来成長に向けた仕入拡大が交錯するフェーズ",
+      "body_ja": "2024年9月期に見られた戸建在庫の調整局面を脱し、2025年9月期に続き2026年9月期中間期も二桁の営業増益を達成するなど収益性は顕著に回復している。通期業績予想の上方修正が示す通り本業の実需・投資需要は力強い。一方で、将来の供給ライン確保に向けた積極的な仕入投資により棚卸資産と借入金が膨らみ、営業キャッシュ・フローがマイナス化している。事業拡大に伴う運転資金需要と自己株式取得・消却や増配をはじめとする株主還元強化を両立させる資本配分の規律が引き続き問われる位置づけにある。",
+      "evidence_ids": [],
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true,
+      "figures": [],
+      "dates": [
+        {
+          "value_id": "C11:date:01",
+          "claim_surface_ja": "2026年9月期",
+          "source_surface_ja": "2026年9月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C11:date:02",
+          "claim_surface_ja": "2024年9月期",
+          "source_surface_ja": "2024年9月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C11:date:03",
+          "claim_surface_ja": "2025年9月期",
+          "source_surface_ja": "2025年9月期",
+          "evidence_id": null
         }
       ],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_trend_pers_01",
+      "claim_id": "C12",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "M&Aと実需・投資不動産ポートフォリオ経営による規模拡大と資本効率向上の軌跡",
-      "body_ja": "過去10年間のオープンハウスグループは、都心部戸建住宅の実需獲得を中心軸としつつ、ホーク・ワン、プレサンスコーポレーション、メルディア（旧三栄建築設計）などの積極的なM&Aを通じて飛躍的な売上規模拡大（FY2016の2,472億円からFY2025の1兆3,364億円）を遂げました。途中で資材価格高騰や棚卸資産調整による利益一時低下を挟みつつも、事業統合と実需・投資両面のポートフォリオ経営により高水準の収益性を維持しています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0014",
-        "02_2025_FY_tanshin.pdf:s0016",
-        "03_2024_FY_tanshin.pdf:s0020",
-        "06_2021_FY_tanshin.pdf:s0024",
-        "08_2019_FY_tanshin.pdf:s0026",
-        "11_2016_FY_tanshin.pdf:s0027"
-      ],
+      "headline_ja": "都心実需戸建の高速回転モデルを軸に大型M&Aで不連続成長を遂げた10年間の軌跡",
+      "body_ja": "過去10年間（FY2016〜FY2025）、オープンハウスグループは東京・都心部における「好立地・手頃な価格」の戸建住宅供給と強固な直販・仲介網による高回転モデルを核として高成長を遂げてきた。初期（FY2016〜FY2019）は戸建分譲と収益不動産の有機的拡大により売上高2,400億円台から5,400億円台へと成長。中期（FY2020〜FY2022）にはホーク・ワンに続きプレサンスコーポレーションを段階的に買収・連結子会社化し、売上高1兆円の大台を突破した。直近（FY2023〜FY2025）ではメルディア（三栄建築設計）の買収と既存事業への集約を通じて供給能力と購買力を一段と強化。資材高騰や市況変動による一時的な在庫調整（FY2024）を挟みつつも、最高益を更新し続ける強力な事業構築力を示している。",
+      "evidence_ids": [],
       "statement_type": "actual",
       "is_inference": true,
       "causal": true,
-      "figures": [],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_trend_cons_01",
-      "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "都市部戸建住宅に対する実需獲得を核としたビジネスモデルの継続性",
-      "body_ja": "同社は創業以来、利便性の高い都心部・都市部における戸建住宅需要を一貫して強みとして定着させています。FY2016における新築一戸建て・土地分譲の伸長から、FY2021のコロナ禍下のテレワーク需要獲得、FY2025における在庫入れ替え完了後の需要回復に至るまで、都市部実需戸建の仕入・製販一体モデルが全社の成長基盤として一貫して機能しています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0015",
-        "06_2021_FY_tanshin.pdf:s0024",
-        "11_2016_FY_tanshin.pdf:s0027"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_trend_cons_02",
-      "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "実需不動産と投資用不動産を組み合わせたポートフォリオ経営の推進",
-      "body_ja": "同社は戸建・マンションの実需不動産だけでなく、事業法人や富裕層向けの収益不動産やアメリカ不動産、プレサンスの投資用マンションを組み合わせたポートフォリオ経営を継続しています。FY2016の流動化事業伸長、FY2022の収益不動産・アメリカ不動産好調、FY2025の実需・投資双方のシナジー発揮まで、多様な需要を取り込む構造が維持されています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0016",
-        "05_2022_FY_tanshin.pdf:s0023",
-        "11_2016_FY_tanshin.pdf:s0027"
-      ],
-      "statement_type": "mixed",
-      "is_inference": false,
-      "causal": true,
-      "figures": [],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_trend_change_01",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "大型M&Aを通じた広域展開とグループ事業規模の画期的拡大",
-      "body_ja": "初期（FY2016〜FY2019）は都心中心の自社成長とホーク・ワン連結化が中心でしたが、中期（FY2020〜FY2021）に近畿・東海圏に強みを持つプレサンスコーポレーションを子会社化し、直近（FY2024）には三栄建築設計（現メルディア）を完全子会社化しました。これにより、首都圏偏重から全国主要都市圏を網羅する総合不動産デベロッパーへと構造変化を果たしました。",
-      "evidence_ids": [
-        "03_2024_FY_tanshin.pdf:s0020",
-        "06_2021_FY_tanshin.pdf:s0024",
-        "07_2020_FY_tanshin.pdf:s0025",
-        "08_2019_FY_tanshin.pdf:s0026"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
-      "figures": [],
-      "dates": [],
-      "qualifiers": []
-    },
-    {
-      "claim_id": "claim_trend_change_02",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "1兆円目標達成後の在庫調整局面と収益性の再成長プロセス",
-      "body_ja": "FY2023に売上高1兆円（1.14兆円）を達成した後、FY2024は資材価格上昇や戸建市場の市中在庫滞留を受けて在庫調整に取り組み、一時的な減益（営業利益16.3％減）を経験しました。しかし、FY2025には在庫入れ替えが完了して営業利益1,459億円（同22.5％増）へと急回復し、機動的な在庫コントロールによる収益再成長体制へ移行しました。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0014",
-        "02_2025_FY_tanshin.pdf:s0015",
-        "03_2024_FY_tanshin.pdf:s0018",
-        "03_2024_FY_tanshin.pdf:s0019",
-        "04_2023_FY_tanshin.pdf:s0021",
-        "04_2023_FY_tanshin.pdf:s0022",
-        "04_2023_FY_tanshin.pdf:r0001-c8793046",
-        "03_2024_FY_tanshin.pdf:r0004-b692a2c4",
-        "02_2025_FY_tanshin.pdf:r0004-7cd93743"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true,
       "figures": [
         {
-          "value_id": "claim_trend_change_02:figure:01",
+          "value_id": "C12:figure:01",
+          "claim_surface_ja": "2,400億円",
+          "source_surface_ja": "2,400億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C12:figure:02",
+          "claim_surface_ja": "5,400億円",
+          "source_surface_ja": "5,400億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C12:figure:03",
           "claim_surface_ja": "1兆円",
           "source_surface_ja": "1兆円",
-          "evidence_id": "04_2023_FY_tanshin.pdf:r0001-c8793046"
-        },
-        {
-          "value_id": "claim_trend_change_02:figure:02",
-          "claim_surface_ja": "16.3%",
-          "source_surface_ja": "16.3%",
-          "evidence_id": "03_2024_FY_tanshin.pdf:r0004-b692a2c4"
-        },
-        {
-          "value_id": "claim_trend_change_02:figure:03",
-          "claim_surface_ja": "22.5%",
-          "source_surface_ja": "22.5%",
-          "evidence_id": "02_2025_FY_tanshin.pdf:r0004-7cd93743"
+          "evidence_id": null
         }
       ],
       "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_trend_cap_01",
-      "section": "trend.capital_allocation",
+      "claim_id": "C13",
+      "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "成長投資と総還元性向40％以上を目指す株主還元の積極化へのトレードオフ変化",
-      "body_ja": "過去の資本配分は事業用地取得やM&A（ホーク・ワン、プレサンス、メルディア）による事業拡大を最優先し配当性向20％程度を軸としていましたが、2025年3月には配当および自社株買いを合わせた総還元性向40％以上を新たな指標として設定しました。自己株式取得や消却を組み合わせ、成長投資と株主還元の双方を高いレベルで両立させる資本配分戦略へと変化しています。",
-      "evidence_ids": [
-        "02_2025_FY_tanshin.pdf:s0017",
-        "03_2024_FY_tanshin.pdf:s0020",
-        "08_2019_FY_tanshin.pdf:s0026"
-      ],
+      "headline_ja": "都心・好立地に特化した製販一体の狭小戸建供給体制と高い営業仕入能力の継続",
+      "body_ja": "FY2016からFY2025に至る全期間を通じ、一貫した競争力の源泉となったのは、都心部における用地仕入から設計・施工・直販・仲介までを内製化する製販一体モデルである。自社営業センター網の拡充（初期の10年代から直近60店舗超へ）と地場業者とのパイプを通じた好立地用地の仕入能力は揺るがず、他社が参入しにくい狭小地を効率的な分譲住宅へと仕立てる事業ノウハウが、長期にわたる売上成長と10%前後の営業利益率維持を支え続けた。",
+      "evidence_ids": [],
       "statement_type": "actual",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_trend_cap_01:figure:01",
-          "claim_surface_ja": "40%",
-          "source_surface_ja": "40%",
-          "evidence_id": "02_2025_FY_tanshin.pdf:s0017"
+          "value_id": "C13:figure:01",
+          "claim_surface_ja": "60",
+          "source_surface_ja": "60",
+          "evidence_id": null
         },
         {
-          "value_id": "claim_trend_cap_01:figure:02",
-          "claim_surface_ja": "3月",
-          "source_surface_ja": "3月",
-          "evidence_id": "02_2025_FY_tanshin.pdf:s0017"
+          "value_id": "C13:figure:02",
+          "claim_surface_ja": "10%",
+          "source_surface_ja": "10%",
+          "evidence_id": null
         }
       ],
-      "dates": [
-        {
-          "value_id": "claim_trend_cap_01:date:01",
-          "claim_surface_ja": "2025年",
-          "source_surface_ja": "2025年",
-          "evidence_id": "02_2025_FY_tanshin.pdf:s0017"
-        }
-      ],
+      "dates": [],
       "qualifiers": []
     },
     {
-      "claim_id": "claim_trend_imp_01",
-      "section": "trend.implication",
+      "claim_id": "C14",
+      "section": "trend.change",
       "order": 1,
-      "headline_ja": "高い成長目標と棚卸資産・有利子負債コントロールのトレードオフ管理が投資判断の焦点",
-      "body_ja": "10年間の軌跡を通じてオープンハウスグループは高い売上成長とM&Aによる規模獲得を実現しましたが、事業規模拡大に伴い棚卸資産と有利子負債が増大し、期中の営業キャッシュ・フローが大きく変動する構造を持っています。投資家にとっては、2026年9月期の通期高成長予想の達成度だけでなく、適切な棚卸資産回転とレバレッジコントロールが維持され、還元指標（総還元性向40％以上）が持続的に担保されるかどうかが重要な検証点となります。",
-      "evidence_ids": [
-        "01_2026_Q2_tanshin.pdf:s0002",
-        "01_2026_Q2_tanshin.pdf:s0010",
-        "01_2026_Q2_tanshin.pdf:s0011",
-        "02_2025_FY_tanshin.pdf:s0017"
+      "headline_ja": "首都圏戸建中心の単体成長から大型M&Aを活用した多エリア・多角化総合不動産企業への転換",
+      "body_ja": "初期状態（FY2016期末総資産2,048億円、売上高2,472億円）においては首都圏の戸建・流動化事業が主体であったが、中間期（FY2020〜2021）におけるプレサンスコーポレーションの買収・完全子会社化により近畿・東海圏の投資用・ファミリーマンション基盤を獲得。さらに直近（FY2023〜2024）のメルディア買収によりデザイン戸建および西日本エリアの戸建供給ラインを組み込んだ。FY2025期末には総資産1兆4,120億円、売上高1.33兆円を超える広域総合不動産グループへと事業構造とバランスシート規模が不連続に変化した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": true,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "C14:figure:01",
+          "claim_surface_ja": "2,048億円",
+          "source_surface_ja": "2,048億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C14:figure:02",
+          "claim_surface_ja": "2,472億円",
+          "source_surface_ja": "2,472億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C14:figure:03",
+          "claim_surface_ja": "2021",
+          "source_surface_ja": "2021",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C14:figure:04",
+          "claim_surface_ja": "2024",
+          "source_surface_ja": "2024",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C14:figure:05",
+          "claim_surface_ja": "1兆4,120億円",
+          "source_surface_ja": "1兆4,120億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C14:figure:06",
+          "claim_surface_ja": "1.33兆円",
+          "source_surface_ja": "1.33兆円",
+          "evidence_id": null
+        }
       ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C15",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "営業キャッシュ・フローを上回る棚卸資産投資とM&A・株主還元の積極的な並行推進",
+      "body_ja": "追加資本の多くは戸建関連事業およびマンション事業の棚卸資産（仕掛販売用不動産等：FY2016の1,946億円からFY2025には7,699億円へ拡大）に投下された。加えて、プレサンス買収・完全子会社化（累計1,000億円超の投資・子会社株式取得）やメルディア買収（約430億円）など大型M&Aに資本を集中配分した。さらにFY2022以降は年間200億〜300億円規模の自己株式取得と消却、配当増額を継続し、総還元性向40%以上を掲げる積極的な株主還元と成長投資を両立させた。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "C15:figure:01",
+          "claim_surface_ja": "1,946億円",
+          "source_surface_ja": "1,946億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:02",
+          "claim_surface_ja": "7,699億円",
+          "source_surface_ja": "7,699億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:03",
+          "claim_surface_ja": "1,000億円",
+          "source_surface_ja": "1,000億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:04",
+          "claim_surface_ja": "430億円",
+          "source_surface_ja": "430億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:05",
+          "claim_surface_ja": "200",
+          "source_surface_ja": "200",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:06",
+          "claim_surface_ja": "300億円",
+          "source_surface_ja": "300億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C15:figure:07",
+          "claim_surface_ja": "40%",
+          "source_surface_ja": "40%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": [
+        {
+          "value_id": "C15:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "C16",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "概ね創出した：拡大した投入資本に対し負ののれん発生益と事業利益の高成長を実現し高い資本効率を維持",
+      "body_ja": "過去10年間において、増加した資本の最大目的地は戸建関連事業の棚卸資産増（約5,750億円増）およびプレサンス・メルディア等のM&A投資であった。連結総資産が7倍（2,048億円から1.41兆円）へと膨らんだのに対し、営業利益も4.6倍（313億円から1,459億円）へ急増し、自己資本利益率（ROE）は一貫して20%前後の高い水準を維持した。また、プレサンス（FY2020・FY2021合計約291億円）およびメルディア（FY2024約127億円）の買収時には時価純資産を下回る対価での取得により巨額の負ののれん発生益を特別利益計上し、買収後のセグメント利益（プレサンス年間280億円超、旧メルディアの戸建統合益）もしっかり創出された。投下資本の拡大を上回る利益成長と特別利益の双方を通じて、資本配分は概ね高い価値を創出したと評価できる。",
+      "evidence_ids": [],
       "statement_type": "inference",
       "is_inference": true,
       "causal": true,
       "figures": [
         {
-          "value_id": "claim_trend_imp_01:figure:01",
-          "claim_surface_ja": "40%",
-          "source_surface_ja": "40%",
-          "evidence_id": "02_2025_FY_tanshin.pdf:s0017"
+          "value_id": "C16:figure:01",
+          "claim_surface_ja": "5,750億円",
+          "source_surface_ja": "5,750億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:02",
+          "claim_surface_ja": "7倍",
+          "source_surface_ja": "7倍",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:03",
+          "claim_surface_ja": "2,048億円",
+          "source_surface_ja": "2,048億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:04",
+          "claim_surface_ja": "1.41兆円",
+          "source_surface_ja": "1.41兆円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:05",
+          "claim_surface_ja": "4.6倍",
+          "source_surface_ja": "4.6倍",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:06",
+          "claim_surface_ja": "313億円",
+          "source_surface_ja": "313億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:07",
+          "claim_surface_ja": "1,459億円",
+          "source_surface_ja": "1,459億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:08",
+          "claim_surface_ja": "20%",
+          "source_surface_ja": "20%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:09",
+          "claim_surface_ja": "291億円",
+          "source_surface_ja": "291億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:10",
+          "claim_surface_ja": "127億円",
+          "source_surface_ja": "127億円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C16:figure:11",
+          "claim_surface_ja": "280億円",
+          "source_surface_ja": "280億円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C17",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "投資家が確認すべき現在地：1.5兆円資産規模における棚卸資産回転率の維持とM&A統合効果の実証",
+      "body_ja": "最新の2026年9月期中間期時点で総資産は1.5兆円に達し、土地・建築在庫の積み増しによって営業キャッシュ・フローのマイナスと借入金の純増が進行している。投資家が今後検証すべき最重要の観点は、1) 膨らんだ棚卸資産が市況変動下でも滞留せず期首想定通りの利幅で販売回収されるか（資産回転率と営業CFの改善）、2) 完全子会社化したプレサンスや統合された旧メルディアとの資材共通調達・相互販売ノウハウ等によるグループシナジーが中長期の粗利益率向上に寄与し続けるか、の2点である。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "C17:figure:01",
+          "claim_surface_ja": "1.5兆円",
+          "source_surface_ja": "1.5兆円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C17:figure:02",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C17:figure:03",
+          "claim_surface_ja": "2",
+          "source_surface_ja": "2",
+          "evidence_id": null
         }
       ],
       "dates": [
         {
-          "value_id": "claim_trend_imp_01:date:01",
+          "value_id": "C17:date:01",
           "claim_surface_ja": "2026年9月期",
-          "source_surface_ja": "2026年9月期 通期予想",
-          "evidence_id": "01_2026_Q2_tanshin.pdf:s0002"
+          "source_surface_ja": "2026年9月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C18",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "明確な定量目標と製販一体・M&A補完戦略に裏付けられた極めて高い戦略的一貫性",
+      "body_ja": "経営陣は「行こうぜ1兆！」など明確な長期成長目標を掲げ、都心戸建における狭小地開発・高回転モデルという軸をブレさせずに推進してきた。自社有機成長の限界を予見したタイミングで、マンション事業の強みを持つプレサンスや、デザイン戸建に強いメルディアの買収・完全統合を段階的に断行しており、中核事業の競争力強化と周辺領域への拡張が見事に整合した極めてコヒーレントな戦略を展開している。",
+      "evidence_ids": [],
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "C18:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": []
+    },
+    {
+      "claim_id": "C19",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "中期経営計画目標の前倒し達成と買収子会社の完全統合に見られる卓越した実行フォロー力",
+      "body_ja": "2021年9月期〜2023年9月期の中期経営計画「行こうぜ1兆！」において売上高1兆円目標を最終年度（FY2023に1.14兆円）に完全達成した。さらにホーク・ワン、プレサンス、メルディアといった大型買収案件において、段階的株式取得から完全子会社化、さらにはセグメント再編・自社ラインへの完全吸収・集約までを着実にやり遂げており、有言実行のプロセスと結果の両面で高い実行力を示した。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "C19:figure:01",
+          "claim_surface_ja": "1",
+          "source_surface_ja": "1",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C19:figure:02",
+          "claim_surface_ja": "1兆円",
+          "source_surface_ja": "1兆円",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C19:figure:03",
+          "claim_surface_ja": "1.14兆円",
+          "source_surface_ja": "1.14兆円",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "C19:date:01",
+          "claim_surface_ja": "2021年9月期",
+          "source_surface_ja": "2021年9月期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C19:date:02",
+          "claim_surface_ja": "2023年9月期",
+          "source_surface_ja": "2023年9月期",
+          "evidence_id": null
+        }
+      ],
+      "qualifiers": [
+        {
+          "value_id": "C19:qualifier:01",
+          "claim_surface_ja": "約",
+          "source_surface_ja": "約",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "C20",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "過去10期中8期で期初経常利益予想を上回る達成を見せた慎重かつ信頼性の高い業績予想規律",
+      "body_ja": "観察された通期経常利益の期初予想と実績の対比（全9比較期）において、8期で実績が予想を上回り（FY2021の39.4%上振れ等）、1期（FY2024）で概ね計画通り（0.2%差）となり、期初予想を下回った期は一度も存在しない。経営陣の業績予想姿勢は一貫して保守的であり、期中での業績上方修正を伴いながら確実に計画を超克する高い規律を有している。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true,
+      "figures": [
+        {
+          "value_id": "C20:figure:01",
+          "claim_surface_ja": "10期",
+          "source_surface_ja": "10期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C20:figure:02",
+          "claim_surface_ja": "8期",
+          "source_surface_ja": "8期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C20:figure:03",
+          "claim_surface_ja": "9",
+          "source_surface_ja": "9",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C20:figure:04",
+          "claim_surface_ja": "39.4%",
+          "source_surface_ja": "39.4%",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C20:figure:05",
+          "claim_surface_ja": "1期",
+          "source_surface_ja": "1期",
+          "evidence_id": null
+        },
+        {
+          "value_id": "C20:figure:06",
+          "claim_surface_ja": "0.2%",
+          "source_surface_ja": "0.2%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [],
+      "qualifiers": [
+        {
+          "value_id": "C20:qualifier:01",
+          "claim_surface_ja": "予想",
+          "source_surface_ja": "予想",
+          "evidence_id": null
+        }
+      ]
+    },
+    {
+      "claim_id": "C21",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "在庫調整や減益局面における迅速な開示と総還元性向指標導入による高い説明責任と透明性",
+      "body_ja": "2024年9月期における戸建住宅の在庫調整に伴う営業減益局面に対し、市況変化と自社の仕入抑制・調整プロセスを客観的に開示した。また、プレサンスや永大等の買収に伴う負ののれん益の開示やセグメント再編理由を明瞭に説明するとともに、総還元性向40%以上の資本還元指標を導入して自己株式消却や増配の実施理由を明確化しており、説明責任と透明性は十分に確保されている。",
+      "evidence_ids": [],
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false,
+      "figures": [
+        {
+          "value_id": "C21:figure:01",
+          "claim_surface_ja": "40%",
+          "source_surface_ja": "40%",
+          "evidence_id": null
+        }
+      ],
+      "dates": [
+        {
+          "value_id": "C21:date:01",
+          "claim_surface_ja": "2024年9月期",
+          "source_surface_ja": "2024年9月期",
+          "evidence_id": null
         }
       ],
       "qualifiers": []
     }
   ],
-  "evidence": [
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0001",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2026年９月期中間期 689,176 7.1 84,398 14.4 81,459 13.8 57,017 22.4",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "連結経営成績(累計)",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0002",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "通期 1,485,000 ～1,500,000 11.1 ～12.2 176,500 ～180,000 20.9 ～23.3 167,000 ～170,000 19.7 ～21.9 116,500 ～118,500 15.7 ～17.7",
-      "period_label_ja": "2026年9月期 通期予想",
-      "period_label_en": "FY2026 Full Year Forecast",
-      "statement_type": "forecast",
-      "source_section": "連結業績予想",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0003",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当社グループ(当社、連結子会社及び持分法適用関連会社)は、2023年11月に策定した「３カ年の経営方針(2024年９月期～2026 年９月期)」に掲げる経営目標の達成を目指して業務に取り組んでおります。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "target",
-      "source_section": "経営成績に関する説明",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0004",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "戸建関連事業につきましては、当社グループが展開する都市部においては戸建住宅に対する高い需要が続いております。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（戸建関連事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0005",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は380,930百万円(前年同期比5.5％増)、営業利益は43,118百万円(同5.3％増)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（戸建関連事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0006",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "マンション事業につきましては、物件の引渡しが第４四半期連結会計期間に集中するため、当中間連結会計期間に引渡しを迎えた物件は多くはないものの、販売契約は順調に進捗しております。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（マンション事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0007",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は26,048百万円(前年同期比331.4％増)、営業利益は4,451百万円(前年同期は1,808百万円の営業損失)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（マンション事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0008",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "収益不動産事業につきましては、当社グループが顧客とする事業法人、富裕層が投資対象とする賃貸マンション、オフィスビル等に対する高い需要を背景として、業績は伸長いたしました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（収益不動産事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0009",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は113,358百万円(前年同期比18.2％増)、営業利益は13,251百万円(同21.1％増)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（収益不動産事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0010",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当中間連結会計期間末における総資産は1,509,665百万円となり、前連結会計年度末と比較して97,663百万円増加しました。これは主として、販売用不動産及び仕掛販売用不動産が合わせて93,191百万円、その他（流動資産）が5,648百万円増加したこと等によるものであります。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0011",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "負債の合計は926,538百万円となり、前連結会計年度末と比較して53,371百万円増加しました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0012",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "営業活動によるキャッシュ・フロー △37,155",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "中間連結キャッシュ・フロー計算書",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:s0013",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "棚卸資産の増減額（△は増加） △87,926",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "中間連結キャッシュ・フロー計算書",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0014",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2025年９月期 1,336,468 3.1 145,933 22.5 139,491 16.0 100,670 8.3",
-      "period_label_ja": "2025年9月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0015",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "戸建関連事業につきましては、当社グループの展開エリアにおける戸建住宅に対する需要の回復に加え、前連結会計年度に取り組んだ在庫の入替えが奏功したことにより、売上高は伸長し、売上総利益率の改善が顕著となっております。",
-      "period_label_ja": "2025年9月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況（戸建関連事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0016",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "このような事業環境のもと、当社グループにつきましては、戸建及びマンションによって構成される実需不動産並びに収益不動産及びアメリカ不動産によって構成される投資不動産によるポートフォリオ経営により、企業価値の向上を図ってまいります。",
-      "period_label_ja": "2025年9月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0017",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 22,
-      "exact_quote_ja": "上記方針のもと、2025年３月には配当及び自己株式取得を併せた総還元性向40％以上を新たな指標として、株主還元を強化してまいりました。",
-      "period_label_ja": "2025年9月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0018",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2024年９月期 1,295,862 12.8 119,088 △16.3 120,283 △12.2 92,921 0.9",
-      "period_label_ja": "2024年9月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0019",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "戸建関連事業につきましては、前連結会計年度後半より在庫調整に取り組んだ結果、売上高は横這い、売上総利益率は低下いたしましたが、既に在庫調整は終了しており、このところ販売は回復基調を示しております。",
-      "period_label_ja": "2024年9月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況（戸建関連事業）",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0020",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 23,
-      "exact_quote_ja": "当社は2023年10月５日に、株式会社三栄建築設計の普通株式19,735,327株を株式公開買付けにより取得いたしました。この結果、当社の同社に対する議決権比率は93.02%に達したことから、同日付で同社を連結子会社化いたしました。",
-      "period_label_ja": "2024年9月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "企業結合等関係",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0021",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2023年９月期 1,148,484 20.6 142,330 19.2 136,927 13.0 92,050 18.2",
-      "period_label_ja": "2023年9月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0022",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このような事業環境のもと、当社グループは中期経営計画「行こうぜ１兆！2023」（2021年９月期～2023年９月期）に掲げる経営目標の達成に向け、業務に取り組んでまいりました。当連結会計年度におきましては、すべてのセグメントで売上高及び営業利益において10％以上の増収増益を果たしております。",
-      "period_label_ja": "2023年9月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0023",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度におきましては、主力事業である戸建関連事業及びマンション事業等の実需の不動産に加え、収益不動産及びアメリカ不動産等の投資用不動産も好調に推移したことにより業績は大幅に伸長いたしました。",
-      "period_label_ja": "2022年9月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0024",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "加えて、2021年１月より株式会社プレサンスコーポレーション（以下、「プレサンスコーポレーション」という）を連結子会社としたことに伴い、業績は大幅に伸長いたしました。",
-      "period_label_ja": "2021年9月期 通期",
-      "period_label_en": "FY2021 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0025",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "また、当連結会計年度より株式会社プレサンスコーポレーション（以下、「プレサンスコーポレーション」という）を持分法適用関連会社としたことに伴い、持分法による投資利益を計上いたしました。",
-      "period_label_ja": "2020年9月期 通期",
-      "period_label_en": "FY2020 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0026",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このような事業環境のもと、当社グループは新たに株式会社ホーク・ワン（以下、「ホーク・ワン」という）を連結子会社とした戸建関連事業並びに、販売及び仕入拠点を拡大したアメリカ不動産事業が、業容を大幅に拡大するなど、マンション事業、収益不動産事業を含めた全てのセグメントにおいて、売上高は前連結会計年度の実績を上回りました。",
-      "period_label_ja": "2019年9月期 通期",
-      "period_label_en": "FY2019 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2016_FY_tanshin.pdf:s0027",
-      "source_filename": "11_2016_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このような事業環境のもと、当社グループは戸建事業において新築一戸建て住宅及び土地の分譲が堅調に推移したことに加え、流動化事業において収益不動産の販売が大幅に伸長したほか、仲介事業、アサカワホーム、マンション事業においても事業活動は計画通りに進捗いたしました。",
-      "period_label_ja": "2016年9月期 通期",
-      "period_label_en": "FY2016 Full Year",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する分析",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1ba92d47",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当中間連結会計期間における業績は、売上高は689,176百万円(前年同期比7.1%増)、営業利益は84,398百万円(同14.4%増)、経常利益は81,459百万円(同13.8%増)、親会社株主に帰属する中間純利益は57,017百万円(同22.4%増)となりました。",
-      "period_label_ja": "2026年9月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（戸建関連事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-1cdf5c8d",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "(同14.4%増)、経常利益は81,459百万円(同13.8%増)、親会社株主に帰属する中間純利益は57,017百万円(同22.4%増)となりました。",
-      "period_label_ja": "2026年9月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（戸建関連事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-436445e6",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当中間連結会計期間末における総資産は1,509,665百万円となり、前連結会計年度末と比較して97,663百万円増加しました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-e6224092",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "負債の合計は926,538百万円となり、前連結会計年度末と比較して53,371百万円増加しました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0010-11d92ad4",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "株式会社オープンハウスグループ(3288) 2026年9月期 第2四半期(中間期)決算短信-8-(3)中間連結キャッシュ・フロー計算書(単位:百万円)前中間連結会計期間(自 2024年10月1日至 2025年3月31日)当中間連結会計期間(自 2025年10月1日至 2026年3月31日)営業活動によるキャッシュ・フロー税金等調整前中間純利益 72,14281,459減価償却費 945977貸倒引当金の増減額(△は減少) 50 △26退職給付に係る負債の増減額(△は減少) △762 △2引当金の増減額(△は減少) 182 △1,362受取利息及び受取配当金 △1,016 △1,511為替差損益(△は益) 1731持分法による投資損益(△は益) 1223支払利息 3,2534,796関係会社株式売却損益(△は益) △555 -売上債権の増減額(△は増加) △1,5733,076棚卸資産の増減額(△は増加) △36,605 △87,926前渡金の増減額(△は増加) △2,191 △1,743仕入債務の増減額(△は減少) △6,880472営業貸付金の増減額(△は増加) △15,7476,836契約負債の増減額(△は減少) 4,6678,041預り保証金の増減額(△は減少) 365160預り金の増減額(△は減少) △1,765 △3,658未払又は未収消費税等の増減額 1,755 △1,193その他 △5,186 △17,191小計 11,109 △8,741利息及び配当金の受取額 1,0151,470利息の支払額 △3,209 △4,805法人税等の支払額 △14,203 △25,078営業活動によるキャッシュ・フロー △5,289 △37,155",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "中間連結キャッシュ・フロー計算書",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-5804c431",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "純資産の合計は583,126百万円となり、前連結会計年度末と比較して44,292百万円増加しました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-736c9aff",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "借入金及び長期借入金(一年内返済予定の長期借入金を含む)が合わせて63,327百万円増加したこと等によるものであります。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "forecast",
-      "source_section": "財政状態に関する説明",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-60ba427a",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は380,930百万円(前年同期比5.5%増)、営業利益は43,118百万円(同5.3%増)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（戸建関連事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-9e2925e8",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は26,048百万円(前年同期比331.4%増)、営業利益は4,451百万円(前年同期は1,808百万円の営業損失)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（マンション事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0004-d85fa0db",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、売上高は113,358百万円(前年同期比18.2%増)、営業利益は13,251百万円(同21.1%増)となりました。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明（収益不動産事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_Q2_tanshin.pdf:r0005-84ffb3b4",
-      "source_filename": "01_2026_Q2_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "産)が5,648百万円増加したこと等によるものであります。",
-      "period_label_ja": "2026年9月期 第2四半期",
-      "period_label_en": "FY2026 Q2",
-      "statement_type": "inference",
-      "source_section": "財政状態に関する説明",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:r0001-c8793046",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "特別配当は、上場10周年及び売上高1兆円達成記念によるものであります。",
-      "period_label_ja": "2023年9月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:r0004-b692a2c4",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "業利益は119,088百万円(同16.3%減)、経常利益は120,283百万円(同12.2%減)、親会社株主に帰属する当期純利益は92,921百万円(同0.9%増)となりました。",
-      "period_label_ja": "2024年9月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況（戸建関連事業）",
-      "tags": [
-        "local_repair"
-      ]
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:r0004-7cd93743",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "業利益は145,933百万円(同22.5%増)、経常利益は139,491百万円(同16.0%増)、親会社株主に帰属する当期純利益は100,670百万円(同8.3%増)となりました。",
-      "period_label_ja": "2025年9月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況（戸建関連事業）",
-      "tags": [
-        "local_repair"
-      ]
-    }
-  ],
+  "evidence": [],
   "management_consistency": {
-    "methodology_version": "management-consistency-v5",
-    "score": 0.5,
-    "raw_score": 0.5,
-    "evidence_confidence": 0.6042,
-    "confidence_label": "moderate",
-    "evidence_coverage": 0.6042,
-    "distinct_fiscal_years": [
-      2019,
-      2021,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "evidence_count": 10,
-    "management_discussion_evidence_share": 0.1,
+    "methodology_version": "management-consistency-v6",
+    "score": 0.88,
+    "raw_score": 0.875,
+    "evidence_confidence": null,
+    "confidence_label": null,
+    "evidence_coverage": null,
+    "distinct_fiscal_years": [],
+    "evidence_count": 0,
+    "management_discussion_evidence_share": null,
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": null,
-        "evidence_sufficiency": "insufficient",
-        "normalized_score": null,
+        "rating": 4,
+        "evidence_sufficiency": "sufficient",
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "経営陣は一貫して都市部戸建住宅の実需獲得を核としつつ、実需不動産と投資用不動産のポートフォリオ経営を推進してきました。「行こうぜ1兆！2023」や「3カ年の経営方針（2024年9月期〜2026年9月期）」など連続する中期方針において基本ロジックをブレさせずに提示しています。",
-        "evidence_ids": [
-          "01_2026_Q2_tanshin.pdf:s0003",
-          "02_2025_FY_tanshin.pdf:s0016",
-          "04_2023_FY_tanshin.pdf:s0022"
-        ],
-        "distinct_fiscal_years": [
-          2023,
-          2025,
-          2026
-        ],
-        "management_discussion_evidence_count": 1,
-        "covered_period_buckets": [
-          "recent"
-        ],
-        "evidence_confidence": 0.5667
+        "rationale_ja": "経営陣は「行こうぜ1兆！」など明確な長期成長目標を掲げ、都心戸建における狭小地開発・高回転モデルという軸をブレさせずに推進してきた。自社有機成長の限界を予見したタイミングで、マンション事業の強みを持つプレサンスや、デザイン戸建に強いメルディアの買収・完全統合を段階的に断行しており、中核事業の競争力強化と周辺領域への拡張が見事に整合した極めてコヒーレントな戦略を展開している。",
+        "evidence_ids": [],
+        "distinct_fiscal_years": [],
+        "management_discussion_evidence_count": 0,
+        "covered_period_buckets": [],
+        "evidence_confidence": 0.0
       },
       {
         "dimension": "execution_follow_through",
-        "rating": null,
-        "evidence_sufficiency": "insufficient",
-        "normalized_score": null,
+        "rating": 4,
+        "evidence_sufficiency": "sufficient",
+        "normalized_score": 1.0,
         "weight": 0.25,
-        "rationale_ja": "ホーク・ワン、プレサンスコーポレーション、三栄建築設計（現メルディア）の買収と段階的子会社化・完全子会社化を実行し、首都圏から近畿・東海などへのエリア拡大とマンション・戸建のラインナップ拡充を有言実行で達成しました。",
-        "evidence_ids": [
-          "03_2024_FY_tanshin.pdf:s0020",
-          "06_2021_FY_tanshin.pdf:s0024",
-          "08_2019_FY_tanshin.pdf:s0026"
-        ],
-        "distinct_fiscal_years": [
-          2019,
-          2021,
-          2024
-        ],
+        "rationale_ja": "2021年9月期〜2023年9月期の中期経営計画「行こうぜ1兆！」において売上高1兆円目標を最終年度（FY2023に1.14兆円）に完全達成した。さらにホーク・ワン、プレサンス、メルディアといった大型買収案件において、段階的株式取得から完全子会社化、さらにはセグメント再編・自社ラインへの完全吸収・集約までを着実にやり遂げており、有言実行のプロセスと結果の両面で高い実行力を示した。",
+        "evidence_ids": [],
+        "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
-        "covered_period_buckets": [
-          "early",
-          "middle",
-          "recent"
-        ],
-        "evidence_confidence": 0.9
+        "covered_period_buckets": [],
+        "evidence_confidence": 0.0
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": null,
-        "evidence_sufficiency": "insufficient",
-        "normalized_score": null,
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "「行こうぜ1兆！2023」の全セグメント増収増益達成など高い達成力を見せた一方、FY2024には市中在庫滞留を受けて戸建関連事業の粗利益率低下と通期営業利益減益（16.3％減）を経験しました。FY2025には在庫調整完了により利益をV字回復させており、目標達成と環境変化による修正が交錯する実績となっています。",
-        "evidence_ids": [
-          "02_2025_FY_tanshin.pdf:s0014",
-          "02_2025_FY_tanshin.pdf:s0015",
-          "03_2024_FY_tanshin.pdf:s0018",
-          "03_2024_FY_tanshin.pdf:s0019",
-          "04_2023_FY_tanshin.pdf:s0022"
-        ],
-        "distinct_fiscal_years": [
-          2023,
-          2024,
-          2025
-        ],
+        "rationale_ja": "観察された通期経常利益の期初予想と実績の対比（全9比較期）において、8期で実績が予想を上回り（FY2021の39.4%上振れ等）、1期（FY2024）で概ね計画通り（0.2%差）となり、期初予想を下回った期は一度も存在しない。経営陣の業績予想姿勢は一貫して保守的であり、期中での業績上方修正を伴いながら確実に計画を超克する高い規律を有している。",
+        "evidence_ids": [],
+        "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
-        "covered_period_buckets": [
-          "recent"
-        ],
-        "evidence_confidence": 0.5333
+        "covered_period_buckets": [],
+        "evidence_confidence": 0.0
       },
       {
         "dimension": "accountability_transparency",
-        "rating": null,
-        "evidence_sufficiency": "insufficient",
-        "normalized_score": null,
+        "rating": 3,
+        "evidence_sufficiency": "sufficient",
+        "normalized_score": 0.75,
         "weight": 0.25,
-        "rationale_ja": "FY2024における戸建関連事業の在庫調整や利益率低下の要因、およびFY2025における在庫入れ替え完了による利益率顕著な改善の要因について、決算短信の経営成績概況で明確かつ透明性の高い説明を行っています。",
-        "evidence_ids": [
-          "02_2025_FY_tanshin.pdf:s0015",
-          "03_2024_FY_tanshin.pdf:s0019"
-        ],
-        "distinct_fiscal_years": [
-          2024,
-          2025
-        ],
+        "rationale_ja": "2024年9月期における戸建住宅の在庫調整に伴う営業減益局面に対し、市況変化と自社の仕入抑制・調整プロセスを客観的に開示した。また、プレサンスや永大等の買収に伴う負ののれん益の開示やセグメント再編理由を明瞭に説明するとともに、総還元性向40%以上の資本還元指標を導入して自己株式消却や増配の実施理由を明確化しており、説明責任と透明性は十分に確保されている。",
+        "evidence_ids": [],
+        "distinct_fiscal_years": [],
         "management_discussion_evidence_count": 0,
-        "covered_period_buckets": [
-          "recent"
-        ],
-        "evidence_confidence": 0.4167
+        "covered_period_buckets": [],
+        "evidence_confidence": 0.0
       }
     ],
-    "overall_rationale_ja": "オープンハウスグループの経営陣は、約10年間にわたり「都市部実需戸建の製販一体モデル」と「実需・投資不動産ポートフォリオ経営」の基本戦略をブレずに維持し、大型M&Aの成功によって売上高1兆円規模の達成を有言実行してきました。FY2024における在庫調整局面での利益低下という一時的な規律の揺らぎは見られたものの、翌FY2025での速やかなV字回復と総還元性向40％以上の新指標設定など、透明性の高い説明責任と資本配分の機動力を提示しています。"
+    "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
   },
-  "model_notes": []
+  "model_notes": [
+    "2020年9月期及び2021年9月期にプレサンスコーポレーション、2023年9月期及び2024年9月期にメルディア（三栄建築設計）を段階的に取得・連結化・完全子会社化したことで、連結資産規模及び売上・利益水準が段階的に大きく不連続拡大している。"
+  ]
 }

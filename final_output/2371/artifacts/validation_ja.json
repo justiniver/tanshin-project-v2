@@ -1,0 +1,30 @@
+{
+  "valid": false,
+  "publishable": false,
+  "factual_integrity_passed": false,
+  "quality_gate_passed": true,
+  "blocking_error_count": 1,
+  "warning_count": 0,
+  "language": "ja",
+  "issues": [
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "c10",
+      "evidence_id": null
+    }
+  ],
+  "statistics": {
+    "claims": 22,
+    "citation_mode": "disabled",
+    "evidence_records": 0,
+    "citation_references": 0,
+    "trend_management_discussion_share": 0.0,
+    "management_consistency_score": 0.62,
+    "errors": 1,
+    "warnings": 0,
+    "blocking_errors": 1
+  }
+}

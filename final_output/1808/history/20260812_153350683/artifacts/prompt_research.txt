@@ -1,0 +1,78 @@
+<document_manifest>
+security_code: 1808
+latest_filename: 01_2026_FY_tanshin.pdf
+selected_sources:
+- 01_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 53, roles latest, trend_year_end
+- 05_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 54, roles trend_year_end
+- 09_2024-05-10_tanshin.pdf: FY label 2024, period FY, pages 50, roles trend_year_end
+- 13_2023-05-11_tanshin.pdf: FY label 2023, period FY, pages 50, roles trend_year_end
+- 17_2022-05-12_tanshin.pdf: FY label 2022, period FY, pages 52, roles trend_year_end
+- 21_2021-05-13_tanshin.pdf: FY label 2021, period FY, pages 50, roles trend_year_end
+- 25_2020-05-14_tanshin.pdf: FY label 2020, period FY, pages 51, roles trend_year_end
+- 29_2019-05-10_tanshin.pdf: FY label 2019, period FY, pages 49, roles trend_year_end
+- 33_2018-05-11_tanshin.pdf: FY label 2018, period FY, pages 51, roles trend_year_end
+- 37_2017-05-12_tanshin.pdf: FY label 2017, period FY, pages 49, roles trend_year_end
+trend_period_buckets:
+- early: 37_2017-05-12_tanshin.pdf (FY2017), 33_2018-05-11_tanshin.pdf (FY2018), 29_2019-05-10_tanshin.pdf (FY2019), 25_2020-05-14_tanshin.pdf (FY2020)
+- middle: 21_2021-05-13_tanshin.pdf (FY2021), 17_2022-05-12_tanshin.pdf (FY2022), 13_2023-05-11_tanshin.pdf (FY2023)
+- recent: 09_2024-05-10_tanshin.pdf (FY2024), 05_2025_FY_tanshin.pdf (FY2025), 01_2026_FY_tanshin.pdf (FY2026)
+</document_manifest>
+
+<research_task>
+Build a reusable longitudinal research dossier for security code
+1808. The latest filing is 01_2026_FY_tanshin.pdf.
+
+Research priorities:
+1. Collect a deduplicated evidence ledger sufficient to support a company
+   overview, latest-period summary, business drivers, outlook, risks, decade
+   perspective, recurring themes, material changes, capital allocation, current
+   implications, and management-consistency assessment.
+2. Prioritize qualitative management discussion: 経営成績, 財政状態,
+   cash-flow discussion, 将来予測情報, plan progress, capital allocation,
+   risks, misses, impairments, and changes in assumptions. Use summary tables
+   mainly to corroborate exact figures.
+3. Extract 4-8 distinct business drivers when supported. Use a short reusable
+   canonical_tag such as customer_demand, volume, utilization, pricing,
+   product_mix, material_costs, labor_costs, energy_costs, interest_rates,
+   foreign_exchange, property_prices, rent, regulation, capacity,
+   technology_investment, competition, acquisitions, or other. State direction,
+   importance, structural/cyclical nature, affected area, mechanism, periods,
+   and evidence.
+4. Connect explicit forecasts, medium-term targets, strategic commitments, and
+   capital-allocation commitments with later outcomes whenever the selected
+   filings permit. Keep original statements and later outcomes in the same
+   organizational scope and time horizon. Distinguish achieved, exceeded,
+   partly achieved, missed, delayed, revised, withdrawn, pending, and not
+   observable.
+5. For annual forecasts, classify forecast_posture only when an issued forecast
+   can be compared with a later actual result. Conservative means the later
+   comparable actual materially exceeded guidance; aggressive means it
+   materially missed; balanced means broadly aligned. Use mixed when the
+   comparable metrics differ. Otherwise use not_assessable.
+6. Record revision_direction only for revisions visible in the selected
+   filings. Never infer that none occurred outside the selected corpus.
+7. Extract 4-8 decision-useful management themes spanning early, middle, and
+   recent periods where possible. Distinguish persistent, introduced,
+   strengthened, changed, deprioritized, and abandoned themes. Explain actions,
+   later outcomes, and unresolved tensions rather than merely counting repeated
+   slogans.
+8. Return one management-consistency component for each required dimension.
+   The rationale must identify concrete commitments, later actions or results,
+   important misses or revisions, and contrary evidence. Rate 0 materially
+   inconsistent, 1 weak, 2 mixed, 3 generally consistent, and 4 highly
+   consistent. Use null with insufficient evidence rather than a neutral rating.
+9. Use model notes to disclose incomplete forecast-revision coverage, ambiguous
+   targets, missing outcomes, or other material research limitations.
+
+Evidence requirements:
+- Use exact authoritative filenames from the metadata.
+- Use physical 1-indexed PDF pages.
+- Evidence quotes must be sufficiently complete verbatim Japanese sentences or
+  short contiguous passages.
+- Use unique IDs in the form <source_filename>:sNNNN.
+- Include support for both the original commitment and later result when an
+  outcome is classified.
+- Tag management-commentary evidence with management_discussion.
+
+Return only the schema-conforming JapaneseResearchDossier.
+</research_task>

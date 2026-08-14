@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+import copy
 import hashlib
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal
+
+from pydantic import BaseModel
 
 from .config import (
     ANALYSIS_MAX_OUTPUT_TOKENS,
@@ -14,21 +17,26 @@ from .config import (
     DEFAULT_MODEL_PROFILE,
     DEFAULT_TRANSLATION_MODEL,
     OPENAI_PDF_DETAIL,
+    RESEARCH_MAX_OUTPUT_TOKENS,
     SCHEMA_VERSION,
     TRANSLATION_MAX_OUTPUT_TOKENS,
 )
 from .prompts import (
     ANALYSIS_SYSTEM_PROMPT,
+    RESEARCH_SYSTEM_PROMPT,
     TRANSLATION_SYSTEM_PROMPT,
     build_analysis_prompt,
+    build_research_prompt,
     build_translation_prompt,
     load_generic_blueprint,
 )
+from .research import build_research_metrics
 from .schemas import (
     ApiProvider,
     EnglishTranslationPatch,
     JapaneseAnalysis,
-    JapaneseModelResponse,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
     ModelProfile,
     ProviderProfile,
     RequestFileDescriptor,
@@ -51,26 +59,44 @@ def sha256_json(value: Any) -> str:
     return hashlib.sha256(encoded).hexdigest()
 
 
-def _analysis_response_schema(provider: ApiProvider) -> dict[str, Any]:
-    """Require new score inputs while retaining legacy parser compatibility."""
+def response_schema_for(
+    model: type[BaseModel],
+    provider: ApiProvider,
+) -> dict[str, Any]:
+    """Build the provider-compatible native structured-output schema."""
 
     if provider == "openai":
         # This is the same strict-schema converter used by the pinned official
         # OpenAI SDK when responses.parse receives a Pydantic model.
         from openai.lib._pydantic import to_strict_json_schema
 
-        schema = to_strict_json_schema(JapaneseModelResponse)
-    else:
-        schema = JapaneseModelResponse.model_json_schema()
-    required = schema.setdefault("required", [])
-    if "management_consistency" not in required:
-        required.append("management_consistency")
+        return to_strict_json_schema(model)
+    schema = copy.deepcopy(model.model_json_schema())
+
+    def simplify_gemini_schema(value: Any) -> None:
+        if isinstance(value, dict):
+            # Gemini can reject a large schema when many optional array-size
+            # constraints are combined. Keep exact-cardinality arrays, such as
+            # the four management-consistency components, but enforce all other
+            # research ceilings in the prompt and local Pydantic validation.
+            if (
+                "maxItems" in value
+                and value.get("minItems") != value["maxItems"]
+            ):
+                value.pop("maxItems")
+            for child in value.values():
+                simplify_gemini_schema(child)
+        elif isinstance(value, list):
+            for child in value:
+                simplify_gemini_schema(child)
+
+    simplify_gemini_schema(schema)
     return schema
 
 
 @dataclass(frozen=True)
 class RequestSpec:
-    stage: Literal["analysis", "translation"]
+    stage: Literal["research", "analysis", "translation"]
     security_code: str
     model_profile: ModelProfile
     provider: ApiProvider
@@ -136,22 +162,10 @@ class RequestSpec:
         )
 
 
-def build_analysis_spec(
-    repository_root: Path,
+def _request_files(
     manifest: SelectionManifest,
-    *,
-    model: str = DEFAULT_ANALYSIS_MODEL,
-    model_profile: ModelProfile = DEFAULT_MODEL_PROFILE,
-    provider: ApiProvider = "gemini",
-    provider_profile: ProviderProfile | None = DEFAULT_MODEL_PROFILE,
-) -> RequestSpec:
-    blueprint = load_generic_blueprint(repository_root)
-    prompt = build_analysis_prompt(manifest, blueprint)
-    task_marker = "<analysis_task>"
-    task_index = prompt.index(task_marker)
-    context_prompt = prompt[:task_index].rstrip()
-    task_prompt = prompt[task_index:].lstrip()
-    files = tuple(
+) -> tuple[RequestFileDescriptor, ...]:
+    return tuple(
         RequestFileDescriptor(
             filename=item.filename,
             relative_path=item.relative_path,
@@ -162,6 +176,66 @@ def build_analysis_spec(
         )
         for item in manifest.selected_files
     )
+
+
+def build_research_spec(
+    repository_root: Path,
+    manifest: SelectionManifest,
+    *,
+    model: str = DEFAULT_ANALYSIS_MODEL,
+    model_profile: ModelProfile = DEFAULT_MODEL_PROFILE,
+    provider: ApiProvider = "gemini",
+    provider_profile: ProviderProfile | None = DEFAULT_MODEL_PROFILE,
+) -> RequestSpec:
+    del repository_root
+    prompt = build_research_prompt(manifest)
+    task_marker = "<research_task>"
+    task_index = prompt.index(task_marker)
+    context_prompt = prompt[:task_index].rstrip()
+    task_prompt = prompt[task_index:].lstrip()
+    return RequestSpec(
+        stage="research",
+        security_code=manifest.security_code,
+        model_profile=model_profile,
+        provider=provider,
+        provider_profile=provider_profile,
+        model=model,
+        manifest_id=manifest.manifest_id,
+        system_prompt=RESEARCH_SYSTEM_PROMPT,
+        prompt=prompt,
+        response_schema=response_schema_for(JapaneseResearchDossier, provider),
+        max_output_tokens=RESEARCH_MAX_OUTPUT_TOKENS,
+        files=_request_files(manifest),
+        request_options=(
+            {
+                "reasoning_effort": "medium",
+                "text_verbosity": "high",
+                "pdf_detail": OPENAI_PDF_DETAIL,
+                "store": False,
+            }
+            if provider == "openai"
+            else {}
+        ),
+        context_prompt=context_prompt,
+        task_prompt=task_prompt,
+    )
+
+
+def build_analysis_spec(
+    repository_root: Path,
+    manifest: SelectionManifest,
+    dossier: JapaneseResearchDossier,
+    *,
+    model: str = DEFAULT_ANALYSIS_MODEL,
+    model_profile: ModelProfile = DEFAULT_MODEL_PROFILE,
+    provider: ApiProvider = "gemini",
+    provider_profile: ProviderProfile | None = DEFAULT_MODEL_PROFILE,
+) -> RequestSpec:
+    blueprint = load_generic_blueprint(repository_root)
+    metrics = build_research_metrics(dossier, manifest)
+    prompt = build_analysis_prompt(manifest, blueprint, dossier, metrics)
+    task_marker = "<analysis_task>"
+    task_index = prompt.index(task_marker)
     blueprint_path = blueprint.path.relative_to(repository_root).as_posix()
     return RequestSpec(
         stage="analysis",
@@ -173,9 +247,9 @@ def build_analysis_spec(
         manifest_id=manifest.manifest_id,
         system_prompt=ANALYSIS_SYSTEM_PROMPT,
         prompt=prompt,
-        response_schema=_analysis_response_schema(provider),
+        response_schema=response_schema_for(JapaneseSynthesisResponse, provider),
         max_output_tokens=ANALYSIS_MAX_OUTPUT_TOKENS,
-        files=files,
+        files=_request_files(manifest),
         request_options=(
             {
                 "reasoning_effort": "medium",
@@ -188,8 +262,8 @@ def build_analysis_spec(
         ),
         style_blueprint_path=blueprint_path,
         style_blueprint_sha256=sha256_text(blueprint.text),
-        context_prompt=context_prompt,
-        task_prompt=task_prompt,
+        context_prompt=prompt[:task_index].rstrip(),
+        task_prompt=prompt[task_index:].lstrip(),
     )
 
 
@@ -215,7 +289,7 @@ def build_translation_spec(
         manifest_id=manifest.manifest_id,
         system_prompt=TRANSLATION_SYSTEM_PROMPT,
         prompt=prompt,
-        response_schema=EnglishTranslationPatch.model_json_schema(),
+        response_schema=response_schema_for(EnglishTranslationPatch, provider),
         max_output_tokens=TRANSLATION_MAX_OUTPUT_TOKENS,
         files=(),
         context_prompt=prompt[:task_index].rstrip(),

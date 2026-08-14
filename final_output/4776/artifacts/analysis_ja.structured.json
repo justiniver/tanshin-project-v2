@@ -1,570 +1,235 @@
 {
   "schema_version": "1.0",
-  "identity": {
-    "security_code": "4776",
-    "company_name_ja": "サイボウズ株式会社",
-    "company_name_en": "Cybozu, Inc.",
-    "latest_filename": "01_2026_Q1_tanshin.pdf",
-    "latest_period_ja": "2026年12月期 第1四半期",
-    "latest_period_en": "FY2026 Q1"
-  },
   "claims": [
     {
-      "claim_id": "overview_business_model",
+      "claim_id": "c_overview_1",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "クラウド基盤上で業務アプリ構築「kintone」やグループウェアを提供するSaaSソフトウェア事業者",
-      "body_ja": "サイボウズは、自社開発のクラウド基盤「cybozu.com」を通じて、ノーコード・ローコードで業務アプリを構築できる主力サービス「kintone」をはじめ、「サイボウズ Office」「Garoon」「メールワイズ」などのグループウェア群の開発・販売を行っています。民間企業や行政機関、自治体を顧客とし、月額・年額のサブスクリプションライセンス契約に基づくストック型の収益モデルを確立しています。\n\n直販チャネルに加え、Cybozu Partner Network（CnoN）を通じたパートナー企業や全国の地方銀行との協業による間接販売チャネルが強みであり、パートナー経由の売上が国内クラウド売上の約6割超を占めています。ソフトウェアの開発・販売という単一の報告セグメントで事業を推進しています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0004",
-        "02_2025_FY_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "クラウド型グループウェアおよび業務アプリ構築プラットフォームの開発・提供",
+      "body_ja": "サイボウズは、「kintone」「サイボウズ Office」「Garoon」などのクラウド型グループウェアおよびノーコード・ローコード業務アプリケーション構築プラットフォームの開発・販売を展開する。民間企業や官公庁・自治体、教育機関など多岐にわたる組織を顧客とし、契約に基づくストック型の利用料収入を主たる収益源としている。\n\n自社直販体制に加え、地方銀行やSIパートナーからなる堅固なエコシステム（代理店網）を経由した間接販売が国内売上高の6割以上を占める点に事業モデル上の大きな特徴がある。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest_q1_financial_results",
+      "claim_id": "c_latest_takeaway_1",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年12月期第1四半期は連結売上高17.0%増、営業利益15.3%増と二桁の増収増益を達成",
-      "body_ja": "2026年12月期第1四半期の連結累計業績は、売上高が10,246百万円（前年同期比17.0%増）、営業利益が3,014百万円（同15.3%増）、経常利益が3,084百万円（同22.1%増）、親会社株主に帰属する四半期純利益が2,191百万円（同21.6%増）となりました。クラウドサービスの契約積み上がりが主導し、売上高・利益ともに拡大しています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0001"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": false
-    },
-    {
-      "claim_id": "latest_q1_bs_change",
-      "section": "latest.key_takeaway",
-      "order": 2,
-      "headline_ja": "債券購入や株価下落、配当支払に伴い総資産は27,023百万円に減少するも自己資本比率は64.9%へ上昇",
-      "body_ja": "2026年12月期第1四半期末の総資産は、債券購入による投資有価証券の増加があったものの、保有上場株式の株価下落や現金及び預金の減少により前連結会計年度末比3,116百万円減少の27,023百万円となりました。純資産は剰余金配当1,849百万円の実施やその他有価証券評価差額金の減少に対し四半期純利益2,191百万円の計上等により17,586百万円（同228百万円減）となり、自己資本比率は59.1%から64.9%へと上昇しています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0002",
-        "01_2026_Q1_tanshin.pdf:s0007",
-        "01_2026_Q1_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "2026年12月期第1四半期はストック収益の積み上がりにより増収増益を達成",
+      "body_ja": "当第1四半期連結累計期間の売上高は10,246百万円（前年同期比17.0%増）、営業利益は3,014百万円（同15.3%増）、経常利益は3,084百万円（同22.1%増）となった。子会社化したプロバスケットボールチーム「愛媛オレンジバイキングス」の運営費発生に伴う売上原価増や、人員増加・昇給による人件費増、TVCM等の広告宣伝費増、R&D費用増があったものの、クラウド関連事業売上高（9,393百万円、同17.1%増）の着実な積み上がりがこれを吸収した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_q1_forecast_and_buyback",
+      "claim_id": "c_latest_takeaway_2",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "配当実施や株価下落で総資産・純資産は減少も、自己資本比率は64.9%へ上昇",
+      "body_ja": "当第1四半期連結会計期間末の総資産は前連結会計年度末比3,116百万円減の27,023百万円、純資産は同228百万円減の17,586百万円となった。剰余金配当1,849百万円の実施や上場株式の株価下落によるその他有価証券評価差額金の減少、未払法人税等や未払費用の支払いによる負債減少（同2,887百万円減）に対し、四半期純利益2,191百万円の計上で利益剰余金が増加した結果、自己資本比率は前期末の59.1%から64.9%へと高水準に向上した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c_latest_takeaway_3",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期業績予想を公表値のまま維持しつつ、上限30億円の自己株式取得を決議",
-      "body_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）は2025年12月公表値から変更を行っていません。一方で2026年5月14日開催の取締役会において、保有資産を活用した資本構成の再構築と機動的な資本政策を目的に、取得上限300万株（自己株式を除く発行済株式総数の6.5%）・取得価額上限30億円とする自己株式の取得を決議しました。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0003",
-        "01_2026_Q1_tanshin.pdf:s0009",
-        "01_2026_Q1_tanshin.pdf:s0010",
-        "01_2026_Q1_tanshin.pdf:s0011"
-      ],
+      "headline_ja": "通期業績予想を据え置く一方、上限30億円の機動的な自己株式取得枠を設定",
+      "body_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円）は公表値から変更されていない。一方で、2026年5月14日開催の取締役会において、保有資産を活用した資本構成の再構築を図るため、発行済株式総数（自己株式除く）の6.5%に相当する300万株・総額30億円を上限とする自己株式取得を決議し、機動的な株主還元姿勢を鮮明にした。",
       "statement_type": "mixed",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "latest_driver_cloud_revenue",
-      "section": "latest.business_driver",
-      "order": 1,
-      "headline_ja": "クラウド関連事業売上高が9,393百万円（前年同期比17.1%増）へと順調に積み上がり全社増収を牽引",
-      "body_ja": "クラウドサービスの契約社数が70,000社、契約ユーザーライセンス数が380万人を突破して堅調に推移し、売上高の積み上がりが継続しています。当第1四半期のクラウド関連事業売上高は9,393百万円（前年同期比17.1%増）となり、連結売上高（10,246百万円）の大半を占める中核ドライバーとなっています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0004",
-        "01_2026_Q1_tanshin.pdf:s0005"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "latest_driver_cost_structure",
-      "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "人件費や広告宣伝費、研究開発費の増加を売上伸長で吸収し営業利益15.3%増を確保",
-      "body_ja": "プロバスケットボールチーム「愛媛オレンジバイキングス」運営費に伴う売上原価増加や、人員増加・昇給による人件費増加、積極的な広告宣伝投資の継続、新規事業創出に向けた研究開発費の増大といった費用増が発生したものの、クラウド売上高の堅調な増加が上回り、営業利益は3,014百万円（前年同期比15.3%増）を確保しました。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0006"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "latest_outlook_full_year",
-      "section": "latest.outlook",
-      "order": 1,
-      "headline_ja": "2026年12月通期で連結売上高42,168百万円（12.7%増）、営業利益10,514百万円（4.1%増）を見込む",
-      "body_ja": "2026年12月期の通期連結業績について、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）とする期初予想を変更していません。第1四半期累計で営業利益3,014百万円を計上し、通期目標に向け順調な進捗を示しています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0003",
-        "01_2026_Q1_tanshin.pdf:s0009"
-      ],
-      "statement_type": "forecast",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest_risk_equity_valuation",
-      "section": "latest.risk",
+      "claim_id": "c_latest_driver_1",
+      "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "保有上場株式の価格変動がその他有価証券評価差額金を通じて純資産を動揺させるリスク",
-      "body_ja": "当第1四半期において、上場株式の株価下落が投資有価証券の減少やその他有価証券評価差額金の減少をもたらし、純資産全体の押し下げ要因となりました。株式市場の市況動向による有価証券評価額の変動は、同社の純資産および包括利益を短期的に大きく動揺させるリスク要素として開示されています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0007",
-        "01_2026_Q1_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "クラウド需要｜追い風：kintone等の契約拡大と価格体系改定効果の継続",
+      "body_ja": "主力「kintone」を中心にクラウドサービスの有料契約社数が70,000社、契約ユーザーライセンス数が380万人を突破した。2024年11月に実施した主要サービスの価格体系および最小契約ユーザー数の改定効果に伴い顧客平均売上単価の上昇傾向が続いており、一定期間にわたり移転されるストック収益が10,020百万円（前年同期比17.3%増）へ拡大して全体の成長を牽引した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_risk_cost_inflation",
-      "section": "latest.risk",
+      "claim_id": "c_latest_driver_2",
+      "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "人件費の上昇や広告・研究開発投資、新規連結事業費用に伴う固定費高止まりリスク",
-      "body_ja": "従業員数の増加や昇給に伴う人件費の増大に加え、広告宣伝費や研究開発費の積極投下、子会社化した愛媛オレンジバイキングスの運営費等の負担が続いています。売上高の成長ペースが鈍化した場合には、これら先行投資・固定費用負担が利益率を直接圧迫する構造的な不確実性を内包しています。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0006"
-      ],
-      "statement_type": "risk",
+      "headline_ja": "成長投資費｜逆風：人員増に伴う人件費、プロモーション費用およびR&D費用の増加",
+      "body_ja": "従業員数の増加や昇給による人件費（2,620百万円、前年同期比8.8%増）や、認知獲得に向けた積極的な広告宣伝費（1,613百万円、同28.4%増）、グローバル新規事業創出に向けた研究開発費（399百万円、同33.9%増）が増加した。これにより販管費合計は6,313百万円（同16.8%増）となり、売上総利益の伸び（同16.3%増）に対し一定の利益圧迫要因となった。",
+      "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_context_positioning",
+      "claim_id": "c_latest_driver_3",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "連結範囲変動｜影響混在：プロバスケットボールチーム運営費の原価計上",
+      "body_ja": "2025年12月期中に子会社化した株式会社エヒメスポーツエンターテイメント（「愛媛オレンジバイキングス」運営）の事業費用が連結化されたことにより、売上原価が918百万円（前年同期比23.9%増）へ増加した。地域DXやまちづくり貢献という定性目的の一方で、短期的には連結売上原価率を引き上げる要因となっている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c_latest_outlook_1",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "価格改定効果が一巡するなか、投資増額を織り込み通期で緩やかな増益を計画",
+      "body_ja": "2026年12月期の通期業績予想は、売上高42,168百万円（前期比12.7%増）、営業利益10,514百万円（同4.1%増）、経常利益10,732百万円（同3.9%増）、親会社株主に帰属する当期純利益7,445百万円（同5.1%増）を見込む。前期に達成した営業利益100億円超の高水準を維持しつつ、人員採用・昇給、国内外での広告宣伝、データセンター運用・保守等の費用増額を計画している。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c_latest_risk_1",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "プロモーション投資および人員拡大に伴う固定費先行による利益圧迫リスク",
+      "body_ja": "サイボウズは過去にも広告宣伝費の投下量に応じて営業利益率が乱高下した経緯がある。2026年12月期もTVCMを含めたプロモーションの継続や人員増強による固定費増加を予定しており、クラウド売上高の積み上がり速度が投資スピードを下回った場合、営業利益率が予想以上に圧迫される不確実性がある。",
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c_latest_risk_2",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "グローバル市場での認知拡大投資先行と収益化遅延のリスク",
+      "body_ja": "米国、中華圏、APACなど海外展開において現地体制強化やマーケティング投資を継続しているが、海外導入社数（米国910社、中華圏1,430社、APAC760社）は国内（kintone単体39,000社）に比べ発展途上にある。競合が激しい海外市場での投資拡大に対し、ストック収益の立ち上がりが遅れた場合、連結収益性の低下につながるリスクが存在する。",
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c_latest_context_1",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "ストック収益の蓄積で高利益水準を維持し、財務健全性を背景に株主還元と成長投資を並行実施する現在地",
-      "body_ja": "サイボウズの2026年12月期第1四半期は、契約社数70,000社を支えとするクラウド収益の順調な拡大により、前年に続き高い利益水準（営業利益率29.4%）を堅持する進捗となっています。人件費や広告・R&Dなどの先行投資を継続しながらも二桁増収増益を維持できており、ストック型の事業基盤が強固に機能しています。\n\n財務面では配当支払や有価証券評価減により総資産・純資産が一定程度縮小したものの、自己資本比率は64.9%と高水準を維持しています。この健全な財務状態を背景に、30億円を上限とする自己株式取得を決議するなど資本効率向上にも着手しており、成長投資と株主還元の積極的な両立を図るフェーズにあります。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0001",
-        "01_2026_Q1_tanshin.pdf:s0002",
-        "01_2026_Q1_tanshin.pdf:s0004",
-        "01_2026_Q1_tanshin.pdf:s0006",
-        "01_2026_Q1_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "価格改定による収益基盤拡大と積極投資・資本構成再構築の同時推進",
+      "body_ja": "2026年12月期第1四半期において、サイボウズは2024年末に果たした主要サービスの価格改定と顧客基盤の積み上がりにより、売上高10,246百万円、営業利益3,014百万円と順調な業績を確保した。人件費や広告宣伝費、研究開発費の先行投資を吸収し、ストックビジネス特有の高粗利構造を証明している。\n\n一方で通期計画では営業利益増益率が4.1%増にとどまり、再び成長再加速に向けた投資拡大局面に入っている。高水準の利益・キャッシュ創出力を背景に上限30億円の自己株式取得枠を設定したことは、資本効率向上への明確な意図を示しており、投資家は成長投資の果実と還元効果のバランスを見極める必要がある。",
       "statement_type": "mixed",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_perspective_decade",
+      "claim_id": "c_trend_perspective_1",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "売り切り型からクラウドストック型への構造転換を遂げ、投資先行期を経てスケールメリットと価格決定力を確立",
-      "body_ja": "過去10年間のサイボウズの軌跡は、パッケージソフトウェア中心の事業構造から、自社クラウド基盤上のSaaS（特に「kintone」）を中心とするストック型プラットフォームへの完全な転換プロセスです。初期（2016-2019年）には「一時的に利益率を低下させてでもクラウド事業へ積極投資する」方針を掲げ、クラウド売上比率50%突破を達成しました。\n\n中期（2020-2022年）にはテレビCM等の大規模な広告宣伝投資やデータセンター増設を断行したため、営業利益が2020年の2,270百万円から2022年には611百万円まで激減する大きな業績動揺を経験しました。しかし直近（2023-2025年）では、契約密度の高まりとプロモーション見直し、さらに2024年の価格体系改定（ARPU上昇）が結実し、2025年12月期には営業利益10,101百万円（営業利益率27.0%）へと劇的な高収益化を果たしました。事業能力の継続的な蓄積がスケールメリットと価格決定力を生み出した長期軌跡が確認できます。",
-      "evidence_ids": [
-        "11_2016_FY_tanshin.pdf:s0001",
-        "08_2019_FY_tanshin.pdf:s0001",
-        "07_2020_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "04_2023_FY_tanshin.pdf:s0001",
-        "03_2024_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0002"
-      ],
-      "statement_type": "mixed",
-      "is_inference": true,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_consistent_cloud_subscription",
-      "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "クラウド契約社数とライセンス数の途切れなき蓄積によるストック収益割合の継続的拡大",
-      "body_ja": "初期の2016年12月期にcybozu.com契約社数17,000社超でクラウド売上比率50%を超えて以降、2019年12月期に36,000社（売上比率71.3%）、2021年12月期に48,000社、そして2025年12月期には70,000社（360万ライセンス）へと、解約率を低位に抑えた契約の積み上がりが一貫して続いています。広告投資による利益率の短期的な低下局面においても、売上高およびストック型収益基盤自体は逆風を受けることなく一貫して成長メカニズムを維持しました。",
-      "evidence_ids": [
-        "11_2016_FY_tanshin.pdf:s0002",
-        "08_2019_FY_tanshin.pdf:s0001",
-        "06_2021_FY_tanshin.pdf:s0002",
-        "02_2025_FY_tanshin.pdf:s0002"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_consistent_partner_ecosystem",
-      "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "「Cybozu Partner Network」や地方銀行協業を通じたエコシステムの拡大と高い間接販売比率の維持",
-      "body_ja": "パートナー企業を通じたエコシステム形成は同社の持続的な強みとして定着しています。2016年12月期末のパートナー数276社から、2021年12月期には約350社・連携サービス300以上となりパートナー販売比率60%を達成しました。2025年12月期末にはパートナー社数約560社・連携サービス500以上に達し、国内クラウド売上の66.0%（21,956百万円）がパートナー経由となるなど、直販に頼らない強固なチャネル構造が一貫して拡大・機能しています。",
-      "evidence_ids": [
-        "11_2016_FY_tanshin.pdf:s0002",
-        "06_2021_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0003"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_change_profitability_volatility_to_scale",
-      "section": "trend.change",
-      "order": 1,
-      "headline_ja": "大規模プロモーション・R&Dの先行投資による利益激調フェーズから、規模の経済と価格改定による100億円台利益への変貌",
-      "body_ja": "【変化前】2016年〜2022年にかけては、認知度獲得を目指したテレビCMなどの大規模な広告宣伝費投下やクラウド基盤投資を優先したため、連結営業利益が数億円から20億円程度の低水準で激しく上下変動していました（2022年12月期は611百万円へ落ち込み）。\n\n【遷移】2023年12月期に広告宣伝費の投下抑制によって営業利益が3,394百万円へと急回復した後、2024年11月に主要プロダクト（kintone等）の価格体系および最小契約数の改定を断行しました。\n\n【現在】2025年12月期には価格改定による顧客単価（ARPU）上昇と契約数増が重なり、連結売上高37,430百万円、営業利益10,101百万円と営業利益率27.0%を達成し、先行投資期脱出と高収益体質への転換を明確に示しています。",
-      "evidence_ids": [
-        "11_2016_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "04_2023_FY_tanshin.pdf:s0002",
-        "03_2024_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0002"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_change_portfolio_and_dev_structure",
-      "section": "trend.change",
-      "order": 2,
-      "headline_ja": "非コア・無料サービス撤退と海外開発拠点見直しを経た、エンタープライズ・セキュリティ重点体制への選択と集中",
-      "body_ja": "【変化前】初期には無料グループウェア「サイボウズLive」（200万人規模）の運用や多方面への分散投資を行っていましたが、システム老朽化やリソース散逸の制約に直面しました。\n\n【遷移】2017年にサイボウズLiveの終了を決断して有料SaaSへリソースを全面集中させ、自社開発新クラウド基盤「NECO」やISMAP認証取得、エンタープライズ事業本部の新設（2025年1月）を推進しました。また2024年には上海子会社の開発事業廃止に伴い事業構造改善費用150百万円を計上し開発体制を最適化しました。\n\n【現在】大規模利用向け「ワイドコース」やセキュリティ・信頼性強化への投資、大企業向けソリューション提案に集中する事業構造を確立しています。",
-      "evidence_ids": [
-        "10_2017_FY_tanshin.pdf:s0001",
-        "03_2024_FY_tanshin.pdf:s0002",
-        "02_2025_FY_tanshin.pdf:s0002"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_capital_allocation_evolution",
-      "section": "trend.capital_allocation",
-      "order": 1,
-      "headline_ja": "自社インフラ投資優先の資金配分から、アライアンス出資受入と増配・自己株式取得を含む総合的な株主還元強化へ進化",
-      "body_ja": "過去10年間の資本配分は、営業キャッシュ・フローを源泉とした自社サーバー機材取得（有形固定資産投資）および人材・R&Dへの内部再投資が中核でした。その中で2023年1月に株式会社リコーに対する第三者割当での自己株式処分（約45億円）を実施し、サーバー購入や米国展開資金調達とアライアンス強化を同時に達成しました。\n\n株主還元面では、1株当たり年間配当金を2016年12月期の8.83円から2024年30円、2025年40円、2026年予想50円へと段階的に増額しています。さらに2026年5月には上限30億円の自己株式取得を決議するなど、創出された営業キャッシュ・フローを成長投資と積極的な株主還元へバランスよく配分する規律が強化されています。",
-      "evidence_ids": [
-        "05_2022_FY_tanshin.pdf:s0002",
-        "02_2025_FY_tanshin.pdf:s0001",
-        "01_2026_Q1_tanshin.pdf:s0010",
-        "01_2026_Q1_tanshin.pdf:s0011"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_implication_investor_key_checks",
-      "section": "trend.implication",
-      "order": 1,
-      "headline_ja": "エンタープライズ拡大・価格改定効果の持続性と、人件費・データセンター運用の固定費増加に対する耐性が今後の検証点",
-      "body_ja": "投資家が今後確認すべき最大のポイントは、2024年から2025年にかけて顕現化した価格改定効果（ARPU増）および大企業向けエンタープライズ展開が、新規顧客獲得ペースの鈍化を相殺して中長期的な成長余力を担保できるか否かです。\n\n2028年12月期売上高509億円という目標に向け、特別賞与設定や昇給による人件費増加、データセンター運用費や愛媛オレンジバイキングス等の運営費負担が固定費化する中で、売上成長の鈍化が生じた際に高利益率（2025年27.0%）を維持できるかというコスト構造の柔軟性が継続的な検証軸となります。",
-      "evidence_ids": [
-        "01_2026_Q1_tanshin.pdf:s0006",
-        "02_2025_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0002"
-      ],
+      "headline_ja": "クラウド転換によるストック収益化の確立と積極投資サイクルによる利益振動の10年",
+      "body_ja": "過去10年間（2016年〜2025年）のサイボウズは、パッケージ販売中心からクラウド型ストックビジネスへの構造転換を遂げ、連結売上高を80億円規模から374億円規模へと大きく成長させた。「kintone」の普及とパートナーエコシステムの拡大が主動因となった。しかし、経営陣が「利益率を低下させてでも投資を優先する」方針を採り、広告宣伝費やデータセンター設備、人材獲得へ資金を傾注したため、営業利益は数億円規模から100億円超まで激しく振動した。成長投資の強淡が短期損益を左右しつつも、2024年末の価格改定を経て収益力を一段上のフェーズへ引き上げた軌跡である。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
-    }
-  ],
-  "evidence": [
+    },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0001",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2026年12月期第１四半期 連結経営成績(累計) 売上高 10,246百万円 (17.0％) 営業利益 3,014百万円 (15.3％) 経常利益 3,084百万円 (22.1％) 親会社株主に帰属する四半期純利益 2,191百万円 (21.6％)",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
+      "claim_id": "c_trend_consistent_1",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "クラウド型ストック収益への一貫した特化と代理店エコシステムの継続強化",
+      "body_ja": "2016年時点で過半に達したクラウド売上比率は、2025年には連結売上の91.6%に達した。初期（2016〜2019年）から一貫して自社クラウド基盤「cybozu.com」と「kintone」を成長の核に据え、地方銀行やSIパートナーとの提携網（Cybozu Partner Network）を通じた間接販売比率を6割超へ高めてきた。高い継続利用率を伴うストック収益基盤の積み上がりは、10年間を通じた揺るぎないビジネスモデル上の強みである。",
       "statement_type": "actual",
-      "source_section": "１．連結経営成績",
-      "tags": []
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0002",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2026年12月期第１四半期 総資産 27,023百万円 純資産 17,586百万円 自己資本比率 64.9％",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
+      "claim_id": "c_trend_consistent_2",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "短期的な利益水準の犠牲を容認する成長投資優先の経営スタンス",
+      "body_ja": "2014年12月期より一貫して「一時的に利益率を低下させてでもクラウド事業への投資を優先する」方針を掲げてきた。2016〜2022年の期間、TVCM等の大規模プロモーション、米国市場開拓、データセンター設備投資を積極的に実施し、2022年には営業利益率が2.8%まで低下した。短期の利益ブレを恐れず、中長期のユーザー数・売上シェア最大化を追求する投下スタンスは全期を通じて貫かれている。",
       "statement_type": "actual",
-      "source_section": "連結財政状態",
-      "tags": []
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0003",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "通期 売上高 42,168百万円 (12.7％) 営業利益 10,514百万円 (4.1％) 経常利益 10,732百万円 (3.9％) 親会社株主に帰属する当期純利益 7,445百万円 (5.1％)",
-      "period_label_ja": "2026年12月期通期予想",
-      "period_label_en": "FY2026 Full Year Forecast",
-      "statement_type": "forecast",
-      "source_section": "３．2026年12月期の連結業績予想",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0004",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2011年11月に提供を開始したクラウドサービスは、ご利用いただいている契約社数が70,000社、契約ユーザーライセンス数が380万人を突破し堅調に推移しております。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
+      "claim_id": "c_trend_change_1",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "広告費投下手法の見直しと製品価格改定による収益性の非連続的跳躍",
+      "body_ja": "初期から2022年までは重厚な広告宣伝費投資により売上拡大を追った結果、利益率が抑圧されていた。しかし2023年に広告投資を「認知度維持レベル」へ抑制して営業利益3,394百万円へV字回復させ、さらに2024年11月に主要製品の価格改定および最小契約ユーザー数引き上げを果敢に断行した。これにより2025年の営業利益は10,101百万円（営業利益率27.0%）へ急増し、価格最適化を通じた利益創出構造へと構造的変化を遂げた。",
       "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": []
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0005",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このうち、クラウド関連事業の売上高は9,393百万円（前年同期比17.1％増）となっております。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
+      "claim_id": "c_trend_change_2",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "自社クラウドインフラ基盤の刷新と外部資本パートナー（リコー）の導入",
+      "body_ja": "初期の単なるサーバー機材買い増しから、中期以降は新クラウド基盤「NECO」への移行やISMAP・SOC2等の国際セキュリティ基準適合投資へとインフラの高度化が進んだ。さらに2022年末〜2023年初にかけて、株式会社リコーに対する第三者割当（処分価額総額4,499百万円）を実施し、北米等での共同拡販とインフラ資金調達を組み合わせたアライアンス型成長モデルへと資本政策を進化させた。",
       "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": []
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0006",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "利益項目につきましては、プロバスケットボールチーム「愛媛オレンジバイキングス」の運営費等の売上原価が増加、従業員数増加や昇給等により人件費が増加、積極的な広告宣伝投資を継続していることにより広告宣伝費が増加、グローバルを見据えた新規事業の創出を目的として長期的な研究開発活動を活性化していることにより研究開発費が増加した影響等から、営業利益は3,014百万円（前年同期比15.3％増）",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": []
+      "claim_id": "c_trend_capital_allocation_1",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "固定資産・インフラ投資から、高水準キャッシュ・フローを背景とした株主還元拡大へシフト",
+      "body_ja": "過去10年間の資金配分は、クラウド用サーバー・設備投資（有形固定資産取得に年間12億〜31億円）および費用処理されるR&D・人材獲得が最優先されてきた。2023年のリコー向け自己株式処分による資金補強を経て財務基盤が著しく強化されると、2024年に2,929百万円の自己株式取得を実施し、1株当たり配当金を13円（2022）→14円（2023）→30円（2024）→40円（2025）と急増させた。さらに2026年には上限30億円の自己株式取得枠を設定し、成長投資と株主還元を両立させるステージへ移行した。",
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0007",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "資産合計につきましては、投資有価証券が債券購入により増加した一方、上場株式の株価下落による減少、現金及び預金が減少した影響等から、前連結会計年度末に比べ3,116百万円減少し、27,023百万円となりました。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": []
+      "claim_id": "c_trend_capital_value_creation_1",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "概ね創出した：クラウドインフラおよびストック顧客基盤への継続投資が大きな利益結実をもたらす",
+      "body_ja": "過去10年間においてサイボウズが投じた追加資本は、主として「cybozu.com」および新基盤「NECO」等のクラウドインフラ設備（工具、器具及び備品純額は2016年の647百万円から2025年の4,276百万円へと大幅拡大）と、費用処理された開発・プロモーション資源へ集中した。初期から中期にかけては設備および費用の膨張に対し営業利益が伸び悩み、資本効率の低下が懸念されたが、累積された契約社数（kintone国内39,000社等）と2024年末の価格改定により、2025年の営業利益は10,101百万円、営業CFは10,676百万円へと跳躍した。投資されたインフラ資産は極めて限界利益率の高いストック収益を生み出しており、投入資本は中長期的に高い価値を創出したと評価できる。なお、リコーとの提携（処分額4,499百万円）や愛媛オレンジバイキングス買収（取得対価165百万円）などの個別取引は補完的であり、価値創出の主源泉は一貫した有機的クラウド基盤投資にある。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0008",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "純資産合計につきましては、剰余金配当1,849百万円を実施した一方、親会社株主に帰属する四半期純利益2,191百万円の計上により利益剰余金が増加、上場株式の株価下落によりその他有価証券評価差額金が減少した影響等から、前連結会計年度末に比べ228百万円減少し、17,586百万円となり、自己資本比率は64.9％となりました。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "actual",
-      "source_section": "財政状態に関する説明",
-      "tags": []
+      "claim_id": "c_trend_implication_1",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "価格改定後の顧客維持率と成長再加速に向けた投資効率の検証が焦点",
+      "body_ja": "サイボウズの現在地は、価格改定効果による利益跳躍期を経て、再び人員増や広告宣伝、R&D投資を加速するフェーズにある。投資家が今後確認すべきは、価格引き上げ後も新規獲得ペースや解約率が安定して推移し、増額される成長投資が中期ターゲットである2028年売上高509億円への道筋を裏付けるかである。上限30億円の自己株式取得は資本効率改善へ寄与するが、持続的な企業価値向上には成長投資の還元効率が鍵となる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0009",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2026年12月期の連結業績予想につきましては、2025年12月18日に公表した内容から変更はありません。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "forecast",
-      "source_section": "連結業績予想などの将来予測情報に関する説明",
-      "tags": []
+      "claim_id": "c_management_strategy_1",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "クラウド特化とエコシステム重視の戦略的方向性は極めて高い一貫性を堅持",
+      "body_ja": "経営陣は2014年以降、「チームワークあふれる社会を創る」パーパスのもと、クラウド事業の売上最大化を一貫して戦略の中心に据えてきた。パッケージからクラウドへのシフト、地域・パートナーエコシステムの構築、自治体DXやエンタープライズ市場への進出など、掲げた方針を長期にわたりブレずに愚直に実行している。上海子会社の開発廃止による体制最適化など不採算領域の構造改革も迅速であり、戦略的整合性は極めて高い。（評価：4）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0010",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "当社は、2026年５月14日開催の取締役会において、会社法第165条第３項の規定により読み替えて適用される同法第156条の規定に基づき、自己株式を取得することを決議いたしました。",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": []
+      "claim_id": "c_management_execution_1",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "クラウドビジネスの確実な拡大と収益化を完遂も、投資振動による利益制御に課題",
+      "body_ja": "クラウド契約社数70,000社・ユーザー数380万人突破や「kintone」の売上高200億円超への成長、2024年の価格体系改定の断行など、主要な戦略施策の遂行能力と結果へのコミットメントは極めて高い。一方で、TVCM等の広告費投下量を急増・急減させたことで営業利益率が2.8%から27.0%まで乱高下した点や、2025年に子会社化したプロバスケットチーム運営（愛媛オレンジバイキングス）の短期的費用負担など、費用平準化と利益の安定制御には一部課題を残す。（評価：3）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_Q1_tanshin.pdf:s0011",
-      "source_filename": "01_2026_Q1_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "取得し得る株式の総数 300万株（上限） （発行済株式総数(自己株式を除く)に対する割合6.5％） 取得価額の総額 30億円（上限）",
-      "period_label_ja": "2026年12月期第1四半期",
-      "period_label_en": "FY2026 Q1",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": []
+      "claim_id": "c_management_forecast_discipline_1",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "通期業績予想において一貫して強い保守的傾向が定着",
+      "body_ja": "観察可能な6期間の通期経常利益予想と実績の比較において、全6期で実績が当初予想を上回った（上振れ率は21.6%〜146.1%）。経営陣は「クラウド事業の環境変化に対して機動的に対応し都度最適な投資判断を実施するため予測値は変動する」と説明し、期初に最大規模の投資枠を織り込んだ保守的な予想を開示する傾向が強い。予測の絶対精度は低いものの、下振れリスクを排除する慎重な運用手法として徹底されている。（評価：2）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "11_2016_FY_tanshin.pdf:s0001",
-      "source_filename": "11_2016_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "当社グループは、平成26年12月期より、一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う方針をとってまいりました。",
-      "period_label_ja": "2016年12月期",
-      "period_label_en": "FY2016",
-      "statement_type": "actual",
-      "source_section": "目標とする経営指標",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2016_FY_tanshin.pdf:s0002",
-      "source_filename": "11_2016_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "その結果、平成23年に提供を開始して以来、「cybozu.com」サービスは有料契約社数が17,000社を超え、パートナー数も前期から40社以上増加して276社となるなど、順調に拡大を続けております。",
-      "period_label_ja": "2016年12月期",
-      "period_label_en": "FY2016",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する分析",
-      "tags": []
-    },
-    {
-      "evidence_id": "10_2017_FY_tanshin.pdf:s0001",
-      "source_filename": "10_2017_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "しかしながら、システムの老朽化などにより、今後も安定的にサービスを継続するには、抜本的な作り直しなど大きな投資が必要となり、限りあるリソースを有料版クラウドサービスに注力すべきと判断し、平成31年４月15日をもってサービス終了することを決断いたしました。",
-      "period_label_ja": "2017年12月期",
-      "period_label_en": "FY2017",
-      "statement_type": "actual",
-      "source_section": "経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0001",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2011年に提供を開始したクラウドサービス「cyobozu.com」は、ご利用いただいている契約者数が36,000社を超え、契約ユーザーライセンス数も140万人を突破し、連結売上高71.3%を占めるまでに成長しました。",
-      "period_label_ja": "2019年12月期",
-      "period_label_en": "FY2019",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0001",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "クラウドサービス「kintone」の初となるテレビコマーシャルを放映する等、製品や企業の認知度向上のための広告宣伝に積極的に投資してきました。",
-      "period_label_ja": "2020年12月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0001",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "特にエコシステムについては、2021年12月末時点でパートナー社数は約350社、パートナー企業が提供する連携サービスは約300サービス以上とエコシステムによるビジネスが堅調に拡大しており、クラウド関連事業の売上高の60％がパートナー経由の売上となり、パートナー販売割合が年々増加しております。",
-      "period_label_ja": "2021年12月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0002",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "売上高 18,489百万円 (18.0％) 営業利益 1,441百万円 (△36.5％)",
-      "period_label_ja": "2021年12月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0001",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "売上高 22,067百万円 (19.4％) 営業利益 611百万円 (△57.5％)",
-      "period_label_ja": "2022年12月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0002",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 18,
-      "exact_quote_ja": "当社は、2022年12月20日開催の取締役会において、株式会社リコーとの長期的かつ深いパートナーシップを構築するために、第三者割当による自己株式の処分を行うことを決議しており、2023年１月５日に払込が完了しております。",
-      "period_label_ja": "2022年12月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0001",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "売上高 25,432百万円 (15.2％) 営業利益 3,394百万円 (454.9％)",
-      "period_label_ja": "2023年12月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0002",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "利益項目につきましては、従業員数増加等により人件費が増加した一方、前期の積極的な広告宣伝投資に対して当期は認知度維持のための投資に抑えていることにより広告宣伝費が減少した影響等から、営業利益は3,394百万円（前期比454.9％増）",
-      "period_label_ja": "2023年12月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0001",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "クラウドサービスの需要が拡大する中で、当期11月より、「kintone（キントーン）」、クラウドサービス版「サイボウズ Office」、「Garoon（ガルーン）」、「メールワイズ」の各サービスの価格体系および、「kintone」、「メールワイズ」の最小契約ユーザー数を改定しました。",
-      "period_label_ja": "2024年12月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0002",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "当社グループの開発体制を最適化するため、連結子会社である才望子情報技術（上海）有限公司の開発事業を廃止したことに伴い発生した人員整理費用等を事業構造改善費用として計上しております。",
-      "period_label_ja": "2024年12月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "連結損益計算書関係",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0001",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "売上高 37,430百万円 (26.1％) 営業利益 10,101百万円 (106.4％)",
-      "period_label_ja": "2025年12月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0002",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2024年10月に実施した価格改定の影響等により、売上高の増加に加えて、顧客の平均売上単価も増加傾向にあります。",
-      "period_label_ja": "2025年12月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0003",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "現在、クラウド関連事業の国内売上高の66.0％にあたる21,956百万円がパートナー経由の売上となっており、パートナー販売割合も年々増加しております。",
-      "period_label_ja": "2025年12月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
+      "claim_id": "c_management_accountability_1",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "投資優先方針や利益低下理由、構造改革について高い透明性と説明責任を発揮",
+      "body_ja": "経営陣は自ら「一時的に利益率を低下させてでも投資を優先する」方針をあらかじめ明言し、投資期の利益圧迫について市場へ透明性の高い説明を継続してきた。また、上海子会社の開発事業廃止に伴う特別損失（事業構造改善費用150百万円）の開示やリコーとの資本提携目的、愛媛オレンジバイキングス子会社化の定性・定量理由などについても決算短信等で詳細に説明しており、説明責任と透明性は極めて良好である。（評価：4）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     }
   ],
   "management_consistency": {
@@ -572,51 +237,24 @@
       {
         "dimension": "strategic_coherence",
         "rating": 4,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "2016年12月期において『一時的に利益率を低下させてでもクラウド事業への投資を積極的に行う』方針を表明して以来、一貫してパッケージからクラウド（cybozu.com / kintone）へのシフトを推進しました。プロモーション強化期や価格改定期を通じてもクラウド主導の基本方針はブレず、2025年12月期には売上高の9割超・営業利益100億円超を達成しており、10年間にわたり極めて高度な戦略的一貫性が保たれています。",
-        "evidence_ids": [
-          "11_2016_FY_tanshin.pdf:s0001",
-          "08_2019_FY_tanshin.pdf:s0001",
-          "02_2025_FY_tanshin.pdf:s0001"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "クラウドへのリソース集中を阻害する無料・非コアサービス（サイボウズLive等）の終了断行、Cybozu Partner Networkを通じたエコシステム拡大、自社クラウド基盤NECOへの移行、2024年の価格体系改定や最小契約数改定、上海開発事業の廃止など、掲げた施策は計画通り確実に実行されました。ただしグローバル事業（米国等）の収益化は国内に比べ時間を要しており、全体としては概ね高い実行力が証明されています。",
-        "evidence_ids": [
-          "10_2017_FY_tanshin.pdf:s0001",
-          "06_2021_FY_tanshin.pdf:s0001",
-          "03_2024_FY_tanshin.pdf:s0001",
-          "03_2024_FY_tanshin.pdf:s0002"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
         "rating": 2,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "経営陣が『クラウド事業の環境変化に対して機動的に対応し、都度最適な投資判断を実施するため予測値は常に変動する』と明記している通り、テレビCM等の広告宣伝費やR&D費用の機動的投入により、単年度の営業利益予想および実績は大幅に上下動しました（2021-2022年の減益から2023年の大幅増益など）。売上高目標は着実に達成されているものの、短期利益の規律という観点では混在した実績となっています。",
-        "evidence_ids": [
-          "06_2021_FY_tanshin.pdf:s0002",
-          "05_2022_FY_tanshin.pdf:s0001",
-          "04_2023_FY_tanshin.pdf:s0001",
-          "04_2023_FY_tanshin.pdf:s0002"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "業績予想の説明において、投資判断の変更に伴う利益の増減理由（広告宣伝費の増減、人件費・データセンター費用増加等）や、上海子会社開発事業の廃止に伴う事業構造改善費用の計上理由などを開示資料上で透明性高く説明しています。投資先行による利益率低下のトレードオフを事前に周知し、結果を適時に開示する姿勢が定着しています。",
-        "evidence_ids": [
-          "05_2022_FY_tanshin.pdf:s0001",
-          "04_2023_FY_tanshin.pdf:s0002",
-          "03_2024_FY_tanshin.pdf:s0002"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "サイボウズの経営一貫性は全体として高い水準にあります。クラウドストックモデルへの完全シフトとパートナーエコシステム形成という核となる長期戦略を一貫して推進し、無料サービスの撤退や価格改定、海外開発拠点見直しなどの困難な意思決定を遂行して2025年12月期に営業利益100億円超を達成しました。機動的投資方針に起因する単年度利益の振動はあるものの、戦略の明確性と透明性の高い開示姿勢は高く評価されます。"
+    ]
   },
   "model_notes": []
 }

@@ -121,10 +121,16 @@ class EnglishFinancialNotationTests(unittest.TestCase):
     def test_extracts_economically_equivalent_japanese_units(self) -> None:
         cases = (
             ("252億円", "25,200百万円", Decimal("25200000000")),
+            ("252 億円", "25,200 百万円", Decimal("25200000000")),
             ("55.59億円", "5,559百万円", Decimal("5559000000")),
             (
                 "1兆2,731億円",
                 "1,273,100百万円",
+                Decimal("1273100000000"),
+            ),
+            (
+                "1兆 2,731 億円",
+                "1,273,100 百万円",
                 Decimal("1273100000000"),
             ),
             (
@@ -361,10 +367,6 @@ class EnglishFinancialNotationTests(unittest.TestCase):
                 return_value=validation,
             ),
             patch(
-                "tanshin_pipeline.pipeline.bilingual_evidence_ledger",
-                return_value=[],
-            ),
-            patch(
                 "tanshin_pipeline.pipeline.compare_reports",
                 return_value={},
             ),
@@ -372,7 +374,9 @@ class EnglishFinancialNotationTests(unittest.TestCase):
                 "tanshin_pipeline.pipeline._retire_current_report",
                 return_value=None,
             ),
-            patch("tanshin_pipeline.pipeline._discard_report_path"),
+            patch(
+                "tanshin_pipeline.pipeline._discard_report_path"
+            ) as discard_path,
             patch("tanshin_pipeline.pipeline._write_report_status"),
         ):
             processed, _ = _process_english_response(
@@ -403,6 +407,9 @@ class EnglishFinancialNotationTests(unittest.TestCase):
         self.assertEqual(
             normalized_artifact.model_dump(mode="json"),
             translation.model_dump(mode="json"),
+        )
+        discard_path.assert_any_call(
+            prepared.paths.artifacts_dir / "evidence_ledger.json"
         )
         self.assertEqual(
             processed.model_dump(mode="json"),

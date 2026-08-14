@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
@@ -35,18 +36,20 @@ from .evaluation import compare_files, compare_reports
 from .persistence import ensure_directory, read_json, write_json, write_text
 from .normalization import normalize_japanese_analysis
 from .prompts import (
+    ANALYSIS_SYSTEM_PROMPT,
+    RESEARCH_SYSTEM_PROMPT,
     TRANSLATION_SYSTEM_PROMPT,
+    analysis_prompt_template,
     translation_prompt_template,
 )
-from .render import (
-    bilingual_evidence_ledger,
-    render_english,
-    render_japanese,
-)
+from .research import build_research_metrics, validate_research_dossier
+from .render import render_english, render_japanese
 from .request_builder import (
     RequestSpec,
     build_analysis_spec,
+    build_research_spec,
     build_translation_spec,
+    response_schema_for,
 )
 from .schemas import (
     CostEstimate,
@@ -54,11 +57,14 @@ from .schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
     JapaneseModelResponse,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
     RequestPlan,
     RunMetadata,
     SelectionManifest,
     ValidationResult,
     materialize_japanese_analysis,
+    materialize_japanese_synthesis,
     parse_japanese_analysis_payload,
 )
 from .selection import select_filings
@@ -81,6 +87,7 @@ class PreparedRun:
     plan: RequestPlan
     cost: CostEstimate
     paths: OutputPaths
+    research_source: JapaneseResearchDossier | None = None
     translation_source: JapaneseAnalysis | None = None
 
 
@@ -247,11 +254,11 @@ def _metadata(
         repository_root=str(repository_root),
         output_directory=str(prepared.paths.output_dir),
         manifest_id=prepared.manifest.manifest_id,
-        analysis_model=prepared.cost.analysis.model,
+        analysis_model=prepared.cost.research.model,
         translation_model=prepared.cost.translation.model,
         analysis_provider=(
             prepared.spec.provider
-            if prepared.spec.stage == "analysis"
+            if prepared.spec.stage in {"research", "analysis"}
             else _profile_configuration(prepared.spec.model_profile).analysis.provider
         ),
         translation_provider=(
@@ -266,37 +273,61 @@ def _metadata(
     )
 
 
-def _persist_analysis_preflight(
+def _pending_stage_plan(
+    *,
+    stage: str,
+    model_profile: str,
+    route: StageRoute,
+    model: str,
+    dependency: str,
+) -> dict[str, Any]:
+    return {
+        "status": f"pending_{dependency}",
+        "stage": stage,
+        "model_profile": model_profile,
+        "provider": route.provider,
+        "provider_profile": route.provider_profile,
+        "model": model,
+        "makes_network_request_when_executed": True,
+        "request_count_if_executed": 1,
+        "note": (
+            f"Complete and persist {dependency.replace('_', ' ')} before "
+            f"preparing the {stage} request ID."
+        ),
+    }
+
+
+def _persist_research_preflight(
     prepared: PreparedRun,
     repository_root: Path,
 ) -> None:
     paths = prepared.paths
     write_json(paths.selection_manifest, prepared.manifest)
-    write_json(paths.analysis_request_plan, prepared.plan)
-    write_text(paths.analysis_system_prompt, prepared.spec.system_prompt)
-    write_text(paths.analysis_prompt, prepared.spec.prompt)
-    write_json(paths.analysis_schema, prepared.spec.response_schema)
+    write_json(paths.research_request_plan, prepared.plan)
+    write_text(paths.research_system_prompt, prepared.spec.system_prompt)
+    write_text(paths.research_prompt, prepared.spec.prompt)
+    write_json(paths.research_schema, prepared.spec.response_schema)
     write_json(paths.cost, prepared.cost)
+    configuration = _profile_configuration(prepared.spec.model_profile)
+    write_json(
+        paths.analysis_request_plan,
+        _pending_stage_plan(
+            stage="analysis",
+            model_profile=prepared.spec.model_profile,
+            route=configuration.analysis,
+            model=prepared.cost.analysis.model,
+            dependency="research_map",
+        ),
+    )
     write_json(
         paths.translation_request_plan,
-        {
-            "status": "pending_validated_japanese_analysis",
-            "stage": "translation",
-            "model_profile": prepared.spec.model_profile,
-            "provider": _profile_configuration(
-                prepared.spec.model_profile
-            ).translation.provider,
-            "provider_profile": _profile_configuration(
-                prepared.spec.model_profile
-            ).translation.provider_profile,
-            "model": prepared.cost.translation.model,
-            "makes_network_request_when_executed": True,
-            "request_count_if_executed": 1,
-            "note": (
-                "Run the Japanese analysis stage manually, validate it offline, "
-                "then prepare the translation request to obtain its request ID."
-            ),
-        },
+        _pending_stage_plan(
+            stage="translation",
+            model_profile=prepared.spec.model_profile,
+            route=configuration.translation,
+            model=prepared.cost.translation.model,
+            dependency="japanese_analysis",
+        ),
     )
     write_json(
         paths.run_metadata,
@@ -304,11 +335,11 @@ def _persist_analysis_preflight(
     )
 
 
-def _write_translation_cost(
+def _write_cost_preserving_actuals(
     path: Path,
     cost: CostEstimate,
 ) -> None:
-    """Refresh estimates without discarding the completed analysis usage."""
+    """Refresh estimates without discarding completed-stage usage."""
 
     payload = cost.model_dump(mode="json")
     if path.is_file():
@@ -321,6 +352,112 @@ def _write_translation_cost(
             if key in existing:
                 payload[key] = existing[key]
     write_json(path, payload)
+
+
+def prepare_research(
+    repository_root: Path,
+    security_code: str,
+    *,
+    output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
+    max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
+    model_profile: str = DEFAULT_MODEL_PROFILE,
+) -> PreparedRun:
+    repository_root = repository_root.resolve()
+    output_root = (
+        output_root or repository_root / DEFAULT_OUTPUT_DIRECTORY
+    ).resolve()
+    configuration = _profile_configuration(model_profile)
+    manifest = select_filings(repository_root, security_code)
+    _validate_inline_pdf_limits(manifest, configuration.analysis)
+    spec = build_research_spec(
+        repository_root,
+        manifest,
+        model=configuration.analysis.model,
+        model_profile=model_profile,
+        provider=configuration.analysis.provider,
+        provider_profile=configuration.analysis.provider_profile,
+    )
+    plan = spec.plan()
+    cost = estimate_cost(
+        manifest,
+        research_system_prompt=spec.system_prompt,
+        research_prompt=spec.prompt,
+        research_response_schema=spec.response_schema,
+        analysis_system_prompt=ANALYSIS_SYSTEM_PROMPT,
+        analysis_prompt=analysis_prompt_template(),
+        analysis_response_schema=response_schema_for(
+            JapaneseSynthesisResponse,
+            configuration.analysis.provider,
+        ),
+        translation_system_prompt=TRANSLATION_SYSTEM_PROMPT,
+        translation_prompt_template=translation_prompt_template(),
+        translation_response_schema=response_schema_for(
+            EnglishTranslationPatch,
+            configuration.translation.provider,
+        ),
+        analysis_model=configuration.analysis.model,
+        translation_model=configuration.translation.model,
+        max_api_attempts=max_api_attempts,
+        pdf_tokens_per_page=configuration.pdf_tokens_per_page,
+        pdf_token_assumption=configuration.pdf_token_assumption,
+    )
+    prepared = PreparedRun(
+        manifest=manifest,
+        spec=spec,
+        plan=plan,
+        cost=cost,
+        paths=output_paths(output_root, security_code, report_date=report_date),
+    )
+    _persist_research_preflight(prepared, repository_root)
+    return prepared
+
+
+def _load_research(
+    paths: OutputPaths,
+    manifest: SelectionManifest,
+) -> JapaneseResearchDossier:
+    if not paths.research_structured.is_file():
+        raise PipelineValidationError(
+            f"Stored research map is missing: {paths.research_structured}"
+        )
+    try:
+        return JapaneseResearchDossier.model_validate(
+            read_json(paths.research_structured)
+        )
+    except ValueError as exc:
+        raise PipelineValidationError(
+            f"Stored research map cannot be parsed: {exc}"
+        ) from exc
+
+
+def _write_research_diagnostics(
+    paths: OutputPaths,
+    dossier: JapaneseResearchDossier,
+    manifest: SelectionManifest,
+) -> dict[str, Any]:
+    """Persist non-gating research validation and deterministic metrics."""
+
+    warning: str | None = None
+    try:
+        validate_research_dossier(dossier, manifest)
+    except ValueError as exc:
+        warning = str(exc)
+    validation_payload = {
+        "schema_version": SCHEMA_VERSION,
+        "valid": warning is None,
+        "non_gating": True,
+        "warning_count": 0 if warning is None else 1,
+        "warnings": [] if warning is None else [warning],
+        "policy": (
+            "A parseable research map proceeds to synthesis. Deterministic "
+            "research findings are diagnostics and do not stop report generation."
+        ),
+    }
+    metrics = build_research_metrics(dossier, manifest)
+    write_json(paths.research_validation, validation_payload)
+    write_json(paths.research_metrics, metrics)
+    return metrics
 
 
 def prepare_analysis(
@@ -339,7 +476,26 @@ def prepare_analysis(
     configuration = _profile_configuration(model_profile)
     manifest = select_filings(repository_root, security_code)
     _validate_inline_pdf_limits(manifest, configuration.analysis)
+    paths = output_paths(output_root, security_code, report_date=report_date)
+    dossier = _load_research(paths, manifest)
+    if dossier.identity.security_code != security_code:
+        raise PipelineValidationError(
+            "Stored research map security code does not match the request."
+        )
+    if dossier.identity.latest_filename != manifest.latest_filename:
+        raise PipelineValidationError(
+            "Stored research map latest filing does not match the current selection."
+        )
     spec = build_analysis_spec(
+        repository_root,
+        manifest,
+        dossier,
+        model=configuration.analysis.model,
+        model_profile=model_profile,
+        provider=configuration.analysis.provider,
+        provider_profile=configuration.analysis.provider_profile,
+    )
+    research_spec = build_research_spec(
         repository_root,
         manifest,
         model=configuration.analysis.model,
@@ -347,29 +503,56 @@ def prepare_analysis(
         provider=configuration.analysis.provider,
         provider_profile=configuration.analysis.provider_profile,
     )
-    plan = spec.plan()
     cost = estimate_cost(
         manifest,
+        research_system_prompt=research_spec.system_prompt,
+        research_prompt=research_spec.prompt,
+        research_response_schema=research_spec.response_schema,
         analysis_system_prompt=spec.system_prompt,
         analysis_prompt=spec.prompt,
         analysis_response_schema=spec.response_schema,
         translation_system_prompt=TRANSLATION_SYSTEM_PROMPT,
         translation_prompt_template=translation_prompt_template(),
-        translation_response_schema=EnglishTranslationPatch.model_json_schema(),
+        translation_response_schema=response_schema_for(
+            EnglishTranslationPatch,
+            configuration.translation.provider,
+        ),
         analysis_model=configuration.analysis.model,
         translation_model=configuration.translation.model,
         max_api_attempts=max_api_attempts,
         pdf_tokens_per_page=configuration.pdf_tokens_per_page,
         pdf_token_assumption=configuration.pdf_token_assumption,
+        analysis_prompt_includes_source=True,
     )
     prepared = PreparedRun(
         manifest=manifest,
         spec=spec,
-        plan=plan,
+        plan=spec.plan(),
         cost=cost,
-        paths=output_paths(output_root, security_code, report_date=report_date),
+        paths=paths,
+        research_source=dossier,
     )
-    _persist_analysis_preflight(prepared, repository_root)
+    write_json(paths.selection_manifest, manifest)
+    write_json(paths.analysis_request_plan, prepared.plan)
+    write_text(paths.analysis_system_prompt, spec.system_prompt)
+    write_text(paths.analysis_prompt, spec.prompt)
+    write_json(paths.analysis_schema, spec.response_schema)
+    _write_research_diagnostics(paths, dossier, manifest)
+    write_json(
+        paths.translation_request_plan,
+        _pending_stage_plan(
+            stage="translation",
+            model_profile=model_profile,
+            route=configuration.translation,
+            model=cost.translation.model,
+            dependency="japanese_analysis",
+        ),
+    )
+    _write_cost_preserving_actuals(paths.cost, cost)
+    write_json(
+        paths.run_metadata,
+        _metadata(repository_root, prepared, mode="dry-run", api_requests=0),
+    )
     return prepared
 
 
@@ -444,6 +627,12 @@ def _retire_current_draft(paths: OutputPaths, language: str) -> str | None:
 def _discard_report_path(path: Path) -> None:
     if path.is_file():
         path.unlink()
+
+
+def _discard_legacy_evidence_ledger(paths: OutputPaths) -> None:
+    """Remove a pre-citation-free artifact that may remain from an older run."""
+
+    _discard_report_path(paths.artifacts_dir / "evidence_ledger.json")
 
 
 def _invalidate_dependent_english_report(
@@ -584,6 +773,48 @@ def _write_api_failure_report_status(
     )
 
 
+def _write_processing_failure_report_status(
+    prepared: PreparedRun,
+    *,
+    language: str,
+    mode: str,
+    reason: str,
+) -> None:
+    """Record a local failure after the provider completed successfully."""
+
+    paths = prepared.paths
+    status_path = (
+        paths.report_status_ja if language == "ja" else paths.report_status_en
+    )
+    retired_final = _retire_current_report(paths, language)
+    retired_draft = _retire_current_draft(paths, language)
+    write_json(
+        status_path,
+        {
+            "schema_version": SCHEMA_VERSION,
+            "run_id": prepared.plan.request_id,
+            "mode": mode,
+            "language": language,
+            "publishable": False,
+            "factual_integrity_passed": False,
+            "quality_gate_passed": False,
+            "blocking_error_count": 0,
+            "warning_count": 0,
+            "report_generated": False,
+            "requires_review": True,
+            "publication_state": "not_generated_processing_failure",
+            "draft_path": None,
+            "final_path": None,
+            "previous_final_archived_to": retired_final,
+            "previous_draft_archived_to": retired_draft,
+            "validation_path": None,
+            "api_state": "SUCCESS",
+            "reason": reason,
+            "generated_at_utc": _utc_now(),
+        },
+    )
+
+
 def _process_japanese_response(
     repository_root: Path,
     prepared: PreparedRun,
@@ -640,7 +871,7 @@ def _process_japanese_response(
     )
     write_json(paths.analysis_validation, validation)
     retired = _retire_current_report(paths, "ja")
-    write_json(paths.evidence_ledger, bilingual_evidence_ledger(normalized.analysis))
+    _discard_legacy_evidence_ledger(paths)
     write_json(
         paths.evaluation_ja,
         compare_reports(
@@ -677,6 +908,7 @@ def prepare_translation(
     configuration = _profile_configuration(model_profile)
     paths = output_paths(output_root, security_code, report_date=report_date)
     manifest = select_filings(repository_root, security_code)
+    dossier = _load_research(paths, manifest)
     analysis = _load_analysis(paths)
     clean_report = render_japanese(analysis)
     exemplar_path = (
@@ -709,6 +941,15 @@ def prepare_translation(
     analysis_spec = build_analysis_spec(
         repository_root,
         manifest,
+        dossier,
+        model=configuration.analysis.model,
+        model_profile=model_profile,
+        provider=configuration.analysis.provider,
+        provider_profile=configuration.analysis.provider_profile,
+    )
+    research_spec = build_research_spec(
+        repository_root,
+        manifest,
         model=configuration.analysis.model,
         model_profile=model_profile,
         provider=configuration.analysis.provider,
@@ -716,6 +957,9 @@ def prepare_translation(
     )
     cost = estimate_cost(
         manifest,
+        research_system_prompt=research_spec.system_prompt,
+        research_prompt=research_spec.prompt,
+        research_response_schema=research_spec.response_schema,
         analysis_system_prompt=analysis_spec.system_prompt,
         analysis_prompt=analysis_spec.prompt,
         analysis_response_schema=analysis_spec.response_schema,
@@ -727,6 +971,7 @@ def prepare_translation(
         max_api_attempts=max_api_attempts,
         pdf_tokens_per_page=configuration.pdf_tokens_per_page,
         pdf_token_assumption=configuration.pdf_token_assumption,
+        analysis_prompt_includes_source=True,
         translation_prompt_includes_source=True,
     )
     prepared = PreparedRun(
@@ -735,6 +980,7 @@ def prepare_translation(
         plan=plan,
         cost=cost,
         paths=paths,
+        research_source=dossier,
         translation_source=analysis,
     )
     write_json(paths.selection_manifest, manifest)
@@ -742,7 +988,7 @@ def prepare_translation(
     write_text(paths.translation_system_prompt, spec.system_prompt)
     write_text(paths.translation_prompt, spec.prompt)
     write_json(paths.translation_schema, spec.response_schema)
-    _write_translation_cost(paths.cost, cost)
+    _write_cost_preserving_actuals(paths.cost, cost)
     write_json(
         paths.run_metadata,
         _metadata(repository_root, prepared, mode="dry-run", api_requests=0),
@@ -797,11 +1043,11 @@ def _execute_model_request(
 
 
 def _api_status_path(paths: OutputPaths, stage: str) -> Path:
-    return (
-        paths.analysis_api_status
-        if stage == "analysis"
-        else paths.translation_api_status
-    )
+    if stage == "research":
+        return paths.research_api_status
+    if stage == "analysis":
+        return paths.analysis_api_status
+    return paths.translation_api_status
 
 
 def _error_status_code(exc: Exception) -> int | str | None:
@@ -963,6 +1209,121 @@ def _record_actual_cost(
     write_json(paths.cost, payload)
 
 
+def _record_stage_usage(
+    paths: OutputPaths,
+    *,
+    stage: str,
+    prepared: PreparedRun,
+    result: object,
+) -> None:
+    payload = read_json(paths.token_usage) if paths.token_usage.is_file() else {}
+    if not isinstance(payload, dict):
+        payload = {}
+    payload[stage] = _usage_artifact(
+        stage=stage,
+        provider=prepared.spec.provider,
+        model=prepared.spec.model,
+        model_version=getattr(result, "model_version", None),
+        response_id=getattr(result, "response_id", None),
+        attempts=getattr(result, "attempts", 1),
+        usage=getattr(result, "usage", {}),
+    )
+    write_json(paths.token_usage, payload)
+
+
+def execute_research(
+    repository_root: Path,
+    security_code: str,
+    *,
+    confirmed_request_id: str,
+    output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
+    max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
+    model_profile: str = DEFAULT_MODEL_PROFILE,
+) -> PreparedRun:
+    """Send exactly one PDF-backed Japanese research request."""
+
+    prepared = prepare_research(
+        repository_root,
+        security_code,
+        output_root=output_root,
+        report_date=report_date,
+        max_api_attempts=max_api_attempts,
+        model_profile=model_profile,
+    )
+    started_at_utc = _utc_now()
+    _write_api_status(
+        prepared,
+        stage="research",
+        state="REQUESTING",
+        started_at_utc=started_at_utc,
+    )
+    try:
+        result = _execute_model_request(
+            repository_root.resolve(),
+            prepared,
+            confirmed_request_id=confirmed_request_id,
+            max_attempts=max_api_attempts,
+        )
+    except Exception as exc:
+        raw_response = getattr(exc, "raw_response", None)
+        if isinstance(raw_response, dict):
+            write_json(prepared.paths.research_raw_response, raw_response)
+        failure_state = _api_failure_state(exc)
+        _write_api_status(
+            prepared,
+            stage="research",
+            state=failure_state,
+            started_at_utc=started_at_utc,
+            error=exc,
+        )
+        _write_api_failure_report_status(
+            prepared,
+            language="ja",
+            mode="research",
+            api_state=failure_state,
+        )
+        raise
+    assert isinstance(result.structured, JapaneseResearchDossier)
+    paths = prepared.paths
+    write_json(paths.research_raw_response, result.raw_response)
+    _write_api_status(
+        prepared,
+        stage="research",
+        state="SUCCESS",
+        started_at_utc=started_at_utc,
+        result=result,
+    )
+    write_json(paths.research_structured, result.structured)
+    _write_research_diagnostics(
+        paths,
+        result.structured,
+        prepared.manifest,
+    )
+    _record_stage_usage(
+        paths,
+        stage="research",
+        prepared=prepared,
+        result=result,
+    )
+    _record_actual_cost(
+        paths,
+        stage="research",
+        model=prepared.spec.model,
+        usage=result.usage,
+    )
+    write_json(
+        paths.run_metadata,
+        _metadata(
+            repository_root.resolve(),
+            prepared,
+            mode="research",
+            api_requests=1,
+        ),
+    )
+    return prepared
+
+
 def execute_analysis(
     repository_root: Path,
     security_code: str,
@@ -1023,21 +1384,24 @@ def execute_analysis(
         started_at_utc=started_at_utc,
         result=result,
     )
-    assert isinstance(result.structured, (JapaneseModelResponse, JapaneseAnalysis))
+    assert isinstance(result.structured, JapaneseSynthesisResponse)
+    dossier = prepared.research_source
+    if dossier is None:
+        raise PipelineValidationError(
+            "Prepared analysis is missing its source research map."
+        )
+    try:
+        analysis = materialize_japanese_synthesis(dossier, result.structured)
+    except ValueError as exc:
+        raise PipelineValidationError(str(exc)) from exc
     paths = prepared.paths
     write_json(paths.analysis_raw_response, result.raw_response)
     write_json(paths.analysis_structured, result.structured)
-    write_json(
-        paths.token_usage,
-        _usage_artifact(
-            stage="analysis",
-            provider=prepared.spec.provider,
-            model=prepared.spec.model,
-            model_version=result.model_version,
-            response_id=result.response_id,
-            attempts=result.attempts,
-            usage=result.usage,
-        ),
+    _record_stage_usage(
+        paths,
+        stage="analysis",
+        prepared=prepared,
+        result=result,
     )
     _record_actual_cost(
         paths,
@@ -1046,7 +1410,7 @@ def execute_analysis(
         usage=result.usage,
     )
     _process_japanese_response(
-        repository_root, prepared, result.structured, mode="analysis"
+        repository_root, prepared, analysis, mode="analysis"
     )
     write_json(
         paths.run_metadata,
@@ -1125,20 +1489,12 @@ def execute_translation(
     paths = prepared.paths
     write_json(paths.translation_raw_response, result.raw_response)
     write_json(paths.translation_structured, translation)
-    prior_usage = read_json(paths.token_usage) if paths.token_usage.is_file() else None
-    usage_payload = {
-        "analysis": prior_usage,
-        "translation": _usage_artifact(
-            stage="translation",
-            provider=prepared.spec.provider,
-            model=prepared.spec.model,
-            model_version=result.model_version,
-            response_id=result.response_id,
-            attempts=result.attempts,
-            usage=result.usage,
-        ),
-    }
-    write_json(paths.token_usage, usage_payload)
+    _record_stage_usage(
+        paths,
+        stage="translation",
+        prepared=prepared,
+        result=result,
+    )
     _record_actual_cost(
         paths,
         stage="translation",
@@ -1222,10 +1578,7 @@ def _process_english_response(
         mode=mode,
         previous_final_archived_to=retired,
     )
-    write_json(
-        paths.evidence_ledger,
-        bilingual_evidence_ledger(analysis, preserved.translation),
-    )
+    _discard_legacy_evidence_ledger(paths)
     write_json(
         paths.evaluation_en,
         compare_reports(
@@ -1258,9 +1611,19 @@ def reprocess_stored_analysis(
         raise PipelineValidationError(
             f"Stored response is missing: {prepared.paths.analysis_structured}"
         )
-    analysis = parse_japanese_analysis_payload(
-        read_json(prepared.paths.analysis_structured)
-    )
+    dossier = prepared.research_source
+    if dossier is None:
+        raise PipelineValidationError(
+            "Stored analysis reprocessing is missing its research map."
+        )
+    payload = read_json(prepared.paths.analysis_structured)
+    try:
+        synthesis = JapaneseSynthesisResponse.model_validate(payload)
+        analysis = materialize_japanese_synthesis(dossier, synthesis)
+    except ValueError as exc:
+        raise PipelineValidationError(
+            f"Stored synthesis response is invalid: {exc}"
+        ) from exc
     _, validation = _process_japanese_response(
         repository_root.resolve(), prepared, analysis, mode="reprocess"
     )
@@ -1286,6 +1649,106 @@ def reprocess_stored_analysis(
         "final_report": str(prepared.paths.report_ja),
         "validation": str(prepared.paths.analysis_validation),
         "normalization": str(prepared.paths.analysis_normalization),
+    }
+
+
+def _structured_payload_from_stored_raw(
+    raw_response: dict[str, Any],
+) -> dict[str, Any]:
+    """Recover a structured JSON object from a persisted provider response."""
+
+    candidates = raw_response.get("candidates")
+    if isinstance(candidates, list) and candidates:
+        content = candidates[0].get("content")
+        parts = content.get("parts") if isinstance(content, dict) else None
+        if isinstance(parts, list):
+            text = "".join(
+                part.get("text", "")
+                for part in parts
+                if isinstance(part, dict)
+            )
+            if text:
+                payload = json.loads(text)
+                if isinstance(payload, dict):
+                    return payload
+
+    parsed = raw_response.get("output_parsed")
+    if isinstance(parsed, dict):
+        return parsed
+    output = raw_response.get("output")
+    if isinstance(output, list):
+        text_parts: list[str] = []
+        for item in output:
+            if not isinstance(item, dict):
+                continue
+            content = item.get("content")
+            if not isinstance(content, list):
+                continue
+            text_parts.extend(
+                part.get("text", "")
+                for part in content
+                if isinstance(part, dict)
+                and isinstance(part.get("text"), str)
+            )
+        if text_parts:
+            payload = json.loads("".join(text_parts))
+            if isinstance(payload, dict):
+                return payload
+    raise ValueError(
+        "The stored raw provider response contains no recoverable JSON object."
+    )
+
+
+def reprocess_stored_research(
+    repository_root: Path,
+    security_code: str,
+    *,
+    output_root: Path | None = None,
+    report_date: date | datetime | str | None = None,
+    model_profile: str = DEFAULT_MODEL_PROFILE,
+) -> dict[str, Any]:
+    """Validate and persist a completed research response without networking."""
+
+    prepared = prepare_research(
+        repository_root,
+        security_code,
+        output_root=output_root,
+        report_date=report_date,
+        model_profile=model_profile,
+    )
+    raw_path = prepared.paths.research_raw_response
+    if not raw_path.is_file():
+        raise PipelineValidationError(
+            f"Stored raw research response is missing: {raw_path}"
+        )
+    try:
+        payload = _structured_payload_from_stored_raw(read_json(raw_path))
+        dossier = JapaneseResearchDossier.model_validate(payload)
+    except (ValueError, json.JSONDecodeError) as exc:
+        raise PipelineValidationError(
+            f"Stored research response is invalid: {exc}"
+        ) from exc
+    write_json(prepared.paths.research_structured, dossier)
+    _write_research_diagnostics(
+        prepared.paths,
+        dossier,
+        prepared.manifest,
+    )
+    write_json(
+        prepared.paths.run_metadata,
+        _metadata(
+            repository_root.resolve(),
+            prepared,
+            mode="reprocess",
+            api_requests=0,
+        ),
+    )
+    return {
+        "research_recovered": True,
+        "api_requests": 0,
+        "structured_research": str(prepared.paths.research_structured),
+        "research_metrics": str(prepared.paths.research_metrics),
+        "next_stage": "analysis",
     }
 
 

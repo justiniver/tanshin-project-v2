@@ -1,0 +1,38 @@
+{
+  "valid": false,
+  "publishable": false,
+  "factual_integrity_passed": false,
+  "quality_gate_passed": true,
+  "blocking_error_count": 2,
+  "warning_count": 0,
+  "language": "ja",
+  "issues": [
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_009",
+      "evidence_id": null
+    },
+    {
+      "severity": "error",
+      "category": "factual_integrity",
+      "code": "achieved_language_for_non_actual",
+      "message": "Forecast/target/risk claim uses achieved-result language.",
+      "claim_id": "claim_010",
+      "evidence_id": null
+    }
+  ],
+  "statistics": {
+    "claims": 22,
+    "citation_mode": "disabled",
+    "evidence_records": 0,
+    "citation_references": 0,
+    "trend_management_discussion_share": 0.0,
+    "management_consistency_score": 0.69,
+    "errors": 2,
+    "warnings": 0,
+    "blocking_errors": 2
+  }
+}

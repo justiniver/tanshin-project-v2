@@ -1,722 +1,270 @@
 {
   "schema_version": "1.0",
-  "identity": {
-    "security_code": "3626",
-    "company_name_ja": "ＴＩＳＩ株式会社",
-    "company_name_en": "TISI Co., Ltd.",
-    "latest_filename": "01_2027_Q1_tanshin.pdf",
-    "latest_period_ja": "2027年3月期 第1四半期",
-    "latest_period_en": "FY2027 Q1"
-  },
   "claims": [
     {
-      "claim_id": "3626-overview-01",
+      "claim_id": "claim_company_overview",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "総合ITサービスグループとして決済・金融・産業・広域ITおよび各種ソリューションを提供",
-      "body_ja": "当社グループは、クレジットカード・決済基盤を中心とする「金融IT」、製造・流通・サービス業向け「産業IT」、自社投資による知識集約型サービス「オファリングサービス」、業務高度化・アウトソーシングを担う「BPM」、全国規模で展開する「広域ITソリューション」の主要事業を軸に展開しています。顧客のデジタルトランスフォーメーション（DX）支援、受託システム開発、クラウド・データセンター運用、業務委託・BPMサービスを通じて収益を得る総合SI事業モデルを構築しています。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0004",
-        "01_2027_Q1_tanshin.pdf:s0005",
-        "01_2027_Q1_tanshin.pdf:s0006",
-        "01_2027_Q1_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "総合ITサービスとしての事業基盤と収益モデル",
+      "body_ja": "TISI株式会社（旧TIS株式会社、ITホールディングス）は、金融、産業、公共など多岐にわたる顧客企業に対し、システムインテグレーション、ITインフラ構築、ソフトウェア開発、ビジネスプロセスアウトソーシング（BPO）などを提供する総合ITサービスグループである。決済プラットフォーム（PAYCIERGE等）をはじめとするオファリングサービスや、業種特化型の金融IT・産業IT、広域ITソリューションを柱とし、受託開発における請負・進捗基準収益および月額・ストック型の運用・クラウドサービス利用料を主たる収益源としている。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "3626-latest-takeaway-01",
-      "section": "latest.key_takeaway",
-      "order": 1,
-      "headline_ja": "2027年3月期第1四半期はIT投資需要の拡大を背景に前年同期比増収増益を達成",
-      "body_ja": "2027年3月期第1四半期の連結業績は、売上高が150,111百万円（前年同期比7.0%増）、営業利益が18,347百万円（同12.2%増）、経常利益が18,424百万円（同8.0%増）、親会社株主に帰属する四半期純利益が14,409百万円（同15.1%増）となりました。顧客のDXをはじめとするIT投資需要への的確な対応や高付加価値ビジネスの提供、生産性向上施策の推進が寄与し、増収増益を確保しています。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0003"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "3626-latest-takeaway-02",
+      "claim_id": "claim_latest_kt_financial",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "大規模な自己株式取得の実施により純資産が減少する一方、総額500億円の消却を決議",
-      "body_ja": "2027年3月期第1四半期末の純資産合計は304,235百万円（前連結会計年度末比33,491百万円減少）となり、自己資本比率は55.7%となりました。これは利益剰余金が5,117百万円増加したものの、2026年3月から5月にかけて実施した約500億円（14,368,400株）の自己株式取得に伴い自己株式が35,735百万円増加（純資産減少）したことによるものです。また、2026年7月30日の取締役会において、取得分に相当する500億円相当（13,700,000株）の自己株式消却を決議しました。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0008",
-        "01_2027_Q1_tanshin.pdf:s0009",
-        "01_2027_Q1_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "2027年3月期第1四半期はデジタル変革需要に対応し増収増益",
+      "body_ja": "2027年3月期第1四半期の連結業績は、売上高150,111百万円（前年同期比7.0%増）、営業利益18,347百万円（同12.2%増）、経常利益18,424百万円（同8.0%増）となり、顧客のDX投資需要の取り込みと高付加価値化推進により着実な成長を示した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-latest-takeaway-03",
+      "claim_id": "claim_latest_kt_balance_sheet",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "通期連結業績予想を据え置き、インテック合併等に伴う各種準備費用を織り込んで進捗",
-      "body_ja": "通期連結業績予想は期初公表値を変更せず、売上高620,000百万円（前期比3.9%増）、営業利益81,000百万円（同6.3%増）、親会社株主に帰属する当期純利益57,000百万円（同22.3%増）を見込んでいます。この通期予想には、2026年7月1日付で実施された完全子会社インテックとの合併に向けた準備費用として、販管費約16億円および営業外費用約6億円が織り込まれています。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0002",
-        "01_2027_Q1_tanshin.pdf:s0012"
-      ],
+      "headline_ja": "大規模自己株式取得により自己資本比率は55.7%へ推移",
+      "body_ja": "当第1四半期末の総資産は524,657百万円（前連結会計年度末比26,849百万円減）となった。約500億円の自己株式取得に伴う純資産減少（33,491百万円減）により、自己資本比率は前末の58.9%から55.7%へと低下したものの、依然として健全な財務基盤を維持している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_kt_integration",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "インテックとの吸収合併完了とTISIへの商号変更による体制強化",
+      "body_ja": "2026年7月1日付で完全子会社の株式会社インテックを吸収合併し、商号をTISI株式会社へ変更した。あわせて監査等委員会設置会社へ移行し、AI駆動開発やVertical AIサービスといった次期中期経営計画に向けた重点戦略の推進体制を整えた。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_kt_outlook",
+      "section": "latest.key_takeaway",
+      "order": 5,
+      "headline_ja": "通期業績予想の据え置きと500億円相当の自己株式消却決議",
+      "body_ja": "2027年3月期通期の連結業績予想は期初計画（売上高6,200億円、営業利益810億円）を維持した。資本政策においては、取得した自己株式500億円相当（13,700,000株）の消却を2026年7月30日に決議し、資本効率向上姿勢を明確にしている。",
       "statement_type": "forecast",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "3626-latest-driver-01",
+      "claim_id": "claim_latest_bd_finance_industry",
       "section": "latest.business_driver",
-      "order": 1,
-      "headline_ja": "金融ITおよび産業ITセグメントの好調が全社業績の伸長を牽引",
-      "body_ja": "金融ITセグメントは売上高25,801百万円（前年同期比9.2%増）、営業利益3,528百万円（同18.4%増）となり、クレジットカード系の根幹先顧客への深耕やモダナイゼーション関連の高付加価値案件推進が寄与しました。また、産業ITセグメントも売上高34,077百万円（同5.3%増）、営業利益6,201百万円（同21.4%増）となり、製造業やサービス業をはじめとする幅広い業種でのIT投資拡大が全体を牽引しました。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0005",
-        "01_2027_Q1_tanshin.pdf:s0006"
-      ],
+      "order": 6,
+      "headline_ja": "IT需要｜金融・産業分野のDX投資が牽引",
+      "body_ja": "第1四半期において金融ITセグメントは大型モダナイゼーション案件や顧客深耕により売上高25,801百万円（前年同期比9.2%増）、営業利益3,528百万円（同18.4%増）と大幅増益を達成した。産業ITセグメントも製造・サービス業のIT投資拡大により営業利益6,201百万円（同21.4%増）と全社業績を強力に牽引した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-latest-driver-02",
+      "claim_id": "claim_latest_bd_offering",
       "section": "latest.business_driver",
-      "order": 2,
-      "headline_ja": "オファリングサービスセグメントは増収を維持するも先行投資等により前年同期比減益",
-      "body_ja": "オファリングサービスセグメントの売上高は39,831百万円（前年同期比9.9%増）と増収を確保したものの、営業利益は1,643百万円（同5.0%減）となりました。基盤系や決済分野のIT投資需要拡大および海外事業の寄与で売上は伸長した一方、決済分野における先行投資の増加や海外事業での収益性低下等が響き、利益面では前年同期を下回る結果となりました。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0004"
-      ],
+      "order": 7,
+      "headline_ja": "先行投資｜オファリングサービスでの先行コスト負担",
+      "body_ja": "オファリングサービスセグメントは売上高39,831百万円（前年同期比9.9%増）と増収を確保したものの、決済分野における次世代プラットフォーム（PAYCIERGE等）構築への先行投資増加や海外事業の収益性低下が重荷となり、営業利益は1,643百万円（同5.0%減）と減益を余儀なくされた。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-latest-outlook-01",
+      "claim_id": "claim_latest_bd_productivity",
+      "section": "latest.business_driver",
+      "order": 8,
+      "headline_ja": "生産性向上｜高付加価値化と案件管理による不採算抑制",
+      "body_ja": "人件費や成長投資の増加に対し、高付加価値ビジネスの提供、不採算案件の抑制、および品質管理徹底による開発効率の向上が奏功し、連結営業利益率は前年同期の11.7%から12.2%へと0.5ポイント改善した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_latest_outlook",
       "section": "latest.outlook",
-      "order": 1,
-      "headline_ja": "中期経営計画「フロンティア開拓」のもと高付加価値化と成長投資の継続により通期達成を目指す",
-      "body_ja": "通期計画（売上高620,000百万円、営業利益81,000百万円、親会社株主に帰属する当期純利益57,000百万円）の達成に向けて、中期経営計画（2024-2026）の基本方針「フロンティア開拓」のもとで高付加価値ビジネス提供や生産性向上を推進しています。最重要資産である人材投資・成長投資を積極的に実行しつつ、AI活用やVertical AIサービスの推進を通じて持続的な収益性向上を図る方針です。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0002",
-        "01_2027_Q1_tanshin.pdf:s0012"
-      ],
+      "order": 9,
+      "headline_ja": "2027年3月期通期は営業利益810億円を見込み増収増益計画を維持",
+      "body_ja": "2027年3月期通期の連結業績予想は、売上高620,000百万円（前期比3.9%増）、営業利益81,000百万円（同6.3%増）、経常利益81,000百万円（同5.9%増）、親会社株主に帰属する当期純利益57,000百万円（同22.3%増）を計画。インテック合併に伴う準備費用（販管費約16億円、営業外約6億円）や有価証券売却益約50億円を織り込みつつ、期初目標達成を目指す。",
       "statement_type": "forecast",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "3626-latest-risk-01",
+      "claim_id": "claim_latest_risk_project",
       "section": "latest.risk",
-      "order": 1,
-      "headline_ja": "決済分野等の先行投資負担増加および海外事業の収益性伸び悩みが利益率の懸念材料",
-      "body_ja": "第1四半期において、オファリングサービスセグメントで決済分野の先行投資が増加したことや、海外事業における収益性低下が顕在化しました。市場競争が激化する決済関連やグローバル事業において、投資成果の回収遅れや収益性の改善が進まない場合、グループ全体の利益率向上を抑制するリスクがあります。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0004"
-      ],
+      "order": 10,
+      "headline_ja": "不採算案件および受託開発損害賠償訴訟のリスク",
+      "body_ja": "システム開発の高度化・大規模化に伴い、案件の工程・品質管理の不備による不採算化のリスクが常存する。2026年3月期にはインテックにおける三菱食品とのシステム受託開発訴訟で7,434百万円の和解金・関連費用（訴訟損失引当金繰入額）を特別損失計上した経緯があり、開発トラブルが業績や社会的信用に及ぼす影響には注視が必要である。",
       "statement_type": "risk",
-      "is_inference": true,
+      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-latest-risk-02",
+      "claim_id": "claim_latest_risk_overseas_investment",
       "section": "latest.risk",
-      "order": 2,
-      "headline_ja": "インテック吸収合併に伴う一時的費用負担と組織統合プロセスの摩擦リスク",
-      "body_ja": "2026年7月1日付で実施したインテックの吸収合併および「ＴＩＳＩ株式会社」への商号変更にあたり、販管費（約16億円）や営業外費用（約6億円）等の準備費用を織り込んでいます。合併後の体制においてバックオフィスや事業基盤の統合・シナジー創出が遅延した場合、意図した経営効率化効果が十分に発現しないリスクが存在します。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0012"
-      ],
+      "order": 11,
+      "headline_ja": "海外連結・持分法適用会社およびM&A・投資の減損リスク",
+      "body_ja": "ASEANを中心とする海外IT企業への投資やM&Aを展開する中、過去にはSequent社ののれん減損（2020年3月期に22.5億円）やCOVID-19影響による海外持分法適用会社の損失計上（2021年3月期に持分法投資損失60億円）が発生した。海外拠点の業績悪化やM&A後のシナジー未達が投資損失や減損をもたらすリスクが存在する。",
       "statement_type": "risk",
-      "is_inference": true,
+      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-latest-context-01",
+      "claim_id": "claim_latest_context",
       "section": "latest.context",
-      "order": 1,
-      "headline_ja": "インテック吸収合併による新体制発足と資本政策の強化が交錯する転換期",
-      "body_ja": "2027年3月期第1四半期は、当社グループにとって主要子会社インテックとの吸収合併を経て「ＴＩＳＩ株式会社」として始動した重要な節目にあたります。業績面では全社売上高・営業利益ともに堅調な成長を維持しているものの、オファリングサービス等に見られる先行投資・海外収益性の課題、および合併に伴う準備費用の発生という短期的なコスト要因を抱えています。\n同時に、約500億円規模の自己株式取得と消却を決議・遂行するなど資本効率向上策を強烈に推し進めており、新体制下での事業構造転換と積極的な株主還元の両立に向けた執行力が問われる現在地にあります。",
-      "evidence_ids": [
-        "01_2027_Q1_tanshin.pdf:s0001",
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0008",
-        "01_2027_Q1_tanshin.pdf:s0009",
-        "01_2027_Q1_tanshin.pdf:s0012"
-      ],
+      "order": 12,
+      "headline_ja": "インテック統合完了に伴う新体制と資本構造適正化の現在地",
+      "body_ja": "当社はグループ統合の総仕上げとしてインテックとの合併を果たし、TISI株式会社として新たなスタートを切った。強固な経営・事業基盤の確立とガバナンス高度化を進める一方、次期中期経営計画に向けてAI駆動開発やストック型ビジネスの拡大を掲げている。\n財務面では、強固な営業キャッシュフロー創出力を背景に、株主還元500億円（うち資本構成適正化目的および総還元性向に基づく分）の大規模買爆と消却を実行。自己資本比率を約55%水準にコントロールしながらROE16%超およびEPS成長目標の早期達成を狙う構造となっている。",
       "statement_type": "mixed",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-perspective-01",
+      "claim_id": "claim_trend_perspective",
       "section": "trend.perspective",
-      "order": 1,
-      "headline_ja": "事業持株会社化からインテック吸収合併へ至る構造転換と収益力向上を遂げた10年",
-      "body_ja": "過去10年間（FY2017～FY2026）において、当社は2016年の純粋持株会社から事業持株会社（TIS）への移行を契機にグループ一体経営を推進し、従来のSIから決済や自社IPを中心とする高付加価値なオファリングサービス・DX領域へビジネスモデルの転換を果たしました。連結売上高は3,933億円から5,964億円へ、営業利益は270億円から762億円へと大幅に拡大し、営業利益率も6.9%から12.8%へ向上しました。一方で、海外持分法適用会社の新型コロナ影響による大幅損失（FY2021）や不採算案件の発生（FY2024）、大型開発案件のピークアウト（FY2025/FY2026の金融IT）といった変動要因を経験しつつも、人材投資と資本配分の高度化を推し進め、2026年のインテック吸収合併（ＴＩＳＩ発足）へとつながる強固な事業基盤を構築してきました。",
-      "evidence_ids": [
-        "11_2017_FY_tanshin.pdf:s0034",
-        "11_2017_FY_tanshin.pdf:s0035",
-        "08_2020_FY_tanshin.pdf:s0028",
-        "07_2021_FY_tanshin.pdf:s0026",
-        "04_2024_FY_tanshin.pdf:s0019",
-        "02_2026_FY_tanshin.pdf:s0012",
-        "01_2027_Q1_tanshin.pdf:s0007"
-      ],
+      "order": 13,
+      "headline_ja": "10年間の軌跡：不採算抑制と高付加価値化による収益性の持続的向上",
+      "body_ja": "過去10年間のTISグループは、持株会社体制から事業持株会社、そしてインテックの完全統合へとガバナンスを段階的に強化しながら、売上高約3.9千億円から6,000億円規模へと着実に事業規模を拡大させた。不採算案件の厳格な管理と案件採算性の向上により営業利益率は6%台から12%超へ改善した。2021年3月期にはコロナ禍による海外持分法適用会社の損失等で一時的な減益を余儀なくされたものの、本業のシステム開発・運用基盤は堅調を維持。回収した資金を決済（PAYCIERGE）や日本ICS買収、Gotenyama SHビル取得、および大規模な自己株式取得へと配分し、資本効率を高めながら高収益体質を構築してきた。",
       "statement_type": "actual",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-consistent-01",
+      "claim_id": "claim_trend_consistent_profitability",
       "section": "trend.consistent",
-      "order": 1,
-      "headline_ja": "強みである決済・金融IT基盤の継続的強化と高付加価値オファリング化の追求",
-      "body_ja": "当社は初期（FY2018等）よりクレジットカード系をはじめとする決済・金融IT領域をコア競争力と位置づけ、技術・ノウハウの拡充を進めてきました。中期（FY2022等）には「PAYCIERGE」等のトータルブランドのもとでクレジットカードプロセッシングサービスをSaaS型で確立し、直近（FY2025/FY2026等）でも自社投資によるオファリングサービスやモダナイゼーション案件の拡大を継続しています。ただし、大型プロジェクトの過渡期やピークアウト時には金融IT等のセグメント業績が一時的に鈍化する構造的な変動性も持ち併せています。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0033",
-        "06_2022_FY_tanshin.pdf:s0023",
-        "03_2025_FY_tanshin.pdf:s0017",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
+      "order": 14,
+      "headline_ja": "不採算案件の抑制と案件採算性管理の継続的徹底",
+      "body_ja": "初期（2017-2020年）から直近に至るまで、全社的な審査・モニタリング体制「生産革新委員会」や独自の品質管理体系「Trinity」の運用を通じ、不採算案件の最小化を継続的に推進している。案件ミックスの改善と価格転嫁・高付加価値化が相まって、売上総利益率は2017年3月期の22%台から直近では28%台へ一貫して上昇した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-consistent-02",
+      "claim_id": "claim_trend_consistent_shareholder_return",
       "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "最重要経営資本である「人材」への戦略的投資と処遇・人事制度改革の一貫した遂行",
-      "body_ja": "当社は全期間を通じて人材を競争力の源泉と捉え、投資を一貫して強化してきました。初期（FY2019）の65歳定年制度の導入、中期（FY2021/FY2022）の「働く意義・環境・報酬」を軸とした人材投資やエンゲージメント向上施策、直近（FY2024/FY2026）における基本給平均6%アップを伴う新人事制度の刷新や人的資本シナリオの整備など、戦略的処遇改善を実施してきました。これらの人件費・教育投資の増加は短期的コストを押し上げるものの、能力高度化と生産性向上の好循環を生み出す主要軸として機能し続けています。",
-      "evidence_ids": [
-        "09_2019_FY_tanshin.pdf:s0031",
-        "04_2024_FY_tanshin.pdf:s0020",
-        "03_2025_FY_tanshin.pdf:s0018",
-        "02_2026_FY_tanshin.pdf:s0012"
-      ],
+      "order": 15,
+      "headline_ja": "株主還元の継続的強化と機動的な資本構成適正化",
+      "body_ja": "中期経営計画の更新ごとに総還元性向目標を35%→40%→45%→50%と引き上げ、10年連続で増配を実現するとともに、大規模な自己株式取得・消却を繰り返してきた。単なる配当にとどまらず、剰余資本の積極的還元により発行済株式数を減らし、1株当たり利益（EPS）とROEの向上を一貫して追求している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-change-01",
+      "claim_id": "claim_trend_change_business_structure",
       "section": "trend.change",
-      "order": 1,
-      "headline_ja": "グループ管理体制の段階的進化：純粋持株会社から事業持株会社、そしてインテック完全吸収（ＴＩＳＩ）へ",
-      "body_ja": "【変化前】FY2017以前は旧ITホールディングスによる純粋持株会社体制のもと、グループ各社の自律性を重視した分権的ガバナンスを行っていました。【移行期】2016年7月に完全子会社TISを吸収合併して事業持株会社体制（TIS）へ移行し、本社機能の共通化や「G20」プロジェクト、セグメント再編を通じて一体経営を本格化させました。【現在】2026年7月1日付で中核子会社であった株式会社インテックを吸収合併して「ＴＩＳＩ株式会社」へと移行し、経営・事業基盤の完全一体化とガバナンス高度化（監査等委員会設置会社への移行）を完遂する統合段階に至っています。",
-      "evidence_ids": [
-        "11_2017_FY_tanshin.pdf:s0035",
-        "06_2022_FY_tanshin.pdf:s0023",
-        "02_2026_FY_tanshin.pdf:s0013",
-        "01_2027_Q1_tanshin.pdf:s0007"
-      ],
+      "order": 16,
+      "headline_ja": "請負型SIからオファリング・サービス型ITへの収益構造転換",
+      "body_ja": "変化前は個別受託開発（工数依存型SI）が中心であったが、中期経営計画（2018-2020）以降、「サービス型への構造転換」を掲げて自社投資による決済プラットフォーム（PAYCIERGE）やクラウド・BPOビジネスを拡大。セグメント再編を経て、知識集約型ITサービス（オファリング）の比率を高め、ストック型収益の比重を増す構造へ変化した。",
       "statement_type": "actual",
-      "is_inference": true,
+      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-change-02",
+      "claim_id": "claim_trend_change_governance",
       "section": "trend.change",
-      "order": 2,
-      "headline_ja": "グローバル戦略の変遷：拡大期からコロナ禍の減損・評価損を経てポートフォリオ厳選・高付加価値化へ",
-      "body_ja": "【変化前】初期（FY2018～FY2020）はASEANトップクラスのIT企業連合体を目指し、タイのMFEC等への出資・提携による海外チャネル拡大を積極的に推し進めました。【移行期】中期（FY2021）において新型コロナ感染拡大の影響から海外持分法適用会社で持分法投資損失（60.3億円）や貸倒引当金（20.5億円）の計上を余儀なくされ、海外事業のリスク管理と構造改革が急務となりました。【現在】MFECの連結子会社化や事業譲渡・再編を実施し、ASEAN売上高1,000億円目標を掲げつつも、コンサルティングとITの融合や高付加価値領域への厳選投資・収益性重視へと戦略の再構築を進めています。",
-      "evidence_ids": [
-        "10_2018_FY_tanshin.pdf:s0032",
-        "07_2021_FY_tanshin.pdf:s0026",
-        "07_2021_FY_tanshin.pdf:s0027",
-        "02_2026_FY_tanshin.pdf:s0015"
-      ],
+      "order": 17,
+      "headline_ja": "持株会社体制から中核統合・TISIへのガバナンスの一本化",
+      "body_ja": "初期は純粋持株会社「ITホールディングス」による分権的ガバナンスであったが、2016年にTISを吸収合併して事業持株会社体制へ移行し、さらに2026年にインテックを吸収合併して「TISI株式会社」へと完全一本化した。経営資源の最適配置と迅速な意思決定を可能にする体制へ進化を完了させた。",
       "statement_type": "actual",
-      "is_inference": true,
+      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-capital-allocation-01",
+      "claim_id": "claim_trend_capital_allocation",
       "section": "trend.capital_allocation",
-      "order": 1,
-      "headline_ja": "成長投資の拡大と株主還元基準の上方修正による資本効率重視経営への転換",
-      "body_ja": "当社は成長投資（ソフトウェア開発、M&A、自社データセンター資産の取得等）を活発化させる一方で、資本政策を大幅に強化してきました。総還元性向の目安を「35%程度（FY2017）」から「40～45%（FY2022）」、さらに現中期経営計画で「50%（FY2026）」へと段階的に引き上げました。また、政策保有株式の連続的減損・売却を推進（連結純資産比率10%以下を達成）し、回収資金を原資として数百億円規模（FY2022に約44億円、FY2026に420億円＋追加500億円枠）の自己株式取得および保有上限超え株式の消却を機動的に実行する高効率な資本循環を確立しました。",
-      "evidence_ids": [
-        "11_2017_FY_tanshin.pdf:s0036",
-        "06_2022_FY_tanshin.pdf:s0024",
-        "06_2022_FY_tanshin.pdf:s0025",
-        "05_2023_FY_tanshin.pdf:s0022",
-        "02_2026_FY_tanshin.pdf:s0014",
-        "02_2026_FY_tanshin.pdf:s0015"
-      ],
+      "order": 18,
+      "headline_ja": "事業資産の所有化・戦略M&A・大規模還元の三位一体配分",
+      "body_ja": "過去10年間の資本配分は、①自社クラウド基盤の安定化に向けた『御殿山SHビル』不動産信託受益権の取得（720億円、10回分割）、②士業・会計IT領域の市場獲得を目指した『日本ICS』の買収（225億円）およびMFEC等の海外アライアンス、③総還元性向50%を目安とした数百億円規模の自己株式取得と消却、に重点配置された。非効率な政策保有株式の縮減（純資産比10%以下への削減）で捻出した資金をこれら成長投資と株主還元へ充当する循環が確立している。",
       "statement_type": "actual",
-      "is_inference": true,
+      "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "3626-trend-implication-01",
-      "section": "trend.implication",
-      "order": 1,
-      "headline_ja": "インテック統合シナジーの実現度と生成AI時代における収益モデル転換の持続性が今後の検証軸",
-      "body_ja": "過去10年の構造改革により高い利益水準と資本効率（ROE 16%超達成）を実証した当社ですが、投資家が今後注視すべきは「インテック吸収合併による統合効果の実効性」と「AI駆動開発・Vertical AI等による質の的転換」です。統合に伴う一時的費用（FY2027に約22億円）や決済・オファリング領域の先行投資コストを上回る実質的なシナジー・高粗利益率案件の拡大が達成できるか、また大型案件のピークアウト影響を新戦略で克服できるかが、持続的企業価値向上を検証する上での具体的な判断軸となります。",
-      "evidence_ids": [
-        "04_2024_FY_tanshin.pdf:s0021",
-        "02_2026_FY_tanshin.pdf:s0013",
-        "01_2027_Q1_tanshin.pdf:s0007",
-        "01_2027_Q1_tanshin.pdf:s0012"
-      ],
+      "claim_id": "claim_trend_capital_value_creation",
+      "section": "trend.capital_value_creation",
+      "order": 19,
+      "headline_ja": "資本配分評価：概ね創出した",
+      "body_ja": "概ね創出した。過去10年間に投入された追加資本は、主に自社システム運用基盤の安定と賃借料削減を図る事業用資産取得（御殿山SHビル720億円）、士業・中小企業向け会計IT分野を獲得した戦略M&A（日本ICS225億円）、および大規模な自己株式取得・消却に向かった。日本ICSは子会社初年度（2024年3月期）に売上高58億円・営業利益18億円を創出し直接的な増益に寄与しており、御殿山SHビルも費用削減効果と収益基盤の安定に貢献している。海外投資の一部（Sequent社の減損等）で減損や一過性損失が発生したものの、グループ全体として営業利益率は6%台から12%超へ倍増し、ROEも14～16%の高水準を維持・達成したことから、配分された資本は総じて投下資本に見合うリターンを生み、企業価値創造に結実している。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
-    }
-  ],
-  "evidence": [
+    },
     {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0001",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2027年３月期第１四半期 売上高 150,111百万円 7.0％ 営業利益 18,347百万円 12.2％ 経常利益 18,424百万円 8.0％ 親会社株主に帰属する四半期純利益 14,409百万円 15.1％",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
+      "claim_id": "claim_trend_implication",
+      "section": "trend.implication",
+      "order": 20,
+      "headline_ja": "インテック統合効果の発現とAI駆動型収益モデルへの展開注視",
+      "body_ja": "投資家は今後、インテック統合によるバックオフィス効率化や事業シナジー（開発リソース共有やクロスセル）の定着度合いと、AI駆動開発（IntegriA等）による開発原価率の抑制効果を検証すべきである。また、大規模買爆により自己資本比率が55%程度へ低下する中、財務健全性とROE16%超の持続的両立が維持できるかが焦点となる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_mgmt_strategy",
+      "section": "management.strategy",
+      "order": 21,
+      "headline_ja": "【戦略の一貫性】構造転換と戦略ドメイン強化の長期軸をブレずに維持",
+      "body_ja": "経営陣は『グループビジョン2026』および『Frontiers 2026』を通じ、一貫して工数依存型SIからサービス型・高付加価値型への構造転換を訴求してきた。決済、BPM、金融・産業モダナイゼーション等の戦略ドメインへの集中投資、政策保有株式の縮減方針（純資産比10%以下目標の達成）、インテックの完全統合といった主要戦略は首尾一貫しており、長期的な方向性に高い論理的整合性が認められる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_mgmt_execution",
+      "section": "management.execution",
+      "order": 22,
+      "headline_ja": "【施策の実行力】中計目標の前倒し達成と大規模M&A・事業再編の完遂",
+      "body_ja": "中期経営計画（2018-2020）および（2021-2023）において、主要経営目標（売上高、営業利益、ROE等）をいずれも1年前倒しで達成した実績を有する。また、日本ICSの買収（225億円）、御殿山SHビルの段階取得契約、中央システムの売却といった事業ポートフォリオ見直しや、インテック吸収合併の完遂など、掲げた施策を確実に実行へ移すフォロースルー能力は極めて高い。",
       "statement_type": "actual",
-      "source_section": "1. 2027年3月期第1四半期の連結業績",
-      "tags": []
+      "is_inference": false,
+      "causal": true
     },
     {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0002",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "通期 売上高 620,000百万円 3.9％ 営業利益 81,000百万円 6.3％ 経常利益 81,000百万円 5.9％ 親会社株主に帰属する当期純利益 57,000百万円 22.3％",
-      "period_label_ja": "2027年3月期 通期予想",
-      "period_label_en": "FY2027 Full Year Forecast",
-      "statement_type": "forecast",
-      "source_section": "3. 2027年3月期の連結業績予想",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0003",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当第１四半期連結累計期間の業績は、売上高150,111百万円（前年同期比7.0％増）、営業利益18,347百万円（同12.2％増）、経常利益18,424百万円（同8.0％増）、親会社株主に帰属する四半期純利益14,409百万円（同15.1％増）となりました。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
+      "claim_id": "claim_mgmt_forecast_discipline",
+      "section": "management.forecast_discipline",
+      "order": 23,
+      "headline_ja": "【予想の規律】保守的な予想姿勢と安定した上振れ実績（観察対象9期中8期上振れ）",
+      "body_ja": "観察可能な過去9期の通期経常利益予想と比較すると、期初予想を上回って着地した期が8期、下回った期が1期（2021年3月期のコロナ禍による海外持分法損失）であり、経営陣の業績予想姿勢には明確な『保守的傾向（conservative_tendency）』が見られる。不採算案件の発生防止や高付加価値化の進展を背景に、期初計画を安定的にクリアする規律が定着している。",
       "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（1）当四半期の経営成績の概況",
-      "tags": []
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0004",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当第１四半期連結累計期間の売上高は39,831百万円（前年同期比9.9％増）、営業利益は1,643百万円（同5.0%減）となりました。基盤系、決済分野系をはじめとするＩＴ投資需要の拡大や海外事業の寄与により増収も、決済分野における先行投資の増加、海外事業における収益性低下等により、前年同期比増収減益となりました。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
+      "claim_id": "claim_mgmt_accountability",
+      "section": "management.accountability",
+      "order": 24,
+      "headline_ja": "【説明責任と透明性】不測の損失に対する迅速な引当計上と明確な開示",
+      "body_ja": "2021年3月期の海外持分法適用会社の損失や、Sequent社ののれん減損（22.5億円）、2026年3月期のインテックにおける訴訟損失引当金繰入（74.3億円）など、一過性の特別損失や業績下振れ要因が発生した際にも、遅滞なく引当・減損を処理し決算短信や補足資料で理由を明確に説明している。株主還元目標（総還元性向50%）の計算においても、資本構成適正化目的の買爆額を除外した実質還元率を明示するなど、透明性の高い説明責任を果たしている。",
       "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ①オファリングサービス",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0005",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当第１四半期連結累計期間の売上高は25,801百万円（前年同期比9.2％増）、営業利益は3,528百万円（同18.4％増）となりました。クレジットカード系の根幹先顧客への深耕、モダナイゼーション関連等の高付加価値ビジネスの推進等により前年同期比増収増益となり",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ③金融ＩＴ",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0006",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "当第１四半期連結累計期間の売上高は34,077百万円（前年同期比5.3％増）、営業利益は6,201百万円（同21.4％増）となりました。製造業、サービス業をはじめとした幅広い業種におけるＩＴ投資拡大の動きが全体を牽引し、前年同期比増収増益となり",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ④産業ＩＴ",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0007",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "当社は2026年７月１日付で株式会社インテックを吸収合併し、商号を「ＴＩＳＩ株式会社」に変更のうえ、新体制として発足いたしました",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0008",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "2026年３月から５月にかけて約500億円（14,368,400株）の自己株式の取得を実施しました。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0009",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "2026年７月30日開催の取締役会において上記の500億円相当（13,700,000株）の自己株式の消却を決議しました。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0010",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "当第１四半期連結会計期間末の純資産合計は、前連結会計年度末に比べ33,491百万円減少の304,235百万円（前連結会計年度末337,726百万円）となりました。これは主に利益剰余金が5,117百万円増加した一方、自己株式が取得等により35,735百万円増加（純資産は減少）したこと等によるものであります。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（２）当四半期の財政状態の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0011",
-      "source_filename": "01_2027_Q1_tanshin.pdf",
-      "pdf_page": 9,
-      "exact_quote_ja": "なお、連結業績予想には、前述の当社とインテックの合併に向けて想定される準備費用として販売費及び一般管理費約16億円（前期比約15億円増）、営業外費用約６億円（前期比約２億円増）を織り込んでいます。",
-      "period_label_ja": "2027年3月期 第1四半期",
-      "period_label_en": "FY2027 Q1",
-      "statement_type": "forecast",
-      "source_section": "1. 経営成績等の概況（３）連結業績予想などの将来予測情報に関する説明",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0012",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高596,479百万円（前期比4.3%増）、営業利益76,229百万円（同10.4%増）、経常利益76,511百万円（同8.5%増）、親会社株主に帰属する当期純利益46,624百万円（同6.8%減）となりました。",
-      "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0013",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "2025年10月31日開催の取締役会において、2026年７月１日を効力発生日とする本合併の実施を決議した上で吸収合併契約を締結いたしました。",
-      "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 当連結会計年度における主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0014",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "総額500億円の自己株式の取得を追加施策として決定しました。取得期間は2026年３月から９月にかけてであり、2026年３月末時点では、139億円（総数4,122,600株）の自己株式を取得しています。",
-      "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 当連結会計年度における主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0015",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 13,
-      "exact_quote_ja": "この方針のもと、中期経営計画（2024-2026）においては、成長投資の推進・財務健全性の確保・株主還元の強化のバランスのもと、総還元性向の目安をこれまでの45％から50％に引き上げ",
-      "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
-      "statement_type": "target",
-      "source_section": "1. 経営成績等の概況（５）利益配分に関する基本方針及び当期・次期の配当",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2026_FY_tanshin.pdf:s0016",
-      "source_filename": "02_2026_FY_tanshin.pdf",
-      "pdf_page": 36,
-      "exact_quote_ja": "今般、東京地方裁判所からの和解勧試に基づいて協議した結果、2026年４月24日付で和解が成立しました。これに伴い、当連結会計年度において和解金7,090百万円及び本件訴訟関連費用を含めた7,434百万円を訴訟損失引当金繰入額として特別損失に計上しております。",
-      "period_label_ja": "2026年3月期 通期",
-      "period_label_en": "FY2026 Full Year",
-      "statement_type": "actual",
-      "source_section": "５．その他",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2025_FY_tanshin.pdf:s0017",
-      "source_filename": "03_2025_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高571,687百万円（前期比4.1％増）、営業利益69,047百万円（同6.9％増）、経常利益70,503百万円（同2.8％増）、親会社株主に帰属する当期純利益50,012百万円（同2.3％増）となりました。",
-      "period_label_ja": "2025年3月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "03_2025_FY_tanshin.pdf:s0018",
-      "source_filename": "03_2025_FY_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "当社独自の人的資本シナリオを整備し、三階層のテーマに対する取り組みを推進しています。",
-      "period_label_ja": "2025年3月期 通期",
-      "period_label_en": "FY2025 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 当連結会計年度における主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2024_FY_tanshin.pdf:s0019",
-      "source_filename": "04_2024_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高549,004百万円（前期比8.0％増）、営業利益64,568百万円（同3.6％増）、経常利益68,553百万円（同8.5％増）、親会社株主に帰属する当期純利益48,873百万円（同11.9％減）となりました。",
-      "period_label_ja": "2024年3月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2024_FY_tanshin.pdf:s0020",
-      "source_filename": "04_2024_FY_tanshin.pdf",
-      "pdf_page": 11,
-      "exact_quote_ja": "2023年４月より、報酬・評価・等級制度等を全面的に刷新した新人事制度を導入しました。",
-      "period_label_ja": "2024年3月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ⑤人材の先鋭化・多様化",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2024_FY_tanshin.pdf:s0021",
-      "source_filename": "04_2024_FY_tanshin.pdf",
-      "pdf_page": 26,
-      "exact_quote_ja": "自己資本当期純利益率（ＲＯＥ）については、中期経営計画（2021-2023）において事業収益力の向上に伴う当期純利益率の向上を牽引役として12.5％～13％を目標としており、長期的には構造転換を進めることで、安定的に15％を実現できる企業への成長を目指してまいりましたが、バランスシートマネジメントの強化等を通じた財務施策の推進も奏功し、当連結会計年度の自己資本当期純利益率は16.0％となり、目標を達成しました。",
-      "period_label_ja": "2024年3月期 通期",
-      "period_label_en": "FY2024 Full Year",
-      "statement_type": "actual",
-      "source_section": "3. 経営方針 (2）中期経営計画（2021-2023）振り返り",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2023_FY_tanshin.pdf:s0022",
-      "source_filename": "05_2023_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高508,400百万円（前期比5.4％増）、営業利益62,328百万円（同13.9％増）、経常利益63,204百万円（同13.5％増）、親会社株主に帰属する当期純利益55,461百万円（同40.5％増）となりました。",
-      "period_label_ja": "2023年3月期 通期",
-      "period_label_en": "FY2023 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2022_FY_tanshin.pdf:s0023",
-      "source_filename": "06_2022_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高482,547百万円（前期比7.6％増）、営業利益54,739百万円（同19.7％増）",
-      "period_label_ja": "2022年3月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2022_FY_tanshin.pdf:s0024",
-      "source_filename": "06_2022_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "計1,430,400株（取得価額の総額4,470百万円）の自己株式を取得するとともに、保有自己株式のほぼ全量にあたる計12,206,400株（消却前発行済株式総数の4.6％）を消却しました。",
-      "period_label_ja": "2022年3月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 グループ経営方針における課題や取組み状況",
-      "tags": []
-    },
-    {
-      "evidence_id": "06_2022_FY_tanshin.pdf:s0025",
-      "source_filename": "06_2022_FY_tanshin.pdf",
-      "pdf_page": 11,
-      "exact_quote_ja": "この方針のもと、中期経営計画（2021-2023）においては、成長投資の推進・財務健全性の確保・株主還元の強化のバランスのもと、総還元性向の目安をこれまでの40％から45％に引き上げ",
-      "period_label_ja": "2022年3月期 通期",
-      "period_label_en": "FY2022 Full Year",
-      "statement_type": "target",
-      "source_section": "1. 経営成績等の概況（５）利益配分に関する基本方針及び当期・次期の配当",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2021_FY_tanshin.pdf:s0026",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "一部の海外持分法適用会社が新型コロナウイルス感染症拡大の影響を受けたことに伴って持分法による投資損失6,033百万円および貸倒引当金繰入額2,053百万円を計上したことから",
-      "period_label_ja": "2021年3月期 通期",
-      "period_label_en": "FY2021 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2021_FY_tanshin.pdf:s0027",
-      "source_filename": "07_2021_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "タイ王国のMFEC Public Company Limited（以下、「MFEC」という）の連結子会社化を目的として、同社株式に対する公開買付けをタイ王国の証券取引法及び現地法令に基づいて2020年７月から９月にかけて実施しました。",
-      "period_label_ja": "2021年3月期 通期",
-      "period_label_en": "FY2021 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ④ＡＳＥＡＮトップクラスのＩＴ企業連合体を目指した成長戦略の推進",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2020_FY_tanshin.pdf:s0028",
-      "source_filename": "08_2020_FY_tanshin.pdf",
-      "pdf_page": 2,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高443,717百万円（前期比5.5％増）、営業利益44,839百万円（同17.9％増）",
-      "period_label_ja": "2020年3月期 通期",
-      "period_label_en": "FY2020 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2020_FY_tanshin.pdf:s0029",
-      "source_filename": "08_2020_FY_tanshin.pdf",
-      "pdf_page": 3,
-      "exact_quote_ja": "中期経営計画(2018-2020)で定めた４つの重要な経営指標（戦略ドメイン比率、営業利益、営業利益率、ROE）全てについて、１年前倒しで達成いたしました。",
-      "period_label_ja": "2020年3月期 通期",
-      "period_label_en": "FY2020 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 当連結会計年度における主な取り組み状況等",
-      "tags": []
-    },
-    {
-      "evidence_id": "09_2019_FY_tanshin.pdf:s0030",
-      "source_filename": "09_2019_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高420,769百万円（前期比3.7％増）、営業利益38,043百万円（同16.2％増）",
-      "period_label_ja": "2019年3月期 通期",
-      "period_label_en": "FY2019 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "09_2019_FY_tanshin.pdf:s0031",
-      "source_filename": "09_2019_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "60歳以降も処遇制度が変わらない「65歳定年制度」の導入を決定しました。",
-      "period_label_ja": "2019年3月期 通期",
-      "period_label_en": "FY2019 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 ⑤働きがい向上と人材マネジメントの高度化",
-      "tags": []
-    },
-    {
-      "evidence_id": "10_2018_FY_tanshin.pdf:s0032",
-      "source_filename": "10_2018_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高405,648百万円（前期比3.1％増）、営業利益32,743百万円（同21.2％増）",
-      "period_label_ja": "2018年3月期 通期",
-      "period_label_en": "FY2018 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "10_2018_FY_tanshin.pdf:s0033",
-      "source_filename": "10_2018_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当社の強みである決済関連分野の更なる強化に向けた取組みを推進しました。",
-      "period_label_ja": "2018年3月期 通期",
-      "period_label_en": "FY2018 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 成長エンジン構築のための更なる先行投資",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0034",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度の業績は、売上高393,398百万円（前期比2.8％増）、営業利益27,019百万円（同10.6％増）",
-      "period_label_ja": "2017年3月期 通期",
-      "period_label_en": "FY2017 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況（１）当期の連結経営成績の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0035",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "2016年７月に、「ＴＩＳインテックグループ」として新たな一歩を踏み出しました。当社が完全子会社であるＴＩＳ株式会社を吸収合併した上で、当社商号を「ＩＴホールディングス株式会社」から「ＴＩＳ株式会社」に変更するとともに、グループブランドの統一も実施しました。",
-      "period_label_ja": "2017年3月期 通期",
-      "period_label_en": "FY2017 Full Year",
-      "statement_type": "actual",
-      "source_section": "1. 経営成績等の概況 当連結会計年度の取組み",
-      "tags": []
-    },
-    {
-      "evidence_id": "11_2017_FY_tanshin.pdf:s0036",
-      "source_filename": "11_2017_FY_tanshin.pdf",
-      "pdf_page": 7,
-      "exact_quote_ja": "自己株式取得を含む連結総還元性向35％程度を目安に引き上げております。",
-      "period_label_ja": "2017年3月期 通期",
-      "period_label_en": "FY2017 Full Year",
-      "statement_type": "target",
-      "source_section": "1. 経営成績等の概況（５）利益配分に関する基本方針及び当期・次期の配当",
-      "tags": []
+      "is_inference": false,
+      "causal": false
     }
   ],
   "management_consistency": {
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "長期経営方針「グループビジョン2026/2032」および一連の中期経営計画において、一貫して「決済・金融領域の優位性確立」「SIからオファリング/サービス型への構造転換」「グループ一体経営の推進」を掲げており、中長期戦略の方向性にブレが見られません。",
-        "evidence_ids": [
-          "11_2017_FY_tanshin.pdf:s0035",
-          "06_2022_FY_tanshin.pdf:s0023",
-          "02_2026_FY_tanshin.pdf:s0013"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "2016年の事業持株会社移行、PAYCIERGEブランドによる決済プロセッシングのサービス化、タイMFECの連結子会社化、そして2026年のインテック吸収合併（ＴＩＳＩ発足）など、掲げた大型構造改革施策を計画通り順次実行に移しています。",
-        "evidence_ids": [
-          "11_2017_FY_tanshin.pdf:s0035",
-          "07_2021_FY_tanshin.pdf:s0027",
-          "02_2026_FY_tanshin.pdf:s0013"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "中期経営計画（2018-2020）の目標（営業利益、ROE等）を1年前倒しで達成し、中期経営計画（2021-2023）でも目標ROE 15%に対し16.0%を達成しました。単年度予想においても利益目標を概ね達成または上回る水準で着地させています。",
-        "evidence_ids": [
-          "08_2020_FY_tanshin.pdf:s0029",
-          "04_2024_FY_tanshin.pdf:s0021",
-          "02_2026_FY_tanshin.pdf:s0012"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "新型コロナ禍における海外持分法投資損失（FY2021）や大型プロジェクトピークアウト影響、不採算案件（FY2024）、訴訟損失引当金繰入（FY2026）などの逆風要因について、影響額を開示し透明性の高い説明責任を果たしています。",
-        "evidence_ids": [
-          "07_2021_FY_tanshin.pdf:s0026",
-          "04_2024_FY_tanshin.pdf:s0019",
-          "02_2026_FY_tanshin.pdf:s0016"
-        ]
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "TIS（現ＴＩＳＩ）は10年間にわたり、「グループビジョン」で定めたオファリング化・決済強化・一体経営という軸をブレずに追求し、目標指標の早期達成やインテックの完全吸収合併など極めて高い実行力を示しました。海外事業の変動や訴訟損失等のリスク事象が発生した際も積極的な情報開示と速やかなポートフォリオ見直しを行っており、総じて高い経営一貫性と規律が維持されています。"
+    ]
   },
   "model_notes": []
 }

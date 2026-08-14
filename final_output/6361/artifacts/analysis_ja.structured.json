@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "claim_id": "c01",
+      "section": "company.overview",
+      "order": 1,
+      "headline_ja": "流体機械・環境プラントおよび半導体製造装置を展開する総合産業機械メーカー",
+      "body_ja": "株式会社荏原製作所は、風水力（ポンプ、コンプレッサ・タービン、冷熱）、環境プラント（廃棄物処理施設等）、および精密・電子（半導体研磨用CMP装置、ドライ真空ポンプ等）を主要事業とする産業機械メーカーである。対面市場別の5事業セグメント（建築・産業、エネルギー、インフラ、環境、精密・電子）を通じ、民間産業・公共インフラおよび最先端の半導体製造メーカーを顧客基盤とし、各種産業機械・プラント製品の製造・販売および保守・運転管理などのサービス＆サポート（S&S）を提供することで収益を得ている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "c02",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "2026年12月期第1四半期はAI向け需要と環境大型案件が牽引し大幅な増収増益を達成",
+      "body_ja": "当第1四半期累計期間の連結業績は、売上収益2,463億11百万円（前年同期比15.8%増）、営業利益267億49百万円（同18.4%増）となり、第1四半期として過去最高額を更新した。精密・電子カンパニーでのAI需要拡大に伴う顧客稼働率上昇と、環境カンパニーでの大型EPC/O&M案件進捗が全体業績を強力に牽引した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c03",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "営業キャッシュ・フローは前年同期の支出超過から257億円の収入超過へ著しく好転",
+      "body_ja": "当第1四半期の営業キャッシュ・フローは257億13百万円の収入超過となり、前年同期の15億35百万円の支出超過から大幅に改善した。事業拡大に伴う営業債権の増加（388億69百万円増）があったものの、税引前四半期利益269億40百万円の創出や契約資産の回収進展（253億74百万円減）がキャッシュ創出に貢献した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c04",
+      "section": "latest.key_takeaway",
+      "order": 3,
+      "headline_ja": "持分法適用会社水ing株式の譲渡決定に伴い通期当期利益予想を995億円へ上方修正",
+      "body_ja": "共同支配企業である水ing株式会社の全所有株式（所有割合33.33%）をインフロニア・ホールディングスへ譲渡する契約を締結した（譲渡価額250億円予定）。これに伴い2026年12月期において持分法投資売却益172億円および金融収益34億円の計上を見込むことから、通期の親会社所有者帰属当期利益予想を従来の866億円から995億円（前期比29.8%増）へ上方修正した。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c05",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "「半導体・AI需要｜追い風」最先端ロジック・メモリ向けCMP装置およびコンポーネントが大幅伸長",
+      "body_ja": "精密・電子セグメントでは、AI市場の急速な拡大を背景に顧客工場の稼働率上昇と増産投資が再開した。装置およびコンポーネント製品の受注が急増し、セグメント売上収益は829億49百万円（前年同期比32.9%増）、セグメント利益は135億31百万円（同63.9%増）と顕著な増益を記録した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c06",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "「中東・メンテナンス｜逆風」エネルギー事業での中東案件遅延とメンテナンス一巡が採算圧迫",
+      "body_ja": "エネルギーセグメントでは、石油・ガス市場の需要自体は堅調なものの、中東情勢の不透明感に伴う一部案件の遅延や部品出荷・指導員派遣の停滞が影響した。さらにメンテナンス需要の一巡も重なり、売上収益465億75百万円（前年同期比4.2%減）、セグメント損益は16億66百万円の赤字（前年同期は19億79百万円の黒字）に転落した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c07",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "「環境プラント大型案件｜追い風」公共向け廃棄物処理施設の新設・更新工事とインフレスライド適用が寄与",
+      "body_ja": "環境セグメントでは、公共向け廃棄物処理施設の新設・長期包括運営に関する大型案件を受注したほか、既存施設O&Mでのインフレスライド適用等が寄与した。受注高が324億94百万円（前年同期比860.7%増）と著しく増大し、セグメント利益も61億74百万円（同103.2%増）と倍増した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c08",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "通期売上収益1兆円の大台達成と高い営業利益率の維持を見込む",
+      "body_ja": "2026年12月期通期の業績予想として、売上収益1兆200億円（前期比6.4%増）、営業利益1,250億円（同9.8%増）の期初計画を維持した。株式売却益の計上により税引前利益および純利益は増額修正されたものの、本業ベースでは売上収益1兆円の大台超えと営業利益率12.3%の高水準な事業採算を確保する見通しである。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "c09",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "米中半導体規制や中東情勢不透明感に伴う需給・物流混乱リスク",
+      "body_ja": "米国の政策動向や対中半導体輸出管理規制強化、中東・ウクライナ情勢の長期化は、精密・電子事業における顧客の設備投資判断の遅延や、エネルギー事業における部材調達・現地サービス提供の停滞を引き起こす主要な外部リスクである。",
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c10",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "インド合弁会社KEPLに関する競業避止義務違反に伴う仲裁申立てリスク",
+      "body_ja": "インドのKirloskar Brothers Limited（KBL）より合弁会社KEPLに関する競業避止義務違反に基づく損害賠償や事業差止め等を求める仲裁申立てを受領している。現時点で損害額の合理的見積もりが不可能なため引当金は未計上であるが、仲裁の判決結果によっては業績や現地事業展開に不確実性を及ぼす懸念がある。",
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c11",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "新中期計画「E-Plan2028」始動期におけるノンコア資本回収とAI需要の好展",
+      "body_ja": "2026年12月期は新中期経営計画「E-Plan2028」の初年度であり、全体最適を通じた収益性向上と資本効率の改善を掲げている。足元では生成AI需要の拡大により主力の精密・電子事業が業績を力強く牽引する一方、合弁事業である水ing株式の譲渡決定（売却額250億円）に見られるよう、ノンコア資産の整理と資本の流動化を迅速に進めている。\nただし、エネルギー事業での四半期赤字転落や、前期に計上されたトルコ子会社Vansanのれん減損に見られる海外統治課題、インドでの仲裁リスクなど、事業環境の地域的・構造的不確実性への対応が引き続き検証軸となる。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c12",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "10年間の軌跡：安定基盤の風水力・環境から、AI・最先端半導体を牽引役とする高収益構造へ進化",
+      "body_ja": "過去10年間（2016年3月期〜2026年12月期）の荏原製作所は、風水力および環境プラント事業が提供する安定した基盤的キャッシュ創出の上で、精密・電子事業が半導体需要やAI市場の拡大をとらえて飛躍的に成長し、連結営業利益率が7.8%（2016年3月期）から11%超へと構造的に向上した。2021年のIFRS適用や2023年の対面市場別5カンパニー制への再編を通じて組織のマーケットイン化を進めた一方、トルコVansan買収に伴うのれん減損（2024年12月期に70.8億円計上）や羽田工場跡地訴訟など、海外M&A管理や法的リスクの面では課題も顕在化した。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c13",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "継続した強み：精密・電子事業における高い技術力と半導体需要の長期的拡大",
+      "body_ja": "初期（2016〜2019年）、中期（2020〜2022年）、直近（2023〜2026年）の各期間を通じて、精密・電子事業におけるCMP装置やドライ真空ポンプ等の最先端デバイス向け高い技術優位性は一貫した成長エンジンであった。半導体メモリの市況調整期（2019年や2022〜2023年）には一時的な減益を余儀なくされたものの、5G、AI、データセンター需要を背景に、全社収益を拡大させる主力事業であり続けた。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c14",
+      "section": "trend.consistent",
+      "order": 2,
+      "headline_ja": "継続した前提：社会インフラ・公共向け事業（環境・インフラ）による景気緩衝機能",
+      "body_ja": "廃棄物処理施設や水インフラ等の公共インフラ領域は、民間景気サイクルや資源価格の変動に左右されにくい安定的需要を一貫して提供した。民間設備投資が落ち込む局面や半導体調整期においても、長期包括委託（O&M/DBO）などのストック型需要が全社のキャッシュ・フローを堅固に下支えした。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c15",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "変化：プロダクト軸から対面市場軸（5カンパニー制）への組織・収益管理の転換",
+      "body_ja": "初期（2016-2021年）は「風水力」「環境プラント」「精密・電子」の製品軸3セグメントで運用していたが、2022年8月に決議し2023年12月期より「建築・産業」「エネルギー」「インフラ」「環境」「精密・電子」の対面市場別5カンパニー制へ再編した。市場ニーズへの即応性とグローバル競争力の強化を図ったことで、各市場に応じた価格改定やサービス事業の拡充が迅速化された。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c16",
+      "section": "trend.change",
+      "order": 2,
+      "headline_ja": "変化：株主還元方針の段階的厳格化と配当・自己株式取得の積極化",
+      "body_ja": "初期の配当方針は「連結配当性向25%程度」であったが、2017年に「総還元性向30%以上」、2020年に「配当性向35%以上かつDOE2.0%以上」へ向上し、2025年からの「E-Plan2028」では「3年間累計FCFの100%以上を株主還元（配当・自社株買い）」する方針へ大幅に強化された。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "c17",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "成長領域への有機的投資の集中とノンコア事業売却による資本流動化の進展",
+      "body_ja": "資本配分の最優先 destination は精密・電子事業であり、熊本工場の拡張や開発・設備投資に一貫して多額の資本を投入した。一方で、トルコポンプメーカーVansanの買収（約110億円）を実施したものののれん減損に至った教訓から、直近では合弁事業である水ing株式の売却（250億円）を決定するなど、資産効率を高める資本再配分を進めている。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c18",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "資本配分の価値創出評価：成果は混在（有機的成長投資は極めて高いリターンを創出したが海外M&A資本配分は不振）",
+      "body_ja": "過去10年間の追加資本配分による価値創出成果は混在している。最大配分先である精密・電子事業への有機的な設備投資・R&D投資は、半導体・AI需要をとらえてセグメント利益を116.9億円（2016年3月期）から577.7億円（2025年12月期）へ急増させ、事業資産の拡大を大幅に上回る顕著な価値を創出した。他方、2020年に約110億円で買収したトルコのポンプメーカーVansan社は高インフレとコスト上昇により2024年12月期にのれん70.8億円を全額減損処理しており、M&Aにおける資本配分は価値を毀損した。大規模な自社株買いや増配などの株主還元は着実に実行されたが、事業投資における明暗が分かれているため、全社の資本配分評価は「成果は混在」と結論付けられる。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c19",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "投資家への示唆：精密・電子の利益持続性とエネルギー・海外拠点の採算回復の注視",
+      "body_ja": "投資家は、AI需要に支えられる精密・電子事業の高利益水準が半導体サイクルの波を超えて持続可能であるかを注視する必要がある。同時に、エネルギー事業での四半期赤字からの復調、およびトルコ子会社減損後の海外標準ポンプ事業の再構築が計画通り進展するかを確認することが重要である。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "c20",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "戦略的一貫性：市場軸再編と半導体・AI需要対応は強固だが海外M&A選定に課題",
+      "body_ja": "E-Plan2025からE-Plan2028へ続く中期経営戦略は、対面市場別5カンパニー制への移行や精密・電子領域への重点投資など、長期ビジョン「E-Vision2030」に向けた整合性を有している。しかし、標準ポンプ拡大を目的としたトルコVansan社の買収頓挫（のれん全額減損）に見られる通り、海外M&Aにおけるリスク評価と戦略整合性の維持には一部課題が残る。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c21",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "施策の実行力：精密・電子の増産対応と株主還元は迅速、海外子会社ガバナンスに遅れ",
+      "body_ja": "精密・電子事業での熊本工場増設をはじめとする機動的な供給体制構築や、目標に基づく自己株式取得（2019年150億円、2021年200億円、2025年200億円等）の実行力は高い。一方、トルコ子会社のコスト高騰対応遅れや、インド合弁相手（KBL）との競業避止問題を巡る訴訟・仲裁リスクなど、海外拠点のガバナンスと実行追随性には弱みが認められる。",
+      "statement_type": "mixed",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "c22",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "業績予想の規律：保守的な予想傾斜が一貫（観察対象8期中7期で営業利益が予想を超過）",
+      "body_ja": "観察可能な通期営業利益予想と実績の比較8期（2018年12月期〜2025年12月期）において、7期で実績が当初予想を上回り（乖離率+6.9%〜+42.7%）、下回ったのは2018年12月期（-12.2%）の1期のみであった。期初予想の策定姿勢は一貫して保守的であり、期中での需要上振れを順次織り込む計画規律が定着している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "c23",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "説明責任と透明性：IFRS移行・セグメント再編の開示は良好、不利益事象の説明責任も履行",
+      "body_ja": "IFRSの任意適用や対面市場別5カンパニー制への再編に際し、新旧比較数値の組み替えや市場見立てを詳細に開示している。2024年のトルコVansanのれん全額減損（70.8億円）や岐阜市廃棄物処理施設火災係争、インド仲裁等についても背景と財務影響を明確に開示しており、説明責任と透明性は総じて確保されている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      }
+    ]
+  },
+  "model_notes": []
+}

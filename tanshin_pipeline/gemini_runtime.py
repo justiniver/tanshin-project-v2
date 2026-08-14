@@ -23,9 +23,8 @@ from .config import LIVE_CONFIRMATION_VALUE, PRO_GEMINI_MODEL
 from .request_builder import RequestSpec
 from .schemas import (
     EnglishTranslationPatch,
-    JapaneseAnalysis,
-    JapaneseModelResponse,
-    parse_japanese_analysis_payload,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
 )
 
 
@@ -51,7 +50,11 @@ T = TypeVar("T")
 
 @dataclass(frozen=True)
 class ExecutionResult:
-    structured: JapaneseModelResponse | JapaneseAnalysis | EnglishTranslationPatch
+    structured: (
+        JapaneseResearchDossier
+        | JapaneseSynthesisResponse
+        | EnglishTranslationPatch
+    )
     raw_response: dict[str, Any]
     usage: dict[str, Any]
     model_version: str | None
@@ -122,8 +125,14 @@ def _structured_payload(response: Any) -> dict[str, Any]:
     try:
         payload = json.loads(text)
     except json.JSONDecodeError as exc:
+        message = (
+            "Gemini response reached its output-token limit before completing "
+            "valid JSON."
+            if _finish_reason(response) == "MAX_TOKENS"
+            else "Gemini response text was not valid JSON."
+        )
         raise GeminiResponseError(
-            "Gemini response text was not valid JSON.",
+            message,
             raw_response=_response_payload(response),
         ) from exc
     if not isinstance(payload, dict):
@@ -207,7 +216,9 @@ def execute_request(
         types.Part.from_text(text=spec.task_prompt or spec.prompt)
     )
     contents = [types.Content(role="user", parts=parts)]
-    if spec.stage == "analysis":
+    if spec.stage == "research":
+        thinking_level = types.ThinkingLevel.LOW
+    elif spec.stage == "analysis":
         thinking_level = types.ThinkingLevel.MEDIUM
     elif spec.model == PRO_GEMINI_MODEL:
         thinking_level = types.ThinkingLevel.LOW
@@ -242,10 +253,10 @@ def execute_request(
         client.close()
 
     payload = _structured_payload(response)
-    if spec.stage == "analysis":
-        structured: JapaneseModelResponse | JapaneseAnalysis | EnglishTranslationPatch = (
-            parse_japanese_analysis_payload(payload)
-        )
+    if spec.stage == "research":
+        structured = JapaneseResearchDossier.model_validate(payload)
+    elif spec.stage == "analysis":
+        structured = JapaneseSynthesisResponse.model_validate(payload)
     else:
         structured = EnglishTranslationPatch.model_validate(payload)
     usage_obj = getattr(response, "usage_metadata", None)

@@ -11,7 +11,6 @@ from tanshin_pipeline.evaluation import (
 from tanshin_pipeline.normalization import numeric_surfaces
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.render import (
-    bilingual_evidence_ledger,
     render_english,
     render_japanese,
     render_japanese_draft,
@@ -109,7 +108,7 @@ class ValidationRenderingTests(unittest.TestCase):
         for claim in changed.claims:
             claim.evidence_ids = [
                 "04_2026_Q1_tanshin.pdf:s0001"
-                if value == "05_2025_FY_tanshin.pdf:s0001"
+                if value == "06_2025_FY_tanshin.pdf:s0001"
                 else value
                 for value in claim.evidence_ids
             ]
@@ -141,7 +140,7 @@ class ValidationRenderingTests(unittest.TestCase):
 
     def test_cross_language_evidence_change_is_rejected(self) -> None:
         changed = self.translation.model_copy(deep=True)
-        changed.claims[0].evidence_ids = ["05_2025_FY_tanshin.pdf:s0001"]
+        changed.claims[0].evidence_ids = ["06_2025_FY_tanshin.pdf:s0001"]
         result = validate_english(changed, self.analysis, self.manifest)
         self.assertFalse(result.valid)
         self.assertIn(
@@ -154,14 +153,73 @@ class ValidationRenderingTests(unittest.TestCase):
         en = render_english(self.analysis, self.translation)
         self.assertIn("## 1. エグゼクティブサマリー", ja)
         self.assertIn("### 資本配分の変化", ja)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", ja)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", ja)
         self.assertIn("## 1. Executive summary", en)
         self.assertIn("### Capital-allocation developments", en)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", en)
-        self.assertIn(self.analysis.evidence[0].exact_quote_ja, en)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", en)
+        self.assertNotIn(self.analysis.evidence[0].exact_quote_ja, en)
         self.assertNotIn(
             self.translation.evidence_translations[0].quote_en,
             en,
+        )
+
+    def test_capital_allocation_value_creation_has_its_own_section(self) -> None:
+        analysis = self.analysis.model_copy(deep=True)
+        translation = self.translation.model_copy(deep=True)
+        ja_source = next(
+            claim
+            for claim in analysis.claims
+            if claim.section == SectionKey.TREND_CAPITAL_ALLOCATION
+        )
+        en_source = next(
+            claim
+            for claim in translation.claims
+            if claim.section == SectionKey.TREND_CAPITAL_ALLOCATION
+        )
+        analysis.claims.append(
+            ja_source.model_copy(
+                update={
+                    "claim_id": "capital_value_creation",
+                    "section": SectionKey.TREND_CAPITAL_VALUE_CREATION,
+                    "order": 1,
+                    "headline_ja": "投資後の利益成長と減損が併存し、成果は混在",
+                    "body_ja": (
+                        "投資後の利益成長は一部の価値創出を示す一方、減損は"
+                        "一部配分のリターン不足を示しており、総合評価は混在です。"
+                    ),
+                }
+            )
+        )
+        translation.claims.append(
+            en_source.model_copy(
+                update={
+                    "claim_id": "capital_value_creation",
+                    "section": SectionKey.TREND_CAPITAL_VALUE_CREATION,
+                    "order": 1,
+                    "headline_en": "Profit growth and impairment indicate mixed outcomes",
+                    "body_en": (
+                        "Profit growth after investment supports some value "
+                        "creation, while impairment indicates inadequate returns "
+                        "from part of the allocation record."
+                    ),
+                }
+            )
+        )
+
+        ja = render_japanese(analysis)
+        en = render_english(analysis, translation)
+
+        self.assertIn("### 資本配分は価値を創出したか", ja)
+        self.assertIn("成果は混在", ja)
+        self.assertIn("### Did capital allocation create value?", en)
+        self.assertIn("mixed outcomes", en)
+        self.assertLess(
+            ja.index("### 資本配分の変化"),
+            ja.index("### 資本配分は価値を創出したか"),
+        )
+        self.assertLess(
+            en.index("### Capital-allocation developments"),
+            en.index("### Did capital allocation create value?"),
         )
 
     def test_company_overview_replaces_top_metadata_bullets(self) -> None:
@@ -256,18 +314,10 @@ class ValidationRenderingTests(unittest.TestCase):
         changed = self.translation.model_copy(deep=True)
         changed.evidence_translations = []
         rendered = render_english(self.analysis, changed)
-        self.assertIn(self.analysis.evidence[0].exact_quote_ja, rendered)
+        self.assertNotIn(self.analysis.evidence[0].exact_quote_ja, rendered)
         self.assertNotIn("[English translation unavailable]", rendered)
         validation = validate_english(changed, self.analysis, self.manifest)
         self.assertTrue(validation.publishable)
-
-        ledger = bilingual_evidence_ledger(self.analysis, changed)
-        self.assertIsNone(ledger[0]["quote_en"])
-        self.assertEqual(ledger[0]["rendered_quote_language"], "ja")
-        self.assertEqual(
-            ledger[0]["rendered_quote"],
-            self.analysis.evidence[0].exact_quote_ja,
-        )
 
     def test_fiscal_period_is_one_numeric_surface(self) -> None:
         self.assertEqual(
@@ -289,7 +339,7 @@ class ValidationRenderingTests(unittest.TestCase):
         self.assertGreater(warning_only.warning_count, 0)
         draft = render_japanese_draft(self.analysis, warning_only)
         self.assertNotIn("[!WARNING]", draft)
-        self.assertIn("01_2026_FY_tanshin.pdf:s0001", draft)
+        self.assertNotIn("02_2026_FY_tanshin.pdf:s0001", draft)
 
     def test_offline_comparison_rubric(self) -> None:
         generated = render_english(self.analysis, self.translation)
@@ -308,7 +358,6 @@ class ValidationRenderingTests(unittest.TestCase):
                 "executive_breadth",
                 "analytical_depth",
                 "trend_specificity",
-                "evidence_density",
                 "tone",
                 "repetition",
                 "readability",

@@ -14,14 +14,14 @@ from .schemas import EnglishTranslation, JapaneseAnalysis
 _NUMBER = r"\d[\d,]*(?:\.\d+)?"
 _JA_FINANCIAL_RE = re.compile(
     rf"(?P<sign>[+\-△▲]?)\s*(?:"
-    rf"(?P<trillion>{_NUMBER})兆"
-    rf"(?:(?P<trillion_oku>{_NUMBER})億)?"
-    rf"(?:(?P<trillion_million>{_NUMBER})百万円|円)"
-    rf"|(?P<oku>{_NUMBER})億"
-    rf"(?:(?P<oku_million>{_NUMBER})百万円|円)"
-    rf"|(?P<million>{_NUMBER})百万円"
-    rf"|(?P<thousand>{_NUMBER})千円"
-    rf"|(?P<yen>{_NUMBER})円"
+    rf"(?P<trillion>{_NUMBER})\s*兆"
+    rf"(?:\s*(?P<trillion_oku>{_NUMBER})\s*億)?"
+    rf"(?:\s*(?P<trillion_million>{_NUMBER})\s*百万円|\s*円)"
+    rf"|(?P<oku>{_NUMBER})\s*億"
+    rf"(?:\s*(?P<oku_million>{_NUMBER})\s*百万円|\s*円)"
+    rf"|(?P<million>{_NUMBER})\s*百万円"
+    rf"|(?P<thousand>{_NUMBER})\s*千円"
+    rf"|(?P<yen>{_NUMBER})\s*円"
     rf")"
 )
 _EN_FINANCIAL_RE = re.compile(

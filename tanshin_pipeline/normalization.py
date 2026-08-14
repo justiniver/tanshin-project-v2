@@ -521,7 +521,7 @@ def _derive_numeric_spans(
     analysis: JapaneseAnalysis,
     claim: AnalysisClaim,
     manifest: SelectionManifest,
-    index: PdfTextIndex,
+    index: PdfTextIndex | None,
     changes: list[dict[str, Any]],
 ) -> None:
     evidence_by_id = {item.evidence_id: item for item in analysis.evidence}
@@ -559,7 +559,7 @@ def _derive_numeric_spans(
                 )
             if source is not None:
                 candidates.append((evidence, source))
-        if not candidates and not is_date:
+        if not candidates and not is_date and index is not None:
             bases = [
                 evidence_by_id[evidence_id]
                 for evidence_id in claim.evidence_ids
@@ -599,6 +599,26 @@ def _derive_numeric_spans(
                         }
                     )
                 candidates = [(evidence, source)]
+        if not candidates and not analysis.evidence:
+            target = claim.dates if is_date else claim.figures
+            kind = "date" if is_date else "figure"
+            target.append(
+                SupportedSpan(
+                    value_id=_next_value_id(claim.claim_id, kind, target),
+                    claim_surface_ja=surface,
+                    source_surface_ja=surface,
+                    evidence_id=None,
+                )
+            )
+            changes.append(
+                {
+                    "type": "citation_free_span_added",
+                    "claim_id": claim.claim_id,
+                    "kind": kind,
+                    "surface": surface,
+                }
+            )
+            continue
         if not candidates:
             continue
         target = claim.dates if is_date else claim.figures
@@ -655,6 +675,25 @@ def _derive_qualifiers(
             if source_surface is not None:
                 match = evidence, source_surface
                 break
+        if match is None and not analysis.evidence:
+            claim.qualifiers.append(
+                SupportedSpan(
+                    value_id=_next_value_id(
+                        claim.claim_id, "qualifier", claim.qualifiers
+                    ),
+                    claim_surface_ja=claim_surface,
+                    source_surface_ja=claim_surface,
+                    evidence_id=None,
+                )
+            )
+            changes.append(
+                {
+                    "type": "citation_free_qualifier_span_added",
+                    "claim_id": claim.claim_id,
+                    "claim_surface": claim_surface,
+                }
+            )
+            continue
         if match is None:
             continue
         evidence, source_surface = match
@@ -683,10 +722,15 @@ def _recover_causal_support(
     analysis: JapaneseAnalysis,
     claim: AnalysisClaim,
     manifest: SelectionManifest,
-    index: PdfTextIndex,
+    index: PdfTextIndex | None,
     changes: list[dict[str, Any]],
 ) -> None:
-    if not claim.causal or claim.is_inference:
+    if (
+        not claim.causal
+        or claim.is_inference
+        or index is None
+        or not analysis.evidence
+    ):
         return
     evidence_by_id = {item.evidence_id: item for item in analysis.evidence}
     cited = [
@@ -777,9 +821,14 @@ def normalize_japanese_analysis(
 ) -> NormalizationResult:
     normalized = materialize_japanese_analysis(analysis)
     changes: list[dict[str, Any]] = []
-    index = PdfTextIndex(repository_root, manifest)
+    index = (
+        PdfTextIndex(repository_root, manifest)
+        if normalized.evidence
+        else None
+    )
     try:
-        _repair_evidence_locations(normalized, manifest, index, changes)
+        if index is not None:
+            _repair_evidence_locations(normalized, manifest, index, changes)
         _repair_claim_text(normalized, changes)
         changes.extend(normalize_japanese_financials(normalized, index))
         for claim in normalized.claims:
@@ -817,5 +866,6 @@ def normalize_japanese_analysis(
         )
         changes.extend(consistency_changes)
     finally:
-        index.close()
+        if index is not None:
+            index.close()
     return NormalizationResult(normalized, changes)

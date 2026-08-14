@@ -13,6 +13,7 @@ from .config import (
     DEFAULT_TRANSLATION_MODEL,
     MODEL_PRICES_USD,
     PDF_TOKENS_PER_PAGE,
+    RESEARCH_MAX_OUTPUT_TOKENS,
     TRANSLATION_MAX_OUTPUT_TOKENS,
     USD_TO_JPY_ESTIMATE,
     model_price_for_input_tokens,
@@ -58,6 +59,9 @@ def _stage(
 def estimate_cost(
     manifest: SelectionManifest,
     *,
+    research_system_prompt: str,
+    research_prompt: str,
+    research_response_schema: dict[str, Any],
     analysis_system_prompt: str,
     analysis_prompt: str,
     analysis_response_schema: dict[str, Any],
@@ -69,6 +73,7 @@ def estimate_cost(
     max_api_attempts: int = DEFAULT_MAX_API_ATTEMPTS,
     pdf_tokens_per_page: int = PDF_TOKENS_PER_PAGE,
     pdf_token_assumption: str | None = None,
+    analysis_prompt_includes_source: bool = False,
     translation_prompt_includes_source: bool = False,
 ) -> CostEstimate:
     if analysis_model not in MODEL_PRICES_USD:
@@ -90,6 +95,11 @@ def estimate_cost(
         )
         for item in manifest.selected_files
     )
+    research_schema_text = json.dumps(
+        research_response_schema,
+        ensure_ascii=False,
+        sort_keys=True,
+    )
     analysis_schema_text = json.dumps(
         analysis_response_schema,
         ensure_ascii=False,
@@ -100,20 +110,33 @@ def estimate_cost(
         ensure_ascii=False,
         sort_keys=True,
     )
-    analysis_text = "\n".join(
+    research_text = "\n".join(
         (
-            analysis_system_prompt,
+            research_system_prompt,
             document_metadata,
-            analysis_prompt,
-            analysis_schema_text,
+            research_prompt,
+            research_schema_text,
         )
     )
-    analysis_input = pdf_tokens + estimate_text_tokens(analysis_text)
+    research_input = pdf_tokens + estimate_text_tokens(research_text)
+    analysis_input = (
+        (0 if analysis_prompt_includes_source else RESEARCH_MAX_OUTPUT_TOKENS)
+        + pdf_tokens
+        + estimate_text_tokens(document_metadata)
+        + estimate_text_tokens(analysis_system_prompt)
+        + estimate_text_tokens(analysis_prompt)
+        + estimate_text_tokens(analysis_schema_text)
+    )
     translation_input = (
         (0 if translation_prompt_includes_source else ANALYSIS_MAX_OUTPUT_TOKENS)
         + estimate_text_tokens(translation_system_prompt)
         + estimate_text_tokens(translation_prompt_template)
         + estimate_text_tokens(translation_schema_text)
+    )
+    research = _stage(
+        analysis_model,
+        research_input,
+        RESEARCH_MAX_OUTPUT_TOKENS,
     )
     analysis = _stage(
         analysis_model,
@@ -125,12 +148,17 @@ def estimate_cost(
         translation_input,
         TRANSLATION_MAX_OUTPUT_TOKENS,
     )
-    one_pass = analysis.maximum_stage_cost_usd + translation.maximum_stage_cost_usd
+    one_pass = (
+        research.maximum_stage_cost_usd
+        + analysis.maximum_stage_cost_usd
+        + translation.maximum_stage_cost_usd
+    )
     return CostEstimate(
         currency="USD",
         display_currency="JPY",
         usd_to_jpy_rate=USD_TO_JPY_ESTIMATE,
         pdf_tokens_per_page=pdf_tokens_per_page,
+        research=research,
         analysis=analysis,
         translation=translation,
         maximum_one_pass_cost_usd=round(one_pass, 6),
@@ -157,8 +185,21 @@ def estimate_cost(
                 "selected per-page planning estimate."
             ),
             (
+                "The selected PDFs and their document metadata are included in "
+                "both Japanese requests: research and final analysis."
+            ),
+            (
                 "System instructions, document metadata, prompts, and response "
                 "schemas use a conservative multilingual character-based estimate."
+            ),
+            (
+                "The materialized analysis prompt already contains its research "
+                "dossier, so no separate research-output allowance is added."
+                if analysis_prompt_includes_source
+                else (
+                    "Analysis planning reserves the configured maximum research "
+                    "output because the dossier is not materialized yet."
+                )
             ),
             (
                 "The materialized translation prompt already contains its source "
@@ -169,7 +210,10 @@ def estimate_cost(
                     "output because the source analysis is not materialized yet."
                 )
             ),
-            "Maximum cost assumes both stages consume their configured maximum output.",
+            (
+                "Maximum cost assumes research, analysis, and translation consume "
+                "their configured maximum output."
+            ),
             "No caching, batch, flex, priority, grounding, or free-tier discount is assumed.",
             (
                 "Models with long-context pricing use the higher standard tier "

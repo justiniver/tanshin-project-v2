@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "section": "company.overview",
+      "order": 1,
+      "headline_ja": "商業銀行業務を中心に幅広い金融サービスを提供する三大邦行グループの一角",
+      "body_ja": "株式会社三井住友フィナンシャルグループは、中核となる三井住友銀行をはじめ、SMBC日興証券、三井住友カード、SMBCコンシューマーファイナンスなどを配下に置く総合金融グループである。ホールセール、リテール、グローバル、市場の主要4事業部門を通じて、国内外の法人および個人顧客に対し預貸金業務、決済、有価証券売買・引き受け、資産運用、リース等の複合的な金融サービスを提供し、預貸金利ざや（資金利益）や役務取引等利益（手数料収入）を中心に収益を得るビジネスモデルを構築している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_002",
+      "section": "latest.key_takeaway",
+      "order": 1,
+      "headline_ja": "2027年3月期第1四半期は連結経常利益6,931億円（前年同期比43.4%増）と大幅増益を達成",
+      "body_ja": "当第1四半期の連結業績は、経常収益が2兆8,504億円（前年同期比16.6%増）、経常利益が6,931億円（同43.4%増）、親会社株主に帰属する四半期純利益が5,013億円（同33.0%増）となった。国内における金利水準の上昇に伴う預貸金収益の好調や市場事業部門の業績改善が大幅増益に大きく寄与した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_003",
+      "section": "latest.key_takeaway",
+      "order": 2,
+      "headline_ja": "連結貸出金残高は119.8兆円へ拡大し自己資本比率4.9%と財務基盤を維持",
+      "body_ja": "2027年3月期第1四半期末の連結総資産は327.5兆円（前年度末比約1.0兆円減）となった一方、貸出金残高は119兆7,582億円（同2兆1,290億円増）、預金残高は186兆7,593億円（同1兆8,508億円増）へと着実に拡大した。純資産は16.2兆円（同3,075億円増）、自己資本比率は4.9%を確保し、貸出資産の成長と十分な自己資本水準を両立している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_004",
+      "section": "latest.key_takeaway",
+      "order": 3,
+      "headline_ja": "通期純利益予想1兆7,000億円（前期比7.4%増）および年間配当予想（分割考慮後90円）を据え置き",
+      "body_ja": "2027年3月期通期の親会社株主に帰属する当期純利益予想は1兆7,000億円（前期比7.4%増）を維持した。第1四半期時点で通期予想に対する進捗率は29.5%に達している。年間配当予想についても、2026年10月1日付で予定されている1:2の株式分割考慮後で年間90円（中間45円・期末45円、分割前換算180円）の計画を変更していない。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_005",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "海外景気動向や金利変動、与信費用管理を巡る不確実性への警戒姿勢を維持",
+      "body_ja": "第1四半期業績は極めて堅調に推移したものの、海外における金利動向や地政学リスク、世界的な景気減速懸念に伴う与信関係費用の上振れリスク、さらには保有有価証券の評価損益変動リスクなど、外部環境の急速な変化に対する慎重なリスク管理姿勢が求められている。",
+      "statement_type": "risk",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_006",
+      "section": "latest.business_driver",
+      "order": 1,
+      "headline_ja": "「国内預貸金・金利｜追い風」国内金利の上昇に伴う資金利益の拡大がホールセールおよびリテールを牽引",
+      "body_ja": "当第1四半期の報告セグメント別業務純益において、ホールセール事業部門は2,715億円（前年同期2,193億円）、リテール事業部門は1,209億円（同745億円）へ増加した。日本銀行のイールドカーブコントロール修正や政策金利引き上げを背景に、国内預貸金利ざやが拡大したことが主因である。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_007",
+      "section": "latest.business_driver",
+      "order": 2,
+      "headline_ja": "「市場事業・有価証券運用｜追い風」市場事業部門の業務純益が1,789億円（前年同期比55.7%増）へ急回復",
+      "body_ja": "当第1四半期の市場事業部門の連結業務純益は1,789億円（前年同期は1,149億円）へと大きく伸長した。金利および為替市場のボラティリティ捉えた機動的なポートフォリオ運営やセールス＆トレーディング業務の好調が寄与した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_008",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "「海外・グローバル事業｜逆風・影響混在」グローバル事業部門の業務純益は1,512億円（前年同期比18.1%減）と一服",
+      "body_ja": "当第1四半期のグローバル事業部門の連結業務純益は1,512億円と前年同期の1,847億円から減少した。海外での資金調達コストの高止まりや案件組成タイミングの偏り、ドル建て経費の増加などが響き、前年同期比で増益を維持した国内部門とは対照的な推移となった。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_009",
+      "section": "latest.outlook",
+      "order": 1,
+      "headline_ja": "通期純利益1兆7,000億円達成に向け進捗率29.5%と順調な好スタートを切る",
+      "body_ja": "2027年3月期第1四半期の親会社株主に帰属する四半期純利益（5,013億円）は、通期計画1兆7,000億円に対して29.5%の進捗となった。国内金利の上昇効果が通期を通じて発現する期待がある一方、海外与信費用や市場変動のリスクを勘案し、会社側は期首の業績予想および配当予想を据え置いている。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_010",
+      "section": "latest.risk",
+      "order": 1,
+      "headline_ja": "海外経済の不透明感増大および中東・ウクライナ情勢等に伴う与信関係費用の不確実性",
+      "body_ja": "過年度において、中東情勢や米国の関税政策等に対応したフォワードルッキング引当を計上してきた経緯があり、2026年3月期通期でも与信費用は3,884億円を計上した。今後の世界的な高金利の長期化や地政学リスクの悪化次第では、海外法人向け貸出を中心にクレジットコストが想定を超えて増大するリスクが存在する。",
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_011",
+      "section": "latest.risk",
+      "order": 2,
+      "headline_ja": "内外金利の上昇局面における保有債券等有価証券の評価損拡大リスク",
+      "body_ja": "2026年6月末時点の連結有価証券評価損益はプラス3兆1,748億円を維持しているものの、債券勘定全体では5,876億円の評価損（うち外国債券評価損3,436億円）を抱えている。内外の長期金利が想定を超えて急上昇した場合、保有債券の評価損が拡大し、自己資本や包括利益を圧迫するリスクがある。",
+      "statement_type": "risk",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_012",
+      "section": "latest.context",
+      "order": 1,
+      "headline_ja": "国内金利正常化の好影響を本格享受する局面と海外リスクコントロールの重要性",
+      "body_ja": "当社グループの現在地は、長年続いたマイナス金利環境からの脱却に伴い、国内預貸金利ざやが拡大し最高益水準を更新する強い上昇サイクルの中にある。当第1四半期でも国内ホールセール・リテール事業が主導して大幅増益を達成した。\n\n一方で、海外グローバル事業の収益伸び悩みや、不透明な世界情勢下での予防的与信費用の積み増しなど、リスク管理の重要性は増している。投資家は、国内金利上昇による資金利益の上振れ幅と、海外クレジットコストや市場ボラティリティによる下押し圧との均衡点を注視する必要がある。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_013",
+      "section": "trend.perspective",
+      "order": 1,
+      "headline_ja": "環境変化への適応とバランスシート拡大を通じた最高益更新の10年軌跡",
+      "body_ja": "過去10年間の業績推移を見ると、初期（FY2017-2020）は日銀のマイナス金利導入に伴う国内利ざや縮小やのれん減損（SMBC信託等）、コロナ禍の与信費用増加が重石となり経常利益は7,000億〜1.1兆円程度で停滞していた。中期（FY2021-2023）にかけては、海外ビジネスの拡大や三井住友カード・SMBC日興証券の業績回復、グループ再編により連結業務純益が1.5兆円規模へと回復。直近（FY2024-2026）には、国内金利の復調と法人向け手数料収益の伸び、貸出残高の累積的な拡大（80兆円超から117兆円超へ）が相まって経常利益は2.3兆円超へと飛躍的に拡大した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_014",
+      "section": "trend.consistent",
+      "order": 1,
+      "headline_ja": "グループ一体経営による非資金利益（役務取引等利益）の定着と拡大",
+      "body_ja": "10年間を通じて一貫している強みは、銀行・証券・カード・消費金融を包摂する複合的金融グループとしての顧客基盤と手数料創出力である。リテール部門での資産運用・決済ファイナンスや、ホールセール部門でのソリューション提案により、役務取引等利益はFY2017の1.24兆円規模からFY2026には2.11兆円へと堅調に拡大し、金利環境に依存しない収益基盤としてグループを支え続けている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_015",
+      "section": "trend.change",
+      "order": 1,
+      "headline_ja": "超低金利・マイナス金利による利ざや圧迫から国内資金利益重視の成長構造への転換",
+      "body_ja": "初期（FY2017）の連結貸出金残高は80.2兆円であり、国内利ざや縮小を海外貸出や市場営業で補う局面が長らく続いた。しかし、継続的なオーガニック投資により貸出残高をFY2026末の117.6兆円（FY2027 Q1末には119.8兆円）まで積み上げた結果、国内金利の上昇局面において資金利益の爆発的な増大をもたらす構造へ変化した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_016",
+      "section": "trend.capital_allocation",
+      "order": 1,
+      "headline_ja": "コア金融資産への優先配分と累進的配当・自社株買いを組み合わせた積極的資本還元",
+      "body_ja": "資本配分の優先順位として、連結貸出金および営業運用資産の拡大（約39.5兆円の貸出増）へ資本を優先投入する一方、株主還元方針を強化してきた。年間配当は1株当たり150円（FY2017）から分割前換算で366円（FY2025）、471円相当（FY2026：157円×3）へと増配を継続。さらに700億円（FY2018）、1,000億円（FY2019/2024/2025）、1,800億円（FY2026）の上限で機動的な自己株式取得・消却を実行し、資本効率の向上を図ってきた。",
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_017",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "概ね創出した：拡大した貸出資産と決済・手数料ビジネスへの資本蓄積がROE 10%台への浮上を結実",
+      "body_ja": "過去10年間で追加投入された資本の大部分は、国内外の貸出金残高の積み上げ（80.2兆円から119.8兆円へ拡大）および三井住友カードや海外事業子会社（Fullerton India等）の業容拡大に向かった。低金利環境下にあった初期〜中期は資産増加に対して利益成長が緩やかであり、のれん減損リスクも顕在化したが、直近では金利正常化と法人・決済手数料の伸長が重なり、連結業務純益が2.3兆円規模へと拡大。ROEはFY2021の4.6%からFY2026には10.4%に上昇しており、蓄積された営業資産が高いリターンを生み出す構造が証明された。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_018",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "国内利ざや拡大の持続性と海外与信費用の抑え込みが今後の評価を左右",
+      "body_ja": "投資家が今後検証すべき最重要の関係は、国内金利上昇による預貸金利益の上振れ効果が、海外経済減速に伴う予防的引当や地政学リスクによる与信費用の増加をどの程度上回り続けられるかである。また、拡大したバランスシートと自己資本比率の維持、さらには株式分割を経た継続的な増配・自社株買いの実行力が投資リターンのカギとなる。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_019",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "【戦略の一貫性：3】複合的金融サービス化と資本効率向上に注力した戦略的整合性",
+      "body_ja": "経営陣はマイナス金利下においても一貫して「非資金利益の強化」と「海外・決済ビジネスの拡充」を掲げ、銀行・証券・カード・コンシューマーファイナンスのグループシナジーを追求してきた。金利回復期においてこの戦略が結実し最高益を更新したことから、戦略的一貫性は高く評価できる。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_020",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "【施策の実行力：3】貸出資産のオーガニック成長と機動的な株主還元の完遂",
+      "body_ja": "貸出資産の着実な積み増し（10年間で約39.5兆円増）やFullerton India等の買収・連結化、三井住友カードの決済事業強化を実行した。また、累進的配当方針に基づく増配や複数回にわたる1,000億〜1,800億円規模の自己株式取得・消却、さらには株主層拡大に向けた株式分割を約束通り執行している。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_021",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "【予想・目標達成の規律：2】当初予想に対する慎重なPostureと中期目標の着実な超過達成",
+      "body_ja": "本ドシエ内の決算短信比較サンプル数は不足（insufficient_evidence）しているものの、確認できる範囲では、期首予想を慎重に設定し期中に上方修正する傾向が見られる。FY2024以降は親会社株主純利益で1兆円超を安定して達成し、中期目標を前倒しで達成するなど、目標管理の規律は概ね維持されている。",
+      "statement_type": "mixed",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_022",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "【説明責任と透明性：3】損失・減損の適時開示と予防的リスク管理の説明責任",
+      "body_ja": "過去におけるSMBC信託銀行プレスティア事業や三井住友DSアセットマネジメントののれん減損、米州銀行子会社の事業売却損失の計上について、決算短信上で要因を明確に開示している。また、コロナ禍や米関税政策・中東情勢を踏まえたフォワードルッキング引当の計上理由についても透明性の高い説明を行っている。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    }
+  ],
+  "management_consistency": {
+    "components": [
+      {
+        "dimension": "strategic_coherence",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      },
+      {
+        "dimension": "execution_follow_through",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      },
+      {
+        "dimension": "forecast_target_discipline",
+        "rating": 2,
+        "evidence_sufficiency": "insufficient"
+      },
+      {
+        "dimension": "accountability_transparency",
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
+      }
+    ]
+  },
+  "model_notes": []
+}

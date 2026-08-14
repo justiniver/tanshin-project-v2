@@ -1,813 +1,260 @@
 {
   "schema_version": "1.0",
-  "identity": {
-    "security_code": "4443",
-    "company_name_ja": "Sansan株式会社",
-    "company_name_en": "Sansan, Inc.",
-    "latest_filename": "01_2026_FY_tanshin.pdf",
-    "latest_period_ja": "2026年5月期",
-    "latest_period_en": "FY2026"
-  },
   "claims": [
     {
-      "claim_id": "overview_business_model",
+      "claim_id": "claim_01",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "営業AXサービス「Sansan」や経理AXサービス「Bill One」等を展開するクラウドソリューション企業",
-      "body_ja": "当社グループは、「出会いからイノベーションを生み出す」というミッションのもと、名刺、請求書、契約書などの非定型かつアナログな情報をデータ化し、業務プロセスの効率化やデータ活用を可能とするAX（AIトランスフォーメーション）サービスを提供している。主力の「Sansan／Bill One事業」において営業AXサービス「Sansan」、経理AXサービス「Bill One」、取引管理サービス「Contract One」等を展開するほか、「Eight事業」において名刺アプリ「Eight」を基盤としたサービスを提供し、主に月額固定料金（ストック売上）を中心とした収益モデルを構築している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0009"
-      ],
+      "headline_ja": "会社概要：名刺管理基盤とAI/データ化オペレーションを活用したAXサービスの提供",
+      "body_ja": "Sansan株式会社は、クラウドソフトウエアと人力オペレーションおよびテクノロジーを組み合わせ、名刺や請求書などの非定型・アナログ情報を高精度にデータ化するAX（AIトランスフォーメーション）サービスを提供する企業である。主要サービスとして、法人向け名刺管理市場で85.8%のシェア（2026年5月期時点）を有する「Sansan」、クラウド請求書受領サービスでシェアNo.1の「Bill One」、および個人向け名刺アプリを基盤とする「Eight」を展開している。顧客企業からの月額固定のストック収益を中心とするSaaSビジネスモデルを構築しており、企業の営業強化や経理業務効率化を支援することで継続的な収益を得る構造となっている。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "latest_key_earnings",
+      "claim_id": "claim_02",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年5月期は売上高24.4%増、調整後営業利益137.0%増と大幅な増収増益を達成",
-      "body_ja": "2026年5月期の連結業績は、売上高が前年同期比24.4%増の53,761百万円、調整後営業利益が同137.0%増の8,427百万円、営業利益が同192.3%増の8,185百万円、経常利益が同197.8%増の8,170百万円、親会社株主に帰属する当期純利益が6,778百万円となった。「Sansan」の堅調な拡大と「Bill One」の高速成長に加え、売上高広告宣伝費率や人件費率の低下が大幅な利益率改善に寄与した。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "2026年5月期業績：売上高24.4％増、調整後営業利益137.0％増と収益成長が急加速",
+      "body_ja": "2026年5月期連結業績は、売上高が前年同期比24.4％増の53,761百万円、調整後営業利益が137.0％増の8,427百万円、営業利益が192.3％増の8,185百万円、経常利益が197.8％増の8,170百万円、親会社株主に帰属する当期純利益は6,778百万円と大幅な増収増益を達成した。「Bill One」の高成長と「Sansan」の堅調な拡大に加え、粗利益率の向上や人件費率・広告宣伝費率の低下により利益率が急速に改善した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_key_cashflow",
+      "claim_id": "claim_03",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "営業キャッシュ・フローは9,641百万円を創出し高水準の現金創出力を維持",
-      "body_ja": "2026年5月期の営業活動によるキャッシュ・フローは9,641百万円の収入となり、税金等調整前当期純利益9,375百万円や前受金の増加額4,044百万円が寄与した。期末の現金及び現金同等物残高は前期末比5,676百万円増の36,849百万円となり、十分な手元流動性を確保している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "キャッシュ・フローと財政状態：営業CF 9,641百万円の創出と前受金拡大による財務基盤の強化",
+      "body_ja": "当連結会計年度の営業活動によるキャッシュ・フローは9,641百万円の資金超となり、現金及び現金同等物の期末残高は前期末比5,676百万円増の36,849百万円へと拡大した。SaaSビジネスの契約拡大に伴い、流動負債の前受金が前期末比4,019百万円増の21,489百万円に達したことが営業キャッシュ・フローを強力に下支えしており、自己資本比率も36.4％へと改善した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "latest_key_returns_policy",
+      "claim_id": "claim_04",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "構造的利益成長への移行に伴い配当（初配）の実施および自社株買いを決定",
-      "body_ja": "当社は構造的に利益成長が加速するフェーズにあることを背景に、株主還元として期末配当2.50円/株（初配）および自社株買い（取得総額1,258百万円、811,600株）を実施した。また、2027年5月期から2029年5月期にかけての新中期財務方針を策定し、年平均16%〜20%の売上高成長と2029年5月期における調整後営業利益率25%〜30%を目指している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0007",
-        "01_2026_FY_tanshin.pdf:s0011"
-      ],
-      "statement_type": "mixed",
+      "headline_ja": "資本配分と株主還元：初配の実施と約20億円の自己株式取得による還元姿勢の明確化",
+      "body_ja": "構造的利益成長フェーズへの移行を踏まえ、当期末において1株当たり2.50円（配当金総額315百万円）の初配を実施した。また、総額1,999百万円（1,331,600株）の自己株式買付を完了し、成長投資の継続と並行して資本効率の意識向上と株主還元を本格化させている。",
+      "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "driver_bill_one_growth",
+      "claim_id": "claim_05",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "業績予想と新中期財務方針：売上高16％～20％成長と調整後営業利益率25％～30％を目指す",
+      "body_ja": "2027年5月期から2029年5月期までの中期財務方針を新策定し、3事業年度平均売上高成長率16％～20％、2029年5月期調整後営業利益率25％～30％を目標に掲げた。2027年5月期通期予想としては売上高63,706百万円～65,319百万円（18.5％～21.5％増）、調整後営業利益12,741百万円～14,696百万円（51.2％～74.4％増）を見込み、利益重視の成長継続を目指している。",
+      "statement_type": "forecast",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_06",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "「Bill One」の有料契約件数が31.9%増と伸び牽引役として高成長を維持",
-      "body_ja": "経理AXサービス「Bill One」の売上高は前年同期比39.7%増の13,679百万円、月次固定収入（MRR）は同34.9%増の1,231百万円に達した。営業体制強化等により有料契約件数は前年同期比31.9%増の5,188件へと順調に増加しており、直近12か月平均月次解約率も0.34%と低水準を維持している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0004"
-      ],
+      "headline_ja": "経理AX需要｜追い風：Bill Oneの売上高39.7％増とARR急拡大が全社増益を牽引",
+      "body_ja": "法制度対応需要を一巡した後も経理業務DX・AXの根本的なニーズは強く、「Bill One」の売上高は前年同期比39.7％増の13,679百万円、有料契約件数は31.9％増の5,188件、MRRは34.9％増の1,231百万円（年間換算ARR約147.7億円）へ成長した。解約率も0.34％と極めて低水準を維持しており、Sansan/Bill One事業セグメント全体の調整後営業利益8,340百万円（前年同期比132.9％増）を大きく押し上げた。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "driver_sansan_expansion",
+      "claim_id": "claim_07",
       "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "「Sansan」は中小規模顧客獲得の伸長により契約件数が14.0%増",
-      "body_ja": "営業AXサービス「Sansan」の売上高は前年同期比16.2%増の31,089百万円、ストック売上高は同15.9%増の29,141百万円となった。営業体制の強化により主に中小規模の新規契約獲得が進捗し、契約件数は前年同期比14.0%増の12,199件となった。直近12か月平均月次解約率は0.55%と1%未満を維持している。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "営業AX需要｜追い風：主力のSansan事業におけるストック収益の着実な積み上がり",
+      "body_ja": "「Sansan」売上高は前年同期比16.2％増の31,089百万円となり、うちストック売上高は15.9％増の29,141百万円と安定的基盤を維持している。中小規模を中心とする営業体制強化により契約件数は14.0％増の12,199件へ拡大し、直近12か月平均月次解約率は0.55％と1％未満の低い水準で推移した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "outlook_fy2027_guidance",
+      "claim_id": "claim_08",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "人件費・販促費比率｜追い風：成長投資を継続しつつ売上高比率の低下により営業レバレッジが伸長",
+      "body_ja": "中期的な成長に向けたテレビCMや人件費投入を継続する一方で、売上高の急拡大に伴い売上高人件費率および売上高広告宣伝費率が低下した。売上総利益率が87.9％と前期比1.3pt改善したことと相まって強力な営業レバレッジが働き、全社の調整後営業利益率が15.7％（前期比7.5pt改善）へ跳ね上がった。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": true
+    },
+    {
+      "claim_id": "claim_09",
       "section": "latest.outlook",
       "order": 1,
-      "headline_ja": "2027年5月期は売上高18.5%〜21.5%増、調整後営業利益51.2%〜74.4%増を見込む",
-      "body_ja": "2027年5月期の通期連結業績予想において、売上高は前年同期比18.5%〜21.5%増の63,706〜65,319百万円、調整後営業利益は同51.2%〜74.4%増の12,741〜14,696百万円を見込んでいる。「Sansan」の堅調な成長（10.0%〜12.0%増）や「Bill One」の高成長（28.0%〜32.0%増）を見込み、人件費約12%増、広告宣伝費約8%増に投資を抑えることで調整後営業利益率20.0%〜22.5%への上昇を目指す。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007",
-        "01_2026_FY_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "2027年5月期見通し：Bill One高成長と売上高営業利益率20％超への到達計画",
+      "body_ja": "2027年5月期の連結業績予想において、売上高は前年同期比18.5％～21.5％増、調整後営業利益は51.2％～74.4％増（12,741百万円～14,696百万円）、調整後営業利益率は20.0％～22.5％（前期比4.3pt～6.8pt増）を見込む。「Bill One」が前年同期比28.0％～32.0％増、「Sansan」が10.0％～12.0％増、「Eight事業」が23.0％～27.0％増と全事業で増収を計画し、人件費（約12％増）や広告宣伝費（約8％増）の抑制的コントロールによりさらなる利益率向上を図る。",
       "statement_type": "forecast",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "risk_ai_competition",
+      "claim_id": "claim_10",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "AI機能開発投資の継続に伴う開発遅延および競合激化リスク",
-      "body_ja": "当社は「Sansan」や「Bill One」等においてAIを活用した機能開発を急速に強化している。しかし、AI関連投資が世界的に拡大し競合環境が変化する中、開発の遅延や投資成果の不足、あるいは競合サービスの台頭により差別化が希薄化した場合、契約獲得や解約率に影響を及ぼす不確実性が存在する。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "提携・投資先関連リスク：特別損失計上リスクと子会社株式の売却・編成に伴う非継続的影響",
+      "body_ja": "過去の資本業務提携や子会社買収において、事業環境変化に伴う評価損や特別損失の発生が相次いでいる。2025年5月期にはUnipos社との提携解消・株式譲渡に伴い株式売却契約損失引当金繰入額2,301百万円を特別損失に計上した。2026年5月期にはログミー社の売却（関係会社株式売却益1,436百万円計上）やナインアウト社の完全子会社化（1,412百万円）が行われており、ポートフォリオ再編に伴う一時的損益の発生や減損リスクは投資家が注視すべき要因である。",
       "statement_type": "risk",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "risk_fixed_cost_seasonality",
+      "claim_id": "claim_11",
       "section": "latest.risk",
       "order": 2,
-      "headline_ja": "固定費用増加に伴う下期偏重の利益構造と業績変動不確実性",
-      "body_ja": "2027年5月期は人件費が前年同期比約12%増、広告宣伝費が同約8%増となる見込みである。当社売上高はストック収益が中心であり四半期経過に伴い徐々に積み上がる性質があるため、調整後営業利益の計上は下期偏重となる。上期において受注成長が想定を下回った場合、先行する固定費負担により利益率が押し下げられるリスクがある。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
+      "headline_ja": "解約率・ARPU変動リスク：Sansanにおける小規模顧客増加による単価微減と競合環境",
+      "body_ja": "2026年5月期において「Sansan」の契約件数は14.0％増加したものの、主に中小規模顧客の獲得が進んだ結果、契約当たり月次ストック売上高は前年同期比1.0％減の208千円とわずかに低下した。月次解約率は0.55％と低水準を維持しているものの、顧客層の拡大に伴いARPUの伸び悩みや競合製品との価格・機能競争が起きるリスクが潜在している。",
       "statement_type": "risk",
-      "is_inference": false,
+      "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "latest_context_integration",
+      "claim_id": "claim_12",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "主力事業のスケールメリット発現と収益化・株主還元フェーズへの完全移行",
-      "body_ja": "2026年5月期は、「Sansan」の堅調な顧客基盤拡大と「Bill One」の急速な収益成長が相乗効果を発揮し、売上高拡大と利益率の爆発的な改善が同時に達成された。Eight事業の黒字定着や非主力子会社（ログミー）の譲渡も進み、事業ポートフォリオ全体の収益性が高まっている。今後は新中期財務方針（売上高CAGR 16%〜20%、調整後営業利益率 25%〜30%）の初年度となる2027年5月期において、ストック売上の積上と固定費効率化が計画通り進展するかどうかが投資判断の焦点となる。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0006",
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
+      "headline_ja": "最新決算の位置づけ：先行投資型SaaSから高い現金創出力を伴う収益刈り取りフェーズへの転換",
+      "body_ja": "2026年5月期決算は、長年続いてきた広告宣伝や人員採用への先行投資期を経て、ストック収益の拡大に伴い営業利益率とキャッシュ創出力が構造的に飛躍する転換点を示している。調整後営業利益率は8.2％から15.7％へ急上昇し、営業キャッシュ・フローも96億円規模を創出しており、初配の実施および20億円規模の自社株買いにより株主還元が開始された。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_perspective_decade",
+      "claim_id": "claim_13",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "投資先行による赤字・低利益率構造からストック収益蓄積に伴う高収益・還元フェーズへの進化",
-      "body_ja": "過去10年近くの軌跡において、当社は初期（2019〜2021年期）の人材採用・広告宣伝への積極的な先行投資による赤字・低利益率フェーズから、中期（2022〜2024年期）における「Bill One」の立ち上げとマルチプロダクト構造への移行、そして直近（2025〜2026年期）の調整後営業利益率の上昇（2026年5月期15.7%）と初配実施へと進化してきた。解約率1%未満を維持する「Sansan」の顧客基盤を土台に、「Bill One」が第二の柱として急成長したことで、固定費の吸収が進み限界利益率の高さが全社利益の拡大へ直結する構造転換を遂げている。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0001",
-        "07_2020_FY_tanshin.pdf:s0001",
-        "06_2021_FY_tanshin.pdf:s0003",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0004",
-        "03_2024_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
+      "headline_ja": "10年間を通じた見方：Sansanによる基盤構築、Bill Oneの急成長、Eightの黒字化による高収益化モデルの完成",
+      "body_ja": "2019年5月期から2026年5月期に至る7年間の軌跡は、赤字を伴う先行投資期からSaaS事業の複層化と構造的黒字化への移行を表している。初期（2019-2021期）は主力の「Sansan」における名刺管理データベース基盤の拡大と上場による資本補強を進めたものの、Eight等の赤字や販促費投入により利益水準は低位に止まっていた。中期（2022-2024期）には「Bill One」を立ち上げて新たな成長柱に育て上げ、Eightの構造改革（2024年5月期通期黒字化）と調整後営業利益指標の導入により収益管理を強化した。直近（2025-2026期）では「Bill One」のARR100億円突破（2025年5月期末109.6億円、2026年5月期末147.7億円規模）と全社的な営業レバレッジの発現により、調整後営業利益が17億円から84億円超へと劇的に拡大した。事業ポートフォリオの多角化とストック収益の蓄積が、持続的なキャッシュ創出と資本還元能力を実証している。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
     },
     {
-      "claim_id": "trend_consistent_low_churn",
+      "claim_id": "claim_14",
       "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "「Sansan」における1%未満の低解約率維持と高精度なストック積上能力の継続",
-      "body_ja": "当社は初期（2019年5月期解約率0.66%、2020年5月期0.60%）、中期（2022年5月期0.62%、2023年5月期0.44%）、直近（2025年5月期0.49%、2026年5月期0.55%）を通じ、一貫して月次平均解約率を1%未満の極めて低い水準に維持し続けている。コロナ禍等の外部環境変動期においても強力な顧客基盤を背景にチャーンを防ぎ、ストック売上を高精度で積み上げるビジネスモデルの強みが継続している。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0002",
-        "07_2020_FY_tanshin.pdf:s0002",
-        "06_2021_FY_tanshin.pdf:s0002",
-        "05_2022_FY_tanshin.pdf:s0002",
-        "04_2023_FY_tanshin.pdf:s0002",
-        "03_2024_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "変わらなかったこと：名刺・証憑データ化のコア技術とストック型SaaSモデルによる顧客基盤の積み上げ",
+      "body_ja": "初期から直近に至るまで貫かれた強みは、クラウドソフトウエアと人力・AI技術を組み合わせたアナログ情報の高精度データ化技術と、月額課金（ストック）による顧客基盤の積み上げである。「Sansan」の解約率は一貫して1％未満（0.44％～0.66％程度）の極めて低い水準を維持しており、顧客離脱を防ぎながら契約件数を5,823件（2019年5月期）から12,199件（2026年5月期）へと着実に拡大させた。この強靭なストック収益基盤が、新規事業投資や市場変動に対する緩衝材として機能し続けている。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_consistent_growth_investment",
-      "section": "trend.consistent",
-      "order": 2,
-      "headline_ja": "中長期的な売上高成長の最大化を最優先とした機動的投資スタンスの一貫性",
-      "body_ja": "当社は初期（2019年5月期・2021年5月期）より「利益最大化ではなく中長期的な売上高成長を重視」と明確に掲げ、中期（2022年5月期・2023年5月期）においても人員採用やTVCM等の広告宣伝を機動的に投入してきた。直近（2025年5月期・2026年5月期）では収益化が進んだものの、投資を緩めることなく売上高拡大のための営業体制強化やAI機能開発投資を継続する姿勢が一貫している。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0001",
-        "06_2021_FY_tanshin.pdf:s0003",
-        "05_2022_FY_tanshin.pdf:s0004",
-        "04_2023_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
-      "statement_type": "actual",
-      "is_inference": false,
-      "causal": true
-    },
-    {
-      "claim_id": "trend_change_bill_one",
+      "claim_id": "claim_15",
       "section": "trend.change",
       "order": 1,
-      "headline_ja": "単一プロダクト依存から「Bill One」を第二の成長柱とするマルチプロダクト構造への変化",
-      "body_ja": "変化前（2019年5月期）は「Sansan」と「Eight」の2事業体制でありBill Oneは存在していなかった。移行期（2021年5月期にBill Oneサービス開始、2022年5月期に売上高826百万円、セグメント名を「Sansan／Bill One事業」へ変更）を経て、現在（2026年5月期）にはBill One単体の売上高が13,679百万円（全社売上高の約25%）、有料契約件数5,188件へと急速に拡大した。単一のクラウド名刺管理サービス依存から脱却し、複合型SaaSプラットフォームへと質的転換を果たした。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0004",
-        "06_2021_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0005",
-        "01_2026_FY_tanshin.pdf:s0004"
-      ],
+      "headline_ja": "変化したこと（事業構造）：単一プロダクト依存から「Bill One」を第二の柱とする複層的収益構造への発展",
+      "body_ja": "2019年5月期時点では全社売上高の94％以上を「Sansan事業」に依存していたが、2020年5月期以降に「Bill One」を育成・展開した結果、同事業の売上高は826百万円（2022年5月期）から13,679百万円（2026年5月期）へと爆発的に増加した。単一の名刺管理サービス企業から、営業DX・経理DXを網羅する総合的なBtoB SaaS企業へと事業構造の完全な転換を果たした。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_change_eight_profitability",
+      "claim_id": "claim_16",
       "section": "trend.change",
       "order": 2,
-      "headline_ja": "Eight事業における先行投資・赤字構造から収益化・黒字定着構造への転換",
-      "body_ja": "変化前（2019年5月期セグメント損失1,212百万円、2020年5月期894百万円）は個人向け名刺アプリ基盤のユーザー拡大を優先した先行投資により大幅な赤字が続いていた。移行期（2022年5月期損失386百万円、2023年5月期損失170百万円）にBtoBイベントや企業向けマネタイズへ重点をシフトし、現在（2024年5月期314百万円の黒字化達成、2026年5月期237百万円の調整後営業利益）は安定した黒字構造を確立している。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0001",
-        "07_2020_FY_tanshin.pdf:s0003",
-        "05_2022_FY_tanshin.pdf:s0003",
-        "04_2023_FY_tanshin.pdf:s0003",
-        "03_2024_FY_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0006"
-      ],
+      "headline_ja": "変化したこと（経営規律と収益管理）：売上高成長最優先から調整後営業利益率重視と資本還元へのシフト",
+      "body_ja": "上場直後は利益を犠牲にした売上高年率30％超の拡大とTVCM等の積極投資に注力していたが、2023年5月期に「調整後営業利益」を主要指標として導入して以降、売上高成長と利益率向上の両立へ舵を切った。Eight事業の収益化徹底や人件費・広告宣伝費の売上高比率の抑制管理により利益率を急速に向上させ、2026年5月期には初配と自己株式取得に踏み切るなど資本配分の優先順位が変化した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_capital_allocation_shift",
+      "claim_id": "claim_17",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "成長投資優先の無配・資金調達スタンスから構造的利益成長に伴う初配・自社株買いへの転換",
-      "body_ja": "初期から中期（2019年5月期の上場・増資、2020年5月期の有価証券取得・借入活用、無配継続）にかけては、獲得資金の全額を事業拡大やM&A・出資に投じる配当無配の成長投資優先スタンスをとっていた。しかし、直近（2026年5月期）では収益性が高まり利益成長が構造的フェーズに達したと判断し、1株当たり2.50円の初配および1,258百万円の自己株式取得を実施し、成長投資と株主還元を両立させる資本配分へと大きく舵を切った。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0003",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "03_2024_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0003",
-        "01_2026_FY_tanshin.pdf:s0011"
-      ],
+      "headline_ja": "資本配分の変化：無配・成長投資集中から事業成果の刈り取りと株主還元の両立への移行",
+      "body_ja": "創業期から中期にかけては調達資金および営業キャッシュ・フローのほぼ全てを「Sansan」「Bill One」の人員採用・開発・TVCM等のマーケティング投資や、ウイングアーク１ｓｔ株式取得等の外部投資に配分していた。しかし、「Bill One」の自立的キャッシュ創出とEightの黒字定着に伴い、2026年5月期からは配当（315百万円）と自己株式取得（約20億円）を開始し、手元現金368億円を確保しつつ成長投資と株主還元を調和させるステージへ移行した。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": true
     },
     {
-      "claim_id": "trend_implication_future_check",
-      "section": "trend.implication",
+      "claim_id": "claim_18",
+      "section": "trend.capital_value_creation",
       "order": 1,
-      "headline_ja": "新中期財務方針（利益率25%〜30%）の達成精度とストック積上の持続性検証",
-      "body_ja": "当社が掲げる新中期財務方針（2027年5月期〜2029年5月期）では、売上高年平均16%〜20%成長と2029年5月期の調整後営業利益率25%〜30%の達成を掲げている。「Sansan」および「Bill One」の低解約率を維持しつつ顧客当たりのストック売上を積み上げること、ならびに人件費や広告宣伝費の投資効率を維持して限界利益率を下振れさせないことが、利益率目標達成と株主還元の持続性を見極める主要な投資判断軸となる。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0005",
-        "01_2026_FY_tanshin.pdf:s0007"
-      ],
+      "headline_ja": "資本配分は価値を創出したか：概ね創出した。Bill OneおよびSansanへの有機的投資が高い収益性を結実",
+      "body_ja": "概ね創出した。過去7年間における追加資本および費用投下の大部分は、主力の「Sansan事業」の機能強化と新規育成事業「Bill One」の人員・マーケティングに集中配分された。「Bill One」は数年間で売上高136億円超、ARR147億円超の事業へと急成長し、Sansan/Bill One事業セグメントの調整後営業利益を8,340百万円まで押し上げる原動力となった。また長期にわたり赤字が続いた「Eight事業」についてもBtoBマネタイズの強化とコスト効率化により2024年5月期に黒字化を達成した。一方で、Unipos（旧Fringe81）との資本業務提携においては株式売却契約損失引当金繰入額2,301百万円（2025年5月期）の特別損失を計上するなど非事業核心の出資・提携で一部資本の毀損が見られたものの、全社として主要投資先（Bill One・Sansan）への集中配分が飛躍的な営業キャッシュ・フロー（2026年5月期9,641百万円）と高い利益率をもたらしており、全体として資本配分は企業価値創出に大きく貢献したと評価できる。",
       "statement_type": "inference",
       "is_inference": true,
       "causal": true
-    }
-  ],
-  "evidence": [
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "売上高 53,761 24.4 調整後営業利益 8,427 137.0 営業利益 8,185 192.3 経常利益 8,170 197.8 親会社株主に帰属する当期純利益 6,778 －",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "連結経営成績",
-      "tags": []
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "営業活動によるキャッシュ・フロー 9,641 現金及び現金同等物期末残高 36,849",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "連結キャッシュ・フローの状況",
-      "tags": []
+      "claim_id": "claim_19",
+      "section": "trend.implication",
+      "order": 1,
+      "headline_ja": "今後確認すべき最重要な関係：売上高成長率20％前後の維持と調整後営業利益率30％目標に向けた規律の継続",
+      "body_ja": "投資家が今後確認すべき判断軸は、「Bill One」の成長ペース鈍化（法制度需要一巡後）を新機能追加やARPU向上でどこまでカバーできるか、および人件費・広告宣伝費の統制を維持しながら新中期財務方針の目標（2029年5月期調整後営業利益率25％～30％）へ着実に近づけるかである。M&Aや子会社再編における減損リスクを抑えつつ、創出された営業キャッシュ・フローが更なる成長投資と株主還元増額の双方へ持続的に循環するかを見極める必要がある。",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当社は構造的に利益成長が加速するフェーズにあることを背景に、株主の皆さまに対する利益還元として、自己株式の取得及び当連結会計年度末における配当（初配）の実施を決定しました。",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": [
-        "management_discussion"
-      ]
+      "claim_id": "claim_20",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "戦略の論理的整合性：名刺基盤から経理DXへの拡張と調整後営業利益重視への移行による高い戦略的一貫性",
+      "body_ja": "名刺データベースを核とする「Sansan」の固い基盤の上に、請求書受領という隣接領域の「Bill One」を構築してシナジーを発揮させた戦略は極めて合理的である。また、初期の売上高成長最優先から中期目標として「売上高成長と利益成長の両立」および「調整後営業利益」を明確に提示し、実際に利益率を向上させていく戦略的展開は論理的整合性に優れている。（評価：4/4 - Highly Consistent）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0004",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "「Bill One」 売上高 13,679 ＋39.7％ MRR 1,231 ＋34.9％ 有料契約件数 5,188件 ＋31.9％ 有料契約当たり月次ストック売上高 237千円 ＋2.2％ 直近12か月平均月次解約率 0.34％ ＋0.01pt",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "セグメント別の業績",
-      "tags": [
-        "management_discussion"
-      ]
+      "claim_id": "claim_21",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "施策の実行とフォロー：Bill Oneの急拡大とEight黒字化の実現に見る高い実行能力",
+      "body_ja": "2021年5月期末に契約件数239件であった「Bill One」を、目標通り大幅に拡大させ2022年5月期末ARR14億円超、2026年5月期末売上高136億円超のNo.1プロダクトへと育て上げた実行力は極めて高い。さらに長期赤字であった「Eight事業」についても収益性重視方針への転換後、公約通り2024年5月期に通期黒字化を達成し黒字を維持している。（評価：4/4 - Highly Consistent）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0005",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "「Sansan」 売上高 31,089 ＋16.2％ 「Sansan」ストック 29,141 ＋15.9％ 契約件数 12,199件 ＋14.0％ 直近12か月平均月次解約率 0.55％ ＋0.06pt",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "セグメント別の業績",
-      "tags": [
-        "management_discussion"
-      ]
+      "claim_id": "claim_22",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "業績予想の規律：レンジ開示の採用と中期目標の達成状況、過去の未達実績の検証",
+      "body_ja": "観測された2020年5月期通期予想（当初経常利益670百万円に対し実績435百万円、オフィス解約損等の影響により約35％下振れ）では未達がみられた。その後、不確実性を考慮してレンジ開示を採用し、2025年5月期および2026年5月期においては掲げた調整後営業利益目標や売上高目標をレンジ内で着実に達成している。中長期計画に対するコミットメントとレンジ運用の規律は概ね維持されている。（評価：3/4 - Generally Consistent）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     },
     {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0006",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "Eight事業 売上高 6,720 ＋33.0％ 調整後営業利益 237 ＋273.2％",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "Eight事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0007",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 10,
-      "exact_quote_ja": "2027年5月期から2029年5月期にかけての中期財務方針を新たに策定し、売上高と調整後営業利益の成長の両立を掲げています。最も重要な経営指標である売上高については、3事業年度の年平均成長率の方針を16％～20％としています。また、調整後営業利益については、各事業の売上高成長に向けた投資を行いながらも成長を継続させ、2029年5月期における利益率の方針は25％～30％としています。",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0008",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 2,
-      "exact_quote_ja": "2027年5月期の連結業績予想 売上高 63,706～65,319 18.5～21.5 調整後営業利益 12,741～14,696 51.2～74.4",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "forecast",
-      "source_section": "連結業績予想",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0009",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 20,
-      "exact_quote_ja": "したがって、当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan／Bill One事業」「Eight事業」の2つを報告セグメントとしています。",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "報告セグメントの概要",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0010",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 9,
-      "exact_quote_ja": "営業活動の結果得られた資金は9,641百万円(前連結会計年度は9,651百万円の収入)となりました。主な資金増加要因は、税金等調整前当期純利益の計上9,375百万円、前受金の増加額4,044百万円",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "キャッシュ・フローの概況",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "01_2026_FY_tanshin.pdf:s0011",
-      "source_filename": "01_2026_FY_tanshin.pdf",
-      "pdf_page": 26,
-      "exact_quote_ja": "取得した株式の総数 811,600株 株式の取得価額の総額 1,258百万円 取得期間 2026年6月1日から2026年6月18日まで",
-      "period_label_ja": "2026年5月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0001",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当連結会計年度における売上高は10,206,014千円（前年同期比39.3％増）...一方、営業損益以下の段階損益においては、現在は成長の実現に向けた先行的な投資を行っているフェーズであることからそれぞれ損失を計上しており",
-      "period_label_ja": "2019年5月期",
-      "period_label_en": "FY2019",
-      "statement_type": "actual",
-      "source_section": "当期の経営成績の概況",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0002",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "直近12か月平均の月次解約率は0.66％（前年同期比0.1ポイント減）となりました。",
-      "period_label_ja": "2019年5月期",
-      "period_label_en": "FY2019",
-      "statement_type": "actual",
-      "source_section": "Sansan事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0003",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 1,
-      "exact_quote_ja": "2019年5月期 期末 0.00円 合計 0.00円",
-      "period_label_ja": "2019年5月期",
-      "period_label_en": "FY2019",
-      "statement_type": "actual",
-      "source_section": "配当の状況",
-      "tags": []
-    },
-    {
-      "evidence_id": "08_2019_FY_tanshin.pdf:s0004",
-      "source_filename": "08_2019_FY_tanshin.pdf",
-      "pdf_page": 15,
-      "exact_quote_ja": "当社グループは事業部または会社を基礎としたサービス別のセグメントから構成されており、「Sansan事業」、「Eight事業」の2つを報告セグメントとしています。",
-      "period_label_ja": "2019年5月期",
-      "period_label_en": "FY2019",
-      "statement_type": "actual",
-      "source_section": "報告セグメントの概要",
-      "tags": []
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0001",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "現在は中長期的な株主価値及び企業価値の最大化に向けて、積極的な投資を実行しているフェーズではあるものの、売上高の順調な成長を受け、営業利益は757,266千円（前年同期は営業損失△849,739千円）となり、黒字化しました。",
-      "period_label_ja": "2020年5月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "経営成績の概況",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0002",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "直近12か月平均の月次解約率は前年同期比0.08ポイント減の0.60％に改善しました。",
-      "period_label_ja": "2020年5月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "Sansan事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "07_2020_FY_tanshin.pdf:s0003",
-      "source_filename": "07_2020_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "セグメント損益については、現在は将来の収益化に向けた先行的な投資を行っているフェーズであることから、セグメント損失894,281千円（前年同期はセグメント損失1,212,980千円）を計上しました。",
-      "period_label_ja": "2020年5月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "Eight事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0001",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "「Bill One」の成長実現に向け、営業体制の強化やテレビCMを中心とした広告宣伝活動等を行った結果、当連結会計年度末における契約件数は239件となり",
-      "period_label_ja": "2021年5月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0002",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "直近12か月平均の月次解約率は...0.63％（前年同期比0.03ポイント増）となり、コロナ禍においても1％以下の低水準を維持しました。",
-      "period_label_ja": "2021年5月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "Sansan事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "06_2021_FY_tanshin.pdf:s0003",
-      "source_filename": "06_2021_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "当社グループが手掛けるサービスの多くは、新しい市場を創りながら急成長をしているものが多く、現時点においては利益の最大化ではなく、中長期的な売上高の成長を重視しています。",
-      "period_label_ja": "2021年5月期",
-      "period_label_en": "FY2021",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0001",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "「Bill One」売上高は前年同期比878.1％増となりました。また、2022年5月におけるMRRは前年同期比479.7％増、ARRは1,407百万円となり、目標としていたARR10億円を大幅に上回りました。",
-      "period_label_ja": "2022年5月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "Bill One",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0002",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "直近12か月平均の月次解約率は...前年同期比0.01ポイント減の0.62％となり、低水準を維持しました。",
-      "period_label_ja": "2022年5月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "Sansan",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0003",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "Eight事業の売上高は前年同期比39.9％増、セグメント損失は前年同期と比較して367百万円縮小しました。",
-      "period_label_ja": "2022年5月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "Eight事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0004",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "各事業の売上高成長に向けた必要な投資を行いながらも、毎決算期における調整後営業利益率の向上を目指します。",
-      "period_label_ja": "2022年5月期",
-      "period_label_en": "FY2022",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "05_2022_FY_tanshin.pdf:s0005",
-      "source_filename": "05_2022_FY_tanshin.pdf",
-      "pdf_page": 20,
-      "exact_quote_ja": "従来の「Sansan事業」について、「Sansan」及び「Bill One」を含む複数プロダクトを含めた事業として「Sansan／Bill One事業」に変更しています。",
-      "period_label_ja": "2022年5月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "報告セグメントの変更等に関する事項",
-      "tags": []
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0001",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "従来、営業利益を表示していましたが、第1四半期連結会計期間より経営上重視する業績評価指標を当社の株価水準に応じて大きく変動する可能性のある株式報酬関連費用や企業結合に伴い生じる費用を控除した恒常的な企業の収益力を表す指標に変更しました。",
-      "period_label_ja": "2023年5月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0002",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "直近12か月平均月次解約率は、0.44％（前年同期比0.18ポイント減）となり、1％未満の低水準を維持しました。",
-      "period_label_ja": "2023年5月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "Sansan",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0003",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "Eight事業の売上高は前年同期比29.5％増、調整後営業損失は前年同期と比較して185百万円縮小しました。",
-      "period_label_ja": "2023年5月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "Eight事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "04_2023_FY_tanshin.pdf:s0004",
-      "source_filename": "04_2023_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "調整後営業利益は、成長に向けた投資の実行によって販売費及び一般管理費が増加する見込みではあるものの、売上高の堅調な成長により前年同期比31.7％増から96.6％増",
-      "period_label_ja": "2023年5月期",
-      "period_label_en": "FY2023",
-      "statement_type": "forecast",
-      "source_section": "今後の見通し",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0001",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "直近12か月平均月次解約率は0.42％（前年同期比0.02ポイント減）となり、1％未満の低水準を維持しました。",
-      "period_label_ja": "2024年5月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "Sansan",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0002",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "調整後営業利益は、売上高の増加に加え、収益性を重視した事業運営に注力した結果、314百万円（前年同期は170百万円の損失）となり、通期での黒字化を実現しました。",
-      "period_label_ja": "2024年5月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "Eight事業",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0003",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 8,
-      "exact_quote_ja": "2025年5月期から2027年5月期にかけては、新たに中期財務方針を掲げ、売上高の堅調な成長継続と調整後営業利益の成長加速を目指します。",
-      "period_label_ja": "2024年5月期",
-      "period_label_en": "FY2024",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "03_2024_FY_tanshin.pdf:s0004",
-      "source_filename": "03_2024_FY_tanshin.pdf",
-      "pdf_page": 25,
-      "exact_quote_ja": "2024年7月11日開催の取締役会において...自己株式取得に係る事項を決議いたしました。...株式の取得価額の総額 300百万円（上限）",
-      "period_label_ja": "2024年5月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "自己株式の取得",
-      "tags": []
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0001",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "親会社株主に帰属する当期純利益は...株式売却契約損失引当金繰入額2,301百万円を特別損失に計上したことにより、前年同期比55.5％減となりました。",
-      "period_label_ja": "2025年5月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する説明",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0002",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "直近12か月平均月次解約率は0.49％（前年同期比0.07ポイント増）となり、1％未満の低水準を維持しました。",
-      "period_label_ja": "2025年5月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "Sansan",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0003",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "「Bill One」の2025年5月におけるARRは10,962百万円となり、売上高は前年同期比58.7％増となりました。",
-      "period_label_ja": "2025年5月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "Bill One",
-      "tags": [
-        "management_discussion"
-      ]
-    },
-    {
-      "evidence_id": "02_2025_FY_tanshin.pdf:s0004",
-      "source_filename": "02_2025_FY_tanshin.pdf",
-      "pdf_page": 21,
-      "exact_quote_ja": "各報告セグメントのより適正な業績評価のため、当連結会計年度より、全社費用を各報告セグメントに合理的な基準に基づき配分しています。",
-      "period_label_ja": "2025年5月期",
-      "period_label_en": "FY2025",
-      "statement_type": "actual",
-      "source_section": "報告セグメントの変更等に関する事項",
-      "tags": []
+      "claim_id": "claim_23",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "説明責任と透明性：調整後指標導入の合理性と特別損失・提携解消時における開示の適切性",
+      "body_ja": "2023年5月期からの「調整後営業利益」の導入に際し、信託型ストックオプション費用等の非恒常的・株価連動要因の影響を明確にし、過去数値も遡及修正して説明責任を果たした。また、Unipos社との提携解消・特別損失計上（2,301百万円）やログミー社の譲渡に関しても理由と財務的影響をタイムリーに開示しており、結果に対する透明性は十分に確保されている。（評価：3/4 - Generally Consistent）",
+      "statement_type": "inference",
+      "is_inference": true,
+      "causal": true
     }
   ],
   "management_consistency": {
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "「Sansan」での強固なストック基盤の構築から「Bill One」の立ち上げによるマルチプロダクト化、そして各事業のマネタイズ強化まで、一貫した戦略ロジックのもとで事業を展開している。中長期的な売上成長の最大化から構造的利益成長への移行方針も一貫している。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0001",
-          "06_2021_FY_tanshin.pdf:s0003",
-          "05_2022_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0003"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
-        "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "新規プロダクト「Bill One」を数年でARR100億円超（2025年5月期）の第二の柱へ育成させたほか、赤字が続いていたEight事業を通期黒字化（2024年5月期）させ黒字を定着させるなど、公表した取り組みを有言実行している。",
-        "evidence_ids": [
-          "06_2021_FY_tanshin.pdf:s0001",
-          "05_2022_FY_tanshin.pdf:s0001",
-          "03_2024_FY_tanshin.pdf:s0002",
-          "01_2026_FY_tanshin.pdf:s0006"
-        ]
+        "rating": 4,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
-        "rating": 2,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "通期売上高予想（レンジ形式）は概ね達成されてきたものの、先行投資のタイミングや投資有価証券関連の特別損失・引当金計上（2025年5月期のUnipos株関連で2,301百万円の引当金繰入等）により当期純利益が乱高下する期があり、段階損益のコントロールには一部ボラティリティが見られる。",
-        "evidence_ids": [
-          "08_2019_FY_tanshin.pdf:s0001",
-          "05_2022_FY_tanshin.pdf:s0004",
-          "02_2025_FY_tanshin.pdf:s0001",
-          "01_2026_FY_tanshin.pdf:s0001"
-        ]
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "株式報酬費用の影響を除いた「調整後営業利益」への業績評価指標変更や、全社費用のセグメント配賦変更、MRR計算方法の見直し等の経緯をわかりやすく開示している。また、オフィス解約費用や特別損失が発生した際も要因を明確に説明している。",
-        "evidence_ids": [
-          "04_2023_FY_tanshin.pdf:s0001",
-          "02_2025_FY_tanshin.pdf:s0004",
-          "01_2026_FY_tanshin.pdf:s0003"
-        ]
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "当社は中長期的な売上成長の最大化を目指す基本方針を一貫して維持し、「Bill One」の垂直立ち上げやEight事業の黒字化など主要な戦略目標を着実に実行してきた。調整後営業利益等の管理指標の明確化や配賦・算出方法の変更開示など透明性も高い。一方、成長投資の集中的実施や持分法・投資有価証券関連の特損計上等により当期純利益のボラティリティが大きくなる局面があり、通期最終損益の安定性においては一部課題を残している。"
+    ]
   },
   "model_notes": []
 }

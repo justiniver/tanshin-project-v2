@@ -2,20 +2,19 @@
   "scores_0_to_5": {
     "structure": 5.0,
     "section_coverage": 5.0,
-    "executive_breadth": 3.75,
-    "analytical_depth": 2.91,
+    "executive_breadth": 5.0,
+    "analytical_depth": 3.2,
     "trend_specificity": 3.56,
-    "evidence_density": 0.38,
-    "tone": 4.4,
-    "repetition": 4.64,
+    "tone": 3.2,
+    "repetition": 5.0,
     "readability": 3.5,
-    "approximate_length": 4.83
+    "approximate_length": 4.87
   },
-  "overall_score_0_to_5": 3.8,
+  "overall_score_0_to_5": 4.26,
   "generated_metrics": {
-    "main_characters": 6202,
-    "trend_narrative_characters": 1896,
-    "trend_perspective_narrative_characters": 275,
+    "main_characters": 6737,
+    "trend_narrative_characters": 3774,
+    "trend_perspective_narrative_characters": 428,
     "headings": [
       "# Sansan株式会社（4443）",
       "## 企業概要",
@@ -30,11 +29,12 @@
       "### 変わらなかったこと",
       "### 変化したこと",
       "### 資本配分の変化",
+      "### 資本配分は価値を創出したか",
       "### 最新コメントから読み取れる現在地"
     ],
-    "citation_groups": 17,
-    "citation_references": 85,
-    "citation_references_per_1000_chars": 13.705,
+    "citation_groups": 0,
+    "citation_references": 0,
+    "citation_references_per_1000_chars": 0.0,
     "unique_years": [
       2019,
       2020,
@@ -51,20 +51,21 @@
     ],
     "year_span": 7,
     "bold_analytical_themes": 7,
-    "contrast_terms": 4,
-    "sentence_count": 55,
-    "average_sentence_characters": 73.53,
+    "contrast_terms": 8,
+    "sentence_count": 83,
+    "average_sentence_characters": 70.61,
     "long_sentence_count": 6,
-    "repeated_sentence_count": 1,
+    "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
-    "promotional_terms": 1,
+    "promotional_terms": 3,
     "first_person_terms": 0,
     "key_takeaway_categories": [
       "earnings_profitability",
       "cash_flow_balance_sheet",
+      "outlook_targets",
       "capital_allocation"
     ],
-    "key_takeaway_category_count": 3,
+    "key_takeaway_category_count": 4,
     "middle_period_years": [
       2020,
       2021,
@@ -81,6 +82,6 @@
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

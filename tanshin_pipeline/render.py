@@ -2,13 +2,11 @@
 
 from __future__ import annotations
 
-import re
 from collections import defaultdict
 from typing import Iterable
 
 from .schemas import (
     EnglishTranslation,
-    EvidenceRecord,
     JapaneseAnalysis,
     ManagementConsistencyAssessment,
     ManagementConsistencyDimension,
@@ -27,6 +25,7 @@ JA_HEADINGS = {
     SectionKey.TREND_CONSISTENT: "### 変わらなかったこと",
     SectionKey.TREND_CHANGE: "### 変化したこと",
     SectionKey.TREND_CAPITAL_ALLOCATION: "### 資本配分の変化",
+    SectionKey.TREND_CAPITAL_VALUE_CREATION: "### 資本配分は価値を創出したか",
     SectionKey.TREND_IMPLICATION: "### 最新コメントから読み取れる現在地",
 }
 EN_HEADINGS = {
@@ -39,6 +38,7 @@ EN_HEADINGS = {
     SectionKey.TREND_CONSISTENT: "### What remained consistent",
     SectionKey.TREND_CHANGE: "### What materially changed",
     SectionKey.TREND_CAPITAL_ALLOCATION: "### Capital-allocation developments",
+    SectionKey.TREND_CAPITAL_VALUE_CREATION: "### Did capital allocation create value?",
     SectionKey.TREND_IMPLICATION: "### What the latest commentary now implies",
 }
 LATEST_SECTION_ORDER = (
@@ -53,7 +53,26 @@ TREND_SECTION_ORDER = (
     SectionKey.TREND_CONSISTENT,
     SectionKey.TREND_CHANGE,
     SectionKey.TREND_CAPITAL_ALLOCATION,
+    SectionKey.TREND_CAPITAL_VALUE_CREATION,
     SectionKey.TREND_IMPLICATION,
+)
+MANAGEMENT_SECTION_ORDER = (
+    (
+        SectionKey.MANAGEMENT_STRATEGY,
+        ManagementConsistencyDimension.STRATEGIC_COHERENCE,
+    ),
+    (
+        SectionKey.MANAGEMENT_EXECUTION,
+        ManagementConsistencyDimension.EXECUTION_FOLLOW_THROUGH,
+    ),
+    (
+        SectionKey.MANAGEMENT_FORECAST_DISCIPLINE,
+        ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE,
+    ),
+    (
+        SectionKey.MANAGEMENT_ACCOUNTABILITY,
+        ManagementConsistencyDimension.ACCOUNTABILITY_TRANSPARENCY,
+    ),
 )
 
 _JA_CONSISTENCY_NOTE = (
@@ -66,9 +85,11 @@ _JA_CONSISTENCY_NOTE = (
     "好調な結果だけでなく、未達、損失、前提の変化についても具体的に説明しているかを"
     "見ます。<br>算定では、選定した複数年の決算短信、とくに経営成績・財政状態・"
     "業績予想に関する説明を読み、過去の発言を後の行動や結果と結び付け、整合する材料と"
-    "反する材料の両方を確認します。各項目を0～1で評価し、証拠が十分な項目だけを"
-    "単純平均します。証拠不足の項目は空欄のまま計算から除外し、全項目を評価できない"
-    "場合に限り総合スコアを中立値0.50とします。高いスコアは説明と実行の一貫性が"
+    "反する材料の両方を確認します。各項目を0～1で評価し、評価可能な項目を単純平均"
+    "します。証拠の年代や量に偏りがある場合も、その偏りを踏まえて最も妥当な評価を"
+    "行い、信頼度は別途記録します。選定資料からどうしても評価できない項目だけを空欄"
+    "として計算から除外し、全項目を評価できない場合に限り総合スコアを中立値0.50と"
+    "します。高いスコアは説明と実行の一貫性が"
     "高いことを示しますが、戦略そのものの良し悪しや投資魅力度を示すものではありません。"
     "</small>"
 )
@@ -85,10 +106,12 @@ _EN_CONSISTENCY_NOTE = (
     "<br>The process reviews the selected years of management commentary—especially "
     "the discussions of operating results, financial condition, and outlook—then "
     "connects earlier commitments with later actions and outcomes. Both supporting "
-    "and contradictory evidence are considered. Each sufficiently supported component "
-    "receives a 0–1 score, and the overall score is their simple average. A component "
-    "without enough evidence remains blank and is excluded; 0.50 is used for the "
-    "overall score only when no component can be assessed. A higher score indicates "
+    "and contradictory evidence are considered. Each assessable component receives "
+    "a 0–1 score, and the overall score is their simple average. Uneven timing or "
+    "quantity of evidence lowers the separately recorded confidence rather than "
+    "automatically erasing a score. A component remains blank only when the selected "
+    "filings provide no defensible basis for assessment; 0.50 is used for the overall "
+    "score only when no component can be assessed. A higher score indicates "
     "more consistent communication and follow-through, not necessarily a better "
     "strategy, stronger business, or more attractive investment."
     "</small>"
@@ -105,39 +128,6 @@ _EN_CONSISTENCY_LABELS = {
     ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE: "forecast discipline",
     ManagementConsistencyDimension.ACCOUNTABILITY_TRANSPARENCY: "accountability",
 }
-
-
-def _evidence_suffix(evidence_id: str) -> str:
-    return evidence_id.rsplit(":", 1)[-1]
-
-
-def _citation(
-    evidence_ids: Iterable[str],
-    evidence_by_id: dict[str, EvidenceRecord],
-    *,
-    language: str,
-) -> str:
-    refs = []
-    for evidence_id in evidence_ids:
-        evidence = evidence_by_id.get(evidence_id)
-        if evidence is None:
-            refs.append(f"UNRESOLVED {evidence_id}")
-            continue
-        period = (
-            evidence.period_label_ja
-            if language == "ja"
-            else evidence.period_label_en
-        )
-        refs.append(
-            f"{period} p.{evidence.pdf_page}/{_evidence_suffix(evidence_id)}"
-        )
-    return "<sup>[" + "; ".join(refs) + "]</sup>"
-
-
-def _source_sort_key(evidence: EvidenceRecord) -> tuple[int, int, str]:
-    match = re.match(r"(\d+)_", evidence.source_filename)
-    ordinal = int(match.group(1)) if match else 999999
-    return (ordinal, evidence.pdf_page, evidence.evidence_id)
 
 
 def _group_claims(claims: Iterable[object]) -> dict[SectionKey, list[object]]:
@@ -182,7 +172,6 @@ def _consistency_breakdown(
 def _render_section_ja(
     section: SectionKey,
     claims: list[object],
-    evidence_by_id: dict[str, EvidenceRecord],
 ) -> list[str]:
     lines = [JA_HEADINGS[section], ""]
     is_bullet = section in {
@@ -195,18 +184,22 @@ def _render_section_ja(
         SectionKey.TREND_CONSISTENT,
         SectionKey.TREND_CHANGE,
         SectionKey.TREND_CAPITAL_ALLOCATION,
+        SectionKey.TREND_CAPITAL_VALUE_CREATION,
         SectionKey.TREND_IMPLICATION,
     }
     for claim in claims:
-        citation = _citation(claim.evidence_ids, evidence_by_id, language="ja")
-        if is_bullet:
-            lines.append(f"- {claim.body_ja} {citation}")
+        if section == SectionKey.LATEST_BUSINESS_DRIVER:
+            lines.append(
+                f"- **{claim.headline_ja}：** {claim.body_ja}"
+            )
+        elif is_bullet:
+            lines.append(f"- {claim.body_ja}")
         elif is_theme:
             lines.append(f"**{claim.headline_ja}**<br>")
-            lines.append(f"{claim.body_ja} {citation}")
+            lines.append(claim.body_ja)
             lines.append("")
         else:
-            lines.append(f"{claim.body_ja} {citation}")
+            lines.append(claim.body_ja)
             lines.append("")
     if lines[-1] != "":
         lines.append("")
@@ -215,19 +208,43 @@ def _render_section_ja(
 
 def _render_overview_ja(
     claims: list[object],
-    evidence_by_id: dict[str, EvidenceRecord],
 ) -> list[str]:
     if not claims:
         return []
     lines = ["## 企業概要", ""]
     for claim in claims:
-        citation = _citation(claim.evidence_ids, evidence_by_id, language="ja")
-        lines.extend([f"{claim.body_ja} {citation}", ""])
+        lines.extend([claim.body_ja, ""])
+    return lines
+
+
+def _render_management_details_ja(
+    assessment: ManagementConsistencyAssessment,
+    grouped: dict[SectionKey, list[object]],
+) -> list[str]:
+    components = {item.dimension: item for item in assessment.components}
+    lines: list[str] = []
+    for section, dimension in MANAGEMENT_SECTION_ORDER:
+        component = components.get(dimension)
+        score = (
+            f"{component.normalized_score:.2f}"
+            if component is not None and component.normalized_score is not None
+            else "—"
+        )
+        label = _JA_CONSISTENCY_LABELS[dimension]
+        claims = grouped.get(section, [])
+        if claims:
+            claim = claims[0]
+            lines.append(f"- **{label} {score}：** {claim.body_ja}")
+        elif component is not None:
+            lines.append(
+                f"- **{label} {score}：** {component.rationale_ja}"
+            )
+    if lines:
+        lines.append("")
     return lines
 
 
 def render_japanese(analysis: JapaneseAnalysis) -> str:
-    evidence_by_id = {item.evidence_id: item for item in analysis.evidence}
     grouped = _group_claims(analysis.claims)
     lines = [
         f"# {analysis.identity.company_name_ja}"
@@ -237,15 +254,14 @@ def render_japanese(analysis: JapaneseAnalysis) -> str:
     lines.extend(
         _render_overview_ja(
             grouped.get(SectionKey.COMPANY_OVERVIEW, []),
-            evidence_by_id,
         )
     )
     lines.extend(["## 1. エグゼクティブサマリー", ""])
     for section in LATEST_SECTION_ORDER:
-        lines.extend(_render_section_ja(section, grouped.get(section, []), evidence_by_id))
+        lines.extend(_render_section_ja(section, grouped.get(section, [])))
     lines.extend(["## 2. トレンド分析", ""])
     for section in TREND_SECTION_ORDER:
-        lines.extend(_render_section_ja(section, grouped.get(section, []), evidence_by_id))
+        lines.extend(_render_section_ja(section, grouped.get(section, [])))
     if analysis.management_consistency is not None:
         score = (
             analysis.management_consistency.score
@@ -263,14 +279,12 @@ def render_japanese(analysis: JapaneseAnalysis) -> str:
                 "",
             ]
         )
-    lines.extend(["## 根拠一覧", "", "<details>", "<summary>根拠一覧</summary>", ""])
-    for evidence in sorted(analysis.evidence, key=_source_sort_key):
-        tags = f" [{', '.join(evidence.tags)}]" if evidence.tags else ""
-        lines.append(
-            f"- `{evidence.evidence_id}` ({evidence.source_filename}, "
-            f"p.{evidence.pdf_page}){tags}: {evidence.exact_quote_ja}"
+        lines.extend(
+            _render_management_details_ja(
+                analysis.management_consistency,
+                grouped,
+            )
         )
-    lines.extend(["", "</details>", ""])
     if analysis.management_consistency is not None:
         lines.extend([_JA_CONSISTENCY_NOTE, ""])
     return "\n".join(lines)
@@ -286,7 +300,6 @@ def render_japanese_draft(
 def _render_section_en(
     section: SectionKey,
     claims: list[object],
-    evidence_by_id: dict[str, EvidenceRecord],
 ) -> list[str]:
     lines = [EN_HEADINGS[section], ""]
     is_bullet = section in {
@@ -299,18 +312,22 @@ def _render_section_en(
         SectionKey.TREND_CONSISTENT,
         SectionKey.TREND_CHANGE,
         SectionKey.TREND_CAPITAL_ALLOCATION,
+        SectionKey.TREND_CAPITAL_VALUE_CREATION,
         SectionKey.TREND_IMPLICATION,
     }
     for claim in claims:
-        citation = _citation(claim.evidence_ids, evidence_by_id, language="en")
-        if is_bullet:
-            lines.append(f"- {claim.body_en} {citation}")
+        if section == SectionKey.LATEST_BUSINESS_DRIVER:
+            lines.append(
+                f"- **{claim.headline_en}:** {claim.body_en}"
+            )
+        elif is_bullet:
+            lines.append(f"- {claim.body_en}")
         elif is_theme:
             lines.append(f"**{claim.headline_en}**<br>")
-            lines.append(f"{claim.body_en} {citation}")
+            lines.append(claim.body_en)
             lines.append("")
         else:
-            lines.append(f"{claim.body_en} {citation}")
+            lines.append(claim.body_en)
             lines.append("")
     if lines[-1] != "":
         lines.append("")
@@ -319,14 +336,36 @@ def _render_section_en(
 
 def _render_overview_en(
     claims: list[object],
-    evidence_by_id: dict[str, EvidenceRecord],
 ) -> list[str]:
     if not claims:
         return []
     lines = ["## Company overview", ""]
     for claim in claims:
-        citation = _citation(claim.evidence_ids, evidence_by_id, language="en")
-        lines.extend([f"{claim.body_en} {citation}", ""])
+        lines.extend([claim.body_en, ""])
+    return lines
+
+
+def _render_management_details_en(
+    assessment: ManagementConsistencyAssessment,
+    grouped: dict[SectionKey, list[object]],
+) -> list[str]:
+    components = {item.dimension: item for item in assessment.components}
+    lines: list[str] = []
+    for section, dimension in MANAGEMENT_SECTION_ORDER:
+        component = components.get(dimension)
+        score = (
+            f"{component.normalized_score:.2f}"
+            if component is not None and component.normalized_score is not None
+            else "—"
+        )
+        label = _EN_CONSISTENCY_LABELS[dimension].capitalize()
+        claims = grouped.get(section, [])
+        if not claims:
+            continue
+        claim = claims[0]
+        lines.append(f"- **{label} {score}:** {claim.body_en}")
+    if lines:
+        lines.append("")
     return lines
 
 
@@ -334,7 +373,6 @@ def render_english(
     analysis: JapaneseAnalysis,
     translation: EnglishTranslation,
 ) -> str:
-    evidence_by_id = {item.evidence_id: item for item in analysis.evidence}
     grouped = _group_claims(translation.claims)
     lines = [
         f"# {translation.identity.company_name_en} "
@@ -344,15 +382,14 @@ def render_english(
     lines.extend(
         _render_overview_en(
             grouped.get(SectionKey.COMPANY_OVERVIEW, []),
-            evidence_by_id,
         )
     )
     lines.extend(["## 1. Executive summary", ""])
     for section in LATEST_SECTION_ORDER:
-        lines.extend(_render_section_en(section, grouped.get(section, []), evidence_by_id))
+        lines.extend(_render_section_en(section, grouped.get(section, [])))
     lines.extend(["## 2. Trend analysis", ""])
     for section in TREND_SECTION_ORDER:
-        lines.extend(_render_section_en(section, grouped.get(section, []), evidence_by_id))
+        lines.extend(_render_section_en(section, grouped.get(section, [])))
     if analysis.management_consistency is not None:
         score = (
             analysis.management_consistency.score
@@ -371,17 +408,12 @@ def render_english(
                 "",
             ]
         )
-    lines.extend(
-        ["## Evidence ledger", "", "<details>", "<summary>Evidence ledger</summary>", ""]
-    )
-    for evidence in sorted(analysis.evidence, key=_source_sort_key):
-        tags = f" [{', '.join(evidence.tags)}]" if evidence.tags else ""
-        lines.append(
-            f"- `{evidence.evidence_id}` ({evidence.source_filename}, "
-            f"p.{evidence.pdf_page}){tags}: "
-            f"{evidence.exact_quote_ja}"
+        lines.extend(
+            _render_management_details_en(
+                analysis.management_consistency,
+                grouped,
+            )
         )
-    lines.extend(["", "</details>", ""])
     if analysis.management_consistency is not None:
         lines.extend([_EN_CONSISTENCY_NOTE, ""])
     return "\n".join(lines)
@@ -394,19 +426,3 @@ def render_english_draft(
 ) -> str:
     del validation
     return render_english(analysis, translation)
-
-
-def bilingual_evidence_ledger(
-    analysis: JapaneseAnalysis,
-    translation: EnglishTranslation | None = None,
-) -> list[dict[str, object]]:
-    del translation
-    return [
-        {
-            **evidence.model_dump(mode="json"),
-            "quote_en": None,
-            "rendered_quote": evidence.exact_quote_ja,
-            "rendered_quote_language": "ja",
-        }
-        for evidence in sorted(analysis.evidence, key=_source_sort_key)
-    ]

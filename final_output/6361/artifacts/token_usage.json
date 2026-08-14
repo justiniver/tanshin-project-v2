@@ -1,0 +1,82 @@
+{
+  "stage": "analysis",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "model_version": "gemini-3.6-flash",
+  "response_id": "wMZ7au6DBqGj2roPipmYgQE",
+  "attempts": 1,
+  "usage_metadata": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6554
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 220472
+      }
+    ],
+    "cached_content_token_count": 227026,
+    "candidates_token_count": 14016,
+    "prompt_token_count": 228987,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6611
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 222376
+      }
+    ],
+    "thoughts_token_count": 4459,
+    "total_token_count": 247462
+  },
+  "research": {
+    "stage": "research",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "model_version": "gemini-3.6-flash",
+    "response_id": "lYZ-apHqGL7p2roPgLzmqQw",
+    "attempts": 1,
+    "usage_metadata": {
+      "candidates_token_count": 18037,
+      "prompt_token_count": 226255,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 3879
+        },
+        {
+          "modality": "IMAGE",
+          "token_count": 222376
+        }
+      ],
+      "total_token_count": 244292
+    }
+  },
+  "analysis": {
+    "stage": "analysis",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "model_version": "gemini-3.6-flash",
+    "response_id": "WId-asq1MN250-kP2t7E6AU",
+    "attempts": 1,
+    "usage_metadata": {
+      "candidates_token_count": 5448,
+      "prompt_token_count": 256518,
+      "prompt_tokens_details": [
+        {
+          "modality": "IMAGE",
+          "token_count": 222376
+        },
+        {
+          "modality": "TEXT",
+          "token_count": 34142
+        }
+      ],
+      "thoughts_token_count": 6810,
+      "total_token_count": 268776
+    }
+  }
+}

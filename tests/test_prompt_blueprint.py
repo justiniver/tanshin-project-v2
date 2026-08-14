@@ -7,17 +7,23 @@ from pathlib import Path
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.prompts import (
     ANALYSIS_SYSTEM_PROMPT,
+    RESEARCH_SYSTEM_PROMPT,
     TRANSLATION_SYSTEM_PROMPT,
     build_translation_prompt,
     load_generic_blueprint,
 )
-from tanshin_pipeline.request_builder import build_analysis_spec
+from tanshin_pipeline.request_builder import (
+    build_analysis_spec,
+    build_research_spec,
+)
 from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
-    JapaneseModelResponse,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
 )
 from tanshin_pipeline.selection import select_filings
+from tests.helpers import fake_research_dossier
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -48,9 +54,20 @@ class PromptBlueprintTests(unittest.TestCase):
         blueprint_hashes: set[str | None] = set()
         for security_code in ("1808", "3923", "6361"):
             manifest = select_filings(REPOSITORY_ROOT, security_code)
-            spec = build_analysis_spec(REPOSITORY_ROOT, manifest)
+            dossier = fake_research_dossier(
+                REPOSITORY_ROOT,
+                security_code,
+            )
+            research_spec = build_research_spec(REPOSITORY_ROOT, manifest)
+            spec = build_analysis_spec(REPOSITORY_ROOT, manifest, dossier)
+            normalized_prompt = " ".join(spec.prompt.split())
             plan = spec.plan()
             blueprint_hashes.add(plan.style_blueprint_sha256)
+            self.assertGreater(len(research_spec.files), 0)
+            self.assertEqual(
+                [item.filename for item in spec.files],
+                [item.filename for item in manifest.selected_files],
+            )
             self.assertEqual(
                 plan.style_blueprint_path,
                 "prompt_assets/generic_report_blueprint_ja.md",
@@ -80,92 +97,64 @@ class PromptBlueprintTests(unittest.TestCase):
                 spec.prompt,
             )
             self.assertIn("company.overview: exactly 1 claim", spec.prompt)
-            self.assertIn("write 1-2 plain-language paragraphs", spec.prompt)
-            self.assertIn("its operating or revenue model works", spec.prompt)
             self.assertIn("trend_period_buckets:", spec.prompt)
             self.assertIn("- early:", spec.prompt)
             self.assertIn("- middle:", spec.prompt)
             self.assertIn("- recent:", spec.prompt)
             self.assertIn("coverage_shortfall:<section>", spec.prompt)
-            self.assertIn("evidence_sufficiency", spec.prompt)
-            self.assertIn('"insufficient"', spec.prompt)
-            self.assertIn("set rating to null", spec.prompt)
-            self.assertNotIn(
-                "use 2 unless the available evidence",
-                spec.prompt,
-            )
-            self.assertNotIn("165-215", spec.prompt)
-            self.assertIn("Give more space to material themes", spec.prompt)
-            self.assertIn("use at most one claim", spec.prompt)
-            self.assertIn("evidence from all three periods", spec.prompt)
-            self.assertIn(
-                "one from each period bucket",
-                spec.prompt,
-            )
+            self.assertIn("<research_map>", spec.prompt)
+            self.assertIn("<research_metrics>", spec.prompt)
             self.assertIn(
                 "before -> transition -> current state",
                 spec.prompt,
             )
-            self.assertIn(
-                "actively look for a contraction, miss, reversal",
-                spec.prompt,
-            )
             self.assertIn("positive for investors", spec.prompt)
-            self.assertIn("Do not split one financial", spec.prompt)
-            self.assertIn("A single impairment", spec.prompt)
-            self.assertIn("cash generation or balance-sheet", spec.prompt)
-            self.assertIn("qualitative management discussion", spec.prompt)
-            self.assertIn("material evidence limits or contradicts", spec.prompt)
-            self.assertIn(
-                "using the same organizational scope and time horizon",
-                spec.prompt,
-            )
-            self.assertIn("annual, interim, endpoint, and cumulative", spec.prompt)
-            self.assertIn("high-margin, stabilizing, or a cyclical buffer", spec.prompt)
-            self.assertIn("A larger cash balance alone", spec.prompt)
-            self.assertIn("repeated operating losses", spec.prompt)
             self.assertIn("commitment-versus-outcome", spec.prompt)
             self.assertIn(
                 "earlier commitment -> later action -> later result",
                 spec.prompt,
             )
+            self.assertIn("management.strategy: exactly 1", spec.prompt)
+            self.assertIn("management.forecast_discipline: exactly 1", spec.prompt)
             self.assertIn(
-                "Preserve whether a target applies to the group",
-                spec.prompt,
-            )
-            self.assertIn("product. Keep annual, interim", spec.prompt)
-            self.assertIn(
-                "Do not project a product's or",
+                "trend.capital_value_creation: exactly 1",
                 spec.prompt,
             )
             self.assertIn(
-                "organic investment in people, marketing",
-                spec.prompt,
+                "reported capital stocks and operating assets as primary evidence",
+                normalized_prompt,
             )
             self.assertIn(
-                "A completed reorganization, acquisition",
-                spec.prompt,
+                "do not begin from the list of named transactions",
+                normalized_prompt,
             )
             self.assertIn(
-                "preserve the source metric, organizational scope",
-                spec.system_prompt,
+                "when assets or recurring investment grew materially faster",
+                normalized_prompt,
             )
             self.assertIn(
-                "cited evidence and chronology establish it",
-                spec.system_prompt,
+                "Rank importance by the scale of capital or recurring investment "
+                "committed",
+                normalized_prompt,
             )
-            self.assertIn("Do not invent a management response", spec.system_prompt)
-            self.assertIn("revised controls", spec.system_prompt)
-            self.assertIn("execution_follow_through", spec.prompt)
-            self.assertIn("forecast_target_discipline", spec.prompt)
-            self.assertIn("management_discussion", spec.system_prompt)
             self.assertIn(
-                "management_consistency",
-                spec.response_schema["required"],
+                "An asset increase, acquisition, dividend, buyback, goodwill",
+                normalized_prompt,
             )
+            self.assertIn(
+                "never manufacture ROIC",
+                normalized_prompt,
+            )
+            self.assertIn(
+                "management_consistency object contains only rating",
+                normalized_prompt,
+            )
+            self.assertNotIn("WACC", spec.prompt)
+            self.assertNotIn("cost-of-capital", spec.prompt)
+            self.assertNotIn("evidence", spec.response_schema["required"])
             self.assertLess(
                 spec.prompt.index("<document_manifest>"),
-                spec.prompt.index("<report_blueprint>"),
+                spec.prompt.index("<research_map>"),
             )
             self.assertLess(
                 spec.prompt.index("</report_blueprint>"),
@@ -191,11 +180,38 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("約束、後の実行、結果、現在の意味", blueprint.text)
         self.assertIn("既存中核、主力候補、育成対象", blueprint.text)
         self.assertIn("成長投資、買収・売却、財務運営", blueprint.text)
+        self.assertIn("### 資本配分は価値を創出したか", blueprint.text)
+        self.assertIn("追加資本がどの事業・用途へ向かい", blueprint.text)
+        self.assertIn("高リターン事業へ資本が重点配分されたか", blueprint.text)
+        self.assertIn("売上成長だけで", blueprint.text)
+        self.assertIn("魅力的なリターンとみなさず", blueprint.text)
+        self.assertNotIn("WACC", blueprint.text)
+        self.assertNotIn("資本コスト", blueprint.text)
         self.assertIn("経済的成果が証明されたことを区別", blueprint.text)
 
     def test_critical_rules_are_in_system_prompts(self) -> None:
-        self.assertIn("# Non-negotiable grounding rules", ANALYSIS_SYSTEM_PROMPT)
+        self.assertIn("# Non-negotiable grounding rules", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("outside knowledge", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("Return only one JSON object", RESEARCH_SYSTEM_PROMPT)
+        self.assertIn("# Source boundary", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("outside knowledge", ANALYSIS_SYSTEM_PROMPT)
+        self.assertIn(
+            "distinguish capital absorbed by a destination",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertIn(
+            "Treat management commentary as a claim",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertIn(
+            "Group-wide ROE, EPS, BVPS",
+            ANALYSIS_SYSTEM_PROMPT,
+        )
+        self.assertIn(
+            "not as independent proof",
+            " ".join(RESEARCH_SYSTEM_PROMPT.split()),
+        )
+        self.assertNotIn("WACC", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("Return only one JSON object", ANALYSIS_SYSTEM_PROMPT)
         self.assertIn("# Non-negotiable invariants", TRANSLATION_SYSTEM_PROMPT)
         self.assertIn("Do not perform new analysis", TRANSLATION_SYSTEM_PROMPT)
@@ -246,45 +262,85 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertIn("Translate company.overview", prompt)
 
     def test_model_facing_schema_fields_have_descriptions(self) -> None:
-        analysis_schema = JapaneseModelResponse.model_json_schema()
+        analysis_schema = JapaneseSynthesisResponse.model_json_schema()
+        research_schema = JapaneseResearchDossier.model_json_schema()
         translation_schema = EnglishTranslationPatch.model_json_schema()
+        self.assertIn("filings", research_schema["properties"])
+        self.assertIn("research_notes", research_schema["properties"])
         self.assertIn(
-            "description",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"],
+            "items",
+            research_schema["$defs"]["ResearchFilingMemo"]["properties"],
         )
         self.assertIn(
-            "description",
-            analysis_schema["$defs"]["EvidenceRecord"]["properties"]["pdf_page"],
+            "annual_financial_anchor",
+            research_schema["$defs"]["ResearchFilingMemo"]["properties"],
         )
         self.assertIn(
-            "description",
-            analysis_schema["$defs"]["ModelManagementConsistencyComponent"][
+            "capital_allocation_tracks",
+            research_schema["properties"],
+        )
+        capital_track = research_schema["$defs"][
+            "ResearchCapitalAllocationTrack"
+        ]["properties"]
+        self.assertIn("capital_inputs", capital_track)
+        self.assertIn("immediate_effects", capital_track)
+        self.assertIn("subsequent_returns", capital_track)
+        self.assertIn("record_maturity", capital_track)
+        capital_return = research_schema["$defs"][
+            "ResearchCapitalReturn"
+        ]["properties"]
+        self.assertIn("return_type", capital_return)
+        self.assertIn("attribution", capital_return)
+        self.assertIn("signal", capital_return)
+        self.assertIn(
+            "return_on_capital_or_assets",
+            research_schema["$defs"]["CapitalReturnType"]["enum"],
+        )
+        self.assertIn(
+            "not independent verification",
+            capital_return["attribution"]["description"],
+        )
+        self.assertIn(
+            "effect_type",
+            research_schema["$defs"]["ResearchCapitalImmediateEffect"][
                 "properties"
-            ]["rating"],
+            ],
+        )
+        self.assertNotIn("evidence", research_schema["properties"])
+        self.assertNotIn("management_consistency", research_schema["properties"])
+        self.assertIn(
+            "pdf_page",
+            research_schema["$defs"]["ResearchMemoItem"]["properties"],
         )
         self.assertIn(
-            "counterevidence",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
+            "description",
+            research_schema["$defs"]["ResearchMemoItem"]["properties"][
+                "pdf_page"
             ],
         )
         self.assertIn(
-            "early, middle, and recent periods",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
+            "description",
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
+                "body_ja"
             ],
         )
         self.assertIn(
-            "before, transition, and current condition",
-            analysis_schema["$defs"]["ModelAnalysisClaim"]["properties"]["body_ja"][
-                "description"
-            ],
+            "Distinguish management's assertions",
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"][
+                "body_ja"
+            ]["description"],
         )
-        self.assertIn(
-            "same scope and time horizon",
-            analysis_schema["$defs"]["ModelManagementConsistencyComponent"][
-                "properties"
-            ]["rationale_ja"]["description"],
+        self.assertNotIn(
+            "sources",
+            analysis_schema["$defs"]["SynthesisAnalysisClaim"]["properties"],
+        )
+        self.assertNotIn("SynthesisSourceReference", analysis_schema["$defs"])
+        management_component = analysis_schema["$defs"][
+            "SynthesisManagementConsistencyComponent"
+        ]["properties"]
+        self.assertEqual(
+            set(management_component),
+            {"dimension", "rating", "evidence_sufficiency"},
         )
         self.assertIn(
             "description",
@@ -301,6 +357,126 @@ class PromptBlueprintTests(unittest.TestCase):
         self.assertNotIn("statement_type", patch_claim)
         self.assertNotIn("source_surface_ja", json.dumps(translation_schema))
         self.assertNotIn("EvidenceTranslation", translation_schema["$defs"])
+
+    def test_research_request_has_compact_native_output_limits(self) -> None:
+        manifest = select_filings(REPOSITORY_ROOT, "1808")
+        spec = build_research_spec(REPOSITORY_ROOT, manifest)
+        normalized_prompt = " ".join(spec.prompt.split())
+        provider_properties = spec.response_schema["properties"]
+        self.assertIn("filings", provider_properties)
+        self.assertNotIn("source_records", provider_properties)
+        self.assertNotIn("maxItems", provider_properties["filings"])
+        self.assertIn("exactly one `filings` memo for every selected PDF", spec.prompt)
+        self.assertIn("Core management discussion is not disposable", spec.prompt)
+        self.assertIn("annual_financial_anchor", spec.prompt)
+        self.assertIn("`capital_allocation_tracks`", spec.prompt)
+        self.assertIn(
+            "A business or asset category qualifies even when management "
+            "announced no discrete investment",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "only in `immediate_effects`",
+            normalized_prompt,
+        )
+        self.assertIn("only later profit or loss", normalized_prompt)
+        self.assertIn("same consistently available consolidated metric", spec.prompt)
+        self.assertIn(
+            "Begin with changes in segment assets, operating assets",
+            spec.prompt,
+        )
+        self.assertIn(
+            "perform a capital-base screen across the year-end filings",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Represent the largest supported organic accumulations, releases, "
+            "or recurring growth investments before smaller named transactions",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "both the earliest and latest compatible reported assets",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "When economically important investment is expensed rather than "
+            "capitalized",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Retain reported ROIC, ROA",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Never manufacture an undisclosed ROIC or ROA",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "keep them separate from observable results",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "company-wide ROE, EPS, BVPS",
+            normalized_prompt,
+        )
+        self.assertIn(
+            "Do not decide whether capital allocation created value",
+            spec.prompt,
+        )
+        self.assertNotIn("WACC", spec.prompt)
+        self.assertNotIn("cost of capital", spec.prompt)
+        self.assertIn("Do not select the decade thesis", spec.prompt)
+        self.assertIn("not polished report prose", normalized_prompt)
+        self.assertIn("Do not decide the final", RESEARCH_SYSTEM_PROMPT)
+
+        analysis = build_analysis_spec(
+            REPOSITORY_ROOT,
+            manifest,
+            fake_research_dossier(REPOSITORY_ROOT),
+        )
+        normalized_analysis = " ".join(analysis.prompt.split())
+        self.assertIn(
+            "Treat management's narrative as a hypothesis to evaluate",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "Do not say \"most\" or \"the majority\" of capital",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "A shareholder distribution returns capital but does not by itself",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "aggregate-only or unattributed evidence cannot establish it",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "Prioritize disclosed ROIC, ROA, return on operating assets",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "make a directional comparison from compatible business-level "
+            "assets, capital employed, or recurring investment inputs and "
+            "profit or cash",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "the track list is not a complete candidate list",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "name the one or two largest supported business-investment destinations",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "For an asset-light business whose reinvestment is mainly expensed",
+            normalized_analysis,
+        )
+        self.assertIn(
+            "an economically smaller transaction must not receive equal weight",
+            normalized_analysis,
+        )
 
 
 if __name__ == "__main__":

@@ -3,68 +3,28 @@
   "publishable": false,
   "factual_integrity_passed": false,
   "quality_gate_passed": true,
-  "blocking_error_count": 6,
+  "blocking_error_count": 1,
   "warning_count": 0,
   "language": "ja",
   "issues": [
     {
       "severity": "error",
       "category": "factual_integrity",
-      "code": "unresolved_evidence",
-      "message": "Claim citation does not resolve to an evidence record.",
-      "claim_id": "3626-latest-takeaway-03",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0012"
-    },
-    {
-      "severity": "error",
-      "category": "factual_integrity",
-      "code": "unresolved_evidence",
-      "message": "Claim citation does not resolve to an evidence record.",
-      "claim_id": "3626-latest-outlook-01",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0012"
-    },
-    {
-      "severity": "error",
-      "category": "factual_integrity",
       "code": "achieved_language_for_non_actual",
       "message": "Forecast/target/risk claim uses achieved-result language.",
-      "claim_id": "3626-latest-risk-01",
+      "claim_id": "claim_latest_risk_project",
       "evidence_id": null
-    },
-    {
-      "severity": "error",
-      "category": "factual_integrity",
-      "code": "unresolved_evidence",
-      "message": "Claim citation does not resolve to an evidence record.",
-      "claim_id": "3626-latest-risk-02",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0012"
-    },
-    {
-      "severity": "error",
-      "category": "factual_integrity",
-      "code": "unresolved_evidence",
-      "message": "Claim citation does not resolve to an evidence record.",
-      "claim_id": "3626-latest-context-01",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0012"
-    },
-    {
-      "severity": "error",
-      "category": "factual_integrity",
-      "code": "unresolved_evidence",
-      "message": "Claim citation does not resolve to an evidence record.",
-      "claim_id": "3626-trend-implication-01",
-      "evidence_id": "01_2027_Q1_tanshin.pdf:s0012"
     }
   ],
   "statistics": {
-    "claims": 17,
-    "evidence_records": 43,
-    "citation_references": 67,
-    "trend_management_discussion_share": 1.0,
-    "management_consistency_score": 0.75,
-    "management_consistency_evidence_confidence": 0.9,
-    "errors": 6,
+    "claims": 24,
+    "citation_mode": "disabled",
+    "evidence_records": 0,
+    "citation_references": 0,
+    "trend_management_discussion_share": 0.0,
+    "management_consistency_score": 0.88,
+    "errors": 1,
     "warnings": 0,
-    "blocking_errors": 6
+    "blocking_errors": 1
   }
 }

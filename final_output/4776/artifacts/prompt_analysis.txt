@@ -1,23 +1,1548 @@
 <document_manifest>
 security_code: 4776
 latest_filename: 01_2026_Q1_tanshin.pdf
-selected_sources:
-- 01_2026_Q1_tanshin.pdf: FY label 2026, period Q1, pages 10, roles latest
-- 02_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 17, roles trend_year_end
-- 03_2024_FY_tanshin.pdf: FY label 2024, period FY, pages 16, roles trend_year_end
-- 04_2023_FY_tanshin.pdf: FY label 2023, period FY, pages 16, roles trend_year_end
-- 05_2022_FY_tanshin.pdf: FY label 2022, period FY, pages 18, roles trend_year_end
-- 06_2021_FY_tanshin.pdf: FY label 2021, period FY, pages 18, roles trend_year_end
-- 07_2020_FY_tanshin.pdf: FY label 2020, period FY, pages 17, roles trend_year_end
-- 08_2019_FY_tanshin.pdf: FY label 2019, period FY, pages 18, roles trend_year_end
-- 09_2018_FY_tanshin.pdf: FY label 2018, period FY, pages 17, roles trend_year_end
-- 10_2017_FY_tanshin.pdf: FY label 2017, period FY, pages 17, roles trend_year_end
-- 11_2016_FY_tanshin.pdf: FY label 2016, period FY, pages 17, roles trend_year_end
 trend_period_buckets:
 - early: 11_2016_FY_tanshin.pdf (FY2016), 10_2017_FY_tanshin.pdf (FY2017), 09_2018_FY_tanshin.pdf (FY2018), 08_2019_FY_tanshin.pdf (FY2019)
 - middle: 07_2020_FY_tanshin.pdf (FY2020), 06_2021_FY_tanshin.pdf (FY2021), 05_2022_FY_tanshin.pdf (FY2022)
 - recent: 04_2023_FY_tanshin.pdf (FY2023), 03_2024_FY_tanshin.pdf (FY2024), 02_2025_FY_tanshin.pdf (FY2025)
 </document_manifest>
+
+<research_metrics>
+{
+  "filing_coverage": {
+    "selected_filings": 11,
+    "memo_items": 55,
+    "category_counts": {
+      "business_overview": 1,
+      "capital_allocation": 5,
+      "financial_condition": 11,
+      "forward_looking_information": 11,
+      "material_footnote": 2,
+      "operating_results": 11,
+      "segments_and_business_drivers": 11,
+      "strategy_and_execution": 3
+    },
+    "per_filing": [
+      {
+        "source_filename": "11_2016_FY_tanshin.pdf",
+        "fiscal_year": 2016,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 6,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "fiscal_year": 2017,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "09_2018_FY_tanshin.pdf",
+        "fiscal_year": 2018,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "fiscal_year": 2019,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "fiscal_year": 2020,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "fiscal_year": 2021,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "fiscal_year": 2022,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "fiscal_year": 2023,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "fiscal_year": 2024,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "fiscal_year": 2025,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 6,
+        "category_counts": {
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "01_2026_Q1_tanshin.pdf",
+        "fiscal_year": 2026,
+        "period": "Q1",
+        "is_latest": true,
+        "memo_items": 6,
+        "category_counts": {
+          "business_overview": 1,
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": false
+      }
+    ]
+  },
+  "financial_observations": {
+    "annual_anchor_count": 10,
+    "annual_anchor_value_count": 20,
+    "by_metric": {
+      "ordinary_profit": 10
+    },
+    "series": [
+      {
+        "source_filename": "11_2016_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2016,
+        "target_period": "FY",
+        "value_surface_ja": "587百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "11_2016_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "value_surface_ja": "339百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "value_surface_ja": "821百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "10_2017_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "400百万円〜700百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "09_2018_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "1,194百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "09_2018_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "888百万円〜1,288百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "1,804百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "1,386百万円〜2,186百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "2,272百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "1,090百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "1,468百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "401百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "987百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "2,450百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "3,579百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "3,142百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "5,335百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "8,494百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "10,325百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "10,732百万円",
+        "pdf_page": 1
+      }
+    ],
+    "forecast_accuracy": {
+      "original_forecasts_observed": 10,
+      "original_forecasts_matched_to_actuals": 6,
+      "observable_comparisons": 6,
+      "original_result_counts": {
+        "actual_above_forecast": 6
+      },
+      "posture_signal": "conservative_tendency",
+      "comparisons": [
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2017,
+          "forecast_surface_ja": "339百万円",
+          "actual_surface_ja": "821百万円",
+          "percentage_error": 142.1829,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "11_2016_FY_tanshin.pdf",
+            "10_2017_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2021,
+          "forecast_surface_ja": "1,090百万円",
+          "actual_surface_ja": "1,468百万円",
+          "percentage_error": 34.6789,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "07_2020_FY_tanshin.pdf",
+            "06_2021_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2022,
+          "forecast_surface_ja": "401百万円",
+          "actual_surface_ja": "987百万円",
+          "percentage_error": 146.1347,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "06_2021_FY_tanshin.pdf",
+            "05_2022_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2023,
+          "forecast_surface_ja": "2,450百万円",
+          "actual_surface_ja": "3,579百万円",
+          "percentage_error": 46.0816,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "05_2022_FY_tanshin.pdf",
+            "04_2023_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2024,
+          "forecast_surface_ja": "3,142百万円",
+          "actual_surface_ja": "5,335百万円",
+          "percentage_error": 69.7963,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "04_2023_FY_tanshin.pdf",
+            "03_2024_FY_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2025,
+          "forecast_surface_ja": "8,494百万円",
+          "actual_surface_ja": "10,325百万円",
+          "percentage_error": 21.5564,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "03_2024_FY_tanshin.pdf",
+            "02_2025_FY_tanshin.pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "capital_allocation": {
+    "track_records": 4,
+    "tracks_with_subsequent_returns": 4,
+    "tracks_with_direct_return_evidence": 3,
+    "reported_return_on_capital_or_assets_records": 1,
+    "tracks_with_reported_return_on_capital_or_assets": 1,
+    "tracks_with_capital_base_and_direct_return_evidence": 2,
+    "tracks_with_only_management_or_aggregate_returns": 1,
+    "capital_input_records": 9,
+    "immediate_effect_records": 4,
+    "subsequent_return_records": 4,
+    "by_capital_input_type": {
+      "acquisition_or_investment_spend": 1,
+      "capacity_or_fixed_assets": 3,
+      "shareholder_distribution": 5
+    },
+    "by_immediate_effect_type": {
+      "distribution_execution": 2,
+      "financing_proceeds_or_repayment": 1,
+      "goodwill_or_negative_goodwill": 1
+    },
+    "by_return_type": {
+      "other_operating_or_financial_return": 1,
+      "profit_or_loss": 2,
+      "return_on_capital_or_assets": 1
+    },
+    "by_track_type": {
+      "acquisition": 1,
+      "debt_or_liquidity": 1,
+      "organic_accumulation": 1,
+      "shareholder_return": 1
+    },
+    "by_record_maturity": {
+      "mature_record": 3,
+      "too_recent": 1
+    },
+    "by_return_attribution": {
+      "direct": 3,
+      "management_linked": 1
+    },
+    "by_return_signal": {
+      "mixed": 1,
+      "positive": 3
+    },
+    "records": [
+      {
+        "track_label_ja": "クラウドサービスインフラ及びデータセンター設備投資",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "クラウド基盤（「cybozu.com」「NECO」等）およびサーバー機材・データセンター設備",
+        "start_fiscal_year": 2016,
+        "end_fiscal_year": 2025,
+        "capital_input_count": 3,
+        "capital_inputs_with_relative_priority": 3,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 1,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": true,
+        "has_capital_base_and_direct_return_evidence": true,
+        "return_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "リコーとの資本業務提携及び自己株式処分",
+        "track_type": "debt_or_liquidity",
+        "capital_destination_ja": "株式会社リコーとの長期的パートナーシップ構築およびクラウドインフラ・米国展開資金獲得",
+        "start_fiscal_year": 2022,
+        "end_fiscal_year": 2025,
+        "capital_input_count": 1,
+        "capital_inputs_with_relative_priority": 1,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 0,
+        "management_linked_return_count": 1,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": false,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "management_linked": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "株主還元（配当増額及び自己株式取得）",
+        "track_type": "shareholder_return",
+        "capital_destination_ja": "株主への利益還元（配当金の漸増および自己株式取得）",
+        "start_fiscal_year": 2016,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 4,
+        "capital_inputs_with_relative_priority": 4,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 1,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": true,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "愛媛オレンジバイキングス（地域DX・まちづくり）子会社化",
+        "track_type": "acquisition",
+        "capital_destination_ja": "株式会社エヒメスポーツエンターテイメント（プロバスケットボールチーム運営）",
+        "start_fiscal_year": 2025,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 1,
+        "capital_inputs_with_relative_priority": 1,
+        "record_maturity": "too_recent",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 1,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": true,
+        "has_capital_base_and_direct_return_evidence": true,
+        "return_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": true,
+        "has_disclosure_limit": false
+      }
+    ],
+    "interpretation_guardrail": "These are allocation-track extraction records, not value-creation verdicts. Immediate transaction or accounting effects are not subsequent returns. Management-linked returns preserve management's attribution but do not independently verify it. Aggregate-only or unattributed returns, group-wide ROE/EPS/BVPS, and the execution of a shareholder distribution cannot establish that a specific destination created value. Prefer disclosed ROIC/ROA or compatible destination-level capital and profit/cash observations; never manufacture an undisclosed ratio."
+  },
+  "coverage": {
+    "research_notes": [
+      "単一報告セグメント（ソフトウェアの開発・販売）のため、事業・製品別の資産・損益数値は「経営成績に関する説明」および「収益認識関係」注記に記載された売上高および製品別導入社数に基づく。",
+      "2022年12月期より「収益認識に関する会計基準」等を適用しているため、2021年以前と2022年以降の貸借対照表（契約負債等）の数値比較には表示方法の変更が含まれる。"
+    ]
+  },
+  "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
+  "diagnostics": {
+    "validation_passed": true,
+    "validation_warning": null,
+    "metrics_complete": true,
+    "metrics_warning": null,
+    "non_gating": true
+  }
+}
+</research_metrics>
+
+<research_map>
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "4776",
+    "company_name_ja": "サイボウズ株式会社",
+    "company_name_en": "Cybozu, Inc.",
+    "latest_filename": "01_2026_Q1_tanshin.pdf",
+    "latest_period_ja": "2026年12月期 第1四半期",
+    "latest_period_en": "FY2026 Q1"
+  },
+  "filings": [
+    {
+      "source_filename": "11_2016_FY_tanshin.pdf",
+      "fiscal_year": 2016,
+      "period": "FY",
+      "period_label_ja": "2016年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高8,039百万円（前年同期比14.6%増）、営業利益515百万円（前期は営業損失381百万円）、経常利益587百万円（前期は経常損失338百万円）、親会社株主に帰属する当期純利益305百万円（前期は親会社株主に帰属する当期純損失217百万円）。「cybozu.com」サービスは有料契約社数が17,000社を超え、クラウド関連事業売上高は4,050百万円（前年同期比49.2%増）と拡大。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "主力の「kintone」は大規模な広告展開やパートナー連携サービスの充実に注力し、売上高が連結ベースで前期比80%増と大きく伸長。「サイボウズ Office」は2016年1月に導入社数50,000社を突破し最高売上高を記録。「Garoon」はパッケージとクラウドを合わせて導入社数4,000社を突破、クラウド売上高は単体ベースで前期比36%増。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産は6,352百万円（前期末比128百万円増）、純資産は3,173百万円（前期末比19百万円減）。営業CFは+811百万円、投資CFは-559百万円（固定資産取得等）、財務CFは-270百万円（配当金支払）。現金及び現金同等物期末残高は2,347百万円。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 8,
+          "statement_type": "mixed",
+          "summary_ja": "経営方針として「チームワークあふれる社会を創る」を掲げ、クラウド関連事業の連結売上高を最重要指標に設定。2014年12月期より一時的に利益率を低下させてでもクラウド事業への投資を優先する方針を継続。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 6,
+          "statement_type": "forecast",
+          "summary_ja": "2017年12月期の連結業績予想は、売上高8,900百万円（対前期比10.7%増）、営業利益333百万円（対前期比35.4%減）、経常利益339百万円（対前期比42.3%減）、親会社株主に帰属する当期純利益152百万円（対前期比50.3%減）。クラウド関連サービス開発および広告宣伝投資を積極継続。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 7,
+          "statement_type": "mixed",
+          "summary_ja": "2016年12月期の配当はクラウド関連事業売上総額の10%を配当額とする方針に基づき1株当たり8.83円（配当金総額405百万円）。クラウド売上比率が全売上の過半を超えたため次期より配当方法を変更し、株主還元を維持（1株当たり9.00円予定）しつつ成長投資資金を確保する方針へ移行。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2016,
+          "target_period": "FY",
+          "value_surface_ja": "587百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2017,
+          "target_period": "FY",
+          "value_surface_ja": "339百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "10_2017_FY_tanshin.pdf",
+      "fiscal_year": 2017,
+      "period": "FY",
+      "period_label_ja": "2017年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高9,502百万円（前年同期比18.2%増）、営業利益802百万円（前年同期比55.7%増）、経常利益821百万円（前年同期比39.8%増）、親会社株主に帰属する当期純利益414百万円（前年同期比35.4%増）。「cybozu.com」の有料契約社数は20,000社を突破し売上高の59%を占める。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」の導入社数が8,000社を超え売上高が連結ベースで前年同期比56%増。「サイボウズ Office」は導入社数56,000社を突破し2年連続最高売上高更新。「Garoon」は導入社数4,400社・200万ユーザー突破。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産6,556百万円（前期末比203百万円増）、純資産3,202百万円（前期末比29百万円増）。営業CFは+726百万円、投資CFは-823百万円（固定資産取得等）、財務CFは-404百万円（配当金支払）。現金及び現金同等物期末残高は1,850百万円。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "「サイボウズLive」について、システムの老朽化に伴い有料クラウドサービスへリソースを集中させる判断を下し、2019年4月15日でのサービス終了を決定。一方、メソッド事業として「チームワーク総研」を新設。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2018年12月期の通期業績予想は、売上高10,800百万円〜11,300百万円（対前期比13.7%〜18.9%増）、営業利益400百万円〜700百万円、経常利益400百万円〜700百万円、親会社株主に帰属する当期純利益100百万円〜400百万円のレンジ開示。人材採用・広告宣伝・米国投資を積極実施。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2017,
+          "target_period": "FY",
+          "value_surface_ja": "821百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2018,
+          "target_period": "FY",
+          "value_surface_ja": "400百万円〜700百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "09_2018_FY_tanshin.pdf",
+      "fiscal_year": 2018,
+      "period": "FY",
+      "period_label_ja": "2018年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高11,303百万円（前年同期比18.9%増）、営業利益1,103百万円（前年同期比37.5%増）、経常利益1,194百万円（前年同期比45.4%増）、親会社株主に帰属する当期純利益653百万円（前年同期比57.8%増）。クラウド関連事業売上高は7,434百万円（前年同期比31.6%増）で連結売上の65%を占める。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」の導入社数が11,000社を超え売上高が連結ベースで前年同期比50%増。「サイボウズ Office」は導入社数60,000社突破で3年連続最高売上更新。「Garoon」は導入社数5,000社突破。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産7,328百万円（前期末比772百万円増）、純資産3,398百万円（前期末比195百万円増）。営業CFは+1,598百万円、投資CFは-1,436百万円（固定資産取得・敷金差入等）、財務CFは-412百万円（配当金支払）。現金及び現金同等物期末残高は1,587百万円。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2019年12月期の連結業績予想は、売上高12,923百万円〜13,323百万円（前年比14.3%〜17.9%増）、営業利益832百万円〜1,232百万円、経常利益888百万円〜1,288百万円、親会社株主に帰属する当期純利益373百万円〜773百万円のレンジ開示。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 15,
+          "statement_type": "actual",
+          "summary_ja": "連結子会社であったサイボウズ総合研究所が2018年8月31日付で清算結了したため、第3四半期より連結範囲から除外。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2018,
+          "target_period": "FY",
+          "value_surface_ja": "1,194百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2019,
+          "target_period": "FY",
+          "value_surface_ja": "888百万円〜1,288百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "08_2019_FY_tanshin.pdf",
+      "fiscal_year": 2019,
+      "period": "FY",
+      "period_label_ja": "2019年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高13,417百万円（前年同期比18.7%増）、営業利益1,732百万円（前年同期比57.0%増）、経常利益1,804百万円（前年同期比51.0%増）、親会社株主に帰属する当期純利益1,012百万円（前年同期比54.9%増）。「cybozu.com」契約社数は36,000社、140万人突破、売上高の71.3%に到達。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」の導入社数が14,000社を超え、売上高は前年同期比40.2%増。「サイボウズ Office」は導入社数66,000社超で4年連続最高売上高更新。「Garoon」は導入社数5,400社突破。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産8,874百万円（前期末比1,545百万円増）、純資産3,991百万円（前期末比593百万円増）。営業CFは+2,355百万円、投資CFは-1,314百万円（固定資産取得等）、財務CFは-412百万円。現金及び現金同等物期末残高は2,198百万円。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2020年12月期の連結業績予想は、売上高15,151百万円〜15,451百万円（対前期比12.9%〜15.2%増）、営業利益1,324百万円〜2,124百万円、経常利益1,386百万円〜2,186百万円、親会社株主に帰属する当期純利益640百万円〜1,440百万円のレンジ開示。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 15,
+          "statement_type": "actual",
+          "summary_ja": "第2四半期より、持分法非適用関連会社であったKINTONE AUSTRALIA PTY LTDの全株式を取得し連結の範囲に含めた。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2019,
+          "target_period": "FY",
+          "value_surface_ja": "1,804百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2020,
+          "target_period": "FY",
+          "value_surface_ja": "1,386百万円〜2,186百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "07_2020_FY_tanshin.pdf",
+      "fiscal_year": 2020,
+      "period": "FY",
+      "period_label_ja": "2020年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高15,674百万円（前年同期比16.8%増）、営業利益2,270百万円（前年同期比31.1%増）、経常利益2,272百万円（前年同期比25.9%増）、親会社株主に帰属する当期純利益1,435百万円（前年同期比41.8%増）。「cybozu.com」契約社数は42,000社を超え、クラウド関連事業売上高は11,945百万円（前年同期比24.9%増）と拡大。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」の導入社数が18,000社を超え売上高が前期比37.5%増。自治体（大阪府等）のコロナ対策システム導入など官公庁利用が拡大。「kintone」初のテレビCMを放映。トヨクモ社の上場に伴い投資有価証券売却益369百万円を特別利益に計上。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産12,235百万円（前期末比3,360百万円増）、純資産6,405百万円（前期末比2,414百万円増）。営業CFは+2,537百万円、投資CFは-290百万円、財務CFは-459百万円。現金及び現金同等物期末残高は3,956百万円。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2021年12月期の連結業績予想は、売上高18,345百万円（対前期比17.0%増）、営業利益1,034百万円（対前期比54.5%減）、経常利益1,090百万円（対前期比52.0%減）、親会社株主に帰属する当期純利益109百万円（対前期比92.4%減）。米国市場等への積極投資およびサーバー増設、CM投資を計画。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2020,
+          "target_period": "FY",
+          "value_surface_ja": "2,272百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2021,
+          "target_period": "FY",
+          "value_surface_ja": "1,090百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "06_2021_FY_tanshin.pdf",
+      "fiscal_year": 2021,
+      "period": "FY",
+      "period_label_ja": "2021年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高18,489百万円（前年同期比18.0%増）、営業利益1,441百万円（前年同期比36.5%減）、経常利益1,468百万円（前年同期比35.4%減）、親会社株主に帰属する当期純利益551百万円（前年同期比61.6%減）。クラウド関連事業売上高は15,058百万円（前年同期比26.1%増）。人件費やTVCM等の広告宣伝費投資の積極化が利益を圧迫。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」の国内契約社数が23,000社に達し売上高は前期比39.7%増。東京都でのワクチン接種管理システム全庁採用など自治体DXが加速。「Cybozu Partner Network」へのパートナー制度リニューアルを実施。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産14,037百万円（前期末比1,802百万円増）、純資産6,371百万円（前期末比34百万円減）。短期借入金2,200百万円を実施。営業CFは+472百万円、投資CFは-1,492百万円（有形固定資産取得1,283百万円等）、財務CFは+1,695百万円。現金及び現金同等物期末残高は4,805百万円。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 8,
+          "statement_type": "forecast",
+          "summary_ja": "2022年12月期の連結業績予想は、売上高21,730百万円（対前期比17.5%増）、営業利益345百万円（対前期比76.1%減）、経常利益401百万円（対前期比72.7%減）、親会社株主に帰属する当期純損失429百万円。国内サーバー機材増設、広告宣伝費投下、米国市場での投資をさらに加速。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2021,
+          "target_period": "FY",
+          "value_surface_ja": "1,468百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2022,
+          "target_period": "FY",
+          "value_surface_ja": "401百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "05_2022_FY_tanshin.pdf",
+      "fiscal_year": 2022,
+      "period": "FY",
+      "period_label_ja": "2022年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高22,067百万円（前年同期比19.4%増）、営業利益611百万円（前年同期比57.5%減）、経常利益987百万円（前年同期比32.8%減）、親会社株主に帰属する当期純利益66百万円（前年同期比88.0%減）。クラウド関連事業売上高は18,649百万円（前年同期比23.8%増）。人件費増加や認知度向上のためのTVCM等の積極投資を継続。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」国内契約社数は27,500社、売上高10,414百万円（前期比32.4%増）と100億円を突破。株式会社リコーとの協業を開始し、米国を中心に「kintone」の拡販体制を強化。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産15,907百万円（前期末比1,870百万円増）、純資産4,630百万円（前期末比1,741百万円減）。長期借入金2,800百万円を調達。営業CFは+1,328百万円、投資CFは-3,121百万円（東京オフィス改装・サーバー増設等で有形固定資産取得2,854百万円）、財務CFは+1,929百万円。現金及び現金同等物期末残高は5,124百万円。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 18,
+          "statement_type": "actual",
+          "summary_ja": "2022年12月20日の取締役会において株式会社リコーに対する第三者割当による自己株式処分を決議し、2023年1月5日に払込完了（処分株数1,740,100株、処分価額総額4,499百万円）。資金使途はサーバー機材購入費用および米国における組織維持・拡大投資。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2023年12月期の連結業績予想は、売上高25,497百万円（対前期比15.5%増）、営業利益2,376百万円（対前期比288.4%増）、経常利益2,450百万円（対前期比148.1%増）、親会社株主に帰属する当期純利益1,541百万円。広告宣伝投資を認知度維持レベルへ抑え利益率改善へ。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2022,
+          "target_period": "FY",
+          "value_surface_ja": "987百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2023,
+          "target_period": "FY",
+          "value_surface_ja": "2,450百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "04_2023_FY_tanshin.pdf",
+      "fiscal_year": 2023,
+      "period": "FY",
+      "period_label_ja": "2023年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 16,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高25,432百万円（前年同期比15.2%増）、営業利益3,394百万円（前年同期比454.9%増）、経常利益3,579百万円（前年同期比262.5%増）、親会社株主に帰属する当期純利益2,488百万円（前年同期は66百万円）。クラウド関連事業売上高は22,283百万円（前年同期比19.5%増）。前年の積極的な広告宣伝投資から当期は認知度維持投資に抑制したことで営業利益が大幅V字回復。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」国内契約社数は32,800社、売上高13,012百万円（前期比24.9%増）。製品価値（現場による業務改善）を訴求する新TVCMを開始。地方銀行協業は約600社への導入実績に拡大。海外向け「kintone」でSOC2 Type1報告書を受領。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産19,248百万円（前期末比3,340百万円増）、純資産11,253百万円（前期末比6,623百万円増）。借入金返済等により負債が3,282百万円減少、リコー向け自己株式処分等で純資産が大幅増加。営業CFは+4,548百万円、投資CFは-2,532百万円、財務CFは-777百万円。現金及び現金同等物期末残高は6,492百万円。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2024年12月期の連結業績予想は、売上高28,730百万円（対前期比13.0%増）、営業利益3,097百万円（対前期比8.8%減）、経常利益3,142百万円（対前期比12.2%減）、親会社株主に帰属する当期純利益2,028百万円（対前期比18.5%減）。売上拡大に向けTVCM等のプロモーションを再強化。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2023,
+          "target_period": "FY",
+          "value_surface_ja": "3,579百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2024,
+          "target_period": "FY",
+          "value_surface_ja": "3,142百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "03_2024_FY_tanshin.pdf",
+      "fiscal_year": 2024,
+      "period": "FY",
+      "period_label_ja": "2024年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 16,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高29,675百万円（前年同期比16.7%増）、営業利益4,892百万円（前年同期比44.1%増）、経常利益5,335百万円（前年同期比49.0%増）、親会社株主に帰属する当期純利益3,555百万円（前年同期比42.8%増）。クラウド関連事業売上高は26,791百万円（前年同期比20.2%増）。積極的なプロモーションや研究開発投資を行いながら大幅増益を達成。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」国内契約社数は37,000社、売上高16,192百万円（前期比24.4%増）。2024年11月に「kintone」「サイボウズ Office」「Garoon」「メールワイズ」の価格体系改定および最小契約ユーザー数改定を実施。大企業向け「ワイドコース」投入。タイ法人設立（Kintone (Thailand) Co., Ltd.）。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産21,087百万円（前期末比1,838百万円増）、純資産11,633百万円（前期末比380百万円増）。自己株式取得2,929百万円を実施。営業CFは+5,601百万円、投資CFは-3,089百万円（サーバー機材等取得）、財務CFは-3,599百万円（自己株式取得および配当金支払）。現金及び現金同等物期末残高は5,589百万円。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 13,
+          "statement_type": "actual",
+          "summary_ja": "当社グループの開発体制最適化のため、連結子会社である才望子信息技術（上海）有限公司の開発事業を廃止し、人員整理費用等150百万円を事業構造改善費用（特別損失）として計上。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2025年12月期の連結業績予想は、売上高36,004百万円（対前期比21.3%増）、営業利益8,437百万円（対前期比72.4%増）、経常利益8,494百万円（対前期比59.2%増）、親会社株主に帰属する当期純利益5,904百万円（対前期比66.1%増）。価格改定効果等により大幅な増収増益を見込む。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2024,
+          "target_period": "FY",
+          "value_surface_ja": "5,335百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2025,
+          "target_period": "FY",
+          "value_surface_ja": "8,494百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "02_2025_FY_tanshin.pdf",
+      "fiscal_year": 2025,
+      "period": "FY",
+      "period_label_ja": "2025年12月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当連結会計年度の業績は、売上高37,430百万円（前年同期比26.1%増）、営業利益10,101百万円（前年同期比106.4%増）、経常利益10,325百万円（前年同期比93.5%増）、親会社株主に帰属する当期純利益7,081百万円（前年同期比99.2%増）。クラウド関連事業売上高は34,485百万円（前年同期比28.7%増）。価格改定効果やユーザー数増により営業利益100億円を突破。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "「kintone」国内契約社数は39,000社、売上高21,689百万円（前期比33.9%増）。大企業向け「エンタープライズ事業本部」を設立しアップセルを強化。「サイボウズ Office」売上高6,832百万円（前期比18.7%増）、「Garoon」売上高6,213百万円（前期比12.2%増）。「kintone AIラボ」等全社的にAI開発体制を強化。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 13,
+          "statement_type": "actual",
+          "summary_ja": "プロバスケットボールチーム「愛媛オレンジバイキングス」を運営する株式会社エヒメスポーツエンターテイメントの第三者割当増資を引き受け子会社化（取得対価165百万円、議決権割合50.15%）。創業地・愛媛での地域DX推進とまちづくり貢献が目的。のれん111百万円が発生。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 6,
+          "statement_type": "actual",
+          "summary_ja": "総資産30,140百万円（前期末比9,052百万円増）、純資産17,815百万円（前期末比6,181百万円増）。営業CFは+10,676百万円、投資CFは-3,102百万円（サーバー増設等の有形固定資産取得2,879百万円）、財務CFは-1,388百万円（配当金支払1,383百万円）。現金及び現金同等物期末残高は11,694百万円。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 4,
+          "statement_type": "mixed",
+          "summary_ja": "中期ターゲットとして2028年12月期の連結売上高509億円を掲げ、達成に向けた特別賞与の設定や昇給を実施。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 7,
+          "statement_type": "forecast",
+          "summary_ja": "2026年12月期の連結業績予想は、売上高42,168百万円（対前期比12.7%増）、営業利益10,514百万円（対前期比4.1%増）、経常利益10,732百万円（対前期比3.9%増）、親会社株主に帰属する当期純利益7,445百万円（対前期比5.1%増）。人員採用・広告宣伝・データセンター運用費等の投資を増額予定。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2025,
+          "target_period": "FY",
+          "value_surface_ja": "10,325百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2026,
+          "target_period": "FY",
+          "value_surface_ja": "10,732百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "01_2026_Q1_tanshin.pdf",
+      "fiscal_year": 2026,
+      "period": "Q1",
+      "period_label_ja": "2026年12月期 第1四半期",
+      "is_latest": true,
+      "pdf_page_count": 10,
+      "items": [
+        {
+          "category": "business_overview",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当社グループはクラウドベースのグループウェアおよび業務アプリ構築クラウドサービス（「kintone」「サイボウズ Office」「Garoon」「メールワイズ」等）の開発・販売を展開。契約社数は70,000社、契約ユーザーライセンス数は380万人を突破。収益の大部分は「一定期間にわたり移転される財又はサービス」としてストック型クラウドサービス利用料から獲得。"
+        },
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当第1四半期連結累計期間の連結業績は、売上高10,246百万円（前年同期比17.0%増）、営業利益3,014百万円（前年同期比15.3%増）、経常利益3,084百万円（前年同期比22.1%増）、親会社株主に帰属する四半期純利益2,191百万円（前年同期比21.6%増）。クラウド関連事業売上高は9,393百万円（前年同期比17.1%増）。「愛媛オレンジバイキングス」運営費等の売上原価増、人件費増、広告宣伝費増、研究開発費増を吸収し増収増益。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 9,
+          "statement_type": "actual",
+          "summary_ja": "当第1四半期の顧客との契約から生じる収益の内訳は、一定期間にわたり移転されるサービスが10,020百万円（前年同期は8,543百万円）、一時点で移転される財又はサービスが225百万円（前年同期は215百万円）、合計連結売上高は10,246百万円。単一報告セグメント（ソフトウェアの開発・販売）。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当第1四半期連結会計期間末の総資産は27,023百万円（前期末比3,116百万円減）、負債合計9,436百万円（前期末比2,887百万円減）、純資産合計17,586百万円（前期末比228百万円減）。剰余金配当1,849百万円の実施や上場株式の株価下落によるその他有価証券評価差額金減少に対し、四半期純利益2,191百万円の計上で利益剰余金が増加。自己資本比率は64.9%。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 4,
+          "statement_type": "forecast",
+          "summary_ja": "2026年12月期の通期連結業績予想（売上高42,168百万円、営業利益10,514百万円、経常利益10,732百万円、親会社株主に帰属する当期純利益7,445百万円）については、2025年12月18日公表値から変更なし。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 10,
+          "statement_type": "target",
+          "summary_ja": "2026年5月14日開催の取締役会において、保有資産を活用して自己株式を取得し資本構成の再構築を進め機動的な資本政策を図るため、自己株式取得を決議。取得対象：当社普通株式、取得し得る株式の総数：上限300万株（発行済株式総数（自己株式除く）の6.5%）、取得価額の総額：上限30億円、取得期間：2026年5月15日〜2026年7月31日、取得方法：東証における市場買付。"
+        }
+      ],
+      "annual_financial_anchor": null,
+      "unavailable_categories": [],
+      "notes": []
+    }
+  ],
+  "capital_allocation_tracks": [
+    {
+      "track_label_ja": "クラウドサービスインフラ及びデータセンター設備投資",
+      "track_type": "organic_accumulation",
+      "capital_destination_ja": "クラウド基盤（「cybozu.com」「NECO」等）およびサーバー機材・データセンター設備",
+      "start_fiscal_year": 2016,
+      "end_fiscal_year": 2025,
+      "stated_rationale_ja": "クラウドサービスの契約社数・ユーザー数の拡大に伴うインフラ容量拡張およびセキュリティ・信頼性強化のため",
+      "capital_inputs": [
+        {
+          "source_filename": "11_2016_FY_tanshin.pdf",
+          "fiscal_year": 2016,
+          "period_label_ja": "2016年12月期",
+          "input_type": "capacity_or_fixed_assets",
+          "amount_or_scale_ja": "工具、器具及び備品（純額）647百万円",
+          "input_ja": "クラウドサービス用サーバー増設等により固定資産を取得",
+          "relative_priority_ja": "最高優先度"
+        },
+        {
+          "source_filename": "05_2022_FY_tanshin.pdf",
+          "fiscal_year": 2022,
+          "period_label_ja": "2022年12月期",
+          "input_type": "capacity_or_fixed_assets",
+          "amount_or_scale_ja": "有形固定資産取得による支出2,854百万円、工具、器具及び備品（純額）2,900百万円",
+          "input_ja": "新クラウド基盤「NECO」への移行およびサーバー大幅増設等の設備投資を実施",
+          "relative_priority_ja": "リコーからの第三者割当増資資金（4,499百万円）の主要使途"
+        },
+        {
+          "source_filename": "02_2025_FY_tanshin.pdf",
+          "fiscal_year": 2025,
+          "period_label_ja": "2025年12月期",
+          "input_type": "capacity_or_fixed_assets",
+          "amount_or_scale_ja": "有形固定資産取得による支出2,879百万円、工具、器具及び備品（純額）4,230百万円",
+          "input_ja": "クラウド需要増に対応するサーバー機材・データセンター運用費の継続投資",
+          "relative_priority_ja": "最優先継続"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "05_2022_FY_tanshin.pdf",
+          "fiscal_year": 2022,
+          "period_label_ja": "2022年12月期",
+          "effect_type": "financing_proceeds_or_repayment",
+          "effect_ja": "株式会社リコーに対する自己株式処分により4,499百万円を調達しサーバー機材購入資金へ充当"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "02_2025_FY_tanshin.pdf",
+          "fiscal_year": 2025,
+          "period_label_ja": "2025年12月期",
+          "return_type": "profit_or_loss",
+          "return_ja": "クラウド売上高が34,485百万円に拡大し、連結営業利益10,101百万円（前期比106.4%増）を達成",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "リコーとの資本業務提携及び自己株式処分",
+      "track_type": "debt_or_liquidity",
+      "capital_destination_ja": "株式会社リコーとの長期的パートナーシップ構築およびクラウドインフラ・米国展開資金獲得",
+      "start_fiscal_year": 2022,
+      "end_fiscal_year": 2025,
+      "stated_rationale_ja": "リコーの販売チャネル・サポート網を通じた米国を中心とするkintone拡販およびサーバー機材購入資金調達のため",
+      "capital_inputs": [
+        {
+          "source_filename": "05_2022_FY_tanshin.pdf",
+          "fiscal_year": 2022,
+          "period_label_ja": "2022年12月期",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "自己株式処分価額総額 4,499百万円（普通株式 1,740,100株）",
+          "input_ja": "株式会社リコーに対する第三者割当による自己株式処分を決議（2023年1月5日払込完了）",
+          "relative_priority_ja": "戦略的提携資金調達"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "04_2023_FY_tanshin.pdf",
+          "fiscal_year": 2023,
+          "period_label_ja": "2023年12月期",
+          "effect_type": "distribution_execution",
+          "effect_ja": "資本剰余金が4,045百万円増加、自己株式が454百万円減少（純資産・手元資金の補強完了）"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "04_2023_FY_tanshin.pdf",
+          "fiscal_year": 2023,
+          "period_label_ja": "2023年12月期",
+          "return_type": "other_operating_or_financial_return",
+          "return_ja": "米国における「RICOH Kintone plus」のリリースと共同販売推進",
+          "attribution": "management_linked",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "株主還元（配当増額及び自己株式取得）",
+      "track_type": "shareholder_return",
+      "capital_destination_ja": "株主への利益還元（配当金の漸増および自己株式取得）",
+      "start_fiscal_year": 2016,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "業績向上に応じた株主への還元強化および保有資産を活用した資本構成の再構築のため",
+      "capital_inputs": [
+        {
+          "source_filename": "11_2016_FY_tanshin.pdf",
+          "fiscal_year": 2016,
+          "period_label_ja": "2016年12月期",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "年間配当金総額405百万円（1株当たり8.83円）",
+          "input_ja": "クラウド事業売上総額の10%を配当額とする基準で配当実施",
+          "relative_priority_ja": "定量基準配当"
+        },
+        {
+          "source_filename": "03_2024_FY_tanshin.pdf",
+          "fiscal_year": 2024,
+          "period_label_ja": "2024年12月期",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "自己株式取得金額2,929百万円、配当金総額1,386百万円（1株当たり30.00円）",
+          "input_ja": "市場買付による自己株式取得および増配を実施",
+          "relative_priority_ja": "株主還元強化"
+        },
+        {
+          "source_filename": "02_2025_FY_tanshin.pdf",
+          "fiscal_year": 2025,
+          "period_label_ja": "2025年12月期",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "年間配当金総額1,849百万円（1株当たり40.00円）",
+          "input_ja": "利益成長に伴う配当額増額",
+          "relative_priority_ja": "継続増配"
+        },
+        {
+          "source_filename": "01_2026_Q1_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年12月期 Q1",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "自己株式取得枠 上限30億円（300万株）",
+          "input_ja": "2026年5月14日の取締役会にて自己株式取得枠の設定を決議",
+          "relative_priority_ja": "機動的資本政策"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "01_2026_Q1_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年12月期 Q1",
+          "effect_type": "distribution_execution",
+          "effect_ja": "剰余金配当1,849百万円の実施および30億円を上限とする自己株式取得枠の決議"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "01_2026_Q1_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年12月期 Q1",
+          "return_type": "return_on_capital_or_assets",
+          "return_ja": "自己資本比率64.9%、1株当たり予想純利益160.99円への向上（予定）",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "愛媛オレンジバイキングス（地域DX・まちづくり）子会社化",
+      "track_type": "acquisition",
+      "capital_destination_ja": "株式会社エヒメスポーツエンターテイメント（プロバスケットボールチーム運営）",
+      "start_fiscal_year": 2025,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "創業地である愛媛において「チームワークあふれるまちづくり」を推進し、スポーツチームを核とした地域DXおよびまちづくり貢献を行うため",
+      "capital_inputs": [
+        {
+          "source_filename": "02_2025_FY_tanshin.pdf",
+          "fiscal_year": 2025,
+          "period_label_ja": "2025年12月期",
+          "input_type": "acquisition_or_investment_spend",
+          "amount_or_scale_ja": "取得対価 現金165百万円（議決権50.15%取得）、関連費用26百万円",
+          "input_ja": "第三者割当増資引受による子会社化（資本業務提携）",
+          "relative_priority_ja": "新規地域DX・社会貢献投資"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "02_2025_FY_tanshin.pdf",
+          "fiscal_year": 2025,
+          "period_label_ja": "2025年12月期",
+          "effect_type": "goodwill_or_negative_goodwill",
+          "effect_ja": "のれん111百万円を計上（10年均等償却）"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "01_2026_Q1_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年12月期 Q1",
+          "return_type": "profit_or_loss",
+          "return_ja": "運営費等の売上原価増加要因として連結費用に計上（非支配株主に帰属する四半期純利益46百万円計上）",
+          "attribution": "direct",
+          "signal": "mixed"
+        }
+      ],
+      "adverse_evidence_ja": [
+        "買収直後において運営コスト増加が連結売上原価の押し上げ要因となっている点"
+      ],
+      "record_maturity": "too_recent",
+      "disclosure_limit_ja": null
+    }
+  ],
+  "research_notes": [
+    "単一報告セグメント（ソフトウェアの開発・販売）のため、事業・製品別の資産・損益数値は「経営成績に関する説明」および「収益認識関係」注記に記載された売上高および製品別導入社数に基づく。",
+    "2022年12月期より「収益認識に関する会計基準」等を適用しているため、2021年以前と2022年以降の貸借対照表（契約負債等）の数値比較には表示方法の変更が含まれる。"
+  ]
+}
+</research_map>
 
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
@@ -51,6 +1576,9 @@ placeholder relationships, or wording. Do not return Markdown.
   既存中核、主力候補、育成対象のどれだったかを確認して役割の変化を示す。
 - 現在地は「改善したから転換した」と断定せず、「直近の改善は何の証拠で、
   何の持続性はまだ証明しておらず、次にどの関係を確認すべきか」を示す。
+- 経営者の説明は検証対象として扱う。「順調」「成長領域」「シナジー」等の
+  表現をそのまま結論にせず、後続の利益、キャッシュ、資産効率、減損、撤退、
+  または開示された未達と照合する。確認できない場合は経営者の見方として示す。
 
 ## 1. エグゼクティブサマリー
 
@@ -95,6 +1623,8 @@ placeholder relationships, or wording. Do not return Markdown.
 「キャッシュ・フローの状況」「業績予想などの将来予測情報に関する説明」および
 中期計画、資本配分、リスクに関する経営者説明とする。財務サマリー表は数値確認
 には使うが、表の数値推移だけを長期的な経営分析の代わりにしない。
+経営者説明の強さや反復を成果の証拠とせず、実績、財政状態、キャッシュ・フロー、
+注記、後続期の結果を使って説明の妥当性を独立に評価する。
 
 継続テーマは原則として初期・中期・直近に現れるものを選ぶ。変化テーマは
 変化前と変化後を示し、その影響が現在の判断にも残るものを選ぶ。単年度の
@@ -136,6 +1666,29 @@ placeholder relationships, or wording. Do not return Markdown.
 バランスシート運営、配当・自己株式取得を必要に応じて比較する。項目を
 羅列せず、資金配分の優先順位とトレードオフがどう変わったかを示す。]
 
+### 資本配分は価値を創出したか
+
+**[創出した、概ね創出した、成果は混在、あまり創出しなかった、創出しなかった、
+または判断材料不足という結論]** [過去10年間に追加資本がどの事業・用途へ向かい、
+その配分先が後にどの程度の利益・利益率・キャッシュを生んだかを比較する。まず期首と
+直近の事業別・資産別の資本蓄積を比較し、資本の増減が大きい配分先から検証する。同じ
+事業範囲の利益・キャッシュが資産増加に追いついたかを確認してから、取引や経営説明で
+理由を補う。利益が増えていても資産がそれ以上に増えていれば、高リターンまたは価値創出と
+決めつけない。研究開発、ソフトウェア開発、営業・マーケティング、人員など主要投資が
+費用計上される事業では、資産残高を無理に使わず、開示された継続的な投資投入と後の利益・
+キャッシュ・事業成果を対応させる。正確なセグメント投下資本が非開示の場合は方向的に判断し、
+未開示の比率を推定しない。取得額が明確という理由だけで、小規模な買収・売却をより大きな有機的資本蓄積と
+同じ重要度で扱わない。二～四の重要な配分先について、資本投入、相対的な優先順位、その後の
+リターン、帰属の強さをつなげる。取得額、売却益、のれん、負ののれん、
+配当、自社株買いなどの取引・会計効果と、その後の経済的リターンを区別する。売上成長だけで
+魅力的なリターンとみなさず、開示されたROIC・ROA・事業資産利益率を優先する。これらが
+非開示の場合は、同じ事業範囲の資産・投下資本の変化と利益・キャッシュの変化を対応させ、
+資本増加に見合うリターンが生じたかを方向的に評価する。未開示の比率を作らず、利益、利益率、
+キャッシュ、稼働・活用状況、減損・撤退を重視し、
+高リターン事業へ資本が重点配分されたかを明確に答える。全社ROE・EPS・BPSや経営者の
+説明だけを特定投資の成果に帰属させず、配当・自社株買いの実施自体を価値創出とみなさない。
+事業別の直接的なリターンがない場合は、その配分先の価値創出は未確認とする。]
+
 ### 最新コメントから読み取れる現在地
 
 **[今後確認すべき最重要な関係]** [単一の指標を挙げるだけでなく、
@@ -159,9 +1712,12 @@ placeholder relationships, or wording. Do not return Markdown.
 </report_blueprint>
 
 <analysis_task>
-Create a Japanese investor report for security code 4776.
-The latest filing is 01_2026_Q1_tanshin.pdf. The trend period consists only
-of the selected year-end sources identified in the manifest.
+Create the final Japanese investor analysis for security code
+4776. The latest filing is 01_2026_Q1_tanshin.pdf.
+The chronological research map is an attention guide. The original PDFs
+supplied immediately before this task are authoritative and remain available
+for recovering omitted context, checking competing interpretations, and
+supporting conclusions not fully represented in the memo.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -173,16 +1729,27 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: at least 2 claims using the latest filing
+- latest.business_driver: 3-4 distinct driver claims when supported. Begin each
+  headline with a concise reader-facing driver tag and direction, such as
+  「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
+  transmission mechanism and affected segment or metric
 - latest.outlook: at least 1 claim using the latest filing
 - latest.risk: at least 2 claims using the latest filing
 - latest.context: target 1 integrated claim using the latest filing, written as
   2-3 short paragraphs when needed for readability
 - trend.perspective: target 1 integrated synthesis
-- trend.consistent: at least 2 genuinely different recurring themes
-- trend.change: 2-3 genuinely different material changes
+- trend.consistent: target 1-2 genuinely different recurring themes when supported
+- trend.change: target 1-3 genuinely different material changes when supported;
+  omit this section's claims rather than inventing a change when the dossier and
+  commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
+- trend.capital_value_creation: exactly 1 integrated assessment of whether the
+  decade's material capital-allocation tracks created value
 - trend.implication: target 1 current investor implication
+- management.strategy: exactly 1 detailed explanation
+- management.execution: exactly 1 detailed explanation
+- management.forecast_discipline: exactly 1 detailed explanation
+- management.accountability: exactly 1 detailed explanation
 
 These are coverage targets, not permission to create weak, repetitive, or
 unsupported claims. Return fewer claims when necessary. For each underfilled
@@ -190,31 +1757,29 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. First identify relevant evidence across the supplied PDFs internally. Rank it
-   by investor materiality before selecting claims. Do not split one financial
-   result into several key takeaways merely to satisfy the claim count.
-   For the trend analysis, begin with the qualitative management discussion:
-   経営成績に関する説明 or 経営成績等の概況, 財政状態に関する説明,
-   cash-flow discussion, 業績予想などの将来予測情報に関する説明,
-   management-plan progress, capital allocation, and management's discussion
-   of risks. Use financial-summary tables and notes as corroboration rather than
-   allowing a sequence of headline figures to become the trend thesis.
-2. Before choosing the trend themes, internally test each candidate using four
-   questions: what management said or prioritized; what subsequently happened;
-   what material evidence limits or contradicts the interpretation; and why that
-   record matters now. Reject themes that cannot answer the first three questions
-   with management-discussion evidence from the required period buckets.
-3. Ensure the key takeaways are diversified. Do not use separate sales, operating
+1. Read the filing memos chronologically, then revisit the PDFs for the passages
+   and periods that matter to the final thesis. Rank findings by investor
+   materiality only after considering the complete time series. Do not treat an
+   omitted memo item as proof that a subject was absent from a filing.
+   Treat management's narrative as a hypothesis to evaluate, not the report's
+   voice. For each material favorable claim, ask what observable result would
+   confirm it, whether that result appears, and what contrary evidence remains.
+2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
-4. Determine one unifying decade thesis and a small set of non-overlapping
+   Give material latest-filing guidance, segment performance, cash-flow drivers,
+   dividends, capital allocation, and mandatory disclosures appropriate weight
+   when the filing coverage shows they are available.
+3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
-   cyclical financial outcomes, and connect strategy, profitability, capital
-   allocation, risk, and the latest position.
-5. Apply the following source tests wherever the relevant disclosures exist:
+   cyclical financial outcomes. Use the locally calculated annual anchor series
+   to describe the early, middle, and recent financial arc, then connect it to
+   strategy, management commentary, capital allocation, risk, and the latest
+   position. Do not turn the anchor series into a year-by-year recital.
+4. Apply the following tests wherever the filings support them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -227,6 +1792,9 @@ Analysis requirements:
      still attempting to develop into one.
    - Distinguish repeated statements about operating capability from evidence of
      pricing power, market share, margin durability, or financial performance.
+   - Attribute unverified explanations to management. Do not turn words such as
+     strong, resilient, strategic, synergetic, disciplined, or on track into the
+     analyst's conclusion without compatible results across the relevant period.
    - Do not describe a recurring, installed-base, subscriber, backlog, or managed
      business as high-margin, stabilizing, or a cyclical buffer unless segment
      profitability or management discussion supports that relationship.
@@ -239,7 +1807,18 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-6. Apply these admission rules to the trend sections:
+   - Use the locally calculated annual series and forecast_accuracy comparisons
+     instead of doing fresh arithmetic. State the observed sample size when
+     characterizing forecast behavior. Do not describe
+     a persistent over- or under-delivery pattern unless at least three original
+     forecast-result pairs support it. Compare the latest annual guidance with
+     the nearest medium-term target when scopes and metrics match; distinguish
+     reaching a threshold from sustaining it.
+   - Compare repeated management wording directly across the PDFs. Identify
+     changes in cause, severity, confidence, qualification, proposed response,
+     or omitted emphasis; do not claim that commentary disappeared merely
+     because the research map did not retain it.
+5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
      the decade's central continuity, principal change, and material tension.
@@ -248,25 +1827,74 @@ Analysis requirements:
      slowdown, reversal, or other counterperiod disclosed in the filings. If this
      evidence is unavailable, omit the theme and record a coverage shortfall.
    - trend.change must explicitly explain before -> transition -> current state and
-     cite evidence for each stage. The before and current evidence must come from
-     separated periods. A single impairment, disposal, lawsuit, exceptional gain,
-     or recent improvement is not a decade change without a durable consequence.
+     use separated filings for each stage. The before and current sources must come
+     from separated periods. A single impairment, disposal, lawsuit, exceptional
+     gain, or recent improvement is not a decade change without a durable consequence.
    - The latest filing may update the current state but does not replace a recent
-     year-end source. Evidence from one year or adjacent years belongs in latest
-     context or risk, not in a decade theme.
-7. For every major growth theme, actively look for a contraction, miss, reversal,
-   or cyclical downturn in the supplied period. If one exists, explain what it
-   shows about durability rather than presenting only favorable years. Explain
-   what would confirm or disconfirm the latest interpretation. Do not convert an
-   ambition into implementation, implementation into an outcome, or one favorable
-   result into proof of durable change. A completed reorganization, acquisition,
-   divestiture, or investment establishes that the action occurred, not that its
-   intended economic outcome has been achieved.
-8. Treat capital allocation broadly: organic investment in people, marketing,
-   development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Discuss material shifts
-   and trade-offs rather than listing every cash-flow item. Keep this analysis in
-   its own section and do not repeat the same facts as separate strategic changes.
+     year-end source. Information from one year or adjacent years belongs in
+     latest context or risk, not in a decade theme.
+   - If the selected filings contain no material strategic or commentary change,
+     state that limitation through model_notes and concentrate the report on the
+     financial, forecast, target, disclosure, and capital-allocation record.
+6. For every major growth theme, use the dossier's contrary evidence, miss,
+   reversal, or cyclical downturn when one is present. Explain what it shows
+   about durability. Do not convert ambition into implementation or
+   implementation into an achieved economic outcome.
+7. For capital allocation, use reported capital stocks and operating assets as
+   primary evidence; do not begin from the list of named transactions. First
+   perform a beginning-to-end capital-base reconciliation from the PDFs:
+   identify the businesses or asset categories responsible for the largest
+   supported increases and decreases in segment assets, operating assets,
+   inventory, working capital, investment property, capacity, or other capital
+   employed. For an asset-light business whose reinvestment is mainly expensed,
+   use compatible disclosed R&D, software or product development, sales and
+   marketing, people or headcount, customer acquisition, or similar recurring
+   inputs instead; do not force an asset-base comparison that does not represent
+   its economics. Rank importance by the scale of capital or recurring investment
+   committed. Use `capital_allocation_tracks` afterward to explain those
+   movements; the track list is not a complete candidate list. When definitions
+   changed, use the longest compatible subperiod and state the limitation rather
+   than combining incompatible scopes.
+8. In trend.capital_value_creation, answer: "Where did incremental capital go,
+   and did it flow toward the destinations earning the strongest subsequent
+   returns?" Use this reasoning order:
+   a. name the one or two largest supported business-investment destinations;
+   b. compare each destination's beginning and ending capital base or recurring
+      investment input with compatible profit, cash, or operating outcomes;
+   c. decide whether returns improved, held, or deteriorated relative to the
+      capital absorbed;
+   d. only then use acquisitions, disposals, financing, and shareholder returns
+      to explain management's actions and any later reallocation.
+   Prioritize disclosed ROIC, ROA, return on operating assets, or equivalent
+   measures. When they are absent, make a directional comparison from compatible
+   business-level assets, capital employed, or recurring investment inputs and
+   profit or cash. A rise in profit is not proof of attractive returns: when
+   assets or recurring investment grew materially faster than profit, cash, or
+   relevant operating output, do not call the destination high-return or
+   value-creating without stronger evidence. Likewise, market share, revenue
+   growth, a high absolute profit, or margin alone does not establish capital
+   efficiency.
+   Do not calculate an undisclosed ratio or imply precision that the filings do
+   not support.
+   Keep the section's center of gravity on the largest business-investment
+   destinations. Discuss a named acquisition separately only when it is material
+   relative to the broader capital movement or recurring growth investment, or
+   has a separately observable return; an economically smaller transaction must
+   not receive equal weight merely because its purchase price and accounting are
+   easy to identify. An asset increase, acquisition, dividend, buyback, goodwill,
+   disposal gain, or financing action is not a return.
+   Do not say "most" or "the majority" of capital went somewhere without
+   comparable amounts or an unambiguous directional record. Do not credit a
+   destination with group-wide ROE, EPS, BVPS, or aggregate profit. A shareholder
+   distribution returns capital but does not by itself prove that value was
+   created. A favorable destination-level conclusion requires direct return
+   evidence; management-linked evidence is qualified support, while
+   aggregate-only or unattributed evidence cannot establish it.
+   State the strongest productive destination, the largest weak destination, and
+   whether management later shifted capital in the economically sensible
+   direction. Use a restrained directional judgment when denominators are
+   incomplete; never manufacture ROIC or ROA. The headline and opening sentence must
+   answer yes, mostly yes, mixed, mostly no, no, or not enough evidence.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
@@ -274,60 +1902,59 @@ Analysis requirements:
 10. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
-   Never add repetition, generic background, or weak themes merely to reach a length.
+   Integrate forecast behavior, commentary changes, commitment outcomes, and the
+   capital-value assessment by replacing lower-value description; do not add
+   repetition, generic background, or weak themes merely to reach a length.
 
-Management-consistency assessment:
-- Return one component for each required dimension.
-- Use 0 for materially inconsistent, 1 for weak, 2 for mixed, 3 for generally
-  consistent, and 4 for highly consistent. Compare early, middle, and recent
-  management commentary and cite evidence from all three periods for each rating
-  when available. A rating of 4 requires convincing early-, middle-, and
-  recent-period follow-through and no omitted material counterexample.
-- If longitudinal evidence is insufficient, set evidence_sufficiency to
-  "insufficient", set rating to null, cite whatever relevant evidence exists,
-  and explain the limitation. Use rating 2 only when the evidence itself is mixed.
-- Otherwise set evidence_sufficiency to "sufficient" and provide a 0-4 rating.
-- strategic_coherence: whether stated priorities and the logic of successive
-  plans remain coherent; explained adaptation is not automatically inconsistency
-- execution_follow_through: whether announced initiatives are later implemented
-  and associated operational or financial outcomes are discussed
-- forecast_target_discipline: whether forecasts and targets are subsequently met,
-  credibly revised, or transparently reconciled with outcomes; evaluate annual,
-  endpoint, and cumulative commitments separately
-- accountability_transparency: whether misses, trade-offs, changed assumptions,
-  and abandoned priorities are explained rather than silently replaced
-- Base these ratings primarily on management-discussion passages, not on raw
-  financial-table sequences or the mere repetition of plan slogans.
-- Each rationale must state the strongest supporting evidence and any material
-  contrary evidence. Repetition of a strategic priority without a later outcome
-  is not execution follow-through.
+Management-consistency explanations:
+- Return exactly one rating for each of the four management-consistency
+  dimensions. Use 0 materially inconsistent, 1 weak, 2 mixed, 3 generally
+  consistent, and 4 highly consistent. Use null only when the selected filings
+  provide no defensible basis for assessment. Python converts
+  the ratings to 0-1 subscores and calculates their arithmetic mean.
+- Produce one claim for each management.* section. Explain the corresponding
+  rating through concrete examples: targets achieved or missed, observed
+  revisions, forecast posture, implementation outcomes, commentary changes,
+  and management's treatment of setbacks.
+- For management.forecast_discipline, report the number of comparable original
+  forecasts from research_metrics. If that sample is insufficient, say so and
+  rely on separately evidenced medium-term target outcomes rather than implying
+  a complete annual forecasting record.
+- Use deterministic counts when useful, but never create a complete-history
+  claim from incomplete coverage.
+- Mention the strongest supporting observation and material contrary evidence
+  in the management.* claim. The management_consistency object contains only
+  rating and evidence-sufficiency metadata; do not duplicate the prose there.
+- A repeated priority without a later action or outcome is not execution.
+- Do not return citations, source locations, quotations, or evidence records.
+  Ground the prose by reviewing the supplied map and PDFs, but spend the response
+  budget on analysis and the four rating rationales.
 
 Quality profile:
 - Write sober, readable investor research, not promotional corporate copy.
 - Make the latest-filing summary concise and the decade analysis interpretive.
-- Separate actual results, forecasts, management targets, risks, and analyst inference.
-- Use early, middle, and recent filings to distinguish durable capabilities from
-  cyclical outcomes and genuine strategic change. Do not project a product's or
-  segment's current importance backward into earlier filings.
-- Make the qualitative management discussion the primary basis for trend
-  conclusions; use summary tables mainly to corroborate figures.
-- Lead with non-overlapping conclusions, analytical contrast, and why each
-  development matters.
-- Prefer specific, falsifiable observations to generic description or repeated figures.
-- Prefer two to four short sentences per theme and one primary conclusion per headline.
-- Test favorable interpretations against material counterevidence before using
-  labels such as stable, high-margin, diversified, financially strong, or leading.
-- Avoid superlatives and transformation language unless the filings explicitly
-  establish them.
-- State the operating or financial mechanism instead of calling a development
-  "positive for investors," a re-rating catalyst, or a key for the stock price.
+- Separate actual results, forecasts, targets, risks, and analyst inference.
+- Use early, middle, and recent filings to distinguish durable capabilities,
+  cyclical outcomes, and genuine change.
+- Use qualitative management discussion to identify claims, explanations, and
+  changes in emphasis, then test them against reported results, cash flow,
+  balance-sheet changes, footnotes, and later filings. Management's favorable
+  characterization is not an analyst conclusion.
+- For capital allocation, rank destinations by capital absorbed or released, not
+  by how prominently a transaction is named. Compare profit or cash with the
+  corresponding asset base or disclosed recurring investment input before calling
+  a destination productive; growth alone is not enough when investment grew faster.
+- Lead with non-overlapping conclusions and explain the operating or financial
+  mechanism. Prefer two to four short sentences per theme.
+- Test favorable interpretations against material counterevidence. Avoid
+  promotional superlatives, unsupported transformation language, and phrases
+  such as "positive for investors" or "key for the stock price."
 - Keep the executive summary and trend analysis complementary.
 
 
 Response details:
-- period_label_ja and period_label_en must be concise citation labels, not prose.
-- Do not return figure, date, or qualifier mapping arrays; local code derives them.
+- Do not return figure/date/qualifier mapping arrays; local code derives them.
 
-Based only on the supplied PDFs, return the schema-conforming JSON. Omit any
-assertion that cannot be grounded; grounding takes priority over coverage and length.
+Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
+that cannot be grounded; grounding takes priority over coverage and length.
 </analysis_task>

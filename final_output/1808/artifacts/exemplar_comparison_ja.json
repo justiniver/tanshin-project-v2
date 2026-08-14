@@ -5,17 +5,16 @@
     "executive_breadth": 5.0,
     "analytical_depth": 3.5,
     "trend_specificity": 4.0,
-    "evidence_density": 4.7,
     "tone": 5.0,
     "repetition": 5.0,
-    "readability": 4.0,
-    "approximate_length": 5.0
+    "readability": 4.5,
+    "approximate_length": 2.7
   },
-  "overall_score_0_to_5": 4.62,
+  "overall_score_0_to_5": 4.41,
   "generated_metrics": {
-    "main_characters": 5777,
-    "trend_narrative_characters": 2326,
-    "trend_perspective_narrative_characters": 368,
+    "main_characters": 7449,
+    "trend_narrative_characters": 4480,
+    "trend_perspective_narrative_characters": 419,
     "headings": [
       "# 株式会社長谷工コーポレーション（1808）",
       "## 企業概要",
@@ -30,11 +29,12 @@
       "### 変わらなかったこと",
       "### 変化したこと",
       "### 資本配分の変化",
+      "### 資本配分は価値を創出したか",
       "### 最新コメントから読み取れる現在地"
     ],
-    "citation_groups": 17,
-    "citation_references": 57,
-    "citation_references_per_1000_chars": 9.867,
+    "citation_groups": 0,
+    "citation_references": 0,
+    "citation_references_per_1000_chars": 0.0,
     "unique_years": [
       2017,
       2018,
@@ -45,18 +45,18 @@
       2023,
       2024,
       2025,
-      2026
+      2026,
+      2027
     ],
     "future_years_excluded_from_trend_score": [
-      2027,
-      2028
+      2031
     ],
-    "year_span": 9,
-    "bold_analytical_themes": 7,
-    "contrast_terms": 6,
-    "sentence_count": 50,
-    "average_sentence_characters": 84.94,
-    "long_sentence_count": 4,
+    "year_span": 10,
+    "bold_analytical_themes": 8,
+    "contrast_terms": 18,
+    "sentence_count": 92,
+    "average_sentence_characters": 72.41,
+    "long_sentence_count": 2,
     "repeated_sentence_count": 0,
     "semantic_overlap_pairs": 0,
     "promotional_terms": 0,
@@ -65,14 +65,15 @@
       "earnings_profitability",
       "cash_flow_balance_sheet",
       "operations",
+      "outlook_targets",
       "capital_allocation"
     ],
-    "key_takeaway_category_count": 4,
+    "key_takeaway_category_count": 5,
     "middle_period_years": [
-      2020,
       2021,
       2022,
-      2023
+      2023,
+      2024
     ],
     "trend_theme_average_years": 0.0,
     "trend_themes_with_three_periods": 0
@@ -128,19 +129,19 @@
     ],
     "key_takeaway_category_count": 5,
     "middle_period_years": [
-      2020,
       2021,
-      2022
+      2022,
+      2024
     ],
     "trend_theme_average_years": 3.71,
     "trend_themes_with_three_periods": 6
   },
-  "length_ratio_to_exemplar": 1.132,
-  "trend_length_ratio_to_exemplar": 1.409,
-  "perspective_length_ratio_to_exemplar": 1.099,
+  "length_ratio_to_exemplar": 1.459,
+  "trend_length_ratio_to_exemplar": 2.714,
+  "perspective_length_ratio_to_exemplar": 1.251,
   "rubric_notes": [
     "Scores are deterministic heuristics intended for iteration, not a substitute for human financial-analysis review.",
     "Length receives no additional credit inside the broad exemplar-relative target range; breadth, contrast, historical distribution, tone, and readability are scored separately.",
-    "Semantic factual correctness is handled by the separate evidence validator."
+    "Semantic factual correctness requires source review; citation-free validation provides only limited structural and numeric diagnostics."
   ]
 }

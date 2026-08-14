@@ -1,0 +1,524 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 12 Aug 2026 05:36:10 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=159326",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"identity\": {\n    \"security_code\": \"1808\",\n    \"company_name_ja\": \"株式会社長谷工コーポレーション\",\n    \"company_name_en\": \"HASEKO Corporation\",\n    \"latest_filename\": \"01_2026_FY_tanshin.pdf\",\n    \"latest_period_ja\": \"2026年3月期\",\n    \"latest_period_en\": \"FY2026\"\n  },\n  \"evidence\": [\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0001\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆2,731億円（同8.1％増）、完成工事総利益率の改善により営業利益は987億円（同16.6％増）、経常利益は941億円（同12.8％増）、親会社株主に帰属する当期純利益は548億円（同59.2％増）の増収増益となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0002\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"このような中、中期経営計画「ＨＡＳＥＫＯ Ｅｖｏｌｕｔｉｏｎ Ｐｌａｎ」の初年度となる当連結会計年度につきましては、完成工事総利益率の改善により、連結経常利益は予想の900億円を上回り、941億円となりました。\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"medium_term_plan\"\n      ]\n    },\n    {\n      \"evidence_id\": \"01_2026_FY_tanshin.pdf:s0003\",\n      \"source_filename\": \"01_2026_FY_tanshin.pdf\",\n      \"pdf_page\": 13,\n      \"exact_quote_ja\": \"2028年３月期 連結経常利益 1,000億円以上 2031年３月期 連結経常利益 1,300億円以上 安定的に1,000億円以上を計上できる収益基盤の確立 ＲＯＥ 10％を上回る水準を維持し、2031年3月期までに13％程度を目指す\",\n      \"period_label_ja\": \"2026年3月期\",\n      \"period_label_en\": \"FY2026\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題\",\n      \"tags\": [\n        \"management_discussion\",\n        \"medium_term_target\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2025_FY_tanshin.pdf:s0004\",\n      \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆1,774億円（同7.6％増）、販売費及び一般管理費の増加により営業利益は847億円（同1.2％減）、経常利益は834億円（同0.1％増）、海外関連事業において特別損失として減損損失、投資有価証券評価損及び訴訟損失引当金繰入額を計上したことにより、親会社株主に帰属する当期純利益は345億円（同38.5％減）の増収減益となりました。\",\n      \"period_label_ja\": \"2025年3月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"05_2025_FY_tanshin.pdf:s0005\",\n      \"source_filename\": \"05_2025_FY_tanshin.pdf\",\n      \"pdf_page\": 8,\n      \"exact_quote_ja\": \"物価上昇を上回る賃金アップを念頭にした処遇改善による人件費上昇を吸収しながら、計画数値である2025年３月期の連結子会社経常利益300億円以上、５期合計連結経常利益4,000億円を達成し、また年間配当額の下限を80円（2025年３月期は配当85円）とすることで、株主還元の充実も行ってまいりました。\",\n      \"period_label_ja\": \"2025年3月期\",\n      \"period_label_en\": \"FY2025\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (5) 今後の見通し\",\n      \"tags\": [\n        \"management_discussion\",\n        \"medium_term_plan\"\n      ]\n    },\n    {\n      \"evidence_id\": \"09_2024-05-10_tanshin.pdf:s0006\",\n      \"source_filename\": \"09_2024-05-10_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆944億円（同6.5％増）、完成工事総利益率の低下により営業利益は857億円（同4.9％減）、経常利益は833億円（同5.6％減）、親会社株主に帰属する当期純利益は560億円（同5.5％減）の増収減益となりました。\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"09_2024-05-10_tanshin.pdf:s0007\",\n      \"source_filename\": \"09_2024-05-10_tanshin.pdf\",\n      \"pdf_page\": 11,\n      \"exact_quote_ja\": \"2025年３月期 連結経常利益 1,000億円 2025年３月期 連結子会社経常利益 300億円以上 2021年３月期～2025年３月期 ５期合計連結経常利益 4,000億円\",\n      \"period_label_ja\": \"2024年3月期\",\n      \"period_label_en\": \"FY2024\",\n      \"statement_type\": \"target\",\n      \"source_section\": \"3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題\",\n      \"tags\": [\n        \"management_discussion\",\n        \"medium_term_target\"\n      ]\n    },\n    {\n      \"evidence_id\": \"13_2023-05-11_tanshin.pdf:s0008\",\n      \"source_filename\": \"13_2023-05-11_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、連結子会社における不動産の取扱量増加及び当社における建築受注用地の取扱量増加により売上高は１兆273億円（同12.9％増）、主に不動産利益の増加により営業利益は902億円（同9.0％増）、経常利益は883億円（同7.8％増）、親会社株主に帰属する当期純利益は593億円（同8.9％増）の増収増益となりました。\",\n      \"period_label_ja\": \"2023年3月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"13_2023-05-11_tanshin.pdf:s0009\",\n      \"source_filename\": \"13_2023-05-11_tanshin.pdf\",\n      \"pdf_page\": 5,\n      \"exact_quote_ja\": \"建設工事では、当社の土地情報収集力や商品企画力、施工品質や工期遵守に対する姿勢、効率的な生産体制等について事業主から評価を頂いている一方、資材労務費の高騰等の影響により、当期の完成工事総利益率は低下いたしました。\",\n      \"period_label_ja\": \"2023年3月期\",\n      \"period_label_en\": \"FY2023\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況 ②セグメントの業績\",\n      \"tags\": [\n        \"management_discussion\",\n        \"material_costs\",\n        \"labor_costs\"\n      ]\n    },\n    {\n      \"evidence_id\": \"17_2022-05-12_tanshin.pdf:s0010\",\n      \"source_filename\": \"17_2022-05-12_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、当社における完成工事高が減少したものの、当社における建築受注用地の取扱量増加及び連結子会社における不動産の取扱量増加により売上高は9,097億円（同12.4％増）、主に不動産利益の増加により営業利益は827億円（同13.4％増）、経常利益は819億円（同14.0％増）、親会社株主に帰属する当期純利益は545億円（同12.9％増）の増収増益となりました。\",\n      \"period_label_ja\": \"2022年3月期\",\n      \"period_label_en\": \"FY2022\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"21_2021-05-13_tanshin.pdf:s0011\",\n      \"source_filename\": \"21_2021-05-13_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、主にマンション建築工事の施工量減少により売上高は8,094億円（同4.3％減）、主にマンション建築工事の施工量減少及びマンション建築工事の完成工事総利益率の低下に伴う工事利益の減少により営業利益は729億円（同15.1％減）、経常利益は718億円（同15.7％減）、親会社株主に帰属する当期純利益は483億円（同19.4％減）の減収減益となりました。\",\n      \"period_label_ja\": \"2021年3月期\",\n      \"period_label_en\": \"FY2021\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"25_2020-05-14_tanshin.pdf:s0012\",\n      \"source_filename\": \"25_2020-05-14_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"当連結会計年度における業績は、主に不動産の取扱量減少により売上高は8,460億円（同5.0％減）、主にマンション建築工事の完成工事総利益率の低下により、営業利益は859億円（同12.7％減）、経常利益は853億円（同15.1％減）の減収減益となりました。\",\n      \"period_label_ja\": \"2020年3月期\",\n      \"period_label_en\": \"FY2020\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"29_2019-05-10_tanshin.pdf:s0013\",\n      \"source_filename\": \"29_2019-05-10_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大及び不動産の取扱量増大により売上高は8,910億円（同9.6％増）となりましたが、マンション建築工事の完成工事総利益率の低下により、営業利益は984億円（同2.4％減）、経常利益は1,004億円（同0.1％減）の増収減益となりました。\",\n      \"period_label_ja\": \"2019年3月期\",\n      \"period_label_en\": \"FY2019\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"33_2018-05-11_tanshin.pdf:s0014\",\n      \"source_filename\": \"33_2018-05-11_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大により売上高は8,133億円（同5.3％増）、マンション建築工事の完成工事総利益率の改善により営業利益は1,008億円（同13.2％増）、経常利益は1,005億円（同13.1％増）、親会社株主に帰属する当期純利益は723億円（同23.0％増）の増収増益となりました。\",\n      \"period_label_ja\": \"2018年3月期\",\n      \"period_label_en\": \"FY2018\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    },\n    {\n      \"evidence_id\": \"37_2017-05-12_tanshin.pdf:s0015\",\n      \"source_filename\": \"37_2017-05-12_tanshin.pdf\",\n      \"pdf_page\": 4,\n      \"exact_quote_ja\": \"以上の結果、当連結会計年度における業績は、売上高は7,723億円（同1.9％減）となりましたが、マンション建築工事の完成工事総利益率の改善により、営業利益は890億円（同29.5％増）、経常利益は888億円（同31.9％増）、親会社株主に帰属する当期純利益は588億円（同14.7％増）の増益となりました。\",\n      \"period_label_ja\": \"2017年3月期\",\n      \"period_label_en\": \"FY2017\",\n      \"statement_type\": \"actual\",\n      \"source_section\": \"1. 経営成績等の概況 (1) 当期の経営成績の概況\",\n      \"tags\": [\n        \"management_discussion\",\n        \"financial_results\"\n      ]\n    }\n  ],\n  \"business_drivers\": [\n    {\n      \"driver_id\": \"driver_1\",\n      \"canonical_tag\": \"customer_demand\",\n      \"label_ja\": \"マンション建築工事の施工量及び受注動向\",\n      \"direction\": \"positive\",\n      \"importance\": \"primary\",\n      \"nature\": \"cyclical\",\n      \"affected_area_ja\": \"建設関連事業 売上高・営業利益\",\n      \"summary_ja\": \"分譲マンションを中心とする建築工事の施工量や受注高の変動が、主力の建設関連事業における売上高及び利益を直接牽引・減速させる伝達メカニズムとなっている。\",\n      \"observed_periods_ja\": [\n        \"2017年3月期\",\n        \"2018年3月期\",\n        \"2019年3月期\",\n        \"2021年3月期\",\n        \"2024年3月期\",\n        \"2025年3月期\",\n        \"2026年3月期\"\n      ],\n      \"evidence_ids\": [\n        \"37_2017-05-12_tanshin.pdf:s0015\",\n        \"33_2018-05-11_tanshin.pdf:s0014\",\n        \"29_2019-05-10_tanshin.pdf:s0013\",\n        \"21_2021-05-13_tanshin.pdf:s0011\",\n        \"09_2024-05-10_tanshin.pdf:s0006\",\n        \"05_2025_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0001\"\n      ]\n    },\n    {\n      \"driver_id\": \"driver_2\",\n      \"canonical_tag\": \"material_costs\",\n      \"label_ja\": \"資材・労務費高騰と完成工事総利益率\",\n      \"direction\": \"mixed\",\n      \"importance\": \"primary\",\n      \"nature\": \"structural\",\n      \"affected_area_ja\": \"建設関連事業 完成工事総利益率・営業利益\",\n      \"summary_ja\": \"資材価格や労務費の高騰が完成工事総利益率の押し下げ要因となる一方、受注時採算の改善や原価低減努力の推進によって完成工事総利益率が改善・復調する循環的・構造的メカニズムを持つ。\",\n      \"observed_periods_ja\": [\n        \"2017年3月期\",\n        \"2018年3月期\",\n        \"2019年3月期\",\n        \"2020年3月期\",\n        \"2021年3月期\",\n        \"2023年3月期\",\n        \"2024年3月期\",\n        \"2025年3月期\",\n        \"2026年3月期\"\n      ],\n      \"evidence_ids\": [\n        \"37_2017-05-12_tanshin.pdf:s0015\",\n        \"33_2018-05-11_tanshin.pdf:s0014\",\n        \"29_2019-05-10_tanshin.pdf:s0013\",\n        \"13_2023-05-11_tanshin.pdf:s0009\",\n        \"09_2024-05-10_tanshin.pdf:s0006\",\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0002\"\n      ]\n    },\n    {\n      \"driver_id\": \"driver_3\",\n      \"canonical_tag\": \"property_prices\",\n      \"label_ja\": \"不動産取扱量及び分譲マンションの販売・引渡\",\n      \"direction\": \"positive\",\n      \"importance\": \"primary\",\n      \"nature\": \"cyclical\",\n      \"affected_area_ja\": \"不動産関連事業 売上高・営業利益\",\n      \"summary_ja\": \"分譲マンションの新規引渡し戸数や収益不動産の売却・仲介取扱量の増減、及び建築受注用地の取扱量変動が不動産関連事業等の利益を変動させる。\",\n      \"observed_periods_ja\": [\n        \"2019年3月期\",\n        \"2020年3月期\",\n        \"2022年3月期\",\n        \"2023年3月期\",\n        \"2024年3月期\",\n        \"2025年3月期\",\n        \"2026年3月期\"\n      ],\n      \"evidence_ids\": [\n        \"29_2019-05-10_tanshin.pdf:s0013\",\n        \"25_2020-05-14_tanshin.pdf:s0012\",\n        \"17_2022-05-12_tanshin.pdf:s0010\",\n        \"13_2023-05-11_tanshin.pdf:s0008\",\n        \"09_2024-05-10_tanshin.pdf:s0006\",\n        \"05_2025_FY_tanshin.pdf:s0004\",\n        \"01_2026_FY_tanshin.pdf:s0001\"\n      ]\n    },\n    {\n      \"driver_id\": \"driver_4\",\n      \"canonical_tag\": \"volume\",\n      \"label_ja\": \"分譲・賃貸マンション管理戸数の蓄積\",\n      \"direction\": \"positive\",\n      \"importance\": \"secondary\",\n      \"nature\": \"structural\",\n      \"affected_area_ja\": \"管理運営事業（旧サービス関連事業） 売上高・営業利益\",\n      \"summary_ja\": \"分譲マンション管理戸数や賃貸マンション・社宅運営管理戸数の新規受託・継続受託による累積が、収益の下振れを防ぐ安定的なストック型収益基盤を形成している。\",\n      \"observed_periods_ja\": [\n        \"2021年3月期\",\n        \"2022年3月期\",\n        \"2023年3月期\",\n        \"2024年3月期\",\n        \"2025年3月期\",\n        \"2026年3月期\"\n      ],\n      \"evidence_ids\": [\n        \"05_2025_FY_tanshin.pdf:s0005\"\n      ]\n    }\n  ],\n  \"commitments\": [\n    {\n      \"commitment_id\": \"commit_1\",\n      \"commitment_type\": \"medium_term_target\",\n      \"statement_period_ja\": \"2018年3月期\",\n      \"commitment_ja\": \"中期経営計画「NBj計画」3期合計連結経常利益 2,400億円\",\n      \"due_period_ja\": \"2020年3月期\",\n      \"outcome_status\": \"achieved\",\n      \"outcome_ja\": \"3期（2018年3月期:1,005億円、2019年3月期:1,004億円、2020年3月期:853億円）の累計連結経常利益は2,862億円となり、目標の2,400億円を上回って達成した。\",\n      \"revision_direction\": \"none_observed\",\n      \"forecast_posture\": \"balanced\",\n      \"evidence_ids\": [\n        \"33_2018-05-11_tanshin.pdf:s0014\",\n        \"29_2019-05-10_tanshin.pdf:s0013\",\n        \"25_2020-05-14_tanshin.pdf:s0012\"\n      ]\n    },\n    {\n      \"commitment_id\": \"commit_2\",\n      \"commitment_type\": \"medium_term_target\",\n      \"statement_period_ja\": \"2021年3月期\",\n      \"commitment_ja\": \"中期経営計画「NS計画」5期合計連結経常利益 4,000億円、2025年3月期 連結経常利益 1,000億円\",\n      \"due_period_ja\": \"2025年3月期\",\n      \"outcome_status\": \"partly_achieved\",\n      \"outcome_ja\": \"5期合計の連結経常利益は4,073億円となり5期累計目標（4,000億円）を達成した一方、2025年3月期単年度の連結経常利益は834億円となり単年度目標（1,000億円）は未達となった。\",\n      \"revision_direction\": \"none_observed\",\n      \"forecast_posture\": \"balanced\",\n      \"evidence_ids\": [\n        \"21_2021-05-13_tanshin.pdf:s0011\",\n        \"09_2024-05-10_tanshin.pdf:s0007\",\n        \"05_2025_FY_tanshin.pdf:s0005\"\n      ]\n    },\n    {\n      \"commitment_id\": \"commit_3\",\n      \"commitment_type\": \"medium_term_target\",\n      \"statement_period_ja\": \"2026年3月期\",\n      \"commitment_ja\": \"中期経営計画「HASEKO Evolution Plan」2028年3月期 連結経常利益 1,000億円以上、2031年3月期 連結経常利益 1,300億円以上\",\n      \"due_period_ja\": \"2031年3月期\",\n      \"outcome_status\": \"pending\",\n      \"outcome_ja\": \"計画初年度（2026年3月期）の連結経常利益は941億円を達成。2028年3月期及び2031年3月期の達成状況は対象期間中のため未確定。\",\n      \"revision_direction\": \"none_observed\",\n      \"forecast_posture\": \"not_assessable\",\n      \"evidence_ids\": [\n        \"01_2026_FY_tanshin.pdf:s0002\",\n        \"01_2026_FY_tanshin.pdf:s0003\"\n      ]\n    }\n  ],\n  \"management_themes\": [\n    {\n      \"theme_id\": \"theme_1\",\n      \"label_ja\": \"分譲マンション施工の採算性確保と完成工事総利益率の維持・向上\",\n      \"development\": \"persistent\",\n      \"early_period_ja\": \"2017年3月期〜2020年3月期\",\n      \"middle_period_ja\": \"2021年3月期〜2023年3月期\",\n      \"recent_period_ja\": \"2024年3月期〜2026年3月期\",\n      \"interpretation_ja\": \"土地情報収集力と特入施工の強みを活かした受注時採算の厳格管理、現場の原価低減努力の推進により、資材・労務費高騰局面におれても完成工事総利益率の改善・維持を経営の中心テーマに掲げ続けている。\",\n      \"evidence_ids\": [\n        \"37_2017-05-12_tanshin.pdf:s0015\",\n        \"13_2023-05-11_tanshin.pdf:s0009\",\n        \"01_2026_FY_tanshin.pdf:s0001\",\n        \"01_2026_FY_tanshin.pdf:s0002\"\n      ]\n    },\n    {\n      \"theme_id\": \"theme_2\",\n      \"label_ja\": \"ストック型ビジネス（管理運営・サービス関連事業）の拡大による収益基盤平準化\",\n      \"development\": \"strengthened\",\n      \"early_period_ja\": \"2017年3月期〜2020年3月期\",\n      \"middle_period_ja\": \"2021年3月期〜2023年3月期\",\n      \"recent_period_ja\": \"2024年3月期〜2026年3月期\",\n      \"interpretation_ja\": \"分譲マンションや賃貸マンション・社宅の管理戸数増、大規模修繕・リフォーム、シニア事業の強化を進め、建築請負依存からの脱却と安定収益の蓄積を強化している。\",\n      \"evidence_ids\": [\n        \"05_2025_FY_tanshin.pdf:s0005\"\n      ]\n    },\n    {\n      \"theme_id\": \"theme_3\",\n      \"label_ja\": \"株主還元の拡充（累進配当・総還元性向目標の設定）\",\n      \"development\": \"strengthened\",\n      \"early_period_ja\": \"2017年3月期〜2020年3月期\",\n      \"middle_period_ja\": \"2021年3月期〜2023年3月期\",\n      \"recent_period_ja\": \"2024年3月期〜2026年3月期\",\n      \"interpretation_ja\": \"配当の下限設定（70円→80円等）から、総還元性向40％〜50％程度の設定、累進配当の導入、機動的な自己株式取得へと株主還元方針を段階的に強化・拡充させている。\",\n      \"evidence_ids\": [\n        \"05_2025_FY_tanshin.pdf:s0005\"\n      ]\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"分譲マンション施工の強みを中核としながら、管理運営事業や不動産関連事業への事業領域拡大を一貫して進めており、戦略の筋道と事業の方向性に高い整合性が認められる。\",\n        \"evidence_ids\": [\n          \"05_2025_FY_tanshin.pdf:s0005\",\n          \"01_2026_FY_tanshin.pdf:s0002\"\n        ]\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"「NBj計画」の3期累計連結経常利益（目標2,400億円に対し実績2,862億円）及び「NS計画」の5期累計連結経常利益（目標4,000億円に対し実績4,073億円）の双方で累計目標を達成しており、高い実行力が維持されている。\",\n        \"evidence_ids\": [\n          \"25_2020-05-14_tanshin.pdf:s0012\",\n          \"05_2025_FY_tanshin.pdf:s0005\"\n        ]\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"NS計画における5期累計経常利益目標（4,000億円）は達成したものの、最終年度（2025年3月期）の単年度目標（1,000億円に対し実績834億円）が未達に終わるなど、単年度目標の規律面で一部過大な見通し設定がみられた。\",\n        \"evidence_ids\": [\n          \"09_2024-05-10_tanshin.pdf:s0007\",\n          \"05_2025_FY_tanshin.pdf:s0005\"\n        ]\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\",\n        \"rationale_ja\": \"資材・労務費高騰による完成工事総利益率の低下や、海外関連事業における特別損失（減損損失・有価証券評価損等）の発生理由について、決算短信の経営成績概況等で客観的かつ具体的に要因を開示している。\",\n        \"evidence_ids\": [\n          \"05_2025_FY_tanshin.pdf:s0004\",\n          \"13_2023-05-11_tanshin.pdf:s0009\"\n        ]\n      }\n    ],\n    \"overall_rationale_ja\": \"株式会社長谷工コーポレーションは、基幹事業である分譲マンション建築請負での高い市場シェアと受注時採算管理を強みとしつつ、管理運営・サービス関連事業や不動産開発への多角化を首尾一貫して推進している。中期経営計画「NBj計画」（3期累計経常利益2,400億円目標に対し2,862億円達成）及び「NS計画」（5期累計経常利益4,000億円目標に対し4,073億円達成）において、ともに累計目標を達成しており、戦略実行力と有言実行の姿勢が確認できる。一方、NS計画最終年度（2025年3月期）の単年度経常利益目標1,000億円に対して実績が834億円にとどまった点や、海外事業での減損損失計上などの課題は存在するが、資材・労務費高騰や外部環境変化の影響に関する開示姿勢は透明性が高く、総じて経営の整合性は良好と評価できる。\"\n  },\n  \"research_notes\": [\n    \"本ドシエは提示された10期分の決算短信（2017年3月期〜2026年3月期）に基づき作成されている。\",\n    \"2026年3月期より新中期経営計画「HASEKO Evolution Plan」が開始されており、初年度の連結経常利益は941億円（予想900億円を超過）となった。\"\n  ]\n}",
+            "thought_signature": "Eon-AQqF_gEBEU0yDxi6fmITHZN0YMX4alhctPPDY0OqFr6BoEM4prhetGTm_e5FOyUjSPArjbbr9K2i417UaIHrAlJn9LJjmF3YH-0HG71U9ejEBMHZLIXFONSky1z950v6VR2m6mL0Mg-olxlO4yzdhkZaEmD3jWZA9RuC9LDLfTxtzmszQ7Y25vpK10oPiYp3vh3_VEQg7YItOCNzakB5SlNZiiijvIahjZrs_bSnGBwP2VcTuBe6ehXx6VFKAAXxqaKBJyVPIjiX85UeiCfEj16e8eCvZ4GE5N84RadUCFGHkdt-lB9fWh38cNdwGP8w_jxqeVL37R5KPmoR7ikTAe1oWwtnNncQWiWgmp8S0zOwZZOIVP1ymtevj8rzXDkquu5u89akSsMlI7g7Q1FcOgd_7T46aGz_NusXmOK_JM-jEu74O0EwXP3QrriPJGJ2baRFg75l2IOhLK6iDBBK4uZ1t_43eSjt3xFQatTEn2hmxPIVM06dIT6lSD821n17QngS6k76lNr-aMzpqm8-uBzLiwwl0Itk_bqh1eCbbCZF5bKjx49hc6uePSUSsStcbXS6sGySCrl6YXW-cckFHSqfrMXB7AH5dTUl5NLyz6riI1D9CcNFUoNRJjcXaxb87PwZ5lfaGr-_obL0cs-pjMf2kjSuc1hXLHA4WdaQLp_6WPzxMH4Qh0EQ9gAnX_SSDoXQfIwB48mGMg9MaKzyRfrmMRfuQvrbJFf8_2wkH7HMXjmeY_nUGX4BxZy9MGNRae0B_legMMC-AaIPCpbP3aaJ5VIFqfUXtiWKeo8pUnsTNGQxvCUFqnWv9TMhnlInZkp7ORG0QJ9vaB0Hrg-j9RLa7g_HJ9CUt5c8Jz5mVJ4sPUEjcuDRxnM0QCOlk6W9Dnl6bbD7nwONlhTOCOS7-WP3uXq1Xh8eA4v3Jp8IxtqSK3QvRfEe1Q7kqNr9c6frjD5Ct7N2khIGgvxUV-f3uJqZ9DBVZrsUczM3h_xoDlTVQnaF8xdgiR0fTgD8s7djm-ujgrstBSJQS1OBsmWcOy_bATOeL3pB2K79LbnUWRKZpGqJQF10yNwlUg6fEXAFONrGEzFR_M658zUV0xVh5BOEs5BShieWmH_PBmQDlhF6AafmUK3VKMqVQvrdT0i7BDc9U8DZjrKlIDhjvEix9fZUYnEQCLi7-27IeUzkTfBip0EQbYoYmZStAMTVSXgAtV8h774MP54dzex5uf8eSDDumDQZoiYfeHSb0pEwyKzl8Au-ZqLdBGdZF9JMWyK44qY0y-XaeyFcL9An1t6dFcjpJFP8WwfrAykXhVQhvf0BoC4yJ_IBO3PCnur2Psk58nDiqQFdjK-htANNRCx0_RxAiturSrpfbvMatzzkpsVf0mD12jlIs7TuN6r6QAM9wHVIjvpQYRVU5McZ616WJeUpoP6h1tgY5N2TXUXurrBZTADSB5ipuD3iYnHqFJt_OqBzxLLFyKrkNDNq8JR4iLs_RxY164CHUQ1bvzRGZ6Zd59wQkrEk5YYr8XgjMiRILF4n07vtr9zfmIo0mZEtXcbbOznXMqio541-RzlwdCY0U9Z4I8RQanc4bIZKguowirwEVzl4o9UIAgouIZeIbvvgj_VrzUTfA9uBguQ5MDYMfcjIMgR55YfgdZbe1IGqHMoyOfBXInUQRDe6GqP9sOvW6WJuYNAmzBZGUUkCWjm92T-03Je68g8N54cfO5XFeRemaearB2ObK_X7_M3DHqiGCX5WbApwm6Vq3sTchbuH3Ot1A2FBN0ZV2M7LTAj1BtqG8B7J0tC6qnjcX2ZjbQinmSBy_XLluGQFLcSRBzOtmd1vbCMzYSoT383mfRBxlMwlW-5u5KeF81rYj0vHuhBQugXTZjLbg1LU4IeFUX8oCkCGkvaF_GU_1kFUSxVsTv2wy7PkUJe4vnJhQmcsa7U8zU_5QPVnTNWRKnQNsRctm5h3TTLMrqyti2mtC05fO7tEmKf22DiOi-VbHxy3bDyC8TQIq0ssC0286FSuEd-AUuH5-7UAwRObkM4DVrP5OzwFGRjnQCqVJ3tEKjsTUPLK23gqyF3oCr5iBjNEPR8ujsuLzXWiIinVTrlqBoC3JPu35Amj1RbojxFpCdEFd6F-fcFCAHWVsZXB2RuRRz6bjlhaSBWrf_8wWsQ50MTc2ShK-4T123k4eCUY_Qf6DMiqClfGpMJwLdbZMNCgte10k5zsORQsb9XWiDJ7AwTnqKnipoCalCm3IupkveBZjF_HVElZE6xsDzkjNv9kMSTDqs3uBHcQoq5FgfZ4zbopon-moGtlvJGEX4dOyBqbIUomtri0FtSY-VsM12O--DuB2F3yWmcdgPGn4moQ8buH1qEi1RV2MBuPGhrs_0Jhmn-D6abT2dLa2OosM6lgiFYJ4rLiiR-x8UbaiSbka8_xSA-7jn4Kd2k4mWTe--ExeggfaOdzR3jEanQG1egLGpEO4f-ApHYuhVyV-STtE6lPEh1MW-f9a7KGU5Feodk_1zUrHmHJW77MTjvMpTLAK0QrWcmjW9PJaBsz3S1Foo0daGX2T33QGYIjIhhLeA4eBnysf5q-YoaszTYAicvRH0LmbRIKHWaRWPHtktdEhrbOIVcpb-M7oFu0OoR9O8o5oGHA3d0RkHrRsC5wKxpXe8IZGSQShtbC9sL1W5qTqsfqCUxK8F86-E54pjzudO9ekPWwvmlFtYGPe4o4ef2ViZZU0laQusTInHeBMKDfHmyDLQVBrX4r815RA7eUh6Bb6MFHOiGXI6eyc0V7VuXIg9AyBZxQ27Rm4HwFAOu3u7U-H61CnxTbMvlb1wmv5t-ptQidIMsOHVCu8D6oq_goPrxeTSBMfj702-pmUtyeCY8Hzb0DeRQtMUcJXfe0Nsj17uxHES3NSnfg-S5OZ2Nya5NR2mVqt6UnLREnpQW-XjuBxxAhLLJwjDLLbXviF5yyHbSgkfxMnzRRtd_uqnLOhJuKSYZb30DuD5y20dJa1FBghiB4tg2RENHpgiOKy8HHTWiKfI82JpMYemFNVOkDwLx-1EenaYhYhP_bp_kUEnAKNSZK-Qh16CwPOWH4bl3amNt-jMg58D3cLwRUp1bGLwYfVH_-N3wD54ubcHYVqUtLOHNIitIs9ADhCLZjIoCeKuNVInRFxWnTwFvVE6956T82dx3U32P23IF6sYF5Xly3fpMdJOS3hRdbjtY3AwqvDuzbi0r7tXtkvyZ1xnIcSqCtODQ4lIlCURYNzRONAylRy_ChyQQvTqh0rFGPTFaSh3adWhCjBdEeEFfv8Se4KTJvqZtl69Y7IhsOT067S4msG0qiEMHqVT9HYN_3IGn7lVLjvz8GDLd_njxtqmGmwuhrcFoyp8IfyWFbGOxdtsx-V5poZrKfGgd8nuZ9bXTrlLjCYS3l-DMFVCnHd0Ay81wTaLPLGCQ9Cy5VZyzPgfs45ojt-F2t0m0HGmBXmIA429zZZs4WkvVKg6L0fhbwudqhWIIkuUI25YjcC_JILAvL-RD_HQpYnP_8O6VgX9BWyKpxCFTQ4aI9oKLi7JxCnNCJgsmiNa5z5XAmXTLQLqXVS70JNp40xo53jl3N4wlllPMz6-nCJN1yyNptms_a7BT9KjRsiEANkB1M8X6_vNkMO3PeOy_DXHfn3OU5LFML0SQyFaz2Lh1gX6tCZyZIxQ8vjo_cFmaVdBQbk4eE3cYNKyBqcKuYuu-wHBGN2ju5AN38yZVARywSFTw96OG7ddPyZFcS9OZT9O1YX7mTtQ7Kt14FBQCeZOJEPdASdER9RBBhHRtUBKZ3ZOq_F9YHCXZGIeCSw6WnYZZzIMkjfIhEV5fEJHI-em1tH_S1GKDRvmdMO1cg2kHbHP9cObh4piO7l_D_XUc_izkSgf5aZXx2kiq532u5v15kpL-2BaFIqiJQ9YTFJaRVp3j_DqMby6kzK3AfKBA49iBPzQFdDSs9amqE-oCGu0QMJp87PYhufkAUuN4JOroDNnd9pHVKyuX02u3ZNmGclDRK8Mwc1qE3XflI4Eq5C-ZkM7M80LkKxF9L0ydsqT2PSZMseCOuDRoBnfUYftqFFvxEEG1i34N8DB4mcl2TxpC18G7JwR9n0zPPN9Ux0AtIE8IfrqUalW8-7DSDhCmK575moSi6RPaJ35Pq-7oArtLp489YdA_afvkaUd65QQ6D80lvOlFUr9qi9lwBGohKSutE74rkkxbbr1YE0_cSMkcyRCyDgtT7pGNDNACG6ByGDQzSpky8zXCRFi6lB2jL3N9lzLMeAwKsQd2xrkk5vE1wY5LdWjlZJpk2TSiZgpVe2rQNTycIfmt3dmSlZsbNUJCrs5guPV-b1aY7AzbzenmfBaSxHQoPXB29jpzYqyZK8j7sLKICzynYNjVIRVQ04d2kJT1VgO-ilnzSNSF1aHQECIYX6SUsKX5D2B59Qy2LHGJciRXU-KBy1loHtSDAICH-wm4u2dHdguJAXAoh-1iHVKot4BC_pEBTWKvqfvb5B_B8dxbMUQvCl6wkuhqQdPt6NioZpeEjcL2lVLjBeiR--_WHQ8aIqC2OR4wXWkYnnMmcNyL5gr3En4Z79jfbTSFp8jI_dSP8QdKr1_JktQAkjaCmCQjL-IKlB08WBYXsHfdBbFD3wJrE9pjraqZsZgxK77nOyWaCw2a-sKQZuGVxUsNLCK2ll_E8GLhblXOcQeGuGPtfhoTCpojA7Pk2adZ6ziwMtO71S8FLYCmjB7gKLRt_pnkxxQLNlcks3sUkGxJ_fqAagBfdmfBXn2pQ7npaHgCVA807x9AlftEejE6UkfyRSFb-7ojCKZNGGb0_vxGPlojc6gouPZZeXecoo2F1Gd89Bu5F10pgLCSNLUobiKLBX8O6Jmcq5qXDcRCgb8GPCaVr99MiiT0rmHAcnGDFgS2r9uc37EcscbXxIP0DBFyOGJlkKjTyNR0JjsBxmKjTifzF-53RRociqRiada57w1Y1NRoGXWGvhJnqY7nXFbNrAdYOwbn0ep0ICZh2zmeZTP9vKzvD0FEDppo7e78a0CfjvwSATCTNdev2kEIrzWOxS6FHs_rIW4b3WDB1yjSOf2eUn8rZACgfDrT3_R-LYPAP1v-gUb8se58osVmKh9gBDW0GvARrmEwVuw7nQ26GkvP1wqO8dX_VIY9nlSThX6oLhSAnA70IafWapMqRao-VRChspoKak00PZ7yKlPL95YhYtvOLlqe8-AetscA5ebTfFtoUl3nzKCQHeHIKCNIizKsNKCjoORhVOGg2iOOPuM1fi8AsFNL8lw93VwymR51TfMfMTozAZfBZjeaot3uQgcW6IiuUDiX_U8zPrhc5MDjVx7l0XlC3QiIZIxS260dHHzE6XSvAvg_deUU1oX_4K_2iwnxHBmEOij1I2iuONeHcLlN8ylNiycfUxl5cstsT1tWgEK-y802VrOK7MGybgr87CqpnH77vJ-i9f0mm_gXtWFJExnGna1dhJ9sCRNrCmS9LKpI2TMowkj0Dkk9r6T7B8rPChn4NUS-vwBgWJaF0nm9_mUHz5sHO7eWK0PpTb37jabZ3uxiRJADdjsMUSty1nvCr07_XOOgmMMMOO0FWRFuYfNPAUgZpsqN7llSfrBEMhy-3rKWQMHn0rvmp32uG7zwArscO0J5rs9eCDyDY9NFc_mq9aXjNSAHGjvUbx_DmJ6vWjyvuSHPgqcU083cM96No4C3qP-2g9zJR0G3PG1VQEPAnXixZdtCyyaJH7CasmgByvEToKMy6u2y3ENxS2p1ww5lUqSmwrxWFv55Aqg24q-jakDRjsOtlXLStB2OxOrWx4-hGzoRKQUOvnJAB3vPnn87bE_DAu7pzIOLhb5SAYEjxxLUHmmi93YB2GkvoQcy1I984wFQn8Mv7_aw37rYZqySv8XcMMrs1VxJXuA7V1gSS8axg8QoQiHU2wL-IESFK7uxxFcv3AMMv3kRB89Mckw94h0Z7WaJ4431wD2a-Z3W0n4xSnyg4YoPadfQTd91QWjD804rXnWGl_G0m6gfJTRF17pXqwPvm-fxVUXidwG8qpYt3_YHujgsSgz6TblIt6GWD2LKdvNLT_S43cj2TNxy00JstRZ4tpSAOHOTWy84YwNt2OITBCPE7PTZSmsnrYN28Sob2RMtxRXzI3J3x0d_q1PNCSFrdB_O19pOHoTgj55HXVS7ytr7-OmUEc_dSeFoo-U8SO6UCyWPdU7kkfGsLcqGc20i1mvAOAQB1KCUBwymgccvkaSHjETaWmVndrwsFRexfNxb93-ZIiZUmz5EIFT9Qye4vlmter72xcS52xFLTGQZmWGRvl5Fn5leXkfxBXyKsAF2ggwMbxpAWg8Hli8AIbDEdpGRee5V5BoNGFFiVidhBlZtvEFieZWFlGQjJYwVtpgdhMvjgBZUwWr9Bcp8pkmvYUw25bZ5Y_hLNW1xiYYoppp0zbBq0WdbWGapeFBAPcVNa2QSO3wZ4_Zh-yDLTCuawJSf4_y6ixCc1ES8Zc21oeHC4IOVnpHoK3YrciOLz_ZsTMrPF5a2x0Br9kB0iaYHDS0VM3_RNSpN9pkGyHJGeIonmLnRm8iJ726Rxjelgski0YPRlI5LuzSaUBRI1qwajXYSigVpZZ0nMlwFfMb3YBvUqc2J07eQjmbVYyP0u9BqZkvHeUz8GP1DRGsET0FMGipD90idnEs3mSHKE0-uhMGnW5hBB3tCKHaDVCR3c1cSuLoJqZLUxuJv4rMuY3szqEHgbDLSa8S7hhMlc97QPaHhNAaAbTPUqbJld0H0haMIN2Cl1MmqPDjUOBD5qSb8mefkyBYyD26xZ5Qu2u6XNBxk6wD79pNlRwo-HjY7VhMZX0H4i8SfsbkpNmHm6wq0M2z0vpICwxW74DY-YPIDOrgF_9U4dGU5AmzpFqAF94r3aFf7p8O3J-2CLZGBM0zWW9cy-uXhpPd8LlZpRc6scfM_HZYWs4B5RI8CJlDwb-nCVPqaYWpzhj9sqHkQUKngJ04ACh03hLB8piORhNgB1ysVr_b2TJn73-RslYXpRFF14BtVceW5E6o4AQgVsC8cK7xFqh9klqTRPADETZLU1JZeSoko2G4eqOGS4mvlKxn-R7htqNIX4shx8Nkk8zb0V6eDUUCQ4MfbXhA5caLoDd_3Un0aqlEa3TNJ5ZyXJRNOymKvcuxM89JkF5oWA3450kyQYujBsi8Y6oaDCtrq4zIhcpYWCgVGVu2LeAD8OYr98roj7YnI3qa8H7Yerh9TW8CcVBIq9JGjE3vRHu_JnrYI-ZDJ7KBzCKIo0Wn9z3h2qseFM0fsRqbR6yVPrVRCMcFljw0wd253-6dVWkUBWx990l7HcaS1BxFO8OjZxsBArP2i4g99grOaYRcgU2Si8y1q-ULgesao2EJemo2NoiPzu74M2IHWuWYxs6jy7Sv0W3vvUHGWlLiGd32sTpBFxOvRNPEhxMgWU6XvP0lrA6rzJ8SPlH1seCfyVoAiaEyhp0gF7rmOlTcjOnFoMgky4y6I-r6cG7hj84xE0KopBf5pRHncEooKIgnyMYZQgnEkjyADI9jIT-hNuTXfC681bzMGyfvyPxONn7R-WA4IXlXPb_paUEgIj1IYSSFCJPiAOMTyokV_Qi14Drw2Sc2cWEF9Gk8QKFX6LWTmnXK86c_YWjVkXWPlayqxi8SRRDluD724ng_RAJP1b-uqbzUQFxo-Eu40B8CoWDJau57vJ51FQGG6m4ji1A2Oyc2Ou1SV2Z_9weSnFjJ8wNoMcaqZ7F2ovqM9dZnAfDAaA0zIZnV9T6fxfa9Hwhlh4u4AyHrWVIeVx_TU9DBbo_AbTlDS8W0ut0dgNWROxM7ZY1FSEol0WV7pm4zMbEbtWJUchE2YH7uNhwPT4VHIqNBd51DXJN99Xr2LkrXoErCNBvs9X1nlgUH4c_thbkGgIQvILG_XsdmWbkzhPJf0wHxnIxrDF5hiOCxdY--f3PuEXKgd8yJTTf2Pj6J51Pq182XkUNlk9HKOrPCwpGEilvunVsvABRszIRt7XgmtP2bnw0PXewweWT7tQvsO_hQ-hy9d5UudNg-sLciVCTK0153G3xaMYrBTy4f0j1ZoqN01SrzVkxpZsDDxh7nud-KsGZhR5IDbPJT7y5CdH1-tAnKl0SwGjzC4Wusrq5Oje8B12WVHdEJHqtu5LlTZlOgXrryMKtGq1k7X_xmYtYATd8c8TgQC3Io4UtQDL8qFjTr23irJMCp42HrgyEoIBFx4iY8zMPEkv9hB6iNjOOD0eR2ya_dBNHv6VJSVTCdzVJPbc5HWsadmJJvb5MmZ0AysBpaUHqIsfCK2-2kJdCRS8oKN9Nx8ypF5AHvwxgf-WqCHOYWOrn4ycUxrziVauFjg-Zm7ihnfzPMWOjuZ2XdcDnYhyYpAAx6NiwFXd99TElv5iZDYcxrIC_nFugnWmvQF_QCmlANT7jD92RHvCLm7cGOrn0HdGGzKji17Q_CAssxbPpxcvbUxes8YAFF3g1zF41UqfXHaO1A9k_FCCJpJwV95N7nXI643DgZ5ySUdjl_ecDpVi49QZzu1612Ou_3mOdpEIFzaNjcEi1DtxZF9RlK-sAUMuIM170gsTezt1YBefV2-nwZBbLwSUZomXRBueafY_hn9HoQqKAVIMkpAESURNGrp7vd3zCHNHsL8fkmsQAy0cEkQfj6k3Qy7HfRdTdZLyBT7tmWbSle7o80iDVpmnjKRn0voYjIEbjnYiznv3SLNoktm1EZSdQLvuPi96j8j0zWZMZ_r8Xzr66cFjM6nF0hzytpN5rEo6mjR9lmN13M22EMx28hCSyMefMTbyrffsSOnK9QwhP2V_1zxkpkqI8S4lomdETYWy2eqUoAb6_52m0ac1P_L0DfSlSK5XuVHeU2386-V41EcCPY97emxQq2lnpZTb6cMMEgV-87Tf89uZb0TFe6E7DfXpL5YwutN9Ay344N8QW_p4zzuhZ27MHQ1P7YAA6HcBX-oT8spHAXIZjVGHpi2_RjG2BqIN02yL8Gm0znYFSRnZ5d9ZeKFP-mzoBA_0SYZ33xKvQFmYN22b4Znkx43pWPX6faq6FcA1ptT6xpmpK6eupdGkPUb2rTBUKPTgG4ikSLIHPibUXeGuY0AwdajFhl_O7-eWkv__ULPP8MPBGi9gDIclDiVqkm0O1hcxJKqk9479oNkBBcsH0_PLJhfWjtLzT0KHFwkItA_l8B48yq-n6lULqK4-HZOyf0XGvfjWqNYmgi1xGZQwvfwyvCEngBolufRsSNi-iXexB11JS8LRiy_X4lipnkKoMq60o3astwiPjVV2P7bvA0j70Zp7I6SI4bL1LMfma6rtdh1PYdO-T-oy7V-GrjgYlmF_okkJNMHSpEmmFmbFJZJPsbVDQxfY-prhgWZgRcr3NspMU8TO8Sbp__KJWz8kUlrNQV1tSNCoRs86Ob0sVBgCkfIUyK6p4auTa3I0b0pGQ-apBUcvwqTb0cSGR6updb9FO6cI-0_HM2X1wJ494v_IKA0S1mKK997Dyb927oEWrQ4xoIwjoM1hnfcJBQF1CwTtL0nKtVRNhYT7Bd5SguhQkQw2gkLeQuPwxz07QV5RdSUtYT1qH5zvyTAnnl1976zefWNWmmtev4FW9sJIABYfMwlV3Ws1P48xaO-OtHo7vp92sO5HUUqSLNm8Hx6SJp4EkO9hw_Z7TMYic06F_Nu4jDGO6trIUsg837HhOyL_bpGrzKMKSjjSaW9EijLG0RIRbaGYkjWzOPCmtoRDZcXDxPHNVCanfA1IlDsf-ss6JFf1IHPsk6_losizuN5IO3Ftt0av0M-rL2DZ98fmvptrV-n_tdVbZU-g_UBF9bYaXHXABJ-Z4W2E_nQMDboIgh_Yf9aWDXtWRXiFipj034_qiyAN6dHAJJhantdK_NPEHYIWddRQ7QYZ8-ZjcZV6Yn_LwI_JTmhQj1rl5uCV3PYwcFwhbeYtluAu1s5BN1pQLSFfWgWkvqn2m1dAIhRa5svDlI4AAX-sHHNeDWdPFBKuadHU-76RK3t9_DoC94vVZWXSYQBVSB6KlzELEVKIlf37abSU0X4UWQ3B-JgaZ0nFPJs2LhChXeeBFxghUjjN26td68RpGpvf3ymDs5gf-dfJCNPUrDOvdDSvLJOvSTnOsXZ9uUhtCM9Sz3trkBvQic6qaZif6V4pU7qg4-9Tp_K76qnlxK940Y7BkAn5HyAWabTjAWauc0yX4tPSkjUXIwUz04p_-Ml_v9sOehl-j6lQ9cCn7hlMyvUkeEt5jcAC8x4uiN90PDE_Hgk-8jcojqz0WTT7WKlN_GqxdSycLubYjluv_X9bO7oSdhpuUouoObaveVCo6KodUktHrV3LcfZFrMiv6MKiQ7Y3amLiSDDf-fzAcPABjfXiSUNXYiE5AAn5cuHkIw2QiP33l1FyEKlo77Upv0GIZtHLFd2yw0u7XqJ8n1zQsLk_YE_lQDcJfam49Ss48yfqGEDE8e52fqtIlt6ymodRQ1yisZFFORNfUwFasgbA_kt7s9eejyWm5zPVtzHlEOhu2wLFJexTtWtc8Zbu6QLHL7SkWxpdH3HH1JRyabpNMGlg2pQfOPZFZCPzVNqkb-MObBf6fPGS0JPggD7Nxx51QbESEPlwWpIRyX-VWaX2HQ3AKln-1OtFSE-j1aN5SEdrgCDazOU2kE9cuMZCH8IrafG0aTLK-gyFEeY5Ss1UdLQFBvQAQaqjiYgJpFPq4BdLadOlqBD8FuMdvNTs_6G73pvLD9gjH2Ft0PiCiWEL1EbNCtL3ePNps3tZBNNQVTt5nPPEhQOqaIAzjmpVV7uevrhreOJ4hQSH0g6pAFRsQK4d2OOgZkCJD0u9g6xS1ylNxAkqsBejh5qt-zVnM7jhA0dBFord0p3umGA02kbFBDQpOM736F4nlCILfLqnCokg_9XZdhVkn_a49CfmlY0Nz1npsL46ltjojg1IJ5NZ-cD127Q-myLxIJqxlKS2ZfGn3HQZrAzqzuSDl0Y9OCaUxgbopkNwqaVlwPrsBC6roANx8DXiNnroTTUqoJxBtw1NY_DxsXJJBLdBePxoGGvFm6pgJHIpC14YUJPpoND7I2T3E_qFAzUtMKkgFT9fUOT7xcotaTHJuBcTk0s6HMJZrfukU4dKbO6yI2wby4cyasm4e_rndFrpkNickfAB6jSwn8Uk2VIyUnevk5wMorFnmgZ0N99EA75Qvt0kEyhB7FPjT8bjL8SP_S_fjVPW03CSm5DhTYROWeQffKmvzr_ZXXX9xZRkE9YPO6D3miNmO2cEpsVwSCZaVlRKPvRLez8LzoAWOWiy_qzxwFbmelB7QXti5fnINTz5-RJLy-CwuCFdL7fvi36Q3yeYu7Cmm6t23LkeulnhAg2z7eE3EHu_ux3ESHOx_Gy5z92DC49Nfrnk93-_k-inCjEy2u_VHVvvx7_qEz1QKKSt41qGm0k08M2pJc2kCR_8NzrUArShe_eOCcnWzP9aqJNqZ3hmWIqopaK649FkP0ZcNt0M9qAQbwz-Pp9a8MOirGCp2RKyG1A2v0I9cRQMH6WhqDqLMkViwXm-IEnjEF088cut9BSKhG_US3iqcdBjQsAkyqOPc0C9iavYFO1KI59ARfOCGPQcydqH37fb7SOXBATUNnFAF6kWTwsnzqhT1sCmiWGu7qdEVmVsVmCV1ctBTJEI6eCFPBf_kCQ_je0K5El5woTpl1n8Fzh43R-y71cT0Dn3VkMaT_MXkl8v8ReG3sP31UIfT444fTIlZ3fzbplOGmZolmSoF6C-CEDv7PddpKQH8is2GnpS8jr6Y_vKuGlI1fYjse1SXy_sAyL6WFH1KIbEV6cr7TSyoDlw80-7j89VDiq8GMqylLAoFWJp9PMOxEI6yPRpgowue2vw3PZCLuO6zNORqBJp44WATg4YXoNG1JkHkTJuV6k5v0vr7CFceweG--8qpvjtXuQ1__6fc1r_1BSXoGc4Wv_Osf-gGLFO2opkkVBgfKv1X2hDum1qdLbHMz5xrbAKePy__Qp5xhtTx0lUTdbsH2D99MkkomUu3jsHKOuV-QaYe1WtB5e1qkx5Yi8cbIVBMNZr_XR0aOinw72yWpSSVIJXWgRMMmXNVXL0SjTQd5addFxukMyX1W1vdkgnoqxlf1nopZqB-o8xj6jSPvycObpnTlrSzKg2A5lOzgsyBIWBexTvoa_B_mKHlUhMwZhxiDY_3ADvT12YOLnIzkFBRIYYOkl9oOJjt8mGA2S7hx5oZS_D6kQAQwzhAPz_aExaW4kcL0C2-ymuctRMW2uqaFaJ7DcROnll-WH8m24j8wP3iR4qnLloBGbbPPypr3ku_NTyXUj3YqxWC6ntkkboXuwqe02WvXlXBUiuRX2NA16eukNmWtGx3IBF4fmNLj0uBoBEKG_1c5QRLB6XDaVV9ajXBPSV9PcYg5yQrz-gB7OS9vHuyctm224AqSlq6QPBE-TYglcwvXzr2d1RpBDc6JlpyF1mkRJuVUdYvIYQ78lSLL3pwNV3NCxrdo35VoC4qBMJ-a2ZRHnJX5m-i_wc1ZDh9ZOGn6R4p5cTwiKJMeU5EYPQ8iUGOxGjjU4jWWNgiLGVA659XOrkqP0rtClapQMbK-7GqxpRU2TTj2uO-d9nmlc8BF1GiqVktp8cfTCMp_J7O8Wmbe2npDh5AjWMXj7bMRrbxgYhhpBcm0QJ0UYMNda2dBA3ILCje0UHi6-rZJqyVSX-Dv-wu9TvuWI6lb4TzXVzEp4nymGqw8G1q1xKuzmK-8lPCHWnCW-LfZRg72ta2uyaZpAf0IhpyabNSDYfqVJUAQaO2jo59afjvJcsDUnGfwU7EfzGzyfRuZxoxNULvouik51pAoL1OgpWzntsopzjNNpVR11IAQz2PjnIYgIjeiJwkSTjmWZDnOMFxocx0RZoelrsLsuaZ8okAQqh9_I6xSAAv6rVcuoBtqgTEEi0Is1ttRcYXrjB_3CFouqIwAiM3S7nF2kov0pjJLWas4sPGOMEjvmzBbSlWkQNk0CjKjgpGBZ2f813WICdILX3sWZXj-F-AW1GqMR0WXuWV8FktDXZ97ZD776vYEMh9IK8rJ_z3J-cz4d-nCHNbJ64ByulAxmxJLETPXPL5iMq8vYjuoPJhUsGpORWoklbClYQFHIDI5ROX1uCX6vuDgKKQHs1WzQnR9YkwF9qy8vgDOrHHMOd3Kkcxw4i7z7nOEqGhVN1PK1BclNnPaWR4q_ZDvZKzbWiG7e-3HPxXKy2Qv-X4jNP_-o4kv7Fb9HKWjtk4R1WuJLU71BqoHBX0f75VSv2n9AiCAbS8dGW8G080bJLOwelIyQqmB0MPzA8k0qYmoBNe--ITTpMDqgiTJNo533CQ571zgflW3LzsRkclz0cGIdkUqEXs2Rv9UlAtXbqrLO1cEc4OXDGCjtGXLtL7vJqNUkDRm0hkZOZkZEc_SH9Dh9YPkzCEIHKgnQzSf-zVvlwO9YXEh0x6Kh-gdyWqBxRa9S58308z273PaU_tUnxqNhm2nWzHFzCj2IDd7iZiKmSPATxy8532OwUPYiOjJXl0OXLAzGC4lBNy6XjTtBFXQkrMGk8nYcGO7KuIJWLlgOOM4beYP4eVu1LqhtgI8CKiBzdBL0EoFZLMA0E9YC-N5HsOcCcae9nkpJ98D_dDCGG3Ab9vED5EpRznrQWiLix1I2sXwI4PpDPnmO8Va7dfnOyN2O0cOTq9K_DVqn5z1H3FPuPN66k_cJzkYtxf9MrZ0BQjirRpuUj2QUv-ujAWWipqJsdNbKbaI5k0rFFIqPDYsKez6XAJUiahlMKa64jCfOIAKomJgBaUJN2NeREY_1lJeRLJ_r_gSVwqJCa-qIFi5_kfb4__T6leM5hqPSZ9hdeX4mwlJsPb6JgztM4QjTp-B4IRbWVTQJH0KpklIylxYkdx1PRUZnjmwSPkYdoOZQgOVYh1VUrEw4u9_KYKs0V0ZoCROEdPnESskYzpHGkIDdtktNFFZckgKr2ATKrI6czxuj2sEzbzVMpqJ1zQ2ayQ8bfuRkxMAwtWKTaGn9IMbSv4sbwzems6gsexZx2glMWXhyPHgM_i40xLsF1XhtQVk-TZYB-8sP-bdDUdJvopwSiae9ZtVEibUJEKalVpgXY7lCrQJVvV5OhhuB_-dxBPMSroNaWK4xeRW2PrrG5eNq6N4M3LehYlXfCBqVCsBXcA4L9hZo9nWHtBQ_5dyf5TNMdTt2NrAFY1lIOw5fWR8lsu4KmvAqFjMJI1mGohwYuQT0npiICE9y12KJ_4TLdyxTJuxrM4e6SaezMLOtjDPVhK0ww7mbdFo_nr_kcbgXTyh0GHylYjc3pPJBePsP1w7Ol03GorTQjGvDwFJjG5Kkjf43YiZncWvbxt78QHAJnvFQovefGvjiW7nvv8fURX4Px2ksI1_4wKyT5xLwLMSSlLmS-eghFxumpxmjuYq3Fm56aG7BEjEqCN_MQCAbSEBeRo-YEIssKgV7BQa0xSZknIptNuW2Hpc6WhryTymkKNbmSGC2pyHnNfw5veE5fUD2ioFkRm848kcE67hlhqPOoAJbbpJEc-U_BkRsNW2KSVliz7kSqngNc-lY6TT9obHrXr8xi2R2U0j9zYuo85nL4gzFHwnmVrsbO2FNxHDqnKTWgDUQaAAe4D1toke9kfDbX8RjgzKNmcejpV7d5pXl_-wOLr0TwuxE0M4eW71gH5bkl4rFfyeBhagd9fq3uU8xclLtel84BTxv5dP3hbTvOaPY3ku0YFya3itAU-sMVICYu_JMul0w9C1zH0ezuUFzX8qOMouV8vIpx8Nu9HFmZQYobhbjKb3ItOimXaFdrjeEduZZwxTpifEgDi7CKfT-4XG7i40MYLDuaVH3koiQDyvgrk-QpuwpRem0OKqcik0RY4iVnir9bQlRhBgFdhUYeCUSjvW191nSv8kUnsBz0fBb0QG5PSpXW5wFSyy1jbgxjaGn_88OJ2rG7BYBYXS-Ze_ansscK-1GWXLNTwgiuPi6fJ2Vb9Q5jEY1i9oH1tOdMnBcDKnkCtqI7HAsiPDuXTx-e_kFEgKtPajvapP29xIoLECKWvBhC1Amh4jq0Xw3ql1HrVGA_LHTX6o2C07c9P5eqsne-Wb5_xeg5Zn83ur1H5xVVxd76f3nu7WY95whuQEiLZ6k-g_5bFP_jK30L_Y3vzMcw0zYzSZt5wDqUPeep3yBJfRNSZp9wjdRIHyK6O3TH1WZ4oe9m8DwGFlm8iiKFteDCpLVjVZE_4oaLvVPkqHaWLjMyXqXttaCIkjAHYDXhfJMr_RCY9BttyzZcIp7raN_rLr1IZNQ5Tc_eaLNvpwCnczgZm0n0zHlHyIoF-zjXQuXhRfs30XDWo8PEqWJJyZ0-PXgH8VP_NIqwyjbkRoUDv_u9dOsydbvd6h71izQTH3k_lnTkkWUEFipzEKJIMjaR_8o8wNqb6FC8kfoGs78CZMwa1PAgqFWHJo5ExF7wXE-L_yQ7kazyD-wePlf2ff6CeBc7k7F8EEQBuwO58i8T_76TjB_VyV8EDYYjFnctl4on0L0TB_wJGXCcGvJA824_cBSpdraSGtQR3Y9x68rzPcLTkzkCl1vJw0IhTZ8XLaTrjf5oma9l-Ag5iHXg1HVD_89WCUUxL5rSYLrx7JOt21zKX2zm0r-aazjmwVD3vrxLIZz0Z8zRmysllOeWzbpEq1tTvwnI59SeVsRjpAuGVt4kQ9v27ggfuc24ipcg-i1jBqzBvKqz4Z1tu6vNe7mu1TteTz-UjFa68M_48ksS9EUGzueHklVy7pOrzRiZu2It5ga978eKlPfBiAVO2PRhfyNGLk7OUYD5d8ZQ-6275QVu4MvmcmbkQ0-XokHsNcw1r8TziyJxjHIr1k0ikamG0U0Dx1jaWLxHNSWosLlZA01fpPXTJZIXig6pQfl-LK-jHHs37xvhsa9eYNdm34QwGSJ6Jhm3s_RAFMgv_7i8QgKEDFO8bC8TEVlJ-9sIV1nCJgpCKUW_ln2yJ-t7vWfI8PznzGBmw07yDCfGmDc_Ym2scBbJ2RFhFxHFoQcVnAdaVh6kzl779WZo3pAagiucl9X_Grx1TTaiuXCRM9mw5l1Wzb6zS5uuxrmYNfg0jkgdpK8tmgm6e3QBq8otu8YHAy3LRReUsRX0FTqG-7opgYmOjX59HDWFQAQvkMQsBS6xmiKTqOTG8Us_F6Lk6Pb7RUWAqjr9-Y6UJr2Wz684PoKMn2J1o1DZY7UaNfAnVpl8B2Xo8vijhcVaKbxLp387LVn9hNW5KTV74Dz_Ze66f-eT7e-dpUz818gKTcKQf1u4vL3h8zpkHWD8G_ncUW16LzDbLH5YlzyK9AbJwKiOoFlZbIuFTjjqfohEiqXUjYT2a72XKftoTkHXHZkl0qDJQvXb4HNUkyFN_0GtQRNf-xnVAr4DJhK2reCAVuDkCoSxJJP1mOxF68462p0pk2t86KreisjL1M9BnWWNZXIYpXmg9DiLb5krraJtySkt6-dOq0_uSKAR3bXu54KoNAvTwR0RqKZ2zsF2nLMqrKQpVLpU4Au4mtHNSodMt6HcDGhyY-PL142NPbP-lEEcZP0EQObvYrLpKyb5uq1a0JDy6braMZNz6mRtnTAE1ZFEsf3N4uuDJPM5CDR-VSMW9XIajCEHR7ju4bR4EDoWG43v_KyF9dSFrKTJkXzcgkdsAAfQs2ZT0J1BXuJT0sziTJJuygZCXAoAaY6n1_o4IkSxcW0j7nbVk3FMm3kuW70RcELEkpBs9qXxM9ziP9PRsvP7rqmgFqvbTyYsIF4EmfS3b3ijvVmQZ2PR6OjgE9e2pNy2qswPveZa6ESN8ql3hgfL6tq-Ypmi5cnxJHdKOmbQvWTbIPHxF5FxdktxFE7OCi8tBgz-T_mcMZdhNAAFmwqGNHQeC-Im2-l5HuNxo961ae-b_JYbywicmzyfb7ohOZyLN2rVamBSupTSJ4Y7q5EqaVy283ZEj5jH-hdVpZHcOxz7-bWvDSw7_Ot84l_iVyLeW_f6gm8avjKpQ3uY3pcRyEUBvcxzKNDXJqMXPaC0xCQy-rVCELGNzcPrRj8usL5Cey4E1E47v4VrsjQCoLOzbgp-xqES3g_BYLwrHZbp0tYMjXdafQBxR9esZe19m0-RfMxRgZUq-AHzw5xuNlapedGR5R4F51Z0yUvj8JfedlnBzukz2DdB_5Kku-0u9NxzfNHqBZk8NNbXUeDxvHN2K10nqbmnWFiBwWoLXNHysETSQO5Fvu_D3ykYw6lSzmV4mWVxFSDUC26RRGKEpjFznP4qXSTFocDpMii6S9VlhA9uuqhA0WtsCO-Rn8V3tRhxmzvlEvHMAbH1TaK55NBUJ25wklf2jwaNlhEyr3MtFUOEHNKGr9mk708ihsf2zJw2_UHTtzkv8TlQqJc86tz6gpH6pZqflp29ci57gzeEBt4EAiiSOStR5XAIeSfEZf-Xn2J2Nkemx6E6jh7TUNPtC1dMvrX7FRECmGvFRpNyRVSOTDFWRbYEIQs9CbCzTTJGXxw0xuyXozaaxfjmB289pA4zJ4LLYLwBKQjZQWp42qpZ-PfZGiH5_G1e1STRhHgrRHyVyxapWx63KffBMoMbDLyadL9Aqqyc5t6Z7pIPY_URiG_D62fs_DNlJoHIFer5WgT6PWqlrBuSBH9S7l5E1G2SpW_3cKAKMCqjgFbpkadZdWoF3EysL6CPIYbCx3EULQ_4BqaNQHmi_QfCyGIomzZhVPnoDtgAYr_u4HVGjoIZ6CfpOhtvATAv9uUih_lSfvyAHMjpdc0m7NxLGXIJN3vtWsHISYcugnJdeoHSXHjUjCnuizRoT0qe1emqSF8xY-DjxZrNevhjYTGXKSHA9AgWfo7l7zO2jsxaSX8qC7i47zZxFP160mE4msPA8nqYyHq8AMCArJCTk2-s8U8xtJPuDOA-nnwaHzesPSxtmNlP8HyivTuf96qg3NcoDu0xpQIfG8bYw8krXBx9RGZGFohiNzkCkfND_XOgfnu2CXgghqOS3-WdYENMFi6fAvyhlRHMmY9pIpoPg5LAiIpzev-Iigg1RTLu2HfytrrAdyeFlc86K8uCVYqsgNEMJt9hkpEKV6Z1BImdvkxsLHZafvb8RAndCo1hgC-mVzo_576mF744RIv0ULKpem22EAfZ_q9MomGXFzggxuuszkhPkjnb9h8Mh1gxVpUcj3G_xxwTa0SwwJnu2i4ltVS7sYa8PmmoXGhSfk0Nw--z8656wDw2L4rXY8QjMQZ17VuPAG3KBnuMmH3ahalcEer5bfYt28ANOSbcbnr0k3QsCzOSyqYQdGO-iKe30hbNC5vkeEHqbE3EDZCVLBgYU2G6wITCYTUjZNcssxHQWQqrMVgtP_tPFQNJfUV73QLz0K32L8EljCJ19xpCrFFm3l3lbZ65H5xd8etHsfqOylwycWGodklmKkFsSQeJXNUcTlhfGse_fNyixn37v53Ac_EyEewlUVzpoxpiZlecChXdOdebrl2sM2n8xtljlQbE5o_Gkt63Y29Mct7rShcb5m2VJRPCMj91GXEJS9woX61_O0Fj-77wh-o1VkHnIdHSv6wkMPhddhbYljvZjvALFv0715ZM9riwLDqh1SXt-p8giHkfhjY1GftxILH_lSPdEuCJGMWBwECfaLOaBzwqa_1YZkcoeGkceISu-HLiVwhWRDJpQwfowgHfo53_st1Vios5e3mFaeCcYesuQcTYmn9dOfMPREyE-M1AGxWfz8SCLFjbfUb3wpHs-fEEO64L7H-C1AceeK_NqQ-U8hPKUMY0OToIRq1LrYBxlp5MKpnKSYaV6lt9tWGn3z8yyDEIL4yosdIoVvY580vccUrw80fB5gldCwx2sdON36RzfiZY7afGmXh7hWyBebLWZMj6N3Xki00rC8IVRUpHWCHypiEk1ndCe4oeIHHpbfOGvSSPpunB2p8ylpEnRBP4UkMj3wTyrBsrV7BL5Bak5gTLsV2-lvWWJu002wRKHWwomNoQ8bh_Bx8nr9Q-garodPTSVA5UFhLbbsRFqgYx7J4ElDdLVpLaUGVNiZ5Lk4SRYVKK92ASwziVcLK5-tXGqeePFoMqn0dUjFQhtLqhQH-O4mw5Jx6HbkE4LivQOKWHMyFxACvXCNYG53wzfWW4P6Gb-D4eHu-2hnXSTXMUG-DmDtt-NnCiu8-0rF9vY2LTxFvHzxTkjqgOhXbcylsDW3CwdbgbCU4qrCMR9LMwZVRsTZGwjNOnTUZcygMA6tYGDIUBpTvCMMIKcXPbIMzFtAvM1UBYesfl4oK-gTmbNV9NfMinCUfVB7Mt8wDoKZPkX8gAslApSBpGPL09Lm30BodJsDSBl637NAkdY7UvOLZGqQnksGXGeIWoghex8kHJ4vPkVhFTVBKduMPz63N-1ZY3PnW-MaB76YdlDu0_hCTC66fGHsL6GVOJGzPlUr2oKY0hYC919mzvLDsMuwJgFYg8NBSjRzak83zy-Q4InW_384XlRfkk2SKlqkJ9VMXN7lWq2vPXtn0eI2TRil4e2VMpgzjJuTPDzGSPJXbYoPzgix68YRGFlmIYB3qjvs6m_rp5sZuAjxcv-5XRRSHStpBJDfX0kpouUWh0sc0K-dG7bK5pA8dpAo1Jiyy762Vdd_YlwAkADR1TF1OSoCW_ykXywdQmDsozqFpIqo64GfGGKPzxJLPdJrt7u0wisVepcUezTHKVFAHgBaYfmjBjDESUQCFOebnf277sxnH8G6N9ohIQmv2G1bZgOkBGk6I4T1HoE3fzcyFCxoyNYNP1w0JyWjh1BfsM55f3Sbu2-opwB4-UBtVQ8SyJR2Es50QDuukn44IdhjGiZMUbEVbmEsttImuagVe-EMMxwux1iYI_58sW7suULmBAqmrtH1muvIgKe4YsFDj5LEUPMfNLx4Ad4T1hVb_707IIXuplDZBYQb_iYoM05Al_4YsiQLlvU8LeHActG0C0VMWw4XSSJlgsq0EZ5VGmuCXohM7R4YRIuoyCQQT8fjwx1g3RHtzSUCRkTyIbj_tv2Dwh8Ih3ttqZuAjUymxkjSf2PDs7yfewn06sLgpAva5UYC4ZzFVtFxG3nesSNjtWNLoxhIzkDRgu_1TQ_YIgcTOWz2XIaY3D8j9wFgDmfPBE7mqS8mBLWUOgQjzUuBDkS6oTav-w2PbSustJtF-JqhsSemle829RNbGWaFZAC23aNfEG0jnLcFGwhLgXQ2SDyXR7pxHwQuU8AoWO6PwV3njyM7wFNISeQHZe3d9cSRiap5k80jsVHJmlqZhafader_UfI7-yltKN1XSjsj-ayjTIhKtyf8yXLtHLHtashBGJHqrlQCT5-6fxVbMgPi4LfR1iS2xhodn3wxD5w4Qpvrzv5HKdRsEJqFWWOSasZlR99_5NeRwfjTZu09K7JIUxWu--EzqyhGAEmdEYBddHSIsvTzp__EM_uN4tD76gSy5Si4R2y7Q20NssX55VGTy0l4uFBduS-vMnNpPKn3YuQYD6TtOeWd65-JGau5NFaKs3MpP0Q1UNo_BCfplbz9t7nHG05Oxi6fZt_OQ-UN3ZP2dsJPEseijiBwnMrlvegN4nLQ4qrE5u3nof-Pgbp9ssTI7_TR56FGaiXOLqnXXsKQxjZ3TnpamaBOm5IVjb9TQ0xOcQz2EQzTwLChtzVcmHSB0hKBA9XigRUl_BRNMd3CSkn-YHPLSPJbh0cnD-rf0UHH765IZCe21y2Oh2MflvU92c4UWrvdfqyePOO6MaMY0qt_CElVFlgq4naf1LtBaVqTy5YB7iUxHCpjgloo5jOuRa7_acfm4TquiYWAhyt3F0bcyA1w0ouFq6YNrEpyIJ4d2b98GTqQknlGSGDs-h10bhyZNx8XMjCKrbPayoUWrHoiY38UYWSnKpZsNBCVUgXmEPLFsFRrqKpserj91BMlj2uY5mHFELQpkpqusqsGwrFuMhbuXb850JbiCclFbJMOR0xX7I8d1aTi_e1EjNVdstkt3IhJR179Y2Vb1VKUz8RCFeMw5BCOmXy5Veyo2A9Mzo7ayF1bT7X1_eh5Bq7-iRpIr-yxn-neEq4GbhktV1ojk9I6L5xBKt3-FD0KU4qRmJ4zUMaqZlHWvjZEfXBPQINEah9o3qiPD_4Bx8GIOX6O3v-xfJckJUB3AxTs6VhPEKPWAQMeI7x12iHQ6OVDOGQvS2c2pcUg3L0kggfXd3fTsIBM1HCRY_LGnfIGmB1fzUFzxL80bu9Il0AwlXs_pBBpSlKPtHeay-F-9A6SmyX1hJRzE03g9m_bfPS_KLBOQAGu_JwpG2F2hQMxT8AkeE-MvEa3PWNhrarHWvL_wrylAaizsMXQOWZaXpo_jRS3s8w_9D1IIdhwu1CihdncuzI3BKTuhJkk7RpLUOkAQP4Y6pDX_gmf4MCWV6x3LBMksvQwsF3JASBooKTz7D9FKQ1krn-282BEAi0xlqAx2vH1-596p9vGdbl0pKqbpG5hYsGF8_qmsisc2euZPh3RVISrfhdaH6x6XXOgz8Z18eAQkBPsgPNGAGlvLUi5dvsk_LOWzoCYpnvovfDuwMkhVSz3JnSjz45sEinsbO7tmP02w0Q2Eqm5yfUCHDywcoTBXfNrQs-WT13NKPcI3sfinZepNpDCwM0rv3JjH1kcNYm5XBsWXTPdo3d0_6q3P5Kcqzcv8IPrTDA0sVYRvmKPSlpF8BeeJt7YPlxNeFTmtFw-VZXJpdP3XZ8C9-epTCFkNGVEpRhX1cif3XO1jNbaYXN_p2S-NswuJVTGON98WJhnvU-_jgbKZE_SFifJgE9VSNFSMzJXi7L2QNy5N4qCYmX3dBlNqj49PSwUFR3VX6aqkH7fFR69d9QQr65ZOsdTM2DAkbqOMMLNhhEaWg42fkQ4vsCKOv4VshOEH5ncVRzdaVlbCnUpE8NrnES4qyosmKVOb4D3h-CO1P3xCKWQ8BweiO_NzELxgilLzJVkAfMZkHwzPftwZ41qNhe0iGbAqb7aGm8CAT_f0E8o9uor52Va4VSbEXxh32Fji4UUDydwaWr3O9gGe-g70rYiJhbLNXpcLyi9vO8rCjvypNCKviwhp4bH7IpkPQulhnbzwh94f3o3fNXyK2ubsAduFmJiO8y2yxDFVyDS9XJjPil4d02x3U6VlLWL3hckOKxVaRc5_3cE22LM0wQ2M2pvLA7LNIw1-FZFpXTBXU_rsDxAhfMO2O5WMiNTYSTRAqQduKs3Wiz3rkmV_nSAAyi2M0AfCiV_BZgL9D2-kX9QQY9Lj9gkNtIoOJxIl5nPfR0yk0nTH-lTzUBA0La42S-rWub7eMghFbgwuxK6B6BdvkJ_YpK9vLI24pAzsikQcgO03btEOrG1m6a9xCG8e-IA2qRW1MhoiIGnvIaZhFr3ppTRmbze8oIU8yfOTgDVPxi0ZzwfVG03mYuqA6VIedPpvToHpNZ31j72wEEQT_2XxWhmPL9AqiKaXoG4acsZZhH3QzbLk5MwutoHrPcwiDHpwDGiD0dA3r1PYZuP2mSc0EI8EYzdVXzYlQEOFFzdMR5FWsMTQwF9PmBkC3rtsZGmtYrCswNvilAtcE1Z_XAcA0IGpPoyl6_2Yo8e6ESRtt9FWh-OXJDI9vR8OVKSxkb8LemduV4EZFiKgWMwLBMHP53-xSOBuoCrhozHMnhj68yUCAf2CQMitYNOByVEHKc4cSyGY68kOOQs1uMnw6LI4xd4EXvthI-gXp4ibq0ssryWftlWNeZUz2ZmAFBPIgLbNvC1Ql8r2NwRkSMEbrwafjUPVim0aFZLNljFuXUX-WTknEL48z70F8IsdPkARl4r7NRLITKYlDYRP-aARyC1vfHVg1uWv7cbwOmyS70Orxe0bI5Ha4NC5S8fna1BFDJrUeF4gj1b4rsyOx6vDZ9Q1-NPdfEHqLp1mgxswkrvz6doG3fE3-lCUe7slAeRpre9fpJG_L5oyab7rKneZV8xK_0IU9ReFU6LQMwdenSA_uEiZLIMVQHcER6bthM6RFbmU36eUZEA1Gs8E4vEo9waO5Sn6SaxY9PZEraYCjIQBB4OJkCnulcMP26iWIumZYG_Zq0BoO9oi1lFmxSOdSnjB58gMq2V2vjih6etsRo_1KViUmLj9CDMexeIluLoerA4MPG9eAnfXTgOuYIS6WYkaA6PY7E9Apu2xXPdWq0i_L2mtAaGhRjcTdd6DPEHS32tBZ4O7SKFVnAVNDqntMu-hfKqUa05B1v_zq0jpSWgekYH04nKfPAfefOnK9CIVgCJfjEwtXYgbSxovQjsQJ6tCiPJ1Kguh1nKlDkISvlMue1QMGpLrtzM8YCAkTli-4qQF3pPA93qtNgKSzibuUZTBt3xbpEXo2bLzhfcc7qHs7leGfXJM-KrCj3gJrWRoJ7WEAe_0TNLcmyP8YwTEia3Wm020CG8d1FfWZDRbcvZxYz2_GK9EmmAqewo4ntrA38b92a3JjiLcRjObMCniRbr2vFrn0d4EgbaKpPdZ7Nmj10LBvv-EmvbFC4jfX7O3aE2RDv9owuH4fdxEb9dwaXh4bcSwLnM78uT7UOvH9-jlmCx-HozvxhqvRoMmz8EDntVb5AlvTRMSRyqyvCjftB9vI-_WdKzAGfu8GjYjhJD2y5JjdJAi4eVJ6cuGq6eEfmkcDHjh5-9XQqWpwrVKw444mYXvf7RiYhvn0Hpvbxt1oFMTAIPISHSKWgnexZ34naYuRPlSQg-cSCwv48420IdXlBxHc015V_MlQoVKPsHcvdJORHN-RU1pQu4geZ6tt17itAy5tTSd74hFpMfdGGLOHJvrnK3XkJKVguwILcXmBMhPLl3L8Rg6DOAQokOPpePKQ2pN7HyyPGwUw5Q2DxaWY1iaIEjoeiMAJkVzvuh1NY3JFRAFxc9_l2_V2pILNYsd-1QC_nYAmh4Qj0STp5uDnshjU7xH86PUq2rWcLS5g8oYXDE0tFcrSXjtdnQdHxcljoYDG5KfhinJzkhmfsPfC9qYiUVmG8jFdSuj2x_XRIHh9OuywNXfbDGzU2FfQUV-jZb6xl6e9p_9nKE8r7_3MqVEMJZTz3GWjEKeDA1ZJbvglqf14iiHgrhojIXflBAlZZCz-T9BG1-Bc3JwWr5aPafJOCI4qfWC75IHNUlvp9KrXlb6OEeBNdXKacnjFKGW-ksVQgl2u4TC7Ro3zh8y1TsJfv7o2iC7zN8lmfNzX469zS9iQwm3f3oNUV3Te3OP2oUigwitroCG50j1t8HOOn-L_OtDZOjGCG2F3VUfqtL6VcODJT25EGjaL6PE14j69_c-bUB6xCrOJevhunlRseIjUcXlItvIYkYXuqEHQVnxNrmcu5kskjwuxP9LlpgtXGlrl2g2uT9JooDrcOBwNKxA8YWOLNJs66Rw_fxlJJBLcMBkNUbZd3H21Cly_ePuWwI4AJQjsUZscMW5kJNKgf5lZKgyy8yovhsv9ZFFtP2fl5CgZfkaZujqEtIBxU5d1CnzQ5JAuAGCVkHAj1lpVw-0GE-ePhmjQz1svxwdLYMtZNL55FTMhDh6hMXwOJnOVdnXete0_ts5p5e-Cgd7q_bkdGRDAAhuJ5ZgzPxb9VV1BENFvX_m8Wv64AMTlm3llPZsVJYphGJ4zO1k02QFLv8jJp34fegLBiabFWziX9vwA4uJFz7WWbfDJFNi5x8e-DV4IiWRCV1i-cIQqacPgLqdRPPS5ZEV1Wjv6s8teits_HSIq862n1ACJIahVydb--V5-Jxd3I2XerxXq2kJ7RGUtDMrSZadlfWz2g73mDD82mXCvaMyCMNByKQYJB_0mecSstaKO2l2kLB3FrEcxvsOG9iKwW_M1sKj-sy_cCXERmRdVGLwcQ57cxNFukVJN5hJtmz1tXfGJwZswBLhhC6nXhTxB2J33Fw2Dnd6OrfgXQA92oh0AHDswOs0s2Srb5_jiAzhCD60PkcIkyBCf8A2M6-kUMNgCsyyUqdg_kn6p8yeZPere4xVqdCUAoWRBgD0bsVCXwhfqJtxjXki73EspT9bcX3XIxC_XoUu6iemJI9tPg4zSNRcSwG85u2RwnqrEXPk0Cz3FwMHRsGaKn3zJ3ypqf8TSpOLvgJlIYd6255zit32LckAFAOxPnwoonPIAGiKQOdxxyMEBKU-TInwdiGbMqcRUiQIuFKfBEFWqthPHpBwLA1Xz4t0g0AzurJy57jB0IZG1X82xDc8QbBJCu0mqeyVBtuBpN0yqMZVJpdUcrNcnxfFCTgS2Cxhf-RXRiU-R40-qR1MFfyip2qceKZjWoqKd6KR-f45sR6ZAZAnZcSPjtXgwzAdcQvN12pHt571EM6PrCx5VOMX5t7ihwzPDo2NWguTyPbGw61OS60zj6uo_ZgFJgeXqkjkqBOg_4NTcTWPGxY7D3LWqkDZu9pXlYp8umg9jOmcV2nmfQ9p8F38GOdw6ilIQelCcLQ4TM8HZBcf0vA4ELkxxyyNPdTkUuNYB-IVx15hzMTk_Hlj_p6BQY1NHUuf6mHdx4tngHkwPLPDB_ZAgar3jttcJxtKwYCmcb-OEAhG-J-2yrJdnlpUxi3tTF6tbLLLlVBAJszhhmp8MxOuHh31gHY1UMbJZwzeaptD_rTPo2QBSO6dG8Q7nNRxFyRC7K5geRQySl7lTee-xvzpkp3a855MRuz7tdvo_L4Tw9g11gFoz6XZrKTJ6CKAwW6pTwFHl13CX_HKOuG1QvNFD3p8ep7GS-zHQCihwBpv-HiMdDwc_6v3ZAi98SALDD7G08LEx9WtUOV5cO6pEvn01zCHo-T8xHWY6jq2yw-WF6tCBUjnRM2JOr4YridV3h7fZcUyRErrg009-7ee9oBp4AXUQoP5EgM4GGjVo2G3hspvQHbCoo_FlysvzQty0TNPObyoJnz0aajSymkNTbIdJuvb8jzdp7qtsWnnxHrXY8BvCdKapM6vcXb6TAkZt_mOH_MXSr3RjH680mJTN0IBhI289pV68zpCMpM8mi0GOiVyJ_zS-nf47z43fItU5dkv2l0O8hf7fym3iq7do-HLTMR-guyfL9xSO7gP27C4msBfBtlIRuPZ8GXmnTeixZn2YcP_5UZNdo9A0quKu272Kev1WoTWwQSKizfCUvAl5-dBHroqZ6nZUADKk1_U04mfaIL2jxbCtx0JBx0Oay-0ybLGZzBZ1FJx22khmfmpldC-sHo1l6mut4RQVdA43GqkN9pfQ_c3yS1N4UGFNEHRZnm16Y9RxsQmySw1Os6YWJrMzFzF4uOFJBX6ZyYJEgk86agmwVXVNZeZdfPB6VqTTow2pYYSJqTk4PjGf7hmUiReyPs_4fj-XfhMhiy9kDe1n-5jkQNVweFNwH_hzCAyKNHsRTq09e6zuP-cg3ZLYPB2CFFNC0cTG4nuIJaxd9rYQSSXVWn8lNZ5k1S90qdUpHec4Icyum9uUJ2Ylu-bJeXrP-zIP24zYKV10d0x4mWoF2FM2mxfcyq_uLluZhKZFyAkmfimxzb4lZAPzEc1z-3uJevymyscdJHmNaTc8ohrPLJJUfMnFneIGLrtwCBQ65C_jI2Jb0OmOXoWWWyW7NzWhTbowMX5BkVMRHXRfbCcbaLaGKD90qqoWLikwcljn4bV0OCX-kjh_MQR0ix6_-HKAjCIzw35sf2uBe7pLhYOxEqdoAeDW8Wd7hmIOEsv_KFMw8pqN6RqW0_QvJ_y2xKzxZlLYn5U4rs8TIrlQdH8lsdcPtAZlb_M8E-Xf_M3dWuDf_axPNR7BNJk1h_naFYQmIZmp5M67R-3cU4F64P3F-mWOoYE1DRJmmNZan8zDeRhuiOv2qP-dNV0XIQd8H2OogVGTVBITz6GoKDeCkfTUvfkh3f7zt0DW3t7OdXF6RTPb1FHsMVwckB-CdAkZpKblkQutvjV8bqSoeQutmFIKScN1A1ocNGxg2yudVQLh_UK98U-1OsVnctQekzNfBvoIHXRd2TOTN0fjzh9frbGluIFbWAXZS4pjfdS-MbaumBB8XDa9iK-rT0LMLFyeT_SgN6cCZZ7JsOJMkm-Zs2xAHEj2jajvqT85jzC7rJClCU2BZiIS2MaWYIIGHBFh-vrctKuWxEZ7Si546z3g3WB7uIP26gRKKo5lXx8JWuYB5sPCtKHWap4LdiUvqlNAuAqhmv8pllXhVlmxdx9KRno1e7ZMIMGbVULUNas5w_y93QVexvg7YBEleg9lYptGY8jyJQoTzaIB-Sj3H_WDD0KcJW_Xvgk4rnmwf6N17HGO0srDTSaIDxqYO3DOtspm37mxtU0h0M07bMq5pVByExg0RggIBdyvJDbaRG8W-PClCcdPy0_oG6mg12V1JVkgvyNU78gl61Dm5PHJ4IyQZ-6WrFfa6d7cs9_Ry5FzMFiwSeDrRehCA7GBxqkPgBiyVeLoY609DWlAwv5A8wG6zfl9wCC5gInMxnfG3pUAOP4DDGOhn_dzPecQzHDMPPmMvjFF3y_wLhARvzXk0eiWynG2tJ3jh4EDMIU-yLCozNLXUwjJ6QIE5nPdOyy7uggkfxeTIRwAehIyrATmIqVSe90jV43lrvrTzxK26yckInut2u1DJIGB1qFBSvH9DJA35fxvqslzAm_tIxaXX5KHcDLEgDghIktyQBBUtGt7-22Ne0_7C84fpouAp7R4U2grZJlxGvEw21BNrxKT6Ket9vsByLYpMZfrYKqZf030ujv-p3yVRREwHDVsLzj-y2GjapAURpAlHaMRqxtu5bVCSFZ7tyqhwhEsWZoTFlWK7XnpTag-KVxf-2vsm0xQg_wusOHmZz7qg7acRgkNd00-ggTKjw1vArjwwnK23bSiHRoO6AmFgpJvfK3nCDPCL7vNGKaqH7ItWzscSHMbopTcKeVE-ParoXIcOmUlYQk9sVKNa37KawfSfbWTuzBkzvIUF-eJlldM-4oWRX4g_P8BQZ7cze7BSOtzkG5m3Q5aUzmL8jJS7hP9edQ5JYU8m_S0idq7wo6e2Z92qOZtinnUZgJPCzdg8enMR3R9Slx6rchlw3drzskl-yZJcCPcMuCnWOnyDBpud29FWRptfjsEJoif-qi9oCudeikMnmIrsw1AEZJU8vuvu-jV9khaCiuMgYsJF9BH7XGxgXQYZLa8pPsh1Ahj2Xwm0M5oNazmGpTTG59iiC33poZEOzWifsDnY2yRxqkcMPWoNOy7GiWyotxQTwrScGy3MMerfGjcHxgZeJhmDKzYL-i5kAHn2OhnGUQ5f75kaD4-feXe-hRvayQx7NhNkDZW7CFayEqGutBlWXbVV_kbEJihAT1pI9fzq61IT_dLYDOnG1ikRBKw66B-D-Tctr-PPs8peNXiWYa-QwuoUXIBnmuhbGalUPtNhSEtLQOEXq_Md504QCJP427pjk2QoTvTETLS1CawcRWbSYDo5o2YvBvHjjuRrSiXt44ajrGOHWQbp5z-dBsdAAicCTJ_yQ45lX0pT6L8MOgA6hEXBAezHNEEWVzP4RF7vtXGeAC6LWPDbegY0GZXLS5uShVMDsdi9fNbdRSwmDdpduxPTQsonEmAJ9nM5CIFG9t5fBAFluIUbz2zh0Kbbm3q5kkb6lKThud5lFT_vR1umO3meZ7vS4j6N6D0ib_e27RAHCDNWS6awB6_WgDVsWyx_0BwuAezSvCHO54AiZqqyBrOi83QtESAh_C_FqzJyANcx4VeJs5jqfafkBRFr9lfVE4zyOusjPeo4OHjtVtPXqeXoAW6tPbB-gMNOjBN8_ini-JD7z2d3k51YAwxAFB8gBnV2uOpUQ6ZrrmkdN8CDdtyd2rB1IPRFMRm9OwKQWqVI77vInMhgYhRaNSj_1b7-7V9GoHBKuPxcJDTASJSvKc7jhAEJo7oUQHBh_xD_MQUWnuQIlx5bQDI-LAa-D0WIU6TXEz03-iB6YNdTGBI6xAYHNbFQ6XBhfoIo6naTwCp0zzf3hjGnC3NL6zBw3vmKeQXuX9SkYAtN0aX1uUQyTE9TPMGOHFqBiJSAGvv2mScATNumJT2xQ1T4IBXSdxzM6bD8Em948rDadoLs8ekwYgkb-sJFDYOrlla-mFz36rA6JcNw67j0sxrqyBm87xKCcsGzh4LJ08btO2rYiV_NMkf3bLLHAFjMUftxV0S91w7nrj97j_7cVkGV1CffngQh55V7L0A-BMI2BOU64a7uBDyDeCbFC9P9avTHSL5gyje22ZDL5iSrdrZpjdiZ8oGEShSL34HXL6O7LXDpzabuirF5aENPDr1x3Dq4K7_VPxXQjfV-5a6mpEZSMFJug_Zt6IygwSukwIyG6j9h1oPWt1bVuFwgIVdBQv6ODmxt0e44g1m93Q6A0WUvUnMEh4edor8cYr3R6ShM5IRtm11Y0j0tW06YLgn05MRQ_3sbGKW3FLmZbuGz4nwKh6SFQ6cmgv6x05eoKIKDgmYnMIAeG1rdEZhoK5gdwzzKTpIN_EqrlSonWbuKfMiqOpBXPo0eoYr1to_qxlCjiJyBN53r6_drW2aS8vV6wUHJBN6C8-LDl_wuDIyHSr2B9-bEdwyP1N2Cf0J9TVfrS-jGNqR25ppNKj-FTyy63jrWbcWUKci-nDY4DF_hkLDDJSpdVaUne7rHJcLyDKByttNaDF9Vu7sqld_TboPnoaJxZKff_P5S08ye81PR7MvJtzGN5fHbKCvJ2xD-KAmtHcpBH8Op5Rd3Xb4MErPS-idp3n87A1Yb_h_tP5qY5BO2VJem54GHaPk6ITgTccMkJqR7ejo_g7T7ruZ7wjeYXDATSSP5iCiWT8XwNjKIDZauKKfIwNMsfvZNIXpzdyi82UZtchf7Zb8g2n7GapfEBbP8ZWVN8jPhrgwyErJFikOkilbWgel8d_ZFuIfuUG97O9WekxCbdvwo-HwwESAZwFy1jiX9dnhsI2_EU7RKEUvye_LVPHA2f5QJ-QAC1zLHo6HEV1lwwOrIbairPSvUbI9COFkvvJnnV5SkrEKVjIKH5r6qMfdSKzJD6IFiob1lDpbGWdMd9r1ZmUTNHe9Hnz_J6bu8UN21r-u8mdT5DB0FU5UrLloCF1jeG9D-KSVRnPzLKEKPeqeam2d20Ro0Lnztm8M5itY4O4ZPcMxzCf5Gf2BVSOXOIXSKr6ar9ppAPoO1FYfo8sTYPTKBJmjtMciyDzVoQT-Kla02occRtfExRZPPuyGBQj8ueYgRd45uXibKmTad6Dfwxv-NQ6JNdogxJ919dVhmghCNrMcI5TORR2RbEdclxczh5ph91o-5Nt2vjSvaKDgT7hNXPd_n540YpjFJiyrnUhw284csW9h17wDrNaCuZpYACDW8rQFWomLbldCsVbMT_dsYYZQ2b6-gMBXgRiBxtEb7U_HOjYhf9kxHyadNafBGdaMICElyrh_vO97nbDd6oNsYHekDA2t2O3ro0NWBc2cQnQdyYLN2qX0cNC6w57isF51moKI_OpiuwDW7l-HOlx68hYjoTiPVVsD4I7Q1FQgV2LxQ8dBRAJjCdILpEkFB98c9KRSJiHt2gSg83aT7U_7gFGWpMVsHYabXfx7USi_oTOWnpJUNbrTkzvwmPkdg7eJkBBzjaZEu-QiXGaGq1nwh48NTPjKS_SKf_ta3wHNO_ETybkSXISSTdw7dqslbMLTUX7Udt0NYMlbXg2-26sXJp845WGp0CyJpN5WyJWq0EyMcGpgnxYqtaaMAFklNx2BApakuA1FlOkp0t7wADVq3QMfnhI1GJub0MfqmsTKGqPGfJXsYPhPc5GED1n2hV85j_abXhKvTs4t6VwmdOgkPNJNQPIFFP9jEYfoRiWM_kQLwxy-pQpbvbIonu5tmoHfTTC7n8eOucM7MYiSowfxoWb450oGvKepQ8I-cJQmLJ20BLeo4vkZBrw7m6YjTd7lfeAenJHBNNo577L7azPGoDRTxCp3ha_A9qJiGSrmxl4wGfr3YV-HS39iCkXZweYVRmZyA2rH9UzoGYEDWJc4p8Mx5mzRPYJB-S7tsjdGPdtzC_OhXUeu10MHEhbTQrIdh2T1NsKkZob-bnUEiFQQ3v7nZY4i9y3Gzx4VP46tjdTLwXt1qVGQO3B5bdn4DEBL9CLEuULV3CH0wVx80z4Et35LiL_3Tzg5mMPJQwEWuwcDZMBLM62RZXHtcdYbLzRkK0CAzJo-vN-zipBM1pIXnODfZ9aANpklp2vRME63NuhjTla1FNYn_zmjE8LCoSkHTnAuZLGlhs9wsrIVhZizBWq5Ts3ktzq0H6Mr-eQSLtk0i_hrjwYKMo2T1c2N7MXE2WZZ1_IrZJpKwZdmzl3r0LqhVEirGMaCJArWEtxgAoG6gUoYMeGJXVTtq75aK7JGccYuF4qys6z1JXGq9AOA-AyIoidN6LdURPIns82khqyEt26rXIC8CGep7rBsQnqQcyONFhWCoYAg7sQ3fX-coW8TJgQlqRZXMiHXMB7-ziWJgTwQPwZ0wpiP6Hrsxsvv54EXo62b7Po3BBmX2WTvdNXOk-xhX5V4uHPdzTzpgmYw_Ug9nXmz4wSVBh6McTBFJQhZbHB6S-qN8XdUDEM5ezMq1mkdTtDmLqZUU2bi0km2UOD8IUnMbuhdaLN2Kh55P6uxEmHPEAQAVuTvalqZTjyCQHZVW96gZzlbD53KHOGmaFuSjSOKS8ZCY6mslIgaH2LEdOJz2u5HRxkpP0_-5kKuZGUawOHSIyHSgDeEl2J0MzCRX31NRblwGLiGYDdlE3CjJcr7e8Y3QbdJuNk4xRDQSdYDdqjy4hjDB-Ti4AuVLe2Q7WSd5O7Jt5IBDNGPCWFjB6krJYzY-OIVZXGNkygYywS7h_oV1tt-HCLINWA3WzZpQMdHUM6TUFXmTv9h9zdp0PUT8X-f7Mhq_SclpPhm7RoKLeg2u5fK7Qqb6p-Z7LkYUmbvEIDLSSJIZHpm-9GamYI7llyTr-1xPSWzv0U-e-K3D10ev8XQsmjLAayrfqjGTbl6-DfiHVhpbFaoL1XL-5HjTHTXepdw5j0uX45jLyhknFftS5oZyZ75M8El8kB3kX-eHKCftn_NLpXk2UNzD_cQLB6iVCKL9Hd030W2ypMHHhS_u_atq1dgUv3RmUMxtyvBho1lTT1B0890A0P5dH9Da1A3K6VOVS0Ypity_6QqZeYfwhueFwiTklganWhywUFiPOcU3CyWDlLZ_ax1P1X557G9EEt6vG0KSUs8fPOXdQjScUuSwFun61iii8OktCtk2KZPwiCNr-AFoKlHK8uO88f05CPozpHz8hZFr0Bovecw_b4mefLrIOACKF0Ib7I_tzSDbB8ARj5ZnZ8a4OjCw3u9-9ECDnBcuCh2XuaGrH_UbBr7JXH5InnOwciFXE3Ayadi8Jv190Qesg7DYrMeziDRb4_xQQzp6iWKHtrsADeS83R4en6VZTusBtL0bsMEcz2vWaU1T6EqKuMXcbSmkGw9zsoQfJM81R8APRqTtytKyWgjPLZ3-vSJ_Ig1Q5rk8ZxzvDVflhee_PJJ83uw8rMGrjguZCzkFndx7rHD22rlZEhsVafwskPs4Fr8m0SAMxXVeixRZlhb7pUHzNvUvbSgRdMh41GSMa9ook_nrLEcpsP0im6BxWkntwqiJJp6uEn9C55DHQlvKlnwrYuj5lSESU3YUp_uTpN1p5UdELTKxGQ49jngA5AMCsUtwp9HsSMc9UYFQImqDbskWuGYxVi5-fIsPmvs-7mPjA9h-yqB8UZY8LxiAXze0n23xyHpyOGXB9qbzV__VFN0Y_FLdRr174BLdW_L-Otbrnzxehe--qLd0uikndnVS4-WKFamZOqmYexmR228x7acVvLgzDBUSZfJJQ_yD5RN4HvYlZFN4cnxSdCXg7Vpe_ZSgP7eYtaiaYYtHnpgPrRA0VU1koLp6KkYbi9tzxXhg4nEsfFAwyRy5OgeP1rDyQbfcncz44DqkjN8hTHgPvwCld_WRzbhR1Kbpe5MMkDCEk8SGTeC1O_gHhQuJyCNxtUaKEDxIxh8U85jG1dRuMxRnqy6eYcIv-z9SET3laUM06uXS9rwn7lz31WupT0XSeLzaf8DoaMcsUu9SwxyOJzvUGYe4dav1zMuLCpyLAgv6cx0SQlZVwydyyeHTNt-gXfrT-uy7VHBivlxiNpKKiX8FwyeUBIBno7jI3qmIYcQlkRl_nFNWcHM72-rP6LGMKXsGsAquk9AjhERovyTgca_0TEEfiteh7HA1NNqGnTKPKa-nfuBCYldUvYCKxpQaZh9-Yoy6FNEjjaS2X5JQh48XJ_WsJx0u1uWNiWrt0d_O33wKOlUv55AhxfpOqUI2BV8u_EYgdk19YcAs1tDY3CjFDGnux6LShu0j0_H1XJXU1Msvic46n1bbeuelYTJ-BrimL6cwp-abYKtoKJTKs3p7aIxGuOQPiuHj5bbILVBvao_lt0AJZNTFEKcveUjU4b3d_nsyugctvmVHne-Ypfk0t_ApeAR9OO_O04Fqq08cnXHIF8LVjHezkyn1v_i0o_qMXvpbqxWu7VDNSWvkMbB8Y-GAS3MhyhgApQOCLdcDZCNv4X2IWVf-IFCk4rdBZ_gO72JLcynV7Tb0ncVErbqJC_ENSSfirSoHLQR27UlwWPFsipbufhvYrW-lKToZC1ivstnA3KOp5LUsfH2U_n0mvPZdEGr9Hb1JQfwMNRVWGYgOFjXNKWFJquThMMPD2RhiWn6rrmeUNGFFgpCPs5QaWgKrxl0cj4K3-DLZRvzlbiQFIX2iZa439r3v-3VeqOsc6XsZE0BOtlZcKzO-em2vuwe2lOZMei5dJVnK1fNEYpIOPrgQT4DXO91xEfbAAYAuHpiUqlrVy3y_uDg69jAGL7obuN4jlNoeh8v27pPfheSDXHf3V0Re0a9Q3c8hJu7nDEYXYUgeSov0gGAsqUeNmv3_z00oPgG1_cChMdiJsQKwwOkSHX3SpBs7Dr-Z-QB8_bh7Ik0sfMHRzQOiUKEVlzVXuF7C9n9jLfLaEeRiIg7dV_Hx_drdIOzmn5IFpkBXtGxbTOMf8JNoaVAZXvkYI-pmQ2BskWGP4g2dgpa9BGFOQ05If2bFMUXE5NLfiWcLM83wJT7VX7ucVx9oA4gXXShlhesHHav38hUFCoGoTzZ3u7ASj6a-8wGol5jVuAb1m_Ue1QxbMdQdJ7XoMygqCYrRvo3CQuGvUt5CesGjDXmyn9ZhsBXq4dHEmmgYzWIx1fKcnpkBHU2ELwD-LCkXXfwtjzVWjKaseuaaux27bExh_o9qEQWciKAfgaUuFsAcidYVwbNBj48N4HxylL_lyFoRSPwK7nwaDAGeTlu2XyZpWlykFnd5WX5gN5bRKCMAV9KPdN83GGymrLZxemocsItwAXTksmNAIEDNnHHrapOGQwvU7gSULMwMlmKIZZkUwmyGTQQt58thJcy2PtxMQ5FRxsbo0h1mfB6iEHBcoszx6JlJo_xRpSYtgfzgBVPLYPZuBjXPsOBsIB2lkhc09eWYBtbSqgQ6UVgNnCKwDcPwjABGcPpiE_qbVYgyVWR6pVmERSzjY6ylMdpsDa7ohOFxZKQ8tTxOXN3js9oAPDK7fc0lghyH1sQccgyFF4UUMjhlG0Fg0OR4hBYstWqyfRmTCGi8QCXzksCk4zkjQGUjQzSqEWsq-mVBP5FgPdOPVAn266M8Qpfdu_ccrUtogWk0QABaA7DOBtqGqEdYiWbgoeDdS_yQhk1z0PjDC9sFBYo4e5_SW_cfclk_0AKWTK52XAfvZe4KNVEotmHmU76IsBxadL4rOaYr3Pz_GXakyXz6Wv9-A2IEPx6w7xZ684kgbjQSwi5Yv8oWJbEN6XxJoPiDJj8REoUdQRMUlVeUjPH2gH2eviBxJY76pJlQ-9vn9I9Fv-mncFyvGEqT8zuCqrVVbbdGkRkHrxI5evBjc91i6mq2id9mvKNA5Ztwcw-4957M7eilRXpmbwjP7AT5mF8Ome6RFVUU_jYw13iUfmxAd-VzzcFcXC4_XL8UZTwBCbf_rjFjR3KXhm9QBYvGnR54FOuXuh_JoB8sqZX42s3TilAdgOI11uJWVoVE4NZr-qlFlRlNETBivJ5hogYiV4yd6IQwYMm_eVmRNDANefOx9_746T9VoIm5K_AojmLEsrEuVPdLTujkpn3VMhqpAL6TIBk3oa4STku_FSc9IZmbmogH3r1uhOIQC98n5apCS-TuAVGTHWrAUHk-7OxBsLkQA_F-PL3fHNY0_dxe9wGXMg6HxZyxU9rW5_Ab5UtMemREe3UzGGlMrrIdcZ5wLkOGSGvzSeuNg2R4Fb_gKIbK8cFhy3e4CxAY5w1pJiXCzNwVnNdzVuai4nodrjd_XMALCxyv1f-CjFoe3qLj1QqU9BAuw-LSP7TMIlvVtAGigLdEHll9mhsHu5Ymhasy_KN4Hs5LrkwaGig6aeA3CZb6U1tFGyuc6_3uSsHrXOWUE6G_YDiy29bjVM8Xl6h0y-1C7jczCBirOi-YXp8L639AO2jQW3RdpItaDlmqk5y9pOySpGSdy-Br7AlRz-jwjxcXidu6ipPaSq5-aOwZGC-M6keg8vT5tMFf76a6fipE8BeTPqMcr8fKSuaiJMs1TeF2BZKokFGCqA1PzBjtZETBJPSJw5UkzDUcqAvm9iFoXZKxD1EIbgnyorQjQAwIWPtwG73xEfYMBCTe0r_9hFg-J5Fx_P0-HH5Y-UK39WEpxGl9GDHgQBeafB62S8OAwLXHNhTcJ9zyAGeB8REbEl89CsH4wHCU-euBs_k8FyHnt-mB4diwf7U1o4OXIKWouduSnNAFqVuFRx37ni4Vbr0FQ3UaFDl-rsGy5mbC69vGA3wZr5wOYfpxYiUDvjJIdpV6BD21WrTe4m85KKapEJpYZgSCyhwsWarQC8oGseXTU-SRRv5fFoMuemTaTDxpRMz127iaaojy0gluNGwxIb-qKFcRJi_o5cxwB9_eMDkYQdHPp8InbFgDLTPzWvHyYhXqqKJSsVMAfoH17BIusoaI3NHjpLVhBIt8vsZn_v33KreoG9F2-sa6mk73m6q7keTW5415DNi8Ha1FsPUy0Lse7xaN1_ks5h9PYDJKokH6LJhPu7MYAFXOhtWtrTeuMcdLzvJbKuv8GyXSj1eyrJNfV7Lw0DKAZlnFTJpvMOehd2PFoIYjfycDVn8C6fYkT1Weua_qV1tFa6GNiml8Y9vrw6LbJ2OvYA9p1cvSzMMLQqz6OvJRKm3x9driRpLWbtgov8sFxrGiJsHJfOV1QWxffimcVZwLJi1adz4uxtGx8N5l0M7QdUP3Nl-wYX2geVdxrOr8nLvQ70gRkcc8wvHGLoBRCeuAvY_z5nXdbBK3bwC0f-JmSho5pDGy0gKVo0wTZiyNxd6vla6AyCyd7X7B22rTb2MdubkHUuiG9242enj7-YwBaYwcEZ6KYKVnQLNAaoxDdlXmZlprafoYbudV_2qwDkAU446sweZbK-0QF2tOLmviidGxdXUpzRC9zHdgCiFaFrlvgNLHprZS8vLOtn0s3SIg87Pg8g0auxd3mX5pNFRqioK5CpnyAVAh_5MiyM8vQCeAW2m4_CsMymwP_w25gQauZOIiPVB-CCVyoKE1SYYZsyEfbUGs97U4fC-EV0qA1Jc94El9_ZvuOGHMseyNiia-AbQfdKzv_6THZn67_TsD2guyTQBkhLkWM9fqcclVoYBg0ln4yqmY9hccUEnQx0pP0nlXRE_9YqQ_YGdphpx8anKcg05R4erubey63ACMV9fmt-XEdeL_iW7chGiXmhtoTcUomoHD7RgSF8m-WIGyeRMFLNDUi6BTOYCKTVkERGbP-LGSC4kEK4vQQt4dZ1XIKlh72lGJkK93r40Xc11SBs_9ompnCVHtPtaSf5U6QN2CBBVyYkHc8gAvK0QEr6PvqMhqZpzODX-Epb3x2wLmN-5oopnN4w7_e8aDhXaYCQWmxvrk2KrozYEiI4WiRNLCUuwXXvwcU-q1j3glhYXq3RtM5oV0p0hyiqMZ6Qn5NhZYMDb9kVmmtYdw1RvLDNpr6MOmrzaJZmQR3aniqfq6yaDIDtnFy8rxXSzXa_5Gqee6Cnr-UujOZWCuXBPAeyBkb-m9gmLEn-Og0uDa7B39Vjp--2_NJQtkLlg7RC08fYmYOeC8UDY1rI0kf5b9-WlAF5sV3sl2VNtB4zrusKui7R-DonhBfatLvH6cb0hHxs-vVU-oV2KJAAWWo39zDXUYyhFdqyTWpnSxXM50rjB0wtUUltti7ALgd1fSadeZI9OLrP1i7Jhjwx5Zp8biSnRr4pMiE8sY0ay6dhNlEugDEZe0L9rf46IlITbclvgZAY3jYqe_o35J_AnMpDmfGaEpBzJ-zQVQ3ih5jJGgkH-CjsRLbPKXDcoH_oKrq8_BnPHa9Ea2CwUeC2H4iLrC6P6K6uxxwW4EZB-DELRsnSpS7cSyhF2eY-5KkNA_URJXK41jlkuclWkygMDYgDzSO25xKpxYqLFTdVia8t7ZJYKuJ5s0luY1pIp3U_o9d3MIRVs214bdvur8inVPcLJIyuSlgtw1AESnsj2MYnVivy8Hxy6CbgQgh9h3H8CMcHufvUDxTrR6FDb0oHLc3CRxGfoy6cfgIur1aKYYzX0wIrdRtEVfPfc_TR3PEQoYqJI5OvF_Av5ltxENhYue_MXVUnIW-pfJonlNS-FwANovSbrrpwtma5c_kT93LSH9HggE01CgzLrNVCZaGdHjKOwGtX4W-IP4N5JS5UjA13EpoUFlfHl7PAET7CxIWJWIKo-daWaU6fGo9VFLMQKNScbjQZGW5FDUnhFbg7rrDrv4wKfkP_iGIBITiQpuHjE6bB1MGPOlpxB4vMKg7Z72WxQHw7VHAUTrkSQ6uoXORG4odYXP7FkkUDk_KCF4S2w8OLv321u5R18HKdZMoolZYolf5dOV3m7i2hnqvQ6V-himMTO6HOxWPHmLvRcoFRLXftQRAJUm_D4hPUSuDUrT4KuXrYU4NJqYPijFGAhm-py5CocaXa7cURqBZmXv2l6W5gKpXYlQU63hN7Jau9Q8QSGbEuKtOJlxdLSb8MemAa6CCsSDLSI6P3NRPsEFKAA_MM7HAZG7OVLb7cvAviH3kVU_R8pZAKVxPudZQ6HFleuCrz1AJXGlttSPkMMcO8YMJrq-QSFvusRybe7EvbtkyheOGX6v7OuV2dfU9jOcWEe1o5g7iiZVmVH6FZ0KBiIlFTjayN5t1V-yZAT5WVrT0URxww_YZmWaCYNqW42u_ShgYYpvg6lFB7MBHnnt4M8U11WEEyJED6PaJ8bvHTxVSsIkJNKkUX9LfV0ieFFtb6v8mI2CfXx1LvCxTzOd07BQZcG2nYexmUM0iGXEDA6VAsZd46JbyZu7cBib6PZzUZsQaBrH8rC4GwZcZRRQvx-z_2-APDb7NV7ScL6e7rvmdpKObOKdxehWvtqS6t8sieV6sp9T-oPMB1upz84cIpSpPEaFCF1paxgdDflCuZRe0qakJf2l46BoN6IQLsMcIg0LdGfB9gc_ywb_DUIKF9C07f1tIkKLKehT1TnQbyb-IpzGprzVfXe6FgVTOaV0cpIh73cl-WMsW6jBsGuL_HgOH3iOMMnvVU5b4RRUVQ_56sGDYAFFI-h8pAj8OJjF30-1-DqQnMV8_CSaIEC8Hik5c5SLDZvZ7ip1kJsRXkvUkApBFZ-BJzTx3jHYaPtYf4aKFXfbFpD6lea6QaYu9fIurU1wioIgo2_B7zRCBQq1xRxeTcfAFZBjSd6UCmzWUosFuMp02BFds_NKkqT2EcY7YgqomN513WbxjMsc9gbV7SnvnM2Abkt7J5csc9LyeR3vrzbOHjFg6_oQs-4fKUs0MVYMQAHuEjiLFxoGnBZxux7y8JMf-78MvAIO7m6GNKxkMD9IWocjYIaVKq1Pg2XUllzkN2BKK9stWF1MF6acTHrDE-nXJr2ZJhw0uJfnbmPe3qt00OUAxP4CmeolrqDNuMPBjnq2OyEdzv66V9yvae9hZ78uGVhKd3fWLcrFTW5rQhsYUlwJQO2uyd7q7SyNF9cIY7aXZ5uSQ7yDbng9M27OivRRQ_DwD-lc0kj5kKXhaa24iSP1j_tOt3drvo7ewopn_Yw02Yd-08u2J_BFn4wp4XzKj1mdZNk_cJ-BQ-itdnM2t_Y3ZLasS4WRYVw80PEAHTP9xeHOZ0McHQOOR9kZzpZHjhx-HLA4WFW2QmBY_e6lojCHoyUmnyMAtZOfM3yBMwdCGBtQgAtQrSJIOWGDmuJYVpfolks0TXohQrJhYfsL-m902aV-riCFK8H0Yf-7MjOjv-bZ-ciG1U4odqi6oKZlDeUNA60vuRwWexItNeoStLfPZHI4okqPnkFBr_3GirBEA68Nu5PWlZgHqTMk7YL56wGmxjx9v5AW0fTdtwlGnrEeyBauBKyw1u7AfaTRzs2e1A3wKgu9tw3JHcCivBPDGmE7y96xaodS3kZhuus3mDsbSrrFNvZW_2F3e0js6QCRzmds2oYu8J17f2IPtlOEEq9DkCGRXybWDz3kM16pBWfQUlQSqYaLw-GHJOcODvm78iOmk7et0nq02tAV2s9IzO3c8mO9D9Kg5XQc5AlxvweFkQC24cyu1ZiPRueBgr9b5O7ja4zyFcXr0Y8bW6gJ-IyNQVLnhAXNLYxUyw11mwfyPbuvuOdfL8IxbcF33Ma6N3RZxEO6k9mSxFVqHTihAHjE17Kf5YxtHboh8uWIY8vZeDe97EnpQoVqkYysjvyjb113hEfDv789qM6OjLWtrqCZd7sbGXCEJfWz0fQdpTnoDveaB8gytFfrWXKTW2-NGLVspD9ocRuGFS7zmP7JD33kde1o5pxuZHjd_zNH5TB5XH9BdNpdIi2riI61vSXIRCkDT4ZqNF1ZzNfcjcjM-jaaEiU6rgK5E4Klp0d7FG6GyCtu9cXRL6ac9zr4LZWx5_5SBhFY3ZmaYg-e71k3WXdhFMa1Q-cEOd78EtXEAD8M0FBCwaIqRgSDgtwAEgfn3nWdraZlOVOKpzQnp8bZo408TiWGXoodXHDJimayfNOl8E4mhkUpCGVWVUS6bQ4UM1XxgZcXGh46FH3yexIpClTNWjY35y8rq1q8JeZSby5GLxW1zZ2U5lveABc7vVexHZo79qBQaWQnMndVMpKKB5rjF3dFIpTuKj2ygfDXhUMXVRQ3ecy56T63GQpOgmS4mvq_BYFT4aLJXlrlHs3vpW4jALrEvXQwe0USCwpTRfqk4lfee22urkQoNMcPIwWcYW4V0KoL5DQcs3iz9YeHifKg7kVvTQ_-4AEm-ZMvlFiADgCRnWrliaN2fugHIiewOMDwIr03HBC6XvicD5Ekvp0GvpHm7QxARxHgXcvy2IAzZ_zllwAHM3sckXbrXcJIQUS9TeVGrGRZ_2kmvLyOBoPR5ymUVkbUFIZBAsgXhd5zIyHFOYKyib97OAdIyvCDqncAkqNz8tZFPvdDIigqYJpzlCFj4q7LI0lcE21yktKTEqC_lWhVBFZ43_nOQWtvw0GyPWayYxFTd73n3C3y6Iz-xk_Wkl7begt7Byyt5niks36XS25h_xV0byvi9G1NSlI3uY1bmev7RkrcPL8nqJzeSSTgFZ_9wDvTeIG5_s31trQDobR5wlEWOfgeUeHoFoMQbBN5F66IRq-tFS-uHPuBsIRVZkTFfLdCVEGfPwFrr0HKy_lwTOPm66RPeDnwe8DC8VqNXbDgXZR65dI9_Y_y4zzu1ZZaLgH_SVWTvODkCvT5lTf3mwaQXMOIy0wNhw-FtBw_2JkK4i-1H3KNHqtcXsL4IjxFLPAbbd_Y1UuY06QskdgGFsvWoAU9IneLJwkUDrpnLHYpVWvEC14jm5JJNnTT6JSnE183pGM_ek36jWK0Di7avEFUm16vntYnmEsiXwx0Tm9mRsmcrbvzyBw3FVehXPcdfRNaeMlU0MqUwsZICq48N_CpjNPqJy1xPL-DK9zvaO7TszvqtEE24WBCo6z7XlmDBjJeV3uSvUMdNwo6W1z8e9c8jN4QKLwAo1aGPJgSktJsRrbcLcM62rxAAY78Aq1seOzINx8Z5rpBhS168CSj9sCKQ_NaKkDvIbYY_kUsOhbZBLNUB0m6SVlJ8kkE3UZ6zWc66B-CbrtRQHqMrShohbjY_k-5nzIoG-TTnpy5QSjn4uHkNcgRvGO1bHy98FaCbVKVmgDjbYaQp8WZBlt972ZrBF47t-DdYKPoj7j6m98MfsNWClaFEXZDzFI93RUazRTY2vQpP4Ov4-aHEgCMuf5iSrOUho8bYNa5SrDx56dB_Q3z3K1XkOBoPmRK4EuyMhouxI3Nw-1CU-IIwEzvrDntiaJAR1LT5zqiduG6dJSS-rr-_Bm-JVbfVWmLedrlnHZkoTG3-v1O01qU1MhYb5SPJF8ZAHaRZal-fPKpvZnJHCOujUdbIEh12HywhYq0a4EqPywbg9u9V7y0bFq4jPsQ7ho9mr730s-SDyBOEzWv8GXzrG6kf9SG_NZQlMkFgIVRdOiR-BY9eGp1apsbeuea1BceZNOSEZcQeY7DwO4yzfd1hPobIGTdzmbhvEq0EnePj85KP3dE2WYo1zGZQ06lPxv37PNKq4ONpEwm_964_15YwrkwfwX9xGU8FbXJDTBn-LB6O13s0HjQQE01qqeJcPtWLNshGgnys7LmHohNm518wzPKFjeCD0V3UXEkVZYQjcH5mvsLFAvEk53cE3SikdWL1P3BOuScjd15mFFQ_btlsOPNbE9I7SMTRWtwl6RYsRFl7XqKCEK1cmEtzigqYSOi9Zl5WSofSb9PMBwjPhIstCDYaDrBdPLdDtW2y7e7v8b9F6l1UCKGCdsp5vpbMtApWjZ1TrmVqb6bAIMa7zfK6CgfW4vZ8hahLRoAVA878I9_1K6XbaPGBDxdfDFotQMKJ-RFmRtgMwoYh5WJYCfcAl5JVC-tHgCKNUt3us8ylJNcTXeM-sEJv9XQWy05cDMrQwKPifT3xFB-FNKDRFnS1C6MzyxjNGhWtj3kcSpW-a-LDe-_Ih99cAPjmMYrnSgUbPi6nV2y_sZa5GLpHRe2a7YVEaHy5vrEG3EsOXEOrB2yU6NQP_61T0NdeIpJ1ay5M8vaxlOj258AGGDNiTILnhe5TS9DPJHhdOuEDSFBhcwGE35xTSl8qD6eObRfBt38xSvyowie214Uh5d_cIp0O4O87eSbJZATKPSHtFkrPYM-n4LZ7mP8Wwlx0ClK7HFbs0oFJhXh4o6G5Y8IdHsgxT_MuPFSP6jJBs0eYzzWDuVAvD0R0A_mCXLY28JJoUjFuaJiiQ3lEw-DrQrGKp5INMf6t8aFyUQIsLT0C8LKQpXby13NGGFq9x1RWoeaRyLBx1XenEW1a2X98neqJez5BcS7MDxAEyPhvM5bOZFIHsbPtYDYioMiRODjzwbymaNu3LexyxppyJcGGrNaqf_L30amiOWKaPohz6950xkricOOWPY_vmjyFB4D8X8eLkXTuAgQUUrdkFPEVeXCcSK6UGwvuuXC7-YsKsw5aKCW_yU23WSEhr4Cn1ru0oKDngykBP7srQNd-O_N1IzYNY470IKWQYOzTHJT89eiNzjFtoBbCRy_0jIy7M71pBKytXJGMoxV4fCla7tYhvsPvfuw6oI0vmNBxq7mNsE__8F7CpEOf3wjBIuh2zu-yCu-tboT_OzKbXnbDlTn9eGYU9m7Ufc6MyNsZTZtU3QoJQPdJp49EwetmYJy1lSmazSpfcapfnit7JG77AUlxT-0uyD_FdfB8lBpKO9Eo2FXMbMwPlIB7cRetoPy1OSYHQOANcwN85xLkl54ZgG78uPK2SixeYJKcX7Uzxjdw4dEFBZP9JRg3-ee9xnv0lQlX1WGU23XeWtOZzEpqLIbg4fL3_5jRfzMaPACNT9nstW0gy5IWCxeJb_BoKR9xdWH66_KsgwIdRHAMnOVcU45uv3eLIsusJcfbqn0rgwpcor-VNpNF6VGTkNPS4ey-YdlmODsba-a_kIkZrBMQpXiovDxjJ1b-EPr2bKT1_FckAuDYcR1OlG-oLm65Qe4jjCzPOH_0e-ktnuWcT-naie1Vmy3e0IDNq9TYNLFSOu3y_U8TuVzSepOkSgJiURMl_L6cInyDFRp1QSYA4RB3_W83KaCn18uMS3Q_mo21VwmL7PP0K3c3UmPF2O5I7NSkTXVvBK5A-vEBMVIduNGjx4WPTm5bKXx0t0Lmjhx5Q0b2aRDs2wa05VlUbuAD9SelmjRwoEXL44fNcn9QOIFY8WhZ8="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "rAV8avDKFqfE1e8Pr5PF-A4",
+  "usage_metadata": {
+    "candidates_token_count": 8878,
+    "prompt_token_count": 273528,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2740
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 270788
+      }
+    ],
+    "thoughts_token_count": 11152,
+    "total_token_count": 293558
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "1.0",
+    "identity": {
+      "security_code": "1808",
+      "company_name_ja": "株式会社長谷工コーポレーション",
+      "company_name_en": "HASEKO Corporation",
+      "latest_filename": "01_2026_FY_tanshin.pdf",
+      "latest_period_ja": "2026年3月期",
+      "latest_period_en": "FY2026"
+    },
+    "evidence": [
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0001",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆2,731億円（同8.1％増）、完成工事総利益率の改善により営業利益は987億円（同16.6％増）、経常利益は941億円（同12.8％増）、親会社株主に帰属する当期純利益は548億円（同59.2％増）の増収増益となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0002",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "このような中、中期経営計画「ＨＡＳＥＫＯ Ｅｖｏｌｕｔｉｏｎ Ｐｌａｎ」の初年度となる当連結会計年度につきましては、完成工事総利益率の改善により、連結経常利益は予想の900億円を上回り、941億円となりました。",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "medium_term_plan"
+        ]
+      },
+      {
+        "evidence_id": "01_2026_FY_tanshin.pdf:s0003",
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "pdf_page": 13,
+        "exact_quote_ja": "2028年３月期 連結経常利益 1,000億円以上 2031年３月期 連結経常利益 1,300億円以上 安定的に1,000億円以上を計上できる収益基盤の確立 ＲＯＥ 10％を上回る水準を維持し、2031年3月期までに13％程度を目指す",
+        "period_label_ja": "2026年3月期",
+        "period_label_en": "FY2026",
+        "statement_type": "target",
+        "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+        "tags": [
+          "management_discussion",
+          "medium_term_target"
+        ]
+      },
+      {
+        "evidence_id": "05_2025_FY_tanshin.pdf:s0004",
+        "source_filename": "05_2025_FY_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆1,774億円（同7.6％増）、販売費及び一般管理費の増加により営業利益は847億円（同1.2％減）、経常利益は834億円（同0.1％増）、海外関連事業において特別損失として減損損失、投資有価証券評価損及び訴訟損失引当金繰入額を計上したことにより、親会社株主に帰属する当期純利益は345億円（同38.5％減）の増収減益となりました。",
+        "period_label_ja": "2025年3月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "05_2025_FY_tanshin.pdf:s0005",
+        "source_filename": "05_2025_FY_tanshin.pdf",
+        "pdf_page": 8,
+        "exact_quote_ja": "物価上昇を上回る賃金アップを念頭にした処遇改善による人件費上昇を吸収しながら、計画数値である2025年３月期の連結子会社経常利益300億円以上、５期合計連結経常利益4,000億円を達成し、また年間配当額の下限を80円（2025年３月期は配当85円）とすることで、株主還元の充実も行ってまいりました。",
+        "period_label_ja": "2025年3月期",
+        "period_label_en": "FY2025",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (5) 今後の見通し",
+        "tags": [
+          "management_discussion",
+          "medium_term_plan"
+        ]
+      },
+      {
+        "evidence_id": "09_2024-05-10_tanshin.pdf:s0006",
+        "source_filename": "09_2024-05-10_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、完成工事高の増加及び不動産の取扱量増加により売上高は１兆944億円（同6.5％増）、完成工事総利益率の低下により営業利益は857億円（同4.9％減）、経常利益は833億円（同5.6％減）、親会社株主に帰属する当期純利益は560億円（同5.5％減）の増収減益となりました。",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "09_2024-05-10_tanshin.pdf:s0007",
+        "source_filename": "09_2024-05-10_tanshin.pdf",
+        "pdf_page": 11,
+        "exact_quote_ja": "2025年３月期 連結経常利益 1,000億円 2025年３月期 連結子会社経常利益 300億円以上 2021年３月期～2025年３月期 ５期合計連結経常利益 4,000億円",
+        "period_label_ja": "2024年3月期",
+        "period_label_en": "FY2024",
+        "statement_type": "target",
+        "source_section": "3. 経営方針 (2) 中長期的な経営戦略及び対処すべき経営課題",
+        "tags": [
+          "management_discussion",
+          "medium_term_target"
+        ]
+      },
+      {
+        "evidence_id": "13_2023-05-11_tanshin.pdf:s0008",
+        "source_filename": "13_2023-05-11_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、連結子会社における不動産の取扱量増加及び当社における建築受注用地の取扱量増加により売上高は１兆273億円（同12.9％増）、主に不動産利益の増加により営業利益は902億円（同9.0％増）、経常利益は883億円（同7.8％増）、親会社株主に帰属する当期純利益は593億円（同8.9％増）の増収増益となりました。",
+        "period_label_ja": "2023年3月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "13_2023-05-11_tanshin.pdf:s0009",
+        "source_filename": "13_2023-05-11_tanshin.pdf",
+        "pdf_page": 5,
+        "exact_quote_ja": "建設工事では、当社の土地情報収集力や商品企画力、施工品質や工期遵守に対する姿勢、効率的な生産体制等について事業主から評価を頂いている一方、資材労務費の高騰等の影響により、当期の完成工事総利益率は低下いたしました。",
+        "period_label_ja": "2023年3月期",
+        "period_label_en": "FY2023",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況 ②セグメントの業績",
+        "tags": [
+          "management_discussion",
+          "material_costs",
+          "labor_costs"
+        ]
+      },
+      {
+        "evidence_id": "17_2022-05-12_tanshin.pdf:s0010",
+        "source_filename": "17_2022-05-12_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、当社における完成工事高が減少したものの、当社における建築受注用地の取扱量増加及び連結子会社における不動産の取扱量増加により売上高は9,097億円（同12.4％増）、主に不動産利益の増加により営業利益は827億円（同13.4％増）、経常利益は819億円（同14.0％増）、親会社株主に帰属する当期純利益は545億円（同12.9％増）の増収増益となりました。",
+        "period_label_ja": "2022年3月期",
+        "period_label_en": "FY2022",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "21_2021-05-13_tanshin.pdf:s0011",
+        "source_filename": "21_2021-05-13_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、主にマンション建築工事の施工量減少により売上高は8,094億円（同4.3％減）、主にマンション建築工事の施工量減少及びマンション建築工事の完成工事総利益率の低下に伴う工事利益の減少により営業利益は729億円（同15.1％減）、経常利益は718億円（同15.7％減）、親会社株主に帰属する当期純利益は483億円（同19.4％減）の減収減益となりました。",
+        "period_label_ja": "2021年3月期",
+        "period_label_en": "FY2021",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "25_2020-05-14_tanshin.pdf:s0012",
+        "source_filename": "25_2020-05-14_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "当連結会計年度における業績は、主に不動産の取扱量減少により売上高は8,460億円（同5.0％減）、主にマンション建築工事の完成工事総利益率の低下により、営業利益は859億円（同12.7％減）、経常利益は853億円（同15.1％減）の減収減益となりました。",
+        "period_label_ja": "2020年3月期",
+        "period_label_en": "FY2020",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "29_2019-05-10_tanshin.pdf:s0013",
+        "source_filename": "29_2019-05-10_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大及び不動産の取扱量増大により売上高は8,910億円（同9.6％増）となりましたが、マンション建築工事の完成工事総利益率の低下により、営業利益は984億円（同2.4％減）、経常利益は1,004億円（同0.1％減）の増収減益となりました。",
+        "period_label_ja": "2019年3月期",
+        "period_label_en": "FY2019",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "33_2018-05-11_tanshin.pdf:s0014",
+        "source_filename": "33_2018-05-11_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "以上の結果、当連結会計年度における業績は、マンション建築工事の施工量増大により売上高は8,133億円（同5.3％増）、マンション建築工事の完成工事総利益率の改善により営業利益は1,008億円（同13.2％増）、経常利益は1,005億円（同13.1％増）、親会社株主に帰属する当期純利益は723億円（同23.0％増）の増収増益となりました。",
+        "period_label_ja": "2018年3月期",
+        "period_label_en": "FY2018",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      },
+      {
+        "evidence_id": "37_2017-05-12_tanshin.pdf:s0015",
+        "source_filename": "37_2017-05-12_tanshin.pdf",
+        "pdf_page": 4,
+        "exact_quote_ja": "以上の結果、当連結会計年度における業績は、売上高は7,723億円（同1.9％減）となりましたが、マンション建築工事の完成工事総利益率の改善により、営業利益は890億円（同29.5％増）、経常利益は888億円（同31.9％増）、親会社株主に帰属する当期純利益は588億円（同14.7％増）の増益となりました。",
+        "period_label_ja": "2017年3月期",
+        "period_label_en": "FY2017",
+        "statement_type": "actual",
+        "source_section": "1. 経営成績等の概況 (1) 当期の経営成績の概況",
+        "tags": [
+          "management_discussion",
+          "financial_results"
+        ]
+      }
+    ],
+    "business_drivers": [
+      {
+        "driver_id": "driver_1",
+        "canonical_tag": "customer_demand",
+        "label_ja": "マンション建築工事の施工量及び受注動向",
+        "direction": "positive",
+        "importance": "primary",
+        "nature": "cyclical",
+        "affected_area_ja": "建設関連事業 売上高・営業利益",
+        "summary_ja": "分譲マンションを中心とする建築工事の施工量や受注高の変動が、主力の建設関連事業における売上高及び利益を直接牽引・減速させる伝達メカニズムとなっている。",
+        "observed_periods_ja": [
+          "2017年3月期",
+          "2018年3月期",
+          "2019年3月期",
+          "2021年3月期",
+          "2024年3月期",
+          "2025年3月期",
+          "2026年3月期"
+        ],
+        "evidence_ids": [
+          "37_2017-05-12_tanshin.pdf:s0015",
+          "33_2018-05-11_tanshin.pdf:s0014",
+          "29_2019-05-10_tanshin.pdf:s0013",
+          "21_2021-05-13_tanshin.pdf:s0011",
+          "09_2024-05-10_tanshin.pdf:s0006",
+          "05_2025_FY_tanshin.pdf:s0004",
+          "01_2026_FY_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "driver_id": "driver_2",
+        "canonical_tag": "material_costs",
+        "label_ja": "資材・労務費高騰と完成工事総利益率",
+        "direction": "mixed",
+        "importance": "primary",
+        "nature": "structural",
+        "affected_area_ja": "建設関連事業 完成工事総利益率・営業利益",
+        "summary_ja": "資材価格や労務費の高騰が完成工事総利益率の押し下げ要因となる一方、受注時採算の改善や原価低減努力の推進によって完成工事総利益率が改善・復調する循環的・構造的メカニズムを持つ。",
+        "observed_periods_ja": [
+          "2017年3月期",
+          "2018年3月期",
+          "2019年3月期",
+          "2020年3月期",
+          "2021年3月期",
+          "2023年3月期",
+          "2024年3月期",
+          "2025年3月期",
+          "2026年3月期"
+        ],
+        "evidence_ids": [
+          "37_2017-05-12_tanshin.pdf:s0015",
+          "33_2018-05-11_tanshin.pdf:s0014",
+          "29_2019-05-10_tanshin.pdf:s0013",
+          "13_2023-05-11_tanshin.pdf:s0009",
+          "09_2024-05-10_tanshin.pdf:s0006",
+          "01_2026_FY_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0002"
+        ]
+      },
+      {
+        "driver_id": "driver_3",
+        "canonical_tag": "property_prices",
+        "label_ja": "不動産取扱量及び分譲マンションの販売・引渡",
+        "direction": "positive",
+        "importance": "primary",
+        "nature": "cyclical",
+        "affected_area_ja": "不動産関連事業 売上高・営業利益",
+        "summary_ja": "分譲マンションの新規引渡し戸数や収益不動産の売却・仲介取扱量の増減、及び建築受注用地の取扱量変動が不動産関連事業等の利益を変動させる。",
+        "observed_periods_ja": [
+          "2019年3月期",
+          "2020年3月期",
+          "2022年3月期",
+          "2023年3月期",
+          "2024年3月期",
+          "2025年3月期",
+          "2026年3月期"
+        ],
+        "evidence_ids": [
+          "29_2019-05-10_tanshin.pdf:s0013",
+          "25_2020-05-14_tanshin.pdf:s0012",
+          "17_2022-05-12_tanshin.pdf:s0010",
+          "13_2023-05-11_tanshin.pdf:s0008",
+          "09_2024-05-10_tanshin.pdf:s0006",
+          "05_2025_FY_tanshin.pdf:s0004",
+          "01_2026_FY_tanshin.pdf:s0001"
+        ]
+      },
+      {
+        "driver_id": "driver_4",
+        "canonical_tag": "volume",
+        "label_ja": "分譲・賃貸マンション管理戸数の蓄積",
+        "direction": "positive",
+        "importance": "secondary",
+        "nature": "structural",
+        "affected_area_ja": "管理運営事業（旧サービス関連事業） 売上高・営業利益",
+        "summary_ja": "分譲マンション管理戸数や賃貸マンション・社宅運営管理戸数の新規受託・継続受託による累積が、収益の下振れを防ぐ安定的なストック型収益基盤を形成している。",
+        "observed_periods_ja": [
+          "2021年3月期",
+          "2022年3月期",
+          "2023年3月期",
+          "2024年3月期",
+          "2025年3月期",
+          "2026年3月期"
+        ],
+        "evidence_ids": [
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      }
+    ],
+    "commitments": [
+      {
+        "commitment_id": "commit_1",
+        "commitment_type": "medium_term_target",
+        "statement_period_ja": "2018年3月期",
+        "commitment_ja": "中期経営計画「NBj計画」3期合計連結経常利益 2,400億円",
+        "due_period_ja": "2020年3月期",
+        "outcome_status": "achieved",
+        "outcome_ja": "3期（2018年3月期:1,005億円、2019年3月期:1,004億円、2020年3月期:853億円）の累計連結経常利益は2,862億円となり、目標の2,400億円を上回って達成した。",
+        "revision_direction": "none_observed",
+        "forecast_posture": "balanced",
+        "evidence_ids": [
+          "33_2018-05-11_tanshin.pdf:s0014",
+          "29_2019-05-10_tanshin.pdf:s0013",
+          "25_2020-05-14_tanshin.pdf:s0012"
+        ]
+      },
+      {
+        "commitment_id": "commit_2",
+        "commitment_type": "medium_term_target",
+        "statement_period_ja": "2021年3月期",
+        "commitment_ja": "中期経営計画「NS計画」5期合計連結経常利益 4,000億円、2025年3月期 連結経常利益 1,000億円",
+        "due_period_ja": "2025年3月期",
+        "outcome_status": "partly_achieved",
+        "outcome_ja": "5期合計の連結経常利益は4,073億円となり5期累計目標（4,000億円）を達成した一方、2025年3月期単年度の連結経常利益は834億円となり単年度目標（1,000億円）は未達となった。",
+        "revision_direction": "none_observed",
+        "forecast_posture": "balanced",
+        "evidence_ids": [
+          "21_2021-05-13_tanshin.pdf:s0011",
+          "09_2024-05-10_tanshin.pdf:s0007",
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      },
+      {
+        "commitment_id": "commit_3",
+        "commitment_type": "medium_term_target",
+        "statement_period_ja": "2026年3月期",
+        "commitment_ja": "中期経営計画「HASEKO Evolution Plan」2028年3月期 連結経常利益 1,000億円以上、2031年3月期 連結経常利益 1,300億円以上",
+        "due_period_ja": "2031年3月期",
+        "outcome_status": "pending",
+        "outcome_ja": "計画初年度（2026年3月期）の連結経常利益は941億円を達成。2028年3月期及び2031年3月期の達成状況は対象期間中のため未確定。",
+        "revision_direction": "none_observed",
+        "forecast_posture": "not_assessable",
+        "evidence_ids": [
+          "01_2026_FY_tanshin.pdf:s0002",
+          "01_2026_FY_tanshin.pdf:s0003"
+        ]
+      }
+    ],
+    "management_themes": [
+      {
+        "theme_id": "theme_1",
+        "label_ja": "分譲マンション施工の採算性確保と完成工事総利益率の維持・向上",
+        "development": "persistent",
+        "early_period_ja": "2017年3月期〜2020年3月期",
+        "middle_period_ja": "2021年3月期〜2023年3月期",
+        "recent_period_ja": "2024年3月期〜2026年3月期",
+        "interpretation_ja": "土地情報収集力と特入施工の強みを活かした受注時採算の厳格管理、現場の原価低減努力の推進により、資材・労務費高騰局面におれても完成工事総利益率の改善・維持を経営の中心テーマに掲げ続けている。",
+        "evidence_ids": [
+          "37_2017-05-12_tanshin.pdf:s0015",
+          "13_2023-05-11_tanshin.pdf:s0009",
+          "01_2026_FY_tanshin.pdf:s0001",
+          "01_2026_FY_tanshin.pdf:s0002"
+        ]
+      },
+      {
+        "theme_id": "theme_2",
+        "label_ja": "ストック型ビジネス（管理運営・サービス関連事業）の拡大による収益基盤平準化",
+        "development": "strengthened",
+        "early_period_ja": "2017年3月期〜2020年3月期",
+        "middle_period_ja": "2021年3月期〜2023年3月期",
+        "recent_period_ja": "2024年3月期〜2026年3月期",
+        "interpretation_ja": "分譲マンションや賃貸マンション・社宅の管理戸数増、大規模修繕・リフォーム、シニア事業の強化を進め、建築請負依存からの脱却と安定収益の蓄積を強化している。",
+        "evidence_ids": [
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      },
+      {
+        "theme_id": "theme_3",
+        "label_ja": "株主還元の拡充（累進配当・総還元性向目標の設定）",
+        "development": "strengthened",
+        "early_period_ja": "2017年3月期〜2020年3月期",
+        "middle_period_ja": "2021年3月期〜2023年3月期",
+        "recent_period_ja": "2024年3月期〜2026年3月期",
+        "interpretation_ja": "配当の下限設定（70円→80円等）から、総還元性向40％〜50％程度の設定、累進配当の導入、機動的な自己株式取得へと株主還元方針を段階的に強化・拡充させている。",
+        "evidence_ids": [
+          "05_2025_FY_tanshin.pdf:s0005"
+        ]
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "分譲マンション施工の強みを中核としながら、管理運営事業や不動産関連事業への事業領域拡大を一貫して進めており、戦略の筋道と事業の方向性に高い整合性が認められる。",
+          "evidence_ids": [
+            "05_2025_FY_tanshin.pdf:s0005",
+            "01_2026_FY_tanshin.pdf:s0002"
+          ]
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "「NBj計画」の3期累計連結経常利益（目標2,400億円に対し実績2,862億円）及び「NS計画」の5期累計連結経常利益（目標4,000億円に対し実績4,073億円）の双方で累計目標を達成しており、高い実行力が維持されている。",
+          "evidence_ids": [
+            "25_2020-05-14_tanshin.pdf:s0012",
+            "05_2025_FY_tanshin.pdf:s0005"
+          ]
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "NS計画における5期累計経常利益目標（4,000億円）は達成したものの、最終年度（2025年3月期）の単年度目標（1,000億円に対し実績834億円）が未達に終わるなど、単年度目標の規律面で一部過大な見通し設定がみられた。",
+          "evidence_ids": [
+            "09_2024-05-10_tanshin.pdf:s0007",
+            "05_2025_FY_tanshin.pdf:s0005"
+          ]
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient",
+          "rationale_ja": "資材・労務費高騰による完成工事総利益率の低下や、海外関連事業における特別損失（減損損失・有価証券評価損等）の発生理由について、決算短信の経営成績概況等で客観的かつ具体的に要因を開示している。",
+          "evidence_ids": [
+            "05_2025_FY_tanshin.pdf:s0004",
+            "13_2023-05-11_tanshin.pdf:s0009"
+          ]
+        }
+      ],
+      "overall_rationale_ja": "株式会社長谷工コーポレーションは、基幹事業である分譲マンション建築請負での高い市場シェアと受注時採算管理を強みとしつつ、管理運営・サービス関連事業や不動産開発への多角化を首尾一貫して推進している。中期経営計画「NBj計画」（3期累計経常利益2,400億円目標に対し2,862億円達成）及び「NS計画」（5期累計経常利益4,000億円目標に対し4,073億円達成）において、ともに累計目標を達成しており、戦略実行力と有言実行の姿勢が確認できる。一方、NS計画最終年度（2025年3月期）の単年度経常利益目標1,000億円に対して実績が834億円にとどまった点や、海外事業での減損損失計上などの課題は存在するが、資材・労務費高騰や外部環境変化の影響に関する開示姿勢は透明性が高く、総じて経営の整合性は良好と評価できる。"
+    },
+    "research_notes": [
+      "本ドシエは提示された10期分の決算短信（2017年3月期〜2026年3月期）に基づき作成されている。",
+      "2026年3月期より新中期経営計画「HASEKO Evolution Plan」が開始されており、初年度の連結経常利益は941億円（予想900億円を超過）となった。"
+    ]
+  }
+}

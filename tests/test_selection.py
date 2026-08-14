@@ -16,16 +16,17 @@ class SelectionTests(unittest.TestCase):
     def test_all_company_directories(self) -> None:
         expected = {
             "1808": [
-                "01_2026_FY_tanshin.pdf",
-                "05_2025_FY_tanshin.pdf",
-                "09_2024-05-10_tanshin.pdf",
-                "13_2023-05-11_tanshin.pdf",
-                "17_2022-05-12_tanshin.pdf",
-                "21_2021-05-13_tanshin.pdf",
-                "25_2020-05-14_tanshin.pdf",
-                "29_2019-05-10_tanshin.pdf",
-                "33_2018-05-11_tanshin.pdf",
-                "37_2017-05-12_tanshin.pdf",
+                "01_2027_Q1_tanshin.pdf",
+                "02_2026_FY_tanshin.pdf",
+                "06_2025_FY_tanshin.pdf",
+                "10_2024-05-10_tanshin.pdf",
+                "14_2023-05-11_tanshin.pdf",
+                "18_2022-05-12_tanshin.pdf",
+                "22_2021-05-13_tanshin.pdf",
+                "26_2020-05-14_tanshin.pdf",
+                "30_2019-05-10_tanshin.pdf",
+                "34_2018-05-11_tanshin.pdf",
+                "38_2017-05-12_tanshin.pdf",
             ],
             "3923": [
                 "01_2026_FY_rakus_tanshin.pdf",
@@ -64,7 +65,7 @@ class SelectionTests(unittest.TestCase):
                 )
 
     def test_latest_year_end_is_deduplicated(self) -> None:
-        manifest = select_filings(REPOSITORY_ROOT, "1808")
+        manifest = select_filings(REPOSITORY_ROOT, "3923")
         latest = [
             item
             for item in manifest.selected_files

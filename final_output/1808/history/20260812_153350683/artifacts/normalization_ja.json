@@ -1,0 +1,794 @@
+{
+  "change_count": 106,
+  "changes": [
+    {
+      "type": "physical_pdf_page_resolved",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007",
+      "from": 11,
+      "to": 13
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "1兆2,731億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "8.1%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "987億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "16.6%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "12.8%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "548億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_1",
+      "kind": "figure",
+      "surface": "59.2%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "kind": "figure",
+      "surface": "900億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-0fbf20aa",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "このような中、中期経営計画「HASEKO Evolution Plan」の初年度となる当連結会計年度につきましては、完成工事総利益率の改善により、連結経常利益は予想の900億円を上回り、941億円となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "kind": "figure",
+      "surface": "41億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-0fbf20aa"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "claim_surface": "予想",
+      "source_surface": "予想",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_latest_key_takeaway_2",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "forecast"
+      ]
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "date",
+      "surface": "2028年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "date",
+      "surface": "2031年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "figure",
+      "surface": "1,300億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "figure",
+      "surface": "10%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "kind": "figure",
+      "surface": "13%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_latest_key_takeaway_3",
+      "claim_surface": "程度",
+      "source_surface": "程度",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_business_driver_2",
+      "kind": "figure",
+      "surface": "16.6%",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_business_driver_2",
+      "kind": "figure",
+      "surface": "987億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_business_driver_3",
+      "kind": "figure",
+      "surface": "1兆2,731億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_business_driver_4",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_business_driver_4",
+      "kind": "figure",
+      "surface": "300億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "date",
+      "surface": "2028年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "date",
+      "surface": "2031年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "figure",
+      "surface": "1,300億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "kind": "figure",
+      "surface": "900億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "qualifier_span_added",
+      "claim_id": "claim_latest_outlook_1",
+      "claim_surface": "予想",
+      "source_surface": "予想",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_latest_outlook_1",
+      "from": "target",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "target"
+      ]
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_risk_1",
+      "kind": "date",
+      "surface": "2023年3月期",
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0009"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_risk_1",
+      "kind": "date",
+      "surface": "2024年3月期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0006"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_risk_2",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0004"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "figure",
+      "surface": "1兆2,731億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "figure",
+      "surface": "900億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0004"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "date",
+      "surface": "2028年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_latest_context_1",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_perspective_1",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:r0004-1769e880",
+      "source_filename": "37_2017-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "決算短信(宝印刷) 2017年05月11日 21時25分 4ページ(Tess 1.50(64) 20160317_01)h*_\u000fO\u001ay>w7]å030ü0Ý0ì0ü0·0ç0ó\u0000 ÿ\b\u00001\u00008\u00000\u00008ÿ\t^sb\u0010\u00002\u00009^tÿ\u0013g\bg\u001f\u0000 lz{wíOá\u0000-\u0000 \u00002\u0000 \u0000-1.経営成績等の概況(1) 当期の経営成績の概況1当連結会計年度の概況当連結会計年度における国内経済は、一部に改善の遅れも見られますが、緩やかな回復基調が続いています。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "figure",
+      "surface": "2017",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:r0004-1769e880"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_perspective_1",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0004-b2cd4db7",
+      "source_filename": "21_2021-05-13_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "における新規供給戸数の回復もあり2021年3月末の分譲中戸数は3,528戸(同29.2%増)に増加しました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "figure",
+      "surface": "2021",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:r0004-b2cd4db7"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "date",
+      "surface": "2023年3月期",
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0009"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_perspective_1",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-6a69fc97",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "quote": "2024年度の販売状況は、物価やマンション価格の上昇に対し、変動型住宅ローン金利の低位継続、賃上げによる購入マインドの下支えなどにより底堅く進捗しました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "figure",
+      "surface": "2024",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-6a69fc97"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_perspective_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_1",
+      "kind": "date",
+      "surface": "2017年3月期",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:s0015"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_1",
+      "kind": "date",
+      "surface": "2023年3月期",
+      "evidence_id": "13_2023-05-11_tanshin.pdf:s0009"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_2",
+      "kind": "date",
+      "surface": "2020年3月期",
+      "evidence_id": "25_2020-05-14_tanshin.pdf:s0012"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_2",
+      "kind": "date",
+      "surface": "2021年3月期",
+      "evidence_id": "21_2021-05-13_tanshin.pdf:s0011"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_2",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_consistent_2",
+      "kind": "figure",
+      "surface": "300億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_1",
+      "kind": "figure",
+      "surface": "2017",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:r0004-1769e880"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_change_1",
+      "evidence_id": "17_2022-05-12_tanshin.pdf:r0004-1dc407d8",
+      "source_filename": "17_2022-05-12_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "株式会社長谷工コーポレーション(1808) 2022年3月期 決算短信- 2 -1.経営成績等の概況(1)当期の経営成績の概況1当連結会計年度の概況当連結会計年度における国内経済は、新型コロナウイルス感染症による厳しい状況が緩和される中で、各種政策の効果や海外経済の改善もあって持ち直しの動きがみられますが、ウクライナ情勢等による不透明感がみられ、原材料価格の上昇や金融資本市場の変動等による下振れリスクに十分注意する必要があります。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_1",
+      "kind": "figure",
+      "surface": "2022",
+      "evidence_id": "17_2022-05-12_tanshin.pdf:r0004-1dc407d8"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_change_1",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-767b1334",
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "pdf_page": 4,
+      "quote": "2025年度のマンションの新規供給戸数は首都圏で2万1,659戸(前期比2.6%減)、近畿圏で1万7,002戸(同8.2%増)となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_1",
+      "kind": "figure",
+      "surface": "2025",
+      "evidence_id": "01_2026_FY_tanshin.pdf:r0004-767b1334"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0001"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_1",
+      "kind": "figure",
+      "surface": "1",
+      "evidence_id": "37_2017-05-12_tanshin.pdf:r0004-1769e880"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_trend_change_1",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "risk"
+      ]
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_change_2",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:r0013-539409c3",
+      "source_filename": "09_2024-05-10_tanshin.pdf",
+      "pdf_page": 13,
+      "quote": "株式会社長谷工コーポレーション(1808) 2024年3月期 決算短信- 11 -・数値目標2025年3月期 連結経常利益 1,000億円2025年3月期 連結子会社経常利益 300億円以上2021年3月期~2025年3月期 5期合計連結経常利益 4,000億円・基本方針1.新規の住宅供給等を主なマーケットとする建設関連事業と既存の住宅関連等を中心とするサービス関連事業の両方に軸足をおく経営の強化2.グループ連携を深化させ、都市居住生活者の信頼に応える企業体の実現3.安全・安心で快適な住まいと都市環境を提供4.成長戦略投資による安定した収益基盤の構築5.強固な財務基盤の維持と株主還元の拡充6.中長期的な視点を踏まえた新たな取組みへの挑戦7.CSR経営の確立に向け注力・重点戦略【1】コア事業の競争力強化(1)建設関連事業の領域拡大1超高層マンションの施工拡大等により、分譲マンション建設での優位性を維持・強化2賃貸マンション、学生・シニア向けマンション、寮・社宅、ホテル、オフィス、物流施設など分譲マンション以外での建設受注拡大3BIM及びその他のICT関連技術の活用による工期短縮・コスト競争力の強化4環境配慮技術・IoTを活用した商品開発(2)再開発・建替事業の拡大・コンパクトシティ化への対応(3)サービス関連事業の継続強化1事業エリアを大都市圏から地方主要都市へと拡大2先進技術導入による事業モデルの再構築【2】不動産関連事業の投資拡大(1)マンション分譲事業の事業エリア拡大(2)賃貸不動産の保有・開発事業の展開1安定収益源の底上げを目的とした賃貸不動産の保有2私募REIT創設による開発案件の多様化、新たな収益源の確保【3】将来の成長に向けた取組み(1)デジタルトランスフォーメーション(DX)の具現化に向けた投資1AI、センサー、通信、ロボット等の最新のIT関連技術を活用し、各種メーカー、ベンチャー企業、大学、研究機関等、外部との連携を行い、デジタルトランスフォーメーションの推進(2)価値創生部門による先進技術導入に向けた投資1サービス関連事業を中心に、既存ビジネスの生産性の抜本的な改革2先進技術を積極的に活用した新たな事業モデルの創生(3)海外事業への投資1米国(ハワイ)における収益基盤の再確立2東南アジアにおける設計・施工生産体制の確立3不動産開発プロジェクトへの参画(4)新規投資1時代のニーズに合わせた住まい方の提案、新商品、新サービスの開発2既存事業のサービス向上や成長性のある事業領域拡大を重点対象としたM&Aの実施"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_2",
+      "kind": "figure",
+      "surface": "2021",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:r0013-539409c3"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_2",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_2",
+      "kind": "figure",
+      "surface": "80円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_change_2",
+      "kind": "figure",
+      "surface": "85円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_trend_change_2",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "target"
+      ]
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_capital_allocation_1",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0004"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_capital_allocation_1",
+      "kind": "figure",
+      "surface": "85円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "figure",
+      "surface": "5期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "figure",
+      "surface": "4,000億円",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_trend_implication_1",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-eb4299be",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "quote": "期において連結経常利益は834億円となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "figure",
+      "surface": "834億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-eb4299be"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "date",
+      "surface": "2026年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "figure",
+      "surface": "941億円",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0002"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_trend_implication_1",
+      "kind": "date",
+      "surface": "2028年3月期",
+      "evidence_id": "01_2026_FY_tanshin.pdf:s0003"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_management_strategy_1",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-2bde1f4b",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "quote": "るとして、2025年3月、公正取引委員会による立入検査を受けました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_strategy_1",
+      "kind": "figure",
+      "surface": "3",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-2bde1f4b"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_execution_1",
+      "kind": "figure",
+      "surface": "5期",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_execution_1",
+      "kind": "figure",
+      "surface": "4,000億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:s0005"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_execution_1",
+      "kind": "figure",
+      "surface": "3",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-eb4299be"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "figure",
+      "surface": "5期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "figure",
+      "surface": "4,000億円",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "date",
+      "surface": "2025年3月期",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "figure",
+      "surface": "1,000億円",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:s0007"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "figure",
+      "surface": "834億円",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-eb4299be"
+    },
+    {
+      "type": "derived_evidence_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-cc17f6cd",
+      "source_filename": "05_2025_FY_tanshin.pdf",
+      "pdf_page": 8,
+      "quote": "中期経営計画「HASEKO Next Stage Plan(略称:NS計画)」の最終年となる2025年3月期において連結経常利益は834億円となりました。"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "kind": "figure",
+      "surface": "2",
+      "evidence_id": "05_2025_FY_tanshin.pdf:r0008-cc17f6cd"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_management_forecast_discipline_1",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "target"
+      ]
+    },
+    {
+      "type": "uniquely_supported_evidence_added",
+      "claim_id": "claim_management_accountability_1",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:r0013-539409c3",
+      "surface": "3"
+    },
+    {
+      "type": "supported_span_added",
+      "claim_id": "claim_management_accountability_1",
+      "kind": "figure",
+      "surface": "3",
+      "evidence_id": "09_2024-05-10_tanshin.pdf:r0013-539409c3"
+    },
+    {
+      "type": "statement_type_reconciled",
+      "claim_id": "claim_management_accountability_1",
+      "from": "actual",
+      "to": "mixed",
+      "source_types": [
+        "actual",
+        "target"
+      ]
+    },
+    {
+      "type": "management_consistency_calculated",
+      "methodology_version": "management-consistency-v6",
+      "score": 0.69,
+      "raw_score": 0.6875,
+      "evidence_confidence": 0.6083,
+      "confidence_label": "moderate",
+      "evidence_coverage": 0.6083,
+      "distinct_fiscal_years": [
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "evidence_count": 6,
+      "management_discussion_evidence_share": 1.0,
+      "insufficient_dimensions": [],
+      "excluded_dimensions": [],
+      "score_calculation_method": "arithmetic_mean_of_available_normalized_components",
+      "available_component_count": 4,
+      "weights": {
+        "strategic_coherence": 0.25,
+        "execution_follow_through": 0.25,
+        "forecast_target_discipline": 0.25,
+        "accountability_transparency": 0.25
+      }
+    }
+  ]
+}

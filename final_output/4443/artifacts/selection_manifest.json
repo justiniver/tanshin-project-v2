@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "2.3",
   "security_code": "4443",
   "data_directory": "data/4443",
   "latest_filename": "01_2026_FY_tanshin.pdf",
@@ -42,8 +42,8 @@
       "year_end_inferred": false,
       "classification_reason": "Filename contains an explicit FY or Q4/FY marker.",
       "page_count": 27,
-      "byte_size": 829486,
-      "sha256": "52860b3e6fd2ef362ba5762dc3264e8a12e90d7479777c376c3dc8780f8b237d",
+      "byte_size": 840062,
+      "sha256": "bea167069cc2d1189f8b0b08bb92b36ae6070af87f741c80370c3c00d037b9fd",
       "roles": [
         "latest",
         "trend_year_end"
@@ -203,11 +203,11 @@
   ],
   "unselected_files": [],
   "total_selected_pages": 183,
-  "total_selected_bytes": 5997631,
+  "total_selected_bytes": 6008207,
   "selection_notes": [
     "Lower numeric filename ordinals were validated as more recent where present.",
     "The latest filing is deduplicated when it is also a selected year-end.",
     "The available consecutive history contains 8 distinct year-end fiscal years, meeting the 8-year minimum but falling short of the requested trend length."
   ],
-  "manifest_id": "b20d1ab8dbf79bf4"
+  "manifest_id": "ae9fbea0153cb705"
 }

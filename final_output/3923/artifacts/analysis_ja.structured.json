@@ -1,635 +1,270 @@
 {
   "schema_version": "1.0",
-  "identity": {
-    "security_code": "3923",
-    "company_name_ja": "株式会社ラクス",
-    "company_name_en": "RAKUS Co., Ltd.",
-    "latest_filename": "01_2026_FY_rakus_tanshin.pdf",
-    "latest_period_ja": "2026年3月期",
-    "latest_period_en": "FY2026"
-  },
   "claims": [
     {
-      "claim_id": "claim_company_overview_01",
+      "claim_id": "claim_1",
       "section": "company.overview",
       "order": 1,
-      "headline_ja": "クラウド事業とIT人材事業を展開する中小企業向けバックオフィス業務効率化SaaS企業",
-      "body_ja": "当社グループは、企業の業務効率化を支援するクラウド事業およびITエンジニア派遣を行うIT人材事業を展開している。クラウド事業では楽楽精算、楽楽明細、楽楽販売等のSaaSプロダクト群を提供し、主に中小企業のバックオフィス業務のデジタル化を推進している。利用企業からの月額利用料等を主要な収益基盤として事業を運営している。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0001"
-      ],
+      "headline_ja": "株式会社ラクスの事業構造と収益モデルの概要",
+      "body_ja": "株式会社ラクスは、中小企業を主な対象としてバックオフィス業務の効率化を支援するクラウド（SaaS）事業およびIT人材事業（ITエンジニア派遣）を展開してきた。主力の「楽楽精算」「楽楽明細」をはじめとするクラウドサービスは、月額利用料を中心とするストック型収益モデルを特徴とする。2026年4月にはIT人材事業の全株式譲渡を実行し、経営資源をクラウド事業へ集中させる専業体制へ移行している。",
       "statement_type": "actual",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "claim_latest_kt_01",
+      "claim_id": "claim_2",
       "section": "latest.key_takeaway",
       "order": 1,
-      "headline_ja": "2026年3月期は楽楽精算の拡大と広告費最適化により売上高602.86億円・営業利益70.2％増を達成",
-      "body_ja": "2026年3月期の連結業績は、売上高60,286百万円（前年同期比23.3％増）、営業利益17,345百万円（前年同期比70.2％増）、経常利益17,440百万円（前年同期比70.7％増）、親会社株主に帰属する当期純利益13,293百万円（前年同期比66.1％増）となった。主力サービスの楽楽精算を中心とするクラウド事業の増収に加え、広告宣伝費の最適化が大幅な営業増益に寄与した。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "2026年3月期通期業績は大幅な増収増益を達成し中期目標を完遂",
+      "body_ja": "2026年3月期の連結業績は、売上高60,286百万円（前年比23.3％増）、営業利益17,345百万円（同70.2％増）、親会社株主に帰属する当期純利益13,293百万円（同66.1％増）となり、大幅な増収増益を記録した。2021年3月期を起点とした5ヵ年中期経営目標（売上高CAGR 31〜32％、当期純利益100億円以上、純資産200億円以上）をすべて達成した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_kt_02",
+      "claim_id": "claim_3",
       "section": "latest.key_takeaway",
       "order": 2,
-      "headline_ja": "営業キャッシュ・フローは133.91億円へ拡大し69.99億円の自己株式取得と消却を実施",
-      "body_ja": "当連結会計年度の営業活動によるキャッシュ・フローは13,391百万円の収入（前期は9,006百万円の収入）となり、業績拡大に伴い著しく拡大した。得られた資金を活用し、総額6,999百万円の自己株式取得と全株式消却を実施したことで、総還元性向は71.3％となる見通しである。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0004",
-        "01_2026_FY_rakus_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "営業キャッシュ・フローの大幅拡大と機動的な株主還元を実行",
+      "body_ja": "当期の営業活動によるキャッシュ・フローは13,391百万円の収入（前期は9,006百万円）へと拡大した。税金等調整前当期純利益18,939百万円の計上や前受金・契約負債の積み上がりが寄与した。創出したキャッシュ等を原資に約70億円の自己株式取得・消却を実施し、年間配当1株7.00円と合わせて総還元性向71.3％を達成した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_kt_03",
+      "claim_id": "claim_4",
       "section": "latest.key_takeaway",
       "order": 3,
-      "headline_ja": "2027年3月期は事業譲渡に伴い減収予想もクラウド事業単体では売上高15.3％増を計画",
-      "body_ja": "2027年3月期の連結業績予想は、売上高59,700百万円（前年同期比1.0％減）、営業利益20,500百万円（前年同期比18.2％増）、親会社株主に帰属する当期純利益25,200百万円（前年同期比89.6％増）を計画している。IT人材事業の譲渡に伴い連結売上高は微減となるものの、クラウド事業単体のオーガニック比較では売上高15.3％増、セグメント利益27.9％増を見込む。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0006",
-        "01_2026_FY_rakus_tanshin.pdf:s0007"
-      ],
+      "headline_ja": "IT人材事業の売却に伴いクラウド事業専業体制へ再編",
+      "body_ja": "2026年4月1日付で連結子会社である株式会社ラクスパートナーズの全株式を譲渡した。これにより2027年3月期第1四半期に関係会社株式売却益16,685百万円を特別利益に計上予定である。クラウド事業とのシナジーが希薄化した事業を離脱させ、全社リソースをクラウド事業へ集中する構造改革を決断した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_5",
+      "section": "latest.key_takeaway",
+      "order": 4,
+      "headline_ja": "2027年3月期は事業売却益を含め純利益252億円を計画",
+      "body_ja": "2027年3月期の連結業績予想は、売上高59,700百万円（前年比1.0％減）、営業利益20,500百万円（同18.2％増）、親会社株主に帰属する当期純利益25,200百万円（同89.6％増）を見込む。IT人材事業の除外により連結売上高は微減となるが、クラウド事業単体のオーガニック成長では売上高15.3％増、セグメント利益27.9％増を計画している。",
       "statement_type": "forecast",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_bd_01",
+      "claim_id": "claim_6",
       "section": "latest.business_driver",
       "order": 1,
-      "headline_ja": "クラウド事業は新規受注増加・価格改定・広告費最適化により利益率が大きく改善",
-      "body_ja": "クラウド事業の売上高は51,770百万円（前年同期比23.7％増）、セグメント利益は16,027百万円（前年同期比71.1％増）となった。主力サービス楽楽精算が新規受注を積み上げたことに加え、価格改定効果が寄与した。さらに市場環境に応じた広告宣伝費の最適化が進んだことで利益率が大幅に向上した。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0008",
-        "01_2026_FY_rakus_tanshin.pdf:s0009"
-      ],
+      "headline_ja": "「楽楽精算」・「楽楽明細」の拡大｜追い風",
+      "body_ja": "クラウド事業の売上高は51,770百万円（前年比23.7％増）、セグメント利益は16,027百万円（同71.1％増）となった。主力サービス「楽楽精算」における新規受注の積み上げと価格改定効果に加え、「楽楽明細」の拡大が売上成長を強力に牽引した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_bd_02",
+      "claim_id": "claim_7",
       "section": "latest.business_driver",
       "order": 2,
-      "headline_ja": "IT人材事業は営業強化による稼働エンジニア増と高稼働率の維持で増収増益",
-      "body_ja": "IT人材事業の売上高は8,516百万円（前年同期比20.9％増）、セグメント利益は1,318百万円（前年同期比59.2％増）となった。営業体制の継続的強化により稼働エンジニア数が増加したことに加え、旺盛なエンジニア需要を背景に高水準の稼働率を維持したことが要因である。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0010"
-      ],
+      "headline_ja": "広告宣伝費の最適化と営業効率向上｜追い風",
+      "body_ja": "クラウド事業のセグメント利益率は前期の22.4％から31.0％へと8.6ポイント大幅に向上した。インボイス制度等の需要特誘一巡後、受注動向に応じた機動的な広告宣伝費の再配分と営業プロセスの見直しを推進したことが、顕著な利益率改善へ結実した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_ol_01",
+      "claim_id": "claim_8",
+      "section": "latest.business_driver",
+      "order": 3,
+      "headline_ja": "IT人材事業の稼働エンジニア数増加｜追い風",
+      "body_ja": "IT人材事業は、営業体制の強化により稼働エンジニア数が増加し高水準の稼働率を維持したことで、売上高8,516百万円（前年比20.9％増）、セグメント利益1,318百万円（同59.2％増）と譲渡直前年度まで堅調な業績を維持した。",
+      "statement_type": "actual",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_9",
       "section": "latest.outlook",
       "order": 1,
-      "headline_ja": "クラウド事業専業体制への移行のもと新中期経営計画でRule of 50達成を目指す",
-      "body_ja": "2026年4月のIT人材事業譲渡に伴いクラウド事業専業体制へ移行し、2027年3月期から2029年3月期までの新中期経営計画を開始する。最終年度までにRule of 50の達成を掲げ、クラウド事業売上高のオーガニックCAGR 15％以上、正社員1名当たり売上高3,000万円以上、ROE30％以上の維持、総還元性向20％以上と毎期増配の継続を目指している。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0011",
-        "01_2026_FY_rakus_tanshin.pdf:s0012"
-      ],
+      "headline_ja": "新中期経営計画（FY2027〜FY2029）におけるRule of 50目標の策定",
+      "body_ja": "2027年3月期から2029年3月期までの3ヵ年中期経営計画を策定し、最終年までにRule of 50（売上高成長率と営業利益率の合計50％以上）の達成、クラウド事業売上高オーガニックCAGR 15％以上、一過性要因を除くROE 30％以上堅持を掲げた。専業体制のもと高成長と高収益の両立を目指す。",
       "statement_type": "target",
       "is_inference": false,
       "causal": false
     },
     {
-      "claim_id": "claim_latest_rk_01",
+      "claim_id": "claim_10",
       "section": "latest.risk",
       "order": 1,
-      "headline_ja": "一部事業領域での市場成熟化と類似事業者増加に伴う競争環境の激化",
-      "body_ja": "一部の事業領域において市場の成熟化が進み、システム未導入層が導入効果を慎重に見極める段階へ移行している。また、類似サービスを展開する事業者の増加により競争環境が厳しさを増しており、新規顧客獲得コストの増加や受注ペース鈍化のリスクが存在する。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0013"
-      ],
+      "headline_ja": "クラウド市場の成熟化と競合激化に伴う新規獲得効率の低下リスク",
+      "body_ja": "一部の主力領域において市場成熟化が進み、システム未導入層が慎重検討層へ移行している。類似サービス事業者の増加により競合環境が厳しさを増す中、広告宣伝費を抑制しつつ年間15％以上のオーガニック売上成長率を維持できるか不確実性が存在する。",
       "statement_type": "risk",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_rk_02",
+      "claim_id": "claim_11",
       "section": "latest.risk",
       "order": 2,
-      "headline_ja": "楽楽明細における市場拡大ペース想定下回りによる獲得速度緩和のリスク",
-      "body_ja": "請求書発行等のクラウドサービス楽楽明細において、新規受注は着実に積み上がっているものの、市場全体の拡大ペースが想定よりもやや緩やかとなっている。導入検討期間の長期化や需要増加スピードの変化が業績成長速度に影響を与える不確実性がある。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0014"
-      ],
+      "headline_ja": "生成AI等の技術急速変化に伴う開発投資負担増のリスク",
+      "body_ja": "生成AIの活用に対する関心の高まりを受け、プロダクトへの機能連携拡張や運用自動化の実装を加速させている。技術変化への追随や開発リソースの継続的投下が求められ、投資効率が低下した場合には一時的な収益圧迫要因となるリスクがある。",
       "statement_type": "risk",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_latest_ctx_01",
+      "claim_id": "claim_12",
       "section": "latest.context",
       "order": 1,
-      "headline_ja": "5ヵ年目標の完全達成とIT人材事業譲渡によるクラウド専業化の現在地",
-      "body_ja": "2021年3月期を基準とした5ヵ年中期経営目標（売上高CAGR 31％～32％、親会社純利益100億円以上、純資産200億円以上）に対し、2026年3月期は純利益13,293百万円、純資産26,034百万円を計上して目標を達成した。創業事業であったIT人材事業は足元堅調ながらもクラウド事業とのシナジー希薄化を理由に2026年4月1日付で株式譲渡を実行し、事業譲渡益16,685百万円を計上予定である。今後はクラウド事業へ経営資源を全集中し、営業利益率改善とRule of 50達成を軸とする質の高い成長への転換点に位置している。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0015",
-        "01_2026_FY_rakus_tanshin.pdf:s0016"
-      ],
-      "statement_type": "mixed",
+      "headline_ja": "最新決算の位置づけと今後の投資判断における検証軸",
+      "body_ja": "2026年3月期決算は、過去数年間にわたる大規模な先行投資フェーズから刈り取り・高収益化フェーズへの移行が結実したことを示している。売上高拡大と利益率向上を高い次元で両立させ、5ヵ年中期経営目標を完全に完遂した点は評価できる。一方、2027年3月期以降はIT人材事業の除外に伴いクラウド専業企業としての真のオーガニック成長力が問われる。広告宣伝費の最適化を図りながら売上高CAGR 15％以上を維持し、Rule of 50に向けた収益性の向上が継続するかが今後の焦点となる。",
+      "statement_type": "inference",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_pers_01",
+      "claim_id": "claim_13",
       "section": "trend.perspective",
       "order": 1,
-      "headline_ja": "高収益サービスが生むキャッシュを成長SaaSへ集中投下し大規模投資と急拡大を実現",
-      "body_ja": "過去10年間において当社は「高収益な複数サービスが生み出すキャッシュを成長サービスに集中投下する」経営方針を一貫して保持してきた。初期（2017年3月期等）においては既存事業の安定キャッシュを原資に楽楽精算等の成長SaaSに投資し、中期（2020～2022年3月期）には減益を許容してTVCMや人員拡充等の大規模成長投資を断行した。直近（2024～2026年3月期）にかけてはその投資効果の発現と広告費最適化により営業利益が急拡大し、5ヵ年目標（純利益100億円以上）を超過達成した。さらに創業事業であるIT人材事業を譲渡しクラウド専業へ集約することで、成長率と利益率を高次元で両立する新たな段階へ移行している。",
-      "evidence_ids": [
-        "37_2017_FY_rakus_tanshin.pdf:s0017",
-        "17_2022_FY_rakus_tanshin.pdf:s0018",
-        "01_2026_FY_rakus_tanshin.pdf:s0015"
-      ],
-      "statement_type": "actual",
+      "headline_ja": "10年間を通じた成長投資と収益化フェーズの構造的転換",
+      "body_ja": "過去10年間の軌跡は、上場初期の安定高収益構造から、中期経営目標に基づく大規模マーケティング・人員先行投資フェーズを経て、直近の刈り取り・高利益率フェーズへの鮮やかな転換として整理できる。初期は「楽楽精算」等の伸長により営業利益率20％前後を維持していたが、2022年3月期〜2023年3月期にはTVCM等への大規模投資を最優先したため営業利益率が7〜6％台へ一時急低下した。しかし、顧客基盤の累積とインボイス制度等の特需を確実に捉えて売上高を急拡大させ、投資効率化へとシフトした2025年3月期以降は営業利益率が20.8％、28.8％へと劇的に回復した。IT人材事業の売却による専業化も含め、投下した費用と資本が持続的なストック収益へと結実した資本配分の成功事例といえる。",
+      "statement_type": "inference",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_con_01",
+      "claim_id": "claim_14",
       "section": "trend.consistent",
       "order": 1,
-      "headline_ja": "キャッシュ創出事業から成長SaaSへ資源を集中投下する経営メカニズムの継続",
-      "body_ja": "初期（2017年3月期）、中期（2022年3月期）、直近（2025年3月期）を通じて、一貫して「高収益な複数サービスが生み出すキャッシュを成長サービスに集中投下する」基本方針を掲げ運用してきた。既存の安定収益プロダクトやIT人材事業で得た資金を楽楽精算や楽楽明細などの高成長SaaS分野の広告宣伝や人員採用へ優先配分する戦略方針は10年間変わっていない。",
-      "evidence_ids": [
-        "37_2017_FY_rakus_tanshin.pdf:s0017",
-        "17_2022_FY_rakus_tanshin.pdf:s0018",
-        "05_2025_FY_rakus_tanshin.pdf:s0019"
-      ],
+      "headline_ja": "中小企業向けSaaSのストック収益モデルと低い解約率の持続",
+      "body_ja": "初期（2016年3月期）から直近（2026年3月期）に至るまで、一貫して中小企業の業務効率化需要を取り込む月額ストック型のクラウドサービスを展開してきた。解約率の低さと顧客累積に伴う高粗利なストック売上の積み上がりは、先行投資期における業績の下支えとなり、刈り取り期における利益の爆発的な拡大をもたらす共通基盤として持続した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_con_02",
+      "claim_id": "claim_15",
       "section": "trend.consistent",
       "order": 2,
-      "headline_ja": "楽楽精算等主力SaaSにおける積極投資と新規受注の積み上げによる売上成長の継続",
-      "body_ja": "初期（2018年3月期）、中期（2023年3月期）、直近（2026年3月期）を通じて、主力SaaSプロダクトである楽楽精算への営業人員増強やTVCM等の積極的なマーケティング投資を継続し、新規受注を着実に積み上げることでクラウド事業の売上高成長を牽引し続けている。",
-      "evidence_ids": [
-        "33_2018_FY_rakus_tanshin.pdf:s0020",
-        "13_2023_FY_rakus_tanshin.pdf:s0021",
-        "01_2026_FY_rakus_tanshin.pdf:s0008"
-      ],
+      "headline_ja": "成長サービスへのキャッシュ優先配分と継続的還元の両立",
+      "body_ja": "全期間を通じて「高収益サービスが生み出すキャッシュを成長サービスへ集中投下する」経営方針を堅持した。同時に、連結配当性向10％以上（直近は総還元性向20％以上へ拡充）を目安とした連続増配方針を維持し、事業成長のための reinvestment と株主還元の両立姿勢を一貫して保った。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_chg_01",
+      "claim_id": "claim_16",
       "section": "trend.change",
       "order": 1,
-      "headline_ja": "短期的な減益を許容する成長投資先行から投資効率重視と利益率劇的改善への移行",
-      "body_ja": "2020年3月期等は「減益になることも厭わず積極的な成長投資を実行する」方針のもと、TVCMや積極採用を先行させ利益率を抑制した。2022年3月期にはセグメント利益が大幅減少して投資先行の局面を迎えたが、2023年3月期を利益の底として増益へ転換する計画を示した。2026年3月期には投資効率重視と広告費最適化により営業利益173.45億円（前年同期比70.2％増）を達成し、売上高成長と高利益率の両立へ完全転換した。",
-      "evidence_ids": [
-        "25_2020_FY_rakus_tanshin.pdf:s0022",
-        "17_2022_FY_rakus_tanshin.pdf:s0023",
-        "01_2026_FY_rakus_tanshin.pdf:s0003"
-      ],
+      "headline_ja": "投資規律のシフト：売上規模最優先から投資効率とRule of 50重視へ",
+      "body_ja": "中期（2022年3月期〜2023年3月期）までは一時的な減益を辞さずTVCM等へ大規模な広告宣伝費を投じる売上高CAGR極大化方針をとっていた。これに対し直近（2025年3月期〜2026年3月期）では、受注動向に応じた機動的な投資再配分と営業プロセス最適化を優先し、売上成長率と営業利益率の合計を重視する「Rule of 50」へと経営指標を転換させた。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_chg_02",
+      "claim_id": "claim_17",
       "section": "trend.change",
       "order": 2,
-      "headline_ja": "IT人材事業との複合展開からシナジー希薄化に伴うクラウド専業体制への構造転換",
-      "body_ja": "創業期からIT人材事業をキャッシュカウビジネスと位置づけ、クラウド事業との2事業体制で成長してきた。2025年3月期にシナジー希薄化とクラウド集中を理由にIT人材事業の事業譲渡に向けた検討を開始した。2026年4月1日付でラクスパートナーズ株式を譲渡してIT人材事業から撤退し、経営資源をクラウド事業へ全集中させる専業体制へ移行した。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0001",
-        "05_2025_FY_rakus_tanshin.pdf:s0024",
-        "01_2026_FY_rakus_tanshin.pdf:s0016"
-      ],
+      "headline_ja": "事業構成の変化：複合事業展開からクラウド事業への専業集中",
+      "body_ja": "初期から中期にかけてはクラウド事業とIT人材事業（ラクスパートナーズ）の2本柱で展開し、IT人材事業を安定的なキャッシュカウとして位置づけていた。しかし、クラウド事業のスケール拡大に伴いシナジーが希薄化したことから、2026年4月にIT人材事業の全株式売却を実行し、全社リソースをクラウド事業のみへ集中させる体制へ完全移行した。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_cap_01",
+      "claim_id": "claim_18",
       "section": "trend.capital_allocation",
       "order": 1,
-      "headline_ja": "配当性向10％超の内部留保中心方針から自己株式取得を含む総還元性向重視へのシフト",
-      "body_ja": "初期（2017年3月期等）は事業成長に必要な内部留保確保と連結配当性向10％超を目安とする配当方針を採り、資金の大部分を人件費や広告宣伝費等の有機的成長投資に配分していた。しかし、業績拡大と営業キャッシュ・フロー創出力の著しい高まり（2026年3月期に133.91億円）を背景に、2026年3月期には69.99億円の大型自己株式取得を実施して総還元性向71.3％を見込むに至り、新中期計画でも総還元性向20％以上を目安とする機動的な株主還元方針へ進化させた。",
-      "evidence_ids": [
-        "37_2017_FY_rakus_tanshin.pdf:s0025",
-        "01_2026_FY_rakus_tanshin.pdf:s0004",
-        "01_2026_FY_rakus_tanshin.pdf:s0005"
-      ],
+      "headline_ja": "広告・開発費の費用投下、補完的M&A、自社株買いを組み合わせた資本配分",
+      "body_ja": "過去10年間の資本配分では、クラウド事業への販促費・人件費・ソフトウェア開発費の費用投下が最大の成長原資となった。補完手段としてブレインメールやラクスHRテックのM&Aを実行して事業統合を進めた。直近では政策保有株式（カオナビ株）の売却対価等をあてて約70億円の自社株買い・全数消却を実施するなど、資本効率を強く意識した配分を行っている。",
       "statement_type": "actual",
       "is_inference": false,
-      "causal": true
+      "causal": false
     },
     {
-      "claim_id": "claim_trend_imp_01",
+      "claim_id": "claim_19",
+      "section": "trend.capital_value_creation",
+      "order": 1,
+      "headline_ja": "資本配分は顕著な価値を創出：費用計上型のオーガニック成長投資が極めて高いリターンを実現",
+      "body_ja": "過去10年間に追加資金が向かった最大の目的地は、クラウド事業セグメント（「楽楽精算」「楽楽明細」等の開発・マーケティング）である。当事業は費用（SGA）として大半が処理されるため貸借対照表上の資産積み上がりは限定的だが、投下された成長投資は売上高を2016年3月期の27.1億円から2026年3月期の517.7億円へと約19倍に拡大させ、セグメント利益も6.0億円から160.2億円（利益率31.0％）へと急増させた。IT人材事業においても、エンジニア育成への投資を通じて育成したのち、売上高85.1億円・利益13.1億円の規模で移転純資産11.2億円に対し売却益166.8億円を生み出す取引を成立させた。総じて投入費用・資本に対して極めて高い経済的リターンとキャッシュ創出を実現し、明らかな価値創出を果たしたと判断できる。",
+      "statement_type": "inference",
+      "is_inference": false,
+      "causal": false
+    },
+    {
+      "claim_id": "claim_20",
       "section": "trend.implication",
       "order": 1,
-      "headline_ja": "クラウド専業化における売上成長率15％以上と利益率向上のRule of 50到達が新検証軸",
-      "body_ja": "IT人材事業の譲渡により連結売上高の底上げ効果がなくなる中、投資家が今後確認すべき最重要項目は、クラウド事業単体でのオーガニック成長率（目標CAGR 15％以上）の維持と、売上高成長率と営業利益率の合計50％以上を目指すRule of 50の達成進捗である。市場の成熟化や競合激化に伴う獲得コスト増加を抑えつつ、価格改定や正社員1名当たり売上高3,000万円以上といった収益性指標を計画通り向上させられるかが評価の分岐点となる。",
-      "evidence_ids": [
-        "01_2026_FY_rakus_tanshin.pdf:s0011",
-        "01_2026_FY_rakus_tanshin.pdf:s0012"
-      ],
+      "headline_ja": "投資家が今後確認すべき焦点：オーガニック成長率と利益率向上の均衡点",
+      "body_ja": "投資家が今後確認すべき焦点は、IT人材事業売却後のクラウド専業体制において、マーケティング投資の効率化を進めつつもクラウド事業のオーガニック売上成長率15％以上を維持できるか否かである。売上成長の伸びと利益率向上（Rule of 50達成）のバランスが持続可能か、新規受注件数と価格改定効果の推移を注視する必要がある。",
       "statement_type": "inference",
-      "is_inference": true,
-      "causal": true
-    }
-  ],
-  "evidence": [
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0001",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 14,
-      "exact_quote_ja": "当社グループは、クラウド事業、IT人材事業の２つの事業で事業活動を展開しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "セグメント情報等の注記",
-      "tags": []
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0002",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 18,
-      "exact_quote_ja": "当社は、2026年２月13日付で、当社の連結子会社である株式会社ラクスパートナーズ（以下、「ラクスパートナーズ」）の全保有株式を、株式会社BREXA Technologyに譲渡すること（以下、「本株式譲渡」）を決議し、2026年４月１日に実施しました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象の注記",
-      "tags": []
+      "claim_id": "claim_21",
+      "section": "management.strategy",
+      "order": 1,
+      "headline_ja": "経営戦略の一貫性評価（評価：3/4）",
+      "body_ja": "「高収益サービスが生み出すキャッシュを成長サービスへ集中投下する」という基本戦略を一貫して維持した。中期目標において売上高CAGR目標を段階的に引き上げ（25〜30％から27〜30％、さらに31〜32％へ）、最終的に全目標を達成した戦略的整合性は高い。IT人材事業の売却もCloud専業化とRule of 50達成という戦略論理と整合している。",
+      "statement_type": "inference",
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0003",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "この結果、当連結会計年度の業績は、売上高60,286百万円（前年同期比23.3％増）、営業利益17,345百万円（前年同期比70.2％増）、経常利益17,440百万円（前年同期比70.7％増）、親会社株主に帰属する当期純利益13,293百万円（前年同期比66.1％増）となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
+      "claim_id": "claim_22",
+      "section": "management.execution",
+      "order": 1,
+      "headline_ja": "施策実行・フォローの評価（評価：4/4）",
+      "body_ja": "2021年3月期を基準とした5ヵ年中期経営目標（売上高CAGR 31〜32％、純利益100億円以上、純資産200億円以上）に対し、2026年3月期に純利益132.9億円、純資産260.3億円を計上して完全達成した。先行投資期における一時的減益を経て、計画通り刈り取り期へ移行させた実行力は極めて高い。",
+      "statement_type": "inference",
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0004",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "営業活動によるキャッシュ・フローは、13,391百万円の収入（前連結会計年度は9,006百万円の収入）となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
+      "claim_id": "claim_23",
+      "section": "management.forecast_discipline",
+      "order": 1,
+      "headline_ja": "業績予想・目標管理の規律評価（評価：3/4）",
+      "body_ja": "開示された通期期初予想5期分（2017、2018、2019、2025、2026年3月期）のすべてで経常利益実績が予想を上回り（上振れ幅6.0％〜19.1％）、保守的な予想姿勢が観察された。大規模投資期（2020〜2024年3月期）には環境変化への高速対応を理由に通期予想を非開示とし四半期・半期開示へ切り替えたが、中期目標自体は確実に上方修正・達成しており、目標管理の規律は維持されている。",
+      "statement_type": "inference",
+      "is_inference": false,
+      "causal": false
     },
     {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0005",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "また、当期は総額6,999百万円の自己株式取得を実施し、取得した全株式を消却いたしました。これに基づく総還元性向は71.3％となる見通しです。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0006",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "以上を踏まえ、2027年３月期の業績見通しは、売上高59,700百万円（前年同期比1.0％減）、営業利益20,500百万円（前年同期比18.2％増）、経常利益20,500百万円（前年同期比17.5％増）、親会社株主に帰属する当期純利益25,200百万円（前年同期比89.6％増）を計画しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "forecast",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0007",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "クラウド事業のみでのオーガニックな前年比較では、売上高は前年同期比15.3％増、セグメント利益は前年同期比27.9％増を計画しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "forecast",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0008",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "クラウド事業は、主力サービスである楽楽精算が市場の成熟が進む中でも新規受注を着実に積み上げたことに加え、価格改定の効果も寄与し、引き続き堅調に推移したことから、事業全体の売上高成長を牽引いたしました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0009",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "利益面につきましては、増収効果に加え、市場環境を踏まえた広告宣伝費の最適化を進めたことなどにより、利益率が大きく改善し、前年同期比で大幅な増益となりました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0010",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "IT人材事業は、営業体制の継続的な強化により稼働エンジニア数が増加いたしました。稼働率についても、旺盛な需要を背景に引き続き高水準を確保しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0011",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当社は2026年４月のIT人材事業の事業譲渡によりクラウド事業への専業体制へ移行しており、当該中期経営計画ではクラウド事業に経営資源を集中することで、成長性と高収益を両立するクオリティグロースの実現を目指します。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "target",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0012",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "具体的には中期経営計画の最終年までにRule of 50（※１）の達成を目指してまいります。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "target",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0013",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "一方で、一部の事業領域では市場の成熟化が進んでおり、システム未導入層が導入効果を慎重に見極めている層へと移行しているほか、類似のサービスを展開する事業者の増加により、競争環境は厳しさを増しているものと認識しております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "risk",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0014",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "また、楽楽明細においては、市場拡大のペースが想定よりもやや緩やかとなる中でも、新規受注を着実に積み上げました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "risk",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0015",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当社グループは、2021年３月期を基準として、2026年３月期までの５ヵ年で、売上高CAGR（年平均成長率）31％～32％、2026年３月期の親会社株主に帰属する当期純利益100億円以上、純資産200億円以上とする中期経営目標に取り組んできました。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "01_2026_FY_rakus_tanshin.pdf:s0016",
-      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
-      "pdf_page": 18,
-      "exact_quote_ja": "当社グループの創業事業であるIT人材事業は、足元も堅調な業績を維持しております。一方で、クラウド事業とのシナジーが希薄化する中、当社は次期中期経営計画において「Rule of 50」を念頭に営業利益率の改善にフォーカスし、クラウド事業への経営資源の集中を戦略的方針として掲げております。",
-      "period_label_ja": "2026年3月期",
-      "period_label_en": "FY2026",
-      "statement_type": "actual",
-      "source_section": "重要な後発事象の注記",
-      "tags": []
-    },
-    {
-      "evidence_id": "37_2017_FY_rakus_tanshin.pdf:s0017",
-      "source_filename": "37_2017_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "当社グループは経営方針として「高収益な複数サービスが生み出すキャッシュを成長サービスに集中投下」を掲げ、成長加速を実現するための投資を強化してまいりました。",
-      "period_label_ja": "2017年3月期",
-      "period_label_en": "FY2017",
-      "statement_type": "actual",
-      "source_section": "経営成績に関する分析",
-      "tags": []
-    },
-    {
-      "evidence_id": "17_2022_FY_rakus_tanshin.pdf:s0018",
-      "source_filename": "17_2022_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "このような経営環境の中、当社グループは「高収益な複数サービスが生み出すキャッシュを成長サービスに集中投下」を経営方針に掲げ、2021年３月期の業績を基準として、2022年３月期から2026年３月期までの５ヵ年で売上高CAGR（年平均成長率）25％から30％、2026年３月期の純利益100億円以上、純資産200億円以上とする中期経営目標を新たに策定しました。",
-      "period_label_ja": "2022年3月期",
-      "period_label_en": "FY2022",
-      "statement_type": "target",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2025_FY_rakus_tanshin.pdf:s0019",
-      "source_filename": "05_2025_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "2026年３月期においては、クラウド事業を中心に戦略的なリソース投下を継続し、持続的な売上高の成長を追求してまいります。",
-      "period_label_ja": "2025年3月期",
-      "period_label_en": "FY2025",
-      "statement_type": "forecast",
-      "source_section": "今後の見通し",
-      "tags": []
-    },
-    {
-      "evidence_id": "33_2018_FY_rakus_tanshin.pdf:s0020",
-      "source_filename": "33_2018_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "具体的には、当社の成長を牽引しているクラウド経費精算システム「楽楽精算」の導入社数拡大による売上高の増加を目的とした、営業人員の増強とマーケティングの強化に加え、販売代理店経由の受注拡大に向けた活動にも注力してまいりました。",
-      "period_label_ja": "2018年3月期",
-      "period_label_en": "FY2018",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "13_2023_FY_rakus_tanshin.pdf:s0021",
-      "source_filename": "13_2023_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "クラウド事業は、主力サービスである楽楽精算、楽楽明細を中心にTVCM等の広告宣伝を積極的に展開し、新規導入社数の増加に取り組みました。",
-      "period_label_ja": "2023年3月期",
-      "period_label_en": "FY2023",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "25_2020_FY_rakus_tanshin.pdf:s0022",
-      "source_filename": "25_2020_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "2020年３月期においては、クラウドサービスの導入ニーズが拡大する中、高い売上高成長を目指し、四半期ごとにPDCAサイクルを高速に回しながらマーケティング施策を組み替えて、減益になることも厭わず、積極的な成長投資を実行することを方針に掲げ、人員の積極的な増員とマーケティング投資の強化を実施してまいりました。",
-      "period_label_ja": "2020年3月期",
-      "period_label_en": "FY2020",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "17_2022_FY_rakus_tanshin.pdf:s0023",
-      "source_filename": "17_2022_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "この結果、売上高は16,716百万円（前年同期比35.9％増）となりましたが、成長投資を強化した影響でセグメント利益は1,227百万円（前年同期比65.6％減）となりました。",
-      "period_label_ja": "2022年3月期",
-      "period_label_en": "FY2022",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "05_2025_FY_rakus_tanshin.pdf:s0024",
-      "source_filename": "05_2025_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "なお、IT人材事業につきましては、事業譲渡に向けた検討を開始しておりますが、2026年３月期の業績見通しには当該事業の業績を含めております。",
-      "period_label_ja": "2025年3月期",
-      "period_label_en": "FY2025",
-      "statement_type": "forecast",
-      "source_section": "今後の見通し",
-      "tags": []
-    },
-    {
-      "evidence_id": "37_2017_FY_rakus_tanshin.pdf:s0025",
-      "source_filename": "37_2017_FY_rakus_tanshin.pdf",
-      "pdf_page": 6,
-      "exact_quote_ja": "剰余金の配当につきましては、業績の拡大に応じた適切な利益配分を基本として連結配当性向10％超を目安に実施し、さらに、原則として１株当たり年間配当金の下限を前年実績と設定することで、配当の継続性・安定性にも配慮した連続増配を実施してまいります。",
-      "period_label_ja": "2017年3月期",
-      "period_label_en": "FY2017",
-      "statement_type": "target",
-      "source_section": "利益配分に関する基本方針及び当期・次期の配当",
-      "tags": []
-    },
-    {
-      "evidence_id": "21_2021_FY_rakus_tanshin.pdf:s0026",
-      "source_filename": "21_2021_FY_rakus_tanshin.pdf",
-      "pdf_page": 4,
-      "exact_quote_ja": "以上の結果、当連結会計年度の売上高は15,387,883千円（前連結会計年度比32.6％増）、営業利益は3,898,730千円（前連結会計年度比232.0％増）、経常利益は3,881,875千円（前連結会計年度比229.7％増）、親会社株主に帰属する当期純利益は2,936,554千円（前連結会計年度比267.3％増）と大幅な増収増益となり、中期目標である売上高、各段階利益ともにCAGR(年平均成長率)30％を超過して達成いたしました。",
-      "period_label_ja": "2021年3月期",
-      "period_label_en": "FY2021",
-      "statement_type": "actual",
-      "source_section": "経営成績等の概況",
-      "tags": []
-    },
-    {
-      "evidence_id": "33_2018_FY_rakus_tanshin.pdf:s0027",
-      "source_filename": "33_2018_FY_rakus_tanshin.pdf",
-      "pdf_page": 16,
-      "exact_quote_ja": "クラウド型メール配信システム「ブレインメール」は、当社が提供している「配配メール」と機能面、価格面で補完関係にあります。当社のノウハウとリソースを投下することで、「ブレインメール」の売上の拡大と利益率の向上に加え、クラウド型メール配信システム市場においてシェアの向上も見込まれるため、ポートフォリオに新たなクラウドサービスを追加し、成長を更に加速させることを目的としたものであります。",
-      "period_label_ja": "2018年3月期",
-      "period_label_en": "FY2018",
-      "statement_type": "actual",
-      "source_section": "企業結合等関係",
-      "tags": []
-    },
-    {
-      "evidence_id": "09_2024_FY_rakus_tanshin.pdf:s0028",
-      "source_filename": "09_2024_FY_rakus_tanshin.pdf",
-      "pdf_page": 11,
-      "exact_quote_ja": "当社は企業の業務効率化に貢献する複数のクラウドサービスをポートフォリオ管理することで、高い売上高成長と利益の創出を同時に実現しております。",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "actual",
-      "source_section": "企業結合等関係",
-      "tags": []
-    },
-    {
-      "evidence_id": "09_2024_FY_rakus_tanshin.pdf:s0029",
-      "source_filename": "09_2024_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "当社は、中期経営目標として、2021年３月期を基準として2026年３月期までの５ヵ年で売上高をCAGR27％～30％、2026年３月期の親会社株主に帰属する当期純利益100億円以上、純資産200億円以上を掲げておりましたが、足元の状況を踏まえ、売上高CAGRの目標を31～32％に引き上げます。",
-      "period_label_ja": "2024年3月期",
-      "period_label_en": "FY2024",
-      "statement_type": "target",
-      "source_section": "今後の見通し",
-      "tags": []
-    },
-    {
-      "evidence_id": "17_2022_FY_rakus_tanshin.pdf:s0030",
-      "source_filename": "17_2022_FY_rakus_tanshin.pdf",
-      "pdf_page": 5,
-      "exact_quote_ja": "なお、2026年３月期を最終年度とする中計経営目標期間において、2023年３月期が営業利益で底になる見通しであり、2024年３月期以降は最終年度に向けて増益になる見込みであります。",
-      "period_label_ja": "2022年3月期",
-      "period_label_en": "FY2022",
-      "statement_type": "forecast",
-      "source_section": "今後の見通し",
-      "tags": []
+      "claim_id": "claim_24",
+      "section": "management.accountability",
+      "order": 1,
+      "headline_ja": "未達・方針変更における説明責任評価（評価：3/4）",
+      "body_ja": "投資先行による利益率低下期や、通期業績予想の非開示移行時において、その目的（高速PDCAの推進、将来の増益転換時期の明示）を明確に説明してきた。IT人材事業の売却に際しても、シナジー希薄化とベストオーナーへの引き継ぎという論理を適示しており、説明責任と透明性は十分に確保されている。",
+      "statement_type": "inference",
+      "is_inference": false,
+      "causal": false
     }
   ],
   "management_consistency": {
     "components": [
       {
         "dimension": "strategic_coherence",
-        "rating": 4,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "経営陣は10年間にわたり「高収益な複数サービスが生み出すキャッシュを成長サービスに集中投下する」戦略論理を一貫して保持してきた。初期（FY2017）から中期（FY2022）、直近（FY2026）にかけて、既存の収益基盤で創出した資金を楽楽精算等の成長SaaSに投入し、市場成熟やシナジー変化に応じてIT人材事業を譲渡してクラウド専業へ集中させる等、戦略上の改定理由も極めて明確で首尾一貫している。",
-        "evidence_ids": [
-          "37_2017_FY_rakus_tanshin.pdf:s0017",
-          "17_2022_FY_rakus_tanshin.pdf:s0018",
-          "01_2026_FY_rakus_tanshin.pdf:s0016"
-        ]
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "execution_follow_through",
         "rating": 4,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "公表したTVCMや営業体制強化などの先行投資施策を計画通り実行し、ブレインメールの買収（FY2018）やラクスHRテックの買収・吸収合併（FY2024）を通じてプロダクトポートフォリオを強化した。さらに、FY2025に示唆したIT人材事業の事業譲渡の検討をFY2026に有言実行で完遂しており、発表した戦略施策の有言実行性が非常に高い。",
-        "evidence_ids": [
-          "33_2018_FY_rakus_tanshin.pdf:s0027",
-          "09_2024_FY_rakus_tanshin.pdf:s0028",
-          "05_2025_FY_rakus_tanshin.pdf:s0024",
-          "01_2026_FY_rakus_tanshin.pdf:s0002"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "forecast_target_discipline",
         "rating": 3,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "3ヵ年中期目標（FY2019-FY2021、CAGR 30％）を達成したほか、5ヵ年中期目標（FY2022-FY2026）でも売上高CAGR目標を当初の25〜30％から27〜30％、さらに31〜32％へと引き上げ、最終年の純利益目標（100億円以上に対して132.93億円）および純資産目標（200億円以上に対して260.34億円）をともに達成した。成長投資先行による一時的な減益期を挟みつつも長期目標の規律が保たれている。",
-        "evidence_ids": [
-          "21_2021_FY_rakus_tanshin.pdf:s0026",
-          "09_2024_FY_rakus_tanshin.pdf:s0029",
-          "01_2026_FY_rakus_tanshin.pdf:s0015"
-        ]
+        "evidence_sufficiency": "sufficient"
       },
       {
         "dimension": "accountability_transparency",
-        "rating": 4,
-        "evidence_sufficiency": "sufficient",
-        "rationale_ja": "FY2020やFY2022等の投資拡大期において「減益になることも厭わず成長投資を実行する」方針や「FY2023が営業利益の底になる見通し」であることを前もって明確に開示した。短期的な利益抑制の背景とトレードオフを投資家に透明性高く説明し、その後の利益回収フェーズを計画通り実証した点で説明責任と透明性が非常に高い。",
-        "evidence_ids": [
-          "25_2020_FY_rakus_tanshin.pdf:s0022",
-          "17_2022_FY_rakus_tanshin.pdf:s0030",
-          "01_2026_FY_rakus_tanshin.pdf:s0003"
-        ]
+        "rating": 3,
+        "evidence_sufficiency": "sufficient"
       }
-    ],
-    "overall_rationale_ja": "経営陣の有言実行性と一貫性は極めて高い評価に値する。10年間にわたり「キャッシュ創出事業から成長SaaSへの投資集中」という軸をブレさせず、減益を許容した投資先行期にもその経済的意図とボトム時期（FY2023）をあらかじめ明確に示して回収フェーズ（FY2026の大幅増益）へとつなげた。また5ヵ年中期目標を上方修正した上で超過達成し、シナジーが薄れた創業事業（IT人材事業）を売却して次期中計の「Rule of 50」達成に向けクラウド専業化へ舵を切る等、資本効率と説明責任の両面で非常に規律ある経営が貫かれている。"
+    ]
   },
   "model_notes": []
 }

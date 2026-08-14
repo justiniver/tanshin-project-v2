@@ -1,18 +1,13 @@
 {
-  "methodology_version": "management-consistency-v5",
-  "score": 0.62,
-  "raw_score": 0.625,
-  "evidence_confidence": 0.7084,
-  "confidence_label": "moderate",
-  "evidence_coverage": 0.7084,
-  "distinct_fiscal_years": [
-    2020,
-    2024,
-    2025,
-    2026
-  ],
-  "evidence_count": 9,
-  "management_discussion_evidence_share": 1.0,
+  "methodology_version": "management-consistency-v6",
+  "score": 0.69,
+  "raw_score": 0.6875,
+  "evidence_confidence": null,
+  "confidence_label": null,
+  "evidence_coverage": null,
+  "distinct_fiscal_years": [],
+  "evidence_count": 0,
+  "management_discussion_evidence_share": null,
   "components": [
     {
       "dimension": "strategic_coherence",
@@ -20,94 +15,52 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "初期のNBj計画から中期のNS計画、直近のHASEKO Evolution Planに至るまで、「住まいと暮らしの創造企業グループ」を目指し、主力の分譲マンション請負に加えて不動産開発および管理・リフォーム等のストック型サービス事業を拡充するという基本方針は首尾一貫している。事業環境の変化に対応した報告セグメントの再編や投資枠の設定も論理的整合性を保っている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0014",
-        "05_2025_FY_tanshin.pdf:s0003",
-        "25_2020-05-14_tanshin.pdf:s0001"
-      ],
-      "distinct_fiscal_years": [
-        2020,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "early",
-        "recent"
-      ],
-      "evidence_confidence": 0.8167
+      "rationale_ja": "経営陣が掲げる長期ビジョンおよび中期経営計画（NBj計画→NS計画→Evolution Plan）は、分譲マンション施工の強みを強固にしつつ、管理運営・リフォーム・不動産分譲・戸建・海外へと「住まいと暮らし」の領域を広げる戦略において一貫した論理性を保っている。各計画ともコア事業の強化と非請負分野の成長投資を両立させる姿勢を明示しており、戦略テーマの連続性は高い。一方で、海外事業や新規投資領域において減損損失や目標未達が生じるなど、一部の投資戦略において見通しの甘さや修正を余儀なくされた側面もあり、戦略的一貫性は概ね高いものの評価3にとどまる。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "execution_follow_through",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "経営施策のフォローアップにおいて、主力のマンション建築工事では年間施工量の維持と受注時採算のコントロールを着実に実行し、竣工案件の引き渡しを計画通り遂行してきた。管理運営事業においても受託戸数の積み上げやM&Aによる事業基盤の拡充を実行している。しかし、ハワイ等での海外不動産開発においては進捗の遅れや収益性の低下から特別損失（FY2025の減損損失168.6億円等）を計上したほか、買収した戸建子会社のシナジー発現による利益貢献はまだ途上である。本業請負の実行力は極めて高いが、投資先の収益化実行力には課題を残す。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
+    },
+    {
+      "dimension": "forecast_target_discipline",
+      "rating": 3,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 0.75,
+      "weight": 0.25,
+      "rationale_ja": "過去10年間の業績予想精度を検証すると、観測された9期の通期連結経常利益予想のうち6期で実績が予想を上回り、3期で概ね計画通りの着地となった（大幅な下振れ未達成はない）。期初予想は慎重に設定され、期中に受注採算や不動産売却益の上ぶれを織り込んで上方修正・達成するパターンが定着している。中計目標に関しても、NS計画（5期累計経常利益4,000億円目標）をほぼ計画通り達成した。ただし、親会社株主に帰属する当期純利益においては特別損失（減損等）の計上により計画を下振れる年度（FY2025等）があり、経常益ベースの規律高さと純益ベースの変動性に乖離が存在する。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
+    },
+    {
+      "dimension": "accountability_transparency",
       "rating": 2,
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.5,
       "weight": 0.25,
-      "rationale_ja": "分譲マンション管理戸数の積み上げ（44.8万戸突破）やリフォーム・仲介事業の拡大、DXや環境配慮施工の推進など、国内のコア事業およびストック事業における施策実行と成果の開示は概ね順調に行われている。一方で、海外事業においては初期より収益基盤の確立を目指していたものの、開発遅延や価格評価損の発生等により営業損失や減損損失（2020年3月期に25億円のたな卸評価損、2025年3月期に169億円の減損损失等）を度々計上し、当初目指した海外収益化の実現には至っておらず、実行結果には明暗が分かれている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0007",
-        "01_2026_FY_tanshin.pdf:s0008",
-        "05_2025_FY_tanshin.pdf:s0002",
-        "25_2020-05-14_tanshin.pdf:s0001"
-      ],
-      "distinct_fiscal_years": [
-        2020,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 4,
-      "covered_period_buckets": [
-        "early",
-        "recent"
-      ],
-      "evidence_confidence": 0.8167
-    },
-    {
-      "dimension": "forecast_target_discipline",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
-      "weight": 0.25,
-      "rationale_ja": "中期計画の5か年・3か年累計連結経常利益目標（NBj計画の3期累計2,400億円目標に対し実績2,862億円達成、NS計画の5期累計4,000億円目標に対し実績4,087億円達成）は確実にクリアしてきた。単年度業績でも毎期の期初予想（経常利益800〜850億円水準）を上回る着地を多く実現している。ただし、NS計画最終年度（2025年3月期）の単年目標であった連結経常利益1,000億円超に対しては、資材・労務費高騰等の影響を受け実績834億円にとどまるなど、累計目標と単年目標の間で結果に相違が見られる。",
-      "evidence_ids": [
-        "05_2025_FY_tanshin.pdf:s0001",
-        "05_2025_FY_tanshin.pdf:s0003",
-        "09_2024-05-10_tanshin.pdf:s0001"
-      ],
-      "distinct_fiscal_years": [
-        2024,
-        2025
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.5667
-    },
-    {
-      "dimension": "accountability_transparency",
-      "rating": null,
-      "evidence_sufficiency": "insufficient",
-      "normalized_score": null,
-      "weight": 0.25,
-      "rationale_ja": "建設資材・労務コスト高騰による完成工事総利益率の低下や、海外事業における減損損失・評価損の発生、公正取引委員会による子会社への立入検査などの負の事象についても、決算短信の業績説明や見通し欄で具体的な要因と背景を開示しており、透明性をもった説明責任を果たしている。",
-      "evidence_ids": [
-        "01_2026_FY_tanshin.pdf:s0011",
-        "05_2025_FY_tanshin.pdf:s0002",
-        "09_2024-05-10_tanshin.pdf:s0001"
-      ],
-      "distinct_fiscal_years": [
-        2024,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "recent"
-      ],
-      "evidence_confidence": 0.6333
+      "rationale_ja": "決算短信における経営成績の qualitative な説明やセグメント情報の開示、受注高・繰越高の内訳数値開示は適切に行われており、一定の透明性は保たれている。しかし、海外事業での減損損失計上や投資有価証券評価損の発生に際し、その根本要因や今後の構造的改善策に関する開示は定型的な説明にとどまっている。また、セグメント別投下資本やROIC等の具体的な資本効率指標が直接開示されておらず、不動産開発資産やM&A投資に対する個別の定量的なリターン実績が外部から検証しにくい点に開示上の制限がある。",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     }
   ],
-  "overall_rationale_ja": "長谷工コーポレーションの経営一貫性は概ね良好である。10年間にわたり分譲マンション特化の強みを活かしつつ、ストック型管理・サービス事業への多角化と累計業績目標（NBj計画2,400億円、NS計画4,000億円）の確実な達成を遂げてきた。決算予想に対する規律や未達要因の開示姿勢も評価できる。一方、資材・労務コスト高騰時の完成工事利益率の変動や、海外事業における複数回の減損計上など、一部の投資領域や単年目標における執行・管理面での不確実性が一貫性評価の限定要因となっている。"
+  "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
 }

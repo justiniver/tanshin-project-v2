@@ -18,15 +18,19 @@ from tanshin_pipeline.gemini_runtime import (
 from tanshin_pipeline.persistence import read_json
 from tanshin_pipeline.request_builder import (
     build_analysis_spec,
+    build_research_spec,
     build_translation_spec,
 )
 from tanshin_pipeline.schemas import (
     EnglishTranslationPatch,
     JapaneseAnalysis,
+    JapaneseResearchDossier,
+    JapaneseSynthesisResponse,
     materialize_japanese_analysis,
     parse_japanese_analysis_payload,
 )
 from tanshin_pipeline.selection import select_filings
+from tests.helpers import fake_research_dossier, fake_synthesis_response
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -119,11 +123,16 @@ class _FakeClient:
 class RuntimeMockTests(unittest.TestCase):
     def setUp(self) -> None:
         self.manifest = select_filings(REPOSITORY_ROOT, "1808")
-        self.spec = build_analysis_spec(
+        self.legacy_analysis_payload = read_json(
+            FIXTURES / "fake_analysis_ja.json"
+        )
+        self.spec = build_research_spec(
             REPOSITORY_ROOT,
             self.manifest,
         )
-        self.analysis_payload = read_json(FIXTURES / "fake_analysis_ja.json")
+        self.analysis_payload = fake_research_dossier(
+            REPOSITORY_ROOT
+        ).model_dump(mode="json")
         self.translation_payload = _translation_patch_payload(
             read_json(FIXTURES / "fake_translation_en.json")
         )
@@ -147,14 +156,14 @@ class RuntimeMockTests(unittest.TestCase):
                 client_factory=lambda: fake,
                 configured_model_getter=lambda: self.spec.model,
             )
-        self.assertIsInstance(result.structured, JapaneseAnalysis)
+        self.assertIsInstance(result.structured, JapaneseResearchDossier)
         self.assertEqual(len(fake.models.calls), 1)
         call = fake.models.calls[0]
         self.assertEqual(call["model"], "gemini-3.6-flash")
         self.assertEqual(len(call["contents"][0].parts), len(self.spec.files) * 2 + 2)
         context = call["contents"][0].parts[0].text
         self.assertIn("<document_manifest>", context)
-        self.assertIn("<report_blueprint>", context)
+        self.assertIn("<document_manifest>", context)
         first_metadata = call["contents"][0].parts[1].text
         self.assertIn("<DOCUMENT_METADATA>", first_metadata)
         self.assertIn(
@@ -170,14 +179,57 @@ class RuntimeMockTests(unittest.TestCase):
             call["config"].response_json_schema,
             self.spec.response_schema,
         )
+        self.assertEqual(
+            call["config"].thinking_config.thinking_level,
+            types.ThinkingLevel.LOW,
+        )
         self.assertTrue(
             call["contents"][0].parts[-1].text.rstrip().endswith(
-                "</analysis_task>"
+                "</research_task>"
             )
         )
         self.assertTrue(fake.closed)
         self.assertEqual(result.attempts, 1)
         self.assertEqual(result.finish_reason, "STOP")
+
+    def test_analysis_request_places_the_research_map_before_inline_pdfs(
+        self,
+    ) -> None:
+        dossier = fake_research_dossier(REPOSITORY_ROOT)
+        spec = build_analysis_spec(
+            REPOSITORY_ROOT,
+            self.manifest,
+            dossier,
+        )
+        payload = fake_synthesis_response(REPOSITORY_ROOT).model_dump(mode="json")
+        fake = _FakeClient(_FakeResponse(payload))
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            result = execute_request(
+                REPOSITORY_ROOT,
+                spec,
+                confirmed_request_id=spec.plan().request_id,
+                client_factory=lambda: fake,
+                configured_model_getter=lambda: spec.model,
+            )
+        self.assertIsInstance(result.structured, JapaneseSynthesisResponse)
+        call = fake.models.calls[0]
+        parts = call["contents"][0].parts
+        self.assertEqual(len(parts), len(spec.files) * 2 + 2)
+        self.assertIn("<research_map>", parts[0].text)
+        self.assertIn("<DOCUMENT_METADATA>", parts[1].text)
+        self.assertTrue(parts[-1].text.rstrip().endswith("</analysis_task>"))
+        self.assertEqual(
+            call["config"].thinking_config.thinking_level,
+            types.ThinkingLevel.MEDIUM,
+        )
 
     def test_retry_helper(self) -> None:
         state = {"calls": 0}
@@ -321,9 +373,68 @@ class RuntimeMockTests(unittest.TestCase):
             '{"claims": [',
         )
 
+    def test_max_token_truncation_has_a_specific_failure_summary(self) -> None:
+        class TruncatedResponse:
+            parsed = None
+            text = '{"evidence": [{"evidence_id": "unfinished'
+            usage_metadata = None
+            model_version = "fake-model-version"
+            response_id = "truncated-response-id"
+
+            @property
+            def candidates(self):
+                return [
+                    type(
+                        "Candidate",
+                        (),
+                        {"finish_reason": types.FinishReason.MAX_TOKENS},
+                    )()
+                ]
+
+            def model_dump(self, **_kwargs):
+                return {
+                    "response_id": self.response_id,
+                    "model_version": self.model_version,
+                    "candidates": [
+                        {
+                            "content": {
+                                "role": "model",
+                                "parts": [{"text": self.text}],
+                            },
+                            "finish_reason": "MAX_TOKENS",
+                        }
+                    ],
+                }
+
+        fake = _FakeClient(TruncatedResponse())
+        with patch.dict(
+            os.environ,
+            {
+                "TANSHIN_LIVE_API": "MANUAL_USER_RUN",
+                "TANSHIN_TESTING": "1",
+                "TANSHIN_OFFLINE_ONLY": "0",
+            },
+            clear=False,
+        ):
+            with self.assertRaisesRegex(
+                GeminiResponseError,
+                "output-token limit",
+            ) as raised:
+                execute_request(
+                    REPOSITORY_ROOT,
+                    self.spec,
+                    confirmed_request_id=self.spec.plan().request_id,
+                    client_factory=lambda: fake,
+                    configured_model_getter=lambda: self.spec.model,
+                )
+        self.assertEqual(
+            raised.exception.raw_response["response_id"],
+            "truncated-response-id",
+        )
+
     def test_pro_translation_uses_low_thinking_and_selected_model(self) -> None:
         analysis = materialize_japanese_analysis(
-            parse_japanese_analysis_payload(self.analysis_payload)
+            parse_japanese_analysis_payload(self.legacy_analysis_payload)
         )
         spec = build_translation_spec(
             self.manifest,
@@ -366,7 +477,7 @@ class RuntimeMockTests(unittest.TestCase):
 
     def test_translation_model_mismatch_is_blocked_before_request(self) -> None:
         analysis = materialize_japanese_analysis(
-            parse_japanese_analysis_payload(self.analysis_payload)
+            parse_japanese_analysis_payload(self.legacy_analysis_payload)
         )
         spec = build_translation_spec(
             self.manifest,

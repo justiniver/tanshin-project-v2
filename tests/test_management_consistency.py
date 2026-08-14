@@ -62,14 +62,14 @@ class ManagementConsistencyTests(unittest.TestCase):
 
     def test_score_uses_fixed_weights_and_management_discussion_coverage(self) -> None:
         evidence_ids = [
-            "37_2017-05-12_tanshin.pdf:s0001",
-            "37_2017-05-12_tanshin.pdf:s0003",
-            "21_2021-05-13_tanshin.pdf:s0001",
-            "21_2021-05-13_tanshin.pdf:s0002",
-            "09_2024-05-10_tanshin.pdf:s0001",
-            "05_2025_FY_tanshin.pdf:s0001",
-            "01_2026_FY_tanshin.pdf:s0001",
-            "01_2026_FY_tanshin.pdf:s0006",
+            "38_2017-05-12_tanshin.pdf:s0001",
+            "38_2017-05-12_tanshin.pdf:s0003",
+            "22_2021-05-13_tanshin.pdf:s0001",
+            "22_2021-05-13_tanshin.pdf:s0002",
+            "10_2024-05-10_tanshin.pdf:s0001",
+            "06_2025_FY_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0006",
         ]
         assessment, changes = calculate_management_consistency(
             _pending_assessment(evidence_ids),
@@ -89,10 +89,39 @@ class ManagementConsistencyTests(unittest.TestCase):
         self.assertEqual(assessment.management_discussion_evidence_share, 1.0)
         self.assertEqual(changes[0]["type"], "management_consistency_calculated")
 
-    def test_thin_evidence_keeps_subscores_blank_and_uses_overall_fallback(
+    def test_citation_free_ratings_remain_scorable(self) -> None:
+        assessment, changes = calculate_management_consistency(
+            _pending_assessment([]),
+            [],
+            self.manifest,
+        )
+
+        assert assessment is not None
+        self.assertEqual(assessment.score, 0.69)
+        self.assertEqual(assessment.evidence_count, 0)
+        self.assertIsNone(assessment.evidence_confidence)
+        self.assertIsNone(assessment.confidence_label)
+        self.assertIsNone(assessment.management_discussion_evidence_share)
+        self.assertTrue(
+            all(
+                component.normalized_score is not None
+                for component in assessment.components
+            )
+        )
+        forecast = next(
+            component
+            for component in assessment.components
+            if component.dimension
+            == ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE
+        )
+        self.assertEqual(forecast.normalized_score, 0.5)
+        self.assertEqual(forecast.evidence_sufficiency, "sufficient")
+        self.assertEqual(changes[0]["type"], "management_consistency_calculated")
+
+    def test_thin_evidence_preserves_model_ratings_and_lowers_confidence(
         self,
     ) -> None:
-        high = _pending_assessment(["01_2026_FY_tanshin.pdf:s0001"])
+        high = _pending_assessment(["02_2026_FY_tanshin.pdf:s0001"])
         for component in high.components:
             component.rating = 4
             component.normalized_score = 1
@@ -102,13 +131,13 @@ class ManagementConsistencyTests(unittest.TestCase):
             self.manifest,
         )
         assert assessment is not None
-        self.assertEqual(assessment.score, 0.5)
-        self.assertEqual(assessment.raw_score, 0.5)
+        self.assertEqual(assessment.score, 1.0)
+        self.assertEqual(assessment.raw_score, 1.0)
         self.assertTrue(
             all(
-                component.evidence_sufficiency == "insufficient"
-                and component.rating is None
-                and component.normalized_score is None
+                component.evidence_sufficiency == "sufficient"
+                and component.rating == 4
+                and component.normalized_score == 1
                 for component in assessment.components
             )
         )
@@ -118,8 +147,8 @@ class ManagementConsistencyTests(unittest.TestCase):
     def test_management_discussion_classifier_includes_narrative_sections_only(self) -> None:
         def evidence(section: str) -> EvidenceRecord:
             return EvidenceRecord(
-                evidence_id="01_2026_FY_tanshin.pdf:s9999",
-                source_filename="01_2026_FY_tanshin.pdf",
+                evidence_id="02_2026_FY_tanshin.pdf:s9999",
+                source_filename="02_2026_FY_tanshin.pdf",
                 pdf_page=1,
                 exact_quote_ja="テスト",
                 period_label_ja="2026年3月期",
@@ -154,10 +183,10 @@ class ManagementConsistencyTests(unittest.TestCase):
         assessment, _ = calculate_management_consistency(
             _pending_assessment(
                 [
-                    "37_2017-05-12_tanshin.pdf:s0001",
-                    "21_2021-05-13_tanshin.pdf:s0001",
-                    "01_2026_FY_tanshin.pdf:s0001",
-                    "05_2025_FY_tanshin.pdf:s0001",
+                    "38_2017-05-12_tanshin.pdf:s0001",
+                    "22_2021-05-13_tanshin.pdf:s0001",
+                    "02_2026_FY_tanshin.pdf:s0001",
+                    "06_2025_FY_tanshin.pdf:s0001",
                 ]
             ),
             self.real_analysis.evidence,
@@ -229,35 +258,36 @@ class ManagementConsistencyTests(unittest.TestCase):
             en,
         )
 
-    def test_insufficient_components_are_blank_and_excluded(self) -> None:
+    def test_thin_but_resolved_components_render_all_four_scores(self) -> None:
         analysis = JapaneseAnalysis.model_validate(
             read_json(FIXTURES / "fake_analysis_ja.json")
         )
         assessment, changes = calculate_management_consistency(
-            _pending_assessment(["01_2026_FY_tanshin.pdf:s0001"]),
+            _pending_assessment(["02_2026_FY_tanshin.pdf:s0001"]),
             self.real_analysis.evidence,
             self.manifest,
         )
         analysis.management_consistency = assessment
         rendered = render_japanese(analysis)
-        self.assertIn("経営一貫性スコア：0.50", rendered)
+        self.assertIn("経営一貫性スコア：0.69", rendered)
         self.assertIn("<sup>*</sup><br>\n内訳：", rendered)
-        self.assertIn("戦略 —", rendered)
-        self.assertIn("（評価済み 0/4項目）", rendered)
+        self.assertIn("戦略 0.75", rendered)
+        self.assertIn("予想・目標規律 0.50", rendered)
+        self.assertIn("（評価済み 4/4項目）", rendered)
         self.assertEqual(
             changes[0]["score_calculation_method"],
-            "neutral_0.50_fallback_no_scorable_components",
+            "arithmetic_mean_of_available_normalized_components",
         )
-        self.assertEqual(changes[0]["available_component_count"], 0)
+        self.assertEqual(changes[0]["available_component_count"], 4)
 
-    def test_one_missing_component_is_blank_and_overall_uses_available_mean(
+    def test_one_period_bucket_does_not_erase_a_supported_component(
         self,
     ) -> None:
         evidence_ids = [
-            "37_2017-05-12_tanshin.pdf:s0001",
-            "21_2021-05-13_tanshin.pdf:s0001",
-            "01_2026_FY_tanshin.pdf:s0001",
-            "05_2025_FY_tanshin.pdf:s0001",
+            "38_2017-05-12_tanshin.pdf:s0001",
+            "22_2021-05-13_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0001",
+            "06_2025_FY_tanshin.pdf:s0001",
         ]
         pending = _pending_assessment(evidence_ids)
         forecast = next(
@@ -266,7 +296,7 @@ class ManagementConsistencyTests(unittest.TestCase):
             if component.dimension
             == ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE
         )
-        forecast.evidence_ids = ["01_2026_FY_tanshin.pdf:s0001"]
+        forecast.evidence_ids = ["02_2026_FY_tanshin.pdf:s0001"]
         assessment, changes = calculate_management_consistency(
             pending,
             self.real_analysis.evidence,
@@ -278,20 +308,61 @@ class ManagementConsistencyTests(unittest.TestCase):
             if component.dimension
             == ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE
         )
-        self.assertEqual(forecast_result.evidence_sufficiency, "insufficient")
-        self.assertIsNone(forecast_result.rating)
-        self.assertIsNone(forecast_result.normalized_score)
-        self.assertEqual(assessment.score, 0.75)
+        self.assertEqual(forecast_result.evidence_sufficiency, "sufficient")
+        self.assertEqual(forecast_result.rating, 2)
+        self.assertEqual(forecast_result.normalized_score, 0.5)
+        self.assertEqual(assessment.score, 0.69)
         analysis = JapaneseAnalysis.model_validate(
             read_json(FIXTURES / "fake_analysis_ja.json")
         )
         analysis.management_consistency = assessment
         rendered = render_japanese(analysis)
-        self.assertIn("（評価済み 3/4項目）", rendered)
+        self.assertIn("（評価済み 4/4項目）", rendered)
         self.assertEqual(
             changes[0]["score_calculation_method"],
             "arithmetic_mean_of_available_normalized_components",
         )
+        self.assertEqual(changes[0]["excluded_dimensions"], [])
+
+    def test_explicitly_unassessable_component_remains_blank_and_is_excluded(
+        self,
+    ) -> None:
+        evidence_ids = [
+            "38_2017-05-12_tanshin.pdf:s0001",
+            "22_2021-05-13_tanshin.pdf:s0001",
+            "02_2026_FY_tanshin.pdf:s0001",
+            "06_2025_FY_tanshin.pdf:s0001",
+        ]
+        pending = _pending_assessment(evidence_ids)
+        forecast = next(
+            component
+            for component in pending.components
+            if component.dimension
+            == ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE
+        )
+        forecast.rating = None
+        forecast.normalized_score = None
+        forecast.evidence_sufficiency = "insufficient"
+        assessment, changes = calculate_management_consistency(
+            pending,
+            self.real_analysis.evidence,
+            self.manifest,
+        )
+        self.assertEqual(assessment.score, 0.75)
+        forecast_result = next(
+            component
+            for component in assessment.components
+            if component.dimension
+            == ManagementConsistencyDimension.FORECAST_TARGET_DISCIPLINE
+        )
+        self.assertIsNone(forecast_result.normalized_score)
+        analysis = JapaneseAnalysis.model_validate(
+            read_json(FIXTURES / "fake_analysis_ja.json")
+        )
+        analysis.management_consistency = assessment
+        rendered = render_japanese(analysis)
+        self.assertIn("予想・目標規律 —", rendered)
+        self.assertIn("（評価済み 3/4項目）", rendered)
         self.assertEqual(
             changes[0]["excluded_dimensions"],
             ["forecast_target_discipline"],

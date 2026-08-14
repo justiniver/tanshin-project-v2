@@ -1,0 +1,302 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Fri, 14 Aug 2026 03:20:45 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=88680",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"schema_version\": \"1.0\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim_001\",\n      \"section\": \"company.overview\",\n      \"order\": 1,\n      \"headline_ja\": \"商業銀行業務を中心に幅広い金融サービスを提供する三大邦行グループの一角\",\n      \"body_ja\": \"株式会社三井住友フィナンシャルグループは、中核となる三井住友銀行をはじめ、SMBC日興証券、三井住友カード、SMBCコンシューマーファイナンスなどを配下に置く総合金融グループである。ホールセール、リテール、グローバル、市場の主要4事業部門を通じて、国内外の法人および個人顧客に対し預貸金業務、決済、有価証券売買・引き受け、資産運用、リース等の複合的な金融サービスを提供し、預貸金利ざや（資金利益）や役務取引等利益（手数料収入）を中心に収益を得るビジネスモデルを構築している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_002\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 1,\n      \"headline_ja\": \"2027年3月期第1四半期は連結経常利益6,931億円（前年同期比43.4%増）と大幅増益を達成\",\n      \"body_ja\": \"当第1四半期の連結業績は、経常収益が2兆8,504億円（前年同期比16.6%増）、経常利益が6,931億円（同43.4%増）、親会社株主に帰属する四半期純利益が5,013億円（同33.0%増）となった。国内における金利水準の上昇に伴う預貸金収益の好調や市場事業部門の業績改善が大幅増益に大きく寄与した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_003\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 2,\n      \"headline_ja\": \"連結貸出金残高は119.8兆円へ拡大し自己資本比率4.9%と財務基盤を維持\",\n      \"body_ja\": \"2027年3月期第1四半期末の連結総資産は327.5兆円（前年度末比約1.0兆円減）となった一方、貸出金残高は119兆7,582億円（同2兆1,290億円増）、預金残高は186兆7,593億円（同1兆8,508億円増）へと着実に拡大した。純資産は16.2兆円（同3,075億円増）、自己資本比率は4.9%を確保し、貸出資産の成長と十分な自己資本水準を両立している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_004\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 3,\n      \"headline_ja\": \"通期純利益予想1兆7,000億円（前期比7.4%増）および年間配当予想（分割考慮後90円）を据え置き\",\n      \"body_ja\": \"2027年3月期通期の親会社株主に帰属する当期純利益予想は1兆7,000億円（前期比7.4%増）を維持した。第1四半期時点で通期予想に対する進捗率は29.5%に達している。年間配当予想についても、2026年10月1日付で予定されている1:2の株式分割考慮後で年間90円（中間45円・期末45円、分割前換算180円）の計画を変更していない。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_005\",\n      \"section\": \"latest.key_takeaway\",\n      \"order\": 4,\n      \"headline_ja\": \"海外景気動向や金利変動、与信費用管理を巡る不確実性への警戒姿勢を維持\",\n      \"body_ja\": \"第1四半期業績は極めて堅調に推移したものの、海外における金利動向や地政学リスク、世界的な景気減速懸念に伴う与信関係費用の上振れリスク、さらには保有有価証券の評価損益変動リスクなど、外部環境の急速な変化に対する慎重なリスク管理姿勢が求められている。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_006\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 1,\n      \"headline_ja\": \"「国内預貸金・金利｜追い風」国内金利の上昇に伴う資金利益の拡大がホールセールおよびリテールを牽引\",\n      \"body_ja\": \"当第1四半期の報告セグメント別業務純益において、ホールセール事業部門は2,715億円（前年同期2,193億円）、リテール事業部門は1,209億円（同745億円）へ増加した。日本銀行のイールドカーブコントロール修正や政策金利引き上げを背景に、国内預貸金利ざやが拡大したことが主因である。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_007\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 2,\n      \"headline_ja\": \"「市場事業・有価証券運用｜追い風」市場事業部門の業務純益が1,789億円（前年同期比55.7%増）へ急回復\",\n      \"body_ja\": \"当第1四半期の市場事業部門の連結業務純益は1,789億円（前年同期は1,149億円）へと大きく伸長した。金利および為替市場のボラティリティ捉えた機動的なポートフォリオ運営やセールス＆トレーディング業務の好調が寄与した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_008\",\n      \"section\": \"latest.business_driver\",\n      \"order\": 3,\n      \"headline_ja\": \"「海外・グローバル事業｜逆風・影響混在」グローバル事業部門の業務純益は1,512億円（前年同期比18.1%減）と一服\",\n      \"body_ja\": \"当第1四半期のグローバル事業部門の連結業務純益は1,512億円と前年同期の1,847億円から減少した。海外での資金調達コストの高止まりや案件組成タイミングの偏り、ドル建て経費の増加などが響き、前年同期比で増益を維持した国内部門とは対照的な推移となった。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_009\",\n      \"section\": \"latest.outlook\",\n      \"order\": 1,\n      \"headline_ja\": \"通期純利益1兆7,000億円達成に向け進捗率29.5%と順調な好スタートを切る\",\n      \"body_ja\": \"2027年3月期第1四半期の親会社株主に帰属する四半期純利益（5,013億円）は、通期計画1兆7,000億円に対して29.5%の進捗となった。国内金利の上昇効果が通期を通じて発現する期待がある一方、海外与信費用や市場変動のリスクを勘案し、会社側は期首の業績予想および配当予想を据え置いている。\",\n      \"statement_type\": \"forecast\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_010\",\n      \"section\": \"latest.risk\",\n      \"order\": 1,\n      \"headline_ja\": \"海外経済の不透明感増大および中東・ウクライナ情勢等に伴う与信関係費用の不確実性\",\n      \"body_ja\": \"過年度において、中東情勢や米国の関税政策等に対応したフォワードルッキング引当を計上してきた経緯があり、2026年3月期通期でも与信費用は3,884億円を計上した。今後の世界的な高金利の長期化や地政学リスクの悪化次第では、海外法人向け貸出を中心にクレジットコストが想定を超えて増大するリスクが存在する。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_011\",\n      \"section\": \"latest.risk\",\n      \"order\": 2,\n      \"headline_ja\": \"内外金利の上昇局面における保有債券等有価証券の評価損拡大リスク\",\n      \"body_ja\": \"2026年6月末時点の連結有価証券評価損益はプラス3兆1,748億円を維持しているものの、債券勘定全体では5,876億円の評価損（うち外国債券評価損3,436億円）を抱えている。内外の長期金利が想定を超えて急上昇した場合、保有債券の評価損が拡大し、自己資本や包括利益を圧迫するリスクがある。\",\n      \"statement_type\": \"risk\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_012\",\n      \"section\": \"latest.context\",\n      \"order\": 1,\n      \"headline_ja\": \"国内金利正常化の好影響を本格享受する局面と海外リスクコントロールの重要性\",\n      \"body_ja\": \"当社グループの現在地は、長年続いたマイナス金利環境からの脱却に伴い、国内預貸金利ざやが拡大し最高益水準を更新する強い上昇サイクルの中にある。当第1四半期でも国内ホールセール・リテール事業が主導して大幅増益を達成した。\\n\\n一方で、海外グローバル事業の収益伸び悩みや、不透明な世界情勢下での予防的与信費用の積み増しなど、リスク管理の重要性は増している。投資家は、国内金利上昇による資金利益の上振れ幅と、海外クレジットコストや市場ボラティリティによる下押し圧との均衡点を注視する必要がある。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_013\",\n      \"section\": \"trend.perspective\",\n      \"order\": 1,\n      \"headline_ja\": \"環境変化への適応とバランスシート拡大を通じた最高益更新の10年軌跡\",\n      \"body_ja\": \"過去10年間の業績推移を見ると、初期（FY2017-2020）は日銀のマイナス金利導入に伴う国内利ざや縮小やのれん減損（SMBC信託等）、コロナ禍の与信費用増加が重石となり経常利益は7,000億〜1.1兆円程度で停滞していた。中期（FY2021-2023）にかけては、海外ビジネスの拡大や三井住友カード・SMBC日興証券の業績回復、グループ再編により連結業務純益が1.5兆円規模へと回復。直近（FY2024-2026）には、国内金利の復調と法人向け手数料収益の伸び、貸出残高の累積的な拡大（80兆円超から117兆円超へ）が相まって経常利益は2.3兆円超へと飛躍的に拡大した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_014\",\n      \"section\": \"trend.consistent\",\n      \"order\": 1,\n      \"headline_ja\": \"グループ一体経営による非資金利益（役務取引等利益）の定着と拡大\",\n      \"body_ja\": \"10年間を通じて一貫している強みは、銀行・証券・カード・消費金融を包摂する複合的金融グループとしての顧客基盤と手数料創出力である。リテール部門での資産運用・決済ファイナンスや、ホールセール部門でのソリューション提案により、役務取引等利益はFY2017の1.24兆円規模からFY2026には2.11兆円へと堅調に拡大し、金利環境に依存しない収益基盤としてグループを支え続けている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_015\",\n      \"section\": \"trend.change\",\n      \"order\": 1,\n      \"headline_ja\": \"超低金利・マイナス金利による利ざや圧迫から国内資金利益重視の成長構造への転換\",\n      \"body_ja\": \"初期（FY2017）の連結貸出金残高は80.2兆円であり、国内利ざや縮小を海外貸出や市場営業で補う局面が長らく続いた。しかし、継続的なオーガニック投資により貸出残高をFY2026末の117.6兆円（FY2027 Q1末には119.8兆円）まで積み上げた結果、国内金利の上昇局面において資金利益の爆発的な増大をもたらす構造へ変化した。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_016\",\n      \"section\": \"trend.capital_allocation\",\n      \"order\": 1,\n      \"headline_ja\": \"コア金融資産への優先配分と累進的配当・自社株買いを組み合わせた積極的資本還元\",\n      \"body_ja\": \"資本配分の優先順位として、連結貸出金および営業運用資産の拡大（約39.5兆円の貸出増）へ資本を優先投入する一方、株主還元方針を強化してきた。年間配当は1株当たり150円（FY2017）から分割前換算で366円（FY2025）、471円相当（FY2026：157円×3）へと増配を継続。さらに700億円（FY2018）、1,000億円（FY2019/2024/2025）、1,800億円（FY2026）の上限で機動的な自己株式取得・消却を実行し、資本効率の向上を図ってきた。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_017\",\n      \"section\": \"trend.capital_value_creation\",\n      \"order\": 1,\n      \"headline_ja\": \"概ね創出した：拡大した貸出資産と決済・手数料ビジネスへの資本蓄積がROE 10%台への浮上を結実\",\n      \"body_ja\": \"過去10年間で追加投入された資本の大部分は、国内外の貸出金残高の積み上げ（80.2兆円から119.8兆円へ拡大）および三井住友カードや海外事業子会社（Fullerton India等）の業容拡大に向かった。低金利環境下にあった初期〜中期は資産増加に対して利益成長が緩やかであり、のれん減損リスクも顕在化したが、直近では金利正常化と法人・決済手数料の伸長が重なり、連結業務純益が2.3兆円規模へと拡大。ROEはFY2021の4.6%からFY2026には10.4%に上昇しており、蓄積された営業資産が高いリターンを生み出す構造が証明された。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_018\",\n      \"section\": \"trend.implication\",\n      \"order\": 1,\n      \"headline_ja\": \"国内利ざや拡大の持続性と海外与信費用の抑え込みが今後の評価を左右\",\n      \"body_ja\": \"投資家が今後検証すべき最重要の関係は、国内金利上昇による預貸金利益の上振れ効果が、海外経済減速に伴う予防的引当や地政学リスクによる与信費用の増加をどの程度上回り続けられるかである。また、拡大したバランスシートと自己資本比率の維持、さらには株式分割を経た継続的な増配・自社株買いの実行力が投資リターンのカギとなる。\",\n      \"statement_type\": \"inference\",\n      \"is_inference\": true,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_019\",\n      \"section\": \"management.strategy\",\n      \"order\": 1,\n      \"headline_ja\": \"【戦略の一貫性：3】複合的金融サービス化と資本効率向上に注力した戦略的整合性\",\n      \"body_ja\": \"経営陣はマイナス金利下においても一貫して「非資金利益の強化」と「海外・決済ビジネスの拡充」を掲げ、銀行・証券・カード・コンシューマーファイナンスのグループシナジーを追求してきた。金利回復期においてこの戦略が結実し最高益を更新したことから、戦略的一貫性は高く評価できる。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_020\",\n      \"section\": \"management.execution\",\n      \"order\": 1,\n      \"headline_ja\": \"【施策の実行力：3】貸出資産のオーガニック成長と機動的な株主還元の完遂\",\n      \"body_ja\": \"貸出資産の着実な積み増し（10年間で約39.5兆円増）やFullerton India等の買収・連結化、三井住友カードの決済事業強化を実行した。また、累進的配当方針に基づく増配や複数回にわたる1,000億〜1,800億円規模の自己株式取得・消却、さらには株主層拡大に向けた株式分割を約束通り執行している。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": true\n    },\n    {\n      \"claim_id\": \"claim_021\",\n      \"section\": \"management.forecast_discipline\",\n      \"order\": 1,\n      \"headline_ja\": \"【予想・目標達成の規律：2】当初予想に対する慎重なPostureと中期目標の着実な超過達成\",\n      \"body_ja\": \"本ドシエ内の決算短信比較サンプル数は不足（insufficient_evidence）しているものの、確認できる範囲では、期首予想を慎重に設定し期中に上方修正する傾向が見られる。FY2024以降は親会社株主純利益で1兆円超を安定して達成し、中期目標を前倒しで達成するなど、目標管理の規律は概ね維持されている。\",\n      \"statement_type\": \"mixed\",\n      \"is_inference\": false,\n      \"causal\": false\n    },\n    {\n      \"claim_id\": \"claim_022\",\n      \"section\": \"management.accountability\",\n      \"order\": 1,\n      \"headline_ja\": \"【説明責任と透明性：3】損失・減損の適時開示と予防的リスク管理の説明責任\",\n      \"body_ja\": \"過去におけるSMBC信託銀行プレスティア事業や三井住友DSアセットマネジメントののれん減損、米州銀行子会社の事業売却損失の計上について、決算短信上で要因を明確に開示している。また、コロナ禍や米関税政策・中東情勢を踏まえたフォワードルッキング引当の計上理由についても透明性の高い説明を行っている。\",\n      \"statement_type\": \"actual\",\n      \"is_inference\": false,\n      \"causal\": false\n    }\n  ],\n  \"management_consistency\": {\n    \"components\": [\n      {\n        \"dimension\": \"strategic_coherence\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"execution_follow_through\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      },\n      {\n        \"dimension\": \"forecast_target_discipline\",\n        \"rating\": 2,\n        \"evidence_sufficiency\": \"insufficient\"\n      },\n      {\n        \"dimension\": \"accountability_transparency\",\n        \"rating\": 3,\n        \"evidence_sufficiency\": \"sufficient\"\n      }\n    ]\n  },\n  \"model_notes\": []\n}",
+            "thought_signature": "EvZwCvNwARFNMg9Lj3HRBTMt1OQGjy3bxJqzPoauF1G7ZGSe2FNs4g-KeYBs92vqWwl-1Lr7PWDtTMygliy_sPpQYCb57r-_dXIapyHgDcuHGVJDS6IBJK8M14kKNfDD1IEZqkuWPTKhZMn5tFyW0531Y5BVdRVGRv7qtSvaBr5kFoew1Bs240D6EMdOKttijK-o8jwZWJcfwNKdctCRPKXv2wKnlSCdI706dvzpRM2UM6-TLCpdaBTxH2nvJmMoxSKWKwfiv7YVsTC-g_6YTQXJQLNfAM1U9hGqcvQMKDi7jA16juS0-88TzJKsozR4GGHgnciMX3wXwkxsyRxJUBKLgyjxigOFdVfX2Eo32OqNHWqWL1xnekN6F_XZ5Lx04qaWRbR40s3ThOvOonlbvHwGQbwq6cbm0XNVpeAozVFQVFimLYK8v1YYfDFKW-5MZiX1m8W7NozRxAbpTGNBea5mss5-B-TbWmiN9RYOfDCoTS9aENZrK9VHWi6DKDSEaORDYGrsFL1pmhUaT5IQnPPPlpRHombDkmopEqzLqzgT7Bg7132lpWsZFdLwBYgU7zzXKk8VmEdQ4VN1HrPVDLaHI1akBFxCzEAIz5GYMag2x7IvBCeue6cunUlR1DOjiEgjkzvaog3bAMfThLdy1extj3Aa8m9LLjnH8xXjvaWtVMn0d55UzlH9wnJw2ZmjFDbf_TcPxqgH8u5ffAWSsPi8Zfa48emBTl_Qb7PP3ImdtJuHTMJ8osrSHZrZ3dy6_qrKVjEp2hXsR0nFjSeCMifV8_VqeUfdwo2LQiQPeljYmAs6jmOicUx4vAvpK6Wbpv7NP45aX4luHK582-9dc-LlQqhnCtqmueEHEBQLVAyIHiM6xYnNhfr_foMRuem3B41MHsDM2dE8KxN-s5KlHZwTjVu2I10dBU2NZpBxoU6ILPlPqVNrOSuKA6FOgdQAefvAOzD45Ts3o_Xy9SkW6z9UZQ8fOzqWunudASE9Ov7MkRafsfqQicytNOgXGYqLi-XuGp3Lw2V0IicOrbAx0RrryoUvd1sqw50E47Cl_b-WysqA3fkLtXZwul47hko2EBZqBjihe5vvg0SAKwUjVsBBgTRkF2B4tehkTxrf1hycFtAsjjOJoxxOzS_Da9QA1blLP4NV60mAKEtpu5NfNrD71rYx5hzobFWikk6icY3p-huL8LHZ96VlF2zHJRW0x-cFfkGriMq4KCn3K0d38CDKAV6hl6I4FS8zy0PqLyL343_5ZVRNibjgxpywp1Vn9SASNimobnhn8iR_AwuLMO1c-2hjaSdzhUrmhPYYv0CcKlXVa6aSqrAVlZpClbSmCK50HD831CG_D0qBl17lwsnfFZEJSg3ZUy3oKTal4M292avlitGkDwC7zE-tqGd85FLS4XjhWGmeF0oa5yAm6-gdFIYnqEcSkXKma4yeCWRTdh_aSeT92V_X51sCUjzyBxm8Yr8yfD_8aAFQjoUgXRtP9uMOx8HZyW4t2FFU7DMbSltqvF0GzKEGS_RaRxgnZWput3fRbe6Uklr46hjfFcGW5IJwgbJVhwhWVHbDlB1zUcPK5kh1A7rS7zcNv0NKSrH5AvF1J7nvx3Y-zx9An13qWGvam-5MLMy6vwHdDDmQylxkYecI2ZrtBhSPtGXDzRDA1ZRB-j_kCIOJ1gpDdPMI4bkPaDqv0-RwGFKOvz6ZVdgrXCx71gwjAU56GU15pCuN_OMPP0pDf1pw3BYuLRC7mc5MKz4K6Ij-MeqDD-NMOD0MDTO4tvch3kKW8NoGPJqFgN4bx3TVL5NE_gQFgULzg6zm_Imd9RUMaUG6kPdua2XInI03LC4rxUwhF-zPZOurqWdQxM_UaOaXDXymJ1vRYyxS7yV6CuDOnPlqKa2Xr3TCiqkZG1TWXDQpILMp4ghkWfmX1B9YexEYNpvzINdWEVx-Kqc_JMm8KeCSi2rvXuO9Lf3hLiIdG9iTNP-sXLc21wzhn5hjhyQx-RrE6QECyVincmGSj0ulWWOxQoWRa-NqR383IpYbWA4Ns8mygFKB5Lv87MrJXxH0gPHEl430z-lpyZtI7S0I-AjW1GJm550Y2G_WCfEA1B3-JNcTqiUYSfGPt-PbaQFbPjpKtrKqio2CwVB6oXuSwH9SP1P6jFG0EHnfg8YkWVH377DqX7fCD-JOW8m1yY8VW-QFsV4hOfWPZmvUfyJ2LDEf-sF183UoathYfikO5MoxleycsVwVKj_Q5ASdaJrMr32KOgSJbP9U3sWFedGtPpNfRcOdVf5E-GpEmcToMBjUKnEqrAJTEagxj9Lfg75zuKv50qj762y2SjygqgbrT4RCAIcnG_7pN-_lJK68gI2Iwf723rFHa9n0_RmfiwgJE-tBcon6NaOFZvF5EUE2vAYN89OqjFnnvKBK5vsXS45KWtNgVD3CfJFHYKOhJLkRIgshD0wBX7u-LdVG774xoRDcSfR-1csepTWJM-x37ujUQPrW01WMcoB5uA7DJTDlrf6mVddmVg4iq4U9LkRM9o7Hd3Ok8YBtamGe_u35EWEA792O7ebHsk2BXmGmJv20s6mbgjupUopvkVC7lvv2oxVd8Bt89xXdD1gJ7tQCjR6wxfN-zWVJ5hR0wkGU8WPlfoJQO2gH0MY8vn7j_zE7oxLD6jw1dDk7zavp75ciqE2sYX2WpbCjz-UImYGLMnPRPA_6f3uhR_zdjIu6Bst5RAK_Ep1Wjc2Txd4IBD3T4RlTGEQ0yV-TBBHg2G5E7MJx5gRBn6Y8uo5EsHc4AGF3r4kZSKRpXSIZi6fz6LvGh07AnRvYY9I5RjACIalLXc0HZuGyaPBnRIaHmp2NzK_lEBYBSuver6ML2XTKfnvXOy-Tt19OOCAcqs3r95iyum8JEf3J9iREX4Y17SFaxmow6GW509OMBDdQ_fYRGl5tzpD9B0SschtIWtrj5oTsHcosIM6V4FY9FCcm12QZ_EcxuSNI3zTom6N4yHqHn05N21N_Vc7VwCoTYXOoQsLtz75-VpzVye4HLYlcf-AN0BQtORHsjY0s2zUoxicPm8qUSmzeLg8A_BOrcgHqR5NqlAxIr0g7jA2XbeywUQHKSgVOlrnlLbSQGqjgge2y-FMWHb9VcohpP9VUxcWF6KvD6-caK5GynPFF-seAj22EpIZ6jQ99KVs5BJNIiu5BBx8JbZgWwAIJl-0tvMSktYC0LKqLKkq3xzcuQcVIDCrtJXLa-Pvznkotdl7ONerOpeFaZvc3n_fwgD2Dm0rJAL0n1176I2UekyLcXcfOkbmqGv8NUxViUuHm-RurnzPpEvbgROYKeJMPg3Zppe1O3XH2i24sGAs5zN6Gd2DR7R-Y24X06CODVRdyBKE0XSmBbkHYDrS-EzLcMUSaZ6iddK22Qt_AiEHjQPwcwCRCXphJEA6E-ELRHeRcLZesfyNZ3Pk9Kjqdh3_bnfB9GhKQd_RN5cY_LbNl8dY9gVTvkZHyiEujuEk54Dp4P_piNzmK4EbyFNR8_kwVKb7Ly3VuAg7pNAOV-PHsAETGAQWMYhIg1Ymom7Z3AzFNk_EPaA8G9x5wU2BlPgqwErnxPTHbAo356dOkhZ8oSFoG52ETbA4ER75OFlWXig9w0BHxJFzl6napEuMaKZnke1kXsgMXMxxULVrF7YovtfFD_hTcve4G5m0ZYxb0g2lnM6Sz-0_F7qXwazCofKgEE6kDaTQwgk8I4Imxi5h0-G2XJu0yUX1cEFwL0ll0xfpino47qkeFo6e4i52rkr1YAu55G8Sf57q57w01GBk6m2gl0cAxDMAzVXaU4ngCG81KvRfxVxY1KH07yAXfhnSG7m2AU1q9fwA0wfiy2d0o7CN0R7QewFnzvUQhJE6jTsYyyOOs5lTZBDP7Bwuqq_Q-HcUHQv3pz0-9jGra8qDwN2xiaSax1AouNctwaZreJPLbO10-Q67roVLwsXSikpvrn5yd0TRvFZEA7uq-bGapLPjln7ZX9mHOBk0v_ykR5LAt3ENyyYMp5NdmDzl5qSJOTcqC23cQa7MQWCM7SuHIsZrx_kjhEkJaOK0lJ6vUwK-M_VmiQvy_HKGSW0JRtu-GpBLbdpGeCKwAtjdOp2K2Ci-RK9kR_LlUZ8OZlUXSYLMFcDgcT17AEG_47tAOu89kxaPZwxf0uJQgVgI35gM-vZB_FZTljS4VvTQoRuotIKhjLY-erJyo_WwZSt53hFe4OD13CZy1kueyYRT7xb0cJY-9aR8IMQtRg22yIuGhBSAEF4KFWwUROs7PlLtGGfVCFfUkeQzJ3lAdvgnDJrZ3JdjiEWW01v5tIedRuXqg1oFpkknZQ_u9BV3Ibb7D7hMoXM6m2wF0npD8RM-sBTqyHBArqTF7I84xDPmaeaMWd-7GzUuPRYDfK8wgo8o8l04gY1oi0E-g6XGJvx-CxbXCKL_g2w798JJjXeDEGBVUtWQ_YHy-ppItqyaRv14F9c67DNKDWsSGumPSbxIwglBErSYpC7hwSRM4jQZ77f04vFIrq73koIHPAm0sL3MlwqJTKX-cYOtUy38oEp_38GSVn0cDpgWIA5TWsyyVVHPD-UWkrmhb7_1geP4BCroYtwL3tDRsypppCDRjkTnr8YeF5oWJpqjqap9hpVplTdOSnulnAf3M4_uGKhfEv6gjUh0rFlXYEWyaXd5c9rgwnK55JV1E9ILcOZJ8s3aPpo-Kw3YLjLQxyLmC958YZDPef7icjJbDO1Wt54ngtga3ljw7kM7C1Es-WiebfinY9X3wO7LuuzTGLoVqbAqqdX0-7lraNijJjoAB8VOHVjg6mc-QLZZPz4qPDd60vdCCWaOciQQ0D_86PRCBxCg4vM8hVF6iec44e82pc2H4_5TXAu0wS0S7PJua2PAvBabuzhDVdcBYID1Hf26aXbXGa0gAkvO-l7W0x9fMy86j5-rp1sd0NIp4_KN7nmlsZh51YooOTgc-XSY7RcECR-PpFhOq02-I_mQsH_G-txGULUkguwdfW2QowgLlK0PxPqEq0xig1IHORftfHHsFNiyZPV_gj46vGVMDOeBsai5w7doNzRkSb7JqiXSK9YXXzjVaPygjF99DsUgVcm0lYpqdWlpy1nLz8nez2QoRSVEDLIhAPnd4cD6d9jk124AnrmcPn5bgjI1LV6asm8a1yv8_d-eD07KmCP9U9D9yurQvto9BQU_QxfFStZ1VjKN5S_95Ufm6U_MBQOU28r9z3KrxofHLMHLtNaqkmtgIIuYlQV1QCXZxyT-nSu2yDT8Y9Q33uZA5Imsrc5zKcC1znhj6bXKJyJv0FfMYhoSFO6x1kUP8qC5DZ0EWcxj-kxpLcfPHCuKO8_6YNWEQVCNVcB42Ol9-NQUJ-vxFhxm3sHdXDcFJRJeC_doy03fCFVgmSb9T4MJ-6HDCIJCCPGAPtrBTvJDNXh9ue5qcGDa-9FdBTTcPkP_dswvOn8Lwe69DbOqlV06Ih63Jd7iiK6k7eDXizhglPGPwJOeN0mYQ7kvSoKXaUVjHDIip_-vlOjzUP3CJjCy4uKkZJsdVSH1usHzJ4yaEShC0m6Sltd2pxdBl-VTUy7-YrpbTD_EC5IH27azEJTRKGI9RzktkKHAo9oKhN4JzAgBws8RfHIVTmOxvPkBUYGea59SDiK_r1Hod8bZZOGcZxuhzVYfPOzlOAqLi30gjCz1pXJHUyu7G8EsdI_nEDNiu_RBTvoYaF7sCmGwWvk3ODjHMSG4B3rw0UqBIePCTZmgweXezGY4PcB2BXYK0B1Cx_QTZtn_HMSARH4-rucAFAMUdPARcxpw03d09QEXg2fP-O12rksQHsvGIZWQjwpjHBOf6KYYdthJK6uP8Ou0pyLTcwE63_aD4utHm6H46UgE75kHai4X6yDGPrIXg2fnZVtnMXJVz7KWzI2J-XBgCjgKWibvFed1f0M6SDyPGKoIBKpFg6NGK5HvZinRvU5hpYxgVVIUGsrXl9CbnaDprdPzZOFFljy-uKHN3Ea5SIrlEOqGg3LzHdNoO1Qzcmp971OBEzCaT_gHNyqawyQXvdZ7JkNoHsTEi0A22BnIeMY6219Yk3LZ1JQu51fzSoIaqsHdduZvsxvf3YpOoA9dIYt09kuIkFlNgkMe3JPpP7-FNS7b4E2tcJLFx_1wlJ5k_zp26YMCwV7g2hCtsN5isGIgNxndePlhSCxDcrYOFWucU26dvrE5JlR0tHkJwlNP-l5KFZ1Nhzad8A872dzAHIe2GggSldLJWviLysOWp7sYYY7UrmIicMwUNdvuUPyUrBs0rhW6ol4szNPYS7TI8NAZJ8lMWQgwZNkWyyQsVw671TEnSV32xxOeLuUYpSDr86p8Ka1yIK686RlRyMfmKY4eesedmmy8-_WCPvbeXObj3o--730EyS7bb-hNm0w6axUTRXCj9hzX-oCXKjm69k1Jb9_7R67tLfWbY3hVS7S2DUPo4zx7TIqc9I8MneS__5pcc2SZCyBAzy2wz-UWPSj610wJpNuro0I9aNVqPWyDkBJehA06v8fiOdiyRFkuNR01WklARCyyW3v6N7H8xrPW7njcbZ0iq5ktz8EJRpXp2Zj7VVjiGFJ8CvpwxInVZgUbtRTE3BtEmjOow26JJFN5JnSRFsU_FTDyJxc0-lwsOJcMRqbGp5zxjVxEjb6dO33YM8zzUFQFa7S6mSpTkbl2zbUmYyjFQVbWaqwBQNpt38DPKIkcrCr3TLoOypNrFCkFQCO6TWg2ouYczMtF3L153TPeZRykrz7xxRjvvqcWeShQHSo2Iz3cvUQaYxsViVvflkS4NInJhYokXFCEm4H3N1OL6zk7pNeqNQp_yu42rnLMf0dCHSZ-Qse4JhsN1q0HLcLZEnYz2Eay_HCSewC36yiJ_U57J6FPM8mcTq8pQSgHS9CCzVZ1fzSg7jodF2lJTkWIN-T3Xi71XLq9BMCqJPPBh3P1MivmNrmr_iZRU2KsprTOIjrx4WpUckbXLhELPozjCoNSWAOGdqV7gfeeSX-sxVCtYMmCx6lGWNUtHdhIXS-UeWWi-7mHL0Cej7jFgAY0gHtUx7sYHHkW_IQ4pQUR48cpyuKrczwFqrctBmOpw3VNHiaeai7rD7GtUL4ZNOsVkaQluRgOynuVRgT1DTMtDYDSchpznojXKQTuO-KZrDpof7MFzKme8HR-cmGpBdTBQGZUkPCw355HOn3vJ01DPlp_MFZ6GftIFGkybmJC7QUQ9GUhKIsfBHy645uXZ1I-pFG4rLvd9F0cCmJUydKSC90CoRMXnONHZAy3dbUE9cxxiJTJvQNmXBURCH_BaAAxsoEsvruEAV89WJHkORKVd1_60aLuVCNDh9xQD5d8iBEBGjI6J-O8ve81Xk1x_AusBpJqxOrHQe96P0nB_nPRJc1DXJz33frCu08d4d7v1Zlp8_duhmaN8WwHfPW6kWHEx4z6kZuN-PEray6waiW4i2MRzzMhDY9RZpYy2_lZ5E6llAyC02fPpMitxneyt-g24lHtEK1MN2YCDCJo6qFKttWbIOClmR2AzeMzokvd0no2Ursg1Ncd3YSeTod8DO0pJOWI7gPIWHbxfCk7wSC9bLub0yu4W5jDadZsNFWa5nxOcvJB2gzLB3ZwHN6qwHD-yDLKzUyIvX4xqiiwCpLE5beV2z7ZGlJ99QGULESq-mx7Q8Ppt48dlMS0vErpw9ZdGiAOXol0MHQr651f3CVK_AVvAQ_k6Fl3we2U_SBA59vmvpCoXXTqMP_a9zQzOopfi0K1tEglYW5KVnczGDrOycP4Xb0sIlk7aJ004hkJ2e0xgSyqMpeQeGH2v5S_1m3_UFdnBSpkCkEXyVXHfI5Lgc5fr1W7TaAhOWkyQ51lLSiZ2APr2FLamd2jRovf9zIeyi7aRjq7RxZCA4BZQNsPg_oaWNIxVJ6nx8Kt2QOLZ7qPoQEgUhTq02PDmG4_nL16eEKkvxNyh8czFByKVXnAKTBA9cyKJvg7D01DWO8giAUHeeEQW3fXoQInHU1O6K0UL_w8AiJmzZvd7DS6b9dDNkqSSyt5j38YjkDxHx3_4wiXt57Rm_Dq2esn6aZytT2TRDqKQbnUYdutLn3BsjS3NA37XEt6QqKwYQyOPOYZkwm_fMAthequ2bUcYuPEHSTqrkxVOOQf4EoHqteD12654zs0_0wbEKbhjbhUPaooOuv5u9PdYH4L1X11iraZ9MrgeLmhT3jzBNpAMZJ8StaAJl-Lr7abgOYC3Ry1d0dI0hdBZjs4es1wygaA-PGkI329JS_J3gLP6GSXCbDht8QskA5_jUzCkH2WvI36XvSAwIKpyr6WU5Vg90YuQA1KvrtVrRAZtOUrPu1R8n1NK-Nuwmg8JYtowHGLqLyuaXCN-c7YUaM_0eGnCli6bRVcxKiW1A5j3LA-EYz7EDPeVggduVbULHYBe7L4-BwsR3iIZu9SmbvFg2Tq8PGtORmAXfkCB7YolajQ54FjZPpPWip3GyWOh7kFAbniqWPTqvjAC8sm6otBpJRiw4aJja56t1I7WviCGTTITcdbkFzwvHsazNdoZqexusS0unVtaViMdIPfipS5ZTppVPFjoB0b-w6wdcRn5OMY6c14Mmnd_GGyGK1mPyjdMgm_FSUlSt7cEmeI-OkiZmaBiVffa-t3R1m-qgbJpNZcDL3SLlzO9U-1v9Y8EAvA3AR_vWGH3s5c6-AtGx1SYtw7JvnLJWWV2gPUxKzdSsSzp41Pbo-vl3uH7mb0uWEy_4YvTNGNUuU5LKDMwHwEqRXryMSB5KKQOpo-aoZ62SSLpot2C8TwUZAwxQieB6mSYvWciIWisCVWGqzxlhhMIfFws89mnToOZMExBmFHrlIUCNdrX-bR8YaSYzboLRRHlK1m2pfPxhPivz0Ql9ZH8sDpgmX0nun63OE9fittQ41Wu9iRAVHdXVpYhejiXS7911ovO36Ft_Pvw6GkDIHnx06yRY-EJoJ_ktDb4xw_bYVOVFcBbgcRgGr9mONJrra3dd8TFh4vGScjOI8DPS1lx4Py0euPvS1neJynQHIMuD_a29kPZP_5BCHl_LRPw6iLAzDzMTQa_wjX3BxOq4IBwhjLXfBlC9Er8JIjjRXtAYGpIxEGukhYEOTSmi-fRZY_5ZjuE-jubmn6FWibek-oz5XJ9tDhS7vRNjw1lDaKwAILV4kppUdnFQdSPoQ-iBbpikivN1bw3U2sdYJhCHmnWVEOwht0uV3DkpLDRlhNVFpM3H2LMSHvkbqa8Wpcpksr6zcbPCXh4_OEco5SaKHtMAbwXqHaIiYDNXslqYLPju5lTkArSZC_p22jbGRRVCkYoz2Q5enjctFsVoHOzbUWZ19CJ2oaUdLqVEqUSyp_e-FtozhCItaVGX72WwKX6sHnyooB1OcPIJv9EbCduaoK-POm0_m9_GOpZeCNaxo5hwsL1P-wGzDhJhI6J5ArUfF0C0R6icIvI9qvnR3eBkkiTOKf7eGFciGee_eJWwZIoOOjDcZh-gfpIZ9AI61Iv9_OL6DmaspWmxZYkZHOTPRaBDH0nRTD9DcwwRsIC-bFUUpCWSwHz8C3Z7nnRwC7sdNYIFsnVSPdjcC9avrt0OSWn5WxmmSK8ljrkm-Olohv2-IRyrGrSpnmEDi96N5X4dHALSeLl8MC1jGSWgDasshF8yxSxXbJOSY976oC1KODJo7sBu8OTa4YoBrONDt8vt-RgrNOMqJBgqE0a1hktT7g8kwewzbtjCxyWEl4M8A-Ai4aYdkE6hl1XU2-3uExqSvtbpeK-ap4t2KfLDv_OyfRmLhxBDkj6I-_JJ6PVbGJQQwkV9MPNdEDKww2Q3fXHeH4H-xUcDtZVsvsXdvy3qYJ2hkyYqsOuCWCob8EfAhj2NMTE0yjN_dyDtJzJ2_AkXIm83m4MkXzFWPQ7nd6bdo7BONEwgGMJW_cuc6znIqwKlmqnK9WL65QvSLT7dprRBz6rQ3-TScKv5LYxkBTpS4TQsmFMtw4pWEG04U_gjD-df4A8TUxo1Gu7wVyiQ-1dJcqfxEJuS6Gu9MaJlaMUlubPL51VS-8iAc_DnHnva1YyU6-cU380xfFlCgrgwtJLqJZSp_dUeqjZKHxpT8I1XIry1XdP8dNarQA9HR5X6ais_xwMaSg6jbEo0VMmGi54lWFo0kQ54GlVAV1gGGOhqp9WMrGed7gc5bou_yxYUQYMO57_YMkstmyxIdnj7MfdWMNpV40w5JTckDa78WeDGb7idVM1jkAbxW2BUKIQ03LoU4MzXsjB-vZQemFfkyc66cQz2izyj00DfTwIRItmOnjFRcA3n-wPhJ9HNEDwnGtXMz_RR6-gfPLAryOegObsreytUPmY0r3aabon8qFYqRNed6cxc868CKoBF4Ys0dMALlGyD0L_0YZ1Cv21RKj8Y8p2JO-Tzaepyup_tc6RZvYflzNg-woMslYPYlhUOF7qBwf0yO5Ll1l6E95iHwqQqmCg_2mx593mkA1OUFRQX9E541uoEmfngCXvDKAI4JCyScN6FTXt7MW39b_Lw3PisUfEydLLkkuslRfC3NGssoeDY4bZo5d7b7gWxqfjV54vhccK2h6uYLK5xlS4wtwQ49kkl1tMiCXek6WCK09a22JjPpNpgI9FtOHuNJnD-sd8rBLV0XSG1GrryzEPnNwf6EvMojFTa2XsSRjDoZ_SLyZ_I9UG3BhensXcJTe0jxI4Xv8K82-MV9EK2owsV2PItWixfTje7DOl8R0LHC_IZp30OLaC-Ba5rCo9A2kuJTXn55lTGKmE-9zJZcLZGbJInmgDL1MgMYPmLSm-xaqxNoRLIgUnsqDobxJYAxe39-gZO8JuSyND9sAdiDw47YSoahRESw-lx2WBQjmStO9jZjzCcarl41--trCWzXCljuWvgP8oQhyF3yXCdfSH3Ha9SNLjCgRtamb2ceROnk-mqNYUHDx2CutBhIM4hLLoPB914HtyAuojPnKmFQ_9ubPy4b7hc8bJ6yIrCFf8y7TrWUdCoxw514VzQS6BPu7xQInclv0jsqYfJKutI4IZ4SQnMlaZ9mQRa5j1wzO9Bc_kbhKcqyxynk20kjQYkorhG5wJyrkNzoamVsyYRe1cNEY2TYpuhCsRQkbGJmCMNii2dOPdcdnHUG6pRUeBlvLXamT2It4E5G4GkTgTJGdK8LzUDa6d07lNjn7-RR3cHKCLYNjoNSs-rhZioOXfs0gF3Zb_3ZBzfBeCYB_CuxZn4d1NP0XU9MSCMkxdFubBPLqKw5_wgrVQP_krvAxOruBweQ6zq8gkH7ud3C04ZlxsrmGv7iry5n-j0xBTHbtTX_xaQ8fttEx4b5f7GxR_zWANSI4MLhU-WW12EmfSyCjwZpf0Z5Z-tau3UZaeC5Kc7yh8L7N3Wv0WXoQyGYBZOi_cZQOj9258ssl_tDiZ1bpYLDoQkClXLHjwKE8nunFBYB2HbeocIWM72yhYssgMyOZwEoQiH2Pl0iBtarNCuWdMMrH5K-kfxAltBk7xo05gHv19cdvioCRjSLS6QEi8gdP0x53AEz6nFib9HbXJ_8xwoS6G04kjVTD1AcKZDRVvzWKV1GEwnvHC-1-DX-76QJflgfv1Ul-7KTO1B9jcb9R6dJmYttOVNoE3UwNoWu6J-xz_v6ccaQe4BPaPXjMtVx0qXgwW6e6r3p7fT8toPgZvW3fw-gSWVZox_zOUAjEaEuUuBb1vqIYeJ9o8d8jPq1RAd1BIX59XRC-W9FucpF8QkYENyfpVH87dfZo0eblRvUyDIhurMtJVIFJyM8nFjYMsGOR805NTuwh_HxEgmt9G87cpKoG3xP4t7ZgQdr5q8xMA0Z2gSfkRYG86QF-aWL6Ra7vr2SzwsX_dlvODkbhAr4ODzRVAvZpkROBnrvjT23Qtx_yv-YOdl2IoJDOQE3Ks2wXqa_pSxLMZfdCmMAKG4NwXEgc_-Vh7EF2m5LyrvWZBUWB1FtcM0nZDTJfxgAIXvFfJZUVRNqB-exUhR9KM-1sDIoTuEsaJxEr6qrv66GZ5v5qc4lvk10iGu-fkpMfIF1d-NcWds6gcEoxx4GrWn7T_9CerV76flkxbVIH-tsv1yozk8TorwSlHbvH6o1Oa4zw5R6xaPUoti7BprDn2ErvSaWNg7Q-5wcpKoTpoKww26QyyfM2lNPvT6jNixUWgefOLG_QfL4MLJ0tkjvS8lZyb2U3PAshUuzSvTZaqpj3uCLcoievw6HqCft5PPvHgXFkV0dW-96UmeE3zCHp493pPNGag4UqAFrTAe4l915hgutogfRfB-BfPRvpnlQbrybBXrI8RAyMGJ5V5JQGiBW0U1KO8J9gOi7bFwfrBGNRWWGowdg8yQHXpS0UiLwzj96Ply5Jl4mzosIuGhn6foVK8WMm9uEwJeQGDOKy9iuX6dLz4uZgFK3PJs9MVJmpTiEfZQ3N6exKuFd2tIsLIsjpKJ4dP1AYNZVrWLstpPDPUAdrQCR_AO3dP5G7G96ZnMHxCEMhNjfKYTVgu7hVKUg1m1ySMV9ZvBrlrwuK66zcmxINMj9Z7og4Dubam1NsnNuTel5MBJkkxR1XIojYp08L2uYTQzYx9cIYXrEPgKfpFKrwxGZNyZlmilG3Y4K2Yc4OwOXLdBfuH_aq8Z-yRAYrqwC6z4C8fNbR3GIFgm_j8Jeh5J_plDcS3Hdp0lW9qqALVgJ4ar9XixxguU4ZvonlcZ-Pps8_CfGTrOOumt3cCLsfQE6FKR6K22UiDLrDBa7t8zLrkbUz2SpkAAKcCJ3A-bocYMXgvJxBdMKUtcphCrrb1WNprM0lbBuiJZWGihAK28uI1zuPgUusFdijxmgGPfvLZA7ED8NqEPPUbOQI_z4dPQSu9DX3i8WZpGx2aOZOE0119mWs80WqOCjvhrSRENsTRJHVwIIrnzp3QZ3SCS6ljLwvtswZc-PCZNiSzCKONIKRRbQmc1beIQVyIHiDGB5UafVP_3NALinigIMm2ozyEK0kWoe3x43b6nBgU76Enm9CPuYJr-eSP4-3sO5jFMnrDlod8mXOAh9NcdyTjQ4dOrxVGQfIQX9gr46JB8fhTfrszHIKu6MaykRg-tnGPdGxldKOBMXFdU_qUMW7CmmOiQ7V7GYqoRDfeVc2ZtqOggk4jbuOwe-fW7TqN99kzST9OaeRYSlVFehuZBUIkxKMbkYqwZqGNNYUuWJl0MT9a4OLKlseRdRWEGvj8yJed7SuiYl6HPHtHTdjouYeKanJG19bUUc4lhwL3rCbBgc2-mS44Ii-fZByocBYh1KpHb4J9mEN6BInY3jDe8e0uRXAcmYph4_OaYNxmRPi81Dl1fBKXeO4Al0GGdrfbctp6Szx9PLBGx5fVym8qQnokQdvtIor3xyPBBX_XZouDcL7uk88-nb3qxMgY0bom9GvtOOBIksyC9bojet0YRqCa_oxJLsCONztI-PGjni5tbDtLzUrnhLZIIXs3vZM4EQV9WMpEq_15yIA-t8x26G-7qpfgEp-a0Y926Km0y5hwmO3-l7Es-65j2ynA6nNTTaB7d7AzQA4EHBZiomLgB1spLywlcjQ-mYOlR7VTOZZNjanQWnBu4diV-tpoV_cNk0Y9Q4trkW63RS38rgys7WoiZOhdJgF0GZJZZDdEOxXMPyIJFn9D4HDAnlXhxrav-b_BNcHafrP3lVpYqGXRWeBcDmU8yUmdFNG0HIo0qnSE7rVmEx9Fuh798b0IIZToCszAX8l_ynqKs3fGaPOPaojGlnOEG_s7Vb4NNL-14zusZJM-ih5xylGsSC8-_M2J20BPNFmY3MYDtj6Gq4NacsDL-o8oC1oZYu1fupM8GnltO5oa6oPPl69YMAyuSUrwxGKvfIkIGucF-Q9VV-NBqPj3ePCnaaE4VXdwBFgPQj6cRALH88GHBTEcDbJvisxo8DSiDLrp_nlKPytC6zlPwK3ipdpSxTYxK1f94ueN5QqFMySyTXgCTdySbP-q_gnfg9nPlk9wlAIPVl_4-9OQkLYTvTc4v5cYwJWlmlZ5PigF47rBR_GNaxIOxCOMcDArkQ-MZJgIVDClOHA7Bb4YkrL-nkUbzw4aWe6MbBzjyPWQeTb9jN-HQzrevy9BHngY8L8EHJmYbPDJU_dvyVg7xRR9k4IxJYJBRElPi2sy_nM5yvSIvTyUZQGRYDK3Kn0J8mFU8zPXwUYcg-bGEfJnM_qhezqHqnJImy-gkbANYOfTra5b74VQSnDiIaMmRa1wswHlHxtbngtuOJUK9_WMZRHGfUP6pnbEkzjr7LDasIoQxB96l_x08E9N3O9YADAwM5lGeLZzs8Pfpc1TzGqb9f0txaX4Y0nKnuQyAu_iU9pNLg64y0bcxPNhvcFJRJ64lFf1BYSHHZ4ERCOzvWZrmb-sBkAiqPoJ6x36jcBB8PtShRmXEgVvCDmWE3MAGj-3khTctVnSWRnriNA4e0LbwMz53T46-MpUOOKvkowzstZrrsLzdMTI4_9vzsybe15SN5_4UrrclRQFSbIXUt28Dlr8p_fSOAaMHBgr5xlqhZWnVO5EAIRELgBknx5vOHKNt4VL6qBdEGn2pJBTlnU0zuq-K8c6tMvaAEg-OF_6GtyLASrfDcGtHjtwyxdpufRkEkvosar7ZaRKyhgOw2bPnFMGgGIM7C-CqRX1rv3hWRJOKpIJaSZbfevQciCPrynahliO6wRFCc0E9El1ceXEWtH2NSS6hxyE0lGjm6EOl4_A_9WsF8CqD1hr_-SJsNrDiyznRNSFFHUkShsxm4IvL6mF_a3uVmfoiUm3FJu8fowRH5XhPpB6JCTs1X_DjokKX5JzPDZBnh83-NH5E476PTxaDgB35AnMS-GtLO4vaAy9I7H_8kTRipgo4iCbXHJWB6DrWNqS_w-yoG2w7qviEfxwikH6xgO_dasn5fqc34MRYxEEyv63RM2Dmaal5o7ThutmxvMlRre2T1YXO5XhWicgU2yiecA3hxxT3Rxs9rqiOuIoCULRQ4K2xgJZMQrwGIvRjVvkVBWXMmoFiuvdp09G2L8PhkhmDDMYl1atnGxgOLc2yECa5GhKct5Nn-piIXiWutj23voF9Xf-puX3xuilS8e2NS4YuitOqrRL1kLweGR01YbUp4xRSP5B5TJwPEG0dcIwQSb7u6-n7W9SRKll2HXV-JFDkzefBx35Uk_1pzjngXWNsFn_5mKla51j_xvn6PLxvHo0sphtLqS7MQKAqk1xOdbr4uYfQaTQBbqNvUTpvmoUYP4qYcI7UNOUOtxelUcDsueIK4N3AAX7fasLY73tx8Okdve2Hz0VceaMf4CvPXLujQC31zBj2Pp_XS820heQeJthaQc8YF19OaFSvzEviQVs0UznoryECdHAdYEhOnNGNhIJmp_D5t-PVhHDFgbUQ9EpyBXmhYtZk8YxlHFc9x5P9bPCMpCysRsXz9sUB_-FBe6L3knrKWlBJLa9QDyMZNN9r5PRqIwxDXLvIXxgrtMNVtKFM0kvgePr94nGb7K1IjCdK5EMHQxuPKW0LiXSes4OqP9LrlEezHvQySssA8k_g_WpLMK-sy2V9BOnRs6PuAAZbvmLli5Y_7f43-loCXWfUVhPGGCXcjxk4R9ubddlu2I826gYrhOZWwoZ5i9TEyPcTYZrs2p8eOely2aIhWdkgwZRzH9OQq-gig5_OhFMVuu7LwtkkML1oMbjcWK4oepvLv7EttGKbY6Iz57Zw6dQT7nddOMHkE_yTPk4CmU1h3xfJ4RJ9ZwtyYXNsJNZoP16lOWosP9AvmK0LxQl4c5xeAnyvB-v7jd8QKWodCzy4KHDSvG1qf1oCY3PnMDA3UH-6KQKVqPMAJpUW7wxkkdK-i8p-faUHqsdAOLnLJrezCVgqJzBPeHwWiHRZsK3mYmqN_H5LKqKFKYotop0mzA_2I9m0UKHs-0Ejv75UlaIt-byj10u92VZZ8c-rUnK71IzUTSMUDUxQbONwe1hBHPpg81m4XT1i2M-aura9TTPcyuBQWlqcO48Telrl5UPgSUAEUiADEPEP-hJvP5nqHjuymfz89TmV2pt79dJhgPOpREiijQDg9J4SVRge6sduAq1VIm2uIrNv63fSFaPajKf3C_Eo6xVl0APB6WHV9dJZhv3RlGADrFMVTPJv4p5Gf4POP2J2GQL81bz9Gu7Yc8Rdd8c2JpeMjYvTAIv_Z74UTd-UQJvbHi63hk_3l2QAfufO_672jYmaBFjuphXRnYc76b1W50a9s-NigJlTpsgwIfSO9AwyqU7Skh3SA2Mw83u9fM91Dv2peyjVJ4iLPKmutFZGU2xn2NSUGlXWerF7qbDji8gl5IG4Vm57IIbN0olzeK4rJ7_qbKVcMlNRS8ueMMKRdoyWnhB0mfg1NE9Ow5mvg1WvnxEzLiwsp1iGFKXUkajrJOK8m4pwTf2lRicrnwaYnQPk5mOH1-zq3Ic8ydcYn16SVS_O4lXd5IN9gnIQAnPYxDGnU9bgsQlfOkmV7P5ScCLymDbFBG9oaM6RXBW1E7015iqgt7bsMzBwBg3kWsbppqI13WyRhQDLbcCIzJGmfM_P_2tzhOhuNdiT7jTK5O8TXdg4kP1l2aDHDz0ETsiEdMlPs_w72sNl1xPmNujgWK6p6ttXv7j987tiTRiUr8DNZ4cNXZi09s5U0Wvlh0OSSnbkTQc_u4GAgopBp3s3q4CxUS4x1xa-F_s9-oCMkiqo2V4_OL30f52BPYhy_6Q_EljlewEO3tBgoEkzAo2ufCzO3guQr7UjpbhPZbplQk2GN7NDtEhNwST2SHE3uDW-UT3qLpLSBN28jF_5jlZFHzQ4JvuZORZyfKB0YepRnGStCVaDL-HNf5v1dp4EyEOKelWGUHdLibxGAhHO1qx3C8_R4yB7nd96tSqnhsL59pZ3TB61enRYfBoyDVipmZqHdmrPjA4YQrW7D1uTXwmMHtHu1EgN70KKvv6NqXW4cz3XELxg2NR1z4X1GGK29FywN7W_EYu62DZ1Xd9VjRn6h_3NaKdX6HE-vKEzWooM9EJ1GQ9JJreq3B4Aqad1m89xOVTZy11K-KMrOcGgIt82x-qVeepXHOTEtdT69bSOaWW-JxizKzoh3P9EMnVmUfHQKlqp1NCHKDtmiNWd6VwGC2t3h_ZM5c64XGjO3KayTMsCyhpxsEBupKco3HHtRJWvDKA2v2akPPgL25LpFNYG0nypHECsxJOpwdEE9QDq48n55ebRPP5d9-5sn3AXgzAJ1fgyAOS6LDD_s2gjZdiSYGK_ZtEx8kpvRGAAMfM3i_M6olwl8hmIQUEEfDlBXhByvUKR9-dKtYxO0qPX-R6v4Qoy0rya7USzQN00lbUZ7An73uROS1NABiw6aYR_3mskO-kYu5sOUi0wP2cjPbuoEv0o_C7Cgt6ISp5Aij05_ev-BR3syge048dECr_gWfqWmA7G8RbsP2Gtiv9-Q4_YDppu93qX1-qO75wvmyMhcgw5wHNC1LlouDFj5VBYCgctHYMCMGK7ihtgmFd1mlhYCNS2hm_vGOXkUFAudra0ksEEvet9EOmguM7dCR3-1yrfwuUicrpjNrsmRrZ_lVKCN_eVnmcIvZ5pQ-ztmEoSD8AaEL8DiVRyr16pJhPAokbWRN5v6HK3VVeAIKiQIQyWyJ1yieiJN0d8lYBQiinPGRTlqd0giQNndITUuetgOHedLlFHtx7Y_o_FugjoDWsM39mrMwvmdumszlBEDFWcYnOM6Xxb2Hjk-UFJmkFjQIM39TlDxc9EUE_P42KJZTX8yoPM0PvbMAlFblrRiTb4vPNKtzJwh223ApTfKClBWkDJ3kyFuzExpwgKVLLjsEfI-IP4iWir14nr-OMtZRGfcsQFMzveO09NK2C-mpBKYNj1b5w3FzU07RV6gRcSC77O6p2RCyj8FQ_GLd0IlYZGM_-p2w0q6uddRcOnx7cob4p8KEUQk-CTVdDNZkIaWMN7r5aZe3bZnKxTlplpa_zzgiTgWAk52-3S2WzqwypQ7isXY00SH0W0un1OzvOmeM83uyZr7zhkL74fG3fuFq52Fe83k0iC86_XfQkrX9HNZ_JMzP9l8jpoFrvmPHH_6ujYWUsPhAyQUbh7QdUNK7YCCrJ6lmsr5EeYGekimzf_V0SBcw1HrgGG4OfS_Cr6titnafyUl9cNm-wjZ2dfec5twzJHfi5-vzvFmB2bh-anoecL2xMiXtkGmHLbwANROIJ3F7vzwcdIxxryXdgQp_GTHRTl20hW01J9mP8YTN4R1B-lQPnz_i3qhtVCJdaPv_kRguaV5V9KiFGM_iib2ilbIJekvqwrBhlz4JY8_gYvPft0461uwob9kS86pGxmSR4xx4O_q43KeNqEaafR0oIw5vz6ncuIXbeNFFj6uh_bC4Dx_mlXkGwDOvs0wgVkJCiwxjB4_XaurFJF74v6PW-T9TL7M73v1ueZr3KF_FDBvI55doaIFCKrA5SyzL7ZjVHc7sOfpbb_vULmkyJ51DvIHvWHTuGqb_g-Awav-W1kGebvB0KgNcsKWaKnt17PIAntnxHSkjtyekobFZNHBCRNd5WmIuVZSRgi6rB0NV2UjyAu0Fdtr2qw4dfJIL5bLn-bdVMEk9Nfwcnf3QYFBDgvAjAyLl3zNkPtPV4X5VIFkD_yrlFlkNNXOvUU86j2sbtTzbs_C0_6_CblQI20UgBguHUZbzBh1p5zW-jPui03fCOCs1qdin_BBwV-Qrbn2xIrz5WU8nynhXZjkdl3esiuGTRIlUYshS25PKofqMPVfriFrBKTncHKI5gCGjgloPaSqinqz82998B3282iDunZV_rpJ2aBAyj6NZ-ZO60Wj915jxqTlmdgb1F00Z1sgsSq_iL0NvxHpqLgmuBezaMv8NmhGnRvMR_-ixT30CA4D04JkS4zt4WxLHSUeHiUMm3rZLL0esInQlMz1IEOwBNCJ0_hIWJChr5sJ7CVDekzzUiCSV3jM3Az3RqFETpC-2VHlnRzWXQrqJnpJGga2QvR8fl2H8acpKSSwWyIOTGV2yf9qJfSeo8J7Gff_V2ZVsxBkopLw9tMwDIwsjdjnf23zirDSpnQY-P7U8KR-b4NKhhJJM-yEXdxTbSwThMCJUiyNJrSFHtWHEWND8Qd0ca59-QIfowGJrnvitGTX0Lijn0znQJRzG4I_8VRdmp9GLs6_wGyjFEefuRixyzKUuyoanoOQ5e2_I-ampMlBKad8IWgPy1KoY8k-wIQYt1EGwiC2kvMme7nXqr"
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.6-flash",
+  "response_id": "NYl-aoiiFvWl1e8PifLoyAs",
+  "usage_metadata": {
+    "candidates_token_count": 5205,
+    "prompt_token_count": 126139,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 24527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 101612
+      }
+    ],
+    "thoughts_token_count": 3985,
+    "total_token_count": 135329
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "schema_version": "1.0",
+    "claims": [
+      {
+        "claim_id": "claim_001",
+        "section": "company.overview",
+        "order": 1,
+        "headline_ja": "商業銀行業務を中心に幅広い金融サービスを提供する三大邦行グループの一角",
+        "body_ja": "株式会社三井住友フィナンシャルグループは、中核となる三井住友銀行をはじめ、SMBC日興証券、三井住友カード、SMBCコンシューマーファイナンスなどを配下に置く総合金融グループである。ホールセール、リテール、グローバル、市場の主要4事業部門を通じて、国内外の法人および個人顧客に対し預貸金業務、決済、有価証券売買・引き受け、資産運用、リース等の複合的な金融サービスを提供し、預貸金利ざや（資金利益）や役務取引等利益（手数料収入）を中心に収益を得るビジネスモデルを構築している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_002",
+        "section": "latest.key_takeaway",
+        "order": 1,
+        "headline_ja": "2027年3月期第1四半期は連結経常利益6,931億円（前年同期比43.4%増）と大幅増益を達成",
+        "body_ja": "当第1四半期の連結業績は、経常収益が2兆8,504億円（前年同期比16.6%増）、経常利益が6,931億円（同43.4%増）、親会社株主に帰属する四半期純利益が5,013億円（同33.0%増）となった。国内における金利水準の上昇に伴う預貸金収益の好調や市場事業部門の業績改善が大幅増益に大きく寄与した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_003",
+        "section": "latest.key_takeaway",
+        "order": 2,
+        "headline_ja": "連結貸出金残高は119.8兆円へ拡大し自己資本比率4.9%と財務基盤を維持",
+        "body_ja": "2027年3月期第1四半期末の連結総資産は327.5兆円（前年度末比約1.0兆円減）となった一方、貸出金残高は119兆7,582億円（同2兆1,290億円増）、預金残高は186兆7,593億円（同1兆8,508億円増）へと着実に拡大した。純資産は16.2兆円（同3,075億円増）、自己資本比率は4.9%を確保し、貸出資産の成長と十分な自己資本水準を両立している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_004",
+        "section": "latest.key_takeaway",
+        "order": 3,
+        "headline_ja": "通期純利益予想1兆7,000億円（前期比7.4%増）および年間配当予想（分割考慮後90円）を据え置き",
+        "body_ja": "2027年3月期通期の親会社株主に帰属する当期純利益予想は1兆7,000億円（前期比7.4%増）を維持した。第1四半期時点で通期予想に対する進捗率は29.5%に達している。年間配当予想についても、2026年10月1日付で予定されている1:2の株式分割考慮後で年間90円（中間45円・期末45円、分割前換算180円）の計画を変更していない。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_005",
+        "section": "latest.key_takeaway",
+        "order": 4,
+        "headline_ja": "海外景気動向や金利変動、与信費用管理を巡る不確実性への警戒姿勢を維持",
+        "body_ja": "第1四半期業績は極めて堅調に推移したものの、海外における金利動向や地政学リスク、世界的な景気減速懸念に伴う与信関係費用の上振れリスク、さらには保有有価証券の評価損益変動リスクなど、外部環境の急速な変化に対する慎重なリスク管理姿勢が求められている。",
+        "statement_type": "risk",
+        "is_inference": true,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_006",
+        "section": "latest.business_driver",
+        "order": 1,
+        "headline_ja": "「国内預貸金・金利｜追い風」国内金利の上昇に伴う資金利益の拡大がホールセールおよびリテールを牽引",
+        "body_ja": "当第1四半期の報告セグメント別業務純益において、ホールセール事業部門は2,715億円（前年同期2,193億円）、リテール事業部門は1,209億円（同745億円）へ増加した。日本銀行のイールドカーブコントロール修正や政策金利引き上げを背景に、国内預貸金利ざやが拡大したことが主因である。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_007",
+        "section": "latest.business_driver",
+        "order": 2,
+        "headline_ja": "「市場事業・有価証券運用｜追い風」市場事業部門の業務純益が1,789億円（前年同期比55.7%増）へ急回復",
+        "body_ja": "当第1四半期の市場事業部門の連結業務純益は1,789億円（前年同期は1,149億円）へと大きく伸長した。金利および為替市場のボラティリティ捉えた機動的なポートフォリオ運営やセールス＆トレーディング業務の好調が寄与した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_008",
+        "section": "latest.business_driver",
+        "order": 3,
+        "headline_ja": "「海外・グローバル事業｜逆風・影響混在」グローバル事業部門の業務純益は1,512億円（前年同期比18.1%減）と一服",
+        "body_ja": "当第1四半期のグローバル事業部門の連結業務純益は1,512億円と前年同期の1,847億円から減少した。海外での資金調達コストの高止まりや案件組成タイミングの偏り、ドル建て経費の増加などが響き、前年同期比で増益を維持した国内部門とは対照的な推移となった。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_009",
+        "section": "latest.outlook",
+        "order": 1,
+        "headline_ja": "通期純利益1兆7,000億円達成に向け進捗率29.5%と順調な好スタートを切る",
+        "body_ja": "2027年3月期第1四半期の親会社株主に帰属する四半期純利益（5,013億円）は、通期計画1兆7,000億円に対して29.5%の進捗となった。国内金利の上昇効果が通期を通じて発現する期待がある一方、海外与信費用や市場変動のリスクを勘案し、会社側は期首の業績予想および配当予想を据え置いている。",
+        "statement_type": "forecast",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_010",
+        "section": "latest.risk",
+        "order": 1,
+        "headline_ja": "海外経済の不透明感増大および中東・ウクライナ情勢等に伴う与信関係費用の不確実性",
+        "body_ja": "過年度において、中東情勢や米国の関税政策等に対応したフォワードルッキング引当を計上してきた経緯があり、2026年3月期通期でも与信費用は3,884億円を計上した。今後の世界的な高金利の長期化や地政学リスクの悪化次第では、海外法人向け貸出を中心にクレジットコストが想定を超えて増大するリスクが存在する。",
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_011",
+        "section": "latest.risk",
+        "order": 2,
+        "headline_ja": "内外金利の上昇局面における保有債券等有価証券の評価損拡大リスク",
+        "body_ja": "2026年6月末時点の連結有価証券評価損益はプラス3兆1,748億円を維持しているものの、債券勘定全体では5,876億円の評価損（うち外国債券評価損3,436億円）を抱えている。内外の長期金利が想定を超えて急上昇した場合、保有債券の評価損が拡大し、自己資本や包括利益を圧迫するリスクがある。",
+        "statement_type": "risk",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_012",
+        "section": "latest.context",
+        "order": 1,
+        "headline_ja": "国内金利正常化の好影響を本格享受する局面と海外リスクコントロールの重要性",
+        "body_ja": "当社グループの現在地は、長年続いたマイナス金利環境からの脱却に伴い、国内預貸金利ざやが拡大し最高益水準を更新する強い上昇サイクルの中にある。当第1四半期でも国内ホールセール・リテール事業が主導して大幅増益を達成した。\n\n一方で、海外グローバル事業の収益伸び悩みや、不透明な世界情勢下での予防的与信費用の積み増しなど、リスク管理の重要性は増している。投資家は、国内金利上昇による資金利益の上振れ幅と、海外クレジットコストや市場ボラティリティによる下押し圧との均衡点を注視する必要がある。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_013",
+        "section": "trend.perspective",
+        "order": 1,
+        "headline_ja": "環境変化への適応とバランスシート拡大を通じた最高益更新の10年軌跡",
+        "body_ja": "過去10年間の業績推移を見ると、初期（FY2017-2020）は日銀のマイナス金利導入に伴う国内利ざや縮小やのれん減損（SMBC信託等）、コロナ禍の与信費用増加が重石となり経常利益は7,000億〜1.1兆円程度で停滞していた。中期（FY2021-2023）にかけては、海外ビジネスの拡大や三井住友カード・SMBC日興証券の業績回復、グループ再編により連結業務純益が1.5兆円規模へと回復。直近（FY2024-2026）には、国内金利の復調と法人向け手数料収益の伸び、貸出残高の累積的な拡大（80兆円超から117兆円超へ）が相まって経常利益は2.3兆円超へと飛躍的に拡大した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_014",
+        "section": "trend.consistent",
+        "order": 1,
+        "headline_ja": "グループ一体経営による非資金利益（役務取引等利益）の定着と拡大",
+        "body_ja": "10年間を通じて一貫している強みは、銀行・証券・カード・消費金融を包摂する複合的金融グループとしての顧客基盤と手数料創出力である。リテール部門での資産運用・決済ファイナンスや、ホールセール部門でのソリューション提案により、役務取引等利益はFY2017の1.24兆円規模からFY2026には2.11兆円へと堅調に拡大し、金利環境に依存しない収益基盤としてグループを支え続けている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_015",
+        "section": "trend.change",
+        "order": 1,
+        "headline_ja": "超低金利・マイナス金利による利ざや圧迫から国内資金利益重視の成長構造への転換",
+        "body_ja": "初期（FY2017）の連結貸出金残高は80.2兆円であり、国内利ざや縮小を海外貸出や市場営業で補う局面が長らく続いた。しかし、継続的なオーガニック投資により貸出残高をFY2026末の117.6兆円（FY2027 Q1末には119.8兆円）まで積み上げた結果、国内金利の上昇局面において資金利益の爆発的な増大をもたらす構造へ変化した。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_016",
+        "section": "trend.capital_allocation",
+        "order": 1,
+        "headline_ja": "コア金融資産への優先配分と累進的配当・自社株買いを組み合わせた積極的資本還元",
+        "body_ja": "資本配分の優先順位として、連結貸出金および営業運用資産の拡大（約39.5兆円の貸出増）へ資本を優先投入する一方、株主還元方針を強化してきた。年間配当は1株当たり150円（FY2017）から分割前換算で366円（FY2025）、471円相当（FY2026：157円×3）へと増配を継続。さらに700億円（FY2018）、1,000億円（FY2019/2024/2025）、1,800億円（FY2026）の上限で機動的な自己株式取得・消却を実行し、資本効率の向上を図ってきた。",
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_017",
+        "section": "trend.capital_value_creation",
+        "order": 1,
+        "headline_ja": "概ね創出した：拡大した貸出資産と決済・手数料ビジネスへの資本蓄積がROE 10%台への浮上を結実",
+        "body_ja": "過去10年間で追加投入された資本の大部分は、国内外の貸出金残高の積み上げ（80.2兆円から119.8兆円へ拡大）および三井住友カードや海外事業子会社（Fullerton India等）の業容拡大に向かった。低金利環境下にあった初期〜中期は資産増加に対して利益成長が緩やかであり、のれん減損リスクも顕在化したが、直近では金利正常化と法人・決済手数料の伸長が重なり、連結業務純益が2.3兆円規模へと拡大。ROEはFY2021の4.6%からFY2026には10.4%に上昇しており、蓄積された営業資産が高いリターンを生み出す構造が証明された。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_018",
+        "section": "trend.implication",
+        "order": 1,
+        "headline_ja": "国内利ざや拡大の持続性と海外与信費用の抑え込みが今後の評価を左右",
+        "body_ja": "投資家が今後検証すべき最重要の関係は、国内金利上昇による預貸金利益の上振れ効果が、海外経済減速に伴う予防的引当や地政学リスクによる与信費用の増加をどの程度上回り続けられるかである。また、拡大したバランスシートと自己資本比率の維持、さらには株式分割を経た継続的な増配・自社株買いの実行力が投資リターンのカギとなる。",
+        "statement_type": "inference",
+        "is_inference": true,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_019",
+        "section": "management.strategy",
+        "order": 1,
+        "headline_ja": "【戦略の一貫性：3】複合的金融サービス化と資本効率向上に注力した戦略的整合性",
+        "body_ja": "経営陣はマイナス金利下においても一貫して「非資金利益の強化」と「海外・決済ビジネスの拡充」を掲げ、銀行・証券・カード・コンシューマーファイナンスのグループシナジーを追求してきた。金利回復期においてこの戦略が結実し最高益を更新したことから、戦略的一貫性は高く評価できる。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_020",
+        "section": "management.execution",
+        "order": 1,
+        "headline_ja": "【施策の実行力：3】貸出資産のオーガニック成長と機動的な株主還元の完遂",
+        "body_ja": "貸出資産の着実な積み増し（10年間で約39.5兆円増）やFullerton India等の買収・連結化、三井住友カードの決済事業強化を実行した。また、累進的配当方針に基づく増配や複数回にわたる1,000億〜1,800億円規模の自己株式取得・消却、さらには株主層拡大に向けた株式分割を約束通り執行している。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": true
+      },
+      {
+        "claim_id": "claim_021",
+        "section": "management.forecast_discipline",
+        "order": 1,
+        "headline_ja": "【予想・目標達成の規律：2】当初予想に対する慎重なPostureと中期目標の着実な超過達成",
+        "body_ja": "本ドシエ内の決算短信比較サンプル数は不足（insufficient_evidence）しているものの、確認できる範囲では、期首予想を慎重に設定し期中に上方修正する傾向が見られる。FY2024以降は親会社株主純利益で1兆円超を安定して達成し、中期目標を前倒しで達成するなど、目標管理の規律は概ね維持されている。",
+        "statement_type": "mixed",
+        "is_inference": false,
+        "causal": false
+      },
+      {
+        "claim_id": "claim_022",
+        "section": "management.accountability",
+        "order": 1,
+        "headline_ja": "【説明責任と透明性：3】損失・減損の適時開示と予防的リスク管理の説明責任",
+        "body_ja": "過去におけるSMBC信託銀行プレスティア事業や三井住友DSアセットマネジメントののれん減損、米州銀行子会社の事業売却損失の計上について、決算短信上で要因を明確に開示している。また、コロナ禍や米関税政策・中東情勢を踏まえたフォワードルッキング引当の計上理由についても透明性の高い説明を行っている。",
+        "statement_type": "actual",
+        "is_inference": false,
+        "causal": false
+      }
+    ],
+    "management_consistency": {
+      "components": [
+        {
+          "dimension": "strategic_coherence",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "execution_follow_through",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        },
+        {
+          "dimension": "forecast_target_discipline",
+          "rating": 2,
+          "evidence_sufficiency": "insufficient"
+        },
+        {
+          "dimension": "accountability_transparency",
+          "rating": 3,
+          "evidence_sufficiency": "sufficient"
+        }
+      ]
+    },
+    "model_notes": []
+  }
+}

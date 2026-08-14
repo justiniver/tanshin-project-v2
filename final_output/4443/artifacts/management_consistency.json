@@ -1,102 +1,52 @@
 {
-  "methodology_version": "management-consistency-v5",
-  "score": 0.69,
-  "raw_score": 0.6875,
-  "evidence_confidence": 0.9396,
-  "confidence_label": "high",
-  "evidence_coverage": 0.9396,
-  "distinct_fiscal_years": [
-    2019,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026
-  ],
-  "evidence_count": 12,
-  "management_discussion_evidence_share": 0.8333,
+  "methodology_version": "management-consistency-v6",
+  "score": 0.88,
+  "raw_score": 0.875,
+  "evidence_confidence": null,
+  "confidence_label": null,
+  "evidence_coverage": null,
+  "distinct_fiscal_years": [],
+  "evidence_count": 0,
+  "management_discussion_evidence_share": null,
   "components": [
     {
       "dimension": "strategic_coherence",
-      "rating": 3,
+      "rating": 4,
       "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.75,
+      "normalized_score": 1.0,
       "weight": 0.25,
-      "rationale_ja": "「Sansan」での強固なストック基盤の構築から「Bill One」の立ち上げによるマルチプロダクト化、そして各事業のマネタイズ強化まで、一貫した戦略ロジックのもとで事業を展開している。中長期的な売上成長の最大化から構造的利益成長への移行方針も一貫している。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0001",
-        "06_2021_FY_tanshin.pdf:s0003",
-        "05_2022_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0003"
-      ],
-      "distinct_fiscal_years": [
-        2019,
-        2021,
-        2022,
-        2026
-      ],
-      "management_discussion_evidence_count": 4,
-      "covered_period_buckets": [
-        "early",
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 1.0
+      "rationale_ja": "名刺データベースを核とする「Sansan」の固い基盤の上に、請求書受領という隣接領域の「Bill One」を構築してシナジーを発揮させた戦略は極めて合理的である。また、初期の売上高成長最優先から中期目標として「売上高成長と利益成長の両立」および「調整後営業利益」を明確に提示し、実際に利益率を向上させていく戦略的展開は論理的整合性に優れている。（評価：4/4 - Highly Consistent）",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "execution_follow_through",
+      "rating": 4,
+      "evidence_sufficiency": "sufficient",
+      "normalized_score": 1.0,
+      "weight": 0.25,
+      "rationale_ja": "2021年5月期末に契約件数239件であった「Bill One」を、目標通り大幅に拡大させ2022年5月期末ARR14億円超、2026年5月期末売上高136億円超のNo.1プロダクトへと育て上げた実行力は極めて高い。さらに長期赤字であった「Eight事業」についても収益性重視方針への転換後、公約通り2024年5月期に通期黒字化を達成し黒字を維持している。（評価：4/4 - Highly Consistent）",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
+    },
+    {
+      "dimension": "forecast_target_discipline",
       "rating": 3,
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "新規プロダクト「Bill One」を数年でARR100億円超（2025年5月期）の第二の柱へ育成させたほか、赤字が続いていたEight事業を通期黒字化（2024年5月期）させ黒字を定着させるなど、公表した取り組みを有言実行している。",
-      "evidence_ids": [
-        "06_2021_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0001",
-        "03_2024_FY_tanshin.pdf:s0002",
-        "01_2026_FY_tanshin.pdf:s0006"
-      ],
-      "distinct_fiscal_years": [
-        2021,
-        2022,
-        2024,
-        2026
-      ],
-      "management_discussion_evidence_count": 4,
-      "covered_period_buckets": [
-        "early",
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 1.0
-    },
-    {
-      "dimension": "forecast_target_discipline",
-      "rating": 2,
-      "evidence_sufficiency": "sufficient",
-      "normalized_score": 0.5,
-      "weight": 0.25,
-      "rationale_ja": "通期売上高予想（レンジ形式）は概ね達成されてきたものの、先行投資のタイミングや投資有価証券関連の特別損失・引当金計上（2025年5月期のUnipos株関連で2,301百万円の引当金繰入等）により当期純利益が乱高下する期があり、段階損益のコントロールには一部ボラティリティが見られる。",
-      "evidence_ids": [
-        "08_2019_FY_tanshin.pdf:s0001",
-        "05_2022_FY_tanshin.pdf:s0004",
-        "02_2025_FY_tanshin.pdf:s0001",
-        "01_2026_FY_tanshin.pdf:s0001"
-      ],
-      "distinct_fiscal_years": [
-        2019,
-        2022,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 3,
-      "covered_period_buckets": [
-        "early",
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.975
+      "rationale_ja": "観測された2020年5月期通期予想（当初経常利益670百万円に対し実績435百万円、オフィス解約損等の影響により約35％下振れ）では未達がみられた。その後、不確実性を考慮してレンジ開示を採用し、2025年5月期および2026年5月期においては掲げた調整後営業利益目標や売上高目標をレンジ内で着実に達成している。中長期計画に対するコミットメントとレンジ運用の規律は概ね維持されている。（評価：3/4 - Generally Consistent）",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     },
     {
       "dimension": "accountability_transparency",
@@ -104,24 +54,13 @@
       "evidence_sufficiency": "sufficient",
       "normalized_score": 0.75,
       "weight": 0.25,
-      "rationale_ja": "株式報酬費用の影響を除いた「調整後営業利益」への業績評価指標変更や、全社費用のセグメント配賦変更、MRR計算方法の見直し等の経緯をわかりやすく開示している。また、オフィス解約費用や特別損失が発生した際も要因を明確に説明している。",
-      "evidence_ids": [
-        "04_2023_FY_tanshin.pdf:s0001",
-        "02_2025_FY_tanshin.pdf:s0004",
-        "01_2026_FY_tanshin.pdf:s0003"
-      ],
-      "distinct_fiscal_years": [
-        2023,
-        2025,
-        2026
-      ],
-      "management_discussion_evidence_count": 2,
-      "covered_period_buckets": [
-        "middle",
-        "recent"
-      ],
-      "evidence_confidence": 0.7833
+      "rationale_ja": "2023年5月期からの「調整後営業利益」の導入に際し、信託型ストックオプション費用等の非恒常的・株価連動要因の影響を明確にし、過去数値も遡及修正して説明責任を果たした。また、Unipos社との提携解消・特別損失計上（2,301百万円）やログミー社の譲渡に関しても理由と財務的影響をタイムリーに開示しており、結果に対する透明性は十分に確保されている。（評価：3/4 - Generally Consistent）",
+      "evidence_ids": [],
+      "distinct_fiscal_years": [],
+      "management_discussion_evidence_count": 0,
+      "covered_period_buckets": [],
+      "evidence_confidence": 0.0
     }
   ],
-  "overall_rationale_ja": "当社は中長期的な売上成長の最大化を目指す基本方針を一貫して維持し、「Bill One」の垂直立ち上げやEight事業の黒字化など主要な戦略目標を着実に実行してきた。調整後営業利益等の管理指標の明確化や配賦・算出方法の変更開示など透明性も高い。一方、成長投資の集中的実施や持分法・投資有価証券関連の特損計上等により当期純利益のボラティリティが大きくなる局面があり、通期最終損益の安定性においては一部課題を残している。"
+  "overall_rationale_ja": "各項目の根拠は対応する経営一貫性評価の本文に記載。"
 }

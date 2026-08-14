@@ -1,23 +1,1347 @@
 <document_manifest>
 security_code: 3923
 latest_filename: 01_2026_FY_rakus_tanshin.pdf
-selected_sources:
-- 01_2026_FY_rakus_tanshin.pdf: FY label 2026, period FY, pages 18, roles latest, trend_year_end
-- 05_2025_FY_rakus_tanshin.pdf: FY label 2025, period FY, pages 18, roles trend_year_end
-- 09_2024_FY_rakus_tanshin.pdf: FY label 2024, period FY, pages 18, roles trend_year_end
-- 13_2023_FY_rakus_tanshin.pdf: FY label 2023, period FY, pages 16, roles trend_year_end
-- 17_2022_FY_rakus_tanshin.pdf: FY label 2022, period FY, pages 16, roles trend_year_end
-- 21_2021_FY_rakus_tanshin.pdf: FY label 2021, period FY, pages 16, roles trend_year_end
-- 25_2020_FY_rakus_tanshin.pdf: FY label 2020, period FY, pages 17, roles trend_year_end
-- 29_2019_FY_rakus_tanshin.pdf: FY label 2019, period FY, pages 17, roles trend_year_end
-- 33_2018_FY_rakus_tanshin.pdf: FY label 2018, period FY, pages 18, roles trend_year_end
-- 37_2017_FY_rakus_tanshin.pdf: FY label 2017, period FY, pages 17, roles trend_year_end
-- 41_2016_Q4_FY_rakus_tanshin.pdf: FY label 2016, period FY, pages 18, roles trend_year_end
 trend_period_buckets:
 - early: 41_2016_Q4_FY_rakus_tanshin.pdf (FY2016), 37_2017_FY_rakus_tanshin.pdf (FY2017), 33_2018_FY_rakus_tanshin.pdf (FY2018), 29_2019_FY_rakus_tanshin.pdf (FY2019)
 - middle: 25_2020_FY_rakus_tanshin.pdf (FY2020), 21_2021_FY_rakus_tanshin.pdf (FY2021), 17_2022_FY_rakus_tanshin.pdf (FY2022), 13_2023_FY_rakus_tanshin.pdf (FY2023)
 - recent: 09_2024_FY_rakus_tanshin.pdf (FY2024), 05_2025_FY_rakus_tanshin.pdf (FY2025), 01_2026_FY_rakus_tanshin.pdf (FY2026)
 </document_manifest>
+
+<research_metrics>
+{
+  "filing_coverage": {
+    "selected_filings": 11,
+    "memo_items": 40,
+    "category_counts": {
+      "business_overview": 1,
+      "capital_allocation": 5,
+      "forward_looking_information": 11,
+      "material_footnote": 2,
+      "operating_results": 11,
+      "segments_and_business_drivers": 4,
+      "strategy_and_execution": 6
+    },
+    "per_filing": [
+      {
+        "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2016,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "37_2017_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2017,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2018,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "29_2019_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2019,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "25_2020_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2020,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "21_2021_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2021,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "17_2022_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2022,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "13_2023_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2023,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "09_2024_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2024,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "05_2025_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2025,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+        "fiscal_year": 2026,
+        "period": "FY",
+        "is_latest": true,
+        "memo_items": 7,
+        "category_counts": {
+          "business_overview": 1,
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      }
+    ]
+  },
+  "financial_observations": {
+    "annual_anchor_count": 11,
+    "annual_anchor_value_count": 17,
+    "by_metric": {
+      "ordinary_profit": 11
+    },
+    "series": [
+      {
+        "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2016,
+        "target_period": "FY",
+        "value_surface_ja": "776百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "value_surface_ja": "816百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "37_2017_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2017,
+        "target_period": "FY",
+        "value_surface_ja": "972百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "37_2017_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "1,176百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2018,
+        "target_period": "FY",
+        "value_surface_ja": "1,247百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "1,376百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "29_2019_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "1,474百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "25_2020_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "1,177百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "21_2021_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "3,881百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "17_2022_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "1,595百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "13_2023_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "1,677百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "09_2024_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "5,610百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "09_2024_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "9,001百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "05_2025_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "10,218百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "05_2025_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "15,000百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "17,440百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2027,
+        "target_period": "FY",
+        "value_surface_ja": "20,500百万円",
+        "pdf_page": 2
+      }
+    ],
+    "forecast_accuracy": {
+      "original_forecasts_observed": 6,
+      "original_forecasts_matched_to_actuals": 5,
+      "observable_comparisons": 5,
+      "original_result_counts": {
+        "actual_above_forecast": 5
+      },
+      "posture_signal": "conservative_tendency",
+      "comparisons": [
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2017,
+          "forecast_surface_ja": "816百万円",
+          "actual_surface_ja": "972百万円",
+          "percentage_error": 19.1176,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "41_2016_Q4_FY_rakus_tanshin.pdf",
+            "37_2017_FY_rakus_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2018,
+          "forecast_surface_ja": "1,176百万円",
+          "actual_surface_ja": "1,247百万円",
+          "percentage_error": 6.0374,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "37_2017_FY_rakus_tanshin.pdf",
+            "33_2018_FY_rakus_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2019,
+          "forecast_surface_ja": "1,376百万円",
+          "actual_surface_ja": "1,474百万円",
+          "percentage_error": 7.1221,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "33_2018_FY_rakus_tanshin.pdf",
+            "29_2019_FY_rakus_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2025,
+          "forecast_surface_ja": "9,001百万円",
+          "actual_surface_ja": "10,218百万円",
+          "percentage_error": 13.5207,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "09_2024_FY_rakus_tanshin.pdf",
+            "05_2025_FY_rakus_tanshin.pdf"
+          ]
+        },
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2026,
+          "forecast_surface_ja": "15,000百万円",
+          "actual_surface_ja": "17,440百万円",
+          "percentage_error": 16.2667,
+          "result": "actual_above_forecast",
+          "source_filenames": [
+            "05_2025_FY_rakus_tanshin.pdf",
+            "01_2026_FY_rakus_tanshin.pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "capital_allocation": {
+    "track_records": 4,
+    "tracks_with_subsequent_returns": 3,
+    "tracks_with_direct_return_evidence": 2,
+    "reported_return_on_capital_or_assets_records": 0,
+    "tracks_with_reported_return_on_capital_or_assets": 0,
+    "tracks_with_capital_base_and_direct_return_evidence": 1,
+    "tracks_with_only_management_or_aggregate_returns": 1,
+    "capital_input_records": 6,
+    "immediate_effect_records": 3,
+    "subsequent_return_records": 4,
+    "by_capital_input_type": {
+      "acquisition_or_investment_spend": 1,
+      "people_marketing_or_development": 3,
+      "segment_or_operating_assets": 1,
+      "shareholder_distribution": 1
+    },
+    "by_immediate_effect_type": {
+      "disposal_gain_or_loss": 1,
+      "distribution_execution": 1,
+      "goodwill_or_negative_goodwill": 1
+    },
+    "by_return_type": {
+      "margin": 1,
+      "profit_or_loss": 3
+    },
+    "by_track_type": {
+      "acquisition": 1,
+      "divestiture": 1,
+      "organic_accumulation": 1,
+      "shareholder_return": 1
+    },
+    "by_record_maturity": {
+      "mature_record": 4
+    },
+    "by_return_attribution": {
+      "direct": 3,
+      "management_linked": 1
+    },
+    "by_return_signal": {
+      "positive": 4
+    },
+    "records": [
+      {
+        "track_label_ja": "クラウド事業（オーガニック成長投資・広告宣伝・開発）",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "クラウド事業セグメント（楽楽精算・楽楽明細等）",
+        "start_fiscal_year": 2016,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 3,
+        "capital_inputs_with_relative_priority": 3,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 0,
+        "subsequent_return_count": 2,
+        "direct_return_count": 2,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": true,
+        "has_capital_base_and_direct_return_evidence": true,
+        "return_attribution_counts": {
+          "direct": 2
+        },
+        "has_adverse_evidence": true,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "IT人材事業（ラクスパートナーズ）の育成と事業譲渡（売却）",
+        "track_type": "divestiture",
+        "capital_destination_ja": "IT人材事業（株式会社ラクスパートナーズ）",
+        "start_fiscal_year": 2016,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 1,
+        "capital_inputs_with_relative_priority": 1,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 1,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "direct": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "M&Aによるメール配信事業補完（ブレインメール買収）",
+        "track_type": "acquisition",
+        "capital_destination_ja": "ブレインメール株式会社（現：株式会社ラクスライトクラウド）",
+        "start_fiscal_year": 2018,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 1,
+        "capital_inputs_with_relative_priority": 1,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 1,
+        "direct_return_count": 0,
+        "management_linked_return_count": 1,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": false,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": true,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "management_linked": 1
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "株主還元（自己株式取得・消却及び連続増配）",
+        "track_type": "shareholder_return",
+        "capital_destination_ja": "株主還元（自己株式買付・消却・配当）",
+        "start_fiscal_year": 2016,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 1,
+        "capital_inputs_with_relative_priority": 1,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 0,
+        "direct_return_count": 0,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": false,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {},
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      }
+    ],
+    "interpretation_guardrail": "These are allocation-track extraction records, not value-creation verdicts. Immediate transaction or accounting effects are not subsequent returns. Management-linked returns preserve management's attribution but do not independently verify it. Aggregate-only or unattributed returns, group-wide ROE/EPS/BVPS, and the execution of a shareholder distribution cannot establish that a specific destination created value. Prefer disclosed ROIC/ROA or compatible destination-level capital and profit/cash observations; never manufacture an undisclosed ratio."
+  },
+  "coverage": {
+    "research_notes": []
+  },
+  "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
+  "diagnostics": {
+    "validation_passed": false,
+    "validation_warning": "41_2016_Q4_FY_rakus_tanshin.pdf does not cover core category financial_condition. 37_2017_FY_rakus_tanshin.pdf does not cover core category financial_condition. 33_2018_FY_rakus_tanshin.pdf does not cover core category financial_condition. 29_2019_FY_rakus_tanshin.pdf does not cover core category financial_condition. 25_2020_FY_rakus_tanshin.pdf does not cover core category financial_condition. 21_2021_FY_rakus_tanshin.pdf does not cover core category financial_condition. 17_2022_FY_rakus_tanshin.pdf does not cover core category financial_condition. 13_2023_FY_rakus_tanshin.pdf does not cover core category financial_condition. 09_2024_FY_rakus_tanshin.pdf does not cover core category financial_condition. 05_2025_FY_rakus_tanshin.pdf does not cover core category financial_condition. 01_2026_FY_rakus_tanshin.pdf does not cover core category financial_condition.",
+    "metrics_complete": true,
+    "metrics_warning": null,
+    "non_gating": true
+  }
+}
+</research_metrics>
+
+<research_map>
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "3923",
+    "company_name_ja": "株式会社ラクス",
+    "company_name_en": "RAKUS Co., Ltd.",
+    "latest_filename": "01_2026_FY_rakus_tanshin.pdf",
+    "latest_period_ja": "2026年3月期 通期",
+    "latest_period_en": "FY2026 Full Year"
+  },
+  "filings": [
+    {
+      "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2016,
+      "period": "FY",
+      "period_label_ja": "2016年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2016年3月期の業績は売上高4,077,192千円（前年比19.4％増）、営業利益784,506千円（同76.3％増）、経常利益776,788千円（同73.4％増）、親会社株主に帰属する当期純利益526,211千円（同39.0％増）。「楽楽精算」への積極的投資や「メールディーラー」の拡張が寄与した。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "クラウド事業は売上高2,715,738千円（前年比21.4％増）、セグメント利益605,219千円（同80.2％増）。「楽楽精算」のTVCMやマーケティング強化を実施。IT人材事業は売上高1,361,453千円（同15.8％増）、セグメント利益179,286千円（同64.4％増）。稼働エンジニア数の増加と単価上昇が寄与。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 4,
+          "statement_type": "forecast",
+          "summary_ja": "2017年3月期の連結業績予想は売上高4,782百万円（前年比17.3％増）、営業利益812百万円（同3.5％増）、経常利益816百万円（同5.0％増）、親会社株主に帰属する当期純利益573百万円（同8.9％増）。「楽楽精算」のTVCM等で広告宣伝費が増加する見込み。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 1,
+          "statement_type": "actual",
+          "summary_ja": "新規上場に伴う増資等により、純資産が2,247百万円に増加（前期末1,307百万円）。期末現金及び現金同等物は2,047百万円。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2016,
+          "target_period": "FY",
+          "value_surface_ja": "776百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2017,
+          "target_period": "FY",
+          "value_surface_ja": "816百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "37_2017_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2017,
+      "period": "FY",
+      "period_label_ja": "2017年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2017年3月期の連結業績は売上高4,932,368千円（前年比21.0％増）、営業利益975,423千円（同24.3％増）、経常利益972,990千円（同25.3％増）、親会社株主に帰属する当期純利益731,585千円（同39.0％増）。「楽楽精算」のTVCM等の積極投資が売上・利益拡大を牽引した。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "クラウド事業は売上高3,491,002千円（前年比28.5％増）、セグメント利益834,694千円（同37.9％増）。IT人材事業は売上高1,441,366千円（同5.9％増）、セグメント利益140,728千円（同21.5％減）でエンジニア待遇改善による原価率上昇が響いた。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 4,
+          "statement_type": "forecast",
+          "summary_ja": "2018年3月期の通期業績予想は売上高6,050百万円（前年比22.7％増）、営業利益1,172百万円（同20.2％増）、経常利益1,176百万円（同20.9％増）、親会社株主に帰属する当期純利益837百万円（同14.4％増）。本社移転に伴う賃料増加や開発・営業への積極投資を織り込む。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2017,
+          "target_period": "FY",
+          "value_surface_ja": "972百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2018,
+          "target_period": "FY",
+          "value_surface_ja": "1,176百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2018,
+      "period": "FY",
+      "period_label_ja": "2018年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2018年3月期の業績は売上高6,408,873千円（前年比29.9％増）、営業利益1,241,074千円（同27.2％増）、経常利益1,247,916千円（同28.3％増）、親会社株主に帰属する当期純利益874,981千円（同19.6％増）。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 16,
+          "statement_type": "actual",
+          "summary_ja": "2018年2月1日にブレインメール株式会社（現：株式会社ラクスライトクラウド）の全株式を現金1,509,658千円で取得し完全子会社化。のれん1,310,367千円（8年均等償却）、顧客関連資産368,000千円（5年償却）を認識。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 4,
+          "statement_type": "forecast",
+          "summary_ja": "2019年3月期の通期予想は売上高8,430百万円（前年比31.5％増）、営業利益1,376百万円（同10.9％増）、経常利益1,376百万円（同10.3％増）。成長投資の更なる強化とM&Aに伴うのれん償却費の増加を見込む。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2018,
+          "target_period": "FY",
+          "value_surface_ja": "1,247百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2019,
+          "target_period": "FY",
+          "value_surface_ja": "1,376百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "29_2019_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2019,
+      "period": "FY",
+      "period_label_ja": "2019年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2018年3月期を起点とし2021年3月期までの3年間で売上高・各段階利益のCAGR 30％達成を目指す中期経営方針を推進。2019年3月期は初年度として積極的な成長投資を実施。"
+        },
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2019年3月期の業績は売上高8,743,332千円（前年比36.4％増）、営業利益1,468,708千円（同18.3％増）、経常利益1,474,484千円（同18.2％増）、親会社株主に帰属する当期純利益1,018,540千円（同16.4％増）。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 4,
+          "statement_type": "forecast",
+          "summary_ja": "2020年3月期はPDCA高速化のため四半期ごとの計画開示とし通期業績予想の開示を見送る。2020年3月期第1四半期の予想は売上高2,560百万円（前年同期比28.9％増）、営業利益470百万円（同1.3％増）。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2019,
+          "target_period": "FY",
+          "value_surface_ja": "1,474百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "25_2020_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2020,
+      "period": "FY",
+      "period_label_ja": "2020年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 17,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2020年3月期の連結業績は売上高11,608,041千円（前年比32.8％増）、営業利益1,174,468千円（同20.0％減）、経常利益1,177,445千円（同20.1％減）、親会社株主に帰属する当期純利益799,538千円（同21.5％減）。高い売上成長を優先しマーケティングや増員へ積極投資を行ったことで減益。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "クラウド事業は売上高8,952,138千円（前年比33.1％増）、セグメント利益898,255千円（同28.8％減）。IT人材事業は売上高2,655,903千円（同31.6％増）、セグメント利益276,213千円（同33.6％増）。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "risk",
+          "summary_ja": "2021年3月期の業績予想は新型コロナウイルス感染症の影響を合理的に算定することが困難であるため未定。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2020,
+          "target_period": "FY",
+          "value_surface_ja": "1,177百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "21_2021_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2021,
+      "period": "FY",
+      "period_label_ja": "2021年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 16,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2021年3月期の業績は売上高15,387,883千円（前年比32.6％増）、営業利益3,898,730千円（同232.0％増）、経常利益3,881,875千円（同229.7％増）、親会社株主に帰属する当期純利益2,936,554千円（同267.3％増）。バックオフィスデジタル化需要を取り込み大幅な増収増益を達成。中期目標（3年CAGR 30％以上）を達成。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 5,
+          "statement_type": "target",
+          "summary_ja": "2021年3月期を基準とし2026年3月期までの5ヵ年で売上高CAGR 25％～30％、2026年3月期の親会社株主に帰属する当期純利益100億円以上、純資産200億円以上を目指す新中期経営目標を策定。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "新中期目標達成に向け高速でPDCAを回すため業績予想は半期ごとの開示とする。2022年3月期第2四半期（累計）の予想は売上高9,384,000千円（前年同期比32.7％増）、営業利益446,000千円（同73.8％減）。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2021,
+          "target_period": "FY",
+          "value_surface_ja": "3,881百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "17_2022_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2022,
+      "period": "FY",
+      "period_label_ja": "2022年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 16,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2022年3月期の業績は売上高20,629百万円（前年比34.1％増）、営業利益1,578百万円（同59.5％減）、経常利益1,595百万円（同58.9％減）、親会社株主に帰属する当期純利益1,078百万円（同63.3％減）。「楽楽精算」「楽楽明細」中心のマーケティング投資強化により大幅増収も減益。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 5,
+          "statement_type": "target",
+          "summary_ja": "中期経営目標の売上高CAGR目標の下限を25％から26％に引き上げ（26％～30％へ変更）。2023年3月期が営業利益のボトムとなり、2024年3月期以降は最終年度に向けて増益となる見込みと説明。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2023年3月期第2四半期（累計）予想は売上高12,773百万円（前年同期比34.8％増）、営業利益492百万円（同44.6％減）。通期予想は適正な算定が困難として開示せず。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2022,
+          "target_period": "FY",
+          "value_surface_ja": "1,595百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "13_2023_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2023,
+      "period": "FY",
+      "period_label_ja": "2023年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 16,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2023年3月期の業績は売上高27,399百万円（前年比32.8％増）、営業利益1,656百万円（同4.9％増）、経常利益1,677百万円（同5.1％増）、親会社株主に帰属する当期純利益1,274百万円（同18.2％増）。広告宣伝費等の積極投下を継続しつつ増益に転じた。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 5,
+          "statement_type": "target",
+          "summary_ja": "中期経営目標の売上高CAGR下限目標をさらに27％へ引き上げ（27％～30％へ）。最終年度に向け投資効率化と毎期増益を実現する方針を示す。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2024年3月期第2四半期（累計）業績予想は売上高16,808百万円（前年同期比32.0％増）、営業利益989百万円（同45.9％増）、親会社株主に帰属する四半期純利益627百万円（同48.2％増）。通期予想は算定困難につき未開示。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2023,
+          "target_period": "FY",
+          "value_surface_ja": "1,677百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "09_2024_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2024,
+      "period": "FY",
+      "period_label_ja": "2024年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2024年3月期の業績は売上高38,408百万円（前年比40.2％増）、営業利益5,559百万円（同235.7％増）、経常利益5,610百万円（同234.5％増）、親会社株主に帰属する当期純利益4,185百万円（同228.4％増）。インボイス制度・電帳法需要の取り込みと投資効率向上が奏功。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 13,
+          "statement_type": "actual",
+          "summary_ja": "2023年7月1日にHOYA株式会社の持つクラウド勤怠管理・給与明細閲覧サービス事業を承継した株式会社ラクスHRテックの全株式を現金3,356百万円で取得。のれん1,523百万円（9年償却）および顧客関連資産2,176百万円（15年償却）を計上。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 5,
+          "statement_type": "target",
+          "summary_ja": "売上高CAGR目標を31～32％へ再引き上げ。最終年度の親会社株主に帰属する当期純利益100億円以上・純資産200億円以上の達成に向けて利益率向上に取り組む。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2025年3月期の連結業績予想は売上高48,300百万円（前年比25.8％増）、営業利益9,000百万円（同61.9％増）、経常利益9,001百万円（同60.4％増）、親会社株主に帰属する当期純利益6,900百万円（同64.8％増）。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2024,
+          "target_period": "FY",
+          "value_surface_ja": "5,610百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2025,
+          "target_period": "FY",
+          "value_surface_ja": "9,001百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "05_2025_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2025,
+      "period": "FY",
+      "period_label_ja": "2025年3月期 通期",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2025年3月期の業績は売上高48,904百万円（前年比27.3％増）、営業利益10,192百万円（同83.3％増）、経常利益10,218百万円（同82.1％増）、親会社株主に帰属する当期純利益8,003百万円（同91.2％増）。最適配分と営業プロセス見直しにより利益率が大幅に改善。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 14,
+          "statement_type": "actual",
+          "summary_ja": "2024年4月1日付で完全子会社である株式会社ラクスHRテックを吸収合併し、「楽楽勤怠」と事業統合・経営資源の最適化を実施。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 18,
+          "statement_type": "actual",
+          "summary_ja": "保有する株式会社カオナビの普通株式全株を公開買付に応募。2026年3月期第1四半期に投資有価証券売却益1,491百万円を特別利益として計上予定。これを原資に最大20億円（120万株）の自己株式取得・消却を実施することを決議。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2026年3月期の業績予想は売上高59,400百万円（前年比21.5％増）、営業利益15,000百万円（同47.2％増）、経常利益15,000百万円（同46.8％増）、親会社株主に帰属する当期純利益11,690百万円（同46.1％増）。中期目標の純利益100億円以上・純資産200億円以上を達成見込み。IT人材事業の事業譲渡の検討も開始。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2025,
+          "target_period": "FY",
+          "value_surface_ja": "10,218百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2026,
+          "target_period": "FY",
+          "value_surface_ja": "15,000百万円",
+          "pdf_page": 1
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+      "fiscal_year": 2026,
+      "period": "FY",
+      "period_label_ja": "2026年3月期 通期",
+      "is_latest": true,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "business_overview",
+          "pdf_page": 14,
+          "statement_type": "actual",
+          "summary_ja": "当社グループはクラウド事業（「楽楽精算」「楽楽明細」「楽楽販売」「楽楽勤怠」等）およびIT人材事業（ITエンジニア派遣）を展開。2026年4月1日のIT人材事業譲渡により、今後はクラウド事業へ経営資源を集中させる専業体制へ移行する。"
+        },
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2026年3月期の連結業績は売上高60,286百万円（前年比23.3％増）、営業利益17,345百万円（同70.2％増）、経常利益17,440百万円（同70.7％増）、親会社株主に帰属する当期純利益13,293百万円（同66.1％増）。2021年3月期を基準とした5ヵ年中期経営目標（売上高CAGR31～32％、純利益100億円以上、純資産200億円以上）を達成。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "クラウド事業は売上高51,770百万円（前年比23.7％増）、セグメント利益16,027百万円（同71.1％増）。「楽楽精算」の新規受注積み上げと価格改定、「楽楽明細」の拡大、広告宣伝費の最適化が寄与。IT人材事業は売上高8,516百万円（同20.9％増）、セグメント利益1,318百万円（同59.2％増）。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "当期において総額6,999百万円の自己株式取得を実施し消却完了。配当は1株当たり7.00円（配当性向19.0％、総還元性向71.3％）。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 18,
+          "statement_type": "actual",
+          "summary_ja": "2026年4月1日付でIT人材事業を手掛ける連結子会社・株式会社ラクスパートナーズの全株式を株式会社BREXA Technologyに譲渡。譲渡損益として関係会社株式売却益16,685百万円を2027年3月期第1四半期に計上予定。クラウド事業への集中とRule of 50達成を目指す戦略的一環。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 5,
+          "statement_type": "target",
+          "summary_ja": "2027年3月期～2029年3月期の3ヵ年中期経営計画を策定。クラウド事業への集中によりRule of 50達成（2028年3月期以降）、クラウド事業売上高オーガニックCAGR 15％以上、正社員1名当たり売上高3,000万円以上（2029年3月期）、一過性要因を除くROE 30％以上堅持、総還元性向20％以上および毎期増配を目標とする。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2027年3月期の業績予想は売上高59,700百万円（前年比1.0％減）、営業利益20,500百万円（同18.2％増）、経常利益20,500百万円（同17.5％増）、親会社株主に帰属する当期純利益25,200百万円（同89.6％増、事業譲渡益16,685百万円含む）。IT人材事業除外に伴うオーガニックなクラウド事業比較では売上高15.3％増、セグメント利益27.9％増を計画。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2026,
+          "target_period": "FY",
+          "value_surface_ja": "17,440百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2027,
+          "target_period": "FY",
+          "value_surface_ja": "20,500百万円",
+          "pdf_page": 2
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    }
+  ],
+  "capital_allocation_tracks": [
+    {
+      "track_label_ja": "クラウド事業（オーガニック成長投資・広告宣伝・開発）",
+      "track_type": "organic_accumulation",
+      "capital_destination_ja": "クラウド事業セグメント（楽楽精算・楽楽明細等）",
+      "start_fiscal_year": 2016,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "高収益な複数サービスが生み出すキャッシュを成長サービス（楽楽精算・楽楽明細等）に集中投下し、シェア拡大と売上高高成長・クオリティグロースを実現するため。",
+      "capital_inputs": [
+        {
+          "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2016,
+          "period_label_ja": "2016年3月期 通期",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "クラウド事業売上高 2,715百万円",
+          "input_ja": "楽楽精算を中心にTVCMやWeb広告などのマーケティング投資および人員増員を本格化。",
+          "relative_priority_ja": "優先投資対象"
+        },
+        {
+          "source_filename": "17_2022_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2022,
+          "period_label_ja": "2022年3月期 通期",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "クラウド事業売上高 16,716百万円",
+          "input_ja": "楽楽精算・楽楽明細を中心に大規模なマーケティング投資（TVCM等）を期初から集中的に実施。",
+          "relative_priority_ja": "最優先投資対象（一時的減益を許容）"
+        },
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "input_type": "segment_or_operating_assets",
+          "amount_or_scale_ja": "クラウド事業売上高 51,770百万円",
+          "input_ja": "広告宣伝費の最適化と価格改定を推進し、効率的な投資配分へシフト。",
+          "relative_priority_ja": "全社経営資源の集中対象"
+        }
+      ],
+      "immediate_effects": [],
+      "subsequent_returns": [
+        {
+          "source_filename": "21_2021_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2021,
+          "period_label_ja": "2021年3月期 通期",
+          "return_type": "profit_or_loss",
+          "return_ja": "クラウド事業セグメント利益 3,568百万円（前年同期比297.2％増）と投資回収が大きく進展。",
+          "attribution": "direct",
+          "signal": "positive"
+        },
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "return_type": "margin",
+          "return_ja": "クラウド事業セグメント利益 16,027百万円（前年同期比71.1％増）、セグメント利益率31.0％へ大幅向上。",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [
+        "2022年3月期～2023年3月期にかけてマーケティング投資先行により営業利益率が一時的に大幅低下。"
+      ],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "IT人材事業（ラクスパートナーズ）の育成と事業譲渡（売却）",
+      "track_type": "divestiture",
+      "capital_destination_ja": "IT人材事業（株式会社ラクスパートナーズ）",
+      "start_fiscal_year": 2016,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "クラウド事業とのシナジー希薄化に伴い、最適オーナーのもとでの成長追求と全社資源のクラウド事業集中（Rule of 50達成）を図るため全株式を譲渡。",
+      "capital_inputs": [
+        {
+          "source_filename": "41_2016_Q4_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2016,
+          "period_label_ja": "2016年3月期 通期",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "売上高 1,361百万円",
+          "input_ja": "エンジニア採用・育成および派遣営業体制の強化。",
+          "relative_priority_ja": "キャッシュカウ事業として維持"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "effect_type": "disposal_gain_or_loss",
+          "effect_ja": "2026年4月1日付で株式譲渡実施。2027年3月期第1四半期に関係会社株式売却益16,685百万円を計上予定（移転純資産1,124百万円）。外部売却対価を取得予定。"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "return_type": "profit_or_loss",
+          "return_ja": "譲渡直前年度（2026年3月期）のIT人材事業売上高 8,516百万円、セグメント利益 1,318百万円まで拡大し、最終的に巨額の事業売却益を創出。",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "M&Aによるメール配信事業補完（ブレインメール買収）",
+      "track_type": "acquisition",
+      "capital_destination_ja": "ブレインメール株式会社（現：株式会社ラクスライトクラウド）",
+      "start_fiscal_year": 2018,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "「配配メール」と補完関係にあるブレインメールを取得し、ノウハウ投入によりクラウドメール配信市場でのシェア拡大と収益性向上を図るため。",
+      "capital_inputs": [
+        {
+          "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2018,
+          "period_label_ja": "2018年3月期 通期",
+          "input_type": "acquisition_or_investment_spend",
+          "amount_or_scale_ja": "取得対価 1,509百万円（現金）",
+          "input_ja": "全株式を取得し完全子会社化。",
+          "relative_priority_ja": "選択的M&A"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "33_2018_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2018,
+          "period_label_ja": "2018年3月期 通期",
+          "effect_type": "goodwill_or_negative_goodwill",
+          "effect_ja": "のれん 1,310百万円（8年均等償却）、顧客関連資産 368百万円を計上。"
+        }
+      ],
+      "subsequent_returns": [
+        {
+          "source_filename": "29_2019_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2019,
+          "period_label_ja": "2019年3月期 通期",
+          "return_type": "profit_or_loss",
+          "return_ja": "メール配信サービスが通期寄与し、クラウド事業売上高成長（前年比41.7％増）に大きく貢献。",
+          "attribution": "management_linked",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "株主還元（自己株式取得・消却及び連続増配）",
+      "track_type": "shareholder_return",
+      "capital_destination_ja": "株主還元（自己株式買付・消却・配当）",
+      "start_fiscal_year": 2016,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "業績拡大に応じた利益配分（連結配当性向目安10％以上から20％以上へ引き上げ）および資本効率改善・株主還元強化（一過性利益等を原資とする自社株買い）のため。",
+      "capital_inputs": [
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "自己株式取得総額 6,999百万円、配当金総額 2,478百万円",
+          "input_ja": "カオナビ株式売却対価等を原資に約70億円の自社株買い・全数消却を実施し、1株当たり7.00円の配当を実施。",
+          "relative_priority_ja": "機動的資本配分方針"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "01_2026_FY_rakus_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年3月期 通期",
+          "effect_type": "distribution_execution",
+          "effect_ja": "取得した自己株式を全額消却。総還元性向71.3％を達成。"
+        }
+      ],
+      "subsequent_returns": [],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    }
+  ],
+  "research_notes": []
+}
+</research_map>
 
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
@@ -51,6 +1375,9 @@ placeholder relationships, or wording. Do not return Markdown.
   既存中核、主力候補、育成対象のどれだったかを確認して役割の変化を示す。
 - 現在地は「改善したから転換した」と断定せず、「直近の改善は何の証拠で、
   何の持続性はまだ証明しておらず、次にどの関係を確認すべきか」を示す。
+- 経営者の説明は検証対象として扱う。「順調」「成長領域」「シナジー」等の
+  表現をそのまま結論にせず、後続の利益、キャッシュ、資産効率、減損、撤退、
+  または開示された未達と照合する。確認できない場合は経営者の見方として示す。
 
 ## 1. エグゼクティブサマリー
 
@@ -95,6 +1422,8 @@ placeholder relationships, or wording. Do not return Markdown.
 「キャッシュ・フローの状況」「業績予想などの将来予測情報に関する説明」および
 中期計画、資本配分、リスクに関する経営者説明とする。財務サマリー表は数値確認
 には使うが、表の数値推移だけを長期的な経営分析の代わりにしない。
+経営者説明の強さや反復を成果の証拠とせず、実績、財政状態、キャッシュ・フロー、
+注記、後続期の結果を使って説明の妥当性を独立に評価する。
 
 継続テーマは原則として初期・中期・直近に現れるものを選ぶ。変化テーマは
 変化前と変化後を示し、その影響が現在の判断にも残るものを選ぶ。単年度の
@@ -136,6 +1465,29 @@ placeholder relationships, or wording. Do not return Markdown.
 バランスシート運営、配当・自己株式取得を必要に応じて比較する。項目を
 羅列せず、資金配分の優先順位とトレードオフがどう変わったかを示す。]
 
+### 資本配分は価値を創出したか
+
+**[創出した、概ね創出した、成果は混在、あまり創出しなかった、創出しなかった、
+または判断材料不足という結論]** [過去10年間に追加資本がどの事業・用途へ向かい、
+その配分先が後にどの程度の利益・利益率・キャッシュを生んだかを比較する。まず期首と
+直近の事業別・資産別の資本蓄積を比較し、資本の増減が大きい配分先から検証する。同じ
+事業範囲の利益・キャッシュが資産増加に追いついたかを確認してから、取引や経営説明で
+理由を補う。利益が増えていても資産がそれ以上に増えていれば、高リターンまたは価値創出と
+決めつけない。研究開発、ソフトウェア開発、営業・マーケティング、人員など主要投資が
+費用計上される事業では、資産残高を無理に使わず、開示された継続的な投資投入と後の利益・
+キャッシュ・事業成果を対応させる。正確なセグメント投下資本が非開示の場合は方向的に判断し、
+未開示の比率を推定しない。取得額が明確という理由だけで、小規模な買収・売却をより大きな有機的資本蓄積と
+同じ重要度で扱わない。二～四の重要な配分先について、資本投入、相対的な優先順位、その後の
+リターン、帰属の強さをつなげる。取得額、売却益、のれん、負ののれん、
+配当、自社株買いなどの取引・会計効果と、その後の経済的リターンを区別する。売上成長だけで
+魅力的なリターンとみなさず、開示されたROIC・ROA・事業資産利益率を優先する。これらが
+非開示の場合は、同じ事業範囲の資産・投下資本の変化と利益・キャッシュの変化を対応させ、
+資本増加に見合うリターンが生じたかを方向的に評価する。未開示の比率を作らず、利益、利益率、
+キャッシュ、稼働・活用状況、減損・撤退を重視し、
+高リターン事業へ資本が重点配分されたかを明確に答える。全社ROE・EPS・BPSや経営者の
+説明だけを特定投資の成果に帰属させず、配当・自社株買いの実施自体を価値創出とみなさない。
+事業別の直接的なリターンがない場合は、その配分先の価値創出は未確認とする。]
+
 ### 最新コメントから読み取れる現在地
 
 **[今後確認すべき最重要な関係]** [単一の指標を挙げるだけでなく、
@@ -159,9 +1511,12 @@ placeholder relationships, or wording. Do not return Markdown.
 </report_blueprint>
 
 <analysis_task>
-Create a Japanese investor report for security code 3923.
-The latest filing is 01_2026_FY_rakus_tanshin.pdf. The trend period consists only
-of the selected year-end sources identified in the manifest.
+Create the final Japanese investor analysis for security code
+3923. The latest filing is 01_2026_FY_rakus_tanshin.pdf.
+The chronological research map is an attention guide. The original PDFs
+supplied immediately before this task are authoritative and remain available
+for recovering omitted context, checking competing interpretations, and
+supporting conclusions not fully represented in the memo.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -173,16 +1528,27 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: at least 2 claims using the latest filing
+- latest.business_driver: 3-4 distinct driver claims when supported. Begin each
+  headline with a concise reader-facing driver tag and direction, such as
+  「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
+  transmission mechanism and affected segment or metric
 - latest.outlook: at least 1 claim using the latest filing
 - latest.risk: at least 2 claims using the latest filing
 - latest.context: target 1 integrated claim using the latest filing, written as
   2-3 short paragraphs when needed for readability
 - trend.perspective: target 1 integrated synthesis
-- trend.consistent: at least 2 genuinely different recurring themes
-- trend.change: 2-3 genuinely different material changes
+- trend.consistent: target 1-2 genuinely different recurring themes when supported
+- trend.change: target 1-3 genuinely different material changes when supported;
+  omit this section's claims rather than inventing a change when the dossier and
+  commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
+- trend.capital_value_creation: exactly 1 integrated assessment of whether the
+  decade's material capital-allocation tracks created value
 - trend.implication: target 1 current investor implication
+- management.strategy: exactly 1 detailed explanation
+- management.execution: exactly 1 detailed explanation
+- management.forecast_discipline: exactly 1 detailed explanation
+- management.accountability: exactly 1 detailed explanation
 
 These are coverage targets, not permission to create weak, repetitive, or
 unsupported claims. Return fewer claims when necessary. For each underfilled
@@ -190,31 +1556,29 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. First identify relevant evidence across the supplied PDFs internally. Rank it
-   by investor materiality before selecting claims. Do not split one financial
-   result into several key takeaways merely to satisfy the claim count.
-   For the trend analysis, begin with the qualitative management discussion:
-   経営成績に関する説明 or 経営成績等の概況, 財政状態に関する説明,
-   cash-flow discussion, 業績予想などの将来予測情報に関する説明,
-   management-plan progress, capital allocation, and management's discussion
-   of risks. Use financial-summary tables and notes as corroboration rather than
-   allowing a sequence of headline figures to become the trend thesis.
-2. Before choosing the trend themes, internally test each candidate using four
-   questions: what management said or prioritized; what subsequently happened;
-   what material evidence limits or contradicts the interpretation; and why that
-   record matters now. Reject themes that cannot answer the first three questions
-   with management-discussion evidence from the required period buckets.
-3. Ensure the key takeaways are diversified. Do not use separate sales, operating
+1. Read the filing memos chronologically, then revisit the PDFs for the passages
+   and periods that matter to the final thesis. Rank findings by investor
+   materiality only after considering the complete time series. Do not treat an
+   omitted memo item as proof that a subject was absent from a filing.
+   Treat management's narrative as a hypothesis to evaluate, not the report's
+   voice. For each material favorable claim, ask what observable result would
+   confirm it, whether that result appears, and what contrary evidence remains.
+2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
-4. Determine one unifying decade thesis and a small set of non-overlapping
+   Give material latest-filing guidance, segment performance, cash-flow drivers,
+   dividends, capital allocation, and mandatory disclosures appropriate weight
+   when the filing coverage shows they are available.
+3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
-   cyclical financial outcomes, and connect strategy, profitability, capital
-   allocation, risk, and the latest position.
-5. Apply the following source tests wherever the relevant disclosures exist:
+   cyclical financial outcomes. Use the locally calculated annual anchor series
+   to describe the early, middle, and recent financial arc, then connect it to
+   strategy, management commentary, capital allocation, risk, and the latest
+   position. Do not turn the anchor series into a year-by-year recital.
+4. Apply the following tests wherever the filings support them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -227,6 +1591,9 @@ Analysis requirements:
      still attempting to develop into one.
    - Distinguish repeated statements about operating capability from evidence of
      pricing power, market share, margin durability, or financial performance.
+   - Attribute unverified explanations to management. Do not turn words such as
+     strong, resilient, strategic, synergetic, disciplined, or on track into the
+     analyst's conclusion without compatible results across the relevant period.
    - Do not describe a recurring, installed-base, subscriber, backlog, or managed
      business as high-margin, stabilizing, or a cyclical buffer unless segment
      profitability or management discussion supports that relationship.
@@ -239,7 +1606,18 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-6. Apply these admission rules to the trend sections:
+   - Use the locally calculated annual series and forecast_accuracy comparisons
+     instead of doing fresh arithmetic. State the observed sample size when
+     characterizing forecast behavior. Do not describe
+     a persistent over- or under-delivery pattern unless at least three original
+     forecast-result pairs support it. Compare the latest annual guidance with
+     the nearest medium-term target when scopes and metrics match; distinguish
+     reaching a threshold from sustaining it.
+   - Compare repeated management wording directly across the PDFs. Identify
+     changes in cause, severity, confidence, qualification, proposed response,
+     or omitted emphasis; do not claim that commentary disappeared merely
+     because the research map did not retain it.
+5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
      the decade's central continuity, principal change, and material tension.
@@ -248,25 +1626,74 @@ Analysis requirements:
      slowdown, reversal, or other counterperiod disclosed in the filings. If this
      evidence is unavailable, omit the theme and record a coverage shortfall.
    - trend.change must explicitly explain before -> transition -> current state and
-     cite evidence for each stage. The before and current evidence must come from
-     separated periods. A single impairment, disposal, lawsuit, exceptional gain,
-     or recent improvement is not a decade change without a durable consequence.
+     use separated filings for each stage. The before and current sources must come
+     from separated periods. A single impairment, disposal, lawsuit, exceptional
+     gain, or recent improvement is not a decade change without a durable consequence.
    - The latest filing may update the current state but does not replace a recent
-     year-end source. Evidence from one year or adjacent years belongs in latest
-     context or risk, not in a decade theme.
-7. For every major growth theme, actively look for a contraction, miss, reversal,
-   or cyclical downturn in the supplied period. If one exists, explain what it
-   shows about durability rather than presenting only favorable years. Explain
-   what would confirm or disconfirm the latest interpretation. Do not convert an
-   ambition into implementation, implementation into an outcome, or one favorable
-   result into proof of durable change. A completed reorganization, acquisition,
-   divestiture, or investment establishes that the action occurred, not that its
-   intended economic outcome has been achieved.
-8. Treat capital allocation broadly: organic investment in people, marketing,
-   development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Discuss material shifts
-   and trade-offs rather than listing every cash-flow item. Keep this analysis in
-   its own section and do not repeat the same facts as separate strategic changes.
+     year-end source. Information from one year or adjacent years belongs in
+     latest context or risk, not in a decade theme.
+   - If the selected filings contain no material strategic or commentary change,
+     state that limitation through model_notes and concentrate the report on the
+     financial, forecast, target, disclosure, and capital-allocation record.
+6. For every major growth theme, use the dossier's contrary evidence, miss,
+   reversal, or cyclical downturn when one is present. Explain what it shows
+   about durability. Do not convert ambition into implementation or
+   implementation into an achieved economic outcome.
+7. For capital allocation, use reported capital stocks and operating assets as
+   primary evidence; do not begin from the list of named transactions. First
+   perform a beginning-to-end capital-base reconciliation from the PDFs:
+   identify the businesses or asset categories responsible for the largest
+   supported increases and decreases in segment assets, operating assets,
+   inventory, working capital, investment property, capacity, or other capital
+   employed. For an asset-light business whose reinvestment is mainly expensed,
+   use compatible disclosed R&D, software or product development, sales and
+   marketing, people or headcount, customer acquisition, or similar recurring
+   inputs instead; do not force an asset-base comparison that does not represent
+   its economics. Rank importance by the scale of capital or recurring investment
+   committed. Use `capital_allocation_tracks` afterward to explain those
+   movements; the track list is not a complete candidate list. When definitions
+   changed, use the longest compatible subperiod and state the limitation rather
+   than combining incompatible scopes.
+8. In trend.capital_value_creation, answer: "Where did incremental capital go,
+   and did it flow toward the destinations earning the strongest subsequent
+   returns?" Use this reasoning order:
+   a. name the one or two largest supported business-investment destinations;
+   b. compare each destination's beginning and ending capital base or recurring
+      investment input with compatible profit, cash, or operating outcomes;
+   c. decide whether returns improved, held, or deteriorated relative to the
+      capital absorbed;
+   d. only then use acquisitions, disposals, financing, and shareholder returns
+      to explain management's actions and any later reallocation.
+   Prioritize disclosed ROIC, ROA, return on operating assets, or equivalent
+   measures. When they are absent, make a directional comparison from compatible
+   business-level assets, capital employed, or recurring investment inputs and
+   profit or cash. A rise in profit is not proof of attractive returns: when
+   assets or recurring investment grew materially faster than profit, cash, or
+   relevant operating output, do not call the destination high-return or
+   value-creating without stronger evidence. Likewise, market share, revenue
+   growth, a high absolute profit, or margin alone does not establish capital
+   efficiency.
+   Do not calculate an undisclosed ratio or imply precision that the filings do
+   not support.
+   Keep the section's center of gravity on the largest business-investment
+   destinations. Discuss a named acquisition separately only when it is material
+   relative to the broader capital movement or recurring growth investment, or
+   has a separately observable return; an economically smaller transaction must
+   not receive equal weight merely because its purchase price and accounting are
+   easy to identify. An asset increase, acquisition, dividend, buyback, goodwill,
+   disposal gain, or financing action is not a return.
+   Do not say "most" or "the majority" of capital went somewhere without
+   comparable amounts or an unambiguous directional record. Do not credit a
+   destination with group-wide ROE, EPS, BVPS, or aggregate profit. A shareholder
+   distribution returns capital but does not by itself prove that value was
+   created. A favorable destination-level conclusion requires direct return
+   evidence; management-linked evidence is qualified support, while
+   aggregate-only or unattributed evidence cannot establish it.
+   State the strongest productive destination, the largest weak destination, and
+   whether management later shifted capital in the economically sensible
+   direction. Use a restrained directional judgment when denominators are
+   incomplete; never manufacture ROIC or ROA. The headline and opening sentence must
+   answer yes, mostly yes, mixed, mostly no, no, or not enough evidence.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
@@ -274,60 +1701,59 @@ Analysis requirements:
 10. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
-   Never add repetition, generic background, or weak themes merely to reach a length.
+   Integrate forecast behavior, commentary changes, commitment outcomes, and the
+   capital-value assessment by replacing lower-value description; do not add
+   repetition, generic background, or weak themes merely to reach a length.
 
-Management-consistency assessment:
-- Return one component for each required dimension.
-- Use 0 for materially inconsistent, 1 for weak, 2 for mixed, 3 for generally
-  consistent, and 4 for highly consistent. Compare early, middle, and recent
-  management commentary and cite evidence from all three periods for each rating
-  when available. A rating of 4 requires convincing early-, middle-, and
-  recent-period follow-through and no omitted material counterexample.
-- If longitudinal evidence is insufficient, set evidence_sufficiency to
-  "insufficient", set rating to null, cite whatever relevant evidence exists,
-  and explain the limitation. Use rating 2 only when the evidence itself is mixed.
-- Otherwise set evidence_sufficiency to "sufficient" and provide a 0-4 rating.
-- strategic_coherence: whether stated priorities and the logic of successive
-  plans remain coherent; explained adaptation is not automatically inconsistency
-- execution_follow_through: whether announced initiatives are later implemented
-  and associated operational or financial outcomes are discussed
-- forecast_target_discipline: whether forecasts and targets are subsequently met,
-  credibly revised, or transparently reconciled with outcomes; evaluate annual,
-  endpoint, and cumulative commitments separately
-- accountability_transparency: whether misses, trade-offs, changed assumptions,
-  and abandoned priorities are explained rather than silently replaced
-- Base these ratings primarily on management-discussion passages, not on raw
-  financial-table sequences or the mere repetition of plan slogans.
-- Each rationale must state the strongest supporting evidence and any material
-  contrary evidence. Repetition of a strategic priority without a later outcome
-  is not execution follow-through.
+Management-consistency explanations:
+- Return exactly one rating for each of the four management-consistency
+  dimensions. Use 0 materially inconsistent, 1 weak, 2 mixed, 3 generally
+  consistent, and 4 highly consistent. Use null only when the selected filings
+  provide no defensible basis for assessment. Python converts
+  the ratings to 0-1 subscores and calculates their arithmetic mean.
+- Produce one claim for each management.* section. Explain the corresponding
+  rating through concrete examples: targets achieved or missed, observed
+  revisions, forecast posture, implementation outcomes, commentary changes,
+  and management's treatment of setbacks.
+- For management.forecast_discipline, report the number of comparable original
+  forecasts from research_metrics. If that sample is insufficient, say so and
+  rely on separately evidenced medium-term target outcomes rather than implying
+  a complete annual forecasting record.
+- Use deterministic counts when useful, but never create a complete-history
+  claim from incomplete coverage.
+- Mention the strongest supporting observation and material contrary evidence
+  in the management.* claim. The management_consistency object contains only
+  rating and evidence-sufficiency metadata; do not duplicate the prose there.
+- A repeated priority without a later action or outcome is not execution.
+- Do not return citations, source locations, quotations, or evidence records.
+  Ground the prose by reviewing the supplied map and PDFs, but spend the response
+  budget on analysis and the four rating rationales.
 
 Quality profile:
 - Write sober, readable investor research, not promotional corporate copy.
 - Make the latest-filing summary concise and the decade analysis interpretive.
-- Separate actual results, forecasts, management targets, risks, and analyst inference.
-- Use early, middle, and recent filings to distinguish durable capabilities from
-  cyclical outcomes and genuine strategic change. Do not project a product's or
-  segment's current importance backward into earlier filings.
-- Make the qualitative management discussion the primary basis for trend
-  conclusions; use summary tables mainly to corroborate figures.
-- Lead with non-overlapping conclusions, analytical contrast, and why each
-  development matters.
-- Prefer specific, falsifiable observations to generic description or repeated figures.
-- Prefer two to four short sentences per theme and one primary conclusion per headline.
-- Test favorable interpretations against material counterevidence before using
-  labels such as stable, high-margin, diversified, financially strong, or leading.
-- Avoid superlatives and transformation language unless the filings explicitly
-  establish them.
-- State the operating or financial mechanism instead of calling a development
-  "positive for investors," a re-rating catalyst, or a key for the stock price.
+- Separate actual results, forecasts, targets, risks, and analyst inference.
+- Use early, middle, and recent filings to distinguish durable capabilities,
+  cyclical outcomes, and genuine change.
+- Use qualitative management discussion to identify claims, explanations, and
+  changes in emphasis, then test them against reported results, cash flow,
+  balance-sheet changes, footnotes, and later filings. Management's favorable
+  characterization is not an analyst conclusion.
+- For capital allocation, rank destinations by capital absorbed or released, not
+  by how prominently a transaction is named. Compare profit or cash with the
+  corresponding asset base or disclosed recurring investment input before calling
+  a destination productive; growth alone is not enough when investment grew faster.
+- Lead with non-overlapping conclusions and explain the operating or financial
+  mechanism. Prefer two to four short sentences per theme.
+- Test favorable interpretations against material counterevidence. Avoid
+  promotional superlatives, unsupported transformation language, and phrases
+  such as "positive for investors" or "key for the stock price."
 - Keep the executive summary and trend analysis complementary.
 
 
 Response details:
-- period_label_ja and period_label_en must be concise citation labels, not prose.
-- Do not return figure, date, or qualifier mapping arrays; local code derives them.
+- Do not return figure/date/qualifier mapping arrays; local code derives them.
 
-Based only on the supplied PDFs, return the schema-conforming JSON. Omit any
-assertion that cannot be grounded; grounding takes priority over coverage and length.
+Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
+that cannot be grounded; grounding takes priority over coverage and length.
 </analysis_task>

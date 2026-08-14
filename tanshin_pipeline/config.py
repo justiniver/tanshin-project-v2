@@ -7,7 +7,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 
-SCHEMA_VERSION = "1.6"
+SCHEMA_VERSION = "2.3"
 DEFAULT_OUTPUT_DIRECTORY = "final_output"
 DEFAULT_MODEL_PROFILE = "default"
 KEY2_TRANSLATION_MODEL_PROFILE = "key2-translation"
@@ -28,6 +28,7 @@ PDF_TOKENS_PER_PAGE = 540
 # estimate without calling an API tokenizer.
 OPENAI_PDF_TOKENS_PER_PAGE = 1_500
 OPENAI_MAX_INLINE_PDF_BYTES = 50_000_000
+RESEARCH_MAX_OUTPUT_TOKENS = 32_768
 ANALYSIS_MAX_OUTPUT_TOKENS = 32_768
 TRANSLATION_MAX_OUTPUT_TOKENS = 24_576
 DEFAULT_MAX_API_ATTEMPTS = 1
@@ -99,6 +100,15 @@ class OutputPaths:
     report_status_en: Path
     selection_manifest: Path
     run_metadata: Path
+    research_request_plan: Path
+    research_system_prompt: Path
+    research_prompt: Path
+    research_schema: Path
+    research_raw_response: Path
+    research_api_status: Path
+    research_structured: Path
+    research_metrics: Path
+    research_validation: Path
     analysis_request_plan: Path
     analysis_system_prompt: Path
     analysis_prompt: Path
@@ -120,7 +130,6 @@ class OutputPaths:
     translation_normalized: Path
     translation_normalization: Path
     translation_validation: Path
-    evidence_ledger: Path
     token_usage: Path
     cost: Path
     evaluation_ja: Path
@@ -175,6 +184,15 @@ def output_paths(
         report_status_en=artifacts / "report_status_en.json",
         selection_manifest=artifacts / "selection_manifest.json",
         run_metadata=artifacts / "run_metadata.json",
+        research_request_plan=artifacts / "request_plan_research.json",
+        research_system_prompt=artifacts / "system_prompt_research.txt",
+        research_prompt=artifacts / "prompt_research.txt",
+        research_schema=artifacts / "schema_research.json",
+        research_raw_response=artifacts / "model_response_research.raw.json",
+        research_api_status=artifacts / "api_status_research.json",
+        research_structured=artifacts / "research.structured.json",
+        research_metrics=artifacts / "research_metrics.json",
+        research_validation=artifacts / "validation_research.json",
         analysis_request_plan=artifacts / "request_plan_analysis.json",
         analysis_system_prompt=artifacts / "system_prompt_analysis.txt",
         analysis_prompt=artifacts / "prompt_analysis.txt",
@@ -196,7 +214,6 @@ def output_paths(
         translation_normalized=artifacts / "analysis_en.normalized.json",
         translation_normalization=artifacts / "normalization_en.json",
         translation_validation=artifacts / "validation_en.json",
-        evidence_ledger=artifacts / "evidence_ledger.json",
         token_usage=artifacts / "token_usage.json",
         cost=artifacts / "cost.json",
         evaluation_ja=artifacts / "exemplar_comparison_ja.json",

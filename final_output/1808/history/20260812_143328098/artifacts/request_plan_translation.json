@@ -1,0 +1,11 @@
+{
+  "status": "pending_validated_japanese_analysis",
+  "stage": "translation",
+  "model_profile": "default",
+  "provider": "gemini",
+  "provider_profile": "default",
+  "model": "gemini-3.6-flash",
+  "makes_network_request_when_executed": true,
+  "request_count_if_executed": 1,
+  "note": "Run the Japanese analysis stage manually, validate it offline, then prepare the translation request to obtain its request ID."
+}

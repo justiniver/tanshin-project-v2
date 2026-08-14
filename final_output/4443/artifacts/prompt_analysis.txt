@@ -1,20 +1,1094 @@
 <document_manifest>
 security_code: 4443
 latest_filename: 01_2026_FY_tanshin.pdf
-selected_sources:
-- 01_2026_FY_tanshin.pdf: FY label 2026, period FY, pages 27, roles latest, trend_year_end
-- 02_2025_FY_tanshin.pdf: FY label 2025, period FY, pages 25, roles trend_year_end
-- 03_2024_FY_tanshin.pdf: FY label 2024, period FY, pages 25, roles trend_year_end
-- 04_2023_FY_tanshin.pdf: FY label 2023, period FY, pages 25, roles trend_year_end
-- 05_2022_FY_tanshin.pdf: FY label 2022, period FY, pages 24, roles trend_year_end
-- 06_2021_FY_tanshin.pdf: FY label 2021, period FY, pages 20, roles trend_year_end
-- 07_2020_FY_tanshin.pdf: FY label 2020, period FY, pages 19, roles trend_year_end
-- 08_2019_FY_tanshin.pdf: FY label 2019, period FY, pages 18, roles trend_year_end
 trend_period_buckets:
 - early: 08_2019_FY_tanshin.pdf (FY2019), 07_2020_FY_tanshin.pdf (FY2020), 06_2021_FY_tanshin.pdf (FY2021)
 - middle: 05_2022_FY_tanshin.pdf (FY2022), 04_2023_FY_tanshin.pdf (FY2023), 03_2024_FY_tanshin.pdf (FY2024)
 - recent: 02_2025_FY_tanshin.pdf (FY2025), 01_2026_FY_tanshin.pdf (FY2026)
 </document_manifest>
+
+<research_metrics>
+{
+  "filing_coverage": {
+    "selected_filings": 8,
+    "memo_items": 35,
+    "category_counts": {
+      "business_overview": 1,
+      "capital_allocation": 3,
+      "financial_condition": 3,
+      "forward_looking_information": 8,
+      "material_footnote": 3,
+      "operating_results": 8,
+      "segments_and_business_drivers": 8,
+      "strategy_and_execution": 1
+    },
+    "per_filing": [
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "fiscal_year": 2019,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "fiscal_year": 2020,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "fiscal_year": 2021,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 5,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1,
+          "strategy_and_execution": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "fiscal_year": 2022,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "fiscal_year": 2023,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "fiscal_year": 2024,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 4,
+        "category_counts": {
+          "capital_allocation": 1,
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "fiscal_year": 2025,
+        "period": "FY",
+        "is_latest": false,
+        "memo_items": 3,
+        "category_counts": {
+          "forward_looking_information": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "fiscal_year": 2026,
+        "period": "FY",
+        "is_latest": true,
+        "memo_items": 7,
+        "category_counts": {
+          "business_overview": 1,
+          "capital_allocation": 1,
+          "financial_condition": 1,
+          "forward_looking_information": 1,
+          "material_footnote": 1,
+          "operating_results": 1,
+          "segments_and_business_drivers": 1
+        },
+        "unavailable_categories": [],
+        "has_annual_financial_anchor": true
+      }
+    ]
+  },
+  "financial_observations": {
+    "annual_anchor_count": 8,
+    "annual_anchor_value_count": 10,
+    "by_metric": {
+      "ordinary_profit": 8
+    },
+    "series": [
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益（損失）",
+        "target_fiscal_year": 2019,
+        "target_period": "FY",
+        "value_surface_ja": "△891百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "08_2019_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益（損失）",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "670百万円",
+        "pdf_page": 2
+      },
+      {
+        "source_filename": "07_2020_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2020,
+        "target_period": "FY",
+        "value_surface_ja": "435百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "06_2021_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2021,
+        "target_period": "FY",
+        "value_surface_ja": "375百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "05_2022_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2022,
+        "target_period": "FY",
+        "value_surface_ja": "968百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "04_2023_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2023,
+        "target_period": "FY",
+        "value_surface_ja": "122百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "03_2024_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2024,
+        "target_period": "FY",
+        "value_surface_ja": "1,224百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "02_2025_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2025,
+        "target_period": "FY",
+        "value_surface_ja": "2,743百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "kind": "actual",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2026,
+        "target_period": "FY",
+        "value_surface_ja": "8,170百万円",
+        "pdf_page": 1
+      },
+      {
+        "source_filename": "01_2026_FY_tanshin.pdf",
+        "kind": "forecast",
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "target_fiscal_year": 2027,
+        "target_period": "FY",
+        "value_surface_ja": "12,593百万円～14,545百万円",
+        "pdf_page": 2
+      }
+    ],
+    "forecast_accuracy": {
+      "original_forecasts_observed": 2,
+      "original_forecasts_matched_to_actuals": 1,
+      "observable_comparisons": 1,
+      "original_result_counts": {
+        "actual_below_forecast": 1
+      },
+      "posture_signal": "insufficient_evidence",
+      "comparisons": [
+        {
+          "metric": "ordinary_profit",
+          "target_fiscal_year": 2020,
+          "forecast_surface_ja": "670百万円",
+          "actual_surface_ja": "435百万円",
+          "percentage_error": -35.0746,
+          "result": "actual_below_forecast",
+          "source_filenames": [
+            "08_2019_FY_tanshin.pdf",
+            "07_2020_FY_tanshin.pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "capital_allocation": {
+    "track_records": 4,
+    "tracks_with_subsequent_returns": 3,
+    "tracks_with_direct_return_evidence": 3,
+    "reported_return_on_capital_or_assets_records": 0,
+    "tracks_with_reported_return_on_capital_or_assets": 0,
+    "tracks_with_capital_base_and_direct_return_evidence": 1,
+    "tracks_with_only_management_or_aggregate_returns": 0,
+    "capital_input_records": 8,
+    "immediate_effect_records": 1,
+    "subsequent_return_records": 7,
+    "by_capital_input_type": {
+      "people_marketing_or_development": 4,
+      "segment_or_operating_assets": 2,
+      "shareholder_distribution": 2
+    },
+    "by_immediate_effect_type": {
+      "distribution_execution": 1
+    },
+    "by_return_type": {
+      "profit_or_loss": 7
+    },
+    "by_track_type": {
+      "organic_accumulation": 3,
+      "shareholder_return": 1
+    },
+    "by_record_maturity": {
+      "mature_record": 3,
+      "partial_record": 1
+    },
+    "by_return_attribution": {
+      "direct": 7
+    },
+    "by_return_signal": {
+      "negative": 1,
+      "positive": 6
+    },
+    "records": [
+      {
+        "track_label_ja": "Sansan事業（営業AX/名刺管理）への事業資産蓄積と収益創出",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "Sansan事業",
+        "start_fiscal_year": 2019,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 2,
+        "capital_inputs_with_relative_priority": 2,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 0,
+        "subsequent_return_count": 2,
+        "direct_return_count": 2,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": true,
+        "has_capital_base_and_direct_return_evidence": true,
+        "return_attribution_counts": {
+          "direct": 2
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "Bill One事業（経理AX/クラウド請求書受領）の新規育成・急速展開",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "Bill One事業",
+        "start_fiscal_year": 2021,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 2,
+        "capital_inputs_with_relative_priority": 2,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 0,
+        "subsequent_return_count": 2,
+        "direct_return_count": 2,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "direct": 2
+        },
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "Eight事業の構造改革と収益化（黒字化）推進",
+        "track_type": "organic_accumulation",
+        "capital_destination_ja": "Eight事業",
+        "start_fiscal_year": 2019,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 2,
+        "capital_inputs_with_relative_priority": 2,
+        "record_maturity": "mature_record",
+        "immediate_effect_count": 0,
+        "subsequent_return_count": 3,
+        "direct_return_count": 3,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": true,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {
+          "direct": 3
+        },
+        "has_adverse_evidence": true,
+        "has_disclosure_limit": false
+      },
+      {
+        "track_label_ja": "株主還元（自己株式取得および初配の実施）",
+        "track_type": "shareholder_return",
+        "capital_destination_ja": "株主還元（配当・自己株式）",
+        "start_fiscal_year": 2024,
+        "end_fiscal_year": 2026,
+        "capital_input_count": 2,
+        "capital_inputs_with_relative_priority": 2,
+        "record_maturity": "partial_record",
+        "immediate_effect_count": 1,
+        "subsequent_return_count": 0,
+        "direct_return_count": 0,
+        "management_linked_return_count": 0,
+        "non_attributable_return_count": 0,
+        "has_destination_level_return_evidence": false,
+        "has_reported_return_on_capital_or_assets": false,
+        "has_capital_base_observation": false,
+        "has_capital_base_and_direct_return_evidence": false,
+        "return_attribution_counts": {},
+        "has_adverse_evidence": false,
+        "has_disclosure_limit": false
+      }
+    ],
+    "interpretation_guardrail": "These are allocation-track extraction records, not value-creation verdicts. Immediate transaction or accounting effects are not subsequent returns. Management-linked returns preserve management's attribution but do not independently verify it. Aggregate-only or unattributed returns, group-wide ROE/EPS/BVPS, and the execution of a shareholder distribution cannot establish that a specific destination created value. Prefer disclosed ROIC/ROA or compatible destination-level capital and profit/cash observations; never manufacture an undisclosed ratio."
+  },
+  "coverage": {
+    "research_notes": [
+      "2022年5月期より報告セグメント区分が「Sansan事業」「Eight事業」から「Sansan／Bill One事業」「Eight事業」に変更されています。",
+      "2023年5月期第1四半期より、恒常的な企業収益力を示す指標として「調整後営業利益」が導入され、過去の数値も遡及して開示・調整されています。"
+    ]
+  },
+  "interpretation_guardrail": "The research map is an attention guide, not the source boundary. The synthesis request receives the selected PDFs and must inspect them whenever the memo is incomplete or a conclusion requires context.",
+  "diagnostics": {
+    "validation_passed": false,
+    "validation_warning": "06_2021_FY_tanshin.pdf does not cover core category financial_condition. 05_2022_FY_tanshin.pdf does not cover core category financial_condition. 04_2023_FY_tanshin.pdf does not cover core category financial_condition. 03_2024_FY_tanshin.pdf does not cover core category financial_condition. 02_2025_FY_tanshin.pdf does not cover core category financial_condition.",
+    "metrics_complete": true,
+    "metrics_warning": null,
+    "non_gating": true
+  }
+}
+</research_metrics>
+
+<research_map>
+{
+  "schema_version": "1.0",
+  "identity": {
+    "security_code": "4443",
+    "company_name_ja": "Sansan株式会社",
+    "company_name_en": "Sansan, Inc.",
+    "latest_filename": "01_2026_FY_tanshin.pdf",
+    "latest_period_ja": "2026年5月期 期末",
+    "latest_period_en": "FY2026 Year-End"
+  },
+  "filings": [
+    {
+      "source_filename": "08_2019_FY_tanshin.pdf",
+      "fiscal_year": 2019,
+      "period": "FY",
+      "period_label_ja": "2019年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 18,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2019年5月期の売上高は10,206百万円（前年同期比39.3％増）、売上総利益は8,608百万円（46.2％増）と成長が継続。営業損失は849百万円（前期は営業損失3,061百万円）、経常損失は891百万円、親会社株主に帰属する当期純損失は945百万円となり、成長に向けた先行投資を継続しているため各段階損失を計上したものの、損益幅は縮小。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "Sansan事業は営業人員の採用・強化やTVCM等の広告宣伝活動を推進し、契約件数は5,823件（13.1％増）、解約率は0.66％（0.1pt改善）、売上高は9,639百万円（36.8％増）、セグメント利益は2,909百万円（102.4％増）。Eight事業はユーザー数が244万人に増加し売上高は566百万円（102.8％増）となったが、先行投資段階にありセグメント損失1,212百万円（前期は損失2,964百万円）を計上。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2019年5月期末の総資産は9,079百万円（前期末比3,780百万円増）。12月に実施した第三者割当増資（3,000百万円）等による現金及び預金の増加2,081百万円や、投資有価証券の増加1,093百万円が主要因。負債は前受金の増加等により5,706百万円（1,719百万円増）。純資産は3,372百万円（2,060百万円増）。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 5,
+          "statement_type": "forecast",
+          "summary_ja": "2020年5月期の通期予想は、売上高13,816百万円（前年同期比35.4％増）、営業利益724百万円、経常利益670百万円と黒字化を見込む。親会社株主に帰属する当期純利益も黒字化を見込むが、繰延税金資産の計上精緻化が困難であるため数値開示は非開示。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 18,
+          "statement_type": "actual",
+          "summary_ja": "2019年6月18日に東京証券取引所マザーズへの上場に伴い公募新株式500,000株を発行。発行価格4,500円、引受価額4,207.5円、払込金額の総額2,103百万円（資本金1,051百万円、資本準備金1,051百万円増加）。調達資金はマーケティング投資や人件費・採用費等の運転資金に充当予定。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益（損失）",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2019,
+          "target_period": "FY",
+          "value_surface_ja": "△891百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2020,
+          "target_period": "FY",
+          "value_surface_ja": "670百万円",
+          "pdf_page": 2
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "07_2020_FY_tanshin.pdf",
+      "fiscal_year": 2020,
+      "period": "FY",
+      "period_label_ja": "2020年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 19,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2020年5月期の売上高は13,362百万円（前年同期比30.9％増）、売上総利益は11,541百万円（34.1％増）。営業利益は757百万円（前期は営業損失849百万円）と初黒字を達成。経常利益は一部オフィスの賃貸借契約解約損187百万円を計上し435百万円、親会社株主に帰属する当期純利益は339百万円となった。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "Sansan事業は「オンライン名刺」機能提供等を実施し、契約件数は6,754件（16.0％増）、解約率は0.60％（0.08pt改善）、売上高は12,284百万円（27.4％増）、セグメント利益は4,794百万円（64.8％増）。Eight事業は売上高1,078百万円（90.3％増）、セグメント損失は894百万円（前期は損失1,212百万円）と損失縮小。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "2020年5月期末の総資産は22,819百万円（前期末比13,740百万円増）。上場に伴う新株発行等により現金及び預金が7,188百万円増加し、ウイングアーク１ｓｔ株式取得等により投資有価証券が5,847百万円増加。純資産は10,552百万円（7,179百万円増）。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 6,
+          "statement_type": "forecast",
+          "summary_ja": "2021年5月期の通期予想は、コロナ禍の不透明感や機動的な投資実行を考慮しレンジ開示を採用。売上高15,767百万円～16,302百万円（前年同期比18.0％～22.0％増）、営業利益757百万円～1,010百万円（0.0％～33.4％増）を見込む。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2020,
+          "target_period": "FY",
+          "value_surface_ja": "435百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "06_2021_FY_tanshin.pdf",
+      "fiscal_year": 2021,
+      "period": "FY",
+      "period_label_ja": "2021年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 20,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2021年5月期の売上高は16,184百万円（前年同期比21.1％増）、売上総利益は14,192百万円（23.0％増）。営業利益は第4四半期に成長加速向け投資（広告宣伝費・人件費等）を強化したため736百万円（2.7％減）、経常利益は375百万円（13.9％減）、親会社株主に帰属する当期純利益は182百万円（46.2％減）。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "Sansan事業は契約件数が7,744件（14.7％増）、解約率0.63％、売上高14,583百万円（18.7％増）、セグメント利益6,143百万円（28.1％増）。Eight事業はBtoBサービス強化やログミー社連結化により売上高1,604百万円（48.8％増）、セグメント損失732百万円（前期は損失894百万円）。Bill Oneは2021年5月期末契約件数239件と拡大。"
+        },
+        {
+          "category": "strategy_and_execution",
+          "pdf_page": 4,
+          "statement_type": "mixed",
+          "summary_ja": "Fringe81社と資本業務提携を締結し優先株式を取得。「Unipos」との連携やSaaSノウハウ提供により中長期的な企業価値向上を目指す。また「Bill One」は2022年5月期末に契約件数1,000件以上を目指す。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 6,
+          "statement_type": "forecast",
+          "summary_ja": "2022年5月期通期予想はレンジ開示。売上高20,230百万円～20,716百万円（前年同期比25.0％～28.0％増）、営業利益450百万円～800百万円（38.9％減～8.6％増）を見込み、売上成長の加速を優先する方針。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 20,
+          "statement_type": "actual",
+          "summary_ja": "2021年6月30日付でFringe81株式会社が第三者割当で発行したA種優先株式1,900株を1,900百万円で取得。資金は金融機関からの借入により全額充当。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2021,
+          "target_period": "FY",
+          "value_surface_ja": "375百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "05_2022_FY_tanshin.pdf",
+      "fiscal_year": 2022,
+      "period": "FY",
+      "period_label_ja": "2022年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 24,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2022年5月期の売上高は20,420百万円（前年同期比26.2％増）、売上総利益は17,904百万円（26.2％増）。営業利益は採用強化（人件費2,013百万円増）およびマーケティング強化（広告宣伝費145百万円増）により631百万円（14.2％減）。経常利益は投資有価証券売却益979百万円の計上等により968百万円（158.3％増）、親会社株主に帰属する当期純利益は857百万円（369.7％増）。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "当期より報告セグメントを「Sansan／Bill One事業」と「Eight事業」に変更。Sansan／Bill One事業売上高は18,105百万円（24.0％増）、セグメント利益は5,725百万円（8.5％増）。うちBill One売上高は826百万円（878.1％増）、ARRは1,407百万円に拡大。Eight事業売上高は2,213百万円（39.9％増）、セグメント損失は386百万円に縮小。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 8,
+          "statement_type": "forecast",
+          "summary_ja": "2023年5月期～2025年5月期の中期目標として「売上高成長と利益成長の両立」を掲げ、売上高年成長率20％台以上、2025年5月期におけるSansanとBill One合計営業利益100億円以上を目指す。2023年5月期売上高予想は25,117百万円～25,764百万円（23.0％～26.2％増）、調整後営業利益917百万円～1,288百万円（25.5％～76.3％増）。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2022,
+          "target_period": "FY",
+          "value_surface_ja": "968百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "04_2023_FY_tanshin.pdf",
+      "fiscal_year": 2023,
+      "period": "FY",
+      "period_label_ja": "2023年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 25,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2023年5月期の売上高は25,510百万円（前年同期比24.9％増）、売上総利益は21,827百万円（21.9％増）。恒常的な収益力を示す調整後営業利益（営業利益＋株式報酬関連費用＋企業結合伴う費用）は942百万円（28.9％増）。営業利益は199百万円、経常利益は株式報酬費用増加等により122百万円（87.4％減）。親会社株主に帰属する当期純利益は投資有価証券評価損980百万円計上等により△141百万円。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "Sansan／Bill One事業売上高は22,516百万円（24.4％増）、調整後営業利益は7,005百万円（21.8％増）。うち「Sansan」売上高は19,793百万円（15.0％増）、「Bill One」売上高は2,414百万円（192.2％増）、2023年5月ARRは3,798百万円（172.8％増）と高成長。Eight事業売上高は2,867百万円（29.5％増）、調整後営業損失は170百万円に縮小。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 8,
+          "statement_type": "forecast",
+          "summary_ja": "2024年5月期予想は、売上高32,653百万円～33,674百万円（前年同期比28.0％～32.0％増）、調整後営業利益1,240百万円～1,852百万円（31.7％～96.6％増）を見込む。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 23,
+          "statement_type": "actual",
+          "summary_ja": "2023年6月20日付で株式会社言語理解研究所の株式65.75％を取得し連結子会社化。取得対価（現金及び預金）は500百万円。コア技術であるOCRや自然言語処理の研究開発能力強化が目的。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2023,
+          "target_period": "FY",
+          "value_surface_ja": "122百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "03_2024_FY_tanshin.pdf",
+      "fiscal_year": 2024,
+      "period": "FY",
+      "period_label_ja": "2024年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 25,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2024年5月期の売上高は33,878百万円（前年同期比32.8％増）、売上総利益は28,814百万円（32.0％増）。売上伸長および売上高広告宣伝費率低下等により、調整後営業利益は1,709百万円（81.5％増）。営業利益は1,337百万円（571.2％増）、経常利益は1,224百万円（903.3％増）、親会社株主に帰属する当期純利益は投資有価証券評価損380百万円を計上したものの953百万円と黒字転換。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "Sansan／Bill One事業売上高は29,948百万円（33.0％増）、調整後営業利益は8,675百万円（23.8％増）。うち「Sansan」売上高は22,889百万円（15.6％増）、「Bill One」売上高は6,168百万円（155.5％増）、2024年5月ARRは7,680百万円（102.5％増）。Eight事業売上高は3,548百万円（23.8％増）、調整後営業利益は314百万円（前期は損失170百万円）と黒字化達成。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 8,
+          "statement_type": "forecast",
+          "summary_ja": "2025年5月期～2027年5月期の中期財務方針を新たに策定し、3事業年度年平均売上成長率22％～27％、2027年5月期調整後営業利益率18％～23％（長期30％以上）を目指す。2025年5月期通期予想は売上高43,026百万円～44,042百万円（27.0％～30.0％増）、調整後営業利益3,012百万円～4,404百万円（76.2％～157.6％増）。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 25,
+          "statement_type": "target",
+          "summary_ja": "取締役会にて自己株式取得（上限200,000株・300百万円）を決議。好調な業績および中期財務方針を踏まえ、株主還元と株式希薄化率等を勘案した自己株式取得を実施。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2024,
+          "target_period": "FY",
+          "value_surface_ja": "1,224百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "02_2025_FY_tanshin.pdf",
+      "fiscal_year": 2025,
+      "period": "FY",
+      "period_label_ja": "2025年5月期 期末",
+      "is_latest": false,
+      "pdf_page_count": 25,
+      "items": [
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2025年5月期の売上高は43,202百万円（前年同期比27.5％増）、売上総利益は37,410百万円（29.8％増）。人件費比率低下や粗利率改善により、調整後営業利益は3,555百万円（108.0％増）、営業利益2,800百万円（109.4％増）、経常利益2,743百万円（124.1％増）。親会社株主に帰属する当期純利益はUnipos社との提携解消・株式譲渡等に伴う株式売却契約損失引当金繰入額2,301百万円を特別損失に計上したため424百万円（55.5％減）。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "Sansan／Bill One事業売上高は37,785百万円（26.2％増）、調整後営業利益は3,581百万円（59.1％増）。「Sansan」売上高26,766百万円（16.9％増）、「Bill One」売上高9,790百万円（58.7％増）、2025年5月ARRは10,962百万円。Eight事業売上高は5,051百万円（42.4％増）、調整後営業利益63百万円と黒字を維持。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 8,
+          "statement_type": "forecast",
+          "summary_ja": "2026年5月期通期予想は、売上高52,707百万円～54,003百万円（前年同期比22.0％～25.0％増）、調整後営業利益6,851百万円～8,640百万円（92.7％～143.0％増）を見込む。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2025,
+          "target_period": "FY",
+          "value_surface_ja": "2,743百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": null
+      },
+      "unavailable_categories": [],
+      "notes": []
+    },
+    {
+      "source_filename": "01_2026_FY_tanshin.pdf",
+      "fiscal_year": 2026,
+      "period": "FY",
+      "period_label_ja": "2026年5月期 期末",
+      "is_latest": true,
+      "pdf_page_count": 27,
+      "items": [
+        {
+          "category": "business_overview",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "当社グループは「出会いからイノベーションを生み出す」ミッション、「ビジネスインフラになる」ビジョンの下、クラウドソフトウエアと人力を組み合わせ、非定型・アナログ情報を高精度にデータ化するAX（AIトランスフォーメーション）サービスを提供。主力は法人向け名刺管理で市場シェア85.8％の「Sansan」、クラウド請求書受領サービス市場シェアNo.1の「Bill One」、および個人向け名刺アプリ基盤の「Eight」。"
+        },
+        {
+          "category": "operating_results",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "2026年5月期の売上高は53,761百万円（前年同期比24.4％増）、売上総利益は47,263百万円（26.3％増）。堅調な売上成長と粗利益率改善（87.9％）に加え、広告宣伝費率・人件費率の低下により、調整後営業利益は8,427百万円（137.0％増）、営業利益は8,185百万円（192.3％増）、経常利益は8,170百万円（197.8％増）。親会社株主に帰属する当期純利益は関係会社株式売却益（1,436百万円）の計上等もあり6,778百万円（大幅増益）を達成。"
+        },
+        {
+          "category": "segments_and_business_drivers",
+          "pdf_page": 5,
+          "statement_type": "actual",
+          "summary_ja": "Sansan／Bill One事業売上高は46,847百万円（24.0％増）、調整後営業利益8,340百万円（132.9％増）。「Sansan」売上高31,089百万円（16.2％増、契約件数12,199件・14.0％増、解約率0.55％）、「Bill One」売上高13,679百万円（39.7％増、MRR 1,231百万円・34.9％増、有料契約件数5,188件・31.9％増、解約率0.34％）。Eight事業売上高6,720百万円（33.0％増）、調整後営業利益237百万円（273.2％増）。"
+        },
+        {
+          "category": "financial_condition",
+          "pdf_page": 8,
+          "statement_type": "actual",
+          "summary_ja": "2026年5月期末の総資産は54,958百万円（前期末比6,973百万円増）。現金及び預金の増加5,833百万円（期末残高36,849百万円）等が寄与。負債は前受金の増加（4,019百万円増）等がある一方株式売却契約損失引当金の減少（2,301百万円減）により33,864百万円（1,920百万円増）。純資産は当期純利益計上等により21,094百万円（5,053百万円増）。営業CFは9,641百万円の創出。"
+        },
+        {
+          "category": "forward_looking_information",
+          "pdf_page": 10,
+          "statement_type": "forecast",
+          "summary_ja": "2027年5月期～2029年5月期の中期財務方針を新策定し、3年平均売上高成長率16％～20％、2029年5月期調整後営業利益率25％～30％を掲げる。2027年5月期通期予想は、売上高63,706百万円～65,319百万円（18.5％～21.5％増）、調整後営業利益12,741百万円～14,696百万円（51.2％～74.4％増）、営業利益12,514百万円～14,464百万円（52.9％～76.7％増）、親会社株主に帰属する当期純利益8,376百万円～10,221百万円（23.6％～50.8％増）。"
+        },
+        {
+          "category": "capital_allocation",
+          "pdf_page": 4,
+          "statement_type": "actual",
+          "summary_ja": "構造的利益成長フェーズへの移行に伴い初配を実施（2026年5月期末配当2.50円/株、総額315百万円）。あわせて自己株式の取得・買付完了（2026年5月19日決議、累計取得1,331,600株、対価総額1,999百万円）。2027年5月期予想配当は年間5.00円/株。"
+        },
+        {
+          "category": "material_footnote",
+          "pdf_page": 19,
+          "statement_type": "actual",
+          "summary_ja": "2025年7月31日に連結子会社ナインアウト株式会社（旧クリエイティブサーベイ）の株式を追加取得し完全子会社化（対価現金1,412百万円）。またログミー株式会社は保有株式の全てを譲渡したため連結範囲から除外（関係会社株式売却益1,436百万円計上）。"
+        }
+      ],
+      "annual_financial_anchor": {
+        "metric": "ordinary_profit",
+        "metric_label_ja": "経常利益",
+        "scope": "consolidated",
+        "scope_label_ja": "連結",
+        "value_kind": "monetary",
+        "actual": {
+          "target_fiscal_year": 2026,
+          "target_period": "FY",
+          "value_surface_ja": "8,170百万円",
+          "pdf_page": 1
+        },
+        "next_original_forecast": {
+          "target_fiscal_year": 2027,
+          "target_period": "FY",
+          "value_surface_ja": "12,593百万円～14,545百万円",
+          "pdf_page": 2
+        }
+      },
+      "unavailable_categories": [],
+      "notes": []
+    }
+  ],
+  "capital_allocation_tracks": [
+    {
+      "track_label_ja": "Sansan事業（営業AX/名刺管理）への事業資産蓄積と収益創出",
+      "track_type": "organic_accumulation",
+      "capital_destination_ja": "Sansan事業",
+      "start_fiscal_year": 2019,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "名刺データベースを基盤とした営業DX・AXサービスの市場シェア維持・拡大および収益拡大",
+      "capital_inputs": [
+        {
+          "source_filename": "08_2019_FY_tanshin.pdf",
+          "fiscal_year": 2019,
+          "period_label_ja": "2019年5月期 期末",
+          "input_type": "segment_or_operating_assets",
+          "amount_or_scale_ja": "売上高 9,639百万円、契約件数 5,823件",
+          "input_ja": "営業体制強化およびTVCM等の広告宣伝活動を投入し、契約基盤を拡大",
+          "relative_priority_ja": "主力の成長投資先として最優先配置"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "input_type": "segment_or_operating_assets",
+          "amount_or_scale_ja": "売上高 31,089百万円、契約件数 12,199件",
+          "input_ja": "AI活用機能強化や営業体制強化を継続推進",
+          "relative_priority_ja": "安定的かつ高利益率のキャッシュ創出源として最大資産規模を維持"
+        }
+      ],
+      "immediate_effects": [],
+      "subsequent_returns": [
+        {
+          "source_filename": "08_2019_FY_tanshin.pdf",
+          "fiscal_year": 2019,
+          "period_label_ja": "2019年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "セグメント利益 2,909百万円を創出",
+          "attribution": "direct",
+          "signal": "positive"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "Sansan/Bill One事業全体で調整後営業利益 8,340百万円に大幅拡大（うちSansan売上高31,089百万円）",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "Bill One事業（経理AX/クラウド請求書受領）の新規育成・急速展開",
+      "track_type": "organic_accumulation",
+      "capital_destination_ja": "Bill One事業",
+      "start_fiscal_year": 2021,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "クラウド請求書受領・経理DX市場におけるNo.1シェアの獲得と高成長・高収益柱の構築",
+      "capital_inputs": [
+        {
+          "source_filename": "06_2021_FY_tanshin.pdf",
+          "fiscal_year": 2021,
+          "period_label_ja": "2021年5月期 期末",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "契約件数 239件",
+          "input_ja": "営業体制強化やテレビCMを中心とした大規模な広告宣伝活動を投入",
+          "relative_priority_ja": "新規重点事業として広告宣伝・人員を集中投下"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "有料契約件数 5,188件、MRR 1,231百万円（ARR 14,772百万円規模）",
+          "input_ja": "機能拡充（経費精算・債権管理機能等）および営業体制強化への継続投資",
+          "relative_priority_ja": "全社の最重点成長ドライバーとして最優先投資"
+        }
+      ],
+      "immediate_effects": [],
+      "subsequent_returns": [
+        {
+          "source_filename": "05_2022_FY_tanshin.pdf",
+          "fiscal_year": 2022,
+          "period_label_ja": "2022年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "売上高826百万円、ARR1,407百万円へ急拡大（初期の投資フェーズから急速な収益化に寄与）",
+          "attribution": "direct",
+          "signal": "positive"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "売上高13,679百万円（前年比39.7％増）へと成長し、Sansan/Bill One事業の調整後営業利益8,340百万円の主要因に貢献",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "Eight事業の構造改革と収益化（黒字化）推進",
+      "track_type": "organic_accumulation",
+      "capital_destination_ja": "Eight事業",
+      "start_fiscal_year": 2019,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "個人向け名刺アプリのユーザー基盤を活用したBtoBマネタイズの強化および事業黒字化",
+      "capital_inputs": [
+        {
+          "source_filename": "08_2019_FY_tanshin.pdf",
+          "fiscal_year": 2019,
+          "period_label_ja": "2019年5月期 期末",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "ユーザー数 244万人、売上高 566百万円",
+          "input_ja": "ユーザー獲得のための広告宣伝およびBtoB新サービス（Meets、Eight Career Design）開発投資",
+          "relative_priority_ja": "先行投資領域として位置付け"
+        },
+        {
+          "source_filename": "03_2024_FY_tanshin.pdf",
+          "fiscal_year": 2024,
+          "period_label_ja": "2024年5月期 期末",
+          "input_type": "people_marketing_or_development",
+          "amount_or_scale_ja": "ユーザー数 372万人、売上高 3,548百万円",
+          "input_ja": "イベント事業やBtoBマネタイズの効率的推進へのシフト（収益性重視）",
+          "relative_priority_ja": "投資抑制および黒字化優先方針へ転換"
+        }
+      ],
+      "immediate_effects": [],
+      "subsequent_returns": [
+        {
+          "source_filename": "08_2019_FY_tanshin.pdf",
+          "fiscal_year": 2019,
+          "period_label_ja": "2019年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "セグメント損失 1,212百万円の赤字計上",
+          "attribution": "direct",
+          "signal": "negative"
+        },
+        {
+          "source_filename": "03_2024_FY_tanshin.pdf",
+          "fiscal_year": 2024,
+          "period_label_ja": "2024年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "調整後営業利益 314百万円を計上し通期黒字化を達成",
+          "attribution": "direct",
+          "signal": "positive"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "return_type": "profit_or_loss",
+          "return_ja": "売上高6,720百万円、調整後営業利益237百万円を計上（黒字定着）",
+          "attribution": "direct",
+          "signal": "positive"
+        }
+      ],
+      "adverse_evidence_ja": [
+        "2019年5月期～2023年5月期まで継続的なセグメント赤字を計上（最高1,212百万円の赤字）"
+      ],
+      "record_maturity": "mature_record",
+      "disclosure_limit_ja": null
+    },
+    {
+      "track_label_ja": "株主還元（自己株式取得および初配の実施）",
+      "track_type": "shareholder_return",
+      "capital_destination_ja": "株主還元（配当・自己株式）",
+      "start_fiscal_year": 2024,
+      "end_fiscal_year": 2026,
+      "stated_rationale_ja": "構造的利益成長フェーズへの移行に伴う株主への利益還元および株式希薄化の抑制",
+      "capital_inputs": [
+        {
+          "source_filename": "03_2024_FY_tanshin.pdf",
+          "fiscal_year": 2024,
+          "period_label_ja": "2024年5月期 期末",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "取得上限 300百万円（200,000株）",
+          "input_ja": "自己株式取得枠の設定",
+          "relative_priority_ja": "財務改善および利益成長に伴い還元配分を開始"
+        },
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "input_type": "shareholder_distribution",
+          "amount_or_scale_ja": "初配 315百万円（配当金2.50円/株）、自己株式取得 1,999百万円（1,331,600株）",
+          "input_ja": "初配の実施および市場買付による自己株式取得",
+          "relative_priority_ja": "成長投資と並行して還元姿勢を明確化"
+        }
+      ],
+      "immediate_effects": [
+        {
+          "source_filename": "01_2026_FY_tanshin.pdf",
+          "fiscal_year": 2026,
+          "period_label_ja": "2026年5月期 期末",
+          "effect_type": "distribution_execution",
+          "effect_ja": "2026年5月期末配当金総額315百万円の支払い決議および自己株式1,999百万円の買付完了"
+        }
+      ],
+      "subsequent_returns": [],
+      "adverse_evidence_ja": [],
+      "record_maturity": "partial_record",
+      "disclosure_limit_ja": null
+    }
+  ],
+  "research_notes": [
+    "2022年5月期より報告セグメント区分が「Sansan事業」「Eight事業」から「Sansan／Bill One事業」「Eight事業」に変更されています。",
+    "2023年5月期第1四半期より、恒常的な企業収益力を示す指標として「調整後営業利益」が導入され、過去の数値も遡及して開示・調整されています。"
+  ]
+}
+</research_map>
 
 <report_blueprint>
 The following annotated Markdown is fact-free. It demonstrates section balance
@@ -48,6 +1122,9 @@ placeholder relationships, or wording. Do not return Markdown.
   既存中核、主力候補、育成対象のどれだったかを確認して役割の変化を示す。
 - 現在地は「改善したから転換した」と断定せず、「直近の改善は何の証拠で、
   何の持続性はまだ証明しておらず、次にどの関係を確認すべきか」を示す。
+- 経営者の説明は検証対象として扱う。「順調」「成長領域」「シナジー」等の
+  表現をそのまま結論にせず、後続の利益、キャッシュ、資産効率、減損、撤退、
+  または開示された未達と照合する。確認できない場合は経営者の見方として示す。
 
 ## 1. エグゼクティブサマリー
 
@@ -92,6 +1169,8 @@ placeholder relationships, or wording. Do not return Markdown.
 「キャッシュ・フローの状況」「業績予想などの将来予測情報に関する説明」および
 中期計画、資本配分、リスクに関する経営者説明とする。財務サマリー表は数値確認
 には使うが、表の数値推移だけを長期的な経営分析の代わりにしない。
+経営者説明の強さや反復を成果の証拠とせず、実績、財政状態、キャッシュ・フロー、
+注記、後続期の結果を使って説明の妥当性を独立に評価する。
 
 継続テーマは原則として初期・中期・直近に現れるものを選ぶ。変化テーマは
 変化前と変化後を示し、その影響が現在の判断にも残るものを選ぶ。単年度の
@@ -133,6 +1212,29 @@ placeholder relationships, or wording. Do not return Markdown.
 バランスシート運営、配当・自己株式取得を必要に応じて比較する。項目を
 羅列せず、資金配分の優先順位とトレードオフがどう変わったかを示す。]
 
+### 資本配分は価値を創出したか
+
+**[創出した、概ね創出した、成果は混在、あまり創出しなかった、創出しなかった、
+または判断材料不足という結論]** [過去10年間に追加資本がどの事業・用途へ向かい、
+その配分先が後にどの程度の利益・利益率・キャッシュを生んだかを比較する。まず期首と
+直近の事業別・資産別の資本蓄積を比較し、資本の増減が大きい配分先から検証する。同じ
+事業範囲の利益・キャッシュが資産増加に追いついたかを確認してから、取引や経営説明で
+理由を補う。利益が増えていても資産がそれ以上に増えていれば、高リターンまたは価値創出と
+決めつけない。研究開発、ソフトウェア開発、営業・マーケティング、人員など主要投資が
+費用計上される事業では、資産残高を無理に使わず、開示された継続的な投資投入と後の利益・
+キャッシュ・事業成果を対応させる。正確なセグメント投下資本が非開示の場合は方向的に判断し、
+未開示の比率を推定しない。取得額が明確という理由だけで、小規模な買収・売却をより大きな有機的資本蓄積と
+同じ重要度で扱わない。二～四の重要な配分先について、資本投入、相対的な優先順位、その後の
+リターン、帰属の強さをつなげる。取得額、売却益、のれん、負ののれん、
+配当、自社株買いなどの取引・会計効果と、その後の経済的リターンを区別する。売上成長だけで
+魅力的なリターンとみなさず、開示されたROIC・ROA・事業資産利益率を優先する。これらが
+非開示の場合は、同じ事業範囲の資産・投下資本の変化と利益・キャッシュの変化を対応させ、
+資本増加に見合うリターンが生じたかを方向的に評価する。未開示の比率を作らず、利益、利益率、
+キャッシュ、稼働・活用状況、減損・撤退を重視し、
+高リターン事業へ資本が重点配分されたかを明確に答える。全社ROE・EPS・BPSや経営者の
+説明だけを特定投資の成果に帰属させず、配当・自社株買いの実施自体を価値創出とみなさない。
+事業別の直接的なリターンがない場合は、その配分先の価値創出は未確認とする。]
+
 ### 最新コメントから読み取れる現在地
 
 **[今後確認すべき最重要な関係]** [単一の指標を挙げるだけでなく、
@@ -156,9 +1258,12 @@ placeholder relationships, or wording. Do not return Markdown.
 </report_blueprint>
 
 <analysis_task>
-Create a Japanese investor report for security code 4443.
-The latest filing is 01_2026_FY_tanshin.pdf. The trend period consists only
-of the selected year-end sources identified in the manifest.
+Create the final Japanese investor analysis for security code
+4443. The latest filing is 01_2026_FY_tanshin.pdf.
+The chronological research map is an attention guide. The original PDFs
+supplied immediately before this task are authoritative and remain available
+for recovering omitted context, checking competing interpretations, and
+supporting conclusions not fully represented in the memo.
 
 Coverage targets (grounding overrides counts):
 - company.overview: exactly 1 claim using the latest filing and, when useful,
@@ -170,16 +1275,27 @@ Coverage targets (grounding overrides counts):
 - latest.key_takeaway: 3-5 claims using the latest filing; use at most one claim
   for consolidated income-statement results, at least one non-income-statement
   claim, and at least one claim on outlook/targets, capital allocation, or risk
-- latest.business_driver: at least 2 claims using the latest filing
+- latest.business_driver: 3-4 distinct driver claims when supported. Begin each
+  headline with a concise reader-facing driver tag and direction, such as
+  「IT需要｜追い風」「労務費｜逆風」「金利｜影響混在」. Explain the
+  transmission mechanism and affected segment or metric
 - latest.outlook: at least 1 claim using the latest filing
 - latest.risk: at least 2 claims using the latest filing
 - latest.context: target 1 integrated claim using the latest filing, written as
   2-3 short paragraphs when needed for readability
 - trend.perspective: target 1 integrated synthesis
-- trend.consistent: at least 2 genuinely different recurring themes
-- trend.change: 2-3 genuinely different material changes
+- trend.consistent: target 1-2 genuinely different recurring themes when supported
+- trend.change: target 1-3 genuinely different material changes when supported;
+  omit this section's claims rather than inventing a change when the dossier and
+  commentary comparisons show no material development
 - trend.capital_allocation: at least 1 distinct capital-allocation development
+- trend.capital_value_creation: exactly 1 integrated assessment of whether the
+  decade's material capital-allocation tracks created value
 - trend.implication: target 1 current investor implication
+- management.strategy: exactly 1 detailed explanation
+- management.execution: exactly 1 detailed explanation
+- management.forecast_discipline: exactly 1 detailed explanation
+- management.accountability: exactly 1 detailed explanation
 
 These are coverage targets, not permission to create weak, repetitive, or
 unsupported claims. Return fewer claims when necessary. For each underfilled
@@ -187,31 +1303,29 @@ section, add one model_notes entry in the form
 coverage_shortfall:<section>:<concise Japanese reason>.
 
 Analysis requirements:
-1. First identify relevant evidence across the supplied PDFs internally. Rank it
-   by investor materiality before selecting claims. Do not split one financial
-   result into several key takeaways merely to satisfy the claim count.
-   For the trend analysis, begin with the qualitative management discussion:
-   経営成績に関する説明 or 経営成績等の概況, 財政状態に関する説明,
-   cash-flow discussion, 業績予想などの将来予測情報に関する説明,
-   management-plan progress, capital allocation, and management's discussion
-   of risks. Use financial-summary tables and notes as corroboration rather than
-   allowing a sequence of headline figures to become the trend thesis.
-2. Before choosing the trend themes, internally test each candidate using four
-   questions: what management said or prioritized; what subsequently happened;
-   what material evidence limits or contradicts the interpretation; and why that
-   record matters now. Reject themes that cannot answer the first three questions
-   with management-discussion evidence from the required period buckets.
-3. Ensure the key takeaways are diversified. Do not use separate sales, operating
+1. Read the filing memos chronologically, then revisit the PDFs for the passages
+   and periods that matter to the final thesis. Rank findings by investor
+   materiality only after considering the complete time series. Do not treat an
+   omitted memo item as proof that a subject was absent from a filing.
+   Treat management's narrative as a hypothesis to evaluate, not the report's
+   voice. For each material favorable claim, ask what observable result would
+   confirm it, whether that result appears, and what contrary evidence remains.
+2. Ensure the key takeaways are diversified. Do not use separate sales, operating
    profit, ordinary profit, and net-income bullets for one result. When disclosed,
    include cash generation or balance-sheet change and a forward-looking,
    capital-allocation, or risk conclusion. Describe cash-flow improvement together
    with its disclosed working-capital or other principal driver; do not infer
    broad financial strength from cash or one year of operating cash flow alone.
-4. Determine one unifying decade thesis and a small set of non-overlapping
+   Give material latest-filing guidance, segment performance, cash-flow drivers,
+   dividends, capital allocation, and mandatory disclosures appropriate weight
+   when the filing coverage shows they are available.
+3. Determine one unifying decade thesis and a small set of non-overlapping
    themes. The thesis must distinguish durable operating capabilities from
-   cyclical financial outcomes, and connect strategy, profitability, capital
-   allocation, risk, and the latest position.
-5. Apply the following source tests wherever the relevant disclosures exist:
+   cyclical financial outcomes. Use the locally calculated annual anchor series
+   to describe the early, middle, and recent financial arc, then connect it to
+   strategy, management commentary, capital allocation, risk, and the latest
+   position. Do not turn the anchor series into a year-by-year recital.
+4. Apply the following tests wherever the filings support them:
    - Compare an earlier commitment -> later action -> later result -> current
      investor implication using the same organizational scope and time horizon.
      Preserve whether a target applies to the group, a segment, a business, or a
@@ -224,6 +1338,9 @@ Analysis requirements:
      still attempting to develop into one.
    - Distinguish repeated statements about operating capability from evidence of
      pricing power, market share, margin durability, or financial performance.
+   - Attribute unverified explanations to management. Do not turn words such as
+     strong, resilient, strategic, synergetic, disciplined, or on track into the
+     analyst's conclusion without compatible results across the relevant period.
    - Do not describe a recurring, installed-base, subscriber, backlog, or managed
      business as high-margin, stabilizing, or a cyclical buffer unless segment
      profitability or management discussion supports that relationship.
@@ -236,7 +1353,18 @@ Analysis requirements:
      single-period event.
    - Include the most decision-useful supported commitment-versus-outcome finding
      in the report itself rather than confining it to the consistency score.
-6. Apply these admission rules to the trend sections:
+   - Use the locally calculated annual series and forecast_accuracy comparisons
+     instead of doing fresh arithmetic. State the observed sample size when
+     characterizing forecast behavior. Do not describe
+     a persistent over- or under-delivery pattern unless at least three original
+     forecast-result pairs support it. Compare the latest annual guidance with
+     the nearest medium-term target when scopes and metrics match; distinguish
+     reaching a threshold from sustaining it.
+   - Compare repeated management wording directly across the PDFs. Identify
+     changes in cause, severity, confidence, qualification, proposed response,
+     or omitted emphasis; do not claim that commentary disappeared merely
+     because the research map did not retain it.
+5. Apply these admission rules to the trend sections:
    - trend.perspective must use management discussion from all three named period
      buckets and normally at least five distinct year-end filings. It must describe
      the decade's central continuity, principal change, and material tension.
@@ -245,25 +1373,74 @@ Analysis requirements:
      slowdown, reversal, or other counterperiod disclosed in the filings. If this
      evidence is unavailable, omit the theme and record a coverage shortfall.
    - trend.change must explicitly explain before -> transition -> current state and
-     cite evidence for each stage. The before and current evidence must come from
-     separated periods. A single impairment, disposal, lawsuit, exceptional gain,
-     or recent improvement is not a decade change without a durable consequence.
+     use separated filings for each stage. The before and current sources must come
+     from separated periods. A single impairment, disposal, lawsuit, exceptional
+     gain, or recent improvement is not a decade change without a durable consequence.
    - The latest filing may update the current state but does not replace a recent
-     year-end source. Evidence from one year or adjacent years belongs in latest
-     context or risk, not in a decade theme.
-7. For every major growth theme, actively look for a contraction, miss, reversal,
-   or cyclical downturn in the supplied period. If one exists, explain what it
-   shows about durability rather than presenting only favorable years. Explain
-   what would confirm or disconfirm the latest interpretation. Do not convert an
-   ambition into implementation, implementation into an outcome, or one favorable
-   result into proof of durable change. A completed reorganization, acquisition,
-   divestiture, or investment establishes that the action occurred, not that its
-   intended economic outcome has been achieved.
-8. Treat capital allocation broadly: organic investment in people, marketing,
-   development and capacity; acquisitions and divestitures; securities, debt and
-   balance-sheet deployment; and dividends or buybacks. Discuss material shifts
-   and trade-offs rather than listing every cash-flow item. Keep this analysis in
-   its own section and do not repeat the same facts as separate strategic changes.
+     year-end source. Information from one year or adjacent years belongs in
+     latest context or risk, not in a decade theme.
+   - If the selected filings contain no material strategic or commentary change,
+     state that limitation through model_notes and concentrate the report on the
+     financial, forecast, target, disclosure, and capital-allocation record.
+6. For every major growth theme, use the dossier's contrary evidence, miss,
+   reversal, or cyclical downturn when one is present. Explain what it shows
+   about durability. Do not convert ambition into implementation or
+   implementation into an achieved economic outcome.
+7. For capital allocation, use reported capital stocks and operating assets as
+   primary evidence; do not begin from the list of named transactions. First
+   perform a beginning-to-end capital-base reconciliation from the PDFs:
+   identify the businesses or asset categories responsible for the largest
+   supported increases and decreases in segment assets, operating assets,
+   inventory, working capital, investment property, capacity, or other capital
+   employed. For an asset-light business whose reinvestment is mainly expensed,
+   use compatible disclosed R&D, software or product development, sales and
+   marketing, people or headcount, customer acquisition, or similar recurring
+   inputs instead; do not force an asset-base comparison that does not represent
+   its economics. Rank importance by the scale of capital or recurring investment
+   committed. Use `capital_allocation_tracks` afterward to explain those
+   movements; the track list is not a complete candidate list. When definitions
+   changed, use the longest compatible subperiod and state the limitation rather
+   than combining incompatible scopes.
+8. In trend.capital_value_creation, answer: "Where did incremental capital go,
+   and did it flow toward the destinations earning the strongest subsequent
+   returns?" Use this reasoning order:
+   a. name the one or two largest supported business-investment destinations;
+   b. compare each destination's beginning and ending capital base or recurring
+      investment input with compatible profit, cash, or operating outcomes;
+   c. decide whether returns improved, held, or deteriorated relative to the
+      capital absorbed;
+   d. only then use acquisitions, disposals, financing, and shareholder returns
+      to explain management's actions and any later reallocation.
+   Prioritize disclosed ROIC, ROA, return on operating assets, or equivalent
+   measures. When they are absent, make a directional comparison from compatible
+   business-level assets, capital employed, or recurring investment inputs and
+   profit or cash. A rise in profit is not proof of attractive returns: when
+   assets or recurring investment grew materially faster than profit, cash, or
+   relevant operating output, do not call the destination high-return or
+   value-creating without stronger evidence. Likewise, market share, revenue
+   growth, a high absolute profit, or margin alone does not establish capital
+   efficiency.
+   Do not calculate an undisclosed ratio or imply precision that the filings do
+   not support.
+   Keep the section's center of gravity on the largest business-investment
+   destinations. Discuss a named acquisition separately only when it is material
+   relative to the broader capital movement or recurring growth investment, or
+   has a separately observable return; an economically smaller transaction must
+   not receive equal weight merely because its purchase price and accounting are
+   easy to identify. An asset increase, acquisition, dividend, buyback, goodwill,
+   disposal gain, or financing action is not a return.
+   Do not say "most" or "the majority" of capital went somewhere without
+   comparable amounts or an unambiguous directional record. Do not credit a
+   destination with group-wide ROE, EPS, BVPS, or aggregate profit. A shareholder
+   distribution returns capital but does not by itself prove that value was
+   created. A favorable destination-level conclusion requires direct return
+   evidence; management-linked evidence is qualified support, while
+   aggregate-only or unattributed evidence cannot establish it.
+   State the strongest productive destination, the largest weak destination, and
+   whether management later shifted capital in the economically sensible
+   direction. Use a restrained directional judgment when denominators are
+   incomplete; never manufacture ROIC or ROA. The headline and opening sentence must
+   answer yes, mostly yes, mixed, mostly no, no, or not enough evidence.
 9. Use restrained language when evidence is mixed. Avoid promotional expressions
    equivalent to "overwhelming," "revolutionary," "a major milestone," "evolved,"
    "completed a transformation," or "normalized" unless multi-period filing
@@ -271,60 +1448,59 @@ Analysis requirements:
 10. Give more space to material themes and less to secondary ones. As advisory
    guidance, the complete trend analysis should normally total about 1,500-2,000
    Japanese characters and the integrated perspective about 350-475 characters.
-   Never add repetition, generic background, or weak themes merely to reach a length.
+   Integrate forecast behavior, commentary changes, commitment outcomes, and the
+   capital-value assessment by replacing lower-value description; do not add
+   repetition, generic background, or weak themes merely to reach a length.
 
-Management-consistency assessment:
-- Return one component for each required dimension.
-- Use 0 for materially inconsistent, 1 for weak, 2 for mixed, 3 for generally
-  consistent, and 4 for highly consistent. Compare early, middle, and recent
-  management commentary and cite evidence from all three periods for each rating
-  when available. A rating of 4 requires convincing early-, middle-, and
-  recent-period follow-through and no omitted material counterexample.
-- If longitudinal evidence is insufficient, set evidence_sufficiency to
-  "insufficient", set rating to null, cite whatever relevant evidence exists,
-  and explain the limitation. Use rating 2 only when the evidence itself is mixed.
-- Otherwise set evidence_sufficiency to "sufficient" and provide a 0-4 rating.
-- strategic_coherence: whether stated priorities and the logic of successive
-  plans remain coherent; explained adaptation is not automatically inconsistency
-- execution_follow_through: whether announced initiatives are later implemented
-  and associated operational or financial outcomes are discussed
-- forecast_target_discipline: whether forecasts and targets are subsequently met,
-  credibly revised, or transparently reconciled with outcomes; evaluate annual,
-  endpoint, and cumulative commitments separately
-- accountability_transparency: whether misses, trade-offs, changed assumptions,
-  and abandoned priorities are explained rather than silently replaced
-- Base these ratings primarily on management-discussion passages, not on raw
-  financial-table sequences or the mere repetition of plan slogans.
-- Each rationale must state the strongest supporting evidence and any material
-  contrary evidence. Repetition of a strategic priority without a later outcome
-  is not execution follow-through.
+Management-consistency explanations:
+- Return exactly one rating for each of the four management-consistency
+  dimensions. Use 0 materially inconsistent, 1 weak, 2 mixed, 3 generally
+  consistent, and 4 highly consistent. Use null only when the selected filings
+  provide no defensible basis for assessment. Python converts
+  the ratings to 0-1 subscores and calculates their arithmetic mean.
+- Produce one claim for each management.* section. Explain the corresponding
+  rating through concrete examples: targets achieved or missed, observed
+  revisions, forecast posture, implementation outcomes, commentary changes,
+  and management's treatment of setbacks.
+- For management.forecast_discipline, report the number of comparable original
+  forecasts from research_metrics. If that sample is insufficient, say so and
+  rely on separately evidenced medium-term target outcomes rather than implying
+  a complete annual forecasting record.
+- Use deterministic counts when useful, but never create a complete-history
+  claim from incomplete coverage.
+- Mention the strongest supporting observation and material contrary evidence
+  in the management.* claim. The management_consistency object contains only
+  rating and evidence-sufficiency metadata; do not duplicate the prose there.
+- A repeated priority without a later action or outcome is not execution.
+- Do not return citations, source locations, quotations, or evidence records.
+  Ground the prose by reviewing the supplied map and PDFs, but spend the response
+  budget on analysis and the four rating rationales.
 
 Quality profile:
 - Write sober, readable investor research, not promotional corporate copy.
 - Make the latest-filing summary concise and the decade analysis interpretive.
-- Separate actual results, forecasts, management targets, risks, and analyst inference.
-- Use early, middle, and recent filings to distinguish durable capabilities from
-  cyclical outcomes and genuine strategic change. Do not project a product's or
-  segment's current importance backward into earlier filings.
-- Make the qualitative management discussion the primary basis for trend
-  conclusions; use summary tables mainly to corroborate figures.
-- Lead with non-overlapping conclusions, analytical contrast, and why each
-  development matters.
-- Prefer specific, falsifiable observations to generic description or repeated figures.
-- Prefer two to four short sentences per theme and one primary conclusion per headline.
-- Test favorable interpretations against material counterevidence before using
-  labels such as stable, high-margin, diversified, financially strong, or leading.
-- Avoid superlatives and transformation language unless the filings explicitly
-  establish them.
-- State the operating or financial mechanism instead of calling a development
-  "positive for investors," a re-rating catalyst, or a key for the stock price.
+- Separate actual results, forecasts, targets, risks, and analyst inference.
+- Use early, middle, and recent filings to distinguish durable capabilities,
+  cyclical outcomes, and genuine change.
+- Use qualitative management discussion to identify claims, explanations, and
+  changes in emphasis, then test them against reported results, cash flow,
+  balance-sheet changes, footnotes, and later filings. Management's favorable
+  characterization is not an analyst conclusion.
+- For capital allocation, rank destinations by capital absorbed or released, not
+  by how prominently a transaction is named. Compare profit or cash with the
+  corresponding asset base or disclosed recurring investment input before calling
+  a destination productive; growth alone is not enough when investment grew faster.
+- Lead with non-overlapping conclusions and explain the operating or financial
+  mechanism. Prefer two to four short sentences per theme.
+- Test favorable interpretations against material counterevidence. Avoid
+  promotional superlatives, unsupported transformation language, and phrases
+  such as "positive for investors" or "key for the stock price."
 - Keep the executive summary and trend analysis complementary.
 
 
 Response details:
-- period_label_ja and period_label_en must be concise citation labels, not prose.
-- Do not return figure, date, or qualifier mapping arrays; local code derives them.
+- Do not return figure/date/qualifier mapping arrays; local code derives them.
 
-Based only on the supplied PDFs, return the schema-conforming JSON. Omit any
-assertion that cannot be grounded; grounding takes priority over coverage and length.
+Return only the schema-conforming JapaneseSynthesisResponse. Omit any assertion
+that cannot be grounded; grounding takes priority over coverage and length.
 </analysis_task>

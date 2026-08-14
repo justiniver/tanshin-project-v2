@@ -31,7 +31,7 @@ from scripts.download_jpx_tanshin import (
     select_required_disclosures,
 )
 from tanshin_pipeline.selection import SelectionError, select_filings
-from tanshin_pipeline.pipeline import prepare_analysis
+from tanshin_pipeline.pipeline import prepare_research
 
 
 SCHEMA_VERSION = "1.0"
@@ -803,7 +803,7 @@ def _run_final_audit(
                     require_source_manifest=item.get("status") == "complete",
                     require_all_pdfs_selected=item.get("status") == "complete",
                 )
-                prepared = prepare_analysis(
+                prepared = prepare_research(
                     repository_root,
                     code,
                     output_root=temporary_output_root,
@@ -815,10 +815,10 @@ def _run_final_audit(
                     raise RuntimeError(
                         "Offline preflight used a different selection manifest."
                     )
-                validation["offline_analysis_preflight_passed"] = True
-                validation["analysis_request_id"] = prepared.plan.request_id
+                validation["offline_research_preflight_passed"] = True
+                validation["research_request_id"] = prepared.plan.request_id
                 validation["estimated_input_tokens"] = (
-                    prepared.cost.analysis.estimated_input_tokens
+                    prepared.cost.research.estimated_input_tokens
                 )
                 verified.append(
                     {
